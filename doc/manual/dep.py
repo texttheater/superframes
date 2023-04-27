@@ -8,18 +8,21 @@ BS = '\\'
 TOKSEP = ' \\& '
 
 
+def escape(token):
+    return token.replace('$', '\\$')
+
+
 def clean(token):
-    if token.startswith('*') and token.endswith('*'):
+    if token.startswith('_') and token.endswith('_'):
         return token[1:-1]
     return token.rsplit('_', 1)[0]
 
 
 if __name__ == '__main__':
-    print(sys.argv, file=sys.stderr)
     tokens = sys.argv[1:]
     pred_idx = -1
     for i, token in enumerate(tokens):
-        if token.startswith('*') and token.endswith('*'):
+        if token.startswith('_') and token.endswith('_'):
             pred_idx = i
     if pred_idx == 1:
         print(f'ERROR: predicate not marked: {" ".join(tokens)}',
@@ -27,7 +30,7 @@ if __name__ == '__main__':
         sys.exit(1)
     print(f'''{BS}begin{{dependency}}
     {BS}begin{{deptext}}
-        {TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}
+        {TOKSEP.join(escape(clean(t)) for t in tokens)} {BS}{BS}
     {BS}end{{deptext}}''')
     height = 1
     for i in reversed(range(0, pred_idx)):

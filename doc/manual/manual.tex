@@ -237,14 +237,7 @@ Under some relation, the range is assigned to the domain. Catch-all superframe f
 
 Modifier examples:
 
-% This seems to work:
-\immediate\write18{python3 -c 'print("Hello \string\\string$\string\\string$\string\\string$!")' > exec.tex}
-\input{exec}
-
-% This doesn't - why??
-%\immediate\write18{python3 dep.py The cost is \string\\string$ 10 per item_asg-of > exec.tex}
-%\input{exec}
-%\dep{}
+\ex. \dep{The cost is '_\string$_' 10 per item_asg-of}
 
 Argument examples:
 
