@@ -1,0 +1,393 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+
+%opening
+\title{Superframes v0 Manual}
+\author{Kilian Evang}
+
+\usepackage{booktabs}
+\usepackage{iexec}
+\usepackage{linguex}
+\usepackage{tikz-dependency}
+
+\newcommand\dep[1]{\iexec{python3 dep.py #1}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+Superframes is an annotation scheme for semantic roles. It has the following goals:
+
+\begin{enumerate}
+    \item Annotation should be lexicon-free. With fine-grained schemes like FrameNet or PropBank, annotators have to constantly look up which frames exist and which roles are defined for them. Lexicons are also perennially incomplete, and the process of extending them is complicated. Superframes defines only a small number of coarse-grained frames with the aim of making annotation quick and easy across all languages and domains.
+    \item Choosing frames and roles should be obvious. In VerbNet-like semantic role inventories, roles are semantically defined only vaguely and ambiguously. For example, the subject of the English verb \emph{watch} can be described as an Agent as well as an Experiencer. Prior approaches to resolving this ambiguity involve the creation of a lexicon (see above) or giving up on the idea of categorial role labels altogether. The Superframes approach is to proceed in two steps: first pick a superframe for each predicate, then the core roles are clearly defined. Additional argument roles are handled via mixin roles (see below).
+    \item Comprehensive annotation: Superframes is a comprehensive and unified inventory of coarse semantic roles applicable to all types of contentful morphosyntactic dependencies, including argument roles, modifier roles, discourse relations, compound relations, etc. It is designed to be annotated on top of existing morphosyntactic dependency graphs (e.g., UD). This has the advantage that the markables are pre-identified and that an explicit annotation of the morphosyntax-semantics interface emerges.
+    \item Ambiguity-tolerant: not all ambiguities in choosing a superframe can be resolved. Superframes encourages annotators to annotate multiple possibilities, in particular in the case of metaphorical language.
+\end{enumerate}
+
+\section{Types of Roles}
+
+\begin{table}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} \\
+        \midrule
+        \multicolumn{4}{l}{\emph{entity-entity}} \\
+        cmp & comparison & compared & reference \\
+        loc & location & located & location \\
+        %orl & org role & appointee & task/role/org \\
+        pss & possession/control & possessee & possessor \\
+        qnt & quantity & of what & how much \\
+        rel & abstract relation & assigned to & assigned \\
+        soc & social & somebody & relative/org/task... \\
+        suc & succession & succeeded & successor \\
+        whl & part-whole & part & whole \\
+        \midrule
+        \multicolumn{4}{l}{\emph{entity-scene}} \\
+        msg & message & topic & message \\
+        scn & scene & participant & scene \\
+        \midrule
+        \multicolumn{4}{l}{\emph{scene-entity}} \\
+        ast & asset & scene & asset \\
+        ben & beneficiary & scene & beneficiary \\
+        cau & causer & scene & cause(r) \\
+        ext & extent & scene & extent \\
+        ins & instrument & scene & instrument \\
+        mnr & manner & scene & manner \\
+        rcp & recipient & scene & recipient \\
+        snd & sender & scene & sender \\
+        tmp & temporal & scene & time/frequency/... \\
+        \midrule
+        \multicolumn{4}{l}{\emph{scene-scene}} \\
+        cnc & concession & happens anyway & happens admittedly \\
+        cnd & condition & happens conditionally & condition \\
+        %cnt & continuation & happens & happens then \\
+        ctx & context & happens & context/circumstance \\
+        ela & elaboration & less specific & more specific \\
+        prp & purpose & scene & purpose \\
+        \midrule
+        \multicolumn{4}{l}{\emph{constructional}} \\
+        anc & ancillary & predicate & ancillary \\
+        dif & discourse & token & discourse function \\
+        exp & expletive & predicate & expletive \\
+        nuc & nucleus & predicate & same predicate \\
+        ptn & pertinence & predicate & pertinent entity \\
+        rsd & resultative & predicate & affected entity \\
+        rsr & resultative & predicate & result \\ 
+        \bottomrule
+    \end{tabular}
+    \caption{The inventory of superframes}
+    \label{tab:inventory}
+\end{table}
+
+The Superframes annotation scheme is based on the binary relations shown in Table~\ref{tab:inventory}. Borrowing terminology from AMR, we call the first relate the ``domain'' and the second relate the ``range''. This inventory is then used to annotate bilexical dependencies with roles. We distinguish a number of types of roles, as explained in the following.
+
+\subsection{Type I: Modifier Roles}
+
+Modifier dependencies are annotated with a plain binary relation or its inverse (denoted by \textsf{-of}, as in AMR). This applies equally to verb, noun, and other modifiers.
+
+\ex.
+\begin{dependency}
+  \begin{deptext}
+    partied \& at \& home \\
+  \end{deptext}
+  \depedge[edge height=\baselineskip]{1}{3}{loc}
+\end{dependency}
+\begin{dependency}
+  \begin{deptext}
+    a \& man \& with \& a \& mustache \\
+  \end{deptext}
+  \depedge[edge height=\baselineskip]{2}{5}{whl-of}
+\end{dependency}
+
+\subsection{Type II: Core Argument Roles}
+
+Predicates such as verbs (but also adjectives, event/state nouns, relational nouns, etc.) evoke their own superframe. The core arguments are those that correspond to the domain and the range, respectively. We denote them by the suffixes \textsf{d} and \textsf{r}, respectively.
+
+\ex.
+\begin{dependency}
+  \begin{deptext}
+    Kim \& went \& to \& Boston \\
+  \end{deptext}
+  \depedge[edge height=\baselineskip]{2}{1}{locd}
+  \depedge[edge height=\baselineskip]{2}{4}{locr}
+\end{dependency}
+\begin{dependency}
+  \begin{deptext}
+    Kim \& owns \& a \& house \\
+  \end{deptext}
+  \depedge[edge height=\baselineskip]{2}{1}{pssr}
+  \depedge[edge height=\baselineskip]{2}{4}{pssd}
+\end{dependency}
+
+The first example illustrates that Superframes abstract away from aktionsart: it does not matter for the choice of superframe or roles whether a state (Kim is in Boston) or an event bringing that state about (Kim went to Boston) is described. Borrowing terminology from UCCA CITE, we collectively call states and events ``scenes''.
+
+\subsection{Type IIa: Initial and Intermediate Range Roles}
+
+However, some predicates denote the dissolution of a relation between a domain and an initial range, and the establishment of the domain and a new range. To distinguish the initial from the final range, we use the prefix \textsf{ir} instead of \textsf{r} for it. Likewise, we use \textsf{mr} for intermediate ranges.
+
+\ex.
+\begin{dependency}
+    \begin{deptext}
+    Kim \& went \& from \& Chicago \& via \& Pittsburgh \& to \& Boston \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{locd}
+    \depedge[edge height=\baselineskip]{2}{4}{locir}
+    \depedge[edge height=2\baselineskip]{2}{6}{locmr}
+    \depedge[edge height=3\baselineskip]{2}{8}{locr}
+\end{dependency}\\
+\begin{dependency}
+    \begin{deptext}
+    Kim \& kept \& the \& house \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{pssir}
+    \depedge[edge height=\baselineskip]{2}{4}{pssd}
+\end{dependency}
+\begin{dependency}
+    \begin{deptext}
+    Kim \& lost \& the \& house \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{pssir}
+    \depedge[edge height=\baselineskip]{2}{4}{pssd}
+\end{dependency}
+
+\subsection{Type III: Non-core Argument Roles}
+
+Some predicates have more than just the domain and range arguments. For such arguments, annotators should choose the binary relation that describes the relation between the scene and the argument best, and prefix it with \textsf{x} to distinguish it from a modifier. Particularly frequent non-core roles are \textsf{xcau}, \textsf{xsnd}, and \textsf{xrcp}.
+
+\ex.
+\begin{dependency}
+    \begin{deptext}
+    Sandy \& brought \& Kim \& to \& Boston \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{xcau}
+    \depedge[edge height=\baselineskip]{2}{3}{locd}
+    \depedge[edge height=2\baselineskip]{2}{5}{locr}
+\end{dependency}
+\begin{dependency}
+    \begin{deptext}
+    Kim \& talked \& about \& Sandy \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{xsnd}
+    \depedge[edge height=\baselineskip]{2}{4}{msgd}
+\end{dependency}\\
+\begin{dependency}
+    \begin{deptext}
+    Kim \& saw \& Sandy \& swim \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{xrcp}
+    \depedge[edge height=\baselineskip]{2}{3}{msgd}
+    \depedge[edge height=2\baselineskip]{2}{4}{msgr}
+\end{dependency}
+\begin{dependency}
+    \begin{deptext}
+    Kim \& searched \& the \& woods \& for \& Sandy \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{xrcp}
+    \depedge[edge height=\baselineskip]{2}{4}{xloc}
+    \depedge[edge height=2\baselineskip]{2}{6}{msgd}
+\end{dependency}
+
+\subsection{Dual Framing}
+
+For predicates that seem to fit two superframes equally well, annotate both. Likewise, if both a literal and a metaphorical meaning are accessible to you, annotate both.
+
+\ex.
+\begin{dependency}
+    \begin{deptext}
+        Kim \& refused \& to \& eat \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{2}{1}{xsnd}
+    \depedge[edge height=\baselineskip]{2}{4}{msgd}
+    \depedge[edge below,edge height=\baselineskip]{2}{1}{scnd:locr}
+    \depedge[edge below,edge height=\baselineskip]{2}{4}{scnr}
+\end{dependency}
+\begin{dependency}
+    \begin{deptext}
+        A \& hush \& passed \& over \& the \& group \\
+    \end{deptext}
+    \depedge[edge height=\baselineskip]{3}{2}{locd}
+    \depedge[edge height=\baselineskip]{3}{6}{locmr}
+    \depedge[edge below,edge height=\baselineskip]{3}{2}{scnr}
+    \depedge[edge below,edge height=\baselineskip]{3}{6}{scnd:xsnd}
+\end{dependency}
+
+\section{Guidelines by Superframe}
+
+% Template:
+% "definition"
+% modifier examples
+% static argument examples
+% dynamic argument examples
+% subframes
+
+\subsection{Assignment (asg)}
+
+Under some relation, the range is assigned to the domain. Catch-all superframe for when nothing else fits.
+
+Modifier examples:
+
+% This seems to work:
+\immediate\write18{python3 -c 'print("Hello \string\\string$\string\\string$\string\\string$!")' > exec.tex}
+\input{exec}
+
+% This doesn't - why??
+%\immediate\write18{python3 dep.py The cost is \string\\string$ 10 per item_asg-of > exec.tex}
+%\input{exec}
+%\dep{}
+
+Argument examples:
+
+\subsection{Comparison (cmp)}
+
+The domain is compared to the range for some criterion.
+
+\subsection{Location (loc)}
+
+The domain is physically located with respect to the range.
+
+\subsection{Possession/control (pss)}
+
+The domain is possessed or controlled by the range.
+
+\subsection{Quantity (qnt)}
+
+The range indicates the quantity of the domain.
+
+
+
+\subsection{Social (soc)}
+
+The domain is usually a person, which is in some socially constructed relationship with the range. For example, the range might be a relative, a friend, an enemy, an organization, a responsibility, or a judicial sentence.
+
+\subsection{Succession (suc)}
+
+The range succeeds the domain temporally, spatially, or in discourse, possibly replacing it.
+
+\subsection{Part-whole (whl)}
+
+The domain is a part of the range.
+
+\subsection{Message (msg)}
+
+Encompasses all kinds of expression and perception. The range is a content that is expressed and/or perceived about the domain.
+
+\subsection{Scene (scn)}
+
+% state or property
+% action, subition
+% tense, aspect, modality, phase
+% causation
+% light verbs
+% control verbs
+% raising verbs?
+% transformation and creation
+% destruction
+
+\subsection{Asset (ast)}
+
+An entity given up in exchange. Used as modifier for transaction or proposal scenes in the msg and pss superframes.
+
+\subsection{Beneficiary (ben)}
+
+Beneficiary or maleficiary of a scene.
+
+\subsection{Causer (cau)}
+
+Entity that causes a scene.
+
+\subsection{Extent (ext)}
+
+Extent to which a scene unfolds.
+
+\subsection{Instrument (ins)}
+
+Instrument used in an action.
+
+\subsection{Manner (mnr)}
+
+Manner in which a scene unfolds.
+
+\subsection{Recipient (rcp)}
+
+Addressee or perceiver.
+
+\subsection{Sender (snd)}
+
+Sender of a message.
+
+\subsection{Temporal (tmp)}
+
+Point in time, duration, frequency, etc.
+
+% auch Zeit-Weg-Metonymie ("in 100 Metern")
+
+\subsection{Concession (cnc)}
+
+The domain unfolds in spite of the range.
+
+\subsection{Condition (cnd)}
+
+The domain unfolds conditionally on the range.
+
+\subsection{Context (ctx)}
+
+The domain unfolds in the context of the range, e.g., as a subevent.
+
+\subsection{Elaboration (ela)}
+
+The range eleborates on the domain.
+
+\subsection{Purpose (prp)}
+
+The range is the purpose of the domain.
+
+\subsection{Ancillary (anc)}
+
+An entity that participates in the scene together with another argument.
+
+\subsection{Discourse (dif)}
+
+Arguments and modifiers that fulfill a discourse function.
+
+\subsection{Expletive (exp)}
+
+Expletive pronouns.
+
+\subsection{Nucleus (nuc)}
+
+Syntactic arguments and modifiers that are semantically part of the predicate.
+
+\subsection{Pertinence (ptn)}
+
+Argument to the predicate that is in a relationship with another argument.
+
+\subsection{Resultative: Affected Entity (rsd)}
+
+In a resultative construction, the affected entity.
+
+\subsection{Resultative: Result (rsr)}
+
+In a resultative construction, the result.
+
+\section{Difficult Cases}
+
+I need you.
+
+He responded to the provocation with violence.
+
+He began the party with a speech.
+
+Spend money/time on something
+
+\end{document}
