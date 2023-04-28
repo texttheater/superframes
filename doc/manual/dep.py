@@ -31,7 +31,7 @@ def dep(tokens):
     for i, token in enumerate(tokens):
         if token.startswith('*') and token.endswith('*'):
             pred_idx = i
-    if pred_idx == 1:
+    if pred_idx == -1:
         raise ValueError('predicate not marked: {" ".join(tokens)}')
     result += f'''{BS}begin{{dependency}}
     {BS}begin{{deptext}}
