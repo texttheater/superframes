@@ -33,7 +33,7 @@ def dep(tokens):
             pred_idx = i
     if pred_idx == -1:
         raise ValueError(f'predicate not marked: {repr(tokens)}')
-    result += f'''{BS}begin{{dependency}}
+    result += f'''{BS}raisebox{{-.5{BS}baselineskip}}{{{BS}begin{{dependency}}
     {BS}begin{{deptext}}
         {TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}
     {BS}end{{deptext}}'''
