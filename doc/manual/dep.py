@@ -49,7 +49,7 @@ def dep(tokens):
             rel = tokens[i].rsplit('_', 1)[1]
             result += f'    {BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
             height += 1
-    result += '\\end{dependency}'
+    result += f'{BS}end{{dependency}}}}'
     return result
 
 
