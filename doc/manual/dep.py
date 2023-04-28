@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 
+import re
 import sys
 
 
@@ -8,12 +9,8 @@ BS = '\\'
 TOKSEP = ' \\& '
 
 
-def escape(token):
-    return token.replace('$', '\\$')
-
-
 def clean(token):
-    if token.startswith('_') and token.endswith('_'):
+    if token.startswith('*') and token.endswith('*'):
         return token[1:-1]
     return token.rsplit('_', 1)[0]
 
@@ -32,13 +29,13 @@ def dep(tokens):
     result = ''
     pred_idx = -1
     for i, token in enumerate(tokens):
-        if token.startswith('_') and token.endswith('_'):
+        if token.startswith('*') and token.endswith('*'):
             pred_idx = i
     if pred_idx == 1:
         raise ValueError('predicate not marked: {" ".join(tokens)}')
     result += f'''{BS}begin{{dependency}}
     {BS}begin{{deptext}}
-        {TOKSEP.join(escape(clean(t)) for t in tokens)} {BS}{BS}
+        {TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}
     {BS}end{{deptext}}'''
     height = 1
     for i in reversed(range(0, pred_idx)):
@@ -57,4 +54,6 @@ def dep(tokens):
 
 
 if __name__ == '__main__':
-    print(dep(sys.argv[1:]))
+    tex = sys.stdin.read()
+    tex = re.sub(r'\\dep\{([^}]*)\}', lambda m: dep(m.group(1).split()), tex)
+    sys.stdout.write(tex)

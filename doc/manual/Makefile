@@ -1,7 +1,9 @@
 .PHONY : default clean
 
 default :
-	latexmk -pdf -shell-escape "manual"
+	python3 dep.py < manual.tex > manual_expanded.tex
+	latexmk -pdf -shell-escape "manual_expanded"
+	mv manual_expanded.pdf manual.pdf
 
 clean :
 	latexmk -c

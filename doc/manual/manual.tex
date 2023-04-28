@@ -10,11 +10,8 @@
 \author{Kilian Evang}
 
 \usepackage{booktabs}
-\usepackage{iexec}
 \usepackage{linguex}
 \usepackage{tikz-dependency}
-
-\newcommand\dep[1]{\iexec{python3 dep.py #1}}
 
 \begin{document}
 
@@ -237,7 +234,7 @@ Under some relation, the range is assigned to the domain. Catch-all superframe f
 
 Modifier examples:
 
-\ex. \dep{The cost is '_\string$_' 10 per item_asg-of}
+\ex. \dep{The cost is *\string$* 10 per item_asg-of}
 
 Argument examples:
 
