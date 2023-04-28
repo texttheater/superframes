@@ -32,7 +32,7 @@ def dep(tokens):
         if token.startswith('*') and token.endswith('*'):
             pred_idx = i
     if pred_idx == -1:
-        raise ValueError('predicate not marked: {" ".join(tokens)}')
+        raise ValueError(f'predicate not marked: {repr(tokens)}')
     result += f'''{BS}begin{{dependency}}
     {BS}begin{{deptext}}
         {TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}
