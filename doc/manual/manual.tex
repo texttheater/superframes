@@ -11,6 +11,7 @@
 
 \usepackage{booktabs}
 \usepackage{linguex}
+\usepackage{relsize}
 \usepackage{tikz-dependency}
 
 \begin{document}
@@ -174,9 +175,38 @@ The range indicates the quantity of the domain.
 
 
 
-\subsection{Social (soc)}
+\subsection{Social (\textsf{soc})}
 
-The domain is usually a person, which is in some socially constructed relationship with the range. For example, the range might be a relative, a friend, an enemy, an organization, a responsibility, or a judicial sentence.
+The domain is an individual that is in some socially constructed relationship with the range. The range might e.g. be a relative, a friend, an organization, a responsibility, or a judicial sentence.
+
+\subsubsection{Static Examples}
+
+\ex. \smaller
+     \dep{Kim_socr is my_socd *cousin*}
+     \dep{Kim_socd and Sandy are *friends*}
+     \dep{Kim_socd is *friends* with Sandy_socr}
+     \dep{Kim_socd *works* at Google_socr}
+     \dep{Kim_socd *works* for Sandy_socr}
+     \dep{Kim_socd *emcees*}
+     \dep{Kim_socd is *hosting* the party_socr}
+     \dep{Kim_socd is under house *arrest*}
+
+\subsubsection{Dynamic Examples}
+
+\ex. \dep{Kim_socd *married* Sandy_socr}
+     \dep{The official_xcau *married* Kim_socd to Sandy_socr}
+     \dep{The official_xcau *married* Kim_socd and Sandy}
+     \dep{Kim_socd *divorced* Sandy_socir}
+     \dep{Kim_socd *befriended* Sandy_socr}
+     \dep{Kim_socd *took* the job_socr}
+     \dep{Kim_socd *joined* a Google_socr}
+     \dep{Kim_socd *joined* a union_socr}
+     \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
+     \dep{Kim_socd *left* Google_socir}
+     \dep{Kim_socd *assumed* office_socr}
+     \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
+     \dep{Kim_socd was *pardoned*}
+
 
 \subsection{Succession (suc)}
 
