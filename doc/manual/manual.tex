@@ -40,16 +40,15 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} \\
         \midrule
         \multicolumn{4}{l}{\emph{entity-entity}} \\
+        asg & assignment & point & value \\
         cmp & comparison & compared & reference \\
         loc & location & located & location \\
         pss & possession/control & possessee & possessor \\
         qnt & quantity & of what & how much \\
-        %rel & abstract relation & assigned to & assigned \\
         soc & social & somebody & relative/org/task... \\
-        suc & succession & succeeded & successor \\
         whl & part-whole & part & whole \\
-        \midrule
-        \multicolumn{4}{l}{\emph{entity-scene}} \\
+        %\midrule
+        %\multicolumn{4}{l}{\emph{entity-scene}} \\
         msg & message & topic & message \\
         scn & scene & participant & scene \\
         \midrule
@@ -57,9 +56,9 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         ast & asset & scene & asset \\
         ben & beneficiary & scene & beneficiary \\
         cau & causer & scene & cause(r) \\
-        %ext & extent & scene & extent \\
-        ins & instrument & scene & instrument \\
+        ctx & context & foreground & background \\
         mnr & manner & scene & manner \\
+        mns & means & scene & means \\
         rcp & recipient & scene & recipient \\
         snd & sender & scene & sender \\
         tmp & temporal & scene & time/frequency/... \\
@@ -73,13 +72,14 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         %prp & purpose & scene & purpose \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional}} \\
-        anc & ancillary & predicate & ancillary \\
-        dif & discourse & token & discourse function \\
+        anc & ancillary & predicate & ancillary entity \\
+        dis & discourse & token & discourse function \\
+        dpc & depictive & predicate & secondary predicate\\
         exp & expletive & predicate & expletive \\
         nuc & nucleus & predicate & same predicate \\
         ptn & pertinence & predicate & pertinent entity \\
-        %rsd & resultative & predicate & affected entity \\
-        res & resultative & predicate & result \\ 
+        rsd & resultative & predicate & affected entity \\
+        rsr & resultative & predicate & result \\ 
         \bottomrule
     \end{tabular}
     \caption{The inventory of superframes}
@@ -155,14 +155,6 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 % subframes
 
 \subsection{Assignment (asg)}
-
-Under some relation, the range is assigned to the domain. Catch-all superframe for when nothing else fits.
-
-Modifier examples:
-
-\ex. \dep{The cost is *USD* 10 per item_asg-of}
-
-Argument examples:
 
 \subsection{Comparison (cmp)}
 
