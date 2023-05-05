@@ -153,6 +153,52 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 % dynamic argument examples
 % subframes
 
+\subsection{Message (\textsf{msg})}
+\label{sec:msg}
+
+A message is expressed or received, where \textsf{msgd} is what the message is
+about, and \textsf{msgr} is the message itself, or its contents. Often used
+together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
+
+\subsubsection{Expression}
+
+\ex. \dep{Kim_xsnd *yelped*}
+     \dep{Kim_xsnd *said* : it 's fine_msgr}
+     \dep{Kim_xsnd *said* it was fine_msgr}
+     \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
+     \dep{Kim_xsnd *told* Sandy_xrcp a secret_msgr}
+     \dep{Kim_xsnd *talked* about Sandy_msgd}
+     \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
+
+\subsubsection{Perception}
+
+Perception, including mental and volitional perception.
+
+\ex. \dep{Kim_xrcp *saw* a flower_msgd}
+     \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
+     \dep{Kim_xrcp *thinks* Sandy is a liar_msgr}
+     \dep{Kim_xrcp *thinks* Sandy_msgd a liar_msgr}
+     \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
+     \dep{Kim_xrcp *wants* to swim_msgr}
+     \dep{Kim_xrcp *wants* Sandy_msgd to swim_msgr}
+     \dep{Kim_msgd *seems* happy_msgr}
+     \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
+     \dep{The Thought Police_xrcp *observed* Winston_msgd}
+     \dep{Kim_xrcp *measured* the elasticity_msgd}
+     \dep{The jury_xrcp *found* Kim_msgd guilty_msgr}
+
+\textsf{Performance}
+
+A special type of expression, where \textsf{msgd} is a work of art that is
+performed.
+
+\ex. \dep{Kim_xsnd *played* a little tune_msgd on their tuba_xmns}
+     \dep{They_xsnd *performed* the play_msgd}
+
+\subsubsection{Additional Markables}
+
+TBD
+
 \subsection{Scene (\textsf{scn})}
 \label{sec:scn}
 
@@ -162,6 +208,7 @@ predicate, or a participant in a scene specified by the \textsf{scnr}.
 \subsubsection{States and Properties}
 
 \ex. \dep{Kim_scnd is *tall*}
+     \dep{Kim_scnd is a *person*}
      \dep{The painting_scnd *improved*}
      \dep{Kim_xcau *improved* the painting_scnd}
 
@@ -190,7 +237,7 @@ some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
 \ex. \dep{The ice_scnd *turned* into water_scnr}
      \dep{God_xcau *made* people_scnr out of clay_scnd}
      \dep{A rock_scnr *formed*}
-     \dep{Kim_xcau *creatd* a work_scnr of art}
+     \dep{Kim_xcau *created* a work_scnr of art}
 
 \subsubsection{Destruction}
 
@@ -199,14 +246,17 @@ some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
      \dep{Kim_xcau *killed* Sandy_scnd}
      \dep{Sandy_scnd *died*}
 
-\subsubsection{Auxilary Verbs}
-
-Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
-\textsf{scn}.
-
-\ex. \dep{We_scnd *will* see_scnr}
-     \dep{*Have* you_scnd eaten_scnr ?}
-     \dep{Kim_scnd *must* go_scnr}
+%\subsubsection{Auxilary Verbs and Copulas}
+%
+%Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
+%\textsf{scn}.
+%
+%\ex. \dep{We_scnd *will* see_scnr}
+%     \dep{*Have* you_scnd eaten_scnr ?}
+%     \dep{Kim_scnd *must* go_scnr}
+%     \dep{Kim_scnd *did* not go_scnr}
+%     \dep{Kim_scnd *is* a champion_scnr}
+%     \dep{Kim_scnd *is* tall_scnr}
 
 \subsubsection{Light Verbs}
 
@@ -231,6 +281,7 @@ Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
 
 \ex. \dep{Kim_xcau *kept* Sandy_scnd from joining_scnr}
      \dep{Swift action_xcau *prevented* an outbreak_scnr}
+     \dep{Kim_scnd *refrained* from going_scnr}
      \dep{Kim_xcau *saved* Sandy_scnd from the dragon_scnr}
 
 In the last example, understand \emph{dragon} metonymically as a scene in which
