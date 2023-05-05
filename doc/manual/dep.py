@@ -33,21 +33,21 @@ def dep(tokens):
             pred_idx = i
     if pred_idx == -1:
         raise ValueError(f'predicate not marked: {repr(tokens)}')
-    result += f'''{BS}raisebox{{-.5{BS}baselineskip}}{{{BS}begin{{dependency}}[label style={{font={BS}sffamily}}]
-    {BS}begin{{deptext}}
-        {TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}
-    {BS}end{{deptext}}'''
+    result += f'''{BS}raisebox{{-.5{BS}baselineskip}}{{{BS}begin{{dependency}}[label style={{font={BS}sffamily}}]'''
+    result += f'''{BS}begin{{deptext}}'''
+    result += f'''{TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}'''
+    result += f'''{BS}end{{deptext}}'''
     height = 1
     for i in reversed(range(0, pred_idx)):
         if '_' in tokens[i]:
             rel = tokens[i].rsplit('_', 1)[1]
-            result += f'    {BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
+            result += f'{BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
             height += 1
     height = 1
     for i in range(pred_idx + 1, len(tokens)):
         if '_' in tokens[i]:
             rel = tokens[i].rsplit('_', 1)[1]
-            result += f'    {BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
+            result += f'{BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
             height += 1
     result += f'{BS}end{{dependency}}}}'
     return result
