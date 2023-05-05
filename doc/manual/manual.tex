@@ -9,6 +9,8 @@
 \title{Superframes v0 Manual}
 \author{Kilian Evang}
 
+\usepackage{hyperref}
+
 \usepackage{booktabs}
 \usepackage{linguex}
 \usepackage{relsize}
@@ -18,9 +20,7 @@
 
 \maketitle
 
-\begin{abstract}
-
-\end{abstract}
+\tableofcontents
 
 \section{Introduction}
 
@@ -44,41 +44,39 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         asg & assignment & point & value \\
         cmp & comparison & compared & reference \\
         loc & location & located & location \\
+        msg & message & topic & comment \\
         pss & possession/control & possessee & possessor \\
         qnt & quantity & of what & how much \\
+        scn & scene & participant & scene \\
         soc & social & somebody & relative/org/task... \\
         whl & part-whole & part & whole \\
-        %\midrule
-        %\multicolumn{4}{l}{\emph{entity-scene}} \\
-        msg & message & topic & message \\
-        scn & scene & participant & scene \\
         \midrule
         \multicolumn{4}{l}{\emph{scene-entity}} \\
         ast & asset & scene & asset \\
         ben & beneficiary & scene & beneficiary \\
         cau & causer & scene & cause(r) \\
-        ctx & context & foreground & background \\
+        ctx & context & scene & background \\
         mnr & manner & scene & manner \\
         mns & means & scene & means \\
         rcp & recipient & scene & recipient \\
         snd & sender & scene & sender \\
         tmp & temporal & scene & time/frequency/... \\
-        \midrule
-        \multicolumn{4}{l}{\emph{scene-scene}} \\
+        %\midrule
+        %\multicolumn{4}{l}{\emph{scene-scene}} \\
         %cnc & concession & happens anyway & happens admittedly \\
         %cnd & condition & happens conditionally & condition \\
         %cnt & continuation & happens & happens then \\
-        ctx & context & happens & context/circumstance \\
+        %ctx & context & happens & context/circumstance \\
         %ela & elaboration & less specific & more specific \\
         %prp & purpose & scene & purpose \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional}} \\
         anc & ancillary & predicate & ancillary entity \\
+        att & attribute & predicate & attribute \\
         dis & discourse & token & discourse function \\
         dpc & depictive & predicate & secondary predicate\\
         exp & expletive & predicate & expletive \\
         nuc & nucleus & predicate & same predicate \\
-        ptn & pertinence & predicate & pertinent entity \\
         rsd & resultative & predicate & affected entity \\
         rsr & resultative & predicate & result \\ 
         \bottomrule
@@ -155,27 +153,92 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 % dynamic argument examples
 % subframes
 
-\subsection{Assignment (asg)}
+\subsection{Scene (\textsf{scn})}
+\label{sec:scn}
 
-\subsection{Comparison (cmp)}
+\textsf{scnd} is the single core participant of a scene specified by the
+predicate, or a participant in a scene specified by the \textsf{scnr}.
 
-The domain is compared to the range for some criterion.
+\subsubsection{States and Properties}
 
-\subsection{Location (loc)}
+\ex. \dep{Kim_scnd is *tall*}
+     \dep{The painting_scnd *improved*}
+     \dep{Kim_xcau *improved* the painting_scnd}
 
-The domain is physically located with respect to the range.
+\subsubsection{Activities}
 
-\subsection{Possession/control (pss)}
+``Activities'' are events with a single core participant that can be
+characterized as actively participating in the event.
 
-The domain is possessed or controlled by the range.
+\ex. \dep{Kim_scnd *partied*}
+     \dep{Kim_scnd *partied* with Sandy_anc}
+     \dep{Kim_scnd had *sex* with Sandy_xanc}
 
-\subsection{Quantity (qnt)}
+\subsubsection{Experiences}
 
-The range indicates the quantity of the domain.
+``Experiences'' ar events with a single core participant that can be
+characterized as undergoing the event.
 
+\ex. \dep{Kim_xcau *attacked* Sandy_scnd}
 
+\subsubsection{Transformation and Creation}
+
+\textsf{scnd} denotes the entity undergoing the transformation, and
+\textsf{scnr} denotes its new state. Creation is framed as transformation of
+some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
+
+\ex. \dep{The ice_scnd *turned* into water_scnr}
+     \dep{God_xcau *made* people_scnr out of clay_scnd}
+     \dep{A rock_scnr *formed*}
+     \dep{Kim_xcau *creatd* a work_scnr of art}
+
+\subsubsection{Destruction}
+
+\ex. \dep{The vase_scnd *broke*}
+     \dep{Kim_xcau *broke* the vase_scnd}
+     \dep{Kim_xcau *killed* Sandy_scnd}
+     \dep{Sandy_scnd *died*}
+
+\subsubsection{Auxilary Verbs}
+
+Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
+\textsf{scn}.
+
+\ex. \dep{We_scnd *will* see_scnr}
+     \dep{*Have* you_scnd eaten_scnr ?}
+     \dep{Kim_scnd *must* go_scnr}
+
+\subsubsection{Light Verbs}
+
+\ex. \dep{Kim_scnd *took* a bath_scnr}
+
+\subsubsection{Phase}
+
+\ex. \dep{The wound_scnd *began* to heal_scnr}
+     \dep{A commotion_scnr *started*}
+     \dep{Kim_xcau *started* a commotion_scnr}
+     \dep{The concert_scnir *ended*}
+     \dep{The concert_scnir *continued*}
+     \dep{Kim_xcau *interrupted* the session_scnir}
+
+\subsubsection{Causation}
+
+\ex. \dep{Kim_xcau *let* Sandy_scnd join_scnr}
+     \dep{Kim_xcau *made* Sandy_scnd join_scnr}
+     \dep{Kim_xcau *allowed* Sandy_scnd to join_scnr}
+
+\subsubsection{Relative Clauses}
+
+For relative clauses, the \textsf{scn} label is used as a modifier relation:
+
+\ex. \dep{a *package* that was too heavy_scn}
+
+\subsubsection{Additional Markables}
+
+TBD
 
 \subsection{Social (\textsf{soc})}
+\label{sec:soc}
 
 The domain is an individual that is in some socially constructed relationship with the range. The range might e.g. be a relative, a friend, an organization, a responsibility, or a judicial sentence.
 
@@ -206,117 +269,6 @@ The domain is an individual that is in some socially constructed relationship wi
      \dep{Kim_socd *assumed* office_socr}
      \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
      \dep{Kim_socd was *pardoned*}
-
-
-\subsection{Succession (suc)}
-
-The range succeeds the domain temporally, spatially, or in discourse, possibly replacing it.
-
-\subsection{Part-whole (whl)}
-
-The domain is a part of the range.
-
-\subsection{Message (msg)}
-
-Encompasses all kinds of expression and perception. The range is a content that is expressed and/or perceived about the domain.
-
-\subsection{Scene (scn)}
-
-% state or property
-% action, subition
-% tense, aspect, modality, phase
-% causation
-% light verbs
-% control verbs
-% raising verbs?
-% transformation and creation
-% destruction
-
-\subsection{Asset (ast)}
-
-An entity given up in exchange. Used as modifier for transaction or proposal scenes in the msg and pss superframes.
-
-\subsection{Beneficiary (ben)}
-
-Beneficiary or maleficiary of a scene.
-
-\subsection{Causer (cau)}
-
-Entity that causes a scene.
-
-\subsection{Extent (ext)}
-
-Extent to which a scene unfolds.
-
-\subsection{Instrument (ins)}
-
-Instrument used in an action.
-
-\subsection{Manner (mnr)}
-
-Manner in which a scene unfolds.
-
-\subsection{Recipient (rcp)}
-
-Addressee or perceiver.
-
-\subsection{Sender (snd)}
-
-Sender of a message.
-
-\subsection{Temporal (tmp)}
-
-Point in time, duration, frequency, etc.
-
-% auch Zeit-Weg-Metonymie ("in 100 Metern")
-
-\subsection{Concession (cnc)}
-
-The domain unfolds in spite of the range.
-
-\subsection{Condition (cnd)}
-
-The domain unfolds conditionally on the range.
-
-\subsection{Context (ctx)}
-
-The domain unfolds in the context of the range, e.g., as a subevent.
-
-\subsection{Elaboration (ela)}
-
-The range eleborates on the domain.
-
-\subsection{Purpose (prp)}
-
-The range is the purpose of the domain.
-
-\subsection{Ancillary (anc)}
-
-An entity that participates in the scene together with another argument.
-
-\subsection{Discourse (dif)}
-
-Arguments and modifiers that fulfill a discourse function.
-
-\subsection{Expletive (exp)}
-
-Expletive pronouns.
-
-\subsection{Nucleus (nuc)}
-
-Syntactic arguments and modifiers that are semantically part of the predicate.
-
-\subsection{Pertinence (ptn)}
-
-Argument to the predicate that is in a relationship with another argument.
-
-\subsection{Resultative: Affected Entity (rsd)}
-
-In a resultative construction, the affected entity.
-
-\subsection{Resultative: Result (rsr)}
-
-In a resultative construction, the result.
 
 \section{Difficult Cases}
 
