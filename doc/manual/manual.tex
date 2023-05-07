@@ -115,6 +115,32 @@ Some predicates have more than just the domain and range arguments. For such arg
      \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
      \dep{Kim_xrcp *searched* the woods_xloc for Sandy_msgd}
 
+\subsection{How to Frame Scenes}
+
+Part of the annotation task is to choose a superframe for each instance of a predicate.
+
+Implicit, shadow, and default arguments \citep{di-fabio-etal-2019-verbatlas} should
+be treated the same as regular arguments for framing. For example,
+\emph{debone} denotes the removal of bones (denoted by a shadow argument) from
+a body, so prefer \textsf{whl} over \textsf{scn}.
+
+\ex. \dep{The cook_xcau *deboned* the fish_whlir}
+     \dep{Kim_locir *sneezed*}
+
+Prefer core roles over non-core roles. For example, if the subject is both the causer and the final possessor in a scene, choose \textsf{pssr} over \textsf{xcau}.
+
+\ex. \dep{They_pssr *plundered* Rome_pssir}
+     \dep{Kim_locir *undressed*}
+
+When in doubt, prefer roles that works for multiple syntactic frames of the
+same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
+framed as caused motion (with an \textsf{xcau}) or as accompanied motion (with
+an \textsf{xanc}). Because the latter works for other syntactic frames of
+\emph{chase} as well, as in \ref{ex:chase-accompanied}, prefer it.
+
+\ex. \a. \label{ex:chase-caused} \dep{Kim_xanc *chased* Sandy_locd around the block_locmr}
+     \b. \label{ex:chase-accompanied} \dep{Kim_xanc *chased* after Sandy_locd}
+
 \subsection{Dual Framing}
 
 For predicates that seem to fit two superframes equally well, annotate both. Likewise, if both a literal and a metaphorical meaning are accessible to you, annotate both.
@@ -138,6 +164,8 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
     \depedge[edge below,edge height=\baselineskip]{3}{2}{scnr}
     \depedge[edge below,edge height=\baselineskip]{3}{6}{scnd:xsnd}
 \end{dependency}
+
+TBD: defend scn/msg; deduce msg/suc
 
 \section{Guidelines by Superframe}
 
