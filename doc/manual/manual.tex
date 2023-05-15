@@ -32,6 +32,8 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
     \item Choosing frames and roles should be obvious. In VerbNet-like semantic role inventories, roles are semantically defined only vaguely and ambiguously. For example, the subject of the English verb \emph{watch} can be described as an Agent as well as an Experiencer. Prior approaches to resolving this ambiguity involve the creation of a lexicon (see above) or giving up on the idea of categorial role labels altogether. The Superframes approach is to proceed in two steps: first pick a superframe for each predicate, then the core roles are clearly defined. Additional argument roles are handled via mixin roles (see below).
     \item Comprehensive annotation: Superframes is a comprehensive and unified inventory of coarse semantic roles applicable to all types of contentful morphosyntactic dependencies, including argument roles, modifier roles, discourse relations, compound relations, etc. It is designed to be annotated on top of existing morphosyntactic dependency graphs (e.g., UD). This has the advantage that the markables are pre-identified and that an explicit annotation of the morphosyntax-semantics interface emerges.
     \item Ambiguity-tolerant: not all ambiguities in choosing a superframe can be resolved. Superframes encourages annotators to annotate multiple possibilities, in particular in the case of metaphorical language.
+    \item Survive not only alternation, but also translation
+    \item Unified relations between stative verbs and e.g. prepositions
 \end{enumerate}
 
 \section{Types of Roles}
@@ -43,6 +45,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         \midrule
         \multicolumn{4}{l}{\emph{entity-entity}} \\
         cmp & comparison & compared & reference \\
+        idn & identifier & entity & identifier \\
         loc & location & located & location \\
         msg & message & topic & comment \\
         pss & possession/control & possessee & possessor \\
@@ -127,6 +130,8 @@ a body, so prefer \textsf{whl} over \textsf{scn}.
 \ex. \dep{The cook_xcau *deboned* the fish_whlir}
      \dep{Kim_locir *sneezed*}
 
+TBD: is this really a good idea? Where do you draw the line? Cherrypicking, babysitting? Difference between xcau and scnd.
+
 Prefer core roles over non-core roles. For example, if the subject is both the causer and the final possessor in a scene, choose \textsf{pssr} over \textsf{xcau}.
 
 \ex. \dep{They_pssr *plundered* Rome_pssir}
@@ -167,7 +172,7 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 
 TBD: defend scn/msg; deduce msg/suc
 
-\section{Guidelines by Superframe}
+\section{Core Relations}
 
 % Template:
 % "definition"
@@ -392,6 +397,14 @@ The domain is an individual that is in some socially constructed relationship wi
      \dep{Kim_socd *assumed* office_socr}
      \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
      \dep{Kim_socd was *pardoned*}
+
+\section{Peripheral Relations}
+
+\section{Constructional Relations}
+
+\subsection{Nucleus (\textsc{nuc})}
+
+TBD criteria: inner modification (heave a deep sigh, give a loud shout), possessive participants (lose one's cool, pull so's leg), cf. Croft; outer modification (have sex with)
 
 \section{Difficult Cases}
 
