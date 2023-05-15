@@ -89,15 +89,15 @@ The Superframes annotation scheme is based on the binary relations shown in Tabl
 
 Modifier dependencies are annotated with a plain binary relation or its inverse (denoted by \textsf{-of}, as in AMR). This applies equally to verb, noun, and other modifiers.
 
-\ex. \dep{*partied* at home_loc}
-     \dep{a *man* with a mustache_whl-of}
+\ex. \a. \dep{*partied* at home_loc}
+     \b. \dep{a *man* with a mustache_whl-of}
 
 \subsection{Type II: Core Argument Roles}
 
 Predicates such as verbs (but also adjectives, event/state nouns, relational nouns, etc.) evoke their own superframe. The core arguments are those that correspond to the domain and the range, respectively. We denote them by the suffixes \textsf{d} and \textsf{r}, respectively.
 
-\ex. \dep{Kim_locd *went* to Boston_locr}
-     \dep{Kim_pssr *owns* a house_pssd}
+\ex. \a. \dep{Kim_locd *went* to Boston_locr}
+     \b. \dep{Kim_pssr *owns* a house_pssd}
 
 The first example illustrates that Superframes abstract away from aktionsart: it does not matter for the choice of superframe or roles whether a state (Kim is in Boston) or an event bringing that state about (Kim went to Boston) is described. Borrowing terminology from UCCA CITE, we collectively call states and events ``scenes''.
 
@@ -105,18 +105,18 @@ The first example illustrates that Superframes abstract away from aktionsart: it
 
 However, some predicates denote the dissolution of a relation between a domain and an initial range, and the establishment of the domain and a new range. To distinguish the initial from the final range, we use the prefix \textsf{ir} instead of \textsf{r} for it. Likewise, we use \textsf{mr} for intermediate ranges.
 
-\ex. \dep{Kim_locd *went* from Chicago_locir via Pittsburg_locmr to Boston_locr}\\
-     \dep{Kim_pssir *kept* the house_pssd}
-     \dep{Kim_pssir *lost* the house_pssd}
+\ex. \a. \dep{Kim_locd *went* from Chicago_locir via Pittsburg_locmr to Boston_locr}\\
+     \b. \dep{Kim_pssir *kept* the house_pssd}
+     \b. \dep{Kim_pssir *lost* the house_pssd}
 
 \subsection{Type III: Non-core Argument Roles}
 
 Some predicates have more than just the domain and range arguments. For such arguments, annotators should choose the binary relation that describes the relation between the scene and the argument best, and prefix it with \textsf{x} to distinguish it from a modifier. Particularly frequent non-core roles are \textsf{xcau}, \textsf{xsnd}, and \textsf{xrcp}.
 
-\ex. \dep{Sandy_xcau *brought* Kim_locd to Boston_locr}
-     \dep{Kim_xsnd *talked* about Sandy_msgd}\\
-     \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-     \dep{Kim_xrcp *searched* the woods_xloc for Sandy_msgd}
+\ex. \a. \dep{Sandy_xcau *brought* Kim_locd to Boston_locr}
+     \b. \dep{Kim_xsnd *talked* about Sandy_msgd}\\
+     \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
+     \b. \dep{Kim_xrcp *searched* the woods_xloc for Sandy_msgd}
 
 \subsection{How to Frame Scenes}
 
@@ -127,15 +127,15 @@ be treated the same as regular arguments for framing. For example,
 \emph{debone} denotes the removal of bones (denoted by a shadow argument) from
 a body, so prefer \textsf{whl} over \textsf{scn}.
 
-\ex. \dep{The cook_xcau *deboned* the fish_whlir}
-     \dep{Kim_locir *sneezed*}
+\ex. \a. \dep{The cook_xcau *deboned* the fish_whlir}
+     \b. \dep{Kim_locir *sneezed*}
 
 TBD: is this really a good idea? Where do you draw the line? Cherrypicking, babysitting? Difference between xcau and scnd.
 
 Prefer core roles over non-core roles. For example, if the subject is both the causer and the final possessor in a scene, choose \textsf{pssr} over \textsf{xcau}.
 
-\ex. \dep{They_pssr *plundered* Rome_pssir}
-     \dep{Kim_locir *undressed*}
+\ex. \a. \dep{They_pssr *plundered* Rome_pssir}
+     \b. \dep{Kim_locir *undressed*}
 
 When in doubt, prefer roles that works for multiple syntactic frames of the
 same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
@@ -151,7 +151,7 @@ an \textsf{xanc}). Because the latter works for other syntactic frames of
 For predicates that seem to fit two superframes equally well, annotate both. Likewise, if both a literal and a metaphorical meaning are accessible to you, annotate both.
 
 \ex.
-\begin{dependency}
+\a. \begin{dependency}
     \begin{deptext}
         Kim \& refused \& to \& eat \\
     \end{deptext}
@@ -160,7 +160,7 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
     \depedge[edge below,edge height=\baselineskip]{2}{1}{scnd:locr}
     \depedge[edge below,edge height=\baselineskip]{2}{4}{scnr}
 \end{dependency}
-\begin{dependency}
+\b. \begin{dependency}
     \begin{deptext}
         A \& hush \& passed \& over \& the \& group \\
     \end{deptext}
@@ -190,70 +190,70 @@ together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
 
 \subsubsection{Expression}
 
-\ex. \dep{Kim_xsnd *yelped*}
-     \dep{Kim_xsnd *said* : it 's fine_msgr}
-     \dep{Kim_xsnd *said* it was fine_msgr}
-     \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
-     \dep{Kim_xsnd *told* Sandy_xrcp a secret_msgr}
-     \dep{Kim_xsnd *talked* about Sandy_msgd}
-     \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
-     \dep{Kim_xsnd and Sandy *conversed*}
-     \dep{Kim_xsnd *conversed* with Sandy_xanc}
+\ex. \a. \dep{Kim_xsnd *yelped*}
+     \b. \dep{Kim_xsnd *said* : it 's fine_msgr}
+     \b. \dep{Kim_xsnd *said* it was fine_msgr}
+     \b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
+     \b. \dep{Kim_xsnd *told* Sandy_xrcp a secret_msgr}
+     \b. \dep{Kim_xsnd *talked* about Sandy_msgd}
+     \b. \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
+     \b. \dep{Kim_xsnd and Sandy *conversed*}
+     \b. \dep{Kim_xsnd *conversed* with Sandy_xanc}
 
 \subsubsection{Gesture}
 
-\ex. \dep{Kim_xsnd *curtseyed* to the Queen_xrcp}
-     \dep{Kim_xsnd *shook* their head_nuc no_msgr}
+\ex. \a. \dep{Kim_xsnd *curtseyed* to the Queen_xrcp}
+     \b. \dep{Kim_xsnd *shook* their head_nuc no_msgr}
 
 \subsubsection{Performance}
 
 Performing a work of art is framed as expression where the work of art is the
 \textsf{msgd}.
 
-\ex. \dep{Kim_xsnd *played* a little tune_msgd on their tuba_xmns}
-     \dep{They_xsnd *performed* the play_msgd}
-     \dep{Kim_xsnd *sang* a song_msgd}
+\ex. \a. \dep{Kim_xsnd *played* a little tune_msgd on their tuba_xmns}
+     \b. \dep{They_xsnd *performed* the play_msgd}
+     \b. \dep{Kim_xsnd *sang* a song_msgd}
 
 \subsubsection{Depiction}
 
-\ex. \dep{Kim_xsnd *drew* a heron_msgd}
+\ex. \a. \dep{Kim_xsnd *drew* a heron_msgd}
 
 TBD: Cf. Creation
 
 \subsubsection{Recording}
 
-\ex. \dep{Kim_xsnd *wrote* Sandy_xrcp a letter_msgr}
-     \dep{Kim_xsnd *wrote* the message_msgr onto a piece of paper_xloc with a pen_mns in big red letters_xdpc}
-     \dep{The concert_msgd was *recorded* on tape_xloc}
+\ex. \a. \dep{Kim_xsnd *wrote* Sandy_xrcp a letter_msgr}
+     \b. \dep{Kim_xsnd *wrote* the message_msgr onto a piece of paper_xloc with a pen_mns in big red letters_xdpc}
+     \b. \dep{The concert_msgd was *recorded* on tape_xloc}
 
 \subsubsection{Perception}
 
 Perception, including mental and volitional perception.
 
-\ex. \dep{Kim_xrcp *saw* a flower_msgd}
-     \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
-     \dep{Kim_xrcp *thinks* Sandy is a liar_msgr}
-     \dep{Kim_xrcp *thinks* Sandy_msgd a liar_msgr}
-     \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-     \dep{Kim_xrcp *wants* to swim_msgr}
-     \dep{Kim_xrcp *wants* Sandy_msgd to swim_msgr}
-     \dep{Kim_msgd *seems* happy_msgr}
-     \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
-     \dep{The Thought Police_xrcp *observed* Winston_msgd}
-     \dep{Kim_xrcp *studies* linguistics_msgd}
-     \dep{Sandy is a *professor* of linguistics_msgd}
-     \dep{Kim_xrcp *measured* the elasticity_msgd}
-     \dep{Kim_xrcp *deduced* the truth_msgr}
-     \dep{The jury_xrcp *found* Kim_msgd guilty_msgr}
+\ex. \a. \dep{Kim_xrcp *saw* a flower_msgd}
+     \b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
+     \b. \dep{Kim_xrcp *thinks* Sandy is a liar_msgr}
+     \b. \dep{Kim_xrcp *thinks* Sandy_msgd a liar_msgr}
+     \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
+     \b. \dep{Kim_xrcp *wants* to swim_msgr}
+     \b. \dep{Kim_xrcp *wants* Sandy_msgd to swim_msgr}
+     \b. \dep{Kim_msgd *seems* happy_msgr}
+     \b. \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
+     \b. \dep{The Thought Police_xrcp *observed* Winston_msgd}
+     \b. \dep{Kim_xrcp *studies* linguistics_msgd}
+     \b. \dep{Sandy is a *professor* of linguistics_msgd}
+     \b. \dep{Kim_xrcp *measured* the elasticity_msgd}
+     \b. \dep{Kim_xrcp *deduced* the truth_msgr}
+     \b. \dep{The jury_xrcp *found* Kim_msgd guilty_msgr}
 
 \subsubsection{Reaction}
 
 Predicates that evoke an underspecified scene in reaction to something are
 framed as perception, too.
 
-\ex. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
-     \dep{Kim_xrcp *responded* to my letter_msgd}
-     \dep{Kim_xrcp *managed* with dealing_msgd the cards}
+\ex. \a. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
+     \b. \dep{Kim_xrcp *responded* to my letter_msgd}
+     \b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
 
 \subsubsection{Additional Markables}
 
@@ -267,27 +267,27 @@ predicate, or a participant in a scene specified by the \textsf{scnr}.
 
 \subsubsection{States and Properties}
 
-\ex. \dep{Kim_scnd is *tall*}
-     \dep{Kim_scnd is a *person*}
-     \dep{The painting_scnd *improved*}
-     \dep{Kim_xcau *improved* the painting_scnd}
+\ex. \a. \dep{Kim_scnd is *tall*}
+     \b. \dep{Kim_scnd is a *person*}
+     \b. \dep{The painting_scnd *improved*}
+     \b. \dep{Kim_xcau *improved* the painting_scnd}
 
 \subsubsection{Activities}
 
 ``Activities'' are events with a single core participant that can be
 characterized as actively participating in the event.
 
-\ex. \dep{Kim_scnd *partied*}
-     \dep{Kim_scnd *partied* with Sandy_anc}
-     \dep{Kim_scnd *had* sex_nuc with Sandy_xanc}
+\ex. \a. \dep{Kim_scnd *partied*}
+     \b. \dep{Kim_scnd *partied* with Sandy_anc}
+     \b. \dep{Kim_scnd *had* sex_nuc with Sandy_xanc}
 
 \subsubsection{Experiences}
 
 ``Experiences'' ar events with a single core participant that can be
 characterized as undergoing the event.
 
-\ex. \dep{Kim_xcau *attacked* Sandy_scnd}
-     \dep{Kim_xcau *used* a pen_scnd to get_xprp the lid off}
+\ex. \a. \dep{Kim_xcau *attacked* Sandy_scnd}
+     \b. \dep{Kim_xcau *used* a pen_scnd to get_xprp the lid off}
 
 \subsubsection{Transformation and Creation}
 
@@ -295,22 +295,22 @@ characterized as undergoing the event.
 \textsf{scnr} denotes its new state. Creation is framed as transformation of
 some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
 
-\ex. \dep{The ice_scnd *turned* into water_scnr}
-     \dep{God_xcau *made* people_scnr out of clay_scnd}
-     \dep{A rock_scnr *formed*}
-     \dep{Kim_xcau *created* a work_scnr of art}
+\ex. \a. \dep{The ice_scnd *turned* into water_scnr}
+     \b. \dep{God_xcau *made* people_scnr out of clay_scnd}
+     \b. \dep{A rock_scnr *formed*}
+     \b. \dep{Kim_xcau *created* a work_scnr of art}
 
 \subsubsection{Reproduction}
 
-\ex. \dep{Kim_xcau *copied* the book_scnd}
-     \dep{Kim_xcau *translated* the book_scnd to German_scnr}
+\ex. \a. \dep{Kim_xcau *copied* the book_scnd}
+     \b. \dep{Kim_xcau *translated* the book_scnd to German_scnr}
 
 \subsubsection{Destruction}
 
-\ex. \dep{The vase_scnd *broke*}
-     \dep{Kim_xcau *broke* the vase_scnd}
-     \dep{Kim_xcau *killed* Sandy_scnd}
-     \dep{Sandy_scnd *died*}
+\ex. \a. \dep{The vase_scnd *broke*}
+     \b. \dep{Kim_xcau *broke* the vase_scnd}
+     \b. \dep{Kim_xcau *killed* Sandy_scnd}
+     \b. \dep{Sandy_scnd *died*}
 
 %\subsubsection{Auxilary Verbs and Copulas}
 %
@@ -326,31 +326,31 @@ some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
 
 \subsubsection{Light Verbs}
 
-\ex. \dep{Kim_scnd *took* a bath_scnr}
+\ex. \a. \dep{Kim_scnd *took* a bath_scnr}
 
 \subsubsection{Phase}
 
-\ex. \dep{The wound_scnd *began* to heal_scnr}
-     \dep{A commotion_scnr *started*}
-     \dep{Kim_xcau *started* a commotion_scnr}
-     \dep{The concert_scnir *ended*}
-     \dep{The concert_scnir *continued*}
-     \dep{Kim_xcau *interrupted* the session_scnir}
-     \dep{The storm_scnir *ebbed*}
-     \dep{Kim_xcau *calmed* the commotion_scnir}
+\ex. \a. \dep{The wound_scnd *began* to heal_scnr}
+     \b. \dep{A commotion_scnr *started*}
+     \b. \dep{Kim_xcau *started* a commotion_scnr}
+     \b. \dep{The concert_scnir *ended*}
+     \b. \dep{The concert_scnir *continued*}
+     \b. \dep{Kim_xcau *interrupted* the session_scnir}
+     \b. \dep{The storm_scnir *ebbed*}
+     \b. \dep{Kim_xcau *calmed* the commotion_scnir}
 
 \subsubsection{Causation}
 
-\ex. \dep{Kim_xcau *let* Sandy_scnd join_scnr}
-     \dep{Kim_xcau *made* Sandy_scnd join_scnr}
-     \dep{Kim_xcau *allowed* Sandy_scnd to join_scnr}
+\ex. \a. \dep{Kim_xcau *let* Sandy_scnd join_scnr}
+     \b. \dep{Kim_xcau *made* Sandy_scnd join_scnr}
+     \b. \dep{Kim_xcau *allowed* Sandy_scnd to join_scnr}
 
 \subsubsection{Prevention}
 
-\ex. \dep{Kim_xcau *kept* Sandy_scnd from joining_scnr}
-     \dep{Swift action_xcau *prevented* an outbreak_scnr}
-     \dep{Kim_scnd *refrained* from going_scnr}
-     \dep{Kim_xcau *saved* Sandy_scnd from the dragon_scnr}
+\ex. \a. \dep{Kim_xcau *kept* Sandy_scnd from joining_scnr}
+     \b. \dep{Swift action_xcau *prevented* an outbreak_scnr}
+     \b. \dep{Kim_scnd *refrained* from going_scnr}
+     \b. \dep{Kim_xcau *saved* Sandy_scnd from the dragon_scnr}
 
 In the last example, understand \emph{dragon} metonymically as a scene in which
 the dragon causes harm to Sandy.
@@ -359,7 +359,7 @@ the dragon causes harm to Sandy.
 
 For relative clauses, the \textsf{scn} label is used as a modifier relation:
 
-\ex. \dep{a *package* that was too heavy_scn}
+\ex. \a. \dep{a *package* that was too heavy_scn}
 
 \subsubsection{Additional Markables}
 
@@ -370,33 +370,32 @@ TBD
 
 The domain is an individual that is in some socially constructed relationship with the range. The range might e.g. be a relative, a friend, an organization, a responsibility, or a judicial sentence.
 
-\subsubsection{Static Examples}
+\subsubsection{State Examples}
 
-\ex. \smaller
-     \dep{Kim_socr is my_socd *cousin*}
-     \dep{Kim_socd and Sandy are *friends*}
-     \dep{Kim_socd is *friends* with Sandy_socr}
-     \dep{Kim_socd *works* at Google_socr}
-     \dep{Kim_socd *works* for Sandy_socr}
-     \dep{Kim_socd *emcees*}
-     \dep{Kim_socd is *hosting* the party_socr}
-     \dep{Kim_socd is under house *arrest*}
+\ex. \a. \dep{Kim_socr is my_socd *cousin*}
+     \b. \dep{Kim_socd and Sandy are *friends*}
+     \b. \dep{Kim_socd is *friends* with Sandy_socr}
+     \b. \dep{Kim_socd *works* at Google_socr}
+     \b. \dep{Kim_socd *works* for Sandy_socr}
+     \b. \dep{Kim_socd *emcees*}
+     \b. \dep{Kim_socd is *hosting* the party_socr}
+     \b. \dep{Kim_socd is under house *arrest*}
 
-\subsubsection{Dynamic Examples}
+\subsubsection{Event Examples}
 
-\ex. \dep{Kim_socd *married* Sandy_socr}
-     \dep{The official_xcau *married* Kim_socd to Sandy_socr}
-     \dep{The official_xcau *married* Kim_socd and Sandy}
-     \dep{Kim_socd *divorced* Sandy_socir}
-     \dep{Kim_socd *befriended* Sandy_socr}
-     \dep{Kim_socd *took* the job_socr}
-     \dep{Kim_socd *joined* a Google_socr}
-     \dep{Kim_socd *joined* a union_socr}
-     \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
-     \dep{Kim_socd *left* Google_socir}
-     \dep{Kim_socd *assumed* office_socr}
-     \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
-     \dep{Kim_socd was *pardoned*}
+\ex. \a. \dep{Kim_socd *married* Sandy_socr}
+     \b. \dep{The official_xcau *married* Kim_socd to Sandy_socr}
+     \b. \dep{The official_xcau *married* Kim_socd and Sandy}
+     \b. \dep{Kim_socd *divorced* Sandy_socir}
+     \b. \dep{Kim_socd *befriended* Sandy_socr}
+     \b. \dep{Kim_socd *took* the job_socr}
+     \b. \dep{Kim_socd *joined* a Google_socr}
+     \b. \dep{Kim_socd *joined* a union_socr}
+     \b. \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
+     \b. \dep{Kim_socd *left* Google_socir}
+     \b. \dep{Kim_socd *assumed* office_socr}
+     \b. \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
+     \b. \dep{Kim_socd was *pardoned*}
 
 \section{Peripheral Relations}
 
