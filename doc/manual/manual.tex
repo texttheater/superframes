@@ -15,7 +15,10 @@
 \usepackage{linguex}
 \usepackage{natbib}
 \usepackage{relsize}
+\usepackage{tocbibind}
 \usepackage{tikz-dependency}
+
+\hyphenation{Frame-Net}
 
 \begin{document}
 
@@ -23,19 +26,19 @@
 
 \tableofcontents
 
+\clearpage
 \section{Introduction}
 
 Superframes is an annotation scheme for semantic roles. It has the following goals:
 
 \begin{enumerate}
-    \item Annotation should be lexicon-free. With fine-grained schemes like FrameNet or PropBank, annotators have to constantly look up which frames exist and which roles are defined for them. Lexicons are also perennially incomplete, and the process of extending them is complicated. Superframes defines only a small number of coarse-grained frames with the aim of making annotation quick and easy across all languages and domains.
-    \item Choosing frames and roles should be obvious. In VerbNet-like semantic role inventories, roles are semantically defined only vaguely and ambiguously. For example, the subject of the English verb \emph{watch} can be described as an Agent as well as an Experiencer. Prior approaches to resolving this ambiguity involve the creation of a lexicon (see above) or giving up on the idea of categorial role labels altogether. The Superframes approach is to proceed in two steps: first pick a superframe for each predicate, then the core roles are clearly defined. Additional argument roles are handled via mixin roles (see below).
-    \item Comprehensive annotation: Superframes is a comprehensive and unified inventory of coarse semantic roles applicable to all types of contentful morphosyntactic dependencies, including argument roles, modifier roles, discourse relations, compound relations, etc. It is designed to be annotated on top of existing morphosyntactic dependency graphs (e.g., UD). This has the advantage that the markables are pre-identified and that an explicit annotation of the morphosyntax-semantics interface emerges.
-    \item Ambiguity-tolerant: not all ambiguities in choosing a superframe can be resolved. Superframes encourages annotators to annotate multiple possibilities, in particular in the case of metaphorical language.
-    \item Survive not only alternation, but also translation
-    \item Unified relations between stative verbs and e.g. prepositions
+    \item \textbf{Lexicon-free annotation:} With fine-grained schemes like FrameNet \citep{baker-etal-1998-berkeley-framenet} or PropBank \citep{palmer-etal-2005-proposition}, annotators have to constantly look up which frames exist and which roles are defined for them. Lexicons are also perennially incomplete, and the process of extending them is complicated. Superframes defines only a small number of coarse-grained frames with the aim of making annotation quick and easy across all languages and domains.
+    \item \textbf{Obvious role choices through framing:} In semantic role inventories in the VerbNet tradition \citep{kipper-schuler-2005-verbnet}, roles are semantically defined only vaguely and ambiguously. For example, the subject of the English verb \emph{watch} can be described as an Agent as well as an Experiencer. Prior approaches to resolving this ambiguity involve the creation of a lexicon (see above) or giving up on the idea of categorial role labels altogether \citep{white-etal-2016-universal}. The Superframes approach is to proceed in two steps: first pick the most fitting superframe for each predicate, then the core roles are clearly defined. Additional argument roles are handled via mixin roles (see below).
+    \item \textbf{Comprehensive annotation with a unified vocabulary}: Superframes is a comprehensive and unified inventory of coarse semantic roles applicable to all types of morphosyntactic dependencies between content words, including modifier relations, compound relations, state argument relations, process argument relations, event argument relations, discourse relations, etc. It is designed to be annotated on top of existing morphosyntactic dependency graphs \citep[e.g., Universal Dependencies; ][]{de-marneffe-etal-2021-universal}. This has the advantage that the markables are pre-identified and that an explicit annotation of the morphosyntax-semantics interface results.
+    \item \textbf{Ambiguity tolerance:} not all ambiguities in choosing a superframe can be resolved. Superframes embraces data perspectivism \citep{basile-2020-end} and encourages annotators to annotate multiple possibilities, in particular in the case of metaphorical language.
 \end{enumerate}
 
+\clearpage
 \section{Types of Roles}
 
 \begin{table}
@@ -94,12 +97,12 @@ Modifier dependencies are annotated with a plain binary relation or its inverse 
 
 \subsection{Type II: Core Argument Roles}
 
-Predicates such as verbs (but also adjectives, event/state nouns, relational nouns, etc.) evoke their own superframe. The core arguments are those that correspond to the domain and the range, respectively. We denote them by the suffixes \textsf{d} and \textsf{r}, respectively.
+Predicates such as verbs (but also adjectives, state/process/event nouns, relational nouns, etc.) evoke their own superframe. The core arguments are those that correspond to the domain and the range, respectively. We denote them by the suffixes \textsf{d} and \textsf{r}, respectively.
 
 \ex. \a. \dep{Kim_locd *went* to Boston_locr}
      \b. \dep{Kim_pssr *owns* a house_pssd}
 
-The first example illustrates that Superframes abstract away from aktionsart: it does not matter for the choice of superframe or roles whether a state (Kim is in Boston) or an event bringing that state about (Kim went to Boston) is described. Borrowing terminology from UCCA CITE, we collectively call states and events ``scenes''.
+The first example illustrates that Superframes abstract away from aktionsart: it does not matter for the choice of superframe or roles whether a state (Kim is in Boston), an event bringing that state about (Kim went to Boston), or a process (Kim is walking) is described. Borrowing terminology from UCCA \citep{abend-rappoport-2013-universal}, we collectively call states, processes, and events ``scenes''.
 
 \subsection{Type IIa: Initial and Intermediate Range Roles}
 
@@ -130,7 +133,7 @@ a body, so prefer \textsf{whl} over \textsf{scn}.
 \ex. \a. \dep{The cook_xcau *deboned* the fish_whlir}
      \b. \dep{Kim_locir *sneezed*}
 
-TBD: is this really a good idea? Where do you draw the line? Cherrypicking, babysitting? Difference between xcau and scnd.
+%TBD: is this really a good idea? Where do you draw the line? Cherrypicking, babysitting? Difference between xcau and scnd.
 
 Prefer core roles over non-core roles. For example, if the subject is both the causer and the final possessor in a scene, choose \textsf{pssr} over \textsf{xcau}.
 
@@ -170,8 +173,9 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
     \depedge[edge below,edge height=\baselineskip]{3}{6}{scnd:xsnd}
 \end{dependency}
 
-TBD: defend scn/msg; deduce msg/suc
+%TBD: defend scn/msg; deduce msg/suc
 
+\clearpage
 \section{Core Relations}
 
 % Template:
@@ -186,20 +190,20 @@ TBD: defend scn/msg; deduce msg/suc
 
 Describes the location (or change of location, i.e., motion) of the \textsf{locd}.
 
-\subsubsection{Location States}
+\subsubsection{Modifier Examples}
+
+\ex. \a. \dep{The *hat* in the box_loc}
+
+\subsubsection{Static Argument Examples}
 
 \ex. \a. \dep{Kim_locd *lives* in Boston_locr}
-         \dep{The *hat* in the box_loc}
 
-\subsubsection{Motion Events}
+\subsubsection{Dynamic Argument Examples}
 
 \ex. \a. \dep{Kim_locd *went* from the living room_locir through the door_locmr into the kitchen_locr}
      \b. \dep{Kim_xcau *placed* the hat_locd on the table_locr}
-
-\subsubsection{Motion Activities}
-
-\ex. \a. \dep{Kim_locd is *running*}
-         \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xanc}
+     \b. \dep{Kim_locd is *running*}
+     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xanc}
 
 \subsubsection{Wrapping and Wearing}
 
@@ -207,7 +211,7 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
      \b. \dep{Kim_locr is *wearing* glasses_locd}
      \b. \dep{The shroud_locd *wraps* the scepter_locr}
      \b. \dep{Kim_locr *put* on a sweater_locd}
-     \b. \dep{Kim_locir *took* off their glasses}
+     \b. \dep{Kim_locir *took* off their glasses_locd}
 
 \subsubsection{Ingestion and Excretion}
 
@@ -215,6 +219,7 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
      \b. \dep{Kim_locir *threw* up the apple_locd}
      \b. \dep{Kim_locir *sneezed*}
 
+\clearpage
 \subsection{Message (\textsf{msg})}
 \label{sec:msg}
 
@@ -251,8 +256,8 @@ Performing a work of art is framed as expression where the work of art is the
 \subsubsection{Depiction}
 
 \ex. \a. \dep{Kim_xsnd *drew* a heron_msgd}
-
-TBD: Cf. Creation
+     \b. \dep{Kim_xcau *drew* a picture_scnd}
+     \b. \dep{a *picture* of the heron_msgd}
 
 \subsubsection{Recording}
 
@@ -293,6 +298,7 @@ framed as perception, too.
 
 TBD
 
+\clearpage
 \subsection{Scene (\textsf{scn})}
 \label{sec:scn}
 
@@ -399,6 +405,7 @@ For relative clauses, the \textsf{scn} label is used as a modifier relation:
 
 TBD
 
+\clearpage
 \subsection{Social (\textsf{soc})}
 \label{sec:soc}
 
@@ -431,14 +438,17 @@ The domain is an individual that is in some socially constructed relationship wi
      \b. \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
      \b. \dep{Kim_socd was *pardoned*}
 
+\clearpage
 \section{Peripheral Relations}
 
+\clearpage
 \section{Constructional Relations}
 
-\subsection{Nucleus (\textsc{nuc})}
+\subsection{Nucleus (\textsf{nuc})}
 
 TBD criteria: inner modification (heave a deep sigh, give a loud shout), possessive participants (lose one's cool, pull so's leg), cf. Croft; outer modification (have sex with)
 
+\clearpage
 \section{Difficult Cases}
 
 I need you.
@@ -453,7 +463,8 @@ Deserve
 
 Socially constructed properties like names, prices: name the ship, it costs 1M, our story on that is not yet clear
 
+\clearpage
 \bibliographystyle{apalike}
-\bibliography{anthology}
+\bibliography{anthology,custom}
 
 \end{document}
