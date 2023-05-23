@@ -49,7 +49,6 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         \midrule
         \multicolumn{4}{l}{\emph{entity-entity}}\\
         cmp & comparison & compared & reference & \ref{sec:cmp} \\
-        idn & identifier & entity & identifier & \ref{sec:idn} \\
         loc & location & located & location & \ref{sec:loc} \\
         msg & message & topic & comment & \ref{sec:msg} \\
         pss & possession/control & possessee & possessor & \ref{sec:pss} \\
@@ -177,7 +176,11 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 %TBD: defend scn/msg; deduce msg/suc
 
 \clearpage
-\section{Core Relations}
+\section{Entity-entity Relations}
+
+Entity-entity relations are the most fundamental ones. They denote states that
+can hold between two entities, such as locatum-location, possession-possessor,
+or part-whole.
 
 % Template:
 % "definition"
@@ -186,6 +189,7 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 % dynamic argument examples
 % subframes
 
+\clearpage
 \subsection{Comparison (\textsf{cmp})}
 \label{sec:cmp}
 
@@ -317,6 +321,7 @@ framed as perception, too.
 
 \ex. \a. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
      \b. \dep{Kim_xrcp *responded* to my letter_msgd}
+     \b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
      \b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
 
 \subsubsection{Additional Markables}
@@ -344,6 +349,24 @@ TBD
      \b. \dep{Kim_pssir *lost* the house_pssd}
      \b. \dep{Caesar_pssr *conquered* Gaul_pssd}
      \b. \dep{Caesar_pssr 's *conquest* of Gaul_pssd}
+
+\clearpage
+\subsection{Quantity (\textsf{qnt})}
+\label{sec:qnt}
+
+\textsf{scnr} is the quantity, degree, or extent of \textsf{scnd}.
+
+\subsubsection{Modifier Examples}
+
+\ex.
+\a. \dep{three_qnt *burgers*}
+\b. \dep{three_qnt *liters* of coke_qnt-of}
+\b. \dep{We_xsnd *discourage* this_msgd emphatically_qnt}
+
+\subsubsection{Argument Examples}
+
+\ex.
+\a. \dep{The birds_qntd *number* in the thousands_qntr}
 
 \clearpage
 \subsection{Scene (\textsf{scn})}
@@ -448,6 +471,17 @@ For relative clauses, the \textsf{scn} label is used as a modifier relation:
 
 \ex. \a. \dep{a *package* that was too heavy_scn}
 
+\subsubsection{Assignment}
+
+The scene relation is also used for the assignment of names, identifiers,
+tasks, or abstract assignment of other entities to entities.
+
+\ex.
+\a. \dep{The baby_scnd was *named* Kim_scnr}
+\b. \dep{*Hangar* \#3_scn is empty}
+\b. \dep{The teacher_xcau *assigned* each student_scnd a task_scnr}
+\b. \dep{Is that Peter_scn-of 's *chair* ?}
+
 \subsubsection{Additional Markables}
 
 TBD
@@ -468,6 +502,7 @@ The domain is an individual that is in some socially constructed relationship wi
      \b. \dep{Kim_socd *emcees*}
      \b. \dep{Kim_socd is *hosting* the party_socr}
      \b. \dep{Kim_socd is under house *arrest*}
+     \b. \dep{Kim_socd 's *sentence* was suspended}
 
 \subsubsection{Event Examples}
 
@@ -486,13 +521,189 @@ The domain is an individual that is in some socially constructed relationship wi
      \b. \dep{Kim_socd was *pardoned*}
 
 \clearpage
-\section{Peripheral Relations}
+\subsection{Succession \textsf{suc}}
+\label{sec:suc}
+
+The \textsf{sucd} follows the \textsf{locr}, e.g., temporally, logically, by
+rank, as a heir, etc. Also used for ordinal numbers.
+
+\subsubsection{Modifier Examples}
+
+\ex.
+\a. \dep{the third_sucd-of *man*}
+
+\subsubsection{Argument Examples}
+
+\ex.
+\a. \dep{Form_sucd *follows* function_sucr}
+\b. \dep{Cook_sucd is Jobs_sucr ' *successor*}
+
+\clearpage
+\subsection{Part-whole (\textsf{whl})}
+\label{sec:whl}
+
+The \textsf{whld} is part of the \textsf{whlr}.
+
+\subsubsection{Modifier Examples}
+
+\ex.
+\a. \dep{Kim_whl 's *leg*}
+\b. \dep{a *man* with a mustache_whl-of}
+\b. \dep{the *beginning* of the party_whl}
+
+\subsubsection{Argument Examples}
+
+\clearpage
+\section{Scene-entity Relations}
+
+In scene-entity relations, the domain is always a scene, and the range is a
+non-core participant, such as a causer, sender, receiver, or beneficiary.
+
+\subsection{Asset (\textsf{ast})}
+\label{sec:ast}
+
+Entity given or offered in an exchange or wager.
+
+\ex.
+\a. \dep{Kim_pssr *bought* the house_pssd for a million dollars_xast}
+\b. \dep{Kim_xsnd *offered* Sandy_xrcp a million dollars_msgr for the house_xast}
+\b. \dep{I_xsnd *bet* you_xrcp 30 bucks_xast he will win_msgr}
+
+TODO: can this be merged into qnt?
+
+\clearpage
+\subsection{Beneficiary (\textsf{ben})}
+\label{sec:ben}
+
+Beneficiary or maleficiary of an event.
+
+\ex.
+\a. \dep{Die Piroggen_scnd waren Maria_xben zu dunkel_scnr *geraten*}
+\b. \dep{Kim_xcau is *doing* it_scnr for Sandy_ben}
+
+TODO: can this be merged into rcp?
+
+\clearpage
+\subsection{Causer (\textsf{cau})}
+\label{sec:cau}
+
+Entity causing a scene.
+
+\ex.
+\a. \dep{Kim_xcau *broke* the glass_scnd}
+\b. \dep{The knife_xcau *cut* the bread_scnd}
+\b. \dep{Kim_xcau *cut* the bread_scnd with a knife_mns}
+\b. \dep{The war_xcau *caused* a famine_scnr}
+\b. \dep{There was a *famine* because of the war_cau}
+\b. \dep{Der Wasserdruck_scnd *stieg* , wodurch der Brunnen überfloss_cau-of}
+\b. \dep{Kim_locd *went* to town_locr because they wanted_cau to buy food}
+
+\clearpage
+\subsection{Concession (\textsf{cnc})}
+\label{sec:cnc}
+
+Entity despite which a scene unfolds.
+
+\ex.
+\a. \dep{Kim_locd *went* out despite the rain_cnc}
+\b. \dep{Kim_locd *came* although Sandy had told_cnc them not to}
+\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
+
+\clearpage
+\subsection{Condition (\textsf{cnd})}
+\label{sec:cnd}
+
+A condition given for a scene.
+
+\ex.
+\a. \dep{I_socd will *join* the club_socr if they ask_cnd me}
+\b. \dep{The start date_cndd is *contingent* on their approval_cndr}
+
+\clearpage
+\subsection{Manner (\textsf{mnr})}
+\label{sec:mnr}
+
+Manner in which a scene unfolds.
+
+\ex.
+\a. \dep{Kim_xsnd *sang* softly_mnr}
+\b. \dep{Kim_xcau *placed* the note_locd surreptitiously_mnr on the counter_locr}
+
+\clearpage
+\subsection{Means (\textsf{mns})}
+\label{sec:mns}
+
+Intermediary between the causer and a scene, instrument or second scene through
+which the causer causes the first scene.
+
+\ex.
+\a. \dep{Kim_xcau *cut* the cake_scnd with a knife_mns}
+\b. \dep{Kim_xcau *painted* the room_locr by exploding_mns a paint bomb}
+
+\clearpage
+\subsection{Purpose (\textsf{prp})}
+\label{sec:prp}
+
+Intended consequence.
+
+\ex.
+\a. \dep{Kim_locd *went* to town_locr to buy_prp food}
+
+TODO: additional markables
+
+\clearpage
+\subsection{Recipient (\textsf{rcp})}
+\label{sec:rcp}
+
+Entity that perceives scene, or that a message is addressed to.
+
+\ex.
+\a. \dep{Sandy_xrcp *heard* about the virus_msgd}
+\b. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
+\b. \dep{Kim_xrcp *saw* a flower_msgd}
+\b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
+\b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
+\b. \dep{The virus_msgd *seems* dangerous_msgr to Kim_xrcp}
+\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
+\b. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
+\b. \dep{Kim_xrcp *responded* to my letter_msgd}
+\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
+\b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
+
+\clearpage
+\subsection{Sender (\textsf{snd})}
+\label{sec:snd}
+
+Entity that sends a signal that can be perceived by a recipient.
+
+\ex.
+\a. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
+\b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
+\b. \dep{Kim_xsnd *hummed* a little melody_msgd, but nobody heard_cnc-of it}
+\b. \dep{Kim_xsnd *exploded* at Sandy_xrcp}
+\b. \dep{Kim_xsnd *bowed* to Sandy_xrcp}
+
+\clearpage
+\subsection{Temporal (\textsf{tmp})}
+\label{sec:tmp}
+
+When, how often, or for how long an event takes place.
+
+\ex.
+\a. \dep{Kim_locd *swims* on Monday_tmp}
+\b. \dep{Kim_locir *sneezed* twice_tmp}
+\b. \dep{Kim_locd *swam* for an hour_tmp}
+\b. \dep{Kim_xsnd *says* hello_msgr whenever I meet_tmp them}
 
 \clearpage
 \section{Constructional Relations}
 
+Constructional relations do not correspond to superframes, but mark various
+types of mismatches between syntactic and semantic predicate-argument
+structure.
+
 \subsection{Ancillary (\textsf{anc})}
-label{sec:anc}
+\label{sec:anc}
 
 Used for arguments and adjuncts that participate in a scene together with
 another argument, usually the subject.
@@ -526,15 +737,17 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 \a. \dep{Kim_xsnd *gave* a lecture_cpd}
 \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xanc}
 
-\subsubsection{Causative Light Verbs}
-
-\ex.
-\a. \dep{That_msgd *gives* me_xrcp a headache_cpd}
+TODO: causative light verbs
 
 \subsubsection{Verbal Idioms}
 
 \ex.
 \a. \dep{Kim_xrcp *went* bananas_cpd}
+\b. \dep{It_cpd is *raining*}
+\b. \dep{There_cpd was a *famine*}
+
+TODO: weather pronouns and expletive \emph{there} should maybe have their own
+subsubsection.
 
 \subsubsection{Inherently Reflexive Verbs}
 
@@ -543,6 +756,58 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 
 % TBD criteria: inner modification (heave a deep sigh, give a loud shout), possessive participants (lose one's cool, pull so's leg), cf. Croft; outer modification (have sex with)
 % outer arguments
+
+\clearpage
+\subsection{Discourse Marker (\textsf{dim})}
+\label{sec:dim}
+
+Used for adverbials etc. that mark a clause for its relation to preceding/following discourse, speaker attitude, etc.
+
+\ex.
+\a. \dep{However_dim , nothing_scnr *happened*}
+\b. \dep{Even_dim *Kim* didn't see it}
+
+\clearpage
+\subsection{Depictive (\textsf{dpc})}
+\label{sec:dpc}
+
+Used for secondary predicates that describe the state of one of the participants during the scene.
+
+\ex.
+\a. \dep{Kim_scnd *slept* naked_dpc}
+\b. \dep{Pythons_locr *swallow* their prey_locd whole_dpc}
+\b. \dep{Man_locd durfte das Ministerium_locr nur_dim in Begleitung_dpc *betreten*}
+
+TODO: additional markables
+
+\clearpage
+\subsection{Expletive (\textsf{exp})}
+\label{sec:exp}
+
+Used for expletive pronouns and pronominal adverbs that fill in for a
+dislocated clause. Not used for weather pronouns and expletive \emph{there},
+which are instead treated as parts of complex predicates
+(Section~\ref{sec:cpd}).
+
+\ex.
+\a. \dep{Kim_xrcp *hates* it_exp when people yell_msgd}
+\b. \dep{Wie_mnr *kommst* du_xrcp darauf_exp , ich hätte_msgr etwas damit zu tun?}
+
+TODO: additional markables
+
+\clearpage
+\subsection{Resultative (\textsf{rsd}, \textsf{rsr})}
+\label{sec:rsd}\label{sec:rsr}
+
+Secondary predicates that denote the end state of a participant are marked
+\textsf{rsr}. If that participant is not assigned a role by the primary
+predicate, use \textsf{rsd} instead.
+
+\ex.
+\a. \dep{Kim_xcau *hammered* the metal_scnd flat_rsr}
+\b. \dep{You_xsnd are *talking* me_rsd silly_rsr}
+
+TODO: additional markables
 
 \clearpage
 \section{Difficult Cases}
