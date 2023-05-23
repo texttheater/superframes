@@ -43,47 +43,47 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
 \section{Types of Roles}
 
 \begin{table}
-    \begin{tabular}{llll}
+    \begin{tabular}{lllll}
         \toprule
-        \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} \\
+        \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} & \textbf{sec.} \\
         \midrule
-        \multicolumn{4}{l}{\emph{entity-entity}} \\
-        cmp & comparison & compared & reference \\
-        idn & identifier & entity & identifier \\
-        loc & location & located & location \\
-        msg & message & topic & comment \\
-        pss & possession/control & possessee & possessor \\
-        qnt & quantity & of what & how much \\
-        scn & scene & participant & scene \\
-        soc & social & somebody & relative/org/task... \\
-        suc & succession & follows & predecessor/base/background \\
-        whl & part-whole & part & whole \\
+        \multicolumn{4}{l}{\emph{entity-entity}}\\
+        cmp & comparison & compared & reference & \ref{sec:cmp} \\
+        idn & identifier & entity & identifier & \ref{sec:idn} \\
+        loc & location & located & location & \ref{sec:loc} \\
+        msg & message & topic & comment & \ref{sec:msg} \\
+        pss & possession/control & possessee & possessor & \ref{sec:pss} \\
+        qnt & quantity & of what & how much & \ref{sec:qnt} \\
+        scn & scene & participant & scene & \ref{sec:scn} \\
+        soc & social & somebody & relative/org/task... & \ref{sec:soc} \\
+        suc & succession & follows & background & \ref{sec:suc} \\
+        whl & part-whole & part & whole & \ref{sec:whl} \\
         \midrule
         \multicolumn{4}{l}{\emph{scene-entity}} \\
-        ast & asset & scene & asset \\
-        ben & beneficiary & scene & beneficiary \\
-        cau & causer & scene & cause(r) \\
-        cnc & concession & scene & despite what \\
-        cnd & condition & scene & condition \\
-        mnr & manner & scene & manner \\
-        mns & means & scene & means \\
-        prp & purpose & scene & purpose \\
-        rcp & recipient & scene & recipient \\
-        snd & sender & scene & sender \\
-        tmp & temporal & scene & time/frequency/... \\
+        ast & asset & scene & asset & \ref{sec:ast} \\
+        ben & beneficiary & scene & beneficiary & \ref{sec:ben} \\
+        cau & causer & scene & cause(r) & \ref{sec:cau} \\
+        cnc & concession & scene & despite what & \ref{sec:cnc} \\
+        cnd & condition & scene & condition & \ref{sec:cnd} \\
+        mnr & manner & scene & manner & \ref{sec:mnr} \\
+        mns & means & scene & means & \ref{sec:mns} \\
+        prp & purpose & scene & purpose & \ref{sec:prp} \\
+        rcp & recipient & scene & recipient & \ref{sec:rcp} \\
+        snd & sender & scene & sender & \ref{sec:snd} \\
+        tmp & temporal & scene & time/frequency/... & \ref{sec:tmp} \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional}} \\
-        anc & ancillary & predicate & ancillary entity \\
-        att & attribute & predicate & attribute \\
-        cpd & complex predicate & predicate & same predicate \\
-        dim & discourse marker & token & discourse marker \\
-        dpc & depictive & predicate & secondary predicate\\
-        exp & expletive & predicate & expletive \\
-        rsd & resultative & predicate & affected entity \\
-        rsr & resultative & predicate & result \\ 
+        anc & ancillary & predicate & ancillary entity & \ref{sec:anc} \\
+        att & attribute & predicate & attribute & \ref{sec:att} \\
+        cpd & complex predicate & predicate & same predicate & \ref{sec:cpd} \\
+        dim & discourse marker & token & discourse marker & \ref{sec:dim} \\
+        dpc & depictive & predicate & secondary predicate & \ref{sec:dpc}\\
+        exp & expletive & predicate & expletive & \ref{sec:exp} \\
+        rsd & resultative & predicate & affected entity & \ref{sec:rsd} \\
+        rsr & resultative & predicate & result & \ref{sec:rsr} \\
         \bottomrule
     \end{tabular}
-    \caption{The inventory of superframes}
+    \caption{The inventory of superframes, with links to the manual sections in which they are described.}
     \label{tab:inventory}
 \end{table}
 
@@ -187,6 +187,7 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
 % subframes
 
 \subsection{Comparison (\textsf{cmp})}
+\label{sec:cmp}
 
 \subsubsection{Modifier Examples}
 
@@ -491,6 +492,7 @@ The domain is an individual that is in some socially constructed relationship wi
 \section{Constructional Relations}
 
 \subsection{Ancillary (\textsf{anc})}
+label{sec:anc}
 
 Used for arguments and adjuncts that participate in a scene together with
 another argument, usually the subject.
@@ -501,6 +503,7 @@ another argument, usually the subject.
 
 \clearpage
 \subsection{Complex Predicate (\textsf{cpd})}
+\label{sec:cpd}
 
 If a predicate together with one or more of its syntactic arguments forms a
 complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
