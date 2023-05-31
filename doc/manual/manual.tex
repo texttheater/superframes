@@ -49,7 +49,6 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} & \textbf{sec.} \\
         \midrule
         \multicolumn{4}{l}{\emph{entity-entity}}\\
-        acc & accompaniment & accompanied & accompanier & \ref{sec:acc} \\
         cmp & comparison & compared & reference & \ref{sec:cmp} \\
         loc & location & located & location & \ref{sec:loc} \\
         msg & message & topic & comment & \ref{sec:msg} \\
@@ -75,6 +74,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         tmp & temporal & scene & time/frequency/... & \ref{sec:tmp} \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional}} \\
+        anc & ancillary & predicate & ancillary & \ref{sec:anc} \\
         att & attribute & predicate & attribute & \ref{sec:att} \\
         cpd & complex predicate & predicate & same predicate & \ref{sec:cpd} \\
         dim & discourse marker & token & discourse marker & \ref{sec:dim} \\
@@ -142,14 +142,27 @@ Prefer core roles over non-core roles. For example, if the subject is both the c
 \ex. \a. \dep{They_pssr *plundered* Rome_pssir}
      \b. \dep{Kim_locir *undressed*}
 
+For control verbs, choose a role for the controlled argument that works
+regardless of the predicate of the open complement.
+
+\ex.
+\a. \dep{Kim_xrcp *wants* to swim_msgr}
+\b. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
+\b. \dep{Kim_xcau *used* binoculars_mnsr to watch_msnd Sandy}
+\b. \dep{Kim_xcau *reacted* to the news_caud with sadness_caur}
+\b. \label{ex:help-ternary} \dep{Kim_xcau *helped* Sandy_scnd clean_scnr the dishes}
+
 When in doubt, prefer roles that works for multiple syntactic frames of the
 same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
 framed as caused motion (with an \textsf{xcau}) or as accompanied motion (with
-an \textsf{xacc}). Because the latter works for other syntactic frames of
-\emph{chase} as well, as in \ref{ex:chase-accompanied}, prefer it.
+an \textsf{xanc}). Because the latter works for other syntactic frames of
+\emph{chase} as well, as in \ref{ex:chase-accompanied}, prefer it. Likewise,
+\ref{ex:help-binary} remains consistent with \ref{ex:help-binary}.
 
-\ex. \a. \label{ex:chase-caused} \dep{Kim_xacc *chased* Sandy_locd around the block_locmr}
-     \b. \label{ex:chase-accompanied} \dep{Kim_xacc *chased* after Sandy_locd}
+\ex.
+\a. \label{ex:chase-caused} \dep{Kim_xanc *chased* Sandy_locd around the block_locmr}
+\b. \label{ex:chase-accompanied} \dep{Kim_xanc *chased* after Sandy_locd}
+\b. \label{ex:help-binary} \dep{Kim_xcau *helped* Sandy_scnd}
 
 \subsection{Dual Framing}
 
@@ -191,17 +204,6 @@ or part-whole.
 % dynamic argument examples
 % subframes
 
-\subsection{Accompaniment (\textsf{acc})}
-\label{sec:acc}
-
-\ex.
-\a. \dep{*chicken* with rice_acc}
-\b. \dep{The chicken_accd *comes* with rice_accr}
-\b. \dep{Kim_locd *danced* with Sandy_xacc}
-\b. \dep{Kim_locd *cycled* to Rome_locr with Sandy_acc}
-\b. \dep{Kim_xacc *chased* after Sandy_locd}
-
-\clearpage
 \subsection{Comparison (\textsf{cmp})}
 \label{sec:cmp}
 
@@ -214,9 +216,16 @@ or part-whole.
 \ex.
 \a. \dep{Kim_cmpd *outranks* Sandy_cmpr}
 \b. \dep{Kim_cmpd *exceeds* Sandy_cmpr in height_xatt}
-\b. \dep{Kim_scnd is *taller* than Sandy_xcmp}
-\b. \dep{The Polish restaurant_cmpd *compared* favorably_mnr to the Spanish one_cmpr}
+\b. \dep{The Polish restaurant_cmpd *compared* favorably_xmnr to the Spanish one_cmpr}
 \b. \dep{Kim_xrcp *compared* Coke_scnd to Pepsi_scnr}
+
+\subsubsection{Comparatives}
+
+The comparative of adjectives is treated as a valency-changing operation that
+gives the adjective an additional \textsf{xcmp} argument:
+
+\ex.
+\a. \dep{Kim_scnd is *taller* than Sandy_xcmp}
 
 \clearpage
 \subsection{Location (\textsf{loc})}
@@ -237,7 +246,7 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
 \ex. \a. \dep{Kim_locd *went* from the living room_locir through the door_locmr into the kitchen_locr}
      \b. \dep{Kim_xcau *placed* the hat_locd on the table_locr}
      \b. \dep{Kim_locd is *running*}
-     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xacc}
+     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xanc}
 
 \subsubsection{Wrapping and Wearing}
 
@@ -250,15 +259,20 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
 \subsubsection{Ingestion and Excretion}
 
 \ex. \a. \dep{Kim_locr *ate* an apple_locd}
+     \b. \dep{Kim_locr *nibbled* on the pretzel_locd}
      \b. \dep{Kim_locir *threw* up the apple_locd}
      \b. \dep{Kim_locir *sneezed*}
 
 \subsubsection{Embellishment and Tarnishment}
 
-\ex. \a. \dep{Kim_xcau *decorated* the balcony_locr with fairy lights_locd}
-     \b. \dep{Kim_xcau *splashed* Sandy_locr with water_locd}
-     \b. \dep{Kim_xcau *cleaned* the dirt_locd off Sandy_locir}
-     \b. \dep{Kim_xcau *cleaned* Sandy_locir}
+\ex.
+\a. \dep{Kim_xcau *decorated* the balcony_locr with fairy lights_locd}
+\b. \dep{Kim_xcau *splashed* Sandy_locr with water_locd}
+\b. \dep{Kim_xcau *cleaned* the dirt_locd off Sandy_locir}
+\b. \dep{Kim_xcau *cleaned* Sandy_locir}
+\b. \dep{*chicken* with rice_loc-of}
+\b. \dep{The chicken_locr *comes* with rice_loc}
+\b. \dep{Kim_xcau *added* rice_locd to the chicken_locr}
 
 \clearpage
 \subsection{Message (\textsf{msg})}
@@ -278,7 +292,7 @@ together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
      \b. \dep{Kim_xsnd *talked* about Sandy_msgd}
      \b. \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
      \b. \dep{Kim_xsnd and Sandy *conversed*}
-     \b. \dep{Kim_xsnd *conversed* with Sandy_xacc}
+     \b. \dep{Kim_xsnd *conversed* with Sandy_xanc}
 
 \subsubsection{Gesture}
 
@@ -297,8 +311,12 @@ Performing a work of art is framed as expression where the work of art is the
 \subsubsection{Depiction}
 
 \ex. \a. \dep{Kim_xsnd *drew* a heron_msgd}
-     \b. \dep{Kim_xcau *drew* a picture_scnd}
      \b. \dep{a *picture* of the heron_msgd}
+
+When the object is the resulting work of art, frame it as creation (\textsf{scn}) instead:
+
+\ex.
+\a. \dep{Kim_xcau *drew* a picture_scnd}
 
 \subsubsection{Recording}
 
@@ -321,6 +339,7 @@ Perception, including mental and volitional perception.
      \b. \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
      \b. \dep{The Thought Police_xrcp *observed* Winston_msgd}
      \b. \dep{Kim_xrcp *studies* linguistics_msgd}
+     \b. \dep{Kim_xsnd *taught* Sandy_xrcp Spanish_msgd}
      \b. \dep{Sandy is a *professor* of linguistics_msgd}
      \b. \dep{Kim_xrcp *measured* the elasticity_msgd}
      \b. \dep{Kim_xrcp *deduced* the truth_msgr}
@@ -334,29 +353,31 @@ TBD
 \subsection{Possession/Control (\textsf{pss})}
 \label{sec:pss}
 
-\subsubsection{Modifiers}
+\subsubsection{Modifier Examples}
 
 \ex. \a. \dep{Kim_pss 's *house*}
 
-\subsubsection{Static Arguments}
+\subsubsection{Static Argument Examples}
 
 \ex. \a. \dep{Kim_pssr *owns* a house_pssd}
      \b. \dep{The house_pssd *belongs* to Kim_pssr}
      \b. \dep{the *owner* of the house_pssd}
      \b. \dep{Kim_pssr *has* Sandy 's phone_pssd}
 
-\subsubsection{Dynamic Arguments}
-\ex. \a. \dep{Kim_pssr *bought* a house_pssd from Sandy_pssir}
-     \b. \dep{Kim_pssir *kept* the house_pssd}
-     \b. \dep{Kim_pssir *lost* the house_pssd}
-     \b. \dep{Caesar_pssr *conquered* Gaul_pssd}
-     \b. \dep{Caesar_pssr 's *conquest* of Gaul_pssd}
+\subsubsection{Dynamic Argument Examples}
+\ex.
+\a. \dep{Kim_pssr *bought* a house_pssd from Sandy_pssir}
+\b. \dep{Sandy_pssir *sold* Kim_pssr the house_pssd}
+\b. \dep{Kim_pssir *kept* the house_pssd}
+\b. \dep{Kim_pssir *lost* the house_pssd}
+\b. \dep{Caesar_pssr *conquered* Gaul_pssd}
+\b. \dep{Caesar_pssr 's *conquest* of Gaul_pssd}
 
 \clearpage
 \subsection{Quantity (\textsf{qnt})}
 \label{sec:qnt}
 
-\textsf{scnr} is the quantity, degree, or extent of \textsf{scnd}.
+\textsf{qntr} is the quantity, degree, or extent of \textsf{qntd}.
 
 \subsubsection{Modifier Examples}
 
@@ -364,6 +385,7 @@ TBD
 \a. \dep{three_qnt *burgers*}
 \b. \dep{three_qnt *liters* of coke_qnt-of}
 \b. \dep{We_xsnd *discourage* this_msgd emphatically_qnt}
+\b. \dep{ten *dollars* per item_qnt}
 
 \subsubsection{Argument Examples}
 
@@ -380,7 +402,6 @@ predicate, or a participant in a scene specified by the \textsf{scnr}.
 \subsubsection{States and Properties}
 
 \ex. \a. \dep{Kim_scnd is *tall*}
-     \b. \dep{Kim_scnd is a *person*}
      \b. \dep{The painting_scnd *improved*}
      \b. \dep{Kim_xcau *improved* the painting_scnd}
 
@@ -395,8 +416,8 @@ predicate, or a participant in a scene specified by the \textsf{scnr}.
 characterized as actively participating in the event.
 
 \ex. \a. \dep{Kim_scnd *partied*}
-     \b. \dep{Kim_scnd *partied* with Sandy_acc}
-     \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
+     \b. \dep{Kim_scnd *partied* with Sandy_anc}
+     \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xanc}
 
 \subsubsection{Experiences}
 
@@ -404,17 +425,18 @@ characterized as actively participating in the event.
 characterized as undergoing the event.
 
 \ex. \a. \dep{Kim_xcau *attacked* Sandy_scnd}
-     \b. \dep{Kim_xcau *used* a pen_scnd to get_xprp the lid off}
-     \c. \dep{Kim_scnd *needs* Sandy_scnr}
+     \b. \dep{They_xcau *played* you_scnd like a fool_cmp}
+     \b. \dep{Kim_scnd *needs* Sandy_scnr}
 
-In the last example, understand \emph{you} to metonymically stand for a scene,
+In the last example, understand \emph{Sandy} to metonymically stand for a scene,
 e.g. one of Sandy helping Kim.
 
 \subsubsection{Transformation and Creation}
 
 \textsf{scnd} denotes the entity undergoing the transformation, and
 \textsf{scnr} denotes its new state. Creation is framed as transformation of
-some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
+some material (\textsf{scnd}, often unexpressed) into the newly created entity
+(\textsf{scnr}).
 
 \ex. \a. \dep{The ice_scnd *turned* into water_scnr}
      \b. \dep{God_xcau *made* people_scnr out of clay_scnd}
@@ -446,6 +468,10 @@ some material (\textsf{scnd}) into the newly created entity (\textsf{scnr}).
 %     \dep{Kim_scnd *is* tall_scnr}
 
 \subsubsection{Phase}
+
+The scene starting, continuing, ending, etc., is always the range. Only use
+\textsf{scnd} if the predicate has a separate argument for a participant in the
+scene.
 
 \ex. \a. \dep{The wound_scnd *began* to heal_scnr}
      \b. \dep{A commotion_scnr *started*}
@@ -497,9 +523,11 @@ TBD
 \subsection{Social (\textsf{soc})}
 \label{sec:soc}
 
-The domain is an individual that is in some socially constructed relationship with the range. The range might e.g. be a relative, a friend, an organization, a responsibility, or a judicial sentence.
+The \textsf{socd} is an individual that is in some socially constructed
+relationship with the \textsf{socr}. The \textsf{socr} might e.g. be a
+relative, a friend, an organization, a responsibility, or a judicial sentence.
 
-\subsubsection{State Examples}
+\subsubsection{Static Argument Examples}
 
 \ex. \a. \dep{Kim_socr is my_socd *cousin*}
      \b. \dep{Kim_socd and Sandy are *friends*}
@@ -511,7 +539,7 @@ The domain is an individual that is in some socially constructed relationship wi
      \b. \dep{Kim_socd is under house *arrest*}
      \b. \dep{Kim_socd 's *sentence* was suspended}
 
-\subsubsection{Event Examples}
+\subsubsection{Dynamic Argument Examples}
 
 \ex. \a. \dep{Kim_socd *married* Sandy_socr}
      \b. \dep{The official_xcau *married* Kim_socd to Sandy_socr}
@@ -519,7 +547,7 @@ The domain is an individual that is in some socially constructed relationship wi
      \b. \dep{Kim_socd *divorced* Sandy_socir}
      \b. \dep{Kim_socd *befriended* Sandy_socr}
      \b. \dep{Kim_socd *took* the job_socr}
-     \b. \dep{Kim_socd *joined* a Google_socr}
+     \b. \dep{Kim_socd *joined* Google_socr}
      \b. \dep{Kim_socd *joined* a union_socr}
      \b. \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
      \b. \dep{Kim_socd *left* Google_socir}
@@ -588,8 +616,7 @@ TODO: can this be merged into qnt?
 Beneficiary or maleficiary of an event.
 
 \ex.
-\a. \dep{Die Piroggen_scnd waren Maria_xben zu dunkel_scnr *geraten*}
-\b. \dep{Kim_xcau is *doing* it_scnr for Sandy_ben}
+\a. \dep{Kim_xsnd is *singing* for Sandy_ben}
 
 TODO: can this be merged into rcp?
 
@@ -608,6 +635,13 @@ Entity causing a scene.
 \b. \dep{Der Wasserdruck_scnd *stieg* , wodurch der Brunnen überfloss_cau-of}
 \b. \dep{Kim_locd *went* to town_locr because they wanted_cau to buy food}
 
+Note how the last example expresses a purpose, but construes it as a cause, so
+\textsf{cau} is the right relation to use. Compare this to construal as a
+purpose:
+
+\ex.
+\a. \dep{Kim_locd *went* to town_locr to buy_prp food}
+
 \clearpage
 \subsection{Concession (\textsf{cnc})}
 \label{sec:cnc}
@@ -618,6 +652,8 @@ Entity despite which a scene unfolds.
 \a. \dep{Kim_locd *went* out despite the rain_cnc}
 \b. \dep{Kim_locd *came* although Sandy had told_cnc them not to}
 \b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
+
+TODO: do we need a more general contrast relation, or is that covered by cmp?
 
 \clearpage
 \subsection{Condition (\textsf{cnd})}
@@ -638,7 +674,6 @@ relation (such as condition or temporal) fits better.
 
 \ex.
 \a. \dep{Man_locd durfte das Gelände_locr nur_dim unter Aufsicht_ctx *betreten*}
-\b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_ctx (?)}
 
 TODO: additional markables
 
@@ -656,12 +691,14 @@ Manner in which a scene unfolds.
 \subsection{Means (\textsf{mns})}
 \label{sec:mns}
 
-Intermediary between the causer and a scene, instrument or second scene through
+Intermediary between the causer and a scene; instrument or second scene through
 which the causer causes the first scene.
 
 \ex.
 \a. \dep{Kim_xcau *cut* the cake_scnd with a knife_mns}
 \b. \dep{Kim_xcau *painted* the room_locr by exploding_mns a paint bomb}
+\b. \dep{Kim_xcau *used* a pen_mnsr to get_mnsd the lid off}
+\b. \dep{You_xcau *used* me_mnsd !}
 
 \clearpage
 \subsection{Purpose (\textsf{prp})}
@@ -678,7 +715,7 @@ TODO: additional markables
 \subsection{Recipient (\textsf{rcp})}
 \label{sec:rcp}
 
-Entity that perceives scene, or that a message is addressed to.
+Entity that perceives or experiences a scene, or that a message is addressed to.
 
 \ex.
 \a. \dep{Sandy_xrcp *heard* about the virus_msgd}
@@ -688,10 +725,19 @@ Entity that perceives scene, or that a message is addressed to.
 \b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
 \b. \dep{The virus_msgd *seems* dangerous_msgr to Kim_xrcp}
 \b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
-\b. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
-\b. \dep{Kim_xrcp *responded* to my letter_msgd}
-\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
+%\b. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
+%\b. \dep{Kim_xrcp *responded* to my letter_msgd}
+%\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
 \b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
+\b. \dep{Die Piroggen_scnd waren Maria_xrcp zu dunkel_scnr *geraten*}
+\b. \dep{Emily_xsnd *delivered* Carlos ' message_msgr to Nianwen to Kilian_xrcp}
+\b. \dep{Carlos_xsnd ' *message* to Nianwen_xrcp}
+
+\subsubsection{Mental State}
+
+\ex.
+\a. \dep{Kim_xrcp is *tired*}
+\b. \dep{Kim_xrcp is *crazy*}
 
 \clearpage
 \subsection{Sender (\textsf{snd})}
@@ -702,7 +748,7 @@ Entity that sends a signal that can be perceived by a recipient.
 \ex.
 \a. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
 \b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
-\b. \dep{Kim_xsnd *hummed* a little melody_msgd, but nobody heard_cnc-of it}
+\b. \dep{Kim_xsnd *hummed* a little melody_msgd , but nobody heard_cnc-of it}
 \b. \dep{Kim_xsnd *exploded* at Sandy_xrcp}
 \b. \dep{Kim_xsnd *bowed* to Sandy_xrcp}
 
@@ -725,6 +771,18 @@ Constructional relations do not correspond to superframes, but mark various
 types of mismatches between syntactic and semantic predicate-argument
 structure.
 
+\subsection{Ancillary (\textsf{anc})}
+
+Marks modifiers or arguments that participate in the scene together with
+another argument (protoypically, the subject) in a symmetrical or similar role.
+
+\ex.
+\a. \dep{Kim_locd *cycled* to Rome_locr with Sandy_anc}
+\b. \dep{Kim_locd *danced* with Sandy_xanc}
+\b. \dep{Kim_xanc *chased* after Sandy_locd}
+\b. \dep{Kim_xanc *accompanied* Sandy_xsnd on the piano_xmns}
+
+\clearpage
 \subsection{Attribute (\textsf{att})}
 \label{sec:att}
 
@@ -733,6 +791,7 @@ participant which is most directly involved in the scene.
 
 \ex.
 \a. \dep{Kim_cmpd *exceeds* Sandy_cmpr in length_xatt}
+\b. \dep{That_scnd is *great* in_att terms of ROI}
 \b. \dep{Kim_locd ist auf den Kopf_xatt *gefallen*}
 \b. \dep{Kim_xcau *hit* Sandy_locr on the head_xatt with a stick_locd}
 
@@ -747,7 +806,7 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 
 \ex.
 \a. \dep{Kim_xsnd *gave* a lecture_cpd}
-\b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
+\b. \dep{Kim_scnd *had* sex_cpd with Sandy_xanc}
 
 TODO: causative light verbs
 
@@ -802,7 +861,7 @@ which are instead treated as parts of complex predicates
 
 \ex.
 \a. \dep{Kim_xrcp *hates* it_exp when people yell_msgd}
-\b. \dep{Wie_mnr *kommst* du_xrcp darauf_exp , ich hätte_msgr etwas damit zu tun?}
+\b. \dep{Wie_cau *kommst* du_xrcp darauf_exp , ich hätte_msgr etwas damit zu tun?}
 
 TODO: additional markables
 
