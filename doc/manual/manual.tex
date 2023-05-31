@@ -49,6 +49,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         \textbf{relation} & \textbf{description} & \textbf{domain} & \textbf{range} & \textbf{sec.} \\
         \midrule
         \multicolumn{4}{l}{\emph{entity-entity}}\\
+        acc & accompaniment & accompanied & accompanier & \ref{sec:acc} \\
         cmp & comparison & compared & reference & \ref{sec:cmp} \\
         loc & location & located & location & \ref{sec:loc} \\
         msg & message & topic & comment & \ref{sec:msg} \\
@@ -74,7 +75,6 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         tmp & temporal & scene & time/frequency/... & \ref{sec:tmp} \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional}} \\
-        anc & ancillary & predicate & ancillary & \ref{sec:anc} \\
         att & attribute & predicate & attribute & \ref{sec:att} \\
         cpd & complex predicate & predicate & same predicate & \ref{sec:cpd} \\
         dim & discourse marker & token & discourse marker & \ref{sec:dim} \\
@@ -155,13 +155,13 @@ regardless of the predicate of the open complement.
 When in doubt, prefer roles that works for multiple syntactic frames of the
 same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
 framed as caused motion (with an \textsf{xcau}) or as accompanied motion (with
-an \textsf{xanc}). Because the latter works for other syntactic frames of
+an \textsf{xacc}). Because the latter works for other syntactic frames of
 \emph{chase} as well, as in \ref{ex:chase-accompanied}, prefer it. Likewise,
 \ref{ex:help-binary} remains consistent with \ref{ex:help-binary}.
 
 \ex.
-\a. \label{ex:chase-caused} \dep{Kim_xanc *chased* Sandy_locd around the block_locmr}
-\b. \label{ex:chase-accompanied} \dep{Kim_xanc *chased* after Sandy_locd}
+\a. \label{ex:chase-caused} \dep{Kim_xacc *chased* Sandy_locd around the block_locmr}
+\b. \label{ex:chase-accompanied} \dep{Kim_xacc *chased* after Sandy_locd}
 \b. \label{ex:help-binary} \dep{Kim_xcau *helped* Sandy_scnd}
 
 \subsection{Dual Framing}
@@ -204,6 +204,32 @@ or part-whole.
 % dynamic argument examples
 % subframes
 
+\subsection{Accompaniment}
+\label{sec:acc}
+
+The \textsf{accd} and the \textsf{accr} appear together, more or less symmetrically.
+
+\ex.
+\a. \dep{*chicken* with rice_acc}
+\b. \dep{The chicken_accd *comes* with rice_accr}
+\b. \dep{Kimx_xcau *added* rice_accr to the chicken_accd}
+
+Can also be used for scenes unfolding in close connection.
+
+\ex.
+\a. \dep{Rolling thunder_accr *accompanies* the rain_accd}
+
+Often, the accompanier denotes not a scene but an entity participating in it,
+and must be metonymically understood as the scene.
+
+\ex.
+\a. \dep{Kim_locd *cycled* to Rome_locr with Sandy_acc}
+\b. \dep{Kim_locd *danced* with Sandy_xacc}
+\b. \dep{Kim_xacc *chased* Sandy_locd around the block_locmr}
+\b. \dep{Kim_accr *accompanied* Sandy_accd}
+\b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_xmns}
+
+\clearpage
 \subsection{Comparison (\textsf{cmp})}
 \label{sec:cmp}
 
@@ -246,7 +272,7 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
 \ex. \a. \dep{Kim_locd *went* from the living room_locir through the door_locmr into the kitchen_locr}
      \b. \dep{Kim_xcau *placed* the hat_locd on the table_locr}
      \b. \dep{Kim_locd is *running*}
-     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xanc}
+     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xacc}
 
 \subsubsection{Wrapping and Wearing}
 
@@ -292,7 +318,7 @@ together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
      \b. \dep{Kim_xsnd *talked* about Sandy_msgd}
      \b. \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
      \b. \dep{Kim_xsnd and Sandy *conversed*}
-     \b. \dep{Kim_xsnd *conversed* with Sandy_xanc}
+     \b. \dep{Kim_xsnd *conversed* with Sandy_xacc}
 
 \subsubsection{Gesture}
 
@@ -416,8 +442,8 @@ predicate, or a participant in a scene specified by the \textsf{scnr}.
 characterized as actively participating in the event.
 
 \ex. \a. \dep{Kim_scnd *partied*}
-     \b. \dep{Kim_scnd *partied* with Sandy_anc}
-     \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xanc}
+     \b. \dep{Kim_scnd *partied* with Sandy_acc}
+     \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
 
 \subsubsection{Experiences}
 
@@ -771,18 +797,6 @@ Constructional relations do not correspond to superframes, but mark various
 types of mismatches between syntactic and semantic predicate-argument
 structure.
 
-\subsection{Ancillary (\textsf{anc})}
-\label{sec:anc}
-
-Marks modifiers or arguments that participate in the scene together with
-another argument (protoypically, the subject) in a symmetrical or similar role.
-
-\ex.
-\a. \dep{Kim_locd *cycled* to Rome_locr with Sandy_anc}
-\b. \dep{Kim_locd *danced* with Sandy_xanc}
-\b. \dep{Kim_xanc *chased* after Sandy_locd}
-\b. \dep{Kim_xanc *accompanied* Sandy_xsnd on the piano_xmns}
-
 \clearpage
 \subsection{Attribute (\textsf{att})}
 \label{sec:att}
@@ -807,7 +821,7 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 
 \ex.
 \a. \dep{Kim_xsnd *gave* a lecture_cpd}
-\b. \dep{Kim_scnd *had* sex_cpd with Sandy_xanc}
+\b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
 
 TODO: causative light verbs
 
