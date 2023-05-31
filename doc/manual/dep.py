@@ -37,18 +37,18 @@ def dep(tokens):
     result += f'''{BS}begin{{deptext}}'''
     result += f'''{TOKSEP.join(clean(t) for t in tokens)} {BS}{BS}'''
     result += f'''{BS}end{{deptext}}'''
-    height = 1
-    for i in reversed(range(0, pred_idx)):
+    edge_height = sum('_' in t for t in tokens[:pred_idx])
+    for i in range(0, pred_idx):
         if '_' in tokens[i]:
             rel = tokens[i].rsplit('_', 1)[1]
-            result += f'{BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
-            height += 1
-    height = 1
-    for i in range(pred_idx + 1, len(tokens)):
+            result += f'{BS}depedge[edge height={edge_height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
+            edge_height -= 1
+    edge_height = sum('_' in t for t in tokens[pred_idx + 1:])
+    for i in reversed(range(pred_idx + 1, len(tokens))):
         if '_' in tokens[i]:
             rel = tokens[i].rsplit('_', 1)[1]
-            result += f'{BS}depedge[edge height={height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
-            height += 1
+            result += f'{BS}depedge[edge height={edge_height}{BS}baselineskip]{{{pred_idx + 1}}}{{{i + 1}}}{{{rel}}}'
+            edge_height -= 1
     result += f'{BS}end{{dependency}}}}'
     return result
 
