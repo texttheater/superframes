@@ -63,7 +63,6 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         msg & message & topic & comment & \ref{sec:msg} \\
         pss & possession/control & possessee & possessor & \ref{sec:pss} \\
         qnt & quantity & of what & how much & \ref{sec:qnt} \\
-        rcp & recipient & scene & recipient & \ref{sec:rcp} \\
         scn & scene & participant & scene & \ref{sec:scn} \\
         snd & sender & scene & sender & \ref{sec:snd} \\
         soc & social & somebody & relative/org/task... & \ref{sec:soc} \\
@@ -71,6 +70,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         tmp & temporal & scene & time/frequency/... & \ref{sec:tmp} \\
         whl & part-whole & part & whole & \ref{sec:whl} \\
         xpl & explanation & scene & explanation & \ref{sec:xpl} \\
+        xpr & experiencer & scene & experiencer & \ref{sec:xpr} \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional relations}} \\
         att & attribute & predicate & attribute & \ref{sec:att} \\
@@ -122,12 +122,12 @@ However, some predicates denote the dissolution of a relation between a domain a
 
 \subsection{Type III: Non-core Argument Roles}
 
-Some predicates have more than just the domain and range arguments. For such arguments, annotators should choose the binary relation that describes the relation between the scene and the argument best, and prefix it with \textsf{x} to distinguish it from a modifier. Particularly frequent non-core roles are \textsf{xcau}, \textsf{xsnd}, and \textsf{xrcp}.
+Some predicates have more than just the domain and range arguments. For such arguments, annotators should choose the binary relation that describes the relation between the scene and the argument best, and prefix it with \textsf{x} to distinguish it from a modifier. Particularly frequent non-core roles are \textsf{xcau}, \textsf{xsnd}, and \textsf{xxpr}.
 
 \ex. \a. \dep{Sandy_xcau *brought* Kim_locd to Boston_locr}
      \b. \dep{Kim_xsnd *talked* about Sandy_msgd}\\
-     \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-     \b. \dep{Kim_xrcp *searched* the woods_xloc for Sandy_msgd}
+     \b. \dep{Kim_xxpr *saw* Sandy_msgd swim_msgr}
+     \b. \dep{Kim_xxpr *searched* the woods_xloc for Sandy_msgd}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -164,12 +164,12 @@ For control verbs, choose a role for the controlled argument that works
 regardless of the predicate of the open complement.
 
 \ex.
-\a. \dep{Kim_xrcp *wants* to swim_msgr}
+\a. \dep{Kim_xxpr *wants* to swim_msgr}
 \b. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
 \b. \dep{Kim_xcau *used* binoculars_mnsr to watch_msnd Sandy}
 \b. \dep{Kim_xcau *reacted* to the news_caud with sadness_caur}
 \b. \label{ex:help-ternary} \dep{Kim_xcau *helped* Sandy_scnd clean_scnr the dishes}
-\b. \dep{Kim_xcau *did* it_rcpd for Sandy_rcpr}
+\b. \dep{Kim_xcau *did* it_xprd for Sandy_xprr}
 
 When in doubt, prefer roles that works for multiple syntactic frames of the
 same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
@@ -252,8 +252,8 @@ Entity given or offered in an exchange or wager.
 
 \ex.
 \a. \dep{Kim_pssr *bought* the house_pssd for a million dollars_xast}
-\b. \dep{Kim_xsnd *offered* Sandy_xrcp a million dollars_msgr for the house_xast}
-\b. \dep{I_xsnd *bet* you_xrcp 30 bucks_xast he will win_msgr}
+\b. \dep{Kim_xsnd *offered* Sandy_xxpr a million dollars_msgr for the house_xast}
+\b. \dep{I_xsnd *bet* you_xxpr 30 bucks_xast he will win_msgr}
 
 TODO: can this be merged into qnt?
 
@@ -295,7 +295,7 @@ purpose:
 \b. \dep{They_xsnd *demonize* the left_msgd while doing_cmp nothing about the right}
 \b. \dep{Kim_locd *went* out despite the rain_cmp}
 \b. \dep{Kim_locd *came* although Sandy had told_cmp them not to}
-\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cmp}
+\b. \dep{Kim_xsnd *sent* Sandy_xxpr a letter_msgr , but it never arrived_cmp}
 
 \subsubsection{Argument Examples}
 
@@ -303,7 +303,7 @@ purpose:
 \a. \dep{Kim_cmpd *outranks* Sandy_cmpr}
 \b. \dep{Kim_cmpd *exceeds* Sandy_cmpr in height_xatt}
 \b. \dep{The Polish restaurant_cmpd *compared* favorably_xmnr to the Spanish one_cmpr}
-\b. \dep{Kim_xrcp *compared* Coke_scnd to Pepsi_scnr}
+\b. \dep{Kim_xxpr *compared* Coke_scnd to Pepsi_scnr}
 
 \subsubsection{Comparatives}
 
@@ -406,7 +406,7 @@ which the causer causes the first scene.
 
 A message is expressed or received, where \textsf{msgd} is what the message is
 about, and \textsf{msgr} is the message itself, or its contents. Often used
-together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
+together with \textsf{xsnd} (sender) and \textsf{xxpr} (experiencer).
 
 \subsubsection{Expression}
 
@@ -414,7 +414,7 @@ together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
      \b. \dep{Kim_xsnd *said* : it 's fine_msgr}
      \b. \dep{Kim_xsnd *said* it was fine_msgr}
      \b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
-     \b. \dep{Kim_xsnd *told* Sandy_xrcp a secret_msgr}
+     \b. \dep{Kim_xsnd *told* Sandy_xxpr a secret_msgr}
      \b. \dep{Kim_xsnd *talked* about Sandy_msgd}
      \b. \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
      \b. \dep{Kim_xsnd and Sandy *conversed*}
@@ -422,7 +422,7 @@ together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
 
 \subsubsection{Gesture}
 
-\ex. \a. \dep{Kim_xsnd *curtseyed* to the Queen_xrcp}
+\ex. \a. \dep{Kim_xsnd *curtseyed* to the Queen_xxpr}
      \b. \dep{Kim_xsnd *shook* their head_cpd no_msgr}
 
 \subsubsection{Performance}
@@ -446,7 +446,7 @@ When the object is the resulting work of art, frame it as creation (\textsf{scn}
 
 \subsubsection{Recording}
 
-\ex. \a. \dep{Kim_xsnd *wrote* Sandy_xrcp a letter_msgr}
+\ex. \a. \dep{Kim_xsnd *wrote* Sandy_xxpr a letter_msgr}
      \b. \dep{Kim_xsnd *wrote* the message_msgr onto a piece of paper_xloc with a pen_mns in big red letters_xdpc}
      \b. \dep{The concert_msgd was *recorded* on tape_xloc}
 
@@ -454,22 +454,22 @@ When the object is the resulting work of art, frame it as creation (\textsf{scn}
 
 Perception, including mental and volitional perception.
 
-\ex. \a. \dep{Kim_xrcp *saw* a flower_msgd}
-     \b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
-     \b. \dep{Kim_xrcp *thinks* Sandy is a liar_msgr}
-     \b. \dep{Kim_xrcp *thinks* Sandy_msgd a liar_msgr}
-     \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-     \b. \dep{Kim_xrcp *wants* to swim_msgr}
-     \b. \dep{Kim_xrcp *wants* Sandy_msgd to swim_msgr}
+\ex. \a. \dep{Kim_xxpr *saw* a flower_msgd}
+     \b. \dep{Kim_xxpr *found* the flower_msgd beautiful_msgr}
+     \b. \dep{Kim_xxpr *thinks* Sandy is a liar_msgr}
+     \b. \dep{Kim_xxpr *thinks* Sandy_msgd a liar_msgr}
+     \b. \dep{Kim_xxpr *saw* Sandy_msgd swim_msgr}
+     \b. \dep{Kim_xxpr *wants* to swim_msgr}
+     \b. \dep{Kim_xxpr *wants* Sandy_msgd to swim_msgr}
      \b. \dep{Kim_msgd *seems* happy_msgr}
-     \b. \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
-     \b. \dep{The Thought Police_xrcp *observed* Winston_msgd}
-     \b. \dep{Kim_xrcp *studies* linguistics_msgd}
-     \b. \dep{Kim_xsnd *taught* Sandy_xrcp Spanish_msgd}
+     \b. \dep{Kim_msgd *seems* happy_msgr to Sandy_xxpr}
+     \b. \dep{The Thought Police_xxpr *observed* Winston_msgd}
+     \b. \dep{Kim_xxpr *studies* linguistics_msgd}
+     \b. \dep{Kim_xsnd *taught* Sandy_xxpr Spanish_msgd}
      \b. \dep{Sandy is a *professor* of linguistics_msgd}
-     \b. \dep{Kim_xrcp *measured* the elasticity_msgd}
-     \b. \dep{Kim_xrcp *deduced* the truth_msgr}
-     \b. \dep{The jury_xrcp *found* Kim_msgd guilty_msgr}
+     \b. \dep{Kim_xxpr *measured* the elasticity_msgd}
+     \b. \dep{Kim_xxpr *deduced* the truth_msgr}
+     \b. \dep{The jury_xxpr *found* Kim_msgd guilty_msgr}
 
 \subsubsection{Additional Markables}
 
@@ -521,39 +521,6 @@ TBD
 
 \ex.
 \a. \dep{The birds_qntd *number* in the thousands_qntr}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-\subsection{Recipient (\textsf{rcp})}
-\label{sec:rcp}
-
-Entity that perceives or experiences a scene, or that a message is addressed
-to. Also used for beneficiaries and maleficiaries.
-
-\ex.
-\a. \dep{Sandy_xrcp *heard* about the virus_msgd}
-\b. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
-\b. \dep{Kim_xrcp *saw* a flower_msgd}
-\b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-\b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
-\b. \dep{The virus_msgd *seems* dangerous_msgr to Kim_xrcp}
-\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
-%\b. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
-%\b. \dep{Kim_xrcp *responded* to my letter_msgd}
-%\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
-\b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
-\b. \dep{Die Piroggen_scnd waren Maria_xrcp zu dunkel_scnr *geraten*}
-\b. \dep{Emily_xsnd *delivered* Carlos 's message_msgr to Nianwen to Kilian_xrcp}
-\b. \dep{Carlos_xsnd 's *message* to Nianwen_xrcp}
-\b. \dep{Kim_locd *danced* for Sandy_rcp}
-\b. \dep{Kim_xcau *did* it_rcpd for Sandy_rcpr}
-
-\subsubsection{Mental State}
-
-\ex.
-\a. \dep{Kim_xrcp is *tired*}
-\b. \dep{Kim_xrcp is *crazy*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -690,14 +657,14 @@ TBD
 \subsection{Sender (\textsf{snd})}
 \label{sec:snd}
 
-Entity that sends a signal that can be perceived by a recipient.
+Entity that sends a signal that can be perceived by an experiencer.
 
 \ex.
-\a. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
+\a. \dep{Kim_xsnd *told* Sandy_xxpr about the virus_msgd}
 \b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
 \b. \dep{Kim_xsnd *hummed* a little melody_msgd , but nobody heard_cnc-of it}
-\b. \dep{Kim_xsnd *exploded* at Sandy_xrcp}
-\b. \dep{Kim_xsnd *bowed* to Sandy_xrcp}
+\b. \dep{Kim_xsnd *exploded* at Sandy_xxpr}
+\b. \dep{Kim_xsnd *bowed* to Sandy_xxpr}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -813,6 +780,39 @@ Explanation that is not a cause, such as a purpose.
 TODO: additional markables
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\subsection{Experiencer (\textsf{xpr})}
+\label{sec:xpr}
+
+Entity that perceives or experiences a scene, or that a message is addressed
+to. Also used for beneficiaries and maleficiaries.
+
+\ex.
+\a. \dep{Sandy_xxpr *heard* about the virus_msgd}
+\b. \dep{Kim_xsnd *told* Sandy_xxpr about the virus_msgd}
+\b. \dep{Kim_xxpr *saw* a flower_msgd}
+\b. \dep{Kim_xxpr *saw* Sandy_msgd swim_msgr}
+\b. \dep{Kim_xxpr *found* the flower_msgd beautiful_msgr}
+\b. \dep{The virus_msgd *seems* dangerous_msgr to Kim_xxpr}
+\b. \dep{Kim_xsnd *sent* Sandy_xxpr a letter_msgr , but it never arrived_cnc-of}
+%\b. \dep{Kim_xxpr *reacted* badly_mnr to the misfortune_msgd}
+%\b. \dep{Kim_xxpr *responded* to my letter_msgd}
+%\b. \dep{Kim_xxpr *responded* to the attack_msgd with a drone strike_xmns}
+\b. \dep{Kim_xxpr *managed* with dealing_msgd the cards}
+\b. \dep{Die Piroggen_scnd waren Maria_xxpr zu dunkel_scnr *geraten*}
+\b. \dep{Emily_xsnd *delivered* Carlos 's message_msgr to Nianwen to Kilian_xxpr}
+\b. \dep{Carlos_xsnd 's *message* to Nianwen_xxpr}
+\b. \dep{Kim_locd *danced* for Sandy_xpr}
+\b. \dep{Kim_xcau *did* it_xprd for Sandy_xprr}
+
+\subsubsection{Mental State}
+
+\ex.
+\a. \dep{Kim_xxpr is *tired*}
+\b. \dep{Kim_xxpr is *crazy*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
@@ -833,7 +833,7 @@ participant which is most directly involved in the scene.
 
 \ex.
 \a. \dep{Kim_cmpd *exceeds* Sandy_cmpr in length_xatt}
-\b. \dep{That_scnd is *great* in_att terms of ROI}
+\b. \dep{That_scnd is *great* in terms_att of ROI}
 \b. \dep{Kim_locd ist auf den Kopf_xatt *gefallen*}
 \b. \dep{Kim_xcau *hit* Sandy_locr on the head_xatt with a stick_locd}
 
@@ -857,7 +857,7 @@ TODO: causative light verbs
 \subsubsection{Verbal Idioms}
 
 \ex.
-\a. \dep{Kim_xrcp *went* bananas_cpd}
+\a. \dep{Kim_xxpr *went* bananas_cpd}
 
 \subsubsection{Weather pronouns}
 
@@ -872,7 +872,7 @@ TODO: causative light verbs
 \subsubsection{Inherently Reflexive Verbs}
 
 \ex.
-\a. \dep{I_xsnd *address* myself_cpd to you_xrcp}
+\a. \dep{I_xsnd *address* myself_cpd to you_xxpr}
 
 % TBD criteria: inner modification (heave a deep sigh, give a loud shout), possessive participants (lose one's cool, pull so's leg), cf. Croft; outer modification (have sex with)
 % outer arguments
@@ -888,7 +888,7 @@ Used for adverbials etc. that mark a clause for its relation to preceding/follow
 \ex.
 \a. \dep{However_dim , nothing_scnr *happened*}
 \b. \dep{Even_dim *Kim* didn't see it}
-\b. \dep{Der_xrcp *will* nur_dim spielen_msgd}
+\b. \dep{Der_xxpr *will* nur_dim spielen_msgd}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -916,8 +916,8 @@ which are instead treated as parts of complex predicates
 (Section~\ref{sec:cpd}).
 
 \ex.
-\a. \dep{Kim_xrcp *hates* it_exp when people yell_msgd}
-\b. \dep{Wie_cau *kommst* du_xrcp darauf_exp , ich hätte_msgr etwas damit zu tun?}
+\a. \dep{Kim_xxpr *hates* it_exp when people yell_msgd}
+\b. \dep{Wie_cau *kommst* du_xxpr darauf_exp , ich hätte_msgr etwas damit zu tun?}
 
 TODO: additional markables
 
@@ -951,12 +951,12 @@ Guideline: keep number of x-roles small; focus on non-subjects
 \ex.
 \a. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
 \b. \dep{Kim_xcau *reacted* to the attack_caur with a drone strike_caud}
-\b. \dep{Kim_xrcp *managed* with dealing_sncr the cards}
+\b. \dep{Kim_xxpr *managed* with dealing_sncr the cards}
 \b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_xmns}
-\b. \dep{Kim_xrcp *compared* Sandy_cmpd to a Summer 's day_cmpr}
+\b. \dep{Kim_xxpr *compared* Sandy_cmpd to a Summer 's day_cmpr}
 \b. \dep{Kim_xcau *helped* Sandy_scnd clean_scnr}
-\b. \dep{Kim_xrcp *needs* Sandy_scnd to take_scnr a stand}
-\b. \dep{Kim_xrcp *needs* Sandy_scnr}
+\b. \dep{Kim_xxpr *needs* Sandy_scnd to take_scnr a stand}
+\b. \dep{Kim_xxpr *needs* Sandy_scnr}
 \b. \dep{Kim_scnd *deserves* to be treated_scnr with respect}
 \b. \dep{Kim_xcau *began* the party_whlr with a speech_whld}
 
