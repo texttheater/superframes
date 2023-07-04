@@ -39,7 +39,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
     \item \textbf{Obvious role choices through framing:} In semantic role inventories in the VerbNet tradition \citep{kipper-schuler-2005-verbnet}, roles are semantically defined only vaguely and ambiguously. For example, the subject of the English verb \emph{watch} can be described as an Agent as well as an Experiencer. Prior approaches to resolving this ambiguity involve the creation of a lexicon (see above) or giving up on the idea of categorial role labels altogether \citep{white-etal-2016-universal}. The Superframes approach is to proceed in two steps: first pick the most fitting superframe for each predicate, then the core roles are clearly defined. Additional argument roles are handled via mixin roles (see below).
     \item \textbf{Comprehensive annotation with a unified vocabulary}: Superframes is a comprehensive and unified inventory of coarse semantic roles applicable to all types of morphosyntactic dependencies between content words, including modifier relations, compound relations, state argument relations, process argument relations, event argument relations, discourse relations, etc. It is designed to be annotated on top of existing morphosyntactic dependency graphs \citep[e.g., Universal Dependencies; ][]{de-marneffe-etal-2021-universal}. This has the advantage that the markables are pre-identified and that an explicit annotation of the morphosyntax-semantics interface results.
     \item \textbf{Ambiguity tolerance:} not all ambiguities in choosing a superframe can be resolved. Superframes embraces data perspectivism \citep{basile-2020-end} and encourages annotators to annotate multiple possibilities, in particular in the case of metaphorical language.
-    \item \textbf{Fine-grained comparisons:} By virtue of being annotated atop syntactic dependencies, Superframes target the syntax-semantics interface and enable cross-linguistic studies that go beyond comparisons of meaning representations like AMR.
+    \item \textbf{Fine-grained comparisons:} By virtue of being annotated atop syntactic dependencies, Superframes target the syntax-semantics interface and enable cross-linguistic studies that go beyond comparisons of meaning representations like AMR \citep{banarescu-etal-2013-abstract}.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,15 +61,15 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
         mnr & manner & scene & manner & \ref{sec:mnr} \\
         mns & means & scene & means & \ref{sec:mns} \\
         msg & message & topic & comment & \ref{sec:msg} \\
+        pcp & participation & participant & scene & \ref{sec:pcp} \\
+        prc & precedence & successor & predecessor & \ref{sec:prc} \\
         pss & possession/control & possessee & possessor & \ref{sec:pss} \\
+        pwh & part-whole & part & whole & \ref{sec:pwh} \\
         qnt & quantity & of what & how much & \ref{sec:qnt} \\
         rcp & recipient & scene & recipient & \ref{sec:rcp} \\
-        scn & scene & participant & scene & \ref{sec:scn} \\
         snd & sender & scene & sender & \ref{sec:snd} \\
         soc & social & somebody & relative/org/task... & \ref{sec:soc} \\
-        suc & succession & follows & background & \ref{sec:suc} \\
         tmp & temporal & scene & time/frequency/... & \ref{sec:tmp} \\
-        whl & part-whole & part & whole & \ref{sec:whl} \\
         xpl & explanation & scene & explanation & \ref{sec:xpl} \\
         \midrule
         \multicolumn{4}{l}{\emph{constructional relations}} \\
@@ -95,7 +95,7 @@ The Superframes annotation scheme is based on the binary relations shown in Tabl
 Modifier dependencies are annotated with a plain binary relation or its inverse (denoted by \textsf{-of}, as in AMR). This applies equally to verb, noun, and other modifiers.
 
 \ex. \a. \dep{*partied* at home_loc}
-     \b. \dep{a *man* with a mustache_whl-of}
+     \b. \dep{a *man* with a mustache_pwh-of}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -138,20 +138,20 @@ Part of the annotation task is to choose a superframe for each instance of a pre
 Implicit, shadow, and default arguments \citep{di-fabio-etal-2019-verbatlas} should
 be treated the same as regular arguments for framing. For example,
 \emph{debone} denotes the removal of bones (denoted by a shadow argument) from
-a body, so prefer \textsf{whl} over \textsf{scn}.
+a body, so prefer \textsf{pwh} over \textsf{pcp}.
 
-\ex. \a. \dep{The cook_xcau *deboned* the fish_whlir}
+\ex. \a. \dep{The cook_xcau *deboned* the fish_pwhir}
      \b. \dep{Kim_locir *sneezed*}
 
 However, if realizing a shadow argument would necessitate that another realized
 argument be omitted or change its syntactic argument position, do not treat it
 this way. For example:
 
-\ex. \a. \dep{The knife_xcau *cut* the butter_scnd}
-     \b. \dep{Kim_xcau *cut* the butter_scnd with the knife_ins}
+\ex. \a. \dep{The knife_xcau *cut* the butter_pcpd}
+     \b. \dep{Kim_xcau *cut* the butter_pcpd with the knife_ins}
 
-\ex. \a. \dep{The price_scnd is *high*}
-     \b. \dep{The butter_scnd is *high* in price_att}
+\ex. \a. \dep{The price_pcpd is *high*}
+     \b. \dep{The butter_pcpd is *high* in price_att}
 
 Prefer core roles over non-core roles. For example, if the subject is both the
 causer and the final possessor in a scene, choose \textsf{pssr} over
@@ -168,7 +168,7 @@ regardless of the predicate of the open complement.
 \b. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
 \b. \dep{Kim_xcau *used* binoculars_mnsr to watch_msnd Sandy}
 \b. \dep{Kim_xcau *reacted* to the news_caud with sadness_caur}
-\b. \label{ex:help-ternary} \dep{Kim_xcau *helped* Sandy_scnd clean_scnr the dishes}
+\b. \label{ex:help-ternary} \dep{Kim_xcau *helped* Sandy_pcpd clean_pcpr the dishes}
 
 When in doubt, prefer roles that works for multiple syntactic frames of the
 same predicate. For example, in \ref{ex:chase-caused} \emph{chase} could be
@@ -180,7 +180,7 @@ an \textsf{xacc}). Because the latter works for other syntactic frames of
 \ex.
 \a. \label{ex:chase-caused} \dep{Kim_xacc *chased* Sandy_locd around the block_locmr}
 \b. \label{ex:chase-accompanied} \dep{Kim_xacc *chased* after Sandy_locd}
-\b. \label{ex:help-binary} \dep{Kim_xcau *helped* Sandy_scnd}
+\b. \label{ex:help-binary} \dep{Kim_xcau *helped* Sandy_pcpd}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -195,8 +195,8 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
     \end{deptext}
     \depedge[edge height=\baselineskip]{2}{1}{xsnd}
     \depedge[edge height=\baselineskip]{2}{4}{msgd}
-    \depedge[edge below,edge height=\baselineskip]{2}{1}{scnd:locr}
-    \depedge[edge below,edge height=\baselineskip]{2}{4}{scnr}
+    \depedge[edge below,edge height=\baselineskip]{2}{1}{pcpd:locr}
+    \depedge[edge below,edge height=\baselineskip]{2}{4}{pcpr}
 \end{dependency}
 \b. \begin{dependency}
     \begin{deptext}
@@ -204,11 +204,11 @@ For predicates that seem to fit two superframes equally well, annotate both. Lik
     \end{deptext}
     \depedge[edge height=\baselineskip]{3}{2}{locd}
     \depedge[edge height=\baselineskip]{3}{6}{locmr}
-    \depedge[edge below,edge height=\baselineskip]{3}{2}{scnr}
-    \depedge[edge below,edge height=\baselineskip]{3}{6}{scnd:xsnd}
+    \depedge[edge below,edge height=\baselineskip]{3}{2}{pcpr}
+    \depedge[edge below,edge height=\baselineskip]{3}{6}{pcpd:xsnd}
 \end{dependency}
 
-%TBD: defend scn/msg; deduce msg/suc
+%TBD: defend pcp/msg; deduce msg/prc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -266,12 +266,12 @@ TODO: can this be merged into qnt?
 Entity causing a scene.
 
 \ex.
-\a. \dep{Kim_xcau *broke* the glass_scnd}
-\b. \dep{The knife_xcau *cut* the bread_scnd}
-\b. \dep{Kim_xcau *cut* the bread_scnd with a knife_mns}
-\b. \dep{The war_xcau *caused* a famine_scnr}
+\a. \dep{Kim_xcau *broke* the glass_pcpd}
+\b. \dep{The knife_xcau *cut* the bread_pcpd}
+\b. \dep{Kim_xcau *cut* the bread_pcpd with a knife_mns}
+\b. \dep{The war_xcau *caused* a famine_pcpr}
 \b. \dep{There was a *famine* because of the war_cau}
-\b. \dep{Der Wasserdruck_scnd *stieg* , wodurch der Brunnen überfloss_cau-of}
+\b. \dep{Der Wasserdruck_pcpd *stieg* , wodurch der Brunnen überfloss_cau-of}
 \b. \dep{Kim_locd *went* to town_locr because they wanted_cau to buy food}
 
 Note how the last example expresses a purpose, but construes it as a cause, so
@@ -290,8 +290,8 @@ purpose:
 \subsubsection{Modifier Examples}
 
 \ex.
-\a. \dep{Compared_cmp to Sandy, Kim_scnd is *tall*}
-\b. \dep{Sandy_scnd is *short* whereas Kim is tall_cmp}
+\a. \dep{Compared_cmp to Sandy, Kim_pcpd is *tall*}
+\b. \dep{Sandy_pcpd is *short* whereas Kim is tall_cmp}
 \b. \dep{They_xsnd *demonize* the left_msgd while doing_cmp nothing about the right}
 \b. \dep{Kim_locd *went* out despite the rain_cmp}
 \b. \dep{Kim_locd *came* although Sandy had told_cmp them not to}
@@ -303,7 +303,7 @@ purpose:
 \a. \dep{Kim_cmpd *outranks* Sandy_cmpr}
 \b. \dep{Kim_cmpd *exceeds* Sandy_cmpr in height_xatt}
 \b. \dep{The Polish restaurant_cmpd *compared* favorably_xmnr to the Spanish one_cmpr}
-\b. \dep{Kim_xrcp *compared* Coke_scnd to Pepsi_scnr}
+\b. \dep{Kim_xrcp *compared* Coke_pcpd to Pepsi_pcpr}
 
 \subsubsection{Comparatives}
 
@@ -311,7 +311,7 @@ The comparative of adjectives is treated as a valency-changing operation that
 gives the adjective an additional \textsf{xcmp} argument:
 
 \ex.
-\a. \dep{Kim_scnd is *taller* than Sandy_xcmp}
+\a. \dep{Kim_pcpd is *taller* than Sandy_xcmp}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -393,7 +393,7 @@ Intermediary between the causer and a scene; instrument or second scene through
 which the causer causes the first scene.
 
 \ex.
-\a. \dep{Kim_xcau *cut* the cake_scnd with a knife_mns}
+\a. \dep{Kim_xcau *cut* the cake_pcpd with a knife_mns}
 \b. \dep{Kim_xcau *painted* the room_locr by exploding_mns a paint bomb}
 \b. \dep{Kim_xcau *used* a pen_mnsr to get_mnsd the lid off}
 \b. \dep{You_xcau *used* me_mnsd !}
@@ -439,10 +439,10 @@ Performing a work of art is framed as expression where the work of art is the
 \ex. \a. \dep{Kim_xsnd *drew* a heron_msgd}
      \b. \dep{a *picture* of the heron_msgd}
 
-When the object is the resulting work of art, frame it as creation (\textsf{scn}) instead:
+When the object is the resulting work of art, frame it as creation (\textsf{pcp}) instead:
 
 \ex.
-\a. \dep{Kim_xcau *drew* a picture_scnd}
+\a. \dep{Kim_xcau *drew* a picture_pcpd}
 
 \subsubsection{Recording}
 
@@ -478,8 +478,163 @@ TBD
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\subsection{Possession/Control (\textsf{pss})}
+\subsection{Participation (\textsf{pcp})}
+\label{sec:pcp}
+
+\textsf{pcpd} is the single core participant of a scene specified by the
+predicate, or a participant in a scene specified by the \textsf{pcpr}.
+
+\subsubsection{States and Properties}
+
+\ex. \a. \dep{Kim_pcpd is *tall*}
+     \b. \dep{The painting_pcpd *improved*}
+     \b. \dep{Kim_xcau *improved* the painting_pcpd}
+
+\subsubsection{Kinds}
+
+\ex. \a. \dep{Kim_pcpd is a *painter*}
+     \b. \dep{Thag dog_pcpd is a *labrador*}
+
+\subsubsection{Activities}
+
+``Activities'' are events with a single core participant that can be
+characterized as actively participating in the event.
+
+\ex. \a. \dep{Kim_pcpd *partied*}
+     \b. \dep{Kim_pcpd *partied* with Sandy_acc}
+     \b. \dep{Kim_pcpd *had* sex_cpd with Sandy_xacc}
+
+\subsubsection{Experiences}
+
+``Experiences'' are events with a single core participant that can be
+characterized as undergoing the event.
+
+\ex. \a. \dep{Kim_xcau *attacked* Sandy_pcpd}
+     \b. \dep{They_xcau *played* you_pcpd like a fool_cmp}
+     \b. \dep{Kim_pcpd *needs* Sandy_pcpr}
+
+In the last example, understand \emph{Sandy} to metonymically stand for a scene,
+e.g. one of Sandy helping Kim.
+
+\subsubsection{Transformation and Creation}
+
+\textsf{pcpd} denotes the entity undergoing the transformation, and
+\textsf{pcpr} denotes its new state. Creation is framed as transformation of
+some material (\textsf{pcpd}, often unexpressed) into the newly created entity
+(\textsf{pcpr}).
+
+\ex. \a. \dep{The ice_pcpd *turned* into water_pcpr}
+     \b. \dep{God_xcau *made* people_pcpr out of clay_pcpd}
+     \b. \dep{A rock_pcpr *formed*}
+     \b. \dep{Kim_xcau *created* a work_pcpr of art}
+
+\subsubsection{Reproduction}
+
+\ex. \a. \dep{Kim_xcau *copied* the book_pcpd}
+     \b. \dep{Kim_xcau *translated* the book_pcpd to German_pcpr}
+
+\subsubsection{Destruction}
+
+\ex. \a. \dep{The vase_pcpd *broke*}
+     \b. \dep{Kim_xcau *broke* the vase_pcpd}
+     \b. \dep{Kim_xcau *killed* Sandy_pcpd}
+     \b. \dep{Sandy_pcpd *died*}
+
+%\subsubsection{Auxilary Verbs and Copulas}
+%
+%Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
+%\textsf{pcp}.
+%
+%\ex. \dep{We_pcpd *will* see_pcpr}
+%     \dep{*Have* you_pcpd eaten_pcpr ?}
+%     \dep{Kim_pcpd *must* go_pcpr}
+%     \dep{Kim_pcpd *did* not go_pcpr}
+%     \dep{Kim_pcpd *is* a champion_pcpr}
+%     \dep{Kim_pcpd *is* tall_pcpr}
+
+\subsubsection{Phase}
+
+The scene starting, continuing, ending, etc., is always the range. Only use
+\textsf{pcpd} if the predicate has a separate argument for a participant in the
+scene.
+
+\ex. \a. \dep{The wound_pcpd *began* to heal_pcpr}
+     \b. \dep{A commotion_pcpr *started*}
+     \b. \dep{Kim_xcau *started* a commotion_pcpr}
+     \b. \dep{The concert_pcpir *ended*}
+     \b. \dep{The concert_pcpir *continued*}
+     \b. \dep{Kim_xcau *interrupted* the session_pcpir}
+     \b. \dep{The storm_pcpir *ebbed*}
+     \b. \dep{Kim_xcau *calmed* the commotion_pcpir}
+
+\subsubsection{Causation}
+
+\ex. \a. \dep{Kim_xcau *let* Sandy_pcpd join_pcpr}
+     \b. \dep{Kim_xcau *made* Sandy_pcpd join_pcpr}
+     \b. \dep{Kim_xcau *allowed* Sandy_pcpd to join_pcpr}
+
+\subsubsection{Prevention}
+
+\ex. \a. \dep{Kim_xcau *kept* Sandy_pcpd from joining_pcpr}
+     \b. \dep{Swift action_xcau *prevented* an outbreak_pcpr}
+     \b. \dep{Kim_pcpd *refrained* from going_pcpr}
+     \b. \dep{Kim_xcau *saved* Sandy_pcpd from the dragon_pcpr}
+
+In the last example, understand \emph{dragon} metonymically as a scene in which
+the dragon causes harm to Sandy.
+
+\subsubsection{Relative Clauses}
+
+For relative clauses, the \textsf{pcp} label is used as a modifier relation:
+
+\ex. \a. \dep{a *package* that was too heavy_pcp}
+
+\subsubsection{Assignment}
+
+The scene relation is also used for the assignment of names, identifiers,
+tasks, or abstract assignment of other entities to entities.
+
+\ex.
+\a. \dep{The baby_pcpd was *named* Kim_pcpr}
+\b. \dep{*Hangar* \#3_pcp is empty}
+\b. \dep{The teacher_xcau *assigned* each student_pcpd a task_pcpr}
+\b. \dep{Is that Peter_pcp-of 's *chair* ?}
+
+\subsubsection{Additional Markables}
+
+TBD
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\subsection{Precedence (\textsf{prc})}
+\label{sec:prc}
+
+The \textsf{prcd} follows the \textsf{prcr}, e.g., temporally, logically, by
+rank, as a heir, etc. Also used for ordinal numbers.
+
+\subsubsection{Modifier Examples}
+
+\ex.
+\a. \dep{the third_pcp:prcd *man*}
+\b. \dep{I_socd will *join* the club_socr if they ask_prc me}
+
+\subsubsection{Argument Examples}
+
+\ex.
+\a. \dep{Form_prcd *follows* function_prcr}
+\b. \dep{Cook_prcd is Jobs_prcr ' *successor*}
+\b. \dep{Das_prcd *fußt* auf einer falschen Vorstellung_prcr}
+\b. \dep{The start date_prcd is *contingent* on their approval_prcr}
+\b. \dep{Eine Aussöhnung_prcd *bedingt* eine Entschuldigung_prcr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\subsection{Possession (\textsf{pss})}
 \label{sec:pss}
+
+The \textsf{pssr} possesses or controls the \textsf{pssd}.
 
 \subsubsection{Modifier Examples}
 
@@ -500,6 +655,29 @@ TBD
 \b. \dep{Kim_pssir *lost* the house_pssd}
 \b. \dep{Caesar_pssr *conquered* Gaul_pssd}
 \b. \dep{Caesar_pssr 's *conquest* of Gaul_pssd}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\subsection{Part-whole (\textsf{pwh})}
+\label{sec:pwh}
+
+The \textsf{pwhd} is part of the \textsf{pwhr}.
+
+\subsubsection{Modifier Examples}
+
+\ex.
+\a. \dep{Kim_pwh 's *leg*}
+\b. \dep{a *man* with a mustache_pwh-of}
+\b. \dep{the *beginning* of the party_pwh}
+
+\subsubsection{Argument Examples}
+
+\ex.
+\a. \dep{Wheat_pwhr *contains* gluten_pwhd}
+
+In scene-entity relations, the domain is always a scene, and the range is a
+non-core participant, such as a causer, sender, receiver, or beneficiary.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -543,146 +721,17 @@ to. Also used for beneficiaries and maleficiaries.
 %\b. \dep{Kim_xrcp *responded* to my letter_msgd}
 %\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
 \b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
-\b. \dep{Die Piroggen_scnd waren Maria_xrcp zu dunkel_scnr *geraten*}
+\b. \dep{Die Piroggen_pcpd waren Maria_xrcp zu dunkel_pcpr *geraten*}
 \b. \dep{Emily_xsnd *delivered* Carlos 's message_msgr to Nianwen to Kilian_xrcp}
 \b. \dep{Carlos_xsnd 's *message* to Nianwen_xrcp}
-\b. \dep{Kim_locd *danced* for Sandy_xpr}
-\b. \dep{Kim_scnd *did* it_scnr for Sandy_xpr}
+\b. \dep{Kim_locd *danced* for Sandy_rcp}
+\b. \dep{Kim_pcpd *did* it_pcpr for Sandy_rcp}
 
 \subsubsection{Mental State}
 
 \ex.
 \a. \dep{Kim_xrcp is *tired*}
 \b. \dep{Kim_xrcp is *crazy*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-\subsection{Scene (\textsf{scn})}
-\label{sec:scn}
-
-\textsf{scnd} is the single core participant of a scene specified by the
-predicate, or a participant in a scene specified by the \textsf{scnr}.
-
-\subsubsection{States and Properties}
-
-\ex. \a. \dep{Kim_scnd is *tall*}
-     \b. \dep{The painting_scnd *improved*}
-     \b. \dep{Kim_xcau *improved* the painting_scnd}
-
-\subsubsection{Kinds}
-
-\ex. \a. \dep{Kim_scnd is a *painter*}
-     \b. \dep{Thag dog_scnd is a *labrador*}
-
-\subsubsection{Activities}
-
-``Activities'' are events with a single core participant that can be
-characterized as actively participating in the event.
-
-\ex. \a. \dep{Kim_scnd *partied*}
-     \b. \dep{Kim_scnd *partied* with Sandy_acc}
-     \b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
-
-\subsubsection{Experiences}
-
-``Experiences'' are events with a single core participant that can be
-characterized as undergoing the event.
-
-\ex. \a. \dep{Kim_xcau *attacked* Sandy_scnd}
-     \b. \dep{They_xcau *played* you_scnd like a fool_cmp}
-     \b. \dep{Kim_scnd *needs* Sandy_scnr}
-
-In the last example, understand \emph{Sandy} to metonymically stand for a scene,
-e.g. one of Sandy helping Kim.
-
-\subsubsection{Transformation and Creation}
-
-\textsf{scnd} denotes the entity undergoing the transformation, and
-\textsf{scnr} denotes its new state. Creation is framed as transformation of
-some material (\textsf{scnd}, often unexpressed) into the newly created entity
-(\textsf{scnr}).
-
-\ex. \a. \dep{The ice_scnd *turned* into water_scnr}
-     \b. \dep{God_xcau *made* people_scnr out of clay_scnd}
-     \b. \dep{A rock_scnr *formed*}
-     \b. \dep{Kim_xcau *created* a work_scnr of art}
-
-\subsubsection{Reproduction}
-
-\ex. \a. \dep{Kim_xcau *copied* the book_scnd}
-     \b. \dep{Kim_xcau *translated* the book_scnd to German_scnr}
-
-\subsubsection{Destruction}
-
-\ex. \a. \dep{The vase_scnd *broke*}
-     \b. \dep{Kim_xcau *broke* the vase_scnd}
-     \b. \dep{Kim_xcau *killed* Sandy_scnd}
-     \b. \dep{Sandy_scnd *died*}
-
-%\subsubsection{Auxilary Verbs and Copulas}
-%
-%Auxiliary verbs, when annotating on top of SUD rather than UD, also fall under
-%\textsf{scn}.
-%
-%\ex. \dep{We_scnd *will* see_scnr}
-%     \dep{*Have* you_scnd eaten_scnr ?}
-%     \dep{Kim_scnd *must* go_scnr}
-%     \dep{Kim_scnd *did* not go_scnr}
-%     \dep{Kim_scnd *is* a champion_scnr}
-%     \dep{Kim_scnd *is* tall_scnr}
-
-\subsubsection{Phase}
-
-The scene starting, continuing, ending, etc., is always the range. Only use
-\textsf{scnd} if the predicate has a separate argument for a participant in the
-scene.
-
-\ex. \a. \dep{The wound_scnd *began* to heal_scnr}
-     \b. \dep{A commotion_scnr *started*}
-     \b. \dep{Kim_xcau *started* a commotion_scnr}
-     \b. \dep{The concert_scnir *ended*}
-     \b. \dep{The concert_scnir *continued*}
-     \b. \dep{Kim_xcau *interrupted* the session_scnir}
-     \b. \dep{The storm_scnir *ebbed*}
-     \b. \dep{Kim_xcau *calmed* the commotion_scnir}
-
-\subsubsection{Causation}
-
-\ex. \a. \dep{Kim_xcau *let* Sandy_scnd join_scnr}
-     \b. \dep{Kim_xcau *made* Sandy_scnd join_scnr}
-     \b. \dep{Kim_xcau *allowed* Sandy_scnd to join_scnr}
-
-\subsubsection{Prevention}
-
-\ex. \a. \dep{Kim_xcau *kept* Sandy_scnd from joining_scnr}
-     \b. \dep{Swift action_xcau *prevented* an outbreak_scnr}
-     \b. \dep{Kim_scnd *refrained* from going_scnr}
-     \b. \dep{Kim_xcau *saved* Sandy_scnd from the dragon_scnr}
-
-In the last example, understand \emph{dragon} metonymically as a scene in which
-the dragon causes harm to Sandy.
-
-\subsubsection{Relative Clauses}
-
-For relative clauses, the \textsf{scn} label is used as a modifier relation:
-
-\ex. \a. \dep{a *package* that was too heavy_scn}
-
-\subsubsection{Assignment}
-
-The scene relation is also used for the assignment of names, identifiers,
-tasks, or abstract assignment of other entities to entities.
-
-\ex.
-\a. \dep{The baby_scnd was *named* Kim_scnr}
-\b. \dep{*Hangar* \#3_scn is empty}
-\b. \dep{The teacher_xcau *assigned* each student_scnd a task_scnr}
-\b. \dep{Is that Peter_scn-of 's *chair* ?}
-
-\subsubsection{Additional Markables}
-
-TBD
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -740,30 +789,6 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\subsection{Succession (\textsf{suc})}
-\label{sec:suc}
-
-The \textsf{sucd} follows the \textsf{sucr}, e.g., temporally, logically, by
-rank, as a heir, etc. Also used for ordinal numbers.
-
-\subsubsection{Modifier Examples}
-
-\ex.
-\a. \dep{the third_scn:sucd *man*}
-
-\subsubsection{Argument Examples}
-
-\ex.
-\a. \dep{Form_sucd *follows* function_sucr}
-\b. \dep{Cook_sucd is Jobs_sucr ' *successor*}
-\b. \dep{Das_sucd *fußt* auf einer falschen Vorstellung_sucr}
-\b. \dep{I_socd will *join* the club_socr if they ask_suc me}
-\b. \dep{The start date_sucd is *contingent* on their approval_sucr}
-\b. \dep{Eine Aussöhnung_sucd *bedingt* eine Entschuldigung_sucr}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
 \subsection{Temporal (\textsf{tmp})}
 \label{sec:tmp}
 
@@ -774,29 +799,6 @@ When, how often, or for how long an event takes place.
 \b. \dep{Kim_locir *sneezed* twice_tmp}
 \b. \dep{Kim_locd *swam* for an hour_tmp}
 \b. \dep{Kim_xsnd *says* hello_msgr whenever I meet_tmp them}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-\subsection{Part-whole (\textsf{whl})}
-\label{sec:whl}
-
-The \textsf{whld} is part of the \textsf{whlr}.
-
-\subsubsection{Modifier Examples}
-
-\ex.
-\a. \dep{Kim_whl 's *leg*}
-\b. \dep{a *man* with a mustache_whl-of}
-\b. \dep{the *beginning* of the party_whl}
-
-\subsubsection{Argument Examples}
-
-\ex.
-\a. \dep{Wheat_whlr *contains* gluten_whld}
-
-In scene-entity relations, the domain is always a scene, and the range is a
-non-core participant, such as a causer, sender, receiver, or beneficiary.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -832,7 +834,7 @@ participant which is most directly involved in the scene.
 
 \ex.
 \a. \dep{Kim_cmpd *exceeds* Sandy_cmpr in length_xatt}
-\b. \dep{That_scnd is *great* in terms_att of ROI}
+\b. \dep{That_pcpd is *great* in terms_att of ROI}
 \b. \dep{Kim_locd ist auf den Kopf_xatt *gefallen*}
 \b. \dep{Kim_xcau *hit* Sandy_locr on the head_xatt with a stick_locd}
 
@@ -851,7 +853,7 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 
 \ex.
 \a. \dep{Kim_xsnd *gave* a lecture_cpd}
-\b. \dep{Kim_scnd *had* sex_cpd with Sandy_xacc}
+\b. \dep{Kim_pcpd *had* sex_cpd with Sandy_xacc}
 
 TODO: causative light verbs
 
@@ -868,7 +870,7 @@ TODO: causative light verbs
 \subsubsection{Expletive \emph{there}}
 
 \ex.
-\a. \dep{There_cpd *was* a famine_scnr}
+\a. \dep{There_cpd *was* a famine_pcpr}
 
 \subsubsection{Inherently Reflexive Verbs}
 
@@ -887,7 +889,7 @@ TODO: causative light verbs
 Used for adverbials etc. that mark a clause for its relation to preceding/following discourse, speaker attitude, etc.
 
 \ex.
-\a. \dep{However_dim , nothing_scnr *happened*}
+\a. \dep{However_dim , nothing_pcpr *happened*}
 \b. \dep{Even_dim *Kim* didn't see it}
 \b. \dep{Der_xrcp *will* nur_dim spielen_msgd}
 
@@ -900,7 +902,7 @@ Used for adverbials etc. that mark a clause for its relation to preceding/follow
 Used for secondary predicates that describe the state of one of the participants during the scene.
 
 \ex.
-\a. \dep{Kim_scnd *slept* naked_dpc}
+\a. \dep{Kim_pcpd *slept* naked_dpc}
 \b. \dep{Pythons_locr *swallow* their prey_locd whole_dpc}
 
 TODO: additional markables
@@ -933,7 +935,7 @@ Secondary predicates that denote the end state of a participant are marked
 predicate, use \textsf{rsd} instead.
 
 \ex.
-\a. \dep{Kim_xcau *hammered* the metal_scnd flat_rsr}
+\a. \dep{Kim_xcau *hammered* the metal_pcpd flat_rsr}
 \b. \dep{You_xsnd are *talking* me_rsd silly_rsr}
 
 TODO: additional markables
@@ -942,101 +944,101 @@ TODO: additional markables
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\clearpage
-\section{Difficult Cases}
-
-Verbs with scene arguments, often control constructions
-
-Guideline: keep number of x-roles small; focus on non-subjects
-
-\ex.
-\a. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
-\b. \dep{Kim_xcau *reacted* to the attack_caur with a drone strike_caud}
-\b. \dep{Kim_xrcp *managed* with dealing_sncr the cards}
-\b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_xmns}
-\b. \dep{Kim_xrcp *compared* Sandy_cmpd to a Summer 's day_cmpr}
-\b. \dep{Kim_xcau *helped* Sandy_scnd clean_scnr}
-\b. \dep{Kim_xrcp *needs* Sandy_scnd to take_scnr a stand}
-\b. \dep{Kim_xrcp *needs* Sandy_scnr}
-\b. \dep{Kim_scnd *deserves* to be treated_scnr with respect}
-\b. \dep{Kim_xcau *began* the party_whlr with a speech_whld}
-
-Functor head constructions
-
-\ex. \a. \dep{You_cmpd are *more* of a dancer_xnuc?? than she is_cmpr}
-
-Neither subject nor object have a core role:
-
-\ex. \a. \dep{It_exp *rains*} (scn)
-     \b. \dep{Kim_xsnd *plays* the flute_mns} (msg)
-     \c. \dep{Kim_xcau *paints*} (scn?)
-
-Should we force some metonymy to force an overt core role? E.g., have \emph{flute} stand for the msgr?
-
-I need you.
-
-He responded to the provocation with violence.
-
-He began the party with a speech.
-
-Spend money/time on something
-
-Deserve
-
-Socially constructed properties like names, prices: name the ship, it costs 1M, our story on that is not yet clear
-
-How does our terminology relate to Croft's?
-
-reference = n/a, because references don't have roles
-
-modification = modifier roles
-
-predication = argument roles
-
-action = subdistinguished by relation
-
-property/object = a distinction we do not make
-
-But where do binary states like possession fit into Croft's scheme?
-
-Explicit distinctions we stay away from for now, many additional complexities
-trying to pin them down:
-
-\begin{itemize}
-    \item state vs. process vs. event, or really any aspectual information that
-        is not strictly required because of source/path/goal-like arguments.
-        Thus: \dep{Kim_xcau *paints*}.
-    \item state vs. property vs. object predication
-\end{itemize}
-
-Tamm: adnominal possession (not restricted to possession strictu sensu) where
-the head's referent is typically identified via the possessor's referent,
-e.g.,: Peter's chair (location/temporary possession/assignment)/brother
-(social)/book (creator)/house (location/possession)/finger (part) vs.
-non-anchoring relations (typification): golden ring (material)/coffee cup
-(container-contained/purpose)/autumn flower (temporal).
-
-We need to say something about relational nouns:
-
-\dep{my_scnr *creator*}
-
-Subevents/context:
-
-Das Betreten ist nur in Begleitung gestattet
-
-Frida begleitete Hans auf dem Klavier
+%\clearpage
+%\section{Difficult Cases}
+%
+%Verbs with scene arguments, often control constructions
+%
+%Guideline: keep number of x-roles small; focus on non-subjects
+%
+%\ex.
+%\a. \dep{Kim_xcau *used* a hammer_mnsr to smash_mnsd the vase}
+%\b. \dep{Kim_xcau *reacted* to the attack_caur with a drone strike_caud}
+%\b. \dep{Kim_xrcp *managed* with dealing_sncr the cards}
+%\b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_xmns}
+%\b. \dep{Kim_xrcp *compared* Sandy_cmpd to a Summer 's day_cmpr}
+%\b. \dep{Kim_xcau *helped* Sandy_pcpd clean_pcpr}
+%\b. \dep{Kim_xrcp *needs* Sandy_pcpd to take_pcpr a stand}
+%\b. \dep{Kim_xrcp *needs* Sandy_pcpr}
+%\b. \dep{Kim_pcpd *deserves* to be treated_pcpr with respect}
+%\b. \dep{Kim_xcau *began* the party_pwhr with a speech_pwhd}
+%
+%Functor head constructions
+%
+%\ex. \a. \dep{You_cmpd are *more* of a dancer_xnuc?? than she is_cmpr}
+%
+%Neither subject nor object have a core role:
+%
+%\ex. \a. \dep{It_exp *rains*} (pcp)
+%     \b. \dep{Kim_xsnd *plays* the flute_mns} (msg)
+%     \c. \dep{Kim_xcau *paints*} (pcp?)
+%
+%Should we force some metonymy to force an overt core role? E.g., have \emph{flute} stand for the msgr?
+%
+%I need you.
+%
+%He responded to the provocation with violence.
+%
+%He began the party with a speech.
+%
+%Spend money/time on something
+%
+%Deserve
+%
+%Socially constructed properties like names, prices: name the ship, it costs 1M, our story on that is not yet clear
+%
+%How does our terminology relate to Croft's?
+%
+%reference = n/a, because references don't have roles
+%
+%modification = modifier roles
+%
+%predication = argument roles
+%
+%action = subdistinguished by relation
+%
+%property/object = a distinction we do not make
+%
+%But where do binary states like possession fit into Croft's scheme?
+%
+%Explicit distinctions we stay away from for now, many additional complexities
+%trying to pin them down:
+%
+%\begin{itemize}
+%    \item state vs. process vs. event, or really any aspectual information that
+%        is not strictly required because of source/path/goal-like arguments.
+%        Thus: \dep{Kim_xcau *paints*}.
+%    \item state vs. property vs. object predication
+%\end{itemize}
+%
+%Tamm: adnominal possession (not restricted to possession strictu sensu) where
+%the head's referent is typically identified via the possessor's referent,
+%e.g.,: Peter's chair (location/temporary possession/assignment)/brother
+%(social)/book (creator)/house (location/possession)/finger (part) vs.
+%non-anchoring relations (typification): golden ring (material)/coffee cup
+%(container-contained/purpose)/autumn flower (temporal).
+%
+%We need to say something about relational nouns:
+%
+%\dep{my_pcpr *creator*}
+%
+%Subevents/context:
+%
+%Das Betreten ist nur in Begleitung gestattet
+%
+%Frida begleitete Hans auf dem Klavier
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Motivation}
-
-Why Superframes?
-
-See motivation introduction.
-
-AMR: try to abstract away from superficial differences (unsuccessfully, see work on divergences). E.g., focus is not necessarily placed at predicate associated with syntactic root of sentence.
-
-Superframes: use dependency tree as a scaffold, annotate syntax-semantic interface rather than ``the'' semantics directly.
+%\section{Motivation}
+%
+%Why Superframes?
+%
+%See motivation introduction.
+%
+%AMR: try to abstract away from superficial differences (unsuccessfully, see work on divergences). E.g., focus is not necessarily placed at predicate associated with syntactic root of sentence.
+%
+%Superframes: use dependency tree as a scaffold, annotate syntax-semantic interface rather than ``the'' semantics directly.
 
 \clearpage
 
