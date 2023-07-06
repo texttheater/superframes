@@ -27,7 +27,7 @@
 
 \tableofcontents
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \section{Introduction}
@@ -83,7 +83,7 @@ Superframes is an annotation scheme for semantic roles. It has the following goa
 
 The Superframes annotation scheme is based on the binary relations shown in Table~\ref{tab:inventory}. Borrowing terminology from AMR, we call the first relate the ``domain'' and the second relate the ``range''. This inventory is then used to annotate bilexical dependencies with roles. We distinguish a number of types of roles, as explained in the following.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Role Type I: Modifier Roles}
 
@@ -92,7 +92,7 @@ Modifier dependencies are annotated with a plain binary relation or its inverse 
 \ex. \a. \dep{*partied* at home_loc}
      \b. \dep{a *man* with a mustache_pwh-of}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Role Type II: Core Argument Roles}
 
@@ -103,7 +103,7 @@ Predicates such as verbs (but also adjectives, state/process/event nouns, relati
 
 The first example illustrates that Superframes abstract away from aktionsart: it does not matter for the choice of superframe or roles whether a state (Kim is in Boston), an event bringing that state about (Kim went to Boston), or a process (Kim is walking) is described. Borrowing terminology from UCCA \citep{abend-rappoport-2013-universal}, we collectively call states, processes, and events ``scenes''.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Role Type IIa: Initial and Intermediate Range Roles}
 
@@ -113,7 +113,7 @@ However, some predicates denote the dissolution of a relation between a domain a
      \b. \dep{Kim_pssir *kept* the house_pssd}
      \b. \dep{Kim_pssir *lost* the house_pssd}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Role Type III: Non-core Argument Roles}
 
@@ -124,7 +124,7 @@ Some predicates have more than just the domain and range arguments. For such arg
      \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
      \b. \dep{Kim_xrcp *searched* the woods_xloc for Sandy_msgd}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{General Guidelines for Framing}
 
@@ -211,6 +211,9 @@ tree. This necessitates an additional arc on which to to the role labeling.
 \b. \dep{Kim_locd__xcau *left* after **trashing**_tmp the room__pcp} (subjectless adverbial clause)
 \b. \dep{Kim_pcpd__msgd is *hard* to **love**_pcpr} (\emph{tough} construction)
 \b. \dep{*Kim*__xcau , who **broke**_scn the vase__pcpd , is sorry} (relative clause)
+\b. \dep{the *question*__msgd___msgd we__xsnd___xsnd **raised**_scn without ***answering***} (parasitic gap)
+
+TODO: addtional relations for acc, att?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -276,7 +279,7 @@ and must be metonymically understood as the scene.
 \b. \dep{Kim_accr *accompanied* Sandy_accd}
 \b. \dep{Kim_accr *accompanied* Sandy_accd on the piano_xmns}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Asset (\textsf{ast})}
@@ -287,11 +290,9 @@ Entity given or offered in an exchange or wager.
 \ex.
 \a. \dep{Kim_pssr *bought* the house_pssd for a million dollars_xast}
 \b. \dep{Kim_xsnd *offered* Sandy_xrcp a million dollars_msgr for the house_xast}
-\b. \dep{I_xsnd *bet* you_xrcp 30 bucks_xast he will win_msgr}
+\b. \dep{I_xsnd *bet* you_xrcp 30 bucks_xast to an apple_xcmp he will win_msgr}
 
-TODO: can this be merged into qnt?
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Causer (\textsf{cau})}
@@ -303,8 +304,8 @@ Entity causing a scene.
 \a. \dep{Kim_xcau *broke* the glass_pcpd}
 \b. \dep{The knife_xcau *cut* the bread_pcpd}
 \b. \dep{Kim_xcau *cut* the bread_pcpd with a knife_mns}
-\b. \dep{The war_xcau *caused* a famine_pcpr}
-\b. \dep{There was a *famine* because of the war_cau}
+\b. \dep{The war_caur *caused* a famine_caud}
+\b. \dep{There *was* a famine because of the war_cau}
 \b. \dep{Der Wasserdruck_pcpd *stieg* , wodurch der Brunnen überfloss_cau-of}
 \b. \dep{Kim_locd *went* to town_locr because they wanted_cau to buy food}
 
@@ -313,15 +314,16 @@ Note how the last example expresses a purpose, but construes it as a cause, so
 purpose:
 
 \ex.
-\a. \dep{Kim_locd *went* to town_locr to buy_xpl food}
+\a. \dep{Kim_locd__pssr *went* to town_locr to **buy**_xpl food}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Comparison (\textsf{cmp})}
 \label{sec:cmp}
 
-\subsubsection{Modifier Examples}
+\textsf{cmpd} is compared with or in some other way described in reference to
+\textsf{cmpr}. Used to contrast scenes:
 
 \ex.
 \a. \dep{Compared_cmp to Sandy, Kim_pcpd is *tall*}
@@ -331,7 +333,7 @@ purpose:
 \b. \dep{Kim_locd *came* although Sandy had told_cmp them not to}
 \b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cmp}
 
-\subsubsection{Argument Examples}
+Or to compare other entities:
 
 \ex.
 \a. \dep{Kim_cmpd *outranks* Sandy_cmpr}
@@ -339,38 +341,32 @@ purpose:
 \b. \dep{The Polish restaurant_cmpd *compared* favorably_xmnr to the Spanish one_cmpr}
 \b. \dep{Kim_xrcp *compared* Coke_pcpd to Pepsi_pcpr}
 
-\subsubsection{Comparatives}
-
 The comparative of adjectives is treated as a valency-changing operation that
 gives the adjective an additional \textsf{xcmp} argument:
 
 \ex.
 \a. \dep{Kim_pcpd is *taller* than Sandy_xcmp}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Location (\textsf{loc})}
 \label{sec:loc}
 
-Describes the location (or change of location, i.e., motion) of the \textsf{locd}.
+Describes the location (or change of location, i.e., motion) of the
+\textsf{locd}.
 
-\subsubsection{Modifier Examples}
-
-\ex. \a. \dep{The *hat* in the box_loc}
-
-\subsubsection{Static Argument Examples}
-
-\ex. \a. \dep{Kim_locd *lives* in Boston_locr}
-
-\subsubsection{Dynamic Argument Examples}
-
-\ex. \a. \dep{Kim_locd *went* from the living room_locir through the door_locmr into the kitchen_locr}
-     \b. \dep{Kim_xcau *placed* the hat_locd on the table_locr}
-     \b. \dep{Kim_locd is *running*}
-     \b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xacc}
+\ex.
+\a. \dep{The *hat* in the box_loc}
+\b. \dep{Kim_locd *lives* in Boston_locr}
+\b. \dep{Kim_locd *went* from the living room_locir through the door_locmr into the kitchen_locr}
+\b. \dep{Kim_xcau *placed* the hat_locd on the table_locr}
+\b. \dep{Kim_locd is *running*}
+\b. \dep{Kim_locd is *dancing* around the room_locmr with Sandy_xacc}
 
 \subsubsection{Wrapping and Wearing}
+
+The item wrapping or being worn by something is construed as the \textsf{locd}.
 
 \ex. \a. \dep{Kim_locr is *wearing* a shirt_locd}
      \b. \dep{Kim_locr is *wearing* glasses_locd}
@@ -390,11 +386,8 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
 \ex.
 \a. \dep{Kim_xcau *decorated* the balcony_locr with fairy lights_locd}
 \b. \dep{Kim_xcau *splashed* Sandy_locr with water_locd}
-\b. \dep{Kim_xcau *cleaned* the dirt_locd off Sandy_locir}
-\b. \dep{Kim_xcau *cleaned* Sandy_locir}
-\b. \dep{*chicken* with rice_loc-of}
-\b. \dep{The chicken_locr *comes* with rice_loc}
-\b. \dep{Kim_xcau *added* rice_locd to the chicken_locr}
+\b. \dep{Kim_xcau *washed* the dirt_locd off Sandy_locir}
+\b. \dep{Kim_xcau *washed* Sandy_locir}
 
 \subsubsection{Hitting}
 
@@ -405,7 +398,7 @@ Describes the location (or change of location, i.e., motion) of the \textsf{locd
 \b. \dep{Kim_xcau *hit* Sandy_locr on the head_xatt with a pool noodle_locd}
 \b. \dep{Kim_xcau *kicked* Sandy_locr}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Manner (\textsf{mnr})}
@@ -417,7 +410,7 @@ Manner in which a scene unfolds.
 \a. \dep{Kim_xsnd *sang* softly_mnr}
 \b. \dep{Kim_xcau *placed* the note_locd surreptitiously_mnr on the counter_locr}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Means (\textsf{mns})}
@@ -432,7 +425,7 @@ which the causer causes the first scene.
 \b. \dep{Kim_xcau *used* a pen_mnsr to get_mnsd the lid off}
 \b. \dep{You_xcau *used* me_mnsd !}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Message (\textsf{msg})}
@@ -440,14 +433,14 @@ which the causer causes the first scene.
 
 A message is expressed or received, where \textsf{msgd} is what the message is
 about, and \textsf{msgr} is the message itself, or its contents. Often used
-together with \textsf{xsnd} (sender) and \textsf{<xrcp} (recipient).
+together with \textsf{xsnd} (sender) and \textsf{xrcp} (recipient).
 
 \subsubsection{Expression}
 
 \ex. \a. \dep{Kim_xsnd *yelped*}
      \b. \dep{Kim_xsnd *said* : it 's fine_msgr}
      \b. \dep{Kim_xsnd *said* it was fine_msgr}
-     \b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
+     \b. \dep{Kim_xsnd *called* Sandy_msgd__pcpd a **liar**_msgr}
      \b. \dep{Kim_xsnd *told* Sandy_xrcp a secret_msgr}
      \b. \dep{Kim_xsnd *talked* about Sandy_msgd}
      \b. \dep{Kim_xsnd *talked* shit_msgr about Sandy_msgd}
@@ -481,7 +474,7 @@ When the object is the resulting work of art, frame it as creation (\textsf{pcp}
 \subsubsection{Recording}
 
 \ex. \a. \dep{Kim_xsnd *wrote* Sandy_xrcp a letter_msgr}
-     \b. \dep{Kim_xsnd *wrote* the message_msgr onto a piece of paper_xloc with a pen_mns in big red letters_xdpc}
+     \b. \dep{Kim_xsnd *wrote* the message_msgr__pcp-of onto a piece of paper_xloc with a pen_mns in big red **letters**_xdpc}
      \b. \dep{The concert_msgd was *recorded* on tape_xloc}
 
 \subsubsection{Perception}
@@ -489,26 +482,22 @@ When the object is the resulting work of art, frame it as creation (\textsf{pcp}
 Perception, including mental and volitional perception.
 
 \ex. \a. \dep{Kim_xrcp *saw* a flower_msgd}
-     \b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
+     \b. \dep{Kim_xrcp *found* the flower_msgd__pcpd **beautiful**_msgr}
      \b. \dep{Kim_xrcp *thinks* Sandy is a liar_msgr}
-     \b. \dep{Kim_xrcp *thinks* Sandy_msgd a liar_msgr}
-     \b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-     \b. \dep{Kim_xrcp *wants* to swim_msgr}
-     \b. \dep{Kim_xrcp *wants* Sandy_msgd to swim_msgr}
-     \b. \dep{Kim_msgd *seems* happy_msgr}
-     \b. \dep{Kim_msgd *seems* happy_msgr to Sandy_xrcp}
+     \b. \dep{Kim_xrcp *thinks* Sandy_msgd__pcp a **liar**_msgr}
+     \b. \dep{Kim_xrcp *saw* Sandy_msgd__locd **swim**_msgr}
+     \b. \dep{Kim_xrcp__locd *wants* to **swim**_msgr}
+     \b. \dep{Kim_xrcp *wants* Sandy_msgd__locd to **swim**_msgr}
+     \b. \dep{Kim_msgd__xrcp *seems* **happy**_msgr}
+     \b. \dep{Kim_msgd__xrcp *seems* **happy**_msgr to Sandy_xrcp}
      \b. \dep{The Thought Police_xrcp *observed* Winston_msgd}
      \b. \dep{Kim_xrcp *studies* linguistics_msgd}
      \b. \dep{Kim_xsnd *taught* Sandy_xrcp Spanish_msgd}
      \b. \dep{Sandy is a *professor* of linguistics_msgd}
      \b. \dep{Kim_xrcp *measured* the elasticity_msgd}
-     \b. \dep{The jury_xrcp *found* Kim_msgd guilty_msgr}
+     \b. \dep{The jury_xrcp *found* Kim_msgd__pcpd **guilty**_msgr}
 
-\subsubsection{Additional Markables}
-
-TBD
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Participation (\textsf{pcp})}
@@ -553,7 +542,7 @@ e.g. one of Sandy helping Kim.
 
 \textsf{pcpd} denotes the entity undergoing the transformation, and
 \textsf{pcpr} denotes its new state. Creation is framed as transformation of
-some material (\textsf{pcpd}, often unexpressed) into the newly created entity
+some material (\textsf{pcpd}, often unrealized) into the newly created entity
 (\textsf{pcpr}).
 
 \ex. \a. \dep{The ice_pcpd *turned* into water_pcpr}
@@ -591,7 +580,7 @@ The scene starting, continuing, ending, etc., is always the range. Only use
 \textsf{pcpd} if the predicate has a separate argument for a participant in the
 scene.
 
-\ex. \a. \dep{The wound_pcpd *began* to heal_pcpr}
+\ex. \a. \dep{The wound_pcpd__pcpd *began* to **heal**_pcpr}
      \b. \dep{A commotion_pcpr *started*}
      \b. \dep{Kim_xcau *started* a commotion_pcpr}
      \b. \dep{The concert_pcpir *ended*}
@@ -602,15 +591,15 @@ scene.
 
 \subsubsection{Causation}
 
-\ex. \a. \dep{Kim_xcau *let* Sandy_pcpd join_pcpr}
-     \b. \dep{Kim_xcau *made* Sandy_pcpd join_pcpr}
-     \b. \dep{Kim_xcau *allowed* Sandy_pcpd to join_pcpr}
+\ex. \a. \dep{Kim_xcau *let* Sandy_pcpd__socd **join**_pcpr}
+     \b. \dep{Kim_xcau *made* Sandy_pcpd__socd **join**_pcpr}
+     \b. \dep{Kim_xcau *allowed* Sandy_pcpd__socd to **join**_pcpr}
 
 \subsubsection{Prevention}
 
-\ex. \a. \dep{Kim_xcau *kept* Sandy_pcpd from joining_pcpr}
+\ex. \a. \dep{Kim_xcau *kept* Sandy_pcpd__socd from **joining**_pcpr}
      \b. \dep{Swift action_xcau *prevented* an outbreak_pcpr}
-     \b. \dep{Kim_pcpd *refrained* from going_pcpr}
+     \b. \dep{Kim_pcpd__locd *refrained* from **going**_pcpr}
      \b. \dep{Kim_xcau *saved* Sandy_pcpd from the dragon_pcpr}
 
 In the last example, understand \emph{dragon} metonymically as a scene in which
@@ -619,25 +608,23 @@ the dragon causes harm to Sandy.
 \subsubsection{Predicate Modifiers}
 
 Modifiers that are themselves predicates which assign the modified entity a
-role use the \textsf{pcp} relation. Subtype it for the role assigned by the
-modifier.
-
+role, such as adjectives or relative clauses, use the \textsf{pcp} relation.
 \ex.
-\a. \dep{a *package* that was heavy_pcp:pcpd}
-\b. \dep{a heavy_pcp:pcpd *package*}
+\a. \dep{a *package*__pcpd that was **heavy**_pcp}
+\b. \dep{a **heavy**_pcp *package*__pcpd}
 
 \subsubsection{Assignment}
 
-The scene relation is also used for the assignment of names, identifiers,
-tasks, or abstract assignment of other entities to entities.
+The participation relation is also used for the assignment of names,
+identifiers, tasks, or abstract assignment of other entities to entities.
 
 \ex.
 \a. \dep{The baby_pcpd was *named* Kim_pcpr}
 \b. \dep{*Hangar* \#3_pcp is empty}
 \b. \dep{The teacher_xcau *assigned* each student_pcpd a task_pcpr}
-\b. \dep{Is that Peter_pcp 's *chair* ?}
+\b. \dep{Is that Peter_pcp-of 's *chair* ?}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Precedence (\textsf{prc})}
@@ -646,23 +633,17 @@ tasks, or abstract assignment of other entities to entities.
 The \textsf{prcd} follows the \textsf{prcr}, e.g., temporally, logically, by
 rank, as a heir, etc. Also used for ordinal numbers.
 
-\subsubsection{Modifier Examples}
-
 \ex.
-\a. \dep{the third_pcp:prcd *man*}
+\a. \dep{the **third**_pcp *man*__prcd}
 \b. \dep{I_socd will *join* the club_socr if they ask_prc me}
-
-\subsubsection{Argument Examples}
-
-\ex.
-\a. \dep{Form_prcd *follows* function_prcr}
-\b. \dep{Cook_prcd is Jobs_prcr ' *successor*}
+\b. \dep{Form_prcd *follows* function_prcr}
+\b. \dep{Cook_prcd is Jobs_prcr 's *successor*}
 \b. \dep{Das_prcd *fußt* auf einer falschen Vorstellung_prcr}
 \b. \dep{The start date_prcd is *contingent* on their approval_prcr}
 \b. \dep{Eine Aussöhnung_prcd *bedingt* eine Entschuldigung_prcr}
 \b. \dep{Kim_xrcp *deduced* the truth_prcd from the clues_prcr}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Possession (\textsf{pss})}
@@ -670,27 +651,20 @@ rank, as a heir, etc. Also used for ordinal numbers.
 
 The \textsf{pssr} possesses or controls the \textsf{pssd}.
 
-\subsubsection{Modifier Examples}
-
-\ex. \a. \dep{Kim_pss 's *house*}
-
-\subsubsection{Static Argument Examples}
-
-\ex. \a. \dep{Kim_pssr *owns* a house_pssd}
-     \b. \dep{The house_pssd *belongs* to Kim_pssr}
-     \b. \dep{the *owner* of the house_pssd}
-     \b. \dep{Kim_pssr *has* Sandy 's phone_pssd}
-
-\subsubsection{Dynamic Argument Examples}
 \ex.
-\a. \dep{Kim_pssr *bought* a house_pssd from Sandy_pssir}
+\a. \dep{Kim_pss 's *house*}
+\b. \dep{Kim_pssr *owns* a house_pssd}
+\b. \dep{The house_pssd *belongs* to Kim_pssr}
+\b. \dep{the *owner* of the house_pssd}
+\b. \dep{Kim_pssr *has* Sandy 's phone_pssd}
+\b. \dep{Kim_pssr *bought* a house_pssd from Sandy_pssir}
 \b. \dep{Sandy_pssir *sold* Kim_pssr the house_pssd}
 \b. \dep{Kim_pssir *kept* the house_pssd}
 \b. \dep{Kim_pssir *lost* the house_pssd}
 \b. \dep{Caesar_pssr *conquered* Gaul_pssd}
 \b. \dep{Caesar_pssr 's *conquest* of Gaul_pssd}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Part-whole (\textsf{pwh})}
@@ -698,22 +672,14 @@ The \textsf{pssr} possesses or controls the \textsf{pssd}.
 
 The \textsf{pwhd} is part of the \textsf{pwhr}.
 
-\subsubsection{Modifier Examples}
-
 \ex.
 \a. \dep{Kim_pwh 's *leg*}
 \b. \dep{a *man* with a mustache_pwh-of}
 \b. \dep{the *beginning* of the party_pwh}
+\b. \dep{Wheat_pwhr *contains* gluten_pwhd}
+\b. \dep{Kim_xcau *began* the party_pwhr with a speech_pwhd}
 
-\subsubsection{Argument Examples}
-
-\ex.
-\a. \dep{Wheat_pwhr *contains* gluten_pwhd}
-
-In scene-entity relations, the domain is always a scene, and the range is a
-non-core participant, such as a causer, sender, receiver, or beneficiary.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Quantity (\textsf{qnt})}
@@ -721,54 +687,52 @@ non-core participant, such as a causer, sender, receiver, or beneficiary.
 
 \textsf{qntr} is the quantity, degree, or extent of \textsf{qntd}.
 
-\subsubsection{Modifier Examples}
-
 \ex.
 \a. \dep{three_qnt *burgers*}
 \b. \dep{three_qnt *liters* of coke_qnt-of}
 \b. \dep{We_xsnd *discourage* this_msgd emphatically_qnt}
 \b. \dep{ten *dollars* per item_qnt}
+\b. \dep{The birds_qntd *number* in the thousands_qntr}
 
-\subsubsection{Argument Examples}
-
-\ex.
-\a. \dep{The birds_qntd *number* in the thousands_qntr}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Recipient (\textsf{rcp})}
 \label{sec:rcp}
 
 Entity that perceives or experiences a scene, or that a message is addressed
-to. Also used for beneficiaries and maleficiaries.
+to.
 
 \ex.
 \a. \dep{Sandy_xrcp *heard* about the virus_msgd}
 \b. \dep{Kim_xrcp *deduced* the truth_prcd from the clues_prcr}
 \b. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
 \b. \dep{Kim_xrcp *saw* a flower_msgd}
-\b. \dep{Kim_xrcp *saw* Sandy_msgd swim_msgr}
-\b. \dep{Kim_xrcp *found* the flower_msgd beautiful_msgr}
-\b. \dep{The virus_msgd *seems* dangerous_msgr to Kim_xrcp}
-\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cnc-of}
+\b. \dep{Kim_xrcp *saw* Sandy_msgd__locd **swim**_msgr}
+\b. \dep{Kim_xrcp *found* the flower_msgd__pcpd **beautiful**_msgr}
+\b. \dep{The virus_msgd__pcpd *seems* **dangerous**_msgr to Kim_xrcp}
+\b. \dep{Kim_xsnd *sent* Sandy_xrcp a letter_msgr , but it never arrived_cmp}
 %\b. \dep{Kim_xrcp *reacted* badly_mnr to the misfortune_msgd}
 %\b. \dep{Kim_xrcp *responded* to my letter_msgd}
 %\b. \dep{Kim_xrcp *responded* to the attack_msgd with a drone strike_xmns}
-\b. \dep{Kim_xrcp *managed* with dealing_msgd the cards}
+\b. \dep{Kim_rcpr *managed* with dealing_rcpd the cards}
 \b. \dep{Die Piroggen_pcpd waren Maria_xrcp zu dunkel_pcpr *geraten*}
 \b. \dep{Emily_xsnd *delivered* Carlos 's message_msgr to Nianwen to Kilian_xrcp}
 \b. \dep{Carlos_xsnd 's *message* to Nianwen_xrcp}
-\b. \dep{Kim_locd *danced* for Sandy_rcp}
+
+\subsubsection{Beneficiaries and Maleficiaries}
+
+\ex.
+\a. \dep{Kim_locd *danced* for Sandy_rcp}
 \b. \dep{Kim_pcpd *did* it_pcpr for Sandy_rcp}
 
 \subsubsection{Mental State}
 
 \ex.
-\a. \dep{Kim_xrcp is *tired*}
-\b. \dep{Kim_xrcp is *crazy*}
+\a. \dep{Kim_rcpr is *tired*}
+\b. \dep{Kim_rcpr is *crazy*}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Sender (\textsf{snd})}
@@ -778,12 +742,12 @@ Entity that sends a signal that can be perceived by a recipient.
 
 \ex.
 \a. \dep{Kim_xsnd *told* Sandy_xrcp about the virus_msgd}
-\b. \dep{Kim_xsnd *called* Sandy_msgd a liar_msgr}
-\b. \dep{Kim_xsnd *hummed* a little melody_msgd , but nobody heard_cnc-of it}
+\b. \dep{Kim_xsnd *called* Sandy_msgd__pcpd a **liar**_msgr}
+\b. \dep{Kim_xsnd *hummed* a little melody_msgd , but nobody heard_cmp it}
 \b. \dep{Kim_xsnd *exploded* at Sandy_xrcp}
 \b. \dep{Kim_xsnd *bowed* to Sandy_xrcp}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Social (\textsf{soc})}
@@ -793,35 +757,32 @@ The \textsf{socd} is an individual that is in some socially constructed
 relationship with the \textsf{socr}. The \textsf{socr} might e.g. be a
 relative, a friend, an organization, a responsibility, or a judicial sentence.
 
-\subsubsection{Static Argument Examples}
+\ex.
+\a. \dep{Kim_soc-of 's *friend*}
+\b. \dep{Kim_socr is my_socd *cousin*}
+\b. \dep{Kim_socd and Sandy are *friends*}
+\b. \dep{Kim_socd is *friends* with Sandy_socr}
+\b. \dep{Kim_socd *works* at Google_socr}
+\b. \dep{Kim_socd *works* for Sandy_socr}
+\b. \dep{Kim_socd *emcees*}
+\b. \dep{Kim_socd is *hosting* the party_socr}
+\b. \dep{Kim_socd is under house *arrest*}
+\b. \dep{Kim_socd 's *sentence* was suspended}
+\b. \dep{Kim_socd *married* Sandy_socr}
+\b. \dep{The official_xcau *married* Kim_socd to Sandy_socr}
+\b. \dep{The official_xcau *married* Kim_socd and Sandy}
+\b. \dep{Kim_socd *divorced* Sandy_socir}
+\b. \dep{Kim_socd *befriended* Sandy_socr}
+\b. \dep{Kim_socd *took* the job_socr}
+\b. \dep{Kim_socd *joined* Google_socr}
+\b. \dep{Kim_socd *joined* a union_socr}
+\b. \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
+\b. \dep{Kim_socd *left* Google_socir}
+\b. \dep{Kim_socd *assumed* office_socr}
+\b. \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
+\b. \dep{Kim_socd was *pardoned*}
 
-\ex. \a. \dep{Kim_socr is my_socd *cousin*}
-     \b. \dep{Kim_socd and Sandy are *friends*}
-     \b. \dep{Kim_socd is *friends* with Sandy_socr}
-     \b. \dep{Kim_socd *works* at Google_socr}
-     \b. \dep{Kim_socd *works* for Sandy_socr}
-     \b. \dep{Kim_socd *emcees*}
-     \b. \dep{Kim_socd is *hosting* the party_socr}
-     \b. \dep{Kim_socd is under house *arrest*}
-     \b. \dep{Kim_socd 's *sentence* was suspended}
-
-\subsubsection{Dynamic Argument Examples}
-
-\ex. \a. \dep{Kim_socd *married* Sandy_socr}
-     \b. \dep{The official_xcau *married* Kim_socd to Sandy_socr}
-     \b. \dep{The official_xcau *married* Kim_socd and Sandy}
-     \b. \dep{Kim_socd *divorced* Sandy_socir}
-     \b. \dep{Kim_socd *befriended* Sandy_socr}
-     \b. \dep{Kim_socd *took* the job_socr}
-     \b. \dep{Kim_socd *joined* Google_socr}
-     \b. \dep{Kim_socd *joined* a union_socr}
-     \b. \dep{Sandy_xcau *fired* Kim_socd from their job_socir}
-     \b. \dep{Kim_socd *left* Google_socir}
-     \b. \dep{Kim_socd *assumed* office_socr}
-     \b. \dep{The judge_xcau *sentenced* Kim_socd to three days_socr in prison}
-     \b. \dep{Kim_socd was *pardoned*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Temporal (\textsf{tmp})}
@@ -835,7 +796,7 @@ When, how often, or for how long an event takes place.
 \b. \dep{Kim_locd *swam* for an hour_tmp}
 \b. \dep{Kim_xsnd *says* hello_msgr whenever I meet_tmp them}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Explanation (\textsf{xpl})}
@@ -844,13 +805,10 @@ When, how often, or for how long an event takes place.
 Explanation that is not a cause, such as a purpose.
 
 \ex.
-\a. \dep{Kim_locd *went* to town_locr to buy_xpl food}
+\a. \dep{Kim_locd__pssr *went* to town_locr to **buy**_xpl food}
 \b. \dep{I_xsnd am *stressing* this_sncd because it's important_xpl}
 
-TODO: additional markables
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \section{Constructional Relations}
@@ -859,7 +817,7 @@ Constructional relations do not correspond to superframes, but mark various
 types of mismatches between syntactic and semantic predicate-argument
 structure.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Attribute (\textsf{att})}
 \label{sec:att}
@@ -873,9 +831,7 @@ participant which is most directly involved in the scene.
 \b. \dep{Kim_locd ist auf den Kopf_xatt *gefallen*}
 \b. \dep{Kim_xcau *hit* Sandy_locr on the head_xatt with a stick_locd}
 
-TODO: additional markables
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Complex Predicate (\textsf{cpd})}
@@ -890,7 +846,11 @@ complex predicate, those syntactic dependencies are labeled \textsf{cpd}.
 \a. \dep{Kim_xsnd *gave* a lecture_cpd}
 \b. \dep{Kim_pcpd *had* sex_cpd with Sandy_xacc}
 
-TODO: causative light verbs
+Causative light verbs, on the other hand, are handled with the \textsf{pcp}
+relation:
+
+\ex.
+\a. \dep{Kim_xcau *gave* Sandy_pcpd__rcpr a **headache**_pcpr}
 
 \subsubsection{Verbal Idioms}
 
@@ -915,7 +875,7 @@ TODO: causative light verbs
 % TBD criteria: inner modification (heave a deep sigh, give a loud shout), possessive participants (lose one's cool, pull so's leg), cf. Croft; outer modification (have sex with)
 % outer arguments
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Discourse Marker (\textsf{dim})}
@@ -926,9 +886,9 @@ Used for adverbials etc. that mark a clause for its relation to preceding/follow
 \ex.
 \a. \dep{However_dim , nothing_pcpr *happened*}
 \b. \dep{Even_dim *Kim* didn't see it}
-\b. \dep{Der_xrcp *will* nur_dim spielen_msgd}
+\b. \dep{Der_xrcp__pcpd *will* nur_dim **spielen**_msgd}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Depictive (\textsf{dpc})}
@@ -937,12 +897,10 @@ Used for adverbials etc. that mark a clause for its relation to preceding/follow
 Used for secondary predicates that describe the state of one of the participants during the scene.
 
 \ex.
-\a. \dep{Kim_pcpd *slept* naked_dpc}
-\b. \dep{Pythons_locr *swallow* their prey_locd whole_dpc}
+\a. \dep{Kim_pcpd__locr *slept* **naked**_dpc}
+\b. \dep{Pythons_locr *swallow* their prey_locd__pcpd **whole**_dpc}
 
-TODO: additional markables
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Expletive (\textsf{exp})}
@@ -957,9 +915,7 @@ which are instead treated as parts of complex predicates
 \a. \dep{Kim_xrcp *hates* it_exp when people yell_msgd}
 \b. \dep{Wie_cau *kommst* du_xrcp darauf_exp , ich hätte_msgr etwas damit zu tun?}
 
-TODO: additional markables
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \subsection{Resultative (\textsf{rsd}, \textsf{rsr})}
@@ -970,14 +926,12 @@ Secondary predicates that denote the end state of a participant are marked
 predicate, use \textsf{rsd} instead.
 
 \ex.
-\a. \dep{Kim_xcau *hammered* the metal_pcpd flat_rsr}
-\b. \dep{You_xsnd are *talking* me_rsd silly_rsr}
+\a. \dep{Kim_xcau *hammered* the metal_pcpd__pcpd **flat**_rsr}
+\b. \dep{You_xsnd are *talking* me_rsd__rcpr **silly**_rsr}
 
-TODO: additional markables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\clearpage
 %\section{Difficult Cases}
@@ -1063,7 +1017,7 @@ TODO: additional markables
 %
 %Frida begleitete Hans auf dem Klavier
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\section{Motivation}
 %
