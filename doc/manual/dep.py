@@ -14,9 +14,24 @@ TOKSEP = ' \\& '
 
 @dataclass
 class Token:
+
     form: str
     prednum: int
     deprels: dict[int, str]
+
+
+@dataclass(frozen=True)
+class Edge:
+
+    head: int
+    dep: int
+    rel: str
+
+    def __len__(self):
+        return abs(self.dep - self.head)
+
+    def range(self):
+        return range(min(self.head, self.dep), max(self.head, self.dep))
 
 
 def tokenize(depstr: str) -> Iterable[Token]:
@@ -24,28 +39,18 @@ def tokenize(depstr: str) -> Iterable[Token]:
         match = re.match(r'\s*(\**)([^*_\s]+)(\**)\s*', depstr)
         prednum = len(match.group(1))
         form = match.group(2)
+        if len(match.group(3)) != prednum:
+            raise ValueError('unbalanced asterisks: ' + match.group(0).strip())
         assert len(match.group(3)) == prednum
         depstr = depstr[match.end():]
         deprels = {}
         while depstr.startswith('_'):
-            print('dssw_', file=sys.stderr)
             match = re.match('(_+)([^_\s]+)\s*', depstr)
             dprednum = len(match.group(1))
             ddeprel = match.group(2)
             deprels[dprednum] = ddeprel
             depstr = depstr[match.end():]
         yield Token(form, prednum, deprels)
-
-
-def clean(token):
-    if token.startswith('*') and token.endswith('*'):
-        token = token[1:-1]
-        if '_' in token:
-            word, frame = token.split('_', 1)
-            frame = frame.replace('_', '\\_')
-            return f'{word}$_\\text{{\\smaller {frame}}}$'
-        return token
-    return token.rsplit('_', 1)[0]
 
 
 def render(depstr: str) -> str:
@@ -60,9 +65,7 @@ def render(depstr: str) -> str:
     tikz-dependency.
     """
     # Front matter
-    print(depstr, file=sys.stderr)
     tokens = list(tokenize(depstr))
-    print(tokens, file=sys.stderr)
     result = ''
     result += r'\raisebox{-.5\baselineskip}{'
     result += r'\begin{dependency}[label style={font=\sffamily}]'
@@ -80,29 +83,28 @@ def render(depstr: str) -> str:
     for i, token in enumerate(tokens):
         for h, rel in token.deprels.items():
             h = prednum_head_map[h]
-            edges.append((h + 1, i + 1, rel))
+            edges.append(Edge(h + 1, i + 1, rel))
     # Sort edges by length
-    edges.sort(key=lambda e: abs(e[1] - e[0]))
+    edges.sort(key=len)
     # Determine edge height
     profile = defaultdict(int) # edge height per position
     edge_height_map = {}
-    for h, i, rel in edges:
-        rng = range(min(h, i), max(h, i))
-        height = max(profile[j] for j in rng) + 1
-        for j in rng:
+    for edge in edges:
+        height = max(profile[j] for j in edge.range()) + 1
+        for j in edge.range():
             profile[j] = height
-        edge_height_map[(h, i, rel)] = height
+        edge_height_map[edge] = height
     # Render edges (long ones first so short ones cover them)
-    for h, i, rel in reversed(edges):
-        height = edge_height_map[(h, i, rel)]
+    for edge in reversed(edges):
+        height = edge_height_map[edge]
         result += r'\depedge[edge height='
         result += str(height)
         result += r'\baselineskip]{'
-        result += str(h)
+        result += str(edge.head)
         result += r'}{'
-        result += str(i)
+        result += str(edge.dep)
         result += '}{'
-        result += rel
+        result += edge.rel
         result += '}'
     # Back matter
     result += r'\end{dependency}'
