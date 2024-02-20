@@ -39,12 +39,18 @@ def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
         yield from yld(child)
 
 
+def serialize_subtree(tree: pyconll.tree.Tree) -> str:
+    nodes = sorted(yld(tree), key=lambda t: int(t.data.id))
+    nodes = (hruid(t.data) if t == tree else t.data.form for t in nodes)
+    return ' '.join(nodes)
+
+
 def print_frames(tree: pyconll.tree.Tree):
-    if any(is_semdep(c) for c in tree):
-        print(f'[] {tree.data.form}')
+    if is_semdep(tree) or any(is_semdep(c) for c in tree):
+        print(f'[] {hruid(tree.data)}')
         for child in tree:
             if is_semdep(child):
-                print(f'[] {' '.join(t.data.form for t in sorted(yld(child), key=lambda t: int(t.data.id)))}')
+                print(f'[] {serialize_subtree(child)}')
         print()
     for child in tree:
         print_frames(child)

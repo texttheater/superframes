@@ -9,10 +9,10 @@
 2	1	1	NUM	CD	NumForm=Digit|NumType=Card	1	nummod	_	TokenRange=8:9
 3	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=10:11
 
-[] 1_Chapter
-[] 2_1
+[MESSAGE] 1_Chapter
+[has-property-in] 2_1
 
-[] 2_1
+[PROPERTY] 2_1
 
 # sent_id = 2
 # text = Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -44,55 +44,55 @@
 26	forest	forest	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=136:142
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=143:144
 
-[] 9_saw
-[] Once when I was six years 7_old
-[] 8_I
-[] a magnificent 12_picture
-[] in a 15_book , called True Stories from Nature , about the primeval forest
+[MESSAGE] 9_saw
+[has-time-in] Once when I was six years 7_old
+[recipient] 8_I
+[topic] a magnificent 12_picture
 
-[] 7_old
-[] 1_Once
-[] 2_when
-[] 3_I
-[] six 6_years
+[PROPERTY] 7_old
+[has-time-in] 1_Once
+[has-time-in] 2_when
+[has-property] 3_I
+[value] six 6_years
 
-[] 1_Once
+[TIME] 1_Once
 
-[] 2_when
+[TIME] 2_when
 
-[] 3_I
+[OBJECT] 3_I
 
-[] 6_years
-[] 5_six
+[OBJECT] 6_years
+[has-quantity-in] 5_six
 
-[] 5_six
+[QUANTITY] 5_six
 
-[] 8_I
+[OBJECT] 8_I
 
-[] 12_picture
-[] 11_magnificent
+[MESSAGE] 12_picture
+[has-property-in] 11_magnificent
+[has-location-in] in a 15_book , called True Stories from Nature , about the primeval forest
 
-[] 11_magnificent
+[PROPERTY] 11_magnificent
 
-[] 15_book
-[] 17_called True Stories from Nature
-[] about the primeval 26_forest
+[MESSAGE] 15_book
+[has-property-in] 17_called True Stories from Nature
+[topic] about the primeval 26_forest
 
-[] 17_called
-[] True 19_Stories from Nature
+[PROPERTY] 17_called
+[value] True 19_Stories from Nature
 
-[] 19_Stories
-[] 18_True
-[] from 21_Nature
+[MESSAGE] 19_Stories
+[has-property-in] 18_True
+[result-in] from 21_Nature
 
-[] 18_True
+[PROPERTY] 18_True
 
-[] 21_Nature
+[CAUSATION] 21_Nature
 
-[] 26_forest
-[] 25_primeval
+[OBJECT] 26_forest
+[has-subclass-in] 25_primeval
 
-[] 25_primeval
+[SUBCLASS] 25_primeval
 
 # sent_id = 3
 # text = It was a picture of a boa constrictor in the act of swallowing an animal .
@@ -113,25 +113,26 @@
 15	animal	animal	NOUN	NN	Number=Sing	13	obj	_	TokenRange=212:218
 16	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=219:220
 
-[] 4_picture
-[] 1_It
-[] of a boa 8_constrictor in the act of swallowing an animal
+[MESSAGE] 4_picture
+[scene-in] 1_It
+[topic] of a boa 8_constrictor in the act of swallowing an animal
 
-[] 1_It
+[SCENE] 1_It
 
-[] 8_constrictor
-[] 7_boa
-[] in the 11_act of swallowing an animal
+[OBJECT] 7_boa
+[has-subclass-in] 8_constrictor
+[participant-in] in the 11_act of swallowing an animal
 
-[] 7_boa
+[SUBCLASS] 8_constrictor
 
-[] 11_act
-[] of 13_swallowing an animal
+[SCENE] 11_act
+[scene] of 13_swallowing an animal
 
-[] 13_swallowing
-[] an 15_animal
+[INGR-LOCATION] 13_swallowing
+[final-location] 7_boa
+[has-location] an 15_animal
 
-[] 15_animal
+[OBJECT] 15_animal
 
 # sent_id = 4
 # text = Here is a copy of the drawing .
