@@ -12,6 +12,7 @@ relations.
 
 
 import sys
+from typing import Iterable
 
 
 import pyconll
@@ -29,15 +30,21 @@ def hruid(token: pyconll.unit.token.Token) -> str:
 
 def is_semdep(tree: pyconll.tree.Tree) -> bool:
     """Whether a node is a 'semantic dependency' of its parent"""
-    return tree.data.deprel in SEMDEPS
+    return tree.data.deprel.split(':')[0] in SEMDEPS
+
+
+def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
+    yield tree
+    for child in tree:
+        yield from yld(child)
 
 
 def print_frames(tree: pyconll.tree.Tree):
     if any(is_semdep(c) for c in tree):
-        print(hruid(tree.data) + ': ')
+        print(f'[] {tree.data.form}')
         for child in tree:
             if is_semdep(child):
-                print(hruid(child.data) + ': ')
+                print(f'[] {' '.join(t.data.form for t in sorted(yld(child), key=lambda t: int(t.data.id)))}')
         print()
     for child in tree:
         print_frames(child)
