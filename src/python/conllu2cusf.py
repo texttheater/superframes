@@ -11,6 +11,10 @@ relations.
 """
 
 
+# TODO: no complicated tree traversal rules, just treat every PNVAR as a
+# predicate.
+
+
 import sys
 from typing import Iterable
 
@@ -21,6 +25,7 @@ import pyconll
 SEMDEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
         'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
         'compound'))
+PREDPOSS = set(('NOUN', 'VERB', 'ADJ', "ADV"))
 
 
 def hruid(token: pyconll.unit.token.Token) -> str:
@@ -31,6 +36,10 @@ def hruid(token: pyconll.unit.token.Token) -> str:
 def is_semdep(tree: pyconll.tree.Tree) -> bool:
     """Whether a node is a 'semantic dependency' of its parent"""
     return tree.data.deprel.split(':')[0] in SEMDEPS
+
+
+def is_predpos(tree: pyconll.tree.Tree) -> bool:
+    return tree.data.upos in PREDPOSS
 
 
 def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
@@ -46,7 +55,7 @@ def serialize_subtree(tree: pyconll.tree.Tree) -> str:
 
 
 def print_frames(tree: pyconll.tree.Tree):
-    if is_semdep(tree) or any(is_semdep(c) for c in tree):
+    if (is_semdep(tree) and is_predpos(tree)) or any(is_semdep(c) for c in tree):
         print(f'[] {tree.data.form} ({tree.data.id})')
         for child in tree:
             if is_semdep(child):
