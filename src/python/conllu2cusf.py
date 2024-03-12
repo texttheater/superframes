@@ -25,12 +25,7 @@ import pyconll
 SEMDEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
         'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
         'compound'))
-PREDPOSS = set(('NOUN', 'VERB', 'ADJ', "ADV"))
-
-
-def hruid(token: pyconll.unit.token.Token) -> str:
-    """Human-readable identifier"""
-    return f'{token.id}_{token.form}'
+PREDPOSS = set(('ADJ', 'ADV', 'NOUN', 'PRON', 'PROPN', 'VERB'))
 
 
 def is_semdep(tree: pyconll.tree.Tree) -> bool:
@@ -55,7 +50,7 @@ def serialize_subtree(tree: pyconll.tree.Tree) -> str:
 
 
 def print_frames(tree: pyconll.tree.Tree):
-    if (is_semdep(tree) and is_predpos(tree)) or any(is_semdep(c) for c in tree):
+    if is_predpos(tree):
         print(f'[] {tree.data.form} ({tree.data.id})')
         for child in tree:
             if is_semdep(child):
