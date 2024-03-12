@@ -39,6 +39,84 @@
 
 \section{Introduction}
 
+\begin{table}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{lllll}
+            \toprule
+            \fr{SCENE} & & \rl{participant} & \rl{scene} & \\
+            \fr{SCENE-INIT} & & \rl{participant} & & \rl{target-scene} \\
+            \fr{SCENE-DEINIT} & \rl{initial-scene} & \rl{participant} & & \\
+            \fr{SCENE-CONTINUATION} & \rl{initial-scene} & \rl{participant} & & \\
+            \fr{SCENE-PREVENTION} & & \rl{participant} & & \rl{target-scene} \\
+            \fr{SCENE-NECESSITY} & & \rl{participant} & & \rl{target-scene} \\
+            \fr{SCENE-POSSIBILITY} & & \rl{participant} & & \rl{target-scene} \\
+            \midrule
+            \fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & \\
+            \fr{ORDER} & & \rl{has-order} & \rl{order} & \\
+            \fr{CLASS} & & \rl{has-class} & \rl{class} & \\
+            \fr{Transformation-Creation} & & \rl{material} & & \rl{created} \\
+            \fr{Reproduction} & & \rl{original} & & \rl{copy} \\
+            \fr{SUBCLASS} & & \rl{has-subclass} & \rl{subclass} & \\
+            \fr{QUALITY} & & \rl{has-quality} & \rl{quality} & \\
+            \fr{STATE} & & \rl{has-state} & \rl{state} & \\
+            \fr{STATE-CHANGE} & & \rl{has-state} & & \rl{target-state} \\
+            \fr{Destruction} & & \rl{destroyed} & & \\
+            \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & \\
+            \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & \\
+            \fr{ASPECT} & & \rl{has-aspect} & \rl{aspect} & \\
+            \midrule
+            \fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & \\
+            \fr{Depictive} & & \rl{has-depictive} & \rl{depictive} & \\
+            \fr{ASSET} & & \rl{has-asset} & \rl{asset} & \\
+            \fr{CAUSATION} & & \rl{caused} & \rl{causer} & \\
+            \fr{Resultative} & & \rl{has-resultative} & \rl{resultative} & \\
+            \fr{COMPARISON} & & \rl{compared} & \rl{reference} & \\
+            \fr{Concession} & & \rl{assertion} & \rl{conceded} & \\
+            \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & \\
+            \fr{Purpose} & & \rl{has-purpose} & \rl{purpose} & \\
+            \fr{LOCATION} & & \rl{has-location} & \rl{location} & \\
+            \fr{Wrapping-Wearing} & & \rl{worn} & \rl{wearer} & \\
+            \fr{Wrapping-Wearing-Init} & & \rl{worn} & & \rl{target-wearer} \\
+            \fr{Wrapping-Wearing-Deinit} & \rl{initial-wearer} & \rl{worn} & & \\
+            \fr{Adornment-Tarnishment} & & \rl{ornament} & \rl{surface} & \\
+            \fr{Adornment-Tarnishment-Init} & & \rl{ornament} & & \rl{target-surface} \\
+            \fr{Adornment-Tarnishment-Deinit} & \rl{initial-surface} & \rl{ornament} & & \\
+            %\fr{LOCATION-HABIT} & & \rl{has-location} & \rl{location} & \\
+            \fr{LOCATION-INIT} & & \rl{has-location} & \rl{transitory-location} & \rl{target-location} \\
+            \fr{Ingestion} & & \rl{ingested} & \rl{transitory-location} & \rl{ingester} \\
+            \fr{Hitting} & & \rl{hitting} & & \rl{hit} \\
+            \fr{LOCATION-DEINIT} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & \\
+            \fr{Excretion} & \rl{excreter} & \rl{excreted} & \rl{transitory-location} & \\
+            \fr{LOCATION-CHANGE} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & \rl{target-location} \\
+            \fr{Motion} & & \rl{has-location} & \rl{transitory-location} & \\
+            \fr{MEANS} & & \rl{has-means} & \rl{means} & \\
+            \fr{MESSAGE} & & \rl{topic} & \rl{content} & \\
+            \fr{MESSAGE-INIT} & & \rl{topic} & & \rl{target-message} \\
+            \fr{MESSAGE-DEINIT} & \rl{initial-message} & \rl{topic} & & \\
+            %\fr{MESSAGE-HABIT} & & \rl{topic} & \rl{message} & \\
+            \fr{PART-WHOLE} & & \rl{part} & \rl{whole} & \\
+            \fr{POSSESSION} & & \rl{possessed} & \rl{possessor} & \\
+            \fr{POSSESSION-INIT} & & \rl{possessed} & & \rl{target-possessor} \\
+            \fr{POSSESSION-DEINIT} & \rl{initial-possessor} & \rl{possessed} & & \\
+            \fr{POSSESSION-CHANGE} & \rl{initial-possessor} & \rl{possessed} & \rl{target-possessor} & \\
+            \fr{POSSESSION-CHANGE-NECESSITY} & \rl{initial-possessor} & \rl{possessed} & \rl{target-possessor} & \\
+            \fr{POSSESSION-CONTINUATION} & \rl{initial-possessor} & \rl{possessed} & & \\
+            \fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & \\
+            \fr{SENDING} & & \rl{sent} & \rl{sender} & \\
+            \fr{SEQUENCE} & & \rl{follows} & \rl{followed} & \\
+            \fr{SOCIAL-RELATION} & & \rl{has-social-relation} & \rl{social-relation} & \\
+            \fr{SOCIAL-RELATION-INIT} & & \rl{has-social-relation} & & \rl{target-social-relation} \\
+            \fr{SOCIAL-RELATION-DEINIT} & \rl{initial-social-relation} & \rl{has-social-relation} & & \\
+            \fr{TIME} & & \rl{has-time} & \rl{time} & \\
+            \midrule
+            \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{The superframes and their roles.}
+    \label{tab:superframes}
+\end{table}
+
 Superframes is an annotation scheme for semantic roles. Like other such
 schemes, it is essentially about pinning down, in a machine-readable form,
 ``who did what to whom''. It is different from other such schemes, such as
@@ -80,172 +158,147 @@ with those schemes. Here's how Superframes annotation works, in a nutshell:
 
 Table~\ref{tab:superframes} shows the superframes and their roles.
 
-\begin{table}
-    \resizebox{\textwidth}{!}{
-        \begin{tabular}{lllll}
-            \toprule
-            \fr{SCENE} & & \rl{participant} & \rl{scene} & \\
-            \fr{SCENE-INIT} & & \rl{participant} & & \rl{target-scene} \\
-            \fr{Creation} & & \rl{material} & & \rl{created} \\
-            \fr{SCENE-DEINIT} & \rl{initial-scene} & \rl{participant} & & \\
-            \fr{SCENE-CONTINUATION} & \rl{initial-scene} & \rl{participant} & & \\
-            \fr{SCENE-PREVENTION} & & \rl{participant} & & \rl{target-scene} \\
-            \fr{SCENE-NECESSITY} & & \rl{participant} & & \rl{target-scene} \\
-            \fr{SCENE-POSSIBILITY} & & \rl{participant} & & \rl{target-scene} \\
-            \midrule
-            \fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & \\
-            \fr{ORDER} & & \rl{has-order} & \rl{order} & \\
-            \fr{CLASS} & & \rl{has-class} & \rl{class} & \\
-            \fr{SUBCLASS} & & \rl{has-subclass} & \rl{subclass} & \\
-            \fr{QUALITY} & & \rl{has-quality} & \rl{quality} & \\
-            \fr{STATE} & & \rl{has-state} & \rl{state} & \\
-            \fr{STATE-CHANGE} & & \rl{has-state} & & \rl{target-state} \\
-            \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & \\
-            \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & \\
-            \midrule
-            \fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & \\
-            \fr{Depictive} & & \rl{has-depictive} & \rl{depictive} & \\
-            \fr{ASSET} & & \rl{has-asset} & \rl{asset} & \\
-            \fr{CAUSATION} & & \rl{caused} & \rl{causer} & \\
-            \fr{COMPARISON} & & \rl{compared} & \rl{reference} & \\
-            \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & \\
-            \fr{LOCATION} & & \rl{has-location} & \rl{location} & \\
-            \fr{LOCATION-INIT} & & \rl{has-location} & \rl{transitory-location} & \rl{target-location} \\
-            \fr{Ingestion} & & \rl{ingested} & \rl{transitory-location} & \rl{ingester} \\
-            \fr{LOCATION-DEINIT} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & \\
-            \fr{Excretion} & \rl{excreter} & \rl{excreted} & \rl{transitory-location} & \\
-            \fr{LOCATION-CHANGE} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & \rl{target-location} \\
-            \fr{MEANS} & & \rl{has-means} & \rl{means} & \\
-            \fr{MESSAGE} & & \rl{topic} & \rl{message} & \\
-            \fr{MESSAGE-INIT} & & \rl{topic} & & \rl{target-message} \\
-            \fr{MESSAGE-DEINIT} & \rl{initial-message} & \rl{topic} & & \\
-            \fr{MESSAGE-HABIT} & & \rl{topic} & \rl{message} & \\
-            \fr{PART-WHOLE} & & \rl{part} & \rl{whole} & \\
-            \fr{POSSESSION} & & \rl{possessed} & \rl{possessor} & \\
-            \fr{POSSESSION-INIT} & & \rl{possessed} & & \rl{target-possessor} \\
-            \fr{POSSESSION-DEINIT} & \rl{initial-possessor} & \rl{possessed} & & \\
-            \fr{POSSESSION-CHANGE} & \rl{initial-possessor} & \rl{possessed} & \rl{target-possessor} & \\
-            \fr{POSSESSION-CONTINUATION} & \rl{initial-possessor} & \rl{possessed} & & \\
-            \fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & \\
-            \fr{SENDING} & & \rl{sent} & \rl{sender} & \\
-            \fr{SEQUENCE} & & \rl{follows} & \rl{followed} & \\
-            \fr{SOCIAL-RELATION} & & \rl{has-social-relation} & \rl{social-relation} & \\
-            \fr{SOCIAL-RELATION-INIT} & & \rl{has-social-relation} & & \rl{target-social-relation} \\
-            \fr{SOCIAL-RELATION-DEINIT} & \rl{initial-social-relation} & \rl{has-social-relation} & & \\
-            \fr{TIME} & & \rl{has-time} & \rl{time} & \\
-            \midrule
-            \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} \\
-            \bottomrule
-        \end{tabular}
-    }
-    \caption{The superframes and their roles. TODO: what to do about processes like piloting an airplane, visiting someone, having sex with someone? Frame them as EXPERIENCEs and ACTIVITIEs done WITH someone or something? Or rather as LOCATION/SOCIAL-RELATION PROCESSES?}
-    \label{tab:superframes}
-\end{table}
+\subsection{Core Arguments}
 
-\section{Tutorial Example 1: \fr{LOCATION}}
+The most prototypical predicate is a verb, and the simplest case is a verb with only one argument. It can for example denote an experience or an activity:
 
-The superframe \fr{LOCATION} has the two main roles \rl{has-location} and
-\rl{location} and indicates the location of the \rl{has-location}, typically with
-respect to something, the \rl{location}. The exact spatial configuration does
-not matter, it's all the same superframe.
+\ex.\dep{Kim_experiencer is *sleeping#EXPERIENCE*}
 
-\ex.
-\dep{Kim_has-location is *sitting#LOCATION* on a chair_location}
+\ex.\dep{Kim_is-active is *partying#ACTIVITY*}
 
-\ex.
-\dep{The board_has-location was *leaning#LOCATION* against the wall_location}
+With two core arguments, a verb denotes a relation that holds between them:
 
-A change in location (i.e., motion) is expressed by the aspect frame
-\fr{LOCATION-CHANGE}. It provides the aspect roles \rl{initial-location},
-\rl{intermediate-location}, and \rl{target-location}.
+\ex.\dep{Kim_possessor *owns#POSSESSION* a house_possession}
 
-\ex.
-\dep{The vase_has-location *fell#LOCATION-CHANGE* to the ground_target-location}
+\ex.\dep{The house_possession *belongs#POSSESSION* to Kim_possessor}
 
-\ex.
-\dep{Kim_has-location *left#LOCATION-CHANGE* Boston_initial-location}
+\ex.\dep{Kim_topic *seems#MESSAGE* happy_content}
 
-\ex.
-\dep{Kim_has-location *went#LOCATION-CHANGE* from the kitchen_initial-location via the living room_intermediate-location to the balcony_target-location}
+\subsection{Aspect}
 
-Motion with no clear start or end is framed as \fr{LOCATION-EVENT}.
+Rather than a static relationship between two entities, many verbs (and other
+predicates) denote a change (or absence of change) in such a relationship. We
+sort such predicates into a few coarse aspectual classes. For example,
+initiation (\fr{-INIT}) means a state is begun or worked towards, deinitiation
+(\fr{-DEINIT}) means a state is ended, completed, or its end is worked towards,
+change (\fr{-CHANGE}) combines both, where one state is replaced by another,
+and continuation (\fr{-CONT}) means a state persists or is even intensified.
+Accordingly, roles with \rl{target-}, \rl{initial-}, or \rl{transitory-} mark
+participants at/beyond the end of, at the beginning of, or at some point during
+the event, respectively.
 
-\ex.
-\dep{The jet_has-location *soared#LOCATION-EVENT* across the sky_intermediate-location}
+\ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possession}
 
-\ex.
-\dep{Kim_has-location *danced#LOCATION-EVENT* around the room_intermediate-location}
+\ex.\dep{Kim_initial-possessor *lost#POSSESSION-DEINIT* the house_posesssion}
 
-\ex.
-\dep{Kim_has-location *trembled#LOCATION-EVENT*}
+\ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* the house_possession to Sandy_target-possessor}
 
-There are three futher aspect tags: \fr{-HABIT} for habitual states, \fr{-CONTINUATION}, and \fr{-PREVENTION}.
+\ex.\dep{Kim_initial-possessor *kept#POSSESSION-CONT* the house_possession}
 
-\ex.
-\dep{Kim_has-location *lives#LOCATION* in Boston_location}
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* from Chicago_initial-location via Pittsburgh_transitory-location to Boston_target-location}
 
-\ex.
-\dep{Kim_has-location *stayed#LOCATION-CONTINUATION* in Boston_initial-location}
+\ex.\label{ex:fall}\dep{The vase_has-location *fell#LOCATION-CHANGE* to the ground_target-location}
 
-\ex.
-\dep{The car_has-location *avoided#LOCATION-PREVENTION* the lamppost_target-location}
+\ex.\dep{The vase_has-state *broke#STATE-CHANGE*}
 
-When a predicate is \emph{modified}, the modifier is treated as evoking another frame, of which the predicate is one argument. Thus, the syntactic dependency in this case goes from the argument to the frame instead of the other way around. To indicate this, we use the normal role label, but suffix it with \rl{-in} to indicate that the predicate fills this role \emph{in} the frame evoked by the modifier. For example, the highlighted predicates in the following examples play the \rl{has-location} role in a \fr{LOCATION} frame evoked by the modifier.
+\ex.\dep{Kim_has-social-relation *befriended#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
 
-\ex.
-\dep{Kim_has-social-relation is *partying#SOCIAL-EVENT* in the kitchen_has-location-in}
+\ex.\dep{Kim_has-social-relation *married#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
 
-\ex.
-\dep{a *vase#CLASS* on the table_has-location-in}
+\ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
-Non-core arguments, that is, arguments of predicates that do not fill a role in the main frame evoked by it, are treated much like modifiers. For example, the subject in the following example is the causer of the \fr{LOCATION-CHANGE}, so it is treated like a \fr{CAUSATION} modifier assigning the \textsf{LOCATION-CHANGE} frame the \rl{has-causer} role.
+\subsection{Non-core Arguments}
 
-\ex.
-\dep{Kim_has-causer-in *put#LOCATION-CHANGE* the vase_has-location onto the table_target-location}
+Core arguments always get role labels from the superframe the predicate evokes.
+But many verbs have more arguments. One common case is a subject that is
+presented as the causer of the scene. For example, compare \ref{ex:throw} with
+\ref{ex:fall}. The core scene is the same (same superframe, same arguments). We
+now assume there is an additional \fr{CAUSATION} scene with \emph{Kim} as the
+\rl{causer} and the core scene as the \rl{caused}. We denote this by giving
+\emph{Kim} the \rl{caused} role label, with an \rl{x-} prefix to mark it as a
+non-core role.
 
-Note that the frames in the previous examples for modifiers and non-core arguments are implicit, e.g., in the last example, we did not write \fr{CAUSATION} anywhere. Rather, the fact that the non-core argument evokes a \fr{CAUSATION} frame is implicitly communicated by using a role from that frame in the edge label.
+\ex.\label{ex:throw}\dep{Kim_x-causer *threw#LOCATION-CHANGE* the vase_has-location to the ground_target-location}
 
-\section{Tutorial Example 2: \fr{POSSESSION}}
+\ex.\dep{Kim_x-causer *broke#STATE-CHANGE* the vase_has-state}
 
-In this section, we work through similar configurations as in the previous, but this time using the \fr{POSSESSION} superframe as an example. First, two examples of verbs indicating states of possession, illustrating that the semantic arguments can be switched around wrt. the syntactic arguments for different predicates:
+Two other common non-core arguments are the senders and recipients (experiencers) of messages.
 
-\ex.
-\dep{Kim_possessor *owns#POSSESSION* a house_possessed}
+\ex.\dep{Kim_x-sender *talked#MESSAGE* to Sandy_x-experiencer about Bali_topic}
 
-\ex.
-\dep{The house_possessed *belongs#POSSESSION* to Kim_possessor}
+Other non-core arguments are usually rather predicate-specific.
 
-Next, examples of possession change:
+\ex.\dep{Kim_x-experiencer *searched#MESSAGE* the woods_x-location for Sandy_topic}
 
-\ex.
-\dep{Kim_target-possessor *bought#POSSESSION-CHANGE* a house_possessed}
+\ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* Sandy_target-possessor the house_possession for a million dollars_x-asset}
 
-\ex.
-\dep{Kim_initial-possessor *lost#POSSESSION-CHANGE* the house_possessed}
+\subsection{Modifiers}
 
-\ex.
-\dep{Kim_target-possessor *bough#POSSESSION-CHANGE* a house_possessed from Sandy_initial-possessor}
+Like non-core arguments, modifiers are assumed to evoke an additional frame,
+and labeled with the role they fill in that frame, but with a prefix marking
+them as modifiers: \rl{m-}.
 
-\ex.
-\dep{Sandy_initial-possessor *sold#POSSESSION-CHANGE* Kim_target-possessor the house_possessed}
+\ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
 
-The predicate \emph{owe} expresses a legal necessity to transfer possession of something, giving us an opportunity to introduce the \emph{modal tag} \fr{-NECESSITY}:
+\subsection{Nonverbal Predicates}
 
-\ex.
-\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
+So far, we have only looked at verbal predicates. But of course, there are other types of predicates. An ordinary noun like \emph{tree} evokes the \fr{CLASS} frame, marking the entity it refers to as being a member of a class (in this case: the class of trees). There are no arguments here because the predicate itself doubles as a referent. However, the predicate can of course be modified:
 
-Finally, an example of a \fr{POSSESSION} modifier:
+\ex.\dep{a *tree#CLASS* in the garden_m-location}
 
-\ex.
-\dep{Kim_possessed-in 's *house#CLASS*}
+\ex.\dep{Kim_m-possessor 's *tree#CLASS*}
 
-\section{Aspect and Modality Tags}
+Event nouns evoke event frames and have arguments:
 
-\section{Superframes}
+\ex.\dep{Kim_x-causer 's *breaking#STATE-CHANGE* of the vase_has-state}
 
-\section{Figurativity and Idiomaticity}
+Relational nouns evoke relational frames and have arguments:
 
-\section{Odds and Ends}
+\ex.\dep{Kim_has-social-relation 's *friend#SOCIAL-RELATION*}
+
+Pronouns and names evoke the \fr{IDENTIFICATION} frame, meaning that they
+identify their referent as soe entity (via naming or anaphora resolution).
+
+\ex.\dep{*Kim#IDENTIFICATION*}
+
+\ex.\dep{*they#IDENTIFICATION*}
+
+Predicate adjectives most typically denote states or qualities.
+
+\ex.\dep{I_has-quality am *despicable#QUALITY*}
+
+\ex.\dep{the dog_has-state is *tired#STATE*}
+
+With attributive adjectives, the dependency relation is reversed, and the role label is changed accordingly.
+
+\ex.\dep{despicable_m-quality *me#IDENTIFICATION*}
+
+\ex.\dep{the tired_m-state *dog#CLASS*}
+
+Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quantity}):
+
+\ex.\dep{Kim_has-location *ran#Motion* fast_m-quality}
+
+\ex.\dep{Kim_has-location *ran#Motion* far_m-quantity}
+
+\subsection{Figurativity and Idiomaticity}
+
+Difficulties in choosing frames often arise because predicate literally evokes
+one frame, but is used in a way that perhaps fits another frame equally well or
+better. In such cases, annotate both the more literal frame and roles, followed
+by the \texttt{>}\texttt{>} operator, followed by the more figurative frame and roles.
+
+\ex.\dep{primeval_m-time>>m-subclass *forest#CLASS*}
+
+\ex.\dep{colored_m-quality>>m-subclass *pencil#CLASS*}
+
+\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
+
+\section{Superframes Reference}
+
+\section{Memos}
+
+\subsection{Prefer Core over Non-core Arguments}
 
 \bibliographystyle{apalike}
 \bibliography{anthology,custom}
