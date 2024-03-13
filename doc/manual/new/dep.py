@@ -55,7 +55,7 @@ def tokenize(depstr: str) -> Iterable[Token]:
         depstr = depstr[match.end():]
         deprels = {}
         while depstr.startswith('_'):
-            match = re.match('(_+)([^_\s]+)\s*', depstr)
+            match = re.match(r'(_+)([^_\s]+)\s*', depstr)
             dprednum = len(match.group(1))
             ddeprel = match.group(2)
             deprels[dprednum] = ddeprel
