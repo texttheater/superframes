@@ -22,7 +22,7 @@ class Token:
 
     def render(self):
         if self.subscript:
-            return self.form + r'$_\text{\textsf{' + self.subscript + r'}}$'
+            return self.form + r'$_\text{\textsf{' + self.subscript.replace('>>', ' >> ') + r'}}$'
         return self.form
 
 
@@ -114,7 +114,7 @@ def render(depstr: str) -> str:
         result += r'}{'
         result += str(edge.dep)
         result += '}{'
-        result += edge.rel
+        result += edge.rel.replace('>>', ' >> ')
         result += '}'
     # Back matter
     result += r'\end{dependency}'
