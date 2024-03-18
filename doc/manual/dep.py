@@ -16,8 +16,14 @@ TOKSEP = ' \\& '
 class Token:
 
     form: str
+    subscript: str
     prednum: int
     deprels: dict[int, str]
+
+    def render(self):
+        if self.subscript:
+            return self.form + r'$_\text{\textsf{' + self.subscript.replace('>>', ' >> ') + r'}}$'
+        return self.form
 
 
 @dataclass(frozen=True)
@@ -39,18 +45,22 @@ def tokenize(depstr: str) -> Iterable[Token]:
         match = re.match(r'\s*(\**)([^*_\s]+)(\**)\s*', depstr)
         prednum = len(match.group(1))
         form = match.group(2)
+        if '#' in form:
+            form, subscript = form.split('#')
+        else:
+            subscript = None
         if len(match.group(3)) != prednum:
             raise ValueError('unbalanced asterisks: ' + match.group(0).strip())
         assert len(match.group(3)) == prednum
         depstr = depstr[match.end():]
         deprels = {}
         while depstr.startswith('_'):
-            match = re.match('(_+)([^_\s]+)\s*', depstr)
+            match = re.match(r'(_+)([^_\s]+)\s*', depstr)
             dprednum = len(match.group(1))
             ddeprel = match.group(2)
             deprels[dprednum] = ddeprel
             depstr = depstr[match.end():]
-        yield Token(form, prednum, deprels)
+        yield Token(form, subscript, prednum, deprels)
 
 
 def render(depstr: str) -> str:
@@ -70,7 +80,7 @@ def render(depstr: str) -> str:
     result += r'\raisebox{-.5\baselineskip}{'
     result += r'\begin{dependency}[label style={font=\sffamily}]'
     result += r'\begin{deptext}'
-    result += r' \& '.join(t.form for t in tokens)
+    result += r' \& '.join(t.render() for t in tokens)
     result += r' \\'
     result += r'\end{deptext}'
     # Map predicate numbers to head indices
@@ -104,7 +114,7 @@ def render(depstr: str) -> str:
         result += r'}{'
         result += str(edge.dep)
         result += '}{'
-        result += edge.rel
+        result += edge.rel.replace('>>', ' >> ')
         result += '}'
     # Back matter
     result += r'\end{dependency}'

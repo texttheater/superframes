@@ -1,9 +1,14 @@
-.PHONY : default clean
+.PHONY : always clean
 
-default :
-	python3 dep.py < manual.tex > manual_expanded.tex
-	latexmk -lualatex "manual_expanded"
-	mv manual_expanded.pdf manual.pdf
+manual.pdf : manual_expanded.tex anthology.bib always
+	latexmk -lualatex "manual_expanded" -jobname=manual
+
+manual_expanded.tex : manual.tex
+	python3 dep.py < $< > $@
+
+anthology.bib : anthology.bib.gz
+	gunzip -k $<
 
 clean :
 	latexmk -c
+	rm manual_expanded.tex
