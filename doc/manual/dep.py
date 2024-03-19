@@ -123,6 +123,7 @@ def render(depstr: str) -> str:
 
 
 if __name__ == '__main__':
-    tex = sys.stdin.read()
-    tex = re.sub(r'\\dep\{([^}]*)\}', lambda m: render(m.group(1)), tex)
-    sys.stdout.write(tex)
+    for line in sys.stdin:
+        if not line.startswith('%'): # HACK
+            line = re.sub(r'\\dep\{([^}]*)\}', lambda m: render(m.group(1)), line)
+        print(line, end='')
