@@ -11,9 +11,10 @@
 \usepackage{hyperref}
 \usepackage{linguex}
 \usepackage{mathtext}
+\usepackage{nicematrix}
 \usepackage{relsize}
 \usepackage{tikz-dependency}
-\usepackage{todonotes}
+\usepackage[backgroundcolor=blue!20!white]{todonotes}
 
 \title{Superframes Manual}
 \author{Kilian Evang}
@@ -23,6 +24,9 @@
 \newcommand{\fr}[1]{\textsf{#1}}
 \newcommand{\frs}[1]{\mbox{\textsf{#1}}} % frame suffixes start with hyphen, prevent line break
 \newcommand{\rl}[1]{\textsf{#1}}
+
+% make a row bold in a NiceTabular
+\newcommand{\boro}{\RowStyle{\bfseries}}
 
 \begin{document}
 
@@ -43,83 +47,56 @@
 
 \begin{table}
     \resizebox{\textwidth}{!}{
-        \begin{tabular}{lllllll}
+        \begin{NiceTabular}{lllllll}
             \toprule
             Superframe & Roles & & & & & Sec. \\
             \midrule
-            \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
-            \fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
-            \fr{ORDER} & & \rl{has-order} & \rl{order} & & & \ref{sec:ORDER} \\
-            \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
-            \fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
-            \fr{Transformation-Creation} & & \rl{material} & & & \rl{created} & \ref{sec:Transformation-Creation} \\
-            \fr{Reproduction} & & \rl{original} & & & \rl{copy} & \ref{sec:Reproduction} \\
-            %\fr{SUBCLASS} & & \rl{has-subclass} & \rl{subclass} & & \ref{sec:SUBCLASS} \\
-            \fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
-            \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
-            %\fr{STATE-CHANGE} & & \rl{has-state} & & \rl{target-state} & \ref{sec:STATE-CHANGE} \\
-            \fr{Destruction} & & \rl{destroyed} & & & & \ref{sec:Destruction} \\
-            \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
-            \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
+            \boro\fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
+            \boro\fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
+            \boro\fr{ORDER} & & \rl{has-order} & \rl{order} & & & \ref{sec:ORDER} \\
+            \boro\fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
+            \boro\fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
+            \fr{TRANSFORMATION-CREATION} & & & \rl{material} & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
+            \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
+            \boro\fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
+            \boro\fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
+            \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
+            \boro\fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
+            \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
             \fr{MARKER} & & \rl{has-marker} & \rl{marker} & & & \ref{sec:MARKER} \\
             \midrule
-            \fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
-            \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
-            \fr{Depictive} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:Depictive} \\
-            \fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
-            \fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
-            \fr{Resultative} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:Resultative} \\
-            \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
-            \fr{Concession} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:Concession} \\
-            \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
-            \fr{Purpose} & & \rl{has-purpose} & \rl{purpose} & & & \ref{sec:Purpose} \\
-            \fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
-            \fr{Wrapping-Wearing} & & \rl{worn} & \rl{wearer} & & & \ref{sec:Wrapping-Wearing} \\
-            %\fr{Wrapping-Wearing-Init} & & \rl{worn} & & \rl{target-wearer} & \ref{sec:Wrapping-Wearing-Init} \\
-            %\fr{Wrapping-Wearing-Deinit} & \rl{initial-wearer} & \rl{worn} & & & \ref{sec:Wrapping-Wearing-Deinit} \\
-            \fr{Adornment-Tarnishment} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:Adornment-Tarnishment} \\
-            %\fr{Adornment-Tarnishment-Init} & & \rl{ornament} & & \rl{target-surface} & \ref{sec:Adornment-Tarnishment-Init} \\
-            %\fr{Adornment-Tarnishment-Deinit} & \rl{initial-surface} & \rl{ornament} & & & \ref{sec:Adornment-Tarnishment-Deinit} \\
-            \fr{Touching} & & \rl{touching} & \rl{touched} & & & \ref{sec:Touching} \\
-            %\fr{LOCATION-HABIT} & & \rl{has-location} & \rl{location} & & \ref{sec:LOCATION-HABIT} \\
-            %\fr{LOCATION-INIT} & & \rl{has-location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION-INIT} \\
-            \fr{Ingestion} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:Ingestion} \\
-            \fr{Hitting} & & \rl{hitting} & & & \rl{hit} & \ref{sec:Hitting} \\
-            %\fr{LOCATION-DEINIT} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & & \ref{sec:LOCATION-DEINIT} \\
-            \fr{Excretion} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & & \ref{sec:Excretion} \\
-            %\fr{LOCATION-CHANGE} & \rl{initial-location} & \rl{has-location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION-CHANGE} \\
-            \fr{Motion} & & \rl{has-location} & & \rl{transitory-location} & & \ref{sec:Motion} \\
-            \fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
-            \fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
-            %\fr{MESSAGE-INIT} & & \rl{topic} & & \rl{target-message} & \ref{sec:MESSAGE-INIT} \\
-            %\fr{MESSAGE-DEINIT} & \rl{initial-message} & \rl{topic} & & & \ref{sec:MESSAGE-DEINIT} \\
-            %\fr{MESSAGE-INIT-HABIT} & & \rl{topic} & \rl{message} & & \ref{sec:MESSAGE-HABIT} \\
-            \fr{PART-WHOLE} & initial-whole & \rl{part} & \rl{whole} & & target-whole & \ref{sec:PART-WHOLE} \\
-            \fr{POSSESSION} & initial-possessor & \rl{possessed} & \rl{possessor} & & target-possessor & \ref{sec:POSSESSION} \\
-            %\fr{POSSESSION-INIT} & & \rl{possessed} & & \rl{target-possessor} & \ref{sec:POSSESSION-INIT} \\
-            %\fr{POSSESSION-DEINIT} & \rl{initial-possessor} & \rl{possessed} & & & \ref{sec:POSSESSION-DEINIT} \\
-            %\fr{POSSESSION-CHANGE} & \rl{initial-possessor} & \rl{possessed} & \rl{target-possessor} & & \ref{sec:POSSESSION-CHANGE} \\
-            %\fr{POSSESSION-CHANGE-NECESSITY} & \rl{initial-possessor} & \rl{possessed} & \rl{target-possessor} & & \ref{sec:POSSESSION-CHANGE-NECESSITY} \\
-            %\fr{POSSESSION-CONTINUATION} & \rl{initial-possessor} & \rl{possessed} & & & \ref{sec:POSSESSION-CONTINUATION} \\
-            \fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
-            \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
-            \fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
-            \fr{SOCIAL-RELATION} & initial-social-relation & \rl{has-social-relation} & \rl{social-relation} & & target-social-relation & \ref{sec:SOCIAL-RELATION} \\
-            %\fr{SOCIAL-RELATION-INIT} & & \rl{has-social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION-INIT} \\
-            %\fr{SOCIAL-RELATION-DEINIT} & \rl{initial-social-relation} & \rl{has-social-relation} & & & \ref{sec:SOCIAL-RELATION-DEINIT} \\
-            \fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
-            %\fr{SCENE-INIT} & & \rl{participant} & & \rl{target-scene} & \ref{sec:SCENE-INIT} \\
-            %\fr{SCENE-DEINIT} & \rl{initial-scene} & \rl{participant} & & & \ref{sec:SCENE-DEINIT} \\
-            %\fr{SCENE-CONTINUATION} & \rl{initial-scene} & \rl{participant} & & & \ref{sec:SCENE-CONTINUATION} \\
-            %\fr{SCENE-PREVENTION} & & \rl{participant} & & \rl{target-scene} & \ref{sec:SCENE-PREVENTION} \\
-            %\fr{SCENE-NECESSITY} & & \rl{participant} & & \rl{target-scene} & \ref{sec:SCENE-NECESSITY} \\
-            %\fr{SCENE-POSSIBILITY} & & \rl{participant} & & \rl{target-scene} & \ref{sec:SCENE-POSSIBILITY} \\
+            \boro\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
+            \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
+            \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
+            \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
+            \boro\fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
+            \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
+            \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
+            \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
+            \boro\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
+            \boro\fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
+            \fr{WRAPPING-WEARING} & & \rl{worn} & \rl{wearer} & & & \ref{sec:WRAPPING-WEARING} \\
+            \fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
+            \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
+            \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
+            \fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & & \ref{sec:EXCRETION} \\
+            \fr{UNANCHORED-MOTION} & & \rl{has-location} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
+            \boro\fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
+            \boro\fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
+            \boro\fr{PART-WHOLE} & initial-whole & \rl{part} & \rl{whole} & & target-whole & \ref{sec:PART-WHOLE} \\
+            \boro\fr{POSSESSION} & initial-possessor & \rl{possessed} & \rl{possessor} & & target-possessor & \ref{sec:POSSESSION} \\
+            \boro\fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
+            \boro\fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
+            \boro\fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
+            \boro\fr{SOCIAL-RELATION} & initial-social-relation & \rl{has-social-relation} & \rl{social-relation} & & target-social-relation & \ref{sec:SOCIAL-RELATION} \\
+            \boro\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
             \midrule
-            \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
+            \boro\fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
+            \boro\fr{NONPARTICIPANT} & & \rl{has-nonparticipant} & \rl{nonparticipant} & & & \ref{sec:NONPARTICIPANT} \\
             \bottomrule
-        \end{tabular}
+        \end{NiceTabular}
     }
-    \caption{The superframes and their roles.}
+    \caption{The superframes and their roles. Top-level superframes are shown in bold. Underneath, some superframes have special cases with partly renamed roles, included to make them more intuitive to apply.}
     \label{tab:superframes}
 \end{table}
 
@@ -180,7 +157,8 @@ With two core arguments, a verb denotes a relation that holds between them:
 
 \ex.\dep{Kim_topic *seems#MESSAGE* happy_content}
 
-\subsection{Frame Variants for Tense, Aspect, and Mood}
+\subsection{Aspect and Mode}
+\label{sec:aspect-mode}
 
 Rather than a static relationship between two entities, many verbs (and other
 predicates) denote a change (or absence of change) in such a relationship. We
@@ -189,7 +167,7 @@ initiation (\frs{-INIT}) means a state is begun or worked towards, deinitiation
 (\frs{-DEINIT}) means a state is ended, completed, or its end is worked towards,
 change (\frs{-CHANGE}) combines both, where one state is replaced by another,
 and continuation (\frs{-CONT}) means a state persists or is even intensified.
-Accordingly, roles with \rl{target-}, \rl{initial-}, or \rl{transitory-} mark
+Accordingly, roles with prefix \rl{target-}, \rl{initial-}, or \rl{transitory-} mark
 participants at/beyond the end of, at the beginning of, or at some point during
 the event, respectively.
 
@@ -227,19 +205,12 @@ The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an 
 
 \ex.\dep{A coup_target-scene was *attempted#SCENE-INIT*}
 
-In addition, we use the suffixes \frs{-NECESSITY}, \frs{-POSSIBILITY},
-\frs{-HABIT}, and \frs{-TIME} to mark the corresponding tense/aspect/mode
-categories.
+In addition, we use the modal suffixes \frs{-NECESSITY} and \frs{-POSSIBILITY}.
+They can combine with aspectual suffixes.
 
 \ex.\dep{Change_target-scene is *necessary#SCENE-NECESSITY*}
 
 \ex.\dep{Change_target-scene is *possible#SCENE-POSSIBILITY*}
-
-\ex.\dep{Kim_participant *plays#SCENE-HABIT* tennis_scene}
-
-\ex.\dep{Kim_participant *used#SCENE-TIME* to play_scene tennis}
-
-\ex.\dep{Kim_is-active is an avid_m-quality *unicyclist#ACTIVITY-HABIT*}
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
@@ -298,7 +269,7 @@ Relational nouns evoke relational frames and have arguments:
 \ex.\dep{Kim_has-social-relation 's *friend#SOCIAL-RELATION*}
 
 Pronouns and names evoke the \fr{IDENTIFICATION} frame, meaning that they
-identify their referent as soe entity (via naming or anaphora resolution).
+identify their referent as some entity (via naming or anaphora resolution).
 
 \ex.\dep{*Kim#IDENTIFICATION*}
 
@@ -330,8 +301,6 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 Many constructions systematically introduce semantic predicate-dependent
 dependencies that do not correspond to (surface) syntactic dependencies. In such cases, we add those dependency links.
 
-\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
-
 \ex.\dep{Kim_has-location promised Sandy to *come#LOCATION-CHANGE*} (subject control)
 
 \ex.\dep{Kim persuaded Sandy_has-location to *come#LOCATION-CHANGE*} (object control)
@@ -348,6 +317,8 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{Kim_topic is hard to *love#MESSAGE*} (\emph{tough} construction)
 
+\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
+
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE*} (parasitic gap)
 
 \subsection{Figurativity and Idiomaticity}
@@ -358,9 +329,15 @@ better. In such cases, annotate both the more literal frame and roles, followed
 by the \texttt{>}\texttt{>} operator, followed by the more figurative frame and
 roles.
 
-\ex.\dep{primeval_m-time>>m-subclass *forest#CLASS*}
+\ex.\dep{A hush_has-location>>scene *passed#LOCATION-CHANGE>>SCENE* over the group_transitory-location>>participant}
 
-\ex.\dep{colored_m-quality>>m-subclass *pencil#CLASS*}
+\ex.\dep{Kim_x-sender>>participant *refused#MESSAGE>>SCENE* to eat_topic>>scene}
+
+This mechanism can be used to indicate that a modification may not be fully compositional:
+
+\ex.\dep{primeval_m-time>>m-noncomp *forest#CLASS*}
+
+\ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
 
 \ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
 
@@ -369,12 +346,22 @@ roles.
 \subsection{\fr{SCENE}}
 \label{sec:SCENE}
 
-TBD
+A ``meta'' frame for predicates where the main frame is invoked by \rl{scene},
+and the predicate adds some temporal, aspectual, modal, etc., meaning, or just
+acts as a light verb.  \rl{participant} is assigned a role by \rl{scene}. In
+the following examples, we show the annotations for both the matrix predicate
+and the embedded predicate in one graph.
+
+\ex.\dep{Kim_participant__is-active *plays#SCENE* **tennis#ACTIVITY**_scene}
+
+\ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
+
+More examples can be found in Section~\ref{sec:aspect-mode}.
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
 
-The \rl{identifier} identifies the \rl{identified}.
+\rl{identifier} identifies \rl{identified}.
 
 Evoked by pronouns, names, and other identifiers, as well as predicates
 denoting naming relationships.
@@ -386,6 +373,9 @@ denoting naming relationships.
 \ex.\dep{a book_identified *called#IDENTIFICATION* True Stories_identifier from Nature}
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
+
+Predicates that evoke other frames can still use \rl{x-identified} to mark the
+copula subject as identified:
 
 \ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
 
@@ -412,38 +402,34 @@ Most prototypically evoked by common nouns with no arguments.
 
 \rl{exists} exists. Use this only for non-scene entities; for scenes, use the \fr{SCENE} frame.
 
+\ex.\dep{I_exists *exist#EXISTENCE*}
+
 \ex.\dep{There_x-expletive *is#EXISTENCE* a hill_exists}
 
 \ex.\dep{There_x-expletive *is#SCENE* a hubbub_scene}
 
-\subsection{\fr{Transformation-Creation}}
-\label{sec:Transformation-Creation}
+\subsection{\fr{TRANSFORMATION-CREATION}}
+\label{sec:TRANSFORMATION-CREATION}
 
-\rl{created} is newly created from \rl{material}, or \rl{material} is
-transformed to acquire a new class indicated by \rl{created}.
+Special case of \fr{EXISTENCE-INIT} where rl{created} (aka \rl{target-exists})
+is newly created from \rl{material}, or \rl{material} is transformed to become
+\rl{created}.
 
 \ex.\dep{I_x-causer succeeded in *making#Transformation-Creation* my first drawing_created}
 
 \ex.\dep{Kim_x-causer *built#Transformation-Creation* a castle_created out of sand_material}
 
-\subsection{\fr{Reproduction}}
-\label{sec:Reproduction}
+\ex.\dep{Kim_x-causer *turned#Transformation-Creation* straw_material into gold_created}
 
-\rl{original} continues to exist, and a (modified) \rl{copy} comes into existence.
+\subsection{\fr{REPRODUCTION}}
+\label{sec:REPRODUCTION}
+
+Special case of \fr{EXISTENCE-INIT} where \rl{original} continues to exist, and
+a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 
 \ex.\dep{Here is a *copy#Reproduction* of the drawing_original}
 
 \ex.\dep{This_copy is a *translation#Reproduction* of the pamphlet_original into English_x-quality}
-
-%\subsection{\fr{SUBCLASS}}
-%\label{sec:SUBCLASS}
-%
-%\rl{has-class} represents a class of entities, and more specifically the \rl{subclass}.
-%
-%Evoked chiefly by modifiers that in combination with a modifiee denoting a
-%class of entities denote a specific subclass.
-%
-%\ex.\dep{colored *pencil#CLASS*}
 
 \subsection{\fr{QUALITY}}
 \label{sec:QUALITY}
@@ -465,21 +451,16 @@ transformed to acquire a new class indicated by \rl{created}.
 
 \ex.\dep{they_has-state *sleep#STATE*}
 
-\subsection{\fr{STATE-CHANGE}}
-\label{sec:STATE-CHANGE}
-
-A \fr{STATE} changes.
-
 \ex.\dep{they_x-causer swallow their prey whole without *chewing#STATE-CHANGE* it_has-state}
 
 \ex.\dep{the six months that they_x-causer need for *digestion#STATE-CHANGE*}
 
 \ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
 
-\subsection{\fr{Destruction}}
-\label{sec:Destruction}
+\subsection{\fr{DESTRUCTION}}
+\label{sec:DESTRUCTION}
 
-\rl{destroyed} goes out of existence.
+Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes out of existence.
 
 \ex.\dep{Sam_destroyed 's *death#Destruction*}
 
@@ -519,8 +500,6 @@ framed as a state change.
 \ex.\dep{Kim_is-active *worked#ACTIVITY*}
 
 \ex.\dep{Kim_is-active *partied#ACTIVITY*}
-
-\ex.\dep{Kim_is-active *danced#ACTIVITY*}
 
 \ex.\dep{Kim_is-active had *sex#ACTIVITY*}
 
@@ -566,11 +545,12 @@ participating in it, and must be metonymically understood as the scene.
 
 \ex.\dep{Kim_x-accompanier *accompanied#ACCOMPANIMENT* Sandy_accompanied on the piano_x-means}
 
-\subsection{\fr{Depictive}}
-\label{sec:Depictive}
+\subsection{\fr{DEPICTIVE}}
+\label{sec:DEPICTIVE}
 
-Special case of \fr{ACCOMPANIMENT} where \rl{accompanier} assigns
-\rl{accompanied} a role (cf. Sec.~\ref{sec:control}).
+Special case of \fr{ACCOMPANIMENT} where \rl{depictive} (aka \rl{accompanier})
+assigns a participant of \rl{has-depictive} (aka \rl{accompanied}) a role (cf.
+Sec.~\ref{sec:control}).
 
 \ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE**_m-depictive}
 
@@ -596,9 +576,9 @@ In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wage
 
 \ex.\dep{Kim_target-possessor *bought#POSSESSION-CHANGE* the house_possession for a million dollars_x-asset}
 
-\ex.\dep{Kim_x-sender *offered#MESSAGE* Sandy_x-experiencer a million dollars_message for the house_x-asset}
+\ex.\dep{Kim_x-sender *offered#MESSAGE* Sandy_x-experiencer a million dollars_content for the house_x-asset}
 
-\ex.\dep{I_x-sender *bet#MESSAGE* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_message}
+\ex.\dep{I_x-sender *bet#MESSAGE* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_content}
 
 \subsection{\fr{CAUSATION}}
 \label{sec:CAUSATION}
@@ -627,22 +607,22 @@ purpose:
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
 
-\subsection{\fr{Resultative}}
-\label{sec:Resultative}
+\subsection{\fr{RESULTATIVE}}
+\label{sec:RESULTATIVE}
 
-Special case of \fr{CAUSATION} where \rl{result} assigns an argument of
-\rl{causer} a role. We treat the English resultative construction as a
-valency-changing operation that adds one or two arguments to the matrix
-predicate, so we use \rl{x-resultative} rather than \rl{m-resultative}.
+Special case of \fr{CAUSATION} where \rl{resultative} (aka \rl{result}) assigns
+an argument of \rl{has-resultative} (aka \rl{causer}) a role. We treat the
+English resultative construction as a valency-changing operation that adds one
+or two arguments to the matrix predicate, so we use \rl{x-resultative} rather
+than \rl{m-resultative}.
 
 \ex.\dep{Kim_x-causer *hammered#HITTING* the metal_hit__has-state **flat#STATE**_x-resultative}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__m-has-location off the **table#CLASS**_x-resultative}
+\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-has-location off the **table#CLASS**_x-resultative}
 
-\todo[inline]{The last example shows the limits of our coding, we don't really
-have a token to label as \fr{LOCATION-DEINIT}. If labeling atop SUD, we'd have
-\emph{off}, but there's probably languages that express the same thing through
-case marking rather than an adposition, then we'd have the same problem again.}
+\ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
+
+\todo[inline]{explain x-has-location}
 
 \subsection{\fr{COMPARISON}}
 \label{sec:COMPARISON}
@@ -669,10 +649,10 @@ Examples of comparing non-scene entities:
 
 \ex.\dep{Kim_compared *ran#COMPARISON* afoul_x-noncomp of Fielding 's constraints_reference}
 
-\subsection{\fr{Concession}}
-\label{sec:Concession}
+\subsection{\fr{CONCESSION}}
+\label{sec:CONCESSION}
 
-Special case of \fr{COMPARISON}, where \rl{compared} is what's asserted and \rl{reference} is what's conceded.
+Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and \rl{reference} is what's \rl{conceded}.
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* out_target-location despite the rain_m-conceded}
 
@@ -685,105 +665,213 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's asserted and \rl{
 \subsection{\fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
-TBD
+\rl{explanation} explains \rl{explained}, but is not a cause, but, e.g., a purpose.
 
-\subsection{\fr{Purpose}}
-\label{sec:Purpose}
+\ex.\dep{I_x-sender am *stressing#MESSAGE* this_topic because it is important_m-explanation}
 
-TBD
+\ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possession}
 
 \subsection{\fr{LOCATION}}
 \label{sec:LOCATION}
 
-TBD
+Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
 
-\subsection{\fr{Wrapping-Wearing}}
-\label{sec:Wrapping-Wearing}
+\ex.\dep{the *hat#CLASS* in the box_m-location}
 
-TBD
+\ex.\dep{Kim_has-location *lives#LOCATION* in Boston_location}
 
-\subsection{\fr{Wrapping-Wearing-Init}}
-\label{sec:Wrapping-Wearing-Init}
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* from the living room_initial-location through the door_transitory-location into the kitchen_target-location}
 
-TBD
+\ex.\dep{Kim_x-causer *placed#LOCATION-CHANGE* the hat_has-location on the table_target-location}
 
-\subsection{\fr{Wrapping-Wearing-Deinit}}
-\label{sec:Wrapping-Wearing-Deinit}
+\subsection{\fr{WRAPPING-WEARING}}
+\label{sec:WRAPPING-WEARING}
 
-TBD
+Special case of \fr{LOCATION} where \rl{wearer} (aka \rl{location}) wears or is
+wrapped in \rl{wrapper} (aka \rl{has-location}).
 
-\subsection{\fr{Adornment-Tarnishment}}
-\label{sec:Adornment-Tarnishment}
+\ex.\dep{Kim_wearer is *wearing#WRAPPING-WEARING* a shirt_wrapper}
 
-TBD
+\ex.\dep{Kim_wearer is *wearing#WRAPPING-WEARING* glasses_wrapper}
 
-\subsection{\fr{Adornment-Tarnishment-Init}}
-\label{sec:Adornment-Tarnishment-Init}
+\ex.\dep{The shroud_wrapper *wraps#WRAPPING-WEARING* the scepter_wearer}
 
-TBD
+\ex.\dep{Kim_target-wearer *put#WRAPPING-WEARING-INTI* on a sweater_wrapper}
 
-\subsection{\fr{Adornment-Tarnishment-Deinit}}
-\label{sec:Adornment-Tarnishment-Deinit}
+\ex.\dep{Kim_initial-wearer *took#WRAPPING-WEARING-DEINIT* off their glasses_wrapper}
 
-TBD
+\subsection{\fr{ADORNMENT-TARNISHMENT}}
+\label{sec:ADORNMENT-TARNISHMENT}
 
-\subsection{\fr{LOCATION-INIT}}
-\label{sec:LOCATION-INIT}
+Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location} sits on \rl{surface} (aka \rl{location}).
 
-TBD
+\dep{Kim_x-causer *decorated#ADORNMENT-TARNISHMENT* the balcony_surface with fairy lights_ornament}
 
-\subsection{\fr{Touching}}
-\label{sec:Touching}
+\dep{Kim_x-causer *splashed#ADORNMENT-TARNISHMENT-INIT* Sandy_surface with water_ornament}
 
-\subsection{\fr{Ingestion}}
-\label{sec:Ingestion}
+\dep{Kim_x-causer *washed#ADORNMENT-TARNISHMENT-DEINIT* the dirt_ornament off Sandy_initial-surface}
 
-TBD
+\dep{Kim_x-causer *washed#ADORNMENT-TARNISHMENT-DEINIT* Sandy_initial-surface}
 
-\subsection{\fr{Hitting}}
-\label{sec:Hitting}
+\subsection{\fr{HITTING}}
+\label{sec:HITTING}
 
-TBD
+Special case of \fr{LOCATION-INIT} where \rl{hitting} (aka \rl{has-location})
+comes into contact with \rl{hit} (aka \rl{target-location}).
 
-\subsection{\fr{LOCATION-DEINIT}}
-\label{sec:LOCATION-DEINIT}
+\ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit}
 
-TBD
+\ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit with a stick_hitting}
 
-\subsection{\fr{Excretion}}
-\label{sec:Excretion}
+\ex.\dep{The stick_hitting *hit#HITTING* Sandy_hit}
 
-TBD
+\ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a pool noodle_hitting}
 
-\subsection{\fr{LOCATION-CHANGE}}
-\label{sec:LOCATION-CHANGE}
+\ex.\dep{Kim_x-causer *kicked#HITTING* Sandy_hit}
 
-TBD
+\subsection{\fr{INGESTION}}
+\label{sec:INGESTION}
 
-\subsection{\fr{Motion}}
-\label{sec:Motion}
+Special case of \fr{LOCATION-INIT} where \rl{ingester} (aka
+\rl{target-location}) ingests \rl{ingested} (aka \rl{has-location}).
 
-TBD
+\ex.\dep{Kim_ingester *ate#INGESTION* an apple_ingested}
+
+\ex.\dep{Kim_ingester *nibbled#INGESTION* on the pretzel_ingested}
+
+\subsection{\fr{EXCRETION}}
+\label{sec:EXCRETION}
+
+Sepcial case of \fr{LOCATION-DEINIT} where \rl{excreter} (aka
+\rl{initial-location}) excretes \rl{excreted} (aka \rl{has-location}).
+
+\ex.\dep{Kim_excreter *threw#EXCRETION* up the pretzel_excreted}
+
+\subsection{\fr{UNANCHORED-MOTION}}
+\label{sec:UNANCHORED-MOTION}
+
+Special case of \rl{LOCATION-CHANGE} where no initial or target location is indicated.
+
+\ex.\dep{Kim_has-location is *running#UNANCHORED-MOTION* along the river_transitory-location}
+
+\ex.\dep{I_x-causer learned to *pilot#UNANCHORED-MOTION* airplanes_has-location}
+
+\ex.\dep{Kim_has-location is *dancing#UNANCHORED-MOTION* around the room_transitory-location with Sandy_m-accompanier}
+
+\ex.\dep{Kim_has-location is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
+
+\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
 
 \subsection{\fr{MEANS}}
 \label{sec:MEANS}
 
-TBD
+\rl{has-means} is a scene caused by something via an intermediary \rl{means}.
+
+\ex.\dep{Kim_x-causer *cut#STATE-CHANGE* the cake_has-state with a knife_m-means}
+
+\ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface by exploding_m-means a paint bomb}
+
+\ex.\dep{Kim_x-causer__x-causer *used#MEANS* a pen_means to **get#LOCATION-DEINIT**_has-means the lid__has-location off__initial-location}
+
+\ex.\dep{You_x-causer *used#MEANS* me_means !}
 
 \subsection{\fr{MESSAGE}}
 \label{sec:MESSAGE}
 
-TBD
+A message about \rl{topic} with content \rl{content} is expressed or received
+or just exists in recorded form. When \rl{content} and \rl{topic} are both realized, \rl{content} must assign a role to \rl{topic}.
 
-\subsection{\fr{MESSAGE-INIT}}
-\label{sec:MESSAGE-INIT}
+\subsubsection{Expression}
 
-TBD
+\ex.\dep{Kim_x-sender *yelped#MESSAGE*}
 
-\subsection{\fr{MESSAGE-DEINIT}}
-\label{sec:MESSAGE-DEINIT}
+\ex.\dep{Kim_x-sender *said#MESSAGE* : it 's fine_content}
 
-TBD
+\ex.\dep{Kim_x-sender *said#MESSAGE* it was fine_content}
+
+\ex.\dep{Kim_x-sender *called#MESSAGE* Sandy_topic__x-sender a **liar#MESSAGE**_content}
+
+\ex.\dep{Kim_x-sender *told#MESSAGE* Sandy_x-experiencer a secret_content}
+
+\ex.\dep{Kim_x-sender *talked#MESSAGE* about Sandy_topic}
+
+\ex.\dep{Kim_x-sender *talked#MESSAGE* **shit#MESSAGE**_content about Sandy_topic__topic}
+
+\ex.\dep{Kim_x-sender and Sandy_x-sender *conversed#MESSAGE*}
+
+\ex.\dep{Kim_x-sender *conversed#MESSAGE* with Sandy_x-accompanier}
+
+\subsubsection{Gesture}
+
+\ex.\dep{Kim_x-sender *curtseyed#MESSAGE* to the Queen_x-experiencer}
+
+\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_nonparticipant>>content}
+
+\subsubsection{Performance}
+
+Performance of a work of art is framed as \fr{MESSAGE} where the work of art is the \rl{topic}.
+
+\ex.\dep{Kim_x-sender *played#MESSAGE* a little tune_topic on their tuba_x-means}
+
+\ex.\dep{They_x-sender *performed#MESSAGE* the play_topic}
+
+\ex.\dep{Kim_x-sender *sang#MESSAGE* a song_topic}
+
+\subsubsection{Depiction}
+
+\ex.\dep{Kim_x-sender *drew#MESSAGE* a heron_topic}
+
+\ex.\dep{a *picture#MESSAGE* of the heron_topic}
+
+When the object is a work of art, frame it as \fr{TRANSFORMATION-CREATION} instead:
+
+\ex.\dep{Kim_x-sender *drew#TRANSFORMATION-CREATION* a picture_created}
+
+\subsubsection{Recording}
+
+\ex.\dep{Kim_x-sender *wrote#MESSAGE* Sandy_x-experiencer a letter_content}
+
+\ex.\dep{Kim_x-sender *wrote#MESSAGE* the message_content__has-quality onto a piece_x-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
+
+\ex.\dep{The concert_topic was *recorded#MESSAGE* on tape_x-location}
+
+\subsubsection{Perception}
+
+We also frame perception as \fr{MESSAGE}, including mental and volitional perception.
+
+\ex.\dep{Kim_x-experiencer *saw#MESSAGE* a flower_topic}
+
+\ex.\dep{Kim_x-experiencer *found#MESSAGE* the flower_topic__has-quality **beautiful#QUALITY**_content}
+
+\ex.\dep{Kim_x-experiencer *thinks#MESSAGE* Sandy is a liar_content}
+
+\ex.\dep{Kim_x-experiencer *thinks#MESSAGE* Sandy_topic__x-sender a **liar#MESSAGE**_content}
+
+\ex.\dep{Kim_x-experiencer *saw#MESSAGE* Sandy_topic__has-location **swim#UNANCHORED-MOTION**_content}
+
+\ex.\dep{Kim_x-experiencer__has-location *wants#MESSAGE* to **swim#UNANCHORED-MOTION**_content}
+
+\ex.\dep{Kim_x-experiencer *wants#MESSAGE* Sandy_topic__has-location to **swim#UNANCHORED-MOTION**_content}
+
+\ex.\dep{Kim_topic__x-experiencer *seems#MESSAGE* **happy#MESSAGE**_content}
+
+\ex.\dep{Kim_topic__x-experiencer *seems#MESSAGE* **happy#MESSAGE**_content to Sandy_x-experiencer}
+
+\ex.\dep{The Thought Police_x-experiencer *observed#MESSAGE* Winston_topic}
+
+\ex.\dep{Kim_x-experiencer *studies#MESSAGE* linguistics_topic}
+
+\ex.\dep{Kim_x-sender *taught#MESSAGE* Sandy_x-experiencer Spanish_topic}
+
+\ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
+
+\ex.\dep{Kim_x-experiencer *measured#MESSAGE* the elasticity_topic}
+
+\ex.\dep{The jury_x-experiencer *found#MESSAGE* Kim_topic__participant___is-active **guilty#SCENE**_content of the ***crime#ACTIVITY***__scene}
+
+\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE* everything they knew_content}
+
+\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE* about the cake_topic}
 
 \subsection{\fr{PART-WHOLE}}
 \label{sec:PART-WHOLE}
@@ -890,7 +978,23 @@ TBD
 
 TBD
 
+\subsection{\fr{NONPARTICIPANT}}
+\label{sec:NONPARTICIPANT}
+
+\todo[inline]{move resultatives here}
+
+TBD
+
 \section{Memos}
+
+\subsection{Prefer Core over Non-core Arguments}
+
+When an argument fills both a core and a non-core role, it is more important to
+annotate the former.
+
+\ex.\dep{Kim_has-location *drove#LOCATION-CHANGE* to Boston_target-location}
+
+\ex.\dep{Kim_x-causer *drove#LOCATION-CHANGE* the car_has-location to Boston_target-location}
 
 \subsection{Arguments Determine Frames}
 
@@ -902,14 +1006,38 @@ a \fr{CLASS} of things, it can occur with a prepositional argument denoting a
 
 \ex.\dep{my_m-sender first_m-order *drawing#MESSAGE*}
 
-\subsection{Prefer Core over Non-core Arguments}
+\subsection{Participant Nouns}
 
-When an argument fills both a core and a non-core role, it is more important to
-annotate the former.
+Some nouns denote a person who participates in a specific type of scene in a specific type of role. In such cases, use the most appropriate frame for that scene. For example, in a narrative where the narrator has just been criticized by a stranger, you could annotate as follows:
 
-\ex.\dep{Kim_has-location *drove#LOCATION-CHANGE* to Boston_target-location}
+\ex.\dep{With that, my_topic *critic#MESSAGE* sat down again}
 
-\ex.\dep{Kim_x-causer *drove#LOCATION-CHANGE* the car_has-location to Boston_target-location}
+In other cases, such nouns rather denote a person's profession or expertise or their role in a social context:
+
+\ex.\dep{He_has-class is a *teacher#CLASS*}
+
+\ex.\dep{She_has-social-relation is the *president#SOCIAL-RELATION* of our club_social-relation}
+
+\subsection{Particle Verbs}
+
+In UD, particle verbs are connected to their particle via the
+\texttt{compound:prt} relation. If the meaning is spatial, this dependency is
+labeled with \rl{initial-location} or \rl{target-location}.
+
+\ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location}
+
+\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_m-time}
+
+In semi-non-compositional particle verbs, where the particle adds a partially predictable
+but nonspatial meaning to the verb, use an appropriate role, e.g.,
+\rl{x-marker} if the meaning is aspectual.
+
+\ex.\dep{*eat#INGESTION* up_x-marker the cookies_ingested} (implies \emph{eat} the cookies)
+
+In fully non-decompositional particle verbs, where the meaning is not
+predictable, use \rl{x-noncomp}.
+
+\ex.\dep{*do#EXPERIENCE* somebody_experiencer in_x-noncomp} (does not imply \emph{do} somebody)
 
 \bibliographystyle{apalike}
 \bibliography{anthology,custom}
