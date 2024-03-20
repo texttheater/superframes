@@ -21,9 +21,10 @@ class Token:
     deprels: dict[int, str]
 
     def render(self):
+        form = self.form.replace(r'ß', r'{\ss}')
         if self.subscript:
-            return self.form + r'$_\text{\textsf{' + self.subscript.replace('>>', ' >> ') + r'}}$'
-        return self.form
+            return form + r'$_\text{\textsf{' + self.subscript.replace('>>', ' >> ') + r'}}$'
+        return form
 
 
 @dataclass(frozen=True)
