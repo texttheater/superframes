@@ -164,12 +164,13 @@ Rather than a static relationship between two entities, many verbs (and other
 predicates) denote a change (or absence of change) in such a relationship. We
 sort such predicates into a few coarse aspectual classes. For example,
 initiation (\frs{-INIT}) means a state is begun or worked towards, deinitiation
-(\frs{-DEINIT}) means a state is ended, completed, or its end is worked towards,
-change (\frs{-CHANGE}) combines both, where one state is replaced by another,
-and continuation (\frs{-CONT}) means a state persists or is even intensified.
-Accordingly, roles with prefix \rl{target-}, \rl{initial-}, or \rl{transitory-} mark
-participants at/beyond the end of, at the beginning of, or at some point during
-the event, respectively.
+(\frs{-DEINIT}) means a state is ended, completed, or its end is worked
+towards, change (\frs{-CHANGE}) combines both, where one state is replaced by
+another, continuation (\frs{-CONT}) means a state persists or is even
+intensified, and prevention (\frs{-PREV}) means it fails to begin.
+Accordingly, roles with prefix \rl{target-}, \rl{initial-}, or \rl{transitory-}
+mark participants at/beyond the end of, at the beginning of, or at some point
+during the event, respectively.
 
 \ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possession}
 
@@ -204,6 +205,19 @@ The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an 
 \ex.\dep{The shouting_initial-scene *faded#SCENE-DEINIT*}
 
 \ex.\dep{A coup_target-scene was *attempted#SCENE-INIT*}
+
+\ex.\dep{Kim_participant *finished#SCENE-DEINIT* their work_initial-scene}
+
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREV* an outbreak_target-scene}
+
+\ex.\dep{Kim_participant *refrained#SCENE-PREVENTION* from going_target-scene}
+
+\ex.\dep{Kim_x-causer *prevented#SCENE-PREV* Sandy_participant from going_target-scene}
+
+\ex.\dep{Kim_x-causer *saved#SCENE-PREV* Sandy_participant from the dragon_target-scene}
+
+In the last example, \emph{dragon} is to be understood metonymically as a
+scene in which Sandy would have been harmed by the dragon.
 
 In addition, we use the modal suffixes \frs{-NECESSITY} and \frs{-POSSIBILITY}.
 They can combine with aspectual suffixes.
@@ -823,17 +837,17 @@ Performance of a work of art is framed as \fr{MESSAGE} where the work of art is 
 
 \ex.\dep{a *picture#MESSAGE* of the heron_topic}
 
-When the object is a work of art, frame it as \fr{TRANSFORMATION-CREATION} instead:
-
-\ex.\dep{Kim_x-sender *drew#TRANSFORMATION-CREATION* a picture_created}
-
 \subsubsection{Recording}
+
+\ex.\dep{Kim_x-sender *drew#MESSAGE* a picture_x-created}
 
 \ex.\dep{Kim_x-sender *wrote#MESSAGE* Sandy_x-experiencer a letter_content}
 
 \ex.\dep{Kim_x-sender *wrote#MESSAGE* the message_content__has-quality onto a piece_x-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
 
 \ex.\dep{The concert_topic was *recorded#MESSAGE* on tape_x-location}
+
+\ex.\dep{The band_x-sender *recorded#MESSAGE* an album_x-created}
 
 \subsubsection{Perception}
 
@@ -861,117 +875,170 @@ We also frame perception as \fr{MESSAGE}, including mental and volitional percep
 
 \ex.\dep{Kim_x-experiencer *studies#MESSAGE* linguistics_topic}
 
-\ex.\dep{Kim_x-sender *taught#MESSAGE* Sandy_x-experiencer Spanish_topic}
-
 \ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
-
-\ex.\dep{Kim_x-experiencer *measured#MESSAGE* the elasticity_topic}
 
 \ex.\dep{The jury_x-experiencer *found#MESSAGE* Kim_topic__participant___is-active **guilty#SCENE**_content of the ***crime#ACTIVITY***__scene}
 
-\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE* everything they knew_content}
+Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-PREV}) for the coming
+about (ending, failing to come about) of knowledge and awareness.
+
+\ex.\dep{Kim_x-experiencer *noticed#MESSAGE-INIT* the bird_topic}
+
+\ex.\dep{Kim_x-sender *taught#MESSAGE-INIT* Sandy_x-experiencer Spanish_topic}
+
+\ex.\dep{Kim_x-experiencer *measured#MESSAGE-INIT* the elasticity_topic}
+
+\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* everything they knew_initial-content}
 
 \ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE* about the cake_topic}
+
+\ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREV* to take_target-content the trash out}
 
 \subsection{\fr{PART-WHOLE}}
 \label{sec:PART-WHOLE}
 
-TBD
+\rl{part} is part of \rl{whole}.
+
+\ex.\dep{Kim_m-whole 's *leg#CLASS*}
+
+\ex.\dep{a *man#CLASS* with a mustache_m-part}
+
+\ex.\dep{*part#PART-WHOLE* of the year_whole}
+
+\ex.\dep{wheat_whole *contains#PART-WHOLE* gluten_part}
 
 \subsection{\fr{POSSESSION}}
 \label{sec:POSSESSION}
 
-TBD
+\rl{possessor} possesses or controls the \rl{possessed}.
 
-\subsection{\fr{POSSESSION-INIT}}
-\label{sec:POSSESSION-INIT}
+\ex.\dep{Kim_m-possessor 's *house#CLASS*}
 
-TBD
+\ex.\dep{Kim_possessor *owns#POSSESSION* a house_possessed}
 
-\subsection{\fr{POSSESSION-DEINIT}}
-\label{sec:POSSESSION-DEINIT}
+\ex.\dep{The house_possessed *belongs#POSSESSION* to Kim_possessor}
 
-TBD
+\ex.\dep{the *owner#POSSESSION* of the house_possessed}
 
-\subsection{\fr{POSSESSION-CHANGE}}
-\label{sec:POSSESSION-CHANGE}
+\ex.\dep{Kim_possessor *has#POSSESSION* Sandy 's phone_possessed}
 
-TBD
+\ex.\dep{Kim_target-possessor *bought#POSSESSION-CHANGE* a house_possessed from Sandy_initial-possessor}
 
-\subsection{\fr{POSSESSION-CHANGE-NECESSITY}}
-\label{sec:POSSESSION-CHANGE-NECESSITY}
+\ex.\dep{Sandy_initial-possessor *sold#POSSESSION-CHANGE* Kim_target-possessor the house_possessed}
 
-TBD
+\ex.\dep{Kim_initial-possessor *kept#POSSESSION-CONT* the house_possessed}
 
-\subsection{\fr{POSSESSION-CONTINUATION}}
-\label{sec:POSSESSION-CONTINUATION}
+\ex.\dep{Kim_initial-possessor *lost#POSSESSION-DEINIT* the house_possessed}
 
-TBD
+\ex.\dep{Caesar_target-possessor *conquered#POSSESSION-INIT* Gaul_possessed}
+
+\ex.\dep{Caesar_target-possessor 's *conquest#POSSESSION-INIT* of Gaul_possessed}
+
+\ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
 \subsection{\fr{QUANTITY}}
 \label{sec:QUANTITY}
 
-TBD
+\rl{quantity} is the quantity, degree, or extent of \rl{has-quantity}.
+
+\ex.\dep{three_m-quantity *burgers#CLASS*}
+
+\ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
+
+\ex.\dep{We_x-sender *discourage#MESSAGE* this_topic emphatically_m-quantity}
 
 \subsection{\fr{SENDING}}
 \label{sec:SENDING}
 
-TBD
 
 \subsection{\fr{SEQUENCE}}
 \label{sec:SEQUENCE}
 
-TBD
+\rl{follows} follows \rl{followed}, e.g., temporally, logically, by rank, as heir, etc.
+
+\ex.\dep{I_has-social-relation will *join#SOCIAL-RELATION-INIT* the club if they ask_m-followed me}
+
+\ex.\dep{Form_follows *follows#SEQUENCE* function_followed}
+
+\ex.\dep{Cook_follows is Jobs_followed 's *successor#SEQUENCE*}
+
+\ex.\dep{Das_follows *fußt#SEQUENCE* auf einer falschen Vorstellung_followed}
+
+\ex.\dep{The start date_follows is *contingent#SEQUENCE* on their approval_followed}
+
+\ex.\dep{Eine Aussöhung_follows *bedingt#SEQUENCE* eine Entschuldigung_followed}
+
+\ex.\dep{Kim_x-experiencer *deduced#SEQUENCE* the truth_follows from the clues_followed}
 
 \subsection{\fr{SOCIAL-RELATION}}
 \label{sec:SOCIAL-RELATION}
 
-TBD
+\rl{has-social-relation} is an individual that is in some socially constructed
+relationship with \rl{social-relation}. \rl{social-relation} might, e.g., be a
+relative, a friend, an organization, a responsibility, or a judicial sentence.
 
-\subsection{\fr{SOCIAL-RELATION-INIT}}
-\label{sec:SOCIAL-RELATION-INIT}
+\ex.\dep{Kim_has-social-relation 's *friend#SOCIAL-RELATION*}
 
-TBD
+\ex.\dep{Kim_social-relation is my_has-social-relation *cousin#SOCIAL-RELATION*}
 
-\subsection{\fr{SOCIAL-RELATION-DEINIT}}
-\label{sec:SOCIAL-RELATION-DEINIT}
+\ex.\dep{Kim_social-relation and Sandy are *friends#SOCIAL-RELATION*}
 
-TBD
+\ex.\dep{Kim_has-social-relation is *friends#SOCIAL-RELATION* with Sandy_social-relation}
+
+\ex.\dep{Kim_has-social-relation *works#SOCIAL-RELATION* at Google_social-relation}
+
+\ex.\dep{Kim_has-social-relation *works#SOCIAL-RELATION* for Sandy_social-relation}
+
+\ex.\dep{Kim_has-social-relation *emcees#SOCIAL-RELATION*}
+
+\ex.\dep{Kim_has-social-relation is *hosting#SOCIAL-RELATION* the party_social-relation}
+
+\ex.\dep{Kim_has-social-relation is under house *arrest#SOCIAL-RELATION*}
+
+\ex.\dep{Kim_has-social-relation *sentence#SOCIAL-RELATION* was suspended}
+
+\ex.\dep{Kim_has-social-relation *married#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
+
+\ex.\dep{The official_x-causer *married#SOCIAL-RELATION-INIT* Kim_has-social-relation to Sandy_target-social-relation}
+
+\ex.\dep{The official_x-causer *married#SOCIAL-RELATION-INIT* Kim_has-social-relation and Sandy}
+
+\ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-INIT* Sandy_initial-social-relation}
+
+\ex.\dep{Kim_has-social-relation *befriended#SOCIAL-RELATION* Sandy_target-social-relation}
+
+\ex.\dep{Kim_has-social-relation *took#SOCIAL-RELATION-INIT* the job_target-social-relation}
+
+\ex.\dep{Kim_has-social-relation *joined#SOCIAL-RELATION-INIT* Google_target-social-relation}
+
+\ex.\dep{Kim_has-social-relation *joined#SOCIAL-RELATION-INIT* a union_target-social-relation}
+
+\ex.\dep{Sandy_x-causer *fired#SOCIAL-RELATION-DEINIT* Kim_has-social-relation from their job_initial-social-relation}
+
+\ex.\dep{Kim_has-social-relation *left#SOCIAL-RELATION-DEINIT* Google_initial-social-relation}
+
+\ex.\dep{Kim_has-social-relation *assumed#SOCIAL-RELATION-INIT* office_target-social-relation}
+
+\ex.\dep{The judge_x-causer *sentenced#SOCIAL-RELATION-INIT* Kim_has-social-relation to three days_target-social-relation in prison}
+
+\ex.\dep{Kim_has-social-relation was *pardoned#SOCIAL-RELATION-DEINIT*}
 
 \subsection{\fr{TIME}}
 \label{sec:TIME}
 
-TBD
+\rl{time} indicates when, how often, or for how long \rl{has-time} takes place. Also evoked by time expressions without arguments.
 
-\subsection{\fr{SCENE-INIT}}
-\label{sec:SCENE-INIT}
+\ex.\dep{Kim_has-location *swims#UNANCHORED-MOTION* on Monday_m-time}
 
-TBD
+\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* twice_m-time}
 
-\subsection{\fr{SCENE-DEINIT}}
-\label{sec:SCENE-DEINIT}
+\ex.\dep{Kim_has-location *swam#UNANCHORED-MOTION* for an hour_m-time}
 
-TBD
+\ex.\dep{Kim_x-sender *says#MESSAGE* hello_content whenever I meet_m-time them}
 
-\subsection{\fr{SCENE-CONTINUATION}}
-\label{sec:SCENE-CONTINUATION}
+\ex.\dep{*Once#TIME* when I was six years old}
 
-TBD
-
-\subsection{\fr{SCENE-PREVENTION}}
-\label{sec:SCENE-PREVENTION}
-
-TBD
-
-\subsection{\fr{SCENE-NECESSITY}}
-\label{sec:SCENE-NECESSITY}
-
-TBD
-
-\subsection{\fr{SCENE-POSSIBILITY}}
-\label{sec:SCENE-POSSIBILITY}
-
-TBD
+\ex.\dep{the six *months#TIME*__scene they__x-experiencer **need#SCENE-NECESSITY**_m-scene for digestion__participant_has-time}
 
 \subsection{\fr{NONCOMP}}
 \label{sec:NONCOMP}
