@@ -370,6 +370,8 @@ and the embedded predicate in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
+\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
 More examples can be found in Section~\ref{sec:aspect-mode}.
 
 \subsection{\fr{IDENTIFICATION}}
@@ -819,7 +821,7 @@ or just exists in recorded form. When \rl{content} and \rl{topic} are both reali
 
 \ex.\dep{Kim_x-sender *curtseyed#MESSAGE* to the Queen_x-experiencer}
 
-\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_nonparticipant>>content}
+\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_x-content>>content}
 
 \subsubsection{Performance}
 
@@ -1043,14 +1045,17 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 \subsection{\fr{NONCOMP}}
 \label{sec:NONCOMP}
 
-TBD
+Used to mark syntactic arguments that are thought of as part of the predicate, as in verbal idioms, weather verbs, inherently reflexive verbs, or existential \emph{there}.
 
-\subsection{\fr{NONPARTICIPANT}}
-\label{sec:NONPARTICIPANT}
+\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
-\todo[inline]{move resultatives here}
+\ex.\dep{It_x-noncomp is *raining#STATE*}
 
-TBD
+\ex.\dep{I_x-sender *address#MESSAGE* myself_x-noncomp to you_x-experiencer}
+
+\ex.\dep{There_x-noncomp *was#SCENE* a famine_scene}
+
+Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
 
 \section{Memos}
 
@@ -1075,11 +1080,15 @@ a \fr{CLASS} of things, it can occur with a prepositional argument denoting a
 
 \subsection{Participant Nouns}
 
-Some nouns denote a person who participates in a specific type of scene in a specific type of role. In such cases, use the most appropriate frame for that scene. For example, in a narrative where the narrator has just been criticized by a stranger, you could annotate as follows:
+Some nouns denote a person who participates in a specific type of scene in a
+specific type of role. In such cases, use the most appropriate frame for that
+scene. For example, in a narrative where the narrator has just been criticized
+by a stranger, you could annotate as follows:
 
 \ex.\dep{With that, my_topic *critic#MESSAGE* sat down again}
 
-In other cases, such nouns rather denote a person's profession or expertise or their role in a social context:
+In other cases, such nouns rather denote a person's profession or expertise or
+their role in a social context:
 
 \ex.\dep{He_has-class is a *teacher#CLASS*}
 
@@ -1101,10 +1110,12 @@ but nonspatial meaning to the verb, use an appropriate role, e.g.,
 
 \ex.\dep{*eat#INGESTION* up_x-marker the cookies_ingested} (implies \emph{eat} the cookies)
 
-In fully non-decompositional particle verbs, where the meaning is not
+In fully non-compositional particle verbs, where the meaning is not
 predictable, use \rl{x-noncomp}.
 
 \ex.\dep{*do#EXPERIENCE* somebody_experiencer in_x-noncomp} (does not imply \emph{do} somebody)
+
+\todo[inline]{refer to PARSEME guidelines}
 
 \bibliographystyle{apalike}
 \bibliography{anthology,custom}
