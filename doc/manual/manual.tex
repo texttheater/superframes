@@ -70,6 +70,7 @@
             \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
             \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
             \boro\fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
+            \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
             \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
             \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
@@ -649,6 +650,14 @@ Note how the last example expresses a purpose, but expresses it as a cause, so
 purpose:
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
+
+\subsection{\fr{REACTION}}
+\label{sec:REACTION}
+
+Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
+\rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
+
+\ex.\dep{Kim_x-causer *reacted#SEQUENCE* to the allegations_followed with a denial_follows}
 
 \subsection{\fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
