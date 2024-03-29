@@ -63,11 +63,11 @@
             \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
             \boro\fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
             \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
-            \fr{MARKER} & & \rl{has-marker} & \rl{marker} & & & \ref{sec:MARKER} \\
+            \boro\fr{FOCUS} & & \rl{has-focus} & \rl{focus} & & & \ref{sec:FOCUS} \\
             \midrule
             \boro\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
-            \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
             \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
+            \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
             \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
             \boro\fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
             \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
@@ -88,6 +88,7 @@
             \boro\fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
             \boro\fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
             \boro\fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
+            \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITIO} \\
             \boro\fr{SOCIAL-RELATION} & initial-social-relation & \rl{has-social-relation} & \rl{social-relation} & & target-social-relation & \ref{sec:SOCIAL-RELATION} \\
             \boro\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
             \midrule
@@ -361,15 +362,23 @@ This mechanism can be used to indicate that a modification may not be fully comp
 
 A ``meta'' frame for predicates where the main frame is invoked by \rl{scene},
 and the predicate adds some temporal, aspectual, modal, etc., meaning, or just
-acts as a light verb.  \rl{participant} is assigned a role by \rl{scene}. In
-the following examples, we show the annotations for both the matrix predicate
-and the embedded predicate in one graph.
+acts as a light verb. If there is a \rl{participant}, it is assigned a role by
+\rl{scene}. In the following examples, we show the annotations for both the
+matrix predicate and the embedded predicate in one graph.
 
 \ex.\dep{Kim_participant__is-active *plays#SCENE* **tennis#ACTIVITY**_scene}
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
 \ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
+The modifier relation \rl{m-scene} is used when a syntactic dependeny points
+from an argument to a predicate, as, e.g., with relative clauses or sentence
+adverbs that are not already covered by a frame such as \fr{MODE} or \fr{FOCUS}.
+
+\ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
+
+\ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer, Kim_has-location is *here#LOCATION*__experienced}
 
 More examples can be found in Section~\ref{sec:aspect-mode}.
 
@@ -530,14 +539,25 @@ framed as a state change.
 
 \ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
 
-\subsection{\fr{MARKER}}
-\label{sec:MARKER}
+\subsection{\fr{MODE}}
+\label{sec:mode}
 
-\rl{marker} marks \rl{has-marker} for modal strength, aspect, discourse function, etc.
+Used to mark modal modifiers, including what UMR calls \emph{modal strength}.
 
-Umbrella frame for various kinds of predicates that denote properties of propositions rather than scenes, often realized as ``sentence adverbs''.
+\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
 
-\ex.\dep{Fortunately_m-marker, Kim_x-experiencer probably_m-marker even_m-marker *knows#MESSAGE* that_content}
+\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
+
+\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
+
+\subsection{\fr{FOCUS}}
+\label{sec:FOCUS}
+
+Used to mark focus particles such as \emph{only} and \emph{even}.
+
+\ex.\dep{Even_m-focus *Kim#IDENTIFICATION* did n't know that}
+
+\ex.\dep{They_x-causer only_m-focus *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_surface}
 
 \subsection{\fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
