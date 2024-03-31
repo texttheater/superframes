@@ -70,9 +70,6 @@
             \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
             \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
             \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
-            \boro\fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
-            \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
-            \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
             \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
             \boro\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
@@ -90,6 +87,9 @@
             \boro\fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
             \boro\fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
             \boro\fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
+            \fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
+            \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
+            \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
             \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
             \fr{EXCEPTION} & & \rl{has-excpetion} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
             \boro\fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
@@ -647,58 +647,6 @@ In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wage
 
 \ex.\dep{I_x-sender *bet#MESSAGE* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_content}
 
-\subsection{\fr{CAUSATION}}
-\label{sec:CAUSATION}
-
-\rl{causer} causes \rl{result}.
-
-\ex.\dep{Kim_x-causer *broke#STATE-CHANGE* the glass_has-state}
-
-\ex.\dep{The knife_x-causer *cut#STATE-CHANGE* the bread_has-state}
-
-\ex.\dep{Kim_x-causer *cut#STATE-CHANGE* the bread_has-state with a knife_m-means}
-
-\ex.\dep{The war_causer *caused#CAUSATION* a famine_result}
-
-\ex.\dep{There_x-expletive *was#SCENE* a famine_scene because of the war_m-causer}
-
-\ex.\dep{Der Wasserdruck_has-quantity *stieg#QUANTITY-CHANGE*, wodurch der Brunnen überfloss_m-result}
-
-\ex.\dep{Die Qualität_result ist der Motivation_causer *geschuldet#CAUSATION*}
-
-\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location because they wanted_m-causer to buy food}
-
-Note how the last example expresses a purpose, but expresses it as a cause, so
-\rl{m-causer} lis the right label to use. Compare this to construal as a
-purpose:
-
-\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
-
-\subsection{\fr{REACTION}}
-\label{sec:REACTION}
-
-Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
-\rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
-
-\ex.\dep{Kim_x-causer *reacted#SEQUENCE* to the allegations_followed with a denial_follows}
-
-\subsection{\fr{RESULTATIVE}}
-\label{sec:RESULTATIVE}
-
-Special case of \fr{CAUSATION} where \rl{resultative} (aka \rl{result}) assigns
-an argument of \rl{has-resultative} (aka \rl{causer}) a role. We treat the
-English resultative construction as a valency-changing operation that adds one
-or two arguments to the matrix predicate, so we use \rl{x-resultative} rather
-than \rl{m-resultative}.
-
-\ex.\dep{Kim_x-causer *hammered#HITTING* the metal_hit__has-state **flat#STATE**_x-resultative}
-
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-has-location off the **table#CLASS**_x-resultative}
-
-\ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
-
-\todo[inline]{explain x-has-location}
-
 \subsection{\fr{COMPARISON}}
 \label{sec:COMPARISON}
 
@@ -1031,6 +979,58 @@ For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 \ex.\dep{Kim_x-experiencer *deduced#SEQUENCE* the truth_follows from the clues_followed}
 
 \ex.\dep{Given that I 'm tired_m-followed , I_has-location wo n't be *there#LOCATION*}
+
+\subsection{\fr{CAUSATION}}
+\label{sec:CAUSATION}
+
+Special case of \fr{SEQUENCE} where \rl{causer} (aka \rl{followed}) causes \rl{result} (aka \rl{follows}).
+
+\ex.\dep{Kim_x-causer *broke#STATE-CHANGE* the glass_has-state}
+
+\ex.\dep{The knife_x-causer *cut#STATE-CHANGE* the bread_has-state}
+
+\ex.\dep{Kim_x-causer *cut#STATE-CHANGE* the bread_has-state with a knife_m-means}
+
+\ex.\dep{The war_causer *caused#CAUSATION* a famine_result}
+
+\ex.\dep{There_x-expletive *was#SCENE* a famine_scene because of the war_m-causer}
+
+\ex.\dep{Der Wasserdruck_has-quantity *stieg#QUANTITY-CHANGE*, wodurch der Brunnen überfloss_m-result}
+
+\ex.\dep{Die Qualität_result ist der Motivation_causer *geschuldet#CAUSATION*}
+
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location because they wanted_m-causer to buy food}
+
+Note how the last example expresses a purpose, but expresses it as a cause, so
+\rl{m-causer} lis the right label to use. Compare this to construal as a
+purpose:
+
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
+
+\subsection{\fr{REACTION}}
+\label{sec:REACTION}
+
+Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
+\rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
+
+\ex.\dep{Kim_x-causer *reacted#SEQUENCE* to the allegations_followed with a denial_follows}
+
+\subsection{\fr{RESULTATIVE}}
+\label{sec:RESULTATIVE}
+
+Special case of \fr{CAUSATION} where \rl{resultative} (aka \rl{result}) assigns
+an argument of \rl{has-resultative} (aka \rl{causer}) a role. We treat the
+English resultative construction as a valency-changing operation that adds one
+or two arguments to the matrix predicate, so we use \rl{x-resultative} rather
+than \rl{m-resultative}.
+
+\ex.\dep{Kim_x-causer *hammered#HITTING* the metal_hit__has-state **flat#STATE**_x-resultative}
+
+\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-has-location off the **table#CLASS**_x-resultative}
+
+\ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
+
+\todo[inline]{explain x-has-location}
 
 \subsection{\fr{CONDITION}}
 \label{sec:CONDITION}
