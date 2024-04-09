@@ -53,15 +53,15 @@
             \midrule
             \boro\fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
             \boro\fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
-            \boro\fr{ORDER} & & \rl{has-order} & \rl{order} & & & \ref{sec:ORDER} \\
+            \boro\fr{rank} & & \rl{has-rank} & \rl{rank} & & & \ref{sec:RANK} \\
             \boro\fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
             \boro\fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
-            \fr{TRANSFORMATION-CREATION} & & & \rl{material} & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
+            \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
             \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
             \boro\fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
             \boro\fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
             \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
-            \fr{MENTAL-STATE} & & \rl{has-mental-state} & \rl{mental-state} & & & \ref{sec:MENTAL-STATE} \\
+            %\fr{MENTAL-STATE} & & \rl{has-mental-state} & \rl{mental-state} & & & \ref{sec:MENTAL-STATE} \\
             \boro\fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
             \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
             \boro\fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
@@ -71,7 +71,7 @@
             \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
             \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
             \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
-            \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
+            \boro\fr{CONTRAST} & & \rl{contrasted} & \rl{reference} & & & \ref{sec:CONTRAST} \\
             \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
             \boro\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
             \boro\fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
@@ -397,7 +397,7 @@ matrix predicate and the embedded predicate in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
-\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+\ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
 from an argument to a predicate, as, e.g., with relative clauses or sentence
@@ -405,7 +405,7 @@ adverbs that are not already covered by a frame such as \fr{MODE} or \fr{FOCUS}.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
 
-\ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer, Kim_has-location is *here#LOCATION*__experienced}
+\ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
