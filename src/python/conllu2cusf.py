@@ -22,19 +22,19 @@ from typing import Iterable
 import pyconll
 
 
-SEMDEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
+ARG_DEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
         'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
-        'compound'))
-PREDPOSS = set(('ADJ', 'ADV', 'NOUN', 'PRON', 'PROPN', 'VERB'))
+        'compound', 'orphan'))
+PRED_DEPS = ARG_DEPS | set(('root', 'conj', 'parataxis', 'list', 'reparandum',
+        'dep', 'vocative', 'dislocated'))
 
 
-def is_semdep(tree: pyconll.tree.Tree) -> bool:
-    """Whether a node is a 'semantic dependency' of its parent"""
-    return tree.data.deprel.split(':')[0] in SEMDEPS
+def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
+    return tree.data.deprel.split(':')[0] in PRED_DEPS
 
 
-def is_predpos(tree: pyconll.tree.Tree) -> bool:
-    return tree.data.upos in PREDPOSS
+def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
+    return tree.data.deprel.split(':')[0] in ARG_DEPS
 
 
 def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
@@ -50,10 +50,10 @@ def serialize_subtree(tree: pyconll.tree.Tree) -> str:
 
 
 def print_frames(tree: pyconll.tree.Tree):
-    if is_predpos(tree):
+    if is_semantic_predicate(tree):
         print(f'[] {tree.data.form} ({tree.data.id})')
         for child in tree:
-            if is_semdep(child):
+            if is_semantic_dependent(child):
                 print(f'[] {serialize_subtree(child)}')
         print()
     for child in tree:
