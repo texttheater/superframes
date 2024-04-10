@@ -16,12 +16,12 @@ FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<tokid>\d+)\)$'
 
 class Sentence:
 
-    def __init__(self, sentence: PyCoNLLSentence):
-        self.sentence = sentence
+    def __init__(self, syntax: PyCoNLLSentence):
+        self.syntax = syntax
         self.frames = []
 
     def write(self, io: TextIO=sys.stdout):
-        print(self.sentence.conll(), file=io, end='')
+        print(self.syntax.conll(), file=io, end='')
         for frame in self.frames:
             blocks.write(frame, io=io)
 
