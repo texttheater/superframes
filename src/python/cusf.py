@@ -1,10 +1,14 @@
-import blocks
-from pyconll.exception import ParseError
-from pyconll.unit.sentence import Sentence as PyCoNLLSentence
-import pyconll
 import re
 import sys
 from typing import Iterable, TextIO
+
+
+from pyconll.exception import ParseError
+from pyconll.unit.sentence import Sentence as PyCoNLLSentence
+import pyconll
+
+
+import blocks
 
 
 FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<tokid>\d+)\)$')
