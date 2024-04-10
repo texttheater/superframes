@@ -1,3 +1,4 @@
+import logging
 import re
 import sys
 from typing import Iterable, TextIO, Optional, Union
@@ -71,13 +72,14 @@ class Sentence:
         self.syntax = syntax
         self.frames = [] if frames is None else frames
 
-    def add_frame(self, block: blocks.Block):
+    def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
         if self.frames is None:
             self.frames = []
         try:
             frame = Frame.from_block(block)
             self.frames.append(frame)
         except:
+            logging.warning('sentence %s line %s cannot parse frame %s', sentid, lineno, repr('\n'.join(block)))
             self.frames.append(block)
 
     def write(self, io: TextIO=sys.stdout):
@@ -91,6 +93,7 @@ class Sentence:
 
 def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
     current_sentence = None
+    lineno = 1
     for block in blocks.read(io):
         try:
             new_sentence = Sentence(
@@ -100,7 +103,8 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
                 yield current_sentence
             current_sentence = new_sentence
         except ParseError:
-            current_sentence.add_frame(block)
+            current_sentence.add_frame(block, current_sentence.syntax[0].id, lineno)
+        lineno += len(block) + 1
     if current_sentence:
         yield current_sentence
 
