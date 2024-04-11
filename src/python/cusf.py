@@ -15,7 +15,7 @@ import blocks
 
 
 # FIXME word IDs are not always ints
-FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)$')
+FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?: *# *(?P<comment>.*))?$')
 ARG_DEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
         'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
         'compound', 'orphan'))
@@ -51,13 +51,15 @@ def serialize_subtree(tree: pyconll.tree.Tree) -> str:
 
 class Arg:
 
-    def __init__(self, head: str, text: str = '', label: str=''):
+    def __init__(self, head: str, text: str = '', label: str='', comment: str=''):
         self.head = head
         self.text = text
         self.label = label
+        self.comment = comment
 
     def to_line(self) -> str:
-        return f'[{self.label}] {self.text} ({self.head})'
+        comment = (f' # {self.comment}') if self.comment else ''
+        return f'[{self.label}] {self.text} ({self.head}){comment}'
 
     @staticmethod
     def from_line(line: str) -> 'Arg':
@@ -65,22 +67,25 @@ class Arg:
         head = m.group('head')
         text = m.group('text')
         label = m.group('label')
-        arg = Arg(head, text, label)
+        comment = m.group('comment') or ''
+        arg = Arg(head, text, label, comment)
         return arg
 
 
 class Frame:
 
     def __init__(self, head: str, text: str = '', label: str='',
-            args: Optional[list[Arg]]=None):
+            comment:str ='', args: Optional[list[Arg]]=None):
         self.head = head
         self.text = text
         self.label = label
+        self.comment = comment
         self.args = [] if args is None else args
 
     def to_block(self) -> blocks.Block:
         block = []
-        block.append(f'[{self.label}] {self.text} ({self.head})')
+        comment = (f' # {self.comment}') if self.comment else ''
+        block.append(f'[{self.label}] {self.text} ({self.head}){comment}')
         for arg in self.args:
             block.append(arg.to_line())
         return block
@@ -91,18 +96,19 @@ class Frame:
         head = m.group('head')
         text = m.group('text')
         label = m.group('label')
-        frame = Frame(head, text, label)
+        comment = m.group('comment') or ''
+        frame = Frame(head, text, label, comment)
         for line in block[1:]:
             frame.args.append(Arg.from_line(line))
         return frame
 
     @staticmethod
     def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
-        frame = Frame(tree.data.id, tree.data.form, '')
+        frame = Frame(tree.data.id, tree.data.form)
         for child in tree:
             if is_semantic_dependent(child):
                 frame.args.append(
-                    Arg(child.data.id, serialize_subtree(child), ''),
+                    Arg(child.data.id, serialize_subtree(child)),
                 )
         return frame
 
