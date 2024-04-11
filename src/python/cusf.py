@@ -1,4 +1,6 @@
 import logging
+import math
+from numbers import Number
 import re
 import sys
 from typing import Iterable, TextIO, Optional, Union
@@ -12,12 +14,44 @@ import pyconll
 import blocks
 
 
+# FIXME word IDs are not always ints
 FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)$')
+ARG_DEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
+        'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
+        'compound', 'orphan'))
+PRED_DEPS = ARG_DEPS | set(('root', 'conj', 'parataxis', 'list', 'reparandum',
+        'dep', 'vocative', 'dislocated'))
+
+
+def subtrees(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
+    yield tree
+    for child in tree:
+        yield from subtrees(child)
+
+
+def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
+    return tree.data.deprel.split(':')[0] in PRED_DEPS
+
+
+def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
+    return tree.data.deprel.split(':')[0] in ARG_DEPS
+
+
+def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
+    yield tree
+    for child in tree:
+        yield from yld(child)
+
+
+def serialize_subtree(tree: pyconll.tree.Tree) -> str:
+    nodes = sorted(yld(tree), key=lambda t: int(t.data.id))
+    nodes = (t.data.form for t in nodes)
+    return ' '.join(nodes)
 
 
 class Arg:
 
-    def __init__(self, head: int, text: str = '', label: str=''):
+    def __init__(self, head: str, text: str = '', label: str=''):
         self.head = head
         self.text = text
         self.label = label
@@ -28,7 +62,7 @@ class Arg:
     @staticmethod
     def from_line(line: str) -> 'Arg':
         m = FRAME_LINE.match(line)
-        head = int(m.group('head'))
+        head = m.group('head')
         text = m.group('text')
         label = m.group('label')
         arg = Arg(head, text, label)
@@ -37,7 +71,8 @@ class Arg:
 
 class Frame:
 
-    def __init__(self, head: int, text: str = '', label: str='', args: Optional[dict]=None):
+    def __init__(self, head: str, text: str = '', label: str='',
+            args: Optional[list[Arg]]=None):
         self.head = head
         self.text = text
         self.label = label
@@ -53,12 +88,22 @@ class Frame:
     @staticmethod
     def from_block(block: blocks.Block) -> 'Frame':
         m = FRAME_LINE.match(block[0])
-        head = int(m.group('head'))
+        head = m.group('head')
         text = m.group('text')
         label = m.group('label')
         frame = Frame(head, text, label)
         for line in block[1:]:
             frame.args.append(Arg.from_line(line))
+        return frame
+
+    @staticmethod
+    def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
+        frame = Frame(tree.data.id, tree.data.form, '')
+        for child in tree:
+            if is_semantic_dependent(child):
+                frame.args.append(
+                    Arg(child.data.id, serialize_subtree(child), ''),
+                )
         return frame
 
 
@@ -82,6 +127,22 @@ class Sentence:
             logging.warning('sentence %s line %s cannot parse frame %s', sentid, lineno, repr('\n'.join(block)))
             self.frames.append(block)
 
+    def fill(self):
+        """Add missing frames"""
+        cursor = 0 # index at which we insert the next missing frame
+        for sentence in self.syntax:
+            for tree in subtrees(sentence.to_tree()):
+                if is_semantic_predicate(tree):
+                    frame_already_present = False
+                    for index, frame in enumerate(self.frames):
+                        if isinstance(frame, Frame) and frame.head == tree.data.id:
+                            frame_already_present = True
+                            cursor = index + 1
+                            break
+                    if not frame_already_present:
+                        self.frames.insert(cursor, Frame.init_from_tree(tree))
+                        cursor += 1
+
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
         for frame in self.frames:
@@ -89,7 +150,6 @@ class Sentence:
                 blocks.write(frame.to_block(), io=io)
             else:
                 blocks.write(frame, io=io)
-
 
 def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
     current_sentence = None
@@ -111,4 +171,5 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
 
 if __name__ == '__main__':
     for sentence in read():
+        sentence.fill()
         sentence.write()
