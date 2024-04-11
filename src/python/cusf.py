@@ -167,9 +167,3 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
         lineno += len(block) + 1
     if current_sentence:
         yield current_sentence
-
-
-if __name__ == '__main__':
-    for sentence in read():
-        sentence.fill()
-        sentence.write()
