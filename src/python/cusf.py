@@ -90,6 +90,13 @@ class Frame:
             block.append(arg.to_line())
         return block
 
+    def check(self) -> bool:
+        if not self.label:
+            return False
+        if not all(a.label for a in self.args):
+            return False
+        return True
+
     @staticmethod
     def from_block(block: blocks.Block) -> 'Frame':
         m = FRAME_LINE.match(block[0])
