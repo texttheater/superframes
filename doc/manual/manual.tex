@@ -147,20 +147,19 @@ Table~\ref{tab:superframes} shows the superframes and their roles.
 
 \subsection{Core Arguments}
 
-The most prototypical predicate is a verb, and the simplest case is a verb with
-only one argument. It can for example denote an experience or an activity:
+The most prototypical predicate is a verb, and the simplest case is a verb with only one argument. It can for example denote an experience or an activity:
 
-\ex.\dep{Kim_:experiencer is *sleeping#EXPERIENCE*}
+\ex.\dep{Kim_experiencer is *sleeping#EXPERIENCE*}
 
-\ex.\dep{Kim_:is-active is *partying#ACTIVITY*}
+\ex.\dep{Kim_is-active is *partying#ACTIVITY*}
 
 With two core arguments, a verb denotes a relation that holds between them:
 
-\ex.\dep{Kim_:possessor *owns#POSSESSION* a house_:possession}
+\ex.\dep{Kim_possessor *owns#POSSESSION* a house_possession}
 
-\ex.\dep{The house_:possession *belongs#POSSESSION* to Kim_:possessor}
+\ex.\dep{The house_possession *belongs#POSSESSION* to Kim_possessor}
 
-\ex.\dep{Kim_:topic *seems#MESSAGE* happy_:content}
+\ex.\dep{Kim_topic *seems#MESSAGE* happy_content}
 
 \subsection{Aspect and Mode}
 \label{sec:aspect-mode}
@@ -177,50 +176,50 @@ Accordingly, roles with prefix \rl{target-}, \rl{initial-}, or \rl{transitory-}
 mark participants at/beyond the end of, at the beginning of, or at some point
 during the event, respectively.
 
-\ex.\dep{Kim_:target-possessor *got#POSSESSION-INIT* the house_:possession}
+\ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possession}
 
-\ex.\dep{Kim_:initial-possessor *lost#POSSESSION-DEINIT* the house_:posesssion}
+\ex.\dep{Kim_initial-possessor *lost#POSSESSION-DEINIT* the house_posesssion}
 
-\ex.\dep{Kim_:initial-possessor *sold#POSSESSION-CHANGE* the house_:possession to Sandy_:target-possessor}
+\ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* the house_possession to Sandy_target-possessor}
 
-\ex.\dep{Kim_:initial-possessor *kept#POSSESSION-CONTINUATION* the house_:possession}
+\ex.\dep{Kim_initial-possessor *kept#POSSESSION-CONTINUATION* the house_possession}
 
-\ex.\dep{Kim_:has-location *went#LOCATION-CHANGE* from Chicago_:initial-location via Pittsburgh_:transitory-location to Boston_:target-location}
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* from Chicago_initial-location via Pittsburgh_transitory-location to Boston_target-location}
 
-\ex.\label{ex:fall}\dep{The vase_:has-location *fell#LOCATION-CHANGE* to the ground_:target-location}
+\ex.\label{ex:fall}\dep{The vase_has-location *fell#LOCATION-CHANGE* to the ground_target-location}
 
-\ex.\dep{The vase_:has-state *broke#STATE-CHANGE*}
+\ex.\dep{The vase_has-state *broke#STATE-CHANGE*}
 
-\ex.\dep{Kim_:has-social-relation *befriended#SOCIAL-RELATION-INIT* Sandy_:target-social-relation}
+\ex.\dep{Kim_has-social-relation *befriended#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
 
-\ex.\dep{Kim_:has-social-relation *married#SOCIAL-RELATION-INIT* Sandy_:target-social-relation}
+\ex.\dep{Kim_has-social-relation *married#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
 
-\ex.\dep{Kim_:has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_:initial-social-relation}
+\ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
 The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an
 aspectual or modal meaning. Thus, its aspectual variants are especially common.
 
-\ex.\dep{The concert_:target-scene *began#SCENE-INIT*}
+\ex.\dep{The concert_target-scene *began#SCENE-INIT*}
 
-\ex.\dep{The concert_:initial-scene *continued#SCENE-CONTINUATION*}
+\ex.\dep{The concert_initial-scene *continued#SCENE-CONTINUATION*}
 
-\ex.\dep{The concert_:initial-scene *finished#SCENE-DEINIT*}
+\ex.\dep{The concert_initial-scene *finished#SCENE-DEINIT*}
 
-\ex.\dep{The shouting_:initial-scene *intensified#SCENE-CONTINUATION*}
+\ex.\dep{The shouting_initial-scene *intensified#SCENE-CONTINUATION*}
 
-\ex.\dep{The shouting_:initial-scene *faded#SCENE-DEINIT*}
+\ex.\dep{The shouting_initial-scene *faded#SCENE-DEINIT*}
 
-\ex.\dep{A coup_:target-scene was *attempted#SCENE-INIT*}
+\ex.\dep{A coup_target-scene was *attempted#SCENE-INIT*}
 
-\ex.\dep{Kim_:participant *finished#SCENE-DEINIT* their work_:initial-scene}
+\ex.\dep{Kim_participant *finished#SCENE-DEINIT* their work_initial-scene}
 
-\ex.\dep{Swift action_:x-causer *prevented#SCENE-PREVENTION* an outbreak_:target-scene}
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an outbreak_target-scene}
 
-\ex.\dep{Kim_:participant *refrained#SCENE-PREVENTION* from going_:target-scene}
+\ex.\dep{Kim_participant *refrained#SCENE-PREVENTION* from going_target-scene}
 
-\ex.\dep{Kim_:x-causer *prevented#SCENE-PREVENTION* Sandy_:participant from going_:target-scene}
+\ex.\dep{Kim_x-causer *prevented#SCENE-PREVENTION* Sandy_participant from going_target-scene}
 
-\ex.\dep{Kim_:x-causer *saved#SCENE-PREVENTION* Sandy_:participant from the dragon_:target-scene}
+\ex.\dep{Kim_x-causer *saved#SCENE-PREVENTION* Sandy_participant from the dragon_target-scene}
 
 In the last example, \emph{dragon} is to be understood metonymically as a
 scene in which Sandy would have been harmed by the dragon.
@@ -228,11 +227,11 @@ scene in which Sandy would have been harmed by the dragon.
 In addition, we use the modal suffixes \frs{-NECESSITY} and \frs{-POSSIBILITY}.
 They can combine with aspectual suffixes.
 
-\ex.\dep{Change_:target-scene is *necessary#SCENE-NECESSITY*}
+\ex.\dep{Change_target-scene is *necessary#SCENE-NECESSITY*}
 
-\ex.\dep{Change_:target-scene is *possible#SCENE-POSSIBILITY*}
+\ex.\dep{Change_target-scene is *possible#SCENE-POSSIBILITY*}
 
-\ex.\dep{Kim_:initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_:target-possessor money_:possessed}
+\ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
 \subsection{Non-core Arguments}
 
