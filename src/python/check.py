@@ -37,12 +37,10 @@ if __name__ == '__main__':
     # Run checks and emit warnings
     predicate_count = 0
     annotated_count = 0
-    with open(args.file, 'w') as f:
-        for sentence in sentences:
-            for frame in sentence.frames:
-                if isinstance(frame, cusf.Frame):
-                    predicate_count += 1
-                    if frame.check():
-                        annotated_count += 1
-            sentence.write(f)
+    for sentence in sentences:
+        for frame in sentence.frames:
+            if isinstance(frame, cusf.Frame):
+                predicate_count += 1
+                if frame.check():
+                    annotated_count += 1
     logging.info('%s/%s predicates annotated', annotated_count, predicate_count)
