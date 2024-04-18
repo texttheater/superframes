@@ -137,7 +137,6 @@ class Sentence:
             frame = Frame.from_block(block)
             self.frames.append(frame)
         except:
-            logging.warning('sentence %s line %s cannot parse frame %s', sentid, lineno, repr('\n'.join(block)))
             self.frames.append(block)
         self.frame_linenos.append(lineno)
 
@@ -158,6 +157,19 @@ class Sentence:
                     if not frame_already_present:
                         self.frames.insert(cursor, Frame.init_from_tree(tree))
                         cursor += 1
+
+    def check(self) -> tuple[int, int]:
+        frame_count = 0
+        annotated_count = 0
+        for lineno, frame in zip(self.frame_linenos, self.frames):
+            if not isinstance(frame, Frame):
+                logging.warning('sent %s line %s cannot parse frame %s',
+                        self.syntax[0].id, lineno, repr('\n'.join(frame)))
+                continue
+            frame_count += 1
+            if frame.check():
+                annotated_count += 1
+        return frame_count, annotated_count
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')

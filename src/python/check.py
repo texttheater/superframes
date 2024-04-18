@@ -38,9 +38,7 @@ if __name__ == '__main__':
     predicate_count = 0
     annotated_count = 0
     for sentence in sentences:
-        for frame in sentence.frames:
-            if isinstance(frame, cusf.Frame):
-                predicate_count += 1
-                if frame.check():
-                    annotated_count += 1
+        p, a = sentence.check()
+        predicate_count += p
+        annotated_count += a
     logging.info('%s/%s predicates annotated', annotated_count, predicate_count)
