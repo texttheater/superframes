@@ -130,6 +130,7 @@ class Sentence:
         self.syntax = syntax
         self.lineno = lineno
         self.frames = []
+        self.frame_linenos = []
 
     def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
         try:
@@ -138,6 +139,7 @@ class Sentence:
         except:
             logging.warning('sentence %s line %s cannot parse frame %s', sentid, lineno, repr('\n'.join(block)))
             self.frames.append(block)
+        self.frame_linenos.append(lineno)
 
     def fill(self):
         """Add missing frames"""
