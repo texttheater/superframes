@@ -126,15 +126,12 @@ Frameish = Union[Frame, blocks.Block]
 
 class Sentence:
 
-    def __init__(self, syntax: PyCoNLLSentence, lineno: int,
-            frames: Optional[list[Frameish]]=None):
+    def __init__(self, syntax: PyCoNLLSentence, lineno: int):
         self.syntax = syntax
         self.lineno = lineno
-        self.frames = [] if frames is None else frames
+        self.frames = []
 
     def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
-        if self.frames is None:
-            self.frames = []
         try:
             frame = Frame.from_block(block)
             self.frames.append(frame)
