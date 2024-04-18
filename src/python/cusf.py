@@ -142,13 +142,15 @@ class Sentence:
 
     def fill(self):
         """Add missing frames"""
+        if not all(isinstance(f, Frame) for f in self.frames):
+            return
         cursor = 0 # index at which we insert the next missing frame
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
                 if is_semantic_predicate(tree):
                     frame_already_present = False
                     for index, frame in enumerate(self.frames):
-                        if isinstance(frame, Frame) and frame.head == tree.data.id:
+                        if frame.head == tree.data.id:
                             frame_already_present = True
                             cursor = index + 1
                             break
