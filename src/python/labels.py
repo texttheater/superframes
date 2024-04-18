@@ -14,7 +14,6 @@ FRAMES = {
     'DESTRUCTION': ['destroyed'],
     'EXPERIENCE': ['experiencer', 'experienced'],
     'ACTIVITY': ['is-active', 'activity'],
-    'MODE': ['has-mode', 'mode'],
     'FOCUS': ['has-focus', 'focus'],
     'ACCOMPANIMENT': ['accompanied', 'accompanier'],
     'DEPICTIVE': ['has-depictive', 'depictive'],
