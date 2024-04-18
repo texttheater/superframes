@@ -12,6 +12,7 @@ import pyconll
 
 
 import blocks
+import labels
 
 
 # FIXME word IDs are not always ints
@@ -90,12 +91,20 @@ class Frame:
             block.append(arg.to_line())
         return block
 
-    def check(self) -> bool:
+    def check(self, sentid, lineno) -> bool:
         if not self.label:
             return False
-        if not all(a.label for a in self.args):
+        if not labels.check_frame_label(self.label):
+            logging.warning('sent %s line %s unknown frame label: %s',
+                    sentid, lineno, self.label)
             return False
-        return True
+        ok = True
+        for i, arg in enumerate(self.args, start=lineno + 1):
+            if not labels.check_dep_label(arg.label, self.label):
+                logging.warning('sent %s line %s unknown dep label for %s: %s',
+                        sentid, i, self.label, arg.label)
+                ok = False
+        return ok
 
     @staticmethod
     def from_block(block: blocks.Block) -> 'Frame':
@@ -167,7 +176,7 @@ class Sentence:
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            if frame.check():
+            if frame.check(self.syntax[0].id, lineno):
                 annotated_count += 1
         return frame_count, annotated_count
 
