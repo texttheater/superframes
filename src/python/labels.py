@@ -45,8 +45,8 @@ FRAMES = {
     'SOCIAL-RELATION': ['initial-social-relation', 'has-social-relation', 'social-relation', 'target-social-relation'],
     'TIME': ['has-time', 'time'],
 }
-ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
-MODES = ('POSSIBILITY', 'NECESSITY')
+ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION')
+MODES = ('POSSIBILITY', 'NECESSITY', 'NEG')
 FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(-(' +
         '|'.join(ASPECTS) + '))?(-(' + '|'.join(MODES) + '))?$')
 
