@@ -64,7 +64,6 @@
             %\fr{MENTAL-STATE} & & \rl{has-mental-state} & \rl{mental-state} & & & \ref{sec:MENTAL-STATE} \\
             \boro\fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
             \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
-            \boro\fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
             \boro\fr{FOCUS} & & \rl{has-focus} & \rl{focus} & & & \ref{sec:FOCUS} \\
             \midrule
             \boro\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
@@ -131,10 +130,6 @@ with those schemes. Here's how Superframes annotation works, in a nutshell:
         This avoids having \texttt{Source} and \texttt{Target} as roles in
         their own right, which indicate the time sequence but suppress
         information about the nature of the relation that is changing.
-        %like \texttt{-CHANGE},
-        %\texttt{-INTRO}, \texttt{-EXTRO}, \texttt{-PREEMPTION},
-        %\texttt{-CONTINUATION}, \texttt{-PROCESS}, \texttt{-HABIT},
-        %\texttt{-NECESSITY}, and \texttt{-POSSIBILITY}
     \item Similarly, Superframes do not have the \texttt{Agent} role, which is
         often in conflict with roles indicating more specifically the agent's
         relation to other participants.
@@ -216,9 +211,9 @@ aspectual or modal meaning. Thus, its aspectual variants are especially common.
 In addition, we use the modal suffixes \frs{-NECESSITY},  \frs{-POSSIBILITY}.
 and \frs{-NEG}. They can combine with aspectual suffixes.
 
-\ex.\dep{Change_target-scene is *necessary#SCENE-NECESSITY*}
+\ex.\dep{Change_scene is *necessary#SCENE-NECESSITY*}
 
-\ex.\dep{Change_target-scene is *possible#SCENE-POSSIBILITY*}
+\ex.\dep{Change_scene is *possible#SCENE-POSSIBILITY*}
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
@@ -401,11 +396,17 @@ matrix predicate and the embedded predicate in one graph.
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
 from an argument to a predicate, as, e.g., with relative clauses or sentence
-adverbs that are not already covered by a frame such as \fr{MODE} or \fr{FOCUS}.
+adverbs.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
+
+\ex.\dep{Kim_x-experiencer **probably#SCENE-POSSIBILITY**_m-scene *knows#MESSAGE*__scene that_content}
+
+%\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
+
+\ex.\dep{Kim_has-location is **not#SCENE-NEG**_m-scene *here#LOCATION*__scene}
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -563,17 +564,6 @@ framed as a state change.
 \ex.\dep{after some *work#ACTIVITY* with a colored pencil_m-means}
 
 \ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
-
-\subsection{\fr{MODE}}
-\label{sec:MODE}
-
-Used to mark modal modifiers, including what UMR calls \emph{modal strength}.
-
-\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
-
-\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
-
-\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
 
 \subsection{\fr{FOCUS}}
 \label{sec:FOCUS}
