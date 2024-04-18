@@ -126,8 +126,10 @@ Frameish = Union[Frame, blocks.Block]
 
 class Sentence:
 
-    def __init__(self, syntax: PyCoNLLSentence, frames: Optional[list[Frameish]]=None):
+    def __init__(self, syntax: PyCoNLLSentence, lineno: int,
+            frames: Optional[list[Frameish]]=None):
         self.syntax = syntax
+        self.lineno = lineno
         self.frames = [] if frames is None else frames
 
     def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
@@ -173,6 +175,7 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
         try:
             new_sentence = Sentence(
                 pyconll.load_from_string('\n'.join(block)),
+                lineno,
             )
             if current_sentence:
                 yield current_sentence
