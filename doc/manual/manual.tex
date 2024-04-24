@@ -64,7 +64,7 @@
             %\fr{MENTAL-STATE} & & \rl{has-mental-state} & \rl{mental-state} & & & \ref{sec:MENTAL-STATE} \\
             \boro\fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} & & & \ref{sec:EXPERIENCE} \\
             \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
-            \boro\fr{FOCUS} & & \rl{has-focus} & \rl{focus} & & & \ref{sec:FOCUS} \\
+            \boro\fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
             \midrule
             \boro\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
             \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
@@ -395,18 +395,13 @@ matrix predicate and the embedded predicate in one graph.
 \ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
-from an argument to a predicate, as, e.g., with relative clauses or sentence
-adverbs.
+from an argument to a predicate, as, e.g., with relative clauses or evaluatives.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
 
-\ex.\dep{Kim_x-experiencer **probably#SCENE-POSSIBILITY**_m-scene *knows#MESSAGE*__scene that_content}
-
-%\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
-
-\ex.\dep{Kim_has-location is **not#SCENE-NEG**_m-scene *here#LOCATION*__scene}
+\todo[inline]{rethink evaluatives}
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -565,14 +560,24 @@ framed as a state change.
 
 \ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
 
-\subsection{\fr{FOCUS}}
-\label{sec:FOCUS}
+\subsection{\fr{MODE}}
+\label{sec:MODE}
 
-Used to mark focus particles such as \emph{only} and \emph{even}.
+Used for adverbial modifiers that have no arguments other than the phrase they
+modify, and that, rouhgly speaking, indicate the modal strength of what is
+expressed and/or its relation to the discourse.
 
-\ex.\dep{Even_m-focus *Kim#IDENTIFICATION* did n't know that}
+\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
 
-\ex.\dep{They_x-causer only_m-focus *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+
+\ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
+
+\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
+
+\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
+
+\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
 
 \subsection{\fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
