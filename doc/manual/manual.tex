@@ -93,6 +93,7 @@
             \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
             \fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
             \boro\fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
+            \fr{ORG-ROLE} & \rl{initial-org} & \rl{has-org-role} & \rl{org} & & \rl{target-org} & \ref{sec:ORG-ROLE} \\
             \boro\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
             \midrule
             \boro\fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
@@ -1152,13 +1153,43 @@ annotate the former.
 
 The most important criterion in choosing a frame for a predicate is that there
 should be suitable roles for the predicate's arguments, even if they are
-unrealized in the annotated instance. For example, while \emph{drawing} denotes
-a \fr{CLASS} of things, it can occur with a prepositional argument denoting a
-\rl{topic}, so \fr{MESSAGE} is a better choice.
+unrealized (implicit) in the annotated instance. For example, while
+\emph{drawing} denotes a \fr{CLASS} of things, it can occur with a
+prepositional argument denoting a \rl{topic}, so \fr{MESSAGE} is a better
+choice.
 
 \ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
 
 \ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE* of a snake_topic}
+
+\ex.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant}
+
+\ex.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant clean_target-scene the dishes}
+
+This logic extends to \emph{shadow arguments} and \emph{default arguments}
+\citep{pustejovsky-1995-generative,di-fabio-etal-2019-verbatlas}, i.e., arguments
+that do not appear in the syntactic argument structure because they are
+incorporated into the predicate or logically implied, like the bones in
+\ref{ex:debone}, mucus and air in \ref{ex:sneeze}, or groceries in
+\ref{ex:deliver}.
+
+\ex.\label{ex:debone}\dep{Kim_x-causer *deboned#PART-WHOLE-DEINIT* the fish_initial-whole}
+
+\ex.\label{ex:sneeze}\dep{Kim_excreter *sneezed#EXCRETION*}
+
+\ex.\label{ex:deliver}\dep{Our local supermarket_x-causer *delivers#LOCATION-INIT*}
+
+\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
+
+For example, cosnider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
+
+\ex.\label{ex:cut1}\dep{The knife_x-causer *cut#STATE-CHANGE* the butter_has-state}
+
+\ex.\label{ex:cut2}\dep{Kim_x-causer *cut#STATE-CHANGE* the butter_has-state with the knife_x-means}
+
+\ex.\label{ex:high1}\dep{The price_has-quantity is *high#QUANTITY*}
+
+\ex.\label{ex:high2}\dep{The butter_has-quantity__has-quality is *high#QUANTITY* in **price#QUALITY**_x-attribute}
 
 \subsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
 
@@ -1183,6 +1214,8 @@ In other cases, such nouns rather denote a person's profession or expertise or
 their role in a social context:
 
 \ex.\dep{He_has-class is a *teacher#CLASS*}
+
+\ex.\dep{He_social-relation is our_has-social-relation *teacher#SOCIAL-RELATION*}
 
 \ex.\dep{She_has-social-relation is the *president#SOCIAL-RELATION* of our club_social-relation}
 
