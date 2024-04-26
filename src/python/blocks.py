@@ -9,11 +9,11 @@ as lists of lines, with no line-terminating strings.
 
 
 import sys
-from typing import Iterable, TextIO
+from typing import Iterable, List, TextIO
 
 
 Line = str
-Block = list[Line]
+Block = List[Line]
 
 
 def read(io: TextIO) -> Iterable[Block]:
