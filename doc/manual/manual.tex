@@ -93,7 +93,6 @@
             \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
             \fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
             \boro\fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
-            \fr{ORG-ROLE} & \rl{initial-org} & \rl{has-org-role} & \rl{org} & & \rl{target-org} & \ref{sec:ORG-ROLE} \\
             \boro\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
             \midrule
             \boro\fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
@@ -311,16 +310,18 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 \subsection{Control Relations}
 \label{sec:control}
 
-\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
+%\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
 
 Many constructions systematically introduce semantic predicate-dependent
 dependencies that do not correspond to (surface) syntactic dependencies. In such cases, we add those dependency links.
 
 \ex.\dep{Kim_has-location promised Sandy to *come#LOCATION-CHANGE*} (subject control)
 
+\ex.\dep{Kim__x-causer used a hammer to **smash#STATE-CHANGE** the vase__has-state} (subject control)
+
 \ex.\dep{Kim persuaded Sandy_has-location to *come#LOCATION-CHANGE*} (object control)
 
-\ex.\dep{Kim_has-location seemed to *fly#Motion*} (raising)
+\ex.\dep{Kim_has-location seemed to *fly#UNANCHORED-MOTION*} (raising)
 
 \ex.\dep{Kim_x-sender entered the room *singing#MESSAGE*} (depictive)
 
@@ -364,8 +365,9 @@ This mechanism can be used to indicate that a modification may not be fully comp
 A ``meta'' frame for predicates where the main frame is invoked by \rl{scene},
 and the predicate adds some temporal, aspectual, modal, etc., meaning, or just
 acts as a light verb. If there is a \rl{participant}, it is assigned a role by
-\rl{scene}. In the following examples, we show the annotations for both the
-matrix predicate and the embedded predicate in one graph.
+\rl{scene}, which needs an extra dependency link. In the following examples, we
+show the annotations for both the matrix predicate and the embedded predicate
+in one graph.
 
 \ex.\dep{The **concert#MESSAGE**_target-scene *began#SCENE-INIT*}
 
@@ -401,8 +403,6 @@ from an argument to a predicate, as, e.g., with relative clauses or evaluatives.
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
-
-\todo[inline]{rethink evaluatives}
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -450,22 +450,22 @@ Most prototypically evoked by common nouns with no arguments.
 
 \ex.\dep{I_exists *exist#EXISTENCE*}
 
-\ex.\dep{There_x-expletive *is#EXISTENCE* a hill_exists}
+\ex.\dep{There_x-noncomp *is#EXISTENCE* a hill_exists}
 
-\ex.\dep{There_x-expletive *is#SCENE* a hubbub_scene}
+\ex.\dep{There_x-noncomp *is#SCENE* a hubbub_scene}
 
 \subsection{\fr{TRANSFORMATION-CREATION}}
 \label{sec:TRANSFORMATION-CREATION}
 
-Special case of \fr{EXISTENCE-INIT} where rl{created} (aka \rl{target-exists})
+Special case of \fr{EXISTENCE-INIT} where \rl{created} (aka \rl{target-exists})
 is newly created from \rl{material}, or \rl{material} is transformed to become
 \rl{created}.
 
-\ex.\dep{I_x-causer succeeded in *making#Transformation-Creation* my first drawing_created}
+\ex.\dep{I_x-causer succeeded in *making#TRANSFORMATION-CREATION* my first drawing_created}
 
-\ex.\dep{Kim_x-causer *built#Transformation-Creation* a castle_created out of sand_material}
+\ex.\dep{Kim_x-causer *built#TRANSFORMATION-CREATION* a castle_created out of sand_material}
 
-\ex.\dep{Kim_x-causer *turned#Transformation-Creation* straw_material into gold_created}
+\ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
 
 \subsection{\fr{REPRODUCTION}}
 \label{sec:REPRODUCTION}
@@ -473,16 +473,14 @@ is newly created from \rl{material}, or \rl{material} is transformed to become
 Special case of \fr{EXISTENCE-INIT} where \rl{original} continues to exist, and
 a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 
-\ex.\dep{Here is a *copy#Reproduction* of the drawing_original}
+\ex.\dep{Here is a *copy#REPRODUCTION* of the drawing_original}
 
-\ex.\dep{This_copy is a *translation#Reproduction* of the pamphlet_original into English_x-quality}
+\ex.\dep{This_copy is a *translation#REPRODUCTION* of the pamphlet_original into English_x-quality}
 
 \subsection{\fr{QUALITY}}
 \label{sec:QUALITY}
 
 \rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
-
-\ex.\dep{when I_has-quality was six years_x-quantity *old#QUALITY*}
 
 \ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
 
@@ -492,6 +490,8 @@ a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 \label{sec:STATE}
 
 \rl{state} indicates a (temporary) state of \rl{has-state}.
+
+\ex.\dep{when I_has-state was six years_x-quantity *old#STATE*}
 
 \ex.\dep{Boa constrictors swallow their prey_has-state *whole#STATE*}
 
@@ -508,9 +508,9 @@ a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 
 Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes out of existence.
 
-\ex.\dep{Sam_destroyed 's *death#Destruction*}
+\ex.\dep{Sam_destroyed 's *death#DESTRUCTION*}
 
-\ex.\dep{Sam_x-causer 's *destruction#Destruction* of the city}
+\ex.\dep{Sam_x-causer 's *destruction#DESTRUCTION* of the city_destroyed}
 
 \subsection{\fr{EXPERIENCE}}
 \label{sec:EXPERIENCE}
@@ -541,7 +541,7 @@ mental perception, addressees in communication, beneficiaries, and for ``bystand
 
 \ex.\dep{Das_experienced hat_x-noncomp mir_experiencer gerade_x-noncomp noch_x-noncomp *gefehlt#EXPERIENCE*}
 
-For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
+For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 
 \subsection{\fr{ACTIVITY}}
 \label{sec:ACTIVITY}
@@ -590,20 +590,20 @@ with it or participates equally in the same scene.
 
 \ex.\dep{The veggies_accompanied *come#ACCOMPANIMENT* with rice_accompanier}
 
-\ex.\dep{Kim_x-causer *added#ACCOMPANIMENT-INIT* rice_accompanier to the veggies_accompanied}
+\ex.\dep{Kim_x-causer *added#ACCOMPANIMENT-INIT* rice_target-accompanier to the veggies_accompanied}
 
 \ex.\dep{Rolling thunder_accompanier *accompanies#ACCOMPANIMENT* the rain_accompanied}
 
 Often, the accompanier denotes not the accompanying scene but an entity
 participating in it, and must be metonymically understood as the scene.
 
-\ex.\dep{Kim *cycled#LOCATION-CHANGE* to Rome_target-location with Sandy_m-accompanier}
+\ex.\dep{Kim_has-location *cycled#LOCATION-CHANGE* to Rome_target-location with Sandy_m-accompanier}
 
 \ex.\dep{Kim_is-active *danced#ACTIVITY* with Sandy_x-accompanier}
 
 \ex.\dep{Kim_participant *had#SCENE* sex_scene with Sandy_x-accompanier}
 
-\ex.\dep{Kim_x-accompanier *chased#Motion* Sandy_has-location around the block_transitory-location}
+\ex.\dep{Kim_x-accompanier *chased#UNANCHORED-MOTION* Sandy_has-location around the block_transitory-location}
 
 \ex.\dep{Kim_x-accompanier *accompanied#ACCOMPANIMENT* Sandy_accompanied}
 
@@ -621,7 +621,10 @@ Sec.~\ref{sec:control}).
 \subsection{\fr{ATTRIBUTE}}
 \label{sec:ATTRIBUTE}
 
-In a scene \rl{has-attribute}, \rl{attribute} is the part or attribute of one or more participants that is most directly involved in the scene.
+In a scene \rl{has-attribute}, \rl{attribute} is the part or attribute of one
+or more participants that is most directly involved in the scene. Add a
+dependency link between the participant and its attribute to indicate wich
+participant(s) have the attribute.
 
 \ex.\dep{Kim_compared__has-quality *exceeds#COMPARISON* Sandy_reference__has-quality in **height#QUALITY**_x-attribute}
 
@@ -630,8 +633,6 @@ In a scene \rl{has-attribute}, \rl{attribute} is the part or attribute of one or
 \ex.\dep{Kim_hitting__x-whole ist auf den **Kopf#CLASS**_x-attribute *gefallen#HITTING*}
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
-
-\todo[inline]{Control relations?}
 
 \subsection{\fr{ASSET}}
 \label{sec:ASSET}
@@ -667,7 +668,11 @@ Examples of comparing non-scene entities:
 
 \ex.\dep{Kim_x-experiencer *compared#COMPARISON* Coke_compared to Pepsi_reference}
 
-\ex.\dep{Kim_compared *ran#COMPARISON* afoul_x-noncomp of Fielding 's constraints_reference}
+The \rl{reference} need not be an entity similar to the \rl{compared}, it can also be an abstract constraint:
+
+\ex.\dep{The program_compared *conforms#COMPARISON* to the spec_reference}
+
+\ex.\dep{Kim_compared *ran#COMPARISON-DEINIT* afoul_x-noncomp of Fielding 's constraints_reference}
 
 \subsection{\fr{CONCESSION}}
 \label{sec:CONCESSION}
@@ -676,11 +681,11 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* out_target-location despite the rain_m-conceded}
 
-\ex.\dep{It_x-expletive *rained#STATE*, but Kim went_m-asserted went out}
+\ex.\dep{It_x-noncomp *rained#STATE*, but Kim went_m-asserted out}
 
-\ex.\dep{Kim_sender *sent#SENDING* Sandy_x-experiencer a letter_sent, but it never arrived_m-asserted}
+\ex.\dep{Kim_sender *sent#SENDING* Sandy_x-experiencer a letter_sent , but it never arrived_m-asserted}
 
-\ex.\dep{Kim_has-location *came#LOCATION-CHANGE* although Sandy had told_m-conceded them not to}
+\ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
 
 \subsection{\fr{EXPLANATION}}
 \label{sec:EXPLANATION}
@@ -716,14 +721,14 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 
 \ex.\dep{The shroud_wrapper *wraps#WRAPPING-WEARING* the scepter_wearer}
 
-\ex.\dep{Kim_target-wearer *put#WRAPPING-WEARING-INTI* on a sweater_wrapper}
+\ex.\dep{Kim_target-wearer *put#WRAPPING-WEARING-INIT* on a sweater_wrapper}
 
 \ex.\dep{Kim_initial-wearer *took#WRAPPING-WEARING-DEINIT* off their glasses_wrapper}
 
 \subsection{\fr{ADORNMENT-TARNISHMENT}}
 \label{sec:ADORNMENT-TARNISHMENT}
 
-Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location} sits on \rl{surface} (aka \rl{location}).
+Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location}) sits on \rl{surface} (aka \rl{location}).
 
 \dep{Kim_x-causer *decorated#ADORNMENT-TARNISHMENT* the balcony_surface with fairy lights_ornament}
 
@@ -780,7 +785,7 @@ Special case of \rl{LOCATION-CHANGE} where no initial or target location is indi
 
 \ex.\dep{Kim_has-location is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
 
-\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
+%\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
 
 \subsection{\fr{MEANS}}
 \label{sec:MEANS}
@@ -825,7 +830,7 @@ or just exists in recorded form. When \rl{content} and \rl{topic} are both reali
 
 \ex.\dep{Kim_x-sender *curtseyed#MESSAGE* to the Queen_x-experiencer}
 
-\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_x-content>>content}
+\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_x-sent>>content}
 
 \subsubsection{Performance}
 
@@ -849,9 +854,9 @@ Performance of a work of art is framed as \fr{MESSAGE} where the work of art is 
 
 \ex.\dep{Kim_x-sender *wrote#MESSAGE* Sandy_x-experiencer a letter_content}
 
-\ex.\dep{Kim_x-sender *wrote#MESSAGE* the message_content__has-quality onto a piece_x-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
+\ex.\dep{Kim_x-sender *wrote#MESSAGE* the message_content__has-quality onto a piece_x-target-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
 
-\ex.\dep{The concert_topic was *recorded#MESSAGE* on tape_x-location}
+\ex.\dep{The concert_topic was *recorded#MESSAGE* on tape_x-target-location}
 
 \ex.\dep{The band_x-sender *recorded#MESSAGE* an album_x-created}
 
@@ -896,7 +901,7 @@ about (ending, failing to come about) of knowledge and awareness.
 
 \ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* everything they knew_initial-content}
 
-\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE* about the cake_topic}
+\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* about the cake_topic}
 
 \ex.\dep{Kim_x-experiencer *forgot#MESSAGE-INIT-NEG* to take_target-content the trash out}
 
@@ -958,7 +963,7 @@ about (ending, failing to come about) of knowledge and awareness.
 
 \rl{sender} originates a message, \rl{sent}, that can be experienced.
 
-\ex.\dep{According to Kim_m-sender, it_x-noncomp is *raining#STATE*}
+\ex.\dep{According to Kim_m-sender , it_x-noncomp is *raining#STATE*}
 
 For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
@@ -990,7 +995,7 @@ Special case of \fr{SEQUENCE} where \rl{causer} (aka \rl{followed}) causes \rl{r
 
 \ex.\dep{The war_causer *caused#CAUSATION* a famine_result}
 
-\ex.\dep{There_x-expletive *was#SCENE* a famine_scene because of the war_m-causer}
+\ex.\dep{There_x-noncomp *was#SCENE* a famine_scene because of the war_m-causer}
 
 \ex.\dep{Der Wasserdruck_has-quantity *stieg#QUANTITY-CHANGE*, wodurch der Brunnen überfloss_m-result}
 
@@ -1010,7 +1015,7 @@ purpose:
 Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
 \rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
 
-\ex.\dep{Kim_x-causer *reacted#SEQUENCE* to the allegations_followed with a denial_follows}
+\ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE**_reaction}
 
 \subsection{\fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
@@ -1023,11 +1028,14 @@ than \rl{m-resultative}.
 
 \ex.\dep{Kim_x-causer *hammered#HITTING* the metal_hit__has-state **flat#STATE**_x-resultative}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-has-location off the **table#CLASS**_x-resultative}
-
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
 
-\todo[inline]{explain x-has-location}
+\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
+
+In the last example, we use \rl{x-initial-location:has-location} to specify not
+only the role of the napkin in the resulting event (\rl{has-location}) but also
+that of the table (\rl{initial-location}). Using \rl{x-has-location} would be
+imprecise because we would then assume that the table has \rl{location}.
 
 \subsection{\fr{CONDITION}}
 \label{sec:CONDITION}
@@ -1082,9 +1090,9 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{The official_x-causer *married#SOCIAL-RELATION-INIT* Kim_has-social-relation and Sandy}
 
-\ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-INIT* Sandy_initial-social-relation}
+\ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
-\ex.\dep{Kim_has-social-relation *befriended#SOCIAL-RELATION* Sandy_target-social-relation}
+\ex.\dep{Kim_has-social-relation *befriended#SOCIAL-RELATION-INIT* Sandy_target-social-relation}
 
 \ex.\dep{Kim_has-social-relation *took#SOCIAL-RELATION-INIT* the job_target-social-relation}
 
@@ -1181,7 +1189,7 @@ incorporated into the predicate or logically implied, like the bones in
 
 \subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
 
-For example, cosnider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
+For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
 
 \ex.\label{ex:cut1}\dep{The knife_x-causer *cut#STATE-CHANGE* the butter_has-state}
 
@@ -1204,7 +1212,7 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 \subsection{Participant Nouns}
 
 Some nouns denote a person who participates in a specific type of scene in a
-specific type of role. In such cases, use the most appropriate frame for that
+specific role. In such cases, use the most appropriate frame for that
 scene. For example, in a narrative where the narrator has just been criticized
 by a stranger, you could annotate as follows:
 
@@ -1221,6 +1229,10 @@ their role in a social context:
 
 \subsection{Particle Verbs}
 
+We follow the PARSEME classification of particle verbs into spatial,
+semi-non-compositional, and fully non-compositional ones
+\citep{savary-etal-2017-parseme,ramisch-etal-2018-edition,ramisch-etal-2020-edition,savary-etal-2023-parseme}.
+
 In UD, particle verbs are connected to their particle via the
 \texttt{compound:prt} relation. If the meaning is spatial, this dependency is
 labeled with \rl{initial-location} or \rl{target-location}.
@@ -1230,17 +1242,14 @@ labeled with \rl{initial-location} or \rl{target-location}.
 \ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_m-time}
 
 In semi-non-compositional particle verbs, where the particle adds a partially predictable
-but nonspatial meaning to the verb, use an appropriate role, e.g.,
-\rl{x-marker} if the meaning is aspectual.
+but nonspatial meaning to the verb, use an appropriate role.
 
-\ex.\dep{*eat#INGESTION* up_x-marker the cookies_ingested} (implies \emph{eat} the cookies)
+\ex.\dep{*eat#INGESTION* up_x-quantity the cookies_ingested} (implies \emph{eat} the cookies)
 
 In fully non-compositional particle verbs, where the meaning is not
 predictable, use \rl{x-noncomp}.
 
 \ex.\dep{*do#EXPERIENCE* somebody_experiencer in_x-noncomp} (does not imply \emph{do} somebody)
-
-\todo[inline]{refer to PARSEME guidelines}
 
 \section{TODO}
 
