@@ -3,7 +3,7 @@ import math
 from numbers import Number
 import re
 import sys
-from typing import Iterable, TextIO, Optional, Union
+from typing import Iterable, List, Optional, TextIO, Tuple, Union
 
 
 from pyconll.exception import ParseError
@@ -76,7 +76,7 @@ class Arg:
 class Frame:
 
     def __init__(self, head: str, text: str = '', label: str='',
-            comment:str ='', args: Optional[list[Arg]]=None):
+            comment:str ='', args: Optional[List[Arg]]=None):
         self.head = head
         self.text = text
         self.label = label
@@ -167,7 +167,7 @@ class Sentence:
                         self.frames.insert(cursor, Frame.init_from_tree(tree))
                         cursor += 1
 
-    def check(self) -> tuple[int, int]:
+    def check(self) -> Tuple[int, int]:
         frame_count = 0
         annotated_count = 0
         for lineno, frame in zip(self.frame_linenos, self.frames):
