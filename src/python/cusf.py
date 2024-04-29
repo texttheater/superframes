@@ -1,6 +1,5 @@
 import logging
 import math
-from numbers import Number
 import re
 import sys
 from typing import Iterable, List, Optional, TextIO, Tuple, Union
