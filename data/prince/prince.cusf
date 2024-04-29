@@ -9,10 +9,10 @@
 2	1	1	NUM	CD	NumForm=Digit|NumType=Card	1	nummod	_	TokenRange=8:9
 3	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=10:11
 
-[] Chapter (1)
-[] 1 (2)
+[MESSAGE] Chapter (1)
+[m-rank] 1 (2)
 
-[] 1 (2)
+[RANK] 1 (2)
 
 # sent_id = 2
 # text = Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -44,55 +44,57 @@
 26	forest	forest	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=136:142
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=143:144
 
-[] saw (9)
-[] Once when I was six years old (7)
-[] I (8)
-[] a magnificent picture (12)
-[] in a book , called True Stories from Nature , about the primeval forest (15)
+[MESSAGE] saw (9)
+[m-time] Once when I was six years old (7)
+[x-experiencer] I (8)
+[topic] a magnificent picture (12)
+[x-location] in a book , called True Stories from Nature , about the primeval forest (15)
 
-[] old (7)
-[] Once (1)
-[] when (2)
-[] I (3)
-[] six years (6)
+[QUALITY] old (7)
+[m-time] Once (1)
+[m-has-time] when (2)
+[has-quality] I (3)
+[x-quantity] six years (6)
 
-[] Once (1)
+[TIME] Once (1)
 
-[] when (2)
+[TIME] when (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] years (6)
-[] six (5)
+[TIME] years (6)
+[m-quantity] six (5)
 
-[] six (5)
+[QUANTITY] six (5)
 
-[] I (8)
+[IDENTIFICATION] I (8)
 
-[] picture (12)
-[] magnificent (11)
+[MESSAGE] picture (12)
+[m-quality] magnificent (11)
 
-[] magnificent (11)
+[QUALITY] magnificent (11)
 
-[] book (15)
-[] called True Stories from Nature (17)
-[] about the primeval forest (26)
+[MESSAGE] book (15)
+[m-scene] called True Stories from Nature (17)
+[topic] about the primeval forest (26)
 
-[] called (17)
-[] True Stories from Nature (19)
+[IDENTIFICATION] called (17)
+[identifier] True Stories from Nature (19)
+[identified] book (15)
 
-[] Stories (19)
-[] True (18)
-[] from Nature (21)
+[MESSAGE] Stories (19)
+[m-scene] True (18)
+[x-initial-location] from Nature (21)
 
-[] True (18)
+[COMPARISON] True (18)
+[compared] Stories (19)
 
-[] Nature (21)
+[IDENTIFICATION] Nature (21)
 
-[] forest (26)
-[] primeval (25)
+[CLASS] forest (26)
+[m-quality >> m-noncomp] primeval (25)
 
-[] primeval (25)
+[QUALITY >> NONCOMP] primeval (25)
 
 # sent_id = 3
 # text = It was a picture of a boa constrictor in the act of swallowing an animal .
