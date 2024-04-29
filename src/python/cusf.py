@@ -38,12 +38,6 @@ def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
     return tree.data.deprel.split(':')[0] in ARG_DEPS
 
 
-def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
-    yield tree
-    for child in tree:
-        yield from yld(child)
-
-
 def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
     for tree in subtrees(sentence.to_tree()):
         if tree.data.id == token_id:
