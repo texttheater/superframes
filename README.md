@@ -22,7 +22,9 @@ and Python 3.10 or higher.
 commands such as `python3`, `pip3`, and `pyenv` in order for them to work
 correctly.
 
-***NOTE:*** WSL is recommended over Git Bash. 
+***NOTE:*** WSL is recommended over Git Bash. Installation instructions can be
+found [here](https://learn.microsoft.com/en-us/windows/wsl/install). The
+recommended distribution is Ubuntu 22.04.
 
 ***NOTE:*** You can always re-setup your annotation environment, e.g., for
 switching from Git Bash to WSL or when something has gone wrong. Make sure you
