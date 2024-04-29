@@ -43,6 +43,7 @@ FRAMES = {
     'EXCEPTION': ['has-exception', 'exception'],
     'SOCIAL-RELATION': ['initial-social-relation', 'has-social-relation', 'social-relation', 'target-social-relation'],
     'TIME': ['has-time', 'time'],
+    'NONCOMP': ['has-noncomp', 'noncomp'],
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION')
 MODES = ('POSSIBILITY', 'NECESSITY', 'NEG')
