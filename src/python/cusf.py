@@ -91,6 +91,13 @@ class Frame:
             block.append(arg.to_line())
         return block
 
+    def fill_args(self, tree: pyconll.tree.Tree):
+        for child in tree:
+            if any(a.head == child.data.id for a in self.args):
+                continue
+            if is_semantic_dependent(child):
+                self.args.append(Arg(child.data.id, serialize_subtree(child)))
+
     def check(self, sentid, lineno) -> bool:
         if not self.label:
             return False
@@ -121,11 +128,7 @@ class Frame:
     @staticmethod
     def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
         frame = Frame(tree.data.id, tree.data.form)
-        for child in tree:
-            if is_semantic_dependent(child):
-                frame.args.append(
-                    Arg(child.data.id, serialize_subtree(child)),
-                )
+        frame.fill_args(tree)
         return frame
 
 
@@ -161,13 +164,14 @@ class Sentence:
                     for index, frame in enumerate(self.frames):
                         if frame.head == tree.data.id:
                             frame_already_present = True
+                            frame.fill_args(tree)
                             cursor = index + 1
                             break
                     if not frame_already_present:
                         self.frames.insert(cursor, Frame.init_from_tree(tree))
                         cursor += 1
 
-    def check(self) -> Tuple[int, int]:
+    def check(self) -> tuple[int, int]:
         frame_count = 0
         annotated_count = 0
         for lineno, frame in zip(self.frame_linenos, self.frames):
