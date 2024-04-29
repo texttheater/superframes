@@ -176,10 +176,7 @@ class Sentence:
                 scene = frame.find_arg('scene')
                 target_scene = frame.find_arg('target-scene')
                 if participant:
-                    protoarg = (
-                        participant.head,
-                        serialize_subtree(participant.head, self.syntax[0]),
-                    )
+                    protoarg = (participant.head, participant.text)
                     if initial_scene:
                         expected_links[initial_scene.head].append(protoarg)
                     if transitory_scene:
