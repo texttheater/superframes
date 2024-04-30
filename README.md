@@ -36,6 +36,13 @@ Step 1: clone this repository and cd into the working copy:
     git clone https://github.com/texttheater/superframes
     cd superframes
 
+**NOTE:** If you want to avoid having to type your username and password every
+time, [add an SSH key to your GitHub
+account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+Then, switch the remote to SSH:
+
+    git remote set-url origin git@github.com:texttheater/superframes.git
+
 Step 2 (optional): create a dedicated Virtual Environment. For example, if you
 have PyEnv set up:
 
