@@ -53,10 +53,29 @@ FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(-(' +
 
 
 def check_frame_label(frame):
+    return all(check_frame_label_part(p) for p in frame.split(' >> '))
+
+
+def check_frame_label_part(frame):
     return FRAME_PATTERN.match(frame)
 
 
 def check_dep_label(dep, frame):
+    frame_label_parts = frame.split(' >> ')
+    dep_label_parts = dep.split(' >> ')
+    if len(dep_label_parts) == 1:
+        dep_label_parts *= len(frame_label_parts)
+    if len(frame_label_parts) == 1:
+        frame_label_parts *= len(dep_label_parts)
+    if len(dep_label_parts) != len(frame_label_parts):
+        return False
+    for f, d in zip(frame_label_parts, dep_label_parts):
+        if check_dep_label_part(d, f):
+            return True
+    return False
+
+
+def check_dep_label_part(dep, frame):
     if dep[:2] in ('m-', 'x-'):
         role = dep[2:]
         return any(role in v for v in FRAMES.values())
