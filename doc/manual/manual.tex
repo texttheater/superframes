@@ -79,7 +79,7 @@
             \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
             \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
             \fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & & \ref{sec:EXCRETION} \\
-            \fr{UNANCHORED-MOTION} & & \rl{has-location} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
+            \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
             \boro\fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
             \boro\fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
             \boro\fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
@@ -603,7 +603,7 @@ participating in it, and must be metonymically understood as the scene.
 
 \ex.\dep{Kim_participant *had#SCENE* sex_scene with Sandy_x-accompanier}
 
-\ex.\dep{Kim_x-accompanier *chased#UNANCHORED-MOTION* Sandy_has-location around the block_transitory-location}
+\ex.\dep{Kim_x-accompanier *chased#UNANCHORED-MOTION* Sandy_in-motion around the block_transitory-location}
 
 \ex.\dep{Kim_x-accompanier *accompanied#ACCOMPANIMENT* Sandy_accompanied}
 
@@ -777,13 +777,13 @@ Special case of \fr{LOCATION-DEINIT} where \rl{excreter} (aka
 
 Special case of \rl{LOCATION-CHANGE} where no initial or target location is indicated.
 
-\ex.\dep{Kim_has-location is *running#UNANCHORED-MOTION* along the river_transitory-location}
+\ex.\dep{Kim_in-motion is *running#UNANCHORED-MOTION* along the river_transitory-location}
 
-\ex.\dep{I_x-causer learned to *pilot#UNANCHORED-MOTION* airplanes_has-location}
+\ex.\dep{I_x-causer learned to *pilot#UNANCHORED-MOTION* airplanes_in-motion}
 
-\ex.\dep{Kim_has-location is *dancing#UNANCHORED-MOTION* around the room_transitory-location with Sandy_m-accompanier}
+\ex.\dep{Kim_in-motion is *dancing#UNANCHORED-MOTION* around the room_transitory-location with Sandy_m-accompanier}
 
-\ex.\dep{Kim_has-location is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
+\ex.\dep{Kim_in-motion is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
 
 %\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
 
@@ -830,7 +830,7 @@ or just exists in recorded form. When \rl{content} and \rl{topic} are both reali
 
 \ex.\dep{Kim_x-sender *curtseyed#MESSAGE* to the Queen_x-experiencer}
 
-\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_has-location>>x-noncomp no_x-sent>>content}
+\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_in-motion>>x-noncomp no_x-sent>>content}
 
 \subsubsection{Performance}
 
@@ -872,11 +872,11 @@ We also frame perception as \fr{MESSAGE}, including mental and volitional percep
 
 \ex.\dep{Kim_x-experiencer *thinks#MESSAGE* Sandy_topic__x-sender a **liar#MESSAGE**_content}
 
-\ex.\dep{Kim_x-experiencer *saw#MESSAGE* Sandy_topic__has-location **swim#UNANCHORED-MOTION**_content}
+\ex.\dep{Kim_x-experiencer *saw#MESSAGE* Sandy_topic__in-motion **swim#UNANCHORED-MOTION**_content}
 
-\ex.\dep{Kim_x-experiencer__has-location *wants#MESSAGE* to **swim#UNANCHORED-MOTION**_content}
+\ex.\dep{Kim_x-experiencer__in-motion *wants#MESSAGE* to **swim#UNANCHORED-MOTION**_content}
 
-\ex.\dep{Kim_x-experiencer *wants#MESSAGE* Sandy_topic__has-location to **swim#UNANCHORED-MOTION**_content}
+\ex.\dep{Kim_x-experiencer *wants#MESSAGE* Sandy_topic__in-motion to **swim#UNANCHORED-MOTION**_content}
 
 \ex.\dep{Kim_topic__x-experiencer *seems#MESSAGE* **happy#MESSAGE**_content}
 
@@ -1115,11 +1115,11 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \rl{time} indicates when, how often, or for how long \rl{has-time} takes place. Also evoked by time expressions without arguments.
 
-\ex.\dep{Kim_has-location *swims#UNANCHORED-MOTION* on Monday_m-time}
+\ex.\dep{Kim_in-motion *swims#UNANCHORED-MOTION* on Monday_m-time}
 
 \ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* twice_m-time}
 
-\ex.\dep{Kim_has-location *swam#UNANCHORED-MOTION* for an hour_m-time}
+\ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
 \ex.\dep{Kim_x-sender *says#MESSAGE* hello_content whenever I meet_m-time them}
 
@@ -1206,8 +1206,8 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 \rl{x-accompanier}. Because the latter works for other syntactic frames of
 \emph{chase} as well, as in \ref{ex:chase2}, prefer it.
 
-\ex.\a.\label{ex:chase1}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* Sandy_has-location around the block_transitory-location}
-    \b.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_has-location}
+\ex.\a.\label{ex:chase1}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* Sandy_in-motion around the block_transitory-location}
+    \b.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_in-motion}
 
 \subsection{Participant Nouns}
 
@@ -1244,12 +1244,12 @@ labeled with \rl{initial-location} or \rl{target-location}.
 In semi-non-compositional particle verbs, where the particle adds a partially predictable
 but nonspatial meaning to the verb, use an appropriate role.
 
-\ex.\dep{*eat#INGESTION* up_x-quantity the cookies_ingested} (implies \emph{eat} the cookies)
+\ex.\dep{*eat#INGESTION* up_m-quantity the cookies_ingested} (implies \emph{eat} the cookies)
 
 In fully non-compositional particle verbs, where the meaning is not
-predictable, use \rl{x-noncomp}.
+predictable, use \rl{m-noncomp}.
 
-\ex.\dep{*do#EXPERIENCE* somebody_experiencer in_x-noncomp} (does not imply \emph{do} somebody)
+\ex.\dep{*do#EXPERIENCE* somebody_experiencer in_m-noncomp} (does not imply \emph{do} somebody)
 
 \section{TODO}
 
