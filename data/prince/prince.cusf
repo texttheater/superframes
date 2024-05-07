@@ -177,37 +177,38 @@
 17	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	TokenRange=339:341
 18	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=342:343
 
-[] said (5)
-[] In the book (3)
-[] it (4)
-[] Boa constrictors swallow their prey whole , without chewing it (10)
+[MESSAGE] said (5)
+[x-sender] In the book (3)
+[x-noncomp] it (4)
+[content] Boa constrictors swallow their prey whole , without chewing it (10)
 
-[] book (3)
+[MESSAGE] book (3)
 
-[] it (4)
+[NONCOMP] it (4)
 
-[] swallow (10)
-[] Boa constrictors (9)
-[] their prey (12)
-[] whole (13)
-[] without chewing it (16)
+[INGESTION] swallow (10)
+[ingestor] Boa constrictors (9)
+[ingested] their prey (12)
+[m-depictive] whole (13)
+[m-follows] without chewing it (16)
 
-[] constrictors (9)
-[] Boa (8)
+[CLASS] constrictors (9)
+[m-noncomp] Boa (8)
 
-[] Boa (8)
+[NONCOMP] Boa (8)
 
-[] prey (12)
-[] their (11)
+[SOCIAL-RELATION] prey (12)
+[has-social-relation] their (11)
 
-[] their (11)
+[IDENTIFICATION] their (11)
 
-[] whole (13)
+[STATE] whole (13)
+[has-state] prey (12)
 
-[] chewing (16)
-[] it (17)
+[STATE-CHANGE] chewing (16)
+[has-state] it (17)
 
-[] it (17)
+[IDENTIFICATION] it (17)
 
 # sent_id = 6
 # text = After that they are not able to move , and they sleep through the six months that they need for digestion . " I pondered deeply , then , over the adventures of the jungle .
@@ -248,60 +249,62 @@
 35	jungle	jungle	NOUN	NN	Number=Sing	32	nmod	_	TokenRange=510:516
 36	.	.	PUNCT	.	_	25	punct	_	SpacesAfter=\r\n|TokenRange=517:518
 
-[] pondered (25)
+[MESSAGE] pondered (25)
+[x-experiencer] I (24)
+[m-quality] deeply (26)
+[m-time] then (28)
+[topic] over the adventures of the jungle (32)
 [] After that they are not able to move , and they sleep through the six months that they need for digestion (6)
-[] I (24)
-[] deeply (26)
-[] then (28)
-[] over the adventures of the jungle (32)
 
-[] able (6)
-[] After that (2)
+[SCENE-POSSIBILITY] able (6)
+[m-time] After that (2)
+[participant] they (3)
+[m-mode] not (5)
+[scene] to move (8)
+
+[IDENTIFICATION] that (2)
+
+[IDENTIFICATION] they (3)
+
+[MODE] not (5)
+
+[UNANCHORED-MOTION] move (8)
 [] they (3)
-[] not (5)
-[] to move (8)
 
-[] that (2)
+[STATE] sleep (12)
+[has-state] they (11)
+[m-time] through the six months that they need for digestion (16)
 
-[] they (3)
+[IDENTIFICATION] they (11)
 
-[] not (5)
+[TIME] months (16)
+[m-quantity] six (15)
+[m-scene] that they need for digestion (19)
 
-[] move (8)
+[QUANTITY] six (15)
 
-[] sleep (12)
-[] they (11)
-[] through the six months that they need for digestion (16)
-
-[] they (11)
-
+[EXPERIENCE-NECESSITY] need (19) # EXPERIENCE not SCENE because "months" is not a predicate that assigns "they" a role, instead they experience the months in some unspecified way
+[experienced] that (17)
+[experiencer] they (18)
+[x-explanation] for digestion (21)
 [] months (16)
-[] six (15)
-[] that they need for digestion (19)
 
-[] six (15)
+[IDENTIFICATION] that (17)
 
-[] need (19)
-[] that (17)
-[] they (18)
-[] for digestion (21)
+[IDENTIFICATION] they (18)
 
-[] that (17)
+[STATE-CHANGE] digestion (21)
 
-[] they (18)
+[IDENTIFICATION] I (24)
 
-[] digestion (21)
+[QUALITY] deeply (26)
 
-[] I (24)
+[TIME] then (28)
 
-[] deeply (26)
+[EXPERIENCE] adventures (32)
+[m-location] of the jungle (35)
 
-[] then (28)
-
-[] adventures (32)
-[] of the jungle (35)
-
-[] jungle (35)
+[CLASS] jungle (35)
 
 # sent_id = 7
 # text = And after some work with a colored pencil I succeeded in making my first drawing .
@@ -322,50 +325,51 @@
 15	drawing	drawing	NOUN	NN	Number=Sing	12	obj	_	TokenRange=593:600
 16	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\r\n|TokenRange=601:602
 
-[] succeeded (10)
-[] after some work with a colored pencil (4)
+[SCENE-INIT] succeeded (10)
+[m-time] after some work with a colored pencil (4)
+[participant] I (9)
+[scene] in making my first drawing (12)
+
+[EXPERIENCE] work (4)
+[x-means] with a colored pencil (8)
+
+[CLASS] pencil (8)
+[m-quality >> m-noncomp] colored (7)
+
+[QUALITY >> NONCOMP] colored (7)
+
+[IDENTIFICATION] I (9)
+
+[TRANSFORMATION-CREATION] making (12)
+[created] my first drawing (15)
 [] I (9)
-[] in making my first drawing (12)
 
-[] work (4)
-[] with a colored pencil (8)
+[MESSAGE] drawing (15)
+[x-sender] my (13)
+[m-rank] first (14)
 
-[] pencil (8)
-[] colored (7)
+[IDENTIFICATION] my (13)
 
-[] colored (7)
-
-[] I (9)
-
-[] making (12)
-[] my first drawing (15)
-
-[] drawing (15)
-[] my (13)
-[] first (14)
-
-[] my (13)
-
-[] first (14)
+[RANK] first (14)
 
 # sent_id = 8
 # text = My Drawing Number One .
-1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=604:606
-2	Drawing	drawing	NOUN	NN	Number=Sing	3	compound	_	TokenRange=607:614
-3	Number	number	NOUN	NN	Number=Sing	0	root	_	TokenRange=615:621
+1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=604:606
+2	Drawing	drawing	NOUN	NN	Number=Sing	0	root	_	TokenRange=607:614
+3	Number	number	NOUN	NN	Number=Sing	2	nmod	_	TokenRange=615:621
 4	One	one	NUM	CD	NumForm=Word|NumType=Card	3	nummod	_	TokenRange=622:625
 5	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=626:627
 
-[] Number (3)
-[] My (1)
-[] Drawing (2)
-[] One (4)
+[MESSAGE] Drawing (2)
+[x-sender] My (1)
+[m-rank] Number (3)
 
-[] My (1)
+[RANK] Number (3)
+[rank] One (4)
 
-[] Drawing (2)
+[IDENTIFICATION] My (1)
 
-[] One (4)
+[RANK] One (4)
 
 # sent_id = 9
 # text = It looked like this :
@@ -375,13 +379,13 @@
 4	this	this	PRON	DT	Number=Sing|PronType=Dem	2	obl	_	TokenRange=644:648
 5	:	:	PUNCT	:	_	2	punct	_	TokenRange=649:650
 
-[] looked (2)
-[] It (1)
-[] like this (4)
+[MESSAGE] looked (2)
+[topic] It (1)
+[content] like this (4)
 
-[] It (1)
+[IDENTIFICATION] It (1)
 
-[] this (4)
+[IDENTIFICATION] this (4)
 
 # sent_id = 10
 # text = I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
@@ -405,36 +409,37 @@
 18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	17	obj	_	TokenRange=742:746
 19	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=747:748
 
-[] showed (2)
-[] I (1)
-[] my masterpiece (4)
-[] to the grown - ups (9)
+[MESSAGE] showed (2)
+[x-sender] I (1)
+[topic] my masterpiece (4)
+[x-experiencer] to the grown - ups (9)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] masterpiece (4)
-[] my (3)
+[TRANSFORMATION-CREATION] masterpiece (4)
+[x-causer] my (3)
 
-[] my (3)
+[IDENTIFICATION] my (3)
 
-[] ups (9)
-[] grown (7)
+[CLASS] ups (9)
+[m-noncomp] grown (7)
 
-[] grown (7)
+[NONCOMP] grown (7)
 
-[] asked (12)
-[] them (13)
-[] whether the drawing frightened them (17)
+[MESSAGE] asked (12)
+[x-experiencer] them (13)
+[content] whether the drawing frightened them (17)
+[x-sender] I (1)
 
-[] them (13)
+[IDENTIFICATION] them (13)
 
-[] frightened (17)
-[] the drawing (16)
-[] them (18)
+[MESSAGE] frightened (17)
+[topic] the drawing (16)
+[x-experiencer] them (18)
 
-[] drawing (16)
+[MESSAGE] drawing (16)
 
-[] them (18)
+[IDENTIFICATION] them (18)
 
 # sent_id = 11
 # text = But they answered : " Frighten ?
@@ -446,13 +451,13 @@
 6	Frighten	frighten	ADJ	JJ	Degree=Pos	3	ccomp	_	TokenRange=772:780
 7	?	?	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=781:782
 
-[] answered (3)
-[] they (2)
-[] Frighten (6)
+[MESSAGE] answered (3)
+[x-sender] they (2)
+[content] Frighten (6)
 
-[] they (2)
+[IDENTIFICATION] they (2)
 
-[] Frighten (6)
+[MESSAGE] Frighten (6)
 
 # sent_id = 12
 # text = Why should any one be frightened by a hat ? "
@@ -468,16 +473,16 @@
 10	?	?	PUNCT	.	_	6	punct	_	TokenRange=826:827
 11	"	"	PUNCT	''	_	6	punct	_	SpacesAfter=\r\n|TokenRange=828:829
 
-[] frightened (6)
-[] Why (1)
-[] any one (4)
-[] by a hat (9)
+[MESSAGE] frightened (6)
+[m-explanation] Why (1)
+[x-experiencer] any one (4)
+[topic] by a hat (9)
 
-[] Why (1)
+[EXPLANATION] Why (1)
 
-[] one (4)
+[CLASS] one (4)
 
-[] hat (9)
+[CLASS] hat (9)
 
 # sent_id = 13
 # text = My drawing was not a picture of a hat .
@@ -492,19 +497,19 @@
 9	hat	hat	NOUN	NN	Number=Sing	6	nmod	_	TokenRange=865:868
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=869:870
 
-[] picture (6)
-[] My drawing (2)
-[] not (4)
-[] of a hat (9)
+[MESSAGE] picture (6)
+[x-identified] My drawing (2)
+[m-mode] not (4)
+[topic] of a hat (9)
 
-[] drawing (2)
-[] My (1)
+[MESSAGE] drawing (2)
+[x-sender] My (1)
 
-[] My (1)
+[IDENTIFICATION] My (1)
 
-[] not (4)
+[MODE] not (4)
 
-[] hat (9)
+[CLASS] hat (9)
 
 # sent_id = 14
 # text = It was a picture of a boa constrictor digesting an elephant .
@@ -521,22 +526,23 @@
 11	elephant	elephant	NOUN	NN	Number=Sing	9	obj	_	TokenRange=923:931
 12	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=932:933
 
-[] picture (4)
-[] It (1)
-[] of a boa constrictor digesting an elephant (8)
+[MESSAGE] picture (4)
+[x-identified] It (1)
+[topic] of a boa constrictor digesting an elephant (8)
 
-[] It (1)
+[IDENTIFICATION] It (1)
 
+[CLASS] constrictor (8)
+[m-noncomp] boa (7)
+[m-scene] digesting an elephant (9)
+
+[CLASS] boa (7)
+
+[STATE-CHANGE] digesting (9)
+[has-state] an elephant (11)
 [] constrictor (8)
-[] boa (7)
-[] digesting an elephant (9)
 
-[] boa (7)
-
-[] digesting (9)
-[] an elephant (11)
-
-[] elephant (11)
+[CLASS] elephant (11)
 
 # sent_id = 15
 # text = But since the grown - ups were not able to understand it , I made another drawing :
@@ -559,31 +565,32 @@
 17	drawing	drawing	NOUN	NN	Number=Sing	15	obj	_	TokenRange=1009:1016
 18	:	:	PUNCT	:	_	15	punct	_	TokenRange=1017:1018
 
-[] made (15)
-[] since the grown - ups were not able to understand it (9)
-[] I (14)
-[] another drawing (17)
+[TRANSFORMATION-CREATION] made (15)
+[m-explanation] since the grown - ups were not able to understand it (9)
+[x-causer] I (14)
+[created] another drawing (17)
 
-[] able (9)
-[] the grown - ups (6)
-[] not (8)
-[] to understand it (11)
+[SCENE-POSSIBILITY] able (9)
+[participant] the grown - ups (6)
+[m-mode] not (8)
+[scene] to understand it (11)
 
-[] ups (6)
-[] grown (4)
+[CLASS] ups (6)
+[m-noncomp] grown (4)
 
-[] grown (4)
+[NONCOMP] grown (4)
 
-[] not (8)
+[MODE] not (8)
 
-[] understand (11)
-[] it (12)
+[MESSAGE] understand (11)
+[topic] it (12)
+[x-experiencer] the grown - ups (6)
 
-[] it (12)
+[IDENTIFICATION] it (12)
 
-[] I (14)
+[IDENTIFICATION] I (14)
 
-[] drawing (17)
+[MESSAGE] drawing (17)
 
 # sent_id = 16
 # text = I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
@@ -608,34 +615,34 @@
 19	clearly	clearly	ADV	RB	_	17	advmod	_	TokenRange=1099:1106
 20	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=1107:1108
 
-[] drew (2)
-[] I (1)
-[] the inside of the boa constrictor (4)
-[] so that the grown - ups could see it clearly (17)
+[MESSAGE] drew (2)
+[x-sender] I (1)
+[topic] the inside of the boa constrictor (4)
+[m-explanation] so that the grown - ups could see it clearly (17)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] inside (4)
-[] of the boa constrictor (8)
+[PART-WHOLE] inside (4)
+[whole] of the boa constrictor (8)
 
-[] constrictor (8)
-[] boa (7)
+[CLASS] constrictor (8)
+[m-noncomp] boa (7)
 
-[] boa (7)
+[NONCOMP] boa (7)
 
-[] see (17)
-[] the grown - ups (15)
-[] it (18)
-[] clearly (19)
+[MESSAGE] see (17)
+[x-experiencer] the grown - ups (15)
+[topic] it (18)
+[m-quality] clearly (19)
 
-[] ups (15)
-[] grown (13)
+[CLASS] ups (15)
+[m-noncomp] grown (13)
 
-[] grown (13)
+[NONCOMP] grown (13)
 
-[] it (18)
+[IDENTIFICATION] it (18)
 
-[] clearly (19)
+[QUALITY] clearly (19)
 
 # sent_id = 17
 # text = They always need to have things explained .
@@ -648,28 +655,30 @@
 7	explained	explain	VERB	VBN	Tense=Past|VerbForm=Part	5	xcomp	_	TokenRange=1142:1151
 8	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1152:1153
 
-[] need (3)
-[] They (1)
-[] always (2)
-[] to have things explained (5)
+[SCENE-NECESSITY] need (3)
+[participant] They (1)
+[m-time] always (2)
+[scene] to have things explained (5)
 
-[] They (1)
+[IDENTIFICATION] They (1)
 
-[] always (2)
+[TIME] always (2)
 
-[] have (5)
-[] things (6)
-[] explained (7)
+[SCENE] have (5)
+[participant] things (6)
+[scene] explained (7)
+[x-experiencer] They (1)
 
-[] things (6)
+[CLASS] things (6)
 
-[] explained (7)
+[MESSAGE] explained (7)
+[topic] things (6)
 
 # sent_id = 18
 # text = My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
-1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=1155:1157
-2	Drawing	drawing	NOUN	NN	Number=Sing	3	compound	_	TokenRange=1158:1165
-3	Number	number	NOUN	NN	Number=Sing	5	nsubj	_	TokenRange=1166:1172
+1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=1155:1157
+2	Drawing	drawing	NOUN	NN	Number=Sing	5	nsubj	_	TokenRange=1158:1165
+3	Number	number	NOUN	NN	Number=Sing	2	nmod	_	TokenRange=1166:1172
 4	Two	two	NUM	CD	NumForm=Word|NumType=Card	3	nummod	_	TokenRange=1173:1176
 5	looked	look	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=1177:1183
 6	like	like	ADP	IN	_	7	case	_	TokenRange=1184:1188
@@ -720,79 +729,87 @@
 51	grammar	grammar	NOUN	NN	Number=Sing	45	conj	_	TokenRange=1408:1415
 52	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=1416:1417
 
-[] looked (5)
-[] My Drawing Number Two (3)
-[] like this (7)
+[MESSAGE] looked (5)
+[topic] My Drawing Number Two (2)
+[content] like this (7)
 
-[] Number (3)
-[] My (1)
-[] Drawing (2)
-[] Two (4)
+[RANK] Number (3)
+[rank] Two (4)
 
-[] My (1)
+[IDENTIFICATION] My (1)
 
-[] Drawing (2)
+[MESSAGE] Drawing (2)
+[x-sender] My (1)
+[m-rank] Number Two (3)
 
-[] Two (4)
+[RANK] Two (4)
 
-[] this (7)
+[IDENTIFICATION] this (7)
 
-[] advise (21)
-[] The grown - ups ' response (14)
-[] this time (17)
-[] me (22)
-[] to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar (24)
+[MESSAGE] advise (21)
+[x-identified] The grown - ups ' response (14)
+[m-time] this time (17)
+[x-experiencer] me (22)
+[topic] to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar (24)
 
-[] response (14)
-[] The grown - ups ' (12)
+[REACTION] response (14)
+[x-causer] The grown - ups ' (12)
 
-[] ups (12)
-[] grown (10)
+[CLASS] ups (12)
+[m-noncomp] grown (10)
 
-[] grown (10)
+[NONCOMP] grown (10)
 
-[] time (17)
+[TIME] time (17)
 
-[] me (22)
+[IDENTIFICATION] me (22)
 
-[] lay (24)
-[] aside (25)
-[] my drawings of boa constrictors (27)
-[] whether from the inside or the outside (35)
+[LOCATION-CHANGE >> EXPERIENCE-DEINIT] lay (24)
+[target-location >> m-noncomp] aside (25)
+[has-location >> experienced] my drawings of boa constrictors (27)
+[m-depictive] whether from the inside or the outside (35) # ?
+[x-causer] me (22)
 
-[] aside (25)
+[LOCATION >> NONCOMP] aside (25)
 
-[] drawings (27)
-[] my (26)
-[] of boa constrictors (30)
+[MESSAGE] drawings (27)
+[x-sender] my (26)
+[topic] of boa constrictors (30)
 
-[] my (26)
+[IDENTIFICATION] my (26)
 
-[] constrictors (30)
-[] boa (29)
+[CLASS] constrictors (30)
+[m-noncomp] boa (29)
 
-[] boa (29)
+[NONCOMP] boa (29)
 
-[] inside (35)
+[QUALITY] inside (35)
+[has-quality] drawings (27)
 
-[] outside (38)
+[QUALITY] outside (38)
+[has-quality] drawings (27)
 
-[] devote (41)
-[] myself (42)
-[] instead (43)
-[] to geography , history , arithmetic and grammar (45)
+[SCENE-INIT] devote (41)
+[participant] myself (42)
+[m-scene] instead (43)
+[scene] to geography , history , arithmetic and grammar (45)
 
-[] myself (42)
+[IDENTIFICATION] myself (42)
 
-[] instead (43)
+[SEQUENCE] instead (43)
+[follows] devote (41)
 
-[] geography (45)
+[ACTIVITY] geography (45)
+[is-active] myself (42)
 
-[] history (47)
+[ACTIVITY] history (47)
+[is-active] myself (42)
 
-[] arithmetic (49)
+[ACTIVITY] arithmetic (49)
+[is-active] myself (42)
 
-[] grammar (51)
+[ACTIVITY] grammar (51)
+[is-active] myself (42)
 
 # sent_id = 19
 # text = That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
@@ -821,37 +838,37 @@
 23	painter	painter	NOUN	NN	Number=Sing	20	nmod	_	TokenRange=1510:1517
 24	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1518:1519
 
-[] why (3)
-[] That (1)
-[] at the age of six , I gave up what might have been a magnificent career as a painter (12)
+[EXPLANATION] why (3)
+[explanation] That (1)
+[explained] at the age of six , I gave up what might have been a magnificent career as a painter (12)
 
-[] That (1)
+[IDENTIFICATION] That (1)
 
-[] gave (12)
-[] at the age of six (7)
-[] I (11)
-[] up (13)
-[] what might have been a magnificent career as a painter (20)
+[EXPERIENCE-DEINIT] gave (12)
+[m-time] at the age of six (7)
+[x-causer] I (11)
+[m-noncomp] up (13)
+[experienced] what might have been a magnificent career as a painter (20)
 
-[] age (7)
-[] of six (9)
+[STATE] age (7)
+[x-quantity] of six (9)
 
-[] six (9)
+[QUANTITY] six (9)
 
-[] I (11)
+[IDENTIFICATION] I (11)
 
-[] up (13)
+[NONCOMP] up (13)
 
-[] career (20)
-[] what (14)
-[] magnificent (19)
-[] as a painter (23)
+[EXPERIENCE] career (20)
+[x-identified] what (14)
+[m-quality] magnificent (19)
+[x-depictive] as a painter (23)
 
-[] what (14)
+[IDENTIFICATION] what (14)
 
-[] magnificent (19)
+[QUALITY] magnificent (19)
 
-[] painter (23)
+[CLASS] painter (23)
 
 # sent_id = 20
 # text = I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
@@ -862,48 +879,48 @@
 5	by	by	ADP	IN	_	7	case	_	TokenRange=1545:1547
 6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	TokenRange=1548:1551
 7	failure	failure	NOUN	NN	Number=Sing	4	obl	_	TokenRange=1552:1559
-8	of	of	ADP	IN	_	11	case	_	TokenRange=1560:1562
-9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=1563:1565
-10	Drawing	drawing	NOUN	NN	Number=Sing	11	compound	_	TokenRange=1566:1573
-11	Number	number	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1574:1580
+8	of	of	ADP	IN	_	10	case	_	TokenRange=1560:1562
+9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=1563:1565
+10	Drawing	drawing	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1566:1573
+11	Number	number	NOUN	NN	Number=Sing	10	nmod	_	TokenRange=1574:1580
 12	One	one	NUM	CD	NumForm=Word|NumType=Card	11	nummod	_	TokenRange=1581:1584
-13	and	and	CCONJ	CC	_	16	cc	_	TokenRange=1585:1588
-14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=1589:1591
-15	Drawing	drawing	NOUN	NN	Number=Sing	16	compound	_	TokenRange=1592:1599
-16	Number	number	NOUN	NN	Number=Sing	11	conj	_	TokenRange=1600:1606
+13	and	and	CCONJ	CC	_	15	cc	_	TokenRange=1585:1588
+14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=1589:1591
+15	Drawing	drawing	NOUN	NN	Number=Sing	11	conj	_	TokenRange=1592:1599
+16	Number	number	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=1600:1606
 17	Two	two	NUM	CD	NumForm=Word|NumType=Card	16	nummod	_	TokenRange=1607:1610
 18	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=1611:1612
 
-[] disheartened (4)
-[] I (1)
-[] by the failure of my Drawing Number One and my Drawing Number Two (7)
+[MESSAGE] disheartened (4)
+[x-experiencer] I (1)
+[topic] failure (7)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] failure (7)
-[] of my Drawing Number One and my Drawing Number Two (11)
+[SCENE-INIT-NEGATION] failure (7)
+[participant] Drawing (10)
 
-[] Number (11)
-[] my (9)
-[] Drawing (10)
-[] One (12)
+[MESSAGE] Drawing (10)
+[x-sender] my (9)
+[m-rank] Number (11)
 
-[] my (9)
+[IDENTIFICATION] my (9)
 
-[] Drawing (10)
+[RANK] Number (11)
+[rank] One (12)
 
-[] One (12)
+[RANK] One (12)
 
-[] Number (16)
-[] my (14)
-[] Drawing (15)
-[] Two (17)
+[RANK] Number (16)
+[rank] Two (17)
 
-[] my (14)
+[IDENTIFICATION] my (14)
 
-[] Drawing (15)
+[MESSAGE] Drawing (15)
+[x-sender] my (14)
+[] Number Two (16)
 
-[] Two (17)
+[RANK] Two (17)
 
 # sent_id = 21
 # text = Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
