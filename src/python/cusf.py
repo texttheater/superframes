@@ -204,7 +204,7 @@ class Sentence:
                     if not frame_already_present:
                         frame = Frame.init_from_tree(tree)
                         frame.fill_args(expected_links[frame.head])
-                        self.frames.insert(cursor, Frame.init_from_tree(tree))
+                        self.frames.insert(cursor, frame)
                         cursor += 1
 
     def check(self) -> tuple[int, int]:
