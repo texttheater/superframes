@@ -9,6 +9,7 @@ Lints and checks a CUSF file.
 import argparse
 import logging
 import shutil
+import tempfile
 
 
 import cusf
@@ -27,10 +28,12 @@ if __name__ == '__main__':
     with open(args.file) as f:
         sentences = [s for s in cusf.read(f)]
     # Add missing frames
-    with open(args.file, 'w') as f:
+    with tempfile.NamedTemporaryFile('w', delete=False) as f:
         for sentence in sentences:
             sentence.fill()
             sentence.write(f)
+        f.close()
+        shutil.move(f.name, args.file)
     # Read file again
     with open(args.file) as f:
         sentences = [s for s in cusf.read(f)]

@@ -1,9 +1,9 @@
+import collections
 import logging
 import math
-from numbers import Number
 import re
 import sys
-from typing import Iterable, List, Optional, TextIO, Tuple, Union
+from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
 from pyconll.exception import ParseError
@@ -38,16 +38,13 @@ def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
     return tree.data.deprel.split(':')[0] in ARG_DEPS
 
 
-def yld(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
-    yield tree
-    for child in tree:
-        yield from yld(child)
-
-
-def serialize_subtree(tree: pyconll.tree.Tree) -> str:
-    nodes = sorted(yld(tree), key=lambda t: int(t.data.id))
-    nodes = (t.data.form for t in nodes)
-    return ' '.join(nodes)
+def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
+    for tree in subtrees(sentence.to_tree()):
+        if tree.data.id == token_id:
+            nodes = sorted(subtrees(tree), key=lambda t: int(t.data.id))
+            nodes = (t.data.form for t in nodes)
+            return ' '.join(nodes)
+    return ''
 
 
 class Arg:
@@ -91,6 +88,17 @@ class Frame:
             block.append(arg.to_line())
         return block
 
+    def fill_args(self, args: Set[Tuple[str, str]]):
+        for head, text in args:
+            if any(a.head == head for a in self.args):
+                continue
+            self.args.append(Arg(head, text))
+
+    def find_arg(self, label: str) -> Optional[Arg]:
+        for arg in self.args:
+            if arg.label == label:
+                return arg
+
     def check(self, sentid, lineno) -> bool:
         if not self.label:
             return False
@@ -121,11 +129,6 @@ class Frame:
     @staticmethod
     def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
         frame = Frame(tree.data.id, tree.data.form)
-        for child in tree:
-            if is_semantic_dependent(child):
-                frame.args.append(
-                    Arg(child.data.id, serialize_subtree(child)),
-                )
         return frame
 
 
@@ -150,9 +153,43 @@ class Sentence:
         self.frame_linenos.append(lineno)
 
     def fill(self):
-        """Add missing frames"""
+        """Add missing frames/args"""
+        # Phase 0: ignore sentences with syntax errors
         if not all(isinstance(f, Frame) for f in self.frames):
             return
+        # Phase 1: collect expected frame-arg links
+        expected_links = collections.defaultdict(list)
+        for sentence in self.syntax:
+            for tree in subtrees(sentence.to_tree()):
+                if is_semantic_predicate(tree):
+                    for child in tree:
+                        if is_semantic_dependent(child):
+                            expected_links[tree.data.id].append((
+                                child.data.id,
+                                serialize_subtree(child.data.id, sentence),
+                            ))
+        for frame in self.frames:
+            if frame.label.split('-')[0] == 'SCENE':
+                participant = frame.find_arg('participant')
+                initial_scene = frame.find_arg('initial-scene')
+                transitory_scene = frame.find_arg('transitory-scene')
+                scene = frame.find_arg('scene')
+                target_scene = frame.find_arg('target-scene')
+                if participant:
+                    protoarg = (participant.head, participant.text)
+                    if initial_scene:
+                        expected_links[initial_scene.head].append(protoarg)
+                    if transitory_scene:
+                        expected_links[transitory_scene.head].append(protoarg)
+                    if scene:
+                        expected_links[scene.head].append(protoarg)
+                    if target_scene:
+                        expected_links[target_scene.head].append(protoarg)
+            for arg in frame.args:
+                if arg.label == 'm-scene':
+                    protoarg = (frame.head, frame.text)
+                    expected_links[arg.head].append(protoarg)
+        # Phase 2: add missing frames and args
         cursor = 0 # index at which we insert the next missing frame
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
@@ -161,13 +198,16 @@ class Sentence:
                     for index, frame in enumerate(self.frames):
                         if frame.head == tree.data.id:
                             frame_already_present = True
+                            frame.fill_args(expected_links[frame.head])
                             cursor = index + 1
                             break
                     if not frame_already_present:
-                        self.frames.insert(cursor, Frame.init_from_tree(tree))
+                        frame = Frame.init_from_tree(tree)
+                        frame.fill_args(expected_links[frame.head])
+                        self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self) -> Tuple[int, int]:
+    def check(self) -> tuple[int, int]:
         frame_count = 0
         annotated_count = 0
         for lineno, frame in zip(self.frame_linenos, self.frames):
