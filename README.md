@@ -79,7 +79,7 @@ Step 1: Make sure you are on the correct branch.
 Step 2: Get any updates from the main branch.
 
     git fetch
-    git merge origin main
+    git merge origin/main
 
 Step 3: Open whatever you are currently annotating (something in `data/`) in
 your favorite text editor and annotate away.
