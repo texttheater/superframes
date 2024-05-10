@@ -28,12 +28,12 @@ if __name__ == '__main__':
     with open(args.file) as f:
         sentences = [s for s in cusf.read(f)]
     # Add missing frames
-    with tempfile.NamedTemporaryFile('w', delete_on_close=False) as f:
+    with tempfile.NamedTemporaryFile('w', delete=False) as f:
         for sentence in sentences:
             sentence.fill()
             sentence.write(f)
         f.close()
-        shutil.copyfile(f.name, args.file)
+        shutil.move(f.name, args.file)
     # Read file again
     with open(args.file) as f:
         sentences = [s for s in cusf.read(f)]
