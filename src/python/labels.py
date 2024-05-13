@@ -53,7 +53,7 @@ FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(-(' +
 
 
 def check_frame_label(frame):
-    return all(check_frame_label_part(p) for p in frame.split(' >> '))
+    return all(check_frame_label_part(p) for p in re.split(r' (?:>>|\|\|) ', frame))
 
 
 def check_frame_label_part(frame):
@@ -61,8 +61,8 @@ def check_frame_label_part(frame):
 
 
 def check_dep_label(dep, frame):
-    frame_label_parts = frame.split(' >> ')
-    dep_label_parts = dep.split(' >> ')
+    frame_label_parts = re.split(r' (?:>>|\|\|) ', frame)
+    dep_label_parts = re.split(r' (?:>>|\|\|) ', dep)
     if len(dep_label_parts) == 1:
         dep_label_parts *= len(frame_label_parts)
     if len(frame_label_parts) == 1:
