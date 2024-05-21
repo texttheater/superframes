@@ -55,7 +55,6 @@
             \boro\fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
             \boro\fr{RANK} & & \rl{has-rank} & \rl{rank} & & & \ref{sec:RANK} \\
             \boro\fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
-            \boro\fr{KIND} & & \rl{has-kind} & \rl{kind} & & & \ref{sec:KIND} \\
             \boro\fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
             \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
             \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
@@ -350,13 +349,13 @@ roles.
 
 \ex.\dep{Kim_x-sender>>participant *refused#MESSAGE>>SCENE* to eat_topic>>scene}
 
-%This mechanism can be used to indicate that a modification may not be fully compositional:
-%
-%\ex.\dep{primeval_m-time>>m-noncomp *forest#CLASS*}
-%
-%\ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
+This mechanism can be used to indicate that a modification may not be fully compositional:
 
-\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>m-noncomp my drawings_has-location>>topic}
+\ex.\dep{primeval_m-time>>m-noncomp *forest#CLASS*}
+
+\ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
+
+\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
 
 If you cannot choose between two frames for another reason, use \texttt{||} instead of \texttt{>}\texttt{>}.
 
@@ -445,17 +444,6 @@ copula subject as identified:
 Most prototypically evoked by common nouns with no arguments.
 
 \ex.\dep{swallowing an animal#CLASS}
-
-\subsection{\fr{KIND}}
-\label{sec:KIND}
-
-\rl{has-kind} is an entity that is of kind \rl{kind}. Use \rl{m-kind} rather
-than \fr{m-quality} when the meaning of a modifier is specific to the class of
-the modifiee.
-
-\ex.\dep{colored_m-kind *pencil#CLASS*}
-
-\ex.\dep{*boa#CLASS* constrictor_m-kind}
 
 \subsection{\fr{EXISTENCE}}
 \label{sec:EXISTENCE}
