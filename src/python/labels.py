@@ -6,7 +6,6 @@ FRAMES = {
     'IDENTIFICATION': ['identified', 'identifier'],
     'RANK': ['has-rank', 'rank'],
     'CLASS': ['initial-class', 'has-class', 'class', 'target-class'],
-    'KIND': ['has-kind', 'kind'],
     'EXISTENCE': ['exists'],
     'TRANSFORMATION-CREATION': ['material', 'created'],
     'REPRODUCTION': ['original', 'copy'],
