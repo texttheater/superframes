@@ -23,6 +23,7 @@ FRAMES = {
     'COMPARISON': ['compared', 'reference'],
     'CONCESSION': ['asserted', 'conceded'],
     'EXPLANATION': ['explained', 'explanation'],
+    'PURPOSE': ['has-purpose', 'purpose'],
     'LOCATION': ['initial-location', 'has-location', 'location', 'transitory-location', 'target-location'],
     'WRAPPING-WEARING': ['initial-wearer', 'worn', 'wearer', 'target-wearer'],
     'ADORNMENT-TARNISHMENT': ['initial-surface', 'ornament', 'surface', 'target-surface'],
