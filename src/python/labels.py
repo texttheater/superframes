@@ -32,7 +32,7 @@ FRAMES = {
     'EXCRETION': ['excreter', 'excreted', 'transitory-location'],
     'UNANCHORED-MOTION': ['in-motion', 'transitory-location'],
     'MEANS': ['has-means', 'means'],
-    'MESSAGE': ['topic', 'content'],
+    'MESSAGE': ['topic', 'content', 'target-content'],
     'PART-WHOLE': ['initial-whole', 'part', 'whole', 'target-whole'],
     'POSSESSION': ['initial-possessor', 'possessed', 'possessor', 'target-possessor'],
     'QUANTITY': ['has-quantity', 'quantity'],
