@@ -73,6 +73,7 @@
             \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
             \boro\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
+            \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
             \boro\fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
             \fr{WRAPPING-WEARING} & & \rl{worn} & \rl{wearer} & & & \ref{sec:WRAPPING-WEARING} \\
             \fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
@@ -696,11 +697,18 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \subsection{\fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
-\rl{explanation} explains \rl{explained}, but is not a cause, but, e.g., a purpose.
+\rl{explanation} explains \rl{explained}, but is not a cause.
 
 \ex.\dep{I_x-sender am *stressing#MESSAGE* this_topic because it is important_m-explanation}
 
+\subsection{\fr{PURPOSE}}
+\label{sec:PURPOSE}
+
+Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
+
 \ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possession}
+
+\ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
 
 \subsection{\fr{LOCATION}}
 \label{sec:LOCATION}
@@ -1172,13 +1180,17 @@ unrealized (implicit) in the annotated instance. For example, while
 prepositional argument denoting a \rl{topic}, so \fr{MESSAGE} is a better
 choice.
 
-\ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
+\ex.
+\a.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
+\b.\dep{my_m-sender first_m-rank *drawing#MESSAGE* of a snake_topic}
 
-\ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE* of a snake_topic}
+\ex.
+\a.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant}
+\b.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant clean_target-scene the dishes}
 
-\ex.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant}
-
-\ex.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant clean_target-scene the dishes}
+\ex.
+\a.\dep{Kim_x-causer *worked#EXPERIENCE*}
+\b.\dep{Kim_x-causer *worked#EXPERIENCE* on the drawing_experiencer}
 
 This logic extends to \emph{shadow arguments} and \emph{default arguments}
 \citep{pustejovsky-1995-generative,di-fabio-etal-2019-verbatlas}, i.e., arguments
