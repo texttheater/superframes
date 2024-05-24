@@ -99,7 +99,7 @@ class Frame:
             if arg.label == label:
                 return arg
 
-    def check(self, sentid, lineno) -> bool:
+    def check(self, sentid, lineno, frames) -> bool:
         if not self.label:
             return False
         if not labels.check_frame_label(self.label):
@@ -112,6 +112,18 @@ class Frame:
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
                         sentid, i, self.label, arg.label)
                 ok = False
+            if arg.label == 'm-depictive':
+                arg_heads = set(a.head for a in self.args)
+                backlink_found = False
+                for frame in frames:
+                    if frame.head == arg.head:
+                        for arg2 in frame.args:
+                            if arg2.head in arg_heads:
+                                backlink_found = True
+                if not backlink_found:
+                    logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
+                            sentid, i)
+                    ok = False
         return ok
 
     @staticmethod
@@ -216,7 +228,7 @@ class Sentence:
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            if frame.check(self.syntax[0].id, lineno):
+            if frame.check(self.syntax[0].id, lineno, self.frames):
                 annotated_count += 1
         return frame_count, annotated_count
 
