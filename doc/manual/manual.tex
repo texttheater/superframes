@@ -246,11 +246,11 @@ non-core role.
 
 Two other common non-core arguments are the senders and recipients (experiencers) of messages.
 
-\ex.\dep{Kim_x-sender *talked#MESSAGE* to Sandy_x-experiencer about Bali_topic}
+\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* to Sandy_x-experiencer about Bali_topic}
 
 Other non-core arguments are usually rather predicate-specific.
 
-\ex.\dep{Kim_x-experiencer *searched#MESSAGE* the woods_x-location for Sandy_topic}
+\ex.\dep{Kim_x-experiencer *searched#MESSAGE-INIT* the woods_x-location for Sandy_topic}
 
 \ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* Sandy_target-possessor the house_possession for a million dollars_x-asset}
 
@@ -324,7 +324,7 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{Kim_has-location seemed to *fly#UNANCHORED-MOTION*} (raising)
 
-\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE*} (depictive)
+\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE-INIT*} (depictive)
 
 \ex.\dep{You're talking me_has-state *silly#STATE*} (resultative)
 
@@ -336,7 +336,7 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
 
-\ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE*} (parasitic gap)
+\ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
 
 \subsection{Figurativity, Idiomaticity, and Uncertainty}
 
@@ -348,7 +348,7 @@ roles.
 
 \ex.\dep{A hush_in-motion>>scene *passed#UNANCHORED-MOTION>>SCENE* over the group_transitory-location>>participant}
 
-\ex.\dep{Kim_x-sender>>participant *refused#MESSAGE>>SCENE* to eat_topic>>scene}
+\ex.\dep{Kim_x-sender>>participant *refused#MESSAGE-INIT>>SCENE* to eat_topic>>scene}
 
 This mechanism can be used to indicate that a modification may not be fully compositional:
 
@@ -372,15 +372,15 @@ acts as a light verb. If there is a \rl{participant}, it is assigned a role by
 show the annotations for both the matrix predicate and the embedded predicate
 in one graph.
 
-\ex.\dep{The **concert#MESSAGE**_target-scene *began#SCENE-INIT*}
+\ex.\dep{The **concert#MESSAGE-INIT**_target-scene *began#SCENE-INIT*}
 
-\ex.\dep{The **concert#MESSAGE**_initial-scene *continued#SCENE-CONTINUATION*}
+\ex.\dep{The **concert#MESSAGE-INIT**_initial-scene *continued#SCENE-CONTINUATION*}
 
-\ex.\dep{The **concert#MESSAGE**_initial-scene *finished#SCENE-DEINIT*}
+\ex.\dep{The **concert#MESSAGE-INIT**_initial-scene *finished#SCENE-DEINIT*}
 
-\ex.\dep{The **shouting#MESSAGE**_initial-scene *intensified#SCENE-CONTINUATION*}
+\ex.\dep{The **shouting#MESSAGE-INIT**_initial-scene *intensified#SCENE-CONTINUATION*}
 
-\ex.\dep{The **shouting#MESSAGE**_initial-scene *faded#SCENE-DEINIT*}
+\ex.\dep{The **shouting#MESSAGE-INIT**_initial-scene *faded#SCENE-DEINIT*}
 
 \ex.\dep{A **coup#EXPERIENCE**_target-scene was *attempted#SCENE-INIT*}
 
@@ -487,7 +487,7 @@ a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 
 \ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
 
-\ex.\dep{I_x-experiencer *pondered#MESSAGE* deeply_m-quality over the adventures_topic of the jungle}
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
 
 \ex.\dep{a skilled_m-quality *surgeon#CLASS*}
 
@@ -534,9 +534,9 @@ perception, addressees in communication. Also use for beneficiaries, and for
 
 \ex.\dep{I_x-experiencer *saw#MESSAGE* a magnificent picture_topic}
 
-\ex.\dep{I_x-experiencer *pondered#MESSAGE* deeply_m-quality}
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality}
 
-\ex.\dep{Kim_x-sender *talked#MESSAGE* to Sandy_x-experiencer}
+\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* to Sandy_x-experiencer}
 
 \ex.\dep{Kim_participant *did#SCENE* something_scene nice for Sandy_m-experiencer}
 
@@ -625,7 +625,7 @@ Special case of \fr{ACCOMPANIMENT} where \rl{depictive} (aka \rl{accompanier})
 assigns a participant of \rl{has-depictive} (aka \rl{accompanied}) a role (cf.
 Sec.~\ref{sec:control}).
 
-\ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE**_m-depictive}
+\ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE-INIT**_m-depictive}
 
 \subsection{\fr{ATTRIBUTE}}
 \label{sec:ATTRIBUTE}
@@ -650,9 +650,9 @@ In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wage
 
 \ex.\dep{Kim_target-possessor *bought#POSSESSION-CHANGE* the house_possession for a million dollars_x-asset}
 
-\ex.\dep{Kim_x-sender *offered#MESSAGE* Sandy_x-experiencer a million dollars_content for the house_x-asset}
+\ex.\dep{Kim_x-sender *offered#MESSAGE-INIT* Sandy_x-experiencer a million dollars_target-content for the house_x-asset}
 
-\ex.\dep{I_x-sender *bet#MESSAGE* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_content}
+\ex.\dep{I_x-sender *bet#MESSAGE-INIT* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_target-content}
 
 \subsection{\fr{COMPARISON}}
 \label{sec:COMPARISON}
@@ -665,7 +665,7 @@ Examples of comparing scenes:
 
 \ex.\dep{Sandy_has-quality is *short#QUALITY* whereas Kim is tall_m-comparison}
 
-\ex.\dep{They_x-sender *demonize#MESSAGE* the left_topic while doing_m-reference nothing about the right}
+\ex.\dep{They_x-sender *demonize#MESSAGE-INIT* the left_topic while doing_m-reference nothing about the right}
 
 Examples of comparing non-scene entities:
 
@@ -701,7 +701,7 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \rl{explanation} explains \rl{explained}, but is not a cause.
 
-\ex.\dep{I_x-sender am *stressing#MESSAGE* this_topic because it is important_m-explanation}
+\ex.\dep{I_x-sender am *stressing#MESSAGE-INIT* this_topic because it is important_m-explanation}
 
 \subsection{\fr{PURPOSE}}
 \label{sec:PURPOSE}
@@ -819,62 +819,64 @@ Special case of \rl{LOCATION-CHANGE} where no initial or target location is indi
 \subsection{\fr{MESSAGE}}
 \label{sec:MESSAGE}
 
-A message about \rl{topic} with content \rl{content} is expressed or received
-or just exists in recorded form. When \rl{content} and \rl{topic} are both realized, \rl{content} must assign a role to \rl{topic}.
+A message about \rl{topic} with content \rl{content} is received or exists in
+recorded form. When a message is created through expression or observation, use
+\fr{MESSAGE-INIT}. When \rl{content} and \rl{topic} are both realized,
+\rl{content} must assign a role to \rl{topic}.
 
 \subsubsection{Expression}
 
-\ex.\dep{Kim_x-sender *yelped#MESSAGE*}
+\ex.\dep{Kim_x-sender *yelped#MESSAGE-INIT*}
 
-\ex.\dep{Kim_x-sender *said#MESSAGE* : it 's fine_content}
+\ex.\dep{Kim_x-sender *said#MESSAGE-INIT* : it 's fine_target-content}
 
-\ex.\dep{Kim_x-sender *said#MESSAGE* it was fine_content}
+\ex.\dep{Kim_x-sender *said#MESSAGE-INIT* it was fine_target-content}
 
-\ex.\dep{Kim_x-sender *called#MESSAGE* Sandy_topic__x-sender a **liar#MESSAGE**_content}
+\ex.\dep{Kim_x-sender *called#MESSAGE-INIT* Sandy_topic__x-sender a **liar#MESSAGE**_target-content}
 
-\ex.\dep{Kim_x-sender *told#MESSAGE* Sandy_x-experiencer a secret_content}
+\ex.\dep{Kim_x-sender *told#MESSAGE-INIT* Sandy_x-experiencer a secret_target-content}
 
-\ex.\dep{Kim_x-sender *talked#MESSAGE* about Sandy_topic}
+\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* about Sandy_topic}
 
-\ex.\dep{Kim_x-sender *talked#MESSAGE* **shit#MESSAGE**_content about Sandy_topic__topic}
+\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* **shit#MESSAGE**_target-content about Sandy_topic__topic}
 
-\ex.\dep{Kim_x-sender and Sandy_x-sender *conversed#MESSAGE*}
+\ex.\dep{Kim_x-sender and Sandy_x-sender *conversed#MESSAGE-INIT*}
 
-\ex.\dep{Kim_x-sender *conversed#MESSAGE* with Sandy_x-accompanier}
+\ex.\dep{Kim_x-sender *conversed#MESSAGE-INIT* with Sandy_x-accompanier}
 
 \subsubsection{Gesture}
 
-\ex.\dep{Kim_x-sender *curtseyed#MESSAGE* to the Queen_x-experiencer}
+\ex.\dep{Kim_x-sender *curtseyed#MESSAGE-INIT* to the Queen_x-experiencer}
 
-\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE* their head_in-motion>>x-noncomp no_x-sent>>content}
+\ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE-INIT* their head_in-motion>>x-noncomp no_x-sent>>target-content}
 
 \subsubsection{Performance}
 
 Performance of a work of art is framed as \fr{MESSAGE} where the work of art is the \rl{topic}.
 
-\ex.\dep{Kim_x-sender *played#MESSAGE* a little tune_topic on their tuba_x-means}
+\ex.\dep{Kim_x-sender *played#MESSAGE-INIT* a little tune_topic on their tuba_x-means}
 
-\ex.\dep{They_x-sender *performed#MESSAGE* the play_topic}
+\ex.\dep{They_x-sender *performed#MESSAGE-INIT* the play_topic}
 
-\ex.\dep{Kim_x-sender *sang#MESSAGE* a song_topic}
+\ex.\dep{Kim_x-sender *sang#MESSAGE-INIT* a song_topic}
 
 \subsubsection{Depiction}
 
-\ex.\dep{Kim_x-sender *drew#MESSAGE* a heron_topic}
+\ex.\dep{Kim_x-sender *drew#MESSAGE-INIT* a heron_topic}
 
 \ex.\dep{a *picture#MESSAGE* of the heron_topic}
 
 \subsubsection{Recording}
 
-\ex.\dep{Kim_x-sender *drew#MESSAGE* a picture_x-created}
+\ex.\dep{Kim_x-sender *drew#MESSAGE-INIT* a picture_target-content}
 
-\ex.\dep{Kim_x-sender *wrote#MESSAGE* Sandy_x-experiencer a letter_content}
+\ex.\dep{Kim_x-sender *wrote#MESSAGE-INIT* Sandy_x-experiencer a letter_target-content}
 
-\ex.\dep{Kim_x-sender *wrote#MESSAGE* the message_content__has-quality onto a piece_x-target-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
+\ex.\dep{Kim_x-sender *wrote#MESSAGE-INIT* the message_target-content__has-quality onto a piece_x-target-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
 
-\ex.\dep{The concert_topic was *recorded#MESSAGE* on tape_x-target-location}
+\ex.\dep{The concert_topic was *recorded#MESSAGE-INIT* on tape_x-target-location}
 
-\ex.\dep{The band_x-sender *recorded#MESSAGE* an album_x-created}
+\ex.\dep{The band_x-sender *recorded#MESSAGE-INIT* an album_target-content}
 
 \subsubsection{Perception}
 
@@ -898,16 +900,19 @@ We also frame perception as \fr{MESSAGE}, including mental and volitional percep
 
 \ex.\dep{Kim_topic__x-experiencer *seems#MESSAGE* **happy#MESSAGE**_content to Sandy_x-experiencer}
 
-\ex.\dep{The Thought Police_x-experiencer *observed#MESSAGE* Winston_topic}
+\subsubsection{Beginning and Ending Perception}
 
-\ex.\dep{Kim_x-experiencer *studies#MESSAGE* linguistics_topic}
+Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-INIT-NEG}) for
+predicates denoting the coming about (ending, failing to come about) of
+knowledge and awareness.
 
-\ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
+\ex.\dep{The Thought Police_x-experiencer *observed#MESSAGE-INIT* Winston_topic}
 
-\ex.\dep{The jury_x-experiencer *found#MESSAGE* Kim_topic__participant___is-active **guilty#SCENE**_content of the ***crime#ACTIVITY***__scene}
+%\ex.\dep{Kim_x-experiencer *studies#MESSAGE-INIT* linguistics_topic}
 
-Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-INIT-NEG}) for the coming
-about (ending, failing to come about) of knowledge and awareness.
+%\ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
+
+%\ex.\dep{The jury_x-experiencer *found#MESSAGE-INIT* Kim_topic__participant___is-active **guilty#SCENE**_target-content of the ***crime#ACTIVITY***__scene}
 
 \ex.\dep{Kim_x-experiencer *noticed#MESSAGE-INIT* the bird_topic}
 
@@ -972,7 +977,7 @@ about (ending, failing to come about) of knowledge and awareness.
 
 \ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
 
-\ex.\dep{We_x-sender *discourage#MESSAGE* this_topic emphatically_m-quantity}
+\ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
 
 \subsection{\fr{SENDING}}
 \label{sec:SENDING}
@@ -1031,7 +1036,7 @@ purpose:
 Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
 \rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
 
-\ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE**_reaction}
+\ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE-INIT**_reaction}
 
 \subsection{\fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
@@ -1137,7 +1142,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
-\ex.\dep{Kim_x-sender *says#MESSAGE* hello_content whenever I meet_m-time them}
+\ex.\dep{Kim_x-sender *says#MESSAGE-INIT* hello_content whenever I meet_m-time them}
 
 \ex.\dep{*Once#TIME* when I was six years old}
 
@@ -1152,7 +1157,7 @@ Used to mark syntactic arguments that are thought of as part of the predicate, a
 
 \ex.\dep{It_x-noncomp is *raining#STATE*}
 
-\ex.\dep{I_x-sender *address#MESSAGE* myself_x-noncomp to you_x-experiencer}
+\ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-noncomp to you_x-experiencer}
 
 \ex.\dep{There_x-noncomp *was#SCENE* a famine_scene}
 
