@@ -12,7 +12,7 @@ FRAMES = {
     'QUALITY': ['has-quality', 'quality'],
     'STATE': ['initial-state', 'has-state', 'state', 'target-state'],
     'DESTRUCTION': ['destroyed'],
-    'EXPERIENCE': ['experiencer', 'experienced'],
+    'EXPERIENCE': ['experiencer', 'experience'],
     'ACTIVITY': ['is-active', 'activity'],
     'FOCUS': ['has-focus', 'focus'],
     'MODE': ['has-mode', 'mode'],
