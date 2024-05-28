@@ -282,10 +282,10 @@
 [QUANTITY] six (15)
 
 [EXPERIENCE-NECESSITY] need (19) # EXPERIENCE not SCENE because "months" is not a predicate that assigns "they" a role, instead they experience the months in some unspecified way
-[experienced] that (17)
+[experience] that (17)
 [experiencer] they (18)
 [x-purpose] for digestion (21)
-[experienced] months (16)
+[experience] months (16)
 
 [IDENTIFICATION] that (17)
 
@@ -407,7 +407,7 @@
 18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	17	obj	_	TokenRange=742:746
 19	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=747:748
 
-[MESSAGE-INIT] showed (2) # initia experience in gronw-ups, hence INIT. TODO: explain in manual
+[MESSAGE] showed (2) # initiate experience in grown-ups, hence INIT
 [x-sender] I (1)
 [topic] my masterpiece (4)
 [x-experiencer] to the grown - ups (9)
@@ -745,7 +745,7 @@
 [IDENTIFICATION] this (7)
 
 [MESSAGE-INIT] advise (21)
-[x-identified] The grown - ups ' response (14) # add to manual: copula construction as extended argument structure (hence x)
+[x-identified] The grown - ups ' response (14)
 [m-time] this time (17)
 [x-experiencer] me (22)
 [topic] to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar (24)
@@ -764,8 +764,8 @@
 
 [LOCATION-CHANGE >> EXPERIENCE-DEINIT] lay (24)
 [target-location >> m-noncomp] aside (25)
-[has-location >> experienced] my drawings of boa constrictors (27)
-[] whether from the inside or the outside (35)
+[has-location >> experience] my drawings of boa constrictors (27)
+[m-condition] whether from the inside or the outside (35) # This illustrates that depictives need not be accompaniers! Perhaps we should eliminate the DEPICTIVE special case and treat depictivity as orthogonal.
 [x-causer] me (22)
 
 [LOCATION >> NONCOMP] aside (25)
@@ -783,9 +783,11 @@
 
 [NONCOMP] boa (29)
 
-[] inside (35)
+[LOCATION] inside (35)
+[has-location] boa constrictors (30)
 
-[] outside (38)
+[LOCATION] outside (38)
+[has-location] boa constrictors (30)
 
 [SCENE-INIT] devote (41)
 [participant] myself (42)
@@ -846,7 +848,7 @@
 [m-time] at the age of six (7)
 [x-causer] I (11)
 [m-noncomp] up (13)
-[experienced] what might have been a magnificent career as a painter (20)
+[experience] what might have been a magnificent career as a painter (20)
 
 [STATE] age (7)
 [x-quantity] of six (9)
@@ -1005,7 +1007,7 @@
 [m-explanation] So (1)
 [m-time] then (2)
 [x-causer] I (3)
-[experienced] another profession (6)
+[experience] another profession (6)
 
 [EXPLANATION] So (1)
 
@@ -1577,7 +1579,7 @@
 8	level	level	NOUN	NN	Number=Sing	5	obl	_	TokenRange=2784:2789
 9	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2790:2791
 
-[SCENE-INIT] bring (3) # add to manual: bring myself to X, kann mit verschiedenen Superframes kombiniert werden
+[SCENE-INIT] bring (3)
 [x-causer] I (1)
 [participant] myself (4)
 [scene] down to his level (5)
@@ -1721,10 +1723,10 @@
 33	ago	ago	ADV	RB	_	19	advmod	_	TokenRange=3108:3111
 34	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=3112:3113
 
-[EXPERIENCE] lived (3) # cognate object: SCENE or EXPERIENCE?
+[EXPERIENCE] lived (3)
 [m-explanation] So (1)
 [experiencer] I (2)
-[experienced] my life (5)
+[experience] my life (5)
 [m-depictive] alone (6)
 [m-accompanier] without anyone that I could really talk to (9)
 [m-time] until I had an accident with my plane in the Desert of Sahara , six years ago (19)
@@ -1849,9 +1851,9 @@
 
 [IDENTIFICATION] me (6)
 
-[CLASS] mechanic (9) # SOCIAL-RELATION? In "my mechanic", "my" would be m-has-social-relation. But there is no "my" here.
+[CLASS] mechanic (9)
 
-[CLASS] passengers (12) # SOCIAL-RELATION? In "my passengers", "my" would be x-has-social-relation. But the "my" is only anaphorically understood, so we leave that out.
+[SOCIAL-RELATION] passengers (12)
 
 [IDENTIFICATION] I (14)
 
@@ -1958,11 +1960,11 @@
 14	,	,	PUNCT	,	_	10	punct	_	TokenRange=3424:3425
 15	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	TokenRange=3426:3427
 16	thousand	thousand	NUM	CD	NumForm=Word|NumType=Card	17	nummod	_	TokenRange=3428:3436
-17	miles	mile	NOUN	NNS	Number=Plur	10	obl:npmod	_	TokenRange=3437:3442
+17	miles	mile	NOUN	NNS	Number=Plur	21	nmod:npmod	_	TokenRange=3437:3442
 18	from	from	ADP	IN	_	21	case	_	TokenRange=3443:3447
 19	any	any	DET	DT	_	21	det	_	TokenRange=3448:3451
 20	human	human	ADJ	JJ	Degree=Pos	21	amod	_	TokenRange=3452:3457
-21	habitation	habitation	NOUN	NN	Number=Sing	17	nmod	_	TokenRange=3458:3468
+21	habitation	habitation	NOUN	NN	Number=Sing	10	advmod	_	TokenRange=3458:3468
 22	.	.	PUNCT	.	_	8	punct	_	SpacesAfter=\r\n|TokenRange=3469:3470
 
 [SCENE-INIT] went (8)
@@ -1984,19 +1986,20 @@
 [m-location] on the sand (13)
 [m-location] a thousand miles from any human habitation (17)
 [has-state] I (7)
+[m-location] a thousand miles from any human habitation (21)
 
 [CLASS] sand (13)
 
-[] miles (17)
-[] a thousand (16)
-[] from any human habitation (21)
+[QUANTITY] miles (17)
+[m-quantity] a thousand (16)
 
-[] thousand (16)
+[QUANTITY] thousand (16)
 
-[] habitation (21)
-[] human (20)
+[LOCATION] habitation (21)
+[has-location] human (20)
+[m-quantity] a thousand miles (17) # quantity of from-LOCATION, not of habitation-LOCATION
 
-[] human (20)
+[CLASS] human (20)
 
 # sent_id = 44
 # text = I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
@@ -2022,7 +2025,7 @@
 [STATE] isolated (4)
 [has-state] I (1)
 [m-quantity] more (3)
-[x-reference] than a shipwrecked sailor on a raft in the middle of the ocean (8) # comparison construction
+[x-reference] than a shipwrecked sailor on a raft in the middle of the ocean (8)
 
 [IDENTIFICATION] I (1)
 
@@ -2507,15 +2510,15 @@
 
 [IDENTIFICATION] anything (25)
 
-[CLASS] boas (28) # not sure how to do this yet
-[] from the outside (31)
+[CLASS] boas (28)
+[m-location] from the outside (31) # This could be analyzed as an x-location argument of "draw" (then we'd have argument cluster coordination), but one can also argue that it's just a special kind of locative modifier.
 
-[] outside (31)
+[LOCATION] outside (31)
 
-[] boas (33)
-[] from the inside (36)
+[CLASS] boas (33)
+[m-location] from the inside (36)
 
-[] inside (36)
+[LOCATION] inside (36)
 
 # sent_id = 55
 # text = Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
@@ -2605,16 +2608,17 @@
 
 [CLASS] desert (8)
 
-[] region (15)
-[] a thousand miles (11) # quantity of from-LOCATION, not of region-CLASS
-[] inhabited (14)
+[CLASS] region (15)
+[m-quantity] a thousand miles (11) # quantity of from-LOCATION, not of region-CLASS
+[m-scene] inhabited (14)
 
-[] miles (11)
-[] a thousand (10)
+[QUANTITY] miles (11)
+[m-quantity] a thousand (10)
 
-[] thousand (10)
+[QUANTITY] thousand (10)
 
-[] inhabited (14)
+[LOCATION] inhabited (14)
+[location] region (15)
 
 # sent_id = 57
 # text = And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
@@ -2702,19 +2706,19 @@
 17	,	,	PUNCT	,	_	9	punct	_	TokenRange=4728:4729
 18	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	TokenRange=4730:4731
 19	thousand	thousand	NUM	CD	NumForm=Word|NumType=Card	20	nummod	_	TokenRange=4732:4740
-20	miles	mile	NOUN	NNS	Number=Plur	13	appos	_	TokenRange=4741:4746
+20	miles	mile	NOUN	NNS	Number=Plur	24	nmod	_	TokenRange=4741:4746
 21	from	from	ADP	IN	_	24	case	_	TokenRange=4747:4751
 22	any	any	DET	DT	_	24	det	_	TokenRange=4752:4755
 23	human	human	ADJ	JJ	Degree=Pos	24	amod	_	TokenRange=4756:4761
-24	habitation	habitation	NOUN	NN	Number=Sing	20	nmod	_	TokenRange=4762:4772
+24	habitation	habitation	NOUN	NN	Number=Sing	10	advmod	_	TokenRange=4762:4772
 25	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=4773:4774
 
 [MESSAGE-INIT] gave (4)
 [x-sender] Nothing about him (1)
 [content] any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation (6)
 
-[IDENTIFICATION] Nothing (1) # add to manual as example
-[m-whole] about him (3) # ?
+[CLASS-NEG] Nothing (1)
+[m-whole] about him (3)
 
 [IDENTIFICATION] him (3)
 
@@ -2727,6 +2731,7 @@
 [STATE] lost (10)
 [x-location] in the middle of the desert a thousand miles from any human habitation (13)
 [has-state] child (9)
+[m-location] a thousand miles from any human habitation (24)
 
 [PART-WHOLE] middle (13)
 [whole] of the desert (16)
@@ -2734,16 +2739,16 @@
 
 [CLASS] desert (16)
 
-[] miles (20)
-[] a thousand (19)
-[] from any human habitation (24)
+[QUANTITY] miles (20)
+[m-quantity] a thousand (19)
 
-[] thousand (19)
+[QUANTITY] thousand (19)
 
-[] habitation (24)
-[] human (23)
+[LOCATION] habitation (24)
+[has-location] human (23)
+[m-quantity] a thousand miles (20)
 
-[] human (23)
+[CLASS] human (23)
 
 # sent_id = 59
 # text = When at last I was able to speak , I said to him : " But -- what are you doing here ? "
@@ -2797,9 +2802,9 @@
 
 [IDENTIFICATION] him (13)
 
-[CAUSATION] doing (21) # ? - activity abschaffen?
-[result] what (18)
-[causer] you (20)
+[ACTIVITY] doing (21)
+[activity] what (18)
+[is-active] you (20)
 [m-location] here (22)
 
 [IDENTIFICATION] what (18)
@@ -2967,7 +2972,7 @@
 
 [QUALITY] Absurd (1)
 [m-reference] as it might seem to me (5)
-[m-scene] a thousand miles from any human habitation and in danger of death (15)
+[m-location] a thousand miles from any human habitation and in danger of death (15)
 
 [MESSAGE] seem (5)
 [topic] it (3)
@@ -2978,17 +2983,16 @@
 
 [IDENTIFICATION] me (7)
 
-[] habitation (15)
-[] a thousand miles (11)
-[] human (14)
-[] Absurd (1)
+[LOCATION] habitation (15)
+[m-quantity] a thousand miles (11) # quantity of from-LOCATION, not of habitation-LOCATION
+[has-location] human (14)
 
-[] miles (11)
-[] a thousand (10)
+[QUANTITY] miles (11)
+[m-quantity] a thousand (10)
 
-[] thousand (10)
+[QUANTITY] thousand (10)
 
-[] human (14)
+[CLASS] human (14)
 
 [SCENE-POSSIBILITY] danger (18)
 [scene] of death (20)
@@ -3009,7 +3013,7 @@
 
 [CLASS] pen (36)
 [m-possessor] my (33)
-[m-noncomp] fountain (34) # add as example
+[m-noncomp] fountain (34)
 
 [IDENTIFICATION] my (33)
 
@@ -3209,7 +3213,7 @@
 15	often	often	ADV	RB	_	13	advmod	_	TokenRange=5590:5595
 16	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=5596:5597
 
-[MESSAGE-INIT] drew (3) # add to manual
+[MESSAGE-INIT] drew (3)
 [m-explanation] So (1)
 [x-sender] I (2)
 [m-experiencer] for him (5)
@@ -3433,7 +3437,7 @@
 
 [EXPERIENCE-NECESSITY] need (3)
 [experiencer] I (2)
-[experienced] What (1)
+[experience] What (1)
 
 [IDENTIFICATION] I (2)
 
@@ -3858,7 +3862,7 @@
 6	drawing	drawing	NOUN	NN	Number=Sing	3	obj	_	TokenRange=6559:6566
 7	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=6567:6568
 
-[TRANSFORMATION-CREATION] tossed (3) # manual: look up unfamiliar words, use definition to decide what superframe is most appropriate if roles don't determine it
+[TRANSFORMATION-CREATION] tossed (3)
 [m-explanation] So (1)
 [x-causer] I (2)
 [m-noncomp] off (4)
@@ -3976,7 +3980,7 @@
 
 [IDENTIFICATION] you (3)
 
-[CLASS] for (5) # trace?
+[CLASS] for (5) # stranded preposition gets superframe of its argument (sheep)
 
 [IDENTIFICATION] I (10)
 
@@ -4088,7 +4092,7 @@
 [ingester] this sheep (6)
 
 [QUANTITY] deal (13)
-[m-noncomp] great (12) # check other instances
+[m-noncomp] great (12)
 [has-quantity] of grass (15)
 
 [NONCOMP] great (12)
@@ -4153,7 +4157,7 @@
 [CLASS] sheep (6)
 [has-class] It (1) # cleft - syntax correct?
 [m-quality] very small (5)
-[m-scene] that I have given you (10)
+[x-scene] that I have given you (10)
 
 [IDENTIFICATION] It (1)
 
@@ -4162,9 +4166,9 @@
 
 [QUANTITY] very (4)
 
-[POSSESSION-INIT] given (10) # rather than CHANGE? check other instances, manual.
+[POSSESSION-CHANGE] given (10)
 [possessed] that (7)
-[x-causer] I (8)
+[initial-possessor] I (8)
 [target-possessor] you (11)
 [possessed] sheep (6)
 
