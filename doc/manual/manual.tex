@@ -403,11 +403,14 @@ in one graph.
 \ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
-from an argument to a predicate, as, e.g., with relative clauses or evaluatives.
+from an argument to a predicate, as, e.g., with relative clauses or sentence
+adverbs.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
+
+\ex.\dep{I_x-causer *devoted#SCENE-INIT*__follows myself_participant **instead#SEQUENCE**_m-scene to geography_target-scene}
 
 \subsection{\fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -1263,6 +1266,14 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 
 \ex.\a.\label{ex:chase1}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* Sandy_in-motion around the block_transitory-location}
     \b.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_in-motion}
+
+\subsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
+
+One special case of this is when a predicate occurs as part of an opaque fixed
+expression, like \emph{hand} in \emph{close at hand}. In this case, \emph{hand}
+is not annotated with \fr{CLASS}, but with \fr{NONCOMP}.
+
+\ex.\dep{I have seen them_has-location intimately , *close#LOCATION* at **hand#NONCOMP**_m-noncomp}
 
 \subsection{Look Up Unfamiliar Words in a Dictionary}
 
