@@ -352,7 +352,8 @@ roles.
 
 \ex.\dep{Kim_x-sender>>participant *refused#MESSAGE-INIT>>SCENE* to eat_topic>>scene}
 
-This mechanism can be used to indicate that a modification may not be fully compositional:
+This mechanism can be used to indicate that an expression has become fixed and
+not fully compositional:
 
 \ex.\dep{primeval_m-time>>m-noncomp *forest#CLASS*}
 
@@ -428,11 +429,6 @@ predicates denoting naming relationships.
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
 
-Predicates that evoke other frames can still use \rl{x-identified} to mark the
-copula subject as identified:
-
-\ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
-
 In English, the preposition \emph{of} has an identifying sense, which can also
 be metaphorical:
 
@@ -466,7 +462,13 @@ Indefinite pronouns also evoke \fr{CLASS}.
 
 \ex.\dep{She saw *one#CLASS*}
 
-\ex.\dep{*Nothing#IDENTIFICATION-NEG* about him_m-whole suggested a child}
+\ex.\dep{*Nothing#CLASS-NEG* about him_m-whole suggested a child}
+
+\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
+
+\ex.\dep{*Something#CLASS* is broken}
+
+\ex.\dep{Where I live *everything#CLASS* is small}
 
 \subsection{\fr{EXISTENCE}}
 \label{sec:EXISTENCE}
@@ -540,6 +542,10 @@ Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes
 \ex.\dep{Sam_destroyed 's *death#DESTRUCTION*}
 
 \ex.\dep{Sam_x-causer 's *destruction#DESTRUCTION* of the city_destroyed}
+
+When something is broken but not completely destroyed, use \fr{STATE}.
+
+\ex.\dep{Something_has-state was *broken#STATE* in my enginge_m-location}
 
 \subsection{\fr{EXPERIENCE}}
 \label{sec:EXPERIENCE}
@@ -1362,6 +1368,16 @@ they do have arguments, in which case give them their antecendent's superframe:
 \ex.\dep{The picture was *that#MESSAGE* of the boa_topic}
 
 \ex.\dep{I drew a picture of a dog , *one#MESSAGE* of a cat_topic , and **another#MESSAGE** of a sheep__topic}
+
+\subsection{Nominal Copula Constructions}
+
+In nominal copula constructions, the copula subject is interpreted as a
+non-core argument -- typically \rl{x-has-class} if the predicate is indefinite,
+and \rl{x-identified} if it is definite.
+
+\ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
+
+\ex.\dep{My drawing_x-has-class was not_m-mode a *picture#MESSAGE* of a hat_topic}
 
 \section{TODO}
 
