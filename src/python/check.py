@@ -41,8 +41,8 @@ if __name__ == '__main__':
     predicate_count = 0
     annotated_count = 0
     for sentence in sentences:
-        p, a = sentence.check()
-        if a > 0 and a < p:
+        p, a, w = sentence.check()
+        if a > 0 and a < p and w == 0:
             logging.warning('sent %s line %s annotation of sentence not complete',
                     sentence.syntax[0].id, sentence.lineno)
         predicate_count += p

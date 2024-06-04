@@ -99,19 +99,21 @@ class Frame:
             if arg.label == label:
                 return arg
 
-    def check(self, sentid, lineno, frames) -> bool:
+    def check(self, sentid, lineno, frames) -> [bool, int]:
         if not self.label:
-            return False
+            return False, 0
         if not labels.check_frame_label(self.label):
             logging.warning('sent %s line %s unknown frame label: %s',
                     sentid, lineno, self.label)
-            return False
+            return False, 1
         ok = True
+        warnings = 0
         for i, arg in enumerate(self.args, start=lineno + 1):
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
                         sentid, i, self.label, arg.label)
                 ok = False
+                warnings += 1
             if arg.label == 'm-depictive':
                 arg_heads = set(a.head for a in self.args)
                 backlink_found = False
@@ -124,7 +126,8 @@ class Frame:
                     logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
                             sentid, i)
                     ok = False
-        return ok
+                    warnings += 1
+        return ok, warnings
 
     @staticmethod
     def from_block(block: blocks.Block) -> 'Frame':
@@ -222,15 +225,18 @@ class Sentence:
     def check(self) -> tuple[int, int]:
         frame_count = 0
         annotated_count = 0
+        warnings = 0
         for lineno, frame in zip(self.frame_linenos, self.frames):
             if not isinstance(frame, Frame):
                 logging.warning('sent %s line %s cannot parse frame %s',
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            if frame.check(self.syntax[0].id, lineno, self.frames):
+            ok, w = frame.check(self.syntax[0].id, lineno, self.frames)
+            if ok:
                 annotated_count += 1
-        return frame_count, annotated_count
+            warnings += w
+        return frame_count, annotated_count, warnings
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
