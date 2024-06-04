@@ -47,10 +47,10 @@ FRAMES = {
     'TIME': ['has-time', 'time'],
     'NONCOMP': ['has-noncomp', 'noncomp'],
 }
-FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(-(' +
-        '|'.join(ASPECTS) + '))?(-(' + '|'.join(MODES) + '))?$')
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
 MODES = ('POSSIBILITY', 'NECESSITY')
+FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(?:-(' +
+        '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?$')
 
 
 def check_frame_label(frame):
