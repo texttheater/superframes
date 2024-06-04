@@ -166,11 +166,11 @@ sort such predicates into a few coarse aspectual classes. For example,
 initiation (\frs{-INIT}) means a state is begun or worked towards, deinitiation
 (\frs{-DEINIT}) means a state is ended, completed, or its end is worked
 towards, change (\frs{-CHANGE}) combines both, where one state is replaced by
-another, and continuation (\frs{-CONTINUATION}) means a state persists or is
-even intensified.  Accordingly, roles with prefix \rl{target-} mark
-participants at or beyond the end of the event, \rl{initial-} marks
-participants at the beginning of the event, and \rl{transitory-} marks
-participants at some point during the event.
+another, continuation (\frs{-CONTINUATION}) means a state persists or is even
+intensified, and (\frs{-PREVENTION}) means it fails to come about.
+Accordingly, roles with prefix \rl{target-} mark participants at or beyond the
+end of the event, \rl{initial-} marks participants at the beginning of the
+event, and \rl{transitory-} marks participants at some point during the event.
 
 \ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possession}
 
@@ -192,6 +192,11 @@ participants at some point during the event.
 
 \ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
+\ex.\dep{Kim_x-causer *saved#EXPERIENCE-PREVENTION* Sandy_experiencer from the dragon_target-experience}
+
+In the last example, \emph{dragon} is to be understood metonymically as an
+experience in which Sandy would have been harmed by the dragon.
+
 The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an
 aspectual or modal meaning. Thus, its aspectual variants are especially common.
 
@@ -209,27 +214,20 @@ aspectual or modal meaning. Thus, its aspectual variants are especially common.
 
 \ex.\dep{Kim_participant *finished#SCENE-DEINIT* their work_initial-scene}
 
-In addition, we use the modal suffixes \frs{-NECESSITY},  \frs{-POSSIBILITY}.
-and \frs{-NEG}. They can combine with aspectual suffixes.
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an outbreak_target-scene}
+
+\ex.\dep{Kim_participant *refrained#SCENE-PREVENTION* from going_target-scene}
+
+\ex.\dep{Kim_x-causer *prevented#SCENE-PREVENTION* Sandy_participant from going_target-scene}
+
+In addition, we use the modal suffixes \frs{-NECESSITY} and \frs{-POSSIBILITY}.
+They can combine with aspectual suffixes.
 
 \ex.\dep{Change_scene is *necessary#SCENE-NECESSITY*}
 
 \ex.\dep{Change_scene is *possible#SCENE-POSSIBILITY*}
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
-
-\ex.\dep{Swift action_x-causer *prevented#SCENE-INIT-NEG* an outbreak_target-scene}
-
-\ex.\dep{Kim_participant *refrained#SCENE-INIT-NEG* from going_target-scene}
-
-\ex.\dep{Kim_x-causer *prevented#SCENE-INIT-NEG* Sandy_participant from going_target-scene}
-
-\ex.\dep{Kim_x-causer *saved#SCENE-INIT-NEG* Sandy_participant from the dragon_target-scene}
-
-\ex.\dep{Kim *never#TIME-NEG* smokes}
-
-In the last example, \emph{dragon} is to be understood metonymically as a
-scene in which Sandy would have been harmed by the dragon.
 
 \subsection{Non-core Arguments}
 
@@ -389,13 +387,13 @@ in one graph.
 
 \ex.\dep{Kim_participant__is-active *finished#SCENE-DEINIT* their **work#ACTIVITY**_initial-scene}
 
-\ex.\dep{Swift action_x-causer *prevented#SCENE-INIT-NEG* an **outbreak#SCENE-INIT**_target-scene of ***measles#EXPERIENCE***__target-scene}
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an **outbreak#SCENE-INIT**_target-scene of ***measles#EXPERIENCE***__target-scene}
 
-\ex.\dep{Kim_participant__has-location *refrained#SCENE-INIT-NEG* from **going#LOCATION-CHANGE**_target-scene}
+\ex.\dep{Kim_participant__has-location *refrained#SCENE-PREVENTION* from **going#LOCATION-CHANGE**_target-scene}
 
-\ex.\dep{Kim_x-causer *prevented#SCENE-INIT-NEG* Sandy_participant__has-location from **going#LOCATION-CHANGE**_target-scene}
+\ex.\dep{Kim_x-causer *prevented#SCENE-PREVENTION* Sandy_participant__has-location from **going#LOCATION-CHANGE**_target-scene}
 
-\ex.\dep{Kim_x-causer *saved#SCENE-INIT-NEG* Sandy_participant__x-experiencer from the **dragon#CLASS**_target-scene}
+\ex.\dep{Kim_x-causer *saved#SCENE-PREVENTION* Sandy_participant__x-experiencer from the **dragon#CLASS**_target-scene}
 
 \ex.\dep{Kim_participant__is-active *plays#SCENE* **tennis#ACTIVITY**_scene}
 
@@ -462,7 +460,7 @@ Indefinite pronouns also evoke \fr{CLASS}.
 
 \ex.\dep{She saw *one#CLASS*}
 
-\ex.\dep{*Nothing#CLASS-NEG* about him_m-whole suggested a child}
+\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
 
 \ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
 
@@ -939,7 +937,7 @@ We also frame perception as \fr{MESSAGE}, including mental and volitional percep
 
 \subsubsection{Beginning and Ending Perception}
 
-Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-INIT-NEG}) for
+Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-PREVENTION}) for
 predicates denoting the coming about (ending, failing to come about) of
 knowledge and awareness.
 
@@ -961,7 +959,7 @@ knowledge and awareness.
 
 \ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* about the cake_topic}
 
-\ex.\dep{Kim_x-experiencer *forgot#MESSAGE-INIT-NEG* to take_target-content the trash out}
+\ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREVENTION* to take_target-content the trash out}
 
 \subsection{\fr{PART-WHOLE}}
 \label{sec:PART-WHOLE}
@@ -1391,7 +1389,7 @@ ungeachtet (CONCESSION), erstmals (TIME), unvermindert (QUANTITY-CONTINUATION)
 
 Speaker-oriented adverbs: MESSAGE? erstaunlicherweise, geheimnisvollerweise,
 glücklicherweise, möglicherweise, notwendigerweise, tragischerweise,
-unglaublicherweise (MESSAGE-INIT-NEG?), unglücklicherweise, zweckmäßigerweise?
+unglaublicherweise (MESSAGE-PREVENTION?), unglücklicherweise, zweckmäßigerweise?
 
 codify the general principle somewhere: if superframe and ARG1 have the same
 name (quasi-unary relations), we can just use m-rel. Otherwise, use m-scene.
