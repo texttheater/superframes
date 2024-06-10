@@ -174,6 +174,7 @@ class Sentence:
             return
         # Phase 1: collect expected frame-arg links
         expected_links = collections.defaultdict(list)
+        # Phase 1a: syntactic links
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
                 if is_semantic_predicate(tree):
@@ -183,6 +184,7 @@ class Sentence:
                                 child.data.id,
                                 serialize_subtree(child.data.id, sentence),
                             ))
+        # Phase 1b: participant-scene links
         for frame in self.frames:
             if frame.label.split('-')[0] == 'SCENE':
                 participant = frame.find_arg('participant')
@@ -202,6 +204,28 @@ class Sentence:
                         expected_links[target_scene.head].append(protoarg)
             for arg in frame.args:
                 if arg.label == 'm-scene':
+                    protoarg = (frame.head, frame.text)
+                    expected_links[arg.head].append(protoarg)
+        # Phase 1c: topic-content links
+        for frame in self.frames:
+            if frame.label.split('-')[0] == 'MESSAGE':
+                topic = frame.find_arg('topic')
+                initial_content = frame.find_arg('initial-content')
+                transitory_content = frame.find_arg('transitory-content')
+                content = frame.find_arg('content')
+                target_content = frame.find_arg('target-content')
+                if topic:
+                    protoarg = (topic.head, topic.text)
+                    if initial_content:
+                        expected_links[initial_content.head].append(protoarg)
+                    if transitory_content:
+                        expected_links[transitory_content.head].append(protoarg)
+                    if content:
+                        expected_links[content.head].append(protoarg)
+                    if target_content:
+                        expected_links[target_content.head].append(protoarg)
+            for arg in frame.args:
+                if arg.label == 'm-content':
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
         # Phase 2: add missing frames and args
