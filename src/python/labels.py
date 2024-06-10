@@ -29,13 +29,13 @@ class Flexible:
         return role == self.arg2
 
     def check_noncore(self, role):
-            return (
-                (role == self.arg1) or
-                (role == self.arg2) or
-                (role.startswith('target-') and role[7:] == self.arg2) or
-                (role.startswith('initial-') and role[8:] == self.arg2) or
-                (role.startswith('transitory-') and role[11:] == self.arg2)
-            )
+        return (
+            (role == self.arg1) or
+            (role == self.arg2) or
+            (role.startswith('target-') and role[7:] == self.arg2) or
+            (role.startswith('initial-') and role[8:] == self.arg2) or
+            (role.startswith('transitory-') and role[11:] == self.arg2)
+        )
 
 
 class Rigid:
@@ -99,8 +99,10 @@ FRAMES = {
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
 MODES = ('POSSIBILITY', 'NECESSITY')
+POLARITIES = ('NEG',)
 FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(?:-(' +
-        '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?$')
+        '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?(?:-(' +
+        '|'.join(POLARITIES) + '))?$')
 
 
 def check_frame_label(frame):
