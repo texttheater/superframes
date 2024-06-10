@@ -99,8 +99,10 @@ FRAMES = {
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
 MODES = ('POSSIBILITY', 'NECESSITY')
+POLARITIES = ('NEG',)
 FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(?:-(' +
-        '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?$')
+        '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?(?:-(' +
+        '|'.join(POLARITIES) + '))?$')
 
 
 def check_frame_label(frame):
