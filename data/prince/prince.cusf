@@ -1985,7 +1985,6 @@
 
 [STATE] sleep (10)
 [m-location] on the sand (13)
-[m-location] a thousand miles from any human habitation (17)
 [has-state] I (7)
 [m-location] a thousand miles from any human habitation (21)
 
@@ -1998,7 +1997,7 @@
 
 [LOCATION] habitation (21)
 [has-location] human (20)
-[m-quantity] a thousand miles (17) # quantity of from-LOCATION, not of habitation-LOCATION
+[m-quantity] a thousand miles (17) # quantity of from-LOCATION, not of habitation-LOCATION # TODO neue Memo
 
 [CLASS] human (20)
 
@@ -2151,7 +2150,7 @@
 
 [MESSAGE-INIT] Draw (20)
 [m-experiencer] me (21)
-[topic] a sheep (23)
+[topic] a sheep (23) # TODO: im manual besser erklären: Messageherstellung = Beziehung zw. topic und content herstellen
 
 [IDENTIFICATION] me (21)
 
@@ -2274,11 +2273,11 @@
 
 [QUALITY] small (7)
 
-[LOCATION] stood (11)
-[has-location] who (10)
-[location] there (12)
-[m-depictive] examining me with great seriousness (13)
-[has-location] person (8)
+[LOCATION >> SCENE] stood (11)
+[has-location >> participant] who (10)
+[location >> m-location] there (12)
+[m-depictive >> scene] examining me with great seriousness (13)
+[has-location >> participant] person (8)
 
 [IDENTIFICATION] who (10)
 
@@ -2390,7 +2389,7 @@
 
 [QUANTITY] less (8)
 
-[MESSAGE] model (12) # "model" refers to topic
+[MESSAGE] model (12) # "model" refers to topic # TODO memo?
 [content] its (11)
 
 [IDENTIFICATION] its (11)
@@ -2559,21 +2558,21 @@
 
 [QUALITY] sudden (6)
 
-[LOCATION-CHANGE] starting (12)
-[has-location] my eyes (10)
-[m-mode] fairly (11)
-[initial-location] out of my head (16)
+[LOCATION-CHANGE >> MESSAGE] starting (12)
+[has-location >> x-noncomp] my eyes (10)
+[m-mode >> m-noncomp] fairly (11)
+[initial-location >> x-noncomp] out of my head (16)
 [m-causer] in astonishment (18)
 
-[CLASS] eyes (10)
-[m-whole] my (9)
+[CLASS >> MESSAGE] eyes (10)
+[m-whole >> x-experiencer] my (9)
 
 [IDENTIFICATION] my (9)
 
-[MODE] fairly (11)
+[MODE >> NONCOMP] fairly (11)
 
-[CLASS] head (16)
-[m-whole] my (15)
+[CLASS >> NONCOMP] head (16)
+[m-whole >> x-experiencer] my (15)
 
 [IDENTIFICATION] my (15)
 
@@ -3068,10 +3067,10 @@
 41	draw	draw	VERB	VB	VerbForm=Inf	38	ccomp	_	TokenRange=5426:5430
 42	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=5431:5432
 
-[MESSAGE] remembered (4)
+[MESSAGE-INIT] remembered (4)
 [m-time] then (2)
 [x-experiencer] I (3)
-[content] how my studies had been concentrated on geography , history , arithmetic , and grammar (10)
+[target-content] how my studies had been concentrated on geography , history , arithmetic , and grammar (10)
 
 [TIME] then (2)
 
@@ -3079,7 +3078,7 @@
 
 [MESSAGE] concentrated (10)
 [m-means] how (5) # ?
-[x-experiencer] my studies (7) # ?
+[x-experiencer] my studies (7) # im übertragenen Sinne
 [topic] on geography , history , arithmetic , and grammar (12)
 
 [MEANS] how (5) # ?
