@@ -44,9 +44,9 @@
 %\begin{abstract}
 %\end{abstract}
 
-\tableofcontents
+\newpage\tableofcontents
 
-\section{Introduction}
+\newpage\section{Introduction}
 
 \begin{table}
     \resizebox{\textwidth}{!}{
@@ -179,7 +179,7 @@ children of \fr{PREDICATION} or \fr{RELATION}. Some of them have one or more
 subtypes intended to make the annotation of certain special cases more
 intuitive and unambiguous.
 
-\subsection{Core Arguments}
+\newpage\subsection{Core Arguments}
 
 The most prototypical predicate is a verb, and the simplest case is a verb with only one argument. It can for example denote a state or an activity:
 
@@ -195,7 +195,7 @@ With two core arguments, a verb denotes a relation that holds between them:
 
 \ex.\dep{Kim_topic *seems#MESSAGE* happy_content}
 
-\subsection{Aspect, Mode, and Polarity}
+\newpage\subsection{Aspect, Mode, and Polarity}
 \label{sec:aspect-mode-polarity}
 
 Rather than a static relationship between two entities, many verbs (and other
@@ -275,7 +275,7 @@ Finally, we can use the polarity suffix \frs{-NEG}. It can combine with aspectua
 
 \ex.\dep{They *never#TIME-NEG* understand}
 
-\subsection{Non-core Arguments}
+\newpage\subsection{Non-core Arguments}
 
 Core arguments always get role labels from the superframe the predicate evokes.
 But many verbs have more arguments. One common case is a subject that is
@@ -300,7 +300,7 @@ Other non-core arguments are usually rather predicate-specific.
 
 \ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* Sandy_target-possessor the house_possessed for a million dollars_x-asset}
 
-\subsection{Modifiers}
+\newpage\subsection{Modifiers}
 
 Like non-core arguments, modifiers are assumed to evoke an additional frame,
 and labeled with the role they fill in that frame, but with a prefix marking
@@ -308,7 +308,7 @@ them as modifiers: \rl{m-}.
 
 \ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
 
-\subsection{Nonverbal Predicates}
+\newpage\subsection{Nonverbal Predicates}
 
 So far, we have only looked at verbal predicates. But of course, there are
 other types of predicates. An ordinary noun like \emph{tree} evokes the
@@ -354,7 +354,7 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 
 \ex.\dep{Kim_has-location *ran#Motion* far_m-quantity}
 
-\subsection{Control Relations}
+\newpage\subsection{Control Relations}
 \label{sec:control}
 
 %\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
@@ -384,7 +384,7 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
 
-\subsection{Figurativity, Idiomaticity, and Uncertainty}
+\newpage\subsection{Figurativity, Idiomaticity, and Uncertainty}
 
 Difficulties in choosing frames often arise because a predicate literally evokes
 one frame, but is used in a way that perhaps fits another frame equally well or
@@ -407,7 +407,7 @@ not fully compositional:
 
 If you cannot choose between two frames for another reason, use \texttt{||} instead of \texttt{>}\texttt{>}.
 
-\section{Superframes Reference}
+\newpage\section{Superframes Reference}
 
 \subsection{\emoji{red-square} \fr{EVENTUALITY}}
 \label{sec:EVENTUALITY}
@@ -421,7 +421,7 @@ no discernible arguments, such as interjections.
 
 \ex.\dep{*What#IDENTIFICATION>>EVENTUALITY* ?}
 
-\subsection{\emoji{label} \fr{PREDICATION}}
+\newpage\subsection{\emoji{label} \fr{PREDICATION}}
 \label{sec:PREDICATION}
 
 The \rl{predicate} is true of the \rl{argument}. Normally, there should be no
@@ -436,7 +436,7 @@ realized by the syntactic predicate and its arg2. An example is shown in \Next.
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
-\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
+\newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
 \label{sec:ACTIVITY}
 
 \rl{is-active} actively participates in \rl{activity}.
@@ -454,7 +454,7 @@ framed as a state change.
 
 \ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
 
-\subsection{\emoji{deciduous-tree} \fr{CLASS}}
+\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
 \label{sec:CLASS}
 
 \rl{class} indicates the class of entity that \rl{has-class} represents.
@@ -475,7 +475,7 @@ Indefinite pronouns also evoke \fr{CLASS}.
 
 \ex.\dep{Where I live *everything#CLASS* is small}
 
-\subsection{\emoji{sparkles} \fr{EXISTENCE}}
+\newpage\subsection{\emoji{sparkles} \fr{EXISTENCE}}
 \label{sec:EXISTENCE}
 
 \rl{exists} exists. Use this only for non-scene entities; for scenes, use the \fr{SCENE} frame.
@@ -486,7 +486,7 @@ Indefinite pronouns also evoke \fr{CLASS}.
 
 \ex.\dep{There_x-noncomp *is#SCENE* a hubbub_scene}
 
-\subsection{\emoji{memo} \fr{REPRODUCTION}}
+\newpage\subsection{\emoji{memo} \fr{REPRODUCTION}}
 \label{sec:REPRODUCTION}
 
 Special case of \fr{EXISTENCE-INIT} where \rl{original} continues to exist, and
@@ -496,7 +496,7 @@ a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 
 \ex.\dep{This_copy is a *translation#REPRODUCTION* of the pamphlet_original into English_x-quality}
 
-\subsection{\emoji{magic-wand} \fr{TRANSFORMATION-CREATION}}
+\newpage\subsection{\emoji{magic-wand} \fr{TRANSFORMATION-CREATION}}
 \label{sec:TRANSFORMATION-CREATION}
 
 Special case of \fr{EXISTENCE-INIT} where \rl{created} (aka \rl{target-exists})
@@ -509,7 +509,7 @@ is newly created from \rl{material}, or \rl{material} is transformed to become
 
 \ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
 
-\subsection{\emoji{eye} \fr{EXPERIENCE}}
+\newpage\subsection{\emoji{eye} \fr{EXPERIENCE}}
 \label{sec:EXPERIENCE}
 
 \rl{experience} indicates an experience that \rl{experiencer} undergoes.
@@ -544,7 +544,7 @@ perception, addressees in communication. Also use for beneficiaries, and for
 
 For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 
-\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
+\newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
 
 \rl{identifier} identifies \rl{identified}.
@@ -571,7 +571,7 @@ Likewise, \emph{in} has an identifying sense:
 
 \ex.\dep{In answer_m-identifier , he_x-sender *repeated#MESSAGE-INIT* : Please, draw_target-content me a sheep !}
 
-\subsection{\emoji{red-question-mark} \fr{MODE}}
+\newpage\subsection{\emoji{red-question-mark} \fr{MODE}}
 \label{sec:MODE}
 
 Used for adverbial modifiers that have no arguments other than the phrase they
@@ -590,7 +590,7 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
 
-\subsection{\emoji{red-apple} \fr{QUALITY}}
+\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
 \label{sec:QUALITY}
 
 \rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
@@ -603,7 +603,7 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
 
-\subsection{\emoji{abacus} \fr{QUANTITY}}
+\newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
 \label{sec:QUANTITY}
 
 \rl{quantity} is the quantity, degree, or extent of \rl{has-quantity}.
@@ -614,7 +614,7 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
 
-\subsection{\emoji{1st-place-medal} \fr{RANK}}
+\newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
 \label{sec:RANK}
 
 \rl{rank} indicates the order that \rl{has-rank} has in some sequence.
@@ -623,7 +623,7 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
 
-\subsection{\emoji{zzz} \fr{STATE}}
+\newpage\subsection{\emoji{zzz} \fr{STATE}}
 \label{sec:STATE}
 
 \rl{state} indicates a (temporary) state of \rl{has-state}.
@@ -640,7 +640,7 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
 
-\subsection{\emoji{skull} \fr{DESTRUCTION}}
+\newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
 \label{sec:DESTRUCTION}
 
 Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes out of existence.
@@ -653,7 +653,7 @@ When something is broken but not completely destroyed, use \fr{STATE}.
 
 \ex.\dep{Something_has-state was *broken#STATE* in my enginge_m-location}
 
-\subsection{\emoji{link} \fr{RELATION}}
+\newpage\subsection{\emoji{link} \fr{RELATION}}
 \label{sec:RELATION}
 
 There is a relation between \rl{satellite} and \rl{nucleus}, where the latter
@@ -663,7 +663,7 @@ instead, use one of the more specific subtypes.  Directly use this superframe
 only when none of the more specific subtypes seems to fit (currently, there are
 no known cases of this, so there are no examples).
 
-\subsection{\emoji{fork-and-knife} \fr{ACCOMPANIMENT}}
+\newpage\subsection{\emoji{fork-and-knife} \fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
 
 \rl{accompanier} accompanies \rl{accompanied}, meaning that it occurs together
@@ -692,7 +692,7 @@ participating in it, and must be metonymically understood as the scene.
 
 \ex.\dep{Kim_x-accompanier *accompanied#ACCOMPANIMENT* Sandy_accompanied on the piano_x-means}
 
-\subsection{\emoji{paintbrush} \fr{DEPICTIVE}}
+\newpage\subsection{\emoji{paintbrush} \fr{DEPICTIVE}}
 \label{sec:DEPICTIVE}
 
 Special case of \fr{ACCOMPANIMENT} where \rl{depictive} (aka \rl{accompanier})
@@ -701,7 +701,7 @@ Sec.~\ref{sec:control}).
 
 \ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE-INIT**_m-depictive}
 
-\subsection{\emoji{money-bag} \fr{ASSET}}
+\newpage\subsection{\emoji{money-bag} \fr{ASSET}}
 \label{sec:ASSET}
 
 In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wager.
@@ -712,7 +712,7 @@ In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wage
 
 \ex.\dep{I_x-sender *bet#MESSAGE-INIT* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_target-content}
 
-\subsection{\emoji{keycap-asterisk} \fr{ATTRIBUTE}}
+\newpage\subsection{\emoji{keycap-asterisk} \fr{ATTRIBUTE}}
 \label{sec:ATTRIBUTE}
 
 In a scene \rl{has-attribute}, \rl{attribute} is the part or attribute of one
@@ -728,7 +728,7 @@ participant(s) have the attribute.
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
 
-\subsection{\emoji{balance-scale} \fr{COMPARISON}}
+\newpage\subsection{\emoji{balance-scale} \fr{COMPARISON}}
 \label{sec:COMPARISON}
 
 \rl{compared} is characterized with respect to \rl{reference}.
@@ -764,7 +764,7 @@ an \rl{x-reference} argument.
 
 \ex.\dep{Kim_has-quality is *taller#QUALITY* than Sandy_x-reference}
 
-\subsection{\emoji{ok-hand} \fr{CONCESSION}}
+\newpage\subsection{\emoji{ok-hand} \fr{CONCESSION}}
 \label{sec:CONCESSION}
 
 Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and \rl{reference} is what's \rl{conceded}.
@@ -777,14 +777,14 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
 
-\subsection{\emoji{red-exclamation-mark} \fr{EXPLANATION}}
+\newpage\subsection{\emoji{red-exclamation-mark} \fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
 \rl{explanation} explains \rl{explained}, but is not a cause.
 
 \ex.\dep{I_x-sender am *stressing#MESSAGE-INIT* this_topic because it is important_m-explanation}
 
-\subsection{\emoji{bullseye} \fr{PURPOSE}}
+\newpage\subsection{\emoji{bullseye} \fr{PURPOSE}}
 \label{sec:PURPOSE}
 
 Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
@@ -793,7 +793,7 @@ Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
 
 \ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
 
-\subsection{\emoji{round-pushpin} \fr{LOCATION}}
+\newpage\subsection{\emoji{round-pushpin} \fr{LOCATION}}
 \label{sec:LOCATION}
 
 Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
@@ -806,7 +806,7 @@ Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
 
 \ex.\dep{Kim_x-causer *placed#LOCATION-CHANGE* the hat_has-location on the table_target-location}
 
-\subsection{\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT}}
+\newpage\subsection{\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT}}
 \label{sec:ADORNMENT-TARNISHMENT}
 
 Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location}) sits on \rl{surface} (aka \rl{location}).
@@ -819,7 +819,7 @@ Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location}) sits o
 
 \dep{Kim_x-causer *washed#ADORNMENT-TARNISHMENT-DEINIT* Sandy_initial-surface}
 
-\subsection{\emoji{sweat-droplets} \fr{EXCRETION}}
+\newpage\subsection{\emoji{sweat-droplets} \fr{EXCRETION}}
 \label{sec:EXCRETION}
 
 Special case of \fr{LOCATION-DEINIT} where \rl{excreter} (aka
@@ -827,7 +827,7 @@ Special case of \fr{LOCATION-DEINIT} where \rl{excreter} (aka
 
 \ex.\dep{Kim_excreter *threw#EXCRETION* up the pretzel_excreted}
 
-\subsection{\emoji{cricket-game} \fr{HITTING}}
+\newpage\subsection{\emoji{cricket-game} \fr{HITTING}}
 \label{sec:HITTING}
 
 Special case of \fr{LOCATION-INIT} where \rl{hitting} (aka \rl{has-location})
@@ -843,7 +843,7 @@ comes into contact with \rl{hit} (aka \rl{target-location}).
 
 \ex.\dep{Kim_x-causer *kicked#HITTING* Sandy_hit}
 
-\subsection{\emoji{bowl-with-spoon} \fr{INGESTION}}
+\newpage\subsection{\emoji{bowl-with-spoon} \fr{INGESTION}}
 \label{sec:INGESTION}
 
 Special case of \fr{LOCATION-INIT} where \rl{ingester} (aka
@@ -853,7 +853,7 @@ Special case of \fr{LOCATION-INIT} where \rl{ingester} (aka
 
 \ex.\dep{Kim_ingester *nibbled#INGESTION* on the pretzel_ingested}
 
-\subsection{\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION}}
+\newpage\subsection{\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION}}
 \label{sec:UNANCHORED-MOTION}
 
 Special case of \rl{LOCATION-CHANGE} where no initial or target location is indicated.
@@ -868,7 +868,7 @@ Special case of \rl{LOCATION-CHANGE} where no initial or target location is indi
 
 %\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
 
-\subsection{\emoji{t-shirt} \fr{WRAPPING-WEARING}}
+\newpage\subsection{\emoji{t-shirt} \fr{WRAPPING-WEARING}}
 \label{sec:WRAPPING-WEARING}
 
 Special case of \fr{LOCATION} where \rl{wearer} (aka \rl{location}) wears or is
@@ -884,7 +884,7 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 
 \ex.\dep{Kim_initial-wearer *took#WRAPPING-WEARING-DEINIT* off their glasses_wrapper}
 
-\subsection{\emoji{hammer} \fr{MEANS}}
+\newpage\subsection{\emoji{hammer} \fr{MEANS}}
 \label{sec:MEANS}
 
 \rl{has-means} is a scene caused by something via an intermediary \rl{means}.
@@ -897,7 +897,7 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 
 \ex.\dep{You_x-causer *used#MEANS* me_means !}
 
-\subsection{\emoji{left-speech-bubble} \fr{MESSAGE}}
+\newpage\subsection{\emoji{left-speech-bubble} \fr{MESSAGE}}
 \label{sec:MESSAGE}
 
 A message about \rl{topic} with content \rl{content} exists in perceived,
@@ -1005,7 +1005,7 @@ but didn't is framed as \fr{MESSAGE-PREVENTION}:
 
 \ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREVENTION* to take_target-content the trash out}
 
-\subsection{\emoji{spider-web} \fr{NONCOMP}}
+\newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
 
 Used to mark syntactic arguments that are thought of as part of the predicate, as in verbal idioms, weather verbs, inherently reflexive verbs, existential \emph{there}, or other fixed expressions.
@@ -1022,7 +1022,7 @@ Used to mark syntactic arguments that are thought of as part of the predicate, a
 
 Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
 
-\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
+\newpage\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
 \label{sec:PART-WHOLE}
 
 \rl{part} is part of \rl{whole}.
@@ -1035,7 +1035,7 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{wheat_whole *contains#PART-WHOLE* gluten_part}
 
-\subsection{\emoji{service-dog} \fr{POSSESSION}}
+\newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
 
 \rl{possessor} possesses or controls the \rl{possessed}.
@@ -1064,7 +1064,7 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
-\subsection{\emoji{performing-arts} \fr{SCENE}}
+\newpage\subsection{\emoji{performing-arts} \fr{SCENE}}
 \label{sec:SCENE}
 
 A ``meta'' frame for predicates where the main frame is invoked by \rl{scene},
@@ -1112,7 +1112,7 @@ adverbs.
 
 \ex.\dep{I_x-causer *devoted#SCENE-INIT*__follows myself_participant **instead#SEQUENCE**_m-scene to geography_target-scene}
 
-\subsection{\emoji{megaphone} \fr{SENDING}}
+\newpage\subsection{\emoji{megaphone} \fr{SENDING}}
 \label{sec:SENDING}
 
 \rl{sender} originates a message, \rl{sent}, that can be experienced.
@@ -1121,7 +1121,7 @@ adverbs.
 
 For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
-\subsection{\emoji{right-arrow} \fr{SEQUENCE}}
+\newpage\subsection{\emoji{right-arrow} \fr{SEQUENCE}}
 \label{sec:SEQUENCE}
 
 \rl{follows} follows \rl{followed}, e.g., temporally, logically, by rank, as heir, etc.
@@ -1136,7 +1136,7 @@ For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
 \ex.\dep{Given that I 'm tired_m-followed , I_has-location wo n't be *there#LOCATION*}
 
-\subsection{\emoji{joystick} \fr{CAUSATION}}
+\newpage\subsection{\emoji{joystick} \fr{CAUSATION}}
 \label{sec:CAUSATION}
 
 Special case of \fr{SEQUENCE} where \rl{causer} (aka \rl{followed}) causes \rl{result} (aka \rl{follows}).
@@ -1163,7 +1163,7 @@ purpose:
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
 
-\subsection{\emoji{scroll} \fr{CONDITION}}
+\newpage\subsection{\emoji{scroll} \fr{CONDITION}}
 \label{sec:CONDITION}
 
 Special case of \fr{SEQUENCE} where \rl{condition} (aka \rl{followed}) is a
@@ -1175,7 +1175,7 @@ condition to \rl{has-condition} (aka \rl{follows}).
 
 \ex.\dep{Eine Aussöhung_has-condition *bedingt#SEQUENCE* eine Entschuldigung_condition}
 
-\subsection{\emoji{prohibited} \fr{EXCEPTION}}
+\newpage\subsection{\emoji{prohibited} \fr{EXCEPTION}}
 \label{sec:EXCEPTION}
 
 Special case of \fr{SEQUENCE} where \rl{exception} (aka \rl{followed}) is an
@@ -1183,7 +1183,7 @@ exception (a negative condition, if you will) to \rl{has-exception} (aka \rl{fol
 
 \ex.\dep{Except for Kim_m-exception , everybody_has-social-relation *joined#SOCIAL-RELATION-INIT*}
 
-\subsection{\emoji{collision} \fr{REACTION}}
+\newpage\subsection{\emoji{collision} \fr{REACTION}}
 \label{sec:REACTION}
 
 Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
@@ -1191,7 +1191,7 @@ Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
 
 \ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE-INIT**_reaction}
 
-\subsection{\emoji{sneezing-face} \fr{RESULTATIVE}}
+\newpage\subsection{\emoji{sneezing-face} \fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
 
 Special case of \fr{CAUSATION} where \rl{resultative} (aka \rl{result}) assigns
@@ -1211,7 +1211,7 @@ only the role of the napkin in the resulting event (\rl{has-location}) but also
 that of the table (\rl{initial-location}). Using \rl{x-has-location} would be
 imprecise because we would then assume that the table has \rl{location}.
 
-\subsection{\emoji{handshake} \fr{SOCIAL-RELATION}}
+\newpage\subsection{\emoji{handshake} \fr{SOCIAL-RELATION}}
 \label{sec:SOCIAL-RELATION}
 
 \rl{has-social-relation} is an individual that is in some socially constructed
@@ -1264,7 +1264,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_has-social-relation was *pardoned#SOCIAL-RELATION-DEINIT*}
 
-\subsection{\emoji{alarm-clock} \fr{TIME}}
+\newpage\subsection{\emoji{alarm-clock} \fr{TIME}}
 \label{sec:TIME}
 
 \rl{time} indicates when, how often, or for how long \rl{has-time} takes place. Also evoked by time expressions without arguments.
@@ -1281,7 +1281,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{the six *months#TIME*__scene they__x-experiencer **need#SCENE-NECESSITY**_m-scene for digestion__participant_has-time}
 
-\section{Argument Structure and Frame Choice}
+\newpage\section{Argument Structure and Frame Choice}
 
 \subsection{Prefer Core over Non-core Arguments}
 
@@ -1296,7 +1296,7 @@ annotate the former.
 
 \ex.\dep{Kim_initial-wearer *undressed#WRAPPING-WEARING-DEINIT*}
 
-\subsection{Arguments Determine Frames}
+\newpage\subsection{Arguments Determine Frames}
 
 The most important criterion in choosing a frame for a predicate is that there
 should be suitable roles for the predicate's arguments, even if they are
@@ -1332,7 +1332,7 @@ incorporated into the predicate or logically implied, like the bones in
 
 \ex.\label{ex:rise}\dep{at *sunrise#LOCATION-CHANGE>>TIME*}
 
-\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
+\newpage\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
 
 For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
 
@@ -1344,7 +1344,7 @@ For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject
 
 \ex.\label{ex:high2}\dep{The butter_has-quantity__has-quality is *high#QUANTITY* in **price#QUALITY**_x-attribute}
 
-\subsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
+\newpage\subsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
 
 For example, in \ref{ex:chase1}, \emph{chase} could be framed as caused motion
 with Kim as \rl{x-causer} or as accompanied motion with Kim as
@@ -1354,7 +1354,7 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 \ex.\a.\label{ex:chase1}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* Sandy_in-motion around the block_transitory-location}
     \b.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_in-motion}
 
-\subsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
+\newpage\subsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
 
 One special case of this is when a predicate occurs as part of an opaque fixed
 expression, like \emph{hand} in \emph{close at hand}. In this case, \emph{hand}
@@ -1362,7 +1362,7 @@ is not annotated with \fr{CLASS}, but with \fr{NONCOMP}.
 
 \ex.\dep{I have seen them_has-location intimately , *close#LOCATION* at **hand#NONCOMP**_m-noncomp}
 
-\subsection{Look Up Unfamiliar Words in a Dictionary}
+\newpage\subsection{Look Up Unfamiliar Words in a Dictionary}
 
 When you come across an unfamilar predicate, you might not be able to determine
 what arguments it has, and consquenlty what the most appropriate superframe is,
@@ -1373,14 +1373,14 @@ thus went for the \fr{TRANSFORMATION-CREATION} frame.
 
 \ex.\dep{So_m-explanation I_x-causer *tossed#TRANSFORMATION-CREATION* off_m-noncomp this drawing_created}
 
-\subsection{Symmetric Argument Pairs}
+\newpage\subsection{Symmetric Argument Pairs}
 
 Some predicates have a pair of arguments that are semantically symmetric. In
 such cases, assign the first role to the syntactically less oblique argument.
 
 \ex.\dep{*distinguish#COMPARISON* China_compared from Arizona_reference}
 
-\subsection{When to Use \fr{SCENE}}
+\newpage\subsection{When to Use \fr{SCENE}}
 
 \fr{SCENE} should definitely be used if a predicate can add aspectual meaning
 to predicates of more than one type. For example, English \emph{make} can be
@@ -1398,7 +1398,7 @@ certain type, it can have the same type.
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
-\section{Aspect, Mode, and Polarity}
+\newpage\section{Aspect, Mode, and Polarity}
 
 \subsection{Aspect Annotation is wrt. the Superframe, Not the Predicate}
 
@@ -1410,7 +1410,7 @@ losing event begins, the state that the superframe \fr{POSSESSION} describes
 ends. In general, aspectual suffixes modify superframes, they do not
 necessarily indicate the aspectual class of the predicate (here: \emph{lost}).
 
-\section{Construction-specific Guidelines}
+\newpage\section{Construction-specific Guidelines}
 
 \subsection{Participant Nouns}
 
@@ -1430,7 +1430,7 @@ their role in a social context:
 
 \ex.\dep{She_has-social-relation is the *president#SOCIAL-RELATION* of our club_social-relation}
 
-\subsection{Particle Verbs}
+\newpage\subsection{Particle Verbs}
 
 We follow the PARSEME classification of particle verbs into spatial,
 semi-non-compositional, and fully non-compositional ones
@@ -1454,7 +1454,7 @@ predictable, use \rl{m-noncomp}.
 
 \ex.\dep{*do#EXPERIENCE* somebody_experiencer in_m-noncomp} (does not imply \emph{do} somebody)
 
-\subsection{Pronouns with Arguments}
+\newpage\subsection{Pronouns with Arguments}
 
 Definite pronouns are normally annotated with \fr{IDENTIFICATION}, indefinite
 ones with \fr{CLASS}, and they do not have any arguments. However, sometimes
@@ -1464,7 +1464,7 @@ they do have arguments, in which case give them their antecendent's superframe:
 
 \ex.\dep{I drew a picture of a dog , *one#MESSAGE* of a cat_topic , and **another#MESSAGE** of a sheep__topic}
 
-\subsection{Nominal Copula Constructions}
+\newpage\subsection{Nominal Copula Constructions}
 
 In nominal copula constructions, the copula subject is interpreted as a
 non-core argument -- typically \rl{x-has-class} if the predicate is indefinite,
@@ -1474,7 +1474,7 @@ and \rl{x-identified} if it is definite.
 
 \ex.\dep{My drawing_x-has-class was not_m-mode a *picture#MESSAGE* of a hat_topic}
 
-\section{TODO}
+\newpage\section{TODO}
 
 The butter is high in price: high has SCENE-like arguments (participant butter
 and price scene), but also expresses a QUANTITY. SCENE-QUANTITY?
