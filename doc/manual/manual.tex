@@ -900,12 +900,12 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 \subsection{\emoji{left-speech-bubble} \fr{MESSAGE}}
 \label{sec:MESSAGE}
 
-A message about \rl{topic} with content \rl{content} is received or exists in
-recorded form. When a message is created through expression or observation, use
-\fr{MESSAGE-INIT}. When \rl{content} and \rl{topic} are both realized,
-\rl{content} must assign a role to \rl{topic}.
+A message about \rl{topic} with content \rl{content} exists in perceived,
+measured, or recorded recorded form. When a message is created through
+expression or observation, use \fr{MESSAGE-INIT}. When \rl{content} and
+\rl{topic} are both realized, \rl{content} must assign a role to \rl{topic}.
 
-\subsubsection{Expression}
+Predicates of expression use \fr{MESSAGE-INIT}:
 
 \ex.\dep{Kim_x-sender *yelped#MESSAGE-INIT*}
 
@@ -925,15 +925,13 @@ recorded form. When a message is created through expression or observation, use
 
 \ex.\dep{Kim_x-sender *conversed#MESSAGE-INIT* with Sandy_x-accompanier}
 
-\subsubsection{Gesture}
+Gesture is a kind of expression, too:
 
 \ex.\dep{Kim_x-sender *curtseyed#MESSAGE-INIT* to the Queen_x-experiencer}
 
 \ex.\dep{Kim_x-causer>>x-sender *shook#UNANCHORED-MOTION>>MESSAGE-INIT* their head_in-motion>>x-noncomp no_x-sent>>target-content}
 
-\subsubsection{Performance}
-
-Performance of a work of art is framed as \fr{MESSAGE} where the work of art is the \rl{topic}.
+Performance of a work of art is framed as \fr{MESSAGE} where the work of art is the \rl{topic}:
 
 \ex.\dep{Kim_x-sender *played#MESSAGE-INIT* a little tune_topic on their tuba_x-means}
 
@@ -941,13 +939,15 @@ Performance of a work of art is framed as \fr{MESSAGE} where the work of art is 
 
 \ex.\dep{Kim_x-sender *sang#MESSAGE-INIT* a song_topic}
 
-\subsubsection{Depiction}
+What is depicted gets the \rl{topic} role:
 
 \ex.\dep{Kim_x-sender *drew#MESSAGE-INIT* a heron_topic}
 
 \ex.\dep{a *picture#MESSAGE* of the heron_topic}
 
-\subsubsection{Recording}
+\ex.\dep{The concert_topic was *recorded#MESSAGE-INIT* on tape_x-target-location}
+
+The result of recording something gets the \rl{target-content} role:
 
 \ex.\dep{Kim_x-sender *drew#MESSAGE-INIT* a picture_target-content}
 
@@ -955,13 +955,9 @@ Performance of a work of art is framed as \fr{MESSAGE} where the work of art is 
 
 \ex.\dep{Kim_x-sender *wrote#MESSAGE-INIT* the message_target-content__has-quality onto a piece_x-target-location of paper with a pen_m-means in big red **letters#QUALITY**_x-depictive}
 
-\ex.\dep{The concert_topic was *recorded#MESSAGE-INIT* on tape_x-target-location}
-
 \ex.\dep{The band_x-sender *recorded#MESSAGE-INIT* an album_target-content}
 
-\subsubsection{Perception}
-
-We also frame perception as \fr{MESSAGE}, including mental and volitional perception.
+Predicates of perception use \fr{MESSAGE}, including mental perception:
 
 \ex.\dep{Kim_x-experiencer *saw#MESSAGE* a flower_topic}
 
@@ -981,19 +977,14 @@ We also frame perception as \fr{MESSAGE}, including mental and volitional percep
 
 \ex.\dep{Kim_topic__x-experiencer *seems#MESSAGE* **happy#MESSAGE**_content to Sandy_x-experiencer}
 
-\subsubsection{Beginning and Ending Perception}
+\ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
 
-Use \fr{MESSAGE-INIT} (\fr{MESSAGE-DEINIT}, \fr{MESSAGE-PREVENTION}) for
-predicates denoting the coming about (ending, failing to come about) of
-knowledge and awareness.
+Predicates that denote the initiation of perception (e.g., by acquiring
+knowledge, or observation, or reasoning), use \fr{MESSAGE-INIT}:
 
 \ex.\dep{The Thought Police_x-experiencer *observed#MESSAGE-INIT* Winston_topic}
 
-%\ex.\dep{Kim_x-experiencer *studies#MESSAGE-INIT* linguistics_topic}
-
-%\ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
-
-%\ex.\dep{The jury_x-experiencer *found#MESSAGE-INIT* Kim_topic__participant___is-active **guilty#SCENE**_target-content of the ***crime#ACTIVITY***__scene}
+\ex.\dep{Kim_x-experiencer *studies#MESSAGE-INIT* linguistics_topic}
 
 \ex.\dep{Kim_x-experiencer *noticed#MESSAGE-INIT* the bird_topic}
 
@@ -1001,9 +992,16 @@ knowledge and awareness.
 
 \ex.\dep{Kim_x-experiencer *measured#MESSAGE-INIT* the elasticity_topic}
 
-\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* everything they knew_initial-content}
+\ex.\dep{The jury_x-experiencer *found#MESSAGE-INIT* Kim_topic__participant___is-active **guilty#SCENE**_target-content of the ***crime#ACTIVITY***__scene}
 
-\ex.\dep{Kim_x-initial-experiencer *forgot#MESSAGE-DEINIT* about the cake_topic}
+Predicates that denote the deinitiation of perception use \fr{MESSAGE-DEINIT}:
+
+\ex.\dep{Kim_x-experiencer *forgot#MESSAGE-DEINIT* everything they knew_initial-content}
+
+\ex.\dep{Kim_x-experiencer *forgot#MESSAGE-DEINIT* about the cake_topic}
+
+And finally, perception (here: remembering something) that was meant to happen
+but didn't is framed as \fr{MESSAGE-PREVENTION}:
 
 \ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREVENTION* to take_target-content the trash out}
 
