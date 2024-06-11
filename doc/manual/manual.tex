@@ -1246,11 +1246,10 @@ Used to mark syntactic arguments that are thought of as part of the predicate, a
 
 Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
 
-\section{Memos}
 
-\subsection{Argument Structure and Frame Choice}
+\section{Argument Structure and Frame Choice}
 
-\subsubsection{Prefer Core over Non-core Arguments}
+\subsection{Prefer Core over Non-core Arguments}
 
 When an argument fills both a core and a non-core role, it is more important to
 annotate the former.
@@ -1263,7 +1262,7 @@ annotate the former.
 
 \ex.\dep{Kim_initial-wearer *undressed#WRAPPING-WEARING-DEINIT*}
 
-\subsubsection{Arguments Determine Frames}
+\subsection{Arguments Determine Frames}
 
 The most important criterion in choosing a frame for a predicate is that there
 should be suitable roles for the predicate's arguments, even if they are
@@ -1299,7 +1298,7 @@ incorporated into the predicate or logically implied, like the bones in
 
 \ex.\label{ex:rise}\dep{at *sunrise#LOCATION-CHANGE>>TIME*}
 
-\subsubsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
+\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
 
 For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
 
@@ -1311,7 +1310,7 @@ For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject
 
 \ex.\label{ex:high2}\dep{The butter_has-quantity__has-quality is *high#QUANTITY* in **price#QUALITY**_x-attribute}
 
-\subsubsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
+\subsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
 
 For example, in \ref{ex:chase1}, \emph{chase} could be framed as caused motion
 with Kim as \rl{x-causer} or as accompanied motion with Kim as
@@ -1321,7 +1320,7 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 \ex.\a.\label{ex:chase1}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* Sandy_in-motion around the block_transitory-location}
     \b.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_in-motion}
 
-\subsubsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
+\subsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
 
 One special case of this is when a predicate occurs as part of an opaque fixed
 expression, like \emph{hand} in \emph{close at hand}. In this case, \emph{hand}
@@ -1329,7 +1328,7 @@ is not annotated with \fr{CLASS}, but with \fr{NONCOMP}.
 
 \ex.\dep{I have seen them_has-location intimately , *close#LOCATION* at **hand#NONCOMP**_m-noncomp}
 
-\subsubsection{Look Up Unfamiliar Words in a Dictionary}
+\subsection{Look Up Unfamiliar Words in a Dictionary}
 
 When you come across an unfamilar predicate, you might not be able to determine
 what arguments it has, and consquenlty what the most appropriate superframe is,
@@ -1340,14 +1339,14 @@ thus went for the \fr{TRANSFORMATION-CREATION} frame.
 
 \ex.\dep{So_m-explanation I_x-causer *tossed#TRANSFORMATION-CREATION* off_m-noncomp this drawing_created}
 
-\subsubsection{Symmetric Argument Pairs}
+\subsection{Symmetric Argument Pairs}
 
 Some predicates have a pair of arguments that are semantically symmetric. In
 such cases, assign the first role to the syntactically less oblique argument.
 
 \ex.\dep{*distinguish#COMPARISON* China_compared from Arizona_reference}
 
-\subsubsection{When to Use \fr{SCENE}}
+\subsection{When to Use \fr{SCENE}}
 
 \fr{SCENE} should definitely be used if a predicate can add aspectual meaning
 to predicates of more than one type. For example, English \emph{make} can be
@@ -1365,9 +1364,9 @@ certain type, it can have the same type.
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
-\subsection{Aspect, Mode, and Polarity}
+\section{Aspect, Mode, and Polarity}
 
-\subsubsection{Aspect Annotation is wrt. the Superframe, Not the Predicate}
+\subsection{Aspect Annotation is wrt. the Superframe, Not the Predicate}
 
 \ex.\dep{Kim_initial-possessor *lost#POSSESSION-DEINIT* the house_possessed}
 
@@ -1377,9 +1376,9 @@ losing event begins, the state that the superframe \fr{POSSESSION} describes
 ends. In general, aspectual suffixes modify superframes, they do not
 necessarily indicate the aspectual class of the predicate (here: \emph{lost}).
 
-\subsection{Construction-specific Guidelines}
+\section{Construction-specific Guidelines}
 
-\subsubsection{Participant Nouns}
+\subsection{Participant Nouns}
 
 Some nouns denote a person who participates in a specific type of scene in a
 specific role. In such cases, use the most appropriate frame for that scene.
@@ -1397,7 +1396,7 @@ their role in a social context:
 
 \ex.\dep{She_has-social-relation is the *president#SOCIAL-RELATION* of our club_social-relation}
 
-\subsubsection{Particle Verbs}
+\subsection{Particle Verbs}
 
 We follow the PARSEME classification of particle verbs into spatial,
 semi-non-compositional, and fully non-compositional ones
@@ -1421,7 +1420,7 @@ predictable, use \rl{m-noncomp}.
 
 \ex.\dep{*do#EXPERIENCE* somebody_experiencer in_m-noncomp} (does not imply \emph{do} somebody)
 
-\subsubsection{Pronouns with Arguments}
+\subsection{Pronouns with Arguments}
 
 Definite pronouns are normally annotated with \fr{IDENTIFICATION}, indefinite
 ones with \fr{CLASS}, and they do not have any arguments. However, sometimes
@@ -1431,7 +1430,7 @@ they do have arguments, in which case give them their antecendent's superframe:
 
 \ex.\dep{I drew a picture of a dog , *one#MESSAGE* of a cat_topic , and **another#MESSAGE** of a sheep__topic}
 
-\subsubsection{Nominal Copula Constructions}
+\subsection{Nominal Copula Constructions}
 
 In nominal copula constructions, the copula subject is interpreted as a
 non-core argument -- typically \rl{x-has-class} if the predicate is indefinite,
