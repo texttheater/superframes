@@ -66,7 +66,7 @@ FRAMES = {
     'QUALITY': Flexible('has-quality', 'quality'),
     'STATE': Flexible('has-state', 'state'),
     'DESTRUCTION': Rigid('destroyed'),
-    'EXPERIENCE': Flexible('experiencer', 'experience'),
+    'EXPERIENCE': Flexible('experiencer', 'experienced'),
     'ACTIVITY': Flexible('is-active', 'activity'),
     'MODE': Rigid('has-mode', 'mode'),
     'ACCOMPANIMENT': Flexible('accompanied', 'accompanier'),
