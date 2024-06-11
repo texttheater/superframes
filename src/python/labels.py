@@ -53,6 +53,9 @@ class Rigid:
 
 
 FRAMES = {
+    'EVENTUALITY': Rigid(),
+    'PREDICATION': Flexible('argument', 'predicate'),
+    'RELATION': Flexible('satellite', 'nucleus'),
     'SCENE': Flexible('participant', 'scene'),
     'IDENTIFICATION': Flexible('identified', 'identifier'),
     'RANK': Flexible('has-rank', 'rank'),
