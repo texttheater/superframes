@@ -5,6 +5,7 @@
 
 \usepackage{amstext}
 \usepackage{booktabs}
+\usepackage{fontspec}
 \usepackage{hyperref}
 \usepackage{linguex}
 \usepackage{mathtext}
@@ -22,8 +23,12 @@
 \newcommand{\frs}[1]{\mbox{\textsf{#1}}} % frame suffixes start with hyphen, prevent line break
 \newcommand{\rl}[1]{\textsf{#1}}
 
-% make a row bold in a NiceTabular
-\newcommand{\boro}{\RowStyle{\bfseries}}
+% box drawing characters
+\newfontfamily{\noto}{Noto Sans Mono}
+\DeclareTextFontCommand{\textnoto}{\noto}
+\newcommand{\Sub}{\textnoto{└} }
+\newcommand{\SubSub}{\textcolor{white}{\Sub}\Sub}
+\newcommand{\SubSubSub}{\textcolor{white}{\Sub}\SubSub}
 
 \begin{document}
 
@@ -46,58 +51,88 @@
     \resizebox{\textwidth}{!}{
         \begin{NiceTabular}{lllllll}
             \toprule
-            Superframe & Roles & & & & & Sec. \\
+            \RowStyle{\bfseries}\fr{SUPERFRAME} & \rl{initial-arg2} & \rl{arg1} & \rl{arg2} & \rl{transitory-arg2} & \rl{target-arg2} & Sec. \\
             \midrule
-            \boro\fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
-            \boro\fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
-            \boro\fr{RANK} & & \rl{has-rank} & \rl{rank} & & & \ref{sec:RANK} \\
-            \boro\fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
-            \boro\fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
-            \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
-            \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
-            \boro\fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
-            \boro\fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
-            \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
-            %\fr{MENTAL-STATE} & & \rl{has-mental-state} & \rl{mental-state} & & & \ref{sec:MENTAL-STATE} \\
-            \boro\fr{EXPERIENCE} & initial-experience & \rl{experiencer} & \rl{experience} & transitory-experience & target-experience & \ref{sec:EXPERIENCE} \\
-            \boro\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
-            \boro\fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
-            \midrule
-            \boro\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
-            \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
-            \boro\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
-            \boro\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
-            \boro\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
-            \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
-            \boro\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
-            \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
-            \boro\fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
-            \fr{WRAPPING-WEARING} & & \rl{worn} & \rl{wearer} & & & \ref{sec:WRAPPING-WEARING} \\
-            \fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
-            \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
-            \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
-            \fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & & \ref{sec:EXCRETION} \\
-            \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
-            \boro\fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
-            \boro\fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
-            \boro\fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
-            \boro\fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
-            \boro\fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
-            \boro\fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
-            \boro\fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
-            \fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
-            \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
-            \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
-            \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
-            \fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
-            \boro\fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
-            \boro\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
-            \midrule
-            \boro\fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
+
+            \fr{EVENTUALITY} & & & & & & \ref{sec:SUPERFRAME} \\
+
+            \Sub\fr{PREDICATION} & & \rl{argument} & \rl{predicate} & & & \ref{sec:PREDICATION} \\
+
+            \SubSub\fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
+
+            \SubSub\fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
+
+            \SubSub\fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
+            \SubSubSub\fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
+            \SubSubSub\fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
+
+            \SubSub\fr{EXPERIENCE} & \rl{initial-experience} & \rl{experiencer} & \rl{experience} & \rl{transitory-experience} & \rl{target-experience} & \ref{sec:EXPERIENCE} \\
+
+            \SubSub\fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
+
+            \SubSub\fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
+
+            \SubSub\fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
+
+            \SubSub\fr{RANK} & & \rl{has-rank} & \rl{rank} & & & \ref{sec:RANK} \\
+
+            \SubSub\fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
+            \SubSubSub\fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
+
+            \Sub\fr{RELATION} & & \rl{satellite} & \rl{nucleus} & & & \ref{sec:RELATION} \\
+
+            \SubSub\fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
+            \SubSubSub\fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
+
+            \SubSub\fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
+
+            \SubSub\fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
+
+            \SubSub\fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
+            \SubSubSub\fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
+
+            \SubSub\fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
+            \SubSubSub\fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
+
+            \SubSub\fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
+            \SubSubSub\fr{WRAPPING-WEARING} & & \rl{worn} & \rl{wearer} & & & \ref{sec:WRAPPING-WEARING} \\
+            \SubSubSub\fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
+            \SubSubSub\fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
+            \SubSubSub\fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
+            \SubSubSub\fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & \rl{target-location} & \ref{sec:EXCRETION} \\
+            \SubSubSub\fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
+
+            \SubSub\fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
+
+            \SubSub\fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
+
+            \SubSub\fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
+
+            \SubSub\fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
+
+            \SubSub\fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
+
+            \SubSub\fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
+
+            \SubSub\fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
+
+            \SubSub\fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
+
+            \SubSub\fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
+            \SubSubSub\fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
+            \SubSubSub\fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
+            \SubSubSub\fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
+            \SubSubSub\fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
+            \SubSubSub\fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
+
+            \SubSub\fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
+
+            \SubSub\fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
+
             \bottomrule
         \end{NiceTabular}
     }
-    \caption{The superframes and their roles. Top-level superframes are shown in bold. Underneath, some superframes have special cases with partly renamed roles, included to make them more intuitive to apply.}
+    \caption{Hierarchy of Superframes and their Roles}
     \label{tab:superframes}
 \end{table}
 
@@ -136,7 +171,12 @@ with those schemes. Here's how Superframes annotation works, in a nutshell:
         alternative labels.
 \end{enumerate}
 
-Table~\ref{tab:superframes} shows the superframes and their roles.
+Table~\ref{tab:superframes} shows the superframes and their roles, sorted into
+a rough hierarchy. At the top is \fr{EVENTUALITY}, with the two subtypes
+\fr{PREDICATION} and \fr{RELATION}. All the main superframes are direct
+children of \fr{PREDICATION} or \fr{RELATION}. Some of them have one or more
+subtypes intended to make the annotation of certain special cases more
+intuitive and unambiguous.
 
 \subsection{Core Arguments}
 
