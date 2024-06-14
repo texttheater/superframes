@@ -2854,7 +2854,7 @@
 [m-identifier] in answer (3) # ?
 [x-sender] he (4)
 [m-quality] very slowly (8)
-[m-quality] as if he were speaking of a matter of great consequence (14)
+[m-reference] as if he were speaking of a matter of great consequence (14)
 [target-content] If you please -- draw me a sheep (27)
 
 [MESSAGE-INIT] answer (3)
@@ -3306,13 +3306,13 @@
 
 [IDENTIFICATION] I (2)
 
-[MESSAGE] hear (6)
+[MESSAGE] hear (6) # INIT?
 [content] the little fellow greet it with , " No , no , no (10)
 
-[REACTION] greet (10)
-[x-causer] the little fellow (9)
-[trigger] it (11)
-[reaction] with , " No , no , no (15)
+[MESSAGE-INIT >> REACTION] greet (10)
+[x-sender >> x-causer] the little fellow (9)
+[x-experiencer >> trigger] it (11)
+[target-content >> reaction] with , " No , no , no (15)
 
 [CLASS] fellow (9)
 [m-quality] little (8)
@@ -3342,7 +3342,7 @@
 
 [IDENTIFICATION] I (1)
 
-[MODE] not (3)
+[MODE] not (3) # TODO MODE?
 
 [CLASS] elephant (6)
 [m-location] inside a boa constrictor (10)
@@ -3558,7 +3558,7 @@
 
 [IDENTIFICATION] me (2)
 
-[CLASS] another (3) # anaphoric class
+[CLASS] another (3) # anaphoric roleset
 
 # sent_id = 78
 # text = So I made another drawing .
@@ -3688,11 +3688,11 @@
 9	more	more	ADV	RBR	Degree=Cmp	4	advmod	_	TokenRange=6307:6311
 10	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=6312:6313
 
-[SCENE-INIT] did (4)
+[SCENE-INIT || REPRODUCTION] did (4)
 [m-explanation] So (1)
 [m-time] then (2)
-[participant] I (3)
-[target-scene] my drawing (6)
+[participant || x-causer] I (3)
+[target-scene || original] my drawing (6)
 [m-time] over (7)
 [m-time] once more (9)
 
@@ -3730,7 +3730,7 @@
 11	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=6362:6363
 12	"	"	PUNCT	''	_	4	punct	_	TokenRange=6365:6366
 
-[MESSAGE] rejected (4)
+[MESSAGE-INIT] rejected (4)
 [topic] it (2)
 [m-mode] too (5)
 [m-reference] just like the others (10)
@@ -3739,7 +3739,7 @@
 
 [MODE] too (5)
 
-[CLASS] others (10) # anaphoric class
+[CLASS] others (10) # anaphoric roleset
 [m-mode] just (7)
 
 [MODE] just (7)
@@ -3757,7 +3757,7 @@
 [has-state] This one (2)
 [m-quantity] too (4)
 
-[CLASS] one (2) # anaphoric class
+[CLASS] one (2) # anaphoric roleset
 
 [QUANTITY] too (4)
 
@@ -3893,7 +3893,7 @@
 10	"	"	PUNCT	''	_	3	punct	_	TokenRange=6612:6613
 
 [MESSAGE] threw (3)
-[x-causer] I (2)
+[x-sender] I (2)
 [m-noncomp] out (4)
 [content] an explanation (6)
 [m-accompanied] with it (8)
