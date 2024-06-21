@@ -99,20 +99,35 @@ class Frame:
             if arg.label == label:
                 return arg
 
-    def check(self, sentid, lineno) -> bool:
+    def check(self, sentid, lineno, frames) -> [bool, int]:
         if not self.label:
-            return False
+            return False, 0
         if not labels.check_frame_label(self.label):
             logging.warning('sent %s line %s unknown frame label: %s',
                     sentid, lineno, self.label)
-            return False
+            return False, 1
         ok = True
+        warnings = 0
         for i, arg in enumerate(self.args, start=lineno + 1):
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
                         sentid, i, self.label, arg.label)
                 ok = False
-        return ok
+                warnings += 1
+            if arg.label == 'm-depictive':
+                arg_heads = set(a.head for a in self.args)
+                backlink_found = False
+                for frame in frames:
+                    if frame.head == arg.head:
+                        for arg2 in frame.args:
+                            if arg2.head in arg_heads:
+                                backlink_found = True
+                if not backlink_found:
+                    logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
+                            sentid, i)
+                    ok = False
+                    warnings += 1
+        return ok, warnings
 
     @staticmethod
     def from_block(block: blocks.Block) -> 'Frame':
@@ -159,6 +174,7 @@ class Sentence:
             return
         # Phase 1: collect expected frame-arg links
         expected_links = collections.defaultdict(list)
+        # Phase 1a: syntactic links
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
                 if is_semantic_predicate(tree):
@@ -168,6 +184,7 @@ class Sentence:
                                 child.data.id,
                                 serialize_subtree(child.data.id, sentence),
                             ))
+        # Phase 1b: participant-scene links
         for frame in self.frames:
             if frame.label.split('-')[0] == 'SCENE':
                 participant = frame.find_arg('participant')
@@ -187,6 +204,28 @@ class Sentence:
                         expected_links[target_scene.head].append(protoarg)
             for arg in frame.args:
                 if arg.label == 'm-scene':
+                    protoarg = (frame.head, frame.text)
+                    expected_links[arg.head].append(protoarg)
+        # Phase 1c: topic-content links
+        for frame in self.frames:
+            if frame.label.split('-')[0] == 'MESSAGE':
+                topic = frame.find_arg('topic')
+                initial_content = frame.find_arg('initial-content')
+                transitory_content = frame.find_arg('transitory-content')
+                content = frame.find_arg('content')
+                target_content = frame.find_arg('target-content')
+                if topic:
+                    protoarg = (topic.head, topic.text)
+                    if initial_content:
+                        expected_links[initial_content.head].append(protoarg)
+                    if transitory_content:
+                        expected_links[transitory_content.head].append(protoarg)
+                    if content:
+                        expected_links[content.head].append(protoarg)
+                    if target_content:
+                        expected_links[target_content.head].append(protoarg)
+            for arg in frame.args:
+                if arg.label == 'm-content':
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
         # Phase 2: add missing frames and args
@@ -210,15 +249,18 @@ class Sentence:
     def check(self) -> tuple[int, int]:
         frame_count = 0
         annotated_count = 0
+        warnings = 0
         for lineno, frame in zip(self.frame_linenos, self.frames):
             if not isinstance(frame, Frame):
                 logging.warning('sent %s line %s cannot parse frame %s',
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            if frame.check(self.syntax[0].id, lineno):
+            ok, w = frame.check(self.syntax[0].id, lineno, self.frames)
+            if ok:
                 annotated_count += 1
-        return frame_count, annotated_count
+            warnings += w
+        return frame_count, annotated_count, warnings
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
