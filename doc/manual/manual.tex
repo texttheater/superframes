@@ -1491,12 +1491,38 @@ and \rl{x-identified} if it is definite.
 
 \newpage\subsection{Predicative Adpositions}
 
-In UD and therefore in Superframes, adpositions are treated as case markers depending on their objects which may influence the superframe of the superordinate predicate and the role that the object plays, but not treated as predicates in their own right. This is sometimes problematic. Consider the following nonstandard annotation, treating the adpositions as predicates:
+At the moment, Superframes follows UD's principle of treating adpositions like
+case markers, dependent on their objects. This greatly simplifies the
+annotation of adpositional arguments. On the other hand, it sometimes creates
+problems. An adposition, added to a noun, can cause a new superframe to be
+evoked, which it would be simpler to annotate if we could just label the
+adposition with it. Consider the following examples, where we nonstandardly
+treat the adpositions \emph{in}, \emph{out of}, and \emph{from} as adpositions.
+The annotation is quite natural:
 
 \ex.
-\a.\dep{Ich_x-experiencer__has-location *will#MESSAGE* **in#LOCATION-CHANGE**_content die Berge_target-location}
+\a.\dep{Ich_x-experiencer__has-location *will#MESSAGE* **in#LOCATION-CHANGE**_content die ***Berge#CLASS***__target-location}
 \b.\dep{I_has-location am *out#LOCATION-NEG* of the office_location today_m-time}
-\c.\dep{*sleep#STATE* a thousand miles_m-quantity **from#LOCATION**_m-location any human habitation_location}
+\c.\dep{*sleep#STATE* a thousand miles__m-quantity **from#LOCATION**_m-location any human habitation__location}
+
+But since we don't treat adpositions as predicates, we are forced to choose the following, more opaque and less detailed annotation:
+
+\ex.
+\a.\label{ex:berge}\dep{Ich_x-experiencer__x-has-location *will#MESSAGE* in die **Berge#CLASS**}
+\b.\label{ex:office}\dep{I_x-has-location am out of the *office#CLASS* today_m-time}
+\c.\label{ex:miles}\dep{*sleep#STATE* a thousand miles__m-quantity from any human **habitation#LOCATION**_m-location}
+
+In \label{ex:berge} and \label{ex:office}, We are forced to give \emph{Berge}
+and \emph{office} an \rl{x-has-location} role, which is not part of the frame
+evoked by these words alone; we have to assume it is added by adding the
+adposition. We also do not have a way to indicate that the additional
+superframe introduced by the non-core subject is \fr{LOCATION-INIT} and
+\fr{LOCATION-NEG}, respectively. In \label{ex:miles}, there is an even more
+severe problem: the quantity modifier \emph{a thousand miles} semantically
+modifies the \fr{LOCATION} frame evoked by the adposition \emph{from}, but we
+have to attach it to \emph{habitation}, which evokes a \emph{different}
+\fr{LOCATION} frame which does not have a quantity modifier. Confusion ensues,
+but for now we have to live with these issues.
 
 \newpage\section{TODO}
 
