@@ -17,11 +17,16 @@ import labels
 
 # FIXME word IDs are not always ints
 FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?: *# *(?P<comment>.*))?$')
-ARG_DEPS = set(('nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl',
-        'advcl', 'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod',
-        'compound', 'orphan'))
-PRED_DEPS = ARG_DEPS | set(('root', 'conj', 'parataxis', 'list', 'reparandum',
-        'dep', 'vocative', 'dislocated'))
+ARG_DEPS = set((
+    'nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl', 'advcl',
+    'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod', 'compound', 'orphan',
+    # SUD deps:
+    'subj', 'udep', 'mod', 'comp',
+))
+PRED_DEPS = ARG_DEPS | set((
+    'root', 'conj', 'parataxis', 'list', 'reparandum', 'dep', 'vocative',
+    'dislocated',
+))
 
 
 def subtrees(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
@@ -30,12 +35,16 @@ def subtrees(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
         yield from subtrees(child)
 
 
+def remove_features(deprel: str) -> str:
+    return re.split(r'[:@]', deprel)[0]
+
+
 def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
-    return tree.data.deprel.split(':')[0] in PRED_DEPS
+    return remove_features(tree.data.deprel) in PRED_DEPS
 
 
 def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
-    return tree.data.deprel.split(':')[0] in ARG_DEPS
+    return remove_features(tree.data.deprel) in ARG_DEPS
 
 
 def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
