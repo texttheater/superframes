@@ -53,20 +53,19 @@ class Rigid:
 
 
 FRAMES = {
-    'EVENTUALITY': Rigid(),
-    'PREDICATION': Flexible('argument', 'predicate'),
-    'RELATION': Flexible('satellite', 'nucleus'),
+    'SITUATION': Flexible('theme', 'situator'),
     'SCENE': Flexible('participant', 'scene'),
     'IDENTIFICATION': Flexible('identified', 'identifier'),
     'RANK': Flexible('has-rank', 'rank'),
     'CLASS': Flexible('has-class', 'class'),
-    'EXISTENCE': Flexible('exists', 'existence'),
+    'EXISTENCE': Flexible('material', 'exists'),
     'TRANSFORMATION-CREATION': Rigid('material', 'created'),
     'REPRODUCTION': Rigid('original', 'copy'),
     'QUALITY': Flexible('has-quality', 'quality'),
     'STATE': Flexible('has-state', 'state'),
     'DESTRUCTION': Rigid('destroyed'),
     'EXPERIENCE': Flexible('experiencer', 'experienced'),
+    'EVENT': Flexible('undergoer', 'event'),
     'ACTIVITY': Flexible('is-active', 'activity'),
     'MODE': Rigid('has-mode', 'mode'),
     'ACCOMPANIMENT': Flexible('accompanied', 'accompanier'),

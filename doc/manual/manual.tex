@@ -55,80 +55,77 @@
             \RowStyle{\bfseries}\fr{SUPERFRAME} & \rl{initial-arg2} & \rl{arg1} & \rl{arg2} & \rl{transitory-arg2} & \rl{target-arg2} & Sec. \\
             \midrule
 
-            \emoji{red-square} \fr{EVENTUALITY} & & & & & & \ref{sec:EVENTUALITY} \\
+            \emoji{link} \fr{SITUATION} & \rl{initial-situator} & \rl{theme} & \rl{situator} & \rl{transitory-situator} & \rl{target-situator} & \ref{sec:SITUATION} \\
 
-            \Sub\emoji{label} \fr{PREDICATION} & & \rl{argument} & \rl{predicate} & & & \ref{sec:PREDICATION} \\
+            \Sub\emoji{fork-and-knife} \fr{ACCOMPANIMENT} & \rl{initial-accompanier} & \rl{accompanied} & \rl{accompanier} & & \rl{target-accompanier} & \ref{sec:ACCOMPANIMENT} \\
+            \SubSub\emoji{paintbrush} \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
 
+            \Sub\emoji{money-bag} \fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
+
+            \Sub\emoji{keycap-asterisk} \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
+
+            \Sub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
+
+            \Sub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
+            \SubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
+
+            \Sub\emoji{crossed-swords}\ \fr{EVENT} & & \rl{undergoer} & \rl{event} & & & \ref{sec:EVENT} \\
             \SubSub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
 
-            \SubSub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
+            \Sub\emoji{sparkles} \fr{EXISTENCE} & initial-exists & material & \rl{exists} & & target-exists & \ref{sec:EXISTENCE} \\
+            \SubSub\emoji{memo} \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
+            \SubSub\emoji{magic-wand} \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
 
-            \SubSub\emoji{sparkles} \fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
-            \SubSubSub\emoji{memo} \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
-            \SubSubSub\emoji{magic-wand} \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
+            \Sub\emoji{eye} \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} &  &  & \ref{sec:EXPERIENCE} \\
 
-            \SubSub\emoji{eye} \fr{EXPERIENCE} & \rl{initial-experienced} & \rl{experiencer} & \rl{experienced} & \rl{transitory-experienced} & \rl{target-experienced} & \ref{sec:EXPERIENCE} \\
+            \Sub\emoji{red-exclamation-mark} \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
+            \SubSub\emoji{bullseye} \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
 
-            \SubSub\emoji{passport-control} \fr{IDENTIFICATION} & & \rl{identified} & \rl{identifier} & & & \ref{sec:IDENTIFICATION} \\
+            \Sub\emoji{passport-control} \fr{IDENTIFICATION} & \rl{initial-identifier} & \rl{identified} & \rl{identifier} & & \rl{target-identifier} & \ref{sec:IDENTIFICATION} \\
 
-            \SubSub\emoji{red-question-mark} \fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
+            \Sub\emoji{round-pushpin} \fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
+            \SubSub\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
+            \SubSub\emoji{sweat-droplets} \fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & \rl{target-location} & \ref{sec:EXCRETION} \\
+            \SubSub\emoji{cricket-game} \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
+            \SubSub\emoji{bowl-with-spoon} \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
+            \SubSub\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
+            \SubSub\emoji{t-shirt} \fr{WRAPPING-WEARING} & \rl{initial-wearer} & \rl{worn} & \rl{wearer} & & \rl{target-wearer} & \ref{sec:WRAPPING-WEARING} \\
 
-            \SubSub\emoji{red-apple} \fr{QUALITY} & & \rl{has-quality} & \rl{quality} & & & \ref{sec:QUALITY} \\
+            \Sub\emoji{hammer} \fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
 
-            \SubSub\emoji{abacus} \fr{QUANTITY} & & \rl{has-quantity} & \rl{quantity} & & & \ref{sec:QUANTITY} \\
+            \Sub\emoji{left-speech-bubble} \fr{MESSAGE} & \rl{initial-content} & \rl{topic} & \rl{content} & & \rl{target-content} & \ref{sec:MESSAGE} \\
 
-            \SubSub\emoji{1st-place-medal} \fr{RANK} & & \rl{has-rank} & \rl{rank} & & & \ref{sec:RANK} \\
+            \Sub\emoji{red-question-mark} \fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
 
-            \SubSub\emoji{zzz} \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
-            \SubSubSub\emoji{skull} \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
+            \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
-            \Sub\emoji{link} \fr{RELATION} & & \rl{satellite} & \rl{nucleus} & & & \ref{sec:RELATION} \\
+            \Sub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
 
-            \SubSub\emoji{fork-and-knife} \fr{ACCOMPANIMENT} & & \rl{accompanied} & \rl{accompanier} & & & \ref{sec:ACCOMPANIMENT} \\
-            \SubSubSub\emoji{paintbrush} \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
+            \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
 
-            \SubSub\emoji{money-bag} \fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
+            \Sub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
 
-            \SubSub\emoji{keycap-asterisk} \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
+            \Sub\emoji{abacus} \fr{QUANTITY} & \rl{initial-quantity} & \rl{has-quantity} & \rl{quantity} & & \rl{target-quantity} & \ref{sec:QUANTITY} \\
 
-            \SubSub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
-            \SubSubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
+            \Sub\emoji{1st-place-medal} \fr{RANK} & \rl{initial-rank} & \rl{has-rank} & \rl{rank} & & \rl{target-rank} & \ref{sec:RANK} \\
 
-            \SubSub\emoji{red-exclamation-mark} \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
-            \SubSubSub\emoji{bullseye} \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
+            \Sub\emoji{performing-arts} \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
 
-            \SubSub\emoji{round-pushpin} \fr{LOCATION} & \rl{initial-location} & \rl{has-location} & \rl{location} & \rl{transitory-location} & \rl{target-location} & \ref{sec:LOCATION} \\
-            \SubSubSub\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT} & \rl{initial-surface} & \rl{ornament} & \rl{surface} & & \rl{target-surface} & \ref{sec:ADORNMENT-TARNISHMENT} \\
-            \SubSubSub\emoji{sweat-droplets} \fr{EXCRETION} & \rl{excreter} & \rl{excreted} & & \rl{transitory-location} & \rl{target-location} & \ref{sec:EXCRETION} \\
-            \SubSubSub\emoji{cricket-game} \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
-            \SubSubSub\emoji{bowl-with-spoon} \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
-            \SubSubSub\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
-            \SubSubSub\emoji{t-shirt} \fr{WRAPPING-WEARING} & & \rl{worn} & \rl{wearer} & & & \ref{sec:WRAPPING-WEARING} \\
+            \Sub\emoji{zzz} \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
+            \SubSub\emoji{skull} \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
 
-            \SubSub\emoji{hammer} \fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
+            \Sub\emoji{megaphone} \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
 
-            \SubSub\emoji{left-speech-bubble} \fr{MESSAGE} & & \rl{topic} & \rl{content} & & & \ref{sec:MESSAGE} \\
+            \Sub\emoji{right-arrow} \fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
+            \SubSub\emoji{joystick} \fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
+            \SubSub\emoji{scroll} \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
+            \SubSub\emoji{prohibited} \fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
+            \SubSub\emoji{collision} \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
+            \SubSub\emoji{sneezing-face} \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
 
-            \SubSub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
+            \Sub\emoji{handshake} \fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
 
-            \SubSub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
-
-            \SubSub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
-
-            \SubSub\emoji{performing-arts} \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
-
-            \SubSub\emoji{megaphone} \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
-
-            \SubSub\emoji{right-arrow} \fr{SEQUENCE} & & \rl{follows} & \rl{followed} & & & \ref{sec:SEQUENCE} \\
-            \SubSubSub\emoji{joystick} \fr{CAUSATION} & & \rl{result} & \rl{causer} & & & \ref{sec:CAUSATION} \\
-            \SubSubSub\emoji{scroll} \fr{CONDITION} & & \rl{has-condition} & \rl{condition} & & & \ref{sec:CONDITION} \\
-            \SubSubSub\emoji{prohibited} \fr{EXCEPTION} & & \rl{has-exception} & \rl{exception} & & & \ref{sec:EXCEPTION} \\
-            \SubSubSub\emoji{collision} \fr{REACTION} & & \rl{reaction} & \rl{trigger} & & & \ref{sec:REACTION} \\
-            \SubSubSub\emoji{sneezing-face} \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
-
-            \SubSub\emoji{handshake} \fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
-
-            \SubSub\emoji{alarm-clock} \fr{TIME} & & \rl{has-time} & \rl{time} & & & \ref{sec:TIME} \\
+            \Sub\emoji{alarm-clock} \fr{TIME} & \rl{initial-time} & \rl{has-time} & \rl{time} & & \rl{target-time} & \ref{sec:TIME} \\
 
             \bottomrule
         \end{NiceTabular}
@@ -173,11 +170,10 @@ with those schemes. Here's how Superframes annotation works, in a nutshell:
 \end{enumerate}
 
 Table~\ref{tab:superframes} shows the superframes and their roles, sorted into
-a rough hierarchy. At the top is \fr{EVENTUALITY}, with the two subtypes
-\fr{PREDICATION} and \fr{RELATION}. All the main superframes are direct
-children of \fr{PREDICATION} or \fr{RELATION}. Some of them have one or more
-subtypes intended to make the annotation of certain special cases more
-intuitive and unambiguous.
+a rough hierarchy. At the top is \fr{SITUATION}. All the main superframes are
+direct children of \fr{SITUATION}. Some of them have one or more subtypes
+intended to make the annotation of certain special cases more intuitive and
+unambiguous.
 
 \newpage\subsection{Core Arguments}
 
@@ -230,7 +226,7 @@ event, and \rl{transitory-} marks participants at some point during the event.
 
 \ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
-\ex.\dep{Kim_x-causer *saved#EXPERIENCE-PREVENTION* Sandy_experiencer from the dragon_target-experienced}
+\ex.\dep{Kim_x-causer *saved#SITUATION-PREVENTION* Sandy_situator from the dragon_target-situator}
 
 The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an
 aspectual or modal meaning. Thus, its aspectual variants are especially common.
@@ -406,259 +402,31 @@ If you cannot choose between two frames for another reason, use \texttt{||} inst
 
 \newpage\section{Superframes Reference}
 
-\subsection{\emoji{red-square} \fr{EVENTUALITY}}
-\label{sec:EVENTUALITY}
-
-This is the most generic superframe. Use it only for sentential predicates with
-no discernible arguments, such as interjections.
-
-\ex.\dep{*Yes#EVENTUALITY*}
-
-\ex.\dep{*No#EVENTUALITY-NEG*}
-
-\ex.\dep{*What#IDENTIFICATION>>EVENTUALITY* ?}
-
-\newpage\subsection{\emoji{label} \fr{PREDICATION}}
-\label{sec:PREDICATION}
-
-The \rl{predicate} is true of the \rl{argument}. Normally, there should be no
-reason to use this superframe; instead, use one of the more specific subtypes.
-Directly use this superframe only when none of the more specific subtypes seems
-to fit (currently, there are no known cases of this, so there are no examples).
-For \fr{PREDICATION} and all of its subtypes, arg2 is typically a shadow
-argument, that is, it is incorporated into the predicate and not realized as a
-syntactic argument. This makes sense, because the predicate is already the
-predicate. However, there are cases where a semantic predicate is jointly
-realized by the syntactic predicate and its arg2. An example is shown in \Next.
-
-\ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
-
-\newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
-\label{sec:ACTIVITY}
-
-\rl{is-active} actively participates in \rl{activity}.
-
-Used for dynamic scenes where \rl{is-active} has agency and that cannot well be
-framed as a state change.
-
-\ex.\dep{Kim_is-active *worked#ACTIVITY*}
-
-\ex.\dep{Kim_is-active *partied#ACTIVITY*}
-
-\ex.\dep{Kim_is-active had *sex#ACTIVITY*}
-
-\ex.\dep{after some *work#ACTIVITY* with a colored pencil_m-means}
-
-\ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
-
-\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
-\label{sec:CLASS}
-
-\rl{class} indicates the class of entity that \rl{has-class} represents.
-
-Most prototypically evoked by common nouns with no arguments.
-
-\ex.\dep{swallowing an animal#CLASS}
-
-Indefinite pronouns also evoke \fr{CLASS}.
-
-\ex.\dep{She saw *one#CLASS*}
-
-\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
-
-\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
-
-\ex.\dep{*Something#CLASS* is broken}
-
-\ex.\dep{Where I live *everything#CLASS* is small}
-
-\newpage\subsection{\emoji{sparkles} \fr{EXISTENCE}}
-\label{sec:EXISTENCE}
-
-\rl{exists} exists. Use this only for non-scene entities; for scenes, use the \fr{SCENE} frame.
-
-\ex.\dep{I_exists *exist#EXISTENCE*}
-
-\ex.\dep{There_x-noncomp *is#EXISTENCE* a hill_exists}
-
-\ex.\dep{There_x-noncomp *is#SCENE* a hubbub_scene}
-
-\newpage\subsection{\emoji{memo} \fr{REPRODUCTION}}
-\label{sec:REPRODUCTION}
-
-Special case of \fr{EXISTENCE-INIT} where \rl{original} continues to exist, and
-a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
-
-\ex.\dep{Here is a *copy#REPRODUCTION* of the drawing_original}
-
-\ex.\dep{This_copy is a *translation#REPRODUCTION* of the pamphlet_original into English_x-quality}
-
-\newpage\subsection{\emoji{magic-wand} \fr{TRANSFORMATION-CREATION}}
-\label{sec:TRANSFORMATION-CREATION}
-
-Special case of \fr{EXISTENCE-INIT} where \rl{created} (aka \rl{target-exists})
-is newly created from \rl{material}, or \rl{material} is transformed to become
-\rl{created}.
-
-\ex.\dep{I_x-causer succeeded in *making#TRANSFORMATION-CREATION* my first drawing_created}
-
-\ex.\dep{Kim_x-causer *built#TRANSFORMATION-CREATION* a castle_created out of sand_material}
-
-\ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
-
-\newpage\subsection{\emoji{eye} \fr{EXPERIENCE}}
-\label{sec:EXPERIENCE}
-
-\rl{experiencer} experiences \rl{experienced}.
-
-Used for dynamic scenes where the \rl{experiencer} is not necessarily active,
-and that cannot well be framed as a state change. In connection with a
-\fr{MESSAGE} frame in the \rl{experienced} role, used for sensory and mental
-perception as well as addressees in communication. Also use for beneficiaries,
-and for ``bystander'' roles.
-
-\ex.\dep{Kim_experiencer 's *adventures#EXPERIENCE* in the jungle_m-location}
-
-\ex.\dep{Kim_x-causer *attacked#EXPERIENCE* Sandy_experiencer}
-
-\ex.\dep{I_x-experiencer *saw#MESSAGE* a magnificent picture_topic}
-
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality}
-
-\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* to Sandy_x-experiencer}
-
-\ex.\dep{Kim_participant *did#SCENE* something_scene nice for Sandy_m-experiencer}
-
-\ex.\dep{Kim_x-experiencer cooked a meal only to *have#SCENE* Sandy_participant spurn_scene it}
-
-\ex.\dep{Kim_experiencer *managed#EXPERIENCE* with dealing_experienced the cards}
-
-\ex.\dep{Die Piroggen_participant waren Maria_x-experiencer zu dunkel_target-scene *geraten#SCENE-INIT*}
-
-\ex.\dep{Das_experienced hat_x-noncomp mir_experiencer gerade_x-noncomp noch_x-noncomp *gefehlt#EXPERIENCE*}
-
-\ex.\dep{they_experiencer *need#EXPERIENCE-NECESSITY* six months_experienced for digestion_x-purpose}
-
-For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
-
-\newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
-\label{sec:IDENTIFICATION}
-
-\rl{identifier} identifies \rl{identified}.
-
-Evoked by definite pronouns, names, and other identifiers, as well as
-predicates denoting naming relationships.
-
-\ex.\dep{*I#IDENTIFICATION* saw a picture}
-
-\ex.\dep{I can distinguish *China#IDENTIFICATION* from Arizona}
-
-\ex.\dep{a book_identified *called#IDENTIFICATION* True Stories_identifier from Nature}
-
-\ex.\dep{This_identified is *Kim#IDENTIFICATION*}
-
-In English, the preposition \emph{of} has an identifying sense, which can also
-be metaphorical:
-
-\ex.\dep{the *island#CLASS* of Pultanella_m-identifier}
-
-\ex.\dep{the *stallion#CLASS* of Rumour_m-identifier}
-
-Likewise, \emph{in} has an identifying sense:
-
-\ex.\dep{In answer_m-identifier , he_x-sender *repeated#MESSAGE-INIT* : Please, draw_target-content me a sheep !}
-
-\newpage\subsection{\emoji{red-question-mark} \fr{MODE}}
-\label{sec:MODE}
-
-Used for adverbial modifiers that have no arguments other than the phrase they
-modify, and that, rouhgly speaking, indicate the modal strength of what is
-expressed and/or its relation to the discourse.
-
-\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
-
-\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
-
-\ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
-
-\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
-
-\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
-
-\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
-
-\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
-\label{sec:QUALITY}
-
-\rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
-
-\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
-
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
-
-\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
-
-\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
-
-\newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
-\label{sec:QUANTITY}
-
-\rl{quantity} is the quantity, degree, or extent of \rl{has-quantity}.
-
-\ex.\dep{three_m-quantity *burgers#CLASS*}
-
-\ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
-
-\ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
-
-\newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
-\label{sec:RANK}
-
-\rl{rank} indicates the order that \rl{has-rank} has in some sequence.
-
-\ex.\dep{*Chapter#MESSAGE* 1_m-rank}
-
-\ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
-
-\newpage\subsection{\emoji{zzz} \fr{STATE}}
-\label{sec:STATE}
-
-\rl{state} indicates a (temporary) state of \rl{has-state}.
-
-\ex.\dep{when I_has-state was six years_x-quantity *old#STATE*}
-
-\ex.\dep{Boa constrictors swallow their prey_has-state *whole#STATE*}
-
-\ex.\dep{they_has-state *sleep#STATE*}
-
-\ex.\dep{they_x-causer swallow their prey whole without *chewing#STATE-CHANGE* it_has-state}
-
-\ex.\dep{the six months that they_x-causer need for *digestion#STATE-CHANGE*}
-
-\ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
-
-\newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
-\label{sec:DESTRUCTION}
-
-Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes out of existence.
-
-\ex.\dep{Sam_destroyed 's *death#DESTRUCTION*}
-
-\ex.\dep{Sam_x-causer 's *destruction#DESTRUCTION* of the city_destroyed}
-
-When something is broken but not completely destroyed, use \fr{STATE}.
-
-\ex.\dep{Something_has-state was *broken#STATE* in my enginge_m-location}
-
-\newpage\subsection{\emoji{link} \fr{RELATION}}
-\label{sec:RELATION}
-
-There is a relation between \rl{satellite} and \rl{nucleus}, where the latter
-is more central, and the former more peripheral, if any such hierarchy can be
-established.  Normally, there should be no reason to use this superframe;
-instead, use one of the more specific subtypes.  Directly use this superframe
-only when none of the more specific subtypes seems to fit (currently, there are
-no known cases of this, so there are no examples).
+\subsection{\emoji{link} \fr{SITUATION}}
+\label{sec:SITUATION}
+
+This is the most generic superframe: something (\rl{theme}) is related to
+something (\rl{situator}). Prototypically, the former is the less central, more
+mobile element. It is situated in some conceptual space with respect to the
+situator, or put differently: it undergoes something in connection with the
+situator. When in doubt, the syntactically less oblique argument is the
+theme. In more specific superframes, the theme:situator relation takes
+the shape of e.g., compared:reference, has-location:location,
+possessed:possessor, part:whole, follows:followed,
+has-social-relation:social-relation. It can take more abstract shapes as well,
+e.g. has-quality:quality, where the situator is a predicate that is true of the
+theme.
+
+This generic superframe is useful in cases where the type of relation is not
+specified further.
+
+\ex.\dep{*Yes#SITUATION*}
+
+\ex.\dep{*No#SITUATION-NEG*}
+
+\ex.\dep{*transition#SITUATION-CHANGE* of the account_theme to a new government_target-situator}
+
+\ex.\dep{they_theme *need#SITUATION-NECESSITY* six months_situator for digestion_x-purpose}
 
 \newpage\subsection{\emoji{fork-and-knife} \fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
@@ -725,6 +493,27 @@ participant(s) have the attribute.
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
 
+\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
+\label{sec:CLASS}
+
+\rl{class} indicates the class of entity that \rl{has-class} represents.
+
+Most prototypically evoked by common nouns with no arguments.
+
+\ex.\dep{swallowing an animal#CLASS}
+
+Indefinite pronouns also evoke \fr{CLASS}.
+
+\ex.\dep{She saw *one#CLASS*}
+
+\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
+
+\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
+
+\ex.\dep{*Something#CLASS* is broken}
+
+\ex.\dep{Where I live *everything#CLASS* is small}
+
 \newpage\subsection{\emoji{balance-scale} \fr{COMPARISON}}
 \label{sec:COMPARISON}
 
@@ -774,6 +563,90 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
 
+\newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
+\label{sec:EVENT}
+
+Used for predicates that are inherently dynamic and cannot be framed as
+\fr{-CHANGE}/\fr{-INIT}, so usually activities in terms of Vendler.
+
+\ex.\dep{Kim_undergoer 's *adventures#EVENT* in the jungle_m-location}
+
+\ex.\dep{Kim_x-causer *attacked#EVENT* Sandy_undergoer}
+
+Note that many predicates that denote events in terms of Vendler can be framed differently (as changes):
+
+\ex.\dep{Kim_excreter *sneezed#EXCRETION*}
+
+\ex.\dep{The ambassador_has-location *arrived#LOCATION-INIT* in Moscow_target-location}
+
+\newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
+\label{sec:ACTIVITY}
+
+Special case of \fr{EVENT} where the \rl{undergoer} is active.
+
+\ex.\dep{Kim_is-active *partied#ACTIVITY*}
+
+\ex.\dep{Kim_is-active had *sex#ACTIVITY*}
+
+\newpage\subsection{\emoji{sparkles} \fr{EXISTENCE}}
+\label{sec:EXISTENCE}
+
+\rl{exists} exists. Use this only for non-scene entities; for scenes, use the \fr{SCENE} frame.
+
+\ex.\dep{I_exists *exist#EXISTENCE*}
+
+\ex.\dep{There_x-noncomp *is#EXISTENCE* a hill_exists}
+
+\ex.\dep{There_x-noncomp *is#SCENE* a hubbub_scene}
+
+\newpage\subsection{\emoji{memo} \fr{REPRODUCTION}}
+\label{sec:REPRODUCTION}
+
+Special case of \fr{EXISTENCE-INIT} where \rl{original} continues to exist, and
+a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
+
+\ex.\dep{Here is a *copy#REPRODUCTION* of the drawing_original}
+
+\ex.\dep{This_copy is a *translation#REPRODUCTION* of the pamphlet_original into English_x-quality}
+
+\newpage\subsection{\emoji{magic-wand} \fr{TRANSFORMATION-CREATION}}
+\label{sec:TRANSFORMATION-CREATION}
+
+Special case of \fr{EXISTENCE-INIT} where \rl{created} (aka \rl{target-exists})
+is newly created from \rl{material}, or \rl{material} is transformed to become
+\rl{created}.
+
+\ex.\dep{I_x-causer succeeded in *making#TRANSFORMATION-CREATION* my first drawing_created}
+
+\ex.\dep{Kim_x-causer *built#TRANSFORMATION-CREATION* a castle_created out of sand_material}
+
+\ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
+
+\newpage\subsection{\emoji{eye} \fr{EXPERIENCE}}
+\label{sec:EXPERIENCE}
+
+\rl{experiencer} experiences \rl{experienced}.
+
+In connection with a \fr{MESSAGE} frame in the \rl{experienced} role, used for
+sensory and mental perception as well as addressees in communication. Also use
+for beneficiaries, and for ``bystander'' roles.
+
+\ex.\dep{I_x-experiencer *saw#MESSAGE* a magnificent picture_topic}
+
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality}
+
+\ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* to Sandy_x-experiencer}
+
+\ex.\dep{Kim_participant *did#SCENE* something_scene nice for Sandy_m-experiencer}
+
+\ex.\dep{Kim_x-experiencer cooked a meal only to *have#SCENE* Sandy_participant spurn_scene it}
+
+\ex.\dep{Die Piroggen_participant waren Maria_x-experiencer zu dunkel_target-scene *geraten#SCENE-INIT*}
+
+\ex.\dep{Das_experienced hat_x-noncomp mir_experiencer gerade_x-noncomp noch_x-noncomp *gefehlt#EXPERIENCE*}
+
+For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
+
 \newpage\subsection{\emoji{red-exclamation-mark} \fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
@@ -789,6 +662,33 @@ Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
 \ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possessed}
 
 \ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
+
+\newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
+\label{sec:IDENTIFICATION}
+
+\rl{identifier} identifies \rl{identified}.
+
+Evoked by definite pronouns, names, and other identifiers, as well as
+predicates denoting naming relationships.
+
+\ex.\dep{*I#IDENTIFICATION* saw a picture}
+
+\ex.\dep{I can distinguish *China#IDENTIFICATION* from Arizona}
+
+\ex.\dep{a book_identified *called#IDENTIFICATION* True Stories_identifier from Nature}
+
+\ex.\dep{This_identified is *Kim#IDENTIFICATION*}
+
+In English, the preposition \emph{of} has an identifying sense, which can also
+be metaphorical:
+
+\ex.\dep{the *island#CLASS* of Pultanella_m-identifier}
+
+\ex.\dep{the *stallion#CLASS* of Rumour_m-identifier}
+
+Likewise, \emph{in} has an identifying sense:
+
+\ex.\dep{In answer_m-identifier , he_x-sender *repeated#MESSAGE-INIT* : Please, draw_target-content me a sheep !}
 
 \newpage\subsection{\emoji{round-pushpin} \fr{LOCATION}}
 \label{sec:LOCATION}
@@ -1002,6 +902,25 @@ but didn't is framed as \fr{MESSAGE-PREVENTION}:
 
 \ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREVENTION* to take_target-content the trash out}
 
+\newpage\subsection{\emoji{red-question-mark} \fr{MODE}}
+\label{sec:MODE}
+
+Used for adverbial modifiers that have no arguments other than the phrase they
+modify, and that, rouhgly speaking, indicate the modal strength of what is
+expressed and/or its relation to the discourse.
+
+\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
+
+\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+
+\ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
+
+\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
+
+\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
+
+\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
+
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
 
@@ -1061,6 +980,39 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
+\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
+\label{sec:QUALITY}
+
+\rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
+
+\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
+
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
+
+\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
+
+\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
+
+\newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
+\label{sec:QUANTITY}
+
+\rl{quantity} is the quantity, degree, or extent of \rl{has-quantity}.
+
+\ex.\dep{three_m-quantity *burgers#CLASS*}
+
+\ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
+
+\ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
+
+\newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
+\label{sec:RANK}
+
+\rl{rank} indicates the order that \rl{has-rank} has in some sequence.
+
+\ex.\dep{*Chapter#MESSAGE* 1_m-rank}
+
+\ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
+
 \newpage\subsection{\emoji{performing-arts} \fr{SCENE}}
 \label{sec:SCENE}
 
@@ -1081,11 +1033,11 @@ in one graph.
 
 \ex.\dep{The **shouting#MESSAGE-INIT**_initial-scene *faded#SCENE-DEINIT*}
 
-\ex.\dep{A **coup#EXPERIENCE**_target-scene was *attempted#SCENE-INIT*}
+\ex.\dep{A **coup#EVENT**_target-scene was *attempted#SCENE-INIT*}
 
 \ex.\dep{Kim_participant__is-active *finished#SCENE-DEINIT* their **work#ACTIVITY**_initial-scene}
 
-\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an **outbreak#SCENE-INIT**_target-scene of ***measles#EXPERIENCE***__target-scene}
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an **outbreak#SCENE-INIT**_target-scene of ***measles#EVENT***__target-scene}
 
 \ex.\dep{Kim_participant__has-location *refrained#SCENE-PREVENTION* from **going#LOCATION-CHANGE**_target-scene}
 
@@ -1108,6 +1060,36 @@ adverbs.
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
 
 \ex.\dep{I_x-causer *devoted#SCENE-INIT*__follows myself_participant **instead#SEQUENCE**_m-scene to geography_target-scene}
+
+\newpage\subsection{\emoji{zzz} \fr{STATE}}
+\label{sec:STATE}
+
+\rl{state} indicates a (temporary) state of \rl{has-state}.
+
+\ex.\dep{when I_has-state was six years_x-quantity *old#STATE*}
+
+\ex.\dep{Boa constrictors swallow their prey_has-state *whole#STATE*}
+
+\ex.\dep{they_has-state *sleep#STATE*}
+
+\ex.\dep{they_x-causer swallow their prey whole without *chewing#STATE-CHANGE* it_has-state}
+
+\ex.\dep{the six months that they_x-causer need for *digestion#STATE-CHANGE*}
+
+\ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
+
+\newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
+\label{sec:DESTRUCTION}
+
+Special case of \fr{STATE-CHANGE} where \rl{destroyed} (aka \rl{has-state}) goes out of existence.
+
+\ex.\dep{Sam_destroyed 's *death#DESTRUCTION*}
+
+\ex.\dep{Sam_x-causer 's *destruction#DESTRUCTION* of the city_destroyed}
+
+When something is broken but not completely destroyed, use \fr{STATE}.
+
+\ex.\dep{Something_has-state was *broken#STATE* in my enginge_m-location}
 
 \newpage\subsection{\emoji{megaphone} \fr{SENDING}}
 \label{sec:SENDING}
@@ -1201,7 +1183,7 @@ than \rl{m-resultative}.
 
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
 
 In the last example, we use \rl{x-initial-location:has-location} to specify not
 only the role of the napkin in the resulting event (\rl{has-location}) but also
@@ -1268,7 +1250,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_in-motion *swims#UNANCHORED-MOTION* on Monday_m-time}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* twice_m-time}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* twice_m-time}
 
 \ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
@@ -1309,8 +1291,8 @@ choice.
 \b.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant clean_target-scene the dishes}
 
 \ex.
-\a.\dep{Kim_x-causer *worked#EXPERIENCE*}
-\b.\dep{Kim_x-causer *worked#EXPERIENCE* on the drawing_experiencer}
+\a.\dep{Kim_x-causer *worked#EVENT*}
+\b.\dep{Kim_x-causer *worked#EVENT* on the drawing_undergoer}
 
 \newpage\subsection{Shadow and Default Arguments}
 
@@ -1409,7 +1391,7 @@ used with states and activities, so \emph{make} itself should be neither
 On the other hand, if a predicate is restricted to subordinate predicates of a
 certain type, it can have the same type.
 
-\ex.\dep{I_experiencer *lived#EXPERIENCE* my life_experience}
+\ex.\dep{I_undergoer *lived#EVENT* my life_event}
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
@@ -1467,7 +1449,7 @@ but nonspatial meaning to the verb, use an appropriate role.
 In fully non-compositional particle verbs, where the meaning is not
 predictable, use \rl{m-noncomp}.
 
-\ex.\dep{*do#EXPERIENCE* somebody_experiencer in_m-noncomp} (does not imply \emph{do} somebody)
+\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp} (does not imply \emph{do} somebody)
 
 \newpage\subsection{Pronouns with Arguments}
 
@@ -1491,12 +1473,38 @@ and \rl{x-identified} if it is definite.
 
 \newpage\subsection{Predicative Adpositions}
 
-In UD and therefore in Superframes, adpositions are treated as case markers depending on their objects which may influence the superframe of the superordinate predicate and the role that the object plays, but not treated as predicates in their own right. This is sometimes problematic. Consider the following nonstandard annotation, treating the adpositions as predicates:
+At the moment, Superframes follows UD's principle of treating adpositions like
+case markers, dependent on their objects. This greatly simplifies the
+annotation of adpositional arguments. On the other hand, it sometimes creates
+problems. An adposition, added to a noun, can cause a new superframe to be
+evoked, which it would be simpler to annotate if we could just label the
+adposition with it. Consider the following examples, where we nonstandardly
+treat the adpositions \emph{in}, \emph{out of}, and \emph{from} as adpositions.
+The annotation is quite natural:
 
 \ex.
-\a.\dep{Ich_x-experiencer__has-location *will#MESSAGE* **in#LOCATION-CHANGE**_content die Berge_target-location}
+\a.\dep{Ich_x-experiencer__has-location *will#MESSAGE* **in#LOCATION-CHANGE**_content die ***Berge#CLASS***__target-location}
 \b.\dep{I_has-location am *out#LOCATION-NEG* of the office_location today_m-time}
-\c.\dep{*sleep#STATE* a thousand miles_m-quantity **from#LOCATION**_m-location any human habitation_location}
+\c.\dep{*sleep#STATE* a thousand miles__m-quantity **from#LOCATION**_m-location any human habitation__location}
+
+But since we don't treat adpositions as predicates, we are forced to choose the following, more opaque and less detailed annotation:
+
+\ex.
+\a.\label{ex:berge}\dep{Ich_x-experiencer__x-has-location *will#MESSAGE* in die **Berge#CLASS**_content}
+\b.\label{ex:office}\dep{I_x-has-location am out of the *office#CLASS* today_m-time}
+\c.\label{ex:miles}\dep{*sleep#STATE* a thousand miles__m-quantity from any human **habitation#LOCATION**_m-location}
+
+In \ref{ex:berge} and \ref{ex:office}, we are forced to give \emph{Berge} and
+\emph{office} an \rl{x-has-location} role, which is not part of the frame
+evoked by these words alone; we have to assume it is added by adding the
+adposition. We also do not have a way to indicate that the additional
+superframe introduced by the non-core subject is \fr{LOCATION-INIT} and
+\fr{LOCATION-NEG}, respectively. In \ref{ex:miles}, there is an even more
+severe problem: the quantity modifier \emph{a thousand miles} semantically
+modifies the \fr{LOCATION} frame evoked by the adposition \emph{from}, but we
+have to attach it to \emph{habitation}, which evokes a \emph{different}
+\fr{LOCATION} frame which does not have a quantity modifier. Confusion ensues,
+but for now we have to live with these issues.
 
 \newpage\section{TODO}
 
