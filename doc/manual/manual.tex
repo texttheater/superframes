@@ -60,8 +60,6 @@
             \Sub\emoji{fork-and-knife} \fr{ACCOMPANIMENT} & \rl{initial-accompanier} & \rl{accompanied} & \rl{accompanier} & & \rl{target-accompanier} & \ref{sec:ACCOMPANIMENT} \\
             \SubSub\emoji{paintbrush} \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
 
-            \Sub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
-
             \Sub\emoji{money-bag} \fr{ASSET} & & \rl{has-asset} & \rl{asset} & & & \ref{sec:ASSET} \\
 
             \Sub\emoji{keycap-asterisk} \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
@@ -70,6 +68,9 @@
 
             \Sub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \SubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
+
+            \Sub\emoji{crossed-swords}\ \fr{EVENT} & & \rl{undergoer} & \rl{event} & & & \ref{sec:EVENT} \\
+            \SubSub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
 
             \Sub\emoji{sparkles} \fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
             \SubSub\emoji{memo} \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
@@ -416,7 +417,8 @@ has-social-relation:social-relation. It can take more abstract shapes as well,
 e.g. has-quality:quality, where the situator is a predicate that is true of the
 situated.
 
-This generic superframe is useful in cases where the type of relation is not specified further.
+This generic superframe is useful in cases where the type of relation is not
+specified further.
 
 \ex.\dep{*Yes#SITUATION*}
 
@@ -461,24 +463,6 @@ assigns a participant of \rl{has-depictive} (aka \rl{accompanied}) a role (cf.
 Sec.~\ref{sec:control}).
 
 \ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE-INIT**_m-depictive}
-
-\newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
-\label{sec:ACTIVITY}
-
-\rl{is-active} actively participates in \rl{activity}.
-
-Used for dynamic scenes where \rl{is-active} has agency and that cannot well be
-framed as a state change.
-
-\ex.\dep{Kim_is-active *worked#ACTIVITY*}
-
-\ex.\dep{Kim_is-active *partied#ACTIVITY*}
-
-\ex.\dep{Kim_is-active had *sex#ACTIVITY*}
-
-\ex.\dep{after some *work#ACTIVITY* with a colored pencil_m-means}
-
-\ex.\dep{I_is-active devoted myself to *geography#ACTIVITY*}
 
 \newpage\subsection{\emoji{money-bag} \fr{ASSET}}
 \label{sec:ASSET}
@@ -577,6 +561,24 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
 
+\newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
+\label{sec:EVENT}
+
+Used for predicates that are inherently dynamic.
+
+\ex.\dep{Kim_undergoer 's *adventures#EVENT* in the jungle_m-location}
+
+\ex.\dep{Kim_x-causer *attacked#EVENT* Sandy_undergoer}
+
+\newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
+\label{sec:ACTIVITY}
+
+Special case of \fr{EVENT} where the \rl{undergoer} is active.
+
+\ex.\dep{Kim_is-active *partied#ACTIVITY*}
+
+\ex.\dep{Kim_is-active had *sex#ACTIVITY*}
+
 \newpage\subsection{\emoji{sparkles} \fr{EXISTENCE}}
 \label{sec:EXISTENCE}
 
@@ -616,15 +618,9 @@ is newly created from \rl{material}, or \rl{material} is transformed to become
 
 \rl{experiencer} experiences \rl{experienced}.
 
-Used for dynamic scenes where the \rl{experiencer} is not necessarily active,
-and that cannot well be framed as a state change. In connection with a
-\fr{MESSAGE} frame in the \rl{experienced} role, used for sensory and mental
-perception as well as addressees in communication. Also use for beneficiaries,
-and for ``bystander'' roles.
-
-\ex.\dep{Kim_experiencer 's *adventures#EXPERIENCE* in the jungle_m-location}
-
-\ex.\dep{Kim_x-causer *attacked#EXPERIENCE* Sandy_experiencer}
+In connection with a \fr{MESSAGE} frame in the \rl{experienced} role, used for
+sensory and mental perception as well as addressees in communication. Also use
+for beneficiaries, and for ``bystander'' roles.
 
 \ex.\dep{I_x-experiencer *saw#MESSAGE* a magnificent picture_topic}
 
@@ -635,8 +631,6 @@ and for ``bystander'' roles.
 \ex.\dep{Kim_participant *did#SCENE* something_scene nice for Sandy_m-experiencer}
 
 \ex.\dep{Kim_x-experiencer cooked a meal only to *have#SCENE* Sandy_participant spurn_scene it}
-
-\ex.\dep{Kim_experiencer *managed#EXPERIENCE* with dealing_experienced the cards}
 
 \ex.\dep{Die Piroggen_participant waren Maria_x-experiencer zu dunkel_target-scene *geraten#SCENE-INIT*}
 
