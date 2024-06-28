@@ -64,8 +64,6 @@
 
             \Sub\emoji{keycap-asterisk} \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
 
-            \Sub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
-
             \Sub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \SubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
 
@@ -103,8 +101,6 @@
 
             \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
 
-            \Sub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
-
             \Sub\emoji{abacus} \fr{QUANTITY} & \rl{initial-quantity} & \rl{has-quantity} & \rl{quantity} & & \rl{target-quantity} & \ref{sec:QUANTITY} \\
 
             \Sub\emoji{1st-place-medal} \fr{RANK} & \rl{initial-rank} & \rl{has-rank} & \rl{rank} & & \rl{target-rank} & \ref{sec:RANK} \\
@@ -112,6 +108,8 @@
             \Sub\emoji{performing-arts} \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
 
             \Sub\emoji{zzz} \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
+            \SubSub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
+            \SubSubSub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
             \SubSub\emoji{skull} \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
 
             \Sub\emoji{megaphone} \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
@@ -493,27 +491,6 @@ participant(s) have the attribute.
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
 
-\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
-\label{sec:CLASS}
-
-\rl{class} indicates the class of entity that \rl{has-class} represents.
-
-Most prototypically evoked by common nouns with no arguments.
-
-\ex.\dep{swallowing an animal#CLASS}
-
-Indefinite pronouns also evoke \fr{CLASS}.
-
-\ex.\dep{She saw *one#CLASS*}
-
-\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
-
-\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
-
-\ex.\dep{*Something#CLASS* is broken}
-
-\ex.\dep{Where I live *everything#CLASS* is small}
-
 \newpage\subsection{\emoji{balance-scale} \fr{COMPARISON}}
 \label{sec:COMPARISON}
 
@@ -567,7 +544,7 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \label{sec:EVENT}
 
 Used for predicates that are inherently dynamic and cannot be framed as
-\fr{-CHANGE}/\fr{-INIT}, so usually activities in terms of Vendler.
+\fr{-CHANGE}/\fr{-INIT}/\fr{-DEINIT}, so usually activities in terms of Vendler.
 
 \ex.\dep{Kim_undergoer 's *adventures#EVENT* in the jungle_m-location}
 
@@ -980,19 +957,6 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
-\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
-\label{sec:QUALITY}
-
-\rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
-
-\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
-
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
-
-\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
-
-\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
-
 \newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
 \label{sec:QUANTITY}
 
@@ -1064,7 +1028,9 @@ adverbs.
 \newpage\subsection{\emoji{zzz} \fr{STATE}}
 \label{sec:STATE}
 
-\rl{state} indicates a (temporary) state of \rl{has-state}.
+\rl{state} indicates a state of \rl{has-state}. Typically used with predicates
+that do not, in fact, have a \rl{state} role, because the state is already
+incorporated into the meaning of the predicate.
 
 \ex.\dep{when I_has-state was six years_x-quantity *old#STATE*}
 
@@ -1077,6 +1043,49 @@ adverbs.
 \ex.\dep{the six months that they_x-causer need for *digestion#STATE-CHANGE*}
 
 \ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
+
+\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
+\label{sec:QUALITY}
+
+Special case of \fr{STATE} -- a quality is a bit more permanent than a state;
+the \rl{has-quality} (aka \rl{has-state}) is not expected to change back and
+forth between \rl{quality}s (aka \rl{state}s) regularly.  Also used to describe
+qualitites of events, i.e., manners.
+
+\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
+
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
+
+\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
+
+\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
+
+\ex.\dep{The leaves_has-quality *reddened#QUALITY-INIT*}
+
+\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
+\label{sec:CLASS}
+
+Special case of \fr{QUALITY} -- a class is even more permanent, in the sense
+that if the \rl{has-class} (aka \rl{has-state}) takes on a new \rl{class} (aka
+\rl{state}), it becomes a new kind of entity.
+
+Most prototypically evoked by common nouns with no arguments.
+
+\ex.\dep{swallowing an animal#CLASS}
+
+\ex.\dep{Kim_participant__has-class *became#SCENE-INIT* a **teacher#CLASS**_target-scene}
+
+Indefinite pronouns also evoke \fr{CLASS}.
+
+\ex.\dep{She saw *one#CLASS*}
+
+\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
+
+\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
+
+\ex.\dep{*Something#CLASS* is broken}
+
+\ex.\dep{Where I live *everything#CLASS* is small}
 
 \newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
 \label{sec:DESTRUCTION}
