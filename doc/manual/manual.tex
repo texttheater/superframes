@@ -55,7 +55,7 @@
             \RowStyle{\bfseries}\fr{SUPERFRAME} & \rl{initial-arg2} & \rl{arg1} & \rl{arg2} & \rl{transitory-arg2} & \rl{target-arg2} & Sec. \\
             \midrule
 
-            \emoji{link} \fr{SITUATION} & \rl{initial-situator} & \rl{situated} & \rl{situator} & \rl{transitory-situator} & \rl{target-situator} & \ref{sec:SITUATION} \\
+            \emoji{link} \fr{SITUATION} & \rl{initial-situator} & \rl{theme} & \rl{situator} & \rl{transitory-situator} & \rl{target-situator} & \ref{sec:SITUATION} \\
 
             \Sub\emoji{fork-and-knife} \fr{ACCOMPANIMENT} & \rl{initial-accompanier} & \rl{accompanied} & \rl{accompanier} & & \rl{target-accompanier} & \ref{sec:ACCOMPANIMENT} \\
             \SubSub\emoji{paintbrush} \fr{DEPICTIVE} & & \rl{has-depictive} & \rl{depictive} & & & \ref{sec:DEPICTIVE} \\
@@ -72,7 +72,7 @@
             \Sub\emoji{crossed-swords}\ \fr{EVENT} & & \rl{undergoer} & \rl{event} & & & \ref{sec:EVENT} \\
             \SubSub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
 
-            \Sub\emoji{sparkles} \fr{EXISTENCE} & & & \rl{exists} & & & \ref{sec:EXISTENCE} \\
+            \Sub\emoji{sparkles} \fr{EXISTENCE} & initial-exists & material & \rl{exists} & & target-exists & \ref{sec:EXISTENCE} \\
             \SubSub\emoji{memo} \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
             \SubSub\emoji{magic-wand} \fr{TRANSFORMATION-CREATION} & & \rl{material} & & & \rl{created} & \ref{sec:TRANSFORMATION-CREATION} \\
 
@@ -226,7 +226,7 @@ event, and \rl{transitory-} marks participants at some point during the event.
 
 \ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
-\ex.\dep{Kim_x-causer *saved#EXPERIENCE-PREVENTION* Sandy_experiencer from the dragon_target-experienced}
+\ex.\dep{Kim_x-causer *saved#SITUATION-PREVENTION* Sandy_situator from the dragon_target-situator}
 
 The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an
 aspectual or modal meaning. Thus, its aspectual variants are especially common.
@@ -405,17 +405,17 @@ If you cannot choose between two frames for another reason, use \texttt{||} inst
 \subsection{\emoji{link} \fr{SITUATION}}
 \label{sec:SITUATION}
 
-This is the most generic superframe: something (\rl{situated}) is related to
+This is the most generic superframe: something (\rl{theme}) is related to
 something (\rl{situator}). Prototypically, the former is the less central, more
 mobile element. It is situated in some conceptual space with respect to the
 situator, or put differently: it undergoes something in connection with the
 situator. When in doubt, the syntactically less oblique argument is the
-situated. In more specific superframes, the situated:situator relation takes
+theme. In more specific superframes, the theme:situator relation takes
 the shape of e.g., compared:reference, has-location:location,
 possessed:possessor, part:whole, follows:followed,
 has-social-relation:social-relation. It can take more abstract shapes as well,
 e.g. has-quality:quality, where the situator is a predicate that is true of the
-situated.
+theme.
 
 This generic superframe is useful in cases where the type of relation is not
 specified further.
@@ -424,7 +424,9 @@ specified further.
 
 \ex.\dep{*No#SITUATION-NEG*}
 
-\ex.\dep{*transition#SITUATION-CHANGE* of the account_situated to a new government_target-situator}
+\ex.\dep{*transition#SITUATION-CHANGE* of the account_theme to a new government_target-situator}
+
+\ex.\dep{they_theme *need#SITUATION-NECESSITY* six months_situator for digestion_x-purpose}
 
 \newpage\subsection{\emoji{fork-and-knife} \fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
@@ -564,11 +566,18 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
 \label{sec:EVENT}
 
-Used for predicates that are inherently dynamic.
+Used for predicates that are inherently dynamic and cannot be framed as
+\fr{-CHANGE}/\fr{-INIT}, so usually activities in terms of Vendler.
 
 \ex.\dep{Kim_undergoer 's *adventures#EVENT* in the jungle_m-location}
 
 \ex.\dep{Kim_x-causer *attacked#EVENT* Sandy_undergoer}
+
+Note that many predicates that denote events in terms of Vendler can be framed differently (as changes):
+
+\ex.\dep{Kim_excreter *sneezed#EXCRETION*}
+
+\ex.\dep{The ambassador_has-location *arrived#LOCATION-INIT* in Moscow_target-location}
 
 \newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
 \label{sec:ACTIVITY}
@@ -635,8 +644,6 @@ for beneficiaries, and for ``bystander'' roles.
 \ex.\dep{Die Piroggen_participant waren Maria_x-experiencer zu dunkel_target-scene *geraten#SCENE-INIT*}
 
 \ex.\dep{Das_experienced hat_x-noncomp mir_experiencer gerade_x-noncomp noch_x-noncomp *gefehlt#EXPERIENCE*}
-
-\ex.\dep{they_experiencer *need#EXPERIENCE-NECESSITY* six months_experienced for digestion_x-purpose}
 
 For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 
@@ -1026,11 +1033,11 @@ in one graph.
 
 \ex.\dep{The **shouting#MESSAGE-INIT**_initial-scene *faded#SCENE-DEINIT*}
 
-\ex.\dep{A **coup#EXPERIENCE**_target-scene was *attempted#SCENE-INIT*}
+\ex.\dep{A **coup#EVENT**_target-scene was *attempted#SCENE-INIT*}
 
 \ex.\dep{Kim_participant__is-active *finished#SCENE-DEINIT* their **work#ACTIVITY**_initial-scene}
 
-\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an **outbreak#SCENE-INIT**_target-scene of ***measles#EXPERIENCE***__target-scene}
+\ex.\dep{Swift action_x-causer *prevented#SCENE-PREVENTION* an **outbreak#SCENE-INIT**_target-scene of ***measles#EVENT***__target-scene}
 
 \ex.\dep{Kim_participant__has-location *refrained#SCENE-PREVENTION* from **going#LOCATION-CHANGE**_target-scene}
 
@@ -1176,7 +1183,7 @@ than \rl{m-resultative}.
 
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
 
 In the last example, we use \rl{x-initial-location:has-location} to specify not
 only the role of the napkin in the resulting event (\rl{has-location}) but also
@@ -1243,7 +1250,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_in-motion *swims#UNANCHORED-MOTION* on Monday_m-time}
 
-\ex.\dep{Kim_experiencer *sneezed#EXPERIENCE* twice_m-time}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* twice_m-time}
 
 \ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
@@ -1284,8 +1291,8 @@ choice.
 \b.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant clean_target-scene the dishes}
 
 \ex.
-\a.\dep{Kim_x-causer *worked#EXPERIENCE*}
-\b.\dep{Kim_x-causer *worked#EXPERIENCE* on the drawing_experiencer}
+\a.\dep{Kim_x-causer *worked#EVENT*}
+\b.\dep{Kim_x-causer *worked#EVENT* on the drawing_undergoer}
 
 \newpage\subsection{Shadow and Default Arguments}
 
@@ -1384,7 +1391,7 @@ used with states and activities, so \emph{make} itself should be neither
 On the other hand, if a predicate is restricted to subordinate predicates of a
 certain type, it can have the same type.
 
-\ex.\dep{I_experiencer *lived#EXPERIENCE* my life_experience}
+\ex.\dep{I_undergoer *lived#EVENT* my life_event}
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
@@ -1442,7 +1449,7 @@ but nonspatial meaning to the verb, use an appropriate role.
 In fully non-compositional particle verbs, where the meaning is not
 predictable, use \rl{m-noncomp}.
 
-\ex.\dep{*do#EXPERIENCE* somebody_experiencer in_m-noncomp} (does not imply \emph{do} somebody)
+\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp} (does not imply \emph{do} somebody)
 
 \newpage\subsection{Pronouns with Arguments}
 
@@ -1487,7 +1494,7 @@ But since we don't treat adpositions as predicates, we are forced to choose the 
 \b.\label{ex:office}\dep{I_x-has-location am out of the *office#CLASS* today_m-time}
 \c.\label{ex:miles}\dep{*sleep#STATE* a thousand miles__m-quantity from any human **habitation#LOCATION**_m-location}
 
-In \ref{ex:berge} and \ref{ex:office}, We are forced to give \emph{Berge} and
+In \ref{ex:berge} and \ref{ex:office}, we are forced to give \emph{Berge} and
 \emph{office} an \rl{x-has-location} role, which is not part of the frame
 evoked by these words alone; we have to assume it is added by adding the
 adposition. We also do not have a way to indicate that the additional
