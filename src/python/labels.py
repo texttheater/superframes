@@ -53,7 +53,7 @@ class Rigid:
 
 
 FRAMES = {
-    'SITUATION': Flexible('situated', 'situator'),
+    'SITUATION': Flexible('theme', 'situator'),
     'SCENE': Flexible('participant', 'scene'),
     'IDENTIFICATION': Flexible('identified', 'identifier'),
     'RANK': Flexible('has-rank', 'rank'),
