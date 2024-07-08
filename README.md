@@ -99,5 +99,6 @@ necessary. For example:
 
 Step 5: Commit your changes and push them to GitHub. For example:
 
-    git commit -u -m 'annotated sentences 1-10'
+    git add -u
+    git commit -m 'annotated sentences 1-10'
     git push
