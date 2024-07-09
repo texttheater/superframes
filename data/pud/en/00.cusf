@@ -184,61 +184,62 @@
 36	.	.	PUNCT	.	_	16	punct	16:punct	SpaceAfter=No
 37	”	”	PUNCT	''	_	16	punct	16:punct	_
 
-[] proclaimed (16)
-[] in a break from his past rhetoric about curtailing immigration (4)
-[] the GOP nominee (15)
-[] that as president he would allow “ tremendous numbers ” of legal immigrants based on a “ merit system (22)
+[MESSAGE-INIT] proclaimed (16)
+[m-identified] in a break from his past rhetoric about curtailing immigration (4)
+[x-sender] the GOP nominee (15)
+[target-content] that as president he would allow “ tremendous numbers ” of legal immigrants based on a “ merit system (22)
 
-[] break (4)
-[] from his past rhetoric about curtailing immigration (8)
+[SCENE-DEINIT] break (4)
+[initial-scene] from his past rhetoric about curtailing immigration (8)
 
-[] rhetoric (8)
-[] his (6)
-[] past (7)
-[] about curtailing immigration (10)
+[MESSAGE-INIT] rhetoric (8)
+[x-sender] his (6)
+[m-time] past (7)
+[topic] about curtailing immigration (10)
 
-[] his (6)
+[IDENTIFICATION] his (6)
 
-[] past (7)
+[TIME] past (7)
 
-[] curtailing (10)
-[] immigration (11)
+[SCENE-DEINIT] curtailing (10)
+[initial-scene] immigration (11)
 
-[] immigration (11)
+[LOCATION-INIT] immigration (11)
 
-[] nominee (15)
-[] GOP (14)
+[SOCIAL-RELATION] nominee (15)
+[social-relation] GOP (14)
 
-[] GOP (14)
+[IDENTIFICATION] GOP (14)
 
-[] allow (22)
-[] as president (19)
-[] he (20)
-[] “ tremendous numbers ” of legal immigrants (25)
-[] based on a “ merit system (30)
+[SCENE-POSSIBILITY] allow (22)
+[m-depictive] as president (19)
+[x-causer] he (20)
+[scene] “ tremendous numbers ” of legal immigrants (25)
+[m-followed] based on a “ merit system (30)
 
-[] president (19)
+[SOCIAL-RELATION] president (19)
+[has-social-relation] he (20)
 
-[] he (20)
+[IDENTIFICATION] he (20)
 
-[] numbers (25)
-[] tremendous (24)
-[] of legal immigrants (29)
+[QUANTITY] numbers (25)
+[m-quantity] tremendous (24)
+[has-quantity] of legal immigrants (29)
 
-[] tremendous (24)
+[QUANTITY] tremendous (24)
 
-[] immigrants (29)
-[] legal (28)
+[LOCATION-CHANGE] immigrants (29)
+[m-social-relation] legal (28)
 
-[] legal (28)
+[SOCIAL-RELATION] legal (28)
 
-[] based (30)
-[] on a “ merit system (35)
+[SEQUENCE] based (30)
+[followed] on a “ merit system (35)
 
-[] system (35)
-[] merit (34)
+[CLASS] system (35)
+[m-situator] merit (34)
 
-[] merit (34)
+[SOCIAL-RELATION] merit (34)
 
 # sent_id = n01002032
 # text = “So I hate to put a little pressure on you, but the fate of the republic rests on your shoulders,” he told the crowd gathered on a sports field at the University of North Carolina.
@@ -283,65 +284,67 @@
 39	Carolina	Carolina	PROPN	NNP	Number=Sing	36	nmod	36:nmod:of	SpaceAfter=No
 40	.	.	PUNCT	.	_	4	punct	4:punct	_
 
-[] hate (4)
-[] So (2)
-[] I (3)
-[] to put a little pressure on you (6)
+[MESSAGE] hate (4)
+[m-mode] So (2)
+[x-experiencer] I (3)
+[topic] to put a little pressure on you (6)
 
-[] So (2)
+[MODE] So (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] put (6)
-[] a little pressure (9)
-[] on you (11)
+[SCENE-INIT] put (6)
+[target-scene] a little pressure (9)
+[participant] on you (11)
 
-[] pressure (9)
-[] little (8)
+[MESSAGE] pressure (9)
+[m-quantity] little (8)
+[x-experiencer] on you (11)
 
-[] little (8)
+[QUANTITY] little (8)
 
-[] you (11)
+[IDENTIFICATION] you (11)
 
-[] rests (19)
-[] the fate of the republic (15)
-[] on your shoulders (22)
+[SEQUENCE] rests (19)
+[follows] the fate of the republic (15)
+[x-noncomp] on your shoulders (22)
 
-[] fate (15)
-[] of the republic (18)
+[SCENE] fate (15)
+[participant] of the republic (18)
 
-[] republic (18)
+[CLASS] republic (18)
 
-[] shoulders (22)
-[] your (21)
+[SEQUENCE] shoulders (22)
+[followed] your (21)
 
-[] your (21)
+[IDENTIFICATION] your (21)
 
-[] told (26)
-[] he (25)
-[] the crowd gathered on a sports field at the University of North Carolina (28)
+[MESSAGE-INIT] told (26)
+[x-sender] he (25)
+[x-experiencer] the crowd gathered on a sports field at the University of North Carolina (28)
 
-[] he (25)
+[IDENTIFICATION] he (25)
 
-[] crowd (28)
-[] gathered on a sports field at the University of North Carolina (29)
+[CLASS] crowd (28)
+[m-scene] gathered on a sports field at the University of North Carolina (29)
 
-[] gathered (29)
-[] on a sports field at the University of North Carolina (33)
+[LOCATION-INIT] gathered (29)
+[target-location] on a sports field at the University of North Carolina (33)
+[has-location] crowd (28)
 
-[] field (33)
-[] sports (32)
-[] at the University of North Carolina (36)
+[CLASS] field (33)
+[m-purpose >> m-noncomp] sports (32)
+[m-location] at the University of North Carolina (36)
 
-[] sports (32)
+[ACTIVITY] sports (32)
 
-[] University (36)
-[] of North Carolina (39)
+[CLASS] University (36)
+[m-social-relation >> m-noncomp] of North Carolina (39)
 
-[] Carolina (39)
-[] North (38)
+[IDENTIFICATION] Carolina (39)
+[m-noncomp] North (38)
 
-[] North (38)
+[IDENTIFICATION] North (38)
 
 # sent_id = n01002042
 # text = The new spending is fueled by Clinton’s large bank account.
