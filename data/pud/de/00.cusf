@@ -125,7 +125,7 @@
 [IDENTIFICATION] die (4)
 
 [SITUATION-CHANGE] Übergänge (9)
-[m-predicate] Social - Media - (7)
+[m-situator] Social - Media - (7)
 [m-location] auf dem Capitol Hill (13)
 
 [CLASS] Media (7)
@@ -181,50 +181,53 @@
 32	würde	werden	AUX	VBC	Mood=Sub|Number=Sing|Person=3|Tense=Past	31	aux	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	10	punct	_	_
 
-[] verkündete (10)
-[] Entgegen seinen bisherigen Äußerungen zu der Begrenzung der Einwanderung (4)
-[] der Nominierte der Republikanischen Partei (12)
-[] , dass er als Präsident „ enorm viele “ legale Einwanderer basierend auf einem Punktesystem akzeptieren würde (31)
+[MESSAGE-INIT] verkündete (10)
+[m-conceded] Entgegen seinen bisherigen Äußerungen zu der Begrenzung der Einwanderung (4)
+[x-sender] der Nominierte der Republikanischen Partei (12)
+[target-content] , dass er als Präsident „ enorm viele “ legale Einwanderer basierend auf einem Punktesystem akzeptieren würde (31)
 
-[] Äußerungen (4)
-[] bisherigen (3)
-[] zu der Begrenzung der Einwanderung (7)
+[MESSAGE-INIT] Äußerungen (4)
+[m-time] bisherigen (3)
+[topic] zu der Begrenzung der Einwanderung (7)
+[x-sender] seinen (2)
 
-[] bisherigen (3)
+[IDENTIFICATION] seinen (2)
 
-[] Begrenzung (7)
-[] der Einwanderung (9)
+[TIME] bisherigen (3)
 
-[] Einwanderung (9)
+[SCENE-DEINIT] Begrenzung (7)
+[initial-scene] der Einwanderung (9)
 
-[] Nominierte (12)
-[] der Republikanischen Partei (15)
+[LOCATION-CHANGE] Einwanderung (9)
 
-[] Partei (15)
-[] Republikanischen (14)
+[SOCIAL-RELATION-INIT] Nominierte (12)
+[x-causer] der Republikanischen Partei (15)
 
-[] Republikanischen (14)
+[CLASS] Partei (15)
+[m-quality >> x-noncomp] Republikanischen (14)
 
-[] akzeptieren (31)
-[] er als Präsident (18)
-[] „ enorm viele “ legale Einwanderer (26)
-[] basierend auf einem Punktesystem (27)
+[QUALITY >> CLASS] Republikanischen (14)
 
-[] er (18)
+[SOCIAL-RELATION-INIT] akzeptieren (31)
+[x-causer] er als Präsident (18)
+[has-social-relation] „ enorm viele “ legale Einwanderer (26)
+[m-followed] basierend auf einem Punktesystem (27)
 
-[] Präsident (20)
+[IDENTIFICATION] er (18)
 
-[] Einwanderer (26)
-[] legale (25)
+[SOCIAL-RELATION] Präsident (20)
 
-[] enorm (22)
+[LOCATION-CHANGE] Einwanderer (26)
+[m-quality] legale (25)
 
-[] legale (25)
+[QUANTITY] enorm (22)
 
-[] basierend (27)
-[] auf einem Punktesystem (30)
+[QUALITY] legale (25)
 
-[] Punktesystem (30)
+[SEQUENCE] basierend (27)
+[followed] auf einem Punktesystem (30)
+
+[CLASS] Punktesystem (30)
 
 # sent_id = n01002032
 # text = „Ich möchte euch ungern unter Druck setzen, aber das Schicksal der Republik liegt in euren Händen“, sagte er zu der Menschenmenge, die sich auf einem Sportplatz an der University of North Carolina versammelt hatte.
@@ -270,60 +273,67 @@
 39	hatte	haben	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Tense=Past	38	aux	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	21	punct	_	_
 
-[] sagte (21)
-[] „ Ich möchte euch ungern unter Druck setzen , aber das Schicksal der Republik liegt in euren Händen “ , (8)
-[] er (22)
-[] zu der Menschenmenge , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (25)
+[MESSAGE-INIT] sagte (21)
+[target-content] „ Ich möchte euch ungern unter Druck setzen , aber das Schicksal der Republik liegt in euren Händen “ , (8)
+[x-sender] er (22)
+[x-experiencer] zu der Menschenmenge , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (25)
 
-[] setzen (8)
-[] Ich (2)
-[] euch (4)
-[] ungern (5)
-[] unter Druck (7)
+[SCENE-INIT] setzen (8)
+[x-causer] Ich (2)
+[participant] euch (4)
+[m-scene] ungern (5) # sentence adverb
+[target-scene] unter Druck (7)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] euch (4)
+[IDENTIFICATION] euch (4)
 
-[] ungern (5)
+[MESSAGE] ungern (5)
+[topic] setzen (8)
+[x-experiencer] Ich (2)
 
-[] Druck (7)
+[MESSAGE] Druck (7)
+[x-experiencer] euch (4)
 
-[] liegt (15)
-[] das Schicksal der Republik (12)
-[] in euren Händen (18)
+[SEQUENCE] liegt (15)
+[follows] das Schicksal der Republik (12)
+[x-noncomp] in euren Händen (18)
 
-[] Schicksal (12)
-[] der Republik (14)
+[SCENE] Schicksal (12)
+[participant] der Republik (14)
 
-[] Republik (14)
+[CLASS] Republik (14)
 
-[] Händen (18)
+[SEQUENCE] Händen (18)
+[followed] euren (17)
 
-[] er (22)
+[IDENTIFICATION] euren (17)
 
-[] Menschenmenge (25)
-[] , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (38)
+[IDENTIFICATION] er (22)
 
-[] versammelt (38)
-[] die (27)
-[] sich (28)
-[] auf einem Sportplatz an der University of North Carolina (31)
+[CLASS] Menschenmenge (25)
+[m-scene] , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (38)
 
-[] die (27)
+[LOCATION-INIT] versammelt (38)
+[x-causer] die (27)
+[has-location] sich (28)
+[target-location] auf einem Sportplatz an der University of North Carolina (31)
+[x-causer] Menschenmenge (25)
 
-[] sich (28)
+[IDENTIFICATION] die (27)
 
-[] Sportplatz (31)
-[] an der University of North Carolina (34)
+[IDENTIFICATION] sich (28)
 
-[] University (34)
-[] of North Carolina (37)
+[CLASS] Sportplatz (31)
+[m-location] an der University of North Carolina (34)
 
-[] Carolina (37)
-[] North (36)
+[IDENTIFICATION] University (34)
+[m-social-relation >> m-noncomp] of North Carolina (37)
 
-[] North (36)
+[IDENTIFICATION] Carolina (37)
+[m-noncomp] North (36)
+
+[IDENTIFICATION] North (36)
 
 # sent_id = n01002042
 # text = Die neuen Ausgaben werden über Clintons wohlgefülltes Bankkonto finanziert.
@@ -416,14 +426,15 @@
 [m-followed] pro Person (4) # TODO add to manual as example
 [m-identifier] , das erlaubte Maximum (8)
 
-[] 5.000 (1)
+[QUANTITY] 5.000 (1)
 
-[] Person (4)
+[CLASS] Person (4)
 
-[] Maximum (8)
-[] erlaubte (7)
+[QUANTITY] Maximum (8)
+[m-scene] erlaubte (7)
 
-[] erlaubte (7)
+[SCENE-POSSIBILITY] erlaubte (7)
+[scene] Maximum (8)
 
 # sent_id = n01003010
 # text = Anfang Oktober nutzte das Übergangsteam denselben Veranstaltungsort für ein Treffen mit Technologielobbyisten, zu dem u.a. Vertreter von Uber, der Motion Picture Association of America und der Consumer Technology Association eingeladen waren.
@@ -990,6 +1001,9 @@
 
 [] Leben (10)
 [] täglichen (9)
+[] unserem (8)
+
+[] unserem (8)
 
 [] täglichen (9)
 
@@ -1299,6 +1313,9 @@
 
 [] Tochter (9)
 [] zweijährigen (8)
+[] ihrer (7)
+
+[] ihrer (7)
 
 [] zweijährigen (8)
 
@@ -1361,10 +1378,16 @@
 [] sie (8)
 
 [] Gesicht (10)
+[] sein (9)
+
+[] sein (9)
 
 [] Luftmatratze (13)
 
 [] Wohnzimmer (16)
+[] ihrem (15)
+
+[] ihrem (15)
 
 [] versuchte (26)
 [] sie (20)
@@ -1377,6 +1400,9 @@
 
 [] Tochter (24)
 [] Angel (25)
+[] ihrer (23)
+
+[] ihrer (23)
 
 [] Angel (25)
 
@@ -1482,6 +1508,9 @@
 [] dann (11)
 
 [] Freundinnen (14)
+[] ihrer (13)
+
+[] ihrer (13)
 
 # newdoc id = n01013
 # sent_id = n01013005
@@ -1762,6 +1791,9 @@
 [] seiner Popularität (8)
 
 [] Popularität (8)
+[] seiner (7)
+
+[] seiner (7)
 
 [] der (13)
 [] vielleicht (11)
@@ -1849,6 +1881,9 @@
 
 [] Komponente (14)
 [] eigene (13)
+[] ihre (12)
+
+[] ihre (12)
 
 [] eigene (13)
 
@@ -2372,6 +2407,9 @@
 [] noch (6)
 
 [] Militärausrüstung (9)
+[] seiner (8)
+
+[] seiner (8)
 
 [] Kampfhubschraubern (13)
 
@@ -2453,6 +2491,9 @@
 [] sowohl hinsichtlich der Zivilluftfahrt als auch der Verteidigung (29)
 
 [] Ambitionen (25)
+[] seine (24)
+
+[] seine (24)
 
 [] Zivilluftfahrt (29)
 
