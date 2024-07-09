@@ -20,6 +20,7 @@ FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?:
 ARG_DEPS = set((
     'nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl', 'advcl',
     'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod', 'compound', 'orphan',
+    'det:poss',
     # SUD deps:
     'subj', 'udep', 'mod', 'comp',
 ))
@@ -40,11 +41,11 @@ def remove_features(deprel: str) -> str:
 
 
 def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
-    return remove_features(tree.data.deprel) in PRED_DEPS
+    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS)
 
 
 def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
-    return remove_features(tree.data.deprel) in ARG_DEPS
+    return any(tree.data.deprel.startswith(r) for r in ARG_DEPS)
 
 
 def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
