@@ -18,8 +18,8 @@
 14	ein	ein	DET	DT	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|NumType=Card|PronType=Art	16	det	_	_
 15	friedlicher	friedlich	ADJ	JJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	InflectionType=Mixed
 16	Machtwechsel	Machtwechsel	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	12	conj	_	orig_deprel=nsubj
-17	hingegen	hingegen	ADV	RB	Degree=Pos	12	advmod	_	_
-18	nicht	nicht	PART	RB	Polarity=Neg	12	advmod	_	SpaceAfter=No
+17	hingegen	hingegen	ADV	RB	Degree=Pos	16	orphan	_	_
+18	nicht	nicht	PART	RB	Polarity=Neg	16	orphan	_	SpaceAfter=No
 19	“	“	PUNCT	''	_	12	punct	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	12	punct	_	_
 21	schrieb	schreiben	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
@@ -42,11 +42,9 @@
 [m-time] an dem Montag (28)
 [x-means] in einem Blogeintrag (31)
 
-[TIME >> QUALITY] neu (12) # TODO manual: objectively new, so not MESSAGE
+[TIME >> QUALITY] neu (12)
 [has-time >> has-quality] Ein Großteil des digitalen Übergangs (3)
 [x-experiencer] für die Vereinigten Staaten (11)
-[m-conceded] hingegen (17)
-[m-mode] nicht (18)
 
 [PART-WHOLE] Großteil (3)
 [whole] des digitalen Übergangs (6)
@@ -63,6 +61,8 @@
 
 [POSSESSION-CHANGE] Machtwechsel (16)
 [m-quality] friedlicher (15)
+[m-conceded] hingegen (17)
+[m-mode] nicht (18)
 
 [QUALITY] friedlicher (15)
 
