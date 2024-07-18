@@ -164,6 +164,11 @@ Frameish = Union[Frame, blocks.Block]
 
 class Sentence:
 
+    syntax: PyCoNLLSentence
+    lineno: int
+    frames: List[Frameish]
+    frame_linenos: List[int]
+
     def __init__(self, syntax: PyCoNLLSentence, lineno: int):
         self.syntax = syntax
         self.lineno = lineno
