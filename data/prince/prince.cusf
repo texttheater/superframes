@@ -9,10 +9,10 @@
 2	1	1	NUM	CD	NumForm=Digit|NumType=Card	1	nummod	_	TokenRange=8:9
 3	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=10:11
 
-[] Chapter (1)
-[] 1 (2)
+[MESSAGE] Chapter (1)
+[m-rank] 1 (2)
 
-[] 1 (2)
+[RANK] 1 (2)
 
 # sent_id = 2
 # text = Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -44,55 +44,55 @@
 26	forest	forest	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=136:142
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=143:144
 
-[] saw (9)
-[] Once when I was six years old (7)
-[] I (8)
-[] a magnificent picture (12)
-[] in a book , called True Stories from Nature , about the primeval forest (15)
+[MESSAGE-INIT] saw (9)
+[m-has-time-in] Once when I was six years old (7)
+[x-experiencer] I (8)
+[topic] a magnificent picture (12)
+[x-location] in a book , called True Stories from Nature , about the primeval forest (15)
 
-[] old (7)
-[] Once (1)
-[] when (2)
-[] I (3)
-[] six years (6)
+[QUALITY] old (7)
+[m-time] Once (1)
+[m-time-in] when (2)
+[has-quality] I (3)
+[x-quantity] six years (6)
 
-[] Once (1)
+[TIME] Once (1)
 
-[] when (2)
+[TIME] when (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] years (6)
-[] six (5)
+[QUANTITY] years (6)
+[m-quantity] six (5)
 
-[] six (5)
+[QUANTITY] six (5)
 
-[] I (8)
+[IDENTIFICATION] I (8)
 
-[] picture (12)
-[] magnificent (11)
+[MESSAGE] picture (12)
+[m-quality] magnificent (11)
 
-[] magnificent (11)
+[QUALITY] magnificent (11)
 
-[] book (15)
-[] called True Stories from Nature (17)
-[] about the primeval forest (26)
+[MESSAGE] book (15)
+[m-identified-in] called True Stories from Nature (17)
+[topic] about the primeval forest (26)
 
-[] called (17)
-[] True Stories from Nature (19)
+[IDENTIFICATION] called (17)
+[identifier] True Stories from Nature (19)
 
-[] Stories (19)
-[] True (18)
-[] from Nature (21)
+[MESSAGE] Stories (19)
+[m-quality] True (18)
+[m-initial-location] from Nature (21)
 
-[] True (18)
+[QUALITY] True (18)
 
-[] Nature (21)
+[CLASS] Nature (21)
 
-[] forest (26)
-[] primeval (25)
+[CLASS] forest (26)
+[m-quality >> m-noncomp] primeval (25)
 
-[] primeval (25)
+[QUALITY >> CLASS] primeval (25)
 
 # sent_id = 3
 # text = It was a picture of a boa constrictor in the act of swallowing an animal .
@@ -113,25 +113,25 @@
 15	animal	animal	NOUN	NN	Number=Sing	13	obj	_	TokenRange=212:218
 16	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=219:220
 
-[] picture (4)
-[] It (1)
-[] of a boa constrictor in the act of swallowing an animal (8)
+[MESSAGE] picture (4)
+[x-identified] It (1)
+[topic] of a boa constrictor in the act of swallowing an animal (8)
 
-[] It (1)
+[IDENTIFICATION] It (1)
 
-[] constrictor (8)
-[] boa (7)
-[] in the act of swallowing an animal (11)
+[CLASS] constrictor (8)
+[m-noncomp] boa (7)
+[m-participant-in] in the act of swallowing an animal (11)
 
-[] boa (7)
+[CLASS] boa (7)
 
-[] act (11)
-[] of swallowing an animal (13)
+[SCENE] act (11)
+[scene] of swallowing an animal (13)
 
-[] swallowing (13)
-[] an animal (15)
+[INGESTION] swallowing (13)
+[ingested] an animal (15)
 
-[] animal (15)
+[CLASS] animal (15)
 
 # sent_id = 4
 # text = Here is a copy of the drawing .
@@ -144,13 +144,13 @@
 7	drawing	drawing	NOUN	NN	Number=Sing	4	nmod	_	TokenRange=244:251
 8	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=252:253
 
-[] Here (1)
-[] a copy of the drawing (4)
+[LOCATION] Here (1)
+[has-location] a copy of the drawing (4)
 
-[] copy (4)
-[] of the drawing (7)
+[REPRODUCTION] copy (4)
+[original] of the drawing (7)
 
-[] drawing (7)
+[MESSAGE] drawing (7)
 
 # sent_id = 5
 # text = In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
@@ -173,37 +173,39 @@
 17	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	TokenRange=339:341
 18	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=342:343
 
-[] said (5)
-[] In the book (3)
-[] it (4)
-[] Boa constrictors swallow their prey whole , without chewing it (10)
+[MESSAGE] said (5)
+[x-sender] In the book (3)
+[x-noncomp] it (4)
+[content] Boa constrictors swallow their prey whole , without chewing it (10)
 
-[] book (3)
+[MESSAGE] book (3)
 
-[] it (4)
+[MESSAGE] it (4)
 
-[] swallow (10)
-[] Boa constrictors (9)
-[] their prey (12)
-[] whole (13)
-[] without chewing it (16)
+[INGESTION] swallow (10)
+[ingester] Boa constrictors (9)
+[ingested] their prey (12)
+[m-accompanier] whole (13)
+[m-followed] without chewing it (16)
 
-[] constrictors (9)
-[] Boa (8)
+[CLASS] constrictors (9)
+[m-noncomp] Boa (8)
 
-[] Boa (8)
+[CLASS] Boa (8)
 
-[] prey (12)
-[] their (11)
+[SOCIAL-RELATION] prey (12)
+[has-social-relation] their (11)
 
-[] their (11)
+[IDENTIFICATION] their (11)
 
-[] whole (13)
+[STATE] whole (13)
+[has-state] prey (12)
 
-[] chewing (16)
-[] it (17)
+[STATE-CHANGE] chewing (16)
+[has-state] it (17)
+[x-causer] Boa constrictors (9)
 
-[] it (17)
+[IDENTIFICATION] it (17)
 
 # sent_id = 6
 # text = After that they are not able to move , and they sleep through the six months that they need for digestion . " I pondered deeply , then , over the adventures of the jungle .
@@ -212,7 +214,7 @@
 3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=356:360
 4	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	TokenRange=361:364
 5	not	not	PART	RB	_	6	advmod	_	TokenRange=365:368
-6	able	able	ADJ	JJ	Degree=Pos	25	advcl	_	TokenRange=369:373
+6	able	able	ADJ	JJ	Degree=Pos	25	parataxis	_	TokenRange=369:373
 7	to	to	PART	TO	_	8	mark	_	TokenRange=374:376
 8	move	move	VERB	VB	VerbForm=Inf	6	xcomp	_	TokenRange=377:381
 9	,	,	PUNCT	,	_	12	punct	_	TokenRange=382:383
