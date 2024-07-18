@@ -6,6 +6,7 @@ import sys
 from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
+import networkx as nx # type: ignore
 from pyconll.exception import ParseError
 from pyconll.unit.sentence import Sentence as PyCoNLLSentence
 import pyconll
@@ -277,6 +278,14 @@ class Sentence:
                 annotated_count += 1
             warnings += w
         return frame_count, annotated_count, warnings
+
+    def to_graph(self) -> nx.Graph:
+        graph = nx.Graph()
+        for frame in self.frames:
+            if isinstance(frame, Frame):
+                for arg in frame.args:
+                    graph.add_edge(frame.head, arg.head, label=arg.label)
+        return graph
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
