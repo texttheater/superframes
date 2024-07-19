@@ -336,15 +336,15 @@
 [m-purpose >> m-noncomp] sports (32)
 [m-location] at the University of North Carolina (36)
 
-[ACTIVITY] sports (32)
+[ACTIVITY >> CLASS] sports (32)
 
-[CLASS] University (36)
+[CLASS >> IDENTIFICATION] University (36)
 [m-social-relation >> m-noncomp] of North Carolina (39)
 
 [IDENTIFICATION] Carolina (39)
-[m-noncomp] North (38)
+[m-part >> m-noncomp] North (38)
 
-[IDENTIFICATION] North (38)
+[PART-WHOLE >> IDENTIFICATION] North (38)
 
 # sent_id = n01002042
 # text = The new spending is fueled by Clinton’s large bank account.
@@ -361,25 +361,25 @@
 11	account	account	NOUN	NN	Number=Sing	5	obl	5:obl:by	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	5:punct	_
 
-[] fueled (5)
-[] The new spending (3)
-[] by Clinton ’s large bank account (11)
+[INGESTION >> MEANS] fueled (5)
+[ingestor >> has-means] The new spending (3)
+[x-causer >> means] by Clinton ’s large bank account (11)
 
 [] spending (3)
 [] new (2)
 
 [] new (2)
 
-[] account (11)
-[] Clinton ’s (7)
-[] large (9)
-[] bank (10)
+[CLASS] account (11)
+[m-possessor] Clinton ’s (7)
+[m-quality] large (9)
+[m-situator >> m-noncomp] bank (10)
 
 [] Clinton (7)
 
 [] large (9)
 
-[] bank (10)
+[CLASS] bank (10)
 
 # sent_id = n01002058
 # text = What she’s saying and what she’s doing, it — actually, it’s unbelievable.
@@ -495,38 +495,40 @@
 36	groups	group	NOUN	NNS	Number=Plur	21	conj	19:nmod:from|21:conj:and	SpaceAfter=No
 37	.	.	PUNCT	.	_	8	punct	8:punct	_
 
-[] used (8)
-[] In early October (3)
-[] the transition team (7)
-[] the same venue (11)
-[] to meet with technology lobbyists (13)
-[] inviting representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (18)
+[MEANS] used (8)
+[m-time] In early October (3)
+[x-causer] the transition team (7)
+[means] the same venue (11)
+[has-means] to meet with technology lobbyists (13)
+[m-accompanier] inviting representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (18)
 
-[] October (3)
-[] early (2)
+[TIME] October (3)
+[m-time] early (2)
 
-[] early (2)
+[TIME] early (2)
 
 [] team (7)
 [] transition (6)
 
 [] transition (6)
 
-[] venue (11)
+[LOCATION] venue (11) # "venue of the event" TODO add to manual: try to add an adpositional phrase as an argument to see if it's a relational noun
 [] same (10)
 
 [] same (10)
 
-[] meet (13)
-[] with technology lobbyists (16)
+[SOCIAL-RELATION-INIT] meet (13)
+[target-social-relation] with technology lobbyists (16)
+[has-social-relation] the transition team (7)
 
 [] lobbyists (16)
 [] technology (15)
 
 [] technology (15)
 
-[] inviting (18)
-[] representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (19)
+[SOCIAL-RELATION-INIT] inviting (18)
+[has-social-relation] representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (19)
+[x-causer] the transition team (7)
 
 [] representatives (19)
 [] from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (21)
