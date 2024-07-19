@@ -6,6 +6,7 @@ import sys
 from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
+import networkx as nx # type: ignore
 from pyconll.exception import ParseError
 from pyconll.unit.sentence import Sentence as PyCoNLLSentence
 import pyconll
@@ -52,8 +53,8 @@ def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
     for tree in subtrees(sentence.to_tree()):
         if tree.data.id == token_id:
             nodes = sorted(subtrees(tree), key=lambda t: int(t.data.id))
-            nodes = (t.data.form for t in nodes)
-            return ' '.join(nodes)
+            nodes = [t.data.form for t in nodes]
+            return ' '.join(str(n) for n in nodes)
     return ''
 
 
@@ -108,8 +109,9 @@ class Frame:
         for arg in self.args:
             if arg.label == label:
                 return arg
+        return None
 
-    def check(self, sentid, lineno, frames) -> [bool, int]:
+    def check(self, sentid, lineno, frames) -> Tuple[bool, int]:
         if not self.label:
             return False, 0
         if not labels.check_frame_label(self.label):
@@ -162,6 +164,11 @@ Frameish = Union[Frame, blocks.Block]
 
 
 class Sentence:
+
+    syntax: PyCoNLLSentence
+    lineno: int
+    frames: List[Frameish]
+    frame_linenos: List[int]
 
     def __init__(self, syntax: PyCoNLLSentence, lineno: int):
         self.syntax = syntax
@@ -256,7 +263,7 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self) -> tuple[int, int]:
+    def check(self) -> Tuple[int, int, int]:
         frame_count = 0
         annotated_count = 0
         warnings = 0
@@ -271,6 +278,14 @@ class Sentence:
                 annotated_count += 1
             warnings += w
         return frame_count, annotated_count, warnings
+
+    def to_graph(self) -> nx.Graph:
+        graph = nx.Graph()
+        for frame in self.frames:
+            if isinstance(frame, Frame):
+                for arg in frame.args:
+                    graph.add_edge(frame.head, arg.head, label=arg.label)
+        return graph
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')

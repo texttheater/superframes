@@ -80,6 +80,7 @@ Step 2: Get any updates from the main branch.
 
     git fetch
     git merge origin/main
+    pip3 install -r src/python/requirements.txt
 
 Step 3: Open whatever you are currently annotating (something in `data/`) in
 your favorite text editor and annotate away.
