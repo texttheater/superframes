@@ -60,7 +60,7 @@ def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
 
 class Arg:
 
-    def __init__(self, head: str, text: str = '', label: str='', comment: str=''):
+    def __init__(self, head: str, text: str, label: str, comment: str):
         self.head = head
         self.text = text
         self.label = label
@@ -103,7 +103,7 @@ class Frame:
         for head, text in args:
             if any(a.head == head for a in self.args):
                 continue
-            self.args.append(Arg(head, text))
+            self.args.append(Arg(head, text, '', ''))
 
     def find_arg(self, label: str) -> Optional[Arg]:
         for arg in self.args:
