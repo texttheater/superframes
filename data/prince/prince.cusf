@@ -50,10 +50,10 @@
 [topic] a magnificent picture (12)
 [x-location] in a book , called True Stories from Nature , about the primeval forest (15)
 
-[STATE] old (7)
+[QUALITY] old (7)
 [m-time] Once (1)
 [m-has-time] when (2)
-[has-state] I (3)
+[has-quality] I (3)
 [x-quantity] six years (6)
 
 [TIME] Once (1)
@@ -281,11 +281,11 @@
 
 [QUANTITY] six (15)
 
-[EXPERIENCE-NECESSITY] need (19)
-[experienced] that (17)
-[experiencer] they (18)
+SITUATION-NECESSITY] need (19)
+[situator] that (17)
+[theme] they (18)
 [x-purpose] for digestion (21)
-[experienced] months (16)
+[situator] months (16)
 
 [IDENTIFICATION] that (17)
 
@@ -299,7 +299,7 @@
 
 [TIME] then (28)
 
-[EXPERIENCE] adventures (32)
+[EVENT] adventures (32)
 [m-whole] of the jungle (35)
 
 [CLASS] jungle (35)
@@ -328,7 +328,7 @@
 [participant] I (9)
 [initial-scene] in making my first drawing (12)
 
-[EXPERIENCE] work (4)
+[EVENT] work (4)
 [m-means] with a colored pencil (8)
 
 [MEANS || CLASS] pencil (8)
@@ -360,7 +360,7 @@
 
 [MESSAGE] Drawing (2)
 [x-sender] My (1)
-[m-rank] One (4)
+[m-rank] Number (3)
 
 [RANK] Number (3)
 [rank] One (4)
@@ -810,7 +810,6 @@
 
 [MESSAGE] grammar (51)
 [x-experiencer] myself (42)
-
 
 # sent_id = 19
 # text = That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
@@ -1275,6 +1274,7 @@
 
 [LOCATION] close (7)
 [m-noncomp] at hand (9)
+[has-location] them (4)
 
 [NONCOMP] hand (9)
 
@@ -1937,7 +1937,7 @@
 
 [EXISTENCE-CONTINUATION] last (8)
 [x-time] a week (10)
-[exists] water (6)
+[initial-exists] water (6)
 
 [TIME] week (10)
 
@@ -1990,6 +1990,7 @@
 
 [QUANTITY] miles (17)
 [m-quantity] a thousand (16)
+[] from any human habitation (21)
 
 [QUANTITY] thousand (16)
 
@@ -2131,11 +2132,13 @@
 [MESSAGE-INIT] said (2)
 [x-sender] It (1)
 [target-content] If you please -- draw me a sheep ! " (9)
+[] " What ! " (16)
+[] " Draw me a sheep (20)
 
 [IDENTIFICATION] It (1)
 
 [MESSAGE-INIT] draw (9)
-[m-experiencer] me (10)
+[x-experiencer] me (10)
 [target-content] a sheep (12)
 
 [IDENTIFICATION] you (6)
@@ -2144,10 +2147,10 @@
 
 [CLASS] sheep (12)
 
-[IDENTIFICATION] What (16)
+[SITUATION] What (16)
 
 [MESSAGE-INIT] Draw (20)
-[m-experiencer] me (21)
+[x-experiencer] me (21)
 [target-content] a sheep (23)
 
 [IDENTIFICATION] me (21)
@@ -2270,18 +2273,18 @@
 
 [QUALITY] small (7)
 
-[SCENE] stood (11)
-[scene] who (10)
-[m-location] there (12)
-[m-depictive] examining me with great seriousness (13)
-[participant] person (8)
+[LOCATION >> SCENE] stood (11)
+[has-location >> participant] who (10)
+[location >> m-location] there (12)
+[m-depictive >> scene] examining me with great seriousness (13)
+[has-location >> participant] person (8)
 
 [IDENTIFICATION] who (10)
 
 [LOCATION] there (12)
 
 [MESSAGE-INIT] examining (13)
-[target-content] me (14)
+[topic] me (14)
 [m-quality] with great seriousness (17)
 [x-experiencer] person (8)
 
@@ -2336,7 +2339,8 @@
 [scene] to make of him (16)
 [participant] portrait (7)
 
-[IDENTIFICATION] that (8)
+[MESSAGE] that (8)
+[topic] of him (18)
 
 [TIME] later (10)
 
@@ -2478,9 +2482,9 @@
 
 [IDENTIFICATION] my (8)
 
-[STATE] old (17)
+[QUALITY] old (17)
 [m-time] when (12)
-[has-state] I (13)
+[has-quality] I (13)
 [x-quantity] six years (16)
 
 [TIME] when (12)
@@ -2596,9 +2600,9 @@
 [MESSAGE] Remember (1)
 [content] I had crashed in the desert a thousand miles from any inhabited region (5)
 
-[SCENE-INIT] crashed (5)
-[participant] I (3)
-[target-scene] in the desert (8)
+[LOCATION-INIT] crashed (5)
+[has-location] I (3)
+[target-location] in the desert (8)
 [m-location] a thousand miles from any inhabited region (15)
 
 [IDENTIFICATION] I (3)
@@ -2606,7 +2610,7 @@
 [CLASS] desert (8)
 
 [CLASS] region (15)
-[m-quantity] a thousand miles (11)
+[m-quantity] a thousand miles (11) # quantity of from-LOCATION, not of region-CLASS
 [m-scene] inhabited (14)
 
 [QUANTITY] miles (11)
@@ -3073,11 +3077,12 @@
 [IDENTIFICATION] I (3)
 
 [MESSAGE] concentrated (10)
-[m-quality] how (5)
+[m-scene] how (5)
 [x-experiencer] my studies (7)
 [topic] on geography , history , arithmetic , and grammar (12)
 
-[QUALITY] how (5)
+[SCENE] how (5)
+[scene] concentrated (10)
 
 [EXPERIENCE] studies (7)
 [experiencer] my (6)
@@ -3259,7 +3264,7 @@
 10	outside	outside	NOUN	NN	Number=Sing	3	nmod	_	TokenRange=5643:5650
 11	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=5651:5652
 
-[MESSAGE] that (3) # anaphoric roleset
+[MESSAGE] that (3)
 [x-identified] It (1)
 [topic] of the boa constrictor (7)
 [x-location] from the outside (10)
@@ -3434,9 +3439,9 @@
 [IDENTIFICATION] What (1)
 [m-scene] I need (3)
 
-[EXPERIENCE-NECESSITY] need (3)
-[experiencer] I (2)
-[experienced] What (1)
+[SITUATION-NECESSITY] need (3)
+[theme] I (2)
+[situator] What (1)
 
 [IDENTIFICATION] I (2)
 
@@ -3517,7 +3522,7 @@
 
 [IDENTIFICATION] he (8)
 
-[MODE] No (12)
+[SITUATION-NEG] No (12)
 
 # sent_id = 76
 # text = This sheep is already very sickly .
@@ -3749,8 +3754,8 @@
 5	old	old	ADJ	JJ	Degree=Pos	0	root	_	TokenRange=6383:6386
 6	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=6387:6388
 
-[STATE] old (5)
-[has-state] This one (2)
+[QUALITY] old (5)
+[has-quality] This one (2)
 [m-quantity] too (4)
 
 [CLASS] one (2)
@@ -3829,9 +3834,9 @@
 
 [IDENTIFICATION] my (4)
 
-[STATE] hurry (14)
-[has-state] I (10)
-[state] to start taking my engine apart (16)
+[MESSAGE] hurry (14)
+[x-experiencer] I (10)
+[content] to start taking my engine apart (16)
 
 [IDENTIFICATION] I (10)
 
@@ -3997,9 +4002,9 @@
 [CLASS] face (21)
 [m-whole] of my young judge (25)
 
-[MESSAGE] judge (25) # good example of participant noun
+[MESSAGE] judge (25)
 [topic] my (23)
-[m-state] young (24)
+[m-quality] young (24)
 
 [IDENTIFICATION] my (23)
 
