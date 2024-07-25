@@ -37,57 +37,58 @@
 34	Monday	Monday	PROPN	NNP	Number=Sing	29	nmod:tmod	29:nmod:tmod	SpaceAfter=No
 35	.	.	PUNCT	.	_	20	punct	20:punct	_
 
-[] is (20)
-[] While much of the digital transition is unprecedented in the United States (9)
+[] is (20)		# Auxiliary?, delete? #issue
+[] While much of the digital transition is unprecedented in the United States (9) #copied to wrote
 [] the peaceful transition of power (17)
 [] not (21)
 
-[] unprecedented (9)
-[] much of the digital transition (3)
-[] in the United States (13)
+[QUALITY] unprecedented (9)
+[has-quality] much of the digital transition (3)
+[m-location] in the United States (13)
 
-[] much (3)
-[] of the digital transition (7)
+[PART-WHOLE] much (3)
+[whole] of the digital transition (7)
 
-[] transition (7)
-[] digital (6)
+[CLASS] transition (7)
+[m-quality] digital (6)
 
-[] digital (6)
+[QUALITY] digital (6)
 
-[] States (13)
-[] United (12)
+[LOCATION] States (13)
+[m-noncomp] United (12)
 
-[] United (12)
+[NONCOMP] United (12)
 
-[] transition (17)
-[] peaceful (16)
-[] of power (19)
+[SCENE] transition (17)
+[m-qualit] peaceful (16)
+[scene] of power (19)
 
-[] peaceful (16)
+[QUALITY] peaceful (16)
 
-[] power (19)
+[SCENE] power (19)
 
-[] not (21)
+[MODE] not (21)
 
-[] wrote (29)
-[] Obama special assistant Kori Schulman (26)
-[] in a blog post (33)
-[] Monday (34)
+[MESSAGE-INIT] wrote (29)
+[target-content] While much of the digital transition is unprecedented in the United States (9)
+[x-sender] Obama special assistant Kori Schulman (26)
+[m-location] in a blog post (33)
+[m-time] Monday (34)
 
-[] assistant (26)
-[] Obama (24)
-[] special (25)
+[SOCIAL-RELATION] assistant (26)
+[has-social-relation] Obama (24)
+[m-noncomp] special (25)
 
-[] Obama (24)
+[IDENTIFICATION] Obama (24)
 
-[] special (25)
+[NONCOMP] special (25)
 
-[] post (33)
-[] blog (32)
+[LOCATION] post (33)
+[m-quality] blog (32)
 
-[] blog (32)
+[QUALITY] blog (32)
 
-[] Monday (34)
+[TIME] Monday (34)
 
 # sent_id = n01001013
 # text = For those who follow social media transitions on Capitol Hill, this will be a little different.
@@ -110,37 +111,37 @@
 17	different	different	ADJ	JJ	Degree=Pos	0	root	0:root	SpaceAfter=No
 18	.	.	PUNCT	.	_	17	punct	17:punct	_
 
-[] different (17)
-[] For those who follow social media transitions on Capitol Hill (2)
-[] this (12)
-[] a little (16)
+[QUALITY] different (17)
+[x-experiencer] For those who follow social media transitions on Capitol Hill (2)
+[has-quality] this (12)
+[m-quantity] a little (16)
 
-[] those (2)
-[] who follow social media transitions on Capitol Hill (4)
+[IDENTIFICATION] those (2)
+[m-quality] who follow social media transitions on Capitol Hill (4)
 
-[] follow (4)
-[] who (3)
-[] social media transitions on Capitol Hill (7)
+[EXPERIENCE] follow (4)
+[experiencer] who (3)
+[experienced] social media transitions (6)
+[m-location] on Capitol Hill (7)
 
-[] who (3)
+[IDENTIFICATION] who (3)
 
-[] transitions (7)
-[] social media (6)
-[] on Capitol Hill (10)
+[STATE-CHANGE] transitions (7)
+[m-location] social media (6)
 
-[] media (6)
-[] social (5)
+[MESSAGE] media (6)
+[m-noncomp] social (5)
 
-[] social (5)
+[NONCOMP] social (5)
 
-[] Hill (10)
-[] Capitol (9)
+[LOCATION] Hill (10)
+[m-noncomp] Capitol (9)
 
-[] Capitol (9)
+[NONCOMP] Capitol (9)
 
-[] this (12)
+[STATE-CHANGE] this (12)
 
-[] little (16)
+[QUANTITY] little (16)
 
 # newdoc id = n01002
 # sent_id = n01002017
@@ -183,61 +184,61 @@
 36	.	.	PUNCT	.	_	16	punct	16:punct	SpaceAfter=No
 37	”	”	PUNCT	''	_	16	punct	16:punct	_
 
-[] proclaimed (16)
-[] in a break from his past rhetoric about curtailing immigration (4)
-[] the GOP nominee (15)
-[] that as president he would allow “ tremendous numbers ” of legal immigrants based on a “ merit system (22)
+[MESSAGE-INIT] proclaimed (16)
+[m-depictive] in a break from his past rhetoric about curtailing immigration (4)
+[x-sender] the GOP nominee (15)
+[target-content] that as president he would allow “ tremendous numbers ” of legal immigrants based on a “ merit system (22)
 
-[] break (4)
-[] from his past rhetoric about curtailing immigration (8)
+[REFERENCE] break (4)
+[compared] from his past rhetoric about curtailing immigration (8)
 
-[] rhetoric (8)
-[] his (6)
-[] past (7)
-[] about curtailing immigration (10)
+[MESSAGE] rhetoric (8)
+[x-sender] his (6)
+[m-time] past (7)
+[topic] about curtailing immigration (10)
 
-[] his (6)
+[IDENTIFICATION] his (6)
 
-[] past (7)
+[TIME] past (7)
 
-[] curtailing (10)
-[] immigration (11)
+[STETE-CHANGE] curtailing (10)
+[target-state] immigration (11)
 
-[] immigration (11)
+[LOCATION-CHANGE || STATE] immigration (11)  #issue
 
-[] nominee (15)
-[] GOP (14)
+[CLASS] nominee (15)
+[m-noncomp] GOP (14)
 
-[] GOP (14)
+[NONCOMP] GOP (14)
 
-[] allow (22)
-[] as president (19)
-[] he (20)
-[] “ tremendous numbers ” of legal immigrants (25)
-[] based on a “ merit system (30)
+[MESSAGE] allow (22)
+[m-quality] as president (19)
+[x-causer] he (20)
+[topic] “ tremendous numbers ” of legal immigrants (25)
+[m-means] based on a “ merit system (30)
 
-[] president (19)
+[IDENTIFICATION] president (19)
 
-[] he (20)
+[IDENTIFICATION] he (20)
 
-[] numbers (25)
-[] tremendous (24)
-[] of legal immigrants (29)
+[QUANTITY] numbers (25)
+[m-quality] tremendous (24)
+[has-quantity] of legal immigrants (29)
 
-[] tremendous (24)
+[QUALITY] tremendous (24)
 
-[] immigrants (29)
-[] legal (28)
+[CLASS] immigrants (29)
+[m-quality] legal (28)
 
-[] legal (28)
+[QUALITY] legal (28)
 
-[] based (30)
-[] on a “ merit system (35)
+[QUALITY] based (30)
+[m-means] on a “ merit system (35)
 
-[] system (35)
-[] merit (34)
+[CLASS] system (35)
+[m-noncomp] merit (34)
 
-[] merit (34)
+[NONCOMP] merit (34)
 
 # sent_id = n01002032
 # text = “So I hate to put a little pressure on you, but the fate of the republic rests on your shoulders,” he told the crowd gathered on a sports field at the University of North Carolina.
@@ -282,65 +283,67 @@
 39	Carolina	Carolina	PROPN	NNP	Number=Sing	36	nmod	36:nmod:of	SpaceAfter=No
 40	.	.	PUNCT	.	_	4	punct	4:punct	_
 
-[] hate (4)
-[] So (2)
-[] I (3)
-[] to put a little pressure on you (6)
+[MESSAGE] hate (4)
+[x-mode] So (2)
+[x-experiencer] I (3)
+[topic] to put a little pressure on you (6)
 
-[] So (2)
+[MODE] So (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] put (6)
-[] a little pressure (9)
-[] on you (11)
+[SCENE] put (6)		#issue: unrealisierter agent?
+[x-causation] I (3)
+[scene] a little pressure (9)
+[participant] on you (11)
 
-[] pressure (9)
-[] little (8)
+[EXPERIENCE] pressure (9)
+[m-quantity] little (8)
 
-[] little (8)
+[QUANTITY] little (8)
 
-[] you (11)
+[IDENTIFICATION] you (11)
 
-[] rests (19)
-[] the fate of the republic (15)
-[] on your shoulders (22)
+[LOCATION >> CAUSATION] rests (19)
+[has-location >> result] the fate of the republic (15)
+[m-location >> causer] on your shoulders (22)
 
-[] fate (15)
-[] of the republic (18)
+[CLASS] fate (15)
+[m-part] of the republic (18)
 
-[] republic (18)
+[WHOLE-PART] republic (18)
 
-[] shoulders (22)
-[] your (21)
+[CLASS] shoulders (22)
+[m-identifier] your (21)
 
-[] your (21)
+[IDENTIFICATION] your (21)
 
-[] told (26)
-[] he (25)
-[] the crowd gathered on a sports field at the University of North Carolina (28)
+[MESSAGE-INIT] told (26)
+[target-content] So I hate to put a little pressure on you, but the fate of the republic rests on your shoulders (2)
+[x-sender] he (25)
+[x-experiencer] the crowd gathered on a sports field at the University of North Carolina (28)
 
-[] he (25)
+[IDENTIFICATION] he (25)
 
-[] crowd (28)
-[] gathered on a sports field at the University of North Carolina (29)
+[CLASS] crowd (28)
+[m-location] gathered on a sports field at the University of North Carolina (29)
 
-[] gathered (29)
-[] on a sports field at the University of North Carolina (33)
+[ACTIVITY] gathered (29)
+[m-quality] on a sports field at the University of North Carolina (33)
 
-[] field (33)
-[] sports (32)
-[] at the University of North Carolina (36)
+[CLASS] field (33)
+[m-noncomp] sports (32)
+[m-location] at the University of North Carolina (36)
 
-[] sports (32)
+[NONCOMP] sports (32)
 
-[] University (36)
-[] of North Carolina (39)
+[CLASS] University (36)
+[m-noncomp || m-location] of North Carolina (39)
 
-[] Carolina (39)
-[] North (38)
+[LOCATION] Carolina (39)
+[m-noncomp] North (38)
 
-[] North (38)
+[NOMCOMP] North (38)
 
 # sent_id = n01002042
 # text = The new spending is fueled by Clinton’s large bank account.
@@ -357,25 +360,25 @@
 11	account	account	NOUN	NN	Number=Sing	5	obl	5:obl:by	SpaceAfter=No
 12	.	.	PUNCT	.	_	5	punct	5:punct	_
 
-[] fueled (5)
-[] The new spending (3)
-[] by Clinton ’s large bank account (11)
+[EVENT] fueled (5)					#issue: frame ok?
+[undergoer] The new spending (3)
+[x-causer] by Clinton ’s large bank account (11)
 
-[] spending (3)
-[] new (2)
+[STATE-CHANGE] spending (3)
+[m-time] new (2)
 
-[] new (2)
+[TIME] new (2)
 
-[] account (11)
-[] Clinton ’s (7)
-[] large (9)
-[] bank (10)
+[POSSESSION] account (11)
+[m-possessor] Clinton ’s (7)
+[m-quality] large (9)
+[m-noncomp] bank (10)
 
-[] Clinton (7)
+[IDENTIFICATION] Clinton (7)
 
-[] large (9)
+[QUALITY] large (9)
 
-[] bank (10)
+[NONCOMP] bank (10)
 
 # sent_id = n01002058
 # text = What she’s saying and what she’s doing, it — actually, it’s unbelievable.
@@ -398,31 +401,31 @@
 17	unbelievable	unbelievable	ADJ	JJ	Degree=Pos	0	root	0:root	SpaceAfter=No
 18	.	.	PUNCT	.	_	17	punct	17:punct	_
 
-[] unbelievable (17)
-[] actually , (13)
-[] it — it (15)
+[MESSAGE-INIT] saying (4)
+[target-content] What (1)
+[x-sender] she (2)
 
-[] saying (4)
-[] What (1)
-[] she (2)
+[IDENTIFICATION] What (1)
 
-[] What (1)
+[IDENTIFICATION] she (2)
 
-[] she (2)
+[ACTIVITY] doing (9)
+[activity] what (6)
+[is-active] she (7)
 
-[] doing (9)
-[] what (6)
-[] she (7)
+[IDENTIFICATION] what (6)
 
-[] what (6)
+[IDENTIFICATION] she (7)
 
-[] she (7)
+[QUALITY] unbelievable (17)
+[m-mode] actually , (13)
+[has-quality] it — it (15)					#warum zweimal it?
 
-[] actually (13)
+[MODE] actually (13)
 
-[] it (15)
+[QUALITY] it (15)
 
-[] it (11)
+[QUALITY] it (11)
 
 # newdoc id = n01003
 # sent_id = n01003007
@@ -437,19 +440,19 @@
 8	allowed	allow	VERB	VBN	Tense=Past|VerbForm=Part	7	acl	7:acl	SpaceAfter=No
 9	.	.	PUNCT	.	_	1	punct	1:punct	_
 
-[] $ (1)
-[] 5,000 (2)
-[] per person (4)
-[] the maximum allowed (7)
+[QUANTITY] $ (1)
+[m-quality] 5,000 (2)
+[m-follows] per person (4)
+[m-identifier] the maximum allowed (7)
 
-[] 5,000 (2)
+[QUANTITY] 5,000 (2)
 
-[] person (4)
+[CLASS] person (4)
 
-[] maximum (7)
-[] allowed (8)
+[QUANTITY] maximum (7)
+[m-quality] allowed (8)
 
-[] allowed (8)
+[QUALITY] allowed (8)
 
 # sent_id = n01003010
 # text = In early October, the transition team used the same venue to meet with technology lobbyists, inviting representatives from Uber, the Motion Picture Association of America, the Consumer Technology Association and other groups.
@@ -491,67 +494,70 @@
 36	groups	group	NOUN	NNS	Number=Plur	21	conj	19:nmod:from|21:conj:and	SpaceAfter=No
 37	.	.	PUNCT	.	_	8	punct	8:punct	_
 
-[] used (8)
-[] In early October (3)
-[] the transition team (7)
-[] the same venue (11)
-[] to meet with technology lobbyists (13)
-[] inviting representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (18)
+[MEANS] used (8)
+[m-time] In early October (3)
+[x-causer] the transition team (7)
+[means] the same venue (11)
+[x-purpose] to meet with technology lobbyists (13)
 
-[] October (3)
-[] early (2)
+[TIME] October (3)
+[m-time] early (2)
 
-[] early (2)
+[TIME] early (2)
 
-[] team (7)
-[] transition (6)
+[IDENTIFICATION] team (7)
+[m-mode] transition (6)
 
-[] transition (6)
+[MODE] transition (6)
 
-[] venue (11)
-[] same (10)
+[MEANS] venue (11)
+[m-quality] same (10)
 
-[] same (10)
+[QUALITY] same (10)
 
-[] meet (13)
-[] with technology lobbyists (16)
+[MESSAGE] meet (13)
+[x-accompanier] with technology lobbyists (16)
 
-[] lobbyists (16)
-[] technology (15)
+[ACCOMPANIMENT] lobbyists (16)
+[m-noncomp] technology (15)
 
-[] technology (15)
+[NONCOMP] technology (15)
 
-[] inviting (18)
-[] representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (19)
+[MESSAGE] inviting (18)
+[x-experiencer] representatives from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (19)
 
-[] representatives (19)
-[] from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (21)
+[IDENTIFICATION] representatives (19)
+[m-part] from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (21)
 
-[] Uber (21)
+[IDENTIFICATION] Uber (21)
 
-[] Association (26)
-[] Motion Picture (25)
-[] of America (28)
+[IDENTIFICATION] Association (26)
+[m-noncomp] Motion Picture (25)
+[m-noncomp] Association (33)
+[m-noncomp] of America (28)
 
-[] Picture (25)
-[] Motion (24)
+[CLASS] Picture (25)
+[m-noncomp] Motion (24)
+[m-noncomp] America (28)
 
-[] Motion (24)
+[NONCOMP] Motion (24)
 
-[] America (28)
+[NONCOMP] America (28)
 
-[] Association (33)
-[] Consumer Technology (32)
+[NONCOMP] Association (33)
 
-[] Technology (32)
-[] Consumer (31)
+[IDENTIFICATION] Association (33)
+[m-noncomp] Consumer Technology (32)
 
-[] Consumer (31)
+[NONCOMP] Technology (32)
+[m-noncomp] Consumer (31)
 
-[] groups (36)
-[] other (35)
+[NONCOMP] Consumer (31)
 
-[] other (35)
+[IDENTIFICATION] groups (36)
+[m-part] other (35)
+
+[PART-WHOLE] other (35)
 
 # sent_id = n01003012
 # text = The gathering was originally slated for Washington’s private Metropolitan Club on H Street a few blocks away.
