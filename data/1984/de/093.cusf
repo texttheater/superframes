@@ -6,6 +6,11 @@
 4	!	!	PUNCT	$.	_	2	punct	_	_
 5	«	«	PUNCT	$(	_	2	punct	_	_
 
+[] Sie (2)
+[] auch (3)
+
+[] auch (3)
+
 # sent_id = 4652
 # text = » Weswegen sind Sie hier ? «
 1	»	»	PUNCT	$(	_	5	punct	_	_
@@ -15,6 +20,14 @@
 5	hier	hier	ADV	ADV	_	0	root	_	_
 6	?	?	PUNCT	$.	_	5	punct	_	_
 7	«	«	PUNCT	$(	_	5	punct	_	_
+
+[] hier (5)
+[] Weswegen (2)
+[] Sie (4)
+
+[] Weswegen (2)
+
+[] Sie (4)
 
 # sent_id = 4653
 # text = » Um Ihnen die Wahrheit zu sagen- «
@@ -26,6 +39,14 @@
 6	zu	zu	ADP	APPR	_	7	mark	_	_
 7	sagen-	Sagen-	X	TRUNC	_	0	root	_	_
 8	«	«	PUNCT	$(	_	7	punct	_	_
+
+[] sagen- (7)
+[] Ihnen (3)
+[] die Wahrheit (5)
+
+[] Ihnen (3)
+
+[] Wahrheit (5)
 
 # sent_id = 4654
 # text = Er setzte sich linkisch Winston gegenüber auf die Bank .
@@ -39,6 +60,26 @@
 8	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Bank	Bank	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] setzte (2)
+[] Er (1)
+[] sich (3)
+[] linkisch (4)
+[] Winston (5)
+[] gegenüber (6)
+[] auf die Bank (9)
+
+[] Er (1)
+
+[] sich (3)
+
+[] linkisch (4)
+
+[] Winston (5)
+
+[] gegenüber (6)
+
+[] Bank (9)
 
 # sent_id = 4655
 # text = » Es gibt nur ein Verbrechen - oder nicht ? « sagte er .
@@ -57,6 +98,26 @@
 13	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 14	.	.	PUNCT	$.	_	12	punct	_	_
 
+[] sagte (12)
+[] » Es gibt nur ein Verbrechen - oder nicht ? « (3)
+[] er (13)
+
+[] gibt (3)
+[] Es (2)
+[] nur (4)
+[] ein Verbrechen oder (6)
+[] - nicht (9)
+
+[] Es (2)
+
+[] nur (4)
+
+[] Verbrechen (6)
+
+[] nicht (9)
+
+[] er (13)
+
 # sent_id = 4656
 # text = » Und haben Sie es begangen ? «
 1	»	»	PUNCT	$(	_	6	punct	_	_
@@ -68,6 +129,14 @@
 7	?	?	PUNCT	$.	_	6	punct	_	_
 8	«	«	PUNCT	$(	_	6	punct	_	_
 
+[] begangen (6)
+[] Sie (4)
+[] es (5)
+
+[] Sie (4)
+
+[] es (5)
+
 # sent_id = 4657
 # text = » Offenbar ja . «
 1	»	»	PUNCT	$(	_	2	punct	_	_
@@ -75,6 +144,11 @@
 3	ja	ja	ADV	ADV	_	2	advmod	_	_
 4	.	.	PUNCT	$.	_	2	punct	_	_
 5	«	«	PUNCT	$(	_	2	punct	_	_
+
+[] Offenbar (2)
+[] ja (3)
+
+[] ja (3)
 
 # sent_id = 4658
 # text = Er legte eine Hand an seine Stirn und presste einen Augenblick seine Schläfen , so als versuche er sich an etwas zu erinnern .
@@ -98,10 +172,52 @@
 18	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
 19	sich	er|es|sie	PRON	PRF	Case=Acc|Gender=Neut|Number=Sing|Person=3|Reflex=Yes	17	obj	_	_
 20	an	an	ADP	APPR	_	21	case	_	_
-21	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	23	obl	_	_
+21	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut	23	obl	_	_
 22	zu	zu	PART	PTKZU	_	23	mark	_	_
 23	erinnern	erinnern	VERB	VVINF	VerbForm=Inf	17	xcomp	_	_
 24	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] legte (2)
+[] Er (1)
+[] eine Hand (4)
+[] an seine Stirn (7)
+
+[] Er (1)
+
+[] Hand (4)
+
+[] Stirn (7)
+[] seine (6)
+
+[] seine (6)
+
+[] presste (9)
+[] einen Augenblick (11)
+[] seine Schläfen (13)
+
+[] Augenblick (11)
+
+[] Schläfen (13)
+[] seine (12)
+
+[] seine (12)
+
+[] versuche (17)
+[] so (15)
+[] er (18)
+[] sich (19)
+[] an etwas zu erinnern (23)
+
+[] so (15)
+
+[] er (18)
+
+[] sich (19)
+
+[] erinnern (23)
+[] an etwas (21)
+
+[] etwas (21)
 
 # sent_id = 4659
 # text = » Diese Dinge passieren eben « , begann er unbestimmt .
@@ -116,6 +232,23 @@
 9	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 10	unbestimmt	unbestimmt	ADJ	ADJD	_	8	advmod	_	_
 11	.	.	PUNCT	$.	_	8	punct	_	_
+
+[] begann (8)
+[] » Diese Dinge passieren eben « , (4)
+[] er (9)
+[] unbestimmt (10)
+
+[] passieren (4)
+[] Diese Dinge (3)
+[] eben (5)
+
+[] Dinge (3)
+
+[] eben (5)
+
+[] er (9)
+
+[] unbestimmt (10)
 
 # sent_id = 4660
 # text = » Es ist mir gelungen , mir einen Fall ins Gedächtnis zurückzurufen - einen möglichen Fall .
@@ -137,6 +270,29 @@
 16	Fall	Fall	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	12	appos	_	_
 17	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] gelungen (5)
+[] mir (4)
+[] , mir einen Fall ins Gedächtnis zurückzurufen - einen möglichen Fall (12)
+
+[] mir (4)
+
+[] zurückzurufen (12)
+[] mir (7)
+[] einen Fall (9)
+[] ins Gedächtnis (11)
+[] - einen möglichen Fall (16)
+
+[] mir (7)
+
+[] Fall (9)
+
+[] Gedächtnis (11)
+
+[] Fall (16)
+[] möglichen (15)
+
+[] möglichen (15)
+
 # sent_id = 4661
 # text = Es war zweifellos eine Unklugheit .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
@@ -145,6 +301,14 @@
 4	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Unklugheit	Unklugheit!!	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
+
+[] Unklugheit (5)
+[] Es (1)
+[] zweifellos (3)
+
+[] Es (1)
+
+[] zweifellos (3)
 
 # sent_id = 4662
 # text = Wir stellten eine definitive Ausgabe der Gedichte Kiplings zusammen .
@@ -158,6 +322,26 @@
 8	Kiplings	Kiplings!!	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
 9	zusammen	zusammen	ADP	PTKVZ	_	2	compound:prt	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] stellten (2)
+[] Wir (1)
+[] eine definitive Ausgabe der Gedichte Kiplings (5)
+[] zusammen (9)
+
+[] Wir (1)
+
+[] Ausgabe (5)
+[] definitive (4)
+[] der Gedichte Kiplings (7)
+
+[] definitive (4)
+
+[] Gedichte (7)
+[] Kiplings (8)
+
+[] Kiplings (8)
+
+[] zusammen (9)
 
 # sent_id = 4663
 # text = Ich ließ das Wort > Gott < am Ende einer Verszeile stehen .
@@ -174,6 +358,26 @@
 11	Verszeile	Verszeile	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	_
 12	stehen	stehen	VERB	VVFIN	VerbForm=Inf	2	xcomp	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] ließ (2)
+[] Ich (1)
+[] das Wort > Gott < (4)
+[] am Ende einer Verszeile stehen (12)
+
+[] Ich (1)
+
+[] Wort (4)
+[] > Gott < (6)
+
+[] Gott (6)
+
+[] stehen (12)
+[] am Ende einer Verszeile (9)
+
+[] Ende (9)
+[] einer Verszeile (11)
+
+[] Verszeile (11)
 
 # sent_id = 4664
 # text = Ich konnte nicht anders ! « fügte er nahezu ungehalten hinzu , indem er das Gesicht hob , um Winston anzusehen .
@@ -200,6 +404,47 @@
 21	anzusehen	ansehen	VERB	VVIZU	VerbForm=Inf	17	advcl	_	_
 22	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] fügte (7)
+[] Ich konnte nicht anders ! « (2)
+[] er (8)
+[] nahezu ungehalten (10)
+[] hinzu (11)
+[] , indem er das Gesicht hob , um Winston anzusehen (17)
+
+[] konnte (2)
+[] Ich (1)
+[] nicht (3)
+[] anders (4)
+
+[] Ich (1)
+
+[] nicht (3)
+
+[] anders (4)
+
+[] er (8)
+
+[] ungehalten (10)
+[] nahezu (9)
+
+[] nahezu (9)
+
+[] hinzu (11)
+
+[] hob (17)
+[] er (14)
+[] das Gesicht (16)
+[] , um Winston anzusehen (21)
+
+[] er (14)
+
+[] Gesicht (16)
+
+[] anzusehen (21)
+[] Winston (20)
+
+[] Winston (20)
+
 # sent_id = 4665
 # text = » Es war einfach unmöglich , die Verszeile zu ändern .
 1	»	»	PUNCT	$(	_	5	punct	_	_
@@ -214,6 +459,20 @@
 10	ändern	ändern	VERB	VVINF	VerbForm=Inf	5	xcomp	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] unmöglich (5)
+[] Es (2)
+[] einfach (4)
+[] , die Verszeile zu ändern (10)
+
+[] Es (2)
+
+[] einfach (4)
+
+[] ändern (10)
+[] die Verszeile (8)
+
+[] Verszeile (8)
+
 # sent_id = 4666
 # text = Der Reim endete mit > Trott < .
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
@@ -224,6 +483,14 @@
 6	Trott	Trott	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 7	<	<	PUNCT	$(	_	6	punct	_	_
 8	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] endete (3)
+[] Der Reim (2)
+[] mit > Trott < (6)
+
+[] Reim (2)
+
+[] Trott (6)
 
 # sent_id = 4667
 # text = Wissen Sie , dass es in unserer ganzen Sprache nur äußerst wenige Reime auf > Trott < gibt ?
@@ -247,6 +514,38 @@
 18	gibt	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
 19	?	?	PUNCT	$.	_	1	punct	_	_
 
+[] Wissen (1)
+[] Sie (2)
+[] , dass es in unserer ganzen Sprache nur äußerst wenige Reime auf > Trott < gibt (18)
+
+[] Sie (2)
+
+[] gibt (18)
+[] in unserer ganzen Sprache (9)
+[] nur äußerst wenige Reime (13)
+[] auf > Trott (16)
+
+[] Sprache (9)
+[] unserer (7)
+[] ganzen (8)
+
+[] unserer (7)
+
+[] ganzen (8)
+
+[] Reime (13)
+[] nur äußerst wenige (12)
+
+[] wenige (12)
+[] nur (10)
+[] äußerst (11)
+
+[] nur (10)
+
+[] äußerst (11)
+
+[] Trott (16)
+
 # sent_id = 4668
 # text = Tagelang zerbrach ich mir den Kopf .
 1	Tagelang	tagelang	ADJ	ADJD	_	2	advmod	_	_
@@ -256,6 +555,20 @@
 5	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Kopf	Kopf	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] zerbrach (2)
+[] Tagelang (1)
+[] ich (3)
+[] mir (4)
+[] den Kopf (6)
+
+[] Tagelang (1)
+
+[] ich (3)
+
+[] mir (4)
+
+[] Kopf (6)
 
 # sent_id = 4669
 # text = Es gab einfach keinen anderen Reim . «
@@ -268,6 +581,23 @@
 7	.	.	PUNCT	$.	_	2	punct	_	_
 8	«	«	PUNCT	$(	_	2	punct	_	_
 
+[] gab (2)
+[] Es (1)
+[] einfach (3)
+[] keinen anderen Reim (6)
+
+[] Es (1)
+
+[] einfach (3)
+
+[] Reim (6)
+[] keinen (4)
+[] anderen (5)
+
+[] keinen (4)
+
+[] anderen (5)
+
 # sent_id = 4670
 # text = Sein Gesichtsausdruck änderte sich .
 1	Sein	sein	DET	PPOSAT	Case=Nom|Gender=Masc|Number=Sing|Poss=Yes	2	det:poss	_	_
@@ -275,6 +605,17 @@
 3	änderte	ändern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	sich	er|es|sie	PRON	PRF	Case=Acc|Gender=Neut|Number=Sing|Person=3|Reflex=Yes	3	obj	_	_
 5	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] änderte (3)
+[] Sein Gesichtsausdruck (2)
+[] sich (4)
+
+[] Gesichtsausdruck (2)
+[] Sein (1)
+
+[] Sein (1)
+
+[] sich (4)
 
 # sent_id = 4671
 # text = Der Ärger verschwand daraus , und einen Augenblick sah er fast zufrieden aus .
@@ -292,6 +633,31 @@
 12	zufrieden	zufrieden	ADJ	ADJD	_	9	xcomp	_	_
 13	aus	aus	ADP	PTKVZ	_	9	compound:prt	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] verschwand (3)
+[] Der Ärger (2)
+[] daraus (4)
+
+[] Ärger (2)
+
+[] daraus (4)
+
+[] sah (9)
+[] einen Augenblick (8)
+[] er (10)
+[] fast zufrieden (12)
+[] aus (13)
+
+[] Augenblick (8)
+
+[] er (10)
+
+[] zufrieden (12)
+[] fast (11)
+
+[] fast (11)
+
+[] aus (13)
 
 # sent_id = 4672
 # text = Eine Art geistiger Hochstimmung , die Freude des Pedanten , der eine nutzlose Tatsache entdeckt hat , leuchtete durch den Schmutz und das Haargestrüpp .
@@ -320,6 +686,40 @@
 23	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	24	det	_	_
 24	Haargestrüpp	Haargestrüpp!!	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	21	conj	_	_
 25	.	.	PUNCT	$.	_	18	punct	_	_
+
+[] leuchtete (18)
+[] Eine Art geistiger Hochstimmung , die Freude des Pedanten , der eine nutzlose Tatsache entdeckt hat , (2)
+[] durch den Schmutz und das Haargestrüpp (21)
+
+[] Art (2)
+[] geistiger Hochstimmung (4)
+[] , die Freude des Pedanten , der eine nutzlose Tatsache entdeckt hat , (7)
+
+[] Hochstimmung (4)
+[] geistiger (3)
+
+[] geistiger (3)
+
+[] Freude (7)
+[] des Pedanten , der eine nutzlose Tatsache entdeckt hat , (9)
+
+[] Pedanten (9)
+[] , der eine nutzlose Tatsache entdeckt hat , (15)
+
+[] entdeckt (15)
+[] der (11)
+[] eine nutzlose Tatsache (14)
+
+[] der (11)
+
+[] Tatsache (14)
+[] nutzlose (13)
+
+[] nutzlose (13)
+
+[] Schmutz (21)
+
+[] Haargestrüpp (24)
 
 # sent_id = 4673
 # text = » Ist Ihnen jemals in den Sinn gekommen « , sagte er , » dass die ganze Entwicklung der englischen Dichtkunst durch die Tatsache bestimmt wurde , dass es in der englischen Sprache nicht genug Reime gibt ? «
@@ -363,6 +763,62 @@
 38	?	?	PUNCT	$.	_	25	punct	_	_
 39	«	«	PUNCT	$(	_	25	punct	_	_
 
+[] sagte (11)
+[] » Ist Ihnen jemals in den Sinn gekommen « , (8)
+[] er (12)
+[] , » dass die ganze Entwicklung der englischen Dichtkunst durch die Tatsache bestimmt wurde , dass es in der englischen Sprache nicht genug Reime gibt ? « (25)
+
+[] gekommen (8)
+[] Ihnen (3)
+[] jemals (4)
+[] in den Sinn (7)
+
+[] Ihnen (3)
+
+[] jemals (4)
+
+[] Sinn (7)
+
+[] er (12)
+
+[] bestimmt (25)
+[] die ganze Entwicklung der englischen Dichtkunst (18)
+[] durch die Tatsache , dass es in der englischen Sprache nicht genug Reime gibt (24)
+
+[] Entwicklung (18)
+[] ganze (17)
+[] der englischen Dichtkunst (21)
+
+[] ganze (17)
+
+[] Dichtkunst (21)
+[] englischen (20)
+
+[] englischen (20)
+
+[] Tatsache (24)
+[] , dass es in der englischen Sprache nicht genug Reime gibt (37)
+
+[] gibt (37)
+[] es (29)
+[] in der englischen Sprache (33)
+[] nicht (34)
+[] genug Reime (36)
+
+[] es (29)
+
+[] Sprache (33)
+[] englischen (32)
+
+[] englischen (32)
+
+[] nicht (34)
+
+[] Reime (36)
+[] genug (35)
+
+[] genug (35)
+
 # sent_id = 4674
 # text = Nein , dieser besondere Gedanke war Winston nie gekommen .
 1	Nein	nein	PART	PTKANT	Case=Nom|Gender=Neut|Number=Sing	9	advmod	_	_
@@ -375,6 +831,23 @@
 8	nie	nie	ADV	ADV	_	9	advmod	_	_
 9	gekommen	kommen	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
+
+[] gekommen (9)
+[] Nein , (1)
+[] dieser besondere Gedanke (5)
+[] Winston (7)
+[] nie (8)
+
+[] Nein (1)
+
+[] Gedanke (5)
+[] besondere (4)
+
+[] besondere (4)
+
+[] Winston (7)
+
+[] nie (8)
 
 # sent_id = 4675
 # text = Auch kam er ihm , unter den gegebenen Umständen , nicht sehr wichtig oder interessant vor .
@@ -396,6 +869,37 @@
 16	vor	vor	ADP	PTKVZ	_	2	compound:prt	_	_
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] kam (2)
+[] Auch (1)
+[] er (3)
+[] ihm (4)
+[] , unter den gegebenen Umständen , nicht sehr wichtig oder interessant (13)
+[] vor (16)
+
+[] Auch (1)
+
+[] er (3)
+
+[] ihm (4)
+
+[] wichtig (13)
+[] , unter den gegebenen Umständen , (9)
+[] nicht (11)
+[] sehr (12)
+
+[] Umständen (9)
+[] gegebenen (8)
+
+[] gegebenen (8)
+
+[] nicht (11)
+
+[] sehr (12)
+
+[] interessant (15)
+
+[] vor (16)
+
 # sent_id = 4676
 # text = » Wissen Sie , was für eine Tageszeit es ist ? « fragte er .
 1	»	»	PUNCT	$(	_	2	punct	_	_
@@ -414,6 +918,29 @@
 14	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
 15	.	.	PUNCT	$.	_	13	punct	_	_
 
+[] fragte (13)
+[] » Wissen Sie , was für eine Tageszeit es ist ? « (2)
+[] er (14)
+
+[] Wissen (2)
+[] Sie (3)
+[] , was für eine Tageszeit es (8)
+[] ist (10)
+
+[] Sie (3)
+
+[] Tageszeit (8)
+[] was (5)
+[] es (9)
+
+[] was (5)
+
+[] es (9)
+
+[] ist (10)
+
+[] er (14)
+
 # sent_id = 4677
 # text = Ampleforth machte wieder ein erschrockenes Gesicht .
 1	Ampleforth	Ampleforth	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
@@ -423,6 +950,20 @@
 5	erschrockenes	erschreckt	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] machte (2)
+[] Ampleforth (1)
+[] wieder (3)
+[] ein erschrockenes Gesicht (6)
+
+[] Ampleforth (1)
+
+[] wieder (3)
+
+[] Gesicht (6)
+[] erschrockenes (5)
+
+[] erschrockenes (5)
 
 # sent_id = 4678
 # text = » Ich habe noch kaum darüber nachgedacht .
@@ -434,6 +975,20 @@
 6	darüber	darüber	ADP	PROAV	PronType=Dem	7	advmod	_	_
 7	nachgedacht	nachdenken	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] nachgedacht (7)
+[] Ich (2)
+[] noch kaum (5)
+[] darüber (6)
+
+[] Ich (2)
+
+[] kaum (5)
+[] noch (4)
+
+[] noch (4)
+
+[] darüber (6)
 
 # sent_id = 4679
 # text = Man verhaftete mich - es kann zwei , vielleicht drei Tage her sein . «
@@ -452,6 +1007,30 @@
 13	sein	sein	AUX	VAINF	VerbForm=Inf	7	cop	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 15	«	«	PUNCT	$(	_	2	punct	_	_
+
+[] verhaftete (2)
+[] Man (1)
+[] mich (3)
+
+[] Man (1)
+
+[] mich (3)
+
+[] zwei (7)
+[] es (5)
+[] her (12)
+
+[] es (5)
+
+[] Tage (11)
+[] vielleicht drei (10)
+
+[] drei (10)
+[] vielleicht (9)
+
+[] vielleicht (9)
+
+[] her (12)
 
 # sent_id = 4680
 # text = Seine Blicke huschten über die Wände , so als hoffe er halbwegs , irgendwo ein Fenster zu finden .
@@ -475,6 +1054,37 @@
 18	finden	finden	VERB	VVINF	VerbForm=Inf	10	xcomp	_	_
 19	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] huschten (3)
+[] Seine Blicke (2)
+[] über die Wände (6)
+
+[] Blicke (2)
+[] Seine (1)
+
+[] Seine (1)
+
+[] Wände (6)
+
+[] hoffe (10)
+[] so (8)
+[] er (11)
+[] halbwegs (12)
+[] , irgendwo ein Fenster zu finden (18)
+
+[] so (8)
+
+[] er (11)
+
+[] halbwegs (12)
+
+[] finden (18)
+[] irgendwo (14)
+[] ein Fenster (16)
+
+[] irgendwo (14)
+
+[] Fenster (16)
+
 # sent_id = 4681
 # text = » Hier an diesem Ort besteht kein Unterschied zwischen Tag und Nacht .
 1	»	»	PUNCT	$(	_	6	punct	_	_
@@ -490,6 +1100,25 @@
 11	und	und	CCONJ	KON	_	12	cc	_	_
 12	Nacht	Nacht	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	10	conj	_	_
 13	.	.	PUNCT	$.	_	6	punct	_	_
+
+[] besteht (6)
+[] Hier (2)
+[] an diesem Ort (5)
+[] kein Unterschied zwischen Tag und Nacht (8)
+
+[] Hier (2)
+
+[] Ort (5)
+
+[] Unterschied (8)
+[] kein (7)
+[] zwischen Tag und Nacht (10)
+
+[] kein (7)
+
+[] Tag (10)
+
+[] Nacht (12)
 
 # sent_id = 4682
 # text = Ich kann mir nicht vorstellen , wie man die Zeit berechnen könnte . «
@@ -508,10 +1137,30 @@
 13	.	.	PUNCT	$.	_	5	punct	_	_
 14	«	«	PUNCT	$(	_	5	punct	_	_
 
+[] vorstellen (5)
+[] Ich (1)
+[] mir (3)
+[] nicht (4)
+[] , wie man die Zeit berechnen könnte (11)
+
+[] Ich (1)
+
+[] mir (3)
+
+[] nicht (4)
+
+[] berechnen (11)
+[] man (8)
+[] die Zeit (10)
+
+[] man (8)
+
+[] Zeit (10)
+
 # sent_id = 4683
 # text = Ein paar Minuten unterhielten sie sich oberflächlich , dann , ohne offensichtlichen Grund , gebot ihnen ein Befehl aus dem Televisor Schweigen .
 1	Ein	eine	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	3	det	_	_
+2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut	3	det	_	_
 3	Minuten	Minute	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	4	obl	_	_
 4	unterhielten	unterhalten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
@@ -534,6 +1183,43 @@
 22	Schweigen	Schweigen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	15	xcomp	_	_
 23	.	.	PUNCT	$.	_	4	punct	_	_
 
+[] unterhielten (4)
+[] Ein paar Minuten (3)
+[] sie (5)
+[] sich (6)
+[] oberflächlich (7)
+
+[] Minuten (3)
+
+[] sie (5)
+
+[] sich (6)
+
+[] oberflächlich (7)
+
+[] gebot (15)
+[] dann (9)
+[] , ohne offensichtlichen Grund , (13)
+[] ihnen (16)
+[] ein Befehl aus dem Televisor (18)
+[] Schweigen (22)
+
+[] dann (9)
+
+[] Grund (13)
+[] offensichtlichen (12)
+
+[] offensichtlichen (12)
+
+[] ihnen (16)
+
+[] Befehl (18)
+[] aus dem Televisor (21)
+
+[] Televisor (21)
+
+[] Schweigen (22)
+
 # sent_id = 4684
 # text = Winston saß still da , mit übereinandergelegten Händen .
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
@@ -545,6 +1231,23 @@
 7	übereinandergelegten	übereinandergelegt	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	8	amod	_	_
 8	Händen	Hand	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] saß (2)
+[] Winston (1)
+[] still (3)
+[] da (4)
+[] , mit übereinandergelegten Händen (8)
+
+[] Winston (1)
+
+[] still (3)
+
+[] da (4)
+
+[] Händen (8)
+[] übereinandergelegten (7)
+
+[] übereinandergelegten (7)
 
 # sent_id = 4685
 # text = Ampleforth , der zu groß war , um bequem auf der schmalen Bank sitzen zu können , rutschte zappelig von einer Seite auf die andere , verschränkte seine langen Hände erst um das eine Knie , dann um das andere .
@@ -590,6 +1293,66 @@
 40	andere	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	35	conj	_	_
 41	.	.	PUNCT	$.	_	18	punct	_	_
 
+[] rutschte (18)
+[] Ampleforth , der zu groß war , um bequem auf der schmalen Bank sitzen zu können , (1)
+[] zappelig (19)
+[] von einer Seite (22)
+[] auf die andere (25)
+
+[] Ampleforth (1)
+[] , der zu groß war , um bequem auf der schmalen Bank sitzen zu können , (5)
+
+[] groß (5)
+[] der (3)
+[] zu (4)
+[] , um bequem auf der schmalen Bank sitzen zu können (14)
+
+[] der (3)
+
+[] zu (4)
+
+[] sitzen (14)
+[] bequem (9)
+[] auf der schmalen Bank (13)
+
+[] bequem (9)
+
+[] Bank (13)
+[] schmalen (12)
+
+[] schmalen (12)
+
+[] zappelig (19)
+
+[] Seite (22)
+
+[] andere (25)
+
+[] verschränkte (27)
+[] seine langen Hände (30)
+[] erst um das eine Knie , dann um das andere (35)
+
+[] Hände (30)
+[] seine (28)
+[] langen (29)
+
+[] seine (28)
+
+[] langen (29)
+
+[] Knie (35)
+[] erst (31)
+[] eine (34)
+
+[] erst (31)
+
+[] eine (34)
+
+[] andere (40)
+[] dann (37)
+
+[] dann (37)
+
 # sent_id = 4686
 # text = Der Televisor raunzte ihn an , sich ruhig zu verhalten .
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
@@ -604,12 +1367,37 @@
 10	verhalten	verhalten	VERB	VVINF	VerbForm=Inf	3	xcomp	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] raunzte (3)
+[] Der Televisor (2)
+[] ihn (4)
+[] an (5)
+[] , sich ruhig zu verhalten (10)
+
+[] Televisor (2)
+
+[] ihn (4)
+
+[] an (5)
+
+[] verhalten (10)
+[] sich (7)
+[] ruhig (8)
+
+[] sich (7)
+
+[] ruhig (8)
+
 # sent_id = 4687
 # text = Die Zeit verstrich .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Zeit	Zeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
 3	verstrich	verstreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] verstrich (3)
+[] Die Zeit (2)
+
+[] Zeit (2)
 
 # sent_id = 4688
 # text = Zwanzig Minuten , eine Stunde - es war schwer zu beurteilen .
@@ -626,6 +1414,25 @@
 11	beurteilen	beurteilen	VERB	VVINF	VerbForm=Inf	8	acl	_	_
 12	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] Minuten (2)
+[] Zwanzig (1)
+[] es war schwer zu beurteilen . (8)
+
+[] Zwanzig (1)
+
+[] Stunde (5)
+
+[] war (8)
+[] es (7)
+[] schwer zu beurteilen (11)
+
+[] es (7)
+
+[] beurteilen (11)
+[] schwer (9)
+
+[] schwer (9)
+
 # sent_id = 4689
 # text = Wieder erscholl draußen ein Geräusch von Schritten .
 1	Wieder	wieder	ADV	ADV	_	2	advmod	_	_
@@ -637,6 +1444,20 @@
 7	Schritten	Schritt	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	5	nmod	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] erscholl (2)
+[] Wieder (1)
+[] draußen (3)
+[] ein Geräusch von Schritten (5)
+
+[] Wieder (1)
+
+[] draußen (3)
+
+[] Geräusch (5)
+[] von Schritten (7)
+
+[] Schritten (7)
+
 # sent_id = 4690
 # text = Winstons Eingeweide zogen sich zusammen .
 1	Winstons	Winston	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
@@ -645,6 +1466,20 @@
 4	sich	er|es|sie	PRON	PRF	Case=Acc|Gender=Neut|Number=Plur|Person=3|Reflex=Yes	3	obj	_	_
 5	zusammen	zusammen	ADP	PTKVZ	_	3	compound:prt	_	_
 6	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] zogen (3)
+[] Winstons Eingeweide (2)
+[] sich (4)
+[] zusammen (5)
+
+[] Eingeweide (2)
+[] Winstons (1)
+
+[] Winstons (1)
+
+[] sich (4)
+
+[] zusammen (5)
 
 # sent_id = 4691
 # text = Bald , sehr bald , vielleicht in fünf Minuten , vielleicht jetzt , würde das Stiefelgetrampel bedeuten , dass die Reihe an ihn gekommen war .
@@ -675,6 +1510,41 @@
 25	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	aux	_	_
 26	.	.	PUNCT	$.	_	17	punct	_	_
 
+[] bedeuten (17)
+[] Bald , sehr bald , vielleicht in fünf Minuten , vielleicht jetzt , (1)
+[] das Stiefelgetrampel (16)
+[] , dass die Reihe an ihn gekommen war (24)
+
+[] Bald (1)
+
+[] bald (4)
+[] sehr (3)
+
+[] sehr (3)
+
+[] Minuten (9)
+[] vielleicht (6)
+[] fünf (8)
+
+[] vielleicht (6)
+
+[] fünf (8)
+
+[] jetzt (12)
+[] vielleicht (11)
+
+[] vielleicht (11)
+
+[] Stiefelgetrampel (16)
+
+[] gekommen (24)
+[] die Reihe (21)
+[] an ihn (23)
+
+[] Reihe (21)
+
+[] ihn (23)
+
 # sent_id = 4692
 # text = Die Tür öffnete sich .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
@@ -682,6 +1552,14 @@
 3	öffnete	öffnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	sich	er|es|sie	PRON	PRF	Case=Acc|Gender=Neut|Number=Sing|Person=3|Reflex=Yes	3	obj	_	_
 5	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] öffnete (3)
+[] Die Tür (2)
+[] sich (4)
+
+[] Tür (2)
+
+[] sich (4)
 
 # sent_id = 4693
 # text = Der junge Offizier mit dem kalten Gesicht trat in die Zelle .
@@ -698,6 +1576,23 @@
 11	Zelle	Zelle	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	8	obl	_	_
 12	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] trat (8)
+[] Der junge Offizier mit dem kalten Gesicht (3)
+[] in die Zelle (11)
+
+[] Offizier (3)
+[] junge (2)
+[] mit dem kalten Gesicht (7)
+
+[] junge (2)
+
+[] Gesicht (7)
+[] kalten (6)
+
+[] kalten (6)
+
+[] Zelle (11)
+
 # sent_id = 4694
 # text = Mit einer kurzen Handbewegung deutete er auf Ampleforth .
 1	Mit	mit	ADP	APPR	_	4	case	_	_
@@ -710,6 +1605,20 @@
 8	Ampleforth	Ampleforth	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	5	obl	_	_
 9	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] deutete (5)
+[] Mit einer kurzen Handbewegung (4)
+[] er (6)
+[] auf Ampleforth (8)
+
+[] Handbewegung (4)
+[] kurzen (3)
+
+[] kurzen (3)
+
+[] er (6)
+
+[] Ampleforth (8)
+
 # sent_id = 4695
 # text = » Zimmer 101 « , sagte er .
 1	»	»	PUNCT	$(	_	2	punct	_	_
@@ -720,6 +1629,17 @@
 6	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
+
+[] sagte (6)
+[] » Zimmer 101 « , (2)
+[] er (7)
+
+[] Zimmer (2)
+[] 101 (3)
+
+[] 101 (3)
+
+[] er (7)
 
 # sent_id = 4696
 # text = Ampleforth schritt schwerfällig zwischen den Wachen hinaus , sein Gesicht war ein wenig beunruhigt , jedoch ohne zu begreifen .
@@ -735,7 +1655,7 @@
 10	Gesicht	Gesicht	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	14	nsubj	_	_
 11	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	_
 12	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
-13	wenig	wenig	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	14	advmod	_	_
+13	wenig	wenig	PRON	PIS	Definite=Ind|Gender=Neut	14	advmod	_	_
 14	beunruhigt	beunruhigen	VERB	VVPP	_	2	conj	_	_
 15	,	,	PUNCT	$,	_	19	punct	_	_
 16	jedoch	jedoch	CCONJ	KON	_	19	cc	_	_
@@ -743,6 +1663,33 @@
 18	zu	zu	PART	PTKZU	_	19	mark	_	_
 19	begreifen	begreifen	VERB	VVINF	VerbForm=Inf	14	conj	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] schritt (2)
+[] Ampleforth (1)
+[] schwerfällig (3)
+[] zwischen den Wachen (6)
+[] hinaus (7)
+
+[] Ampleforth (1)
+
+[] schwerfällig (3)
+
+[] Wachen (6)
+
+[] hinaus (7)
+
+[] beunruhigt (14)
+[] sein Gesicht (10)
+[] wenig (13)
+
+[] Gesicht (10)
+[] sein (9)
+
+[] sein (9)
+
+[] wenig (13)
+
+[] begreifen (19)
 
 # sent_id = 4697
 # text = Eine scheinbar lange Zeit verstrich .
@@ -752,6 +1699,17 @@
 4	Zeit	Zeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
 5	verstrich	verstreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
+
+[] verstrich (5)
+[] Eine scheinbar lange Zeit (4)
+
+[] Zeit (4)
+[] scheinbar lange (3)
+
+[] lange (3)
+[] scheinbar (2)
+
+[] scheinbar (2)
 
 # sent_id = 4698
 # text = Der Schmerz in Winstons Bauch war wieder erwacht .
@@ -764,6 +1722,20 @@
 7	wieder	wieder	ADV	ADV	_	8	advmod	_	_
 8	erwacht	erwachen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
+
+[] erwacht (8)
+[] Der Schmerz in Winstons Bauch (2)
+[] wieder (7)
+
+[] Schmerz (2)
+[] in Winstons Bauch (5)
+
+[] Bauch (5)
+[] Winstons (4)
+
+[] Winstons (4)
+
+[] wieder (7)
 
 # sent_id = 4699
 # text = Sein Denken kreiste rund und rund um dieselbe Bahn , wie eine Kugel , die immer wieder in die gleiche Reihe von Löchern fällt .
@@ -793,6 +1765,46 @@
 24	fällt	fallen|fällen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl	_	_
 25	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] kreiste (3)
+[] Sein Denken (2)
+[] rund und rund (4)
+[] um dieselbe Bahn (9)
+[] , wie eine Kugel , die immer wieder in die gleiche Reihe von Löchern fällt (13)
+
+[] Denken (2)
+[] Sein (1)
+
+[] Sein (1)
+
+[] rund (4)
+
+[] rund (6)
+
+[] Bahn (9)
+
+[] Kugel (13)
+[] , die immer wieder in die gleiche Reihe von Löchern fällt (24)
+
+[] fällt (24)
+[] die (15)
+[] immer wieder (17)
+[] in die gleiche Reihe von Löchern (21)
+
+[] die (15)
+
+[] wieder (17)
+[] immer (16)
+
+[] immer (16)
+
+[] Reihe (21)
+[] gleiche (20)
+[] von Löchern (23)
+
+[] gleiche (20)
+
+[] Löchern (23)
+
 # sent_id = 4700
 # text = Er kannte nur sechs Gedanken : Seine Leibschmerzen ; ein Stück Brot ; das Blut und das Wehgeschrei ; O'Brien ; Julia ; die Rasierklinge .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -821,4 +1833,41 @@
 24	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	Rasierklinge	Rasierklinge	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] kannte (2)
+[] Er (1)
+[] nur (3)
+[] sechs Gedanken : Seine Leibschmerzen ; ein Stück Brot ; das Blut und das Wehgeschrei ; O'Brien ; Julia ; die Rasierklinge (5)
+
+[] Er (1)
+
+[] nur (3)
+
+[] Gedanken (5)
+[] sechs (4)
+[] : Seine Leibschmerzen ; ein Stück Brot ; das Blut und das Wehgeschrei ; O'Brien ; Julia ; die Rasierklinge (8)
+
+[] sechs (4)
+
+[] Leibschmerzen (8)
+[] Seine (7)
+[] ; ein Stück Brot (12)
+[] ; O'Brien (20)
+
+[] Seine (7)
+
+[] Brot (12)
+[] Stück (11)
+
+[] Stück (11)
+
+[] Blut (15)
+
+[] Wehgeschrei (18)
+
+[] O'Brien (20)
+
+[] Julia (22)
+
+[] Rasierklinge (25)
 

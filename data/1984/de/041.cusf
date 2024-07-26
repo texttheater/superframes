@@ -3,7 +3,7 @@
 1	»	»	PUNCT	$(	_	5	punct	_	_
 2	Haben	Haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
 3	Sie	Sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
-4	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	5	obj	_	_
+4	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	5	obj	_	_
 5	verletzt	verletzen	VERB	VVPP	Verbform=Part	8	ccomp	_	_
 6	?	?	PUNCT	$.	_	5	punct	_	_
 7	«	«	PUNCT	$(	_	5	punct	_	_
@@ -11,13 +11,32 @@
 9	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 10	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] fragte (8)
+[] » Haben Sie sich verletzt ? « (5)
+[] er (9)
+
+[] verletzt (5)
+[] Sie (3)
+[] sich (4)
+
+[] Sie (3)
+
+[] sich (4)
+
+[] er (9)
+
 # sent_id = 2052
 # text = » Es ist nichts .
 1	»	»	PUNCT	$(	_	4	punct	_	_
 2	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-4	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	0	root	_	_
+4	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	0	root	_	_
 5	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] nichts (4)
+[] Es (2)
+
+[] Es (2)
 
 # sent_id = 2053
 # text = Nur mein Arm .
@@ -25,6 +44,14 @@
 2	mein	mein	DET	PPOSAT	Case=Nom|Gender=Masc|Number=Sing|Poss=Yes	3	det:poss	_	_
 3	Arm	Arm	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] Arm (3)
+[] Nur (1)
+[] mein (2)
+
+[] Nur (1)
+
+[] mein (2)
 
 # sent_id = 2054
 # text = Es wird gleich wieder gut sein . «
@@ -36,6 +63,17 @@
 6	sein	sein	AUX	VAINF	VerbForm=Inf	5	cop	_	_
 7	.	.	PUNCT	$.	_	5	punct	_	_
 8	«	«	PUNCT	$(	_	5	punct	_	_
+
+[] gut (5)
+[] Es (1)
+[] gleich wieder (4)
+
+[] Es (1)
+
+[] wieder (4)
+[] gleich (3)
+
+[] gleich (3)
 
 # sent_id = 2055
 # text = Sie sprach , als stocke ihr das Herz .
@@ -49,6 +87,20 @@
 8	Herz	Herz	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] sprach (2)
+[] Sie (1)
+[] , als stocke ihr das Herz (5)
+
+[] Sie (1)
+
+[] stocke (5)
+[] ihr (6)
+[] das Herz (8)
+
+[] ihr (6)
+
+[] Herz (8)
+
 # sent_id = 2056
 # text = Jedenfalls war sie sehr bleich geworden .
 1	Jedenfalls	jedenfalls	ADV	ADV	_	5	advmod	_	_
@@ -59,17 +111,42 @@
 6	geworden	werden	AUX	VAPP	Verbform=Part	5	cop	_	_
 7	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] bleich (5)
+[] Jedenfalls (1)
+[] sie (3)
+[] sehr (4)
+
+[] Jedenfalls (1)
+
+[] sie (3)
+
+[] sehr (4)
+
 # sent_id = 2057
 # text = » Sie haben sich hoffentlich nichts gebrochen ? «
 1	»	»	PUNCT	$(	_	7	punct	_	_
 2	Sie	Sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
 3	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-4	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	7	iobj	_	_
+4	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	7	iobj	_	_
 5	hoffentlich	hoffentlich	ADJ	ADJD	_	7	advmod	_	_
-6	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	7	obj	_	_
+6	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	7	obj	_	_
 7	gebrochen	brechen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	?	?	PUNCT	$.	_	7	punct	_	_
 9	«	«	PUNCT	$(	_	7	punct	_	_
+
+[] gebrochen (7)
+[] Sie (2)
+[] sich (4)
+[] hoffentlich (5)
+[] nichts (6)
+
+[] Sie (2)
+
+[] sich (4)
+
+[] hoffentlich (5)
+
+[] nichts (6)
 
 # sent_id = 2058
 # text = » Nein , mir fehlt nichts .
@@ -78,8 +155,19 @@
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	mir	ich	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=1|PronType=Prs	5	iobj	_	_
 5	fehlt	fehlen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	5	nsubj	_	_
+6	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	5	nsubj	_	_
 7	.	.	PUNCT	$.	_	5	punct	_	_
+
+[] fehlt (5)
+[] » Nein , (2)
+[] mir (4)
+[] nichts (6)
+
+[] Nein (2)
+
+[] mir (4)
+
+[] nichts (6)
 
 # sent_id = 2059
 # text = Es tat einen Augenblick weh , das ist alles . «
@@ -94,6 +182,22 @@
 9	alles	alle	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	parataxis	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 11	«	«	PUNCT	$(	_	2	punct	_	_
+
+[] tat (2)
+[] Es (1)
+[] einen Augenblick (4)
+[] weh (5)
+
+[] Es (1)
+
+[] Augenblick (4)
+
+[] weh (5)
+
+[] alles (9)
+[] das (7)
+
+[] das (7)
 
 # sent_id = 2060
 # text = Sie streckte ihm ihre freie Hand entgegen , und er half ihr auf .
@@ -112,6 +216,37 @@
 13	auf	auf	ADP	PTKVZ	_	11	compound:prt	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] streckte (2)
+[] Sie (1)
+[] ihm (3)
+[] ihre freie Hand (6)
+[] entgegen (7)
+
+[] Sie (1)
+
+[] ihm (3)
+
+[] Hand (6)
+[] ihre (4)
+[] freie (5)
+
+[] ihre (4)
+
+[] freie (5)
+
+[] entgegen (7)
+
+[] half (11)
+[] er (10)
+[] ihr (12)
+[] auf (13)
+
+[] er (10)
+
+[] ihr (12)
+
+[] auf (13)
+
 # sent_id = 2061
 # text = Sie hatte wieder etwas Farbe bekommen und schien sich bedeutend besser zu fühlen .
 1	Sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
@@ -122,25 +257,67 @@
 6	bekommen	bekommen	VERB	VVPP	Verbform=Part	0	root	_	_
 7	und	und	CCONJ	KON	_	8	cc	_	_
 8	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
-9	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	8	obj	_	_
+9	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	8	obj	_	_
 10	bedeutend	bedeutend	ADJ	ADJD	_	11	advmod	_	_
 11	besser	gut	ADJ	ADJD	_	13	advmod	_	_
 12	zu	zu	PART	PTKZU	_	13	mark	_	_
 13	fühlen	fühlen	VERB	VVINF	VerbForm=Inf	8	xcomp	_	_
 14	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] bekommen (6)
+[] Sie (1)
+[] wieder (3)
+[] etwas Farbe (5)
+
+[] Sie (1)
+
+[] wieder (3)
+
+[] Farbe (5)
+
+[] schien (8)
+[] sich (9)
+[] bedeutend besser zu fühlen (13)
+
+[] sich (9)
+
+[] fühlen (13)
+[] bedeutend besser (11)
+
+[] besser (11)
+[] bedeutend (10)
+
+[] bedeutend (10)
+
 # sent_id = 2062
 # text = » Es ist nichts « , wiederholte sie kurz .
 1	»	»	PUNCT	$(	_	4	punct	_	_
 2	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 3	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
-4	nichts	nichts	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	7	ccomp	_	_
+4	nichts	nichts	DET	PIAT	Definite=Ind|Gender=Neut	7	ccomp	_	_
 5	«	«	PUNCT	$(	_	4	punct	_	_
 6	,	,	PUNCT	$,	_	4	punct	_	_
 7	wiederholte	wiederholen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
 9	kurz	kurz	ADJ	ADJD	_	7	advmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] wiederholte (7)
+[] ist (3)
+[] » Es nichts « , (4)
+[] sie (8)
+[] kurz (9)
+
+[] ist (3)
+
+[] nichts (4)
+[] Es (2)
+
+[] Es (2)
+
+[] sie (8)
+
+[] kurz (9)
 
 # sent_id = 2063
 # text = » Ich verspürte nur einen Stich im Handgelenk .
@@ -154,6 +331,20 @@
 8	Handgelenk	Handgelenk	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	6	nmod	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] verspürte (3)
+[] Ich (2)
+[] nur (4)
+[] einen Stich im Handgelenk (6)
+
+[] Ich (2)
+
+[] nur (4)
+
+[] Stich (6)
+[] im Handgelenk (8)
+
+[] Handgelenk (8)
+
 # sent_id = 2064
 # text = Danke , Genosse ! «
 1	Danke	danke	PART	PTKANT	_	0	root	_	_
@@ -161,6 +352,11 @@
 3	Genosse	Genosse	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	1	appos	_	_
 4	!	!	PUNCT	$.	_	1	punct	_	_
 5	«	«	PUNCT	$(	_	1	punct	_	_
+
+[] Danke (1)
+[] , Genosse (3)
+
+[] Genosse (3)
 
 # sent_id = 2065
 # text = Und damit ging sie so unbeschwert in der gleichen Richtung weiter , als sei tatsächlich nichts geschehen .
@@ -179,9 +375,41 @@
 13	als	als	SCONJ	KOUS	_	17	mark	_	_
 14	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
 15	tatsächlich	tatsächlich	ADJ	ADJD	_	17	advmod	_	_
-16	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	17	nsubj	_	_
+16	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	17	nsubj	_	_
 17	geschehen	geschehen	VERB	VVPP	Verbform=Part	3	advcl	_	_
 18	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] ging (3)
+[] damit (2)
+[] sie (4)
+[] so unbeschwert (6)
+[] in der gleichen Richtung (10)
+[] weiter (11)
+[] , als sei tatsächlich nichts geschehen (17)
+
+[] damit (2)
+
+[] sie (4)
+
+[] unbeschwert (6)
+[] so (5)
+
+[] so (5)
+
+[] Richtung (10)
+[] gleichen (9)
+
+[] gleichen (9)
+
+[] weiter (11)
+
+[] geschehen (17)
+[] tatsächlich (15)
+[] nichts (16)
+
+[] tatsächlich (15)
+
+[] nichts (16)
 
 # sent_id = 2066
 # text = Der ganze Zwischenfall konnte keine halbe Minute gedauert haben .
@@ -196,18 +424,35 @@
 9	haben	haben	AUX	VAINF	VerbForm=Inf	8	aux	_	_
 10	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] gedauert (8)
+[] Der ganze Zwischenfall (3)
+[] keine halbe Minute (7)
+
+[] Zwischenfall (3)
+[] ganze (2)
+
+[] ganze (2)
+
+[] Minute (7)
+[] keine (5)
+[] halbe (6)
+
+[] keine (5)
+
+[] halbe (6)
+
 # sent_id = 2067
 # text = Seine Gefühle durch nichts zu verraten , war für jedermann zu einer Instinkthandlung geworden , und überdies hatten sie gerade vor einem Televisor gestanden , als die Sache passierte .
 1	Seine	sein	DET	PPOSAT	Case=Nom|Gender=Neut|Number=Plur|Poss=Yes	2	det:poss	_	_
 2	Gefühle	Gefühl	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	14	nsubj	_	_
 3	durch	durch	ADP	APPR	_	4	case	_	_
-4	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	6	obl	_	_
+4	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	6	obl	_	_
 5	zu	zu	PART	PTKZU	_	6	mark	_	_
 6	verraten	verraten	VERB	VVINF	VerbForm=Inf	2	acl	_	_
 7	,	,	PUNCT	$,	_	6	punct	_	_
 8	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
 9	für	für	ADP	APPR	_	10	case	_	_
-10	jedermann	jedermann	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	13	nmod	_	_
+10	jedermann	jedermann	PRON	PIS	Definite=Ind|Gender=Neut	13	nmod	_	_
 11	zu	zu	ADP	APPR	_	13	case	_	_
 12	einer	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Instinkthandlung	Instinkthandlung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	14	xcomp	_	_
@@ -228,6 +473,46 @@
 28	Sache	Sache	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	29	nsubj	_	_
 29	passierte	passieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	advcl	_	_
 30	.	.	PUNCT	$.	_	14	punct	_	_
+
+[] geworden (14)
+[] Seine Gefühle durch nichts zu verraten , (2)
+[] für jedermann zu einer Instinkthandlung , und überdies hatten sie gerade vor einem Televisor gestanden , als die Sache passierte (13)
+
+[] Gefühle (2)
+[] Seine (1)
+[] durch nichts zu verraten , (6)
+
+[] Seine (1)
+
+[] verraten (6)
+[] durch nichts (4)
+
+[] nichts (4)
+
+[] Instinkthandlung (13)
+[] für jedermann (10)
+
+[] jedermann (10)
+
+[] gestanden (24)
+[] überdies (17)
+[] sie (19)
+[] gerade (20)
+[] vor einem Televisor (23)
+[] , als die Sache passierte (29)
+
+[] überdies (17)
+
+[] sie (19)
+
+[] gerade (20)
+
+[] Televisor (23)
+
+[] passierte (29)
+[] die Sache (28)
+
+[] Sache (28)
 
 # sent_id = 2068
 # text = Trotzdem war es Winston nicht leichtgefallen , einen flüchtigen Ausdruck der Überraschung zu unterdrücken , denn in den zwei oder drei Sekunden , in denen er ihr aufhalf , hatte das Mädchen ihm etwas in die Hand gedrückt .
@@ -271,6 +556,63 @@
 38	gedrückt	drücken	VERB	VVPP	Verbform=Part	6	parataxis	_	_
 39	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] leichtgefallen (6)
+[] Trotzdem (1)
+[] Winston (4)
+[] nicht (5)
+[] , einen flüchtigen Ausdruck der Überraschung zu unterdrücken (14)
+
+[] Trotzdem (1)
+
+[] Winston (4)
+
+[] nicht (5)
+
+[] unterdrücken (14)
+[] einen flüchtigen Ausdruck der Überraschung (10)
+
+[] Ausdruck (10)
+[] flüchtigen (9)
+[] der Überraschung (12)
+
+[] flüchtigen (9)
+
+[] Überraschung (12)
+
+[] gedrückt (38)
+[] in den zwei oder drei Sekunden , in denen er ihr aufhalf , (22)
+[] das Mädchen (32)
+[] ihm (33)
+[] etwas (34)
+[] in die Hand (37)
+
+[] Sekunden (22)
+[] zwei oder drei (19)
+[] , in denen er ihr aufhalf , (28)
+
+[] zwei (19)
+
+[] drei (21)
+
+[] aufhalf (28)
+[] in denen (25)
+[] er (26)
+[] ihr (27)
+
+[] denen (25)
+
+[] er (26)
+
+[] ihr (27)
+
+[] Mädchen (32)
+
+[] ihm (33)
+
+[] etwas (34)
+
+[] Hand (37)
+
 # sent_id = 2069
 # text = Es stand außer Frage , dass sie das absichtlich getan hatte .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	expl	_	_
@@ -286,6 +628,23 @@
 11	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] stand (2)
+[] außer Frage , dass sie das absichtlich getan hatte (4)
+
+[] Frage (4)
+[] , dass sie das absichtlich getan hatte (10)
+
+[] getan (10)
+[] sie (7)
+[] das (8)
+[] absichtlich (9)
+
+[] sie (7)
+
+[] das (8)
+
+[] absichtlich (9)
+
 # sent_id = 2070
 # text = Es war ein kleiner und flacher Gegenstand .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
@@ -296,6 +655,16 @@
 6	flacher	flach	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	4	conj	_	_
 7	Gegenstand	Gegenstand	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] Gegenstand (7)
+[] Es (1)
+[] kleiner und flacher (4)
+
+[] Es (1)
+
+[] kleiner (4)
+
+[] flacher (6)
 
 # sent_id = 2071
 # text = Als er die Toilette betrat , schob er ihn in seine Tasche und befühlte ihn mit den Fingerspitzen .
@@ -319,6 +688,37 @@
 18	Fingerspitzen	Fingerspitze	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	14	obl	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] schob (7)
+[] Als er die Toilette betrat , (5)
+[] er (8)
+[] ihn (9)
+[] in seine Tasche (12)
+
+[] betrat (5)
+[] er (2)
+[] die Toilette (4)
+
+[] er (2)
+
+[] Toilette (4)
+
+[] er (8)
+
+[] ihn (9)
+
+[] Tasche (12)
+[] seine (11)
+
+[] seine (11)
+
+[] befühlte (14)
+[] ihn (15)
+[] mit den Fingerspitzen (18)
+
+[] ihn (15)
+
+[] Fingerspitzen (18)
+
 # sent_id = 2072
 # text = Es war ein viereckig zusammengefaltetes Stückchen Papier .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
@@ -329,6 +729,20 @@
 6	Stückchen	Stückchen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 7	Papier	Papier	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	6	appos	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
+
+[] Stückchen (6)
+[] Es (1)
+[] viereckig zusammengefaltetes (5)
+[] Papier (7)
+
+[] Es (1)
+
+[] zusammengefaltetes (5)
+[] viereckig (4)
+
+[] viereckig (4)
+
+[] Papier (7)
 
 # sent_id = 2073
 # text = Während er vor dem Becken stand , gelang es ihm nach einigem Fingern , den Zettel auseinander zufalten .
@@ -352,6 +766,32 @@
 18	zufalten	falten	VERB	VVINF	VerbForm=Inf	8	csubj	_	_
 19	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] gelang (8)
+[] Während er vor dem Becken stand , (6)
+[] ihm (10)
+[] nach einigem Fingern (13)
+[] , den Zettel auseinander zufalten (18)
+
+[] stand (6)
+[] er (2)
+[] vor dem Becken (5)
+
+[] er (2)
+
+[] Becken (5)
+
+[] ihm (10)
+
+[] Fingern (13)
+
+[] zufalten (18)
+[] den Zettel (16)
+[] auseinander (17)
+
+[] Zettel (16)
+
+[] auseinander (17)
+
 # sent_id = 2074
 # text = Offenbar stand eine Nachricht darauf .
 1	Offenbar	offenbar	ADJ	ADJD	_	2	advmod	_	_
@@ -361,13 +801,24 @@
 5	darauf	darauf	ADP	PROAV	PronType=Dem	2	advmod	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] stand (2)
+[] Offenbar (1)
+[] eine Nachricht (4)
+[] darauf (5)
+
+[] Offenbar (1)
+
+[] Nachricht (4)
+
+[] darauf (5)
+
 # sent_id = 2075
 # text = Einen Augenblick fühlte er sich versucht , ihn in eine der Kabinen mitzunehmen und auf der Stelle zu lesen .
 1	Einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Augenblick	Augenblick	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	3	obj	_	_
 3	fühlte	fühlen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-5	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	6	obj	_	_
+5	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	6	obj	_	_
 6	versucht	versuchen	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 7	,	,	PUNCT	$,	_	13	punct	_	_
 8	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	_	_
@@ -383,6 +834,37 @@
 18	zu	zu	PART	PTKZU	_	19	mark	_	_
 19	lesen	lesen	VERB	VVINF	VerbForm=Inf	13	conj	_	_
 20	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] fühlte (3)
+[] Einen Augenblick (2)
+[] er (4)
+[] sich versucht , ihn in eine der Kabinen mitzunehmen und auf der Stelle zu lesen (6)
+
+[] Augenblick (2)
+
+[] er (4)
+
+[] versucht (6)
+[] sich (5)
+[] , ihn in eine der Kabinen mitzunehmen und auf der Stelle zu lesen (13)
+
+[] sich (5)
+
+[] mitzunehmen (13)
+[] ihn (8)
+[] in eine der Kabinen (10)
+
+[] ihn (8)
+
+[] eine (10)
+[] der Kabinen (12)
+
+[] Kabinen (12)
+
+[] lesen (19)
+[] auf der Stelle (17)
+
+[] Stelle (17)
 
 # sent_id = 2076
 # text = Doch das wäre eine unverzeihliche Torheit gewesen , wie er wohl wusste .
@@ -400,6 +882,23 @@
 12	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 13	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] Torheit (6)
+[] das (2)
+[] unverzeihliche (5)
+[] , wie er wohl wusste (12)
+
+[] das (2)
+
+[] unverzeihliche (5)
+
+[] wusste (12)
+[] er (10)
+[] wohl (11)
+
+[] er (10)
+
+[] wohl (11)
+
 # sent_id = 2077
 # text = Es gab kaum einen anderen Ort , an dem man so sicher sein konnte , dauernd durch den Televisor überwacht zu werden .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -411,7 +910,7 @@
 7	,	,	PUNCT	$,	_	12	punct	_	_
 8	an	an	ADP	APPR	_	9	case	_	_
 9	dem	d	PRON	PRELS	Case=Dat|Gender=Masc|Number=Sing|PronType=Rel	12	nmod	_	_
-10	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	12	nsubj	_	_
+10	man	man	PRON	PIS	Definite=Ind|Gender=Neut	12	nsubj	_	_
 11	so	so	ADV	ADV	_	12	advmod	_	_
 12	sicher	sicher	ADJ	ADJD	_	6	acl	_	_
 13	sein	sein	AUX	VAINF	VerbForm=Inf	12	cop	_	_
@@ -425,6 +924,41 @@
 21	zu	zu	PART	PTKZU	_	20	mark	_	_
 22	werden	werden	AUX	VAINF	VerbForm=Inf	20	aux:pass	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] gab (2)
+[] Es (1)
+[] kaum (3)
+[] einen anderen Ort , an dem man so sicher sein konnte , dauernd durch den Televisor überwacht zu werden (6)
+
+[] Es (1)
+
+[] kaum (3)
+
+[] Ort (6)
+[] anderen (5)
+[] , an dem man so sicher sein konnte , dauernd durch den Televisor überwacht zu werden (12)
+
+[] anderen (5)
+
+[] sicher (12)
+[] an dem (9)
+[] man (10)
+[] so (11)
+[] , dauernd durch den Televisor überwacht zu werden (20)
+
+[] dem (9)
+
+[] man (10)
+
+[] so (11)
+
+[] überwacht (20)
+[] dauernd (16)
+[] durch den Televisor (19)
+
+[] dauernd (16)
+
+[] Televisor (19)
 
 # sent_id = 2078
 # text = Er ging an seinen Arbeitsplatz in seine Nische zurück , warf das Zettelchen nachlässig unter die anderen auf dem Schreibtisch liegenden Papiere , setzte sich die Brille auf und zog den Sprechschreiber zu sich heran .
@@ -452,7 +986,7 @@
 22	Papiere	Papier	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	11	obl	_	_
 23	,	,	PUNCT	$,	_	24	punct	_	_
 24	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-25	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	24	iobj	_	_
+25	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	24	iobj	_	_
 26	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	Brille	Brille	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	24	obj	_	_
 28	auf	auf	ADP	PTKVZ	_	24	compound:prt	_	_
@@ -461,9 +995,71 @@
 31	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	Sprechschreiber	Sprechschreiber	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	30	obj	_	_
 33	zu	zu	ADP	APPR	_	34	case	_	_
-34	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	30	obl	_	_
+34	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	30	obl	_	_
 35	heran	heran	ADP	PTKVZ	_	30	compound:prt	_	_
 36	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] ging (2)
+[] Er (1)
+[] an seinen Arbeitsplatz (5)
+[] in seine Nische (8)
+[] zurück (9)
+
+[] Er (1)
+
+[] Arbeitsplatz (5)
+[] seinen (4)
+
+[] seinen (4)
+
+[] Nische (8)
+[] seine (7)
+
+[] seine (7)
+
+[] zurück (9)
+
+[] warf (11)
+[] das Zettelchen (13)
+[] nachlässig (14)
+[] unter die anderen auf dem Schreibtisch liegenden Papiere (22)
+
+[] Zettelchen (13)
+
+[] nachlässig (14)
+
+[] Papiere (22)
+[] anderen (17)
+[] auf dem Schreibtisch liegenden (21)
+
+[] anderen (17)
+
+[] liegenden (21)
+[] auf dem Schreibtisch (20)
+
+[] Schreibtisch (20)
+
+[] setzte (24)
+[] sich (25)
+[] die Brille (27)
+[] auf (28)
+
+[] sich (25)
+
+[] Brille (27)
+
+[] auf (28)
+
+[] zog (30)
+[] den Sprechschreiber (32)
+[] zu sich (34)
+[] heran (35)
+
+[] Sprechschreiber (32)
+
+[] sich (34)
+
+[] heran (35)
 
 # sent_id = 2079
 # text = » Fünf Minuten « , sagte er zu sich selbst ; » mindestens fünf Minuten . «
@@ -475,7 +1071,7 @@
 6	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
 8	zu	zu	ADP	APPR	_	9	case	_	_
-9	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	6	obl	_	_
+9	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	6	obl	_	_
 10	selbst	selbst	ADV	ADV	_	9	advmod	_	_
 11	;	;	PUNCT	$.	_	15	punct	_	_
 12	»	»	PUNCT	$(	_	15	punct	_	_
@@ -484,6 +1080,31 @@
 15	Minuten	Minute	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	6	parataxis	_	_
 16	.	.	PUNCT	$.	_	15	punct	_	_
 17	«	«	PUNCT	$(	_	15	punct	_	_
+
+[] sagte (6)
+[] » Fünf Minuten « , (3)
+[] er (7)
+[] zu sich selbst (9)
+
+[] Minuten (3)
+[] Fünf (2)
+
+[] Fünf (2)
+
+[] er (7)
+
+[] sich (9)
+[] selbst (10)
+
+[] selbst (10)
+
+[] Minuten (15)
+[] mindestens fünf (14)
+
+[] fünf (14)
+[] mindestens (13)
+
+[] mindestens (13)
 
 # sent_id = 2080
 # text = Sein Herz klopfte erschreckend heftig in seiner Brust .
@@ -496,6 +1117,26 @@
 7	seiner	sein	DET	PPOSAT	Case=Dat|Gender=Fem|Number=Sing|Poss=Yes	8	det:poss	_	_
 8	Brust	Brust	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] klopfte (3)
+[] Sein Herz (2)
+[] erschreckend heftig (5)
+[] in seiner Brust (8)
+
+[] Herz (2)
+[] Sein (1)
+
+[] Sein (1)
+
+[] heftig (5)
+[] erschreckend (4)
+
+[] erschreckend (4)
+
+[] Brust (8)
+[] seiner (7)
+
+[] seiner (7)
 
 # sent_id = 2081
 # text = Zum Glück war die Arbeit , mit der er gerade beschäftigt war , eine reine Routinesache , die Richtigstellung einer langen Zahlenliste , und erforderte keine angestrengte Aufmerksamkeit .
@@ -529,6 +1170,49 @@
 28	Aufmerksamkeit	Aufmerksamkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	25	obj	_	_
 29	.	.	PUNCT	$.	_	16	punct	_	_
 
+[] Routinesache (16)
+[] Zum Glück (2)
+[] die Arbeit , mit der er gerade beschäftigt war , , die Richtigstellung einer langen Zahlenliste (5)
+[] reine (15)
+
+[] Glück (2)
+
+[] Arbeit (5)
+[] , mit der er gerade beschäftigt war (11)
+[] , die Richtigstellung einer langen Zahlenliste (19)
+
+[] beschäftigt (11)
+[] mit der (8)
+[] er (9)
+[] gerade (10)
+
+[] der (8)
+
+[] er (9)
+
+[] gerade (10)
+
+[] Richtigstellung (19)
+[] einer langen Zahlenliste (22)
+
+[] Zahlenliste (22)
+[] langen (21)
+
+[] langen (21)
+
+[] reine (15)
+
+[] erforderte (25)
+[] keine angestrengte Aufmerksamkeit (28)
+
+[] Aufmerksamkeit (28)
+[] keine (26)
+[] angestrengte (27)
+
+[] keine (26)
+
+[] angestrengte (27)
+
 # sent_id = 2082
 # text = Was immer auf dem Papier geschrieben stand , musste eine Art politische Bedeutung haben .
 1	Was	was	PRON	PWS	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	7	nsubj	_	_
@@ -547,6 +1231,32 @@
 14	haben	haben	AUX	VAINF	VerbForm=Inf	0	root	_	_
 15	.	.	PUNCT	$.	_	14	punct	_	_
 
+[] haben (14)
+[] Was immer auf dem Papier geschrieben stand , (7)
+[] eine Art (11)
+[] politische Bedeutung (13)
+
+[] stand (7)
+[] Was (1)
+[] immer (2)
+[] auf dem Papier (5)
+[] geschrieben (6)
+
+[] Was (1)
+
+[] immer (2)
+
+[] Papier (5)
+
+[] geschrieben (6)
+
+[] Art (11)
+
+[] Bedeutung (13)
+[] politische (12)
+
+[] politische (12)
+
 # sent_id = 2083
 # text = Soweit er es beurteilen konnte , gab es zwei Möglichkeiten .
 1	Soweit	soweit	SCONJ	KOUS	_	4	mark	_	_
@@ -560,6 +1270,23 @@
 9	zwei	zwei	NUM	CARD	NumType=Card	10	nummod	_	_
 10	Möglichkeiten	Möglichkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	7	obj	_	_
 11	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] gab (7)
+[] Soweit er es beurteilen konnte , (4)
+[] zwei Möglichkeiten (10)
+
+[] beurteilen (4)
+[] er (2)
+[] es (3)
+
+[] er (2)
+
+[] es (3)
+
+[] Möglichkeiten (10)
+[] zwei (9)
+
+[] zwei (9)
 
 # sent_id = 2084
 # text = Die eine , weit wahrscheinlichere , bestand darin , dass das Mädchen , ganz wie er gefürchtet hatte , eine Agentin der Gedankenpolizei war .
@@ -588,6 +1315,37 @@
 23	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
 24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] bestand (7)
+[] Die eine , weit wahrscheinlichere , (2)
+[] , dass das Mädchen eine Agentin der Gedankenpolizei war (21)
+
+[] eine (2)
+[] , weit wahrscheinlichere , (5)
+
+[] wahrscheinlichere (5)
+[] weit (4)
+
+[] weit (4)
+
+[] darin (8)
+[] , ganz wie er gefürchtet hatte , (17)
+
+[] gefürchtet (17)
+[] ganz (14)
+[] er (16)
+
+[] ganz (14)
+
+[] er (16)
+
+[] Agentin (21)
+[] das Mädchen (12)
+[] der Gedankenpolizei (23)
+
+[] Mädchen (12)
+
+[] Gedankenpolizei (23)
 
 # sent_id = 2085
 # text = Er wusste zwar nicht , warum die Gedankenpolizei gerade diesen Weg wählen sollte , einem ihre Weisungen zugehen zu lassen , aber vielleicht hatte sie ihre Gründe dafür .
@@ -621,6 +1379,63 @@
 28	dafür	dafür	ADP	PROAV	PronType=Dem	24	dep	_	_
 29	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] wusste (2)
+[] Er (1)
+[] zwar (3)
+[] nicht (4)
+[] , warum die Gedankenpolizei gerade diesen Weg wählen sollte , einem ihre Weisungen zugehen zu lassen (12)
+
+[] Er (1)
+
+[] zwar (3)
+
+[] nicht (4)
+
+[] wählen (12)
+[] warum (6)
+[] die Gedankenpolizei (8)
+[] gerade (9)
+[] diesen Weg (11)
+[] , einem ihre Weisungen zugehen zu lassen (20)
+
+[] warum (6)
+
+[] Gedankenpolizei (8)
+
+[] gerade (9)
+
+[] Weg (11)
+
+[] lassen (20)
+[] einem (15)
+[] ihre Weisungen (17)
+[] zugehen (18)
+
+[] einem (15)
+
+[] Weisungen (17)
+[] ihre (16)
+
+[] ihre (16)
+
+[] zugehen (18)
+
+[] hatte (24)
+[] vielleicht (23)
+[] sie (25)
+[] ihre Gründe (27)
+
+[] vielleicht (23)
+
+[] sie (25)
+
+[] Gründe (27)
+[] ihre (26)
+
+[] ihre (26)
+
+[] dafür (28)
+
 # sent_id = 2086
 # text = Auf dem Zettelchen konnte eine Drohung stehen , eine Vorladung , die Aufforderung , Selbstmord zu begehen , es konnte auch irgendeine Falle sein .
 1	Auf	auf	ADP	APPR	_	3	case	_	_
@@ -649,6 +1464,32 @@
 24	sein	sein	AUX	VAINF	VerbForm=Inf	23	cop	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] stehen (7)
+[] Auf dem Zettelchen (3)
+[] eine Drohung , eine Vorladung , die Aufforderung , Selbstmord zu begehen (6)
+
+[] Zettelchen (3)
+
+[] Drohung (6)
+
+[] Vorladung (10)
+
+[] Aufforderung (13)
+[] , Selbstmord zu begehen (17)
+
+[] begehen (17)
+[] Selbstmord (15)
+
+[] Selbstmord (15)
+
+[] Falle (23)
+[] es (19)
+[] auch (21)
+
+[] es (19)
+
+[] auch (21)
+
 # sent_id = 2087
 # text = Aber es gab eine andere , noch tollere Möglichkeit , und sie ließ sich nicht verscheuchen , wenn er auch vergebens versuchte , sie aus seinen Gedanken zu verbannen .
 1	Aber	aber	CCONJ	KON	_	3	cc	_	_
@@ -664,7 +1505,7 @@
 11	und	und	CCONJ	KON	_	13	cc	_	_
 12	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
 13	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-14	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	13	obj	_	_
+14	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	13	obj	_	_
 15	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
 16	verscheuchen	verscheuchen	VERB	VVINF	VerbForm=Inf	13	xcomp	_	_
 17	,	,	PUNCT	$,	_	22	punct	_	_
@@ -681,6 +1522,57 @@
 28	zu	zu	PART	PTKZU	_	29	mark	_	_
 29	verbannen	verbannen	VERB	VVINF	VerbForm=Inf	22	xcomp	_	_
 30	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] gab (3)
+[] eine andere , noch tollere Möglichkeit (9)
+
+[] Möglichkeit (9)
+[] andere , noch tollere (5)
+
+[] andere (5)
+
+[] tollere (8)
+[] noch (7)
+
+[] noch (7)
+
+[] ließ (13)
+[] sie (12)
+[] sich (14)
+[] nicht (15)
+[] verscheuchen (16)
+[] , wenn er auch vergebens versuchte , sie aus seinen Gedanken zu verbannen (22)
+
+[] sie (12)
+
+[] sich (14)
+
+[] nicht (15)
+
+[] verscheuchen (16)
+
+[] versuchte (22)
+[] er (19)
+[] auch (20)
+[] vergebens (21)
+[] , sie aus seinen Gedanken zu verbannen (29)
+
+[] er (19)
+
+[] auch (20)
+
+[] vergebens (21)
+
+[] verbannen (29)
+[] sie (24)
+[] aus seinen Gedanken (27)
+
+[] sie (24)
+
+[] Gedanken (27)
+[] seinen (26)
+
+[] seinen (26)
 
 # sent_id = 2088
 # text = Dass nämlich die Nachricht überhaupt nicht von der Gedankenpolizei kam , sondern von einer Art Untergrundbewegung .
@@ -702,6 +1594,28 @@
 16	Untergrundbewegung	Untergrundbewegung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	15	nmod	_	_
 17	.	.	PUNCT	$.	_	10	punct	_	_
 
+[] kam (10)
+[] nämlich (2)
+[] die Nachricht (4)
+[] überhaupt nicht (6)
+[] von der Gedankenpolizei (9)
+
+[] nämlich (2)
+
+[] Nachricht (4)
+
+[] nicht (6)
+[] überhaupt (5)
+
+[] überhaupt (5)
+
+[] Gedankenpolizei (9)
+
+[] Art (15)
+[] Untergrundbewegung (16)
+
+[] Untergrundbewegung (16)
+
 # sent_id = 2089
 # text = Vielleicht gab es » Die Bruderschaft « doch !
 1	Vielleicht	vielleicht	ADV	ADV	_	2	advmod	_	_
@@ -714,6 +1628,17 @@
 8	doch	doch	ADV	ADV	_	2	advmod	_	_
 9	!	!	PUNCT	$.	_	2	punct	_	_
 
+[] gab (2)
+[] Vielleicht (1)
+[] » Die Bruderschaft « (6)
+[] doch (8)
+
+[] Vielleicht (1)
+
+[] Bruderschaft (6)
+
+[] doch (8)
+
 # sent_id = 2090
 # text = Vielleicht gehörte das Mädchen ihr an !
 1	Vielleicht	vielleicht	ADV	ADV	_	2	advmod	_	_
@@ -723,6 +1648,20 @@
 5	ihr	sie	PRON	PPER	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	iobj	_	_
 6	an	an	ADP	PTKVZ	_	2	compound:prt	_	_
 7	!	!	PUNCT	$.	_	2	punct	_	_
+
+[] gehörte (2)
+[] Vielleicht (1)
+[] das Mädchen (4)
+[] ihr (5)
+[] an (6)
+
+[] Vielleicht (1)
+
+[] Mädchen (4)
+
+[] ihr (5)
+
+[] an (6)
 
 # sent_id = 2091
 # text = Kein Zweifel , der Gedanke war absurd , aber er war ihm sofort durch den Kopf geschossen , als er das Stückchen Papier in seiner Hand spürte .
@@ -755,11 +1694,54 @@
 27	spürte	spüren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	advcl	_	_
 28	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] Zweifel (2)
+[] Kein (1)
+[] , der Gedanke war absurd , aber er war ihm sofort durch den Kopf geschossen , als er das Stückchen Papier in seiner Hand spürte (7)
+
+[] Kein (1)
+
+[] absurd (7)
+[] der Gedanke (5)
+
+[] Gedanke (5)
+
+[] geschossen (17)
+[] er (10)
+[] ihm (12)
+[] sofort (13)
+[] durch den Kopf (16)
+[] , als er das Stückchen Papier in seiner Hand spürte (27)
+
+[] er (10)
+
+[] ihm (12)
+
+[] sofort (13)
+
+[] Kopf (16)
+
+[] spürte (27)
+[] er (20)
+[] das Stückchen (22)
+[] Papier (23)
+[] in seiner Hand (26)
+
+[] er (20)
+
+[] Stückchen (22)
+
+[] Papier (23)
+
+[] Hand (26)
+[] seiner (25)
+
+[] seiner (25)
+
 # sent_id = 2092
 # text = Erst ein paar Minuten später war ihm die andere , wahrscheinlichere Möglichkeit in den Sinn gekommen .
 1	Erst	erst	ADV	ADV	_	4	advmod	_	_
 2	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	4	det	_	_
-3	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	4	det	_	_
+3	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut	4	det	_	_
 4	Minuten	Minute	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	5	nmod	_	_
 5	später	spät	ADJ	ADJD	_	16	advmod	_	_
 6	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
@@ -774,6 +1756,32 @@
 15	Sinn	Sinn	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	16	obl	_	_
 16	gekommen	kommen	VERB	VVPP	Verbform=Part	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
+
+[] gekommen (16)
+[] Erst ein paar Minuten später (5)
+[] ihm (7)
+[] die andere , wahrscheinlichere Möglichkeit (12)
+[] in den Sinn (15)
+
+[] später (5)
+[] Erst ein paar Minuten (4)
+
+[] Minuten (4)
+[] Erst (1)
+
+[] Erst (1)
+
+[] ihm (7)
+
+[] Möglichkeit (12)
+[] andere , (9)
+[] wahrscheinlichere (11)
+
+[] andere (9)
+
+[] wahrscheinlichere (11)
+
+[] Sinn (15)
 
 # sent_id = 2093
 # text = Und sogar jetzt noch - wenn ihm auch sein Verstand sagte , dass die Botschaft vermutlich den Tod bedeutete - , sogar jetzt konnte er noch immer nicht daran glauben , und er klammerte sich an eine unvernünftige Hoffnung .
@@ -811,12 +1819,85 @@
 32	und	und	CCONJ	KON	_	34	cc	_	_
 33	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	nsubj	_	_
 34	klammerte	klammern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	conj	_	_
-35	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	34	obj	_	_
+35	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	34	obj	_	_
 36	an	an	ADP	APPR	_	39	case	_	_
 37	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	unvernünftige	unvernünftig	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	39	amod	_	_
 39	Hoffnung	Hoffnung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	34	obl	_	_
 40	.	.	PUNCT	$.	_	30	punct	_	_
+
+[] glauben (30)
+[] sogar jetzt (3)
+[] noch (4)
+[] - wenn ihm auch sein Verstand sagte , dass die Botschaft vermutlich den Tod bedeutete - , (11)
+[] jetzt (23)
+[] er (25)
+[] sogar noch immer (27)
+[] nicht (28)
+[] daran (29)
+
+[] jetzt (3)
+[] sogar (2)
+
+[] sogar (2)
+
+[] noch (4)
+
+[] sagte (11)
+[] ihm (7)
+[] auch (8)
+[] sein Verstand (10)
+[] , dass die Botschaft vermutlich den Tod bedeutete (19)
+
+[] ihm (7)
+
+[] auch (8)
+
+[] Verstand (10)
+[] sein (9)
+
+[] sein (9)
+
+[] bedeutete (19)
+[] die Botschaft (15)
+[] vermutlich (16)
+[] den Tod (18)
+
+[] Botschaft (15)
+
+[] vermutlich (16)
+
+[] Tod (18)
+
+[] jetzt (23)
+
+[] er (25)
+
+[] immer (27)
+[] sogar (22)
+[] noch (26)
+
+[] sogar (22)
+
+[] noch (26)
+
+[] nicht (28)
+
+[] daran (29)
+
+[] klammerte (34)
+[] er (33)
+[] sich (35)
+[] an eine unvernünftige Hoffnung (39)
+
+[] er (33)
+
+[] sich (35)
+
+[] Hoffnung (39)
+[] unvernünftige (38)
+
+[] unvernünftige (38)
 
 # sent_id = 2094
 # text = Sein Herz klopfte , und nur mühsam konnte er ein Zittern seiner Stimme vermeiden , während er seine Zahlen in den Sprechschreiber hineinmurmelte .
@@ -845,6 +1926,49 @@
 23	hineinmurmelte	hineinmurmeln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 24	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] klopfte (3)
+[] Sein Herz (2)
+
+[] Herz (2)
+[] Sein (1)
+
+[] Sein (1)
+
+[] vermeiden (14)
+[] nur mühsam (7)
+[] er (9)
+[] ein Zittern seiner Stimme (11)
+[] , während er seine Zahlen in den Sprechschreiber hineinmurmelte (23)
+
+[] mühsam (7)
+[] nur (6)
+
+[] nur (6)
+
+[] er (9)
+
+[] Zittern (11)
+[] seiner Stimme (13)
+
+[] Stimme (13)
+[] seiner (12)
+
+[] seiner (12)
+
+[] hineinmurmelte (23)
+[] er (17)
+[] seine Zahlen (19)
+[] in den Sprechschreiber (22)
+
+[] er (17)
+
+[] Zahlen (19)
+[] seine (18)
+
+[] seine (18)
+
+[] Sprechschreiber (22)
+
 # sent_id = 2095
 # text = Er rollte den erledigten Stoß Papiere zusammen und steckte ihn in die Rohrposttrommel .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -862,6 +1986,31 @@
 13	Rohrposttrommel	Rohrposttrommel	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] rollte (2)
+[] Er (1)
+[] den erledigten Stoß (5)
+[] Papiere (6)
+[] zusammen (7)
+
+[] Er (1)
+
+[] Stoß (5)
+[] erledigten (4)
+
+[] erledigten (4)
+
+[] Papiere (6)
+
+[] zusammen (7)
+
+[] steckte (9)
+[] ihn (10)
+[] in die Rohrposttrommel (13)
+
+[] ihn (10)
+
+[] Rohrposttrommel (13)
+
 # sent_id = 2096
 # text = Acht Minuten waren verstrichen .
 1	Acht	acht	NUM	CARD	NumType=Card	2	nummod	_	_
@@ -869,6 +2018,14 @@
 3	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
 4	verstrichen	verstreichen	VERB	VVPP	Verbform=Part	0	root	_	_
 5	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] verstrichen (4)
+[] Acht Minuten (2)
+
+[] Minuten (2)
+[] Acht (1)
+
+[] Acht (1)
 
 # sent_id = 2097
 # text = Er schob die Brille auf der Nase zurecht , seufzte und zog das nächste Bündel Akten zu sich heran , auf dem das Zettelchen lag .
@@ -889,7 +2046,7 @@
 15	Bündel	Bündel	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	12	obj	_	_
 16	Akten	Akte	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	15	appos	_	_
 17	zu	zu	ADP	APPR	_	18	case	_	_
-18	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	12	obl	_	_
+18	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	12	obl	_	_
 19	heran	heran	ADP	PTKVZ	_	12	compound:prt	_	_
 20	,	,	PUNCT	$,	_	25	punct	_	_
 21	auf	auf	ADP	APPR	_	22	case	_	_
@@ -899,6 +2056,48 @@
 25	lag	liegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] schob (2)
+[] Er (1)
+[] die Brille (4)
+[] auf der Nase (7)
+[] zurecht (8)
+
+[] Er (1)
+
+[] Brille (4)
+
+[] Nase (7)
+
+[] zurecht (8)
+
+[] seufzte (10)
+
+[] zog (12)
+[] das nächste Bündel Akten , auf dem das Zettelchen lag (15)
+[] zu sich (18)
+[] heran (19)
+
+[] Bündel (15)
+[] nächste (14)
+[] Akten (16)
+[] , auf dem das Zettelchen lag (25)
+
+[] nächste (14)
+
+[] Akten (16)
+
+[] lag (25)
+[] auf dem (22)
+[] das Zettelchen (24)
+
+[] dem (22)
+
+[] Zettelchen (24)
+
+[] sich (18)
+
+[] heran (19)
+
 # sent_id = 2098
 # text = Er strich es glatt .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -906,6 +2105,17 @@
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 4	glatt	glatt	ADJ	ADJD	_	2	xcomp	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] strich (2)
+[] Er (1)
+[] es glatt (4)
+
+[] Er (1)
+
+[] glatt (4)
+[] es (3)
+
+[] es (3)
 
 # sent_id = 2099
 # text = In einer großen , unbeholfenen Handschrift stand darauf : Ich liebe Sie .
@@ -922,6 +2132,28 @@
 11	liebe	lieben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
 12	Sie	Sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	11	obj	_	_
 13	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] stand (7)
+[] In einer großen , unbeholfenen Handschrift (6)
+[] darauf (8)
+
+[] Handschrift (6)
+[] großen , (3)
+[] unbeholfenen (5)
+
+[] großen (3)
+
+[] unbeholfenen (5)
+
+[] darauf (8)
+
+[] liebe (11)
+[] Ich (10)
+[] Sie (12)
+
+[] Ich (10)
+
+[] Sie (12)
 
 # sent_id = 2100
 # text = Mehrere Sekunden lang war er zu verblüfft , um das belastende Papier in das Gedächtnisloch zu werfen .
@@ -943,4 +2175,30 @@
 16	zu	zu	PART	PTKZU	_	17	mark	_	_
 17	werfen	werfen	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] verblüfft (7)
+[] Mehrere Sekunden (2)
+[] lang (3)
+[] er (5)
+[] zu (6)
+[] , um das belastende Papier in das Gedächtnisloch zu werfen (17)
+
+[] Sekunden (2)
+
+[] lang (3)
+
+[] er (5)
+
+[] zu (6)
+
+[] werfen (17)
+[] das belastende Papier (12)
+[] in das Gedächtnisloch (15)
+
+[] Papier (12)
+[] belastende (11)
+
+[] belastende (11)
+
+[] Gedächtnisloch (15)
 
