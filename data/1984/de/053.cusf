@@ -4,7 +4,7 @@
 2	ihren	ihr	DET	PPOSAT	Case=Dat|Gender=Neut|Number=Plur|Poss=Yes	3	det:poss	_	_
 3	Augen	Auge	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	4	obl	_	_
 4	stellte	stellen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	4	obj	_	_
+5	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	4	obj	_	_
 6	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
 7	Leben	Leben	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
 8	sehr	sehr	ADV	ADV	_	9	advmod	_	_
@@ -12,12 +12,35 @@
 10	dar	dar	ADP	PTKVZ	_	4	compound:prt	_	_
 11	.	.	PUNCT	$.	_	4	punct	_	_
 
+[] stellte (4)
+[] In ihren Augen (3)
+[] sich (5)
+[] das Leben (7)
+[] sehr einfach (9)
+[] dar (10)
+
+[] Augen (3)
+[] ihren (2)
+
+[] ihren (2)
+
+[] sich (5)
+
+[] Leben (7)
+
+[] einfach (9)
+[] sehr (8)
+
+[] sehr (8)
+
+[] dar (10)
+
 # sent_id = 2652
 # text = Man wollte es sich selbst so angenehm wie möglich machen ; » sie « , das heißt die Partei , wollte einen daran hindern ; also übertrat man die Gesetze , wo man nur konnte .
-1	Man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	10	nsubj	_	_
+1	Man	man	PRON	PIS	Definite=Ind|Gender=Neut	10	nsubj	_	_
 2	wollte	wollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	10	obj	_	_
-4	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
+4	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
 5	selbst	selbst	ADV	ADV	_	10	advmod	_	_
 6	so	so	ADV	ADV	_	7	advmod	_	_
 7	angenehm	angenehm	ADJ	ADJD	_	10	xcomp	_	_
@@ -41,15 +64,74 @@
 25	;	;	PUNCT	$.	_	27	punct	_	_
 26	also	also	ADV	ADV	_	27	advmod	_	_
 27	übertrat	übertreten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	parataxis	_	_
-28	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	27	nsubj	_	_
+28	man	man	PRON	PIS	Definite=Ind|Gender=Neut	27	nsubj	_	_
 29	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	30	det	_	_
 30	Gesetze	Gesetz	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	27	obj	_	_
 31	,	,	PUNCT	$,	_	35	punct	_	_
 32	wo	wo	ADV	PWAV	PronType=Int	35	advmod	_	_
-33	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	35	nsubj	_	_
+33	man	man	PRON	PIS	Definite=Ind|Gender=Neut	35	nsubj	_	_
 34	nur	nur	ADV	ADV	_	35	advmod	_	_
 35	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux	_	_
 36	.	.	PUNCT	$.	_	10	punct	_	_
+
+[] machen (10)
+[] Man (1)
+[] es (3)
+[] sich (4)
+[] selbst (5)
+[] so angenehm wie möglich (7)
+
+[] Man (1)
+
+[] es (3)
+
+[] sich (4)
+
+[] selbst (5)
+
+[] angenehm (7)
+[] so (6)
+[] wie möglich (9)
+
+[] so (6)
+
+[] möglich (9)
+
+[] hindern (24)
+[] sie « , das heißt die Partei , (13)
+[] einen (22)
+[] daran (23)
+
+[] sie (13)
+
+[] heißt (17)
+[] das (16)
+[] die Partei (19)
+
+[] das (16)
+
+[] Partei (19)
+
+[] einen (22)
+
+[] daran (23)
+
+[] übertrat (27)
+[] also (26)
+[] man (28)
+[] die Gesetze (30)
+
+[] also (26)
+
+[] man (28)
+
+[] Gesetze (30)
+
+[] wo (32)
+
+[] man (33)
+
+[] nur (34)
 
 # sent_id = 2653
 # text = Julia schien es ebenso natürlich zu finden , dass » sie « einem alles Vergnügen rauben wollte , wie dass man selbst versuchte , sich nicht erwischen zu lassen .
@@ -73,16 +155,69 @@
 18	,	,	PUNCT	$,	_	23	punct	_	_
 19	wie	wie	CCONJ	KOKOM	_	23	advmod	_	_
 20	dass	dass	SCONJ	KOUS	_	23	mark	_	_
-21	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	23	nsubj	_	_
+21	man	man	PRON	PIS	Definite=Ind|Gender=Neut	23	nsubj	_	_
 22	selbst	selbst	ADV	ADV	_	23	advmod	_	_
 23	versuchte	versuchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
 24	,	,	PUNCT	$,	_	29	punct	_	_
-25	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	29	obj	_	_
+25	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	29	obj	_	_
 26	nicht	nicht	PART	PTKNEG	Polarity=Neg	29	advmod	_	_
 27	erwischen	erwischen	VERB	VVINF	VerbForm=Inf	29	xcomp	_	_
 28	zu	zu	PART	PTKZU	_	29	mark	_	_
 29	lassen	lassen	VERB	VVINF	VerbForm=Inf	23	xcomp	_	_
 30	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] schien (2)
+[] Julia (1)
+[] es (3)
+[] ebenso natürlich zu finden (7)
+[] , dass » sie « einem alles Vergnügen rauben wollte , wie dass man selbst versuchte , sich nicht erwischen zu lassen (16)
+
+[] Julia (1)
+
+[] es (3)
+
+[] finden (7)
+[] ebenso natürlich (5)
+
+[] natürlich (5)
+[] ebenso (4)
+
+[] ebenso (4)
+
+[] rauben (16)
+[] sie « (11)
+[] einem alles Vergnügen (13)
+[] , wie dass man selbst versuchte , sich nicht erwischen zu lassen (23)
+
+[] sie (11)
+
+[] einem (13)
+[] alles Vergnügen (15)
+
+[] Vergnügen (15)
+
+[] versuchte (23)
+[] wie (19)
+[] man (21)
+[] selbst (22)
+[] , sich nicht erwischen zu lassen (29)
+
+[] wie (19)
+
+[] man (21)
+
+[] selbst (22)
+
+[] lassen (29)
+[] sich (25)
+[] nicht (26)
+[] erwischen (27)
+
+[] sich (25)
+
+[] nicht (26)
+
+[] erwischen (27)
 
 # sent_id = 2654
 # text = Sie hasste die Partei und sprach das in den derbsten Worten aus , aber sie übte generell keine Kritik an ihr .
@@ -109,6 +244,45 @@
 21	ihr	sie	PRON	PPER	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	obl	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] hasste (2)
+[] Sie (1)
+[] die Partei (4)
+
+[] Sie (1)
+
+[] Partei (4)
+
+[] sprach (6)
+[] das (7)
+[] in den derbsten Worten (11)
+[] aus (12)
+
+[] das (7)
+
+[] Worten (11)
+[] derbsten (10)
+
+[] derbsten (10)
+
+[] aus (12)
+
+[] übte (16)
+[] sie (15)
+[] generell (17)
+[] keine Kritik (19)
+[] an ihr (21)
+
+[] sie (15)
+
+[] generell (17)
+
+[] Kritik (19)
+[] keine (18)
+
+[] keine (18)
+
+[] ihr (21)
+
 # sent_id = 2655
 # text = Von den Punkten abgesehen , wo ihr eigenes Leben damit in Konflikt kam , hatte sie keinerlei Interesse an den Doktrinen der Partei .
 1	Von	von	ADP	APPR	_	3	case	_	_
@@ -127,7 +301,7 @@
 14	,	,	PUNCT	$,	_	13	punct	_	_
 15	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 16	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
-17	keinerlei	keinerlei	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	18	nmod	_	_
+17	keinerlei	keinerlei	DET	PIAT	Definite=Ind|Gender=Neut	18	nmod	_	_
 18	Interesse	Interesse	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	15	obj	_	_
 19	an	an	ADP	APPR	_	21	case	_	_
 20	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	21	det	_	_
@@ -135,6 +309,50 @@
 22	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
 24	.	.	PUNCT	$.	_	15	punct	_	_
+
+[] hatte (15)
+[] Von den Punkten abgesehen , wo ihr eigenes Leben damit in Konflikt kam , (4)
+[] sie (16)
+[] keinerlei Interesse an den Doktrinen der Partei (18)
+
+[] abgesehen (4)
+[] Von den Punkten , wo ihr eigenes Leben damit in Konflikt kam , (3)
+
+[] Punkten (3)
+[] , wo ihr eigenes Leben damit in Konflikt kam , (13)
+
+[] kam (13)
+[] wo (6)
+[] ihr eigenes Leben (9)
+[] damit (10)
+[] in Konflikt (12)
+
+[] wo (6)
+
+[] Leben (9)
+[] ihr (7)
+[] eigenes (8)
+
+[] ihr (7)
+
+[] eigenes (8)
+
+[] damit (10)
+
+[] Konflikt (12)
+
+[] sie (16)
+
+[] Interesse (18)
+[] keinerlei (17)
+[] an den Doktrinen der Partei (21)
+
+[] keinerlei (17)
+
+[] Doktrinen (21)
+[] der Partei (23)
+
+[] Partei (23)
 
 # sent_id = 2656
 # text = Winston bemerkte , dass sie niemals Neusprachworte benutzte , außer den wenigen , die in die Umgangssprache eingegangen waren .
@@ -158,6 +376,35 @@
 18	eingegangen	eingehen	VERB	VVPP	Verbform=Part	12	acl	_	_
 19	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] bemerkte (2)
+[] Winston (1)
+[] , dass sie niemals Neusprachworte benutzte , außer den wenigen , die in die Umgangssprache eingegangen waren (8)
+
+[] Winston (1)
+
+[] benutzte (8)
+[] sie (5)
+[] niemals (6)
+[] Neusprachworte (7)
+[] , außer den wenigen , die in die Umgangssprache eingegangen waren (12)
+
+[] sie (5)
+
+[] niemals (6)
+
+[] Neusprachworte (7)
+
+[] wenigen (12)
+[] , die in die Umgangssprache eingegangen waren (18)
+
+[] eingegangen (18)
+[] die (14)
+[] in die Umgangssprache (17)
+
+[] die (14)
+
+[] Umgangssprache (17)
 
 # sent_id = 2657
 # text = Sie hatte nie etwas von der » Bruderschaft « gehört und lehnte es auch ab , an ihr Vorhandensein zu glauben .
@@ -184,6 +431,40 @@
 21	glauben	glauben	VERB	VVINF	VerbForm=Inf	12	xcomp	_	_
 22	.	.	PUNCT	$.	_	10	punct	_	_
 
+[] gehört (10)
+[] Sie (1)
+[] nie (3)
+[] etwas von der » Bruderschaft « (4)
+
+[] Sie (1)
+
+[] nie (3)
+
+[] etwas (4)
+[] von der » Bruderschaft « (8)
+
+[] Bruderschaft (8)
+
+[] lehnte (12)
+[] es (13)
+[] auch (14)
+[] ab (15)
+[] , an ihr Vorhandensein zu glauben (21)
+
+[] es (13)
+
+[] auch (14)
+
+[] ab (15)
+
+[] glauben (21)
+[] an ihr Vorhandensein (19)
+
+[] Vorhandensein (19)
+[] ihr (18)
+
+[] ihr (18)
+
 # sent_id = 2658
 # text = Jede Art organisierter Auflehnung gegen die Partei , die ja notwendigerweise fehlschlagen musste , hielt sie für dumm .
 1	Jede	jed	DET	PIAT	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	2	det	_	_
@@ -206,6 +487,38 @@
 18	dumm	dumm	ADJ	ADJD	_	15	xcomp	_	_
 19	.	.	PUNCT	$.	_	15	punct	_	_
 
+[] hielt (15)
+[] Jede Art organisierter Auflehnung gegen die Partei , die ja notwendigerweise fehlschlagen musste , (2)
+[] sie (16)
+[] für dumm (18)
+
+[] Art (2)
+[] organisierter Auflehnung gegen die Partei , die ja notwendigerweise fehlschlagen musste , (4)
+
+[] Auflehnung (4)
+[] organisierter (3)
+[] gegen die Partei , die ja notwendigerweise fehlschlagen musste , (7)
+
+[] organisierter (3)
+
+[] Partei (7)
+[] , die ja notwendigerweise fehlschlagen musste , (12)
+
+[] fehlschlagen (12)
+[] die (9)
+[] ja (10)
+[] notwendigerweise (11)
+
+[] die (9)
+
+[] ja (10)
+
+[] notwendigerweise (11)
+
+[] sie (16)
+
+[] dumm (18)
+
 # sent_id = 2659
 # text = Gegen die Gesetze zu verstoßen und dabei selbst am Leben zu bleiben - darauf kam es an .
 1	Gegen	gegen	ADP	APPR	_	3	case	_	_
@@ -227,11 +540,38 @@
 17	an	an	ADP	PTKVZ	_	15	compound:prt	_	_
 18	.	.	PUNCT	$.	_	15	punct	_	_
 
+[] verstoßen (5)
+[] Gegen die Gesetze (3)
+
+[] Gesetze (3)
+
+[] bleiben (12)
+[] dabei (7)
+[] selbst (8)
+[] am Leben (10)
+
+[] dabei (7)
+
+[] selbst (8)
+
+[] Leben (10)
+
+[] kam (15)
+[] darauf (14)
+[] es (16)
+[] an (17)
+
+[] darauf (14)
+
+[] es (16)
+
+[] an (17)
+
 # sent_id = 2660
 # text = Er fragte sich mit einem unbestimmten Gefühl , wie viele Menschen ihres Typus es wohl unter der jüngeren Generation geben mochte - Menschen , die in die Welt der Revolution hineingewachsen waren und nichts anderes kannten , die die Partei als etwas so Unabänderliches wie den Himmel zu ihren Häupten hinnahmen , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	fragte	fragen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	2	obj	_	_
+3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	2	obj	_	_
 4	mit	mit	ADP	APPR	_	7	case	_	_
 5	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	7	det	_	_
 6	unbestimmten	unbestimmt	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	7	amod	_	_
@@ -262,7 +602,7 @@
 31	hineingewachsen	hineinwachsen	VERB	VVPP	Verbform=Part	23	acl	_	_
 32	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	31	aux	_	_
 33	und	und	CCONJ	KON	_	36	cc	_	_
-34	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	36	obj	_	_
+34	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	36	obj	_	_
 35	anderes	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	36	obj	_	_
 36	kannten	kennen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	conj	_	_
 37	,	,	PUNCT	$,	_	51	punct	_	_
@@ -270,7 +610,7 @@
 39	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	Partei	Partei	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	51	obj	_	_
 41	als	als	CCONJ	KOKOM	_	44	case	_	_
-42	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	44	nmod	_	_
+42	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut	44	nmod	_	_
 43	so	so	ADV	ADV	_	44	advmod	_	_
 44	Unabänderliches	Unabänderliche	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	51	obl	_	_
 45	wie	wie	CCONJ	KOKOM	_	47	case	_	_
@@ -282,7 +622,7 @@
 51	hinnahmen	hinnehmen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	acl	_	_
 52	,	,	PUNCT	$,	_	58	punct	_	_
 53	ohne	ohne	SCONJ	KOUI	_	58	mark	_	_
-54	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	58	obj	_	_
+54	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	58	obj	_	_
 55	gegen	gegen	ADP	APPR	_	57	case	_	_
 56	ihre	ihr	DET	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes	57	det:poss	_	_
 57	Autorität	Autorität	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	58	obl	_	_
@@ -304,6 +644,135 @@
 73	sucht	suchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	63	ccomp	_	_
 74	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] fragte (2)
+[] Er (1)
+[] sich (3)
+[] mit einem unbestimmten Gefühl , wie viele Menschen ihres Typus es wohl unter der jüngeren Generation geben mochte - Menschen , die in die Welt der Revolution hineingewachsen waren und nichts anderes kannten , die die Partei als etwas so Unabänderliches wie den Himmel zu ihren Häupten hinnahmen , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (7)
+
+[] Er (1)
+
+[] sich (3)
+
+[] Gefühl (7)
+[] unbestimmten (6)
+[] , wie viele Menschen ihres Typus es wohl unter der jüngeren Generation geben mochte - Menschen , die in die Welt der Revolution hineingewachsen waren und nichts anderes kannten , die die Partei als etwas so Unabänderliches wie den Himmel zu ihren Häupten hinnahmen , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (20)
+
+[] unbestimmten (6)
+
+[] geben (20)
+[] wie (9)
+[] viele Menschen ihres Typus (11)
+[] es (14)
+[] wohl (15)
+[] unter der jüngeren Generation (19)
+[] - Menschen , die in die Welt der Revolution hineingewachsen waren , die die Partei als etwas so Unabänderliches wie den Himmel zu ihren Häupten hinnahmen , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (23)
+
+[] wie (9)
+
+[] Menschen (11)
+[] viele (10)
+[] ihres Typus (13)
+
+[] viele (10)
+
+[] Typus (13)
+[] ihres (12)
+
+[] ihres (12)
+
+[] es (14)
+
+[] wohl (15)
+
+[] Generation (19)
+[] jüngeren (18)
+
+[] jüngeren (18)
+
+[] Menschen (23)
+[] , die in die Welt der Revolution hineingewachsen waren (31)
+[] , die die Partei als etwas so Unabänderliches wie den Himmel zu ihren Häupten hinnahmen , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (51)
+
+[] hineingewachsen (31)
+[] die (25)
+[] in die Welt der Revolution (28)
+
+[] die (25)
+
+[] Welt (28)
+[] der Revolution (30)
+
+[] Revolution (30)
+
+[] hinnahmen (51)
+[] die (38)
+[] die Partei (40)
+[] als etwas so Unabänderliches wie den Himmel (44)
+[] zu ihren Häupten (50)
+[] , ohne sich gegen ihre Autorität aufzulehnen , sondern ihr einfach auswichen , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (58)
+
+[] die (38)
+
+[] Partei (40)
+
+[] Unabänderliches (44)
+[] etwas (42)
+[] so (43)
+[] wie den Himmel (47)
+
+[] etwas (42)
+
+[] so (43)
+
+[] Himmel (47)
+
+[] Häupten (50)
+[] ihren (49)
+
+[] ihren (49)
+
+[] aufzulehnen (58)
+[] sich (54)
+[] gegen ihre Autorität (57)
+
+[] sich (54)
+
+[] Autorität (57)
+[] ihre (56)
+
+[] ihre (56)
+
+[] auswichen (63)
+[] ihr (61)
+[] einfach (62)
+[] , wie ein Hase hakenschlagend einem Hunde zu entkommen sucht (73)
+
+[] ihr (61)
+
+[] einfach (62)
+
+[] sucht (73)
+[] ein Hase (67)
+[] hakenschlagend (68)
+[] einem Hunde zu entkommen (72)
+
+[] Hase (67)
+
+[] hakenschlagend (68)
+
+[] entkommen (72)
+[] einem Hunde (70)
+
+[] Hunde (70)
+
+[] kannten (36)
+[] nichts (34)
+[] anderes (35)
+
+[] nichts (34)
+
+[] anderes (35)
+
 # sent_id = 2661
 # text = Sie sprachen nicht über die Möglichkeit einer Heirat .
 1	Sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
@@ -316,6 +785,20 @@
 8	Heirat	Heirat	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] sprachen (2)
+[] Sie (1)
+[] nicht (3)
+[] über die Möglichkeit einer Heirat (6)
+
+[] Sie (1)
+
+[] nicht (3)
+
+[] Möglichkeit (6)
+[] einer Heirat (8)
+
+[] Heirat (8)
+
 # sent_id = 2662
 # text = Sie lag zu fern , um sich überhaupt damit zu beschäftigen .
 1	Sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -324,18 +807,41 @@
 4	fern	fern	ADJ	ADJD	_	2	xcomp	_	_
 5	,	,	PUNCT	$,	_	11	punct	_	_
 6	um	um	SCONJ	KOUI	_	11	mark	_	_
-7	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
+7	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
 8	überhaupt	überhaupt	ADV	ADV	_	11	advmod	_	_
 9	damit	damit	ADP	PROAV	PronType=Dem	11	advmod	_	_
 10	zu	zu	PART	PTKZU	_	11	mark	_	_
 11	beschäftigen	beschäftigen	VERB	VVINF	VerbForm=Inf	2	advcl	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] lag (2)
+[] Sie (1)
+[] zu fern (4)
+[] , um sich überhaupt damit zu beschäftigen (11)
+
+[] Sie (1)
+
+[] fern (4)
+[] zu (3)
+
+[] zu (3)
+
+[] beschäftigen (11)
+[] sich (7)
+[] überhaupt (8)
+[] damit (9)
+
+[] sich (7)
+
+[] überhaupt (8)
+
+[] damit (9)
+
 # sent_id = 2663
 # text = Man konnte sich keinen Prüfungsausschuss vorstellen , der eine solche Verbindung jemals genehmigen würde , selbst wenn Winston seine Frau Katherine irgendwie hätte loswerden können .
-1	Man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	6	nsubj	_	_
+1	Man	man	PRON	PIS	Definite=Ind|Gender=Neut	6	nsubj	_	_
 2	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
-3	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	6	iobj	_	_
+3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	6	iobj	_	_
 4	keinen	kein	DET	PIAT	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	5	nmod	_	_
 5	Prüfungsausschuss	Prüfungsausschuß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	6	obj	_	_
 6	vorstellen	vorstellen	VERB	VVINF	VerbForm=Inf	0	root	_	_
@@ -360,18 +866,85 @@
 25	können	können	AUX	VMINF	VerbForm=Inf	24	aux	_	_
 26	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] vorstellen (6)
+[] Man (1)
+[] sich (3)
+[] keinen Prüfungsausschuss , der eine solche Verbindung jemals genehmigen würde , selbst wenn Winston seine Frau Katherine irgendwie hätte loswerden können (5)
+
+[] Man (1)
+
+[] sich (3)
+
+[] Prüfungsausschuss (5)
+[] keinen (4)
+[] , der eine solche Verbindung jemals genehmigen würde , selbst wenn Winston seine Frau Katherine irgendwie hätte loswerden können (13)
+
+[] keinen (4)
+
+[] genehmigen (13)
+[] der (8)
+[] eine solche Verbindung (11)
+[] jemals (12)
+[] , selbst wenn Winston seine Frau Katherine irgendwie hätte loswerden können (24)
+
+[] der (8)
+
+[] Verbindung (11)
+
+[] jemals (12)
+
+[] loswerden (24)
+[] selbst (16)
+[] Winston (18)
+[] seine Frau Katherine (20)
+[] irgendwie (22)
+
+[] selbst (16)
+
+[] Winston (18)
+
+[] Frau (20)
+[] seine (19)
+[] Katherine (21)
+
+[] seine (19)
+
+[] Katherine (21)
+
+[] irgendwie (22)
+
 # sent_id = 2664
 # text = Es war zwecklos , sich das auch nur auszumalen .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
 3	zwecklos	zwecklos	ADJ	ADJD	_	0	root	_	_
 4	,	,	PUNCT	$,	_	9	punct	_	_
-5	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	9	obj	_	_
+5	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	9	obj	_	_
 6	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	9	obj	_	_
 7	auch	auch	ADV	ADV	_	9	advmod	_	_
 8	nur	nur	ADV	ADV	_	9	advmod	_	_
 9	auszumalen	ausmalen	VERB	VVIZU	VerbForm=Inf	3	xcomp	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] zwecklos (3)
+[] Es (1)
+[] , sich das auch nur auszumalen (9)
+
+[] Es (1)
+
+[] auszumalen (9)
+[] sich (5)
+[] das (6)
+[] auch (7)
+[] nur (8)
+
+[] sich (5)
+
+[] das (6)
+
+[] auch (7)
+
+[] nur (8)
 
 # sent_id = 2665
 # text = » Wie war eigentlich deine Frau ? « fragte Julia .
@@ -387,6 +960,23 @@
 10	Julia	Julia	PROPN	NE	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_
 11	.	.	PUNCT	$.	_	9	punct	_	_
 
+[] fragte (9)
+[] Wie war eigentlich deine Frau ? « (6)
+[] Julia (10)
+
+[] Frau (6)
+[] Wie (2)
+[] eigentlich (4)
+[] deine (5)
+
+[] Wie (2)
+
+[] eigentlich (4)
+
+[] deine (5)
+
+[] Julia (10)
+
 # sent_id = 2666
 # text = » Sie war - kennst du das Neusprachwort gutdenkvoll ?
 1	»	»	PUNCT	$(	_	3	punct	_	_
@@ -399,6 +989,23 @@
 8	Neusprachwort	Neusprachwort	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	9	nsubj	_	_
 9	gutdenkvoll	gutdenkvoll	ADJ	ADJD	_	5	xcomp	_	_
 10	?	?	PUNCT	$.	_	5	punct	_	_
+
+[] kennst (5)
+[] » Sie war (3)
+[] du (6)
+[] das Neusprachwort gutdenkvoll (9)
+
+[] war (3)
+[] Sie (2)
+
+[] Sie (2)
+
+[] du (6)
+
+[] gutdenkvoll (9)
+[] das Neusprachwort (8)
+
+[] Neusprachwort (8)
 
 # sent_id = 2667
 # text = Es bedeutet : von Natur aus orthodox , unfähig , einen Unvorschriftsmäßigen Gedanken auch nur zu fassen . «
@@ -422,6 +1029,34 @@
 18	.	.	PUNCT	$.	_	7	punct	_	_
 19	«	«	PUNCT	$(	_	2	punct	_	_
 
+[] bedeutet (2)
+[] Es (1)
+[] : von Natur aus orthodox , unfähig , einen Unvorschriftsmäßigen Gedanken auch nur zu fassen . (7)
+
+[] Es (1)
+
+[] orthodox (7)
+[] von Natur aus (5)
+[] , einen Unvorschriftsmäßigen Gedanken auch nur zu fassen (17)
+
+[] Natur (5)
+
+[] unfähig (9)
+
+[] fassen (17)
+[] einen Unvorschriftsmäßigen Gedanken (13)
+[] auch (14)
+[] nur (15)
+
+[] Gedanken (13)
+[] Unvorschriftsmäßigen (12)
+
+[] Unvorschriftsmäßigen (12)
+
+[] auch (14)
+
+[] nur (15)
+
 # sent_id = 2668
 # text = » Nein , ich kannte das Wort nicht .
 1	»	»	PUNCT	$(	_	2	punct	_	_
@@ -433,6 +1068,20 @@
 7	Wort	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	5	obj	_	_
 8	nicht	nicht	PART	PTKNEG	Polarity=Neg	5	advmod	_	_
 9	.	.	PUNCT	$.	_	5	punct	_	_
+
+[] kannte (5)
+[] » Nein , (2)
+[] ich (4)
+[] das Wort (7)
+[] nicht (8)
+
+[] Nein (2)
+
+[] ich (4)
+
+[] Wort (7)
+
+[] nicht (8)
 
 # sent_id = 2669
 # text = Aber diese Sorte Menschen kenne ich nur zu gut . «
@@ -447,6 +1096,26 @@
 9	gut	gut	ADJ	ADJD	_	5	xcomp	_	_
 10	.	.	PUNCT	$.	_	5	punct	_	_
 11	«	«	PUNCT	$(	_	5	punct	_	_
+
+[] kenne (5)
+[] diese Sorte Menschen (4)
+[] ich (6)
+[] nur zu gut (9)
+
+[] Menschen (4)
+[] diese Sorte (3)
+
+[] Sorte (3)
+
+[] ich (6)
+
+[] gut (9)
+[] nur zu (8)
+
+[] zu (8)
+[] nur (7)
+
+[] nur (7)
 
 # sent_id = 2670
 # text = Er begann ihr die Geschichte seiner Ehe zu erzählen , aber seltsamerweise schien sie das Wesentliche davon bereits zu kennen .
@@ -471,6 +1140,46 @@
 19	zu	zu	PART	PTKZU	_	20	mark	_	_
 20	kennen	kennen	VERB	VVINF	VerbForm=Inf	13	xcomp	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] begann (2)
+[] Er (1)
+[] ihr (3)
+[] die Geschichte seiner Ehe zu erzählen (9)
+
+[] Er (1)
+
+[] ihr (3)
+
+[] erzählen (9)
+[] die Geschichte seiner Ehe (5)
+
+[] Geschichte (5)
+[] seiner Ehe (7)
+
+[] Ehe (7)
+[] seiner (6)
+
+[] seiner (6)
+
+[] schien (13)
+[] seltsamerweise (12)
+[] sie (14)
+[] das Wesentliche (16)
+[] davon (17)
+[] bereits zu kennen (20)
+
+[] seltsamerweise (12)
+
+[] sie (14)
+
+[] Wesentliche (16)
+
+[] davon (17)
+
+[] kennen (20)
+[] bereits (18)
+
+[] bereits (18)
 
 # sent_id = 2671
 # text = Sie beschrieb ihm , als habe sie es selber miterlebt oder gefühlt , wie Katherines Körper erstarrte , sobald er sie nur berührte , und wie sie ihn selbst dann noch mit ihrer ganzen Kraft von sich wegzustoßen schien , wenn ihre Arme eng um ihn geschlungen waren .
@@ -510,7 +1219,7 @@
 34	ganzen	ganz	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	35	amod	_	_
 35	Kraft	Kraft	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	39	obl	_	_
 36	von	von	ADP	APPR	_	37	case	_	_
-37	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	39	obl	_	_
+37	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	39	obl	_	_
 38	wegzustoßen	wegstoßen	VERB	VVIZU	VerbForm=Inf	39	xcomp	_	_
 39	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	conj	_	_
 40	,	,	PUNCT	$,	_	47	punct	_	_
@@ -523,6 +1232,102 @@
 47	geschlungen	schlingen	ADJ	ADJD	_	39	advcl	_	_
 48	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	47	aux:pass	_	_
 49	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] beschrieb (2)
+[] Sie (1)
+[] ihm (3)
+[] , als habe sie es selber miterlebt oder gefühlt , wie Katherines Körper erstarrte , sobald er sie nur berührte , und wie sie ihn selbst dann noch mit ihrer ganzen Kraft von sich wegzustoßen schien , wenn ihre Arme eng um ihn geschlungen waren (10)
+
+[] Sie (1)
+
+[] ihm (3)
+
+[] miterlebt (10)
+[] sie (7)
+[] es (8)
+[] selber (9)
+
+[] sie (7)
+
+[] es (8)
+
+[] selber (9)
+
+[] gefühlt (12)
+[] , wie Katherines Körper erstarrte , sobald er sie nur berührte , und wie sie ihn selbst dann noch mit ihrer ganzen Kraft von sich wegzustoßen schien , wenn ihre Arme eng um ihn geschlungen waren (17)
+
+[] erstarrte (17)
+[] wie (14)
+[] Katherines Körper (16)
+[] , sobald er sie nur berührte , und wie sie ihn selbst dann noch mit ihrer ganzen Kraft von sich wegzustoßen schien , wenn ihre Arme eng um ihn geschlungen waren (23)
+
+[] wie (14)
+
+[] Körper (16)
+[] Katherines (15)
+
+[] Katherines (15)
+
+[] berührte (23)
+[] er (20)
+[] sie (21)
+[] nur (22)
+
+[] er (20)
+
+[] sie (21)
+
+[] nur (22)
+
+[] schien (39)
+[] wie (26)
+[] sie (27)
+[] ihn (28)
+[] selbst (29)
+[] dann (30)
+[] noch (31)
+[] mit ihrer ganzen Kraft (35)
+[] von sich (37)
+[] wegzustoßen (38)
+[] , wenn ihre Arme eng um ihn geschlungen waren (47)
+
+[] wie (26)
+
+[] sie (27)
+
+[] ihn (28)
+
+[] selbst (29)
+
+[] dann (30)
+
+[] noch (31)
+
+[] Kraft (35)
+[] ihrer (33)
+[] ganzen (34)
+
+[] ihrer (33)
+
+[] ganzen (34)
+
+[] sich (37)
+
+[] wegzustoßen (38)
+
+[] geschlungen (47)
+[] ihre Arme (43)
+[] eng (44)
+[] um ihn (46)
+
+[] Arme (43)
+[] ihre (42)
+
+[] ihre (42)
+
+[] eng (44)
+
+[] ihn (46)
 
 # sent_id = 2672
 # text = Es bereitete ihm keine Schwierigkeit , mit Julia über solche Dinge zu sprechen : Katherine war jedenfalls längst keine schmerzliche Erinnerung mehr , sondern nur noch eine unangenehme .
@@ -556,6 +1361,54 @@
 28	unangenehme	unangenehm	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	21	conj	_	_
 29	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] bereitete (2)
+[] ihm (3)
+[] keine Schwierigkeit , mit Julia über solche Dinge zu sprechen (5)
+
+[] ihm (3)
+
+[] Schwierigkeit (5)
+[] keine (4)
+[] , mit Julia über solche Dinge zu sprechen (13)
+
+[] keine (4)
+
+[] sprechen (13)
+[] mit Julia (8)
+[] über solche Dinge (11)
+
+[] Julia (8)
+
+[] Dinge (11)
+
+[] Erinnerung (21)
+[] Katherine (15)
+[] jedenfalls (17)
+[] längst (18)
+[] keine (19)
+[] schmerzliche (20)
+[] mehr (22)
+
+[] Katherine (15)
+
+[] jedenfalls (17)
+
+[] längst (18)
+
+[] keine (19)
+
+[] schmerzliche (20)
+
+[] mehr (22)
+
+[] unangenehme (28)
+[] nur noch (26)
+
+[] noch (26)
+[] nur (25)
+
+[] nur (25)
+
 # sent_id = 2673
 # text = » Ich hätte es noch aushalten können , wenn nicht eine Sache gewesen wäre « , sagte er .
 1	»	»	PUNCT	$(	_	6	punct	_	_
@@ -577,6 +1430,32 @@
 17	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 18	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
 19	.	.	PUNCT	$.	_	17	punct	_	_
+
+[] sagte (17)
+[] » Ich hätte es noch aushalten können , wenn nicht eine Sache gewesen wäre « , (6)
+[] er (18)
+
+[] aushalten (6)
+[] Ich (2)
+[] es (4)
+[] noch (5)
+[] , wenn nicht eine Sache gewesen wäre (13)
+
+[] Ich (2)
+
+[] es (4)
+
+[] noch (5)
+
+[] gewesen (13)
+[] nicht (10)
+[] eine Sache (12)
+
+[] nicht (10)
+
+[] Sache (12)
+
+[] er (18)
 
 # sent_id = 2674
 # text = Und er erzählte ihr von der frigiden kleinen Zeremonie , die ihn Katherine gezwungen hatte , allwöchentlich in der gleichen Nacht auszuführen .
@@ -604,6 +1483,47 @@
 22	auszuführen	ausführen	VERB	VVIZU	VerbForm=Inf	14	xcomp	_	_
 23	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] erzählte (3)
+[] er (2)
+[] ihr (4)
+[] von der frigiden kleinen Zeremonie , die ihn Katherine gezwungen hatte , allwöchentlich in der gleichen Nacht auszuführen (9)
+
+[] er (2)
+
+[] ihr (4)
+
+[] Zeremonie (9)
+[] frigiden (7)
+[] kleinen (8)
+[] , die ihn Katherine gezwungen hatte , allwöchentlich in der gleichen Nacht auszuführen (14)
+
+[] frigiden (7)
+
+[] kleinen (8)
+
+[] gezwungen (14)
+[] die (11)
+[] ihn (12)
+[] Katherine (13)
+[] , allwöchentlich in der gleichen Nacht auszuführen (22)
+
+[] die (11)
+
+[] ihn (12)
+
+[] Katherine (13)
+
+[] auszuführen (22)
+[] allwöchentlich (17)
+[] in der gleichen Nacht (21)
+
+[] allwöchentlich (17)
+
+[] Nacht (21)
+[] gleichen (20)
+
+[] gleichen (20)
+
 # sent_id = 2675
 # text = » Es war ihr greulich , aber nichts in der Welt hätte sie dazu bringen können , es bleiben zu lassen .
 1	»	»	PUNCT	$(	_	5	punct	_	_
@@ -613,7 +1533,7 @@
 5	greulich	greulich	ADJ	ADJD	_	0	root	_	_
 6	,	,	PUNCT	$,	_	15	punct	_	_
 7	aber	aber	CCONJ	KON	_	15	cc	_	_
-8	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	15	obj	_	_
+8	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	15	obj	_	_
 9	in	in	ADP	APPR	_	11	case	_	_
 10	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	Welt	Welt	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	15	obl	_	_
@@ -628,6 +1548,36 @@
 20	zu	zu	PART	PTKZU	_	21	mark	_	_
 21	lassen	lassen	VERB	VVINF	VerbForm=Inf	15	xcomp	_	_
 22	.	.	PUNCT	$.	_	5	punct	_	_
+
+[] greulich (5)
+[] Es (2)
+[] ihr (4)
+
+[] Es (2)
+
+[] ihr (4)
+
+[] bringen (15)
+[] nichts (8)
+[] in der Welt (11)
+[] sie (13)
+[] , es bleiben zu lassen (21)
+
+[] nichts (8)
+
+[] Welt (11)
+
+[] sie (13)
+
+[] dazu (14)
+
+[] lassen (21)
+[] es (18)
+[] bleiben (19)
+
+[] es (18)
+
+[] bleiben (19)
 
 # sent_id = 2676
 # text = Sie nannte es immer - aber das errätst du nie . «
@@ -644,6 +1594,28 @@
 11	.	.	PUNCT	$.	_	2	punct	_	_
 12	«	«	PUNCT	$(	_	2	punct	_	_
 
+[] nannte (2)
+[] Sie (1)
+[] es (3)
+[] immer (4)
+
+[] Sie (1)
+
+[] es (3)
+
+[] immer (4)
+
+[] errätst (8)
+[] das (7)
+[] du (9)
+[] nie (10)
+
+[] das (7)
+
+[] du (9)
+
+[] nie (10)
+
 # sent_id = 2677
 # text = » Unsere Pflicht gegenüber der Partei « , sagte Julia prompt .
 1	»	»	PUNCT	$(	_	3	punct	_	_
@@ -659,6 +1631,23 @@
 11	prompt	prompt	ADJ	ADJD	_	9	advmod	_	_
 12	.	.	PUNCT	$.	_	9	punct	_	_
 
+[] sagte (9)
+[] » Unsere Pflicht gegenüber der Partei « , (3)
+[] Julia (10)
+[] prompt (11)
+
+[] Pflicht (3)
+[] Unsere (2)
+[] gegenüber der Partei (6)
+
+[] Unsere (2)
+
+[] Partei (6)
+
+[] Julia (10)
+
+[] prompt (11)
+
 # sent_id = 2678
 # text = » Woher weißt du das ? «
 1	»	»	PUNCT	$(	_	3	punct	_	_
@@ -668,6 +1657,17 @@
 5	das	d	PRON	PDS	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	obj	_	_
 6	?	?	PUNCT	$.	_	3	punct	_	_
 7	«	«	PUNCT	$(	_	3	punct	_	_
+
+[] weißt (3)
+[] Woher (2)
+[] du (4)
+[] das (5)
+
+[] Woher (2)
+
+[] du (4)
+
+[] das (5)
 
 # sent_id = 2679
 # text = » Ich war schließlich auch in der Schule , mein Lieber .
@@ -684,6 +1684,26 @@
 11	Lieber	Liebe	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	3	appos	_	_
 12	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] war (3)
+[] Ich (2)
+[] schließlich (4)
+[] auch (5)
+[] in der Schule (8)
+[] , mein Lieber (11)
+
+[] Ich (2)
+
+[] schließlich (4)
+
+[] auch (5)
+
+[] Schule (8)
+
+[] Lieber (11)
+[] mein (10)
+
+[] mein (10)
+
 # sent_id = 2680
 # text = Aufklärungsunterricht für junge Mädchen über sechzehn , einmal im Monat .
 1	Aufklärungsunterricht	Aufklärungsunterricht	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
@@ -698,6 +1718,23 @@
 10	Monat	Monat	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	1	nmod	_	_
 11	.	.	PUNCT	$.	_	1	punct	_	_
 
+[] Aufklärungsunterricht (1)
+[] für junge Mädchen über sechzehn (4)
+[] , einmal im Monat (10)
+
+[] Mädchen (4)
+[] junge (3)
+[] über sechzehn (6)
+
+[] junge (3)
+
+[] sechzehn (6)
+
+[] Monat (10)
+[] einmal (8)
+
+[] einmal (8)
+
 # sent_id = 2681
 # text = In der Jugendbewegung desgleichen .
 1	In	in	ADP	APPR	_	3	case	_	_
@@ -705,6 +1742,11 @@
 3	Jugendbewegung	Jugendbewegung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	4	obl	_	_
 4	desgleichen	desgleichen	ADV	ADV	_	0	root	_	_
 5	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] desgleichen (4)
+[] In der Jugendbewegung (3)
+
+[] Jugendbewegung (3)
 
 # sent_id = 2682
 # text = Sie trichtern einem das Jahre hindurch ein .
@@ -716,6 +1758,23 @@
 6	hindurch	hindurch	ADV	ADV	_	2	advmod	_	_
 7	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] trichtern (2)
+[] Sie (1)
+[] einem (3)
+[] das Jahre (5)
+[] hindurch (6)
+[] ein (7)
+
+[] Sie (1)
+
+[] einem (3)
+
+[] Jahre (5)
+
+[] hindurch (6)
+
+[] ein (7)
 
 # sent_id = 2683
 # text = Und ich kann wohl behaupten , dass sie in vielen Fällen Erfolg damit haben .
@@ -735,10 +1794,36 @@
 14	haben	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
 15	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] behaupten (5)
+[] ich (2)
+[] wohl (4)
+[] , dass sie in vielen Fällen Erfolg damit haben (14)
+
+[] ich (2)
+
+[] wohl (4)
+
+[] haben (14)
+[] sie (8)
+[] in vielen Fällen (11)
+[] Erfolg (12)
+[] damit (13)
+
+[] sie (8)
+
+[] Fällen (11)
+[] vielen (10)
+
+[] vielen (10)
+
+[] Erfolg (12)
+
+[] damit (13)
+
 # sent_id = 2684
 # text = Aber man weiß es natürlich nie ; die Menschen sind so scheinheilig . «
 1	Aber	aber	CCONJ	KON	_	3	cc	_	_
-2	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	3	nsubj	_	_
+2	man	man	PRON	PIS	Definite=Ind|Gender=Neut	3	nsubj	_	_
 3	weiß	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5	natürlich	natürlich	ADV	ADV	_	3	advmod	_	_
@@ -752,12 +1837,34 @@
 13	.	.	PUNCT	$.	_	3	punct	_	_
 14	«	«	PUNCT	$(	_	3	punct	_	_
 
+[] weiß (3)
+[] man (2)
+[] es (4)
+[] natürlich (5)
+[] nie (6)
+
+[] man (2)
+
+[] es (4)
+
+[] natürlich (5)
+
+[] nie (6)
+
+[] scheinheilig (12)
+[] die Menschen (9)
+[] so (11)
+
+[] Menschen (9)
+
+[] so (11)
+
 # sent_id = 2685
 # text = Und sie begann sich weiter über das Thema auszulassen .
 1	Und	und	CCONJ	KON	_	3	cc	_	_
 2	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 3	begann	beginnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	3	obj	_	_
+4	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	3	obj	_	_
 5	weiter	weiter	ADV	ADV	_	3	advmod	_	_
 6	über	über	ADP	APPR	_	8	case	_	_
 7	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
@@ -765,18 +1872,55 @@
 9	auszulassen	auslassen	VERB	VVIZU	VerbForm=Inf	3	xcomp	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] begann (3)
+[] sie (2)
+[] sich (4)
+[] weiter (5)
+[] über das Thema auszulassen (9)
+
+[] sie (2)
+
+[] sich (4)
+
+[] weiter (5)
+
+[] auszulassen (9)
+[] über das Thema (8)
+
+[] Thema (8)
+
 # sent_id = 2686
 # text = Bei Julia drehte sich alles um ihre eigene Sinnlichkeit .
 1	Bei	bei	ADP	APPR	_	2	case	_	_
 2	Julia	Julia	PROPN	NE	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 3	drehte	drehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	3	obj	_	_
+4	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	3	obj	_	_
 5	alles	alle	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	3	nsubj	_	_
 6	um	um	ADP	APPR	_	9	case	_	_
 7	ihre	ihr	DET	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes	9	det:poss	_	_
 8	eigene	eigen	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	9	amod	_	_
 9	Sinnlichkeit	Sinnlichkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] drehte (3)
+[] Bei Julia (2)
+[] sich (4)
+[] alles (5)
+[] um ihre eigene Sinnlichkeit (9)
+
+[] Julia (2)
+
+[] sich (4)
+
+[] alles (5)
+
+[] Sinnlichkeit (9)
+[] ihre (7)
+[] eigene (8)
+
+[] ihre (7)
+
+[] eigene (8)
 
 # sent_id = 2687
 # text = Sobald diese irgendwie im Spiel war , konnte sie außerordentlich scharfsinnig sein .
@@ -793,6 +1937,26 @@
 11	scharfsinnig	scharfsinnig	ADJ	ADJD	_	0	root	_	_
 12	sein	sein	AUX	VAINF	VerbForm=Inf	11	cop	_	_
 13	.	.	PUNCT	$.	_	11	punct	_	_
+
+[] scharfsinnig (11)
+[] Sobald diese irgendwie im Spiel war , (6)
+[] sie (9)
+[] außerordentlich (10)
+
+[] war (6)
+[] diese (2)
+[] irgendwie (3)
+[] im Spiel (5)
+
+[] diese (2)
+
+[] irgendwie (3)
+
+[] Spiel (5)
+
+[] sie (9)
+
+[] außerordentlich (10)
 
 # sent_id = 2688
 # text = Im Gegensatz zu Winston war ihr ein Licht über den eigentlichen Zweck der strengen Parteidoktrin in sexuellen Dingen aufgegangen .
@@ -817,6 +1981,38 @@
 19	aufgegangen	aufgehen	VERB	VVPP	Verbform=Part	0	root	_	_
 20	.	.	PUNCT	$.	_	19	punct	_	_
 
+[] aufgegangen (19)
+[] Im Gegensatz zu Winston (2)
+[] ihr (6)
+[] ein Licht über den eigentlichen Zweck der strengen Parteidoktrin (8)
+[] in sexuellen Dingen (18)
+
+[] Gegensatz (2)
+[] zu Winston (4)
+
+[] Winston (4)
+
+[] ihr (6)
+
+[] Licht (8)
+[] über den eigentlichen Zweck der strengen Parteidoktrin (12)
+
+[] Zweck (12)
+[] eigentlichen (11)
+[] der strengen Parteidoktrin (15)
+
+[] eigentlichen (11)
+
+[] Parteidoktrin (15)
+[] strengen (14)
+
+[] strengen (14)
+
+[] Dingen (18)
+[] sexuellen (17)
+
+[] sexuellen (17)
+
 # sent_id = 2689
 # text = Sie wurde aufrechterhalten , nicht nur weil die Sexualität sich eine Welt für sich zu schaffen verstand , die außerhalb der Kontrolle der Partei lag , so dass sie nach Möglichkeit unterdrückt werden musste , sondern vor allen Dingen , weil die sexuelle Enthaltsamkeit zur Hysterie führte und damit ein erstrebenswertes Ziel erreicht wurde , denn diese Hysterie konnte in Kriegsbegeisterung und Führerverehrung umgewandelt werden .
 1	Sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_
@@ -828,11 +2024,11 @@
 7	weil	weil	SCONJ	KOUS	_	17	mark	_	_
 8	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Sexualität	Sexualität	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	17	nsubj	_	_
-10	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	17	iobj	_	_
+10	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	17	iobj	_	_
 11	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	Welt	Welt	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	17	obj	_	_
 13	für	für	ADP	APPR	_	14	case	_	_
-14	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	16	obl	_	_
+14	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	obl	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
 16	schaffen	schaffen	VERB	VVINF	VerbForm=Inf	17	xcomp	_	_
 17	verstand	verstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
@@ -886,6 +2082,95 @@
 65	werden	werden	AUX	VAINF	VerbForm=Inf	64	aux:pass	_	_
 66	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] aufrechterhalten (3)
+[] Sie (1)
+[] nur (6)
+[] , nicht weil die Sexualität sich eine Welt für sich zu schaffen verstand , die außerhalb der Kontrolle der Partei lag , so dass sie nach Möglichkeit unterdrückt werden musste (17)
+[] , weil die sexuelle Enthaltsamkeit zur Hysterie führte und damit ein erstrebenswertes Ziel erreicht wurde (47)
+[] , denn diese Hysterie konnte in Kriegsbegeisterung und Führerverehrung umgewandelt werden (64)
+
+[] Sie (1)
+
+[] nur (6)
+
+[] verstand (17)
+[] nicht (5)
+[] die Sexualität (9)
+[] sich (10)
+[] eine Welt , die außerhalb der Kontrolle der Partei lag (12)
+[] für sich zu schaffen (16)
+[] , so dass sie nach Möglichkeit unterdrückt werden musste (32)
+
+[] nicht (5)
+
+[] Sexualität (9)
+
+[] sich (10)
+
+[] Welt (12)
+[] , die außerhalb der Kontrolle der Partei lag (25)
+
+[] lag (25)
+[] die (19)
+[] außerhalb der Kontrolle der Partei (22)
+
+[] die (19)
+
+[] Kontrolle (22)
+[] der Partei (24)
+
+[] Partei (24)
+
+[] schaffen (16)
+[] für sich (14)
+
+[] sich (14)
+
+[] unterdrückt (32)
+[] so (27)
+[] sie (29)
+[] nach Möglichkeit (31)
+
+[] so (27)
+
+[] sie (29)
+
+[] Möglichkeit (31)
+
+[] Dingen (39)
+
+[] führte (47)
+[] die sexuelle Enthaltsamkeit (44)
+[] zur Hysterie (46)
+
+[] Enthaltsamkeit (44)
+[] sexuelle (43)
+
+[] sexuelle (43)
+
+[] Hysterie (46)
+
+[] erreicht (53)
+[] damit (49)
+[] ein erstrebenswertes Ziel (52)
+
+[] damit (49)
+
+[] Ziel (52)
+[] erstrebenswertes (51)
+
+[] erstrebenswertes (51)
+
+[] umgewandelt (64)
+[] diese Hysterie (58)
+[] in Kriegsbegeisterung und Führerverehrung (61)
+
+[] Hysterie (58)
+
+[] Kriegsbegeisterung (61)
+
+[] Führerverehrung (63)
+
 # sent_id = 2690
 # text = Julia drückte das folgendermaßen aus :
 1	Julia	Julia	PROPN	NE	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
@@ -895,20 +2180,34 @@
 5	aus	aus	ADP	PTKVZ	_	2	compound:prt	_	_
 6	:	:	PUNCT	$.	_	2	punct	_	_
 
+[] drückte (2)
+[] Julia (1)
+[] das (3)
+[] folgendermaßen (4)
+[] aus (5)
+
+[] Julia (1)
+
+[] das (3)
+
+[] folgendermaßen (4)
+
+[] aus (5)
+
 # sent_id = 2691
 # text = » Beim Liebesspiel verbraucht man Energie , und hinterher fühlt man sich glücklich und pfeift auf alles andere .
 1	»	»	PUNCT	$(	_	4	punct	_	_
 2	Beim	beim	ADP	APPRART	_	3	case	_	_
 3	Liebesspiel	Liebesspiel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	4	obl	_	_
 4	verbraucht	verbrauchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	4	nsubj	_	_
+5	man	man	PRON	PIS	Definite=Ind|Gender=Neut	4	nsubj	_	_
 6	Energie	Energie	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	4	obj	_	_
 7	,	,	PUNCT	$,	_	10	punct	_	_
 8	und	und	CCONJ	KON	_	10	cc	_	_
 9	hinterher	hinterher	ADV	ADV	_	10	advmod	_	_
 10	fühlt	fühlen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-11	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	10	nsubj	_	_
-12	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
+11	man	man	PRON	PIS	Definite=Ind|Gender=Neut	10	nsubj	_	_
+12	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
 13	glücklich	glücklich	ADJ	ADJD	_	10	xcomp	_	_
 14	und	und	CCONJ	KON	_	15	cc	_	_
 15	pfeift	pfeifen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
@@ -916,6 +2215,39 @@
 17	alles	alle	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obl	_	_
 18	andere	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obj	_	_
 19	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] verbraucht (4)
+[] Beim Liebesspiel (3)
+[] man (5)
+[] Energie (6)
+
+[] Liebesspiel (3)
+
+[] man (5)
+
+[] Energie (6)
+
+[] fühlt (10)
+[] hinterher (9)
+[] man (11)
+[] sich (12)
+[] glücklich (13)
+
+[] hinterher (9)
+
+[] man (11)
+
+[] sich (12)
+
+[] glücklich (13)
+
+[] pfeift (15)
+[] alles (17)
+[] auf andere (18)
+
+[] alles (17)
+
+[] andere (18)
 
 # sent_id = 2692
 # text = Das können sie nicht ertragen .
@@ -926,13 +2258,24 @@
 5	ertragen	ertragen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] ertragen (5)
+[] Das (1)
+[] sie (3)
+[] nicht (4)
+
+[] Das (1)
+
+[] sie (3)
+
+[] nicht (4)
+
 # sent_id = 2693
 # text = Sie wollen , dass man ständig zum Platzen mit Energie geladen ist .
 1	Sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
 2	wollen	wollen	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	,	,	PUNCT	$,	_	11	punct	_	_
 4	dass	dass	SCONJ	KOUS	_	11	mark	_	_
-5	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	11	nsubj	_	_
+5	man	man	PRON	PIS	Definite=Ind|Gender=Neut	11	nsubj	_	_
 6	ständig	ständig	ADJ	ADJD	_	11	advmod	_	_
 7	zum	zum	ADP	APPRART	_	8	case	_	_
 8	Platzen	Platzen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	obl	_	_
@@ -941,6 +2284,26 @@
 11	geladen	laden	VERB	VVPP	Verbform=Part	2	ccomp	_	_
 12	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] wollen (2)
+[] Sie (1)
+[] , dass man ständig zum Platzen mit Energie geladen ist (11)
+
+[] Sie (1)
+
+[] geladen (11)
+[] man (5)
+[] ständig (6)
+[] zum Platzen (8)
+[] mit Energie (10)
+
+[] man (5)
+
+[] ständig (6)
+
+[] Platzen (8)
+
+[] Energie (10)
 
 # sent_id = 2694
 # text = Dies ganze Auf- und Abmarschieren , Hurra-Brüllen und Fahnenschwenken ist weiter nichts als sauer gewordene Sinnlichkeit .
@@ -955,23 +2318,49 @@
 9	Fahnenschwenken	Fahnenschwenken	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	3	conj	_	_
 10	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
 11	weiter	weiter	ADV	ADV	_	12	advmod	_	_
-12	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	16	nmod	_	_
+12	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	16	nmod	_	_
 13	als	als	CCONJ	KOKOM	_	16	case	_	_
 14	sauer	sauer	ADJ	ADJD	_	15	xcomp	_	_
 15	gewordene	worden	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	16	amod	_	_
 16	Sinnlichkeit	Sinnlichkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
+[] Sinnlichkeit (16)
+[] Dies ganze Auf- und Abmarschieren , Hurra-Brüllen und Fahnenschwenken (3)
+[] weiter nichts (12)
+[] sauer gewordene (15)
+
+[] Auf- (3)
+[] ganze (2)
+
+[] ganze (2)
+
+[] Abmarschieren (5)
+
+[] Hurra-Brüllen (7)
+
+[] Fahnenschwenken (9)
+
+[] nichts (12)
+[] weiter (11)
+
+[] weiter (11)
+
+[] gewordene (15)
+[] sauer (14)
+
+[] sauer (14)
+
 # sent_id = 2695
 # text = Wenn man innerlich glücklich ist , kann man weder über den Großen Bruder noch den Drei-Jahres-Plan , die Zwei-Minuten-Hass-Sendung und den ganzen übrigen Schwindel in Begeisterung geraten ! «
 1	Wenn	wenn	SCONJ	KOUS	_	4	mark	_	_
-2	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	4	nsubj	_	_
+2	man	man	PRON	PIS	Definite=Ind|Gender=Neut	4	nsubj	_	_
 3	innerlich	innerlich	ADJ	ADJD	_	4	advmod	_	_
 4	glücklich	glücklich	ADJ	ADJD	_	27	advcl	_	_
 5	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 6	,	,	PUNCT	$,	_	4	punct	_	_
 7	kann	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
-8	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	27	nsubj	_	_
+8	man	man	PRON	PIS	Definite=Ind|Gender=Neut	27	nsubj	_	_
 9	weder	weder	CCONJ	KON	_	13	cc	_	_
 10	über	über	ADP	APPR	_	13	case	_	_
 11	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -994,6 +2383,41 @@
 28	!	!	PUNCT	$.	_	27	punct	_	_
 29	«	«	PUNCT	$(	_	27	punct	_	_
 
+[] geraten (27)
+[] Wenn man innerlich glücklich ist , (4)
+[] man (8)
+[] weder über den Großen Bruder noch den Drei-Jahres-Plan , die Zwei-Minuten-Hass-Sendung und den ganzen übrigen Schwindel (13)
+[] in Begeisterung (26)
+
+[] glücklich (4)
+[] man (2)
+[] innerlich (3)
+
+[] man (2)
+
+[] innerlich (3)
+
+[] man (8)
+
+[] Bruder (13)
+[] Großen (12)
+
+[] Großen (12)
+
+[] Drei-Jahres-Plan (16)
+
+[] Zwei-Minuten-Hass-Sendung (19)
+
+[] Schwindel (24)
+[] ganzen (22)
+[] übrigen (23)
+
+[] ganzen (22)
+
+[] übrigen (23)
+
+[] Begeisterung (26)
+
 # sent_id = 2696
 # text = Das war sehr richtig , dachte Winston .
 1	Das	d	PRON	PDS	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	_
@@ -1004,6 +2428,20 @@
 6	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
+
+[] dachte (6)
+[] Das war sehr richtig , (4)
+[] Winston (7)
+
+[] richtig (4)
+[] Das (1)
+[] sehr (3)
+
+[] Das (1)
+
+[] sehr (3)
+
+[] Winston (7)
 
 # sent_id = 2697
 # text = Es bestand ein unmittelbarer , enger Zusammenhang zwischen Enthaltsamkeit und politischer Strenggläubigkeit .
@@ -1021,10 +2459,29 @@
 12	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	9	conj	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] bestand (2)
+[] ein unmittelbarer , enger Zusammenhang zwischen Enthaltsamkeit und politischer Strenggläubigkeit (7)
+
+[] Zusammenhang (7)
+[] unmittelbarer (4)
+[] , enger (6)
+[] zwischen Enthaltsamkeit und politischer Strenggläubigkeit (9)
+
+[] unmittelbarer (4)
+
+[] enger (6)
+
+[] Enthaltsamkeit (9)
+
+[] Strenggläubigkeit (12)
+[] politischer (11)
+
+[] politischer (11)
+
 # sent_id = 2698
 # text = Hätte man sonst Furcht , Hass und fanatischen Glauben , wie sie die Partei bei ihren Mitgliedern voraussetzte , in der richtigen Weißglut erhalten können , wenn man nicht einen mächtigen Urtrieb auf Flaschen zog , um ihn als Treibstoff zu benutzen ?
 1	Hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	aux	_	_
-2	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	24	nsubj	_	_
+2	man	man	PRON	PIS	Definite=Ind|Gender=Neut	24	nsubj	_	_
 3	sonst	sonst	ADV	ADV	_	24	advmod	_	_
 4	Furcht	Furcht	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	24	obj	_	_
 5	,	,	PUNCT	$,	_	6	punct	_	_
@@ -1050,7 +2507,7 @@
 25	können	können	AUX	VMINF	VerbForm=Inf	24	aux	_	_
 26	,	,	PUNCT	$,	_	35	punct	_	_
 27	wenn	wenn	SCONJ	KOUS	_	35	mark	_	_
-28	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	35	nsubj	_	_
+28	man	man	PRON	PIS	Definite=Ind|Gender=Neut	35	nsubj	_	_
 29	nicht	nicht	PART	PTKNEG	Polarity=Neg	35	advmod	_	_
 30	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 31	mächtigen	mächtig	ADJ	ADJA	Case=Acc|Gender=Masc|Number=Sing	32	amod	_	_
@@ -1066,6 +2523,72 @@
 41	zu	zu	PART	PTKZU	_	42	mark	_	_
 42	benutzen	benutzen	VERB	VVINF	VerbForm=Inf	35	advcl	_	_
 43	?	?	PUNCT	$.	_	24	punct	_	_
+
+[] erhalten (24)
+[] man (2)
+[] sonst (3)
+[] Furcht , Hass und fanatischen Glauben (4)
+[] , wie sie die Partei bei ihren Mitgliedern voraussetzte , (18)
+[] in der richtigen Weißglut (23)
+[] , wenn man nicht einen mächtigen Urtrieb auf Flaschen zog , um ihn als Treibstoff zu benutzen (35)
+
+[] man (2)
+
+[] sonst (3)
+
+[] Furcht (4)
+
+[] Hass (6)
+
+[] Glauben (9)
+[] fanatischen (8)
+
+[] fanatischen (8)
+
+[] voraussetzte (18)
+[] sie (12)
+[] die Partei (14)
+[] bei ihren Mitgliedern (17)
+
+[] sie (12)
+
+[] Partei (14)
+
+[] Mitgliedern (17)
+[] ihren (16)
+
+[] ihren (16)
+
+[] Weißglut (23)
+[] richtigen (22)
+
+[] richtigen (22)
+
+[] zog (35)
+[] man (28)
+[] nicht (29)
+[] einen mächtigen Urtrieb auf Flaschen (32)
+[] , um ihn als Treibstoff zu benutzen (42)
+
+[] man (28)
+
+[] nicht (29)
+
+[] Urtrieb (32)
+[] mächtigen (31)
+[] auf Flaschen (34)
+
+[] mächtigen (31)
+
+[] Flaschen (34)
+
+[] benutzen (42)
+[] ihn (38)
+[] als Treibstoff (40)
+
+[] ihn (38)
+
+[] Treibstoff (40)
 
 # sent_id = 2699
 # text = Der Sexualtrieb war für die Partei gefährlich , und sie hatte gelernt , ihn in ihren Dienst zu spannen .
@@ -1090,14 +2613,50 @@
 19	spannen	spannen	VERB	VVINF	VerbForm=Inf	12	xcomp	_	_
 20	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] gefährlich (7)
+[] Der Sexualtrieb (2)
+[] für die Partei (6)
+
+[] Sexualtrieb (2)
+
+[] Partei (6)
+
+[] gelernt (12)
+[] sie (10)
+[] , ihn in ihren Dienst zu spannen (19)
+
+[] sie (10)
+
+[] spannen (19)
+[] ihn (14)
+[] in ihren Dienst (17)
+
+[] ihn (14)
+
+[] Dienst (17)
+[] ihren (16)
+
+[] ihren (16)
+
 # sent_id = 2700
 # text = Ähnlich war man mit dem Familiensinn verfahren .
 1	Ähnlich	ähnlich	ADJ	ADJD	_	7	advmod	_	_
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
-3	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	7	nsubj	_	_
+3	man	man	PRON	PIS	Definite=Ind|Gender=Neut	7	nsubj	_	_
 4	mit	mit	ADP	APPR	_	6	case	_	_
 5	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Familiensinn	Familiensinn	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	7	nmod	_	_
 7	verfahren	verfahren	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] verfahren (7)
+[] Ähnlich (1)
+[] man (3)
+[] mit dem Familiensinn (6)
+
+[] Ähnlich (1)
+
+[] man (3)
+
+[] Familiensinn (6)
 

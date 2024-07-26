@@ -8,6 +8,8 @@
 6	Clement's	Clement	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	1	flat	_	_
 7	,	,	PUNCT	$,	_	1	punct	_	_
 
+[] Say (1)
+
 # sent_id = 1952
 # text = You owe me three farthings ,
 1	You	you	X	FM	_	2	nsubj	_	_
@@ -17,12 +19,28 @@
 5	farthings	farthing	X	FM	_	2	obj	_	_
 6	,	,	PUNCT	$,	_	2	punct	_	_
 
+[] owe (2)
+[] You (1)
+[] me (3)
+[] three farthings (5)
+
+[] You (1)
+
+[] me (3)
+
+[] farthings (5)
+[] three (4)
+
+[] three (4)
+
 # sent_id = 1953
 # text = Say the - «
 1	Say	say	X	FM	_	0	root	_	_
 2	the	the	X	FM	_	1	flat	_	_
 3	-	-	PUNCT	$.	_	1	punct	_	_
 4	«	«	PUNCT	$(	_	1	punct	_	_
+
+[] Say (1)
 
 # sent_id = 1954
 # text = Plötzlich erstarrte sein Herz zu Eis , und seine Knie wurden wachsweich .
@@ -39,6 +57,31 @@
 11	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 12	wachsweich	wachsweich	ADJ	ADJD	_	11	xcomp	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] erstarrte (2)
+[] Plötzlich (1)
+[] sein Herz (4)
+[] zu Eis (6)
+
+[] Plötzlich (1)
+
+[] Herz (4)
+[] sein (3)
+
+[] sein (3)
+
+[] Eis (6)
+
+[] wurden (11)
+[] seine Knie (10)
+[] wachsweich (12)
+
+[] Knie (10)
+[] seine (9)
+
+[] seine (9)
+
+[] wachsweich (12)
 
 # sent_id = 1955
 # text = Eine Gestalt im blauen Trainingsanzug kam ihm , keine zehn Meter entfernt , auf der Straße entgegen .
@@ -61,6 +104,38 @@
 17	entgegen	entgegen	ADP	PTKVZ	_	6	compound:prt	_	_
 18	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] kam (6)
+[] Eine Gestalt im blauen Trainingsanzug (2)
+[] ihm (7)
+[] , keine zehn Meter entfernt , (12)
+[] auf der Straße (16)
+[] entgegen (17)
+
+[] Gestalt (2)
+[] im blauen Trainingsanzug (5)
+
+[] Trainingsanzug (5)
+[] blauen (4)
+
+[] blauen (4)
+
+[] ihm (7)
+
+[] entfernt (12)
+[] keine zehn Meter (11)
+
+[] Meter (11)
+[] keine (9)
+[] zehn (10)
+
+[] keine (9)
+
+[] zehn (10)
+
+[] Straße (16)
+
+[] entgegen (17)
+
 # sent_id = 1956
 # text = Es war das Mädchen der Literaturabteilung , das Mädchen mit dem dunklen Haar .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
@@ -78,6 +153,22 @@
 13	Haar	Haar	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	9	nmod	_	_
 14	.	.	PUNCT	$.	_	4	punct	_	_
 
+[] Mädchen (4)
+[] Es (1)
+[] der Literaturabteilung (6)
+
+[] Es (1)
+
+[] Literaturabteilung (6)
+
+[] Mädchen (9)
+[] mit dem dunklen Haar (13)
+
+[] Haar (13)
+[] dunklen (12)
+
+[] dunklen (12)
+
 # sent_id = 1957
 # text = Die Beleuchtung war schlecht , aber er konnte sie ohne weiteres erkennen .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
@@ -93,6 +184,22 @@
 11	weiteres	weit	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	12	obl	_	_
 12	erkennen	erkennen	VERB	VVINF	VerbForm=Inf	4	conj	_	_
 13	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] schlecht (4)
+[] Die Beleuchtung (2)
+
+[] Beleuchtung (2)
+
+[] erkennen (12)
+[] er (7)
+[] sie (9)
+[] ohne weiteres (11)
+
+[] er (7)
+
+[] sie (9)
+
+[] weiteres (11)
 
 # sent_id = 1958
 # text = Sie blickte ihm gerade ins Gesicht und ging dann rasch weiter , als habe sie ihn nicht bemerkt .
@@ -116,10 +223,47 @@
 18	bemerkt	bemerken	VERB	VVPP	Verbform=Part	8	advcl	_	_
 19	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] blickte (2)
+[] Sie (1)
+[] ihm (3)
+[] gerade (4)
+[] ins Gesicht (6)
+
+[] Sie (1)
+
+[] ihm (3)
+
+[] gerade (4)
+
+[] Gesicht (6)
+
+[] ging (8)
+[] dann (9)
+[] rasch (10)
+[] weiter (11)
+[] , als habe sie ihn nicht bemerkt (18)
+
+[] dann (9)
+
+[] rasch (10)
+
+[] weiter (11)
+
+[] bemerkt (18)
+[] sie (15)
+[] ihn (16)
+[] nicht (17)
+
+[] sie (15)
+
+[] ihn (16)
+
+[] nicht (17)
+
 # sent_id = 1959
 # text = Ein paar Sekunden war Winston wie gelähmt und konnte keinen Fuß vor den anderen setzen .
 1	Ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	3	det	_	_
+2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut	3	det	_	_
 3	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	7	nmod	_	_
 4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
 5	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
@@ -134,6 +278,25 @@
 14	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	obl	_	_
 15	setzen	setzen	VERB	VVINF	VerbForm=Inf	7	conj	_	_
 16	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] gelähmt (7)
+[] Ein paar Sekunden (3)
+[] Winston (5)
+
+[] Sekunden (3)
+
+[] Winston (5)
+
+[] setzen (15)
+[] keinen Fuß (11)
+[] vor den anderen (14)
+
+[] Fuß (11)
+[] keinen (10)
+
+[] keinen (10)
+
+[] anderen (14)
 
 # sent_id = 1960
 # text = Dann bog er nach rechts ab und schritt rasch aus , ohne im ersten Augenblick zu merken , dass er in der verkehrten Richtung ging .
@@ -164,6 +327,49 @@
 25	ging	gehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	ccomp	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] bog (2)
+[] Dann (1)
+[] er (3)
+[] nach rechts (5)
+[] ab (6)
+
+[] Dann (1)
+
+[] er (3)
+
+[] rechts (5)
+
+[] ab (6)
+
+[] schritt (8)
+[] rasch (9)
+[] aus (10)
+[] , ohne im ersten Augenblick zu merken , dass er in der verkehrten Richtung ging (17)
+
+[] rasch (9)
+
+[] aus (10)
+
+[] merken (17)
+[] im ersten Augenblick (15)
+[] , dass er in der verkehrten Richtung ging (25)
+
+[] Augenblick (15)
+[] ersten (14)
+
+[] ersten (14)
+
+[] ging (25)
+[] er (20)
+[] in der verkehrten Richtung (24)
+
+[] er (20)
+
+[] Richtung (24)
+[] verkehrten (23)
+
+[] verkehrten (23)
+
 # sent_id = 1961
 # text = Eines stand jedenfalls fest .
 1	Eines	ein	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	2	nsubj	_	_
@@ -171,6 +377,17 @@
 3	jedenfalls	jedenfalls	ADV	ADV	_	2	advmod	_	_
 4	fest	fest	ADP	PTKVZ	_	2	compound:prt	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] stand (2)
+[] Eines (1)
+[] jedenfalls (3)
+[] fest (4)
+
+[] Eines (1)
+
+[] jedenfalls (3)
+
+[] fest (4)
 
 # sent_id = 1962
 # text = Es gab keinen Zweifel mehr , dass das Mädchen ihm nachspionierte .
@@ -186,6 +403,26 @@
 10	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	iobj	_	_
 11	nachspionierte	nachspionieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	csubj	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] gab (2)
+[] keinen Zweifel (4)
+[] mehr (5)
+[] , dass das Mädchen ihm nachspionierte (11)
+
+[] Zweifel (4)
+[] keinen (3)
+
+[] keinen (3)
+
+[] mehr (5)
+
+[] nachspionierte (11)
+[] das Mädchen (9)
+[] ihm (10)
+
+[] Mädchen (9)
+
+[] ihm (10)
 
 # sent_id = 1963
 # text = Sie musste ihn verfolgt haben , denn es war nicht glaubhaft , dass sie aus reinem Zufall am selben Abend durch dieselbe obskure Hintergasse kam , kilometerweit von allen Vierteln entfernt , in denen Parteimitglieder wohnten .
@@ -227,6 +464,61 @@
 36	wohnten	wohnen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 37	.	.	PUNCT	$.	_	4	punct	_	_
 
+[] verfolgt (4)
+[] Sie (1)
+[] ihn (3)
+
+[] Sie (1)
+
+[] ihn (3)
+
+[] glaubhaft (11)
+[] nicht (10)
+[] , dass sie aus reinem Zufall am selben Abend durch dieselbe obskure Hintergasse kam , kilometerweit von allen Vierteln entfernt , in denen Parteimitglieder wohnten (25)
+
+[] nicht (10)
+
+[] kam (25)
+[] sie (14)
+[] aus reinem Zufall (17)
+[] am selben Abend (20)
+[] durch dieselbe obskure Hintergasse (24)
+[] , kilometerweit von allen Vierteln entfernt , in denen Parteimitglieder wohnten (31)
+
+[] sie (14)
+
+[] Zufall (17)
+[] reinem (16)
+
+[] reinem (16)
+
+[] Abend (20)
+[] selben (19)
+
+[] selben (19)
+
+[] Hintergasse (24)
+[] obskure (23)
+
+[] obskure (23)
+
+[] entfernt (31)
+[] kilometerweit (27)
+[] von allen Vierteln , in denen Parteimitglieder wohnten (30)
+
+[] kilometerweit (27)
+
+[] Vierteln (30)
+[] , in denen Parteimitglieder wohnten (36)
+
+[] wohnten (36)
+[] in denen (34)
+[] Parteimitglieder (35)
+
+[] denen (34)
+
+[] Parteimitglieder (35)
+
 # sent_id = 1964
 # text = Es wäre ein zu großer Zufall gewesen .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
@@ -237,6 +529,17 @@
 6	Zufall	Zufall	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 7	gewesen	sein	AUX	VAPP	Verbform=Part	6	cop	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
+
+[] Zufall (6)
+[] Es (1)
+[] zu großer (5)
+
+[] Es (1)
+
+[] großer (5)
+[] zu (4)
+
+[] zu (4)
 
 # sent_id = 1965
 # text = Ob sie wirklich eine Agentin der Gedankenpolizei oder lediglich ein von übertriebenem Diensteifer inspirierter Amateur-Spitzel war , blieb sich so ziemlich gleich .
@@ -258,11 +561,51 @@
 16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
 17	,	,	PUNCT	$,	_	5	punct	_	_
 18	blieb	bleiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-19	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	22	nsubj	_	_
+19	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	22	nsubj	_	_
 20	so	so	ADV	ADV	_	18	advmod	_	_
 21	ziemlich	ziemlich	ADV	ADV	_	18	advmod	_	_
 22	gleich	gleich	ADJ	ADJD	_	18	xcomp	_	_
 23	.	.	PUNCT	$.	_	18	punct	_	_
+
+[] blieb (18)
+[] Ob sie wirklich eine Agentin der Gedankenpolizei oder lediglich ein von übertriebenem Diensteifer inspirierter Amateur-Spitzel war , (5)
+[] so (20)
+[] ziemlich (21)
+[] sich gleich (22)
+
+[] Agentin (5)
+[] sie (2)
+[] wirklich (3)
+[] der Gedankenpolizei (7)
+
+[] sie (2)
+
+[] wirklich (3)
+
+[] Gedankenpolizei (7)
+
+[] Amateur-Spitzel (15)
+[] lediglich (9)
+[] von übertriebenem Diensteifer inspirierter (14)
+
+[] lediglich (9)
+
+[] inspirierter (14)
+[] von übertriebenem Diensteifer (13)
+
+[] Diensteifer (13)
+[] übertriebenem (12)
+
+[] übertriebenem (12)
+
+[] so (20)
+
+[] ziemlich (21)
+
+[] gleich (22)
+[] sich (19)
+
+[] sich (19)
 
 # sent_id = 1966
 # text = Es genügte , dass sie ihn beobachtete .
@@ -274,6 +617,17 @@
 6	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
 7	beobachtete	beobachten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] genügte (2)
+[] , dass sie ihn beobachtete (7)
+
+[] beobachtete (7)
+[] sie (5)
+[] ihn (6)
+
+[] sie (5)
+
+[] ihn (6)
 
 # sent_id = 1967
 # text = Vermutlich hatte sie ihn auch in die Kneipe hineingehen sehen .
@@ -289,6 +643,26 @@
 10	sehen	sehen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
+[] sehen (10)
+[] Vermutlich (1)
+[] sie (3)
+[] ihn (4)
+[] auch (5)
+[] in die Kneipe (8)
+[] hineingehen (9)
+
+[] Vermutlich (1)
+
+[] sie (3)
+
+[] ihn (4)
+
+[] auch (5)
+
+[] Kneipe (8)
+
+[] hineingehen (9)
+
 # sent_id = 1968
 # text = Ihm wurde das Gehen schwer .
 1	Ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	iobj	_	_
@@ -297,6 +671,17 @@
 4	Gehen	Gehen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
 5	schwer	schwer	ADJ	ADJD	_	2	xcomp	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] wurde (2)
+[] das Gehen (4)
+[] Ihm schwer (5)
+
+[] Gehen (4)
+
+[] schwer (5)
+[] Ihm (1)
+
+[] Ihm (1)
 
 # sent_id = 1969
 # text = Der gläserne Gegenstand in seiner Tasche schlug bei jedem Schritt an seine Hüfte , und er dachte halb und halb daran , ihn herauszuziehen und wegzuwerfen .
@@ -328,6 +713,49 @@
 26	wegzuwerfen	wegwerfen	VERB	VVIZU	VerbForm=Inf	24	conj	_	_
 27	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] schlug (7)
+[] Der gläserne Gegenstand in seiner Tasche (3)
+[] bei jedem Schritt (10)
+[] an seine Hüfte (13)
+
+[] Gegenstand (3)
+[] gläserne (2)
+[] in seiner Tasche (6)
+
+[] gläserne (2)
+
+[] Tasche (6)
+[] seiner (5)
+
+[] seiner (5)
+
+[] Schritt (10)
+
+[] Hüfte (13)
+[] seine (12)
+
+[] seine (12)
+
+[] dachte (17)
+[] er (16)
+[] halb und halb (18)
+
+[] er (16)
+
+[] halb (18)
+
+[] halb (20)
+
+[] daran (21)
+[] , ihn herauszuziehen und wegzuwerfen (24)
+
+[] herauszuziehen (24)
+[] ihn (23)
+
+[] ihn (23)
+
+[] wegzuwerfen (26)
+
 # sent_id = 1970
 # text = Das Schlimmste waren seine Leibschmerzen .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
@@ -337,10 +765,18 @@
 5	Leibschmerzen	Leibschmerz	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] Leibschmerzen (5)
+[] Das Schlimmste (2)
+[] seine (4)
+
+[] Schlimmste (2)
+
+[] seine (4)
+
 # sent_id = 1971
 # text = Ein paar Augenblicke lang hatte er das Gefühl , er würde sterben , wenn er nicht bald eine Toilette erreichte .
 1	Ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
-2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	3	det	_	_
+2	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut	3	det	_	_
 3	Augenblicke	Augenblick	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	5	obl	_	_
 4	lang	lang	ADJ	ADJD	_	3	advmod	_	_
 5	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -361,6 +797,41 @@
 20	erreichte	erreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	_
 21	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] hatte (5)
+[] Ein paar Augenblicke lang (3)
+[] er (6)
+[] das Gefühl , er würde sterben , wenn er nicht bald eine Toilette erreichte (8)
+
+[] Augenblicke (3)
+[] lang (4)
+
+[] lang (4)
+
+[] er (6)
+
+[] Gefühl (8)
+[] , er würde sterben , wenn er nicht bald eine Toilette erreichte (12)
+
+[] sterben (12)
+[] er (10)
+[] , wenn er nicht bald eine Toilette erreichte (20)
+
+[] er (10)
+
+[] erreichte (20)
+[] er (15)
+[] nicht (16)
+[] bald (17)
+[] eine Toilette (19)
+
+[] er (15)
+
+[] nicht (16)
+
+[] bald (17)
+
+[] Toilette (19)
+
 # sent_id = 1972
 # text = Doch in einem solchen Viertel gab es wohl keine öffentlichen Bedürfnisanstalten .
 1	Doch	doch	CCONJ	KON	_	6	advmod	_	_
@@ -376,11 +847,34 @@
 11	Bedürfnisanstalten	Bedürfnisanstalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	6	nsubj	_	_
 12	.	.	PUNCT	$.	_	6	punct	_	_
 
+[] gab (6)
+[] Doch (1)
+[] in einem solchen Viertel (5)
+[] wohl (8)
+[] keine öffentlichen Bedürfnisanstalten (11)
+
+[] Doch (1)
+
+[] Viertel (5)
+[] solchen (4)
+
+[] solchen (4)
+
+[] wohl (8)
+
+[] Bedürfnisanstalten (11)
+[] keine (9)
+[] öffentlichen (10)
+
+[] keine (9)
+
+[] öffentlichen (10)
+
 # sent_id = 1973
 # text = Dann lösten sich die Krämpfe und ließen nur einen dumpfen Schmerz zurück .
 1	Dann	dann	ADV	ADV	_	2	advmod	_	_
 2	lösten	lösen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	2	obj	_	_
+3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	2	obj	_	_
 4	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	5	det	_	_
 5	Krämpfe	Krampf	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
 6	und	und	CCONJ	KON	_	7	cc	_	_
@@ -392,6 +886,31 @@
 12	zurück	zurück	ADP	PTKVZ	_	7	compound:prt	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] lösten (2)
+[] Dann (1)
+[] sich (3)
+[] die Krämpfe (5)
+
+[] Dann (1)
+
+[] sich (3)
+
+[] Krämpfe (5)
+
+[] ließen (7)
+[] nur (8)
+[] einen dumpfen Schmerz (11)
+[] zurück (12)
+
+[] nur (8)
+
+[] Schmerz (11)
+[] dumpfen (10)
+
+[] dumpfen (10)
+
+[] zurück (12)
+
 # sent_id = 1974
 # text = Die Straße war eine Sackgasse .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
@@ -401,6 +920,11 @@
 5	Sackgasse	Sackgasse	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] Sackgasse (5)
+[] Die Straße (2)
+
+[] Straße (2)
+
 # sent_id = 1975
 # text = Winston blieb stehen und überlegte ein paar Sekunden unschlüssig , was er tun sollte .
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
@@ -409,7 +933,7 @@
 4	und	und	CCONJ	KON	_	5	cc	_	_
 5	überlegte	überlegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 6	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	8	det	_	_
-7	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	8	det	_	_
+7	paar	paar	DET	PIAT	Definite=Ind|Gender=Neut	8	det	_	_
 8	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	5	obl	_	_
 9	unschlüssig	unschlüssig	ADJ	ADJD	_	5	xcomp	_	_
 10	,	,	PUNCT	$,	_	13	punct	_	_
@@ -418,6 +942,31 @@
 13	tun	tun	VERB	VVINF	VerbForm=Inf	8	acl	_	_
 14	sollte	sollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] blieb (2)
+[] Winston (1)
+[] stehen (3)
+
+[] Winston (1)
+
+[] stehen (3)
+
+[] überlegte (5)
+[] ein paar Sekunden , was er tun sollte (8)
+[] unschlüssig (9)
+
+[] Sekunden (8)
+[] , was er tun sollte (13)
+
+[] tun (13)
+[] was (11)
+[] er (12)
+
+[] was (11)
+
+[] er (12)
+
+[] unschlüssig (9)
 
 # sent_id = 1976
 # text = Dann kehrte er um und ging den Weg zurück .
@@ -431,6 +980,25 @@
 8	Weg	Weg	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	6	obj	_	_
 9	zurück	zurück	ADP	PTKVZ	_	6	compound:prt	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] kehrte (2)
+[] Dann (1)
+[] er (3)
+[] um (4)
+
+[] Dann (1)
+
+[] er (3)
+
+[] um (4)
+
+[] ging (6)
+[] den Weg (8)
+[] zurück (9)
+
+[] Weg (8)
+
+[] zurück (9)
 
 # sent_id = 1977
 # text = Im Kehrtmachen fiel ihm ein , dass das Mädchen erst vor drei Minuten an ihm vorbeigekommen war und er sie laufend vermutlich einholen konnte .
@@ -460,11 +1028,54 @@
 24	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 25	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] fiel (3)
+[] Im Kehrtmachen (2)
+[] ihm (4)
+[] ein (5)
+[] , dass das Mädchen erst vor drei Minuten an ihm vorbeigekommen war und er sie laufend vermutlich einholen konnte (16)
+
+[] Kehrtmachen (2)
+
+[] ihm (4)
+
+[] ein (5)
+
+[] vorbeigekommen (16)
+[] das Mädchen (9)
+[] erst vor drei Minuten (13)
+[] an ihm (15)
+
+[] Mädchen (9)
+
+[] Minuten (13)
+[] erst (10)
+[] drei (12)
+
+[] erst (10)
+
+[] drei (12)
+
+[] ihm (15)
+
+[] einholen (23)
+[] er (19)
+[] sie (20)
+[] laufend (21)
+[] vermutlich (22)
+
+[] er (19)
+
+[] sie (20)
+
+[] laufend (21)
+
+[] vermutlich (22)
+
 # sent_id = 1978
 # text = Er konnte sich an ihre Fersen heften , bis sie eine verlassene Gegend erreicht hatten , und ihr dann mit einem Pflasterstein den Schädel einschlagen .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
 2	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
-3	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	7	obj	_	_
+3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	7	obj	_	_
 4	an	an	ADP	APPR	_	6	case	_	_
 5	ihre	ihr	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	6	det:poss	_	_
 6	Fersen	Ferse	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	7	obl	_	_
@@ -489,6 +1100,46 @@
 25	einschlagen	einschlagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
 26	.	.	PUNCT	$.	_	7	punct	_	_
 
+[] heften (7)
+[] Er (1)
+[] sich (3)
+[] an ihre Fersen (6)
+[] , bis sie eine verlassene Gegend erreicht hatten , und ihr dann mit einem Pflasterstein den Schädel einschlagen (14)
+
+[] Er (1)
+
+[] sich (3)
+
+[] Fersen (6)
+[] ihre (5)
+
+[] ihre (5)
+
+[] erreicht (14)
+[] sie (10)
+[] eine verlassene Gegend (13)
+
+[] sie (10)
+
+[] Gegend (13)
+[] verlassene (12)
+
+[] verlassene (12)
+
+[] einschlagen (25)
+[] ihr (18)
+[] dann (19)
+[] mit einem Pflasterstein (22)
+[] den Schädel (24)
+
+[] ihr (18)
+
+[] dann (19)
+
+[] Pflasterstein (22)
+
+[] Schädel (24)
+
 # sent_id = 1979
 # text = Der Glasgegenstand in seiner Tasche war schwer genug dazu .
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
@@ -501,6 +1152,23 @@
 8	genug	genug	ADV	ADV	_	7	advmod	_	_
 9	dazu	dazu	ADP	PROAV	PronType=Dem	7	advmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] schwer (7)
+[] Der Glasgegenstand in seiner Tasche (2)
+[] genug (8)
+[] dazu (9)
+
+[] Glasgegenstand (2)
+[] in seiner Tasche (5)
+
+[] Tasche (5)
+[] seiner (4)
+
+[] seiner (4)
+
+[] genug (8)
+
+[] dazu (9)
 
 # sent_id = 1980
 # text = Aber er ließ diese Idee sofort wieder fallen , denn schon der Gedanke an irgendeine körperliche Anstrengung war ihm unerträglich .
@@ -526,6 +1194,40 @@
 20	unerträglich	unerträglich	ADJ	ADJD	_	3	conj	_	_
 21	.	.	PUNCT	$.	_	3	punct	_	_
 
+[] ließ (3)
+[] er (2)
+[] diese Idee (5)
+[] sofort (6)
+[] wieder (7)
+[] fallen (8)
+
+[] er (2)
+
+[] Idee (5)
+
+[] sofort (6)
+
+[] wieder (7)
+
+[] fallen (8)
+
+[] unerträglich (20)
+[] schon der Gedanke an irgendeine körperliche Anstrengung (13)
+[] ihm (19)
+
+[] Gedanke (13)
+[] schon (11)
+[] an irgendeine körperliche Anstrengung (17)
+
+[] schon (11)
+
+[] Anstrengung (17)
+[] körperliche (16)
+
+[] körperliche (16)
+
+[] ihm (19)
+
 # sent_id = 1981
 # text = Er brachte es einfach nicht fertig , zu laufen und zu einem Schlag auszuholen .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -544,6 +1246,31 @@
 14	auszuholen	ausholen	VERB	VVIZU	VerbForm=Inf	9	conj	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] brachte (2)
+[] Er (1)
+[] es (3)
+[] einfach nicht (5)
+[] fertig , zu laufen und zu einem Schlag auszuholen (6)
+
+[] Er (1)
+
+[] es (3)
+
+[] nicht (5)
+[] einfach (4)
+
+[] einfach (4)
+
+[] fertig (6)
+[] , zu laufen und zu einem Schlag auszuholen (9)
+
+[] laufen (9)
+
+[] auszuholen (14)
+[] zu einem Schlag (13)
+
+[] Schlag (13)
+
 # sent_id = 1982
 # text = Außerdem war sie jung und kräftig und würde sich verteidigen .
 1	Außerdem	außerdem	ADP	PROAV	PronType=Dem	4	advmod	_	_
@@ -554,9 +1281,24 @@
 6	kräftig	kräftig	ADJ	ADJD	_	4	conj	_	_
 7	und	und	CCONJ	KON	_	10	cc	_	_
 8	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
-9	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
+9	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	10	obj	_	_
 10	verteidigen	verteidigen	VERB	VVINF	VerbForm=Inf	4	conj	_	_
 11	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] jung (4)
+[] Außerdem (1)
+[] sie (3)
+
+[] Außerdem (1)
+
+[] sie (3)
+
+[] kräftig (6)
+
+[] verteidigen (10)
+[] sich (9)
+
+[] sich (9)
 
 # sent_id = 1983
 # text = Er dachte auch daran , noch zum Gemeinschaftshaus zu eilen und dort bis zur Sperrstunde zu bleiben , um sich wenigstens ein teilweises Alibi für den Abend zu verschaffen .
@@ -579,7 +1321,7 @@
 17	bleiben	bleiben	VERB	VVINF	VerbForm=Inf	10	conj	_	_
 18	,	,	PUNCT	$,	_	29	punct	_	_
 19	um	um	SCONJ	KOUI	_	29	mark	_	_
-20	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	29	iobj	_	_
+20	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	29	iobj	_	_
 21	wenigstens	wenigstens	ADV	ADV	_	29	advmod	_	_
 22	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	24	det	_	_
 23	teilweises	teilweise	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Sing	24	amod	_	_
@@ -591,6 +1333,52 @@
 29	verschaffen	verschaffen	VERB	VVINF	VerbForm=Inf	2	advcl	_	_
 30	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] dachte (2)
+[] Er (1)
+[] auch (3)
+[] daran , noch zum Gemeinschaftshaus zu eilen und dort bis zur Sperrstunde zu bleiben (4)
+[] , um sich wenigstens ein teilweises Alibi für den Abend zu verschaffen (29)
+
+[] Er (1)
+
+[] auch (3)
+
+[] daran (4)
+[] , noch zum Gemeinschaftshaus zu eilen und dort bis zur Sperrstunde zu bleiben (10)
+
+[] eilen (10)
+[] noch (6)
+[] zum Gemeinschaftshaus (8)
+
+[] noch (6)
+
+[] Gemeinschaftshaus (8)
+
+[] bleiben (17)
+[] dort (12)
+[] bis zur Sperrstunde (15)
+
+[] dort (12)
+
+[] Sperrstunde (15)
+
+[] verschaffen (29)
+[] sich (20)
+[] wenigstens (21)
+[] ein teilweises Alibi für den Abend (24)
+
+[] sich (20)
+
+[] wenigstens (21)
+
+[] Alibi (24)
+[] teilweises (23)
+[] für den Abend (27)
+
+[] teilweises (23)
+
+[] Abend (27)
+
 # sent_id = 1984
 # text = Aber auch das war unmöglich .
 1	Aber	aber	CCONJ	KON	_	5	cc	_	_
@@ -600,33 +1388,73 @@
 5	unmöglich	unmöglich	ADJ	ADJD	_	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
 
+[] unmöglich (5)
+[] auch das (3)
+
+[] das (3)
+[] auch (2)
+
+[] auch (2)
+
 # sent_id = 1985
 # text = Eine tödliche Ermattung hatte sich seiner bemächtigt .
 1	Eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	tödliche	tödlich	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
 3	Ermattung	Ermattung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	_
 4	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
-5	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	7	obj	_	_
+5	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	7	obj	_	_
 6	seiner	sein	DET	PPOSAT	Case=Gen|Gender=Fem|Number=Sing|Poss=Yes	7	iobj	_	_
 7	bemächtigt	bemächtigen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
+
+[] bemächtigt (7)
+[] Eine tödliche Ermattung (3)
+[] sich (5)
+[] seiner (6)
+
+[] Ermattung (3)
+[] tödliche (2)
+
+[] tödliche (2)
+
+[] sich (5)
+
+[] seiner (6)
 
 # sent_id = 1986
 # text = Er wollte nichts weiter als nach Hause gehen , sich hinsetzen und ausruhen .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 2	wollte	wollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux	_	_
-3	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	8	obj	_	_
+3	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	8	obj	_	_
 4	weiter	weiter	ADV	ADV	_	8	mark	_	_
 5	als	als	CCONJ	KOKOM	_	7	case	_	_
 6	nach	nach	ADP	APPR	_	7	case	_	_
 7	Hause	Haus	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	8	obl	_	_
 8	gehen	gehen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 9	,	,	PUNCT	$,	_	11	punct	_	_
-10	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
+10	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
 11	hinsetzen	hinsetzen	VERB	VVINF	VerbForm=Inf	8	conj	_	_
 12	und	und	CCONJ	KON	_	13	cc	_	_
 13	ausruhen	ausruhen	VERB	VVINF	VerbForm=Inf	11	conj	_	_
 14	.	.	PUNCT	$.	_	8	punct	_	_
+
+[] gehen (8)
+[] Er (1)
+[] nichts (3)
+[] als nach Hause (7)
+
+[] Er (1)
+
+[] nichts (3)
+
+[] Hause (7)
+
+[] hinsetzen (11)
+[] sich (10)
+
+[] sich (10)
+
+[] ausruhen (13)
 
 # sent_id = 1987
 # text = Es war nach zweiundzwanzig Uhr , als er seine Wohnung erreichte .
@@ -642,6 +1470,29 @@
 10	Wohnung	Wohnung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	11	obj	_	_
 11	erreichte	erreichen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] war (2)
+[] Es (1)
+[] nach zweiundzwanzig Uhr (5)
+[] , als er seine Wohnung erreichte (11)
+
+[] Es (1)
+
+[] Uhr (5)
+[] zweiundzwanzig (4)
+
+[] zweiundzwanzig (4)
+
+[] erreichte (11)
+[] er (8)
+[] seine Wohnung (10)
+
+[] er (8)
+
+[] Wohnung (10)
+[] seine (9)
+
+[] seine (9)
 
 # sent_id = 1988
 # text = Um dreiundzwanzig Uhr dreißig würde der Lichtstrom von der Hauptleitung her abgeschaltet werden .
@@ -659,6 +1510,26 @@
 12	abgeschaltet	abschalten	VERB	VVPP	Verbform=Part	0	root	_	_
 13	werden	werden	AUX	VAINF	VerbForm=Inf	12	aux:pass	_	_
 14	.	.	PUNCT	$.	_	12	punct	_	_
+
+[] abgeschaltet (12)
+[] Um dreiundzwanzig Uhr dreißig (3)
+[] der Lichtstrom (7)
+[] von der Hauptleitung her (10)
+
+[] Uhr (3)
+[] dreiundzwanzig (2)
+[] dreißig (4)
+
+[] dreiundzwanzig (2)
+
+[] dreißig (4)
+
+[] Lichtstrom (7)
+
+[] Hauptleitung (10)
+[] her (11)
+
+[] her (11)
 
 # sent_id = 1989
 # text = Er ging in die Küche und goß fast eine ganze Teetasse voll Victory-Gin hinunter .
@@ -678,6 +1549,31 @@
 14	hinunter	hinunter	ADP	PTKVZ	_	7	compound:prt	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] ging (2)
+[] Er (1)
+[] in die Küche (5)
+
+[] Er (1)
+
+[] Küche (5)
+
+[] goß (7)
+[] fast (8)
+[] eine ganze Teetasse voll Victory-Gin (11)
+[] hinunter (14)
+
+[] fast (8)
+
+[] Teetasse (11)
+[] ganze (10)
+[] voll Victory-Gin (13)
+
+[] ganze (10)
+
+[] Victory-Gin (13)
+
+[] hinunter (14)
+
 # sent_id = 1990
 # text = Dann ging er zu dem Tisch in der Nische , setzte sich und zog das Tagebuch aus der Schublade .
 1	Dann	dann	ADV	ADV	_	2	advmod	_	_
@@ -691,7 +1587,7 @@
 9	Nische	Nische	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	2	obl	_	_
 10	,	,	PUNCT	$,	_	11	punct	_	_
 11	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-12	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
+12	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	obj	_	_
 13	und	und	CCONJ	KON	_	14	cc	_	_
 14	zog	ziehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 15	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	16	det	_	_
@@ -700,6 +1596,33 @@
 18	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	Schublade	Schublade	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	14	obl	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] ging (2)
+[] Dann (1)
+[] er (3)
+[] zu dem Tisch (6)
+[] in der Nische (9)
+
+[] Dann (1)
+
+[] er (3)
+
+[] Tisch (6)
+
+[] Nische (9)
+
+[] setzte (11)
+[] sich (12)
+
+[] sich (12)
+
+[] zog (14)
+[] das Tagebuch (16)
+[] aus der Schublade (19)
+
+[] Tagebuch (16)
+
+[] Schublade (19)
 
 # sent_id = 1991
 # text = Aber er schlug es nicht sofort auf .
@@ -711,6 +1634,23 @@
 6	sofort	sofort	ADV	ADV	_	3	advmod	_	_
 7	auf	auf	ADP	PTKVZ	_	3	compound:prt	_	_
 8	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] schlug (3)
+[] er (2)
+[] es (4)
+[] nicht (5)
+[] sofort (6)
+[] auf (7)
+
+[] er (2)
+
+[] es (4)
+
+[] nicht (5)
+
+[] sofort (6)
+
+[] auf (7)
 
 # sent_id = 1992
 # text = Aus dem Televisor kreischte eine blecherne Frauenstimme ein patriotisches Lied .
@@ -725,6 +1665,23 @@
 9	patriotisches	patriotisch	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	10	amod	_	_
 10	Lied	Lied	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	4	obj	_	_
 11	.	.	PUNCT	$.	_	4	punct	_	_
+
+[] kreischte (4)
+[] Aus dem Televisor (3)
+[] eine blecherne Frauenstimme (7)
+[] ein patriotisches Lied (10)
+
+[] Televisor (3)
+
+[] Frauenstimme (7)
+[] blecherne (6)
+
+[] blecherne (6)
+
+[] Lied (10)
+[] patriotisches (9)
+
+[] patriotisches (9)
 
 # sent_id = 1993
 # text = Er saß da und starrte , in dem Versuch , die Stimme aus seinem Bewusstsein auszuschalten , den marmorierten Buchdeckel an .
@@ -751,6 +1708,40 @@
 21	an	an	ADP	PTKVZ	_	5	compound:prt	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] saß (2)
+[] Er (1)
+[] da (3)
+
+[] Er (1)
+
+[] da (3)
+
+[] starrte (5)
+[] , in dem Versuch , die Stimme aus seinem Bewusstsein auszuschalten , (9)
+[] den marmorierten Buchdeckel (20)
+[] an (21)
+
+[] Versuch (9)
+[] , die Stimme aus seinem Bewusstsein auszuschalten , (16)
+
+[] auszuschalten (16)
+[] die Stimme (12)
+[] aus seinem Bewusstsein (15)
+
+[] Stimme (12)
+
+[] Bewusstsein (15)
+[] seinem (14)
+
+[] seinem (14)
+
+[] Buchdeckel (20)
+[] marmorierten (19)
+
+[] marmorierten (19)
+
+[] an (21)
+
 # sent_id = 1994
 # text = Nachts holten sie einen , immer in der Nacht .
 1	Nachts	nachts	ADV	ADV	_	2	advmod	_	_
@@ -764,13 +1755,30 @@
 9	Nacht	Nacht	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	2	obl	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] holten (2)
+[] Nachts (1)
+[] sie (3)
+[] einen (4)
+[] , immer in der Nacht (9)
+
+[] Nachts (1)
+
+[] sie (3)
+
+[] einen (4)
+
+[] Nacht (9)
+[] immer (6)
+
+[] immer (6)
+
 # sent_id = 1995
 # text = Das Richtige war , sich umzubringen , ehe sie einen abholten .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
 2	Richtige	Richtige	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
 4	,	,	PUNCT	$,	_	6	punct	_	_
-5	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	6	obj	_	_
+5	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	6	obj	_	_
 6	umzubringen	umbringen	VERB	VVIZU	VerbForm=Inf	2	csubj	_	_
 7	,	,	PUNCT	$,	_	11	punct	_	_
 8	ehe	ehe	SCONJ	KOUS	_	11	mark	_	_
@@ -778,6 +1786,23 @@
 10	einen	ein	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	11	obj	_	_
 11	abholten	abholen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] Richtige (2)
+[] , sich umzubringen , ehe sie einen abholten (6)
+
+[] umzubringen (6)
+[] sich (5)
+[] , ehe sie einen abholten (11)
+
+[] sich (5)
+
+[] abholten (11)
+[] sie (9)
+[] einen (10)
+
+[] sie (9)
+
+[] einen (10)
 
 # sent_id = 1996
 # text = Zweifellos gab es Menschen , die das taten .
@@ -791,6 +1816,23 @@
 8	taten	tun	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
+[] gab (2)
+[] Zweifellos (1)
+[] Menschen , die das taten (4)
+
+[] Zweifellos (1)
+
+[] Menschen (4)
+[] , die das taten (8)
+
+[] taten (8)
+[] die (6)
+[] das (7)
+
+[] die (6)
+
+[] das (7)
+
 # sent_id = 1997
 # text = Viele Fälle von Verschwinden waren in Wirklichkeit Selbstmorde .
 1	Viele	viel	DET	PIAT	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	2	det	_	_
@@ -803,10 +1845,21 @@
 8	Selbstmorde	Selbstmord	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
+[] Selbstmorde (8)
+[] Viele Fälle von Verschwinden (2)
+[] in Wirklichkeit (7)
+
+[] Fälle (2)
+[] von Verschwinden (4)
+
+[] Verschwinden (4)
+
+[] Wirklichkeit (7)
+
 # sent_id = 1998
 # text = Aber man brauchte den Mut der Verzweiflung , um sich in einer Welt , in der Feuerwaffen oder ein rasch wirkendes Gift vollkommen unmöglich zu beschaffen waren , selbst zu töten .
 1	Aber	aber	CCONJ	KON	_	3	cc	_	_
-2	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	3	nsubj	_	_
+2	man	man	PRON	PIS	Definite=Ind|Gender=Neut	3	nsubj	_	_
 3	brauchte	brauchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Mut	Mut	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	3	obj	_	_
@@ -814,7 +1867,7 @@
 7	Verzweiflung	Verzweiflung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
 8	,	,	PUNCT	$,	_	31	punct	_	_
 9	um	um	SCONJ	KOUI	_	31	mark	_	_
-10	sich	er|es|sie	PRON	PRF	Gender=Neut|Gender=Neut|Gender=Neut|Person=3|Reflex=Yes	31	obj	_	_
+10	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	31	obj	_	_
 11	in	in	ADP	APPR	_	13	case	_	_
 12	einer	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Welt	Welt	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	31	obl	_	_
@@ -837,6 +1890,52 @@
 30	zu	zu	PART	PTKZU	_	31	mark	_	_
 31	töten	töten	VERB	VVINF	VerbForm=Inf	3	xcomp	_	_
 32	.	.	PUNCT	$.	_	3	punct	_	_
+
+[] brauchte (3)
+[] man (2)
+[] den Mut der Verzweiflung (5)
+[] , um sich in einer Welt , in der Feuerwaffen oder ein rasch wirkendes Gift vollkommen unmöglich zu beschaffen waren , selbst zu töten (31)
+
+[] man (2)
+
+[] Mut (5)
+[] der Verzweiflung (7)
+
+[] Verzweiflung (7)
+
+[] töten (31)
+[] sich (10)
+[] in einer Welt , in der Feuerwaffen oder ein rasch wirkendes Gift vollkommen unmöglich zu beschaffen waren , (13)
+[] selbst (29)
+
+[] sich (10)
+
+[] Welt (13)
+[] , in der Feuerwaffen oder ein rasch wirkendes Gift vollkommen unmöglich zu beschaffen waren (26)
+
+[] beschaffen (26)
+[] in der (16)
+[] Feuerwaffen oder ein rasch wirkendes Gift (17)
+[] vollkommen (23)
+[] unmöglich (24)
+
+[] der (16)
+
+[] Feuerwaffen (17)
+
+[] Gift (22)
+[] rasch wirkendes (21)
+
+[] wirkendes (21)
+[] rasch (20)
+
+[] rasch (20)
+
+[] vollkommen (23)
+
+[] unmöglich (24)
+
+[] selbst (29)
 
 # sent_id = 1999
 # text = Er dachte mit Staunen an die biologische Sinnlosigkeit von Schmerz und Angst , an den erbärmlichen Verrat des menschlichen Körpers , der immer genau in dem Augenblick in Schwäche verfällt , in dem man von ihm eine besondere Anstrengung benötigt .
@@ -873,7 +1972,7 @@
 31	,	,	PUNCT	$,	_	40	punct	_	_
 32	in	in	ADP	APPR	_	33	case	_	_
 33	dem	d	PRON	PRELS	Case=Dat|Gender=Masc|Number=Sing|PronType=Rel	40	obl	_	_
-34	man	man	PRON	PIS	Definite=Ind|Gender=Neut|Gender=Neut|Gender=Neut	40	nsubj	_	_
+34	man	man	PRON	PIS	Definite=Ind|Gender=Neut	40	nsubj	_	_
 35	von	von	ADP	APPR	_	36	case	_	_
 36	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	obl	_	_
 37	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
@@ -881,6 +1980,72 @@
 39	Anstrengung	Anstrengung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	40	obj	_	_
 40	benötigt	benötigen	VERB	VVPP	Verbform=Part	30	acl	_	_
 41	.	.	PUNCT	$.	_	2	punct	_	_
+
+[] dachte (2)
+[] Er (1)
+[] mit Staunen (4)
+[] an die biologische Sinnlosigkeit von Schmerz und Angst , an den erbärmlichen Verrat des menschlichen Körpers , der immer genau in dem Augenblick in Schwäche verfällt , in dem man von ihm eine besondere Anstrengung benötigt (8)
+
+[] Er (1)
+
+[] Staunen (4)
+
+[] Sinnlosigkeit (8)
+[] biologische (7)
+[] von Schmerz und Angst (10)
+
+[] biologische (7)
+
+[] Schmerz (10)
+
+[] Angst (12)
+
+[] Verrat (17)
+[] erbärmlichen (16)
+[] des menschlichen Körpers (20)
+[] , der immer genau in dem Augenblick in Schwäche verfällt , in dem man von ihm eine besondere Anstrengung benötigt (30)
+
+[] erbärmlichen (16)
+
+[] Körpers (20)
+[] menschlichen (19)
+
+[] menschlichen (19)
+
+[] verfällt (30)
+[] der (22)
+[] immer (23)
+[] genau (24)
+[] in dem Augenblick (27)
+[] in Schwäche (29)
+[] , in dem man von ihm eine besondere Anstrengung benötigt (40)
+
+[] der (22)
+
+[] immer (23)
+
+[] genau (24)
+
+[] Augenblick (27)
+
+[] Schwäche (29)
+
+[] benötigt (40)
+[] in dem (33)
+[] man (34)
+[] von ihm (36)
+[] eine besondere Anstrengung (39)
+
+[] dem (33)
+
+[] man (34)
+
+[] ihm (36)
+
+[] Anstrengung (39)
+[] besondere (38)
+
+[] besondere (38)
 
 # sent_id = 2000
 # text = Er hätte das dunkelhaarige Mädchen zum Schweigen bringen können , wenn er nur rasch genug gehandelt hätte , aber gerade infolge der Größe der ihm drohenden Gefahr hatte er die Fähigkeit zum Handeln verloren .
@@ -919,4 +2084,59 @@
 33	Handeln	Handeln	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	31	nmod	_	_
 34	verloren	verlieren	VERB	VVPP	Verbform=Part	8	conj	_	_
 35	.	.	PUNCT	$.	_	8	punct	_	_
+
+[] bringen (8)
+[] Er (1)
+[] das dunkelhaarige Mädchen (5)
+[] zum Schweigen (7)
+[] , wenn er nur rasch genug gehandelt hätte (16)
+
+[] Er (1)
+
+[] Mädchen (5)
+[] dunkelhaarige (4)
+
+[] dunkelhaarige (4)
+
+[] Schweigen (7)
+
+[] gehandelt (16)
+[] er (12)
+[] nur (13)
+[] rasch (14)
+[] genug (15)
+
+[] er (12)
+
+[] nur (13)
+
+[] rasch (14)
+
+[] genug (15)
+
+[] verloren (34)
+[] gerade infolge der Größe der ihm drohenden Gefahr (23)
+[] er (29)
+[] die Fähigkeit zum Handeln (31)
+
+[] Größe (23)
+[] gerade (20)
+[] der ihm drohenden Gefahr (27)
+
+[] gerade (20)
+
+[] Gefahr (27)
+[] ihm drohenden (26)
+
+[] drohenden (26)
+[] ihm (25)
+
+[] ihm (25)
+
+[] er (29)
+
+[] Fähigkeit (31)
+[] zum Handeln (33)
+
+[] Handeln (33)
 
