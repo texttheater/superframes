@@ -100,6 +100,9 @@ class Frame:
         return block
 
     def fill_args(self, args: Set[Tuple[str, str]]):
+        # Remove args without annotation
+        self.args = [a for a in self.args if a.label or a.comment]
+        # Add expected args
         for head, text in args:
             if any(a.head == head for a in self.args):
                 continue
