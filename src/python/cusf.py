@@ -60,7 +60,7 @@ def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
 
 class Arg:
 
-    def __init__(self, head: str, text: str = '', label: str='', comment: str=''):
+    def __init__(self, head: str, text: str, label: str, comment: str):
         self.head = head
         self.text = text
         self.label = label
@@ -103,7 +103,7 @@ class Frame:
         for head, text in args:
             if any(a.head == head for a in self.args):
                 continue
-            self.args.append(Arg(head, text))
+            self.args.append(Arg(head, text, '', ''))
 
     def find_arg(self, label: str) -> Optional[Arg]:
         for arg in self.args:
@@ -264,6 +264,7 @@ class Sentence:
                         cursor += 1
 
     def check(self) -> Tuple[int, int, int]:
+        self.to_graph()
         frame_count = 0
         annotated_count = 0
         warnings = 0
@@ -281,10 +282,10 @@ class Sentence:
 
     def to_graph(self) -> nx.Graph:
         graph = nx.Graph()
-        for frame in self.frames:
+        for frame_lineno, frame in zip(self.frame_linenos, self.frames):
             if isinstance(frame, Frame):
-                for arg in frame.args:
-                    graph.add_edge(frame.head, arg.head, label=arg.label)
+                for arg_lineno, arg in enumerate(frame.args, frame_lineno + 1):
+                    graph.add_edge(frame.head, arg.head, label=arg.label, lineno=arg_lineno)
         return graph
 
     def write(self, io: TextIO=sys.stdout):
