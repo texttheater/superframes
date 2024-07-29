@@ -14,11 +14,11 @@
 12	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
 13	Uhren	Uhr	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	14	nsubj	_	_
 14	schlugen	schlagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
-15	gerade	gerade	ADV	ADV	_	16	advmod	_	_
+15	gerade	gerade	ADV	ADV	_	14	advmod	_	_
 16	dreizehn	dreizehn	NUM	CARD	NumType=Card	14	obl	_	_
 17	,	,	PUNCT	$,	_	27	punct	_	_
 18	als	als	SCONJ	KOUS	_	27	mark	_	_
-19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	27	nsubj	_	_
+19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	45	nsubj	_	_
 20	Smith	Smith	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	19	flat	_	_
 21	,	,	PUNCT	$,	_	23	punct	_	_
 22	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
@@ -26,7 +26,7 @@
 24	an	an	ADP	APPR	_	26	case	_	_
 25	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Brust	Brust	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-27	gepresst	pressen	VERB	VVPP	Verbform=Part	14	advcl	_	_
+27	gepresst	pressen	VERB	VVPP	Verbform=Part	45	advcl	_	_
 28	,	,	PUNCT	$,	_	34	punct	_	_
 29	um	um	SCONJ	KOUI	_	34	mark	_	_
 30	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
@@ -50,7 +50,7 @@
 48	auch	auch	ADV	ADV	_	50	advmod	_	_
 49	nicht	nicht	PART	PTKNEG	Polarity=Neg	50	advmod	_	_
 50	rasch	rasch	ADJ	ADJD	_	45	advmod	_	_
-51	genug	genug	ADV	ADV	_	45	advmod	_	_
+51	genug	genug	ADV	ADV	_	50	advmod	_	_
 52	,	,	PUNCT	$,	_	63	punct	_	_
 53	als	als	SCONJ	KOUS	_	63	mark	_	_
 54	dass	dass	SCONJ	KOUS	_	63	mark	_	_
@@ -66,12 +66,12 @@
 64	wäre	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	63	aux	_	_
 65	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] Tag (7)
-[] Es (1)
-[] klarer , kalter (4)
-[] im April (9)
+[CLASS] Tag (7)
+[x-identified] Es (1)
+[m-quality] klarer , kalter (4)
+[m-time] im April (9)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
 [] klarer (4)
 
@@ -79,21 +79,19 @@
 
 [] April (9)
 
-[] schlugen (14)
-[] die Uhren (13)
-[] gerade dreizehn (16)
-[] , als Winston Smith , das Kinn an die Brust gepresst , (27)
-[] , um dem rauhen Wind zu entgehen rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[MESSAGE-INIT] schlugen (14)
+[x-sender] die Uhren (13)
+[target-content] gerade dreizehn (16) # TODO improve checker: recompute argument spans
+[m-time] , als Winston Smith , das Kinn an die Brust gepresst , um dem rauhen Wind zu entgehen , rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[m-time] gerade (15)
 
 [] Uhren (13)
 
 [] dreizehn (16)
-[] gerade (15)
 
-[] gerade (15)
+[TIME] gerade (15)
 
 [] gepresst (27)
-[] Winston Smith (19)
 [] , das Kinn an die Brust (23)
 
 [] Winston (19)
@@ -104,11 +102,12 @@
 [] Brust (26)
 
 [] schlüpfte (45)
+[] Winston Smith (19)
+[] , als , das Kinn an die Brust gepresst , (27)
 [] , um dem rauhen Wind zu entgehen (34)
 [] rasch (36)
 [] durch die Glastüren eines der Häuser des Victory-Blocks (39)
-[] auch nicht rasch , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
-[] genug (51)
+[] auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
 
 [] entgehen (34)
 [] dem rauhen Wind (32)
@@ -131,14 +130,15 @@
 
 [] Victory-Blocks (44)
 
-[] rasch (50)
-[] auch (48)
-[] nicht (49)
-[] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
+[QUALITY] rasch (50)
+[m-mode] auch (48)
+[m-mode] nicht (49)
+[m-quantity] genug (51)
+[m-result] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
 
-[] auch (48)
+[MODE] auch (48)
 
-[] nicht (49)
+[MODE] nicht (49)
 
 [] eingedrungen (63)
 [] nicht (55)
@@ -176,14 +176,14 @@
 10	Fußmatten	Fußmatte	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	7	conj	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] roch (3)
-[] Im Flur (2)
-[] es (4)
-[] nach gekochtem Kohl und feuchten Fußmatten (7)
+[MESSAGE] roch (3)
+[m-location || topic] Im Flur (2)
+[topic || x-noncomp] es (4)
+[content] nach gekochtem Kohl und feuchten Fußmatten (7)
 
 [] Flur (2)
 
-[] es (4)
+[IDENTIFICATION || NONCOMP] es (4)
 
 [] Kohl (7)
 [] gekochtem (6)
@@ -235,11 +235,11 @@
 
 [] grellfarbiges (6)
 
-[] groß (15)
-[] das (9)
-[] für einen Innenraum (12)
-[] eigentlich (13)
-[] zu (14)
+[QUALITY] groß (15)
+[has-quality] das (9)
+[m-reference] für einen Innenraum (12)
+[m-mode] eigentlich (13)
+[m-quantity] zu (14)
 
 [] das (9)
 
@@ -292,13 +292,13 @@
 34	Zügen	Zug	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	27	conj	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stellte (2)
-[] Es (1)
-[] nur (3)
-[] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
-[] dar (13)
+[MESSAGE] stellte (2)
+[x-sender] Es (1)
+[m-mode] nur (3)
+[topic] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
+[m-noncomp] dar (13)
 
-[] Es (1)
+[IDENTIFICATION] Es (1) # TODO anaphoric rolesets and when not to use them -> manual
 
 [] nur (3)
 
@@ -390,25 +390,26 @@
 11	versuchen	versuchen	VERB	VVINF	VerbForm=Inf	4	acl	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Es (1)
-[] keinen Zweck , es mit dem Aufzug zu versuchen (4)
+[SCENE] hatte (2)
+[participant] Es (1)
+[scene] keinen Zweck , es mit dem Aufzug zu versuchen (4)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Zweck (4)
-[] keinen (3)
-[] , es mit dem Aufzug zu versuchen (11)
+[SEQUENCE] Zweck (4)
+[m-mode] keinen (3)
+[followed] , es mit dem Aufzug zu versuchen (11)
+[followed] Es (1)
 
-[] keinen (3)
+[MODE] keinen (3)
 
-[] versuchen (11)
-[] es (6)
-[] mit dem Aufzug (9)
+[SCENE-INIT] versuchen (11)
+[target-scene] es (6)
+[x-means] mit dem Aufzug (9)
 
-[] es (6)
+[IDENTIFICATION] es (6)
 
-[] Aufzug (9)
+[CLASS] Aufzug (9)
 
 # sent_id = 7
 # text = Sogar zu den günstigsten Stunden des Tages funktionierte er nur selten , und zur Zeit war tagsüber der elektrische Strom abgestellt .
