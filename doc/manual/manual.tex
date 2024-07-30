@@ -64,8 +64,6 @@
 
             \Sub\emoji{keycap-asterisk} \fr{ATTRIBUTE} & & \rl{has-attribute} & \rl{attribute} & & & \ref{sec:ATTRIBUTE} \\
 
-            \Sub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
-
             \Sub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \SubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
 
@@ -100,10 +98,9 @@
             \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
             \Sub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
+            \SubSub\emoji{light-bulb} \fr{EXAMPLE} & \rl{} & \rl{example} & \rl{exemplified} & & \rl{} & \ref{sec:EXAMPLE} \\
 
             \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
-
-            \Sub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
 
             \Sub\emoji{abacus} \fr{QUANTITY} & \rl{initial-quantity} & \rl{has-quantity} & \rl{quantity} & & \rl{target-quantity} & \ref{sec:QUANTITY} \\
 
@@ -112,6 +109,8 @@
             \Sub\emoji{performing-arts} \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
 
             \Sub\emoji{zzz} \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
+            \SubSub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
+            \SubSubSub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
             \SubSub\emoji{skull} \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
 
             \Sub\emoji{megaphone} \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
@@ -226,7 +225,7 @@ event, and \rl{transitory-} marks participants at some point during the event.
 
 \ex.\dep{Kim_has-social-relation *divorced#SOCIAL-RELATION-DEINIT* Sandy_initial-social-relation}
 
-\ex.\dep{Kim_x-causer *saved#SITUATION-PREVENTION* Sandy_situator from the dragon_target-situator}
+\ex.\dep{Kim_x-causer *saved#SITUATION-PREVENTION* Sandy_theme from the dragon_target-situator}
 
 The \fr{SCENE} superframe is often evoked by ``light'' verbs that contribute an
 aspectual or modal meaning. Thus, its aspectual variants are especially common.
@@ -493,27 +492,6 @@ participant(s) have the attribute.
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
 
-\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
-\label{sec:CLASS}
-
-\rl{class} indicates the class of entity that \rl{has-class} represents.
-
-Most prototypically evoked by common nouns with no arguments.
-
-\ex.\dep{swallowing an animal#CLASS}
-
-Indefinite pronouns also evoke \fr{CLASS}.
-
-\ex.\dep{She saw *one#CLASS*}
-
-\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
-
-\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
-
-\ex.\dep{*Something#CLASS* is broken}
-
-\ex.\dep{Where I live *everything#CLASS* is small}
-
 \newpage\subsection{\emoji{balance-scale} \fr{COMPARISON}}
 \label{sec:COMPARISON}
 
@@ -567,7 +545,7 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \label{sec:EVENT}
 
 Used for predicates that are inherently dynamic and cannot be framed as
-\fr{-CHANGE}/\fr{-INIT}, so usually activities in terms of Vendler.
+\fr{-CHANGE}/\fr{-INIT}/\fr{-DEINIT}, so usually activities in terms of Vendler.
 
 \ex.\dep{Kim_undergoer 's *adventures#EVENT* in the jungle_m-location}
 
@@ -951,6 +929,15 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{wheat_whole *contains#PART-WHOLE* gluten_part}
 
+\newpage\subsection{\emoji{light-bulb} \fr{EXAMPLE}}
+\label{sec:EXAMPLE}
+
+Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as an example of \fr{exemplified} (aka \fr{whole}).
+
+\ex.\dep{*birds#CLASS* such as storks_m-example}
+
+\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_m-scene wissenschaftliche Methoden_target-content}
+
 \newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
 
@@ -979,19 +966,6 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 \ex.\dep{Caesar_target-possessor 's *conquest#POSSESSION-INIT* of Gaul_possessed}
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
-
-\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
-\label{sec:QUALITY}
-
-\rl{quality} indicates a (permanent) quality/property/manner of \rl{has-quality}.
-
-\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
-
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
-
-\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
-
-\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
 
 \newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
 \label{sec:QUANTITY}
@@ -1064,7 +1038,9 @@ adverbs.
 \newpage\subsection{\emoji{zzz} \fr{STATE}}
 \label{sec:STATE}
 
-\rl{state} indicates a (temporary) state of \rl{has-state}.
+\rl{state} indicates a state of \rl{has-state}. Typically used with predicates
+that do not, in fact, have a \rl{state} role, because the state is already
+incorporated into the meaning of the predicate.
 
 \ex.\dep{when I_has-state was six years_x-quantity *old#STATE*}
 
@@ -1077,6 +1053,49 @@ adverbs.
 \ex.\dep{the six months that they_x-causer need for *digestion#STATE-CHANGE*}
 
 \ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
+
+\newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
+\label{sec:QUALITY}
+
+Special case of \fr{STATE} -- a quality is a bit more permanent than a state;
+the \rl{has-quality} (aka \rl{has-state}) is not expected to change back and
+forth between \rl{quality}s (aka \rl{state}s) regularly.  Also used to describe
+qualitites of events, i.e., manners.
+
+\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
+
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
+
+\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
+
+\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
+
+\ex.\dep{The leaves_has-quality *reddened#QUALITY-INIT*}
+
+\newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
+\label{sec:CLASS}
+
+Special case of \fr{QUALITY} -- a class is even more permanent, in the sense
+that if the \rl{has-class} (aka \rl{has-state}) takes on a new \rl{class} (aka
+\rl{state}), it becomes a new kind of entity.
+
+Most prototypically evoked by common nouns with no arguments.
+
+\ex.\dep{swallowing an animal#CLASS}
+
+\ex.\dep{Kim_participant__has-class *became#SCENE-INIT* a **teacher#CLASS**_target-scene}
+
+Indefinite pronouns also evoke \fr{CLASS}.
+
+\ex.\dep{She saw *one#CLASS*}
+
+\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
+
+\ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
+
+\ex.\dep{*Something#CLASS* is broken}
+
+\ex.\dep{Where I live *everything#CLASS* is small}
 
 \newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
 \label{sec:DESTRUCTION}
@@ -1115,6 +1134,10 @@ For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
 \ex.\dep{Given that I 'm tired_m-followed , I_has-location wo n't be *there#LOCATION*}
 
+Also used to indicate proportional amounts: for each scoop (\rl{followed}), it costs 1 euro (\rl{follows}).
+
+\ex.\dep{It costs 1 *euro#QUANTITY* per scoop_m-followed}
+
 \newpage\subsection{\emoji{joystick} \fr{CAUSATION}}
 \label{sec:CAUSATION}
 
@@ -1140,7 +1163,7 @@ Note how the last example expresses a purpose, but expresses it as a cause, so
 \rl{m-causer} lis the right label to use. Compare this to construal as a
 purpose:
 
-\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-explanation food}
+\ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-purpose food}
 
 \newpage\subsection{\emoji{scroll} \fr{CONDITION}}
 \label{sec:CONDITION}
@@ -1293,6 +1316,18 @@ choice.
 \ex.
 \a.\dep{Kim_x-causer *worked#EVENT*}
 \b.\dep{Kim_x-causer *worked#EVENT* on the drawing_undergoer}
+
+For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) or relation/event nouns. A useful test is to try and add an argument, i.e., a dependent that is assigned a specific role by the noun. For example:
+
+\ex.\dep{a *tree#CLASS*}
+
+\ex.\dep{*venue#LOCATION* of the event_has-location}
+
+\ex.\dep{Kim_has-social-relation 's *brother#SOCIAL-RELATION*}
+
+Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it is not assigned by the noun \emph{tree} but by the possessive construction, so \emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
+
+\ex.\dep{Kim_m-0possessor 's *tree#CLASS*}
 
 \newpage\subsection{Shadow and Default Arguments}
 
@@ -1451,6 +1486,8 @@ predictable, use \rl{m-noncomp}.
 
 \ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp} (does not imply \emph{do} somebody)
 
+\ex.\dep{Es_x-sender *stellte#MESSAGE* ein riesiges Gesicht_topic dar_m-noncomp} (does not imply \emph{stellen} something)
+
 \newpage\subsection{Pronouns with Arguments}
 
 Definite pronouns are normally annotated with \fr{IDENTIFICATION}, indefinite
@@ -1507,9 +1544,6 @@ have to attach it to \emph{habitation}, which evokes a \emph{different}
 but for now we have to live with these issues.
 
 \newpage\section{TODO}
-
-The butter is high in price: high has SCENE-like arguments (participant butter
-and price scene), but also expresses a QUANTITY. SCENE-QUANTITY?
 
 A whole section on sentence adverbs: lieber (MESSAGE), sowieso (CONDITION),
 ungeachtet (CONCESSION), erstmals (TIME), unvermindert (QUANTITY-CONTINUATION)

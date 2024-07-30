@@ -6,6 +6,7 @@ import sys
 from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
+import networkx as nx # type: ignore
 from pyconll.exception import ParseError
 from pyconll.unit.sentence import Sentence as PyCoNLLSentence
 import pyconll
@@ -20,6 +21,7 @@ FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?:
 ARG_DEPS = set((
     'nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl', 'advcl',
     'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod', 'compound', 'orphan',
+    'det:poss',
     # SUD deps:
     'subj', 'udep', 'mod', 'comp',
 ))
@@ -40,25 +42,25 @@ def remove_features(deprel: str) -> str:
 
 
 def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
-    return remove_features(tree.data.deprel) in PRED_DEPS
+    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS)
 
 
 def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
-    return remove_features(tree.data.deprel) in ARG_DEPS
+    return any(tree.data.deprel.startswith(r) for r in ARG_DEPS)
 
 
 def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
     for tree in subtrees(sentence.to_tree()):
         if tree.data.id == token_id:
             nodes = sorted(subtrees(tree), key=lambda t: int(t.data.id))
-            nodes = (t.data.form for t in nodes)
-            return ' '.join(nodes)
+            nodes = [t.data.form for t in nodes]
+            return ' '.join(str(n) for n in nodes)
     return ''
 
 
 class Arg:
 
-    def __init__(self, head: str, text: str = '', label: str='', comment: str=''):
+    def __init__(self, head: str, text: str, label: str, comment: str):
         self.head = head
         self.text = text
         self.label = label
@@ -98,42 +100,64 @@ class Frame:
         return block
 
     def fill_args(self, args: Set[Tuple[str, str]]):
+        # Remove args without annotation
+        self.args = [a for a in self.args if a.label or a.comment]
+        # Add expected args
         for head, text in args:
             if any(a.head == head for a in self.args):
                 continue
-            self.args.append(Arg(head, text))
+            self.args.append(Arg(head, text, '', ''))
 
     def find_arg(self, label: str) -> Optional[Arg]:
         for arg in self.args:
             if arg.label == label:
                 return arg
+        return None
 
-    def check(self, sentid, lineno, frames) -> [bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+        # Check for missing frame label
         if not self.label:
             return False, 0
+        # Check for wrong frame label
         if not labels.check_frame_label(self.label):
             logging.warning('sent %s line %s unknown frame label: %s',
-                    sentid, lineno, self.label)
+                    sentence.syntax[0].id, lineno, self.label)
             return False, 1
+        # Check arguments
         ok = True
         warnings = 0
         for i, arg in enumerate(self.args, start=lineno + 1):
+            # Check for wrong text
+            arg_token = sentence.syntax[0][arg.head]
+            if arg_token.head == self.head:
+                expected_text = serialize_subtree(arg.head, sentence.syntax[0])
+                if arg.text != expected_text:
+                    logging.warning(
+                        'sent %s line %s wrong text for subtree with root %s: '
+                        'is "%s" but should be "%s"', sentence.syntax[0].id, i,
+                        arg.head, arg.text, expected_text,
+                    )
+            else:
+                expected_text = arg_token.form
+                # We don't check in this case, for now.
+            # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
-                        sentid, i, self.label, arg.label)
+                        sentence.syntax[0].id, i, self.label, arg.label)
                 ok = False
                 warnings += 1
+            # Check for missing depictive backlinks
             if arg.label == 'm-depictive':
                 arg_heads = set(a.head for a in self.args)
                 backlink_found = False
-                for frame in frames:
+                for frame in sentence.frames:
                     if frame.head == arg.head:
                         for arg2 in frame.args:
                             if arg2.head in arg_heads:
                                 backlink_found = True
                 if not backlink_found:
                     logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
-                            sentid, i)
+                            sentence.syntax[0].id, i)
                     ok = False
                     warnings += 1
         return ok, warnings
@@ -161,6 +185,11 @@ Frameish = Union[Frame, blocks.Block]
 
 
 class Sentence:
+
+    syntax: PyCoNLLSentence
+    lineno: int
+    frames: List[Frameish]
+    frame_linenos: List[int]
 
     def __init__(self, syntax: PyCoNLLSentence, lineno: int):
         self.syntax = syntax
@@ -255,7 +284,8 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self) -> tuple[int, int]:
+    def check(self) -> Tuple[int, int, int]:
+        self.to_graph()
         frame_count = 0
         annotated_count = 0
         warnings = 0
@@ -265,11 +295,19 @@ class Sentence:
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            ok, w = frame.check(self.syntax[0].id, lineno, self.frames)
+            ok, w = frame.check(self, lineno)
             if ok:
                 annotated_count += 1
             warnings += w
         return frame_count, annotated_count, warnings
+
+    def to_graph(self) -> nx.Graph:
+        graph = nx.Graph()
+        for frame_lineno, frame in zip(self.frame_linenos, self.frames):
+            if isinstance(frame, Frame):
+                for arg_lineno, arg in enumerate(frame.args, frame_lineno + 1):
+                    graph.add_edge(frame.head, arg.head, label=arg.label, lineno=arg_lineno)
+        return graph
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')

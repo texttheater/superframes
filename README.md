@@ -80,6 +80,7 @@ Step 2: Get any updates from the main branch.
 
     git fetch
     git merge origin/main
+    pip3 install -r src/python/requirements.txt
 
 Step 3: Open whatever you are currently annotating (something in `data/`) in
 your favorite text editor and annotate away.
@@ -99,5 +100,6 @@ necessary. For example:
 
 Step 5: Commit your changes and push them to GitHub. For example:
 
-    git commit -u -m 'annotated sentences 1-10'
+    git add -u
+    git commit -m 'annotated sentences 1-10'
     git push
