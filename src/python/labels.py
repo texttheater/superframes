@@ -86,6 +86,7 @@ FRAMES = {
     'MEANS': Rigid('has-means', 'means'),
     'MESSAGE': Flexible('topic', 'content'),
     'PART-WHOLE': Flexible('part', 'whole'),
+    'EXAMPLE': Rigid('example', 'exemplified'),
     'POSSESSION': Flexible('possessed', 'possessor'),
     'QUANTITY': Flexible('has-quantity', 'quantity'),
     'SENDING': Rigid('sent', 'sender'),

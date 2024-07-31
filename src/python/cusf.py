@@ -100,6 +100,9 @@ class Frame:
         return block
 
     def fill_args(self, args: Set[Tuple[str, str]]):
+        # Remove args without annotation
+        self.args = [a for a in self.args if a.label or a.comment]
+        # Add expected args
         for head, text in args:
             if any(a.head == head for a in self.args):
                 continue
@@ -111,32 +114,50 @@ class Frame:
                 return arg
         return None
 
-    def check(self, sentid, lineno, frames) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+        # Check for missing frame label
         if not self.label:
             return False, 0
+        # Check for wrong frame label
         if not labels.check_frame_label(self.label):
             logging.warning('sent %s line %s unknown frame label: %s',
-                    sentid, lineno, self.label)
+                    sentence.syntax[0].id, lineno, self.label)
             return False, 1
+        # Check arguments
         ok = True
         warnings = 0
         for i, arg in enumerate(self.args, start=lineno + 1):
+            # Check for wrong text
+            arg_token = sentence.syntax[0][arg.head]
+            if arg_token.head == self.head:
+                expected_text = serialize_subtree(arg.head, sentence.syntax[0])
+                if arg.text != expected_text:
+                    logging.warning(
+                        'sent %s line %s wrong text for subtree with root %s: '
+                        'is "%s" but should be "%s"', sentence.syntax[0].id, i,
+                        arg.head, arg.text, expected_text,
+                    )
+            else:
+                expected_text = arg_token.form
+                # We don't check in this case, for now.
+            # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
-                        sentid, i, self.label, arg.label)
+                        sentence.syntax[0].id, i, self.label, arg.label)
                 ok = False
                 warnings += 1
+            # Check for missing depictive backlinks
             if arg.label == 'm-depictive':
                 arg_heads = set(a.head for a in self.args)
                 backlink_found = False
-                for frame in frames:
+                for frame in sentence.frames:
                     if frame.head == arg.head:
                         for arg2 in frame.args:
                             if arg2.head in arg_heads:
                                 backlink_found = True
                 if not backlink_found:
                     logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
-                            sentid, i)
+                            sentence.syntax[0].id, i)
                     ok = False
                     warnings += 1
         return ok, warnings
@@ -274,7 +295,7 @@ class Sentence:
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
                 continue
             frame_count += 1
-            ok, w = frame.check(self.syntax[0].id, lineno, self.frames)
+            ok, w = frame.check(self, lineno)
             if ok:
                 annotated_count += 1
             warnings += w
