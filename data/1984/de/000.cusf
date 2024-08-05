@@ -1178,7 +1178,7 @@
 [m-location] auf der Straße (4)
 [x-causer || trigger] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
 [target-location || reaction] hoch (13)
-[m-quality] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)	#issue:Einschränkung
+[m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)	#issue:Einschränkung
 
 [LOCATION] Unten (1)
 
@@ -1248,25 +1248,25 @@
 12	herunter	herunter	ADP	PTKVZ	_	7	compound:prt	_	_
 13	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] blickte (7)
-[] Das Gesicht mit dem schwarzen Schnurrbart (2)
-[] von jeder beherrschenden Ecke (11)
-[] herunter (12)
+[MESSAGE] blickte (7)
+[x-experiencer] Das Gesicht mit dem schwarzen Schnurrbart (2)
+[m-initial-location] von jeder beherrschenden Ecke (11)
+[m-target-location] herunter (12)
 
-[] Gesicht (2)
-[] mit dem schwarzen Schnurrbart (6)
+[ACCOMPANIMENT] Gesicht (2)
+[m-accompanier] mit dem schwarzen Schnurrbart (6)
 
-[] Schnurrbart (6)
-[] schwarzen (5)
+[CLASS] Schnurrbart (6)
+[m-quality] schwarzen (5)
 
-[] schwarzen (5)
+[QUALITY] schwarzen (5)
 
-[] Ecke (11)
-[] beherrschenden (10)
+[LOCATION] Ecke (11)
+[m-location] beherrschenden (10)
 
-[] beherrschenden (10)
+[LOCATION] beherrschenden (10)
 
-[] herunter (12)
+[LOCATION] herunter (12)
 
 # sent_id = 22
 # text = Ein Plakat klebte an der unmittelbar gegenüberliegenden Hausfront .
@@ -1280,19 +1280,19 @@
 8	Hausfront	Hausfront	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] klebte (3)
-[] Ein Plakat (2)
-[] an der unmittelbar gegenüberliegenden Hausfront (8)
+[ADORNMENT-TARNISHMENT] klebte (3)
+[ornament] Ein Plakat (2)
+[surface] an der unmittelbar gegenüberliegenden Hausfront (8)
 
-[] Plakat (2)
+[MESSAGE] Plakat (2)
 
-[] Hausfront (8)
-[] unmittelbar gegenüberliegenden (7)
+[LOCATION] Hausfront (8)
+[m-location] unmittelbar gegenüberliegenden (7)
 
-[] gegenüberliegenden (7)
-[] unmittelbar (6)
+[LOCATION] gegenüberliegenden (7)
+[m-quality] unmittelbar (6)
 
-[] unmittelbar (6)
+[QUALITY] unmittelbar (6)
 
 # sent_id = 23
 # text = » Der Große Bruder sieht dich an . « hieß auch hier die Unterschrift , und die dunklen Augen bohrten sich tief in Winstons Blick .
@@ -1323,51 +1323,51 @@
 25	Blick	Blick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	20	obl	_	_
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] hieß (10)
-[] » Der Große Bruder sieht dich an . « (5)
-[] auch (11)
-[] hier (12)
-[] die Unterschrift (14)
+[MESSAGE] hieß (10)
+[content] » Der Große Bruder sieht dich an . « (5)
+[m-mode] auch (11)
+[m-compared] hier (12)
+[topic] die Unterschrift (14)
 
-[] sieht (5)
-[] Der Große Bruder (4)
-[] dich (6)
-[] an (7)
+[MESSAGE] sieht (5)
+[x-experiencer] Der Große Bruder (4)
+[topic] dich (6)
+[m-noncomp] an (7)
 
-[] Bruder (4)
-[] Große (3)
+[IDENTIFICATION] Bruder (4)
+[m-noncomp] Große (3)
 
-[] Große (3)
+[NONCOMP] Große (3)
 
-[] dich (6)
+[IDENTIFICATION] dich (6)
 
-[] an (7)
+[NONCOMP] an (7)
 
-[] auch (11)
+[MODE] auch (11)
 
-[] hier (12)
+[COMPARISON] hier (12)
 
-[] Unterschrift (14)
+[MESSAGE] Unterschrift (14)
 
-[] bohrten (20)
-[] die dunklen Augen (19)
-[] sich (21)
-[] tief (22)
-[] in Winstons Blick (25)
+[MESSAGE >> LOCATION-CHANGE] bohrten (20)
+[x-experiencer >> x-causer] die dunklen Augen (19)
+[m-noncmop] sich (21)
+[m-quality >> m-target-location] tief (22)
+[x-experienced >> target-location] in Winstons Blick (25)
 
-[] Augen (19)
-[] dunklen (18)
+[MESSAGE] Augen (19)
+[m-quality] dunklen (18)
 
-[] dunklen (18)
+[QUALITY] dunklen (18)
 
-[] sich (21)
+[NONCOMP] sich (21)
 
-[] tief (22)
+[QUALITY >> LOCATION] tief (22)
 
-[] Blick (25)
-[] Winstons (24)
+[MESSAGE] Blick (25)
+[x-identifier] Winstons (24)
 
-[] Winstons (24)
+[IDENTIFICATION] Winstons (24)
 
 # sent_id = 24
 # text = Unten in Straßenhöhe flatterte ein anderes , an einer Ecke eingerissenes Plakat unruhig im Winde und ließ nur das Wort Engsoz bald verdeckt , bald unverdeckt erscheinen .
@@ -1400,56 +1400,57 @@
 27	erscheinen	erscheinen	VERB	VVINF	VerbForm=Inf	17	xcomp	_	_
 28	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] flatterte (4)
-[] Unten in Straßenhöhe (3)
-[] ein anderes , an einer Ecke eingerissenes Plakat (12)
-[] unruhig (13)
-[] im Winde (15)
+[LOCATION-CHANGE] flatterte (4)
+[m-location] Unten in Straßenhöhe (3)
+[has-location] ein anderes , an einer Ecke eingerissenes Plakat (12)
+[m-quality] unruhig (13)
+[m-mean] im Winde (15)
 
-[] Straßenhöhe (3)
-[] Unten (1)
+[LOCATION] Straßenhöhe (3)
+[m-location] Unten (1)
 
-[] Unten (1)
+[LOCATION] Unten (1)
 
-[] Plakat (12)
-[] anderes , (6)
-[] an einer Ecke eingerissenes (11)
+[MESSAGE] Plakat (12)
+[m-identifier] anderes , (6)
+[m-destroyed || m-quality] an einer Ecke eingerissenes (11)
 
-[] anderes (6)
+[IDENTIFICATION] anderes (6)
 
-[] eingerissenes (11)
-[] an einer Ecke (10)
+[DESTRUCTION || QUALITY] eingerissenes (11)
+[m-location] an einer Ecke (10)
 
-[] Ecke (10)
+[LOCATION] Ecke (10)
 
-[] unruhig (13)
+[QUALITY] unruhig (13)
 
-[] Winde (15)
+[MEAN] Winde (15)
 
-[] ließ (17)
-[] nur (18)
-[] das Wort Engsoz (20)
-[] bald verdeckt , bald unverdeckt (23)
-[] erscheinen (27)
+[SCENE] ließ (17)
+[participant] Plakat (12)
+[m-mode] nur (18)
+[has-scene] das Wort Engsoz (20)
+[m-quality] bald verdeckt , bald unverdeckt (23)
+[target-scene] erscheinen (27)
 
-[] nur (18)
+[MODE] nur (18)
 
-[] Wort (20)
-[] Engsoz (21)
+[MESSAGE] Wort (20)
+[content] Engsoz (21)
 
-[] Engsoz (21)
+[IDENTIFICATION] Engsoz (21)
 
-[] verdeckt (23)
-[] bald (22)
+[WRAPPING-WEARING-INIT] verdeckt (23)
+[m-time] bald (22)
 
-[] bald (22)
+[TIME] bald (22)
 
-[] unverdeckt (26)
-[] bald (25)
+[WRAPPING-WEARING-DEINIT] unverdeckt (26)
+[m-time] bald (25)
 
-[] bald (25)
+[TIME] bald (25)
 
-[] erscheinen (27)
+[MESSAGE] erscheinen (27)
 
 # sent_id = 25
 # text = In der Ferne glitt ein Helikopter zwischen den Dächern herunter , brummte einen Augenblick wie eine Schmeißfliege und strich dann in einem Bogen wieder ab .
@@ -1480,41 +1481,41 @@
 25	ab	ab	ADP	PTKVZ	_	19	compound:prt	_	_
 26	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] glitt (4)
-[] In der Ferne (3)
-[] ein Helikopter (6)
-[] zwischen den Dächern (9)
-[] herunter (10)
+[UNANCHORED-MOTION] glitt (4)
+[m-location] In der Ferne (3)
+[in-motion] ein Helikopter (6)
+[transitory-loation] zwischen den Dächern (9)
+[m-target-location] herunter (10)
 
-[] Ferne (3)
+[LOCATION] Ferne (3)
 
-[] Helikopter (6)
+[CLASS] Helikopter (6)
 
-[] Dächern (9)
+[CLASS] Dächern (9)
 
-[] herunter (10)
+[LOCATION] herunter (10)
 
-[] brummte (12)
-[] einen Augenblick wie eine Schmeißfliege (14)
+[MESSAGE] brummte (12)
+[m-time] einen Augenblick (14)
+[m-quality] wie eine Schmeißfliege (17)
 
-[] Augenblick (14)
-[] wie eine Schmeißfliege (17)
+[TIME] Augenblick (14)
 
-[] Schmeißfliege (17)
+[QUALITY] Schmeißfliege (17)
 
-[] strich (19)
-[] dann (20)
-[] in einem Bogen (23)
-[] wieder (24)
-[] ab (25)
+[UNANCHORED-MOTION] strich (19)
+[m-time] dann (20)
+[m-quality] in einem Bogen (23)
+[m-time] wieder (24)
+[m-noncomp] ab (25)
 
-[] dann (20)
+[TIME] dann (20)
 
-[] Bogen (23)
+[QUALITY] Bogen (23)
 
-[] wieder (24)
+[TIME] wieder (24)
 
-[] ab (25)
+[NONCOMP] ab (25)
 
 # sent_id = 26
 # text = Es war die Polizeistreife , die den Leuten in die Fenster schaute .
@@ -1532,22 +1533,22 @@
 12	schaute	schauen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 13	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Polizeistreife (4)
-[] Es (1)
-[] , die den Leuten in die Fenster schaute (12)
+[IDENTIFICATION] Polizeistreife (4)
+[m-identifier] Es (1)
+[m-activity] , die den Leuten in die Fenster schaute (12)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] schaute (12)
-[] die (6)
-[] den Leuten (8)
-[] in die Fenster (11)
+[MESSAGE] schaute (12)
+[m-identifier] die (6)
+[m-experienced] den Leuten (8)
+[m-target-location] in die Fenster (11)
 
-[] die (6)
+[IDENTIFICATION] die (6)
 
-[] Leuten (8)
+[IDENTIFICATION] Leuten (8)
 
-[] Fenster (11)
+[CLASS] Fenster (11)
 
 # sent_id = 27
 # text = Die Streifen waren jedoch nicht schlimm .
@@ -1559,16 +1560,16 @@
 6	schlimm	schlimm	ADJ	ADJD	_	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] schlimm (6)
-[] Die Streifen (2)
-[] jedoch (4)
-[] nicht (5)
+[QUALITY] schlimm (6)
+[has-quality] Die Streifen (2)
+[m-mode] jedoch (4)
+[m-mode] nicht (5)
 
-[] Streifen (2)
+[IDENTIFICATION] Streifen (2)
 
-[] jedoch (4)
+[MODE] jedoch (4)
 
-[] nicht (5)
+[MODE] nicht (5)
 
 # sent_id = 28
 # text = Zu fürchten war nur die Gedankenpolizei .
@@ -1580,13 +1581,13 @@
 6	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	nsubj:pass	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] fürchten (2)
-[] nur die Gedankenpolizei (6)
+[MESSAGE] fürchten (2)
+[x-experienced] nur die Gedankenpolizei (6)
 
-[] Gedankenpolizei (6)
-[] nur (4)
+[IDENTIFICATION] Gedankenpolizei (6)
+[m-quantity] nur (4)
 
-[] nur (4)
+[QUANTITY] nur (4)
 
 # sent_id = 29
 # text = Hinter Winstons Rücken schwatzte die leise Stimme aus dem Televisor noch immer von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans .
@@ -1619,51 +1620,51 @@
 27	Dreijahresplans	Dreijahresplan	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	24	nmod	_	_
 28	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] schwatzte (4)
-[] Hinter Winstons Rücken (3)
-[] die leise Stimme aus dem Televisor (7)
-[] noch immer (12)
-[] von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (14)
+[MESSAGE] schwatzte (4)
+[m-location] Hinter Winstons Rücken (3)
+[x-sender] die leise Stimme aus dem Televisor (7)
+[m-time] noch immer (12)
+[topic] von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (14)
 
-[] Rücken (3)
-[] Winstons (2)
+[WHOLE-PART] Rücken (3)
+[whole] Winstons (2)
 
-[] Winstons (2)
+[IDENTIFICATION] Winstons (2)
 
-[] Stimme (7)
-[] leise (6)
-[] aus dem Televisor (10)
+[MESSAGE] Stimme (7)
+[m-quality] leise (6)
+[m-initial-location] aus dem Televisor (10)
 
-[] leise (6)
+[QUALITY] leise (6)
 
-[] Televisor (10)
+[MEAN] Televisor (10)
 
-[] immer (12)
-[] noch (11)
+[TIME] immer (12)
+[m-time] noch (11)
 
-[] noch (11)
+[TIME] noch (11)
 
-[] Roheisen (14)
+[CLASS] Roheisen (14)
 
-[] Erfüllung (24)
-[] weit über das gesteckte Ziel hinausgehenden (23)
-[] des neunten Dreijahresplans (27)
+[STATE-DEINIT] Erfüllung (24)
+[m-quality] weit über das gesteckte Ziel hinausgehenden (23)
+[m-identifier] des neunten Dreijahresplans (27)
 
-[] hinausgehenden (23)
-[] weit (18)
-[] über das gesteckte Ziel (22)
+[QUALITY] hinausgehenden (23)
+[m-quality] weit (18)
+[m-state-deinit] über das gesteckte Ziel (22)
 
-[] weit (18)
+[QUALITY] weit (18)
 
-[] Ziel (22)
-[] gesteckte (21)
+[STATE-DEINIT] Ziel (22)
+[m-quality] gesteckte (21)
 
-[] gesteckte (21)
+[QUALITY] gesteckte (21)
 
-[] Dreijahresplans (27)
-[] neunten (26)
+[MESSAGE] Dreijahresplans (27)
+[m-rank] neunten (26)
 
-[] neunten (26)
+[RANK] neunten (26)
 
 # sent_id = 30
 # text = Der Televisor war gleichzeitig Empfangs- und Sendegerät .
@@ -1676,15 +1677,14 @@
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
 8	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Empfangs- (5)
-[] Der Televisor (2)
-[] gleichzeitig (4)
+[MEAN] Der Televisor (2)
+[m-time] gleichzeitig (4)
 
-[] Televisor (2)
+[TIME] gleichzeitig (4)
 
-[] gleichzeitig (4)
+[MESSAGE] Empfangs- (5)
 
-[] Sendegerät (7)
+[MESSAGE] Sendegerät (7)
 
 # sent_id = 31
 # text = Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , wurde von ihm registriert .
