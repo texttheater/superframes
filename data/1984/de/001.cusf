@@ -149,11 +149,11 @@
 21	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] beherrschten (2)
-[] Sie (1)
-[] das sie umgebende Stadtbild (6)
-[] so vollkommen (8)
-[] , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte (20)
+[POSSESSION >> SITUATION] beherrschten (2)
+[possessor >> situator] Sie (1)
+[possessed >> theme] das sie umgebende Stadtbild (6)
+[m-quantity] so vollkommen (8)
+[m-result] , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte (20)
 
 [] Sie (1)
 
@@ -374,13 +374,13 @@
 
 [] Neusprache (5)
 
-[] Miniwahr (8)
+[IDENTIFICATION] Miniwahr (8)
 
-[] Minipax (10)
+[IDENTIFICATION] Minipax (10)
 
-[] Minilieb (12)
+[IDENTIFICATION] Minilieb (12)
 
-[] Minifluss (14)
+[IDENTIFICATION] Minifluss (14)
 
 # sent_id = 57
 # text = Das Ministerium für Liebe war das furchterregendste von allen .
@@ -415,19 +415,19 @@
 5	Fenster	Fenster	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	2	obj	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Es (1)
-[] überhaupt (3)
-[] keine Fenster (5)
+[PART-WHOLE] hatte (2)
+[whole] Es (1)
+[m-mode] überhaupt (3)
+[part] keine Fenster (5)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] überhaupt (3)
+[MODE] überhaupt (3)
 
-[] Fenster (5)
-[] keine (4)
+[CLASS] Fenster (5)
+[m-quantity] keine (4)
 
-[] keine (4)
+[QUANTITY] keine (4)
 
 # sent_id = 59
 # text = Winston war noch nie im Ministerium für Liebe gewesen und ihm auch nie , sei es nur auf einen halben Kilometer , nahe gekommen .
@@ -1053,17 +1053,17 @@
 
 [] ein (18)
 
-[] stürzte (20)
+[] stürzte (20) 
 [] es (21)
 [] wie eine Dosis Medizin (24)
 [] hinunter (26)
 
 [] es (21)
 
-[] Dosis (24)
-[] Medizin (25)
+[QUANTITY] Dosis (24) # TODO QUANTITY as special case of PART-WHOLE?
+[has-quantity] Medizin (25)
 
-[] Medizin (25)
+[CLASS] Medizin (25)
 
 [] hinunter (26)
 
@@ -1278,10 +1278,10 @@
 
 [] zerknitterten (7)
 
-[] Aufschrift (11)
-[] Victory-Zigaretten (12)
+[MESSAGE] Aufschrift (11)
+[content] Victory-Zigaretten (12)
 
-[] Victory-Zigaretten (12)
+[CLASS] Victory-Zigaretten (12)
 
 [] hielt (16)
 [] unvorsichtigerweise (15)
