@@ -118,6 +118,7 @@ def check_frame_label_part(frame):
 
 
 def check_dep_label(dep, frame, dep_frame) -> Optional[str]:
+    # TODO better handling of alternatives
     frame_label_parts = re.split(r' (?:>>|\|\|) ', frame)
     dep_label_parts = re.split(r' (?:>>|\|\|) ', dep)
     if len(dep_label_parts) == 1:
@@ -126,11 +127,13 @@ def check_dep_label(dep, frame, dep_frame) -> Optional[str]:
         frame_label_parts *= len(dep_label_parts)
     if len(dep_label_parts) != len(frame_label_parts):
         return 'mismatch: {len(dep_label_parts)} alternative argument roles, {len(frame_label_parts)} alternative frames'
+    if len(dep_label_parts) == 1:
+        return check_dep_label_part(dep, frame, dep_frame)
     for f, d in zip(frame_label_parts, dep_label_parts):
         error = check_dep_label_part(d, f, dep_frame)
         if error is None:
             return None
-    return f'role [{dep}] invalid for frame [{frame}]'
+    return error
 
 
 def check_dep_label_part(dep, frame, dep_frame) -> Optional[str]:
