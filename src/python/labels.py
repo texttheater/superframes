@@ -53,22 +53,22 @@ class Rigid:
         return role in self.roles
 
 
-FRAMES = {
+FRAMES : Dict[str, Union[Flexible, Rigid]] = {
     'SITUATION': Flexible('theme', 'situator'),
     'SCENE': Flexible('participant', 'scene'),
     'IDENTIFICATION': Flexible('identified', 'identifier'),
     'RANK': Flexible('has-rank', 'rank'),
-    'CLASS': Flexible('has-class', 'class'),
+    'CLASS': Flexible('has-class', '__invalid__'),
     'EXISTENCE': Flexible('material', 'exists'),
     'TRANSFORMATION-CREATION': Rigid('material', 'created'),
     'REPRODUCTION': Rigid('original', 'copy'),
-    'QUALITY': Flexible('has-quality', 'quality'),
-    'STATE': Flexible('has-state', 'state'),
+    'QUALITY': Flexible('has-quality', '__invalid__'),
+    'STATE': Flexible('has-state', '__invalid__'),
     'DESTRUCTION': Rigid('destroyed'),
     'EXPERIENCE': Flexible('experiencer', 'experienced'),
-    'EVENT': Flexible('undergoer', 'event'),
-    'ACTIVITY': Flexible('is-active', 'activity'),
-    'MODE': Rigid('has-mode', 'mode'),
+    'EVENT': Flexible('undergoer', '__invalid__'),
+    'ACTIVITY': Flexible('is-active', '__invalid__'),
+    'MODE': Rigid('has-mode', '__invalid__'),
     'ACCOMPANIMENT': Flexible('accompanied', 'accompanier'),
     'DEPICTIVE': Rigid('has-depictive', 'depictive'),
     'ATTRIBUTE': Rigid('has-attribute', 'attribute'),
