@@ -1,4 +1,5 @@
 import re
+from typing import Dict, Optional, Union
 
 
 class Flexible:
@@ -113,10 +114,10 @@ def check_frame_label(frame):
 
 
 def check_frame_label_part(frame):
-    return FRAME_PATTERN.match(frame)
+    return bool(FRAME_PATTERN.match(frame))
 
 
-def check_dep_label(dep, frame):
+def check_dep_label(dep, frame, dep_frame) -> Optional[str]:
     frame_label_parts = re.split(r' (?:>>|\|\|) ', frame)
     dep_label_parts = re.split(r' (?:>>|\|\|) ', dep)
     if len(dep_label_parts) == 1:
@@ -124,19 +125,33 @@ def check_dep_label(dep, frame):
     if len(frame_label_parts) == 1:
         frame_label_parts *= len(dep_label_parts)
     if len(dep_label_parts) != len(frame_label_parts):
-        return False
+        return 'mismatch: {len(dep_label_parts)} alternative argument roles, {len(frame_label_parts)} alternative frames'
     for f, d in zip(frame_label_parts, dep_label_parts):
-        if check_dep_label_part(d, f):
-            return True
-    return False
+        error = check_dep_label_part(d, f, dep_frame)
+        if error:
+            return error
+    return None
 
 
-def check_dep_label_part(dep, frame):
+def check_dep_label_part(dep, frame, dep_frame) -> Optional[str]:
     if dep[:2] in ('m-', 'x-'):
         role = dep[2:]
-        return any(v.check_noncore(role) for v in FRAMES.values())
-    mtch = FRAME_PATTERN.match(frame)
-    f = mtch.group(1)
-    a = mtch.group(2)
-    m = mtch.group(3)
-    return FRAMES[f].check_core(a, m, dep)
+        if not any(v.check_noncore(role) for v in FRAMES.values()):
+            return f'unknown role {role}'
+        else:
+            return None
+    if dep[:2] == 'r-':
+        role = dep[2:]
+        if not dep_frame:
+            return 'reverse role pointing to a token with no frame annotation'
+        return check_dep_label(role, dep_frame, None)
+    match FRAME_PATTERN.match(frame):
+        case None:
+            return f'invalid frame label {frame}'
+        case match:
+            f = match.group(1)
+            a = match.group(2)
+            m = match.group(3)
+            if not FRAMES[f].check_core(a, m, dep):
+                return f'role {dep} invalid for frame {frame}'
+            return None

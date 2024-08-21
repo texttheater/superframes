@@ -141,9 +141,14 @@ class Frame:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
             # Check for wrong dep label
-            if not labels.check_dep_label(arg.label, self.label):
-                logging.warning('sent %s line %s unknown dep label for %s: %s',
-                        sentence.syntax[0].id, i, self.label, arg.label)
+            if arg.head in head_frame_map:
+                dep_frame_label = head_frame_map[arg.head].label
+            else:
+                dep_frame_label = None
+            error = labels.check_dep_label(arg.label, self.label, dep_frame_label)
+            if error:
+                logging.warning('sent %s line %s %s', sentence.syntax[0].id, i,
+                        error)
                 ok = False
                 warnings += 1
             # Check for missing depictive backlinks
