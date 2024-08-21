@@ -70,7 +70,7 @@
 [IDENTIFICATION] I (8)
 
 [MESSAGE] picture (12)
-[m-quality] magnificent (11)
+[r-has-quality] magnificent (11)
 
 [QUALITY] magnificent (11)
 
@@ -83,7 +83,7 @@
 [identified] book (15)
 
 [MESSAGE] Stories (19)
-[m-mode] True (18)
+[r-has-mode] True (18)
 [x-initial-location] from Nature (21)
 
 [MODE] True (18)
@@ -91,7 +91,7 @@
 [IDENTIFICATION] Nature (21)
 
 [CLASS] forest (26)
-[m-quality >> m-noncomp] primeval (25)
+[r-has-quality >> m-noncomp] primeval (25)
 
 [QUALITY >> NONCOMP] primeval (25)
 
@@ -250,14 +250,14 @@
 
 [MESSAGE] pondered (25)
 [x-experiencer] I (24)
-[m-quality] deeply (26)
+[r-has-quality] deeply (26)
 [m-time] then (28)
 [topic] over the adventures of the jungle (32)
 
 [SCENE-POSSIBILITY] able (6)
 [m-time] After that (2)
 [participant] they (3)
-[m-mode] not (5)
+[r-has-mode] not (5)
 [scene] to move (8)
 
 [IDENTIFICATION] that (2)
@@ -498,7 +498,7 @@
 
 [MESSAGE] picture (6)
 [x-has-class] My drawing (2)
-[m-mode] not (4)
+[r-has-mode] not (4)
 [topic] of a hat (9)
 
 [MESSAGE] drawing (2)
@@ -571,7 +571,7 @@
 
 [SCENE-POSSIBILITY] able (9)
 [participant] the grown - ups (6)
-[m-mode] not (8)
+[r-has-mode] not (8)
 [scene] to understand it (11)
 
 [CLASS] ups (6)
@@ -632,7 +632,7 @@
 [MESSAGE] see (17)
 [x-experiencer] the grown - ups (15)
 [topic] it (18)
-[m-quality] clearly (19)
+[r-has-quality] clearly (19)
 
 [CLASS] ups (15)
 [m-noncomp] grown (13)
@@ -861,7 +861,7 @@
 
 [EVENT] career (20) # TODO manual: more specific LVC guidelines "live my life" vs "take a bath"
 [x-has-class] what (14)
-[m-quality] magnificent (19)
+[r-has-quality] magnificent (19)
 [x-depictive] as a painter (23) # experience?
 
 [IDENTIFICATION] what (14)
@@ -1137,7 +1137,7 @@
 [TIME] night (7)
 
 [MESSAGE] knowledge (10)
-[m-quality] such (9)
+[r-has-quality] such (9)
 
 [QUALITY] such (9) # ?
 
@@ -1262,7 +1262,7 @@
 [MESSAGE] seen (3)
 [x-experiencer] I (1)
 [topic] them (4)
-[m-quality] intimately (5)
+[r-has-quality] intimately (5)
 [m-depictive] , close at hand (7)
 
 [IDENTIFICATION] I (1)
@@ -1293,7 +1293,7 @@
 
 [STATE-CHANGE] improved (6)
 [x-causer] that (2)
-[m-mode] n't (4)
+[r-has-mode] n't (4)
 [m-quantity] much (5)
 [has-state] my opinion of them (8)
 
@@ -1467,7 +1467,7 @@
 [IDENTIFICATION] this (11)
 
 [MESSAGE] understanding (17)
-[m-quality] true (16)
+[r-has-quality] true (16)
 [x-experiencer] person (14)
 
 [QUALITY] true (16)
@@ -1577,20 +1577,20 @@
 5	down	down	ADV	RB	_	3	advmod	_	TokenRange=2772:2776
 6	to	to	ADP	IN	_	8	case	_	TokenRange=2777:2779
 7	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=2780:2783
-8	level	level	NOUN	NN	Number=Sing	5	obl	_	TokenRange=2784:2789
+8	level	level	NOUN	NN	Number=Sing	3	obl	_	TokenRange=2784:2789
 9	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2790:2791
 
 [SCENE-INIT] bring (3)
 [x-causer] I (1)
 [participant] myself (4)
-[target-scene] down to his level (5)
+[target-scene] down (5)
+[target-scene] to his level (8)
 
 [IDENTIFICATION] I (1)
 
 [IDENTIFICATION] myself (4)
 
 [STATE-CHANGE] down (5)
-[target-state] to his level (8)
 [has-state] myself (4)
 
 [QUALITY] level (8)
@@ -1672,7 +1672,7 @@
 [has-social-relation] the grown - up (5)
 
 [CLASS] man (16)
-[m-quality] sensible (15)
+[r-has-quality] sensible (15)
 
 [QUALITY] sensible (15)
 
@@ -1724,10 +1724,10 @@
 33	ago	ago	ADV	RB	_	19	advmod	_	TokenRange=3108:3111
 34	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=3112:3113
 
-[EVENT] lived (3)
+[SCENE] lived (3)
 [m-explanation] So (1)
-[undergoer] I (2)
-[event] my life (5)
+[participant] I (2)
+[scene] my life (5)
 [m-depictive] alone (6)
 [m-accompanier] without anyone that I could really talk to (9)
 [m-time] until I had an accident with my plane in the Desert of Sahara , six years ago (19)
@@ -1738,6 +1738,7 @@
 
 [EVENT] life (5)
 [undergoer] my (4)
+[undergoer] I (2)
 
 [IDENTIFICATION] my (4)
 
@@ -1750,7 +1751,7 @@
 [MESSAGE-INIT] talk (14)
 [x-experiencer] that to (10)
 [x-sender] I (11)
-[m-mode] really (13)
+[r-has-mode] really (13)
 [x-experiencer] anyone (9)
 
 [IDENTIFICATION] that (10)
@@ -1866,7 +1867,7 @@
 [participant] myself (16)
 
 [STATE-CHANGE] repairs (21)
-[m-quality] difficult (20)
+[r-has-quality] difficult (20)
 [x-causer] myself (16)
 
 [QUALITY] difficult (20)
@@ -1930,7 +1931,7 @@
 [m-scene] to last a week (8)
 
 [QUANTITY] enough (4)
-[m-mode] scarcely (3)
+[r-has-mode] scarcely (3)
 
 [MODE] scarcely (3)
 
@@ -2032,7 +2033,7 @@
 [QUANTITY] more (3)
 
 [CLASS] sailor (8)
-[m-state] shipwrecked (7)
+[r-has-state] shipwrecked (7)
 [m-location] on a raft in the middle of the ocean (11)
 
 [STATE] shipwrecked (7)
@@ -2096,8 +2097,8 @@
 [IDENTIFICATION] I (12)
 
 [MESSAGE] voice (19)
-[m-quality] odd (17)
-[m-quality] little (18)
+[r-has-quality] odd (17)
+[r-has-quality] little (18)
 
 [QUALITY] odd (17)
 
@@ -2222,7 +2223,7 @@
 
 [MESSAGE-INIT] looked (2)
 [x-experiencer] I (1)
-[m-quality] carefully (3)
+[r-has-quality] carefully (3)
 [topic] all around me (6)
 
 [IDENTIFICATION] I (1)
@@ -2262,8 +2263,8 @@
 [IDENTIFICATION] I (2)
 
 [CLASS] person (8)
-[m-quality] most extraordinary (6)
-[m-quality] small (7)
+[r-has-quality] most extraordinary (6)
+[r-has-quality] small (7)
 [m-scene] who stood there examining me with great seriousness (11)
 
 [QUALITY] extraordinary (6)
@@ -2285,7 +2286,7 @@
 
 [MESSAGE-INIT] examining (13)
 [topic] me (14)
-[m-quality] with great seriousness (17)
+[r-has-quality] with great seriousness (17)
 [x-experiencer] person (8)
 
 [IDENTIFICATION] me (14)
@@ -2327,7 +2328,7 @@
 [IDENTIFICATION] you (2)
 
 [MESSAGE] portrait (7)
-[m-quality] best (6)
+[r-has-quality] best (6)
 [m-scene] that , later , I was able to make of him (14)
 
 [QUALITY] best (6)
@@ -2370,7 +2371,7 @@
 
 [QUALITY] charming (9)
 [has-quality] my drawing (3)
-[m-mode] certainly (5)
+[r-has-mode] certainly (5)
 [m-quantity] very much less (8)
 [x-reference] than its model (12) # comparative construction
 
@@ -2408,8 +2409,8 @@
 
 [CAUSATION] fault (8)
 [result] That (1)
-[m-mode] however (3)
-[m-mode] not (6)
+[r-has-mode] however (3)
+[r-has-mode] not (6)
 [causer] my (7)
 
 [IDENTIFICATION] That (1)
@@ -2554,7 +2555,7 @@
 [IDENTIFICATION] I (2)
 
 [MESSAGE-INIT] apparition (7)
-[m-quality] sudden (6)
+[r-has-quality] sudden (6)
 
 [QUALITY] sudden (6)
 
@@ -2653,7 +2654,7 @@
 28	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=4643:4644
 
 [MESSAGE] seemed (6)
-[m-mode] yet (2)
+[r-has-mode] yet (2)
 [topic] my little man (5)
 [content] neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear (10)
 
@@ -2661,14 +2662,14 @@
 
 [CLASS] man (5)
 [m-experiencer] my (3) # ?
-[m-quality] little (4)
+[r-has-quality] little (4)
 
 [IDENTIFICATION] my (3)
 
 [QUALITY] little (4)
 
 [UNANCHORED-MOTION] straying (10)
-[m-quality] uncertainly (11)
+[r-has-quality] uncertainly (11)
 [transitory-location] among the sands (14)
 [in-motion] my little man (5)
 
@@ -2804,10 +2805,10 @@
 
 [IDENTIFICATION] him (13)
 
-[ACTIVITY] doing (21)
-[activity] what (18)
-[is-active] you (20)
-[m-location] here (22)
+[CAUSATION >> LOCATION] doing (21) # ?
+[result >> x-noncomp] what (18)
+[causer >> has-location] you (20)
+[m-location >> location] here (22)
 
 [IDENTIFICATION] what (18)
 
@@ -2853,7 +2854,7 @@
 [MESSAGE-INIT] repeated (5)
 [m-identifier] in answer (3) # ?
 [x-sender] he (4)
-[m-quality] very slowly (8)
+[r-has-quality] very slowly (8)
 [m-reference] as if he were speaking of a matter of great consequence (14)
 [target-content] If you please -- draw me a sheep (27)
 
@@ -2909,7 +2910,7 @@
 [REACTION] disobey (11)
 [m-condition] When a mystery is too overpowering (6)
 [x-causer] one (8)
-[m-mode] not (10)
+[r-has-mode] not (10)
 
 [QUALITY] overpowering (6)
 [m-has-condition] When (1)
@@ -3100,19 +3101,19 @@
 [MESSAGE-INIT] told (23)
 [x-sender] I (22)
 [x-experiencer] the little chap (26)
-[m-quality] ( a little crossly , too ) (30)
+[r-has-quality] ( a little crossly , too ) (30)
 [target-content] that I did not know how to draw (38)
 
 [IDENTIFICATION] I (22)
 
 [CLASS] chap (26)
-[m-quality] little (25)
+[r-has-quality] little (25)
 
 [QUALITY] little (25)
 
 [QUALITY] crossly (30)
 [m-quantity] a little (29)
-[m-mode] too (32)
+[r-has-mode] too (32)
 
 [QUANTITY] little (29)
 
@@ -3120,7 +3121,7 @@
 
 [MESSAGE] know (38)
 [x-experiencer] I (35)
-[m-mode] not (37)
+[r-has-mode] not (37)
 [content] how to draw (41)
 
 [IDENTIFICATION] I (35)
@@ -3156,7 +3157,7 @@
 
 [MESSAGE] matter (9)
 [topic] That (6)
-[m-mode] n't (8)
+[r-has-mode] n't (8)
 
 [IDENTIFICATION] That (6)
 
@@ -3316,7 +3317,7 @@
 [target-content >> reaction] with , " No , no , no (15)
 
 [CLASS] fellow (9)
-[m-quality] little (8)
+[r-has-quality] little (8)
 
 [QUALITY] little (8)
 
@@ -3338,7 +3339,7 @@
 
 [MESSAGE] want (4)
 [x-experiencer] I (1)
-[m-mode] not (3)
+[r-has-mode] not (3)
 [topic] an elephant inside a boa constrictor (6)
 
 [IDENTIFICATION] I (1)
@@ -3374,7 +3375,7 @@
 
 [CLASS] creature (8)
 [has-class] A boa constrictor (3)
-[m-quality] very dangerous (7)
+[r-has-quality] very dangerous (7)
 
 [CLASS] constrictor (3)
 [m-noncomp] boa (2)
@@ -3505,7 +3506,7 @@
 [MESSAGE-INIT] looked (2)
 [x-experiencer] He (1)
 [topic] at it (4)
-[m-quality] carefully (5)
+[r-has-quality] carefully (5)
 
 [IDENTIFICATION] He (1)
 
@@ -3594,7 +3595,7 @@
 
 [MESSAGE] smiled (3)
 [x-sender] My friend (2)
-[m-quality] gently and indulgently (4)
+[r-has-quality] gently and indulgently (4)
 
 [SOCIAL-RELATION] friend (2)
 [has-social-relation] My (1)
@@ -3641,7 +3642,7 @@
 
 [CLASS] sheep (15)
 [has-class] this (11)
-[m-mode] not (13)
+[r-has-mode] not (13)
 
 [IDENTIFICATION] this (11)
 
@@ -3733,7 +3734,7 @@
 
 [MESSAGE-INIT] rejected (4)
 [topic] it (2)
-[m-mode] too (5)
+[r-has-mode] too (5)
 [m-reference] just like the others (10)
 
 [IDENTIFICATION] it (2)
@@ -3741,7 +3742,7 @@
 [MODE] too (5)
 
 [CLASS] others (10) # anaphoric roleset
-[m-mode] just (7)
+[r-has-mode] just (7)
 
 [MODE] just (7)
 
@@ -3918,7 +3919,7 @@
 
 [CLASS] box (5)
 [has-class] This (1)
-[m-mode] only (3)
+[r-has-mode] only (3)
 [m-possessor] his (4)
 
 [IDENTIFICATION] This (1)
@@ -4004,15 +4005,15 @@
 
 [MESSAGE] judge (25) # good example of participant noun
 [topic] my (23)
-[m-quality] young (24)
+[r-has-quality] young (24)
 
 [IDENTIFICATION] my (23)
 
 [QUALITY] young (24)
 
 [QUALITY] way (32)
-[quality] That (28)
-[m-quality] exactly (30)
+[has-quality] That (28)
+[r-has-quality] exactly (30)
 [m-scene] I wanted it (34)
 [has-quality] it (35)
 
@@ -4123,7 +4124,7 @@
 [QUANTITY] very (29)
 
 [EXISTENCE] be (37)
-[m-mode] surely (36)
+[r-has-mode] surely (36)
 [exists] enough grass (39)
 [m-experiencer] for him (41) # reattach?
 
@@ -4160,7 +4161,7 @@
 
 [CLASS] sheep (6)
 [has-class] It (1) # cleft - syntax correct?
-[m-quality] very small (5)
+[r-has-quality] very small (5)
 [x-scene] that I have given you (10)
 
 [IDENTIFICATION] It (1)
@@ -4216,7 +4217,7 @@
 [MESSAGE] drawing (7)
 
 [QUALITY] small (12)
-[m-mode] Not (10)
+[r-has-mode] Not (10)
 [m-quantity] so (11)
 [m-follows] that (13) # check syntax
 
@@ -4277,7 +4278,7 @@
 [has-social-relation] I (12)
 
 [CLASS] prince (19)
-[m-quality] little (18)
+[r-has-quality] little (18)
 
 [QUALITY] little (18)
 

@@ -68,14 +68,14 @@
 
 [CLASS] Tag (7)
 [x-identified] Es (1)
-[m-quality] klarer , kalter (4)
+[r-has-quality] klarer , kalter (4)
 [m-time] im April (9)
 
 [IDENTIFICATION] Es (1)
 
-[] klarer (4)
+[QUALITY] klarer (4)
 
-[] kalter (6)
+[QUALITY] kalter (6)
 
 [] April (9)
 
@@ -131,8 +131,8 @@
 [] Victory-Blocks (44)
 
 [QUALITY] rasch (50)
-[m-mode] auch (48)
-[m-mode] nicht (49)
+[r-has-mode] auch (48)
+[r-has-mode] nicht (49)
 [m-quantity] genug (51)
 [m-result] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
 
@@ -239,14 +239,14 @@
 [QUALITY] groß (15)
 [has-quality] das (9)
 [m-reference] für einen Innenraum (12)
-[m-mode] eigentlich (13)
+[r-has-mode] eigentlich (13)
 [m-quantity] zu (14)
 
 [] das (9)
 
 [] Innenraum (12)
 
-[] eigentlich (13)
+[MODE] eigentlich (13)
 
 [] zu (14)
 
@@ -294,13 +294,13 @@
 
 [MESSAGE] stellte (2)
 [x-sender] Es (1)
-[m-mode] nur (3)
+[r-has-mode] nur (3)
 [topic] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
 [m-noncomp] dar (13)
 
 [IDENTIFICATION] Es (1) # TODO anaphoric rolesets and when not to use them -> manual
 
-[] nur (3)
+[MODE] nur (3)
 
 [] Gesicht (6)
 [m-scene] von mehr als einem Meter Breite (12) # TODO clarify: when to use m-scene and when not
@@ -394,7 +394,7 @@
 [IDENTIFICATION] Es (1)
 
 [SEQUENCE] Zweck (4)
-[m-mode] keinen (3)
+[r-has-mode] keinen (3)
 [followed] , es mit dem Aufzug zu versuchen (11)
 [followed] Es (1)
 
@@ -573,7 +573,7 @@
 [] der (13)
 
 [CLASS] Fußknöchel (17)
-[m-location || m-quality] rechten (16)
+[m-location || r-has-quality] rechten (16)
 
 [LOCATION || QUALITY] rechten (16)
 
@@ -588,9 +588,9 @@
 [] sehr (23)
 
 [] ruhte (26)
-[] sich (27)
 [m-time] mehrmals (28)
 [m-transitory-location || m-time] unterwegs (29)
+[] sich (27)
 [] aus (30)
 
 [] sich (27)
@@ -1325,7 +1325,7 @@
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
 [] hieß (10)
-[m-mode] auch (11)
+[r-has-mode] auch (11)
 [m-location] hier (12)
 [] » Der Große Bruder sieht dich an . « (5)
 [] die Unterschrift (14)
@@ -1820,16 +1820,16 @@
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
 [SCENE] bestand (2)
-[scene] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
-[m-mode] natürlich (3)
+[scene] keine Möglichkeit festzustellen , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
+[r-has-mode] natürlich (3)
 
-[] natürlich (3)
+[MODE] natürlich (3)
 
 [SCENE-POSSIBILITY] Möglichkeit (5)
-[m-mode] keine (4)
+[r-has-mode] keine (4)
 [scene] festzustellen , ob man in einem gegebenen Augenblick gerade überwacht wurde (6)
 
-[] keine (4)
+[MODE] keine (4)
 
 [] überwacht (15)
 [] man (9)
@@ -2563,16 +2563,17 @@
 
 [CLASS || PART-WHOLE] Siedlungen (33)
 [m-part || part] von Holzbaracken (35)
-[] trostlose (32)
-[] , die wie Hühnerställe aussahen (42)
+[r-has-quality] trostlose (32)
+[m-scene] , die wie Hühnerställe aussahen (42)
 
-[] trostlose (32)
+[QUALITY] trostlose (32)
 
 [CLASS] Holzbaracken (35)
 
 [] aussahen (42)
 [] die (39)
 [] wie Hühnerställe (41)
+[] Siedlungen (33)
 
 [] die (39)
 
@@ -2718,11 +2719,12 @@
 [] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
 
 [IDENTIFICATION] Miniwahr (4)
-[] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
+[m-scene] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
 
 [] hieß (17)
 [] es (7)
 [] in der Neusprache , der amtlichen Sprache Ozeaniens , (10)
+[] Miniwahr (4)
 
 [] es (7)
 
