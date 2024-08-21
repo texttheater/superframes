@@ -14,11 +14,11 @@
 12	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
 13	Uhren	Uhr	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	14	nsubj	_	_
 14	schlugen	schlagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
-15	gerade	gerade	ADV	ADV	_	16	advmod	_	_
+15	gerade	gerade	ADV	ADV	_	14	advmod	_	_
 16	dreizehn	dreizehn	NUM	CARD	NumType=Card	14	obl	_	_
 17	,	,	PUNCT	$,	_	27	punct	_	_
 18	als	als	SCONJ	KOUS	_	27	mark	_	_
-19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	27	nsubj	_	_
+19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	45	nsubj	_	_
 20	Smith	Smith	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	19	flat	_	_
 21	,	,	PUNCT	$,	_	23	punct	_	_
 22	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
@@ -26,7 +26,7 @@
 24	an	an	ADP	APPR	_	26	case	_	_
 25	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Brust	Brust	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-27	gepresst	pressen	VERB	VVPP	Verbform=Part	14	advcl	_	_
+27	gepresst	pressen	VERB	VVPP	Verbform=Part	45	advcl	_	_
 28	,	,	PUNCT	$,	_	34	punct	_	_
 29	um	um	SCONJ	KOUI	_	34	mark	_	_
 30	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
@@ -50,7 +50,7 @@
 48	auch	auch	ADV	ADV	_	50	advmod	_	_
 49	nicht	nicht	PART	PTKNEG	Polarity=Neg	50	advmod	_	_
 50	rasch	rasch	ADJ	ADJD	_	45	advmod	_	_
-51	genug	genug	ADV	ADV	_	45	advmod	_	_
+51	genug	genug	ADV	ADV	_	50	advmod	_	_
 52	,	,	PUNCT	$,	_	63	punct	_	_
 53	als	als	SCONJ	KOUS	_	63	mark	_	_
 54	dass	dass	SCONJ	KOUS	_	63	mark	_	_
@@ -66,12 +66,12 @@
 64	wäre	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	63	aux	_	_
 65	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] Tag (7)
-[] Es (1)
-[] klarer , kalter (4)
-[] im April (9)
+[CLASS] Tag (7)
+[x-identified] Es (1)
+[m-quality] klarer , kalter (4)
+[m-time] im April (9)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
 [] klarer (4)
 
@@ -79,21 +79,19 @@
 
 [] April (9)
 
-[] schlugen (14)
-[] die Uhren (13)
-[] gerade dreizehn (16)
-[] , als Winston Smith , das Kinn an die Brust gepresst , (27)
-[] , um dem rauhen Wind zu entgehen rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[MESSAGE-INIT] schlugen (14)
+[x-sender] die Uhren (13)
+[target-content] dreizehn (16)
+[m-time] , als Winston Smith , das Kinn an die Brust gepresst , um dem rauhen Wind zu entgehen , rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[m-time] gerade (15)
 
 [] Uhren (13)
 
 [] dreizehn (16)
-[] gerade (15)
 
-[] gerade (15)
+[TIME] gerade (15)
 
 [] gepresst (27)
-[] Winston Smith (19)
 [] , das Kinn an die Brust (23)
 
 [] Winston (19)
@@ -104,11 +102,12 @@
 [] Brust (26)
 
 [] schlüpfte (45)
+[] Winston Smith (19)
+[] , als , das Kinn an die Brust gepresst , (27)
 [] , um dem rauhen Wind zu entgehen (34)
 [] rasch (36)
 [] durch die Glastüren eines der Häuser des Victory-Blocks (39)
-[] auch nicht rasch , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
-[] genug (51)
+[] auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
 
 [] entgehen (34)
 [] dem rauhen Wind (32)
@@ -131,14 +130,15 @@
 
 [] Victory-Blocks (44)
 
-[] rasch (50)
-[] auch (48)
-[] nicht (49)
-[] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
+[QUALITY] rasch (50)
+[m-mode] auch (48)
+[m-mode] nicht (49)
+[m-quantity] genug (51)
+[m-result] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
 
-[] auch (48)
+[MODE] auch (48)
 
-[] nicht (49)
+[MODE] nicht (49)
 
 [] eingedrungen (63)
 [] nicht (55)
@@ -176,14 +176,14 @@
 10	Fußmatten	Fußmatte	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	7	conj	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] roch (3)
-[] Im Flur (2)
-[] es (4)
-[] nach gekochtem Kohl und feuchten Fußmatten (7)
+[MESSAGE] roch (3)
+[m-location || topic] Im Flur (2)
+[topic || x-noncomp] es (4)
+[content] nach gekochtem Kohl und feuchten Fußmatten (7)
 
 [] Flur (2)
 
-[] es (4)
+[IDENTIFICATION || NONCOMP] es (4)
 
 [] Kohl (7)
 [] gekochtem (6)
@@ -218,14 +218,15 @@
 19	Reißnägeln	Reißnägel	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	23	nmod	_	_
 20	an	an	ADP	APPR	_	22	case	_	_
 21	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	Wand	Wand	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	19	nmod	_	_
+22	Wand	Wand	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	23	nmod	_	_
 23	befestigt	befestigen	VERB	VVPP	Verbform=Part	0	root	_	_
 24	.	.	PUNCT	$.	_	23	punct	_	_
 
 [] befestigt (23)
 [] An der Rückwand (3)
 [] ein grellfarbiges Plakat , das für einen Innenraum eigentlich zu groß war , (7)
-[] mit Reißnägeln an der Wand (19)
+[] mit Reißnägeln (19)
+[] an der Wand (22)
 
 [] Rückwand (3)
 
@@ -235,11 +236,11 @@
 
 [] grellfarbiges (6)
 
-[] groß (15)
-[] das (9)
-[] für einen Innenraum (12)
-[] eigentlich (13)
-[] zu (14)
+[QUALITY] groß (15)
+[has-quality] das (9)
+[m-reference] für einen Innenraum (12)
+[m-mode] eigentlich (13)
+[m-quantity] zu (14)
 
 [] das (9)
 
@@ -250,7 +251,6 @@
 [] zu (14)
 
 [] Reißnägeln (19)
-[] an der Wand (22)
 
 [] Wand (22)
 
@@ -263,11 +263,11 @@
 5	riesiges	riesig	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
 7	von	von	ADP	APPR	_	12	case	_	_
-8	mehr	mehr	ADV	ADV	_	6	advmod	_	_
+8	mehr	mehr	ADV	ADV	_	11	advmod	_	_
 9	als	als	CCONJ	KOKOM	_	11	case	_	_
 10	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	nummod	_	_
-11	Meter	Meter	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	8	nmod	_	_
-12	Breite	Breite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	11	appos	_	_
+11	Meter	Meter	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	12	nmod	_	_
+12	Breite	Breite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	appos	_	_
 13	dar	dar	ADP	PTKVZ	_	2	compound:prt	_	_
 14	:	:	PUNCT	$.	_	16	punct	_	_
 15	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	16	det	_	_
@@ -292,33 +292,34 @@
 34	Zügen	Zug	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	27	conj	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stellte (2)
-[] Es (1)
-[] nur (3)
-[] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
-[] dar (13)
+[MESSAGE] stellte (2)
+[x-sender] Es (1)
+[m-mode] nur (3)
+[topic] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
+[m-noncomp] dar (13)
 
-[] Es (1)
+[IDENTIFICATION] Es (1) # TODO anaphoric rolesets and when not to use them -> manual
 
 [] nur (3)
 
 [] Gesicht (6)
+[m-scene] von mehr als einem Meter Breite (12) # TODO clarify: when to use m-scene and when not
 [] riesiges (5)
-[] von mehr als einem Meter Breite (8)
 [] : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (16)
 
 [] riesiges (5)
 
-[] mehr (8)
-[] von als einem Meter Breite (11)
+[QUANTITY] mehr (8)
 
-[] Meter (11)
-[] einem (10)
-[] von Breite (12)
+[QUANTITY] Meter (11)
+[m-quantity] mehr (8)
+[m-quantity] einem (10)
 
-[] einem (10)
+[QUANTITY] einem (10)
 
-[] Breite (12)
+[QUALITY] Breite (12)
+[m-quantity] mehr als einem Meter (11)
+[has-quality] Gesicht (6)
 
 [] Gesicht (16)
 [] eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (18)
@@ -353,8 +354,6 @@
 
 [] auch (32)
 
-[] dar (13)
-
 # sent_id = 5
 # text = Winston ging die Treppe hinauf .
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
@@ -364,16 +363,14 @@
 5	hinauf	hinauf	ADP	PTKVZ	_	2	compound:prt	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] ging (2)
-[] Winston (1)
-[] die Treppe (4)
-[] hinauf (5)
+[LOCATION-CHANGE] ging (2)
+[has-location] Winston (1)
+[transitory-location] die Treppe (4)
+[target-location] hinauf (5)
 
 [] Winston (1)
 
 [] Treppe (4)
-
-[] hinauf (5)
 
 # sent_id = 6
 # text = Es hatte keinen Zweck , es mit dem Aufzug zu versuchen .
@@ -390,25 +387,26 @@
 11	versuchen	versuchen	VERB	VVINF	VerbForm=Inf	4	acl	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Es (1)
-[] keinen Zweck , es mit dem Aufzug zu versuchen (4)
+[SCENE] hatte (2)
+[participant] Es (1)
+[scene] keinen Zweck , es mit dem Aufzug zu versuchen (4)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Zweck (4)
-[] keinen (3)
-[] , es mit dem Aufzug zu versuchen (11)
+[SEQUENCE] Zweck (4)
+[m-mode] keinen (3)
+[followed] , es mit dem Aufzug zu versuchen (11)
+[followed] Es (1)
 
-[] keinen (3)
+[MODE] keinen (3)
 
-[] versuchen (11)
-[] es (6)
-[] mit dem Aufzug (9)
+[SCENE-INIT] versuchen (11)
+[target-scene] es (6)
+[x-means] mit dem Aufzug (9)
 
-[] es (6)
+[IDENTIFICATION] es (6)
 
-[] Aufzug (9)
+[CLASS] Aufzug (9)
 
 # sent_id = 7
 # text = Sogar zu den günstigsten Stunden des Tages funktionierte er nur selten , und zur Zeit war tagsüber der elektrische Strom abgestellt .
@@ -499,13 +497,15 @@
 
 [] wirtschaftlichen (5)
 
-[] Hass-Woche (11)
-[] in Vorbereitung befindlichen (10)
+[TIME >> EVENT] Hass-Woche (11)
+[m-scene] in Vorbereitung befindlichen (10)
 
-[] befindlichen (10)
-[] in Vorbereitung (9)
+[SCENE] befindlichen (10)
+[scene] in Vorbereitung (9)
+[participant] Hass-Woche (11)
 
-[] Vorbereitung (9)
+[SCENE-INIT || SEQUENCE] Vorbereitung (9)
+[target-scene || follows] Hass-Woche (11)
 
 # sent_id = 9
 # text = Die Wohnung lag sieben Treppen hoch , und der neununddreißigjährige Winston , der über dem rechten Fußknöchel dicke Krampfaderknoten hatte , ging sehr langsam und ruhte sich mehrmals unterwegs aus .
@@ -572,10 +572,10 @@
 
 [] der (13)
 
-[] Fußknöchel (17)
-[] rechten (16)
+[CLASS] Fußknöchel (17)
+[m-location || m-quality] rechten (16)
 
-[] rechten (16)
+[LOCATION || QUALITY] rechten (16)
 
 [] Krampfaderknoten (19)
 [] dicke (18)
@@ -589,8 +589,8 @@
 
 [] ruhte (26)
 [] sich (27)
-[] mehrmals (28)
-[] unterwegs (29)
+[m-time] mehrmals (28)
+[m-transitory-location || m-time] unterwegs (29)
 [] aus (30)
 
 [] sich (27)
@@ -1175,11 +1175,11 @@
 37	.	.	PUNCT	$.	_	5	punct	_	_
 
 [] wirbelten (5)
+[m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
 [] Unten (1)
 [] auf der Straße (4)
 [] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
 [] hoch (13)
-[] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
 
 [] Unten (1)
 
@@ -1325,9 +1325,9 @@
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
 [] hieß (10)
+[m-mode] auch (11)
+[m-location] hier (12)
 [] » Der Große Bruder sieht dich an . « (5)
-[] auch (11)
-[] hier (12)
 [] die Unterschrift (14)
 
 [] sieht (5)
@@ -1350,11 +1350,11 @@
 
 [] Unterschrift (14)
 
-[] bohrten (20)
-[] die dunklen Augen (19)
-[] sich (21)
-[] tief (22)
-[] in Winstons Blick (25)
+[LOCATION-INIT >> MESSAGE] bohrten (20)
+[x-causer >> x-experiencer] die dunklen Augen (19)
+[has-location >> x-noncomp] sich (21)
+[m-quantity >> m-quality] tief (22)
+[target-location >> topic] in Winstons Blick (25)
 
 [] Augen (19)
 [] dunklen (18)
@@ -1806,7 +1806,7 @@
 3	natürlich	natürlich	ADV	ADV	_	2	advmod	_	_
 4	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	5	nmod	_	_
 5	Möglichkeit	Möglichkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
-6	festzustellen	feststellen	VERB	VVIZU	VerbForm=Inf	2	xcomp	_	_
+6	festzustellen	feststellen	VERB	VVIZU	VerbForm=Inf	5	xcomp	_	_
 7	,	,	PUNCT	$,	_	15	punct	_	_
 8	ob	ob	SCONJ	KOUS	_	15	mark	_	_
 9	man	man	PRON	PIS	Definite=Ind|Gender=Neut	15	nsubj:pass	_	_
@@ -1815,20 +1815,19 @@
 12	gegebenen	gegeben	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	13	amod	_	_
 13	Augenblick	Augenblick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	15	obl	_	_
 14	gerade	gerade	ADV	ADV	_	15	advmod	_	_
-15	überwacht	überwachen	VERB	VVPP	Verbform=Part	5	ccomp	_	_
+15	überwacht	überwachen	VERB	VVPP	Verbform=Part	6	ccomp	_	_
 16	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] bestand (2)
-[] natürlich (3)
-[] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
-[] festzustellen (6)
+[SCENE] bestand (2)
+[scene] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
+[m-mode] natürlich (3)
 
 [] natürlich (3)
 
-[] Möglichkeit (5)
-[] keine (4)
-[] , ob man in einem gegebenen Augenblick gerade überwacht wurde (15)
+[SCENE-POSSIBILITY] Möglichkeit (5)
+[m-mode] keine (4)
+[scene] festzustellen , ob man in einem gegebenen Augenblick gerade überwacht wurde (6)
 
 [] keine (4)
 
@@ -1846,7 +1845,8 @@
 
 [] gerade (14)
 
-[] festzustellen (6)
+[MESSAGE-INIT] festzustellen (6)
+[target-content] , ob man in einem gegebenen Augenblick gerade überwacht wurde (15)
 
 # sent_id = 34
 # text = Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , blieb der Mutmaßung überlassen .
@@ -1870,12 +1870,12 @@
 18	überlassen	überlassen	VERB	VVPP	Verbform=Part	15	xcomp	_	_
 19	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] blieb (15)
-[] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , der Mutmaßung überlassen (18)
+[SCENE-CONTINUATION] blieb (15)
+[initial-scene] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , der Mutmaßung überlassen (18)
 
-[] überlassen (18)
-[] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
-[] der Mutmaßung (17)
+[SCENE-INIT] überlassen (18)
+[participant] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
+[target-scene] der Mutmaßung (17)
 
 [] einschaltete (13)
 [] Wie oft und nach welchem System (2)
@@ -1896,7 +1896,8 @@
 
 [] Privatapparat (12)
 
-[] Mutmaßung (17)
+[MESSAGE] Mutmaßung (17)
+[content] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
 
 # sent_id = 35
 # text = Es war sogar möglich , dass jeder einzelne ständig überwacht wurde .
@@ -2560,14 +2561,14 @@
 [] entstanden (36)
 [] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
 
-[] Siedlungen (33)
+[CLASS || PART-WHOLE] Siedlungen (33)
+[m-part || part] von Holzbaracken (35)
 [] trostlose (32)
-[] von Holzbaracken (35)
 [] , die wie Hühnerställe aussahen (42)
 
 [] trostlose (32)
 
-[] Holzbaracken (35)
+[CLASS] Holzbaracken (35)
 
 [] aussahen (42)
 [] die (39)
@@ -2716,7 +2717,7 @@
 [] Wahrheitsministerium (2)
 [] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
 
-[] Miniwahr (4)
+[IDENTIFICATION] Miniwahr (4)
 [] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
 
 [] hieß (17)
@@ -2905,13 +2906,13 @@
 2	BEDEUTET	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	FRIEDEN	Frieden	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	obj	_	_
 
-[] BEDEUTET (2)
-[] KRIEG (1)
-[] FRIEDEN (3)
+[MESSAGE || SEQUENCE] BEDEUTET (2)
+[topic || followed] KRIEG (1)
+[content || follows] FRIEDEN (3)
 
-[] KRIEG (1)
+[STATE || SOCIAL-RELATION] KRIEG (1)
 
-[] FRIEDEN (3)
+[STATE || SOCIAL-RELATION] FRIEDEN (3)
 
 # sent_id = 50
 # text = FREIHEIT IST SKLAVEREI
@@ -2919,8 +2920,8 @@
 2	IST	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	SKLAVEREI	Sklaverei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] SKLAVEREI (3)
-[] FREIHEIT (1)
+[STATE || SOCIAL-RELATION] SKLAVEREI (3)
+[x-identified] FREIHEIT (1)
 
-[] FREIHEIT (1)
+[STATE || SITUATION-NEG] FREIHEIT (1)
 

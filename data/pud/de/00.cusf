@@ -18,8 +18,8 @@
 14	ein	ein	DET	DT	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|NumType=Card|PronType=Art	16	det	_	_
 15	friedlicher	friedlich	ADJ	JJ	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	InflectionType=Mixed
 16	Machtwechsel	Machtwechsel	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	12	conj	_	orig_deprel=nsubj
-17	hingegen	hingegen	ADV	RB	Degree=Pos	12	advmod	_	_
-18	nicht	nicht	PART	RB	Polarity=Neg	12	advmod	_	SpaceAfter=No
+17	hingegen	hingegen	ADV	RB	Degree=Pos	16	orphan	_	_
+18	nicht	nicht	PART	RB	Polarity=Neg	16	orphan	_	SpaceAfter=No
 19	“	“	PUNCT	''	_	12	punct	_	SpaceAfter=No
 20	,	,	PUNCT	,	_	12	punct	_	_
 21	schrieb	schreiben	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	_
@@ -36,51 +36,51 @@
 31	Blogeintrag	Blogeintrag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	21	obl	_	SpaceAfter=No
 32	.	.	PUNCT	.	_	21	punct	_	_
 
-[] schrieb (21)
-[] „ Ein Großteil des digitalen Übergangs ist für die Vereinigten Staaten neu , ein friedlicher Machtwechsel hingegen nicht “ , (12)
-[] Obamas Sonderberaterin Kori Schulman (23)
-[] an dem Montag (28)
-[] in einem Blogeintrag (31)
+[MESSAGE-INIT] schrieb (21)
+[target-content] „ Ein Großteil des digitalen Übergangs ist für die Vereinigten Staaten neu , ein friedlicher Machtwechsel hingegen nicht “ , (12)
+[x-sender] Obamas Sonderberaterin Kori Schulman (23)
+[m-time] an dem Montag (28)
+[x-location || x-means] in einem Blogeintrag (31)
 
-[] neu (12)
-[] Ein Großteil des digitalen Übergangs (3)
-[] für die Vereinigten Staaten (11)
-[] hingegen (17)
-[] nicht (18)
+[TIME >> QUALITY] neu (12)
+[has-time >> has-quality] Ein Großteil des digitalen Übergangs (3)
+[x-experiencer] für die Vereinigten Staaten (11)
 
-[] Großteil (3)
-[] des digitalen Übergangs (6)
+[PART-WHOLE >> QUANTITY] Großteil (3)
+[whole >> has-quantity] des digitalen Übergangs (6)
 
-[] Übergangs (6)
-[] digitalen (5)
+[SITUATION-CHANGE] Übergangs (6)
+[m-quality >> m-noncomp] digitalen (5)
 
-[] digitalen (5)
+[QUALITY >> NONCOMP] digitalen (5)
 
-[] Staaten (11)
-[] Vereinigten (10)
+[CLASS >> IDENTIFICATION] Staaten (11)
+[m-social-relation >> m-noncomp] Vereinigten (10)
 
-[] Vereinigten (10)
+[SOCIAL-RELATION >> NONCOMP] Vereinigten (10)
 
-[] Machtwechsel (16)
-[] friedlicher (15)
+[POSSESSION-CHANGE] Machtwechsel (16)
+[m-quality] friedlicher (15)
+[m-conceded] hingegen (17)
+[m-mode] nicht (18)
 
-[] friedlicher (15)
+[QUALITY] friedlicher (15)
 
-[] hingegen (17)
+[CONCESSION] hingegen (17)
 
-[] nicht (18)
+[MODE] nicht (18)
 
-[] Sonderberaterin (23)
-[] Obamas (22)
-[] Kori Schulman (24)
+[SOCIAL-RELATION] Sonderberaterin (23)
+[social-relation] Obamas (22)
+[m-identifier] Kori Schulman (24) # TODO add appos example to manual
 
-[] Obamas (22)
+[IDENTIFICATION] Obamas (22)
 
-[] Kori (24)
+[IDENTIFICATION] Kori (24)
 
-[] Montag (28)
+[TIME] Montag (28)
 
-[] Blogeintrag (31)
+[MESSAGE] Blogeintrag (31)
 
 # sent_id = n01001013
 # text = Für alle, die Social-Media-Übergänge auf dem Capitol Hill verfolgen, wird dieser Übergang ein wenig anders sein.
@@ -109,37 +109,38 @@
 22	sein	sein	AUX	VB	_	21	cop	_	SpaceAfter=No
 23	.	.	PUNCT	.	_	21	punct	_	_
 
-[] anders (21)
-[] Für alle , die Social - Media - Übergänge auf dem Capitol Hill verfolgen , (2)
-[] dieser Übergang (18)
-[] ein wenig (20)
+[COMPARISON] anders (21)
+[m-experiencer] Für alle , die Social - Media - Übergänge auf dem Capitol Hill verfolgen , (2)
+[compared] dieser Übergang (18)
+[m-quantity] ein wenig (20)
 
-[] alle (2)
-[] , die Social - Media - Übergänge auf dem Capitol Hill verfolgen (14)
+[CLASS] alle (2)
+[m-scene] , die Social - Media - Übergänge auf dem Capitol Hill verfolgen (14)
 
-[] verfolgen (14)
-[] die (4)
-[] Social - Media - Übergänge auf dem Capitol Hill (9)
+[MESSAGE] verfolgen (14)
+[x-experiencer] die (4)
+[topic] Social - Media - Übergänge auf dem Capitol Hill (9)
+[x-experiencer] alle (2)
 
-[] die (4)
+[IDENTIFICATION] die (4)
 
-[] Übergänge (9)
-[] Social - Media - (7)
-[] auf dem Capitol Hill (13)
+[SITUATION-CHANGE] Übergänge (9)
+[m-situator] Social - Media - (7)
+[m-location] auf dem Capitol Hill (13)
 
-[] Media (7)
-[] Social - (5)
+[CLASS] Media (7)
+[m-quality >> m-noncomp] Social - (5)
 
-[] Social (5)
+[QUALITY >> NONCOMP] Social (5)
 
-[] Hill (13)
-[] Capitol (12)
+[CLASS >> IDENTIFICATION] Hill (13)
+[m-has-location >> m-noncomp] Capitol (12)
 
-[] Capitol (12)
+[CLASS >> IDENTIFICATION >> NONCOMP] Capitol (12)
 
-[] Übergang (18)
+[SITUATION-CHANGE] Übergang (18)
 
-[] wenig (20)
+[QUANTITY] wenig (20)
 
 # newdoc id = n01002
 # sent_id = n01002017
@@ -180,50 +181,53 @@
 32	würde	werden	AUX	VBC	Mood=Sub|Number=Sing|Person=3|Tense=Past	31	aux	_	SpaceAfter=No
 33	.	.	PUNCT	.	_	10	punct	_	_
 
-[] verkündete (10)
-[] Entgegen seinen bisherigen Äußerungen zu der Begrenzung der Einwanderung (4)
-[] der Nominierte der Republikanischen Partei (12)
-[] , dass er als Präsident „ enorm viele “ legale Einwanderer basierend auf einem Punktesystem akzeptieren würde (31)
+[MESSAGE-INIT] verkündete (10)
+[m-conceded] Entgegen seinen bisherigen Äußerungen zu der Begrenzung der Einwanderung (4)
+[x-sender] der Nominierte der Republikanischen Partei (12)
+[target-content] , dass er als Präsident „ enorm viele “ legale Einwanderer basierend auf einem Punktesystem akzeptieren würde (31)
 
-[] Äußerungen (4)
-[] bisherigen (3)
-[] zu der Begrenzung der Einwanderung (7)
+[MESSAGE-INIT] Äußerungen (4)
+[m-time] bisherigen (3)
+[topic] zu der Begrenzung der Einwanderung (7)
+[x-sender] seinen (2)
 
-[] bisherigen (3)
+[IDENTIFICATION] seinen (2)
 
-[] Begrenzung (7)
-[] der Einwanderung (9)
+[TIME] bisherigen (3)
 
-[] Einwanderung (9)
+[SCENE-DEINIT] Begrenzung (7)
+[initial-scene] der Einwanderung (9)
 
-[] Nominierte (12)
-[] der Republikanischen Partei (15)
+[LOCATION-CHANGE] Einwanderung (9)
 
-[] Partei (15)
-[] Republikanischen (14)
+[SOCIAL-RELATION-INIT] Nominierte (12) # treated as a verb form of "nominieren", hence -INIT
+[x-causer] der Republikanischen Partei (15)
 
-[] Republikanischen (14)
+[CLASS] Partei (15)
+[m-quality >> x-noncomp] Republikanischen (14)
 
-[] akzeptieren (31)
-[] er als Präsident (18)
-[] „ enorm viele “ legale Einwanderer (26)
-[] basierend auf einem Punktesystem (27)
+[QUALITY >> CLASS] Republikanischen (14)
 
-[] er (18)
+[SOCIAL-RELATION-INIT] akzeptieren (31)
+[x-causer] er als Präsident (18)
+[has-social-relation] „ enorm viele “ legale Einwanderer (26)
+[m-followed] basierend auf einem Punktesystem (27)
 
-[] Präsident (20)
+[IDENTIFICATION] er (18)
 
-[] Einwanderer (26)
-[] legale (25)
+[SOCIAL-RELATION] Präsident (20)
 
-[] enorm (22)
+[LOCATION-CHANGE] Einwanderer (26)
+[m-quality] legale (25)
 
-[] legale (25)
+[QUANTITY] enorm (22)
 
-[] basierend (27)
-[] auf einem Punktesystem (30)
+[QUALITY] legale (25)
 
-[] Punktesystem (30)
+[SEQUENCE] basierend (27)
+[followed] auf einem Punktesystem (30)
+
+[CLASS] Punktesystem (30)
 
 # sent_id = n01002032
 # text = „Ich möchte euch ungern unter Druck setzen, aber das Schicksal der Republik liegt in euren Händen“, sagte er zu der Menschenmenge, die sich auf einem Sportplatz an der University of North Carolina versammelt hatte.
@@ -269,60 +273,67 @@
 39	hatte	haben	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Tense=Past	38	aux	_	SpaceAfter=No
 40	.	.	PUNCT	.	_	21	punct	_	_
 
-[] sagte (21)
-[] „ Ich möchte euch ungern unter Druck setzen , aber das Schicksal der Republik liegt in euren Händen “ , (8)
-[] er (22)
-[] zu der Menschenmenge , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (25)
+[MESSAGE-INIT] sagte (21)
+[target-content] „ Ich möchte euch ungern unter Druck setzen , aber das Schicksal der Republik liegt in euren Händen “ , (8)
+[x-sender] er (22)
+[x-experiencer] zu der Menschenmenge , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (25)
 
-[] setzen (8)
-[] Ich (2)
-[] euch (4)
-[] ungern (5)
-[] unter Druck (7)
+[SCENE-INIT] setzen (8)
+[x-causer] Ich (2)
+[participant] euch (4)
+[m-scene] ungern (5) # sentence adverb
+[target-scene] unter Druck (7)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] euch (4)
+[IDENTIFICATION] euch (4)
 
-[] ungern (5)
+[MESSAGE] ungern (5)
+[topic] setzen (8)
+[x-experiencer] Ich (2)
 
-[] Druck (7)
+[MESSAGE] Druck (7)
+[x-experiencer] euch (4)
 
-[] liegt (15)
-[] das Schicksal der Republik (12)
-[] in euren Händen (18)
+[SEQUENCE] liegt (15)
+[follows] das Schicksal der Republik (12)
+[x-noncomp] in euren Händen (18)
 
-[] Schicksal (12)
-[] der Republik (14)
+[SCENE] Schicksal (12)
+[participant] der Republik (14)
 
-[] Republik (14)
+[CLASS] Republik (14)
 
-[] Händen (18)
+[SEQUENCE] Händen (18)
+[followed] euren (17)
 
-[] er (22)
+[IDENTIFICATION] euren (17)
 
-[] Menschenmenge (25)
-[] , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (38)
+[IDENTIFICATION] er (22)
 
-[] versammelt (38)
-[] die (27)
-[] sich (28)
-[] auf einem Sportplatz an der University of North Carolina (31)
+[CLASS] Menschenmenge (25)
+[m-scene] , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (38)
 
-[] die (27)
+[LOCATION-INIT] versammelt (38)
+[x-causer] die (27)
+[has-location] sich (28)
+[target-location] auf einem Sportplatz an der University of North Carolina (31)
+[x-causer] Menschenmenge (25)
 
-[] sich (28)
+[IDENTIFICATION] die (27)
 
-[] Sportplatz (31)
-[] an der University of North Carolina (34)
+[IDENTIFICATION] sich (28)
 
-[] University (34)
-[] of North Carolina (37)
+[CLASS] Sportplatz (31)
+[m-location] an der University of North Carolina (34)
 
-[] Carolina (37)
-[] North (36)
+[IDENTIFICATION] University (34)
+[m-social-relation >> m-noncomp] of North Carolina (37)
 
-[] North (36)
+[IDENTIFICATION] Carolina (37)
+[m-noncomp] North (36)
+
+[IDENTIFICATION] North (36)
 
 # sent_id = n01002042
 # text = Die neuen Ausgaben werden über Clintons wohlgefülltes Bankkonto finanziert.
@@ -338,18 +349,18 @@
 9	finanziert	finanzieren	VERB	VBN	Tense=Past	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	.	_	9	punct	_	_
 
-[] finanziert (9)
-[] Die neuen Ausgaben (3)
-[] über Clintons wohlgefülltes Bankkonto (8)
+[MEANS] finanziert (9)
+[has-means] Die neuen Ausgaben (3)
+[means] über Clintons wohlgefülltes Bankkonto (8)
 
-[] Ausgaben (3)
-[] neuen (2)
+[POSSESSION-CHANGE] Ausgaben (3)
+[m-time] neuen (2)
 
-[] neuen (2)
+[TIME] neuen (2)
 
-[] Bankkonto (8)
-[] Clintons (6)
-[] wohlgefülltes (7)
+[CLASS] Bankkonto (8)
+[m-possessor] Clintons (6)
+[m-state] wohlgefülltes (7)
 
 [] Clintons (6)
 
@@ -372,29 +383,29 @@
 12	unglaublich	unglaublich	ADJ	JJ	Degree=Pos	3	parataxis	_	SpaceAfter=No
 13	.	.	PUNCT	.	_	3	punct	_	_
 
-[] sagt (3)
-[] Was (1)
-[] sie (2)
+[MESSAGE-INIT] sagt (3)
+[target-content] Was (1)
+[x-sender] sie (2)
 
-[] Was (1)
+[IDENTIFICATION] Was (1)
 
-[] sie (2)
+[IDENTIFICATION] sie (2)
 
-[] tut (7)
-[] was (5)
-[] sie (6)
+[ACTIVITY] tut (7)
+[activity] was (5)
+[is-active] sie (6)
 
-[] was (5)
+[IDENTIFICATION] was (5)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] unglaublich (12)
-[] eigentlich (9)
-[] es (11)
+[QUALITY] unglaublich (12)
+[m-mode] eigentlich (9)
+[has-quality] es (11)
 
-[] eigentlich (9)
+[MODE] eigentlich (9)
 
-[] es (11)
+[IDENTIFICATION] es (11) # TODO NOREL-Pseudoframe für "expletives" (?) es wie in "Es ist mir kalt"
 
 # newdoc id = n01003
 # sent_id = n01003007
@@ -410,19 +421,20 @@
 8	Maximum	Maximum	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	2	appos	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-[] $ (2)
-[] 5.000 (1)
-[] pro Person (4)
-[] , das erlaubte Maximum (8)
+[QUANTITY] $ (2)
+[m-quantity] 5.000 (1)
+[m-followed] pro Person (4)
+[m-identifier] , das erlaubte Maximum (8)
 
-[] 5.000 (1)
+[QUANTITY] 5.000 (1)
 
-[] Person (4)
+[CLASS] Person (4)
 
-[] Maximum (8)
-[] erlaubte (7)
+[QUANTITY] Maximum (8)
+[m-scene] erlaubte (7)
 
-[] erlaubte (7)
+[SCENE-POSSIBILITY] erlaubte (7)
+[scene] Maximum (8)
 
 # sent_id = n01003010
 # text = Anfang Oktober nutzte das Übergangsteam denselben Veranstaltungsort für ein Treffen mit Technologielobbyisten, zu dem u.a. Vertreter von Uber, der Motion Picture Association of America und der Consumer Technology Association eingeladen waren.
@@ -462,11 +474,11 @@
 33	waren	sein	AUX	VBC	Mood=Ind|Number=Plur|Person=3|Tense=Past	32	cop	_	SpaceAfter=No
 34	.	.	PUNCT	.	_	3	punct	_	_
 
-[] nutzte (3)
-[] Anfang Oktober (1)
-[] das Übergangsteam (5)
-[] denselben Veranstaltungsort (7)
-[] für ein Treffen mit Technologielobbyisten , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (10)
+[MEANS] nutzte (3)
+[m-time] Anfang Oktober (1)
+[x-causer] das Übergangsteam (5)
+[means] denselben Veranstaltungsort (7)
+[has-means] für ein Treffen mit Technologielobbyisten , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (10)
 
 [] Anfang (1)
 [] Oktober (2)
@@ -477,15 +489,17 @@
 
 [] Veranstaltungsort (7)
 
-[] Treffen (10)
-[] mit Technologielobbyisten (12)
-[] , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (32)
+[SOCIAL-RELATION] Treffen (10)
+[social-relation] mit Technologielobbyisten (12)
+[m-scene] , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (32)
+[has-social-relation] das Übergangsteam (5)
 
 [] Technologielobbyisten (12)
 
 [] eingeladen (32)
 [] zu dem (15)
 [] Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association (17)
+[] Treffen (10)
 
 [] dem (15)
 
@@ -541,8 +555,8 @@
 22	.	.	PUNCT	.	_	21	punct	_	_
 
 [] stattfinden (21)
+[m-time] ursprünglich (4)
 [] Das Treffen (2)
-[] ursprünglich (4)
 [] nur ein paar Blocks entfernt (9)
 [] in dem exklusiven Metropolitan Club (14)
 [] in Washington (16)
@@ -550,7 +564,7 @@
 
 [] Treffen (2)
 
-[] ursprünglich (4)
+[TIME] ursprünglich (4)
 
 [] entfernt (9)
 [] nur ein paar Blocks (7)
@@ -590,15 +604,15 @@
 7	.	.	PUNCT	.	_	6	punct	_	_
 
 [] bieder (6)
+[m-quantity] zu (5)
 [] Vielleicht (1)
 [] die Kleiderordnung (4)
-[] zu (5)
 
 [] Vielleicht (1)
 
-[] Kleiderordnung (4)
+[MESSAGE] Kleiderordnung (4)
 
-[] zu (5)
+[QUANTITY] zu (5)
 
 # newdoc id = n01004
 # sent_id = n01004009
@@ -637,10 +651,11 @@
 [] beispielsweise wissenschaftliche Methoden als eine eigene Unterrichtseinheit (4)
 
 [] Methoden (4)
-[] beispielsweise (2)
+[m-scene] beispielsweise (2)
 [] wissenschaftliche (3)
 
-[] beispielsweise (2)
+[EXAMPLE] beispielsweise (2)
+[example] Methoden (4)
 
 [] wissenschaftliche (3)
 
@@ -651,10 +666,11 @@
 
 [] Schüler (14)
 
-[] Inhalte (16)
-[] wissenschaftliche (15)
+[MESSAGE] Inhalte (16)
+[m-quality >> m-scene] wissenschaftliche (15)
 
-[] wissenschaftliche (15)
+[QUALITY >> MESSAGE] wissenschaftliche (15)
+[content] Inhalte (16)
 
 [] anwenden (21)
 [] sie (19)
@@ -695,38 +711,41 @@
 25	Durchschnitt	Durchschnitt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	21	conj	_	SpaceAfter=No
 26	.	.	PUNCT	.	_	6	punct	_	_
 
-[] liegen (6)
-[] In der 4 . Klasse (5)
-[] sie (7)
-[] in dem nationalen Durchschnitt (11)
+[SCENE] liegen (6)
+[m-depictive] In der 4 . Klasse (5)
+[participant] sie (7)
+[scene] in dem nationalen Durchschnitt (11)
 
-[] Klasse (5)
-[] 4 . (3)
+[CLASS] Klasse (5)
+[m-rank] 4 . (3)
+[m-has-social-relation] sie (7)
 
-[] 4 (3)
+[RANK] 4 (3)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] Durchschnitt (11)
-[] nationalen (10)
+[QUANTITY] Durchschnitt (11)
+[has-quantity] nationalen (10)
+[x-has-quantity] sie (7)
 
-[] nationalen (10)
+[CLASS] nationalen (10)
 
-[] besser (21)
-[] in der 8 . Klasse (18)
-[] sie (20)
+[QUALITY] besser (21)
+[m-depictive] in der 8 . Klasse (18)
+[has-quality] sie (20)
 
-[] Klasse (18)
-[] 8 . (16)
+[CLASS] Klasse (18)
+[m-rank] 8 . (16)
+[m-social-relation] sie (20)
 
-[] 8 (16)
+[RANK] 8 (16)
 
-[] sie (20)
+[IDENTIFICATION] sie (20)
 
-[] Durchschnitt (25)
-[] nationale (24)
+[QUANTITY] Durchschnitt (25)
+[has-quantity] nationale (24)
 
-[] nationale (24)
+[CLASS] nationale (24)
 
 # newdoc id = n01005
 # sent_id = n01005023
@@ -973,22 +992,25 @@
 11	ziehen	ziehen	VERB	VB	_	0	root	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	_
 
-[] ziehen (11)
-[] Hier (1)
-[] man (3)
-[] Parallelen (4)
-[] zwischen Spielen und unserem täglichen Leben (6)
+[COMPARISON] ziehen (11)
+[m-situator] Hier (1)
+[x-causer] man (3)
+[x-noncomp] Parallelen (4)
+[compared] zwischen Spielen und unserem täglichen Leben (6)
 
 [] Hier (1)
 
 [] man (3)
 
-[] Parallelen (4)
+[NONCOMP] Parallelen (4)
 
 [] Spielen (6)
 
 [] Leben (10)
+[] unserem (8)
 [] täglichen (9)
+
+[] unserem (8)
 
 [] täglichen (9)
 
@@ -1297,7 +1319,10 @@
 [] versuchten (5)
 
 [] Tochter (9)
+[] ihrer (7)
 [] zweijährigen (8)
+
+[] ihrer (7)
 
 [] zweijährigen (8)
 
@@ -1360,10 +1385,16 @@
 [] sie (8)
 
 [] Gesicht (10)
+[] sein (9)
+
+[] sein (9)
 
 [] Luftmatratze (13)
 
 [] Wohnzimmer (16)
+[] ihrem (15)
+
+[] ihrem (15)
 
 [] versuchte (26)
 [] sie (20)
@@ -1375,7 +1406,10 @@
 [] dasselbe (21)
 
 [] Tochter (24)
+[] ihrer (23)
 [] Angel (25)
+
+[] ihrer (23)
 
 [] Angel (25)
 
@@ -1481,6 +1515,9 @@
 [] dann (11)
 
 [] Freundinnen (14)
+[] ihrer (13)
+
+[] ihrer (13)
 
 # newdoc id = n01013
 # sent_id = n01013005
@@ -1761,6 +1798,9 @@
 [] seiner Popularität (8)
 
 [] Popularität (8)
+[] seiner (7)
+
+[] seiner (7)
 
 [] der (13)
 [] vielleicht (11)
@@ -1847,7 +1887,10 @@
 [] aus (22)
 
 [] Komponente (14)
+[] ihre (12)
 [] eigene (13)
+
+[] ihre (12)
 
 [] eigene (13)
 
@@ -2371,6 +2414,9 @@
 [] noch (6)
 
 [] Militärausrüstung (9)
+[] seiner (8)
+
+[] seiner (8)
 
 [] Kampfhubschraubern (13)
 
@@ -2452,6 +2498,9 @@
 [] sowohl hinsichtlich der Zivilluftfahrt als auch der Verteidigung (29)
 
 [] Ambitionen (25)
+[] seine (24)
+
+[] seine (24)
 
 [] Zivilluftfahrt (29)
 
