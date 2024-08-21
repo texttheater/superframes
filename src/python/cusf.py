@@ -3,7 +3,7 @@ import logging
 import math
 import re
 import sys
-from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
+from typing import Dict, Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
 import networkx as nx # type: ignore
@@ -114,7 +114,8 @@ class Frame:
                 return arg
         return None
 
-    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int,
+            head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -285,21 +286,29 @@ class Sentence:
                         cursor += 1
 
     def check(self) -> Tuple[int, int, int]:
-        self.to_graph()
-        frame_count = 0
-        annotated_count = 0
-        warnings = 0
-        for lineno, frame in zip(self.frame_linenos, self.frames):
-            if not isinstance(frame, Frame):
+        head_frame_map = {}
+        head_lineno_map = {}
+        for frame_lineno, frame in zip(self.frame_linenos, self.frames):
+            if isinstance(frame, Frame):
+                if frame.head in head_frame_map:
+                    logging.warning(
+                        'sent %s line %s duplicate frame for head word %s',
+                        self.syntax[0].id, lineno, frame.head,
+                    )
+                else:
+                    head_frame_map[frame.head] = frame
+                    head_lineno_map[frame.head] = frame_lineno
+            else:
                 logging.warning('sent %s line %s cannot parse frame %s',
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
-                continue
-            frame_count += 1
-            ok, w = frame.check(self, lineno)
+        annotated_count = 0
+        warnings = 0
+        for frame in head_frame_map.values():
+            ok, w = frame.check(self, head_lineno_map[frame.head], head_frame_map)
             if ok:
                 annotated_count += 1
             warnings += w
-        return frame_count, annotated_count, warnings
+        return len(head_frame_map), annotated_count, warnings
 
     def to_graph(self) -> nx.Graph:
         graph = nx.Graph()
