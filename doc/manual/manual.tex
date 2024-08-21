@@ -67,8 +67,8 @@
             \Sub\emoji{balance-scale} \fr{COMPARISON} & & \rl{compared} & \rl{reference} & & & \ref{sec:COMPARISON} \\
             \SubSub\emoji{ok-hand} \fr{CONCESSION} & & \rl{assertion} & \rl{conceded} & & & \ref{sec:CONCESSION} \\
 
-            \Sub\emoji{crossed-swords}\ \fr{EVENT} & & \rl{undergoer} & \rl{event} & & & \ref{sec:EVENT} \\
-            \SubSub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & \rl{activity} & & & \ref{sec:ACTIVITY} \\
+            \Sub\emoji{crossed-swords}\ \fr{EVENT} & & \rl{undergoer} & & & & \ref{sec:EVENT} \\
+            \SubSub\emoji{woman-dancing} \fr{ACTIVITY} & & \rl{is-active} & & & & \ref{sec:ACTIVITY} \\
 
             \Sub\emoji{sparkles} \fr{EXISTENCE} & \rl{initial-exists} & \rl{material} & \rl{exists} & & \rl{target-exists} & \ref{sec:EXISTENCE} \\
             \SubSub\emoji{memo} \fr{REPRODUCTION} & & \rl{original} & & & \rl{copy} & \ref{sec:REPRODUCTION} \\
@@ -93,7 +93,7 @@
 
             \Sub\emoji{left-speech-bubble} \fr{MESSAGE} & \rl{initial-content} & \rl{topic} & \rl{content} & & \rl{target-content} & \ref{sec:MESSAGE} \\
 
-            \Sub\emoji{red-question-mark} \fr{MODE} & & \rl{has-mode} & \rl{mode} & & & \ref{sec:MODE} \\
+            \Sub\emoji{red-question-mark} \fr{MODE} & & \rl{has-mode} & & & & \ref{sec:MODE} \\
 
             \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
@@ -108,9 +108,9 @@
 
             \Sub\emoji{performing-arts} \fr{SCENE} & \rl{initial-scene} & \rl{participant} & \rl{scene} & \rl{transitory-scene} & \rl{target-scene} & \ref{sec:SCENE} \\
 
-            \Sub\emoji{zzz} \fr{STATE} & \rl{initial-state} & \rl{has-state} & \rl{state} & & \rl{target-state} & \ref{sec:STATE} \\
-            \SubSub\emoji{red-apple} \fr{QUALITY} & \rl{initial-quality}& \rl{has-quality} & \rl{quality} & & \rl{target-quality} & \ref{sec:QUALITY} \\
-            \SubSubSub\emoji{deciduous-tree} \fr{CLASS} & \rl{initial-class} & \rl{has-class} & \rl{class} & & \rl{target-class} & \ref{sec:CLASS} \\
+            \Sub\emoji{zzz} \fr{STATE} & & \rl{has-state} & & & & \ref{sec:STATE} \\
+            \SubSub\emoji{red-apple} \fr{QUALITY} & & \rl{has-quality} & & & & \ref{sec:QUALITY} \\
+            \SubSubSub\emoji{deciduous-tree} \fr{CLASS} & & \rl{has-class} & & & & \ref{sec:CLASS} \\
             \SubSub\emoji{skull} \fr{DESTRUCTION} & & \rl{destroyed} & & & & \ref{sec:DESTRUCTION} \\
 
             \Sub\emoji{megaphone} \fr{SENDING} & & \rl{sent} & \rl{sender} & & & \ref{sec:SENDING} \\
@@ -298,7 +298,20 @@ Like non-core arguments, modifiers are assumed to evoke an additional frame,
 and labeled with the role they fill in that frame, but with a prefix marking
 them as modifiers: \rl{m-}.
 
-\ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
+\ex.\dep{Kim_excreter is *sweating#EXCRETION* in the sauna_m-location}
+
+\newpage\subsection{Reverse Roles}
+
+There is another type of modifier that is syntactically a dependent, but
+semantically a predicate of which the modifiee is an argument. Here, we label
+the modifier with the role that the \emph{modifiee} fills, prefixed with
+\rl{r-}.
+
+\ex.\dep{Kim_excreter is not_r-has-mode *sweating#EXCRETION* profusely_r-has-quality}.
+
+\todo[inline]{also use for other sentence adverbs, relative clauses, etc.}
+
+\todo[inline]{change annotation to use reverse roles where appropriate, especially with m-time, m-quantity. Adverbs especially should be annotated with reverse roles in most cases.}
 
 \newpage\subsection{Nonverbal Predicates}
 
@@ -336,15 +349,15 @@ Predicate adjectives most typically denote states or qualities.
 
 With attributive adjectives, the dependency relation is reversed, and the role label is changed accordingly.
 
-\ex.\dep{despicable_m-quality *me#IDENTIFICATION*}
+\ex.\dep{despicable_r-has-quality *me#IDENTIFICATION*}
 
-\ex.\dep{the tired_m-state *dog#CLASS*}
+\ex.\dep{the tired_r-has-state *dog#CLASS*}
 
 Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quantity}):
 
-\ex.\dep{Kim_has-location *ran#Motion* fast_m-quality}
+\ex.\dep{Kim_has-location *ran#Motion* fast_r-has-quality}
 
-\ex.\dep{Kim_has-location *ran#Motion* far_m-quantity}
+\ex.\dep{Kim_has-location *ran#Motion* far_r-has-quantity}
 
 \newpage\subsection{Control Relations}
 \label{sec:control}
@@ -391,9 +404,9 @@ roles.
 This mechanism can be used to indicate that an expression has become fixed and
 not fully compositional:
 
-\ex.\dep{primeval_m-time>>m-noncomp *forest#CLASS*}
+\ex.\dep{primeval_r-has-time>>m-noncomp *forest#CLASS*}
 
-\ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
+\ex.\dep{colored_r-has-quality>>m-noncomp *pencil#CLASS*}
 
 \ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
 
@@ -524,7 +537,7 @@ The \rl{reference} need not be an entity similar to the \rl{compared}, it can al
 We analyze gradation of adjectives as a valency-changing derivation that adds
 an \rl{x-reference} argument.
 
-\ex.\dep{more_m-quantity *isolated#SOCIAL-RELATION* than a shipwrecked sailor_x-reference}
+\ex.\dep{more_r-has-quantity *isolated#SOCIAL-RELATION* than a shipwrecked sailor_x-reference}
 
 \ex.\dep{Kim_has-quality is *taller#QUALITY* than Sandy_x-reference}
 
@@ -540,6 +553,8 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \ex.\dep{Kim_sender *sent#SENDING* Sandy_x-experiencer a letter_sent , but it never arrived_m-asserted}
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
+
+\ex.\dep{Ich_x-experiencer bin trotzdem_r-asserted *fröhlich#MESSAGE*}
 
 \newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
 \label{sec:EVENT}
@@ -611,7 +626,7 @@ for beneficiaries, and for ``bystander'' roles.
 
 \ex.\dep{I_x-experiencer *saw#MESSAGE* a magnificent picture_topic}
 
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality}
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_r-has-quality}
 
 \ex.\dep{Kim_x-sender *talked#MESSAGE-INIT* to Sandy_x-experiencer}
 
@@ -739,7 +754,7 @@ Special case of \rl{LOCATION-CHANGE} where no initial or target location is indi
 
 \ex.\dep{Kim_in-motion is *dancing#UNANCHORED-MOTION* around the room_transitory-location with Sandy_m-accompanier}
 
-\ex.\dep{Kim_in-motion is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
+\ex.\dep{Kim_in-motion is an avid_r-has-quality *unicyclist#UNANCHORED-MOTION*}
 
 %\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
 
@@ -887,17 +902,17 @@ Used for adverbial modifiers that have no arguments other than the phrase they
 modify, and that, rouhgly speaking, indicate the modal strength of what is
 expressed and/or its relation to the discourse.
 
-\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
+\ex.\dep{Even_r-has-mode *Kim#IDENTIFICATION* did n't know that}
 
-\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+\ex.\dep{They_x-causer only_r-has-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
 
-\ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
+\ex.\dep{*Passt#COMPARISON* das_compared eh_r-has-mode ?}
 
-\ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
+\ex.\dep{Kim_x-experiencer probably_r-has-mode *knows#MESSAGE* that_content}
 
-\ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
+\ex.\dep{That_has-quality 's really_r-has-mode *great#QUALITY*}
 
-\ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
+\ex.\dep{Kim_has-location is not_r-has-mode *here#LOCATION*}
 
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
@@ -936,7 +951,7 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 
 \ex.\dep{*birds#CLASS* such as storks_m-example}
 
-\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_m-scene wissenschaftliche Methoden_target-content}
+\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_r-example wissenschaftliche Methoden_target-content}
 
 \newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
@@ -972,11 +987,11 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 
 \rl{quantity} is the quantity, degree, or extent of \rl{has-quantity}.
 
-\ex.\dep{three_m-quantity *burgers#CLASS*}
+\ex.\dep{three_r-has-quantity *burgers#CLASS*}
 
-\ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
+\ex.\dep{three_r-has-quantity *liters#QUANTITY* of coke_has-quantity}
 
-\ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
+\ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_r-has-quantity}
 
 \newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
 \label{sec:RANK}
@@ -985,7 +1000,7 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 
 \ex.\dep{*Chapter#MESSAGE* 1_m-rank}
 
-\ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
+\ex.\dep{my_m-sender first_r-has-rank *drawing#MESSAGE*}
 
 \newpage\subsection{\emoji{performing-arts} \fr{SCENE}}
 \label{sec:SCENE}
@@ -1062,13 +1077,13 @@ the \rl{has-quality} (aka \rl{has-state}) is not expected to change back and
 forth between \rl{quality}s (aka \rl{state}s) regularly.  Also used to describe
 qualitites of events, i.e., manners.
 
-\ex.\dep{a magnificent_m-quality *picture#MESSAGE*}
+\ex.\dep{a magnificent_r-has-quality *picture#MESSAGE*}
 
-\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_m-quality over the adventures_topic of the jungle}
+\ex.\dep{I_x-experiencer *pondered#MESSAGE-INIT* deeply_r-has-quality over the adventures_topic of the jungle}
 
-\ex.\dep{a skilled_m-quality *surgeon#CLASS*}
+\ex.\dep{a skilled_r-has-quality *surgeon#CLASS*}
 
-\ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
+\ex.\dep{such_r-has-quality *knowledge#MESSAGE* is valuable}
 
 \ex.\dep{The leaves_has-quality *reddened#QUALITY-INIT*}
 
@@ -1273,7 +1288,7 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_in-motion *swims#UNANCHORED-MOTION* on Monday_m-time}
 
-\ex.\dep{Kim_excreter *sneezed#EXCRETION* twice_m-time}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* twice_r-has-time}
 
 \ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
@@ -1306,8 +1321,8 @@ prepositional argument denoting a \rl{topic}, so \fr{MESSAGE} is a better
 choice.
 
 \ex.
-\a.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
-\b.\dep{my_m-sender first_m-rank *drawing#MESSAGE* of a snake_topic}
+\a.\dep{my_m-sender first_r-has-rank *drawing#MESSAGE*}
+\b.\dep{my_m-sender first_r-has-rank *drawing#MESSAGE* of a snake_topic}
 
 \ex.
 \a.\dep{Kim_x-causer *helped#SCENE-INIT* Sandy_participant}
@@ -1327,7 +1342,7 @@ For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) 
 
 Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it is not assigned by the noun \emph{tree} but by the possessive construction, so \emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
 
-\ex.\dep{Kim_m-0possessor 's *tree#CLASS*}
+\ex.\dep{Kim_m-possessor 's *tree#CLASS*}
 
 \newpage\subsection{Shadow and Default Arguments}
 
@@ -1361,7 +1376,7 @@ the filler of that frame's \rl{topic} role, and so on.
 
 \ex.\dep{ein *Großteil#PART-WHOLE* des digitalen Übergangs_whole}
 
-\ex.\dep{Obama_social-relation special_m-quality>>m-noncomp *assistant#SOCIAL-RELATION*}
+\ex.\dep{Obama_social-relation special_r-has-quality>>m-noncomp *assistant#SOCIAL-RELATION*}
 
 \newpage\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
 
@@ -1403,7 +1418,7 @@ In the following example, I found that \emph{toss off} can mean ``to assemble
 hastily''\footnote{\url{https://en.wiktionary.org/w/index.php?title=toss\_off\&oldid=77814489}, retrieved 2024-05-28},
 thus went for the \fr{TRANSFORMATION-CREATION} frame.
 
-\ex.\dep{So_m-explanation I_x-causer *tossed#TRANSFORMATION-CREATION* off_m-noncomp this drawing_created}
+\ex.\dep{So_r-has-explanation I_x-causer *tossed#TRANSFORMATION-CREATION* off_m-noncomp this drawing_created}
 
 \newpage\subsection{Symmetric Argument Pairs}
 
@@ -1474,12 +1489,12 @@ labeled with \rl{initial-location} or \rl{target-location}.
 
 \ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location}
 
-\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_m-time}
+\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_r-has-time}
 
 In semi-non-compositional particle verbs, where the particle adds a partially predictable
 but nonspatial meaning to the verb, use an appropriate role.
 
-\ex.\dep{*eat#INGESTION* up_m-quantity the cookies_ingested} (implies \emph{eat} the cookies)
+\ex.\dep{*eat#INGESTION* up_r-has-quantity the cookies_ingested} (implies \emph{eat} the cookies)
 
 In fully non-compositional particle verbs, where the meaning is not
 predictable, use \rl{m-noncomp}.
@@ -1506,7 +1521,7 @@ and \rl{x-identified} if it is definite.
 
 \ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
 
-\ex.\dep{My drawing_x-has-class was not_m-mode a *picture#MESSAGE* of a hat_topic}
+\ex.\dep{My drawing_x-has-class was not_r-has-mode a *picture#MESSAGE* of a hat_topic}
 
 \newpage\subsection{Predicative Adpositions}
 
@@ -1522,7 +1537,7 @@ The annotation is quite natural:
 \ex.
 \a.\dep{Ich_x-experiencer__has-location *will#MESSAGE* **in#LOCATION-CHANGE**_content die ***Berge#CLASS***__target-location}
 \b.\dep{I_has-location am *out#LOCATION-NEG* of the office_location today_m-time}
-\c.\dep{*sleep#STATE* a thousand miles__m-quantity **from#LOCATION**_m-location any human habitation__location}
+\c.\dep{*sleep#STATE* a thousand miles__m-quantity **from#LOCATION**_r-has-location any human habitation__location}
 
 But since we don't treat adpositions as predicates, we are forced to choose the following, more opaque and less detailed annotation:
 
@@ -1551,9 +1566,6 @@ ungeachtet (CONCESSION), erstmals (TIME), unvermindert (QUANTITY-CONTINUATION)
 Speaker-oriented adverbs: MESSAGE? erstaunlicherweise, geheimnisvollerweise,
 glücklicherweise, möglicherweise, notwendigerweise, tragischerweise,
 unglaublicherweise (MESSAGE-PREVENTION?), unglücklicherweise, zweckmäßigerweise?
-
-codify the general principle somewhere: if superframe and ARG1 have the same
-name (quasi-unary relations), we can just use m-rel. Otherwise, use m-scene.
 
 Treatment of valency-changing operations:
 
