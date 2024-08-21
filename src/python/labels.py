@@ -128,16 +128,16 @@ def check_dep_label(dep, frame, dep_frame) -> Optional[str]:
         return 'mismatch: {len(dep_label_parts)} alternative argument roles, {len(frame_label_parts)} alternative frames'
     for f, d in zip(frame_label_parts, dep_label_parts):
         error = check_dep_label_part(d, f, dep_frame)
-        if error:
-            return error
-    return None
+        if error is None:
+            return None
+    return f'role [{dep}] invalid for frame [{frame}]'
 
 
 def check_dep_label_part(dep, frame, dep_frame) -> Optional[str]:
     if dep[:2] in ('m-', 'x-'):
         role = dep[2:]
         if not any(v.check_noncore(role) for v in FRAMES.values()):
-            return f'unknown role {role}'
+            return f'unknown role [{role}]'
         else:
             return None
     if dep[:2] == 'r-':
@@ -147,11 +147,11 @@ def check_dep_label_part(dep, frame, dep_frame) -> Optional[str]:
         return check_dep_label(role, dep_frame, None)
     match FRAME_PATTERN.match(frame):
         case None:
-            return f'invalid frame label {frame}'
+            return f'invalid frame label [{frame}]'
         case match:
             f = match.group(1)
             a = match.group(2)
             m = match.group(3)
             if not FRAMES[f].check_core(a, m, dep):
-                return f'role {dep} invalid for frame {frame}'
+                return f'role [{dep}] invalid for frame [{frame}]'
             return None
