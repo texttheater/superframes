@@ -42,7 +42,7 @@ def remove_features(deprel: str) -> str:
 
 
 def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
-    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS)
+    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS) and tree.data.deprel != 'compound:prt'
 
 
 def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
