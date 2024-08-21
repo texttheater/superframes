@@ -20,6 +20,8 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     arg_parser = argparse.ArgumentParser(description=__doc__)
     arg_parser.add_argument('file')
+    arg_parser.add_argument('--warn-incomplete',
+            action=argparse.BooleanOptionalAction, default=True)
     args = arg_parser.parse_args()
     # Make backup file
     backup_file = args.file + '~'
@@ -42,7 +44,7 @@ if __name__ == '__main__':
     annotated_count = 0
     for sentence in sentences:
         p, a, w = sentence.check()
-        if a > 0 and a < p and w == 0:
+        if a > 0 and a < p and w == 0 and args.warn_incomplete:
             logging.warning('sent %s line %s annotation of sentence not complete',
                     sentence.syntax[0].id, sentence.lineno)
         predicate_count += p
