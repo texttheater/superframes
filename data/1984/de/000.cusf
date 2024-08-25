@@ -14,11 +14,11 @@
 12	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
 13	Uhren	Uhr	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	14	nsubj	_	_
 14	schlugen	schlagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
-15	gerade	gerade	ADV	ADV	_	16	advmod	_	_
+15	gerade	gerade	ADV	ADV	_	14	advmod	_	_
 16	dreizehn	dreizehn	NUM	CARD	NumType=Card	14	obl	_	_
 17	,	,	PUNCT	$,	_	27	punct	_	_
 18	als	als	SCONJ	KOUS	_	27	mark	_	_
-19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	27	nsubj	_	_
+19	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	45	nsubj	_	_
 20	Smith	Smith	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	19	flat	_	_
 21	,	,	PUNCT	$,	_	23	punct	_	_
 22	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	23	det	_	_
@@ -49,8 +49,8 @@
 47	wenn	wenn	SCONJ	KOUS	_	45	mark	_	_
 48	auch	auch	ADV	ADV	_	50	advmod	_	_
 49	nicht	nicht	PART	PTKNEG	Polarity=Neg	50	advmod	_	_
-50	rasch	rasch	ADJ	ADJD	_	50	advmod	_	_
-51	genug	genug	ADV	ADV	_	45	advmod	_	_
+50	rasch	rasch	ADJ	ADJD	_	45	advmod	_	_
+51	genug	genug	ADV	ADV	_	50	advmod	_	_
 52	,	,	PUNCT	$,	_	63	punct	_	_
 53	als	als	SCONJ	KOUS	_	63	mark	_	_
 54	dass	dass	SCONJ	KOUS	_	63	mark	_	_
@@ -80,10 +80,10 @@
 [TIME] April (9)
 
 [MESSAGE-INIT] schlugen (14)
-[x-causer] die Uhren (13)
-[state] gerade dreizehn (16)
-[m-time] , als Winston Smith , das Kinn an die Brust gepresst , (27)
-[x-purpose] , um dem rauhen Wind zu entgehen rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[x-sender] die Uhren (13)
+[target-content] dreizehn (16)
+[m-time] , als Winston Smith , das Kinn an die Brust gepresst , um dem rauhen Wind zu entgehen , rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
+[m-time] gerade (15)
 
 [MESSAGE] Uhren (13)
 
@@ -94,7 +94,7 @@
 
 [LOCATION-DEINIT] gepresst (27)
 [x-causer] Winston Smith (19)
-[target-location] , das Kinn an die Brust (23)
+[has-location] , das Kinn an die Brust (23)
 
 [IDENTIFICATION] Winston (19)
 
@@ -104,14 +104,15 @@
 [PART-WHOLE] Brust (26)
 
 [LOCATION-CHANGE] schlüpfte (45)
+[has-location] Winston Smith (19)
+[m-time] , als , das Kinn an die Brust gepresst , (27)
 [x-purpose] , um dem rauhen Wind zu entgehen (34)
-[m-time] rasch (36)
-[location-transitory] durch die Glastüren eines der Häuser des Victory-Blocks (39)
-[m-time] auch nicht rasch , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
-[m-quantity] genug (51)
+[m-quality] rasch (36)
+[transitory-location] durch die Glastüren eines der Häuser des Victory-Blocks (39)
+[m-quality] auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
 
 [LOCATION-DEINIT] entgehen (34)
-[init-location] dem rauhen Wind (32)
+[initial-location] dem rauhen Wind (32)
 
 [CLASS] Wind (32)
 [m-quality] rauhen (31)
@@ -122,7 +123,7 @@
 
 [PART-WHOLE] Glastüren (39)
 [m-part] eines (40)
-[m-wholes] der Häuser des Victory-Blocks (42)
+[m-whole] der Häuser des Victory-Blocks (42)
 
 [QUANTITY] eines (40)
 
@@ -131,10 +132,11 @@
 
 [PART-WHOLE] Victory-Blocks (44)
 
-[TIME] rasch (50)
+[QUALITY] rasch (50)
 [m-mode] auch (48)
 [m-mode] nicht (49)
-[x-resultative] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
+[m-quantity] genug (51)
+[m-result] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
 
 [MODE] auch (48)
 
@@ -150,7 +152,7 @@
 
 [TIME] zugleich (56)
 
-[IDENTIFICTION] ihm (58)
+[IDENTIFICATION] ihm (58)
 
 [PART-WHOLE] Wirbel (60)
 [m-part] griesigen Staubs (62)
@@ -185,12 +187,13 @@
 
 [IDENTIFICATION] es (4)
 
-[QUALITY] Kohl (7)
+[CLASS] Kohl (7)
 [m-quality] gekochtem (6)
+[] es (4)
 
 [QUALITY] gekochtem (6)
 
-[QUALITY] Fußmatten (10)
+[CLASS] Fußmatten (10)
 [m-quality] feuchten (9)
 
 [QUALITY] feuchten (9)
@@ -305,9 +308,9 @@
 [MESSAGE] Gesicht (6)
 [m-quality] riesiges (5)
 [m-quality] von mehr als einem Meter Breite (8)
-[m-depictive] : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (16)
+[content] : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (16)
 
-[Quality] riesiges (5)
+[QUALITY] riesiges (5)
 
 [QUANTITY] mehr (8)
 [m-quantity] von als einem Meter Breite (11)
@@ -366,8 +369,8 @@
 
 [LOCATION-CHANGE] ging (2)
 [has-location] Winston (1)
-[location] die Treppe (4)
-[m-location] hinauf (5)
+[transitory-location] die Treppe (4)
+[target-location] hinauf (5)
 
 [IDENTIFICATION] Winston (1)
 
@@ -403,11 +406,11 @@
 
 [MODE] keinen (3)
 
-[SCNENE-INIT] versuchen (11)
+[SCENE-INIT] versuchen (11)
 [target-scene] es (6)
 [x-means] mit dem Aufzug (9)
 
-[IDENFICATION] es (6)
+[IDENTIFICATION] es (6)
 
 [CLASS] Aufzug (9)
 
@@ -500,13 +503,15 @@
 
 [QUALITY] wirtschaftlichen (5)
 
-[TIME || EVENT] Hass-Woche (11)
-[m-state] in Vorbereitung befindlichen (10)
+[TIME >> EVENT] Hass-Woche (11)
+[m-scene] in Vorbereitung befindlichen (10)
 
-[STATE] befindlichen (10)
-[state] in Vorbereitung (9)
+[SCENE] befindlichen (10)
+[scene] in Vorbereitung (9)
+[participant] Hass-Woche (11)
 
-[SEQUENCE] Vorbereitung (9)
+[SCENE-INIT || SEQUENCE] Vorbereitung (9)
+[target-scene || folows] Hass-Woche (11)
 
 # sent_id = 9
 # text = Die Wohnung lag sieben Treppen hoch , und der neununddreißigjährige Winston , der über dem rechten Fußknöchel dicke Krampfaderknoten hatte , ging sehr langsam und ruhte sich mehrmals unterwegs aus .
@@ -542,7 +547,7 @@
 30	aus	aus	ADP	PTKVZ	_	26	compound:prt	_	_
 31	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-CONTINUATION] lag (3)
+[LOCATION] lag (3)
 [has-location] Die Wohnung (2)
 [location] sieben Treppen hoch (6)
 
@@ -574,9 +579,9 @@
 [IDENTIFICATION] der (13)
 
 [CLASS] Fußknöchel (17)
-[m-quality] rechten (16)
+[m-location] rechten (16)
 
-[QUALIITY] rechten (16)
+[LOCATION] rechten (16)
 
 [CLASS] Krampfaderknoten (19)
 [m-quality] dicke (18)
@@ -590,8 +595,8 @@
 
 [STATE] ruhte (26)
 [m-noncomp] sich (27)
-[m-quantity] mehrmals (28)
-[m-location] unterwegs (29)
+[m-time] mehrmals (28)
+[m--transitory-location || m-time] unterwegs (29)
 [m-noncomp] aus (30)
 
 [NONCOMP] sich (27)
@@ -717,16 +722,17 @@
 [m-location] darunter (13)
 
 [MESSAGE] sieht (5)
-[x-experiencer] Der Große Bruder (4)
-[x-experienced] dich (6)
+[x-sender] Der Große Bruder (4)
+[topic] dich (6)
 [m-noncomp] an (7)
+[] die Schlagzeile (12)
 
 [IDENTIFICATION] Bruder (4)
 [m-noncomp] Große (3)
 
 [NONCOMP] Große (3)
 
-[IDENFICATION] dich (6)
+[IDENTIFICATION] dich (6)
 
 [NONCOMP] an (7)
 
@@ -927,16 +933,18 @@
 
 [MESSAGE] Televisor (6)
 [m-mode] sogenannter (5)
-[topic] Hursehschirm (8)
+[topic] oder Hursehschirm (8)
 
 [MODE] sogenannter (5)
 
-[EXIST] gab (15)
-[exists] keine Möglichkeit , ihn völlig abzustellen (18)
+[MESSAGE] Hursehschirm (8)
+
+[SCENE] gab (15)
+[scene] keine Möglichkeit , ihn völlig abzustellen (18)
 
 [SCENE] Möglichkeit (18)
 [m-mode] keine (17)
-[target-scene] , ihn völlig abzustellen (22)
+[scene] , ihn völlig abzustellen (22)
 
 [MODE] keine (17)
 
@@ -981,10 +989,11 @@
 [IDENTIFICATION] Smith (1)
 
 [CLASS] Fenster (4)
+[] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
-[CLASS] Gestalt (10)
+[MESSAGE] Gestalt (10)
 [m-quality] abgezehrte , gebrechliche (7)
-[m-quality] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
+[topic] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
 
 [QUALITY] abgezehrte (7)
 
@@ -1223,6 +1232,7 @@
 
 [QUALITY] farblos (30)
 [m-exception] , außer den überall angebrachten Plakaten (36)
+[has-quality] alles (29)
 
 [MESSAGE] Plakaten (36)
 [m-quality] überall angebrachten (35)
@@ -1326,13 +1336,14 @@
 [MESSAGE] hieß (10)
 [content] » Der Große Bruder sieht dich an . « (5)
 [m-mode] auch (11)
-[m-compared] hier (12)
+[m-location] hier (12)
 [topic] die Unterschrift (14)
 
-[MESSAGE] sieht (5)
+[MESSAGE-INIT] sieht (5)
 [x-experiencer] Der Große Bruder (4)
-[topic] dich (6)
+[target-content] dich (6)
 [m-noncomp] an (7)
+[] die Unterschrift (14)
 
 [IDENTIFICATION] Bruder (4)
 [m-noncomp] Große (3)
@@ -1349,11 +1360,11 @@
 
 [MESSAGE] Unterschrift (14)
 
-[MESSAGE >> LOCATION-CHANGE] bohrten (20)
-[x-experiencer >> x-causer] die dunklen Augen (19)
-[m-noncmop] sich (21)
-[m-quality >> m-target-location] tief (22)
-[x-experienced >> target-location] in Winstons Blick (25)
+[LOCATION-CHANGE >> MESSAGE] bohrten (20)
+[x-causer >> x-experiencer] die dunklen Augen (19)
+[has-location >> x-noncomp] sich (21)
+[m-quantity >> m-quality] tief (22)
+[target-location >> topic] in Winstons Blick (25)
 
 [MESSAGE] Augen (19)
 [m-quality] dunklen (18)
@@ -1362,7 +1373,7 @@
 
 [NONCOMP] sich (21)
 
-[QUALITY >> LOCATION] tief (22)
+[QUANTITY >> QUALITY] tief (22)
 
 [MESSAGE] Blick (25)
 [x-identifier] Winstons (24)
@@ -1404,7 +1415,7 @@
 [m-location] Unten in Straßenhöhe (3)
 [has-location] ein anderes , an einer Ecke eingerissenes Plakat (12)
 [m-quality] unruhig (13)
-[m-mean] im Winde (15)
+[m-means] im Winde (15)
 
 [LOCATION] Straßenhöhe (3)
 [m-location] Unten (1)
@@ -1424,21 +1435,22 @@
 
 [QUALITY] unruhig (13)
 
-[MEAN] Winde (15)
+[MEANS] Winde (15)
 
-[SCENE] ließ (17)
-[participant] Plakat (12)
+[SCENE-INIT] ließ (17)
+[m-means] Plakat (12)
 [m-mode] nur (18)
-[has-scene] das Wort Engsoz (20)
+[participant] das Wort Engsoz (20)
 [m-quality] bald verdeckt , bald unverdeckt (23)
 [target-scene] erscheinen (27)
 
 [MODE] nur (18)
 
-[MESSAGE] Wort (20)
-[content] Engsoz (21)
+[] Wort (20)
+[] Engsoz (21)
 
-[IDENTIFICATION] Engsoz (21)
+[] Engsoz (21)
+[] Wort (20)
 
 [WRAPPING-WEARING-INIT] verdeckt (23)
 [m-time] bald (22)
@@ -1451,6 +1463,8 @@
 [TIME] bald (25)
 
 [MESSAGE] erscheinen (27)
+[topic] Wort (20)
+[content] Engsoz (21)
 
 # sent_id = 25
 # text = In der Ferne glitt ein Helikopter zwischen den Dächern herunter , brummte einen Augenblick wie eine Schmeißfliege und strich dann in einem Bogen wieder ab .
@@ -1465,8 +1479,8 @@
 9	Dächern	Dach	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	4	obl	_	_
 10	herunter	herunter	ADP	PTKVZ	_	4	compound:prt	_	_
 11	,	,	PUNCT	$,	_	12	punct	_	_
-12	brummte	brummen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-13	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+12	brummte	brummen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	_	_
+13	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art		det	_	_
 14	Augenblick	Augenblick	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	12	obj	_	_
 15	wie	wie	CCONJ	KOKOM	_	17	case	_	_
 16	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -1484,7 +1498,7 @@
 [UNANCHORED-MOTION] glitt (4)
 [m-location] In der Ferne (3)
 [in-motion] ein Helikopter (6)
-[transitory-loation] zwischen den Dächern (9)
+[transitory-location] zwischen den Dächern (9)
 [m-target-location] herunter (10)
 
 [LOCATION] Ferne (3)
@@ -1496,10 +1510,12 @@
 [LOCATION] herunter (10)
 
 [MESSAGE] brummte (12)
+[x-sender] ein Helikopter (6)
 [m-time] einen Augenblick (14)
-[m-quality] wie eine Schmeißfliege (17)
+[topic] wie eine Schmeißfliege (17)
 
 [TIME] Augenblick (14)
+[m-quality] wie eine Schmeißfliege (17)
 
 [QUALITY] Schmeißfliege (17)
 
@@ -1584,7 +1600,7 @@
 [MESSAGE] fürchten (2)
 [x-experienced] nur die Gedankenpolizei (6)
 
-[SOCIAL_RELATION] Gedankenpolizei (6)
+[SOCIAL-RELATION] Gedankenpolizei (6)
 [m-quantity] nur (4)
 
 [QUANTITY] nur (4)
@@ -1626,7 +1642,7 @@
 [m-time] noch immer (12)
 [topic] von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (14)
 
-[WHOLE-PART] Rücken (3)
+[PART-WHOLE] Rücken (3)
 [whole] Winstons (2)
 
 [IDENTIFICATION] Winstons (2)
@@ -1637,7 +1653,7 @@
 
 [QUALITY] leise (6)
 
-[MEAN] Televisor (10)
+[MEANS] Televisor (10)
 
 [TIME] immer (12)
 [m-time] noch (11)
@@ -1652,7 +1668,7 @@
 
 [QUALITY] hinausgehenden (23)
 [m-quality] weit (18)
-[m-state-deinit] über das gesteckte Ziel (22)
+[m-target-state] über das gesteckte Ziel (22)
 
 [QUALITY] weit (18)
 
@@ -1677,12 +1693,14 @@
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
 8	.	.	PUNCT	$.	_	5	punct	_	_
 
-[MEAN] Der Televisor (2)
+[MEANS] Der Televisor (2)
 [m-time] gleichzeitig (4)
 
 [TIME] gleichzeitig (4)
 
 [MESSAGE] Empfangs- (5)
+[x-causer] Der Televisor (2)
+[] gleichzeitig (4)
 
 [MESSAGE] Sendegerät (7)
 
@@ -1767,7 +1785,7 @@
 [MESSAGE] gehört (18)
 [m-conceded] Außerdem (1)
 [x-experienced] Winston (3)
-[m-condotion] , solange er in dem von der Metallplatte beherrschten Sichtfeld blieb , (14)
+[m-condition] , solange er in dem von der Metallplatte beherrschten Sichtfeld blieb , (14)
 [m-mode] nicht (16)
 [m-mode] nur (17)
 
@@ -1820,14 +1838,14 @@
 
 [SCENE] bestand (2)
 [m-mode] natürlich (3)
-[has-scene] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
+[participant] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
 [scene] festzustellen (6)
 
 [MODE] natürlich (3)
 
-[EVENT] Möglichkeit (5)
+[SCENE-POSSIBILITY] Möglichkeit (5)
 [m-mode] keine (4)
-[m-event] , ob man in einem gegebenen Augenblick gerade überwacht wurde (15)
+[scene] , ob man in einem gegebenen Augenblick gerade überwacht wurde (15)
 
 [MODE] keine (4)
 
@@ -1845,7 +1863,9 @@
 
 [TIME] gerade (14)
 
-[MESSAGE] festzustellen (6)
+[MESSAGE-INIT] festzustellen (6)
+[target-content] ob man in einem gegebenen Augenblick gerade überwacht wurde (15)
+[] keine Möglichkeit , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
 
 # sent_id = 34
 # text = Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , blieb der Mutmaßung überlassen .
@@ -1870,13 +1890,13 @@
 19	.	.	PUNCT	$.	_	15	punct	_	_
 
 [SCENE-CONTINUATION] blieb (15)
-[scene] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , der Mutmaßung überlassen (18)
+[initial-scene] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , der Mutmaßung überlassen (18)
 
-[STATE-CONTINUATION >> MESSAGE] überlassen (18)
-[state >> topic] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
-[x-causer >> m-noncomp] der Mutmaßung (17)
+[SCENE-INIT] überlassen (18)
+[participant] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
+[target-scene] der Mutmaßung (17)
 
-[STANE-INIT] einschaltete (13)
+[STATE-INIT] einschaltete (13)
 [m-quality] Wie oft und nach welchem System (2)
 [x-causer] die Gedankenpolizei (8)
 [m-noncomp] sich (9)
@@ -1887,7 +1907,7 @@
 
 [QUALITY] Wie (1)
 
-[MEAN] System (6)
+[MEANS] System (6)
 
 [SOCIAL-RELATION] Gedankenpolizei (8)
 
@@ -1896,6 +1916,7 @@
 [CLASS] Privatapparat (12)
 
 [MESSAGE] Mutmaßung (17)
+[content] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
 
 # sent_id = 35
 # text = Es war sogar möglich , dass jeder einzelne ständig überwacht wurde .
@@ -1920,7 +1941,7 @@
 
 [MESSAGE] überwacht (10)
 [m-identifier] jeder einzelne (8)
-[time] ständig (9)
+[m-time] ständig (9)
 
 [IDENTIFICATION] einzelne (8)
 
@@ -1952,7 +1973,7 @@
 [m-mode] Auf alle Fälle aber (3)
 [x-causer] sie (6)
 [m-noncomp] sich (7)
-[m-contition] , wenn sie es wollte , (12)
+[m-condition] , wenn sie es wollte , (12)
 [m-time] jederzeit (14)
 [m-location] in einen Apparat (17)
 
@@ -2020,12 +2041,13 @@
 
 [MESSAGE] leben (6)
 [x-experiencer] Man (1)
-[topic] in der Annahme (5)
+[m-state] in der Annahme (5)
 [content] - , dass jedes Geräusch , das man machte , überhört und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (26)
 
 [IDENTIFICATION] Man (1)
 
 [MESSAGE] Annahme (5)
+[content] - , dass jedes Geräusch , das man machte , überhört und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (26)
 
 [MESSAGE >> STATE-INIT] stellte (10)
 [x-experiencer >> has-state] man (9)
@@ -2049,6 +2071,7 @@
 
 [MESSAGE] überhört (26)
 [content] jedes Geräusch , das man machte , (20)
+[m-quality] in der Annahme (5)
 
 [MESSAGE] Geräusch (20)
 [m-mode] , das man machte , (24)
@@ -2062,7 +2085,7 @@
 [IDENTIFICATION] man (23)
 
 [MESSAGE] beobachtet (36)
-[m-concede] , außer in der Dunkelheit , (32)
+[m-conceded] , außer in der Dunkelheit , (32)
 [content] jede Bewegung (35)
 
 [CONCESSION] Dunkelheit (32)
@@ -2088,7 +2111,7 @@
 
 [STATE-CHANGE] richtete (2)
 [x-causer] Winston (1)
-[m-nonomp] es (3)
+[m-noncomp] es (3)
 [m-mode] so (4)
 [m-noncomp] ein (5)
 [target-state] , dass er dem Televisor den Rücken zuwandte (13)
@@ -2192,12 +2215,12 @@
 [m-quantity] Einen Kilometer (2)
 
 [QUANTITY] Kilometer (2)
-[m-quantitiy] Einen (1)
+[m-quantity] Einen (1)
 
 [QUANTITY] Einen (1)
 
 [CLASS] Wahrheitsministerium (6)
-[m-identifier || m-depictive] , seine Arbeitsstätte (9)
+[m-identifier] , seine Arbeitsstätte (9)
 
 [CLASS] Arbeitsstätte (9)
 [m-identifier] seine (8)
@@ -2250,7 +2273,7 @@
 [MESSAGE] dachte (4)
 [topic] Das also , , (1)
 [x-causer] er (5)
-[m-depictive] mit einer Art undeutlichen Abscheus (10)
+[m-quality] mit einer Art undeutlichen Abscheus (10)
 
 [IDENTIFICATION] Das (1)
 [m-mode] also (2)
@@ -2268,9 +2291,9 @@
 [STATE] Art (8)
 
 [LOCATION] London (13)
-[x-depictive] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
+[x-identifier] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
 
-[PART-WOHLE] Hauptstadt (16)
+[PART-WHOLE] Hauptstadt (16)
 [whole] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
 
 [LOCATION] Luftstützpunkts (18)
@@ -2324,6 +2347,7 @@
 
 [MESSAGE] nachzuforschen (6)
 [m-condition] , ob London immer so ausgesehen hatte (12)
+[x-experiencer] Er (1)
 
 [QUALITY] ausgesehen (12)
 [has-quality] London (9)
@@ -2385,28 +2409,30 @@
 45	sackten	sacken	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 46	?	?	PUNCT	$.	_	14	punct	_	_
 
-[EXISTENCE] gestanden (14)
-[m-location] da (2)
+[LOCATION] gestanden (14)
+[location] da (2)
 [m-time] immer (3)
-[exists] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
+[has-location] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
 [m-accompanier] , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten (45)
+[] heruntergekommen (7)
 
-[LOCATION] da (2)
+[] da (2)
 
 [TIME] immer (3)
 
 [CLASS] Reihen (6)
 [m-quality] langen (5)
-[m-depictive] aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
+[m-quality] aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
 
 [QUALITY] langen (5)
 
 [CLASS] Häuser (9)
-[m-message] aussehender (8)
+[m-quality] aussehender (8)
 [m-time] aus dem neunzehnten Jahrhundert (13)
-[m-depictive] , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (20)
+[m-quality] , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (20)
 
 [QUALITY] aussehender (8)
+[m-quality] heruntergekommen (7)
 
 [TIME] Jahrhundert (13)
 [m-rank || m-time] neunzehnten (12)
@@ -2419,6 +2445,8 @@
 
 [CLASS] Mauern (17)
 [m-identifier] deren (16)
+
+[IDENTIFICATION] deren (16)
 
 [CLASS] Balken (19)
 [m-identifier] deren (16)
@@ -2462,7 +2490,7 @@
 
 [QUALITY || LOCATION-DEINIT] kreuz (39)
 
-[QUALITY || LOCATOIN-DEINIT] quer (41)
+[QUALITY || LOCATION-DEINIT] quer (41)
 
 [CLASS] Boden (44)
 
@@ -2514,7 +2542,7 @@
 
 [CLASS] Ruinen (4)
 [m-quality] zerbombten (3)
-[m-depictive] , wo der Pflasterstaub in der Luft wirbelte und Unkrautgestrüpp auf den Trümmern wucherte (12)
+[m-quality] , wo der Pflasterstaub in der Luft wirbelte und Unkrautgestrüpp auf den Trümmern wucherte (12)
 
 [QUALITY] zerbombten (3)
 
@@ -2549,15 +2577,15 @@
 
 [DESTRUCTION] Bombeneinschläge (25)
 
-[RESULT] Lücke (28)
-[m-depictive] größere (27)
+[RESULTATIVE] Lücke (28)
+[m-quality] größere (27)
 
-[DEPICTIVE] größere (27)
+[QUALITY] größere (27)
 
 [STATE-INIT] entstanden (36)
-[x-resultative] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
+[x-result] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
 
-[CLASS] Siedlungen (33)
+[PART-WHOLE] Siedlungen (33)
 [m-quality] trostlose (32)
 [m-means] von Holzbaracken (35)
 [m-quality] , die wie Hühnerställe aussahen (42)
@@ -2619,9 +2647,10 @@
 [MODE] nichts (5)
 
 [MESSAGE] erinnern (11)
-[x-causer] er (7)
+[x-experiencer] er (7)
 [m-noncomp] sich (9)
 [m-mode] nicht (10)
+[] ; von seiner Kindheit hatte er nichts nachbehalten als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (19)
 
 [IDENTIFICATION] er (7)
 
@@ -2631,7 +2660,7 @@
 
 [MESSAGE] nachbehalten (19)
 [topic] von seiner Kindheit (15)
-[x-causer] er (17)
+[x-experiencer] er (17)
 [content] nichts (18)
 [m-content] als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (22)
 
@@ -2643,10 +2672,12 @@
 [IDENTIFICATION] er (17)
 
 [MODE] nichts (18)
+[m-time] von seiner Kindheit (15)
 
 [QUANTITY >> MESSAGE] Reihe (22)
 [has-quantity >> topic] greller Bilder ohne Hintergrund (24)
 [m-quality] , die ihm zumeist unverständlich waren (31)
+[] nachbehalten (19)
 
 [MESSAGE] Bilder (24)
 [m-quality] greller (23)
@@ -2705,12 +2736,15 @@
 [x-sender] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
 [m-quality] verblüffend verschieden allem von anderen , was der Gesichtskreis umfasste (24)
 [m-noncomp] aus (25)
+[] verblüffend (20)
+[] verschieden (21)
+[] allem (23)
 
 [SOCIAL-RELATION] Wahrheitsministerium (2)
-[m-depictive] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
+[m-identifier] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
 
-[MESSAGE || RESULTATIVE] Miniwahr (4)
-[m-deapictive] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
+[IDENTIFICATION] Miniwahr (4)
+[m-quality] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
 
 [MESSAGE] hieß (17)
 [topic] es (7)
@@ -2719,7 +2753,7 @@
 [IDENTIFICATION] es (7)
 
 [MESSAGE] Neusprache (10)
-[m-depictive] , der amtlichen Sprache Ozeaniens (14)
+[m-identified] , der amtlichen Sprache Ozeaniens (14)
 
 [MESSAGE] Sprache (14)
 [m-quality] amtlichen (13)
@@ -2776,7 +2810,7 @@
 [m-identifier] Es (1)
 [m-quality] riesiger (4)
 [m-quality] pyramidenartiger , weiß schimmernder (5)
-[m-depictive] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
+[m-quality] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
 
 [IDENTIFICATION] Es (1)
 
@@ -2792,7 +2826,7 @@
 [LOCATION >> LOCATION-CHANGE] reckte (20)
 [has-location] der (11)
 [m-noncomp] sich (12)
-[m-depictive] terrassenförmig (13)
+[m-quality] terrassenförmig (13)
 [m-quantity >> location-transitory] dreihundert Meter hoch (16)
 [target-location] in die Luft (19)
 
@@ -2800,7 +2834,7 @@
 
 [NONCOMP] sich (12)
 
-[DEPICTIVE] terrassenförmig (13)
+[QUALITY] terrassenförmig (13)
 
 [QUANTITY >> LOCATION] hoch (16)
 [m-quantity] dreihundert Meter (15)
@@ -2867,7 +2901,7 @@
 [MODE] gerade (11)
 
 [MESSAGE] Wahlsprüche (23)
-[m-depictive] in schönen Lettern in seine weiße Front gemeißelten (21)
+[m-quality] in schönen Lettern in seine weiße Front gemeißelten (21)
 [m-quantity] drei (22)
 [m-identifier] der Partei (25)
 
@@ -2898,9 +2932,9 @@
 2	BEDEUTET	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	FRIEDEN	Frieden	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	obj	_	_
 
-[MESSAGE] BEDEUTET (2)
-[x-sender] KRIEG (1)
-[m-explanation] FRIEDEN (3)
+[MESSAGE || SEQUENCE] BEDEUTET (2)
+[topic || followed] KRIEG (1)
+[content || follows] FRIEDEN (3)
 
 [SOCIAL-RELATION || STATE] KRIEG (1)
 
@@ -2912,8 +2946,8 @@
 2	IST	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	SKLAVEREI	Sklaverei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] SKLAVEREI (3)
-[] FREIHEIT (1)
+[SOCIAL-RELATION] SKLAVEREI (3)
+[x-identified] FREIHEIT (1)
 
-[] FREIHEIT (1)
+[STATE || SOCIAL-RELATION] FREIHEIT (1)
 
