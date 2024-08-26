@@ -41,7 +41,7 @@
 39	Glastüren	Glastür	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	45	obl	_	_
 40	eines	ein	PRON	PIS	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	39	nmod	_	_
 41	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	42	det	_	_
-42	Häuser	Haus	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	39	nmod	_	_
+42	Häuser	Haus	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	40	nmod	_	_
 43	des	d	DET	ART	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	Victory-Blocks	Victory-Block	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	42	nmod	_	_
 45	schlüpfte	schlüpfen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
@@ -119,14 +119,14 @@
 
 [] rasch (36)
 
-[] Glastüren (39)
-[] eines (40)
-[] der Häuser des Victory-Blocks (42)
+[CLASS] Glastüren (39)
+[m-whole] eines der Häuser des Victory-Blocks (40)
 
-[] eines (40)
+[PART-WHOLE] eines (40) # TODO PART-WHOLE vs. QUANTITY: what if "zweier"?
+[whole] der Häuser des Victory-Blocks (42)
 
-[] Häuser (42)
-[] des Victory-Blocks (44)
+[CLASS] Häuser (42)
+[m-whole] des Victory-Blocks (44)
 
 [] Victory-Blocks (44)
 
@@ -178,15 +178,16 @@
 
 [MESSAGE] roch (3)
 [m-location || topic] Im Flur (2)
-[topic || x-noncomp] es (4)
+[topic || x-noncomp] es (4) # TODO checker does not introduce secondary edge
 [content] nach gekochtem Kohl und feuchten Fußmatten (7)
 
 [] Flur (2)
 
 [IDENTIFICATION || NONCOMP] es (4)
 
-[] Kohl (7)
-[] gekochtem (6)
+[CLASS] Kohl (7)
+[m-scene] gekochtem (6)
+[m-compared] es (4) # TODO x-norole
 
 [] gekochtem (6)
 
@@ -620,12 +621,12 @@
 15	an	an	ADP	PTKVZ	_	4	compound:prt	_	_
 16	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] starrte (4)
-[] Auf jedem Treppenabsatz (3)
-[] ihn (5)
-[] gegenüber dem Liftschacht (8)
-[] das Plakat mit dem riesigen Gesicht (10)
-[] an (15)
+[MESSAGE-INIT] starrte (4)
+[m-location] Auf jedem Treppenabsatz (3)
+[topic] ihn (5)
+[m-location] gegenüber dem Liftschacht (8)
+[x-experiencer] das Plakat mit dem riesigen Gesicht (10)
+[m-noncomp] an (15) #TODO manual: no longer treat semi-non-compositional VPCs specially
 
 [] Treppenabsatz (3)
 
@@ -682,10 +683,10 @@
 
 [] so (8)
 
-[] verfolgen (17)
-[] einen (13)
-[] die Augen (15)
-[] überallhin (16)
+[LOCATION-INIT >> MESSAGE-INIT] verfolgen (17) # TODO manual: not UNANCHORED-MOTION because we have target-location (frame depends on arguments)
+[has-location >> topic] einen (13)
+[x-accompanier >> x-experiencer] die Augen (15)
+[target-location >> x-location] überallhin (16)
 
 [] einen (13)
 
@@ -710,15 +711,15 @@
 13	darunter	darunter	ADP	PROAV	PronType=Dem	10	advmod	_	_
 14	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] lautete (10)
-[] » Der Große Bruder sieht dich an ! « (5)
-[] die Schlagzeile (12)
-[] darunter (13)
+[MESSAGE] lautete (10)
+[content] » Der Große Bruder sieht dich an ! « (5)
+[x-sender] die Schlagzeile (12)
+[m-location] darunter (13)
 
-[] sieht (5)
-[] Der Große Bruder (4)
-[] dich (6)
-[] an (7)
+[MESSAGE-INIT] sieht (5)
+[x-experiencer] Der Große Bruder (4)
+[topic] dich (6)
+[m-noncomp] an (7)
 
 [] Bruder (4)
 [] Große (3)
@@ -726,8 +727,6 @@
 [] Große (3)
 
 [] dich (6)
-
-[] an (7)
 
 [] Schlagzeile (12)
 
@@ -818,9 +817,9 @@
 
 [] stumpfen (11)
 
-[] eingelassen (20)
-[] rechter Hand (16)
-[] in die Wand (19)
+[LOCATION-INIT] eingelassen (20)
+[m-location] rechter Hand (16)
+[target-location] in die Wand (19)
 
 [] Hand (16)
 [] rechter (15)
@@ -866,13 +865,13 @@
 
 [] wurde (10)
 [] die Stimme (9)
-[] daraufhin (11)
+[m-causer || m-followed] daraufhin (11)
 [] etwas (12)
 [] leiser (13)
 
 [] Stimme (9)
 
-[] daraufhin (11)
+[CAUSATION || SEQUENCE] daraufhin (11)
 
 [] etwas (12)
 
@@ -924,12 +923,15 @@
 [] Apparat (2)
 [] , ein sogenannter Televisor oder Hursehschirm (6)
 
-[] Televisor (6)
-[] sogenannter (5)
+[CLASS] Televisor (6) # TODO manual: good complex example of coordination
+[m-scene] sogenannter (5)
 
-[] sogenannter (5)
+[IDENTIFICATION-INIT] sogenannter (5)
+[identified] Televisor (6)
+[identified] Hursehschirm (8)
 
-[] Hursehschirm (8)
+[CLASS] Hursehschirm (8)
+[m-scene] sogenannter (5)
 
 [] gab (15)
 [] keine Möglichkeit , ihn völlig abzustellen (18)
@@ -959,7 +961,7 @@
 7	abgezehrte	abgezehrt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 8	,	,	PUNCT	$,	_	9	punct	_	_
 9	gebrechliche	gebrechlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	7	conj	_	_
-10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	4	appos	_	_
+10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	appos	_	_
 11	,	,	PUNCT	$,	_	21	punct	_	_
 12	deren	d	DET	PRELAT	Gender=Neut|PronType=Rel	13	nmod:poss	_	_
 13	Magerkeit	Magerkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	21	nsubj:pass	_	_
@@ -976,16 +978,17 @@
 
 [] trat (2)
 [] Smith (1)
-[] ans Fenster , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (4)
+[] ans Fenster (4)
+[m-depictive] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
 [] Smith (1)
 
 [] Fenster (4)
-[] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
 [] Gestalt (10)
 [] abgezehrte , gebrechliche (7)
 [] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
+[x-identified] Smith (1)
 
 [] abgezehrte (7)
 
@@ -1147,7 +1150,7 @@
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	Papierfetzen	Papierfetzen	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	8	conj	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
-12	Spiralen	Spirale	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	8	nmod	_	_
+12	Spiralen	Spirale	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	5	obl	_	_
 13	hoch	hoch	ADP	PTKVZ	_	5	xcomp	_	_
 14	,	,	PUNCT	$,	_	27	punct	_	_
 15	und	und	CCONJ	KON	_	27	cc	_	_
@@ -1174,12 +1177,13 @@
 36	Plakaten	Plakat	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	30	nmod	_	_
 37	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] wirbelten (5)
+[LOCATION-INIT] wirbelten (5)
 [m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
-[] Unten (1)
-[] auf der Straße (4)
-[] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
-[] hoch (13)
+[m-location] Unten (1)
+[m-location] auf der Straße (4)
+[x-causer] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
+[target-location] hoch (13)
+[m-means] in Spiralen (12) # TODO manual: dare to interpret an abstract noun as an event
 
 [] Unten (1)
 
@@ -1192,11 +1196,10 @@
 [] schwache (6)
 
 [] Staub (8)
-[] in Spiralen (12)
 
 [] Papierfetzen (10)
 
-[] Spiralen (12)
+[LOCATION-CHANGE] Spiralen (12)
 
 [] hoch (13)
 
@@ -1324,19 +1327,19 @@
 25	Blick	Blick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	20	obl	_	_
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] hieß (10)
+[MESSAGE] hieß (10)
 [m-mode] auch (11)
 [m-location] hier (12)
-[] » Der Große Bruder sieht dich an . « (5)
-[] die Unterschrift (14)
+[content] » Der Große Bruder sieht dich an . « (5)
+[x-sender] die Unterschrift (14)
 
-[] sieht (5)
-[] Der Große Bruder (4)
-[] dich (6)
-[] an (7)
+[MESSAGE-INIT] sieht (5)
+[x-experiencer] Der Große Bruder (4)
+[topic] dich (6)
+[m-noncomp] an (7)
 
-[] Bruder (4)
-[] Große (3)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (4)
+[m-quality >> m-noncomp] Große (3)
 
 [] Große (3)
 
@@ -1389,12 +1392,12 @@
 15	Winde	Wind	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	4	obl	_	_
 16	und	und	CCONJ	KON	_	17	cc	_	_
 17	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-18	nur	nur	ADV	ADV	_	17	advmod	_	_
+18	nur	nur	ADV	ADV	_	21	advmod	_	_
 19	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
 20	Wort	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	17	obj	_	_
 21	Engsoz	Engsoz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	20	appos	_	_
 22	bald	bald	ADV	ADV	_	23	advmod	_	_
-23	verdeckt	verdeckt	ADJ	ADJD	_	17	xcomp	_	_
+23	verdeckt	verdeckt	ADJ	ADJD	_	27	xcomp	_	_
 24	,	,	PUNCT	$,	_	26	punct	_	_
 25	bald	bald	ADV	ADV	_	26	advmod	_	_
 26	unverdeckt	unverdeckt	ADJ	ADJD	_	23	conj	_	_
@@ -1427,30 +1430,34 @@
 
 [] Winde (15)
 
-[] ließ (17)
-[] nur (18)
-[] das Wort Engsoz (20)
-[] bald verdeckt , bald unverdeckt (23)
-[] erscheinen (27)
+[SCENE-INIT] ließ (17)
+[participant] das Wort Engsoz (20)
+[target-scene] bald verdeckt , bald unverdeckt erscheinen (23)
+[x-causer] Plakat (12)
 
-[] nur (18)
+[MODE] nur (18)
 
-[] Wort (20)
-[] Engsoz (21)
+[MESSAGE] Wort (20)
+[content] Engsoz (21)
+[m-mode] nur (18)
 
-[] Engsoz (21)
+[IDENTIFICATION] Engsoz (21)
 
-[] verdeckt (23)
+[WRAPPING-WEARING-INIT] verdeckt (23)
+[m-time] bald (22)
+[wearer] das Wort Engsoz (20)
+
 [] bald (22)
 
-[] bald (22)
+[WRAPPING-WEARING-INIT-NEG] unverdeckt (26)
+[m-time] bald (25)
+[wearer] das Wort Engsoz (20)
 
-[] unverdeckt (26)
 [] bald (25)
 
-[] bald (25)
-
-[] erscheinen (27)
+[MESSAGE] erscheinen (27)
+[topic] das Wort Engsoz (20)
+[content] bald verdeckt, bald unverdeckt (23)
 
 # sent_id = 25
 # text = In der Ferne glitt ein Helikopter zwischen den Dächern herunter , brummte einen Augenblick wie eine Schmeißfliege und strich dann in einem Bogen wieder ab .
