@@ -352,7 +352,8 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 %\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
 
 Many constructions systematically introduce semantic predicate-dependent
-dependencies that do not correspond to (surface) syntactic dependencies. In such cases, we add those dependency links.
+dependencies that do not correspond to (surface) syntactic dependencies. In
+such cases, we add those dependency links.
 
 \ex.\dep{Kim_has-location promised Sandy to *come#LOCATION-CHANGE*} (subject control)
 
@@ -372,9 +373,11 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{Kim_topic is hard to *love#MESSAGE*} (\emph{tough} construction)
 
-\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
+\ex.\dep{the song_topic that_topic I_x-experiencer *like#MESSAGE*} (relative clause)
 
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
+
+\ex.\dep{ein *sogenannter#IDENTIFICATION-INIT*__m-scene___m-scene **Televisor#CLASS**_identified oder ***Hörsehschirm#CLASS***_identified} (coordination)
 
 \newpage\subsection{Figurativity, Idiomaticity, and Uncertainty}
 
@@ -656,6 +659,8 @@ predicates denoting naming relationships.
 \ex.\dep{a book_identified *called#IDENTIFICATION* True Stories_identifier from Nature}
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
+
+\ex.\dep{Obamas *Sonderberaterin#SOCIAL-RELATION* Kori Schulman_m-identifier}
 
 In English, the preposition \emph{of} has an identifying sense, which can also
 be metaphorical:
@@ -1295,6 +1300,13 @@ annotate the former.
 \ex.\dep{They_target-possessor *plundered#POSSESSION-CHANGE* Rome_initial-possessor}
 
 \ex.\dep{Kim_initial-wearer *undressed#WRAPPING-WEARING-DEINIT*}
+
+Also, when in doubt, choose the frame so that you can use core roles rather
+than resorting to non-core roles. For example, in the following sentence, we
+should use \fr{LOCATION-INIT} rather than \fr{UNANCHORED-MOTION} so that we can
+use \rl{target-location} and do not have to resort to \fr{x-target-location}.
+
+\ex.\dep{Kim_x-accompanier *followed#LOCATION-INIT* Sandy_has-location into the room_target-location}
 
 \newpage\subsection{Arguments Determine Frames}
 
