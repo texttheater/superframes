@@ -65,6 +65,9 @@ class Arg:
         self.label = label
         self.comment = comment
 
+    def is_empty(self) -> bool:
+        return not self.label and not self.comment
+
     def to_line(self) -> str:
         comment = (f' # {self.comment}') if self.comment else ''
         return f'[{self.label}] {self.text} ({self.head}){comment}'
@@ -112,6 +115,9 @@ class Frame:
             if arg.label == label:
                 return arg
         return None
+
+    def is_empty(self) -> bool:
+        return not self.label and not self.comment and all(a.is_empty() for a in self.args)
 
     def check(self, sentence: 'Sentence', lineno: int,
             head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
@@ -266,7 +272,9 @@ class Sentence:
                 if arg.label == 'm-content':
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
-        # Phase 2: add missing frames and args
+        # Phase 2: remove empty frames
+        self.frames = [f for f in self.frames if not f.is_empty()]
+        # Phase 3: add missing frames and args
         cursor = 0 # index at which we insert the next missing frame
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
