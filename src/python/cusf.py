@@ -3,7 +3,7 @@ import logging
 import math
 import re
 import sys
-from typing import Iterable, List, Optional, Set, TextIO, Tuple, Union
+from typing import Dict, Iterable, List, Optional, Set, TextIO, Tuple, Union
 
 
 from pyconll.exception import ParseError
@@ -65,6 +65,9 @@ class Arg:
         self.label = label
         self.comment = comment
 
+    def is_empty(self) -> bool:
+        return not self.label and not self.comment
+
     def to_line(self) -> str:
         comment = (f' # {self.comment}') if self.comment else ''
         return f'[{self.label}] {self.text} ({self.head}){comment}'
@@ -113,7 +116,11 @@ class Frame:
                 return arg
         return None
 
-    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+    def is_empty(self) -> bool:
+        return not self.label and not self.comment and all(a.is_empty() for a in self.args)
+
+    def check(self, sentence: 'Sentence', lineno: int,
+            head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -265,7 +272,9 @@ class Sentence:
                 if arg.label == 'm-content':
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
-        # Phase 2: add missing frames and args
+        # Phase 2: remove empty frames
+        self.frames = [f for f in self.frames if not f.is_empty()]
+        # Phase 3: add missing frames and args
         cursor = 0 # index at which we insert the next missing frame
         for sentence in self.syntax:
             for tree in subtrees(sentence.to_tree()):
@@ -284,20 +293,29 @@ class Sentence:
                         cursor += 1
 
     def check(self) -> Tuple[int, int, int]:
-        frame_count = 0
-        annotated_count = 0
-        warnings = 0
-        for lineno, frame in zip(self.frame_linenos, self.frames):
-            if not isinstance(frame, Frame):
+        head_frame_map = {}
+        head_lineno_map = {}
+        for frame_lineno, frame in zip(self.frame_linenos, self.frames):
+            if isinstance(frame, Frame):
+                if frame.head in head_frame_map:
+                    logging.warning(
+                        'sent %s line %s duplicate frame for head word %s',
+                        self.syntax[0].id, lineno, frame.head,
+                    )
+                else:
+                    head_frame_map[frame.head] = frame
+                    head_lineno_map[frame.head] = frame_lineno
+            else:
                 logging.warning('sent %s line %s cannot parse frame %s',
                         self.syntax[0].id, lineno, repr('\n'.join(frame)))
-                continue
-            frame_count += 1
-            ok, w = frame.check(self, lineno)
+        annotated_count = 0
+        warnings = 0
+        for frame in head_frame_map.values():
+            ok, w = frame.check(self, head_lineno_map[frame.head], head_frame_map)
             if ok:
                 annotated_count += 1
             warnings += w
-        return frame_count, annotated_count, warnings
+        return len(head_frame_map), annotated_count, warnings
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')

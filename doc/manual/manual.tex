@@ -352,7 +352,8 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 %\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
 
 Many constructions systematically introduce semantic predicate-dependent
-dependencies that do not correspond to (surface) syntactic dependencies. In such cases, we add those dependency links.
+dependencies that do not correspond to (surface) syntactic dependencies. In
+such cases, we add those dependency links.
 
 \ex.\dep{Kim_has-location promised Sandy to *come#LOCATION-CHANGE*} (subject control)
 
@@ -372,9 +373,11 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{Kim_topic is hard to *love#MESSAGE*} (\emph{tough} construction)
 
-\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
+\ex.\dep{the song_topic that_topic I_x-experiencer *like#MESSAGE*} (relative clause)
 
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
+
+\ex.\dep{ein *sogenannter#IDENTIFICATION-INIT*__m-scene___m-scene **Televisor#CLASS**_identified oder ***Hörsehschirm#CLASS***_identified} (coordination)
 
 \newpage\subsection{Figurativity, Idiomaticity, and Uncertainty}
 
@@ -656,6 +659,8 @@ predicates denoting naming relationships.
 \ex.\dep{a book_identified *called#IDENTIFICATION* True Stories_identifier from Nature}
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
+
+\ex.\dep{Obamas *Sonderberaterin#SOCIAL-RELATION* Kori Schulman_m-identifier}
 
 In English, the preposition \emph{of} has an identifying sense, which can also
 be metaphorical:
@@ -1296,6 +1301,13 @@ annotate the former.
 
 \ex.\dep{Kim_initial-wearer *undressed#WRAPPING-WEARING-DEINIT*}
 
+Also, when in doubt, choose the frame so that you can use core roles rather
+than resorting to non-core roles. For example, in the following sentence, we
+should use \fr{LOCATION-INIT} rather than \fr{UNANCHORED-MOTION} so that we can
+use \rl{target-location} and do not have to resort to \fr{x-target-location}.
+
+\ex.\dep{Kim_x-accompanier *followed#LOCATION-INIT* Sandy_has-location into the room_target-location}
+
 \newpage\subsection{Arguments Determine Frames}
 
 The most important criterion in choosing a frame for a predicate is that there
@@ -1464,29 +1476,30 @@ their role in a social context:
 
 \newpage\subsection{Particle Verbs}
 
-We follow the PARSEME classification of particle verbs into spatial,
-semi-non-compositional, and fully non-compositional ones
-\citep{savary-etal-2017-parseme,ramisch-etal-2018-edition,ramisch-etal-2020-edition,savary-etal-2023-parseme}.
-
 In UD, particle verbs are connected to their particle via the
-\texttt{compound:prt} relation. If the meaning is spatial, this dependency is
-labeled with \rl{initial-location} or \rl{target-location}.
+\texttt{compound:prt} relation.
 
-\ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location}
+If the particle can be interpreted as an adposition with an elided complement
+(often the case with spatial meanings), label that relation as the elided
+complement would be labeled:
 
-\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_m-time}
+\ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location (the jar)}
 
-In semi-non-compositional particle verbs, where the particle adds a partially predictable
-but nonspatial meaning to the verb, use an appropriate role.
+\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location (-to the room) now_m-time}
 
-\ex.\dep{*eat#INGESTION* up_m-quantity the cookies_ingested} (implies \emph{eat} the cookies)
+Also treat separated and nonseparated adpositional adverbs this way:
 
-In fully non-compositional particle verbs, where the meaning is not
-predictable, use \rl{m-noncomp}.
+\ex.\dep{*Komm#LOCATION-INIT* herein_target-location !}
 
-\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp} (does not imply \emph{do} somebody)
+\ex.\dep{*Geh#LOCATION-INIT* da_target-location jetzt_m-time rein_target-location !}
 
-\ex.\dep{Es_x-sender *stellte#MESSAGE* ein riesiges Gesicht_topic dar_m-noncomp} (does not imply \emph{stellen} something)
+Otherwise, use \rl{m-noncomp}:
+
+\ex.\dep{*eat#INGESTION* up_m-noncomp the cookies_ingested}
+
+\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp}
+
+\ex.\dep{Es_x-sender *stellte#MESSAGE* ein riesiges Gesicht_topic dar_m-noncomp}
 
 \newpage\subsection{Pronouns with Arguments}
 
