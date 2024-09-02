@@ -307,7 +307,7 @@ class Sentence:
                     head_lineno_map[frame.head] = frame_lineno
             else:
                 logging.warning('sent %s line %s cannot parse frame %s',
-                        self.syntax[0].id, lineno, repr('\n'.join(frame)))
+                        self.syntax[0].id, frame_lineno, repr('\n'.join(frame)))
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
