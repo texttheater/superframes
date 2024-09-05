@@ -56,7 +56,7 @@ class Rigid:
 FRAMES : Dict[str, Union[Flexible, Rigid]] = {
     'SITUATION': Flexible('theme', 'situator'),
     'SCENE': Flexible('participant', 'scene'),
-    'IDENTIFICATION': Flexible('identified', 'identifier'),
+    'IDENTIFICATION': Flexible('identified', 'identifier'), # replace with NAME and SAME
     'RANK': Flexible('has-rank', '__invalid__'),
     'CLASS': Flexible('has-class', '__invalid__'),
     'EXISTENCE': Flexible('material', 'exists'),
@@ -98,7 +98,7 @@ FRAMES : Dict[str, Union[Flexible, Rigid]] = {
     'CONDITION': Rigid('has-condition', 'condition'),
     'EXCEPTION': Rigid('has-exception', 'exception'),
     'SOCIAL-RELATION': Flexible('has-social-relation', 'social-relation'),
-    'TIME': Rigid('has-time', 'time'),
+    'TIME': Rigid('has-time', 'time'), # replace with INTERVAL, SEQUENCE?
     'NONCOMP': Rigid('has-noncomp', 'noncomp'),
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
