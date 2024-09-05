@@ -89,7 +89,7 @@ FRAMES : Dict[str, Union[Flexible, Rigid]] = {
     'PART-WHOLE': Flexible('part', 'whole'),
     'EXAMPLE': Rigid('example', 'exemplified'),
     'POSSESSION': Flexible('possessed', 'possessor'),
-    'QUANTITY': Flexible('has-quantity', 'quantity'),
+    'QUANTITY': Flexible('has-quantity', '__invalid__'),
     'SENDING': Rigid('sent', 'sender'),
     'SEQUENCE': Flexible('follows', 'followed'),
     'CAUSATION': Rigid('result', 'causer'),
@@ -145,6 +145,11 @@ def check_dep_label_part(dep, frame, dep_frame) -> Optional[str]:
             return None
     if dep[:2] == 'r-':
         role = dep[2:]
+        if not dep_frame:
+            return 'reverse role pointing to a token with no frame annotation'
+        return check_dep_label(role, dep_frame, None)
+    if dep[:3] == 'rx-':
+        role = dep[3:]
         if not dep_frame:
             return 'reverse role pointing to a token with no frame annotation'
         return check_dep_label(role, dep_frame, None)
