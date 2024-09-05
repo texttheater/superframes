@@ -57,7 +57,7 @@ FRAMES : Dict[str, Union[Flexible, Rigid]] = {
     'SITUATION': Flexible('theme', 'situator'),
     'SCENE': Flexible('participant', 'scene'),
     'IDENTIFICATION': Flexible('identified', 'identifier'),
-    'RANK': Flexible('has-rank', 'rank'),
+    'RANK': Flexible('has-rank', '__invalid__'),
     'CLASS': Flexible('has-class', '__invalid__'),
     'EXISTENCE': Flexible('material', 'exists'),
     'TRANSFORMATION-CREATION': Rigid('material', 'created'),
