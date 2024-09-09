@@ -1675,15 +1675,18 @@
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
 8	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Empfangs- (5)
-[] Der Televisor (2)
-[] gleichzeitig (4)
+[CLASS] Empfangs- (5)
+[has-class] Der Televisor (2)
+[m-time >> m-scene] gleichzeitig (4)
 
-[] Televisor (2)
+[CLASS] Televisor (2)
 
-[] gleichzeitig (4)
+[ACCOMPANIMENT] gleichzeitig (4)
+[accompanied] Empfangs- (5)
+[accompanier] Sendegerät (7)
 
-[] Sendegerät (7)
+[CLASS] Sendegerät (7)
+[has-class] Der Televisor (2) # TODO add to manual (nominal copula construction)
 
 # sent_id = 31
 # text = Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , wurde von ihm registriert .
@@ -2102,16 +2105,17 @@
 
 [] so (4)
 
-[] zuwandte (13)
-[] er (8)
-[] dem Televisor (10)
-[] den Rücken (12)
+[LOCATION] zuwandte (13) # TODO new frame ORIENTATION
+[has-location] er (8)
+[location] dem Televisor (10)
+[x-attribute] den Rücken (12)
 
 [] er (8)
 
 [] Televisor (10)
 
-[] Rücken (12)
+[CLASS] Rücken (12) # TODO front vs. Rücken
+[m-whole] er (8)
 
 # sent_id = 39
 # text = Das war sicherer , wenn auch , wie er wohl wusste , sogar ein Rücken verräterisch sein kann .
@@ -2142,8 +2146,8 @@
 [] Das (1)
 
 [] verräterisch (16)
-[] auch (6)
 [m-scene] , wie er wohl wusste , (11)
+[] auch (6)
 [] sogar (13)
 [] ein Rücken (15)
 
@@ -2415,9 +2419,9 @@
 
 [] neunzehnten (12)
 
-[] gestützt (20)
-[] deren Mauern (17)
-[] mit Balken (19)
+[STATE-INIT] gestützt (20) # ??
+[has-state] deren Mauern (17)
+[x-means] mit Balken (19)
 
 [] Mauern (17)
 [] deren (16)
@@ -2426,9 +2430,9 @@
 
 [] Balken (19)
 
-[] verschalt (26)
-[] deren Fenster (23)
-[] mit Pappendeckel (25)
+[LOCATION-INIT] verschalt (26)
+[target-location] deren Fenster (23)
+[has-location] mit Pappendeckel (25)
 
 [] Fenster (23)
 [] deren (22)
@@ -2437,9 +2441,9 @@
 
 [] Pappendeckel (25)
 
-[] gedeckt (32)
-[] deren Dächer (29)
-[] mit Wellblech (31)
+[LOCATION-INIT] gedeckt (32)
+[target-location] deren Dächer (29)
+[has-location] mit Wellblech (31)
 
 [] Dächer (29)
 [] deren (28)
@@ -2450,10 +2454,10 @@
 
 [] heruntergekommen (7)
 
-[] sackten (45)
-[] ihre schiefen Gartenmauern (38)
-[] kreuz und quer (39)
-[] in den Boden (44)
+[LOCATION-INIT] sackten (45)
+[has-location] ihre schiefen Gartenmauern (38)
+[m-quality] kreuz und quer (39)
+[target-location] in den Boden (44)
 
 [] Gartenmauern (38)
 [] ihre (36)
@@ -2463,9 +2467,10 @@
 
 [] schiefen (37)
 
-[] kreuz (39)
+[QUALITY] kreuz (39)
+[m-noncomp] quer (41)
 
-[] quer (41)
+[NONCOMP] quer (41)
 
 [] Boden (44)
 
@@ -2521,10 +2526,10 @@
 
 [] zerbombten (3)
 
-[] wirbelte (12)
-[] wo (6)
-[] der Pflasterstaub (8)
-[] in der Luft (11)
+[UNANCHORED-MOTION] wirbelte (12)
+[m-location] wo (6)
+[in-motion] der Pflasterstaub (8)
+[m-location] in der Luft (11)
 
 [] wo (6)
 
@@ -2692,11 +2697,11 @@
 17	hieß	heißen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	_	_
 18	-	-	PUNCT	$.	_	17	punct	_	_
 19	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-20	verblüffend	verblüffend	ADJ	ADJD	_	19	advmod	_	_
+20	verblüffend	verblüffend	ADJ	ADJD	_	21	advmod	_	_
 21	verschieden	verschieden	ADJ	ADJD	_	19	advmod	_	_
 22	von	von	ADP	APPR	_	24	case	_	_
-23	allem	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	19	obl	_	_
-24	anderen	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	19	obl	_	_
+23	allem	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	24	det	_	_
+24	anderen	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	21	obl	_	_
 25	aus	aus	ADP	PTKVZ	_	19	compound:prt	_	_
 26	,	,	PUNCT	$,	_	30	punct	_	_
 27	was	was	PRON	PRELS	Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	30	obj	_	_
@@ -2707,10 +2712,7 @@
 
 [] sah (19)
 [] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
-[] verblüffend (20)
-[] verschieden (21)
-[] allem (23)
-[] von anderen , was der Gesichtskreis umfasste (24)
+[] verblüffend verschieden von allem anderen , was der Gesichtskreis umfasste (21)
 [] aus (25)
 
 [] Wahrheitsministerium (2)
@@ -2719,9 +2721,10 @@
 [IDENTIFICATION] Miniwahr (4)
 [] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
 
-[] hieß (17)
-[] es (7)
-[] in der Neusprache , der amtlichen Sprache Ozeaniens , (10)
+[IDENTIFICATION] hieß (17)
+[identified] es (7)
+[m-sender] in der Neusprache , der amtlichen Sprache Ozeaniens , (10) # TODO ??
+[identifier] Miniwahr (4)
 
 [] es (7)
 
@@ -2736,14 +2739,14 @@
 
 [] Ozeaniens (15)
 
+[] verschieden (21)
+[] verblüffend (20)
+[] von allem anderen , was der Gesichtskreis umfasste (24)
+
 [] verblüffend (20)
 
-[] verschieden (21)
-
-[] allem (23)
-
-[] anderen (24)
-[] , was der Gesichtskreis umfasste (30)
+[COMPARISON] anderen (24)
+[m-scene] , was der Gesichtskreis umfasste (30)
 
 [] umfasste (30)
 [] was (27)
@@ -2787,7 +2790,7 @@
 
 [] riesiger (4)
 
-[] pyramidenartiger (5)
+[QUALITY] pyramidenartiger (5) # TODO manual: stop analysis at word level (debone a fish as STATE-CHANGE, not PART-WHOLE-DEINIT)
 
 [] schimmernder (8)
 [] weiß (7)
@@ -2805,7 +2808,7 @@
 
 [] sich (12)
 
-[] terrassenförmig (13)
+[QUALITY] terrassenförmig (13)
 
 [] hoch (16)
 [] dreihundert Meter (15)
@@ -2850,7 +2853,7 @@
 [] entziffern (26)
 [] Von der Stelle , wo Winston stand , (3)
 [] man (10)
-[] gerade noch (12)
+[m-mode] gerade noch (12)
 [] die in schönen Lettern in seine weiße Front gemeißelten drei Wahlsprüche der Partei (23)
 
 [] Stelle (3)
@@ -2866,28 +2869,29 @@
 
 [] man (10)
 
-[] noch (12)
-[] gerade (11)
+[MODE] noch (12)
+[m-noncomp] gerade (11)
 
-[] gerade (11)
+[NONCOMP] gerade (11)
 
 [] Wahlsprüche (23)
 [] in schönen Lettern in seine weiße Front gemeißelten (21)
 [] drei (22)
 [] der Partei (25)
 
-[] gemeißelten (21)
-[] in schönen Lettern (16)
-[] in seine weiße Front (20)
+[MESSAGE-INIT] gemeißelten (21)
+[m-quality] in schönen Lettern (16) # TODO ?
+[x-location] in seine weiße Front (20)
+[target-content] Wahlsprüche (23)
 
 [] Lettern (16)
 [] schönen (15)
 
 [] schönen (15)
 
-[] Front (20)
-[] seine (18)
-[] weiße (19)
+[PART-WHOLE] Front (20)
+[whole] seine (18)
+[m-quality] weiße (19)
 
 [] seine (18)
 

@@ -534,31 +534,31 @@
 [SOCIAL-RELATION] representatives (19)
 [social-relation] from Uber , the Motion Picture Association of America , the Consumer Technology Association and other groups (21)
 
-[] Uber (21)
+[IDENTIFICATION] Uber (21)
 
-[] Association (26)
-[] Motion Picture (25)
-[] of America (28)
+[IDENTIFICATION] Association (26) # TODO manual
+[m-noncomp] Motion Picture (25)
+[m-noncomp] of America (28)
 
-[] Picture (25)
-[] Motion (24)
+[NONCOMP] Picture (25)
+[m-noncomp] Motion (24)
 
-[] Motion (24)
+[NONCOMP] Motion (24)
 
-[] America (28)
+[NONCOMP] America (28)
 
-[] Association (33)
-[] Consumer Technology (32)
+[IDENTIFICATION] Association (33)
+[m-noncomp] Consumer Technology (32)
 
-[] Technology (32)
-[] Consumer (31)
+[NONCOMP] Technology (32)
+[m-noncomp] Consumer (31)
 
-[] Consumer (31)
+[NONCOMP] Consumer (31)
 
-[] groups (36)
-[] other (35)
+[CLASS] groups (36)
+[m-reference] other (35)
 
-[] other (35)
+[COMPARISON] other (35)
 
 # sent_id = n01003012
 # text = The gathering was originally slated for Washington’s private Metropolitan Club on H Street a few blocks away.
@@ -591,23 +591,23 @@
 
 [] originally (4)
 
-[] Club (11)
-[] Washington ’s (7)
-[] private (9)
-[] Metropolitan (10)
-[] on H Street (14)
-[] a few blocks away (18)
+[CLASS] Club (11)
+[m-location] Washington ’s (7)
+[m-quality] private (9)
+[m-noncomp] Metropolitan (10)
+[m-location] on H Street (14)
+[m-location] a few blocks away (18)
 
 [] Washington (7)
 
 [] private (9)
 
-[] Metropolitan (10)
+[NONCOMP] Metropolitan (10)
 
-[] Street (14)
-[] H (13)
+[CLASS] Street (14)
+[m-noncomp] H (13)
 
-[] H (13)
+[NONCOMP] H (13)
 
 [] away (18)
 [] a few blocks (17)
@@ -701,7 +701,7 @@
 [] applying (20)
 [] it (21)
 
-[] it (21)
+[IDENTIFICATION] it (21) # TODO manual (anaphoric rolesets)
 
 # sent_id = n01004017
 # text = They are at the national average in grade 4 and better than national average in grade 8.
@@ -795,17 +795,17 @@
 [] build (10)
 [] the NoMa infill Metro station , which opened in 2004 (15)
 
-[] station (15)
-[] NoMa (12)
-[] infill (13)
-[] Metro (14)
-[] which opened in 2004 (18)
+[CLASS] station (15)
+[m-identifier] NoMa (12)
+[m-purpose] infill (13) # TODO ? 
+[m-purpose] Metro (14) # TODO ?
+[m-scene] which opened in 2004 (18)
 
-[] NoMa (12)
+[IDENTIFICATION] NoMa (12)
 
-[] infill (13)
+[CLASS] infill (13) # TODO ? 
 
-[] Metro (14)
+[CLASS] Metro (14) # TODO ? 
 
 [] opened (18)
 [] which (17)
@@ -861,8 +861,8 @@
 
 [] we (10)
 
-[] help (14)
-[] transit (12)
+[SCENE-INIT] help (14)
+[x-causer] transit (12)
 
 [] transit (12)
 
