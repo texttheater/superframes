@@ -1249,9 +1249,9 @@
 13	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE] blickte (7)
-[x-experiencer] Das Gesicht mit dem schwarzen Schnurrbart (2)
-[x-location] von jeder beherrschenden Ecke (11)
-[x-location] herunter (12) # TODO manual: particle/adposition duality
+[x-experiencer >> topic] Das Gesicht mit dem schwarzen Schnurrbart (2)
+[x-initial-location >> x-location] von jeder beherrschenden Ecke (11)
+[x-target-location >> x-location] herunter (12)
 
 [] Gesicht (2)
 [] mit dem schwarzen Schnurrbart (6)
@@ -1714,12 +1714,13 @@
 [] Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , (5)
 [] von ihm (17)
 
-[] Geräusch (5)
-[] von Winston verursachte (4)
-[] , das über ein ganz leises Flüstern hinausging (13)
+[MESSAGE] Geräusch (5)
+[m-scene] von Winston verursachte (4)
+[m-scene] , das über ein ganz leises Flüstern hinausging (13)
 
 [] verursachte (4)
 [] von Winston (3)
+[] Geräusch (5)
 
 [] Winston (3)
 
@@ -2618,13 +2619,13 @@
 32	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	31	cop	_	_
 33	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] führte (3)
-[] es (2)
-[] zu nichts (5)
+[SEQUENCE >> CAUSATION] führte (3)
+[followed >> causer] es (2)
+[follows >> result] zu nichts (5)
 
-[] es (2)
+[IDENTIFICATION] es (2)
 
-[] nichts (5)
+[CLASS] nichts (5)
 
 [] erinnern (11)
 [] er (7)
@@ -2751,6 +2752,7 @@
 [] umfasste (30)
 [] was (27)
 [] der Gesichtskreis (29)
+[] anderen (24)
 
 [] was (27)
 
@@ -2851,9 +2853,9 @@
 27	:	:	PUNCT	$.	_	26	punct	_	_
 
 [] entziffern (26)
+[m-mode] gerade noch (12)
 [] Von der Stelle , wo Winston stand , (3)
 [] man (10)
-[m-mode] gerade noch (12)
 [] die in schönen Lettern in seine weiße Front gemeißelten drei Wahlsprüche der Partei (23)
 
 [] Stelle (3)

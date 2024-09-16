@@ -4,10 +4,10 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	STÄRKE	Stärke	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] STÄRKE (3)
-[] UNWISSENHEIT (1)
+[QUALITY] STÄRKE (3)
+[x-identified] UNWISSENHEIT (1) # TODO manual: why not x-has-class? Because the term is defined.
 
-[] UNWISSENHEIT (1)
+[MESSAGE-NEG] UNWISSENHEIT (1)
 
 # sent_id = 52
 # text = Das Wahrheitsministerium enthielt , so erzählte man sich , in seinem pyramidenartigen Bau dreitausend Räume und eine entsprechende Zahl unter der Erde .
@@ -23,9 +23,9 @@
 10	in	in	ADP	APPR	_	13	case	_	_
 11	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	13	det:poss	_	_
 12	pyramidenartigen	pyramidenartig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	13	amod	_	_
-13	Bau	Bau	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
+13	Bau	Bau	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 14	dreitausend	dreitausend	NUM	CARD	NumType=Card	15	nummod	_	_
-15	Räume	Raum	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	6	obj	_	_
+15	Räume	Raum	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	3	obj	_	_
 16	und	und	CCONJ	KON	_	19	cc	_	_
 17	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 18	entsprechende	entsprechend	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	19	amod	_	_
@@ -37,17 +37,17 @@
 
 [] enthielt (3)
 [] Das Wahrheitsministerium (2)
-
-[] Wahrheitsministerium (2)
-
-[] erzählte (6)
-[] so (5)
-[] man (7)
-[] sich (8)
 [] , in seinem pyramidenartigen Bau (13)
 [] dreitausend Räume und eine entsprechende Zahl unter der Erde (15)
 
-[] so (5)
+[] Wahrheitsministerium (2)
+
+[MESSAGE-INIT] erzählte (6)
+[target-content] so (5)
+[x-sender] man (7)
+[x-experiencer] sich (8)
+
+[IDENTIFICATION] so (5)
 
 [] man (7)
 
@@ -574,8 +574,6 @@
 
 [] versteckten (25)
 
-[] hindurch (27)
-
 # sent_id = 61
 # text = Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen waren durch gorillagesichtige Wachen in schwarzen Uniformen gesichert , die mit schweren Gummiknüppeln bewaffnet waren .
 1	Sogar	sogar	ADV	ADV	_	9	advmod	_	_
@@ -667,8 +665,6 @@
 [] sich (3)
 
 [] Ruck (6)
-
-[] um (7)
 
 # sent_id = 63
 # text = Er hatte die ruhige optimistische Miene aufgesetzt , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte .
@@ -799,7 +795,7 @@
 30	Küche	Küche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	34	obl	_	_
 31	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	34	obj	_	_
 32	zu	zu	PART	PTKZU	_	33	mark	_	_
-33	essen	essen	VERB	VVINF	VerbForm=Inf	34	xcomp	_	_
+33	essen	essen	VERB	VVINF	VerbForm=Inf	31	xcomp	_	_
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	ccomp	_	_
 35	außer	außer	ADP	APPR	_	37	case	_	_
 36	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	37	det	_	_
@@ -853,24 +849,25 @@
 
 [] er (24)
 
-[] gab (34)
-[] es (27)
-[] in der Küche (30)
-[] nichts (31)
-[] zu essen (33)
-[] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
+[EXISTENCE] gab (34)
+[m-noncomp] es (27)
+[m-location] in der Küche (30)
+[exists] nichts zu essen (31)
+[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37) # TODO exists??
 
-[] es (27)
+[NONCOMP] es (27)
 
-[] Küche (30)
+[CLASS] Küche (30)
 
-[] nichts (31)
+[CLASS] nichts (31)
+[m-scene] zu essen (33)
 
-[] essen (33)
+[INGESTION] essen (33)
+[ingested] nichts (31)
 
-[] Stück (37)
-[] Schwarzbrot (38)
-[] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
+[PART-WHOLE >> QUANTITY] Stück (37) # TODO PART-WHOLE vs. QUANTITY
+[whole >> has-quantity] Schwarzbrot (38)
+[m-scene] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
 
 [] Schwarzbrot (38)
 
@@ -979,8 +976,6 @@
 
 [] öligen (7)
 
-[] aus (9)
-
 [] Reisschnaps (13)
 [] chinesischer (12)
 
@@ -1046,10 +1041,11 @@
 
 [] sich (12)
 
-[] Schock (17)
-[] zu erwartenden (16)
+[EVENT] Schock (17)
+[m-scene] zu erwartenden (16)
 
-[] erwartenden (16)
+[MESSAGE >> TIME] erwartenden (16)
+[topic >> has-time] Schock (17)
 
 [] ein (18)
 
@@ -1100,8 +1096,6 @@
 [] sein (3)
 
 [] krebsrot (5)
-
-[] an (6)
 
 [] trat (11)
 [] das Wasser (10)
@@ -1158,17 +1152,17 @@
 
 [] Herunterschlucken (11)
 
-[] Gefühl (13)
-[] , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen (23)
+[MESSAGE] Gefühl (13)
+[content] , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen (23)
 
-[] bekommen (23)
-[] eins (15)
-[] mit dem Gummiknüppel (18)
-[] über den Hinterkopf (21)
+[HITTING] bekommen (23)
+[m-quantity] eins (15)
+[hitting] mit dem Gummiknüppel (18)
+[hit] über den Hinterkopf (21)
 
-[] eins (15)
+[QUANTITY] eins (15)
 
-[] Gummiknüppel (18)
+[CLASS] Gummiknüppel (18)
 
 [] Hinterkopf (21)
 
@@ -1217,8 +1211,6 @@
 [] seinem (9)
 
 [] seinem (9)
-
-[] auf (11)
 
 [] begann (16)
 [] die Welt (15)
@@ -1353,16 +1345,14 @@
 15	Tischchen	Tisch	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] ging (2)
-[] Er (1)
-[] ins Wohnzimmer (4)
-[] zurück (5)
+[LOCATION-INIT] ging (2) # TODO manual: CHANGE nur wenn es initial- und target- gibt
+[has-location] Er (1)
+[target-location] ins Wohnzimmer (4)
+[m-noncomp] zurück (5)
 
 [] Er (1)
 
 [] Wohnzimmer (4)
-
-[] zurück (5)
 
 [] setzte (7)
 [] sich (8)
@@ -1448,8 +1438,6 @@
 [] marmorierten (24)
 
 [] marmorierten (24)
-
-[] hervor (26)
 
 # sent_id = 76
 # text = Aus irgendeinem Grunde war der Televisor in seinem Wohnzimmer an einer ungewöhnlichen Stelle angebracht .
@@ -2582,8 +2570,6 @@
 
 [] Zunge (13)
 
-[] an (14)
-
 # sent_id = 95
 # text = Die Feder war ein vorsintflutliches Instrument , das selbst zu Unterschriften nur noch selten verwendet wurde , und er hatte sich heimlich und mit einiger Schwierigkeit eine besorgt , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
@@ -2700,8 +2686,6 @@
 [] ganz (30)
 
 [] ganz (30)
-
-[] heraus (35)
 
 [] verdiente (43)
 [] das wundervolle glatte Papier (41)
