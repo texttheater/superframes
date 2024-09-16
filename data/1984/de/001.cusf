@@ -4,10 +4,10 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	STÄRKE	Stärke	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[STATE] STÄRKE (3)
-[MESSAGE] UNWISSENHEIT (1)
+[QUALITY] STÄRKE (3)
+[x-identifier] UNWISSENHEIT (1)
 
-[MESSAGE] UNWISSENHEIT (1)
+[MESSAGE-NEG] UNWISSENHEIT (1)
 
 # sent_id = 52
 # text = Das Wahrheitsministerium enthielt , so erzählte man sich , in seinem pyramidenartigen Bau dreitausend Räume und eine entsprechende Zahl unter der Erde .
@@ -41,17 +41,18 @@
 
 [PART-WHOLE] Wahrheitsministerium (2)
 
-[MESSAGE] erzählte (6)
-[m-quality] so (5)
+[MESSAGE-INIT] erzählte (6)
+[target-content] so (5)
 [x-sender] man (7)
-[m-noncomp] sich (8)
-[m-location] , in seinem pyramidenartigen Bau (13)
+[x-experiencer] sich (8)
+
+[IDENTIFICATION] so (5)
 
 [QUALITY] so (5)
 
 [IDENTIFICATION] man (7)
 
-[NONCOMP] sich (8)
+[IDENTIFICATION] sich (8)
 
 [TRANSFORMATION-CREATION] Bau (13)
 [m-identifier] seinem (11)
@@ -658,16 +659,16 @@
 [LOCATION-CHANGE] drehte (2)
 [has-location] Winston (1)
 [m-noncomp] sich (3)
-[m-quality] mit einem Ruck (6)
-[m-noncomp || target-location] um (7)
+[m-means >> m-quality] mit einem Ruck (6)
+[target-location] um (7)
 
 [IDENTIFICATION] Winston (1)
 
 [NONCOMP] sich (3)
 
-[QUALITY >> LOCATION-CHANGE] Ruck (6)
+[MEANS >> QUALITY] Ruck (6)
 
-[NONCOMP] um (7)
+[LOCATION-DEINIT] um (7)
 
 # sent_id = 63
 # text = Er hatte die ruhige optimistische Miene aufgesetzt , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte .
@@ -852,25 +853,20 @@
 
 [IDENTIFICATION] er (24)
 
-[SCENE] gab (34)
+[EXISTENCE] gab (34)
 [m-noncomp] es (27)
 [m-location] in der Küche (30)
-[m-mode] nichts (31)
-[participant] zu essen (33)
-[m-conceded] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
+[exists] nichts zu essen (31)
+[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
 
 [NONCOMP] es (27)
 
-[LOCATION] Küche (30)
+[INGESTION] essen (33)
+[ingested] nichts (31)
 
-[EXIST-DEINIT] nichts (31)
-
-[CLASS] essen (33)	#
-[m-identifier] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)	#
-
-[QUANTITY] Stück (37)
-[has-quantity] Schwarzbrot (38)
-[m-quality] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
+[PART-WHOLE >> QUANTITY] Stück (37) # TODO PART-WHOLE vs. QUANTITY
+[whole >> has-quantity] Schwarzbrot (38)
+[m-scene] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
 
 [CLASS] Schwarzbrot (38)
 
@@ -966,7 +962,7 @@
 [MESSAGE] strömte (3)
 [x-sender] Das Getränk (2)
 [content] einen faden , öligen Geruch (8)
-[m-noncomp || m-initial-location] aus (9)
+[m-noncompm] aus (9)
 [m-compared] , wie chinesischer Reisschnaps (13)
 
 [CLASS] Getränk (2)
@@ -977,8 +973,6 @@
 [QUALITY] faden (5)
 
 [QUALITY] öligen (7)
-
-[NONCOMP || LOCATION-DEINIT] aus (9)
 
 [CLASS] Reisschnaps (13)
 [m-identified] chinesischer (12)
@@ -1036,8 +1030,6 @@
 
 [IDENTIFICATION] davon (8)
 
-[NONCOMP] ein (9)
-
 [MESSAGE-INIT] stellte (11)
 [x-experiencer] sich (12)
 [target-content] auf den zu erwartenden Schock (17)
@@ -1045,10 +1037,11 @@
 
 [IDENTIFICATION] sich (12)
 
-[STATE] Schock (17)
-[m-experienced >> m-time] zu erwartenden (16)
+[EVENT] Schock (17)
+[m-scene] zu erwartenden (16)
 
-[EXPERIENCE-INIT >> TIME-INIT] erwartenden (16)
+[MESSAGE >> TIME] erwartenden (16)
+[topic >> has-time] Schock (17)
 
 [NONCOMP] ein (18)
 
@@ -1099,8 +1092,6 @@
 [IDENTIFICATION] sein (3)
 
 [QUALITY] krebsrot (5)
-
-[NONCOMP] an (6)
 
 [LOCATION-CHANGE >> MESSAGE] trat (11)
 [has-location >> m-noncomp] das Wasser (10)
@@ -1162,12 +1153,12 @@
 
 [HITTING] bekommen (23)
 [m-quantity] eins (15)
-[m-means] mit dem Gummiknüppel (18)
-[m-attribute] über den Hinterkopf (21)
+[hitting] mit dem Gummiknüppel (18)
+[hit] über den Hinterkopf (21)
 
 [CLASS] eins (15)
 
-[MEAN] Gummiknüppel (18)
+[CLASS] Gummiknüppel (18)
 
 [LOCATION-DEINIT] Hinterkopf (21)
 
@@ -1216,8 +1207,6 @@
 [m-identified] seinem (9)
 
 [IDENTIFICATION] seinem (9)
-
-[NONCOMP] auf (11)
 
 [STATE-INIT] begann (16)
 [has-state] die Welt (15)
@@ -1300,7 +1289,7 @@
 [LOCATION-CHANGE] rieselte (28)
 [m-follows] worauf (21)
 [has-location] der Tabak (23)
-[m-transitory-location] heraus (24)
+[initial-location] heraus (24)
 [target-location] auf den Fußboden (27)
 
 [SEQUENCE] worauf (21)
@@ -1352,10 +1341,10 @@
 15	Tischchen	Tisch	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE] ging (2)
+[LOCATION-INIT] ging (2)
 [x-causer] Er (1)
 [target-location] ins Wohnzimmer (4)
-[m-quality || m-noncomp] zurück (5)
+[m-noncomp] zurück (5)
 
 [IDENTIFICATION] Er (1)
 
@@ -1366,8 +1355,6 @@
 [LOCTION-CHANGE] setzte (7)
 [has-location] sich (8)
 [target-location] an ein links vom Televisor stehendes Tischchen (15)
-
-[NONCOMP] sich (8)
 
 [CLASS] Tischchen (15)
 [m-location] links vom Televisor stehendes (14)
@@ -1410,12 +1397,12 @@
 26	hervor	hervor	ADP	PTKVZ	_	2	compound:prt	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE] zog (2)
+[LOCATION-INIT] zog (2)
 [m-time] Dann (1)
 [x-causer] er (3)
 [initial-location] aus der Tischschublade (6)
 [has-location] einen Federhalter , eine Tintenflasche und ein dickes , unbeschriebenes Diarium in Quartformat mit rotem Rücken und marmorierten Einbanddeckeln (8)
-[m-noncomp || m-target-location] hervor (26)
+[m-target-location] hervor (26)
 
 [TIME] Dann (1)
 
@@ -1448,7 +1435,7 @@
 
 [QUALITY] marmorierten (24)
 
-[NONCOMP || LOCATION-DEINIT] hervor (26)
+[LOCATION-DEINIT] hervor (26)
 
 # sent_id = 76
 # text = Aus irgendeinem Grunde war der Televisor in seinem Wohnzimmer an einer ungewöhnlichen Stelle angebracht .
