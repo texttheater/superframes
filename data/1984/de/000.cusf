@@ -179,8 +179,8 @@
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
 [MESSAGE] roch (3)
-[m-location] Im Flur (2)
-[topic] es (4)
+[m-location || topic] Im Flur (2)
+[topic || x-noncomp] es (4)
 [content] nach gekochtem Kohl und feuchten Fußmatten (7)
 
 [LOCATION] Flur (2)
@@ -189,7 +189,7 @@
 
 [CLASS] Kohl (7)
 [m-quality] gekochtem (6)
-[] es (4)
+[m-compared] es (4)
 
 [QUALITY] gekochtem (6)
 
@@ -355,8 +355,6 @@
 [m-mode] auch (32)
 
 [MODE] auch (32)
-
-[NONCOMP] dar (13)
 
 # sent_id = 5
 # text = Winston ging die Treppe hinauf .
@@ -605,8 +603,6 @@
 
 [LOCATION] unterwegs (29)
 
-[NONCOMP] aus (30)
-
 # sent_id = 10
 # text = Auf jedem Treppenabsatz starrte ihn gegenüber dem Liftschacht das Plakat mit dem riesigen Gesicht an .
 1	Auf	auf	ADP	APPR	_	3	case	_	_
@@ -628,7 +624,7 @@
 
 [MESSAGE] starrte (4)
 [m-location] Auf jedem Treppenabsatz (3)
-[x-experienced] ihn (5)
+[topic] ihn (5)
 [m-location] gegenüber dem Liftschacht (8)
 [x-experiencer] das Plakat mit dem riesigen Gesicht (10)
 [m-noncomp] an (15)
@@ -646,8 +642,6 @@
 [m-quality] riesigen (13)
 
 [QUALITY] riesigen (13)
-
-[NONCOMP] an (15)
 
 # sent_id = 11
 # text = Es gehörte zu den Bildnissen , die so gemalt sind , dass einen die Augen überallhin verfolgen .
@@ -688,10 +682,10 @@
 
 [QUALITY] so (8)
 
-[MESSAGE] verfolgen (17)
-[x-experienced] einen (13)
-[x-experiencer] die Augen (15)
-[m-target-location] überallhin (16)
+[LOCATION-INIT >> MESSAGE-INIT] verfolgen (17)
+[has-location >> x-experienced] einen (13)
+[x-accompanier >> x-experiencer] die Augen (15)
+[target-location >> x-location] überallhin (16)
 
 [IDENTIFICATION] einen (13)
 
@@ -718,14 +712,13 @@
 
 [MESSAGE] lautete (10)
 [content] » Der Große Bruder sieht dich an ! « (5)
-[topic] die Schlagzeile (12)
+[x-sender] die Schlagzeile (12)
 [m-location] darunter (13)
 
 [MESSAGE] sieht (5)
-[x-sender] Der Große Bruder (4)
+[x-experiencer] Der Große Bruder (4)
 [topic] dich (6)
 [m-noncomp] an (7)
-[] die Schlagzeile (12)
 
 [IDENTIFICATION] Bruder (4)
 [m-noncomp] Große (3)
@@ -733,8 +726,6 @@
 [NONCOMP] Große (3)
 
 [IDENTIFICATION] dich (6)
-
-[NONCOMP] an (7)
 
 [MESSAGE] Schlagzeile (12)
 
@@ -825,7 +816,7 @@
 
 [QUALITY] stumpfen (11)
 
-[LOCATION-DEINIT] eingelassen (20)
+[LOCATION-INIT] eingelassen (20)
 [m-location] rechter Hand (16)
 [target-location] in die Wand (19)
 
@@ -873,13 +864,13 @@
 
 [STATE-CHANGE] wurde (10)
 [has-state] die Stimme (9)
-[m-time] daraufhin (11)
+[m-followed] daraufhin (11)
 [m-quantity] etwas (12)
 [target-state] leiser (13)
 
 [MESSAGE] Stimme (9)
 
-[TIME] daraufhin (11)
+[SEQUENCE] daraufhin (11)
 
 [QUANTITY] etwas (12)
 
@@ -928,16 +919,18 @@
 [STATE-CHANGE] gedämpft (11)
 [has-state] Der Apparat , ein sogenannter Televisor oder Hursehschirm , (2)
 
-[MESSAGE] Apparat (2)
-[m-identifier] , ein sogenannter Televisor oder Hursehschirm (6)
+[CLASS] Apparat (2)
+[m-scene] , ein sogenannter Televisor oder Hursehschirm (6)
 
-[MESSAGE] Televisor (6)
-[m-mode] sogenannter (5)
-[topic] oder Hursehschirm (8)
+[CLASS] Televisor (6)
+[m-scene] sogenannter (5)
 
-[MODE] sogenannter (5)
+[IDENTIFICATION-INIT] sogenannter (5)
+[identified] Televisor (6)
+[identified] Hursehschirm (8)
 
-[MESSAGE] Hursehschirm (8)
+[CLASS] Hursehschirm (8)
+[m-scene] sogenannter (5)
 
 [SCENE] gab (15)
 [scene] keine Möglichkeit , ihn völlig abzustellen (18)
@@ -984,7 +977,8 @@
 
 [LOCATION-CHANGE] trat (2)
 [has-location] Smith (1)
-[target-location] ans Fenster , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (4)
+[target-location] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
+[] ans Fenster (4)
 
 [IDENTIFICATION] Smith (1)
 
@@ -992,8 +986,9 @@
 [] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
 [MESSAGE] Gestalt (10)
-[m-quality] abgezehrte , gebrechliche (7)
+[x-identified] Smith (1)
 [topic] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
+[m-quality] abgezehrte , gebrechliche (7)
 
 [QUALITY] abgezehrte (7)
 
@@ -1140,8 +1135,6 @@
 
 [QUALITY] kalt (10)
 
-[NONCOMP] aus (11)
-
 # sent_id = 20
 # text = Unten auf der Straße wirbelten schwache Windstöße Staub und Papierfetzen in Spiralen hoch , und obwohl die Sonne strahlte und der Himmel leuchtend blau war , schien doch alles farblos , außer den überall angebrachten Plakaten .
 1	Unten	unten	ADV	ADV	_	5	advmod	_	_
@@ -1182,11 +1175,11 @@
 36	Plakaten	Plakat	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	30	nmod	_	_
 37	.	.	PUNCT	$.	_	5	punct	_	_
 
-[LOCATION-CHANGE || REACTION] wirbelten (5)
+[LOCATION-INIT] wirbelten (5)
 [m-location] Unten (1)
 [m-location] auf der Straße (4)
-[x-causer || trigger] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
-[target-location || reaction] hoch (13)
+[x-causer] schwache Windstöße Staub und Papierfetzen in Spiralen (7)
+[target-location] hoch (13)
 [m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
 
 [LOCATION] Unten (1)
@@ -1200,7 +1193,6 @@
 [QUALITY] schwache (6)
 
 [CLASS] Staub (8)
-[m-quality] in Spiralen (12)
 
 [CLASS] Papierfetzen (10)
 
@@ -1259,9 +1251,9 @@
 13	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE] blickte (7)
-[x-experiencer] Das Gesicht mit dem schwarzen Schnurrbart (2)
-[m-initial-location] von jeder beherrschenden Ecke (11)
-[m-target-location] herunter (12)
+[x-experiencer >> topic] Das Gesicht mit dem schwarzen Schnurrbart (2)
+[x-initial-location >> x-location] von jeder beherrschenden Ecke (11)
+[x-target-location >> x-location] herunter (12)
 
 [ACCOMPANIMENT] Gesicht (2)
 [m-accompanier] mit dem schwarzen Schnurrbart (6)
@@ -1337,13 +1329,12 @@
 [content] » Der Große Bruder sieht dich an . « (5)
 [m-mode] auch (11)
 [m-location] hier (12)
-[topic] die Unterschrift (14)
+[x-sender] die Unterschrift (14)
 
 [MESSAGE-INIT] sieht (5)
 [x-experiencer] Der Große Bruder (4)
 [target-content] dich (6)
 [m-noncomp] an (7)
-[] die Unterschrift (14)
 
 [IDENTIFICATION] Bruder (4)
 [m-noncomp] Große (3)
@@ -1351,8 +1342,6 @@
 [NONCOMP] Große (3)
 
 [IDENTIFICATION] dich (6)
-
-[NONCOMP] an (7)
 
 [MODE] auch (11)
 
@@ -1399,12 +1388,12 @@
 15	Winde	Wind	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	4	obl	_	_
 16	und	und	CCONJ	KON	_	17	cc	_	_
 17	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-18	nur	nur	ADV	ADV	_	17	advmod	_	_
+18	nur	nur	ADV	ADV	_	21	advmod	_	_
 19	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
 20	Wort	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	17	obj	_	_
 21	Engsoz	Engsoz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	20	appos	_	_
 22	bald	bald	ADV	ADV	_	23	advmod	_	_
-23	verdeckt	verdeckt	ADJ	ADJD	_	17	xcomp	_	_
+23	verdeckt	verdeckt	ADJ	ADJD	_	27	xcomp	_	_
 24	,	,	PUNCT	$,	_	26	punct	_	_
 25	bald	bald	ADV	ADV	_	26	advmod	_	_
 26	unverdeckt	unverdeckt	ADJ	ADJD	_	23	conj	_	_
@@ -1423,10 +1412,10 @@
 [LOCATION] Unten (1)
 
 [MESSAGE] Plakat (12)
-[m-identifier] anderes , (6)
+[m-reference] anderes , (6)
 [m-destroyed || m-quality] an einer Ecke eingerissenes (11)
 
-[IDENTIFICATION] anderes (6)
+[COMPARISON] anderes (6)
 
 [DESTRUCTION || QUALITY] eingerissenes (11)
 [m-location] an einer Ecke (10)
@@ -1438,33 +1427,32 @@
 [MEANS] Winde (15)
 
 [SCENE-INIT] ließ (17)
-[m-means] Plakat (12)
-[m-mode] nur (18)
-[participant] das Wort Engsoz (20)
-[m-quality] bald verdeckt , bald unverdeckt (23)
-[target-scene] erscheinen (27)
+[participant] nur das Wort Engsoz (20)
+[x-causer] Plakat (12)
+[target-scene] bald verdeckt , bald unverdeckt erscheinen (27)
 
 [MODE] nur (18)
 
-[] Wort (20)
-[] Engsoz (21)
+[MESSAGE] Wort (20)
+[content] Engsoz (21)
 
-[] Engsoz (21)
-[] Wort (20)
+[IDENTIFICATION] Engsoz (21)
 
 [WRAPPING-WEARING-INIT] verdeckt (23)
 [m-time] bald (22)
+[target-wearer] das Wort Engsoz (20)
 
 [TIME] bald (22)
 
-[WRAPPING-WEARING-DEINIT] unverdeckt (26)
+[WRAPPING-WEARING-INIT-NEG] unverdeckt (26)
 [m-time] bald (25)
+[target-wearer] das Wort Engsoz (20)
 
 [TIME] bald (25)
 
 [MESSAGE] erscheinen (27)
-[topic] Wort (20)
-[content] Engsoz (21)
+[topic] Wort Engsoz (21)
+[content] bald verdeckt, bald unverdeckt (23)
 
 # sent_id = 25
 # text = In der Ferne glitt ein Helikopter zwischen den Dächern herunter , brummte einen Augenblick wie eine Schmeißfliege und strich dann in einem Bogen wieder ab .
@@ -1530,8 +1518,6 @@
 [QUALITY] Bogen (23)
 
 [TIME] wieder (24)
-
-[NONCOMP] ab (25)
 
 # sent_id = 26
 # text = Es war die Polizeistreife , die den Leuten in die Fenster schaute .
@@ -1698,9 +1684,9 @@
 
 [TIME] gleichzeitig (4)
 
-[MESSAGE] Empfangs- (5)
-[x-causer] Der Televisor (2)
-[] gleichzeitig (4)
+[CLASS] Empfangs- (5)
+[has-class] Der Televisor (2)
+[time] gleichzeitig (4)
 
 [MESSAGE] Sendegerät (7)
 
@@ -1731,15 +1717,15 @@
 [x-experiencer] von ihm (17)
 
 [MESSAGE] Geräusch (5)
-[x-causer] von Winston verursachte (4)
-[m-quality] , das über ein ganz leises Flüstern hinausging (13)
+[m-scene] von Winston verursachte (4)
+[m-scene] , das über ein ganz leises Flüstern hinausging (13)
 
 [CAUSATION] verursachte (4)
 [causer] von Winston (3)
 
 [IDENTIFICATION] Winston (3)
 
-[STATE-CHANGE] hinausging (13)
+[COMPARISON] hinausging (13)
 [x-identifier] das (7)
 [initial-state] über ein ganz leises Flüstern (12)
 
@@ -2067,8 +2053,6 @@
 
 [IDENTIFICATION] darauf (14)
 
-[NONCOMP] ein (15)
-
 [MESSAGE] überhört (26)
 [content] jedes Geräusch , das man machte , (20)
 [m-quality] in der Annahme (5)
@@ -2121,8 +2105,6 @@
 [NONCOMP] es (3)
 
 [QUALITY] so (4)
-
-[NONCOMP] ein (5)
 
 [LOCATION-CHANGE >> MESSAGE-DEINIT] zuwandte (13)
 [has-location >> x-causer] er (8)
@@ -2236,8 +2218,6 @@
 [m-quality] düsteren (16)
 
 [QUALITY] düsteren (16)
-
-[NONCOMP] empor (18)
 
 # sent_id = 41
 # text = Das also , dachte er mit einer Art undeutlichen Abscheus , war London , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens .
@@ -2638,19 +2618,19 @@
 32	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	31	cop	_	_
 33	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SEQUENCE >> MEANS] führte (3)
-[m-identifier] es (2)
-[followed >> m-mode] zu nichts (5)
+[SEQUENCE >> CAUSATION] führte (3)
+[followed >> causer] es (2)
+[follows >> result] zu nichts (5)
 
 [IDENTIFICATION] es (2)
 
-[MODE] nichts (5)
+[CLASS] nichts (5)
 
 [MESSAGE] erinnern (11)
 [x-experiencer] er (7)
 [m-noncomp] sich (9)
 [m-mode] nicht (10)
-[] ; von seiner Kindheit hatte er nichts nachbehalten als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (19)
+[x-scene] ; von seiner Kindheit hatte er nichts nachbehalten als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (19)
 
 [IDENTIFICATION] er (7)
 
@@ -2779,8 +2759,6 @@
 [IDENTIFICATION] was (27)
 
 [MESSAGE] Gesichtskreis (29)
-
-[NONCOMP] aus (25)
 
 # sent_id = 47
 # text = Es war ein riesiger pyramidenartiger , weiß schimmernder Betonbau , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte .
