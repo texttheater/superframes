@@ -2781,20 +2781,22 @@
 20	reckte	recken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
 21	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] Betonbau (9)
-[] Es (1)
-[] riesiger (4)
-[] pyramidenartiger , weiß schimmernder (5)
-[] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
+[CLASS] Betonbau (9)
+[has-class] Es (1)
+[m-quality] riesiger (4)
+[m-scene] pyramidenartiger , weiß schimmernder (5)
+[m-scene] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
 
 [] Es (1)
 
 [] riesiger (4)
 
-[QUALITY] pyramidenartiger (5) # TODO manual: stop analysis at word level (debone a fish as STATE-CHANGE, not PART-WHOLE-DEINIT)
+[COMPARISON >> QUALITY] pyramidenartiger (5)
+[compared >> has-quality] Betonbau (9)
 
-[] schimmernder (8)
-[] weiß (7)
+[QUALITY] schimmernder (8)
+[m-quality] weiß (7)
+[has-quality] Betonbau (9)
 
 [] weiß (7)
 
