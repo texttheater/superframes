@@ -66,11 +66,12 @@
 
 [] dreitausend (14)
 
-[] Zahl (19)
-[] entsprechende (18)
-[] unter der Erde (22)
+[QUANTITY] Zahl (19)
+[m-scene] entsprechende (18)
+[m-location] unter der Erde (22)
 
-[] entsprechende (18)
+[COMPARISON] entsprechende (18)
+[compared] Zahl (19)
 
 [] Erde (22)
 
@@ -94,8 +95,8 @@
 16	.	.	PUNCT	$.	_	4	punct	_	_
 
 [] gab (4)
+[m-time] nur noch (7)
 [] In ganz London (3)
-[] nur noch (7)
 [] drei andere Bauten von ähnlichem Aussehen und Ausmaß (10)
 
 [] London (3)
@@ -103,10 +104,10 @@
 
 [] ganz (2)
 
-[] noch (7)
-[] nur (6)
+[TIME] noch (7)
+[m-noncomp] nur (6)
 
-[] nur (6)
+[NONCOMP] nur (6)
 
 [] Bauten (10)
 [] drei (8)
@@ -157,11 +158,12 @@
 
 [] Sie (1)
 
-[] Stadtbild (6)
-[] sie umgebende (5)
+[MESSAGE >> CLASS] Stadtbild (6)
+[m-scene] sie umgebende (5)
 
-[] umgebende (5)
-[] sie (4)
+[LOCATION] umgebende (5)
+[location >> has-location] sie (4)
+[has-location >> location] Stadtbild (6)
 
 [] sie (4)
 
@@ -170,11 +172,11 @@
 
 [] so (7)
 
-[] sehen (20)
-[] man (11)
-[] vom Dach des Victory-Blocks aus (13)
-[] alle vier (18)
-[] gleichzeitig (19)
+[MESSAGE] sehen (20)
+[m-location] vom Dach des Victory-Blocks aus (13)
+[m-time] gleichzeitig (19)
+[x-experiencer] man (11)
+[topic] alle vier (18)
 
 [] man (11)
 
@@ -397,16 +399,16 @@
 9	allen	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	7	nmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] furchterregendste (7)
-[] Das Ministerium für Liebe (2)
-[] von allen (9)
+[MESSAGE >> QUALITY] furchterregendste (7)
+[topic >> has-quality] Das Ministerium für Liebe (2)
+[x-whole >> x-reference] von allen (9)
 
 [] Ministerium (2)
 [] für Liebe (4)
 
 [] Liebe (4)
 
-[] allen (9)
+[IDENTIFICATION] allen (9)
 
 # sent_id = 58
 # text = Es hatte überhaupt keine Fenster .
@@ -447,8 +449,8 @@
 12	auch	auch	ADV	ADV	_	13	advmod	_	_
 13	nie	nie	ADV	ADV	_	24	advmod	_	_
 14	,	,	PUNCT	$,	_	24	punct	_	_
-15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	_	_
+16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	fixed	_	_
 17	nur	nur	ADV	ADV	_	21	advmod	_	_
 18	auf	auf	ADP	APPR	_	21	case	_	_
 19	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -476,12 +478,11 @@
 
 [] Liebe (8)
 
-[] gekommen (24)
-[] ihm (11)
-[] auch nie (13)
-[] es (16)
-[] nur auf einen halben Kilometer , (21)
-[] nahe (23)
+[LOCATION-INIT] gekommen (24)
+[target-location] ihm (11)
+[m-time] auch nie (13)
+[m-conceded] sei es nur auf einen halben Kilometer , (21) # TODO manual
+[target-location] nahe (23)
 
 [] ihm (11)
 
@@ -490,11 +491,11 @@
 
 [] auch (12)
 
-[] es (16)
-
 [] Kilometer (21)
 [] nur (17)
 [] halben (20)
+
+[] sei (15)
 
 [] nur (17)
 
@@ -545,20 +546,20 @@
 
 [] es (5)
 
-[] Auftrag (9)
-[] amtlichem (8)
+[MESSAGE || SOCIAL-RELATION] Auftrag (9) # TODO MESSAGE/SOCIAL-RELATION grey area
+[x-sender || x-causer] amtlichem (8)
 
-[] amtlichem (8)
+[CLASS] amtlichem (8) # TODO CLASS subframe for organizations?
 
-[] musste (16)
-[] auch dann (15)
-[] man (17)
-[] erst (18)
-[] durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (21)
-[] hindurch (27)
+[UNANCHORED-MOTION-NECESSITY] musste (16)
+[m-condition] auch dann (15)
+[in-motion] man (17)
+[m-time] erst (18)
+[transitory-location] durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (21)
+[transitory-location] hindurch (27)
 
-[] dann (15)
-[] auch (14)
+[CONDITION] dann (15)
+[m-mode] auch (14)
 
 [] auch (14)
 
@@ -623,11 +624,12 @@
 [] Vorgelände (7)
 
 [] Wachen (13)
-[] gorillagesichtige (12)
+[m-scene] gorillagesichtige (12)
 [] in schwarzen Uniformen (16)
 [] , die mit schweren Gummiknüppeln bewaffnet waren (23)
 
-[] gorillagesichtige (12)
+[COMPARISON >> QUALITY] gorillagesichtige (12)
+[compared >> has-quality] Wachen (13)
 
 [] Uniformen (16)
 [] schwarzen (15)
@@ -1601,7 +1603,7 @@
 
 [] jetzt (14)
 
-[] bestimmt (26)
+[] bestimmt (26) # TODO Beispiel für Purpose
 [] die (17)
 [] vermutlich (18)
 [] beim Bau der Wohnung für ein Bücherregal (20)
@@ -1647,11 +1649,11 @@
 25	bleiben	bleiben	VERB	VVINF	VerbForm=Inf	0	root	_	_
 26	.	.	PUNCT	$.	_	25	punct	_	_
 
-[] bleiben (25)
-[] Wenn er sich so in die Nische setzte und vorsichtig im Hintergrund hielt , (8)
-[] Winston (16)
-[] , wenigstens visuell , (19)
-[] außer Reichweite des Televisors (22)
+[SCENE-CONTINUATION] bleiben (25)
+[m-condition] Wenn er sich so in die Nische setzte und vorsichtig im Hintergrund hielt , (8)
+[participant] Winston (16)
+[m-quality] , wenigstens visuell , (19) # TODO ?
+[initial-scene] außer Reichweite des Televisors (22)
 
 [] setzte (8)
 [] er (2)
@@ -1682,8 +1684,9 @@
 
 [] wenigstens (18)
 
-[] Reichweite (22)
-[] des Televisors (24)
+[MESSAGE-POSSIBILITY >> LOCATION] Reichweite (22)
+[x-experiencer >> location] des Televisors (24)
+[topic >> has-location] Winston (16)
 
 [] Televisors (24)
 
