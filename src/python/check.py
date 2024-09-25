@@ -19,8 +19,18 @@ if __name__ == '__main__':
     # Process command line
     logging.basicConfig(level=logging.INFO)
     arg_parser = argparse.ArgumentParser(description=__doc__)
-    arg_parser.add_argument('--warn-incomplete',
-            action=argparse.BooleanOptionalAction, default=True)
+    arg_parser.add_argument(
+        '--warn-incomplete',
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help='warn when annotation of sentence not complete',
+    )
+    arg_parser.add_argument(
+        '--tsv',
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help='emit edges in tsv format',
+    )
     arg_parser.add_argument('file')
     args = arg_parser.parse_args()
     # Make backup file
@@ -49,4 +59,7 @@ if __name__ == '__main__':
                     sentence.syntax[0].id, sentence.lineno)
         predicate_count += p
         annotated_count += a
+        if args.tsv:
+            for edge in sentence.edges():
+                print(*edge, sep='\t')
     logging.info('%s/%s predicates annotated', annotated_count, predicate_count)
