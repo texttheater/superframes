@@ -106,10 +106,15 @@ POLARITIES = ('NEG',)
 FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(?:-(' +
         '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?(?:-(' +
         '|'.join(POLARITIES) + '))?$')
+SEPARATOR_PATTERN = re.compile(r' (?:>>|\|\|) ')
+
+
+def split_label(label):
+    return SEPARATOR_PATTERN.split(label)
 
 
 def check_frame_label(frame):
-    return all(check_frame_label_part(p) for p in re.split(r' (?:>>|\|\|) ', frame))
+    return all(check_frame_label_part(p) for p in split_label(frame))
 
 
 def check_frame_label_part(frame):
@@ -117,8 +122,8 @@ def check_frame_label_part(frame):
 
 
 def check_dep_label(dep, frame):
-    frame_label_parts = re.split(r' (?:>>|\|\|) ', frame)
-    dep_label_parts = re.split(r' (?:>>|\|\|) ', dep)
+    frame_label_parts = split_label(frame)
+    dep_label_parts = split_label(dep)
     if len(dep_label_parts) == 1:
         dep_label_parts *= len(frame_label_parts)
     if len(frame_label_parts) == 1:
