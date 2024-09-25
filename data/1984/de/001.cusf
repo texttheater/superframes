@@ -4,10 +4,10 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	STÄRKE	Stärke	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] STÄRKE (3)
-[] UNWISSENHEIT (1)
+[QUALITY] STÄRKE (3)
+[x-identified] UNWISSENHEIT (1)
 
-[] UNWISSENHEIT (1)
+[MESSAGE-NEG] UNWISSENHEIT (1)
 
 # sent_id = 52
 # text = Das Wahrheitsministerium enthielt , so erzählte man sich , in seinem pyramidenartigen Bau dreitausend Räume und eine entsprechende Zahl unter der Erde .
@@ -23,9 +23,9 @@
 10	in	in	ADP	APPR	_	13	case	_	_
 11	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	13	det:poss	_	_
 12	pyramidenartigen	pyramidenartig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	13	amod	_	_
-13	Bau	Bau	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
+13	Bau	Bau	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 14	dreitausend	dreitausend	NUM	CARD	NumType=Card	15	nummod	_	_
-15	Räume	Raum	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	6	obj	_	_
+15	Räume	Raum	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	3	obj	_	_
 16	und	und	CCONJ	KON	_	19	cc	_	_
 17	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 18	entsprechende	entsprechend	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	19	amod	_	_
@@ -35,44 +35,47 @@
 22	Erde	Erde	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	19	nmod	_	_
 23	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] enthielt (3)
-[] Das Wahrheitsministerium (2)
+[PART-WHOLE] enthielt (3)
+[whole] Das Wahrheitsministerium (2)
+[part] dreitausend Räume und eine entsprechende Zahl unter der Erde (15)
+[whole] , in seinem pyramidenartigen Bau (13)
 
-[] Wahrheitsministerium (2)
+[SOCIAL-RELATION] Wahrheitsministerium (2)
 
-[] erzählte (6)
-[] so (5)
-[] man (7)
-[] sich (8)
-[] , in seinem pyramidenartigen Bau (13)
-[] dreitausend Räume und eine entsprechende Zahl unter der Erde (15)
+[CLASS] Bau (13)
+[m-whole] seinem (11)
+[m-scene] pyramidenartigen (12)
 
-[] so (5)
+[IDENTIFICATION] seinem (11)
 
-[] man (7)
+[COMPARISON >> QUALITY] pyramidenartigen (12)
+[compared >> has-quality] Bau (13)
 
-[] sich (8)
+[MESSAGE-INIT] erzählte (6)
+[target-content] so (5)
+[x-sender] man (7)
+[x-experiencer] sich (8)
 
-[] Bau (13)
-[] seinem (11)
-[] pyramidenartigen (12)
+[IDENTIFICATION] so (5)
 
-[] seinem (11)
+[IDENTIFICATION] man (7)
 
-[] pyramidenartigen (12)
+[IDENTIFICATION] sich (8)
 
-[] Räume (15)
-[] dreitausend (14)
+[CLASS] Räume (15)
+[m-quantity] dreitausend (14)
 
-[] dreitausend (14)
+[QUANTITY] dreitausend (14)
 
-[] Zahl (19)
-[] entsprechende (18)
-[] unter der Erde (22)
+[QUANTITY] Zahl (19)
+[m-scene] entsprechende (18)
+[m-location] unter der Erde (22)
 
-[] entsprechende (18)
+[COMPARISON] entsprechende (18)
+[compared] Zahl (19)
 
-[] Erde (22)
+
+[CLASS] Erde (22)
 
 # sent_id = 53
 # text = In ganz London gab es nur noch drei andere Bauten von ähnlichem Aussehen und Ausmaß .
@@ -93,36 +96,38 @@
 15	Ausmaß	Ausmaß	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	13	conj	_	_
 16	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] gab (4)
-[] In ganz London (3)
-[] nur noch (7)
-[] drei andere Bauten von ähnlichem Aussehen und Ausmaß (10)
+[EXISTENCE] gab (4)
+[m-location] In ganz London (3)
+[m-time] nur noch (7)
+[exists] drei andere Bauten von ähnlichem Aussehen und Ausmaß (10)
 
-[] London (3)
-[] ganz (2)
+[IDENTIFICATION] London (3)
+[m-whole] ganz (2)
 
-[] ganz (2)
+[PART-WHOLE] ganz (2)
 
-[] noch (7)
-[] nur (6)
+[TIME] noch (7)
+[m-noncomp] nur (6)
 
-[] nur (6)
+[NONCOMP] nur (6)
 
-[] Bauten (10)
-[] drei (8)
-[] andere (9)
-[] von ähnlichem Aussehen und Ausmaß (13)
+[CLASS] Bauten (10)
+[m-quantity] drei (8)
+[m-reference] andere (9)
+[m-scene] von ähnlichem Aussehen und Ausmaß (13)
 
-[] drei (8)
+[QUANTITY] drei (8)
 
-[] andere (9)
+[COMPARISON] andere (9)
 
-[] Aussehen (13)
-[] ähnlichem (12)
+[MESSAGE] Aussehen (13)
+[m-scene] ähnlichem (12)
+[??? x-experiencer] Bauten (10)
 
-[] ähnlichem (12)
+[COMPARISON] ähnlichem (12)
+[compared] Aussehen (13)
 
-[] Ausmaß (15)
+[QUANTITY] Ausmaß (15)
 
 # sent_id = 54
 # text = Sie beherrschten das sie umgebende Stadtbild so vollkommen , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte .
@@ -149,43 +154,44 @@
 21	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] beherrschten (2)
-[] Sie (1)
-[] das sie umgebende Stadtbild (6)
-[] so vollkommen (8)
-[] , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte (20)
+[POSSESSION >> SITUATION] beherrschten (2)
+[possessor >> situator] Sie (1)
+[possessed >> theme] das sie umgebende Stadtbild (6)
+[m-quantity] so vollkommen (8)
+[m-result] , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte (20)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Stadtbild (6)
-[] sie umgebende (5)
+[MESSAGE] Stadtbild (6)
+[m-scene] sie umgebende (5)
 
-[] umgebende (5)
-[] sie (4)
+[LOCATION] umgebende (5)
+[location >> has-location] sie (4)
+[has-location >> location] Stadtbild (6)
 
-[] sie (4)
+[IDENTIFICATION] sie (4)
 
-[] vollkommen (8)
-[] so (7)
+[QUANTITY] vollkommen (8)
+[m-mode] so (7)
 
-[] so (7)
+[MODE] so (7)
 
-[] sehen (20)
-[] man (11)
-[] vom Dach des Victory-Blocks aus (13)
-[] alle vier (18)
-[] gleichzeitig (19)
+[MESSAGE] sehen (20)
+[x-experiencer] man (11)
+[m-location] vom Dach des Victory-Blocks aus (13)
+[topic] alle vier (18)
+[m-time] gleichzeitig (19)
 
-[] man (11)
+[IDENTIFICATION] man (11)
 
-[] Dach (13)
-[] des Victory-Blocks (15)
+[CLASS] Dach (13)
+[m-whole] des Victory-Blocks (15)
 
-[] Victory-Blocks (15)
+[IDENTIFICATION] Victory-Blocks (15)
 
-[] vier (18)
+[QUANTITY] vier (18)
 
-[] gleichzeitig (19)
+[TIME] gleichzeitig (19)
 
 # sent_id = 55
 # text = Sie waren der Sitz der vier Ministerien , unter die der gesamte Regierungsapparat aufgeteilt war , des Wahrheitsministeriums , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Friedensministeriums , das die Kriegsangelegenheiten behandelte , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete .
@@ -256,93 +262,97 @@
 65	bearbeitete	bearbeiten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	58	acl	_	_
 66	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Sitz (4)
-[] Sie (1)
-[] der vier Ministerien , unter die der gesamte Regierungsapparat aufgeteilt war , des Wahrheitsministeriums , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Friedensministeriums , das die Kriegsangelegenheiten behandelte , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (7)
+[SOCIAL-RELATION] Sitz (4)
+[social-relation] Sie (1)
+[has-social-relation] der vier Ministerien , unter die der gesamte Regierungsapparat aufgeteilt war , des Wahrheitsministeriums , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Friedensministeriums , das die Kriegsangelegenheiten behandelte , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (7)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Ministerien (7)
-[] vier (6)
-[] , unter die der gesamte Regierungsapparat aufgeteilt war , des Wahrheitsministeriums , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Friedensministeriums , das die Kriegsangelegenheiten behandelte , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (18)
+[SOCIAL-RELATION] Ministerien (7)
+[m-quantity] vier (6)
+[??? m-part || m-has-social-relation] , unter die der gesamte Regierungsapparat aufgeteilt war , des Wahrheitsministeriums , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Friedensministeriums , das die Kriegsangelegenheiten behandelte , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (18)
 
-[] vier (6)
+[QUANTITY] vier (6)
 
-[] Wahrheitsministeriums (18)
-[] , unter die der gesamte Regierungsapparat aufgeteilt war (14)
-[] , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (35)
+[SOCIAL-RELATION] Wahrheitsministeriums (18)
+[??? SYNTAX?] , unter die der gesamte Regierungsapparat aufgeteilt war (14)
+[m-scene] , das sich mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten befasste , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (35)
 
-[] aufgeteilt (14)
-[] unter die (10)
-[] der gesamte Regierungsapparat (13)
+[PART-WHOLE] aufgeteilt (14)
+[??? part] unter die (10)
+[??? whole] der gesamte Regierungsapparat (13)
 
-[] die (10)
+[IDENTIFICATION] die (10)
 
-[] Regierungsapparat (13)
-[] gesamte (12)
+[SOCIAL-RELATION] Regierungsapparat (13)
+[m-whole >> m-quantity] gesamte (12)
 
-[] gesamte (12)
+[PART-WHOLE >> QUANTITY] gesamte (12)
 
-[] befasste (35)
-[] das (20)
-[] sich (21)
-[] mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (24)
+[MESSAGE] befasste (35)
+[x-sender] das (20)
+[x-sender] sich (21)
+[topic] mit dem Nachrichtenwesen , der Freizeitgestaltung , dem Erziehungswesen und den schönen Künsten , des Ministeriums für Liebe , das Gesetz und Ordnung aufrechterhielt , und des Ministeriums für Überfluss , das die Rationierungen bearbeitete (24)
+[x-sender] Wahrheitsministeriums (18)
 
-[] das (20)
+[IDENTIFICATION] das (20)
 
-[] sich (21)
+[IDENTIFICATION] sich (21)
 
-[] Nachrichtenwesen (24)
+[MESSAGE] Nachrichtenwesen (24)
 
-[] Freizeitgestaltung (27)
+[ACTIVITY] Freizeitgestaltung (27)
 
-[] Erziehungswesen (30)
+[SOCIAL-RELATION] Erziehungswesen (30)
 
-[] Künsten (34)
-[] schönen (33)
+[MESSAGE] Künsten (34)
+[m-quality >> m-noncomp] schönen (33)
 
-[] schönen (33)
+[QUALITY >> NONCOMP] schönen (33)
 
-[] Ministeriums (46)
-[] für Liebe (48)
-[] , das Gesetz und Ordnung aufrechterhielt (54)
+[SOCIAL-RELATION] Ministeriums (46)
+[social-relation] für Liebe (48)
+[m-scene] , das Gesetz und Ordnung aufrechterhielt (54)
 
-[] Liebe (48)
+[MESSAGE] Liebe (48)
 
-[] aufrechterhielt (54)
-[] das (50)
-[] Gesetz und Ordnung (51)
+[MESSAGE] aufrechterhielt (54)
+[x-sender] das (50)
+[topic] Gesetz und Ordnung (51)
+[x-sender] Ministeriums (46)
 
-[] das (50)
+[IDENTIFICATION] das (50)
 
-[] Gesetz (51)
+[SOCIAL-RELATION] Gesetz (51)
 
-[] Ordnung (53)
+[SOCIAL-RELATION] Ordnung (53)
 
-[] Ministeriums (58)
-[] für Überfluss (60)
-[] , das die Rationierungen bearbeitete (65)
+[SOCIAL-RELATION] Ministeriums (58)
+[social-relation] für Überfluss (60)
+[m-scene] , das die Rationierungen bearbeitete (65)
 
-[] Überfluss (60)
+[QUANTITY] Überfluss (60)
 
-[] bearbeitete (65)
-[] das (62)
-[] die Rationierungen (64)
+[MESSAGE] bearbeitete (65)
+[x-sender] das (62)
+[topic] die Rationierungen (64)
+[x-sender] Ministeriums (58)
 
-[] das (62)
+[IDENTIFICATION] das (62)
 
-[] Rationierungen (64)
+[POSSESSION-CHANGE] Rationierungen (64)
 
-[] Friedensministeriums (38)
-[] , das die Kriegsangelegenheiten behandelte (43)
+[SOCIAL-RELATION] Friedensministeriums (38)
+[m-scene] , das die Kriegsangelegenheiten behandelte (43)
 
-[] behandelte (43)
-[] das (40)
-[] die Kriegsangelegenheiten (42)
+[MESSAGE] behandelte (43)
+[x-sender] das (40)
+[topic] die Kriegsangelegenheiten (42)
+[x-sender] Friedensministeriums (38)
 
-[] das (40)
+[IDENTIFICATION] das (40)
 
-[] Kriegsangelegenheiten (42)
+[SOCIAL-RELATION] Kriegsangelegenheiten (42)
 
 # sent_id = 56
 # text = Ihre Namen in der Neusprache lauteten : Miniwahr , Minipax , Minilieb , Minifluss .
@@ -362,25 +372,29 @@
 14	Minifluss	Minifluss	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	8	conj	_	_
 15	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] lauteten (6)
-[] Ihre Namen in der Neusprache (2)
-[] : Miniwahr , Minipax , Minilieb , Minifluss (8)
+[MESSAGE-INIT] lauteten (6)
+[topic] Ihre Namen in der Neusprache (2)
+[target-content] : Miniwahr , Minipax , Minilieb , Minifluss (8)
 
-[] Namen (2)
-[] Ihre (1)
-[] in der Neusprache (5)
+[IDENTIFICATION] Namen (2)
+[identified] Ihre (1)
+[m-sender] in der Neusprache (5)
 
-[] Ihre (1)
+[IDENTIFICATION] Ihre (1)
 
-[] Neusprache (5)
+[MESSAGE] Neusprache (5)
 
-[] Miniwahr (8)
+[IDENTIFICATION] Miniwahr (8)
+[identified] Ihre Namen in der Neusprache (2)
 
-[] Minipax (10)
+[IDENTIFICATION] Minipax (10)
+[identified] Ihre Namen in der Neusprache (2)
 
-[] Minilieb (12)
+[IDENTIFICATION] Minilieb (12)
+[identified] Ihre Namen in der Neusprache (2)
 
-[] Minifluss (14)
+[IDENTIFICATION] Minifluss (14)
+[identified] Ihre Namen in der Neusprache (2)
 
 # sent_id = 57
 # text = Das Ministerium für Liebe war das furchterregendste von allen .
@@ -395,16 +409,16 @@
 9	allen	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	7	nmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] furchterregendste (7)
-[] Das Ministerium für Liebe (2)
-[] von allen (9)
+[MESSAGE >> QUALITY] furchterregendste (7)
+[topic >> has-quality] Das Ministerium für Liebe (2)
+[x-whole >> m-reference] von allen (9)
 
-[] Ministerium (2)
-[] für Liebe (4)
+[SOCIAL-RELATION] Ministerium (2)
+[social-relation] für Liebe (4)
 
-[] Liebe (4)
+[MESSAGE] Liebe (4)
 
-[] allen (9)
+[IDENTIFICATION] allen (9)
 
 # sent_id = 58
 # text = Es hatte überhaupt keine Fenster .
@@ -415,19 +429,19 @@
 5	Fenster	Fenster	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	2	obj	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Es (1)
-[] überhaupt (3)
-[] keine Fenster (5)
+[PART-WHOLE] hatte (2)
+[whole] Es (1)
+[m-mode] überhaupt (3)
+[part] keine Fenster (5)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] überhaupt (3)
+[MODE] überhaupt (3)
 
-[] Fenster (5)
-[] keine (4)
+[CLASS] Fenster (5)
+[m-quantity] keine (4)
 
-[] keine (4)
+[QUANTITY] keine (4)
 
 # sent_id = 59
 # text = Winston war noch nie im Ministerium für Liebe gewesen und ihm auch nie , sei es nur auf einen halben Kilometer , nahe gekommen .
@@ -445,8 +459,8 @@
 12	auch	auch	ADV	ADV	_	13	advmod	_	_
 13	nie	nie	ADV	ADV	_	24	advmod	_	_
 14	,	,	PUNCT	$,	_	24	punct	_	_
-15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	_	_
+16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	fixed	_	_
 17	nur	nur	ADV	ADV	_	21	advmod	_	_
 18	auf	auf	ADP	APPR	_	21	case	_	_
 19	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -457,48 +471,45 @@
 24	gekommen	kommen	VERB	VVPP	Verbform=Part	9	conj	_	_
 25	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] gewesen (9)
-[] Winston (1)
-[] noch nie (4)
-[] im Ministerium für Liebe (6)
+[LOCATION-INIT] gewesen (9)
+[has-location] Winston (1)
+[m-time] noch nie (4)
+[target-location] im Ministerium für Liebe (6)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] nie (4)
-[] noch (3)
+[TIME-NEG] nie (4)
+[m-mode] noch (3)
 
-[] noch (3)
+[MODE] noch (3)
 
-[] Ministerium (6)
-[] für Liebe (8)
+[SOCIAL-RELATION] Ministerium (6)
+[soial-relation] für Liebe (8)
 
-[] Liebe (8)
+[MESSAGE] Liebe (8)
 
-[] gekommen (24)
-[] ihm (11)
-[] auch nie (13)
-[] es (16)
-[] nur auf einen halben Kilometer , (21)
-[] nahe (23)
+[LOCATION-INIT] gekommen (24)
+[target-location] ihm (11)
+[m-time] auch nie (13)
+[m-conceded] sei es nur auf einen halben Kilometer , (21)
+[target-location] nahe (23)
 
-[] ihm (11)
+[IDENTIFICATION] ihm (11)
 
-[] nie (13)
-[] auch (12)
+[TIME-NEG] nie (13)
+[m-mode] auch (12)
 
-[] auch (12)
+[MODE] auch (12)
 
-[] es (16)
+[QUANTITY] Kilometer (21)
+[m-mode] nur (17)
+[m-quantity] halben (20)
 
-[] Kilometer (21)
-[] nur (17)
-[] halben (20)
+[MODE] nur (17)
 
-[] nur (17)
+[QUANTITY] halben (20)
 
-[] halben (20)
-
-[] nahe (23)
+[LOCATION] nahe (23)
 
 # sent_id = 60
 # text = Es war unmöglich , es außer in amtlichem Auftrag zu betreten , und auch dann musste man erst durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern hindurch .
@@ -531,50 +542,49 @@
 27	hindurch	hindurch	ADP	APZR	_	16	compound:prt	_	_
 28	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] unmöglich (3)
-[] Es (1)
-[] , es außer in amtlichem Auftrag zu betreten (11)
+[SCENE-POSSIBILITY-NEG] unmöglich (3)
+[m-noncomp] Es (1)
+[scene] , es außer in amtlichem Auftrag zu betreten (11)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] betreten (11)
-[] es (5)
-[] außer in amtlichem Auftrag (9)
+[LOCATION-INIT] betreten (11)
+[target-location] es (5)
+[m-exception] außer in amtlichem Auftrag (9)
 
-[] es (5)
+[IDENTIFICATION] es (5)
 
-[] Auftrag (9)
-[] amtlichem (8)
+[MESSAGE || SOCIAL-RELATION] Auftrag (9)
+[x-sender || x-causer] amtlichem (8)
 
-[] amtlichem (8)
+[CLASS] amtlichem (8)
 
-[] musste (16)
-[] auch dann (15)
-[] man (17)
-[] erst (18)
-[] durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (21)
-[] hindurch (27)
+[UNANCHORED-MOTION-NECESSITY] musste (16)
+[m-condition] auch dann (15)
+[in-motion] man (17)
+[m-time] erst (18)
+[transitory-location] durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (21)
+[transitory-location] hindurch (27)
 
-[] dann (15)
-[] auch (14)
+[CONDITION] dann (15)
+[m-mode] auch (14)
 
-[] auch (14)
+[MODE] auch (14)
 
-[] man (17)
+[IDENTIFICATION] man (17)
 
-[] erst (18)
+[TIME] erst (18)
 
-[] Irrgarten (21)
-[] von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (23)
+[CLASS] Irrgarten (21)
+[m-part] von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (23)
 
-[] Stacheldrahtverhauen (23)
+[CLASS] Stacheldrahtverhauen (23)
 
-[] Maschinengewehrnestern (26)
-[] versteckten (25)
+[CLASS] Maschinengewehrnestern (26)
+[m-scene] versteckten (25)
 
-[] versteckten (25)
-
-[] hindurch (27)
+[STATE] versteckten (25)
+[has-state] Maschinengewehrnestern (26)
 
 # sent_id = 61
 # text = Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen waren durch gorillagesichtige Wachen in schwarzen Uniformen gesichert , die mit schweren Gummiknüppeln bewaffnet waren .
@@ -604,46 +614,49 @@
 24	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
 25	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] gesichert (17)
-[] Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen (9)
-[] durch gorillagesichtige Wachen in schwarzen Uniformen , die mit schweren Gummiknüppeln bewaffnet waren (13)
+[STATE-INIT] gesichert (17)
+[has-state] Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen (9)
+[x-causer] durch gorillagesichtige Wachen in schwarzen Uniformen , die mit schweren Gummiknüppeln bewaffnet waren (13)
 
-[] Straßen (9)
-[] Sogar (1)
-[] zu den Befestigungen im Vorgelände hinaufführenden (8)
+[CLASS] Straßen (9)
+[m-mode] Sogar (1)
+[m-scene] zu den Befestigungen im Vorgelände hinaufführenden (8)
 
-[] Sogar (1)
+[MODE] Sogar (1)
 
-[] hinaufführenden (8)
-[] zu den Befestigungen im Vorgelände (5)
+[LOCATION-INIT] hinaufführenden (8)
+[target-location] zu den Befestigungen im Vorgelände (5)
+[has-location] Straßen (9)
 
-[] Befestigungen (5)
-[] im Vorgelände (7)
+[CLASS] Befestigungen (5)
+[m-location] im Vorgelände (7)
 
-[] Vorgelände (7)
+[LOCATION] Vorgelände (7)
 
-[] Wachen (13)
-[] gorillagesichtige (12)
-[] in schwarzen Uniformen (16)
-[] , die mit schweren Gummiknüppeln bewaffnet waren (23)
+[SOCIAL-RELATION] Wachen (13)
+[m-scene] gorillagesichtige (12)
+[m-scene] , die mit schweren Gummiknüppeln bewaffnet waren (23)
+[??? m-state] in schwarzen Uniformen (16)
 
-[] gorillagesichtige (12)
+[COMPARISON >> QUALITY] gorillagesichtige (12)
+[compared >> has-quality] Wachen (13)
 
-[] Uniformen (16)
-[] schwarzen (15)
+[CLASS] Uniformen (16)
+[m-quality] schwarzen (15)
 
-[] schwarzen (15)
+[QUALITY] schwarzen (15)
 
-[] bewaffnet (23)
-[] die (19)
-[] mit schweren Gummiknüppeln (22)
+[STATE] bewaffnet (23)
+[has-state] die (19)
+[m-means] mit schweren Gummiknüppeln (22)
+[has-state] Wachen (13)
 
-[] die (19)
+[IDENTIFICATION] die (19)
 
-[] Gummiknüppeln (22)
-[] schweren (21)
+[CLASS] Gummiknüppeln (22)
+[m-quality] schweren (21)
 
-[] schweren (21)
+[QUALITY] schweren (21)
 
 # sent_id = 62
 # text = Winston drehte sich mit einem Ruck um .
@@ -656,19 +669,17 @@
 7	um	um	ADP	PTKVZ	_	2	compound:prt	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] drehte (2)
-[] Winston (1)
-[] sich (3)
-[] mit einem Ruck (6)
-[] um (7)
+[???LOCATION-CHANGE] drehte (2)
+[has-location] Winston (1)
+[x-noncomp] sich (3)
+[m-quality] mit einem Ruck (6)
+[m-noncomp] um (7)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] sich (3)
+[NONCOMP] sich (3)
 
-[] Ruck (6)
-
-[] um (7)
+[LOCATION-CHANGE] Ruck (6)
 
 # sent_id = 63
 # text = Er hatte die ruhige optimistische Miene aufgesetzt , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte .
@@ -697,43 +708,45 @@
 23	zukehrte	zukehren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 24	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] aufgesetzt (7)
-[] Er (1)
-[] die ruhige optimistische Miene , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (6)
+[SCENE-INIT] aufgesetzt (7)
+[participant] Er (1)
+[target-scene] die ruhige optimistische Miene , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (6)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Miene (6)
-[] ruhige (4)
-[] optimistische (5)
-[] , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (14)
+[MESSAGE] Miene (6)
+[m-state] ruhige (4)
+[m-quality] optimistische (5)
+[m-scene] , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (14)
+[x-sender] Er (1)
 
-[] ruhige (4)
+[STATE] ruhige (4)
 
-[] optimistische (5)
+[QUALITY] optimistische (5)
 
-[] ratsam (14)
-[] die (9)
-[] zur Schau zu tragen (13)
-[] , wenn man dem Televisor das Gesicht zukehrte (23)
+[??? SCENE] ratsam (14)
+[??? participant] die (9)
+[??? scene] zur Schau zu tragen (13)
+[??? m-condition] , wenn man dem Televisor das Gesicht zukehrte (23)
+[??? participant] Miene (6)
 
-[] die (9)
+[IDENTIFICATION] die (9)
 
-[] tragen (13)
-[] zur Schau (11)
+[MESSAGE] tragen (13)
+[x-noncomp] zur Schau (11)
 
-[] Schau (11)
+[MESSAGE] Schau (11)
 
-[] zukehrte (23)
-[] man (18)
-[] dem Televisor (20)
-[] das Gesicht (22)
+[LOCATION] zukehrte (23)
+[has-location] man (18)
+[location] dem Televisor (20)
+[x-attribute] das Gesicht (22)
 
-[] man (18)
+[IDENTIFICATION] man (18)
 
-[] Televisor (20)
+[CLASS] Televisor (20)
 
-[] Gesicht (22)
+[CLASS] Gesicht (22)
 
 # sent_id = 64
 # text = Er ging quer durchs Zimmer in die winzige Küche .
@@ -748,22 +761,22 @@
 9	Küche	Küche	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] ging (2)
-[] Er (1)
-[] quer (3)
-[] durchs Zimmer (5)
-[] in die winzige Küche (9)
+[LOCATION-CHANGE] ging (2)
+[has-location] Er (1)
+[m-location] quer (3)
+[transitory-location] durchs Zimmer (5)
+[target-location] in die winzige Küche (9)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] quer (3)
+[LOCATION] quer (3)
 
-[] Zimmer (5)
+[CLASS] Zimmer (5)
 
-[] Küche (9)
-[] winzige (8)
+[CLASS] Küche (9)
+[m-quality] winzige (8)
 
-[] winzige (8)
+[QUALITY] winzige (8)
 
 # sent_id = 65
 # text = Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , hatte er auf sein Mittagessen in der Kantine verzichtet , andererseits wusste er , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste .
@@ -799,7 +812,7 @@
 30	Küche	Küche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	34	obl	_	_
 31	nichts	nichts	PRON	PIS	Definite=Ind|Gender=Neut	34	obj	_	_
 32	zu	zu	PART	PTKZU	_	33	mark	_	_
-33	essen	essen	VERB	VVINF	VerbForm=Inf	34	xcomp	_	_
+33	essen	essen	VERB	VVINF	VerbForm=Inf	31	xcomp	_	_
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	ccomp	_	_
 35	außer	außer	ADP	APPR	_	37	case	_	_
 36	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	37	det	_	_
@@ -818,75 +831,77 @@
 49	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	aux	_	_
 50	.	.	PUNCT	$.	_	20	punct	_	_
 
-[] verzichtet (20)
-[] Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , (9)
-[] er (13)
-[] auf sein Mittagessen in der Kantine (16)
+[??? SITUATION-NEG] verzichtet (20)
+[??? m-explanation] Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , (9)
+[situator] er (13)
+[theme] auf sein Mittagessen in der Kantine (16)
 
-[] weggegangen (9)
-[] er (2)
-[] zu dieser Tageszeit (5)
-[] aus dem Ministerium (8)
+[LOCATION-DEINIT] weggegangen (9)
+[has-location] er (2)
+[m-time] zu dieser Tageszeit (5)
+[initial-location] aus dem Ministerium (8)
 
-[] er (2)
+[IDENTIFICATION] er (2)
 
-[] Tageszeit (5)
+[TIME] Tageszeit (5)
 
-[] Ministerium (8)
+[SOCIAL-RELATION] Ministerium (8)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] Mittagessen (16)
-[] sein (15)
-[] in der Kantine (19)
+[CLASS] Mittagessen (16)
+[m-possessor] sein (15)
+[m-location] in der Kantine (19)
 
-[] sein (15)
+[IDENTIFICATION] sein (15)
 
-[] Kantine (19)
+[CLASS] Kantine (19)
 
-[] wusste (23)
-[] andererseits (22)
-[] er (24)
-[] , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (34)
+[MESSAGE] wusste (23)
+[???] andererseits (22)
+[x-experiencer] er (24)
+[content] , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (34)
 
-[] andererseits (22)
+[??? COMPARISON] andererseits (22)
 
-[] er (24)
+[IDENTIFICATION] er (24)
 
-[] gab (34)
-[] es (27)
-[] in der Küche (30)
-[] nichts (31)
-[] zu essen (33)
-[] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
+[EXISTENCE] gab (34)
+[m-noncomp] es (27)
+[m-location] in der Küche (30)
+[exists] nichts zu essen (31)
+[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
 
-[] es (27)
+[NONCOMP] es (27)
 
-[] Küche (30)
+[CLASS] Küche (30)
 
-[] nichts (31)
+[CLASS] nichts (31)
+[m-scene] zu essen (33)
 
-[] essen (33)
+[INGESTION] essen (33)
+[ingested] nichts (31)
 
-[] Stück (37)
-[] Schwarzbrot (38)
-[] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
+[PART-WHOLE >> QUANTITY] Stück (37)
+[whole >> has-quantity] Schwarzbrot (38)
+[m-scene] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
 
-[] Schwarzbrot (38)
+[CLASS] Schwarzbrot (38)
 
-[] aufgehoben (47)
-[] das (40)
-[] für den nächsten Tag (44)
-[] zum Frühstück (46)
+[??? POSSESSION-CONTINUATION] aufgehoben (47)
+[possessed] das (40)
+[m-time] für den nächsten Tag (44)
+[??? m-purpose] zum Frühstück (46)
+[possessed] Stück (37)
 
-[] das (40)
+[IDENTIFICATION] das (40)
 
-[] Tag (44)
-[] nächsten (43)
+[CLASS] Tag (44)
+[??? m-follows || m-time] nächsten (43)
 
-[] nächsten (43)
+[??? SEQUENCE || TIME] nächsten (43)
 
-[] Frühstück (46)
+[CLASS] Frühstück (46)
 
 # sent_id = 66
 # text = Er nahm aus dem Regal eine Flasche mit einer farblosen Flüssigkeit , die dem schmucklosen weißen Etikett nach Victory-Gin war .
@@ -979,8 +994,6 @@
 
 [] öligen (7)
 
-[] aus (9)
-
 [] Reisschnaps (13)
 [] chinesischer (12)
 
@@ -1037,8 +1050,6 @@
 
 [] davon (8)
 
-[] ein (9)
-
 [] stellte (11)
 [] sich (12)
 [] auf den zu erwartenden Schock (17)
@@ -1051,8 +1062,6 @@
 
 [] erwartenden (16)
 
-[] ein (18)
-
 [] stürzte (20)
 [] es (21)
 [] wie eine Dosis Medizin (24)
@@ -1064,8 +1073,6 @@
 [] Medizin (25)
 
 [] Medizin (25)
-
-[] hinunter (26)
 
 # sent_id = 69
 # text = Sofort lief sein Gesicht krebsrot an , und das Wasser trat ihm in die Augen .
@@ -1100,8 +1107,6 @@
 [] sein (3)
 
 [] krebsrot (5)
-
-[] an (6)
 
 [] trat (11)
 [] das Wasser (10)
@@ -1217,8 +1222,6 @@
 [] seinem (9)
 
 [] seinem (9)
-
-[] auf (11)
 
 [] begann (16)
 [] die Welt (15)
@@ -1362,8 +1365,6 @@
 
 [] Wohnzimmer (4)
 
-[] zurück (5)
-
 [] setzte (7)
 [] sich (8)
 [] an ein links vom Televisor stehendes Tischchen (15)
@@ -1448,8 +1449,6 @@
 [] marmorierten (24)
 
 [] marmorierten (24)
-
-[] hervor (26)
 
 # sent_id = 76
 # text = Aus irgendeinem Grunde war der Televisor in seinem Wohnzimmer an einer ungewöhnlichen Stelle angebracht .
@@ -2582,8 +2581,6 @@
 
 [] Zunge (13)
 
-[] an (14)
-
 # sent_id = 95
 # text = Die Feder war ein vorsintflutliches Instrument , das selbst zu Unterschriften nur noch selten verwendet wurde , und er hatte sich heimlich und mit einiger Schwierigkeit eine besorgt , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
@@ -2700,8 +2697,6 @@
 [] ganz (30)
 
 [] ganz (30)
-
-[] heraus (35)
 
 [] verdiente (43)
 [] das wundervolle glatte Papier (41)
