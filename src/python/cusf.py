@@ -119,9 +119,6 @@ class Frame:
     def is_empty(self) -> bool:
         return not self.label and not self.comment and all(a.is_empty() for a in self.args)
 
-    def is_completely_annotated(self) -> bool:
-        return self.label and all(a.label for a in self.args)
-
     def check(self, sentence: 'Sentence', lineno: int,
             head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
         # Check for missing frame label
@@ -319,20 +316,6 @@ class Sentence:
                 annotated_count += 1
             warnings += w
         return len(head_frame_map), annotated_count, warnings
-
-    def edges(self) -> Iterable[Tuple[str, str, str, str, str]]:
-        seen = set()
-        for frame in self.frames:
-            if not isinstance(frame, Frame):
-                continue
-            if frame.head in seen:
-                continue
-            seen.add(frame.head)
-            if not frame.is_completely_annotated():
-                continue
-            for arg in frame.args:
-                yield (self.syntax[0].id, frame.head, frame.label,
-                        arg.head, arg.label)
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
