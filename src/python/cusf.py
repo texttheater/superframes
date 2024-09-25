@@ -119,6 +119,9 @@ class Frame:
     def is_empty(self) -> bool:
         return not self.label and not self.comment and all(a.is_empty() for a in self.args)
 
+    def is_completely_annotated(self) -> bool:
+        return self.label and all(a.label for a in self.args)
+
     def check(self, sentence: 'Sentence', lineno: int,
             head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
         # Check for missing frame label
