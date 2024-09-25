@@ -303,7 +303,7 @@ class Sentence:
                 if frame.head in head_frame_map:
                     logging.warning(
                         'sent %s line %s duplicate frame for head word %s',
-                        self.syntax[0].id, lineno, frame.head,
+                        self.syntax[0].id, frame_lineno, frame.head,
                     )
                 else:
                     head_frame_map[frame.head] = frame
