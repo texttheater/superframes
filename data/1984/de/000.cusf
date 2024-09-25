@@ -1257,7 +1257,7 @@
 13	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE] blickte (7)
-[x-sender] Das Gesicht mit dem schwarzen Schnurrbart (2)
+[x-experiencer >> topic] Das Gesicht mit dem schwarzen Schnurrbart (2)
 [x-location] von jeder beherrschenden Ecke (11)
 [x-location] herunter (12)
 
@@ -1684,15 +1684,18 @@
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
 8	.	.	PUNCT	$.	_	5	punct	_	_
 
-[??? CLASS] Empfangs- (5)
-[??? x-identified] Der Televisor (2)
-[??? m-time] gleichzeitig (4)
+[CLASS] Empfangs- (5)
+[has-class] Der Televisor (2)
+[m-time >> m-scene] gleichzeitig (4)
 
 [CLASS] Televisor (2)
 
-[TIME] gleichzeitig (4)
+[ACCOMPANIMENT] gleichzeitig (4)
+[accompanied] Empfangs- (5)
+[accompanier] Sendegerät (7)
 
 [CLASS] Sendegerät (7)
+[has-class] Der Televisor (2)
 
 # sent_id = 31
 # text = Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , wurde von ihm registriert .
@@ -1721,11 +1724,12 @@
 [x-sender] von ihm (17)
 
 [MESSAGE] Geräusch (5)
-[x-sender] von Winston verursachte (4)
+[m-scene] von Winston verursachte (4)
 [m-scene] , das über ein ganz leises Flüstern hinausging (13)
 
 [CAUSATION] verursachte (4)
 [causer] von Winston (3)
+[result] Geräusch (5)
 
 [IDENTIFICATION] Winston (3)
 
@@ -2112,10 +2116,10 @@
 
 [IDENTIFICATION] so (4)
 
-[??? LOCATION-INIT || SCENE] zuwandte (13)
-[has-location || participant] er (8)
-[scene] dem Televisor (10)
-[scene] den Rücken (12)
+[LOCATION] zuwandte (13)
+[has-location] er (8)
+[location] dem Televisor (10)
+[x-attribute] den Rücken (12)
 
 [IDENTIFICATION] er (8)
 
@@ -2428,10 +2432,10 @@
 
 [RANK] neunzehnten (12)
 
-[??? MEANS] gestützt (20)
-[??? has-means] deren Mauern (17)
-[??? means] mit Balken (19)
-[??? m-whole] Häuser (9)
+[STATE-INIT] gestützt (20)
+[has-state] deren Mauern (17)
+[x-means] mit Balken (19)
+[m-whole] Häuser (9)
 
 [CLASS] Mauern (17)
 [m-whole] deren (16)
@@ -2440,9 +2444,9 @@
 
 [CLASS] Balken (19)
 
-[??? MEANS] verschalt (26)
-[??? has-means] deren Fenster (23)
-[??? means] mit Pappendeckel (25)
+[LOCATION-INIT] verschalt (26)
+[target-location] deren Fenster (23)
+[has-location] mit Pappendeckel (25)
 
 [CLASS] Fenster (23)
 [m-whole] deren (22)
@@ -2451,9 +2455,9 @@
 
 [CLASS] Pappendeckel (25)
 
-[??? MEANS] gedeckt (32)
-[??? has-means] deren Dächer (29)
-[??? means] mit Wellblech (31)
+[LOCATION-INIT] gedeckt (32)
+[target-location] deren Dächer (29)
+[has-location] mit Wellblech (31)
 
 [CLASS] Dächer (29)
 [m-whole] deren (28)
@@ -2466,7 +2470,7 @@
 
 [LOCATION-INIT] sackten (45)
 [has-location] ihre schiefen Gartenmauern (38)
-[??? m-quality] kreuz und quer (39)
+[m-quality] kreuz und quer (39)
 [target-location] in den Boden (44)
 
 [CLASS] Gartenmauern (38)
@@ -2477,9 +2481,10 @@
 
 [QUALITY] schiefen (37)
 
-[??? LOCATION] kreuz (39)
+[QUALITY] kreuz (39)
+[m-noncomp] und quer (41)
 
-[??? LOCATION] quer (41)
+[NONCOMP] quer (41)
 
 [CLASS] Boden (44)
 
@@ -2535,10 +2540,10 @@
 
 [QUALITY] zerbombten (3)
 
-[??? UNANCHORED-MOTION] wirbelte (12) # Issue: hochwirbeln (satz20) vs wirbeln -> LOCATION-INIT vs UNANCHORED-MOTION?
-[transitory-location] wo (6)
+[UNANCHORED-MOTION] wirbelte (12)
+[m-location] wo (6)
 [in-motion] der Pflasterstaub (8)
-[transitory-location] in der Luft (11)
+[m-location] in der Luft (11)
 
 [LOCATION] wo (6)
 
@@ -2630,24 +2635,23 @@
 32	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	31	cop	_	_
 33	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SCENE-INIT] führte (3)
-[participant] es (2)
-[target-scene] zu nichts (5)
+[SEQUENCE >> CAUSATION] führte (3)
+[followed >> causer] es (2)
+[follows >> result] zu nichts (5)
 
 [IDENTIFICATION] es (2)
 
-[MODE] nichts (5)
-[has-mode] es (2)
+[CLASS] nichts (5)
 
 [MESSAGE-INIT] erinnern (11)
 [x-experiencer] er (7)
-[m-noncomp] sich (9)
+[x-experiencer] sich (9)
 [m-mode] nicht (10)
 [target-content] ; von seiner Kindheit hatte er nichts nachbehalten als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (19)
 
 [IDENTIFICATION] er (7)
 
-[NONCOMP] sich (9)
+[IDENTIFICATION] sich (9)
 
 [MODE] nicht (10)
 
@@ -2667,8 +2671,8 @@
 [MODE] nichts (18)
 [has-mode] von seiner Kindheit (15)
 
-[SEQUENCE] Reihe (22)
-[follows] greller Bilder ohne Hintergrund (24)
+[PART-WHOLE] Reihe (22)
+[part] greller Bilder ohne Hintergrund (24)
 [m-scene] , die ihm zumeist unverständlich waren (31)
 
 [MESSAGE] Bilder (24)
@@ -2677,7 +2681,7 @@
 
 [QUALITY] greller (23)
 
-[CLASS] Hintergrund (26)
+[PART-WHOLE || LOCATION] Hintergrund (26)
 
 [MESSAGE] unverständlich (31)
 [topic] die (28)
@@ -2712,11 +2716,11 @@
 17	hieß	heißen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	_	_
 18	-	-	PUNCT	$.	_	17	punct	_	_
 19	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-20	verblüffend	verblüffend	ADJ	ADJD	_	19	advmod	_	_
+20	verblüffend	verblüffend	ADJ	ADJD	_	21	advmod	_	_
 21	verschieden	verschieden	ADJ	ADJD	_	19	advmod	_	_
 22	von	von	ADP	APPR	_	24	case	_	_
-23	allem	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	19	obl	_	_
-24	anderen	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	19	obl	_	_
+23	allem	alle	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	24	det	_	_
+24	anderen	ander	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	21	obl	_	_
 25	aus	aus	ADP	PTKVZ	_	19	compound:prt	_	_
 26	,	,	PUNCT	$,	_	30	punct	_	_
 27	was	was	PRON	PRELS	Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	30	obj	_	_
@@ -2727,11 +2731,8 @@
 
 [MESSAGE-INIT] sah (19)
 [topic] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
-[target-content] verschieden (21)
+[target-content] verblüffend verschieden von allem anderen , was der Gesichtskreis umfasste (21)
 [m-noncomp] aus (25)
-[m-quality] verblüffend (20)
-[???] allem (23) # Syntax?
-[m-reference] von anderen , was der Gesichtskreis umfasste (24)
 
 [SOCIAL-RELATION] Wahrheitsministerium (2)
 [m-identifier] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
@@ -2740,10 +2741,10 @@
 [m-scene] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
 [identified] es (7)
 
-[MESSAGE] hieß (17)
-[topic] es (7)
-[??? m-location || m-means] in der Neusprache , der amtlichen Sprache Ozeaniens , (10)
-[content] Miniwahr (4)
+[IDENTIFICATION] hieß (17)
+[identified] es (7)
+[m-sender] in der Neusprache , der amtlichen Sprache Ozeaniens , (10)
+[identifier] Miniwahr (4)
 
 [IDENTIFICATION] es (7)
 
@@ -2752,7 +2753,7 @@
 
 [MESSAGE] Sprache (14)
 [topic] amtlichen (13)
-[??? content || m-location] Ozeaniens (15)
+[m-location] Ozeaniens (15)
 
 [QUALITY] amtlichen (13)
 
@@ -2760,17 +2761,18 @@
 
 [QUALITY] verblüffend (20)
 
-[QUALITY] verschieden (21)
-[has-quality] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
+[COMPARISON] verschieden (21)
+[compared] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
+[m-quality] verblüffend (20)
+[reference] von allem anderen , was der Gesichtskreis umfasste (24)
 
-[??? CLASS] allem (23)
-
-[??? CLASS] anderen (24)
-[???] , was der Gesichtskreis umfasste (30)
+[COMPARISON] anderen (24)
+[m-scene] , was der Gesichtskreis umfasste (30)
 
 [MESSAGE] umfasste (30)
 [topic] was (27)
 [x-experiencer] der Gesichtskreis (29)
+[m-reference] anderen (24)
 
 [IDENTIFICATION] was (27)
 
@@ -2810,7 +2812,7 @@
 
 [QUALITY] riesiger (4)
 
-[??? STATE || QUALITY || FORM?] pyramidenartiger (5)
+[QUALITY] pyramidenartiger (5)
 
 [QUALITY] schimmernder (8)
 [m-quality] weiß (7)
@@ -2828,7 +2830,7 @@
 
 [NONCOMP] sich (12)
 
-[??? STATE || QUALITY || FORM?] terrassenförmig (13)
+[QUALITY] terrassenförmig (13)
 
 [QUALITY] hoch (16)
 [m-quantity] dreihundert Meter (15)
@@ -2874,7 +2876,7 @@
 [m-location] Von der Stelle , wo Winston stand , (3)
 [topic] die in schönen Lettern in seine weiße Front gemeißelten drei Wahlsprüche der Partei (23)
 [x-experiencer] man (10)
-[???m-time] gerade noch (12)
+[m-mode] gerade noch (12)
 
 [LOCATION] Stelle (3)
 [m-scene] , wo Winston stand (7)
@@ -2890,27 +2892,28 @@
 
 [IDENTIFICATION] man (10)
 
-[??? TIME] noch (12)
-[??? m-time] gerade (11)
+[MODE] noch (12)
+[m-noncomp] gerade (11)
 
-[??? TIME] gerade (11)
+[NONCOMP] gerade (11)
 
 [MESSAGE] Wahlsprüche (23)
 [m-quality] in schönen Lettern in seine weiße Front gemeißelten (21)
 [m-quantity] drei (22)
 [x-sender] der Partei (25)
 
-[TRANSFORMATION-CREATION] gemeißelten (21)
-[??? material] in schönen Lettern (16)
-[??? material] in seine weiße Front (20)
+[MESSAGE-INIT] gemeißelten (21)
+[m-quality] in schönen Lettern (16)
+[x-location] in seine weiße Front (20)
+[target-content] Wahlsprüche (23)
 
 [MESSAGE] Lettern (16)
 [m-quality] schönen (15)
 
 [QUALITY] schönen (15)
 
-[CLASS] Front (20)
-[has-class] seine (18)
+[PART-WHOLE] Front (20)
+[whole] seine (18)
 [m-quality] weiße (19)
 
 [IDENTIFICATION] seine (18)
