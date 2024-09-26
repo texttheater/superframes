@@ -122,8 +122,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int,
-            head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -314,7 +313,7 @@ class Sentence:
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
-            ok, w = frame.check(self, head_lineno_map[frame.head], head_frame_map)
+            ok, w = frame.check(self, head_lineno_map[frame.head])
             if ok:
                 annotated_count += 1
             warnings += w
