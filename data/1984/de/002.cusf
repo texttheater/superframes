@@ -8,19 +8,19 @@
 6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
 7	:	:	PUNCT	$.	_	5	punct	_	_
 
-[] schrieb (5)
-[] In kleinen unbeholfenen Buchstaben (4)
-[] er (6)
+[MESSAGE] schrieb (5)
+[topic] In kleinen unbeholfenen Buchstaben (4)
+[x-causer] er (6)
 
-[] Buchstaben (4)
-[] kleinen (2)
-[] unbeholfenen (3)
+[MESSAGE] Buchstaben (4)
+[m-quality] kleinen (2)
+[m-quality] unbeholfenen (3)
 
-[] kleinen (2)
+[QUALITY] kleinen (2)
 
-[] unbeholfenen (3)
+[QUALITY] unbeholfenen (3)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
 # sent_id = 102
 # text = 4 April 1984
@@ -28,13 +28,13 @@
 2	April	April	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	1984	1984	NUM	CARD	NumType=Card	2	nmod	_	_
 
-[] April (2)
-[] 4 (1)
-[] 1984 (3)
+[TIME] April (2)
+[m-rank] 4 (1)
+[m-rank] 1984 (3)
 
-[] 4 (1)
+[RANK] 4 (1)
 
-[] 1984 (3)
+[RANK] 1984 (3)
 
 # sent_id = 103
 # text = Er lehnte sich zurück .
@@ -44,16 +44,16 @@
 4	zurück	zurück	ADP	PTKVZ	_	2	compound:prt	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] lehnte (2)
-[] Er (1)
-[] sich (3)
-[] zurück (4)
+[LOCATION-CHANGE] lehnte (2)
+[has-location] Er (1)
+[m-noncomp] sich (3)
+[target-location] zurück (4)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[NONCOMP] sich (3)
 
-[] zurück (4)
+[LOCATION] zurück (4)
 
 # sent_id = 104
 # text = Ein Gefühl völliger Hilflosigkeit hatte sich seiner bemächtigt .
@@ -67,22 +67,22 @@
 8	bemächtigt	bemächtigen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] bemächtigt (8)
-[] Ein Gefühl völliger Hilflosigkeit (2)
-[] sich (6)
-[] seiner (7)
+[SCENE-INIT] bemächtigt (8)
+[target-scene] Ein Gefühl völliger Hilflosigkeit (2)
+[m-noncomp] sich (6)
+[participant] seiner (7)
 
-[] Gefühl (2)
-[] völliger Hilflosigkeit (4)
+[MESSAGE] Gefühl (2)
+[topic] völliger Hilflosigkeit (4)
 
-[] Hilflosigkeit (4)
-[] völliger (3)
+[MESSAGE] Hilflosigkeit (4)
+[m-quantity] völliger (3)
 
-[] völliger (3)
+[QUANTITY] völliger (3)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] seiner (7)
+[IDENTIFICATION] seiner (7)
 
 # sent_id = 105
 # text = Zunächst einmal war er sich durchaus nicht sicher , dass jetzt wirklich das Jahr 1984 war .
@@ -104,35 +104,36 @@
 16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] sicher (8)
-[] Zunächst einmal (2)
-[] er (4)
-[] sich (5)
-[] durchaus (6)
-[] nicht (7)
+[MESSAGE] sicher (8)
+[m-time] Zunächst einmal (2)
+[x-experiencer] er (4)
+[m-noncomp] sich (5)
+[m-mode] durchaus (6)
+[m-mode] nicht (7)
+[topic] , dass jetzt wirklich das Jahr 1984 war . (17)
 
-[] einmal (2)
-[] Zunächst (1)
+[TIME] einmal (2)
+[m-noncomp] Zunächst (1)
 
-[] Zunächst (1)
+[TIME] Zunächst (1)
 
-[] er (4)
+[IDENTIFICATION] er (4)
 
-[] sich (5)
+[NONCOMP] sich (5)
 
-[] durchaus (6)
+[MODE] durchaus (6)
 
-[] nicht (7)
+[MODE] nicht (7)
 
-[] jetzt (11)
+[TIME] jetzt (11)
 
-[] Jahr (14)
-[] wirklich (12)
-[] 1984 (15)
+[TIME] Jahr (14)
+[m-mode] wirklich (12)
+[time] 1984 (15)
 
-[] wirklich (12)
+[MODE] wirklich (12)
 
-[] 1984 (15)
+[TIME] 1984 (15)
 
 # sent_id = 106
 # text = Es musste um diese Zeit herum sein , denn er wusste mit einiger Gewissheit , dass er selbst neununddreißig Jahre alt war , und er glaubte , 1944 oder 1945 geboren zu sein .
@@ -171,52 +172,52 @@
 33	sein	sein	AUX	VAINF	VerbForm=Inf	31	aux	_	_
 34	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] sein (7)
-[] Es (1)
-[] um diese Zeit (5)
-[] herum (6)
+[STATE] sein (7)
+[has-state] Es (1)
+[state] um diese Zeit (5)
+[m-quality] herum (6)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] Zeit (5)
+[TIME] Zeit (5)
 
-[] herum (6)
+[QUALITY] herum (6)
 
-[] wusste (11)
-[] er (10)
-[] mit einiger Gewissheit (14)
-[] , dass er selbst neununddreißig Jahre alt war (21)
+[MESSAGE] wusste (11)
+[x-experiencer] er (10)
+[m-quality] mit einiger Gewissheit (14)
+[content] , dass er selbst neununddreißig Jahre alt war (21)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] Gewissheit (14)
+[MESSAGE] Gewissheit (14)
 
-[] alt (21)
-[] er (17)
-[] selbst (18)
-[] neununddreißig Jahre (20)
+[STATE] alt (21)
+[has-state] er (17)
+[m-noncomp] selbst (18)
+[state] neununddreißig Jahre (20)
 
-[] er (17)
+[IDENTIFICATION] er (17)
 
-[] selbst (18)
+[IDENTIFICATION] selbst (18)
 
-[] Jahre (20)
-[] neununddreißig (19)
+[TIME] Jahre (20)
+[m-quantity] neununddreißig (19)
 
-[] neununddreißig (19)
+[QUANTITY] neununddreißig (19)
 
-[] glaubte (26)
-[] er (25)
-[] , 1944 oder 1945 geboren zu sein (31)
+[MESSAGE] glaubte (26)
+[x-experiencer] er (25)
+[content] , 1944 oder 1945 geboren zu sein (31)
 
-[] er (25)
+[IDENTIFICATION] er (25)
 
-[] geboren (31)
-[] 1944 oder 1945 (28)
+[EXISTENCE] geboren (31)
+[m-time] 1944 oder 1945 (28)
 
-[] 1944 (28)
+[TIME] 1944 (28)
 
-[] 1945 (30)
+[TIME] 1945 (30)
 
 # sent_id = 107
 # text = Doch heutzutage war es nie möglich , ein Datum auf ein oder zwei Jahre genau zu bestimmen .
@@ -239,30 +240,30 @@
 17	bestimmen	bestimmen	VERB	VVINF	VerbForm=Inf	6	csubj	_	_
 18	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] möglich (6)
-[] heutzutage (2)
-[] nie (5)
-[] , ein Datum auf ein oder zwei Jahre genau zu bestimmen (17)
+[SCENE] möglich (6)
+[m-time] heutzutage (2)
+[m-time] nie (5)
+[scene] , ein Datum auf ein oder zwei Jahre genau zu bestimmen (17)
 
-[] heutzutage (2)
+[TIME] heutzutage (2)
 
-[] nie (5)
+[TIME] nie (5)
 
-[] bestimmen (17)
-[] ein Datum auf ein oder zwei Jahre (9)
-[] genau (15)
+[MESSAGE] bestimmen (17)
+[topic] ein Datum auf ein oder zwei Jahre (9)
+[m-quality] genau (15)
 
-[] Datum (9)
+[TIME] Datum (9)
 [] auf ein oder zwei Jahre (14)
 
-[] Jahre (14)
-[] ein oder zwei (11)
+[TIME] Jahre (14)
+[q-quantity] ein oder zwei (11)
 
-[] ein (11)
+[QUANTITY] ein (11)
 
-[] zwei (13)
+[QUANTITY] zwei (13)
 
-[] genau (15)
+[QUALITY] genau (15)
 
 # sent_id = 108
 # text = Für wen , fragte er sich plötzlich , legte er dieses Tagebuch an ?
@@ -281,30 +282,30 @@
 13	an	an	ADP	PTKVZ	_	9	compound:prt	_	_
 14	?	?	PUNCT	$.	_	9	punct	_	_
 
-[] fragte (4)
-[] Für wen , (2)
-[] er (5)
-[] sich (6)
-[] plötzlich (7)
+[MESSAGE-INIT] fragte (4)
+[topic] Für wen , (2)
+[x-sender] er (5)
+[x-experiencer] sich (6)
+[m-time] plötzlich (7)
 
-[] wen (2)
+[IDENTIFICATION] wen (2)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] sich (6)
+[IDENTIFICATION] sich (6)
 
-[] plötzlich (7)
+[TIME] plötzlich (7)
 
-[] legte (9)
-[] er (10)
-[] dieses Tagebuch (12)
-[] an (13)
+[STATE-INIT] legte (9)
+[x-causer] er (10)
+[target-state] dieses Tagebuch (12)
+[m-noncomp] an (13)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] Tagebuch (12)
+[CLASS] Tagebuch (12)
 
-[] an (13)
+[NONCOMP] an (13)
 
 # sent_id = 109
 # text = Für die Zukunft , für die Kommenden .
@@ -317,9 +318,9 @@
 7	Kommenden	Kommende	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	3	conj	_	_
 8	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] Zukunft (3)
+[PURPOSE] Zukunft (3)
 
-[] Kommenden (7)
+[PURPOSE] Kommenden (7)
 
 # sent_id = 110
 # text = Sein Denken kreiste einen Augenblick um das zweifelhafte Datum auf der ersten Seite und prallte dann jäh mit dem Wort Zwiegedanke aus der Neusprache zusammen .
@@ -350,48 +351,48 @@
 25	zusammen	zusammen	ADP	PTKVZ	_	15	compound:prt	_	_
 26	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] kreiste (3)
-[] Sein Denken (2)
-[] einen Augenblick um das zweifelhafte Datum (5)
-[] auf der ersten Seite (13)
+[LOCATION-CHANGE >> MESSAGE] kreiste (3)
+[has-location >> x-experiencer] Sein Denken (2)
+[m-time] einen Augenblick
+[location >> topic] um das zweifelhafte Datum (5)
+[m-location] auf der ersten Seite (13)
 
-[] Denken (2)
-[] Sein (1)
+[MESSAGE] Denken (2)
+[m-identification] Sein (1)
 
-[] Sein (1)
+[IDENTIFICATION] Sein (1)
 
-[] Augenblick (5)
-[] um das zweifelhafte Datum (9)
+[TIME] Augenblick (5)
 
-[] Datum (9)
-[] zweifelhafte (8)
+[TIME] Datum (9)
+[m-quality] zweifelhafte (8)
 
-[] zweifelhafte (8)
+[QUALITY] zweifelhafte (8)
 
-[] Seite (13)
-[] ersten (12)
+[LOCATION] Seite (13)
+[m-rank] ersten (12)
 
-[] ersten (12)
+[RANK] ersten (12)
 
-[] prallte (15)
-[] dann (16)
-[] jäh (17)
-[] mit dem Wort Zwiegedanke (20)
-[] aus der Neusprache (24)
-[] zusammen (25)
+[HIT] prallte (15)
+[m-time] dann (16)
+[m-quality] jäh (17)
+[hitted] mit dem Wort Zwiegedanke (20)
+[m-quality] aus der Neusprache (24)
+[m-noncomp] zusammen (25)
 
-[] dann (16)
+[TIME] dann (16)
 
-[] jäh (17)
+[QUALITY] jäh (17)
 
-[] Wort (20)
-[] Zwiegedanke (21)
+[MESSAGE] Wort (20)
+[topic] Zwiegedanke (21)
 
-[] Zwiegedanke (21)
+[CLASS] Zwiegedanke (21)
 
-[] Neusprache (24)
+[MESSAGE] Neusprache (24)
 
-[] zusammen (25)
+[NONCOMP] zusammen (25)
 
 # sent_id = 111
 # text = Zum erstenmal kam ihm die Größe seines Vorhabens zum Bewusstsein .
