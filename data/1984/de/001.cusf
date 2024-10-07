@@ -495,7 +495,7 @@
 [] nur (17)
 [] halben (20)
 
-[] sei (15)
+[] sei (15) # TODO this should not appear
 
 [] nur (17)
 
@@ -623,22 +623,23 @@
 
 [] Vorgelände (7)
 
-[] Wachen (13)
+[CLASS] Wachen (13) # not SOCIAL-RELATION because no syntactic relation
 [m-scene] gorillagesichtige (12)
-[] in schwarzen Uniformen (16)
-[] , die mit schweren Gummiknüppeln bewaffnet waren (23)
+[m-wrapper] in schwarzen Uniformen (16)
+[m-scene] , die mit schweren Gummiknüppeln bewaffnet waren (23)
 
 [COMPARISON >> QUALITY] gorillagesichtige (12)
 [compared >> has-quality] Wachen (13)
 
-[] Uniformen (16)
-[] schwarzen (15)
+[CLASS] Uniformen (16)
+[m-quality] schwarzen (15)
 
 [] schwarzen (15)
 
 [] bewaffnet (23)
 [] die (19)
 [] mit schweren Gummiknüppeln (22)
+[] Wachen (13)
 
 [] die (19)
 
@@ -658,15 +659,15 @@
 7	um	um	ADP	PTKVZ	_	2	compound:prt	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] drehte (2)
-[] Winston (1)
-[] sich (3)
-[] mit einem Ruck (6)
-[] um (7)
+[LOCATION-CHANGE] drehte (2) # TODO manual: CHANGE when either *both* or *neither* initial/target exists
+[x-causer >> has-location] Winston (1)
+[has-location >> x-noncomp] sich (3) # TODO manual: double annotation of cases between transitive/reflexive
+[m-noncomp] um (7)
+[m-means >> m-quality] mit einem Ruck (6)
 
 [] Winston (1)
 
-[] sich (3)
+[IDENTIFICATION >> NONCOMP] sich (3)
 
 [] Ruck (6)
 
@@ -680,7 +681,7 @@
 6	Miene	Miene	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
 7	aufgesetzt	aufsetzen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	,	,	PUNCT	$,	_	14	punct	_	_
-9	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	_	_
+9	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	13	obj	_	_
 10	zur	zur	ADP	APPRART	_	11	case	_	_
 11	Schau	Schau	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	13	obl	_	_
 12	zu	zu	PART	PTKZU	_	13	mark	_	_
@@ -712,17 +713,17 @@
 
 [] optimistische (5)
 
-[] ratsam (14)
-[] die (9)
-[] zur Schau zu tragen (13)
-[] , wenn man dem Televisor das Gesicht zukehrte (23)
+[MESSAGE >> SCENE-NECESSITY] ratsam (14)
+[content >> scene] die zur Schau zu tragen (13)
+[m-condition] , wenn man dem Televisor das Gesicht zukehrte (23)
+
+[MESSAGE] tragen (13)
+[topic] die (9)
+[x-noncomp] zur Schau (11)
 
 [] die (9)
 
-[] tragen (13)
-[] zur Schau (11)
-
-[] Schau (11)
+[MESSAGE] Schau (11)
 
 [] zukehrte (23)
 [] man (18)
@@ -818,10 +819,10 @@
 49	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	aux	_	_
 50	.	.	PUNCT	$.	_	20	punct	_	_
 
-[] verzichtet (20)
-[] Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , (9)
-[] er (13)
-[] auf sein Mittagessen in der Kantine (16)
+[SITUATION-PREVENTION] verzichtet (20)
+[m-means] Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , (9)
+[theme] er (13)
+[target-situator] auf sein Mittagessen in der Kantine (16)
 
 [] weggegangen (9)
 [] er (2)
@@ -845,11 +846,12 @@
 [] Kantine (19)
 
 [] wusste (23)
-[] andererseits (22)
+[m-scene] andererseits (22)
 [] er (24)
 [] , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (34)
 
-[] andererseits (22)
+[COMPARISON] andererseits (22)
+[compared] wusste (23)
 
 [] er (24)
 
@@ -904,14 +906,14 @@
 10	farblosen	farblos	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	11	amod	_	_
 11	Flüssigkeit	Flüssigkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
 12	,	,	PUNCT	$,	_	20	punct	_	_
-13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	_	_
+13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	19	nsubj	_	_
 14	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
 15	schmucklosen	schmucklos	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	17	amod	_	_
 16	weißen	weiß	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	17	amod	_	_
 17	Etikett	Etikett	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	19	iobj	_	_
-18	nach	nach	ADP	APPR	_	19	case	_	_
-19	Victory-Gin	Victory-Gin	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	7	nmod	_	_
-20	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
+18	nach	nach	ADP	APPR	_	17	case	_	_
+19	Victory-Gin	Victory-Gin	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	nmod	_	_
+20	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] nahm (2)
@@ -924,22 +926,20 @@
 [] Regal (5)
 
 [] Flasche (7)
-[] mit einer farblosen Flüssigkeit , die war (11)
-[] dem schmucklosen weißen Etikett nach Victory-Gin (19)
+[] mit einer farblosen Flüssigkeit , die dem schmucklosen weißen Etikett nach Victory-Gin war (11)
 
 [] Flüssigkeit (11)
-[] farblosen (10)
-[] , die war (20)
-
+[m-scene] , die dem schmucklosen weißen Etikett nach Victory-Gin war (19)
 [] farblosen (10)
 
-[] war (20)
-[] die (13)
+[] farblosen (10)
+
+[CLASS] Victory-Gin (19)
+[has-class] die (13)
+[m-sender] dem schmucklosen weißen Etikett nach (17)
+[has-class] Flüssigkeit (11)
 
 [] die (13)
-
-[] Victory-Gin (19)
-[] dem schmucklosen weißen Etikett (17)
 
 [] Etikett (17)
 [] schmucklosen (15)
@@ -1016,13 +1016,13 @@
 26	hinunter	hinunter	ADP	PTKVZ	_	20	compound:prt	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] goss (2)
-[] Winston (1)
-[] sich (3)
-[] fast eine Teetasse (6)
+[LOCATION-INIT] goss (2)
+[x-causer] Winston (1)
+[x-experiencer] sich (3)
+[] fast eine Teetasse (6) # TODO ?
+[has-location] davon (8)
+[m-noncomp] ein (9)
 [] voll (7)
-[] davon (8)
-[] ein (9)
 
 [] Winston (1)
 
@@ -1810,9 +1810,9 @@
 18	schuld	schuld	ADJ	ADJD	_	0	root	_	_
 19	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] schuld (18)
-[] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
-[] mit daran (17)
+[CAUSATION] schuld (18)
+[causer] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
+[result] mit daran (17)
 
 [] Diarium (4)
 [] auch (2)
@@ -1834,7 +1834,7 @@
 
 [] Schublade (11)
 
-[] daran (17)
+[IDENTIFICATION] daran (17)
 
 # sent_id = 83
 # text = Es war ein ganz besonders schönes Diarium .
