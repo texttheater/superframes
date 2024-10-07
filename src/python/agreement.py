@@ -33,6 +33,9 @@ def create_pred_edges_map(sentences: Iterable[cusf.Sentence]) -> \
                 continue # skip duplicate frame annotations
             if not frame.is_completely_annotated():
                 continue
+            ok, _ = frame.check(sentence, 0)
+            if not ok:
+                continue
             head_label_map = collections.defaultdict(str)
             result[key] = head_label_map
             for arg in frame.args:
