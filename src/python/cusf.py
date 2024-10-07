@@ -122,8 +122,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int,
-            head_frame_map: Dict[int, 'Frame']) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -303,7 +302,7 @@ class Sentence:
                 if frame.head in head_frame_map:
                     logging.warning(
                         'sent %s line %s duplicate frame for head word %s',
-                        self.syntax[0].id, lineno, frame.head,
+                        self.syntax[0].id, frame_lineno, frame.head,
                     )
                 else:
                     head_frame_map[frame.head] = frame
@@ -314,25 +313,11 @@ class Sentence:
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
-            ok, w = frame.check(self, head_lineno_map[frame.head], head_frame_map)
+            ok, w = frame.check(self, head_lineno_map[frame.head])
             if ok:
                 annotated_count += 1
             warnings += w
         return len(head_frame_map), annotated_count, warnings
-
-    def edges(self) -> Iterable[Tuple[str, str, str, str, str]]:
-        seen = set()
-        for frame in self.frames:
-            if not isinstance(frame, Frame):
-                continue
-            if frame.head in seen:
-                continue
-            seen.add(frame.head)
-            if not frame.is_completely_annotated():
-                continue
-            for arg in frame.args:
-                yield (self.syntax[0].id, frame.head, frame.label,
-                        arg.head, arg.label)
 
     def write(self, io: TextIO=sys.stdout):
         print(self.syntax.conll(), file=io, end='')
