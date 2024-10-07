@@ -121,7 +121,7 @@
 
 [MESSAGE] Aussehen (13)
 [m-scene] ähnlichem (12)
-[??? x-experiencer || topic] Bauten (10)
+[topic] Bauten (10)
 
 [COMPARISON] ähnlichem (12)
 [compared] Aussehen (13)
@@ -670,7 +670,7 @@
 7	um	um	ADP	PTKVZ	_	2	compound:prt	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[???LOCATION-CHANGE] drehte (2)
+[???LOCATION-CHANGE || LOCATION-INIT] drehte (2)
 [has-location] Winston (1)
 [x-noncomp] sich (3)
 [m-quality] mit einem Ruck (6)
@@ -889,18 +889,18 @@
 
 [CLASS] Schwarzbrot (38)
 
-[??? POSSESSION-CONTINUATION] aufgehoben (47)
+[POSSESSION-CONTINUATION] aufgehoben (47)
 [possessed] das (40)
 [m-time] für den nächsten Tag (44)
-[??? m-purpose] zum Frühstück (46)
+[m-purpose] zum Frühstück (46)
 [possessed] Stück (37)
 
 [IDENTIFICATION] das (40)
 
 [CLASS] Tag (44)
-[??? m-follows || m-time] nächsten (43)
+[m-time] nächsten (43)
 
-[??? SEQUENCE || TIME] nächsten (43)
+[TIME] nächsten (43)
 
 [CLASS] Frühstück (46)
 
@@ -983,8 +983,8 @@
 [LOCATION-INIT >> MESSAGE] strömte (3)
 [x-causer >> x-sender ] Das Getränk (2)
 [has-location >> topic] einen faden , öligen Geruch (8)
-[target-location >> ??? ] aus (9)
-[??? m-reference] , wie chinesischer Reisschnaps (13)
+[target-location >> m-noncomp ] aus (9)
+[m-reference] , wie chinesischer Reisschnaps (13)
 
 [CLASS] Getränk (2)
 
@@ -1036,7 +1036,7 @@
 [m-quantity] fast eine Teetasse (6)
 [m-quantity] voll (7)
 [has-location] davon (8)
-[target-location] ein (9)
+[??? separated adpositional adverb wie herein? target-location] ein (9)
 
 [IDENTIFICATION] Winston (1)
 
@@ -1203,7 +1203,7 @@
 18	auszusehen	aussehen	VERB	VVIZU	VerbForm=Inf	16	xcomp	_	_
 19	.	.	PUNCT	$.	_	4	punct	_	_
 
-[??? SITUATION-DEINIT] hörte (4)
+[SITUATION-DEINIT] hörte (4)
 [m-time] Einen Augenblick später (3)
 [m-mode] jedoch (5)
 [theme] das Brennen (7)
@@ -1234,10 +1234,11 @@
 [CLASS] Welt (15)
 
 [MESSAGE] auszusehen (18)
-[cotent] rosiger (17)
+[content] rosiger (17)
 [topic] die Welt (15)
 
 [QUALITY] rosiger (17)
+[has-quality] die Welt (15)
 
 # sent_id = 72
 # text = Er zog eine Zigarette aus einem zerknitterten Päckchen mit der Aufschrift Victory-Zigaretten , doch unvorsichtigerweise hielt er sie senkrecht , worauf der Tabak heraus auf den Fußboden rieselte .
@@ -1382,7 +1383,7 @@
 
 [LOCATION-CONTINUATION] stehendes (14)
 [initial-location] links (11)
-[???] vom Televisor (13)
+[??? initial-location] vom Televisor (13)
 [has-location] Tischchen (15)
 
 [LOCATION] links (11)
@@ -1424,7 +1425,7 @@
 [x-causer] er (3)
 [initial-location] aus der Tischschublade (6)
 [has-location] einen Federhalter , eine Tintenflasche und ein dickes , unbeschriebenes Diarium in Quartformat mit rotem Rücken und marmorierten Einbanddeckeln (8)
-[??? m-noncomp] hervor (26)
+[m-noncomp] hervor (26)
 
 [TIME] Dann (1)
 
@@ -1444,8 +1445,8 @@
 
 [QUALITY-NEG >> QUALITY] unbeschriebenes (16)
 
-[MESSAGE] Quartformat (19)
-[m-accompanied] mit rotem Rücken und marmorierten Einbanddeckeln (22)
+[??? MESSAGE] Quartformat (19)
+[??? m-accompanied] mit rotem Rücken und marmorierten Einbanddeckeln (22)
 [??? topic] Diarium (17)
 
 [CLASS] Rücken (22)
@@ -1477,12 +1478,12 @@
 15	.	.	PUNCT	$.	_	14	punct	_	_
 
 [LOCATION-INIT] angebracht (14)
-[m-explanation] Aus irgendeinem Grunde (3)
+[x-causer] Aus irgendeinem Grunde (3)
 [has-location] der Televisor (6)
 [m-location] in seinem Wohnzimmer (9)
 [target-location] an einer ungewöhnlichen Stelle (13)
 
-[??? EXPLANATION || CAUSATION] Grunde (3)
+[CAUSATION] Grunde (3)
 
 [CLASS] Televisor (6)
 
@@ -1533,13 +1534,13 @@
 [??? m-conceded] Statt wie üblich (3)
 [initial-location] an der kürzeren Wand , von wo aus er den ganzen Raum beherrscht hätte , (7)
 
-[???] üblich (3)
+[??? SCENE-CONTINUATION] üblich (3)
 
 [CLASS] Wand (7)
 [m-quality] kürzeren (6)
 [m-scene] , von wo aus er den ganzen Raum beherrscht hätte (16)
 
-[QAULITY] kürzeren (6)
+[QUALITY] kürzeren (6)
 
 [POSSESSION >> SITUATION] beherrscht (16)
 [m-location] von wo aus (10)
@@ -1601,11 +1602,11 @@
 
 [CLASS] Seite (4)
 [m-whole] seiner (2)
-[???] einen (3)
+[m-part] einen (3)
 
-[???] seiner (2)
+[IDENTIFICATION] seiner (2)
 
-[???] einen (3)
+[PART-WHOLE] einen (3)
 
 [CLASS] Nische (9)
 [m-quality] kleine (8)
@@ -1628,17 +1629,17 @@
 [PURPOSE] bestimmt (26)
 [has-purpose] die (17)
 [m-mode] vermutlich (18)
-[??? SYNTAX purpose] beim Bau der Wohnung für ein Bücherregal (20)
+[m-time] beim Bau der Wohnung für ein Bücherregal (20)
 
 [IDENTIFICATION] die (17)
 
 [MODE] vermutlich (18)
 
-[???] Bau (20)
-[??? SYNTAX] der Wohnung für ein Bücherregal (22)
+[TRANSFORMATION-CREATION] Bau (20)
+[created] der Wohnung für ein Bücherregal (22)
 
 [CLASS] Wohnung (22)
-[??? SYNTAX] für ein Bücherregal (25)
+[m-purpose] für ein Bücherregal (25)
 
 [CLASS] Bücherregal (25)
 
@@ -1706,7 +1707,7 @@
 
 [???] wenigstens (18)
 
-[MESSAGE-POSSESSION >> LOCATION] Reichweite (22)
+[MESSAGE-POSSIBILITY >> LOCATION] Reichweite (22)
 [x-experiencer >> location] des Televisors (24)
 [topic >> has-location] Winston (16)
 
@@ -1735,14 +1736,14 @@
 
 [MESSAGE] gehört (4)
 [x-experiencer] Er (1)
-[???] zwar (3)
+[m-mode] zwar (3)
 
 [IDENTIFICATION] Er (1)
 
-[???] zwar (3)
+[MODE] zwar (3)
 
 [MESSAGE] gesehen (16)
-[m-conceded] , solange er in seiner Stellung verharrte , (13)
+[m-condition] , solange er in seiner Stellung verharrte , (13)
 [m-mode] nicht (15)
 
 [LOCATION-CONTINUATION] verharrte (13)
@@ -1751,8 +1752,8 @@
 
 [IDENTIFICATION] er (9)
 
-[??? SITUATION] Stellung (12)
-[??? theme] seiner (11)
+[LOCATION-CONTINUATION] Stellung (12)
+[has-location] seiner (11)
 
 [IDENTIFICATION] seiner (11)
 
@@ -1781,34 +1782,36 @@
 19	schritt	schreiten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 20	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] verantwortlich (12)
-[] Die ungewöhnliche Anlage des Zimmers (3)
-[] zum Teil (8)
-[] für den Gedanken , zu dessen Verwirklichung er jetzt schritt (11)
+[CAUSATION] verantwortlich (12)
+[causer] Die ungewöhnliche Anlage des Zimmers (3)
+[m-quantity] zum Teil (8)
+[result] für den Gedanken , zu dessen Verwirklichung er jetzt schritt (11)
 
-[] Anlage (3)
-[] ungewöhnliche (2)
-[] des Zimmers (5)
+[SITUATION] Anlage (3)
+[m-quality] ungewöhnliche (2)
+[theme] des Zimmers (5)
 
-[] ungewöhnliche (2)
+[QUALITY-NEG >> QUALITY] ungewöhnliche (2)
 
-[] Zimmers (5)
+[CLASS] Zimmers (5)
 
-[] Teil (8)
+[QUANTITY] Teil (8)
 
-[] Gedanken (11)
-[] , zu dessen Verwirklichung er jetzt schritt (19)
+[MESSAGE] Gedanken (11)
+[m-scene] , zu dessen Verwirklichung er jetzt schritt (19)
 
-[] schritt (19)
-[] zu dessen Verwirklichung (16)
-[] er (17)
-[] jetzt (18)
+[SCENE-INIT] schritt (19)
+[target-scene] zu dessen Verwirklichung (16)
+[participant] er (17)
+[m-time] jetzt (18)
+[target-scene] Gedanken (11)
 
-[] Verwirklichung (16)
+[EXISTENCE-INIT] Verwirklichung (16)
+[x-causer] er (17)
 
-[] er (17)
+[IDENTIFICATION] er (17)
 
-[] jetzt (18)
+[TIME] jetzt (18)
 
 # sent_id = 82
 # text = Doch auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , war mit daran schuld .
@@ -1832,31 +1835,32 @@
 18	schuld	schuld	ADJ	ADJD	_	0	root	_	_
 19	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] schuld (18)
-[] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
-[] mit daran (17)
+[CAUSATION] schuld (18)
+[causer] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
+[result] mit daran (17)
 
-[] Diarium (4)
-[] auch (2)
-[] , das er soeben aus der Schublade hervorgezogen hatte (12)
+[MESSAGE] Diarium (4)
+[m-mode] auch (2)
+[m-scene] , das er soeben aus der Schublade hervorgezogen hatte (12)
 
-[] auch (2)
+[MODE] auch (2)
 
-[] hervorgezogen (12)
-[] das (6)
-[] er (7)
-[] soeben (8)
-[] aus der Schublade (11)
+[LOCATION-DEINIT] hervorgezogen (12)
+[has-location] das (6)
+[x-causer] er (7)
+[m-time] soeben (8)
+[initial-location] aus der Schublade (11)
+[has-location] Diarium (4)
 
-[] das (6)
+[IDENTIFICATION] das (6)
 
-[] er (7)
+[IDENTIFICATION] er (7)
 
-[] soeben (8)
+[TIME] soeben (8)
 
-[] Schublade (11)
+[CLASS] Schublade (11)
 
-[] daran (17)
+[??? CAUSATION || IDENTIFICATION] daran (17)
 
 # sent_id = 83
 # text = Es war ein ganz besonders schönes Diarium .
@@ -1869,19 +1873,19 @@
 7	Diarium	Diarium	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] Diarium (7)
-[] Es (1)
-[] ganz besonders schönes (6)
+[MESSAGE] Diarium (7)
+[x-has-class] Es (1)
+[m-quality] ganz besonders schönes (6)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] schönes (6)
-[] ganz besonders (5)
+[QUALITY] schönes (6)
+[m-mode] ganz besonders (5)
 
-[] besonders (5)
-[] ganz (4)
+[MODE] besonders (5)
+[m-noncomp] ganz (4)
 
-[] ganz (4)
+[NONCOMP] ganz (4)
 
 # sent_id = 84
 # text = Sein milchweißes Papier , schon ein wenig vergilbt , war von einer Qualität , wie sie seit wenigstens vierzig Jahren nicht mehr hergestellt worden war .
@@ -1912,49 +1916,53 @@
 25	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] war (10)
-[] Sein milchweißes Papier , schon ein wenig vergilbt , (3)
-[] von einer Qualität , wie sie seit wenigstens vierzig Jahren nicht mehr hergestellt worden war (13)
+[SCENE] war (10)
+[participant] Sein milchweißes Papier , schon ein wenig vergilbt , (3)
+[scene] von einer Qualität , wie sie seit wenigstens vierzig Jahren nicht mehr hergestellt worden war (13)
 
-[] Papier (3)
-[] Sein (1)
-[] milchweißes (2)
-[] , schon ein wenig vergilbt , (8)
+[CLASS] Papier (3)
+[m-whole] Sein (1)
+[m-scene] milchweißes (2)
+[m-scene] , schon ein wenig vergilbt , (8)
 
-[] Sein (1)
+[IDENTIFICATION] Sein (1)
 
-[] milchweißes (2)
+[COMPARISON >> QUALITY] milchweißes (2)
+[compared >> has-quality] Papier (3)
 
-[] vergilbt (8)
-[] schon (5)
-[] wenig (7)
+[QUALITY] vergilbt (8)
+[m-time] schon (5)
+[m-quantity] wenig (7)
+[has-quality] Papier (3)
 
-[] schon (5)
+[TIME] schon (5)
 
-[] wenig (7)
+[QUANTITY] wenig (7)
 
-[] Qualität (13)
-[] , wie sie seit wenigstens vierzig Jahren nicht mehr hergestellt worden war (23)
+[QUALITY] Qualität (13)
+[m-scene] , wie sie seit wenigstens vierzig Jahren nicht mehr hergestellt worden war (23)
+[has-quality] Sein milchweißes Papier , schon ein wenig vergilbt , (3)
 
-[] hergestellt (23)
-[] sie (16)
-[] seit wenigstens vierzig Jahren (20)
-[] nicht mehr (21)
+[TRANSFORMATION-CREATION] hergestellt (23)
+[created] sie (16)
+[m-time] seit wenigstens vierzig Jahren (20)
+[m-time] nicht mehr (21)
+[created] Qualität (13)
 
-[] sie (16)
+[IDENTIFICATION] sie (16)
 
-[] Jahren (20)
-[] wenigstens vierzig (19)
+[TIME] Jahren (20)
+[m-quantity] wenigstens vierzig (19)
 
-[] vierzig (19)
-[] wenigstens (18)
+[QUANTITY] vierzig (19)
+[m-quantity] wenigstens (18)
 
-[] wenigstens (18)
+[QUANTITY] wenigstens (18)
 
-[] nicht (21)
-[] mehr (22)
+[???] nicht (21)
+[???] mehr (22)
 
-[] mehr (22)
+[???] mehr (22)
 
 # sent_id = 85
 # text = Er hatte jedoch Grund zu der Annahme , dass das Buch noch weit älter war .
@@ -1975,31 +1983,31 @@
 15	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Er (1)
-[] jedoch (3)
-[] Grund (4)
-[] zu der Annahme , dass das Buch noch weit älter war (7)
+[??? SCENE-INIT] hatte (2)
+[??? participant] Er (1)
+[???] jedoch (3)
+[??? target-scene] Grund (4)
+[??? target-scene] zu der Annahme , dass das Buch noch weit älter war (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] jedoch (3)
+[???] jedoch (3)
 
-[] Grund (4)
+[CAUSATION] Grund (4)
 
-[] Annahme (7)
-[] , dass das Buch noch weit älter war (14)
+[MESSAGE] Annahme (7)
+[content] , dass das Buch noch weit älter war (14)
 
-[] älter (14)
-[] das Buch (11)
-[] noch weit (13)
+[QUALITY] älter (14)
+[has-quality] das Buch (11)
+[m-quantity] noch weit (13)
 
-[] Buch (11)
+[MESSAGE] Buch (11)
 
-[] weit (13)
-[] noch (12)
+[QUANTITY] weit (13)
+[m-mode] noch (12)
 
-[] noch (12)
+[MODE] noch (12)
 
 # sent_id = 86
 # text = Er hatte es in der Auslage eines muffigen kleinen Altwarengeschäfts in einem der Elendsviertel der Stadt ( in welchem Viertel , hätte er jetzt nicht mehr sagen können ) liegen gesehen und war sofort von dem brennenden Wunsch beseelt worden , es zu besitzen .
@@ -2049,72 +2057,72 @@
 44	besitzen	besitzen	VERB	VVINF	VerbForm=Inf	38	acl	_	_
 45	.	.	PUNCT	$.	_	31	punct	_	_
 
-[] gesehen (31)
-[] Er (1)
-[] ( in welchem Viertel , hätte er jetzt nicht mehr sagen können ) (27)
-[] es in der Auslage eines muffigen kleinen Altwarengeschäfts in einem der Elendsviertel der Stadt liegen und war sofort von dem brennenden Wunsch beseelt worden , es zu besitzen (30)
+[MESSAGE-INIT] gesehen (31)
+[x-experiencer] Er (1)
+[m-location] ( in welchem Viertel , hätte er jetzt nicht mehr sagen können ) (27)
+[target-content] es in der Auslage eines muffigen kleinen Altwarengeschäfts in einem der Elendsviertel der Stadt liegen und war sofort von dem brennenden Wunsch beseelt worden , es zu besitzen (30)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sagen (27)
-[] ( in welchem Viertel , (20)
-[] er (23)
-[] jetzt (24)
-[] nicht mehr (25)
+[MESSAGE] sagen (27)
+[content] ( in welchem Viertel , (20)
+[x-sender] er (23)
+[m-time] jetzt (24)
+[m-mode] nicht mehr (25)
 
-[] Viertel (20)
+[CLASS] Viertel (20)
 
-[] er (23)
+[IDENTIFICATION] er (23)
 
-[] jetzt (24)
+[TIME] jetzt (24)
 
-[] nicht (25)
-[] mehr (26)
+[MODE] nicht (25) # siehe satz84
+[???] mehr (26)
 
-[] mehr (26)
+[???] mehr (26)
 
-[] liegen (30)
-[] es (3)
-[] in der Auslage eines muffigen kleinen Altwarengeschäfts in einem der Elendsviertel der Stadt (6)
+[LOCATION-CONTINUATION] liegen (30)
+[has-location] es (3)
+[initial-location] in der Auslage eines muffigen kleinen Altwarengeschäfts in einem der Elendsviertel der Stadt (6)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] Auslage (6)
-[] eines muffigen kleinen Altwarengeschäfts (10)
-[] in einem der Elendsviertel der Stadt (12)
+[CLASS] Auslage (6)
+[m-whole] eines muffigen kleinen Altwarengeschäfts (10)
+[m-location] in einem der Elendsviertel der Stadt (12)
 
-[] Altwarengeschäfts (10)
-[] muffigen (8)
-[] kleinen (9)
+[CLASS] Altwarengeschäfts (10)
+[m-quality] muffigen (8)
+[m-quality] kleinen (9)
 
-[] muffigen (8)
+[QUALITY] muffigen (8)
 
-[] kleinen (9)
+[QUALITY] kleinen (9)
 
-[] einem (12)
-[] der Elendsviertel der Stadt (14)
+[PART-WHOLE] einem (12)
+[whole] der Elendsviertel der Stadt (14)
 
-[] Elendsviertel (14)
-[] der Stadt (16)
+[CLASS] Elendsviertel (14)
+[m-whole] der Stadt (16)
 
-[] Stadt (16)
+[CLASS] Stadt (16)
 
-[] beseelt (39)
-[] sofort (34)
-[] von dem brennenden Wunsch , es zu besitzen (38)
+[MESSAGE-INIT] beseelt (39)
+[m-time] sofort (34)
+[x-causer] von dem brennenden Wunsch , es zu besitzen (38)
 
-[] sofort (34)
+[TIME] sofort (34)
 
-[] Wunsch (38)
-[] brennenden (37)
-[] , es zu besitzen (44)
+[MESSAGE] Wunsch (38)
+[m-quality] brennenden (37)
+[content] , es zu besitzen (44)
 
-[] brennenden (37)
+[QUALITY] brennenden (37)
 
-[] besitzen (44)
-[] es (42)
+[POSSESSION] besitzen (44)
+[possessed] es (42)
 
-[] es (42)
+[IDENTIFICATION] es (42)
 
 # sent_id = 87
 # text = Von Parteimitgliedern wurde erwartet , dass sie nicht in gewöhnlichen Läden einkauften ( » Geschäfte auf dem freien Markt machten « , wie die Formel lautete ) , aber die Vorschrift wurde nicht streng eingehalten , denn es gab verschiedene Dinge , wie Schuhbänder oder Rasierklingen , die man sich unmöglich auf andere Weise beschaffen konnte .
@@ -2176,87 +2184,89 @@
 56	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	55	aux	_	_
 57	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] erwartet (4)
-[] Von Parteimitgliedern (2)
-[] , dass sie nicht in gewöhnlichen Läden einkauften ( » Geschäfte auf dem freien Markt machten « , wie die Formel lautete ) (12)
+[MESSAGE] erwartet (4)
+[x-experiencer] Von Parteimitgliedern (2)
+[content] , dass sie nicht in gewöhnlichen Läden einkauften ( » Geschäfte auf dem freien Markt machten « , wie die Formel lautete ) (12)
 
-[] Parteimitgliedern (2)
+[SOCIAL-RELATION] Parteimitgliedern (2)
 
-[] einkauften (12)
-[] sie (7)
-[] nicht (8)
-[] in gewöhnlichen Läden (11)
-[] wie die Formel lautete (26)
+[POSSESSION-CHANGE] einkauften (12)
+[target-possessor] sie (7)
+[m-mode] nicht (8)
+[initial-possessor] in gewöhnlichen Läden (11)
+[m-reference] wie die Formel lautete (26)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] nicht (8)
+[MODE] nicht (8)
 
-[] Läden (11)
-[] gewöhnlichen (10)
+[CLASS] Läden (11)
+[m-quality] gewöhnlichen (10)
 
-[] gewöhnlichen (10)
+[QUALITY] gewöhnlichen (10)
 
-[] machten (20)
-[] Geschäfte auf dem freien Markt (15)
+[ACTIVITY] machten (20)
+[activity] Geschäfte auf dem freien Markt (15)
 
-[] Geschäfte (15)
-[] auf dem freien Markt (19)
+[POSSESSION-CHANGE] Geschäfte (15)
+[m-location || m-situator] auf dem freien Markt (19)
 
-[] Markt (19)
-[] freien (18)
+[CLASS] Markt (19)
+[m-state >> m-noncomp] freien (18)
 
-[] freien (18)
+[STATE >> NONCOMP] freien (18)
 
-[] lautete (26)
-[] die Formel (25)
+[MESSAGE] lautete (26)
+[topic] die Formel (25)
 
-[] Formel (25)
+[MESSAGE] Formel (25)
 
-[] eingehalten (35)
-[] die Vorschrift (31)
-[] nicht (33)
-[] streng (34)
+[SCENE] eingehalten (35)
+[scene] die Vorschrift (31)
+[m-mode] nicht (33)
+[m-quality] streng (34)
 
-[] Vorschrift (31)
+[MESSAGE] Vorschrift (31)
 
-[] nicht (33)
+[MODE] nicht (33)
 
-[] streng (34)
+[QUALITY] streng (34)
 
-[] gab (39)
-[] verschiedene Dinge , wie Schuhbänder oder Rasierklingen , die man sich unmöglich auf andere Weise beschaffen konnte (41)
+[EXISTENCE] gab (39)
+[exists] verschiedene Dinge , wie Schuhbänder oder Rasierklingen , die man sich unmöglich auf andere Weise beschaffen konnte (41)
 
-[] Dinge (41)
-[] verschiedene (40)
-[] , wie Schuhbänder oder Rasierklingen (44)
-[] , die man sich unmöglich auf andere Weise beschaffen konnte (55)
+[CLASS] Dinge (41)
+[m-quality] verschiedene (40)
+[m-example] , wie Schuhbänder oder Rasierklingen (44)
+[m-scene] , die man sich unmöglich auf andere Weise beschaffen konnte (55)
 
-[] verschiedene (40)
+[QUALITY] verschiedene (40)
 
-[] Schuhbänder (44)
+[CLASS] Schuhbänder (44)
 
-[] Rasierklingen (46)
+[CLASS] Rasierklingen (46)
 
-[] beschaffen (55)
-[] die (48)
-[] man (49)
-[] sich (50)
-[] unmöglich (51)
-[] auf andere Weise (54)
+[POSSESSION-INIT] beschaffen (55)
+[possessed] die (48)
+[target-possessor] man (49)
+[target-possessor] sich (50)
+[m-scene] unmöglich (51)
+[???] auf andere Weise (54)
+[possessed] Dinge (41)
 
-[] die (48)
+[IDENTIFICATION] die (48)
 
-[] man (49)
+[IDENTIFICATION] man (49)
 
-[] sich (50)
+[IDENTIFICATION] sich (50)
 
-[] unmöglich (51)
+[SCENE-POSSIBILITY-NEG] unmöglich (51)
+[scene] beschaffen (55)
 
-[] Weise (54)
-[] andere (53)
+[??? SITUATION] Weise (54)
+[m-reference] andere (53)
 
-[] andere (53)
+[COMPARISON] andere (53)
 
 # sent_id = 88
 # text = Er hatte einen raschen Blick die Straße hinauf- und hinuntergeworfen , dann war er hineingeschlüpft und hatte das Buch für zwei Dollar fünfzig erstanden .
@@ -2286,46 +2296,47 @@
 24	erstanden	erstehen	VERB	VVPP	Verbform=Part	15	conj	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Er (1)
-[] einen raschen Blick (5)
-[] die Straße (7)
-[] hinauf- und hinuntergeworfen (8)
+[SCENE-INIT] hatte (2)
+[participant] Er (1)
+[target-scene] einen raschen Blick (5)
+[target-scene] die Straße (7)
+[target-scene] hinauf- und hinuntergeworfen (8)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Blick (5)
-[] raschen (4)
+[MESSAGE] Blick (5)
+[m-quality] raschen (4)
+[x-sender] Er (1)
 
-[] raschen (4)
+[QUALITY] raschen (4)
 
-[] Straße (7)
+[CLASS] Straße (7)
 
-[] hinauf- (8)
+[LOCATION-CHANGE] hinauf- (8)
 
-[] hinuntergeworfen (10)
+[LOCATION-CHANGE] hinuntergeworfen (10)
 
-[] hineingeschlüpft (15)
-[] dann (12)
-[] er (14)
+[LOCATION-INIT] hineingeschlüpft (15)
+[m-time] dann (12)
+[has-location] er (14)
 
-[] dann (12)
+[TIME] dann (12)
 
-[] er (14)
+[IDENTIFICATION] er (14)
 
-[] erstanden (24)
-[] das Buch (19)
-[] für zwei Dollar (22)
-[] fünfzig (23)
+[POSSESSION-INIT] erstanden (24)
+[possessed] das Buch (19)
+[x-asset] für zwei Dollar (22)
+[x-asset] fünfzig (23)
 
-[] Buch (19)
+[MESSAGE] Buch (19)
 
-[] Dollar (22)
-[] zwei (21)
+[QUANTITY] Dollar (22)
+[m-quantity] zwei (21)
 
-[] zwei (21)
+[QUANTITY] zwei (21)
 
-[] fünfzig (23)
+[QUALITY] fünfzig (23)
 
 # sent_id = 89
 # text = Damals hatte ihm noch kein Zweck dafür vorgeschwebt .
@@ -2339,25 +2350,25 @@
 8	vorgeschwebt	vorschweben	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] vorgeschwebt (8)
-[] Damals (1)
-[] ihm (3)
-[] noch (4)
-[] kein Zweck (6)
-[] dafür (7)
+[LOCATION-INIT >> MESSAGE] vorgeschwebt (8)
+[m-time] Damals (1)
+[target-location >> x-experiencer] ihm (3)
+[m-mode] noch (4)
+[has-location >> content] kein Zweck (6)
+[m-purpose >> topic] dafür (7)
 
-[] Damals (1)
+[TIME] Damals (1)
 
-[] ihm (3)
+[IDENTIFICATION] ihm (3)
 
-[] noch (4)
+[MODE] noch (4)
 
-[] Zweck (6)
-[] kein (5)
+[SEQUENCE] Zweck (6)
+[m-mode] kein (5)
 
-[] kein (5)
+[MODE] kein (5)
 
-[] dafür (7)
+[IDENTIFICATION] dafür (7)
 
 # sent_id = 90
 # text = Er hatte es schuldbewusst in seiner Mappe heimgetragen .
@@ -2371,22 +2382,22 @@
 8	heimgetragen	heimtragen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] heimgetragen (8)
-[] Er (1)
-[] es (3)
-[] schuldbewusst (4)
-[] in seiner Mappe (7)
+[LOCATION-INIT] heimgetragen (8)
+[x-causer] Er (1)
+[has-location] es (3)
+[??? x-causer || m-quality] schuldbewusst (4)
+[??? m-accompanier || x-location] in seiner Mappe (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] schuldbewusst (4)
+[???] schuldbewusst (4)
 
-[] Mappe (7)
-[] seiner (6)
+[CLASS] Mappe (7)
+[m-possessor] seiner (6)
 
-[] seiner (6)
+[IDENTIFICATION] seiner (6)
 
 # sent_id = 91
 # text = Selbst unbeschrieben war es schon ein gefährlicher Besitz .
@@ -2400,22 +2411,23 @@
 8	Besitz	Besitz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] Besitz (8)
-[] Selbst unbeschrieben (2)
-[] es (4)
-[] schon (5)
-[] gefährlicher (7)
+[POSSESSION] Besitz (8)
+[possessed] es (4)
+[m-quality] gefährlicher (7)
+[m-mode] schon (5)
+[m-scene] Selbst unbeschrieben (2)
 
-[] unbeschrieben (2)
-[] Selbst (1)
+[MESSAGE-NEG] unbeschrieben (2)
+[m-mode] Selbst (1)
+[topic] Besitz (8)
 
-[] Selbst (1)
+[MODE] Selbst (1)
 
-[] es (4)
+[IDENTIFICATION] es (4)
 
-[] schon (5)
+[MODE] schon (5)
 
-[] gefährlicher (7)
+[QUALITY] gefährlicher (7)
 
 # sent_id = 92
 # text = Nun war er im Begriff , ein Tagebuch anzulegen .
@@ -2430,19 +2442,21 @@
 9	anzulegen	anlegen	VERB	VVIZU	VerbForm=Inf	5	xcomp	_	_
 10	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Begriff (5)
-[] Nun (1)
-[] er (3)
-[] , ein Tagebuch anzulegen (9)
+[SCENE-INIT] Begriff (5)
+[m-time] Nun (1)
+[participant] er (3)
+[target-scene] , ein Tagebuch anzulegen (9)
 
-[] Nun (1)
+[TIME] Nun (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] anzulegen (9)
-[] ein Tagebuch (8)
+[SCENE-INIT] anzulegen (9)
+[target-scene] ein Tagebuch (8)
+[participant] er (3)
 
-[] Tagebuch (8)
+[MESSAGE] Tagebuch (8)
+[x-sender] er (3)
 
 # sent_id = 93
 # text = Das war nicht illegal ( nichts war illegal , da es ja keine Gesetze mehr gab ) , aber falls es herauskam , war er so gut wie sicher , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde .
@@ -2491,68 +2505,68 @@
 43	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	aux	_	_
 44	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] illegal (4)
-[] Das (1)
-[] nicht (3)
+[QUALITY-NEG >> QUALITY] illegal (4)
+[has-quality] Das (1)
+[m-mode] nicht (3)
 
-[] Das (1)
+[IDENTIFICATION] Das (1)
 
-[] nicht (3)
+[MODE] nicht (3)
 
-[] illegal (8)
-[] nichts (6)
-[] , da es ja keine Gesetze mehr gab (16)
+[QUALITY-NEG >> QUALITY] illegal (8)
+[has-quality] nichts (6)
+[m-explanation] , da es ja keine Gesetze mehr gab (16)
 
-[] nichts (6)
+[CLASS] nichts (6)
 
-[] gab (16)
-[] ja (12)
-[] keine Gesetze (14)
-[] mehr (15)
+[EXISTENCE] gab (16)
+[m-mode] ja (12)
+[exists] keine Gesetze (14)
+[m-quantity] mehr (15)
 
-[] ja (12)
+[MODE] ja (12)
 
-[] Gesetze (14)
-[] keine (13)
+[MESSAGE] Gesetze (14)
+[m-quantity] keine (13)
 
-[] keine (13)
+[QUANTITY] keine (13)
 
-[] mehr (15)
+[QUANTITY] mehr (15)
 
-[] gut (27)
-[] falls es herauskam , (22)
-[] er (25)
-[] so (26)
-[] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
+[??? Syntax klären ] gut (27)
+[m-condition] falls es herauskam , (22)
+[???] er (25)
+[???] so (26)
+[???] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
 
-[] herauskam (22)
-[] es (21)
+[LOCATION-DEINIT >> MESSAGE-INIT] herauskam (22)
+[has-location >> topic] es (21)
 
-[] es (21)
+[IDENTIFICATION] es (21)
 
-[] er (25)
+[IDENTIFICATION] er (25)
 
-[] so (26)
+[???] so (26)
 
-[] sicher (29)
+[??? Syntax klären] sicher (29)
 
-[] geahndet (41)
-[] es (32)
-[] mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager (35)
+[SOCIAL-RELATION-INIT] geahndet (41)
+[x-causer || x-trigger] es (32)
+[target-social-relation] mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager (35)
 
-[] es (32)
+[IDENTIFICATION] es (32)
 
-[] Tode (35)
+[DESTRUCTION] Tode (35)
 
-[] Jahren (39)
-[] zumindest fünfundzwanzig (38)
+[TIME] Jahren (39)
+[m-quantity] zumindest fünfundzwanzig (38)
 
-[] fünfundzwanzig (38)
-[] zumindest (37)
+[QUANTITY] fünfundzwanzig (38)
+[m-quantity] zumindest (37)
 
-[] zumindest (37)
+[QUANTITY] zumindest (37)
 
-[] Zwangsarbeitslager (40)
+[CLASS] Zwangsarbeitslager (40)
 
 # sent_id = 94
 # text = Winston steckte eine Stahlfeder in den Halter und feuchtete sie mit der Zunge an .
@@ -2572,25 +2586,25 @@
 14	an	an	ADP	PTKVZ	_	9	compound:prt	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] steckte (2)
-[] Winston (1)
-[] eine Stahlfeder (4)
-[] in den Halter (7)
+[LOCATION-INIT] steckte (2)
+[x-causer] Winston (1)
+[has-location] eine Stahlfeder (4)
+[target-location] in den Halter (7)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Stahlfeder (4)
+[CLASS] Stahlfeder (4)
 
-[] Halter (7)
+[CLASS] Halter (7)
 
-[] feuchtete (9)
-[] sie (10)
-[] mit der Zunge (13)
-[] an (14)
+[STATE-CHANGE] feuchtete (9)
+[has-state] sie (10)
+[m-means] mit der Zunge (13)
+[m-noncomp] an (14)
 
-[] sie (10)
+[IDENTIFICATION] sie (10)
 
-[] Zunge (13)
+[CLASS] Zunge (13)
 
 # sent_id = 95
 # text = Die Feder war ein vorsintflutliches Instrument , das selbst zu Unterschriften nur noch selten verwendet wurde , und er hatte sich heimlich und mit einiger Schwierigkeit eine besorgt , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden .
@@ -2653,88 +2667,89 @@
 57	werden	werden	AUX	VAINF	VerbForm=Inf	55	aux:pass	_	_
 58	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Instrument (6)
-[] Die Feder (2)
-[] vorsintflutliches (5)
-[] , das selbst zu Unterschriften nur noch selten verwendet wurde (15)
+[CLASS] Instrument (6)
+[m-quality] vorsintflutliches (5)
+[m-scene] , das selbst zu Unterschriften nur noch selten verwendet wurde (15)
+[has-class] Die Feder (2)
 
-[] Feder (2)
+[CLASS] Feder (2)
 
-[] vorsintflutliches (5)
+[QUALITY] vorsintflutliches (5)
 
-[] verwendet (15)
-[] das (8)
-[] selbst (9)
-[] zu Unterschriften (11)
-[] nur noch selten (14)
+[MEANS] verwendet (15)
+[means] das (8)
+[m-mode] selbst (9)
+[m-purpose] zu Unterschriften (11)
+[m-time] nur noch selten (14)
+[means] Instrument (6)
 
-[] das (8)
+[IDENTIFICATION] das (8)
 
-[] selbst (9)
+[MODE] selbst (9)
 
-[] Unterschriften (11)
+[MESSAGE] Unterschriften (11)
 
-[] selten (14)
-[] nur noch (13)
+[TIME] selten (14)
+[m-time] nur noch (13)
 
-[] noch (13)
-[] nur (12)
+[TIME] noch (13)
+[m-noncomp] nur (12)
 
-[] nur (12)
+[NONCOMP] nur (12)
 
-[] besorgt (28)
-[] er (19)
-[] sich (21)
-[] heimlich und mit einiger Schwierigkeit (22)
-[] eine (27)
-[] , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (34)
+[POSSESSION-INIT] besorgt (28)
+[target-possessor] er (19)
+[target-possessor] sich (21)
+[possessed] eine (27)
+[m-explanation] , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (34)
+[m-quality] heimlich und mit einiger Schwierigkeit (22)
 
-[] er (19)
+[IDENTIFICATION] er (19)
 
-[] sich (21)
+[IDENTIFICATION] sich (21)
 
-[] heimlich (22)
+[QUALITY] heimlich (22)
 
-[] Schwierigkeit (26)
+[SITUATION] Schwierigkeit (26)
 
-[] eine (27)
+[IDENTIFICATION] eine (27)
 
-[] Gefühl (34)
-[] ganz einfach (31)
-[] heraus (35)
-[] , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (43)
+[??? MESSAGE] Gefühl (34)
+[??? m-quality || m-mode] ganz einfach (31)
+[??? ] heraus (35)
+[??? content] , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (43)
 
-[] einfach (31)
-[] ganz (30)
+[QUALITY || MODE] einfach (31)
+[m-mode] ganz (30)
 
-[] ganz (30)
+[MODE] ganz (30)
 
-[] verdiente (43)
-[] das wundervolle glatte Papier (41)
-[] es (42)
+[POSSESSION-INIT] verdiente (43)
+[target-possessor] das wundervolle glatte Papier (41)
+[possessed] es (42)
 
-[] Papier (41)
-[] wundervolle (39)
-[] glatte (40)
+[CLASS] Papier (41)
+[m-quality] wundervolle (39)
+[m-quality] glatte (40)
 
-[] wundervolle (39)
+[QUALITY] wundervolle (39)
 
-[] glatte (40)
+[QUALITY] glatte (40)
 
-[] es (42)
+[IDENTIFICATION] es (42)
 
-[] beschrieben (49)
-[] mit einer richtigen Feder (48)
+[MESSAGE-INIT] beschrieben (49)
+[m-means] mit einer richtigen Feder (48)
 
-[] Feder (48)
-[] richtigen (47)
+[CLASS] Feder (48)
+[m-quality] richtigen (47)
 
-[] richtigen (47)
+[QUALITY] richtigen (47)
 
-[] bekritzelt (55)
-[] statt mit einem Tintenblei (54)
+[MESSAGE-INIT] bekritzelt (55)
+[m-means] statt mit einem Tintenblei (54)
 
-[] Tintenblei (54)
+[CLASS] Tintenblei (54)
 
 # sent_id = 96
 # text = Tatsächlich war er nicht mehr gewöhnt , mit der Hand zu schreiben .
@@ -2752,25 +2767,26 @@
 12	schreiben	schreiben	VERB	VVINF	VerbForm=Inf	6	xcomp	_	_
 13	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gewöhnt (6)
-[] Tatsächlich (1)
-[] er (3)
-[] nicht (4)
-[] mehr (5)
-[] , mit der Hand zu schreiben (12)
+[SCENE] gewöhnt (6)
+[m-mode] Tatsächlich (1)
+[participant] er (3)
+[m-mode] nicht (4)
+[m-time] mehr (5)
+[scene] , mit der Hand zu schreiben (12)
 
-[] Tatsächlich (1)
+[MODE] Tatsächlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] nicht (4)
+[MODE] nicht (4)
 
-[] mehr (5)
+[TIME] mehr (5)
 
-[] schreiben (12)
-[] mit der Hand (10)
+[MESSAGE-INIT] schreiben (12)
+[m-means] mit der Hand (10)
+[x-sender] er (3)
 
-[] Hand (10)
+[CLASS] Hand (10)
 
 # sent_id = 97
 # text = Abgesehen von ganz kurzen Notizen war es üblich , alles in den Sprechschreiber zu diktieren , aber das war natürlich in diesem Fall unmöglich .
@@ -2800,39 +2816,39 @@
 24	unmöglich	unmöglich	ADJ	ADJD	_	8	conj	_	_
 25	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] üblich (8)
-[] Abgesehen von ganz kurzen Notizen (1)
-[] , alles in den Sprechschreiber zu diktieren (15)
+[??? SCENE-CONTINUATION] üblich (8)
+[initial-scene] , alles in den Sprechschreiber zu diktieren (15)
+[m-exception] Abgesehen von ganz kurzen Notizen (1)
 
-[] Abgesehen (1)
-[] von ganz kurzen Notizen (5)
+[??? EXCEPTION] Abgesehen (1)
+[??? has-exception] von ganz kurzen Notizen (5)
 
-[] Notizen (5)
-[] ganz kurzen (4)
+[MESSAGE] Notizen (5)
+[m-quality] ganz kurzen (4)
 
-[] kurzen (4)
-[] ganz (3)
+[QUALITY] kurzen (4)
+[m-mode] ganz (3)
 
-[] ganz (3)
+[MODE] ganz (3)
 
-[] diktieren (15)
-[] alles (10)
-[] in den Sprechschreiber (13)
+[MESSAGE-INIT] diktieren (15)
+[target-content] alles (10)
+[x-target-location] in den Sprechschreiber (13)
 
-[] alles (10)
+[CLASS] alles (10)
 
-[] Sprechschreiber (13)
+[CLASS] Sprechschreiber (13)
 
-[] unmöglich (24)
-[] das (18)
-[] natürlich (20)
-[] in diesem Fall (23)
+[SCENE-POSSIBILITY-NEG] unmöglich (24)
+[scene] das (18)
+[m-mode] natürlich (20)
+[m-time || m-situator] in diesem Fall (23)
 
-[] das (18)
+[IDENTIFICATION] das (18)
 
-[] natürlich (20)
+[MODE] natürlich (20)
 
-[] Fall (23)
+[TIME || SITUATION] Fall (23)
 
 # sent_id = 98
 # text = Er tauchte die Feder in die Tinte und stockte noch eine Sekunde .
@@ -2850,24 +2866,24 @@
 12	Sekunde	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	9	obj	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] tauchte (2)
-[] Er (1)
-[] die Feder (4)
-[] in die Tinte (7)
+[LOCATION-INIT] tauchte (2)
+[x-causer] Er (1)
+[has-location] die Feder (4)
+[target-location] in die Tinte (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Feder (4)
+[CLASS] Feder (4)
 
-[] Tinte (7)
+[CLASS] Tinte (7)
 
-[] stockte (9)
-[] noch (10)
-[] eine Sekunde (12)
+[??? SCENE-PREVENTION || SCENE-DEINIT] stockte (9)
+[m-mode] noch (10)
+[m-time] eine Sekunde (12)
 
-[] noch (10)
+[MODE] noch (10)
 
-[] Sekunde (12)
+[TIME] Sekunde (12)
 
 # sent_id = 99
 # text = Ein Schauer war ihm über den Rücken gelaufen .
@@ -2881,16 +2897,16 @@
 8	gelaufen	laufen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] gelaufen (8)
-[] Ein Schauer (2)
-[] ihm (4)
-[] über den Rücken (7)
+[MESSAGE] gelaufen (8)
+[??? x-noncomp] Ein Schauer (2)
+[x-experiencer] ihm (4)
+[??? x-noncomp] über den Rücken (7)
 
-[] Schauer (2)
+[??? MESSAGE weil Idiom?] Schauer (2)
 
-[] ihm (4)
+[IDENTIFICATION] ihm (4)
 
-[] Rücken (7)
+[??? MESSAGE weil Idiom?] Rücken (7)
 
 # sent_id = 100
 # text = Der erste Federstrich über das Papier war die entscheidende Handlung .
@@ -2906,17 +2922,17 @@
 10	Handlung	Handlung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] Handlung (10)
-[] Der erste Federstrich über das Papier (3)
-[] entscheidende (9)
+[ACTIVITY] Handlung (10)
+[m-quality] entscheidende (9)
+[x-identified] Der erste Federstrich über das Papier (3)
 
-[] Federstrich (3)
-[] erste (2)
-[] über das Papier (6)
+[MESSAGE-INIT] Federstrich (3)
+[m-rank] erste (2)
+[x-target-location] über das Papier (6)
 
-[] erste (2)
+[RANK] erste (2)
 
-[] Papier (6)
+[CLASS] Papier (6)
 
-[] entscheidende (9)
+[QUALITY] entscheidende (9)
 
