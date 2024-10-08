@@ -77,7 +77,7 @@ FRAMES = {
     'EXPLANATION': Rigid('explained', 'explanation'),
     'PURPOSE': Rigid('has-purpose', 'purpose'),
     'LOCATION': Flexible('has-location', 'location'),
-    'WRAPPING-WEARING': Flexible('worn', 'wearer'),
+    'WRAPPING-WEARING': Flexible('wrapper', 'wearer'),
     'ADORNMENT-TARNISHMENT': Flexible('ornament', 'surface'),
     'HITTING': Rigid('hitting', 'hit'),
     'INGESTION': Rigid('ingested', 'transitory-location', 'ingester'),
