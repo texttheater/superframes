@@ -9,10 +9,10 @@
 2	1	1	NUM	CD	NumForm=Digit|NumType=Card	1	nummod	_	TokenRange=8:9
 3	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=10:11
 
-[] Chapter (1)
-[] 1 (2)
+[MESSAGE] Chapter (1)
+[m-rank] 1 (2)
 
-[] 1 (2)
+[RANK] 1 (2)
 
 # sent_id = 2
 # text = Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -44,55 +44,56 @@
 26	forest	forest	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=136:142
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=143:144
 
-[] saw (9)
-[] Once when I was six years old (7)
-[] I (8)
-[] a magnificent picture (12)
-[] in a book , called True Stories from Nature , about the primeval forest (15)
+[MESSAGE] saw (9)
+[m-time] Once when I was six years old (7)
+[x-experiencer] I (8)
+[topic] a magnificent picture (12)
+[x-location] in a book , called True Stories from Nature , about the primeval forest (15) ## ?? warum nicht m-location?
 
-[] old (7)
-[] Once (1)
-[] when (2)
-[] I (3)
-[] six years (6)
+[STATE] old (7)
+[m-time] Once (1)
+[m-has-time] when (2) ## ?? wie ergibt sich das Label?
+[has-state] I (3)
+[x-quantity] six years (6)
 
-[] Once (1)
+[TIME] Once (1)
 
-[] when (2)
+[TIME] when (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] years (6)
-[] six (5)
+[TIME] years (6)
+[m-quantity] six (5) ## ?? warum nicht x-quantity?
 
-[] six (5)
+[QUANTITY] six (5)
 
-[] I (8)
+[IDENTIFICATION] I (8)
 
-[] picture (12)
-[] magnificent (11)
+[MESSAGE] picture (12)
+[m-quality] magnificent (11)
 
-[] magnificent (11)
+[QUALITY] magnificent (11)
 
-[] book (15)
-[] called True Stories from Nature (17)
-[] about the primeval forest (26)
+[MESSAGE] book (15)
+[m-scene] called True Stories from Nature (17) ## relative clause
+[topic] about the primeval forest (26)
 
-[] called (17)
-[] True Stories from Nature (19)
+[IDENTIFICATION] called (17)
+[identifier] True Stories from Nature (19)
+[identified] book (15)  ## ?? diese Kante wird bei IDENTIFICATION ggf. hinzugefügt, oder?
 
-[] Stories (19)
-[] True (18)
-[] from Nature (21)
+[MESSAGE] Stories (19)
+[m-mode] True (18)
+[x-initial-location || topic] from Nature (21) ## ?? diese Annotation auch ok?
 
-[] True (18)
+[MODE] True (18)
 
-[] Nature (21)
+[IDENTIFICATION] Nature (21)
 
-[] forest (26)
-[] primeval (25)
+[CLASS] forest (26)
+[m-initial-time >> m-noncomp] primeval (25) ## ?? in github abweichend vom manual "m-quality"/"m-time"
 
-[] primeval (25)
+[TIME >> NONCOMP] primeval (25)
 
 # sent_id = 3
 # text = It was a picture of a boa constrictor in the act of swallowing an animal .
@@ -113,25 +114,27 @@
 15	animal	animal	NOUN	NN	Number=Sing	13	obj	_	TokenRange=212:218
 16	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=219:220
 
-[] picture (4)
-[] It (1)
-[] of a boa constrictor in the act of swallowing an animal (8)
+[MESSAGE] picture (4)
+[x-has-class] It (1)
+[topic] of a boa constrictor in the act of swallowing an animal (8)
 
-[] It (1)
+[IDENTIFICATION] It (1)
 
-[] constrictor (8)
-[] boa (7)
-[] in the act of swallowing an animal (11)
+[CLASS] constrictor (8) ## ??
+[x-noncomp] boa (7) ## ??
+[m-scene] in the act of swallowing an animal (11)
 
-[] boa (7)
+[NONCOMP] boa (7) ## ??
 
-[] act (11)
-[] of swallowing an animal (13)
+[SCENE] act (11)
+[scene] of swallowing an animal (13)
+[participant] constrictor (8) ## siehe manual -> SCENE "participant [...] extra dependency link"
 
-[] swallowing (13)
-[] an animal (15)
+[INGESTION] swallowing (13)
+[ingested] an animal (15)
+[ingester] constrictor (8) ## siehe nonlocal dependencies
 
-[] animal (15)
+[CLASS] animal (15)
 
 # sent_id = 4
 # text = Here is a copy of the drawing .
@@ -144,13 +147,13 @@
 7	drawing	drawing	NOUN	NN	Number=Sing	4	nmod	_	TokenRange=244:251
 8	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=252:253
 
-[] Here (1)
-[] a copy of the drawing (4)
+[LOCATION] Here (1)
+[has-location] a copy of the drawing (4)
 
-[] copy (4)
-[] of the drawing (7)
+[REPRODUCTION] copy (4)
+[original] of the drawing (7)
 
-[] drawing (7)
+[MESSAGE] drawing (7)
 
 # sent_id = 5
 # text = In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
@@ -173,35 +176,37 @@
 17	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	TokenRange=339:341
 18	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=342:343
 
-[] said (5)
-[] In the book (3)
-[] it (4)
-[] Boa constrictors swallow their prey whole , without chewing it (10)
+[MESSAGE-INIT] said (5) ## ?? diese Annotation auch ok, wie im manual? 
+[x-sender] In the book (3) ## siehe Bsp. (175) im manual
+[x-noncomp] it (4)
+[target-content] Boa constrictors swallow their prey whole , without chewing it (10) ## ?? diese Annotation auch ok, wie im manual?
 
-[] book (3)
+[MESSAGE] book (3)
 
-[] it (4)
+[NONCOMP] it (4)
 
-[] swallow (10)
-[] Boa constrictors (9)
-[] their prey (12)
-[] whole (13)
-[] without chewing it (16)
+[INGESTION] swallow (10)
+[ingestor] Boa constrictors (9)
+[ingested] their prey (12)
+[m-depictive || m-quantity] whole (13) ## ?? diese Annotation auch ok?
+[m-exception] without chewing it (16) ## ?? diese Annotation auch ok? Warum m-follows und nicht m-followed?
 
-[] constrictors (9)
-[] Boa (8)
+[CLASS] constrictors (9) ## ??
+[x-noncomp] Boa (8) ## ??
 
-[] Boa (8)
+[NONCOMP] Boa (8) ## ??
 
-[] prey (12)
-[] their (11)
+[SOCIAL-RELATION] prey (12)
+[has-social-relation] their (11)
 
-[] their (11)
+[IDENTIFICATION] their (11)
 
-[] whole (13)
+[STATE] whole (13) ## ???? vgl. Bsp. (278) im manual
+[has-state] prey (12) ## ?? woher kommt diese Kante?
 
-[] chewing (16)
-[] it (17)
+[STATE-CHANGE] chewing (16)
+[has-state] it (17)
+[x-causer] constrictors (9)
 
 [] it (17)
 
