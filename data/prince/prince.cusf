@@ -1008,27 +1008,28 @@
 12	airplanes	airplane	NOUN	NNS	Number=Plur	11	obj	_	TokenRange=1812:1821
 13	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=1822:1823
 
-[] chose (4)
-[] So (1)
-[] then (2)
-[] I (3)
-[] another profession (6)
+[MESSAGE-INIT] chose (4)
+[m-explanation] So (1)
+[m-time] then (2)
+[x-experiencer] I (3)
+[target-content] another profession (6) ## ?? warum nicht topic?
 
-[] So (1)
+[IDENTIFICATION] So (1)
 
-[] then (2)
+[TIME] then (2)
 
-[] I (3)
+[IDENTIFICATION] I (3)
 
-[] profession (6)
+[CLASS || ACTIVITY] profession (6) ## ??
 
-[] learned (9)
-[] to pilot airplanes (11)
+[MESSAGE-INIT] learned (9)
+[topic] to pilot airplanes (11)
 
-[] pilot (11)
-[] airplanes (12)
+[UNANCHORED-MOTION] pilot (11)
+[in-motion] airplanes (12)
+[x-causer] I (3) ## Vgl. (161) im manual
 
-[] airplanes (12)
+[CLASS] airplanes (12)
 
 # sent_id = 23
 # text = I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
@@ -1058,33 +1059,34 @@
 24	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	22	obl	_	TokenRange=1931:1933
 25	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1934:1935
 
-[] flown (3)
-[] I (1)
-[] a little (5)
-[] over all parts of the world (8)
+[UNANCHORED-MOTION] flown (3)
+[in-motion] I (1)
+[m-quantity] a little (5)
+[transitory-location] over all parts of the world (8)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] little (5)
+[QUANTITY] little (5)
 
-[] parts (8)
-[] of the world (11)
+[PART-WHOLE] parts (8)
+[whole] of the world (11)
 
-[] world (11)
+[CLASS || IDENTIFICATION] world (11) ## ?? s.o. "nature" ?
 
-[] true (16)
-[] that geography has been very useful to me (22)
+[MODE] true (16)
+[has-mode] that geography has been very useful to me (22)
+[x-identified] it (14) ## ?? Vgl. 5.4 im manual?
 
-[] useful (22)
-[] geography (18)
-[] very (21)
-[] to me (24)
+[MEANS] useful (22)
+[means] geography (18)
+[m-quantity] very (21)
+[x-experiencer] to me (24)
 
-[] geography (18)
+[MESSAGE] geography (18)
 
-[] very (21)
+[QUANTITY] very (21)
 
-[] me (24)
+[IDENTIFICATION] me (24)
 
 # sent_id = 24
 # text = At a glance I can distinguish China from Arizona .
@@ -1099,19 +1101,19 @@
 9	Arizona	Arizona	PROPN	NNP	Number=Sing	6	obl	_	TokenRange=1978:1985
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=1986:1987
 
-[] distinguish (6)
-[] At a glance (3)
-[] I (4)
-[] China (7)
-[] from Arizona (9)
+[COMPARISON] distinguish (6)
+[m-means >> m-time] At a glance (3)
+[x-experiencer] I (4)
+[compared] China (7)
+[reference] from Arizona (9)
 
-[] glance (3)
+[MEANS >> TIME] glance (3)
 
-[] I (4)
+[IDENTIFICATION] I (4)
 
-[] China (7)
+[IDENTIFICATION] China (7)
 
-[] Arizona (9)
+[IDENTIFICATION] Arizona (9)
 
 # sent_id = 25
 # text = If one gets lost in the night , such knowledge is valuable .
@@ -1129,22 +1131,22 @@
 12	valuable	valuable	ADJ	JJ	Degree=Pos	0	root	_	TokenRange=2039:2047
 13	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\r\n|TokenRange=2048:2049
 
-[] valuable (12)
-[] If one gets lost in the night (4)
-[] such knowledge (10)
+[MEANS] valuable (12)
+[m-condition] If one gets lost in the night (4)
+[means] such knowledge (10)
 
-[] lost (4)
-[] one (2)
-[] in the night (7)
+[LOCATION-DEINIT || STATE] lost (4) ## ?? auch ok?
+[has-location || has-state] one (2) ## ??
+[m-time] in the night (7)
 
-[] one (2)
+[CLASS] one (2) ## ?? warum IDENTIFICATION?
 
-[] night (7)
+[TIME] night (7)
 
-[] knowledge (10)
-[] such (9)
+[MESSAGE] knowledge (10)
+[m-quality] such (9)
 
-[] such (9)
+[QUALITY] such (9)
 
 # sent_id = 26
 # text = In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
@@ -1176,46 +1178,49 @@
 26	consequence	consequence	NOUN	NN	Number=Sing	24	nmod	_	TokenRange=2178:2189
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2190:2191
 
-[] had (9)
-[] In the course of this life (3)
-[] I (7)
-[] a great many encounters with a great many people who have been concerned with matters of consequence (13)
+[SCENE] had (9) ## Vgl. 3.10
+[m-time] In the course of this life (3)
+[participant] I (7)
+[scene] a great many encounters with a great many people who have been concerned with matters of consequence (13)
 
-[] course (3)
-[] of this life (6)
+[SCENE >> TIME] course (3) ## ?? warum SCENE?
+[scene >> quantity] of this life (6)
 
-[] life (6)
+[EVENT >> QUANTITY] life (6)
 
-[] I (7)
+[IDENTIFICATION] I (7)
 
-[] encounters (13)
-[] great (11)
-[] many (12)
-[] with a great many people who have been concerned with matters of consequence (18)
+[ACCOMPANIMENT] encounters (13) ## ?? diese Annotation auch ok?
+[m-quantity] great (11)
+[m-quantity] many (12)
+[accompanied] with a great many people who have been concerned with matters of consequence (18)
+[x-accompanier] I (7)
 
-[] great (11)
+[QUANTITY] great (11)
 
-[] many (12)
+[QUANTITY] many (12)
 
-[] people (18)
-[] great (16)
-[] many (17)
-[] who have been concerned with matters of consequence (22)
+[CLASS] people (18)
+[m-quantity] great (16)
+[m-quantity] many (17)
+[m-scene] who have been concerned with matters of consequence (22)
 
-[] great (16)
+[QUANTITY] great (16)
 
-[] many (17)
+[QUANTITY] many (17)
 
-[] concerned (22)
-[] who (19)
-[] with matters of consequence (24)
+[EXPERIENCE] concerned (22) ## ?? diese Annotation auch ok?
+[experiencer] who (19)
+[experienced] with matters of consequence (24)
+[experiencer] people (18)
 
-[] who (19)
+[IDENTIFICATION] who (19)
 
-[] matters (24)
-[] of consequence (26)
+[MESSAGE] matters (24) ## ?? 
+[m-scene] of consequence (26)
 
-[] consequence (26)
+[SEQUENCE >> QUALITY] consequence (26)
+[followed >> has-quality] matters (24)
 
 # sent_id = 27
 # text = I have lived a great deal among grown - ups .
@@ -1228,25 +1233,25 @@
 7	among	among	ADP	IN	_	10	case	_	TokenRange=2219:2224
 8	grown	grown	NOUN	NN	Number=Sing	10	compound	_	TokenRange=2225:2230
 9	-	-	PUNCT	HYPH	_	10	punct	_	TokenRange=2231:2232
-10	ups	up	NOUN	NNS	Number=Plur	6	nmod	_	TokenRange=2233:2236
+10	ups	up	NOUN	NNS	Number=Plur	3	nmod	_	TokenRange=2233:2236
 11	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2237:2238
 
-[] lived (3)
-[] I (1)
-[] a great deal among grown - ups (6)
+[EVENT] lived (3)
+[undergoer] I (1)
+[m-quantity || m-time] a great deal (6) ## ??
+[m-accompanier] among grown - ups (10)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] deal (6)
-[] great (5)
-[] among grown - ups (10)
+[QUANTITY] deal (6)
+[quantity >> m-noncomp] great (5)
 
-[] great (5)
+[QUANTITY >> NONCOMP] great (5)
 
-[] ups (10)
-[] grown (8)
+[CLASS] ups (10)
+[x-noncomp] grown (8) ## ?? s.o.
 
-[] grown (8)
+[NONCOMP] grown (8)
 
 # sent_id = 28
 # text = I have seen them intimately , close at hand .
@@ -1261,22 +1266,23 @@
 9	hand	hand	NOUN	NN	Number=Sing	7	obl	_	TokenRange=2279:2283
 10	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2284:2285
 
-[] seen (3)
-[] I (1)
-[] them (4)
-[] intimately (5)
-[] , close at hand (7)
+[MESSAGE-INIT] seen (3)
+[x-experiencer] I (1)
+[topic] them (4)
+[m-quality] intimately (5)
+[m-location] , close at hand (7) ## ?? warum m-depictive?
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] them (4)
+[IDENTIFICATION] them (4)
 
-[] intimately (5)
+[QUALITY] intimately (5)
 
-[] close (7)
-[] at hand (9)
+[LOCATION] close (7)
+[m-noncomp] at hand (9)
+[has-location] them (4)
 
-[] hand (9)
+[NONCOMP] hand (9)
 
 # sent_id = 29
 # text = And that has n't much improved my opinion of them .
@@ -1292,25 +1298,25 @@
 10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	nmod	_	TokenRange=2332:2336
 11	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=2337:2338
 
-[] improved (6)
-[] that (2)
-[] n't (4)
-[] much (5)
-[] my opinion of them (8)
+[STATE-CHANGE] improved (6)
+[x-causer] that (2)
+[m-mode] n't (4)
+[m-quantity] much (5)
+[has-state] my opinion of them (8)
 
-[] that (2)
+[IDENTIFICATION] that (2)
 
-[] n't (4)
+[MODE] n't (4)
 
-[] much (5)
+[QUANTITY] much (5)
 
-[] opinion (8)
-[] my (7)
-[] of them (10)
+[MESSAGE] opinion (8)
+[x-experiencer] my (7)
+[topic] of them (10)
 
-[] my (7)
+[IDENTIFICATION] my (7)
 
-[] them (10)
+[IDENTIFICATION] them (10)
 
 # sent_id = 30
 # text = Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
@@ -1349,76 +1355,83 @@
 33	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	26	acl:relcl	_	TokenRange=2491:2495
 34	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\r\n|TokenRange=2496:2497
 
-[] tried (18)
-[] Whenever I met one of them who seemed to me at all clear - sighted (3)
-[] I (17)
-[] the experiment of showing him my Drawing Number One , which I have always kept (20)
+[SCENE-INIT] tried (18)
+[m-time] Whenever I met one of them who seemed to me at all clear - sighted (3)
+[x-causer] I (17)
+[target-scene] the experiment of showing him my Drawing Number One , which I have always kept (20)
 
-[] met (3)
-[] Whenever (1)
-[] I (2)
-[] one of them who seemed to me at all clear - sighted (4)
+[ACCOMPANIMENT] met (3) ## ??
+[m-time] Whenever (1)
+[accompanied] I (2)
+[accompanier] one of them who seemed to me at all clear - sighted (4)
 
-[] Whenever (1)
+[TIME] Whenever (1)
 
-[] I (2)
+[IDENTIFICATION] I (2)
 
-[] one (4)
-[] of them (6)
-[] who seemed to me at all clear - sighted (8)
+[PART-WHOLE] one (4)
+[whole] of them (6)
+[m-scene] who seemed to me at all clear - sighted (8)
 
-[] them (6)
+[IDENTIFICATION] them (6)
 
-[] seemed (8)
-[] who (7)
-[] to me (10)
-[] at all clear - sighted (15)
+[MESSAGE] seemed (8)
+[topic] who (7)
+[x-experiencer] to me (10)
+[content] at all clear - sighted (15)
+[topic] one (4)
 
-[] who (7)
+[IDENTIFICATION] who (7)
 
-[] me (10)
+[IDENTIFICATION] me (10)
 
-[] sighted (15)
-[] all (12)
-[] clear (13)
+[MESSAGE >> QUALITY] sighted (15)
+[m-quantity] all (12)
+[m-quality >> m-noncomp] clear (13)
+[x-experiencer >> has-quality] one (4)
+[x-experiencer >> has-quality] who (7)
 
-[] all (12)
+[QUANTITY] all (12)
 
-[] clear (13)
+[QUALITY >> NONCOMP] clear (13)
 
-[] I (17)
+[IDENTIFICATION] I (17)
 
-[] experiment (20)
-[] of showing him my Drawing Number One , which I have always kept (22)
+[SOCIAL-RELATION] experiment (20) ## ?? diese Annotation auch ok?
+[x-identifier] of showing him my Drawing Number One , which I have always kept (22)
+[x-has-social-relation] I (17) ## ??
+[x-social-relation] him (23) ## ??
 
-[] showing (22)
-[] him (23)
-[] my Drawing Number One , which I have always kept (26)
+[MESSAGE-INIT] showing (22)
+[x-experiencer] him (23)
+[topic] my Drawing Number One , which I have always kept (26)
 
-[] him (23)
+[IDENTIFICATION] him (23)
 
-[] Number (26)
-[] my (24)
-[] Drawing (25)
-[] One (27)
-[] which I have always kept (33)
 
-[] my (24)
+[MESSAGE] Drawing (25)
+[x-sender] my (24)
+[m-rank] Number One , (26)
+[m-scene] which I have always kept (33)
 
-[] Drawing (25)
+[IDENTIFICATION] my (24)
 
-[] One (27)
+[RANK] Number (26)
+[rank] One (27)
 
-[] kept (33)
-[] which (29)
-[] I (30)
-[] always (32)
+[RANK] One (27)
 
-[] which (29)
+[POSSESION-CONTINUATION] kept (33)
+[possessed] which (29)
+[initial-possessor] I (30)
+[m-time] always (32)
+[possessed] Drawing (25)
 
-[] I (30)
+[IDENTIFICATION] which (29)
 
-[] always (32)
+[IDENTIFICATION] I (30)
+
+[TIME] always (32)
 
 # sent_id = 31
 # text = I would try to find out , so , if this was a person of true understanding .
@@ -1441,31 +1454,33 @@
 17	understanding	understanding	NOUN	NN	Number=Sing	14	nmod	_	TokenRange=2559:2572
 18	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2573:2574
 
-[] try (3)
-[] I (1)
-[] to find out , so , if this was a person of true understanding (5)
+[SCENE-INIT] try (3)
+[participant] I (1)
+[target-scene] to find out , so , if this was a person of true understanding (5)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] find (5)
-[] out (6)
-[] so (8)
-[] if this was a person of true understanding (14)
+[MESSAGE-INIT] find (5)
+[m-noncomp] out (6)
+[m-means] so (8)
+[target-content] if this was a person of true understanding (14)
+[x-experiencer] I (1)
 
-[] out (6)
+[NONCOMP] out (6)
 
-[] so (8)
+[MEANS] so (8)
 
-[] person (14)
-[] this (11)
-[] of true understanding (17)
+[CLASS] person (14)
+[has-class] this (11)
+[m-quality] of true understanding (17) ## ?? auch ok statt m-scene?
 
-[] this (11)
+[IDENTIFICATION] this (11)
 
-[] understanding (17)
-[] true (16)
+[MESSAGE] understanding (17)
+[m-mode] true (16) ## ??
+[x-experiencer] person (14)
 
-[] true (16)
+[MODE] true (16)
 
 # sent_id = 32
 # text = But , whoever it was , he , or she , would always say : " That is a hat . "
@@ -1492,27 +1507,27 @@
 21	.	.	PUNCT	.	_	14	punct	_	TokenRange=2648:2649
 22	"	"	PUNCT	''	_	14	punct	_	SpacesAfter=\r\n|TokenRange=2650:2651
 
-[] say (14)
-[] whoever it was (3)
-[] he , or she (7)
-[] always (13)
-[] That is a hat (20)
+[MESSAGE-INIT] say (14)
+[m-condition] whoever it was (3)
+[x-sender] he , or she (7)
+[m-time] always (13)
+[target-content] That is a hat (20)
 
-[] whoever (3)
-[] it (4)
+[IDENTIFICATION] whoever (3)
+[identified] it (4)
 
-[] it (4)
+[IDENTIFICATION] it (4)
 
-[] he (7)
+[IDENTIFICATION] he (7)
 
-[] she (10)
+[IDENTIFICATION] she (10)
 
-[] always (13)
+[TIME] always (13)
 
-[] hat (20)
-[] That (17)
+[CLASS] hat (20)
+[has-class] That (17)
 
-[] That (17)
+[IDENTIFICATION] That (17)
 
 # sent_id = 33
 # text = Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
@@ -1536,32 +1551,32 @@
 18	stars	star	NOUN	NNS	Number=Plur	11	conj	_	TokenRange=2742:2747
 19	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=2748:2749
 
-[] talk (5)
-[] Then (1)
-[] I (2)
-[] never (4)
-[] to that person (8)
-[] about boa constrictors , or primeval forests , or stars (11)
+[MESSAGE-INIT] talk (5)
+[m-followed] Then (1)
+[x-sender] I (2)
+[m-time] never (4)
+[x-experiencer] to that person (8)
+[topic] about boa constrictors , or primeval forests , or stars (11) ## warum nicht target-content?? 
 
-[] Then (1)
+[SEQUENCE] Then (1)
 
-[] I (2)
+[IDENTIFICATION] I (2)
 
-[] never (4)
+[TIME-NEG] never (4)
 
-[] person (8)
+[CLASS] person (8)
 
-[] constrictors (11)
-[] boa (10)
+[CLASS] constrictors (11)
+[x-noncomp] boa (10) ## ??
 
-[] boa (10)
+[NONCOMP] boa (10)
 
-[] forests (15)
-[] primeval (14)
+[CLASS] forests (15)
+[m-initial-time >> m-noncomp] primeval (14)
 
-[] primeval (14)
+[TIME >> NONCOMP] primeval (14)
 
-[] stars (18)
+[CLASS] stars (18)
 
 # sent_id = 34
 # text = I would bring myself down to his level .
@@ -1575,22 +1590,23 @@
 8	level	level	NOUN	NN	Number=Sing	5	obl	_	TokenRange=2784:2789
 9	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2790:2791
 
-[] bring (3)
-[] I (1)
-[] myself (4)
-[] down to his level (5)
+[LOCATION-CHANGE >> STATE-CHANGE] bring (3) ## ?? diese Annotation auch ok?
+[x-causer] I (1)
+[has-location >> has-state] myself (4)
+[target-location >> target-state] down to his level (5) ## ??
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] myself (4)
+[IDENTIFICATION] myself (4)
 
-[] down (5)
-[] to his level (8)
+[LOCATION-CHANGE >> STATE-CHANGE] down (5) ## ?? auch ok?
+[target-location >> target-state] to his level (8)
+[has-location >> has-state] myself (4) ## ?? warum nicht x-?
 
-[] level (8)
-[] his (7)
+[LOCATION >> QUALITY] level (8) ## ?? auch ok?
+[has-location >> has-quality] his (7)
 
-[] his (7)
+[IDENTIFICATION] his (7)
 
 # sent_id = 35
 # text = I would talk to him about bridge , and golf , and politics , and neckties .
@@ -1612,22 +1628,22 @@
 16	neckties	neckty	NOUN	NNS	Number=Plur	7	conj	_	TokenRange=2858:2866
 17	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2867:2868
 
-[] talk (3)
-[] I (1)
-[] to him (5)
-[] about bridge , and golf , and politics , and neckties (7)
+[MESSAGE-INIT] talk (3)
+[x-sender] I (1)
+[x-experiencer] to him (5)
+[topic] about bridge , and golf , and politics , and neckties (7)
 
-[] I (1)
+[IDENTIFICATION] I (1)
 
-[] him (5)
+[IDENTIFICATION] him (5)
 
-[] bridge (7)
+[ACTIVITY] bridge (7)
 
-[] golf (10)
+[ACTIVITY] golf (10)
 
-[] politics (13)
+[ACTIVITY] politics (13) ## ??
 
-[] neckties (16)
+[CLASS] neckties (16)
 
 # sent_id = 36
 # text = And the grown - up would be greatly pleased to have met such a sensible man .
@@ -1649,25 +1665,26 @@
 16	man	man	NOUN	NN	Number=Sing	12	obj	_	TokenRange=2942:2945
 17	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2946:2947
 
-[] pleased (9)
-[] the grown - up (5)
-[] greatly (8)
-[] to have met such a sensible man (12)
+[EXPERIENCE] pleased (9)
+[experiencer] the grown - up (5)
+[m-quality || m-quantity] greatly (8)
+[experienced] to have met such a sensible man (12)
 
-[] up (5)
-[] grown (3)
+[CLASS] up (5)
+[x-noncomp] grown (3) ## ??
 
-[] grown (3)
+[NONCOMP] grown (3)
 
-[] greatly (8)
+[QUALITY || QUANTITY] greatly (8)
 
-[] met (12)
-[] such a sensible man (16)
+[ACCOMPANIMENT] met (12) ## ??
+[accompanier] such a sensible man (16)
+[accompanied] the grown - up (5)
 
-[] man (16)
-[] sensible (15)
+[CLASS] man (16)
+[m-quality] sensible (15)
 
-[] sensible (15)
+[QUALITY] sensible (15)
 
 # sent_id = 37
 # text = Chapter 2 .
