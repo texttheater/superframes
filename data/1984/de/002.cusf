@@ -45,13 +45,13 @@
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-INIT] lehnte (2)
-[has-location] Er (1)
-[x-noncomp] sich (3)
+[x-causer >> has-location] Er (1)
+[has-location >> x-noncomp] sich (3)
 [target-location] zurück (4)
 
 [IDENTIFICATION] Er (1)
 
-[NONCOMP] sich (3)
+[IDENTIFICATION >> NONCOMP] sich (3)
 
 # sent_id = 104
 # text = Ein Gefühl völliger Hilflosigkeit hatte sich seiner bemächtigt .
@@ -252,7 +252,7 @@
 [m-quality] genau (15)
 
 [TIME] Datum (9)
-[??? ] auf ein oder zwei Jahre (14)
+[??? m-quantity] auf ein oder zwei Jahre (14)
 
 [TIME] Jahre (14)
 [m-quantity] ein oder zwei (11)
@@ -353,7 +353,7 @@
 [x-location] auf der ersten Seite (13)
 [iniatial-location >> topic] um das zweifelhafte Datum (9)
 
-[MESSAGE] Denken (2)
+[??? MESSAGE] Denken (2)
 [x-experiencer] Sein (1)
 
 [IDENTIFICATION] Sein (1)
@@ -372,13 +372,13 @@
 
 [HITTING >> MESSAGE] prallte (15)
 [m-time] dann (16)
-[???] jäh (17)
+[m-mode] jäh (17)
 [hit >> topic] mit dem Wort Zwiegedanke aus der Neusprache (20)
 [m-noncomp] zusammen (25)
 
 [TIME] dann (16)
 
-[???] jäh (17)
+[MODE] jäh (17)
 
 [MESSAGE] Wort (20)
 [content] Zwiegedanke (21)
@@ -527,13 +527,14 @@
 
 [MESSAGE] Gehör (13)
 
-[??? QUALITY-CHANGE] geartet (21)
-[??? has-quality] sie (18)
-[??? m-quality] anders (20)
+[QUALITY-CHANGE] geartet (21)
+[has-quality] sie (18)
+[m-scene] anders (20)
 
 [IDENTIFICATION] sie (18)
 
-[??? QUALITY || COMPARISON] anders (20)
+[COMPARISON] anders (20)
+[compared] geartet (21)
 
 [MESSAGE-NEG] bedeutungslos (27)
 [??? m-condition || m-result] dann (23)
@@ -591,19 +592,19 @@
 7	angestimmt	anstimmen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] angestimmt (7)
-[] Der Televisor (2)
-[] jetzt (4)
-[] schmetternde Militärmusik (6)
+[MESSAGE-INIT] angestimmt (7)
+[x-sender] Der Televisor (2)
+[m-time] jetzt (4)
+[target-content] schmetternde Militärmusik (6)
 
-[] Televisor (2)
+[CLASS] Televisor (2)
 
-[] jetzt (4)
+[TIME] jetzt (4)
 
-[] Militärmusik (6)
-[] schmetternde (5)
+[MESSAGE] Militärmusik (6)
+[m-quality] schmetternde (5)
 
-[] schmetternde (5)
+[QUALITY] schmetternde (5)
 
 # sent_id = 117
 # text = Es war seltsam , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen .
@@ -636,44 +637,44 @@
 27	wollen	wollen	AUX	VMINF	VerbForm=Inf	26	aux	_	_
 28	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] seltsam (3)
-[] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
+[??? MESSAGE wie "ratsam" || SITUATION] seltsam (3)
+[??? content ] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
 
-[] verloren (13)
-[] er (6)
-[] nicht (7)
-[] nur (8)
-[] die Gabe der Mitteilung (10)
+[???POSSESSION-DEINIT >> ???MESSAGE] verloren (13)
+[initial-possessor] er (6)
+[m-mode] nicht (7)
+[m-mode] nur (8)
+[possessed] die Gabe der Mitteilung (10)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
-[] nicht (7)
+[MODE] nicht (7)
 
-[] nur (8)
+[MODE] nur (8)
 
-[] Gabe (10)
-[] der Mitteilung (12)
+[POSSESSION] Gabe (10)
+[possessed] der Mitteilung (12)
 
-[] Mitteilung (12)
+[MESSAGE] Mitteilung (12)
 
-[] vergessen (17)
-[] sogar (16)
+[MESSAGE-DEINIT] vergessen (17)
+[m-mode] sogar (16)
 
-[] sogar (16)
+[MODE] sogar (16)
 
-[] schien (20)
-[] , was er ursprünglich hatte sagen wollen (26)
+[MESSAGE] schien (20)
+[content] , was er ursprünglich hatte sagen wollen (26)
 
-[] sagen (26)
-[] was (22)
-[] er (23)
-[] ursprünglich (24)
+[MESSAGE-INIT] sagen (26)
+[target-content] was (22)
+[x-sender] er (23)
+[m-time] ursprünglich (24)
 
-[] was (22)
+[IDENTIFICATION] was (22)
 
-[] er (23)
+[IDENTIFICATION] er (23)
 
-[] ursprünglich (24)
+[TIME] ursprünglich (24)
 
 # sent_id = 118
 # text = Seit Wochen hatte er sich auf diesen Augenblick vorbereitet , und es war ihm nie in den Sinn gekommen , dass dazu noch etwas anderes nötig sein könnte als Mut .
@@ -709,51 +710,52 @@
 30	Mut	Mut	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	26	nmod	_	_
 31	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] vorbereitet (9)
-[] Seit Wochen (2)
-[] er (4)
+[SCENE-INIT] vorbereitet (9)
+[m-time] Seit Wochen (2)
+[x-causer] er (4)
+[participant] sich (5)
+[target-scene] auf diesen Augenblick (8)
+
+[TIME] Wochen (2)
+
+[IDENTIFICATION] er (4)
+
+[IDENTIFICATION] sich (5)
+
+[TIME] Augenblick (8)
 [] sich (5)
-[] auf diesen Augenblick (8)
 
-[] Wochen (2)
+[MESSAGE] gekommen (19)
+[x-noncomp] es (12)
+[x-experiencer] ihm (14)
+[m-time] nie (15)
+[x-noncomp] in den Sinn , dass dazu noch etwas anderes nötig sein könnte als Mut (18)
 
-[] er (4)
+[NONCOMP] es (12)
 
-[] sich (5)
+[IDENTIFICATION] ihm (14)
 
-[] Augenblick (8)
+[TIME-NEG] nie (15)
 
-[] gekommen (19)
-[] es (12)
-[] ihm (14)
-[] nie (15)
-[] in den Sinn , dass dazu noch etwas anderes nötig sein könnte als Mut (18)
+[MESSAGE] Sinn (18)
+[content] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
 
-[] es (12)
+[???SCENE-NECESSITY] nötig (26)
+[???] dazu (22)
+[???] noch etwas (24)
+[??? m-scene] anderes (25)
+[???] als Mut (30)
 
-[] ihm (14)
+[IDENTIFICATION] dazu (22)
 
-[] nie (15)
+[???] etwas (24)
+[???] noch (23)
 
-[] Sinn (18)
-[] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
+[???] noch (23)
 
-[] nötig (26)
-[] dazu (22)
-[] noch etwas (24)
-[] anderes (25)
-[] als Mut (30)
+[???] anderes (25)
 
-[] dazu (22)
-
-[] etwas (24)
-[] noch (23)
-
-[] noch (23)
-
-[] anderes (25)
-
-[] Mut (30)
+[MESSAGE] Mut (30)
 
 # sent_id = 119
 # text = Die Niederschrift als solche hatte er für leicht gehalten .
@@ -768,19 +770,20 @@
 9	gehalten	halten	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] gehalten (9)
-[] Die Niederschrift als solche (2)
-[] er (6)
-[] für leicht (8)
+[MESSAGE] gehalten (9)
+[topic] Die Niederschrift als solche (2)
+[x-experiencer] er (6)
+[content] für leicht (8)
 
-[] Niederschrift (2)
-[] als solche (4)
+[MESSAGE] Niederschrift (2)
+[m-reference] als solche (4)
 
-[] solche (4)
+[??? QUALITY] solche (4)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
-[] leicht (8)
+[QUALITY] leicht (8)
+[has-quality] Die Niederschrift als solche (2)
 
 # sent_id = 120
 # text = Brauchte er doch nichts weiter zu tun , als die endlosen hastigen Selbstgespräche zu Papier zu bringen , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren .
@@ -814,52 +817,53 @@
 28	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	aux:pass	_	_
 29	.	.	PUNCT	$.	_	1	punct	_	_
 
-[] Brauchte (1)
-[] er (2)
-[] doch (3)
-[] nichts (4)
-[] weiter zu tun (7)
-[] , als die endlosen hastigen Selbstgespräche zu Papier zu bringen , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (17)
+[SCENE-NECESSITY] Brauchte (1)
+[participant] er (2)
+[m-mode] doch (3)
+[??? Syntax?] nichts (4)
+[???] weiter zu tun (7)
+[???] , als die endlosen hastigen Selbstgespräche zu Papier zu bringen , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (17)
 
-[] er (2)
+[IDENTIFICATION] er (2)
 
-[] doch (3)
+[MODE] doch (3)
 
-[] nichts (4)
+[CLASS] nichts (4)
 
-[] tun (7)
+[ACTIVITY] tun (7)
 
-[] bringen (17)
-[] die endlosen hastigen Selbstgespräche , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (13)
-[] zu Papier (15)
+[MESSAGE-INIT] bringen (17) # Idiom?
+[target-content] die endlosen hastigen Selbstgespräche , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (13)
+[x-noncomp] zu Papier (15)
 
-[] Selbstgespräche (13)
-[] endlosen (11)
-[] hastigen (12)
-[] , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (27)
+[MESSAGE] Selbstgespräche (13)
+[m-quality] endlosen (11)
+[m-quality] hastigen (12)
+[m-scene] , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (27)
 
-[] endlosen (11)
+[QUALITY-NEG >> QUALITY] endlosen (11)
 
-[] hastigen (12)
+[QUALITY] hastigen (12)
 
-[] geschossen (27)
-[] die (19)
+[LOCATION-INIT >> MESSAGE-INIT] geschossen (27)
+[has-location] die (19)
+[??? ] buchstäblich (21)
+[m-time] seit Jahren (23)
 [] ihm (20)
-[] buchstäblich (21)
-[] seit Jahren (23)
 [] durch den Kopf (26)
+[] Selbstgespräche (13)
 
-[] die (19)
+[IDENTIFICATION] die (19)
 
-[] ihm (20)
+[IDENTIFICATION] ihm (20)
 
-[] buchstäblich (21)
+[???] buchstäblich (21)
 
-[] Jahren (23)
+[TIME] Jahren (23)
 
 [] Kopf (26)
 
-[] Papier (15)
+[MESSAGE-INIT] Papier (15)
 
 # sent_id = 121
 # text = In diesem Augenblick jedoch war sogar das Selbstgespräch verstummt .
@@ -874,19 +878,19 @@
 9	verstummt	verstummen	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] verstummt (9)
-[] In diesem Augenblick (3)
-[] jedoch (4)
-[] sogar (6)
-[] das Selbstgespräch (8)
+[STATE] verstummt (9)
+[m-time] In diesem Augenblick (3)
+[m-mode] jedoch (4)
+[m-mode] sogar (6)
+[has-state] das Selbstgespräch (8)
 
-[] Augenblick (3)
+[TIME] Augenblick (3)
 
-[] jedoch (4)
+[MODE] jedoch (4)
 
-[] sogar (6)
+[MODE] sogar (6)
 
-[] Selbstgespräch (8)
+[MESSAGE] Selbstgespräch (8)
 
 # sent_id = 122
 # text = Außerdem hatte das Ekzem an seinen Krampfadern unerträglich zu jucken angefangen .
@@ -903,25 +907,26 @@
 11	angefangen	anfangen	VERB	VVPP	Verbform=Part	0	root	_	_
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] angefangen (11)
-[] Außerdem (1)
-[] das Ekzem (4)
-[] an seinen Krampfadern (7)
-[] unerträglich (8)
-[] zu jucken (10)
+[SCENE-INIT] angefangen (11)
+[??? ] Außerdem (1)
+[participant] das Ekzem (4)
+[m-location] an seinen Krampfadern (7)
+[m-quality] unerträglich (8)
+[target-scene] zu jucken (10)
 
-[] Außerdem (1)
+[???] Außerdem (1)
 
-[] Ekzem (4)
+[CLASS] Ekzem (4)
 
-[] Krampfadern (7)
-[] seinen (6)
+[CLASS] Krampfadern (7)
+[m-whole] seinen (6)
 
-[] seinen (6)
+[IDENTIFICATION] seinen (6)
 
-[] unerträglich (8)
+[QUALITY-NEG >> QUALITY] unerträglich (8)
 
-[] jucken (10)
+[??? MESSAGE || EXPERIENCE || EVENT] jucken (10)
+[??? undergoer] das Ekzem (4)
 
 # sent_id = 123
 # text = Er wagte nicht , daran zu kratzen , denn dann entzündete es sich immer .
@@ -941,33 +946,34 @@
 14	immer	immer	ADV	ADV	_	11	advmod	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wagte (2)
+[SCENE-INIT] wagte (2)
+[participant] Er (1)
+[m-mode] nicht (3)
+[target-scene] , daran zu kratzen (7)
+
+[IDENTIFICATION] Er (1)
+
+[MODE] nicht (3)
+
+[??? EVENT] kratzen (7)
+[undergoer] daran (5)
 [] Er (1)
-[] nicht (3)
-[] , daran zu kratzen (7)
 
-[] Er (1)
+[IDENTIFICATION] daran (5)
 
-[] nicht (3)
+[??? STATE-CHANGE] entzündete (11)
+[m-time] dann (10)
+[??? has-state] es (12)
+[??? x-noncomp] sich (13)
+[m-time] immer (14)
 
-[] kratzen (7)
-[] daran (5)
+[TIME] dann (10)
 
-[] daran (5)
+[IDENTIFICATION] es (12)
 
-[] entzündete (11)
-[] dann (10)
-[] es (12)
-[] sich (13)
-[] immer (14)
+[??? NONCOMP] sich (13)
 
-[] dann (10)
-
-[] es (12)
-
-[] sich (13)
-
-[] immer (14)
+[TIME] immer (14)
 
 # sent_id = 124
 # text = Die Sekunden verstrichen .
@@ -976,10 +982,10 @@
 3	verstrichen	verstreichen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] verstrichen (3)
-[] Die Sekunden (2)
+[??? LOCATION-CHANGE >> TIME-CHANGE] verstrichen (3)
+[has-location >> ???] Die Sekunden (2)
 
-[] Sekunden (2)
+[??? TIME] Sekunden (2)
 
 # sent_id = 125
 # text = Nichts drang in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte .
@@ -1019,58 +1025,60 @@
 34	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	aux	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] drang (2)
-[] Nichts (1)
-[] in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (5)
+[LOCATION-INIT >> SCENE-INIT] drang (2)
+[has-location >> participant] Nichts (1)
+[target-location >> target-scene] in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (5)
 
-[] Nichts (1)
+[CLASS] Nichts (1)
 
-[] Bewusstsein (5)
-[] sein (4)
-[] als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (9)
+[MESSAGE] Bewusstsein (5)
+[x-experiencer] sein (4)
+[topic] als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (9)
 
-[] sein (4)
+[IDENTIFICATION] sein (4)
 
-[] Weiße (9)
-[] unbeschriebene (8)
-[] des vor ihm liegenden Blattes (14)
+[QUALITY] Weiße (9)
+[m-quality] unbeschriebene (8)
+[has-quality] des vor ihm liegenden Blattes (14)
 
-[] unbeschriebene (8)
+[QUALITY-NEG >> QUALITY] unbeschriebene (8)
 
-[] Blattes (14)
-[] vor ihm liegenden (13)
+[CLASS] Blattes (14)
+[m-scene] vor ihm liegenden (13)
 
-[] liegenden (13)
-[] vor ihm (12)
+[LOCATION-CONTINUATION] liegenden (13)
+[iniatial-location] vor ihm (12)
+[has-location] Blattes (14)
 
-[] ihm (12)
+[IDENTIFICATION] ihm (12)
 
-[] Hautjucken (17)
-[] über seinem Knöchel (20)
+[??? EVENT] Hautjucken (17)
+[m-location] über seinem Knöchel (20)
 
-[] Knöchel (20)
-[] seinem (19)
+[CLASS] Knöchel (20)
+[m-whole] seinem (19)
 
-[] seinem (19)
+[IDENTIFICATION] seinem (19)
 
-[] Musik (24)
-[] schmetternde (23)
+[MESSAGE] Musik (24)
+[m-quality] schmetternde (23)
 
-[] schmetternde (23)
+[QUALITY] schmetternde (23)
 
-[] Benebeltheit (28)
-[] leise (27)
-[] , die der Gin verursacht hatte (33)
+[??? EVENT || EXPERIENCE || MESSAGE] Benebeltheit (28)
+[m-state] leise (27)
+[m-scene] , die der Gin verursacht hatte (33)
 
-[] leise (27)
+[STATE] leise (27)
 
-[] verursacht (33)
-[] die (30)
-[] der Gin (32)
+[CAUSATION] verursacht (33)
+[result] die (30)
+[causer] der Gin (32)
+[result] Benebeltheit (28)
 
-[] die (30)
+[IDENTIFICATION] die (30)
 
-[] Gin (32)
+[CLASS] Gin (32)
 
 # sent_id = 126
 # text = Plötzlich begann er überstürzt zu schreiben , ohne recht zu wissen , was er zu Papier brachte .
