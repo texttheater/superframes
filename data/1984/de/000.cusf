@@ -2361,7 +2361,7 @@
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Neut|Number=Plur|PronType=Dem	6	det	_	_
 5	langen	lang	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Plur	6	amod	_	_
 6	Reihen	Reihe	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	14	nsubj	_	_
-7	heruntergekommen	herunterkommen	ADJ	ADJD	_	14	advmod	_	_
+7	heruntergekommen	herunterkommen	ADJ	ADJD	_	8	xcomp	_	_
 8	aussehender	aussehend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	9	amod	_	_
 9	Häuser	Haus	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	6	nmod	_	_
 10	aus	aus	ADP	APPR	_	13	case	_	_
@@ -2405,8 +2405,7 @@
 [LOCATION-CONTINUATION] gestanden (14)
 [initial-location] da (2)
 [m-time] immer (3)
-[has-location] diese langen Reihen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
-[m-quality] heruntergekommen (7)
+[has-location] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
 [m-time] , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten (45)
 
 [LOCATION] da (2)
@@ -2415,17 +2414,18 @@
 
 [PART-WHOLE] Reihen (6)
 [m-quality] langen (5)
-[part] aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
+[part] heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
 
 [QUALITY] langen (5)
 
 [CLASS] Häuser (9)
 [m-time] aus dem neunzehnten Jahrhundert (13)
 [m-scene] , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (20)
-[m-scene] aussehender (8)
+[m-scene] heruntergekommen aussehender (8)
 
 [MESSAGE] aussehender (8)
 [topic] Häuser (9)
+[content] heruntergekommen (7)
 
 [TIME] Jahrhundert (13)
 [m-rank] neunzehnten (12)
@@ -2467,6 +2467,7 @@
 [CLASS] Wellblech (31)
 
 [QUALITY] heruntergekommen (7)
+[has-quality] Häuser (9)
 
 [LOCATION-INIT] sackten (45)
 [has-location] ihre schiefen Gartenmauern (38)
@@ -2805,17 +2806,19 @@
 [CLASS] Betonbau (9)
 [x-identified] Es (1)
 [m-quality] riesiger (4)
-[m-quality] pyramidenartiger , weiß schimmernder (5)
+[m-scene] pyramidenartiger , weiß schimmernder (5)
 [m-location] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
 
 [IDENTIFICATION] Es (1)
 
 [QUALITY] riesiger (4)
 
-[QUALITY] pyramidenartiger (5)
+[COMPARISON >> QUALITY] pyramidenartiger (5)
+[compared >> has-quality] Betonbau (9)
 
 [QUALITY] schimmernder (8)
 [m-quality] weiß (7)
+[has-quality] Betonbau (9)
 
 [QUALITY] weiß (7)
 
