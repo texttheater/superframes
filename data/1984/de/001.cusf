@@ -993,9 +993,9 @@
 3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	2	iobj	_	_
 4	fast	fast	ADV	ADV	_	6	advmod	_	_
 5	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Teetasse	Teetasse	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	obj	_	_
+6	Teetasse	Teetasse	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	7	obj	_	_
 7	voll	voll	ADJ	ADJD	_	2	advmod	_	_
-8	davon	davon	ADP	PROAV	PronType=Dem	2	advmod	_	_
+8	davon	davon	ADP	PROAV	PronType=Dem	7	advmod	_	_
 9	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 10	,	,	PUNCT	$,	_	11	punct	_	_
 11	stellte	stellen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
@@ -1019,21 +1019,21 @@
 [LOCATION-INIT] goss (2)
 [x-causer] Winston (1)
 [x-experiencer] sich (3)
-[] fast eine Teetasse (6) # TODO ?
-[has-location] davon (8)
 [m-noncomp] ein (9)
-[] voll (7)
+[has-location] fast eine Teetasse voll davon (7)
 
 [] Winston (1)
 
 [] sich (3)
 
-[] Teetasse (6)
-[] fast (4)
+[QUANTITY] voll (7)
+[quantity] fast eine Teetasse (6)
+[has-quantity] davon (8)
+
+[CLASS >> QUANTITY] Teetasse (6)
+[m-quantity] fast (4)
 
 [] fast (4)
-
-[] voll (7)
 
 [] davon (8)
 
@@ -1096,16 +1096,16 @@
 
 [] krebsrot (5)
 
-[] trat (11)
-[] das Wasser (10)
+[LOCATION-INIT >> STATE-CHANGE] trat (11)
+[has-location >> x-noncomp] das Wasser (10)
+[target-location >> has-state] ihm (12)
+[x-attribute >> x-noncomp] in die Augen (15)
+
+[CLASS >> NONCOMP] Wasser (10)
+
 [] ihm (12)
-[] in die Augen (15)
 
-[] Wasser (10)
-
-[] ihm (12)
-
-[] Augen (15)
+[CLASS >> NONCOMP] Augen (15) # TODO NONCOMP vs. Hauptframe
 
 # sent_id = 70
 # text = Das Zeug schmeckte wie Salpetersäure , und man hatte beim Herunterschlucken das Gefühl , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen .
@@ -1275,13 +1275,13 @@
 [CLASS] Victory-Zigaretten (12)
 
 [] hielt (16)
-[] unvorsichtigerweise (15)
+[m-quality] unvorsichtigerweise (15)
 [] er (17)
 [] sie (18)
 [] senkrecht (19)
 [] , worauf der Tabak heraus auf den Fußboden rieselte (28)
 
-[] unvorsichtigerweise (15)
+[QUALITY] unvorsichtigerweise (15)
 
 [] er (17)
 
@@ -1508,12 +1508,13 @@
 28	.	.	PUNCT	$.	_	27	punct	_	_
 
 [] eingelassen (27)
-[] Statt wie üblich (3)
+[m-scene] Statt wie üblich (3)
 [] an der kürzeren Wand , von wo aus er den ganzen Raum beherrscht hätte , (7)
 [] er (20)
 [] an der Längswand gegenüber dem Fenster (23)
 
-[] üblich (3)
+[SCENE-CONTINUATION] üblich (3) # TODO HABIT?
+[initial-scene] eingelassen (27)
 
 [] Wand (7)
 [] kürzeren (6)
