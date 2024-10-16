@@ -306,6 +306,33 @@ them as modifiers: \rl{m-}.
 
 \ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
 
+Adjectival and adverbial modification is characterized by the syntactic modifier acting as a predicate, with the syntactic modifiee as an argument.
+We label such modifier dependencies \rl{m-scene} (cf. Section~\ref{sec:SCENE}) and add a reverse dependency with the corresponding role label.
+
+\ex.\dep{Ich *spiele#ACTIVITY*__topic **lieber#MESSAGE**_m-scene Schach}
+
+\ex.\dep{Der ist **sowieso#CONDITION**_m-scene *kaputt#STATE*__has-condition}
+
+\ex.\dep{Sie *sprangen#LOCATION-INIT*__asserted des Regens__conceded **ungeachtet#CONCESSION**_m-scene nach draußen}
+
+\ex.\dep{Kim war **unvermindert#QUANTITY-CONTINUATION**_m-scene *fröhlich#MESSAGE*__has-quantity}
+
+If arg2 has the same name as the frame, this structure can be abbreviated to
+just use that as a modifier role instead of \rl{m-scene} and a backlink. For
+example, the following pairs are equivalent:
+
+\ex.
+\a.\dep{a **red#QUALITY**_m-scene *bucket#CLASS*__has-quality}
+\b.\dep{a **red#QUALITY**_m-quality *bucket#CLASS*}
+
+\ex.
+\a.\dep{The water is **very#QUANTITY**_m-scene *cold#STATE*__has-quantity}
+\b.\dep{The water is **very#QUANTITY**_m-quantity *cold#STATE*}
+
+\ex.
+\a.\dep{Kim *kommt#LOCATION-INIT*__has-time **erstmals#TIME**_m-scene mit Sandy}
+\b.\dep{Kim *kommt#LOCATION-INIT* **erstmals#TIME**_m-time mit Sandy}
+
 
 \newpage\subsection{Nonverbal Predicates}
 
@@ -1693,13 +1720,6 @@ but for now we have to live with these issues.
 
 
 \newpage\section{TODO}
-
-A whole section on sentence adverbs: lieber (MESSAGE), sowieso (CONDITION),
-ungeachtet (CONCESSION), erstmals (TIME), unvermindert (QUANTITY-CONTINUATION)
-
-Speaker-oriented adverbs: MESSAGE? erstaunlicherweise, geheimnisvollerweise,
-glücklicherweise, möglicherweise, notwendigerweise, tragischerweise,
-unglaublicherweise (MESSAGE-PREVENTION?), unglücklicherweise, zweckmäßigerweise?
 
 codify the general principle somewhere: if superframe and ARG1 have the same
 name (quasi-unary relations), we can just use m-rel. Otherwise, use m-scene.
