@@ -48,11 +48,11 @@
 [m-time] Once when I was six years old (7)
 [x-experiencer] I (8)
 [topic] a magnificent picture (12)
-[x-location] in a book , called True Stories from Nature , about the primeval forest (15) ## ?? warum nicht m-location?
+[x-location] in a book , called True Stories from Nature , about the primeval forest (15)
 
 [STATE] old (7)
 [m-time] Once (1)
-[m-has-time] when (2) ## ?? wie ergibt sich das Label?
+[m-has-time] when (2) # # ?? wie ergibt sich das Label?
 [has-state] I (3)
 [x-quantity] six years (6)
 
@@ -63,7 +63,7 @@
 [IDENTIFICATION] I (3)
 
 [TIME] years (6)
-[m-quantity] six (5) ## ?? warum nicht x-quantity?
+[m-quantity] six (5)
 
 [QUANTITY] six (5)
 
@@ -75,23 +75,23 @@
 [QUALITY] magnificent (11)
 
 [MESSAGE] book (15)
-[m-scene] called True Stories from Nature (17) ## relative clause
+[m-scene] called True Stories from Nature (17) # # relative clause
 [topic] about the primeval forest (26)
 
 [IDENTIFICATION] called (17)
 [identifier] True Stories from Nature (19)
-[identified] book (15)  ## ?? diese Kante wird bei IDENTIFICATION ggf. hinzugefügt, oder?
+[identified] book (15)
 
 [MESSAGE] Stories (19)
 [m-mode] True (18)
-[x-initial-location || topic] from Nature (21) ## ?? diese Annotation auch ok?
+[x-initial-location || topic] from Nature (21) # # ?? diese Annotation auch ok?
 
 [MODE] True (18)
 
 [IDENTIFICATION] Nature (21)
 
 [CLASS] forest (26)
-[m-initial-time >> m-noncomp] primeval (25) ## ?? in github abweichend vom manual "m-quality"/"m-time"
+[m-initial-time >> m-noncomp] primeval (25) # # ?? in github abweichend vom manual "m-quality"/"m-time"
 
 [TIME >> NONCOMP] primeval (25)
 
@@ -120,19 +120,19 @@
 
 [IDENTIFICATION] It (1)
 
-[CLASS] constrictor (8) ## ??
-[x-noncomp] boa (7) ## ??
+[CLASS] constrictor (8) # # ??
+[x-noncomp] boa (7) # # ??
 [m-scene] in the act of swallowing an animal (11)
 
-[NONCOMP] boa (7) ## ??
+[NONCOMP] boa (7) # # ??
 
 [SCENE] act (11)
 [scene] of swallowing an animal (13)
-[participant] constrictor (8) ## siehe manual -> SCENE "participant [...] extra dependency link"
+[participant] constrictor (8)
 
 [INGESTION] swallowing (13)
 [ingested] an animal (15)
-[ingester] constrictor (8) ## siehe nonlocal dependencies
+[ingester] constrictor (8)
 
 [CLASS] animal (15)
 
@@ -176,37 +176,37 @@
 17	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	TokenRange=339:341
 18	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=342:343
 
-[MESSAGE-INIT] said (5) ## ?? diese Annotation auch ok, wie im manual? 
-[x-sender] In the book (3) ## siehe Bsp. (175) im manual
+[MESSAGE-INIT] said (5) # # ?? diese Annotation auch ok, wie im manual? 
+[x-sender] In the book (3) # # siehe Bsp. (175) im manual
 [x-noncomp] it (4)
-[target-content] Boa constrictors swallow their prey whole , without chewing it (10) ## ?? diese Annotation auch ok, wie im manual?
+[target-content] Boa constrictors swallow their prey whole , without chewing it (10) # # Vgl. manual Bsp (143)
 
 [MESSAGE] book (3)
 
 [NONCOMP] it (4)
 
 [INGESTION] swallow (10)
-[ingestor] Boa constrictors (9)
+[ingester] Boa constrictors (9)
 [ingested] their prey (12)
-[m-depictive || m-quantity] whole (13) ## ?? diese Annotation auch ok?
-[m-exception] without chewing it (16) ## ?? diese Annotation auch ok? Warum m-follows und nicht m-followed?
+[m-depictive || m-quantity] whole (13) # # ?? diese Annotation auch ok?
+[m-exception] without chewing it (16) # # ?? diese Annotation auch ok? Warum m-follows und nicht m-followed?
 
-[CLASS] constrictors (9) ## ??
-[x-noncomp] Boa (8) ## ??
+[CLASS] constrictors (9) # # ??
+[x-noncomp] Boa (8) # # ??
 
-[NONCOMP] Boa (8) ## ??
+[NONCOMP] Boa (8) # # ??
 
 [SOCIAL-RELATION] prey (12)
 [has-social-relation] their (11)
 
 [IDENTIFICATION] their (11)
 
-[STATE] whole (13) ## ???? vgl. Bsp. (278) im manual
-[has-state] prey (12) ## ?? woher kommt diese Kante?
+[STATE] whole (13) # # Vgl. (278) im manual
+[has-state] prey (12) # # manuell hinzugefügte Kante
 
 [STATE-CHANGE] chewing (16)
-[has-state] it (17) 
-[x-causer] constrictors (9) ## ?? warum wird diese Kante entfernt? Vgl. (280) im manual
+[has-state] it (17)
+[x-causer] constrictors (9) # # manuell hinzugefügte Kante, Vgl. manual (280)
 
 [IDENTIFICATION] it (17)
 
@@ -249,8 +249,8 @@
 35	jungle	jungle	NOUN	NN	Number=Sing	32	nmod	_	TokenRange=510:516
 36	.	.	PUNCT	.	_	25	punct	_	SpacesAfter=\r\n|TokenRange=517:518
 
-[MESSAGE] pondered (25) 
-[content] After that they are not able to move , and they sleep through the six months that they need for digestion (6) ## ?? warum wird diese Kante entfernt?
+[MESSAGE] pondered (25)
+[content] After that they are not able to move , and they sleep through the six months that they need for digestion (6) # # ??
 [x-sender] I (24)
 [m-quality] deeply (26)
 [m-time] then (28)
@@ -261,8 +261,9 @@
 [participant] they (3)
 [m-mode] not (5)
 [scene] to move (8)
+[] over the adventures of the jungle (32) # # ??
 
-[IDENTIFICATION] that (2) ## ?? warum fehlt die Kante [m-time] After (1) ?
+[IDENTIFICATION] that (2)
 
 [IDENTIFICATION] they (3)
 
@@ -284,7 +285,7 @@
 [QUANTITY] six (15)
 
 [SITUATION-NECESSITY] need (19)
-[situator] that (17) ## ?? warum nicht [months that] (16) ?
+[situator] that (17)
 [theme] they (18)
 [x-purpose] for digestion (21)
 [situator] months (16)
@@ -293,7 +294,7 @@
 
 [IDENTIFICATION] they (18)
 
-[STATE-CHANGE] digestion (21) ## ?? warum nicht [DIGESTION]?
+[STATE-CHANGE] digestion (21)
 
 [IDENTIFICATION] I (24)
 
@@ -302,7 +303,7 @@
 [TIME] then (28)
 
 [EVENT] adventures (32)
-[m-location] of the jungle (35) ## ?? Warum m-location statt x-location? Ähnlich zu x-location bei MESSAGE
+[m-location] of the jungle (35)
 
 [CLASS] jungle (35)
 
@@ -330,9 +331,9 @@
 [participant] I (9)
 [initial-scene] in making my first drawing (12)
 
-[ACTIVITY] work (4) ## ?? diese Annotation auch ok?
-[m-means] with a colored pencil (8) ## ?? m-means statt x-means auch ok?
-[undergoer] I (9) ## ??
+[ACTIVITY] work (4) # # ?? diese Annotation auch ok?
+[m-means] with a colored pencil (8) # # ?? m-means statt x-means auch ok?
+[x-causer] I (9) # # manuell hinzugefügte Kante
 
 [CLASS] pencil (8)
 [m-quality >> m-noncomp] colored (7)
@@ -343,7 +344,7 @@
 
 [TRANSFORMATION-CREATION] making (12)
 [created] my first drawing (15)
-[x-causer] I (9) ## ?? Warum wird diese Kante hinzugefügt?
+[x-causer] I (9)
 
 [MESSAGE] drawing (15)
 [x-sender] my (13)
@@ -363,7 +364,7 @@
 
 [MESSAGE] Drawing (2)
 [x-sender] My (1)
-[m-rank] Number One (3)
+[m-rank] Number One . (3)
 
 [RANK] Number (3)
 [rank] One (4)
@@ -380,15 +381,14 @@
 4	this	this	PRON	DT	Number=Sing|PronType=Dem	2	obl	_	TokenRange=644:648
 5	:	:	PUNCT	:	_	2	punct	_	TokenRange=649:650
 
-[IDENTIFICATION || MESSAGE] looked (2) ## ?? diese Annotation auch ok?
-# [m-noncomp] like (3)
-[identifier || topic] It (1)
-[identified || content] like this (4)
+[MESSAGE] looked (2)
+[topic] It (1)
+[content] like this (4)
 
 [IDENTIFICATION] It (1)
 
 [IDENTIFICATION] this (4)
-[x-compared] it (1) ## ?? diese Kante statt [] like (3)?
+[x-compared] It (1)
 
 # sent_id = 10
 # text = I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
@@ -425,20 +425,20 @@
 [IDENTIFICATION] my (3)
 
 [CLASS] ups (9)
-[x-noncomp] grown (7) ## ?? warum m-noncomp?
+[x-noncomp] grown (7) # # ?? warum m-noncomp?
 
 [NONCOMP] grown (7)
 
-[MESSAGE-INIT] asked (12) 
+[MESSAGE-INIT] asked (12)
 [x-experiencer] them (13)
 [target-content] whether the drawing frightened them (17)
-[x-sender] I (1)
+[x-sender] I (1) # # manuell hinzugefügte Kante
 
 [IDENTIFICATION] them (13)
 
-[REACTION] frightened (17) ## ?? diese Annotation auch ok? 
-[trigger] the drawing (16) ## ??
-[x-experiencer] them (18) ## ??
+[MESSAGE] frightened (17)
+[topic] the drawing (16)
+[x-experiencer] them (18)
 
 [MESSAGE] drawing (16)
 
@@ -460,7 +460,7 @@
 
 [IDENTIFICATION] they (2)
 
-[REACTION] Frighten (6) ## ?? s.o.
+[MESSAGE] Frighten (6)
 
 # sent_id = 12
 # text = Why should any one be frightened by a hat ? "
@@ -476,14 +476,14 @@
 10	?	?	PUNCT	.	_	6	punct	_	TokenRange=826:827
 11	"	"	PUNCT	''	_	6	punct	_	SpacesAfter=\r\n|TokenRange=828:829
 
-[REACTION] frightened (6) ## ?? s.o.
+[MESSAGE] frightened (6)
 [m-explanation] Why (1)
-[x-experiencer] any one (4) ## ??
-[trigger] by a hat (9) ## ??
+[x-experiencer] any one (4)
+[topic] by a hat (9)
 
 [EXPLANATION] Why (1)
 
-[CLASS] one (4) ## siehe (292) im manual
+[CLASS] one (4) # # siehe (292) im manual
 
 [CLASS] hat (9)
 
@@ -501,7 +501,7 @@
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=869:870
 
 [MESSAGE] picture (6)
-[x-has-class] My drawing (2) ## siehe (405) im manual
+[x-has-class] My drawing (2) # # siehe (405) im manual
 [m-mode] not (4)
 [topic] of a hat (9)
 
@@ -530,13 +530,13 @@
 12	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=932:933
 
 [MESSAGE] picture (4)
-[x-identified] It (1) ## ?? warum x-has-class? Vgl. 5.4 im manual
+[x-identified] It (1) # # ?? warum x-has-class? Vgl. 5.4 im manual
 [topic] of a boa constrictor digesting an elephant (8)
 
 [IDENTIFICATION] It (1)
 
 [CLASS] constrictor (8)
-[x-noncomp] boa (7) ## ?? s.o.
+[x-noncomp] boa (7) # # ?? s.o.
 [m-scene] digesting an elephant (9)
 
 [NONCOMP] boa (7)
@@ -579,7 +579,7 @@
 [scene] to understand it (11)
 
 [CLASS] ups (6)
-[x-noncomp] grown (4) ## ?? s.o.
+[x-noncomp] grown (4) # # ?? s.o.
 
 [NONCOMP] grown (4)
 
@@ -593,7 +593,7 @@
 
 [IDENTIFICATION] I (14)
 
-[MESSAGE] drawing (17) ## ?? warum braucht man die Kante "another" nicht?
+[MESSAGE] drawing (17) # # ?? warum braucht man die Kante "another" nicht?
 
 # sent_id = 16
 # text = I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
@@ -629,7 +629,7 @@
 [whole] of the boa constrictor (8)
 
 [CLASS] constrictor (8)
-[x-noncomp] boa (7) ## ?? s.o.
+[x-noncomp] boa (7) # # ?? s.o.
 
 [NONCOMP] boa (7)
 
@@ -639,7 +639,7 @@
 [m-quality] clearly (19)
 
 [CLASS] ups (15)
-[x-noncomp] grown (13) ## ?? s.o.
+[x-noncomp] grown (13) # # ?? s.o.
 
 [NONCOMP] grown (13)
 
@@ -713,7 +713,7 @@
 32	whether	whether	SCONJ	IN	_	35	mark	_	TokenRange=1301:1308
 33	from	from	ADP	IN	_	35	case	_	TokenRange=1309:1313
 34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	TokenRange=1314:1317
-35	inside	inside	NOUN	NN	Number=Sing	30	advcl	_	TokenRange=1318:1324
+35	inside	inside	NOUN	NN	Number=Sing	24	advcl	_	TokenRange=1318:1324
 36	or	or	CCONJ	CC	_	38	cc	_	TokenRange=1325:1327
 37	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	TokenRange=1328:1331
 38	outside	outside	ADJ	JJ	Degree=Pos	35	conj	_	TokenRange=1332:1339
@@ -732,10 +732,9 @@
 51	grammar	grammar	NOUN	NN	Number=Sing	45	conj	_	TokenRange=1408:1415
 52	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=1416:1417
 
-[IDENTIFICATION || MESSAGE] looked (5) ## ?? s.o.
-# [m-noncomp] like (6) 
-[identifier || topic] My Drawing Number Two (2)
-[identified || content] like this (7)
+[] looked (5)
+[] My Drawing Number Two (2)
+[] like this (7)
 
 [MESSAGE] Drawing (2)
 [x-sender] My (1)
@@ -744,12 +743,12 @@
 [IDENTIFICATION] My (1)
 
 [RANK] Number (3)
-[rank] two (4)
+[rank] Two (4)
 
-[RANK] two (4)
+[RANK] Two (4)
 
 [IDENTIFICATION] this (7)
-[x-compared] My Drawing Number Two (2) ## ?? s.o.
+[x-compared] My Drawing Number Two (2)
 
 [MESSAGE-INIT] advise (21)
 [x-identified] The grown - ups ' response (14)
@@ -757,11 +756,11 @@
 [x-experiencer] me (22)
 [topic] to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar (24)
 
-[REACTION] response (14) ## ?? Unterschied answer + response?
+[REACTION] response (14)
 [x-causer] The grown - ups ' (12)
 
 [CLASS] ups (12)
-[x-noncomp] grown (10) ## ?? s.o.
+[x-noncomp] grown (10) # # ?? s.o.
 
 [NONCOMP] grown (10)
 
@@ -769,13 +768,11 @@
 
 [IDENTIFICATION] me (22)
 
-[LOCATION-CHANGE >> SITUATION-DEINIT] lay (24) ## ?? MESSAGE-DEINIT im Manual
+[LOCATION-CHANGE >> SITUATION-DEINIT] lay (24) # # ?? MESSAGE-DEINIT im Manual
 [target-location >> m-noncomp] aside (25)
 [has-location >> situator] my drawings of boa constrictors (27)
-[m-example] whether from the inside or the outside (35) ## ?? diese Annotation auch ok?
-[x-theme] me (22) ## ?? neue Kante?
-
-[LOCATION >> NONCOMP] aside (25)
+[m-example] whether from the inside or the outside (35) # # ?? diese Annotation auch ok?
+[x-theme] me (22) # # manuell hinzugefügte Kante
 
 [MESSAGE] drawings (27)
 [x-sender] my (26)
@@ -784,15 +781,15 @@
 [IDENTIFICATION] my (26)
 
 [CLASS] constrictors (30)
-[x-noncomp] boa (29) ## ?? s.o.
+[x-noncomp] boa (29) # # ?? s.o.
 
 [NONCOMP] boa (29)
 
 [LOCATION] inside (35)
-[has-location] boa constrictors (30) ## ?? neue Kante?
+[has-location] boa constrictors (30) # # manuell hinzugefügte Kante
 
 [LOCATION] outside (38)
-[has-location] boa constrictors (30) ## ?? neue Kante?
+[has-location] boa constrictors (30) # # manuell hinzugefügte Kante
 
 [SCENE-INIT] devote (41)
 [participant] myself (42)
@@ -802,19 +799,19 @@
 [IDENTIFICATION] myself (42)
 
 [SEQUENCE] instead (43)
-[follows] devote (41) ## ?? neue Kante?
+[follows] devote (41)
 
 [MESSAGE] geography (45)
-[x-experiencer] myself (42) ## ?? neue Kante?
+[x-experiencer] myself (42)
 
 [MESSAGE] history (47)
-[x-experiencer] myself (42) ## ?? neue Kante?
+[x-experiencer] myself (42) # # manuell hinzugefügte Kante
 
 [MESSAGE] arithmetic (49)
-[x-experiencer] myself (42) ## ?? neue Kante?
+[x-experiencer] myself (42) # # manuell hinzugefügte Kante
 
 [MESSAGE] grammar (51)
-[x-experiencer] myself (42) ## ?? neue Kante?
+[x-experiencer] myself (42) # # manuell hinzugefügte Kante
 
 # sent_id = 19
 # text = That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
@@ -849,11 +846,11 @@
 
 [IDENTIFICATION] That (1)
 
-[SCENE-DEINIT] gave (12) ## ?? diese Annotation auch ok?
+[SCENE-DEINIT] gave (12) # # ?? diese Annotation auch ok?
 [m-time] at the age of six (7)
 [participant] I (11)
 [x-noncomp] up (13)
-[scene] what might have been a magnificent career as a painter (20)
+[initial-scene] what might have been a magnificent career as a painter (20)
 
 [STATE] age (7)
 [x-quantity] of six (9)
@@ -864,12 +861,13 @@
 
 [NONCOMP] up (13)
 
-[EVENT] career (20)
+[EVENT || CLASS-CHANGE] career (20) # # auch ok?
 [x-has-class] what (14)
 [m-quality] magnificent (19)
-[x-target-class] as a painter (23) ## ?? diese Annotation möglich?
+[x-target-class] as a painter (23) # # ?? diese Annotation möglich?
+[undergoer || ??] I (11) # # ??
 
-[IDENTIFACTION] what (14)
+[IDENTIFICATION] what (14)
 
 [QUALITY] magnificent (19)
 
@@ -884,26 +882,26 @@
 5	by	by	ADP	IN	_	7	case	_	TokenRange=1545:1547
 6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	TokenRange=1548:1551
 7	failure	failure	NOUN	NN	Number=Sing	4	obl	_	TokenRange=1552:1559
-8	of	of	ADP	IN	_	11	case	_	TokenRange=1560:1562
-9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=1563:1565
-10	Drawing	drawing	NOUN	NN	Number=Sing	11	compound	_	TokenRange=1566:1573
-11	Number	number	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1574:1580
+8	of	of	ADP	IN	_	10	case	_	TokenRange=1560:1562
+9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=1563:1565
+10	Drawing	drawing	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1566:1573
+11	Number	number	NOUN	NN	Number=Sing	10	nmod	_	TokenRange=1574:1580
 12	One	one	NUM	CD	NumForm=Word|NumType=Card	11	nummod	_	TokenRange=1581:1584
-13	and	and	CCONJ	CC	_	16	cc	_	TokenRange=1585:1588
-14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=1589:1591
-15	Drawing	drawing	NOUN	NN	Number=Sing	16	compound	_	TokenRange=1592:1599
-16	Number	number	NOUN	NN	Number=Sing	11	conj	_	TokenRange=1600:1606
+13	and	and	CCONJ	CC	_	15	cc	_	TokenRange=1585:1588
+14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=1589:1591
+15	Drawing	drawing	NOUN	NN	Number=Sing	10	conj	_	TokenRange=1592:1599
+16	Number	number	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=1600:1606
 17	Two	two	NUM	CD	NumForm=Word|NumType=Card	16	nummod	_	TokenRange=1607:1610
 18	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=1611:1612
 
-[REACTION] disheartened (4) ## ?? diese Annotation auch ok?
+[MESSAGE] disheartened (4)
 [x-experiencer] I (1)
-[trigger] by the failure of my Drawing Number One and my Drawing Number Two (7)
+[topic] by the failure of my Drawing Number One and my Drawing Number Two (7)
 
 [IDENTIFICATION] I (1)
 
 [SCENE-PREVENTION] failure (7)
-[participant] of my Drawing Number One and my Drawing Number Two (11)
+[participant] of my Drawing Number One and my Drawing Number Two (10)
 
 [MESSAGE] Drawing (10)
 [x-sender] my (9)
@@ -942,8 +940,8 @@
 11	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	13	expl	_	TokenRange=1672:1674
 12	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	TokenRange=1675:1677
 13	tiresome	tiresome	ADJ	JJ	Degree=Pos	5	conj	_	TokenRange=1678:1686
-14	for	for	SCONJ	IN	_	21	mark	_	TokenRange=1687:1690
-15	children	child	NOUN	NNS	Number=Plur	21	nsubj	_	TokenRange=1691:1699
+14	for	for	SCONJ	IN	_	15	case	_	TokenRange=1687:1690
+15	children	child	NOUN	NNS	Number=Plur	13	obl	_	TokenRange=1691:1699
 16	to	to	PART	TO	_	21	mark	_	TokenRange=1700:1702
 17	be	be	AUX	VB	VerbForm=Inf	21	cop	_	TokenRange=1703:1705
 18	always	always	ADV	RB	_	21	advmod	_	TokenRange=1706:1712
@@ -955,20 +953,20 @@
 24	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	21	obl	_	TokenRange=1746:1750
 25	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=1751:1752
 
-[MESSAGE-INIT] understand (5) ## ?? auch ok?
+[MESSAGE-INIT] understand (5)
 [x-experiencer] Grown - ups (3)
 [m-mode] never (4)
 [topic] anything (6)
 [m-means] by themselves (8)
 
 [CLASS] ups (3)
-[x-noncomp] Grown (1) ## ?? s.o.
+[x-noncomp] Grown (1) # # ?? s.o.
 
 [NONCOMP] Grown (1)
 
 [TIME-NEG] never (4)
 
-[CLASS] anything (6) ## ?? Vgl. "anyone" im manual
+[CLASS] anything (6) # # ?? Vgl. "anyone" im manual
 
 [IDENTIFICATION] themselves (8)
 
@@ -976,13 +974,13 @@
 [x-experiencer] for children (15)
 [topic] to be always and forever explaining things to them (21)
 
-[MESSAGE-INIT] explaining (21) ## ?? 
+[MESSAGE-INIT] explaining (21)
 [x-sender] children (15)
 [m-time] always and forever (18)
-[topic] things (22)
+[topic] things (22) # # ?? oder target-content?
 [x-experiencer] to them (24)
 
-[CLASS] children (15) ## ?? Warum nicht [SOCIAL-RELATION] ?
+[CLASS] children (15) # # ?? Ginge auch [SOCIAL-RELATION] ?
 
 [TIME] always (18)
 
@@ -1012,7 +1010,7 @@
 [m-explanation] So (1)
 [m-time] then (2)
 [x-experiencer] I (3)
-[target-content] another profession (6) ## ?? warum nicht topic?
+[topic] another profession (6)
 
 [IDENTIFICATION] So (1)
 
@@ -1020,14 +1018,14 @@
 
 [IDENTIFICATION] I (3)
 
-[CLASS || ACTIVITY] profession (6) ## ??
+[CLASS || ACTIVITY] profession (6) # # ??
 
 [MESSAGE-INIT] learned (9)
 [topic] to pilot airplanes (11)
 
 [UNANCHORED-MOTION] pilot (11)
 [in-motion] airplanes (12)
-[x-causer] I (3) ## Vgl. (161) im manual
+[x-causer] I (3) # # manuell hinzugefügte Kante, Vgl. (161) im manual
 
 [CLASS] airplanes (12)
 
@@ -1071,11 +1069,11 @@
 [PART-WHOLE] parts (8)
 [whole] of the world (11)
 
-[CLASS || IDENTIFICATION] world (11) ## ?? s.o. "nature" ?
+[CLASS] world (11)
 
 [MODE] true (16)
 [has-mode] that geography has been very useful to me (22)
-[x-identified] it (14) ## ?? Vgl. 5.4 im manual?
+[x-identified] it (14) # # Vgl. 5.4 im manual?
 
 [MEANS] useful (22)
 [means] geography (18)
@@ -1135,11 +1133,11 @@
 [m-condition] If one gets lost in the night (4)
 [means] such knowledge (10)
 
-[LOCATION-DEINIT || STATE] lost (4) ## ?? auch ok?
-[has-location || has-state] one (2) ## ??
+[STATE] lost (4)
+[has-state] one (2)
 [m-time] in the night (7)
 
-[CLASS] one (2) ## ?? warum IDENTIFICATION?
+[IDENTIFICATION] one (2)
 
 [TIME] night (7)
 
@@ -1178,23 +1176,23 @@
 26	consequence	consequence	NOUN	NN	Number=Sing	24	nmod	_	TokenRange=2178:2189
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2190:2191
 
-[SCENE] had (9) ## Vgl. 3.10
+[SCENE] had (9) # # Vgl. 3.10
 [m-time] In the course of this life (3)
 [participant] I (7)
 [scene] a great many encounters with a great many people who have been concerned with matters of consequence (13)
 
-[SCENE >> TIME] course (3) ## ?? warum SCENE?
+[SCENE >> TIME] course (3) # # ?? warum SCENE?
 [scene >> quantity] of this life (6)
 
 [EVENT >> QUANTITY] life (6)
 
 [IDENTIFICATION] I (7)
 
-[ACCOMPANIMENT] encounters (13) ## ?? diese Annotation auch ok?
+[ACCOMPANIMENT-INIT] encounters (13)
 [m-quantity] great (11)
 [m-quantity] many (12)
-[accompanied] with a great many people who have been concerned with matters of consequence (18)
-[x-accompanier] I (7)
+[target-accompanier] with a great many people who have been concerned with matters of consequence (18)
+[accompanied] I (7)
 
 [QUANTITY] great (11)
 
@@ -1209,14 +1207,14 @@
 
 [QUANTITY] many (17)
 
-[EXPERIENCE] concerned (22) ## ?? diese Annotation auch ok?
-[experiencer] who (19)
-[experienced] with matters of consequence (24)
-[experiencer] people (18)
+[MESSAGE] concerned (22)
+[x-experiencer] who (19)
+[topic] with matters of consequence (24)
+[x-experiencer] people (18)
 
 [IDENTIFICATION] who (19)
 
-[MESSAGE] matters (24) ## ?? 
+[MESSAGE] matters (24)
 [m-scene] of consequence (26)
 
 [SEQUENCE >> QUALITY] consequence (26)
@@ -1238,7 +1236,7 @@
 
 [EVENT] lived (3)
 [undergoer] I (1)
-[m-quantity || m-time] a great deal (6) ## ??
+[m-quantity || m-time] a great deal (6)
 [m-accompanier] among grown - ups (10)
 
 [IDENTIFICATION] I (1)
@@ -1249,7 +1247,7 @@
 [QUANTITY >> NONCOMP] great (5)
 
 [CLASS] ups (10)
-[x-noncomp] grown (8) ## ?? s.o.
+[x-noncomp] grown (8) # # ?? s.o.
 
 [NONCOMP] grown (8)
 
@@ -1270,7 +1268,7 @@
 [x-experiencer] I (1)
 [topic] them (4)
 [m-quality] intimately (5)
-[m-location] , close at hand (7) ## ?? warum m-depictive?
+[m-location] , close at hand (7) # # ?? warum m-depictive?
 
 [IDENTIFICATION] I (1)
 
@@ -1279,8 +1277,8 @@
 [QUALITY] intimately (5)
 
 [LOCATION] close (7)
-[m-noncomp] at hand (9)
 [has-location] them (4)
+[m-noncomp] at hand (9)
 
 [NONCOMP] hand (9)
 
@@ -1343,16 +1341,16 @@
 21	of	of	SCONJ	IN	_	22	mark	_	TokenRange=2432:2434
 22	showing	show	VERB	VBG	VerbForm=Ger	20	acl	_	TokenRange=2435:2442
 23	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	iobj	_	TokenRange=2443:2446
-24	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	26	nmod:poss	_	TokenRange=2447:2449
-25	Drawing	drawing	NOUN	NN	Number=Sing	26	compound	_	TokenRange=2450:2457
-26	Number	number	NOUN	NN	Number=Sing	22	obj	_	TokenRange=2458:2464
+24	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	25	nmod:poss	_	TokenRange=2447:2449
+25	Drawing	drawing	NOUN	NN	Number=Sing	22	obj	_	TokenRange=2450:2457
+26	Number	number	NOUN	NN	Number=Sing	25	nmod	_	TokenRange=2458:2464
 27	One	one	NUM	CD	NumForm=Word|NumType=Card	26	nummod	_	TokenRange=2465:2468
 28	,	,	PUNCT	,	_	26	punct	_	TokenRange=2469:2470
 29	which	which	PRON	WDT	PronType=Rel	33	obj	_	TokenRange=2471:2476
 30	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	33	nsubj	_	TokenRange=2477:2478
 31	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	33	aux	_	TokenRange=2479:2483
 32	always	always	ADV	RB	_	33	advmod	_	TokenRange=2484:2490
-33	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	26	acl:relcl	_	TokenRange=2491:2495
+33	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	25	acl:relcl	_	TokenRange=2491:2495
 34	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\r\n|TokenRange=2496:2497
 
 [SCENE-INIT] tried (18)
@@ -1360,10 +1358,10 @@
 [x-causer] I (17)
 [target-scene] the experiment of showing him my Drawing Number One , which I have always kept (20)
 
-[ACCOMPANIMENT] met (3) ## ??
+[ACCOMPANIMENT-INIT] met (3)
 [m-time] Whenever (1)
 [accompanied] I (2)
-[accompanier] one of them who seemed to me at all clear - sighted (4)
+[target-accompanier] one of them who seemed to me at all clear - sighted (4)
 
 [TIME] Whenever (1)
 
@@ -1397,17 +1395,14 @@
 
 [IDENTIFICATION] I (17)
 
-[SOCIAL-RELATION] experiment (20) ## ?? diese Annotation auch ok?
+[EVENT] experiment (20) # # ?? ginge auch SOCIAL-RELATION-INIT?
 [x-identifier] of showing him my Drawing Number One , which I have always kept (22)
-[x-has-social-relation] I (17) ## ??
-[x-social-relation] him (23) ## ??
 
 [MESSAGE-INIT] showing (22)
 [x-experiencer] him (23)
-[topic] my Drawing Number One , which I have always kept (26)
+[topic] my Drawing Number One , which I have always kept (25)
 
 [IDENTIFICATION] him (23)
-
 
 [MESSAGE] Drawing (25)
 [x-sender] my (24)
@@ -1421,7 +1416,7 @@
 
 [RANK] One (27)
 
-[POSSESION-CONTINUATION] kept (33)
+[POSSESSION-CONTINUATION] kept (33)
 [possessed] which (29)
 [initial-possessor] I (30)
 [m-time] always (32)
@@ -1466,19 +1461,19 @@
 [target-content] if this was a person of true understanding (14)
 [x-experiencer] I (1)
 
-[NONCOMP] out (6)
+[NONCOMP] out (6) # # manuell hinzugefügte Kante
 
 [MEANS] so (8)
 
 [CLASS] person (14)
 [has-class] this (11)
-[m-quality] of true understanding (17) ## ?? auch ok statt m-scene?
+[m-quality || m-scene] of true understanding (17)
 
 [IDENTIFICATION] this (11)
 
 [MESSAGE] understanding (17)
-[m-mode] true (16) ## ??
-[x-experiencer] person (14)
+[m-mode] true (16) # # ??
+[x-experiencer] person (14) # # manuell hinzugefügte Kante
 
 [MODE] true (16)
 
@@ -1556,7 +1551,7 @@
 [x-sender] I (2)
 [m-time] never (4)
 [x-experiencer] to that person (8)
-[topic] about boa constrictors , or primeval forests , or stars (11) ## warum nicht target-content?? 
+[topic] about boa constrictors , or primeval forests , or stars (11)
 
 [SEQUENCE] Then (1)
 
@@ -1567,7 +1562,7 @@
 [CLASS] person (8)
 
 [CLASS] constrictors (11)
-[x-noncomp] boa (10) ## ??
+[x-noncomp] boa (10) # # ??
 
 [NONCOMP] boa (10)
 
@@ -1590,20 +1585,20 @@
 8	level	level	NOUN	NN	Number=Sing	5	obl	_	TokenRange=2784:2789
 9	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2790:2791
 
-[LOCATION-CHANGE >> STATE-CHANGE] bring (3) ## ?? diese Annotation auch ok?
+[LOCATION-CHANGE >> STATE-CHANGE] bring (3)
 [x-causer] I (1)
 [has-location >> has-state] myself (4)
-[target-location >> target-state] down to his level (5) ## ??
+[target-location >> target-state] down to his level (5)
 
 [IDENTIFICATION] I (1)
 
 [IDENTIFICATION] myself (4)
 
-[LOCATION-CHANGE >> STATE-CHANGE] down (5) ## ?? auch ok?
+[LOCATION-CHANGE >> STATE-CHANGE] down (5) # # ?? auch ok?
 [target-location >> target-state] to his level (8)
-[has-location >> has-state] myself (4) ## ?? warum nicht x-?
+[has-location >> has-state] myself (4) # # manuell hinzugefügte Kante
 
-[LOCATION >> QUALITY] level (8) ## ?? auch ok?
+[LOCATION >> QUALITY] level (8) # # ?? auch ok?
 [has-location >> has-quality] his (7)
 
 [IDENTIFICATION] his (7)
@@ -1641,7 +1636,7 @@
 
 [ACTIVITY] golf (10)
 
-[ACTIVITY] politics (13) ## ??
+[ACTIVITY] politics (13) # # ginge auch SOCIAL-RELATION ? 
 
 [CLASS] neckties (16)
 
@@ -1665,21 +1660,21 @@
 16	man	man	NOUN	NN	Number=Sing	12	obj	_	TokenRange=2942:2945
 17	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2946:2947
 
-[EXPERIENCE] pleased (9)
-[experiencer] the grown - up (5)
-[m-quality || m-quantity] greatly (8)
-[experienced] to have met such a sensible man (12)
+[MESSAGE] pleased (9)
+[x-experiencer] the grown - up (5)
+[m-quantity] greatly (8)
+[topic] to have met such a sensible man (12)
 
 [CLASS] up (5)
-[x-noncomp] grown (3) ## ??
+[x-noncomp] grown (3) # # ?? s.o.
 
 [NONCOMP] grown (3)
 
 [QUALITY || QUANTITY] greatly (8)
 
-[ACCOMPANIMENT] met (12) ## ??
-[accompanier] such a sensible man (16)
-[accompanied] the grown - up (5)
+[ACCOMPANIMENT-INIT] met (12)
+[target-accompanier] such a sensible man (16)
+[accompanied] the grown - up (5) # # manuell hinzugefügte Kante
 
 [CLASS] man (16)
 [m-quality] sensible (15)
@@ -3855,8 +3850,6 @@
 
 [] I (2)
 
-[] off (4)
-
 [] drawing (6)
 
 # sent_id = 89
@@ -3879,8 +3872,6 @@
 [] with it (8)
 
 [] I (2)
-
-[] out (4)
 
 [] explanation (6)
 
@@ -4640,8 +4631,6 @@
 
 [] He (1)
 
-[] out (3)
-
 [] then (5)
 
 [] What (8)
@@ -5207,8 +5196,6 @@
 [] out (31)
 [] more on this subject (32)
 
-[] out (31)
-
 [] more (32)
 [] on this subject (35)
 
@@ -5599,8 +5586,6 @@
 [] somewhere (18)
 
 [] he (14)
-
-[] off (17)
 
 [] somewhere (18)
 
@@ -7498,8 +7483,6 @@
 [] grown (8)
 [] up (10)
 
-[] up (10)
-
 # sent_id = 167
 # text = But certainly , for us who understand life , figures are a matter of indifference .
 1	But	but	CCONJ	CC	_	13	cc	_	TokenRange=12705:12708
@@ -7813,8 +7796,6 @@
 [] down (9)
 [] these memories (11)
 
-[] down (9)
-
 [] memories (11)
 
 # sent_id = 173
@@ -8126,8 +8107,6 @@
 [] up (6)
 [] drawing again (7)
 [] at my age (11)
-
-[] up (6)
 
 [] drawing (7)
 [] again (8)
@@ -9181,8 +9160,6 @@
 
 [] I (2)
 
-[] out (4)
-
 [] prince (8)
 [] little (7)
 
@@ -9246,8 +9223,6 @@
 [] herd (44)
 
 [] not (46)
-
-[] up (48)
 
 [] baobab (51)
 [] one (49)
@@ -9396,8 +9371,6 @@
 [] so (12)
 
 [] baobabs (16)
-
-[] out (18)
 
 [] little (21)
 
@@ -10441,8 +10414,6 @@
 
 [] you (7)
 
-[] up (9)
-
 [] regularly (10)
 
 [] baobabs (13)
@@ -10705,8 +10676,6 @@
 [] off (14)
 [] a piece of work (16)
 [] until another day (21)
-
-[] off (14)
 
 [] piece (16)
 [] of work (18)
@@ -11023,8 +10992,6 @@
 [] watch (48)
 [] out (49)
 [] for the baobabs (52)
-
-[] out (49)
 
 [] baobabs (52)
 
@@ -12364,8 +12331,6 @@
 [] up (7)
 [] to it (9)
 
-[] up (7)
-
 [] it (9)
 
 [] born (18)
@@ -13139,8 +13104,6 @@
 
 [] it (14)
 
-[] out (15)
-
 [] hammer (18)
 
 [] disturbed (25)
@@ -13535,8 +13498,6 @@
 
 [] everything (11)
 
-[] up (12)
-
 [] together (13)
 
 # sent_id = 292
@@ -13743,8 +13704,6 @@
 [] up (11)
 [] figures (12)
 
-[] up (11)
-
 [] figures (12)
 
 # sent_id = 298
@@ -13828,8 +13787,6 @@
 [] swell (5)
 [] up (6)
 [] with pride (8)
-
-[] up (6)
 
 [] pride (8)
 
@@ -15149,8 +15106,6 @@
 
 [] they (9)
 
-[] up (11)
-
 [] room (13)
 [] at all (15)
 
@@ -15291,8 +15246,6 @@
 [] new (16)
 
 [] new (16)
-
-[] up (20)
 
 [] watched (27)
 [] the little prince (25)
@@ -17752,8 +17705,6 @@
 
 [] carefully (2)
 
-[] out (4)
-
 [] volcanoes (7)
 [] his (5)
 [] active (6)
@@ -17903,8 +17854,6 @@
 
 [] he (2)
 
-[] out (4)
-
 [] volcano (7)
 [] extinct (6)
 
@@ -17946,8 +17895,6 @@
 [] they (2)
 
 [] well (4)
-
-[] out (6)
 
 [] volcanoes (8)
 
@@ -18022,8 +17969,6 @@
 [] clean (11)
 [] out (12)
 [] our volcanoes (14)
-
-[] out (12)
 
 [] volcanoes (14)
 [] our (13)
@@ -18103,8 +18048,6 @@
 [] little (2)
 
 [] also (4)
-
-[] up (6)
 
 [] sense (11)
 [] certain (10)
@@ -20426,8 +20369,6 @@
 
 [] I (10)
 
-[] down (12)
-
 # sent_id = 446
 # text = " came now a timid inquiry from the little prince . " I order you to do so , " the king answered him , and majestically gathered in a fold of his ermine mantle .
 1	"	"	PUNCT	``	_	23	punct	_	TokenRange=34783:34784
@@ -20782,8 +20723,6 @@
 [] his planet , the other planets , and all the stars (11)
 
 [] which (7)
-
-[] in (9)
 
 [] planet (11)
 [] his (10)
@@ -21226,8 +21165,6 @@
 
 [] he (19)
 
-[] up (21)
-
 [] courage (23)
 [] his (22)
 
@@ -21392,8 +21329,6 @@
 [] general (44)
 
 [] not (46)
-
-[] out (48)
 
 [] order (50)
 [] that he had received (54)
@@ -21607,8 +21542,6 @@
 [] sea (13)
 
 [] they (15)
-
-[] up (18)
 
 [] revolution (20)
 
@@ -22119,8 +22052,6 @@
 [] So (1)
 
 [] I (2)
-
-[] out (5)
 
 [] way (8)
 [] my (7)
@@ -23355,8 +23286,6 @@
 [] my (16)
 
 [] king (21)
-
-[] out (23)
 
 [] hastily (25)
 
@@ -24722,8 +24651,6 @@
 [] in silence (14)
 [] before a collection of empty bottles and also a collection of full bottles (17)
 
-[] down (12)
-
 [] silence (14)
 
 [] collection (17)
@@ -25004,8 +24931,6 @@
 [] in an impregnable silence (17)
 
 [] himself (12)
-
-[] up (13)
 
 [] silence (17)
 [] impregnable (16)
@@ -27279,8 +27204,6 @@
 
 [] you (11)
 
-[] out (13)
-
 [] patent (15)
 [] on it (17)
 
@@ -28085,8 +28008,6 @@
 
 [] I (7)
 
-[] out (9)
-
 [] week (11)
 
 [] clean (16)
@@ -28098,8 +28019,6 @@
 [] I (14)
 
 [] also (15)
-
-[] out (17)
 
 [] one (19)
 [] that is extinct (22)
@@ -28741,8 +28660,6 @@
 
 [] he (2)
 
-[] out (4)
-
 [] lamp (6)
 [] his (5)
 
@@ -28876,8 +28793,6 @@
 
 [] just (4)
 
-[] out (6)
-
 [] lamp (8)
 [] your (7)
 
@@ -28953,8 +28868,6 @@
 [] orders (9)
 
 [] I (12)
-
-[] out (14)
 
 [] lamp (16)
 [] my (15)
@@ -29146,8 +29059,6 @@
 
 [] he (6)
 
-[] out (8)
-
 [] lamp (10)
 [] his (9)
 
@@ -29268,8 +29179,6 @@
 [] I (1)
 
 [] lamp (4)
-
-[] out (5)
 
 [] morning (8)
 
@@ -29586,8 +29495,6 @@
 [] out (13)
 
 [] it (12)
-
-[] out (13)
 
 # sent_id = 676
 # text = That is very funny !
@@ -29926,8 +29833,6 @@
 [] his chair (22)
 
 [] merely (17)
-
-[] up (20)
 
 [] chair (22)
 [] his (21)
@@ -30412,8 +30317,6 @@
 [] his lamp (32)
 
 [] he (28)
-
-[] out (30)
 
 [] lamp (32)
 [] his (31)
@@ -31708,8 +31611,6 @@
 
 [] who (6)
 
-[] out (8)
-
 [] count (10)
 [] the towns , the rivers , the mountains , the seas , the oceans , and the deserts (12)
 
@@ -31845,8 +31746,6 @@
 [] what they recall of their travels (12)
 
 [] he (7)
-
-[] down (9)
 
 [] recall (12)
 [] what (10)
@@ -32119,8 +32018,6 @@
 [] Then (1)
 
 [] geographer (3)
-
-[] down (6)
 
 [] mountains (8)
 [] two (7)
@@ -32520,8 +32417,6 @@
 
 [] explorers (4)
 
-[] down (7)
-
 [] first (8)
 
 [] pencil (10)
@@ -32569,8 +32464,6 @@
 [] in ink (15)
 
 [] them (12)
-
-[] down (13)
 
 [] ink (15)
 
@@ -34854,8 +34747,6 @@
 
 [] humanity (2)
 
-[] up (6)
-
 [] islet (11)
 [] small (9)
 [] Pacific (10)
@@ -35817,8 +35708,6 @@
 [] little (3)
 
 [] last (6)
-
-[] up (8)
 
 [] conversation (10)
 
@@ -40184,8 +40073,6 @@
 
 [] me (11)
 
-[] back (12)
-
 [] thought (14)
 [] of you (16)
 
@@ -43190,8 +43077,6 @@
 
 [] I (8)
 
-[] out (10)
-
 [] travelers (11)
 
 [] bundles (14)
@@ -43207,8 +43092,6 @@
 [] the trains that carry them now to the right , now to the left (29)
 
 [] I (25)
-
-[] off (27)
 
 [] trains (29)
 [] that carry them now to the right , now to the left (31)
@@ -46209,8 +46092,6 @@
 
 [] little (3)
 
-[] off (6)
-
 [] sleep (8)
 
 [] I (10)
@@ -46225,8 +46106,6 @@
 [] set (17)
 [] out (18)
 [] walking once more (19)
-
-[] out (18)
 
 [] walking (19)
 [] once more (20)
@@ -46842,8 +46721,6 @@
 [] little (10)
 
 [] little (10)
-
-[] out (15)
 
 [] way (18)
 [] their (17)
@@ -47847,8 +47724,6 @@
 [] so (33)
 [] the radiance of the gifts I received (36)
 
-[] up (31)
-
 [] so (33)
 
 [] radiance (36)
@@ -48435,8 +48310,6 @@
 
 [] them (5)
 
-[] over (6)
-
 [] laughed (9)
 [] as he said : " Your baobabs - - they look a little like cabbages (12)
 
@@ -48920,8 +48793,6 @@
 [] silence (5)
 
 [] he (7)
-
-[] on (9)
 
 [] came (13)
 [] I (12)
@@ -50356,8 +50227,6 @@
 [] get (10)
 [] out (11)
 [] my revolver (13)
-
-[] out (11)
 
 [] revolver (13)
 [] my (12)
@@ -53767,8 +53636,6 @@
 [] out (9)
 [] on his way (12)
 
-[] out (9)
-
 [] way (12)
 [] his (11)
 
@@ -53844,8 +53711,6 @@
 [] catching (5)
 [] up (6)
 [] with him (8)
-
-[] up (6)
 
 [] him (8)
 
@@ -54304,8 +54169,6 @@
 
 [] stars (3)
 
-[] out (6)
-
 [] water (8)
 [] fresh (7)
 
@@ -54496,8 +54359,6 @@
 
 [] he (2)
 
-[] down (4)
-
 [] afraid (9)
 [] he (7)
 
@@ -54680,8 +54541,6 @@
 [] up (33)
 [] any longer (35)
 
-[] up (33)
-
 [] longer (35)
 [] any (34)
 
@@ -54854,8 +54713,6 @@
 [] He (1)
 
 [] not (3)
-
-[] out (5)
 
 # sent_id = 1239
 # text = He fell as gently as a tree falls .
