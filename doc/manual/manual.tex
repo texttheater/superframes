@@ -1006,7 +1006,10 @@ expressed and/or its relation to the discourse.
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
 
-Used to mark syntactic arguments that are thought of as part of the predicate, as in verbal idioms, weather verbs, inherently reflexive verbs, existential \emph{there}, or other fixed expressions.
+Used to mark syntactic arguments that are thought of as part of the predicate,
+as in verbal idioms, weather verbs, inherently reflexive verbs, existential
+\emph{there}, or other fixed expressions. (Light verbs, on the other hand, are
+treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
@@ -1018,7 +1021,13 @@ Used to mark syntactic arguments that are thought of as part of the predicate, a
 
 \ex.\dep{fountain_m-noncomp *pen#CLASS*}
 
-Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
+The superframe to assign to such dependents is either \fr{NONCOMP}, unless an
+argument of the whole predicate syntactically attaches to it. In that case,
+label it the same as the top predicate:
+
+\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
+
+\ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
 
 
 \newpage\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
