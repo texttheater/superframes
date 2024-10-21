@@ -1006,9 +1006,9 @@
 3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	2	iobj	_	_
 4	fast	fast	ADV	ADV	_	6	advmod	_	_
 5	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Teetasse	Teetasse	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	obj	_	_
+6	Teetasse	Teetasse	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	7	obj	_	_
 7	voll	voll	ADJ	ADJD	_	2	advmod	_	_
-8	davon	davon	ADP	PROAV	PronType=Dem	2	advmod	_	_
+8	davon	davon	ADP	PROAV	PronType=Dem	7	advmod	_	_
 9	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 10	,	,	PUNCT	$,	_	11	punct	_	_
 11	stellte	stellen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
@@ -1031,22 +1031,22 @@
 
 [LOCATION-INIT] goss (2)
 [x-causer] Winston (1)
-[x-experiencer >> ??? x-noncomp] sich (3)
-[??? m-quantity] fast eine Teetasse (6)
-[??? m-quantity oder x-resultative vgl. Manual (325) Kim painted the room red] voll (7)
-[has-location] davon (8)
+[x-experiencer] sich (3)
 [m-noncomp] ein (9)
+[has-location] fast eine Teetasse voll davon (7)
 
 [IDENTIFICATION] Winston (1)
 
 [IDENTIFICATION] sich (3)
 
-[CLASS] Teetasse (6)
+[CLASS >> QUANTITY] Teetasse (6)
 [m-quantity] fast (4)
 
 [QUANTITY] fast (4)
 
 [QUANTITY] voll (7)
+[quantity] fast eine Teetasse (6)
+[has-quantity] davon (8)
 
 [IDENTIFICATION] davon (8)
 
@@ -1110,16 +1110,16 @@
 [COMPARISON >> QUALITY] krebsrot (5)
 [compared >> has-quality] sein Gesicht (4)
 
-[??? idiom überprüfen LOCATION-INIT >> MESSAGE-INIT] trat (11)
-[??? has-location >> target-content || x-noncomp] das Wasser (10)
-[??? x-causer > x-experiencer] ihm (12)
-[target-location >> m-location || x-noncomp] in die Augen (15)
+[LOCATION-INIT >> STATE-CHANGE] trat (11)
+[has-location >> x-noncomp] das Wasser (10)
+[target-location >> has-state] ihm (12)
+[x-attribute >> x-noncomp] in die Augen (15)
 
-[??? CLASS || MESSAGE-INIT] Wasser (10)
+[CLASS >> NONCOMP] Wasser (10)
 
 [IDENTIFICATION] ihm (12)
 
-[??? CLASS || MESSAGE-INIT] Augen (15)
+[CLASS >> NONCOMP] Augen (15)
 
 # sent_id = 70
 # text = Das Zeug schmeckte wie Salpetersäure , und man hatte beim Herunterschlucken das Gefühl , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen .
@@ -1292,13 +1292,13 @@
 [CLASS] Victory-Zigaretten (12)
 
 [LOCATION-CONTINUATION] hielt (16)
-[??? ] unvorsichtigerweise (15)
+[m-quality] unvorsichtigerweise (15)
 [x-causer] er (17)
 [has-location] sie (18)
 [initial-location] senkrecht (19)
-[??? m-result || m-follows] , worauf der Tabak heraus auf den Fußboden rieselte (28)
+[m-result] , worauf der Tabak heraus auf den Fußboden rieselte (28)
 
-[??? COMPARISON >> QUALITY] unvorsichtigerweise (15)
+[QUALITY] unvorsichtigerweise (15)
 
 [IDENTIFICATION] er (17)
 
@@ -1307,12 +1307,12 @@
 [LOCATION] senkrecht (19)
 
 [LOCATION-CHANGE] rieselte (28)
-[??? ] worauf (21)
+[x-causer] worauf (21)
 [has-location] der Tabak (23)
 [initial-location] heraus (24)
 [target-location] auf den Fußboden (27)
 
-[??? ] worauf (21)
+[IDENTIFICATION] worauf (21)
 
 [CLASS] Tabak (23)
 
@@ -1530,10 +1530,11 @@
 [LOCATION-CHANGE] eingelassen (27)
 [has-location] er (20)
 [target-location] an der Längswand gegenüber dem Fenster (23)
-[??? m-conceded || m-reference] Statt wie üblich (3)
+[m-scene] Statt wie üblich (3)
 [initial-location] an der kürzeren Wand , von wo aus er den ganzen Raum beherrscht hätte , (7)
 
-[??? SCENE-CONTINUATION || QUALITY] üblich (3)
+[SCENE-CONTINUATION] üblich (3)
+[initial-scene] eingelassen (27)
 
 [CLASS] Wand (7)
 [m-quality] kürzeren (6)
