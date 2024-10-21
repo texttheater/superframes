@@ -35,54 +35,57 @@
 33	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	aux	_	_
 34	.	.	PUNCT	$.	_	10	punct	_	_
 
-[?? IDENTIFICATION || COMPARISON] gaben (10) # # ?? Bedeutung etwa: "geeignet sein als ..."
-[identified || compared] Die Frauen , und vor allem die jungen , (2)
+[COMPARISON || SCENE-POSSIBILITY] gaben (10)
+[compared || participant] Die Frauen , und vor allem die jungen , (2)
 [m-time] immer (11)
-[identifier || reference] die blind ergebenen Parteianhänger , die gedankenlosen Nachplapperer , die freiwilligen Spitzel , mit deren Hilfe man weniger Linientreue aushorchen konnte (15)
-[x-noncomp] ab (24)
+[reference || scene] die blind ergebenen Parteianhänger , die gedankenlosen Nachplapperer , die freiwilligen Spitzel , mit deren Hilfe man weniger Linientreue aushorchen konnte (15)
+[m-noncomp] ab (24)
 
 [CLASS] Frauen (2)
 
-[STATE] jungen (8)
+[QUALITY] jungen (8) # # man wird nicht wieder jünger...
 [m-mode] vor allem (6)
 
-[MODE] allem (6) # # ??
+[MODE] allem (6)
 
 [TIME] immer (11)
 
-[CLASS] Parteianhänger (15) # # ?? SOCIAL-RELATION?
+[SOCIAL-RELATION] Parteianhänger (15)
 [m-state] blind ergebenen (14)
+[has-social-relation] Frauen (2)
 
-[STATE] ergebenen (14)
+[SOCIAL-RELATION] ergebenen (14)
 [m-state >> m-quantity] blind (13)
+[has-social-relation] Frauen (2)
 
-[STATE >> QUANTITY] blind (13) # # ?? hier auch Unterscheidung zu machen?
+[STATE] blind (13)
 
-[CLASS] Nachplapperer (19)
+[MESSAGE-CONTINUATION] Nachplapperer (19)
 [m-state] gedankenlosen (18)
+[x-sender] Frauen (2)
 
-[STATE] gedankenlosen (18)
+[MESSAGE-NEG >> STATE] gedankenlosen (18) # # ??
 
-[CLASS] Spitzel (23) # # SOCIAL-RELATION??
-[m-state] freiwilligen (22) # # ??
+[MESSAGE-INIT] Spitzel (23)
+[m-state] freiwilligen (22)
 [m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 
-[STATE] freiwilligen (22) # # ??
+[STATE] freiwilligen (22) # # ?? SOCIAL-RELATION?
 
 [MESSAGE-INIT] aushorchen (32)
-[m-means] mit deren Hilfe (28)
-[x-experiencer] man (29) # # ?? x-causer?
+[m-means] mit deren Hilfe (28) # # ??
+[x-experiencer] man (29)
 [topic] weniger Linientreue (31)
-[m-means] Spitzel (23)
+[m-means] Spitzel (23) # # ??
 
-[MEANS] Hilfe (28)
+[MEANS] Hilfe (28) # # ??
 [x-causer] deren (27) # # ??
 
 [IDENTIFICATION] deren (27)
 
 [IDENTIFICATION] man (29)
 
-[SCENE] Linientreue (31) # # ??
+[SCENE] Linientreue (31) # # ?? SOCIAL-RELATION ?
 [m-quantity] weniger (30)
 
 [QUANTITY] weniger (30)
@@ -122,12 +125,12 @@
 [IDENTIFICATION] ihm (7)
 
 [MESSAGE] Eindruck (9)
-[content] , gefährlicher als die meisten zu sein (11) # # ??
+[content] , gefährlicher als die meisten zu sein (11)
 [topic] dieses Mädchen im besonderen (3)
 
-[QUALITY] gefährlicher (11)
+[QUALITY] gefährlicher (11) # # Bzgl. Komparativ vgl. "COMPARISON" im manuel
 [x-reference] als die meisten (14)
-[x-compared] dieses Mädchen im besonderen (3) # # ?? manuell hinzugefügte Kante, Vgl. 2.25 im manual
+[has-quality] dieses Mädchen im besonderen (3) # # manuell hinzugefügte Kante, Vgl. 2.25 im manual
 
 [QUANTITY] meisten (14)
 
@@ -347,11 +350,11 @@
 
 [LOCATION] Nähe (10)
 [location] seine (9)
-[has-location] sie (7) ## ?? manuell hinzugefügt
+[has-location] sie (7) # # ?? manuell hinzugefügt
 
 [IDENTIFICATION] seine (9)
 
-[] Unsicherheit (15)
+[?? ] Unsicherheit (15)
 [m-quality] merkwürdige (14)
 [] , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (26)
 
