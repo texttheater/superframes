@@ -29,12 +29,12 @@
 3	1984	1984	NUM	CARD	NumType=Card	2	nmod	_	_
 
 [TIME] April (2)
-[m-rank || m-time] 4 (1)
-[m-rank || m-time] 1984 (3)
+[m-rank >> m-time] 4 (1)
+[m-rank >> m-time] 1984 (3)
 
-[RANK || TIME] 4 (1)
+[RANK >> TIME] 4 (1)
 
-[RANK || TIME] 1984 (3)
+[RANK >> TIME] 1984 (3)
 
 # sent_id = 103
 # text = Er lehnte sich zurück .
@@ -252,7 +252,7 @@
 [m-quality] genau (15)
 
 [TIME] Datum (9)
-[??? m-quantity] auf ein oder zwei Jahre (14)
+[m-quantity] auf ein oder zwei Jahre (14)
 
 [TIME] Jahre (14)
 [m-quantity] ein oder zwei (11)
@@ -353,7 +353,7 @@
 [x-location] auf der ersten Seite (13)
 [iniatial-location >> topic] um das zweifelhafte Datum (9)
 
-[??? MESSAGE] Denken (2)
+[MESSAGE] Denken (2)
 [x-experiencer] Sein (1)
 
 [IDENTIFICATION] Sein (1)
@@ -640,7 +640,7 @@
 [??? MESSAGE wie "ratsam" || SITUATION] seltsam (3)
 [??? content ] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
 
-[???POSSESSION-DEINIT >> ???MESSAGE] verloren (13)
+[POSSESSION-DEINIT] verloren (13)
 [initial-possessor] er (6)
 [m-mode] nicht (7)
 [m-mode] nur (8)
@@ -778,7 +778,7 @@
 [MESSAGE] Niederschrift (2)
 [m-reference] als solche (4)
 
-[??? QUALITY] solche (4)
+[QUALITY] solche (4)
 
 [IDENTIFICATION] er (6)
 
@@ -832,7 +832,7 @@
 
 [ACTIVITY] tun (7)
 
-[MESSAGE-INIT] bringen (17) # Idiom?
+[MESSAGE-INIT] bringen (17)
 [target-content] die endlosen hastigen Selbstgespräche , die ihm buchstäblich seit Jahren durch den Kopf geschossen waren (13)
 [x-noncomp] zu Papier (15)
 
@@ -846,12 +846,12 @@
 [QUALITY] hastigen (12)
 
 [LOCATION-INIT >> MESSAGE-INIT] geschossen (27)
-[has-location] die (19)
-[??? ] buchstäblich (21)
+[has-location >> topic] die (19)
+[??? m-quality] buchstäblich (21)
 [m-time] seit Jahren (23)
-[] ihm (20)
-[] durch den Kopf (26)
-[] Selbstgespräche (13)
+[target-location >> x-experiencer] ihm (20)
+[x-attribute >> x-noncomp] durch den Kopf (26)
+[has-location >> topic] Selbstgespräche (13)
 
 [IDENTIFICATION] die (19)
 
@@ -861,9 +861,9 @@
 
 [TIME] Jahren (23)
 
-[] Kopf (26)
+[CLASS >> NONCOMP] Kopf (26)
 
-[MESSAGE-INIT] Papier (15)
+[NONCOMP] Papier (15)
 
 # sent_id = 121
 # text = In diesem Augenblick jedoch war sogar das Selbstgespräch verstummt .
@@ -908,13 +908,13 @@
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
 [SCENE-INIT] angefangen (11)
-[??? ] Außerdem (1)
+[??? m-followed] Außerdem (1)
 [participant] das Ekzem (4)
 [m-location] an seinen Krampfadern (7)
 [m-quality] unerträglich (8)
 [target-scene] zu jucken (10)
 
-[???] Außerdem (1)
+[??? SEQUENCE] Außerdem (1)
 
 [CLASS] Ekzem (4)
 
@@ -925,8 +925,8 @@
 
 [QUALITY-NEG >> QUALITY] unerträglich (8)
 
-[??? MESSAGE || EXPERIENCE || EVENT] jucken (10)
-[??? undergoer] das Ekzem (4)
+[MESSAGE] jucken (10)
+[x-sender] das Ekzem (4)
 
 # sent_id = 123
 # text = Er wagte nicht , daran zu kratzen , denn dann entzündete es sich immer .
@@ -955,9 +955,9 @@
 
 [MODE] nicht (3)
 
-[??? EVENT] kratzen (7)
+[EVENT] kratzen (7)
 [undergoer] daran (5)
-[] Er (1)
+[x-causer] Er (1)
 
 [IDENTIFICATION] daran (5)
 
@@ -982,10 +982,10 @@
 3	verstrichen	verstreichen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[??? LOCATION-CHANGE >> TIME-CHANGE] verstrichen (3)
-[has-location >> ???] Die Sekunden (2)
+[SCENE-DEINIT >> TIME-DEINIT] verstrichen (3)
+[initial-scene >> initial-time] Die Sekunden (2)
 
-[??? TIME] Sekunden (2)
+[TIME] Sekunden (2)
 
 # sent_id = 125
 # text = Nichts drang in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte .
@@ -1052,7 +1052,7 @@
 
 [IDENTIFICATION] ihm (12)
 
-[??? EVENT] Hautjucken (17)
+[MESSAGE] Hautjucken (17)
 [m-location] über seinem Knöchel (20)
 
 [CLASS] Knöchel (20)
@@ -1101,37 +1101,38 @@
 17	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] begann (2)
-[] Plötzlich (1)
-[] er (3)
-[] überstürzt zu schreiben (6)
-[] , ohne recht zu wissen , was er zu Papier brachte (11)
+[SCENE-INIT] begann (2)
+[m-time] Plötzlich (1)
+[participant] er (3)
+[target-scene] überstürzt zu schreiben (6)
+[??? m-followed] , ohne recht zu wissen , was er zu Papier brachte (11)
 
-[] Plötzlich (1)
+[TIME] Plötzlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] schreiben (6)
-[] überstürzt (4)
+[MESSAGE-INIT] schreiben (6)
+[m-quality] überstürzt (4)
+[x-sender] er (3)
 
-[] überstürzt (4)
+[QUALITY] überstürzt (4)
 
-[] wissen (11)
-[] recht (9)
-[] , was er zu Papier brachte (17)
+[MESSAGE] wissen (11)
+[m-mode] recht (9)
+[content] , was er zu Papier brachte (17)
 
-[] recht (9)
+[MODE] recht (9)
 
-[] brachte (17)
-[] was (13)
-[] er (14)
-[] zu Papier (16)
+[MESSAGE-INIT] brachte (17)
+[target-content] was (13)
+[x-sender] er (14)
+[x-noncomp] zu Papier (16)
 
-[] was (13)
+[IDENTIFICATION] was (13)
 
-[] er (14)
+[IDENTIFICATION] er (14)
 
-[] Papier (16)
+[NONCOMP] Papier (16)
 
 # sent_id = 127
 # text = Seine kleine kindliche Handschrift bedeckte Zeile um Zeile des Blattes , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete :
@@ -1163,54 +1164,54 @@
 26	verzichtete	verzichten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 27	:	:	PUNCT	$.	_	5	punct	_	_
 
-[] bedeckte (5)
-[] Seine kleine kindliche Handschrift (4)
-[] Zeile (6)
-[] um Zeile des Blattes (8)
-[] , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete (26)
+[WRAPPING-WEARING-INIT >> MESSAGE-INIT] bedeckte (5)
+[wrapper >> ??? x-sender || m-means] Seine kleine kindliche Handschrift (4)
+[wearer >> m-location] Zeile (6)
+[wearer >> m-location] um Zeile des Blattes (8)
+[??? m-follows] , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete (26)
 
-[] Handschrift (4)
-[] Seine (1)
-[] kleine (2)
-[] kindliche (3)
+[MESSAGE] Handschrift (4)
+[x-sender] Seine (1)
+[m-quality] kleine (2)
+[m-quality] kindliche (3)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] kindliche (3)
+[QUALITY] kindliche (3)
 
-[] Zeile (6)
+[CLASS] Zeile (6)
 
-[] Zeile (8)
-[] des Blattes (10)
+[CLASS] Zeile (8)
+[m-whole] des Blattes (10)
 
-[] Blattes (10)
+[CLASS] Blattes (10)
 
-[] verzichtete (26)
-[] wobei (12)
-[] er (13)
-[] bald (14)
-[] auf die großen Anfangsbuchstaben und zum Schluss (18)
-[] sogar auf die Interpunktion (25)
+[SITUATION-PREVENTION] verzichtete (26)
+[???] wobei (12)
+[theme] er (13)
+[m-time] bald (14)
+[target-situator] auf die großen Anfangsbuchstaben und zum Schluss (18)
+[target-situator] sogar auf die Interpunktion (25)
 
-[] wobei (12)
+[???] wobei (12)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] bald (14)
+[TIME] bald (14)
 
-[] Anfangsbuchstaben (18)
-[] großen (17)
+[MESSAGE] Anfangsbuchstaben (18)
+[m-quality] großen (17)
 
-[] großen (17)
+[QUALITY] großen (17)
 
-[] Schluss (21)
+[SITUATION-DEINIT] Schluss (21)
 
-[] Interpunktion (25)
-[] sogar (22)
+[??? MESSAGE] Interpunktion (25)
+[m-mode] sogar (22)
 
-[] sogar (22)
+[MODE] sogar (22)
 
 # sent_id = 128
 # text = » 4 April 1984
@@ -1219,13 +1220,13 @@
 3	April	April	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 4	1984	1984	NUM	CARD	NumType=Card	3	nmod	_	_
 
-[] April (3)
-[] 4 (2)
-[] 1984 (4)
+[TIME] April (3)
+[m-rank >> m-time] 4 (2)
+[m-rank >> m-time] 1984 (4)
 
-[] 4 (2)
+[RANK >> TIME] 4 (2)
 
-[] 1984 (4)
+[RANK >> TIME] 1984 (4)
 
 # sent_id = 129
 # text = Gestern Abend im Kino .
@@ -1235,13 +1236,13 @@
 4	Kino	Kino	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	2	nmod	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] Abend (2)
-[] Gestern (1)
-[] im Kino (4)
+[TIME] Abend (2)
+[m-time] Gestern (1)
+[m-location] im Kino (4)
 
-[] Gestern (1)
+[TIME] Gestern (1)
 
-[] Kino (4)
+[CLASS] Kino (4)
 
 # sent_id = 130
 # text = Lauter Kriegsfilme .
@@ -1249,10 +1250,10 @@
 2	Kriegsfilme	Kriegsfilm	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
 3	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] Kriegsfilme (2)
-[] Lauter (1)
+[MESSAGE] Kriegsfilme (2)
+[m-mode] Lauter (1)
 
-[] Lauter (1)
+[MODE] Lauter (1)
 
 # sent_id = 131
 # text = Ein sehr guter , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird .
@@ -1274,28 +1275,29 @@
 16	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] guter (3)
-[] sehr (2)
-[] , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird (7)
+[??? anaphoric roleset MESSAGE] guter (3)
+[m-quantity] sehr (2)
+[topic] , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird (7)
 
-[] sehr (2)
+[QUANTITY] sehr (2)
 
-[] Schiff (7)
-[] von Flüchtlingen (9)
-[] , das irgendwo im Mittelmeer bombardiert wird (15)
+[CLASS] Schiff (7)
+[m-scene] , das irgendwo im Mittelmeer bombardiert wird (15)
+[??? m-accompanier] von Flüchtlingen (9)
 
-[] Flüchtlingen (9)
+[CLASS] Flüchtlingen (9)
 
-[] bombardiert (15)
-[] das (11)
-[] irgendwo (12)
-[] im Mittelmeer (14)
+[DESTRUCTION] bombardiert (15)
+[destroyed] das (11)
+[m-location] irgendwo (12)
+[m-location] im Mittelmeer (14)
+[destroyed] Schiff (7)
 
-[] das (11)
+[IDENTIFICATION] das (11)
 
-[] irgendwo (12)
+[LOCATION] irgendwo (12)
 
-[] Mittelmeer (14)
+[IDENTIFICATION] Mittelmeer (14)
 
 # sent_id = 132
 # text = Zuschauer höchst belustigt durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , zuerst sah man ihn sich durchs Wasser wälzen wie ein Nilpferd , dann sah man ihn durch das Zielfernrohr des Hubschraubers , dann war er ganz durchlöchert und das Meer rund um ihn färbte sich rosa , und er versank so plötzlich , als sei das Wasser durch die Löcher eingedrungen .
@@ -1320,7 +1322,7 @@
 19	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 20	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
 21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
-22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	iobj	_	_
+22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	25	iobj	_	_
 23	durchs	durchs	ADP	APPRART	_	24	case	_	_
 24	Wasser	Wasser	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	25	obl	_	_
 25	wälzen	wälzen	VERB	VVINF	VerbForm=Inf	19	xcomp	_	_
@@ -1369,122 +1371,125 @@
 68	eingedrungen	eindringen	VERB	VVPP	Verbform=Part	57	advcl	_	_
 69	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] belustigt (3)
-[] Zuschauer (1)
-[] höchst (2)
-[] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
+[MESSAGE-INIT] belustigt (3)
+[x-experiencer] Zuschauer (1)
+[m-quantity] höchst (2)
+[??? m-means || x-sender] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , (6)
 
-[] Zuschauer (1)
+[CLASS] Zuschauer (1)
 
-[] höchst (2)
+[QUANTITY] höchst (2)
 
-[] Aufnahme (6)
-[] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
+[MESSAGE] Aufnahme (6)
+[topic] von einem großen dicken Mann , den ein Helikopter verfolgt , (11)
 
-[] Mann (11)
-[] großen (9)
-[] dicken (10)
-[] , den ein Helikopter verfolgt , sich (16)
+[CLASS] Mann (11)
+[m-quality] großen (9)
+[m-state] dicken (10)
+[m-scene] , den ein Helikopter verfolgt , (16)
 
-[] großen (9)
+[QUALITY] großen (9)
 
-[] dicken (10)
+[STATE] dicken (10)
 
-[] verfolgt (16)
-[] den (13)
-[] ein Helikopter (15)
-[] sich (22)
+[UNANCHORED-MOTION] verfolgt (16)
+[in-motion] den (13)
+[x-accompanier] ein Helikopter (15)
+[in-motion] Mann (11)
 
-[] den (13)
+[IDENTIFICATION] den (13)
 
-[] Helikopter (15)
+[CLASS] Helikopter (15)
 
-[] sich (22)
+[MESSAGE-INIT] sah (19)
+[m-time] zuerst (18)
+[x-experiencer] man (20)
+[topic] ihn (21)
+[target-content] sich durchs Wasser wälzen wie ein Nilpferd (25)
 
-[] sah (19)
-[] zuerst (18)
-[] man (20)
+[TIME] zuerst (18)
+
+[IDENTIFICATION] man (20)
+
+[IDENTIFICATION] ihn (21)
+
+[UNANCHORED-MOTION] wälzen (25)
+[in-motion] sich (22)
+[transitory-location] durchs Wasser (24)
+[m-reference] wie ein Nilpferd (28)
 [] ihn (21)
-[] durchs Wasser wälzen wie ein Nilpferd (25)
 
-[] zuerst (18)
+[IDENTIFICATION] sich (22)
 
-[] man (20)
+[CLASS] Wasser (24)
 
-[] ihn (21)
+[CLASS] Nilpferd (28)
 
-[] wälzen (25)
-[] durchs Wasser (24)
-[] wie ein Nilpferd (28)
+[MESSAGE-INIT] sah (31)
+[m-time] dann (30)
+[x-experiencer] man (32)
+[topic] ihn (33)
+[??? m-means || x-sender] durch das Zielfernrohr des Hubschraubers (36)
+[??? Syntax? m-time] dann (40)
+[??? Syntax? topic] er (42)
 
-[] Wasser (24)
+[TIME] dann (30)
 
-[] Nilpferd (28)
+[IDENTIFICATION] man (32)
 
-[] sah (31)
-[] dann (30)
-[] man (32)
-[] ihn (33)
-[] durch das Zielfernrohr des Hubschraubers (36)
-[] dann (40)
-[] er (42)
+[IDENTIFICATION] ihn (33)
 
-[] dann (30)
+[CLASS] Zielfernrohr (36)
+[m-whole] des Hubschraubers (38)
 
-[] man (32)
+[CLASS] Hubschraubers (38)
 
-[] ihn (33)
+[TIME] dann (40)
 
-[] Zielfernrohr (36)
-[] des Hubschraubers (38)
+[IDENTIFICATION] er (42)
 
-[] Hubschraubers (38)
+[MESSAGE-INIT] färbte (51)
+[topic] das Meer (47)
+[m-location] rund um ihn (50)
+[x-noncomp] sich (52)
+[target-content] rosa (53)
 
-[] dann (40)
+[CLASS] Meer (47)
 
-[] er (42)
+[IDENTIFICATION] ihn (50)
+[m-location] rund (48)
 
-[] färbte (51)
+[LOCATION] rund (48)
+
+[NONCOMP] sich (52)
+
+[QUALITY] rosa (53)
 [] das Meer (47)
-[] rund um ihn (50)
-[] sich (52)
-[] rosa (53)
 
-[] Meer (47)
+[STATE-CHANGE] durchlöchert (44)
+[m-quantity] ganz (43)
 
-[] ihn (50)
-[] rund (48)
+[QUANTITY] ganz (43)
 
-[] rund (48)
+[LOCATION-CHANGE] versank (57)
+[has-location] er (56)
+[m-time] so plötzlich (59)
+[m-reference] , als sei das Wasser durch die Löcher eingedrungen (68)
 
-[] sich (52)
+[IDENTIFICATION] er (56)
 
-[] rosa (53)
+[TIME] plötzlich (59)
+[m-noncomp] so (58)
 
-[] durchlöchert (44)
-[] ganz (43)
+[NONCOMP] so (58)
 
-[] ganz (43)
+[LOCATION-INIT] eingedrungen (68)
+[has-location] das Wasser (64)
+[transitory-location] durch die Löcher (67)
 
-[] versank (57)
-[] er (56)
-[] so plötzlich (59)
-[] , als sei das Wasser durch die Löcher eingedrungen (68)
+[CLASS] Wasser (64)
 
-[] er (56)
-
-[] plötzlich (59)
-[] so (58)
-
-[] so (58)
-
-[] eingedrungen (68)
-[] das Wasser (64)
-[] durch die Löcher (67)
-
-[] Wasser (64)
-
-[] Löcher (67)
+[CLASS] Löcher (67)
 
 # sent_id = 133
 # text = Zuschauer brüllten vor lachen als er unterging .
@@ -1497,19 +1502,19 @@
 7	unterging	untergehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] brüllten (2)
-[] Zuschauer (1)
-[] vor lachen (4)
-[] als er unterging (7)
+[MESSAGE-INIT] brüllten (2)
+[x-sender] Zuschauer (1)
+[x-noncomp] vor lachen (4)
+[m-time] als er unterging (7)
 
-[] Zuschauer (1)
+[CLASS] Zuschauer (1)
 
-[] lachen (4)
+[NONCOMP] lachen (4)
 
-[] unterging (7)
-[] er (6)
+[LOCATION-CHANGE >> DESTRUCTION] unterging (7)
+[has-location >> destroyed] er (6)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
 # sent_id = 134
 # text = Dann sah man ein Rettungsboot voll kinder mit einem hubschrauber darüber , eine frau mittleren Alters , vielleicht eine Jüdin , saß mit einem etwa drei jähre alten knaben im bug .
@@ -1546,60 +1551,60 @@
 31	bug	Bug	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	22	obl	_	_
 32	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sah (2)
-[] Dann (1)
-[] man (3)
-[] ein Rettungsboot voll kinder mit einem hubschrauber (5)
-[] darüber (11)
+[MESSAGE-INIT] sah (2)
+[m-time] Dann (1)
+[x-experiencer] man (3)
+[topic] ein Rettungsboot voll kinder mit einem hubschrauber (5)
+[m-location] darüber (11)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] man (3)
+[IDENTIFICATION] man (3)
 
-[] Rettungsboot (5)
-[] voll kinder (7)
-[] mit einem hubschrauber (10)
+[CLASS] Rettungsboot (5)
+[m-accompanier] voll kinder (7)
+[m-accompanier] mit einem hubschrauber (10)
 
-[] kinder (7)
+[CLASS] kinder (7)
 
-[] hubschrauber (10)
+[CLASS] hubschrauber (10)
 
-[] darüber (11)
+[LOCATION] darüber (11)
 
-[] saß (22)
-[] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
-[] mit einem etwa drei jähre alten knaben (29)
-[] im bug (31)
+[MESSAGE-INIT] saß (22)
+[topic] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
+[??? m-accompanier] mit einem etwa drei jähre alten knaben (29)
+[m-location] im bug (31)
 
-[] frau (14)
-[] mittleren Alters , vielleicht eine Jüdin , (16)
+[CLASS] frau (14)
+[m-quality] mittleren Alters , vielleicht eine Jüdin , (16)
 
-[] Alters (16)
-[] mittleren (15)
-[] , vielleicht eine Jüdin , (20)
+[??? QUALITY || TIME] Alters (16)
+[m-quality] mittleren (15)
+[??? Syntax] , vielleicht eine Jüdin , (20)
 
-[] mittleren (15)
+[QUALITY] mittleren (15)
 
-[] Jüdin (20)
-[] vielleicht (18)
+[??? CLASS] Jüdin (20)
+[m-mode] vielleicht (18)
 
-[] vielleicht (18)
+[MODE] vielleicht (18)
 
-[] knaben (29)
-[] etwa drei jähre alten (28)
+[CLASS] knaben (29)
+[m-quality] etwa drei jähre alten (28)
 
-[] alten (28)
-[] etwa drei jähre (27)
+[QUALITY] alten (28)
+[m-quantity] etwa drei jähre (27)
 
-[] jähre (27)
-[] etwa drei (26)
+[??? QUANTITY || TIME] jähre (27)
+[m-quantity] etwa drei (26)
 
-[] drei (26)
-[] etwa (25)
+[QUANTITY] drei (26)
+[m-mode] etwa (25)
 
-[] etwa (25)
+[MODE] etwa (25)
 
-[] bug (31)
+[CLASS] bug (31)
 
 # sent_id = 135
 # text = Kleiner Junge brüllte vor angst und verbarg seinen köpf zwischen den brüsten als wollte er ganz in sie hineinkriechen und die frau legte die arme um ihn und tröstete ihn , obwohl sie selbst außer sich vor angst war bedeckte sie ihn so gut wie möglich als glaubte sie ihre arme könnten die kugeln von ihm abhalten , dann warf der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen und das ganze schiff zersplitterte wie Streichhölzer , dann gab es eine wundervolle aufnähme von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein und es gab viel bei fall aus den parteilogen aber eine frau unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern bis die polizei sie hinauswarf ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - «
