@@ -2080,7 +2080,7 @@
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
 2	richtete	richten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
-4	so	so	ADV	ADV	_	2	advmod	_	_
+4	so	so	ADV	ADV	_	13	advmod	_	_
 5	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 6	,	,	PUNCT	$,	_	13	punct	_	_
 7	dass	dass	SCONJ	KOUS	_	13	mark	_	_
@@ -2092,23 +2092,23 @@
 13	zuwandte	zuwenden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] richtete (2)
-[] Winston (1)
-[] es (3)
-[] so (4)
-[] ein (5)
-[] , dass er dem Televisor den Rücken zuwandte (13)
+[STATE-INIT] richtete (2)
+[x-causer] Winston (1)
+[has-state] es (3)
+[m-noncomp] ein (5)
+[target-state] so , dass er dem Televisor den Rücken zuwandte (13)
 
 [] Winston (1)
 
 [] es (3)
-
-[] so (4)
 
 [LOCATION] zuwandte (13) # TODO new frame ORIENTATION
 [has-location] er (8)
 [location] dem Televisor (10)
 [x-attribute] den Rücken (12)
+[m-causer] so (4) # TODO manual ?
+
+[] so (4)
 
 [] er (8)
 
@@ -2271,11 +2271,12 @@
 
 [] Art (8)
 
-[] London (13)
-[] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
+[IDENTIFICATION] London (13)
+[m-scene] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16) # TODO m-identified? Cf. Sonderberaterin Kori Schulman
 
-[] Hauptstadt (16)
-[] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
+[SOCIAL-RELATION || PART-WHOLE] Hauptstadt (16)
+[social-relation || whole] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
+[has-social-relation || part] London (13) # TODO ? (see above)
 
 [] Luftstützpunkts (18)
 [] Nr. l (19)
@@ -2304,7 +2305,7 @@
 2	versuchte	versuchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	in	in	ADP	APPR	_	5	case	_	_
 4	seinen	sein	DET	PPOSAT	Case=Dat|Gender=Neut|Number=Plur|Poss=Yes	5	det:poss	_	_
-5	Kindheitserinnerungen	Kindheitserinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
+5	Kindheitserinnerungen	Kindheitserinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	6	obl	_	_
 6	nachzuforschen	nachforschen	VERB	VVIZU	VerbForm=Inf	2	xcomp	_	_
 7	,	,	PUNCT	$,	_	12	punct	_	_
 8	ob	ob	SCONJ	KOUS	_	12	mark	_	_
@@ -2317,29 +2318,30 @@
 
 [] versuchte (2)
 [] Er (1)
-[] in seinen Kindheitserinnerungen (5)
-[] nachzuforschen , ob London immer so ausgesehen hatte (6)
+[] in seinen Kindheitserinnerungen nachzuforschen , ob London immer so ausgesehen hatte (6)
 
 [] Er (1)
+
+[MESSAGE-INIT] nachzuforschen (6)
+[m-location >> x-sender] in seinen Kindheitserinnerungen (5) # TODO manual
+[target-content] , ob London immer so ausgesehen hatte (12)
 
 [] Kindheitserinnerungen (5)
 [] seinen (4)
 
 [] seinen (4)
 
-[] nachzuforschen (6)
-[] , ob London immer so ausgesehen hatte (12)
-
-[] ausgesehen (12)
-[] London (9)
-[] immer (10)
-[] so (11)
+[MESSAGE] ausgesehen (12)
+[topic] London (9)
+[m-time] immer (10)
+[content] so (11)
 
 [] London (9)
 
 [] immer (10)
 
 [] so (11)
+[] London (9)
 
 # sent_id = 43
 # text = Hatten da immer diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert gestanden , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten ?

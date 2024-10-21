@@ -1314,16 +1314,18 @@
 7	Glück	Glück	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	4	obj	_	_
 8	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] hatte (4)
-[] Mit der nächsten (3)
-[] er (5)
-[] mehr Glück (7)
+[SCENE] hatte (4)
+[participant] Mit der nächsten (3)
+[participant] er (5)
+[scene] mehr Glück (7)
 
-[] nächsten (3)
+[SEQUENCE] nächsten (3)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] Glück (7)
+[EXPERIENCE] Glück (7)
+[experiencer] er (5)
+[experienced] nächsten (3)
 
 # sent_id = 74
 # text = Er ging ins Wohnzimmer zurück und setzte sich an ein links vom Televisor stehendes Tischchen .
@@ -2351,16 +2353,17 @@
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
 [] heimgetragen (8)
+[m-depictive] schuldbewusst (4)
 [] Er (1)
 [] es (3)
-[] schuldbewusst (4)
 [] in seiner Mappe (7)
 
 [] Er (1)
 
 [] es (3)
 
-[] schuldbewusst (4)
+[MESSAGE] schuldbewusst (4)
+[x-experiencer] Er (1)
 
 [] Mappe (7)
 [] seiner (6)
@@ -2442,18 +2445,18 @@
 15	mehr	mehr	ADV	ADV	_	16	advmod	_	_
 16	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	advcl	_	_
 17	)	)	PUNCT	$(	_	8	punct	_	_
-18	,	,	PUNCT	$,	_	27	punct	_	_
-19	aber	aber	CCONJ	KON	_	27	cc	_	_
+18	,	,	PUNCT	$,	_	29	punct	_	_
+19	aber	aber	CCONJ	KON	_	29	cc	_	_
 20	falls	falls	SCONJ	KOUS	_	22	mark	_	_
 21	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
-22	herauskam	herauskommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	advcl	_	_
+22	herauskam	herauskommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	advcl	_	_
 23	,	,	PUNCT	$,	_	22	punct	_	_
-24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	cop	_	_
-25	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
-26	so	so	ADV	ADV	_	27	advmod	_	_
-27	gut	gut	ADJ	ADJD	_	4	conj	_	_
-28	wie	wie	CCONJ	KOKOM	_	29	case	_	_
-29	sicher	sicher	ADJ	ADJD	_	27	conj	_	_
+24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	cop	_	_
+25	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+26	so	so	ADV	ADV	_	29	advmod	_	_
+27	gut	gut	ADJ	ADJD	_	26	fixed	_	_
+28	wie	wie	CCONJ	KOKOM	_	26	fixed	_	_
+29	sicher	sicher	ADJ	ADJD	_	4	conj	_	_
 30	,	,	PUNCT	$,	_	41	punct	_	_
 31	dass	dass	SCONJ	KOUS	_	41	mark	_	_
 32	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	41	nsubj:pass	_	_
@@ -2465,7 +2468,7 @@
 38	fünfundzwanzig	fünfundzwanzig	NUM	CARD	NumType=Card	39	nummod	_	_
 39	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	35	conj	_	_
 40	Zwangsarbeitslager	Zwangsarbeitslager	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	35	conj	_	_
-41	geahndet	ahnden	VERB	VVPP	Verbform=Part	27	ccomp	_	_
+41	geahndet	ahnden	VERB	VVPP	Verbform=Part	29	ccomp	_	_
 42	werden	werden	AUX	VAINF	VerbForm=Inf	41	aux:pass	_	_
 43	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	aux	_	_
 44	.	.	PUNCT	$.	_	4	punct	_	_
@@ -2498,11 +2501,11 @@
 
 [] mehr (15)
 
-[] gut (27)
-[] falls es herauskam , (22)
-[] er (25)
-[] so (26)
-[] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
+[MESSAGE] sicher (29)
+[m-condition] falls es herauskam , (22)
+[x-experiencer] er (25)
+[m-quantity] so gut wie (26) # TODO m-mode ?
+[content] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
 
 [] herauskam (22)
 [] es (21)
@@ -2511,9 +2514,7 @@
 
 [] er (25)
 
-[] so (26)
-
-[] sicher (29)
+[QUANTITY] so (26) # TODO checker: follow "fixed" edges -> "so gut wie"
 
 [] geahndet (41)
 [] es (32)
@@ -2607,7 +2608,7 @@
 32	aus	aus	ADP	APPR	_	34	case	_	_
 33	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	34	det	_	_
 34	Gefühl	Gefühl	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	28	obl	_	_
-35	heraus	heraus	ADP	PTKVZ	_	34	compound:prt	_	_
+35	heraus	heraus	ADP	PTKVZ	_	34	case	_	_
 36	,	,	PUNCT	$,	_	43	punct	_	_
 37	dass	dass	SCONJ	KOUS	_	43	mark	_	_
 38	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	41	det	_	_
@@ -2662,11 +2663,11 @@
 [] nur (12)
 
 [] besorgt (28)
+[m-causer] , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (34)
 [] er (19)
 [] sich (21)
 [] heimlich und mit einiger Schwierigkeit (22)
 [] eine (27)
-[] , ganz einfach aus dem Gefühl heraus , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (34)
 
 [] er (19)
 
@@ -2678,10 +2679,9 @@
 
 [] eine (27)
 
-[] Gefühl (34)
-[] ganz einfach (31)
-[] heraus (35)
-[] , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (43)
+[MESSAGE] Gefühl (34)
+[content] , dass das wundervolle glatte Papier es verdiente , mit einer richtigen Feder beschrieben , statt mit einem Tintenblei bekritzelt zu werden (43)
+[m-mode] ganz einfach (31)
 
 [] einfach (31)
 [] ganz (30)

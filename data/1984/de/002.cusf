@@ -433,13 +433,13 @@
 8	verständigen	verständigen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 9	?	?	PUNCT	$.	_	8	punct	_	_
 
-[] verständigen (8)
-[] Wie (1)
-[] man (3)
-[] sich (4)
-[] mit der Zukunft (7)
+[MESSAGE-INIT] verständigen (8)
+[m-means] Wie (1)
+[x-sender] man (3)
+[x-noncomp] sich (4)
+[x-experiencer] mit der Zukunft (7)
 
-[] Wie (1)
+[MEANS] Wie (1)
 
 [] man (3)
 
@@ -636,11 +636,11 @@
 [] seltsam (3)
 [] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
 
-[] verloren (13)
-[] er (6)
-[] nicht (7)
-[] nur (8)
-[] die Gabe der Mitteilung (10)
+[POSSESSION-DEINIT >> SCENE-DEINIT] verloren (13)
+[initial-possessor >> participant] er (6)
+[m-mode] nicht (7)
+[m-mode] nur (8)
+[possession >> initial-scene] die Gabe der Mitteilung (10)
 
 [] er (6)
 
@@ -648,10 +648,12 @@
 
 [] nur (8)
 
-[] Gabe (10)
-[] der Mitteilung (12)
+[POSSESSION-INIT >> SCENE-POSSIBILITY] Gabe (10)
+[possession >> scene] der Mitteilung (12)
+[target-possessor >> participant] er (6)
 
-[] Mitteilung (12)
+[MESSAGE-INIT] Mitteilung (12)
+[x-sender] er (6)
 
 [] vergessen (17)
 [] sogar (16)
@@ -685,7 +687,7 @@
 9	vorbereitet	vorbereiten	VERB	VVPP	Verbform=Part	0	root	_	_
 10	,	,	PUNCT	$,	_	19	punct	_	_
 11	und	und	CCONJ	KON	_	19	cc	_	_
-12	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+12	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	expl	_	_
 13	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
 14	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	iobj	_	_
 15	nie	nie	ADV	ADV	_	19	advmod	_	_
@@ -699,7 +701,7 @@
 23	noch	noch	ADV	ADV	_	24	advmod	_	_
 24	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	26	nsubj	_	_
 25	anderes	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	26	nsubj	_	_
-26	nötig	nötig	ADJ	ADJD	_	18	ccomp	_	_
+26	nötig	nötig	ADJ	ADJD	_	19	csubj	_	_
 27	sein	sein	AUX	VAINF	VerbForm=Inf	26	cop	_	_
 28	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
 29	als	als	CCONJ	KOKOM	_	30	case	_	_
@@ -720,20 +722,19 @@
 
 [] Augenblick (8)
 
-[] gekommen (19)
-[] es (12)
-[] ihm (14)
-[] nie (15)
-[] in den Sinn , dass dazu noch etwas anderes nötig sein könnte als Mut (18)
-
-[] es (12)
+[LOCATION-INIT >> SCENE-INIT] gekommen (19)
+[target-location >> participant] ihm (14)
+[m-time] nie (15)
+[x-attribute] in den Sinn (18)
+[has-location >> target-scene] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
 
 [] ihm (14)
 
 [] nie (15)
 
-[] Sinn (18)
-[] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
+[MESSAGE] Sinn (18)
+[x-experiencer] ihm (14)
+[content] nötig (26)
 
 [] nötig (26)
 [] dazu (22)

@@ -35,22 +35,23 @@
 33	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	aux	_	_
 34	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] gaben (10)
-[] Die Frauen , und vor allem die jungen , (2)
-[] immer (11)
-[] die blind ergebenen Parteianhänger , die gedankenlosen Nachplapperer , die freiwilligen Spitzel , mit deren Hilfe man weniger Linientreue aushorchen konnte (15)
-[] ab (24)
+[COMPARISON || SCENE-POSSIBILITY] gaben (10)
+[compared || participant] Die Frauen , und vor allem die jungen , (2)
+[m-time] immer (11)
+[reference || scene] die blind ergebenen Parteianhänger , die gedankenlosen Nachplapperer , die freiwilligen Spitzel , mit deren Hilfe man weniger Linientreue aushorchen konnte (15)
+[m-noncomp] ab (24)
 
 [] Frauen (2)
 
-[] jungen (8)
-[] vor allem (6)
+[QUALITY] jungen (8)
+[m-mode] vor allem (6)
 
-[] allem (6)
+[MODE] allem (6) # TODO -> manual MWE: "vor allem"
 
 [] immer (11)
 
-[] Parteianhänger (15)
+[SOCIAL-RELATION] Parteianhänger (15)
+[has-social-relation] Frauen (2)
 [] blind ergebenen (14)
 
 [] ergebenen (14)
@@ -58,12 +59,14 @@
 
 [] blind (13)
 
-[] Nachplapperer (19)
+[MESSAGE-INIT] Nachplapperer (19)
+[x-sender] Frauen (2)
 [] gedankenlosen (18)
 
 [] gedankenlosen (18)
 
-[] Spitzel (23)
+[MESSAGE-INIT] Spitzel (23)
+[x-experiencer] Frauen (2)
 [] freiwilligen (22)
 [] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 
@@ -118,11 +121,13 @@
 
 [] ihm (7)
 
-[] Eindruck (9)
-[] , gefährlicher als die meisten zu sein (11)
+[MESSAGE] Eindruck (9)
+[content] , gefährlicher als die meisten zu sein (11)
+[topic] Mädchen (3)
 
-[] gefährlicher (11)
-[] als die meisten (14)
+[QUALITY] gefährlicher (11)
+[x-reference] als die meisten (14)
+[has-quality] Mädchen (3)
 
 [] meisten (14)
 
