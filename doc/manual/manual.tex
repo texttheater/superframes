@@ -306,8 +306,10 @@ them as modifiers: \rl{m-}.
 
 \ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
 
-Adjectival and adverbial modification is characterized by the syntactic modifier acting as a predicate, with the syntactic modifiee as an argument.
-We label such modifier dependencies \rl{m-scene} (cf. Section~\ref{sec:SCENE}) and add a reverse dependency with the corresponding role label.
+Adjectival and adverbial modification is characterized by the syntactic
+modifier acting as a predicate, with the syntactic modifiee as an argument.  We
+label such modifier dependencies \rl{m-scene} (cf. Section~\ref{sec:SCENE}) and
+add a reverse dependency with the corresponding role label.
 
 \ex.\dep{Ich *spiele#ACTIVITY*__topic **lieber#MESSAGE**_m-scene Schach}
 
@@ -316,6 +318,8 @@ We label such modifier dependencies \rl{m-scene} (cf. Section~\ref{sec:SCENE}) a
 \ex.\dep{Sie *sprangen#LOCATION-INIT*__asserted des Regens__conceded **ungeachtet#CONCESSION**_m-scene nach draußen}
 
 \ex.\dep{Kim war **unvermindert#QUANTITY-CONTINUATION**_m-scene *fröhlich#MESSAGE*__has-quantity}
+
+\ex.\dep{» Wir haben um Hilfe gebeten « , **so#SENDING**_m-scene *Saqib#IDENTIFICATION*__sender}
 
 If arg2 has the same name as the frame, this structure can be abbreviated to
 just use that as a modifier role instead of \rl{m-scene} and a backlink. For
@@ -332,6 +336,14 @@ example, the following pairs are equivalent:
 \ex.
 \a.\dep{Kim *kommt#LOCATION-INIT*__has-time **erstmals#TIME**_m-scene mit Sandy}
 \b.\dep{Kim *kommt#LOCATION-INIT* **erstmals#TIME**_m-time mit Sandy}
+
+Note the polysemy of some connective adverbs:
+
+\ex.\dep{They appreciated how_m-quality Kim_is-active *danced#ACTIVITY*}
+
+\ex.\dep{They wondered how_m-means Kim_participant *did#SCENE* it_scene}
+
+\ex.\dep{I remembered **how#MESSAGE**_m-scene my studies_x-experiencer had *concentrated#MESSAGE*__content on geography_topic}
 
 
 \newpage\subsection{Nonverbal Predicates}
@@ -709,6 +721,8 @@ Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
 
 \ex.\dep{animal_m-purpose *doctor#CLASS*}
 
+\ex.\dep{the NoMa_m-identified infill_m-purpose Metro_m-purpose *station#CLASS*}
+
 
 \newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -738,6 +752,10 @@ be metaphorical:
 Likewise, \emph{in} has an identifying sense:
 
 \ex.\dep{In answer_m-identifier , he_x-sender *repeated#MESSAGE-INIT* : Please, draw_target-content me a sheep !}
+
+Pronouns with core arguments are instead framed the same as the (presumable) antecedent:
+
+\ex.\dep{It_x-identified was *that#MESSAGE* (picture) of the boa_topic constrictor}
 
 
 \newpage\subsection{\emoji{round-pushpin} \fr{LOCATION}}
@@ -1006,7 +1024,10 @@ expressed and/or its relation to the discourse.
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
 
-Used to mark syntactic arguments that are thought of as part of the predicate, as in verbal idioms, weather verbs, inherently reflexive verbs, existential \emph{there}, or other fixed expressions.
+Used to mark syntactic arguments that are thought of as part of the predicate,
+as in verbal idioms, weather verbs, inherently reflexive verbs, existential
+\emph{there}, names, or other fixed expressions. (Light verbs, on the other hand, are
+treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
@@ -1016,9 +1037,17 @@ Used to mark syntactic arguments that are thought of as part of the predicate, a
 
 \ex.\dep{There_x-noncomp *was#SCENE* a famine_scene}
 
-\ex.\dep{fountain_m-noncomp *pen#CLASS*}
+\ex.\dep{Motion Picture_m-purpose>>m-noncomp *Association#CLASS* of America_m-social-relation>>m-noncomp}
 
-Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
+\ex.\dep{fountain_m-reference>>m-noncomp *pen#CLASS*}
+
+The superframe to assign to such dependents is either \fr{NONCOMP}, unless an
+argument of the whole predicate syntactically attaches to it. In that case,
+label it the same as the top predicate:
+
+\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
+
+\ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
 
 
 \newpage\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
