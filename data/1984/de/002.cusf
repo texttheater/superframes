@@ -714,11 +714,11 @@
 30	Mut	Mut	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	26	nmod	_	_
 31	.	.	PUNCT	$.	_	9	punct	_	_
 
-[SEQUENCE] vorbereitet (9)
-[] Seit Wochen (2)
-[] er (4)
-[] sich (5)
-[] auf diesen Augenblick (8)
+[SCENE-INIT] vorbereitet (9)
+[m-time] Seit Wochen (2)
+[participant] er (4)
+[m-noncomp] sich (5)
+[target-scene] auf diesen Augenblick (8)
 
 [TIME] Wochen (2)
 
@@ -774,10 +774,10 @@
 9	gehalten	halten	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[SCENE] gehalten (9)
-[participant] Die Niederschrift als solche (2)
-[x-causer] er (6)
-[scene] für leicht (8)
+[MESSAGE] gehalten (9)
+[topic] Die Niederschrift als solche (2)
+[x-experiencer] er (6)
+[content] für leicht (8)
 
 [MESSAGE] Niederschrift (2)
 [x-identified] als solche (4)
@@ -910,13 +910,13 @@
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
 [SCENE-INIT] angefangen (11)
-[] Außerdem (1)
+[m-conceded] Außerdem (1)
 [participant] das Ekzem (4)
 [location] an seinen Krampfadern (7)
 [m-quantity || m-quality] unerträglich (8)
 [scene] zu jucken (10)
 
-[] Außerdem (1)
+[CONCESSION] Außerdem (1)
 
 [CLASS] Ekzem (4)
 
@@ -947,21 +947,22 @@
 14	immer	immer	ADV	ADV	_	11	advmod	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
-[SCENE] wagte (2)
+[SCENE-INIT] wagte (2)
 [participant] Er (1)
 [m-mode] nicht (3)
-[scene] , daran zu kratzen (7)
+[target-scene] , daran zu kratzen (7)
 
 [IDENTIFICATION] Er (1)
 
 [MODE] nicht (3)
 
-[ACTIVITY] kratzen (7)
-[m-location] daran (5)
+[EVENT] kratzen (7)
+[undergoer] daran (5)
+[x-causer] Er (1)
 
 [LOCATION] daran (5)
 
-[STATE] entzündete (11)
+[STATE-CHANGE] entzündete (11)
 [m-time] dann (10)
 [has-state] es (12)
 [m-noncomp] sich (13)
@@ -982,8 +983,8 @@
 3	verstrichen	verstreichen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[EXSISTENCE-NEG] verstrichen (3)
-[exist] Die Sekunden (2)
+[SCENE-DEINIT] verstrichen (3)
+[initial-scene] Die Sekunden (2)
 
 [TIME] Sekunden (2)
 
@@ -1272,28 +1273,28 @@
 16	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] guter (3)
-[] sehr (2)
-[] , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird (7)
+[QUALITY] guter (3)
+[m-quantity] sehr (2)
+[m-scene] , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird (7)
 
-[] sehr (2)
+[QUANTITY] sehr (2)
 
-[] Schiff (7)
-[] von Flüchtlingen (9)
-[] , das irgendwo im Mittelmeer bombardiert wird (15)
+[POSSESSION] Schiff (7)
+[possessor] von Flüchtlingen (9)
+[m-scene] , das irgendwo im Mittelmeer bombardiert wird (15)
 
-[] Flüchtlingen (9)
+[CLASS] Flüchtlingen (9)
 
-[] bombardiert (15)
-[] das (11)
-[] irgendwo (12)
-[] im Mittelmeer (14)
+[DESTRUCTION] bombardiert (15)
+[destructed] das (11)
+[m-location] irgendwo (12)
+[m-location] im Mittelmeer (14)
 
-[] das (11)
+[IDENTIFICATION] das (11)
 
-[] irgendwo (12)
+[LOCATION] irgendwo (12)
 
-[] Mittelmeer (14)
+[CLASS] Mittelmeer (14)
 
 # sent_id = 132
 # text = Zuschauer höchst belustigt durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , zuerst sah man ihn sich durchs Wasser wälzen wie ein Nilpferd , dann sah man ihn durch das Zielfernrohr des Hubschraubers , dann war er ganz durchlöchert und das Meer rund um ihn färbte sich rosa , und er versank so plötzlich , als sei das Wasser durch die Löcher eingedrungen .
@@ -1367,122 +1368,116 @@
 68	eingedrungen	eindringen	VERB	VVPP	Verbform=Part	57	advcl	_	_
 69	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] belustigt (3)
-[] Zuschauer (1)
-[] höchst (2)
-[] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
+[STATE] belustigt (3)
+[has-state] Zuschauer (1)
+[m-quantity] höchst (2)
+[m-causer] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
 
-[] Zuschauer (1)
+[CLASS] Zuschauer (1)
 
-[] höchst (2)
+[QUANTITY] höchst (2)
 
-[] Aufnahme (6)
-[] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
+[MESSAGE] Aufnahme (6)
+[content] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
 
-[] Mann (11)
-[] großen (9)
-[] dicken (10)
-[] , den ein Helikopter verfolgt , sich (16)
+[CLASS] Mann (11)
+[m-depictive] großen (9)
+[m-depictive] dicken (10)
+[m-scene] , den ein Helikopter verfolgt , sich (16)
 
-[] großen (9)
+[DEPICTION] großen (9)
 
-[] dicken (10)
+[DEPICTION] dicken (10)
 
-[] verfolgt (16)
+[LOCATION-CHANGE] verfolgt (16)
 [] den (13)
 [] ein Helikopter (15)
 [] sich (22)
 
-[] den (13)
+[IDENTIFICATION] den (13)
 
-[] Helikopter (15)
+[CLASS] Helikopter (15)
 
 [] sich (22)
 
-[] sah (19)
-[] zuerst (18)
-[] man (20)
-[] ihn (21)
-[] durchs Wasser wälzen wie ein Nilpferd (25)
+[MESSAGE] sah (19)
+[m-time] zuerst (18)
+[x-experiencer] man (20)
+[topic] ihn (21)
+[m-scene] durchs Wasser wälzen wie ein Nilpferd (25)
 
-[] zuerst (18)
+[TIME] zuerst (18)
 
-[] man (20)
+[IDENTIFICATION] man (20)
 
-[] ihn (21)
+[IDENTIFICATION] ihn (21)
 
-[] wälzen (25)
-[] durchs Wasser (24)
-[] wie ein Nilpferd (28)
+[LOCATION-CHANGE] wälzen (25)
+[transitory-location] durchs Wasser (24)
+[m-quality] wie ein Nilpferd (28)
 
-[] Wasser (24)
+[CLASS] Wasser (24)
 
-[] Nilpferd (28)
+[CLASS] Nilpferd (28)
 
-[] sah (31)
-[] dann (30)
-[] man (32)
-[] ihn (33)
-[] durch das Zielfernrohr des Hubschraubers (36)
-[] dann (40)
-[] er (42)
+[MESSAGE] sah (31)
+[m-time] dann (30)
+[x-experiencer] man (32)
+[topic] ihn (33)
+[m-means] durch das Zielfernrohr des Hubschraubers (36)
 
-[] dann (30)
+[TIME] dann (30)
 
-[] man (32)
+[IDENTIFICATION] man (32)
 
-[] ihn (33)
+[IDENTIFICATION] ihn (33)
 
-[] Zielfernrohr (36)
-[] des Hubschraubers (38)
+[CLASS] Zielfernrohr (36)
+[m-identifier] des Hubschraubers (38)
 
-[] Hubschraubers (38)
+[CLASS] Hubschraubers (38)
 
-[] dann (40)
+[STATE-INITIAL] färbte (51)
+[has-state] das Meer (47)
+[m-location] rund um ihn (50)
+[m-noncomp] sich (52)
+[target-state] rosa (53)
 
-[] er (42)
+[CLASS] Meer (47)
 
-[] färbte (51)
-[] das Meer (47)
-[] rund um ihn (50)
-[] sich (52)
-[] rosa (53)
+[LOCATION] ihn (50)
+[DEPICTIVE] rund (48)
 
-[] Meer (47)
+[DEPICTIVE] rund (48)
 
-[] ihn (50)
-[] rund (48)
+[NONCOMP] sich (52)
 
-[] rund (48)
+[QUALITY] rosa (53)
 
-[] sich (52)
+[DESTRUCTION] durchlöchert (44)
+[m-quantity] ganz (43)
 
-[] rosa (53)
+[QUANTITY] ganz (43)
 
-[] durchlöchert (44)
-[] ganz (43)
+[LOCATION-CHANGE] versank (57)
+[has-location] er (56)
+[m-time] so plötzlich (59)
+[m-scene] , als sei das Wasser durch die Löcher eingedrungen (68)
 
-[] ganz (43)
+[IDENTIFICATION] er (56)
 
-[] versank (57)
-[] er (56)
-[] so plötzlich (59)
-[] , als sei das Wasser durch die Löcher eingedrungen (68)
+[TIME] plötzlich (59)
+[m-mode] so (58)
 
-[] er (56)
+[MODE] so (58)
 
-[] plötzlich (59)
-[] so (58)
+[LOCATION-CHANGE] eingedrungen (68)
+[has-location] das Wasser (64)
+[transitory-location] durch die Löcher (67)
 
-[] so (58)
+[CLASS] Wasser (64)
 
-[] eingedrungen (68)
-[] das Wasser (64)
-[] durch die Löcher (67)
-
-[] Wasser (64)
-
-[] Löcher (67)
+[CLASS] Löcher (67)
 
 # sent_id = 133
 # text = Zuschauer brüllten vor lachen als er unterging .
@@ -1495,19 +1490,19 @@
 7	unterging	untergehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] brüllten (2)
-[] Zuschauer (1)
-[] vor lachen (4)
-[] als er unterging (7)
+[MESSAGE] brüllten (2)
+[x-causer] Zuschauer (1)
+[m-causer] vor lachen (4)
+[topic] als er unterging (7)
 
-[] Zuschauer (1)
+[CLASS] Zuschauer (1)
 
-[] lachen (4)
+[MESSAGE] lachen (4)
 
-[] unterging (7)
-[] er (6)
+[LOCATION-CHANGE] unterging (7)
+[has-location] er (6)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
 # sent_id = 134
 # text = Dann sah man ein Rettungsboot voll kinder mit einem hubschrauber darüber , eine frau mittleren Alters , vielleicht eine Jüdin , saß mit einem etwa drei jähre alten knaben im bug .
@@ -1544,60 +1539,59 @@
 31	bug	Bug	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	22	obl	_	_
 32	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sah (2)
-[] Dann (1)
-[] man (3)
-[] ein Rettungsboot voll kinder mit einem hubschrauber (5)
-[] darüber (11)
+[MESSAGE] sah (2)
+[m-time] Dann (1)
+[x-experiencer] man (3)
+[content] ein Rettungsboot voll kinder mit einem hubschrauber darüber (5)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] man (3)
+[IDENTIFICATION] man (3)
 
-[] Rettungsboot (5)
-[] voll kinder (7)
-[] mit einem hubschrauber (10)
+[WRAPPING-WEARING] Rettungsboot (5)
+[wearer] voll kinder (7)
 
-[] kinder (7)
+[CLASS] kinder (7)
 
-[] hubschrauber (10)
+[CLASS] hubschrauber (10)
+[m-location] darüber (11)
 
-[] darüber (11)
+[LOCATION] darüber (11)
 
-[] saß (22)
-[] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
-[] mit einem etwa drei jähre alten knaben (29)
-[] im bug (31)
+[LOCATION-CONTINUATION] saß (22)
+[has-location] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
+[m-depictive] mit einem etwa drei jähre alten knaben (29)
+[location] im bug (31)
 
-[] frau (14)
-[] mittleren Alters , vielleicht eine Jüdin , (16)
+[CLASS] frau (14)
+[m-quality] mittleren Alters , vielleicht eine Jüdin , (16)
 
-[] Alters (16)
-[] mittleren (15)
-[] , vielleicht eine Jüdin , (20)
+[QUALITY] Alters (16)
+[quality] mittleren (15)
+[has-quality] , vielleicht eine Jüdin , (20)
 
-[] mittleren (15)
+[QUALITY] mittleren (15)
 
-[] Jüdin (20)
-[] vielleicht (18)
+[CLASS] Jüdin (20)
+[m-mode] vielleicht (18)
 
-[] vielleicht (18)
+[MODE] vielleicht (18)
 
-[] knaben (29)
-[] etwa drei jähre alten (28)
+[CLASS] knaben (29)
+[m-quality] etwa drei jähre alten (28)
 
-[] alten (28)
-[] etwa drei jähre (27)
+[QUALITY] alten (28)
+[quality] etwa drei jähre (27)
 
-[] jähre (27)
-[] etwa drei (26)
+[TIME] jähre (27)
+[m-quantity] etwa drei (26)
 
-[] drei (26)
-[] etwa (25)
+[QUANTITY] drei (26)
+[m-mode] etwa (25)
 
-[] etwa (25)
+[MODE] etwa (25)
 
-[] bug (31)
+[CLASS] bug (31)
 
 # sent_id = 135
 # text = Kleiner Junge brüllte vor angst und verbarg seinen köpf zwischen den brüsten als wollte er ganz in sie hineinkriechen und die frau legte die arme um ihn und tröstete ihn , obwohl sie selbst außer sich vor angst war bedeckte sie ihn so gut wie möglich als glaubte sie ihre arme könnten die kugeln von ihm abhalten , dann warf der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen und das ganze schiff zersplitterte wie Streichhölzer , dann gab es eine wundervolle aufnähme von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein und es gab viel bei fall aus den parteilogen aber eine frau unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern bis die polizei sie hinauswarf ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - «
@@ -2111,28 +2105,28 @@
 12	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hörte (2)
-[] Winston (1)
-[] zu schreiben (4)
-[] auf (5)
-[] , auch weil er einen Schreibkrampf bekam (12)
+[SCENE-DEINIT] hörte (2)
+[participant] Winston (1)
+[scene] zu schreiben (4)
+[m-noncomp] auf (5)
+[x-causer] , auch weil er einen Schreibkrampf bekam (12)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] schreiben (4)
+[MESSAGE] schreiben (4)
 
-[] auf (5)
+[NONCOMP] auf (5)
 
-[] bekam (12)
-[] auch (7)
-[] er (9)
-[] einen Schreibkrampf (11)
+[STATE-INIT] bekam (12)
+[m-mode] auch (7)
+[has-state] er (9)
+[state] einen Schreibkrampf (11)
 
-[] auch (7)
+[MODE] auch (7)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] Schreibkrampf (11)
+[STATE] Schreibkrampf (11)
 
 # sent_id = 137
 # text = Er wusste nicht , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern .
@@ -2154,34 +2148,34 @@
 16	herauszuschleudern	herausschleudern	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Er (1)
-[] nicht (3)
-[] , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern (7)
+[MESSAGE] wusste (2)
+[x-experiencer] Er (1)
+[m-mode] nicht (3)
+[topic] , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] nicht (3)
+[MODE] nicht (3)
 
-[] veranlasst (7)
-[] was (5)
-[] ihn (6)
-[] , diese Flut von Gestammel aus sich herauszuschleudern (16)
+[SCENE-INIT] veranlasst (7)
+[m-causer] was (5)
+[participant] ihn (6)
+[scene] , diese Flut von Gestammel aus sich herauszuschleudern (16)
 
-[] was (5)
+[CAUSATION] was (5)
 
-[] ihn (6)
+[IDENTIFICATION] ihn (6)
 
-[] herauszuschleudern (16)
-[] diese Flut (11)
-[] von Gestammel (13)
-[] aus sich (15)
+[EXCRETION] herauszuschleudern (16)
+[m-quantity] diese Flut (11)
+[excreted] von Gestammel (13)
+[excreter] aus sich (15)
 
-[] Flut (11)
+[QUANTITY] Flut (11)
 
-[] Gestammel (13)
+[MESSAGE] Gestammel (13)
 
-[] sich (15)
+[IDENTIFICATION] sich (15)
 
 # sent_id = 138
 # text = Aber das merkwürdige war , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben .
@@ -2217,55 +2211,55 @@
 30	niedergeschrieben	niederschreiben	VERB	VVPP	Verbform=Part	24	advcl	_	_
 31	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] merkwürdige (3)
-[] , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (16)
+[SCENE] merkwürdige (3)
+[scene] , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (16)
 
-[] gekommen (16)
-[] ihm (7)
-[] dabei (8)
-[] eine vollständige Erinnerung (11)
-[] so deutlich (13)
-[] zum Bewusstsein (15)
-[] , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (24)
+[MESSAGE-INIT] gekommen (16)
+[x-experiencer] ihm (7)
+[m-scene] dabei (8)
+[topic] eine vollständige Erinnerung (11)
+[m-quality] so deutlich (13)
+[m-mode] zum Bewusstsein (15)
+[m-scene] , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (24)
 
-[] ihm (7)
+[IDENTIFICATION] ihm (7)
 
-[] dabei (8)
+[SCENE] dabei (8)
 
-[] Erinnerung (11)
-[] vollständige (10)
+[MESSAGE] Erinnerung (11)
+[m-quality] vollständige (10)
 
-[] vollständige (10)
+[QUALITY] vollständige (10)
 
-[] deutlich (13)
-[] so (12)
+[QUALITY] deutlich (13)
+[m-quantity] so (12)
 
-[] so (12)
+[QUANTITY] so (12)
 
-[] Bewusstsein (15)
+[MESSAGE] Bewusstsein (15)
 
-[] vorkam (24)
-[] es (20)
-[] ihm (21)
-[] fast so (23)
-[] , als habe er sie niedergeschrieben (30)
+[SCENE] vorkam (24)
+[scene] es (20)
+[participant] ihm (21)
+[m-mode] fast so (23)
+[scene] , als habe er sie niedergeschrieben (30)
 
-[] es (20)
+[SCENE] es (20)
 
-[] ihm (21)
+[IDENTIFICATION] ihm (21)
 
-[] so (23)
-[] fast (22)
+[MODE] so (23)
+[m-quantity] fast (22)
 
-[] fast (22)
+[QUANTITY] fast (22)
 
-[] niedergeschrieben (30)
-[] er (28)
-[] sie (29)
+[MESSAGE] niedergeschrieben (30)
+[x-sender] er (28)
+[topic] sie (29)
 
-[] er (28)
+[IDENTIFICATION] er (28)
 
-[] sie (29)
+[MESSAGE] sie (29)
 
 # sent_id = 139
 # text = Nun erkannte er , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen .
@@ -2296,48 +2290,48 @@
 25	beginnen	beginnen	VERB	VVINF	VerbForm=Inf	19	conj	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erkannte (2)
-[] Nun (1)
-[] er (3)
-[] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
+[MESSAGE-INIT] erkannte (2)
+[m-time] Nun (1)
+[x-experiencer] er (3)
+[content] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
 
-[] Nun (1)
+[TIME] Nun (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] schuld (13)
-[] dieser andere Vorfall (8)
-[] an seinem plötzlichen Entschluss (12)
-[] , nach Hause zu gehen und heute sein Tagebuch zu beginnen (19)
+[CAUSATION] schuld (13)
+[causer] dieser andere Vorfall (8)
+[result] an seinem plötzlichen Entschluss (12)
+[m-scene] , nach Hause zu gehen und heute sein Tagebuch zu beginnen (19)
 
-[] Vorfall (8)
-[] andere (7)
+[SCENE] Vorfall (8)
+[m-quality] andere (7)
 
-[] andere (7)
+[QUALITY] andere (7)
 
-[] Entschluss (12)
-[] seinem (10)
-[] plötzlichen (11)
+[RESULTATIVE] Entschluss (12)
+[m-identifier] seinem (10)
+[m-time] plötzlichen (11)
 
-[] seinem (10)
+[IDENTIFICATION] seinem (10)
 
-[] plötzlichen (11)
+[TIME] plötzlichen (11)
 
-[] gehen (19)
-[] nach Hause (17)
+[LOCATION-CHANGE] gehen (19)
+[target-location] nach Hause (17)
 
-[] Hause (17)
+[LOCATION] Hause (17)
 
-[] beginnen (25)
-[] heute (21)
-[] sein Tagebuch (23)
+[MESSAGE-INIT] beginnen (25)
+[m-time] heute (21)
+[topic] sein Tagebuch (23)
 
-[] heute (21)
+[TIME] heute (21)
 
-[] Tagebuch (23)
-[] sein (22)
+[MESSAGE] Tagebuch (23)
+[m-possessor] sein (22)
 
-[] sein (22)
+[IDENTIFICATION] sein (22)
 
 # sent_id = 140
 # text = Dieser Vorfall hatte sich heute morgen im Ministerium zugetragen , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat .
@@ -2368,49 +2362,46 @@
 25	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 26	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] zugetragen (9)
-[] Dieser Vorfall (2)
-[] sich (4)
-[] heute (5)
-[] morgen (6)
-[] im Ministerium (8)
-[] , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat (18)
+[SCENE] zugetragen (9)
+[scene] Dieser Vorfall (2)
+[m-mode] sich (4)
+[m-time] heute (5)
+[m-time] morgen (6)
+[m-location] im Ministerium (8)
+[m-condotion] , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat (18)
 
-[] Vorfall (2)
+[SCENE] Vorfall (2)
 
-[] sich (4)
+[MODE] sich (4)
 
-[] heute (5)
+[TIME] heute (5)
 
-[] morgen (6)
+[TIME] morgen (6)
 
-[] Ministerium (8)
+[LOCATION] Ministerium (8)
 
-[] sagen (18)
-[] man (12)
-[] etwas (14)
-[] von so Nebelhaftem (16)
-[] überhaupt (17)
-[] , dass es sich zugetragen hat (24)
+[MESSAGE] sagen (18)
+[x-sender] man (12)
+[topic] von etwas so Nebelhaftem (16)
+[m-mode] überhaupt (17)
+[content] , dass es sich zugetragen hat (24)
 
-[] man (12)
+[IDENTIFICATION] man (12)
 
-[] etwas (14)
+[SCENE] Nebelhaftem (16)
+[m-quantity] so (15)
 
-[] Nebelhaftem (16)
-[] so (15)
+[MODE] so (15)
 
-[] so (15)
+[MODE] überhaupt (17)
 
-[] überhaupt (17)
+[SCENE] zugetragen (24)
+[scene] es (22)
+[m-noncomp] sich (23)
 
-[] zugetragen (24)
-[] es (22)
-[] sich (23)
+[SCENE] es (22)
 
-[] es (22)
-
-[] sich (23)
+[NONCOMP] sich (23)
 
 # sent_id = 141
 # text = Es war kurz vor elf , und in der Registrierabteilung , in der Winston arbeitete , hatte man die Stühle aus den Gemeinschaftsräumen geholt und sie in der Mitte des Saales dem großen Televisor gegenüber aufgestellt , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung .
