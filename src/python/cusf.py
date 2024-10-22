@@ -1,5 +1,4 @@
 import collections
-from dataclass import dataclass
 import logging
 import math
 import re
@@ -102,14 +101,23 @@ class Frame:
             block.append(arg.to_line())
         return block
 
-    def fill_args(self, args: Set[Tuple[str, str]]):
-        # Remove args without annotation
-        self.args = [a for a in self.args if a.label or a.comment]
-        # Add expected args
-        for head, text in args:
-            if any(a.head == head for a in self.args):
-                continue
-            self.args.append(Arg(head, text, '', ''))
+    def fill_args(self, expected_args: Set[Tuple[str, str]]):
+        # Keep existing args, fill in missing expected args
+        existing_args_by_head = collections.defaultdict(list)
+        for arg in self.args:
+            if arg.label or arg.comment:
+                existing_args_by_head[arg.head].append(arg)
+        self.args = []
+        for head, text in expected_args:
+            if head in existing_args_by_head:
+                for arg in existing_args_by_head[head]:
+                    self.args.append(arg)
+            else:
+                self.args.append(Arg(head, text, '', ''))
+        for args in existing_args_by_head.values():
+            for arg in args:
+                if arg not in self.args:
+                    self.args.append(arg)
 
     def find_arg(self, label: str) -> Optional[Arg]:
         for arg in self.args:
@@ -214,6 +222,42 @@ class Sentence:
             self.frames.append(block)
         self.frame_linenos.append(lineno)
 
+    def get_frame(self, head: str) -> Optional[Frame]:
+        """Returns the frame with the given head ID, or None"""
+        for frame in self.frames:
+            if frame.head == head:
+                return frame
+
+    def traverse(self, head: str) -> Set[str]:
+        """Traverses the semantic graph.
+
+        Returns the head IDs of frames that are reachable via semantic links
+        from the one with the given head ID.
+        """
+        seen = set()
+        agenda = [head]
+        while agenda:
+            head = agenda.pop()
+            seen.add(head)
+            match self.get_frame(head):
+                case None:
+                    pass
+                case frame:
+                    for arg in frame.args:
+                        if arg.label:
+                            if arg.head not in seen:
+                                agenda.append(arg.head)
+        return seen
+
+    def link_exists(self, ancestor_head: str, descendant_head: str) -> bool:
+        return descendant_head in self.traverse(ancestor_head)
+
+    def deep_link_exists(self: str, ancestor_head: str, descendant_head: str) -> bool:
+        return any(
+            self.link_exists(a, descendant_head)
+            for a in self.traverse(ancestor_head)
+        )
+
     def fill(self):
         """Add missing frames/args"""
         # Phase 0: ignore sentences with syntax errors
@@ -241,18 +285,19 @@ class Sentence:
                 target_scene = frame.find_arg('target-scene')
                 if participant:
                     protoarg = (participant.head, participant.text)
-                    if initial_scene:
+                    if initial_scene and not self.deep_link_exists(initial_scene.head, participant.head):
                         expected_links[initial_scene.head].append(protoarg)
-                    if transitory_scene:
+                    if transitory_scene and not self.deep_link_exists(transitory_scene.head, participant.head):
                         expected_links[transitory_scene.head].append(protoarg)
-                    if scene:
+                    if scene and not self.deep_link_exists(scene.head, participant.head):
                         expected_links[scene.head].append(protoarg)
-                    if target_scene:
+                    if target_scene and not self.deep_link_exists(target_scene.head, participant.head):
                         expected_links[target_scene.head].append(protoarg)
             for arg in frame.args:
-                if arg.label == 'm-scene':
+                if arg.label == 'm-scene' and not self.deep_link_exists(arg.head, frame.head):
                     protoarg = (frame.head, frame.text)
-                    expected_links[arg.head].append(protoarg)
+                    if not self.deep_link_exists(arg.head, frame.head):
+                        expected_links[arg.head].append(protoarg)
         # Phase 1c: topic-content links
         for frame in self.frames:
             if frame.label.split('-')[0] == 'MESSAGE':
@@ -263,16 +308,16 @@ class Sentence:
                 target_content = frame.find_arg('target-content')
                 if topic:
                     protoarg = (topic.head, topic.text)
-                    if initial_content:
+                    if initial_content and not self.deep_link_exists(initial_content.head, topic.head):
                         expected_links[initial_content.head].append(protoarg)
-                    if transitory_content:
+                    if transitory_content and not self.deep_link_exists(transitory_content.head, topic.head):
                         expected_links[transitory_content.head].append(protoarg)
-                    if content:
+                    if content and not self.deep_link_exists(content.head, topic.head):
                         expected_links[content.head].append(protoarg)
-                    if target_content:
+                    if target_content and not self.deep_link_exists(target_content.head, topic.head):
                         expected_links[target_content.head].append(protoarg)
             for arg in frame.args:
-                if arg.label == 'm-content':
+                if arg.label == 'm-content' and not self.deep_link_exists(arg.head, frame.head):
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
         # Phase 2: remove empty frames
