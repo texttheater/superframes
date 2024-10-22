@@ -81,9 +81,9 @@
 
 [MESSAGE-INIT] schlugen (14)
 [x-sender] die Uhren (13)
+[m-time] gerade (15)
 [target-content] dreizehn (16)
 [m-time] , als Winston Smith , das Kinn an die Brust gepresst , um dem rauhen Wind zu entgehen , rasch durch die Glastüren eines der Häuser des Victory-Blocks schlüpfte , wenn auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (45)
-[m-time] gerade (15)
 
 [] Uhren (13)
 
@@ -305,8 +305,8 @@
 [] nur (3)
 
 [] Gesicht (6)
-[m-scene] von mehr als einem Meter Breite (12) # TODO clarify: when to use m-scene and when not
 [] riesiges (5)
+[m-scene] von mehr als einem Meter Breite (12) # TODO clarify: when to use m-scene and when not
 [] : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (16)
 
 [] riesiges (5)
@@ -590,9 +590,9 @@
 [] sehr (23)
 
 [] ruhte (26)
+[] sich (27)
 [m-time] mehrmals (28)
 [m-transitory-location || m-time] unterwegs (29)
-[] sich (27)
 [] aus (30)
 
 [] sich (27)
@@ -861,8 +861,8 @@
 [] Knopf (5)
 
 [] wurde (10)
-[m-causer || m-followed] daraufhin (11)
 [] die Stimme (9)
+[m-causer || m-followed] daraufhin (11)
 [] etwas (12)
 [] leiser (13)
 
@@ -974,18 +974,18 @@
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-INIT] trat (2)
-[m-depictive] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 [has-location] Smith (1)
 [target-location] ans Fenster (4)
+[m-depictive] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
 [IDENTIFICATION] Smith (1)
 
 [CLASS] Fenster (4)
 
 [CLASS] Gestalt (10)
+[m-quality] abgezehrte , gebrechliche (7)
 [m-scene] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
 [x-identified] Smith (1)
-[m-quality] abgezehrte , gebrechliche (7)
 
 [] abgezehrte (7)
 
@@ -995,11 +995,10 @@
 [topic] deren Magerkeit (13)
 [x-sender] durch den blauen Trainingsanzug der Parteiuniform (17)
 [m-mode] noch (20)
-[] Gestalt (10) # TODO wrong role added by checker
 
 [QUALITY] Magerkeit (13)
 [has-quality] deren (12)
-[has-quality] Gestalt (10) # this is the correct backlink
+[has-quality] Gestalt (10) # indirect backlink
 
 [] deren (12)
 
@@ -1175,12 +1174,12 @@
 37	.	.	PUNCT	$.	_	5	punct	_	_
 
 [LOCATION-INIT] wirbelten (5)
-[m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
 [m-location] Unten (1)
 [m-location] auf der Straße (4)
 [x-causer] schwache Windstöße Staub und Papierfetzen (7)
-[target-location] hoch (13)
 [m-means] in Spiralen (12) # TODO manual: dare to interpret an abstract noun as an event
+[target-location] hoch (13)
+[m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
 
 [] Unten (1)
 
@@ -1214,10 +1213,10 @@
 [] leuchtend (23)
 
 [] schien (27)
-[m-exception] , außer den überall angebrachten Plakaten (36)
 [] doch (28)
 [] alles (29)
 [] farblos (30)
+[m-exception] , außer den überall angebrachten Plakaten (36)
 
 [] doch (28)
 
@@ -1323,9 +1322,9 @@
 26	.	.	PUNCT	$.	_	10	punct	_	_
 
 [MESSAGE] hieß (10)
+[content] » Der Große Bruder sieht dich an . « (5)
 [m-mode] auch (11)
 [m-location] hier (12)
-[content] » Der Große Bruder sieht dich an . « (5)
 [x-sender] die Unterschrift (14)
 
 [MESSAGE-INIT] sieht (5)
@@ -1425,8 +1424,8 @@
 
 [SCENE-INIT] ließ (17)
 [participant] nur das Wort Engsoz (20)
-[x-causer] Plakat (12)
 [target-scene] bald verdeckt , bald unverdeckt erscheinen (27)
+[x-causer] Plakat (12)
 
 [MODE] nur (18)
 
@@ -1449,8 +1448,8 @@
 [] bald (25)
 
 [MESSAGE] erscheinen (27)
-[topic] das Wort Engsoz (20)
 [content] bald verdeckt , bald unverdeckt (23)
+[topic] das Wort Engsoz (20)
 
 # sent_id = 25
 # text = In der Ferne glitt ein Helikopter zwischen den Dächern herunter , brummte einen Augenblick wie eine Schmeißfliege und strich dann in einem Bogen wieder ab .
@@ -1502,8 +1501,8 @@
 [] Schmeißfliege (17)
 
 [] strich (19)
-[m-means] in einem Bogen (23) # TODO manual: see also Spiralen above: location change through making a certain motion
 [] dann (20)
+[m-means] in einem Bogen (23) # TODO manual: see also Spiralen above: location change through making a certain motion
 [] wieder (24)
 [] ab (25)
 
@@ -1822,8 +1821,8 @@
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
 [SCENE] bestand (2)
-[scene] keine Möglichkeit festzustellen , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
 [m-mode] natürlich (3)
+[scene] keine Möglichkeit festzustellen , ob man in einem gegebenen Augenblick gerade überwacht wurde (5)
 
 [] natürlich (3)
 
@@ -2103,10 +2102,10 @@
 [] es (3)
 
 [LOCATION] zuwandte (13) # TODO new frame ORIENTATION
+[m-causer] so (4) # TODO manual ?
 [has-location] er (8)
 [location] dem Televisor (10)
 [x-attribute] den Rücken (12)
-[m-causer] so (4) # TODO manual ?
 
 [] so (4)
 
@@ -2146,8 +2145,8 @@
 [] Das (1)
 
 [] verräterisch (16)
-[m-scene] , wie er wohl wusste , (11)
 [] auch (6)
+[m-scene] , wie er wohl wusste , (11)
 [] sogar (13)
 [] ein Rücken (15)
 
@@ -2568,8 +2567,8 @@
 [] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
 
 [CLASS || PART-WHOLE] Siedlungen (33)
-[m-part || part] von Holzbaracken (35)
 [m-quality] trostlose (32)
+[m-part || part] von Holzbaracken (35)
 [m-scene] , die wie Hühnerställe aussahen (42)
 
 [] trostlose (32)
@@ -2661,8 +2660,8 @@
 [m-scene] , die ihm zumeist unverständlich waren (31)
 
 [MESSAGE] Bilder (24)
-[m-part || m-location] ohne Hintergrund (26)
 [m-quality] greller (23)
+[m-part || m-location] ohne Hintergrund (26)
 
 [] greller (23)
 
@@ -2859,9 +2858,9 @@
 27	:	:	PUNCT	$.	_	26	punct	_	_
 
 [] entziffern (26)
-[m-mode] gerade noch (12)
 [] Von der Stelle , wo Winston stand , (3)
 [] man (10)
+[m-mode] gerade noch (12)
 [] die in schönen Lettern in seine weiße Front gemeißelten drei Wahlsprüche der Partei (23)
 
 [] Stelle (3)
