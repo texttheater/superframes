@@ -1,4 +1,5 @@
 import collections
+from dataclass import dataclass
 import logging
 import math
 import re
@@ -205,7 +206,7 @@ class Sentence:
         self.frames = []
         self.frame_linenos = []
 
-    def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
+    def add_frame(self, block: blocks.Block, lineno: int):
         try:
             frame = Frame.from_block(block)
             self.frames.append(frame)
@@ -340,7 +341,7 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
                 yield current_sentence
             current_sentence = new_sentence
         except ParseError:
-            current_sentence.add_frame(block, current_sentence.syntax[0].id, lineno)
+            current_sentence.add_frame(block, lineno)
         lineno += len(block) + 1
     if current_sentence:
         yield current_sentence
