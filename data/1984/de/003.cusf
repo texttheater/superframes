@@ -43,7 +43,7 @@
 
 [CLASS] Frauen (2)
 
-[QUALITY] jungen (8) # # man wird nicht wieder jünger...
+[QUALITY] jungen (8) # # man wird nicht wieder jünger
 [m-mode] vor allem (6)
 
 [MODE] allem (6)
@@ -69,17 +69,19 @@
 [MESSAGE-INIT] Spitzel (23)
 [m-state] freiwilligen (22)
 [m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
+[x-experiencer] Frauen (2) # # manuell hinzugefügt
 
 [STATE] freiwilligen (22) # # ?? SOCIAL-RELATION?
 
 [MESSAGE-INIT] aushorchen (32)
-[m-means] mit deren Hilfe (28) # # ??
+[x-attribute] mit deren Hilfe (28) # # ??
 [x-experiencer] man (29)
 [topic] weniger Linientreue (31)
-[m-means] Spitzel (23) # # ??
+[m-means] Spitzel (23)
 
-[MEANS] Hilfe (28) # # ??
-[x-causer] deren (27) # # ??
+[SCENE-INIT] Hilfe (28) # # Vgl. (379) im Manual
+[x-causer] deren (27)
+[x-causer] Spitzel (23) # # manuell hinzugefügt wegen x-attribute
 
 [IDENTIFICATION] deren (27)
 
@@ -115,7 +117,7 @@
 [MESSAGE] machte (6)
 [topic] dieses Mädchen im besonderen (3)
 [x-experiencer] ihm (7)
-[content || m-noncomp] den Eindruck , gefährlicher als die meisten zu sein (9) # # ?? 
+[m-noncomp || content] den Eindruck , gefährlicher als die meisten zu sein (9) # # ?? Syntax? (darf Syntax generell eigenhändig geändert werden?)
 
 [CLASS] Mädchen (3)
 [m-mode] im besonderen (5)
@@ -173,10 +175,10 @@
 35	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux	_	_
 36	.	.	PUNCT	$.	_	18	punct	_	_
 
-[MESSAGE] gestreift (18)
+[MESSAGE-INIT] gestreift (18)
 [m-time] Einmal , als sie auf dem Gang aneinander vorbeigekommen waren , (1)
 [x-experiencer] sie (13) # # ??
-[toppic] ihn (14) # # ??
+[topic] ihn (14) # # ??
 [x-means] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
 
 [QUANTITY] Einmal (1) # # ?? 
@@ -185,7 +187,7 @@
 [LOCATION-CHANGE] vorbeigekommen (9)
 [has-location] sie (4)
 [transitory-location] auf dem Gang (7)
-[?? has-location || transitory location] aneinander (8) # # ??
+[?? has-location || transitory-location] aneinander (8) # # ??
 [m-time] Einmal (1) # # ??
 
 [IDENTIFICATION] sie (4)
@@ -212,13 +214,13 @@
 
 [IDENTIFICATION] ihn (21)
 
-[?? HITTING >> MESSAGE] durchbohren (23) # # ??
-[hitting >> topic] der (20) # # ??
-[hit >> x-experiencer] ihn (21) # # manuell hinzugefügt
-[hitting >> topic] Seitenblick (17) # # manuell hinzugefügt, "When content and topic are both realized, content must assign a role to topic"
+[HITTING >> MESSAGE] durchbohren (23) # # ?? UNANCHORED-MOTION?
+[hitting >> topic] der (20) # # ?? in-motion?
+[hit >> x-experiencer] ihn (21) # # ?? transitory-location # manuell hinzugefügt
+[hitting >> topic] Seitenblick (17) # # ?? in-motion? # manuell hinzugefügt (content+topic)
 
 [MESSAGE] erfüllt (34)
-[topic] der (26)
+[x-sender] der (26)
 [x-experiencer] ihn (27)
 [m-time] für einen Augenblick (30)
 [m-noncomp] mit blankem Entsetzen (33)
@@ -229,9 +231,8 @@
 
 [TIME] Augenblick (30)
 
-[MESSAGE] Entsetzen (33) # # ??
+[MESSAGE] Entsetzen (33) # # Superframe des Hauptprädikats, da dort m-noncomp und hier mit Argument
 [m-quality] blankem (32)
-[x-experiencer] ihn (27) # # manuell hinzugefügt
 
 [QUALITY] blankem (32)
 
@@ -262,10 +263,10 @@
 23	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	_
 24	.	.	PUNCT	$.	_	9	punct	_	_
 
-[LOCATION-CHANGE >> MESSAGE] gegangen (9)
+[LOCATION-CHANGE >> MESSAGE] gegangen (9) # # ?? MESSAGE-INIT?
 [transitory-location >> x-experiencer] Ihm (1)
 [m-mode] sogar (3)
-[has-location >> ?? topic] der Gedanke (5) # # ?? topic oder content?
+[has-location >> ?? topic] der Gedanke (5) # # ?? topic oder content? Vgl. (194)+(201) im Manual 
 [x-attribute >> m-noncomp] durch den Kopf (8) # # Vgl. manual (163)
 
 [IDENTIFICATION] Ihm (1)
@@ -275,7 +276,7 @@
 [MESSAGE] Gedanke (5)
 
 [CLASS] Kopf (8)
-[x-whole] Ihm (1) # # manuell hinzugefügt
+[x-whole] Ihm (1) # # manuell hinzugefügt (attribute)
 
 [SOCIAL-RELATION] Agentin (14)
 [has-social-relation] sie (11)
@@ -329,52 +330,55 @@
 28	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE] fühlte (2)
-[?? m-mode] Trotzdem (1) # # ??
+[m-exception] Trotzdem (1) # # Vgl. (291), (292)
 [x-experiencer] er (3)
-[m-time] weiterhin (4) # # ??
-[?? m-scene || m-causer] , sooft sie in seine Nähe kam , (11) # # ??
+[m-time || m-followed] weiterhin (4) # # ??
+[m-causer] , sooft sie in seine Nähe kam , (11)
 [topic] eine merkwürdige Unsicherheit , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (15)
 
-[?? MODE] Trotzdem (1) # # ??
+[EXCEPTION] Trotzdem (1) # # Kann weggelassen werden (Vgl. (44),(45) im Manual): [has-exception] fühlte (2)
 
 [IDENTIFICATION] er (3)
 
-[TIME] weiterhin (4) # # ??
+[TIME || SEQUENCE] weiterhin (4) # # ??
 
 [LOCATION-INIT] kam (11)
 [has-location] sie (7)
 [target-location] in seine Nähe (10)
-[?? m-result] fühlte (2) # # ?? Warum diese Kante??
+[m-result] fühlte (2) # # ?? Warum diese Kante??
 
 [IDENTIFICATION] sie (7)
 
 [LOCATION] Nähe (10)
 [location] seine (9)
-[has-location] sie (7) # # ?? manuell hinzugefügt
+[has-location] sie (7) # # manuell hinzugefügt
 
 [IDENTIFICATION] seine (9)
 
-[?? ] Unsicherheit (15)
+[MESSAGE] Unsicherheit (15)
 [m-quality] merkwürdige (14)
-[] , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (26)
+[m-accompanied || m-quality] , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (26) # # ??
+[x-experiencer] er (3) # # manuell hinzugefügt
 
-[] merkwürdige (14)
+[QUALITY] merkwürdige (14)
 
-[] gemischt (26)
-[] die (17)
-[] zu gleichen Teilen (20)
-[] mit Angst und mit Feindschaft (22)
+[PART-WHOLE || STATE-INIT] gemischt (26) # # ??
+[whole || has-state] die (17)
+[m-quantity] zu gleichen Teilen (20) # # ??
+[part || target-state] mit Angst und mit Feindschaft (22)
 
 [IDENTIFICATION] die (17)
 
-[] Teilen (20)
-[] gleichen (19)
+[PART-WHOLE] Teilen (20)
+[m-quantity] gleichen (19) # # ?? m-rank?
 
 [] gleichen (19)
 
 [MESSAGE] Angst (22)
 
 [SOCIAL-RELATION] Feindschaft (25)
+[has-social-relation] er (3) # # manuell hinzugefügt
+[social-relation] sie (7) # # manuell hinzugefügt
 
 # sent_id = 156
 # text = Die andere Person war ein Mann namens O'Brien , ein Mitglied der Inneren Partei und Inhaber eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte .
@@ -414,8 +418,8 @@
 34	.	.	PUNCT	$.	_	6	punct	_	_
 
 [] Mann (6)
-[] Die andere Person (3)
-[] namens O'Brien (8)
+[has-class] Die andere Person (3)
+[m-identifier] namens O'Brien (8)
 [] , ein Mitglied der Inneren Partei (11)
 [] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
 
@@ -494,46 +498,48 @@
 23	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	_	_
 24	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] durchlief (4)
-[] Ein kurzes Geflüster (3)
-[] die um die Stühle herumstehende Gruppe (10)
-[] , als sie den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei herankommen sah (23)
+[UNANCHORED-MOTION >> MESSAGE-INIT] durchlief (4)
+[in-motion >> m-noncomp] Ein kurzes Geflüster (3) # # ?? topic statt m-noncomp?
+[transitory-location >> x-sender] die um die Stühle herumstehende Gruppe (10)
+[m-time] , als sie den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei herankommen sah (23)
 
-[] Geflüster (3)
-[] kurzes (2)
+[MESSAGE-INIT] Geflüster (3)
+[m-quantity] kurzes (2)
+[x-sender] Gruppe (10)
 
-[] kurzes (2)
+[QUANTITY] kurzes (2)
 
-[] Gruppe (10)
-[] um die Stühle herumstehende (9)
+[SOCIAL-RELATION] Gruppe (10)
+[m-location] um die Stühle herumstehende (9)
 
-[] herumstehende (9)
-[] um die Stühle (8)
+[STATE] herumstehende (9)
+[m-location] um die Stühle (8)
 
-[] Stühle (8)
+[CLASS] Stühle (8)
 
-[] sah (23)
-[] sie (13)
-[] den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei (16)
-[] herankommen (22)
+[MESSAGE-INIT] sah (23)
+[x-experiencer] sie (13)
+[topic] den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei (16)
+[target-content] herankommen (22)
 
-[] sie (13)
+[IDENTIFICATION] sie (13)
 
-[] Trainingsanzug (16)
-[] schwarzen (15)
-[] eines Mitglieds der Inneren Partei (18)
+[WRAPPING-WEARING] Trainingsanzug (16)
+[m-quality] schwarzen (15)
+[wrapper] eines Mitglieds der Inneren Partei (18)
 
-[] schwarzen (15)
+[QUALITY] schwarzen (15)
 
-[] Mitglieds (18)
-[] der Inneren Partei (21)
+[SOCIAL-RELATION] Mitglieds (18)
+[social-relation] der Inneren Partei (21)
 
-[] Partei (21)
-[] Inneren (20)
+[CLASS] Partei (21)
+[m-noncomp] Inneren (20)
 
-[] Inneren (20)
+[IDENTIFICATION] Inneren (20)
 
-[] herankommen (22)
+[LOCATION-INIT] herankommen (22)
+[has-location] den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei (16)
 
 # sent_id = 158
 # text = O'Brien war ein großer , grobschlächtiger Mann mit dickem Nacken und einem derben , humorvollen und brutalen Gesicht .
@@ -557,30 +563,32 @@
 18	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	10	conj	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] Mann (7)
-[] O'Brien (1)
-[] großer , grobschlächtiger (4)
-[] mit dickem Nacken und einem derben , humorvollen und brutalen Gesicht (10)
+[CLASS] Mann (7)
+[has-class] O'Brien (1)
+[m-quality] großer , grobschlächtiger (4)
+[m-quality] mit dickem Nacken und einem derben , humorvollen und brutalen Gesicht (10)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
-[] großer (4)
+[QUALITY] großer (4)
 
-[] grobschlächtiger (6)
+[QUALITY] grobschlächtiger (6)
 
-[] Nacken (10)
-[] dickem (9)
+[PART-WHOLE] Nacken (10) # # ?? CLASS?
+[m-quality] dickem (9)
+[whole] O'Brien (1) # # manuell hinzugefügt
 
-[] dickem (9)
+[QUALITY] dickem (9)
 
-[] Gesicht (18)
-[] derben , humorvollen und brutalen (13)
+[PART-WHOLE] Gesicht (18) # # ?? CLASS?
+[m-quality] derben , humorvollen und brutalen (13)
+[whole] O'Brien (1) # # manuell hinzugefügt
 
-[] derben (13)
+[QUALITY] derben (13)
 
-[] humorvollen (15)
+[QUALITY] humorvollen (15) # # ?? STATE?
 
-[] brutalen (17)
+[QUALITY] brutalen (17)
 
 # sent_id = 159
 # text = Ungeachtet seines wuchtigen Äußeren lag ein gewisser Charme in seiner Art , sich zu bewegen .
@@ -601,34 +609,35 @@
 15	bewegen	bewegen	VERB	VVINF	VerbForm=Inf	11	acl	_	_
 16	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] lag (5)
-[] Ungeachtet seines wuchtigen Äußeren (4)
-[] ein gewisser Charme (8)
-[] in seiner Art , sich zu bewegen (11)
+[MESSAGE] lag (5)
+[m-exception] Ungeachtet seines wuchtigen Äußeren (4) # # Vgl. (291), (292) und (44), (45)
+[content] ein gewisser Charme (8)
+[topic] in seiner Art , sich zu bewegen (11)
 
-[] Äußeren (4)
-[] seines (2)
-[] wuchtigen (3)
+[PART-WHOLE] Äußeren (4)
+[whole] seines (2)
+[m-quality] wuchtigen (3)
 
-[] seines (2)
+[IDENTIFICATION] seines (2)
 
-[] wuchtigen (3)
+[QUALITY] wuchtigen (3)
 
-[] Charme (8)
-[] gewisser (7)
+[QUALITY] Charme (8)
+[m-mode >> m-quality] gewisser (7) # # ??
+[has-quality] in seiner Art , sich zu bewegen (11)
 
-[] gewisser (7)
+[MODE >> QUALITY] gewisser (7) # # ??
 
-[] Art (11)
-[] seiner (10)
-[] , sich zu bewegen (15)
+[MEANS] Art (11)
+[x-causer] seiner (10)
+[has-means] , sich zu bewegen (15)
 
-[] seiner (10)
+[IDENTIFICATION] seiner (10)
 
-[] bewegen (15)
-[] sich (13)
+[UNANCHORED-MOTION] bewegen (15)
+[in-motion] sich (13)
 
-[] sich (13)
+[IDENTIFICATION] sich (13)
 
 # sent_id = 160
 # text = Er hatte eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte .
