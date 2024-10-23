@@ -3,10 +3,12 @@ import logging
 import math
 import re
 import sys
-from typing import Dict, Iterable, List, Optional, Set, TextIO, Tuple, Union
+from typing import Callable, Dict, Iterable, List, Optional, Set, TextIO, \
+        Tuple, Union
 
 
 from pyconll.exception import ParseError
+from pyconll.tree import Tree as PyCoNLLTree
 from pyconll.unit.sentence import Sentence as PyCoNLLSentence
 import pyconll
 
@@ -30,31 +32,52 @@ PRED_DEPS = ARG_DEPS | set((
 ))
 
 
-def subtrees(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
+def subtrees(
+    tree: PyCoNLLTree,
+    test: Callable[[PyCoNLLTree],bool]=lambda _: True
+) -> Iterable[PyCoNLLTree]:
+    """Returns the subtrees of the given tree
+
+    If test is given, subtrees for which it returns False (and all their
+    subtrees) will be excluded."""
     yield tree
     for child in tree:
-        yield from subtrees(child)
+        if test(child):
+            yield from subtrees(child)
+
+
+def form_for_predicate(tree: PyCoNLLTree) -> str:
+    def is_mwe_tree(t: PyCoNLLTree) -> bool:
+        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe')
+    trees = sorted(subtrees(tree, is_mwe_tree), key=lambda t: id_sort_key(t.data.id))
+    return ' '.join(t.data.form for t in trees)
+
+
+def form_for_argument(tree: PyCoNLLTree) -> str:
+    trees = sorted(subtrees(tree), key=lambda t: id_sort_key(t.data.id))
+    return ' '.join(t.data.form for t in trees)
+
+
+def id_sort_key(token_id: str) -> int: # TODO support other kinds of token IDs
+    return int(token_id)
+
+
+def tree_for_token(token_id: str, tree: PyCoNLLTree) -> PyCoNLLTree:
+    for t in subtrees(tree):
+        if t.data.id == token_id:
+            return t
 
 
 def remove_features(deprel: str) -> str:
     return re.split(r'[:@]', deprel)[0]
 
 
-def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
+def is_semantic_predicate(tree: PyCoNLLTree) -> bool:
     return any(tree.data.deprel.startswith(r) for r in PRED_DEPS) and tree.data.deprel != 'compound:prt'
 
 
-def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
+def is_semantic_dependent(tree: PyCoNLLTree) -> bool:
     return any(tree.data.deprel.startswith(r) for r in ARG_DEPS)
-
-
-def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
-    for tree in subtrees(sentence.to_tree()):
-        if tree.data.id == token_id:
-            nodes = sorted(subtrees(tree), key=lambda t: int(t.data.id))
-            nodes = [t.data.form for t in nodes]
-            return ' '.join(str(n) for n in nodes)
-    return ''
 
 
 class Arg:
@@ -132,6 +155,20 @@ class Frame:
         return self.label and all(a.label for a in self.args)
 
     def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+        # Convert sentence to tree
+        tree = sentence.syntax[0].to_tree()
+        # Check for wrong text
+        pred_tree = tree_for_token(self.head, tree)
+        expected_text = form_for_predicate(pred_tree)
+        if self.text != expected_text:
+            logging.warning(
+                'sent %s line %s wrong text for frame: '
+                'is "%s" but should be "%s"',
+                sentence.syntax[0].id,
+                lineno,
+                self.text,
+                expected_text,
+            )
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -147,11 +184,13 @@ class Frame:
             # Check for wrong text
             arg_token = sentence.syntax[0][arg.head]
             if arg_token.head == self.head:
-                expected_text = serialize_subtree(arg.head, sentence.syntax[0])
+                subtree = tree_for_token(arg.head, tree)
+                expected_text = form_for_argument(subtree)
                 if arg.text != expected_text:
                     logging.warning(
                         'sent %s line %s wrong text for subtree with root %s: '
-                        'is "%s" but should be "%s"', sentence.syntax[0].id, i,
+                        'is "%s" but should be "%s"',
+                        sentence.syntax[0].id, i,
                         arg.head, arg.text, expected_text,
                     )
             else:
@@ -192,8 +231,8 @@ class Frame:
         return frame
 
     @staticmethod
-    def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
-        frame = Frame(tree.data.id, tree.data.form)
+    def init_from_tree(tree: PyCoNLLTree) -> 'Frame':
+        frame = Frame(tree.data.id, form_for_predicate(tree))
         return frame
 
 
@@ -267,13 +306,15 @@ class Sentence:
         expected_links = collections.defaultdict(list)
         # Phase 1a: syntactic links
         for sentence in self.syntax:
-            for tree in subtrees(sentence.to_tree()):
-                if is_semantic_predicate(tree):
-                    for child in tree:
+            tree = sentence.to_tree()
+            for subtree in subtrees(sentence.to_tree()):
+                if is_semantic_predicate(subtree):
+                    for child in subtree:
                         if is_semantic_dependent(child):
-                            expected_links[tree.data.id].append((
+                            arg_tree = tree_for_token(child.data.id, tree)
+                            expected_links[subtree.data.id].append((
                                 child.data.id,
-                                serialize_subtree(child.data.id, sentence),
+                                form_for_argument(arg_tree),
                             ))
         # Phase 1b: participant-scene links
         for frame in self.frames:
