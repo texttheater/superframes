@@ -481,7 +481,7 @@
 [LOCATION-INIT] gekommen (24)
 [target-location] ihm (11)
 [m-time] auch nie (13)
-[m-conceded] sei es nur auf einen halben Kilometer , (21) # TODO manual
+[m-conceded] sei es nur auf einen halben Kilometer , (21)
 [target-location] nahe (23)
 
 [] ihm (11)
@@ -495,7 +495,9 @@
 [] nur (17)
 [] halben (20)
 
-[] sei (15) # TODO this should not appear
+[CONCESSION] sei (15) # treat "sei es" as a connective
+[conceded] Kilometer (21)
+[asserted] gekommen (24)
 
 [] nur (17)
 
@@ -547,9 +549,10 @@
 [] es (5)
 
 [MESSAGE || SOCIAL-RELATION] Auftrag (9) # TODO MESSAGE/SOCIAL-RELATION grey area
-[x-sender || x-causer] amtlichem (8)
+[x-sender || x-scene] amtlichem (8)
 
-[CLASS] amtlichem (8) # TODO CLASS subframe for organizations?
+[CLASS || CAUSATION] amtlichem (8)
+[result] Auftrag (9)
 
 [UNANCHORED-MOTION-NECESSITY] musste (16)
 [m-condition] auch dann (15)
@@ -661,9 +664,9 @@
 
 [LOCATION-CHANGE] drehte (2) # TODO manual: CHANGE when either *both* or *neither* initial/target exists
 [x-causer >> has-location] Winston (1)
-[has-location >> x-noncomp] sich (3) # TODO manual: double annotation of cases between transitive/reflexive
+[has-location >> x-noncomp] sich (3)
 [m-means >> m-quality] mit einem Ruck (6)
-[m-noncomp] um (7)
+[transitory-location] um (7) # can be interpreted as adposition with elided complement: "um die eigene Achse"
 
 [] Winston (1)
 
@@ -859,7 +862,8 @@
 [m-noncomp] es (27)
 [m-location] in der Küche (30)
 [exists] nichts zu essen (31)
-[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37) # TODO exists??
+[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
+[exists] Schwarzbrot # TODO manual: non-local dependency!
 
 [NONCOMP] es (27)
 
@@ -1105,7 +1109,7 @@
 
 [] ihm (12)
 
-[CLASS >> NONCOMP] Augen (15) # TODO NONCOMP vs. Hauptframe
+[CLASS >> NONCOMP] Augen (15)
 
 # sent_id = 70
 # text = Das Zeug schmeckte wie Salpetersäure , und man hatte beim Herunterschlucken das Gefühl , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen .
@@ -1606,7 +1610,7 @@
 
 [] jetzt (14)
 
-[] bestimmt (26) # TODO Beispiel für Purpose
+[] bestimmt (26)
 [] die (17)
 [] vermutlich (18)
 [] beim Bau der Wohnung für ein Bücherregal (20)
@@ -1655,7 +1659,7 @@
 [SCENE-CONTINUATION] bleiben (25)
 [m-condition] Wenn er sich so in die Nische setzte und vorsichtig im Hintergrund hielt , (8)
 [participant] Winston (16)
-[m-quality] , wenigstens visuell , (19) # TODO ?
+[m-quality] , wenigstens visuell , (19)
 [initial-scene] außer Reichweite des Televisors (22)
 
 [] setzte (8)
@@ -1682,8 +1686,8 @@
 
 [] Winston (16)
 
-[] visuell (19)
-[] wenigstens (18)
+[QUALITY] visuell (19)
+[m-mode] wenigstens (18)
 
 [] wenigstens (18)
 
