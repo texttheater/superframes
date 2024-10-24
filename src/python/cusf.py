@@ -3,10 +3,12 @@ import logging
 import math
 import re
 import sys
-from typing import Dict, Iterable, List, Optional, Set, TextIO, Tuple, Union
+from typing import Callable, Dict, Iterable, List, Optional, Set, TextIO, \
+        Tuple, Union
 
 
 from pyconll.exception import ParseError
+from pyconll.tree import Tree as PyCoNLLTree
 from pyconll.unit.sentence import Sentence as PyCoNLLSentence
 import pyconll
 
@@ -30,31 +32,52 @@ PRED_DEPS = ARG_DEPS | set((
 ))
 
 
-def subtrees(tree: pyconll.tree.Tree) -> Iterable[pyconll.tree.Tree]:
+def subtrees(
+    tree: PyCoNLLTree,
+    test: Callable[[PyCoNLLTree],bool]=lambda _: True
+) -> Iterable[PyCoNLLTree]:
+    """Returns the subtrees of the given tree
+
+    If test is given, subtrees for which it returns False (and all their
+    subtrees) will be excluded."""
     yield tree
     for child in tree:
-        yield from subtrees(child)
+        if test(child):
+            yield from subtrees(child)
+
+
+def form_for_predicate(tree: PyCoNLLTree) -> str:
+    def is_mwe_tree(t: PyCoNLLTree) -> bool:
+        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe')
+    trees = sorted(subtrees(tree, is_mwe_tree), key=lambda t: id_sort_key(t.data.id))
+    return ' '.join(t.data.form for t in trees)
+
+
+def form_for_argument(tree: PyCoNLLTree) -> str:
+    trees = sorted(subtrees(tree), key=lambda t: id_sort_key(t.data.id))
+    return ' '.join(t.data.form for t in trees)
+
+
+def id_sort_key(token_id: str) -> int: # TODO support other kinds of token IDs
+    return int(token_id)
+
+
+def tree_for_token(token_id: str, tree: PyCoNLLTree) -> PyCoNLLTree:
+    for t in subtrees(tree):
+        if t.data.id == token_id:
+            return t
 
 
 def remove_features(deprel: str) -> str:
     return re.split(r'[:@]', deprel)[0]
 
 
-def is_semantic_predicate(tree: pyconll.tree.Tree) -> bool:
+def is_semantic_predicate(tree: PyCoNLLTree) -> bool:
     return any(tree.data.deprel.startswith(r) for r in PRED_DEPS) and tree.data.deprel != 'compound:prt'
 
 
-def is_semantic_dependent(tree: pyconll.tree.Tree) -> bool:
+def is_semantic_dependent(tree: PyCoNLLTree) -> bool:
     return any(tree.data.deprel.startswith(r) for r in ARG_DEPS)
-
-
-def serialize_subtree(token_id: str, sentence: PyCoNLLSentence) -> str:
-    for tree in subtrees(sentence.to_tree()):
-        if tree.data.id == token_id:
-            nodes = sorted(subtrees(tree), key=lambda t: int(t.data.id))
-            nodes = [t.data.form for t in nodes]
-            return ' '.join(str(n) for n in nodes)
-    return ''
 
 
 class Arg:
@@ -101,14 +124,23 @@ class Frame:
             block.append(arg.to_line())
         return block
 
-    def fill_args(self, args: Set[Tuple[str, str]]):
-        # Remove args without annotation
-        self.args = [a for a in self.args if a.label or a.comment]
-        # Add expected args
-        for head, text in args:
-            if any(a.head == head for a in self.args):
-                continue
-            self.args.append(Arg(head, text, '', ''))
+    def fill_args(self, expected_args: Set[Tuple[str, str]]):
+        # Keep existing args, fill in missing expected args
+        existing_args_by_head = collections.defaultdict(list)
+        for arg in self.args:
+            if arg.label or arg.comment:
+                existing_args_by_head[arg.head].append(arg)
+        self.args = []
+        for head, text in expected_args:
+            if head in existing_args_by_head:
+                for arg in existing_args_by_head[head]:
+                    self.args.append(arg)
+            else:
+                self.args.append(Arg(head, text, '', ''))
+        for args in existing_args_by_head.values():
+            for arg in args:
+                if arg not in self.args:
+                    self.args.append(arg)
 
     def find_arg(self, label: str) -> Optional[Arg]:
         for arg in self.args:
@@ -123,6 +155,20 @@ class Frame:
         return self.label and all(a.label for a in self.args)
 
     def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+        # Convert sentence to tree
+        tree = sentence.syntax[0].to_tree()
+        # Check for wrong text
+        pred_tree = tree_for_token(self.head, tree)
+        expected_text = form_for_predicate(pred_tree)
+        if self.text != expected_text:
+            logging.warning(
+                'sent %s line %s wrong text for frame: '
+                'is "%s" but should be "%s"',
+                sentence.syntax[0].id,
+                lineno,
+                self.text,
+                expected_text,
+            )
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -138,11 +184,13 @@ class Frame:
             # Check for wrong text
             arg_token = sentence.syntax[0][arg.head]
             if arg_token.head == self.head:
-                expected_text = serialize_subtree(arg.head, sentence.syntax[0])
+                subtree = tree_for_token(arg.head, tree)
+                expected_text = form_for_argument(subtree)
                 if arg.text != expected_text:
                     logging.warning(
                         'sent %s line %s wrong text for subtree with root %s: '
-                        'is "%s" but should be "%s"', sentence.syntax[0].id, i,
+                        'is "%s" but should be "%s"',
+                        sentence.syntax[0].id, i,
                         arg.head, arg.text, expected_text,
                     )
             else:
@@ -183,8 +231,8 @@ class Frame:
         return frame
 
     @staticmethod
-    def init_from_tree(tree: pyconll.tree.Tree) -> 'Frame':
-        frame = Frame(tree.data.id, tree.data.form)
+    def init_from_tree(tree: PyCoNLLTree) -> 'Frame':
+        frame = Frame(tree.data.id, form_for_predicate(tree))
         return frame
 
 
@@ -205,13 +253,49 @@ class Sentence:
         self.frames = []
         self.frame_linenos = []
 
-    def add_frame(self, block: blocks.Block, sentid: str, lineno: int):
+    def add_frame(self, block: blocks.Block, lineno: int):
         try:
             frame = Frame.from_block(block)
             self.frames.append(frame)
         except:
             self.frames.append(block)
         self.frame_linenos.append(lineno)
+
+    def get_frame(self, head: str) -> Optional[Frame]:
+        """Returns the frame with the given head ID, or None"""
+        for frame in self.frames:
+            if frame.head == head:
+                return frame
+
+    def traverse(self, head: str) -> Set[str]:
+        """Traverses the semantic graph.
+
+        Returns the head IDs of frames that are reachable via semantic links
+        from the one with the given head ID.
+        """
+        seen = set()
+        agenda = [head]
+        while agenda:
+            head = agenda.pop()
+            seen.add(head)
+            match self.get_frame(head):
+                case None:
+                    pass
+                case frame:
+                    for arg in frame.args:
+                        if arg.label:
+                            if arg.head not in seen:
+                                agenda.append(arg.head)
+        return seen
+
+    def link_exists(self, ancestor_head: str, descendant_head: str) -> bool:
+        return descendant_head in self.traverse(ancestor_head)
+
+    def deep_link_exists(self: str, ancestor_head: str, descendant_head: str) -> bool:
+        return any(
+            self.link_exists(a, descendant_head)
+            for a in self.traverse(ancestor_head)
+        )
 
     def fill(self):
         """Add missing frames/args"""
@@ -222,13 +306,15 @@ class Sentence:
         expected_links = collections.defaultdict(list)
         # Phase 1a: syntactic links
         for sentence in self.syntax:
-            for tree in subtrees(sentence.to_tree()):
-                if is_semantic_predicate(tree):
-                    for child in tree:
+            tree = sentence.to_tree()
+            for subtree in subtrees(sentence.to_tree()):
+                if is_semantic_predicate(subtree):
+                    for child in subtree:
                         if is_semantic_dependent(child):
-                            expected_links[tree.data.id].append((
+                            arg_tree = tree_for_token(child.data.id, tree)
+                            expected_links[subtree.data.id].append((
                                 child.data.id,
-                                serialize_subtree(child.data.id, sentence),
+                                form_for_argument(arg_tree),
                             ))
         # Phase 1b: participant-scene links
         for frame in self.frames:
@@ -240,18 +326,19 @@ class Sentence:
                 target_scene = frame.find_arg('target-scene')
                 if participant:
                     protoarg = (participant.head, participant.text)
-                    if initial_scene:
+                    if initial_scene and not self.deep_link_exists(initial_scene.head, participant.head):
                         expected_links[initial_scene.head].append(protoarg)
-                    if transitory_scene:
+                    if transitory_scene and not self.deep_link_exists(transitory_scene.head, participant.head):
                         expected_links[transitory_scene.head].append(protoarg)
-                    if scene:
+                    if scene and not self.deep_link_exists(scene.head, participant.head):
                         expected_links[scene.head].append(protoarg)
-                    if target_scene:
+                    if target_scene and not self.deep_link_exists(target_scene.head, participant.head):
                         expected_links[target_scene.head].append(protoarg)
             for arg in frame.args:
-                if arg.label == 'm-scene':
+                if arg.label == 'm-scene' and not self.deep_link_exists(arg.head, frame.head):
                     protoarg = (frame.head, frame.text)
-                    expected_links[arg.head].append(protoarg)
+                    if not self.deep_link_exists(arg.head, frame.head):
+                        expected_links[arg.head].append(protoarg)
         # Phase 1c: topic-content links
         for frame in self.frames:
             if frame.label.split('-')[0] == 'MESSAGE':
@@ -262,16 +349,16 @@ class Sentence:
                 target_content = frame.find_arg('target-content')
                 if topic:
                     protoarg = (topic.head, topic.text)
-                    if initial_content:
+                    if initial_content and not self.deep_link_exists(initial_content.head, topic.head):
                         expected_links[initial_content.head].append(protoarg)
-                    if transitory_content:
+                    if transitory_content and not self.deep_link_exists(transitory_content.head, topic.head):
                         expected_links[transitory_content.head].append(protoarg)
-                    if content:
+                    if content and not self.deep_link_exists(content.head, topic.head):
                         expected_links[content.head].append(protoarg)
-                    if target_content:
+                    if target_content and not self.deep_link_exists(target_content.head, topic.head):
                         expected_links[target_content.head].append(protoarg)
             for arg in frame.args:
-                if arg.label == 'm-content':
+                if arg.label == 'm-content' and not self.deep_link_exists(arg.head, frame.head):
                     protoarg = (frame.head, frame.text)
                     expected_links[arg.head].append(protoarg)
         # Phase 2: remove empty frames
@@ -340,7 +427,7 @@ def read(io: TextIO=sys.stdin) -> Iterable[Sentence]:
                 yield current_sentence
             current_sentence = new_sentence
         except ParseError:
-            current_sentence.add_frame(block, current_sentence.syntax[0].id, lineno)
+            current_sentence.add_frame(block, lineno)
         lineno += len(block) + 1
     if current_sentence:
         yield current_sentence

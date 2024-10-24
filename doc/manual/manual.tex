@@ -321,6 +321,8 @@ add a reverse dependency with the corresponding role label.
 
 \ex.\dep{» Wir haben um Hilfe gebeten « , **so#SENDING**_m-scene *Saqib#IDENTIFICATION*__sender}
 
+\ex.\dep{ein **anderes#COMPARISON**_m-scene *Plakat#CLASS*__compared}
+
 If arg2 has the same name as the frame, this structure can be abbreviated to
 just use that as a modifier role instead of \rl{m-scene} and a backlink. For
 example, the following pairs are equivalent:
@@ -447,6 +449,11 @@ not fully compositional:
 \ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
 
 \ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
+
+Similarly, a use of a verb that is ambiguous between transitive (more literal)
+and inherently reflexive (more figurative) can be annotated in this way:
+
+\ex.\dep{Winston_x-causer>>has-location *drehte#LOCATION-CHANGE* sich_has-location>>x-noncomp um_transitory-location}
 
 If you cannot choose between two frames for another reason, use \texttt{||} instead of \texttt{>}\texttt{>}.
 
@@ -589,6 +596,8 @@ an \rl{x-reference} argument.
 
 \ex.\dep{Kim_has-quality is *taller#QUALITY* than Sandy_x-reference}
 
+\ex.\dep{die unter allen Provinzen__x-reference am **drittstärksten#QUANTITY**_m-quantity *bevölkerte#LOCATION*}
+
 
 \newpage\subsection{\emoji{ok-hand} \fr{CONCESSION}}
 \label{sec:CONCESSION}
@@ -708,6 +717,8 @@ For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 \label{sec:PURPOSE}
 
 Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
+
+\ex.\dep{die Nische_has-purpose war für ein Bücherregal_purpose *bestimmt#PURPOSE*}
 
 \ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possessed}
 
@@ -1005,7 +1016,7 @@ but didn't is framed as \fr{MESSAGE-PREVENTION}:
 \label{sec:MODE}
 
 Used for adverbial modifiers that have no arguments other than the phrase they
-modify, and that, rouhgly speaking, indicate the modal strength of what is
+modify, and that, roughly speaking, indicate the modal strength of what is
 expressed and/or its relation to the discourse.
 
 \ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
@@ -1041,9 +1052,9 @@ treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{fountain_m-reference>>m-noncomp *pen#CLASS*}
 
-The superframe to assign to such dependents is either \fr{NONCOMP}, unless an
-argument of the whole predicate syntactically attaches to it. In that case,
-label it the same as the top predicate:
+The superframe to assign to such dependents is \fr{NONCOMP}, unless an argument
+of the whole predicate syntactically attaches to it. In that case, label it the
+same as the top predicate:
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
 
@@ -1179,10 +1190,12 @@ in one graph.
 \ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
-from an argument to a predicate, as, e.g., with relative clauses or sentence
-adverbs.
+from an argument to a predicate, as, e.g., with relative clauses, participal
+clauses, or sentence adverbs.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
+
+\ex.\dep{weit über das gesteckte__m-scene **Ziel#MESSAGE** hinausgehende_m-scene *Erfüllung#SEQUENCE*}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
 
@@ -1278,6 +1291,10 @@ When something is broken but not completely destroyed, use \fr{STATE}.
 \ex.\dep{song_sent *bird#CLASS*}
 
 \ex.\dep{bird_sender *song#MESSAGE*}
+
+\ex.\dep{Er_x-experiencer *forschte#MESSAGE-INIT* in seinen Kindheitserinnerungen_x-sender nach_topic}
+
+\ex.\dep{Miniwahr_identifier , wie_m-identifier es_identified in der Neusprache_m-sender *hieß#IDENTIFICATION*}
 
 For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
