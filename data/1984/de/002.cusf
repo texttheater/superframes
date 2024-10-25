@@ -440,13 +440,13 @@
 8	verständigen	verständigen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 9	?	?	PUNCT	$.	_	8	punct	_	_
 
-[SENDING] verständigen (8)
-[m-quality] Wie (1)
+[MESSAGE-INIT] verständigen (8)
+[m-means] Wie (1)
 [x-sender] man (3)
 [m-noncomp] sich (4)
 [x-experiencer] mit der Zukunft (7)
 
-[QUALITY] Wie (1)
+[MEANS] Wie (1)
 
 [IDENTIFICATION] man (3)
 
@@ -643,11 +643,11 @@
 [SCENE] seltsam (3)
 [scene] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
 
-[POSSESSION-NEG >> MESSAGE-NEG] verloren (13)
-[possessor >> x-sender] er (6)
+[SCENE-DEINIT] verloren (13)
+[participant] er (6)
 [m-mode] nicht (7)
 [m-quantity] nur (8)
-[possession >> m-noncomp] die Gabe der Mitteilung (10)
+[initial-scene] die Gabe der Mitteilung (10)
 
 [IDENTIFICATION] er (6)
 
@@ -655,8 +655,9 @@
 
 [QUANTITY] nur (8)
 
-[POSSESSION] Gabe (10)
-[possession] der Mitteilung (12)
+[POSSESSION-INIT >> SCENE-POSSIBILITY] Gabe (10)
+[possession >> scene] der Mitteilung (12)
+[target-possessor >> participant] er (6)
 
 [MESSAGE] Mitteilung (12)
 
@@ -728,12 +729,11 @@
 
 [TIME] Augenblick (8)
 
-[MESSAGE-INIT] gekommen (19)
-[m-noncomp] es (12)
-[x-experiencer] ihm (14)
+[SCENE-INIT] gekommen (19)
+[participant] ihm (14)
 [m-time] nie (15)
-[m-noncomp] in den Sinn (18)
-[content] , dass dazu noch etwas anderes nötig sein könnte als Mut (31)
+[x-attribute] in den Sinn (18)
+[target-scene] , dass dazu noch etwas anderes nötig sein könnte als Mut (31)
 
 [NONCOMP] es (12)
 
@@ -741,8 +741,8 @@
 
 [TIME] nie (15)
 
-[MESSAGE-INIT] Sinn (18)
-[topic] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
+[MESSAGE] Sinn (18)
+[content] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
 
 [CONDITION] nötig (26)
 [m-result] dazu (22)
@@ -2450,65 +2450,64 @@
 43	Hass-Sendung	Hass-Sendung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	39	nmod	_	_
 44	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] Es (1)
-[] kurz vor elf (5)
+[SCENE] war (2)
+[participant] Es (1)
+[scene] kurz vor elf (5)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] elf (5)
-[] kurz (3)
+[TIME] elf (5)
+[m-time] kurz (3)
 
-[] kurz (3)
+[TIME] kurz (3)
 
-[] geholt (24)
-[] in der Registrierabteilung , in der Winston arbeitete , (10)
-[] man (18)
-[] die Stühle (20)
-[] aus den Gemeinschaftsräumen (23)
+[LOCATION-CHANGE] geholt (24)
+[m-location] in der Registrierabteilung , in der Winston arbeitete , (10)
+[x-causer] man (18)
+[has-location] die Stühle (20)
+[initial-location] aus den Gemeinschaftsräumen (23)
 
-[] Registrierabteilung (10)
-[] , in der Winston arbeitete (15)
+[SOCIAL-RELATION] Registrierabteilung (10)
+[m-depictive] , in der Winston arbeitete (15)
 
-[] arbeitete (15)
-[] in der (13)
-[] Winston (14)
+[SOCIAL-RELATION] arbeitete (15)
+[social-relation] in der (13)
+[has-social-relation] Winston (14)
 
-[] der (13)
+[IDENTIFICATION] der (13)
 
-[] Winston (14)
+[IDENTIFICATION] Winston (14)
 
-[] man (18)
+[IDENTIFICATION] man (18)
 
-[] Stühle (20)
+[CLASS] Stühle (20)
 
-[] Gemeinschaftsräumen (23)
+[LOCATION] Gemeinschaftsräumen (23)
 
-[] aufgestellt (36)
-[] sie (26)
-[] in der Mitte des Saales (29)
-[] dem großen Televisor (34)
-[] gegenüber (35)
-[] , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung (39)
+[LOCATION-INIT] aufgestellt (36)
+[has-location] sie (26)
+[target-location] in der Mitte des Saales (29)
+[m-location] dem großen Televisor gegenüber (35)
+[m-scene] , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung (39)
 
-[] sie (26)
+[IDENTIFICATION] sie (26)
 
-[] Mitte (29)
-[] des Saales (31)
+[LOCATION] Mitte (29)
+[m-location] des Saales (31)
 
-[] Saales (31)
+[CLASS] Saales (31)
 
-[] Televisor (34)
-[] großen (33)
+[CLASS] Televisor (34)
+[m-quality] großen (33)
 
-[] großen (33)
+[QUALITY] großen (33)
 
-[] gegenüber (35)
+[LOCATION] gegenüber (35)
 
-[] Vorbereitung (39)
-[] auf die Zwei-Minuten- Hass-Sendung (43)
+[SCENE-INIT] Vorbereitung (39)
+[target-scene] auf die Zwei-Minuten- Hass-Sendung (43)
 
-[] Hass-Sendung (43)
+[MESSGAGE] Hass-Sendung (43)
 
 # sent_id = 142
 # text = Winston nahm gerade seinen Platz in einer der Mittelreihen ein , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten .
@@ -2641,28 +2640,28 @@
 15	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
 16	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Mädchen (6)
-[] Die eine davon (2)
-[] , dem er oft auf den Gängen begegnet war (14)
+[COMPARISON] Mädchen (6)
+[compared] Die eine davon (2)
+[m-scene] , dem er oft auf den Gängen begegnet war (14)
 
-[] eine (2)
-[] davon (3)
+[COMPARISON] eine (2)
+[reference] davon (3)
 
-[] davon (3)
+[PART-WHOLE] davon (3)
 
-[] begegnet (14)
-[] dem (8)
-[] er (9)
-[] oft (10)
-[] auf den Gängen (13)
+[SCENE] begegnet (14)
+[participant] dem (8)
+[participant] er (9)
+[m-quanity] oft (10)
+[m-location] auf den Gängen (13)
 
-[] dem (8)
+[IDENTIFICATIN] dem (8)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] oft (10)
+[QUANTITY] oft (10)
 
-[] Gängen (13)
+[LOCATION] Gängen (13)
 
 # sent_id = 144
 # text = Er kannte ihren Namen nicht , wusste aber , dass sie in der Abteilung für Prosa-Literatur beschäftigt war .
@@ -2686,36 +2685,36 @@
 18	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_
 19	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] kannte (2)
-[] Er (1)
-[] ihren Namen (4)
-[] nicht (5)
+[MESSAGE] kannte (2)
+[x-experiencer] Er (1)
+[topic] ihren Namen (4)
+[m-mode] nicht (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Namen (4)
-[] ihren (3)
+[CLASS] Namen (4)
+[m-identified] ihren (3)
 
-[] ihren (3)
+[IDENTIFICATION] ihren (3)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] wusste (7)
-[] aber (8)
-[] , dass sie in der Abteilung für Prosa-Literatur beschäftigt war (17)
+[MESSAGE] wusste (7)
+[m-condition] aber (8)
+[content] , dass sie in der Abteilung für Prosa-Literatur beschäftigt war (17)
 
-[] aber (8)
+[CONDITION] aber (8)
 
-[] beschäftigt (17)
-[] sie (11)
-[] in der Abteilung für Prosa-Literatur (14)
+[SCENE-CONTINUATION] beschäftigt (17)
+[participant] sie (11)
+[scene] in der Abteilung für Prosa-Literatur (14)
 
-[] sie (11)
+[IDENTIFICATION] sie (11)
 
-[] Abteilung (14)
-[] für Prosa-Literatur (16)
+[CLASS] Abteilung (14)
+[m-identified] für Prosa-Literatur (16)
 
-[] Prosa-Literatur (16)
+[MESSAGE] Prosa-Literatur (16)
 
 # sent_id = 145
 # text = Vermutlich - denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - hatte sie dort eine technische Funktion an einer der Romanschreibmaschinen .
@@ -2755,40 +2754,40 @@
 [] eine technische Funktion (22)
 [] an einer der Romanschreibmaschinen (24)
 
-[] Vermutlich (1)
+[MESSAGE] Vermutlich (1)
 
-[] gesehen (15)
-[] er (4)
-[] sie (6)
-[] manchmal (7)
-[] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
+[MESSAGE] gesehen (15)
+[x-experiencer] er (4)
+[topic] sie (6)
+[m-time] manchmal (7)
+[x-depictive] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
 
-[] er (4)
+[IDENTIFICATION] er (4)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] manchmal (7)
+[TIME] manchmal (7)
 
-[] Händen (10)
-[] ölverschmierten (9)
+[CLASS] Händen (10)
+[m-quality] ölverschmierten (9)
 
-[] ölverschmierten (9)
+[QUALITY] ölverschmierten (9)
 
-[] Schraubenschlüssel (14)
+[CLASS] Schraubenschlüssel (14)
 
-[] sie (18)
+[IDENTIFICATION] sie (18)
 
-[] dort (19)
+[LOCATION] dort (19)
 
-[] Funktion (22)
-[] technische (21)
+[CLASS] Funktion (22)
+[m-quality] technische (21)
 
-[] technische (21)
+[QUALITY] technische (21)
 
-[] einer (24)
-[] der Romanschreibmaschinen (26)
+[QUANITY] einer (24)
+[has-quantity] der Romanschreibmaschinen (26)
 
-[] Romanschreibmaschinen (26)
+[CLASS] Romanschreibmaschinen (26)
 
 # sent_id = 146
 # text = Sie war ein unternehmungslustig aussehendes Mädchen von etwa siebenundzwanzig Jahren , mit üppigem schwarzen Haar , sommersprossigem Gesicht und raschen , muskulösen Bewegungen .
@@ -2823,41 +2822,41 @@
 [] von etwa siebenundzwanzig Jahren (10)
 [] , mit üppigem schwarzen Haar , sommersprossigem Gesicht und raschen , muskulösen Bewegungen (15)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] aussehendes (5)
-[] unternehmungslustig (4)
+[SCENE] aussehendes (5)
+[m-quality] unternehmungslustig (4)
 
-[] unternehmungslustig (4)
+[QUALITY] unternehmungslustig (4)
 
-[] Jahren (10)
-[] etwa siebenundzwanzig (9)
+[TIME] Jahren (10)
+[m-quantity] etwa siebenundzwanzig (9)
 
-[] siebenundzwanzig (9)
-[] etwa (8)
+[QUANTITY] siebenundzwanzig (9)
+[m-mode] etwa (8)
 
-[] etwa (8)
+[MODE] etwa (8)
 
-[] Haar (15)
-[] üppigem (13)
-[] schwarzen (14)
+[CLASS] Haar (15)
+[m-quality] üppigem (13)
+[m-quality] schwarzen (14)
 
-[] üppigem (13)
+[QUALITY] üppigem (13)
 
-[] schwarzen (14)
+[QUALITY] schwarzen (14)
 
-[] Gesicht (18)
-[] sommersprossigem (17)
+[CLASS] Gesicht (18)
+[m-quality] sommersprossigem (17)
 
-[] sommersprossigem (17)
+[QUALITY] sommersprossigem (17)
 
-[] Bewegungen (23)
-[] raschen , (20)
-[] muskulösen (22)
+[CLASS] Bewegungen (23)
+[m-quality] raschen , (20)
+[m-quality] muskulösen (22)
 
-[] raschen (20)
+[QUALITY] raschen (20)
 
-[] muskulösen (22)
+[QUALITY] muskulösen (22)
 
 # sent_id = 147
 # text = Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , war mehrmals um die Taille ihres Trainingsanzuges gewunden , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben .
@@ -2895,57 +2894,56 @@
 32	hervorzuheben	hervorheben	VERB	VVIZU	VerbForm=Inf	24	advcl	_	_
 33	.	.	PUNCT	$.	_	21	punct	_	_
 
-[] gewunden (21)
-[] Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , (5)
-[] mehrmals (15)
-[] um die Taille ihres Trainingsanzuges (18)
-[] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
+[WRAPPING-WEARING] gewunden (21)
+[wrapper] Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , (5)
+[m-quantity] mehrmals (15)
+[wearer] um die Taille ihres Trainingsanzuges (18)
+[x-depictive] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
 
-[] Schärpe (5)
-[] schmale , scharlachrote (2)
-[] , das Abzeichen der Jugendliga gegen Sexualität (8)
+[CLASS] Schärpe (5)
+[m-quality] schmale , scharlachrote (2)
+[m-identified] , das Abzeichen der Jugendliga gegen Sexualität (8)
 
-[] schmale (2)
+[QUALITY] schmale (2)
 
-[] scharlachrote (4)
+[QUALITY] scharlachrote (4)
 
-[] Abzeichen (8)
-[] der Jugendliga (10)
-[] gegen Sexualität (12)
+[CLASS] Abzeichen (8)
+[m-identified] der Jugendliga gegen Sexualität (12)
 
-[] Jugendliga (10)
+[CLASS] Jugendliga (10)
 
-[] Sexualität (12)
+[CLASS] Sexualität (12)
 
-[] mehrmals (15)
+[QUANTITY] mehrmals (15)
 
-[] Taille (18)
-[] ihres Trainingsanzuges (20)
+[CLASS] Taille (18)
+[m-identified] ihres Trainingsanzuges (20)
 
-[] Trainingsanzuges (20)
-[] ihres (19)
+[CLASS] Trainingsanzuges (20)
+[m-identified] ihres (19)
 
-[] ihres (19)
+[IDENTIFICATION] ihres (19)
 
-[] eng (24)
-[] gerade (23)
-[] genug (25)
-[] , um die Rundung ihrer Hüften hervorzuheben (32)
+[QUALITY] eng (24)
+[m-mode] gerade (23)
+[m-quantity] genug (25)
+[has-quality] , um die Rundung ihrer Hüften hervorzuheben (32)
 
-[] gerade (23)
+[QUANTITY] gerade (23)
 
-[] genug (25)
+[MODE] genug (25)
 
-[] hervorzuheben (32)
-[] die Rundung ihrer Hüften (29)
+[SCENE] hervorzuheben (32)
+[participant] die Rundung ihrer Hüften (29)
 
-[] Rundung (29)
-[] ihrer Hüften (31)
+[CLASS] Rundung (29)
+[m-identified] ihrer Hüften (31)
 
-[] Hüften (31)
-[] ihrer (30)
+[CLASS] Hüften (31)
+[m-identified] ihrer (30)
 
-[] ihrer (30)
+[IDENTIFICATION] ihrer (30)
 
 # sent_id = 148
 # text = Winston hatte sie vom aller ersten Augenblick an nicht ausstehen können .
@@ -2962,22 +2960,22 @@
 11	können	können	AUX	VMINF	VerbForm=Inf	10	aux	_	_
 12	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] ausstehen (10)
-[] Winston (1)
-[] sie (3)
-[] vom aller ersten Augenblick an (7)
-[] nicht (9)
+[MESSAGE-INIT] ausstehen (10)
+[x-experiencer] Winston (1)
+[topic] sie (3)
+[m-time] vom aller ersten Augenblick an (7)
+[m-mode] nicht (9)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] Augenblick (7)
-[] ersten (6)
+[TIME] Augenblick (7)
+[m-rank] ersten (6)
 
-[] ersten (6)
+[RANK] ersten (6)
 
-[] nicht (9)
+[MODE] nicht (9)
 
 # sent_id = 149
 # text = Er wusste auch , weshalb .
@@ -2988,16 +2986,16 @@
 5	weshalb	weshalb	ADV	PWAV	PronType=Int	2	advmod	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Er (1)
-[] auch (3)
-[] , weshalb (5)
+[MESSAGE] wusste (2)
+[x-experiencer] Er (1)
+[m-mode] auch (3)
+[topic] , weshalb (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] auch (3)
+[MODE] auch (3)
 
-[] weshalb (5)
+[CAUSATION] weshalb (5)
 
 # sent_id = 150
 # text = Es war wegen der Atmosphäre von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste .
@@ -3026,38 +3024,38 @@
 23	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl	_	_
 24	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Atmosphäre (5)
-[] Es (1)
-[] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste (7)
+[MESSAGE] Atmosphäre (5)
+[m-noncomp] Es (1)
+[topic] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste (7)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] Hockeyplatz (7)
+[LOCATION] Hockeyplatz (7)
 
-[] Baden (10)
+[ACTIVITY] Baden (10)
 [] kaltem (9)
 
-[] kaltem (9)
+[QUALITY] kaltem (9)
 
-[] Gemeinschaftswanderung (12)
+[CLASS] Gemeinschaftswanderung (12)
 
-[] Gesinnungstüchtigkeit (15)
-[] allgemeiner (14)
-[] , mit der sie sich zu umgeben wusste (23)
+[CLASS] Gesinnungstüchtigkeit (15)
+[m-quality] allgemeiner (14)
+[m-scene] , mit der sie sich zu umgeben wusste (23)
 
-[] allgemeiner (14)
+[QUALITY] allgemeiner (14)
 
-[] wusste (23)
-[] mit der (18)
-[] sie (19)
-[] sich zu umgeben (22)
+[SCENE] wusste (23)
+[participant] mit der (18)
+[participant] sie (19)
+[scene] sich zu umgeben (22)
 
-[] der (18)
+[CLASS] der (18)
 
-[] sie (19)
+[IDENTIFICATION] sie (19)
 
-[] umgeben (22)
-[] sich (20)
+[WRAPPING-WEARING] umgeben (22)
+[wearer] sich (20)
 
-[] sich (20)
+[IDENTIFICATION] sich (20)
 
