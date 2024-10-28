@@ -140,7 +140,7 @@
 3	um	um	ADP	APPR	_	5	case	_	_
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
 5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	_
-6	herum	herum	ADP	APZR	_	7	advmod	_	_
+6	herum	herum	ADP	APZR	_	5	case	_	_
 7	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	denn	denn	CCONJ	KON	_	11	cc	_	_
@@ -172,14 +172,11 @@
 
 [SCENE] sein (7)
 [x-noncomp] Es (1)
-[scene] um diese Zeit (5)
-[??? m-mode] herum (6)
+[scene] um diese Zeit herum (5)
 
 [NONCOMP] Es (1)
 
 [TIME] Zeit (5)
-
-[??? MODE] herum (6)
 
 [MESSAGE] wusste (11)
 [x-experiencer] er (10)
@@ -350,8 +347,8 @@
 [LOCATION-CONTINUATION >> MESSAGE] kreiste (3)
 [has-location >> x-noncomp] Sein Denken (2)
 [m-time] einen Augenblick (5)
-[x-location] auf der ersten Seite (13)
 [iniatial-location >> topic] um das zweifelhafte Datum (9)
+[x-location] auf der ersten Seite (13)
 
 [MESSAGE] Denken (2)
 [x-experiencer] Sein (1)
@@ -436,13 +433,13 @@
 8	verständigen	verständigen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 9	?	?	PUNCT	$.	_	8	punct	_	_
 
-[MESSAGE] verständigen (8)
-[m-quality] Wie (1)
+[MESSAGE-INIT] verständigen (8)
+[m-means] Wie (1)
 [x-sender] man (3)
 [x-noncomp] sich (4)
 [x-experiencer] mit der Zukunft (7)
 
-[QUALITY] Wie (1)
+[MEANS] Wie (1)
 
 [IDENTIFICATION] man (3)
 
@@ -512,7 +509,7 @@
 
 [??? POSSESSION-CHANGE >> SCENE-INIT] schenken (14)
 [??? m-condition || m-result] dann (8)
-[iniatial-possessor >> x-causer] man (10)
+[initial-possessor >> x-causer] man (10)
 [target-possessor >> participant] ihm (11)
 [m-mode] nicht (12)
 [possessed >> target-scene] Gehör (13)
@@ -640,11 +637,11 @@
 [??? MESSAGE wie "ratsam" || SITUATION] seltsam (3)
 [??? content ] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
 
-[POSSESSION-DEINIT] verloren (13)
-[initial-possessor] er (6)
+[POSSESSION-DEINIT >> SCENE-DEINIT] verloren (13)
+[initial-possessor >> participant] er (6)
 [m-mode] nicht (7)
 [m-mode] nur (8)
-[possessed] die Gabe der Mitteilung (10)
+[possessed >> initial-scene] die Gabe der Mitteilung (10)
 
 [IDENTIFICATION] er (6)
 
@@ -652,10 +649,12 @@
 
 [MODE] nur (8)
 
-[POSSESSION] Gabe (10)
-[possessed] der Mitteilung (12)
+[POSSESSION-INIT >> SCENE-POSSIBILITY] Gabe (10)
+[possessed >> scene] der Mitteilung (12)
+[target-possessor >> participant] er (6)
 
-[MESSAGE] Mitteilung (12)
+[MESSAGE-INIT] Mitteilung (12)
+[x-sender] er (6)
 
 [MESSAGE-DEINIT] vergessen (17)
 [m-mode] sogar (16)
@@ -689,7 +688,7 @@
 9	vorbereitet	vorbereiten	VERB	VVPP	Verbform=Part	0	root	_	_
 10	,	,	PUNCT	$,	_	19	punct	_	_
 11	und	und	CCONJ	KON	_	19	cc	_	_
-12	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+12	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	expl	_	_
 13	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
 14	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	iobj	_	_
 15	nie	nie	ADV	ADV	_	19	advmod	_	_
@@ -703,7 +702,7 @@
 23	noch	noch	ADV	ADV	_	24	advmod	_	_
 24	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	26	nsubj	_	_
 25	anderes	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	26	nsubj	_	_
-26	nötig	nötig	ADJ	ADJD	_	18	ccomp	_	_
+26	nötig	nötig	ADJ	ADJD	_	19	csubj	_	_
 27	sein	sein	AUX	VAINF	VerbForm=Inf	26	cop	_	_
 28	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
 29	als	als	CCONJ	KOKOM	_	30	case	_	_
@@ -723,15 +722,13 @@
 [IDENTIFICATION] sich (5)
 
 [TIME] Augenblick (8)
-[] sich (5)
+[has-time] sich (5)
 
-[MESSAGE] gekommen (19)
-[x-noncomp] es (12)
-[x-experiencer] ihm (14)
+[LOCATION-INIT >> SCENE-INIT] gekommen (19)
+[target-location >> participant] ihm (14)
 [m-time] nie (15)
-[x-noncomp] in den Sinn , dass dazu noch etwas anderes nötig sein könnte als Mut (18)
-
-[NONCOMP] es (12)
+[x-attribute] in den Sinn (18)
+[has-location >> target-scene] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
 
 [IDENTIFICATION] ihm (14)
 
@@ -739,6 +736,7 @@
 
 [MESSAGE] Sinn (18)
 [content] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
+[x-experiencer] ihm (14)
 
 [???SCENE-NECESSITY] nötig (26)
 [???] dazu (22)
@@ -847,9 +845,9 @@
 
 [LOCATION-INIT >> MESSAGE-INIT] geschossen (27)
 [has-location >> topic] die (19)
-[??? m-quality] buchstäblich (21)
-[m-time] seit Jahren (23)
 [target-location >> x-experiencer] ihm (20)
+[m-quality] buchstäblich (21)
+[m-time] seit Jahren (23)
 [x-attribute >> x-noncomp] durch den Kopf (26)
 [has-location >> topic] Selbstgespräche (13)
 
@@ -857,7 +855,7 @@
 
 [IDENTIFICATION] ihm (20)
 
-[???] buchstäblich (21)
+[QUALITY] buchstäblich (21)
 
 [TIME] Jahren (23)
 
@@ -908,13 +906,13 @@
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
 [SCENE-INIT] angefangen (11)
-[??? m-followed] Außerdem (1)
+[??? m-followed || m-mode] Außerdem (1)
 [participant] das Ekzem (4)
 [m-location] an seinen Krampfadern (7)
 [m-quality] unerträglich (8)
 [target-scene] zu jucken (10)
 
-[??? SEQUENCE] Außerdem (1)
+[??? SEQUENCE || MODE] Außerdem (1)
 
 [CLASS] Ekzem (4)
 
@@ -961,17 +959,17 @@
 
 [IDENTIFICATION] daran (5)
 
-[??? STATE-CHANGE] entzündete (11)
+[STATE-CHANGE] entzündete (11)
 [m-time] dann (10)
-[??? has-state] es (12)
-[??? x-noncomp] sich (13)
+[has-state] es (12)
+[x-noncomp] sich (13)
 [m-time] immer (14)
 
 [TIME] dann (10)
 
 [IDENTIFICATION] es (12)
 
-[??? NONCOMP] sich (13)
+[NONCOMP] sich (13)
 
 [TIME] immer (14)
 
@@ -1105,7 +1103,7 @@
 [m-time] Plötzlich (1)
 [participant] er (3)
 [target-scene] überstürzt zu schreiben (6)
-[??? m-followed] , ohne recht zu wissen , was er zu Papier brachte (11)
+[m-follows] , ohne recht zu wissen , was er zu Papier brachte (11)
 
 [TIME] Plötzlich (1)
 
@@ -1165,7 +1163,7 @@
 27	:	:	PUNCT	$.	_	5	punct	_	_
 
 [WRAPPING-WEARING-INIT >> MESSAGE-INIT] bedeckte (5)
-[wrapper >> ??? x-sender || m-means] Seine kleine kindliche Handschrift (4)
+[wrapper >> x-sender] Seine kleine kindliche Handschrift (4)
 [wearer >> m-location] Zeile (6)
 [wearer >> m-location] um Zeile des Blattes (8)
 [??? m-follows] , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete (26)
@@ -1188,14 +1186,14 @@
 
 [CLASS] Blattes (10)
 
-[SITUATION-PREVENTION] verzichtete (26)
-[???] wobei (12)
-[theme] er (13)
+[??? SITUATION-PREVENTION] verzichtete (26)
+[??? initial-situator] wobei (12)
+[??? theme] er (13)
 [m-time] bald (14)
-[target-situator] auf die großen Anfangsbuchstaben und zum Schluss (18)
-[target-situator] sogar auf die Interpunktion (25)
+[??? target-situator] auf die großen Anfangsbuchstaben und zum Schluss (18)
+[??? target-situator] sogar auf die Interpunktion (25)
 
-[???] wobei (12)
+[??? IDENTIFICATION] wobei (12)
 
 [IDENTIFICATION] er (13)
 
@@ -1208,7 +1206,7 @@
 
 [SITUATION-DEINIT] Schluss (21)
 
-[??? MESSAGE] Interpunktion (25)
+[MESSAGE] Interpunktion (25)
 [m-mode] sogar (22)
 
 [MODE] sogar (22)
@@ -1275,15 +1273,15 @@
 16	wird	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
 
-[??? anaphoric roleset MESSAGE] guter (3)
+[MESSAGE] guter (3)
 [m-quantity] sehr (2)
 [topic] , über ein Schiff von Flüchtlingen , das irgendwo im Mittelmeer bombardiert wird (7)
 
 [QUANTITY] sehr (2)
 
 [CLASS] Schiff (7)
+[m-accompanier] von Flüchtlingen (9)
 [m-scene] , das irgendwo im Mittelmeer bombardiert wird (15)
-[??? m-accompanier] von Flüchtlingen (9)
 
 [CLASS] Flüchtlingen (9)
 
@@ -1374,7 +1372,7 @@
 [MESSAGE-INIT] belustigt (3)
 [x-experiencer] Zuschauer (1)
 [m-quantity] höchst (2)
-[??? m-means || x-sender] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , (6)
+[x-sender] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , (6)
 
 [CLASS] Zuschauer (1)
 
@@ -1417,7 +1415,7 @@
 [in-motion] sich (22)
 [transitory-location] durchs Wasser (24)
 [m-reference] wie ein Nilpferd (28)
-[] ihn (21)
+[in-motion] ihn (21)
 
 [IDENTIFICATION] sich (22)
 
@@ -1464,7 +1462,7 @@
 [NONCOMP] sich (52)
 
 [QUALITY] rosa (53)
-[] das Meer (47)
+[has-quality] das Meer (47)
 
 [STATE-CHANGE] durchlöchert (44)
 [m-quantity] ganz (43)
@@ -2118,26 +2116,28 @@
 12	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hörte (2)
-[] Winston (1)
-[] zu schreiben (4)
-[] auf (5)
-[] , auch weil er einen Schreibkrampf bekam (12)
+[SCENE-DEINIT] hörte (2)
+[participant] Winston (1)
+[initial-scene] zu schreiben (4)
+[m-noncomp] auf (5)
+[m-explanation] , auch weil er einen Schreibkrampf bekam (12)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] schreiben (4)
+[MESSAGE-INIT] schreiben (4)
+[x-sender] Winston (1)
 
-[] bekam (12)
-[] auch (7)
-[] er (9)
-[] einen Schreibkrampf (11)
+[SCENE-INIT] bekam (12)
+[m-mode] auch (7)
+[participant] er (9)
+[target-scene] einen Schreibkrampf (11)
 
-[] auch (7)
+[MODE] auch (7)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] Schreibkrampf (11)
+[EVENT] Schreibkrampf (11)
+[undergoer] er (9)
 
 # sent_id = 137
 # text = Er wusste nicht , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern .
@@ -2153,40 +2153,41 @@
 10	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
 11	Flut	Flut	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obj	_	_
 12	von	von	ADP	APPR	_	13	case	_	_
-13	Gestammel	Gestammel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	16	obl	_	_
+13	Gestammel	Gestammel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	nmod	_	_
 14	aus	aus	ADP	APPR	_	15	case	_	_
 15	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	obl	_	_
 16	herauszuschleudern	herausschleudern	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
 17	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Er (1)
-[] nicht (3)
-[] , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern (7)
+[MESSAGE] wusste (2)
+[x-experiencer] Er (1)
+[m-mode] nicht (3)
+[content] , was ihn veranlasst hatte , diese Flut von Gestammel aus sich herauszuschleudern (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] nicht (3)
+[MODE] nicht (3)
 
-[] veranlasst (7)
-[] was (5)
-[] ihn (6)
-[] , diese Flut von Gestammel aus sich herauszuschleudern (16)
+[SCENE-INIT] veranlasst (7)
+[x-causer] was (5)
+[participant] ihn (6)
+[target-scene] , diese Flut von Gestammel aus sich herauszuschleudern (16)
 
-[] was (5)
+[IDENTIFICATION] was (5)
 
-[] ihn (6)
+[IDENTIFICATION] ihn (6)
 
-[] herauszuschleudern (16)
-[] diese Flut (11)
-[] von Gestammel (13)
-[] aus sich (15)
+[LOCATION-DEINIT >> SCENE-INIT] herauszuschleudern (16)
+[has-location >> target-scene] diese Flut von Gestammel (11)
+[initial-location >> participant] aus sich (15)
+[x-causer] ihn (6)
 
-[] Flut (11)
+[LOCATION-CHANGE >> QUANTITY] Flut (11)
+[has-location >> has-quantity] von Gestammel (13)
 
-[] Gestammel (13)
+[MESSAGE] Gestammel (13)
 
-[] sich (15)
+[IDENTIFICATION] sich (15)
 
 # sent_id = 138
 # text = Aber das merkwürdige war , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben .
@@ -2222,55 +2223,55 @@
 30	niedergeschrieben	niederschreiben	VERB	VVPP	Verbform=Part	24	advcl	_	_
 31	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] merkwürdige (3)
-[] , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (16)
+[QUALITY] merkwürdige (3)
+[has-quality] , dass ihm dabei eine vollständige Erinnerung so deutlich zum Bewusstsein gekommen war , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (16)
 
-[] gekommen (16)
-[] ihm (7)
-[] dabei (8)
-[] eine vollständige Erinnerung (11)
+[LOCATION-INIT >> SCENE-INIT] gekommen (16)
+[target-location >> participant] ihm (7)
+[m-time] dabei (8)
+[has-location >> target-scene] eine vollständige Erinnerung (11)
 [] so deutlich (13)
-[] zum Bewusstsein (15)
-[] , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (24)
+[x-attribute] zum Bewusstsein (15)
+[???] , dass es ihm fast so vorkam , als habe er sie niedergeschrieben (24)
 
-[] ihm (7)
+[IDENTIFICATION] ihm (7)
 
-[] dabei (8)
+[TIME] dabei (8)
 
-[] Erinnerung (11)
-[] vollständige (10)
+[MESSAGE] Erinnerung (11)
+[m-quality] vollständige (10)
 
-[] vollständige (10)
+[QUALITY] vollständige (10)
 
-[] deutlich (13)
-[] so (12)
+[QUALITY] deutlich (13)
+[m-mode] so (12)
 
-[] so (12)
+[MODE] so (12)
 
-[] Bewusstsein (15)
+[MESSAGE] Bewusstsein (15)
 
-[] vorkam (24)
-[] es (20)
-[] ihm (21)
-[] fast so (23)
-[] , als habe er sie niedergeschrieben (30)
+[MESSAGE-INIT] vorkam (24)
+[topic] es (20)
+[x-experiencer] ihm (21)
+[??? target-content] fast so (23)
+[??? ] , als habe er sie niedergeschrieben (30)
 
-[] es (20)
+[IDENTIFICATION] es (20)
 
-[] ihm (21)
+[IDENTIFICATION] ihm (21)
 
-[] so (23)
-[] fast (22)
+[???] so (23)
+[???] fast (22)
 
-[] fast (22)
+[???] fast (22)
 
-[] niedergeschrieben (30)
-[] er (28)
-[] sie (29)
+[MESSAGE-INIT] niedergeschrieben (30)
+[x-sender] er (28)
+[topic] sie (29)
 
-[] er (28)
+[IDENTIFICATION] er (28)
 
-[] sie (29)
+[IDENTIFICATION] sie (29)
 
 # sent_id = 139
 # text = Nun erkannte er , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen .
@@ -2301,48 +2302,49 @@
 25	beginnen	beginnen	VERB	VVINF	VerbForm=Inf	19	conj	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erkannte (2)
-[] Nun (1)
-[] er (3)
-[] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
+[MESSAGE-INIT] erkannte (2)
+[m-time] Nun (1)
+[x-experiencer] er (3)
+[target-content] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
 
-[] Nun (1)
+[TIME] Nun (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] schuld (13)
-[] dieser andere Vorfall (8)
-[] an seinem plötzlichen Entschluss (12)
-[] , nach Hause zu gehen und heute sein Tagebuch zu beginnen (19)
+[CAUSATION] schuld (13)
+[causer] dieser andere Vorfall (8)
+[result] an seinem plötzlichen Entschluss (12)
+[result] , nach Hause zu gehen und heute sein Tagebuch zu beginnen (19)
 
-[] Vorfall (8)
-[] andere (7)
+[SITUATION] Vorfall (8)
+[m-scene] andere (7)
 
-[] andere (7)
+[COMPARISON] andere (7)
+[compared] Vorfall (8)
 
-[] Entschluss (12)
-[] seinem (10)
-[] plötzlichen (11)
+[MESSAGE-INIT] Entschluss (12)
+[x-experiencer] seinem (10)
+[m-time] plötzlichen (11)
 
-[] seinem (10)
+[IDENTIFICATION] seinem (10)
 
-[] plötzlichen (11)
+[TIME] plötzlichen (11)
 
-[] gehen (19)
-[] nach Hause (17)
+[LOCATION-INIT] gehen (19)
+[target-location] nach Hause (17)
 
-[] Hause (17)
+[LOCATION] Hause (17)
 
-[] beginnen (25)
-[] heute (21)
-[] sein Tagebuch (23)
+[SCENE-INIT] beginnen (25)
+[m-time] heute (21)
+[target-scene] sein Tagebuch (23)
 
-[] heute (21)
+[TIME] heute (21)
 
-[] Tagebuch (23)
-[] sein (22)
+[MESSAGE] Tagebuch (23)
+[x-sender] sein (22)
 
-[] sein (22)
+[IDENTIFICATION] sein (22)
 
 # sent_id = 140
 # text = Dieser Vorfall hatte sich heute morgen im Ministerium zugetragen , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat .
@@ -2373,49 +2375,50 @@
 25	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 26	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] zugetragen (9)
-[] Dieser Vorfall (2)
-[] sich (4)
-[] heute (5)
-[] morgen (6)
-[] im Ministerium (8)
-[] , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat (18)
+[SCENE-INIT] zugetragen (9)
+[target-scene] Dieser Vorfall (2)
+[x-noncomp] sich (4)
+[m-time] heute (5)
+[m-time] morgen (6)
+[m-location] im Ministerium (8)
+[??? m-condition] , wenn man von etwas so Nebelhaftem überhaupt sagen konnte , dass es sich zugetragen hat (18)
 
-[] Vorfall (2)
+[SITUATION] Vorfall (2)
 
-[] sich (4)
+[NONCOMP] sich (4)
 
-[] heute (5)
+[TIME] heute (5)
 
-[] morgen (6)
+[TIME] morgen (6)
 
-[] Ministerium (8)
+[SOCIAL-RELATION] Ministerium (8)
 
-[] sagen (18)
-[] man (12)
-[] etwas (14)
-[] von so Nebelhaftem (16)
-[] überhaupt (17)
-[] , dass es sich zugetragen hat (24)
+[MESSAGE-INIT] sagen (18)
+[x-sender] man (12)
+[target-content] etwas (14)
+[topic] von so Nebelhaftem (16)
+[m-mode] überhaupt (17)
+[target-content] , dass es sich zugetragen hat (24)
 
-[] man (12)
+[IDENTIFICATION] man (12)
 
-[] etwas (14)
+[PART-WHOLE] etwas (14)
+[whole] von so Nebelhaftem (16)
 
-[] Nebelhaftem (16)
-[] so (15)
+[??? STATE] Nebelhaftem (16)
+[m-quantity] so (15)
 
-[] so (15)
+[QUANTITY] so (15)
 
-[] überhaupt (17)
+[MODE] überhaupt (17)
 
-[] zugetragen (24)
-[] es (22)
-[] sich (23)
+[SCENE-INIT] zugetragen (24)
+[target-scene] es (22)
+[x-noncomp] sich (23)
 
-[] es (22)
+[IDENTIFICATION] es (22)
 
-[] sich (23)
+[NONCOMP] sich (23)
 
 # sent_id = 141
 # text = Es war kurz vor elf , und in der Registrierabteilung , in der Winston arbeitete , hatte man die Stühle aus den Gemeinschaftsräumen geholt und sie in der Mitte des Saales dem großen Televisor gegenüber aufgestellt , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung .
@@ -2464,9 +2467,9 @@
 43	Hass-Sendung	Hass-Sendung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	39	nmod	_	_
 44	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] Es (1)
-[] kurz vor elf (5)
+[??? MESSAGE-INIT] war (2)
+[??? x-noncomp] Es (1)
+[??? target-content] kurz vor elf (5)
 
 [] Es (1)
 
@@ -2475,52 +2478,53 @@
 
 [] kurz (3)
 
-[] geholt (24)
-[] in der Registrierabteilung , in der Winston arbeitete , (10)
-[] man (18)
-[] die Stühle (20)
-[] aus den Gemeinschaftsräumen (23)
+[LOCATION-CHANGE] geholt (24)
+[m-location || target-location] in der Registrierabteilung , in der Winston arbeitete , (10)
+[x-causer] man (18)
+[has-location] die Stühle (20)
+[initial-location] aus den Gemeinschaftsräumen (23)
 
-[] Registrierabteilung (10)
-[] , in der Winston arbeitete (15)
+[??? CLASS] Registrierabteilung (10)
+[m-scene] , in der Winston arbeitete (15)
 
-[] arbeitete (15)
-[] in der (13)
-[] Winston (14)
+[SOCIAL-RELATION] arbeitete (15)
+[social-relation] in der (13)
+[has-social-relation] Winston (14)
+[social-relation] Registrierabteilung (10)
 
-[] der (13)
+[IDENTIFICATION] der (13)
 
-[] Winston (14)
+[IDENTIFICATION] Winston (14)
 
-[] man (18)
+[IDENTIFICATION] man (18)
 
-[] Stühle (20)
+[CLASS] Stühle (20)
 
-[] Gemeinschaftsräumen (23)
+[LOCATION] Gemeinschaftsräumen (23)
 
-[] aufgestellt (36)
-[] sie (26)
-[] in der Mitte des Saales (29)
-[] dem großen Televisor (34)
-[] gegenüber (35)
-[] , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung (39)
+[LOCATION-INIT] aufgestellt (36)
+[has-location] sie (26)
+[target-location] in der Mitte des Saales (29)
+[target-location] dem großen Televisor (34)
+[target-location] gegenüber (35)
+[m-purpose] , in Vorbereitung auf die Zwei-Minuten- Hass-Sendung (39)
 
-[] sie (26)
+[IDENTIFICATION] sie (26)
 
-[] Mitte (29)
-[] des Saales (31)
+[PART-WHOLE] Mitte (29)
+[whole] des Saales (31)
 
-[] Saales (31)
+[CLASS] Saales (31)
 
-[] Televisor (34)
-[] großen (33)
+[CLASS] Televisor (34)
+[m-quality] großen (33)
 
-[] großen (33)
+[QUALITY] großen (33)
 
-[] Vorbereitung (39)
-[] auf die Zwei-Minuten- Hass-Sendung (43)
+[SCENE-INIT || SEQUENCE] Vorbereitung (39)
+[target-scene || follows] auf die Zwei-Minuten- Hass-Sendung (43)
 
-[] Hass-Sendung (43)
+[MESSAGE] Hass-Sendung (43)
 
 # sent_id = 142
 # text = Winston nahm gerade seinen Platz in einer der Mittelreihen ein , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten .
@@ -2563,74 +2567,76 @@
 37	traten	treten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 38	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] nahm (2)
-[] Winston (1)
-[] gerade (3)
-[] seinen Platz (5)
-[] in einer der Mittelreihen (7)
-[] ein (10)
-[] , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten (37)
+[??? LOCATION-INIT] nahm (2)
+[has-location] Winston (1)
+[m-time] gerade (3)
+[target-location] seinen Platz (5)
+[m-location] in einer der Mittelreihen (7)
+[m-noncomp] ein (10)
+[??? m-scene] , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten (37)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] gerade (3)
+[TIME] gerade (3)
 
-[] Platz (5)
-[] seinen (4)
+[LOCATION] Platz (5)
+[has-location] seinen (4)
 
-[] seinen (4)
+[IDENTIFICATION] seinen (4)
 
-[] einer (7)
-[] der Mittelreihen (9)
+[PART-WHOLE] einer (7)
+[whole] der Mittelreihen (9)
 
-[] Mittelreihen (9)
+[???] Mittelreihen (9)
 
-[] traten (37)
-[] zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , (14)
-[] unerwartet (33)
-[] in den Raum (36)
+[LOCATION-INIT] traten (37)
+[has-location] zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , (14)
+[???] unerwartet (33)
+[target-location] in den Raum (36)
 
-[] Personen (14)
-[] zwei (13)
-[] , die er vom Sehen kannte (20)
-[] , mit denen er aber noch nie ein Wort gewechselt hatte , (30)
+[CLASS] Personen (14)
+[m-quantity] zwei (13)
+[m-scene] , die er vom Sehen kannte (20)
+[m-scene] , mit denen er aber noch nie ein Wort gewechselt hatte , (30)
 
-[] zwei (13)
+[QUANTITY] zwei (13)
 
-[] kannte (20)
-[] die (16)
-[] er (17)
-[] vom Sehen (19)
+[??? MESSAGE] kannte (20)
+[topic] die (16)
+[x-experiencer] er (17)
+[???] vom Sehen (19)
+[topic] Personen (14)
 
-[] die (16)
+[IDENTIFICATION] die (16)
 
-[] er (17)
+[IDENTIFICATION] er (17)
 
-[] Sehen (19)
+[MESSAGE] Sehen (19)
 
-[] gewechselt (30)
-[] mit denen (23)
-[] er (24)
-[] aber (25)
-[] noch nie (27)
-[] ein Wort (29)
+[??? POSSESSION-CHANGE >> MESSAGE-INIT] gewechselt (30)
+[initial-possessor || target-possessor >> x-experiencer || x-sender] mit denen (23)
+[target-possessor || initial-possessor >> x-sender || x-experiencer] er (24)
+[m-mode] aber (25)
+[m-time] noch nie (27)
+[possessed >> ??? x-noncomp] ein Wort (29)
+[initial-possessor || target-possessor >> x-experiencer || x-sender] Personen (14)
 
-[] denen (23)
+[IDENTIFICATION] denen (23)
 
-[] er (24)
+[IDENTIFICATION] er (24)
 
-[] aber (25)
+[MODE] aber (25)
 
-[] nie (27)
-[] noch (26)
+[TIME] nie (27)
+[x-noncomp] noch (26)
 
-[] noch (26)
+[NONCOMP] noch (26)
 
-[] Wort (29)
+[???] Wort (29)
 
-[] unerwartet (33)
+[???] unerwartet (33)
 
-[] Raum (36)
+[CLASS] Raum (36)
 
 # sent_id = 143
 # text = Die eine davon war ein Mädchen , dem er oft auf den Gängen begegnet war .
@@ -2651,28 +2657,29 @@
 15	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
 16	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Mädchen (6)
-[] Die eine davon (2)
-[] , dem er oft auf den Gängen begegnet war (14)
+[CLASS] Mädchen (6)
+[m-quantity] Die eine davon (2)
+[m-scene] , dem er oft auf den Gängen begegnet war (14)
 
-[] eine (2)
-[] davon (3)
+[PART-WHOLE] eine (2)
+[whole] davon (3)
 
-[] davon (3)
+[IDENTIFICATION] davon (3)
 
-[] begegnet (14)
-[] dem (8)
-[] er (9)
-[] oft (10)
-[] auf den Gängen (13)
+[??? SOCIAL-RELATION] begegnet (14)
+[social-relation] dem (8)
+[has-social-relation] er (9)
+[m-time] oft (10)
+[m-location] auf den Gängen (13)
+[social-relation] Mädchen (6)
 
-[] dem (8)
+[IDENTIFICATION] dem (8)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] oft (10)
+[TIME] oft (10)
 
-[] Gängen (13)
+[CLASS] Gängen (13)
 
 # sent_id = 144
 # text = Er kannte ihren Namen nicht , wusste aber , dass sie in der Abteilung für Prosa-Literatur beschäftigt war .
@@ -2696,36 +2703,36 @@
 18	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_
 19	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] kannte (2)
-[] Er (1)
-[] ihren Namen (4)
-[] nicht (5)
+[MESSAGE] kannte (2)
+[x-experiencer] Er (1)
+[content] ihren Namen (4)
+[m-mode] nicht (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Namen (4)
-[] ihren (3)
+[IDENTIFICATION] Namen (4)
+[identified] ihren (3)
 
-[] ihren (3)
+[IDENTIFICATION] ihren (3)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] wusste (7)
-[] aber (8)
-[] , dass sie in der Abteilung für Prosa-Literatur beschäftigt war (17)
+[MESSAGE] wusste (7)
+[m-mode] aber (8)
+[content] , dass sie in der Abteilung für Prosa-Literatur beschäftigt war (17)
 
-[] aber (8)
+[MODE] aber (8)
 
-[] beschäftigt (17)
+[???] beschäftigt (17)
 [] sie (11)
 [] in der Abteilung für Prosa-Literatur (14)
 
-[] sie (11)
+[IDENTIFICATION] sie (11)
 
-[] Abteilung (14)
-[] für Prosa-Literatur (16)
+[???] Abteilung (14)
+[m-purpose] für Prosa-Literatur (16)
 
-[] Prosa-Literatur (16)
+[MESSAGE] Prosa-Literatur (16)
 
 # sent_id = 145
 # text = Vermutlich - denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - hatte sie dort eine technische Funktion an einer der Romanschreibmaschinen .
@@ -2757,48 +2764,49 @@
 26	Romanschreibmaschinen	Romanschreibmaschine	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	24	nmod	_	_
 27	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] hatte (17)
-[] Vermutlich - (1)
-[] denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - (15)
+[SCENE-CONTINUATION] hatte (17)
+[m-mode] Vermutlich - (1)
+[x-explanation] denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - (15)
+[participant] sie (18)
+[m-location] dort (19)
+[initial-scene] eine technische Funktion (22)
+[initial-scene] an einer der Romanschreibmaschinen (24)
+
+[MODE] Vermutlich (1)
+
+[MESSAGE] gesehen (15)
+[x-experiencer] er (4)
+[topic] sie (6)
+[m-time] manchmal (7)
+[???] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
+
+[IDENTIFICATION] er (4)
+
+[IDENTIFICATION] sie (6)
+
+[TIME] manchmal (7)
+
+[CLASS] Händen (10)
+[m-state] ölverschmierten (9)
+
+[STATE] ölverschmierten (9)
+
+[CLASS] Schraubenschlüssel (14)
+
+[IDENTIFICATION] sie (18)
+
+[LOCATION] dort (19)
+
+[???] Funktion (22)
+[m-quality] technische (21)
 [] sie (18)
-[] dort (19)
-[] eine technische Funktion (22)
-[] an einer der Romanschreibmaschinen (24)
 
-[] Vermutlich (1)
+[QUALITY] technische (21)
 
-[] gesehen (15)
-[] er (4)
-[] sie (6)
-[] manchmal (7)
-[] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
+[PART-WHOLE] einer (24)
+[whole] der Romanschreibmaschinen (26)
 
-[] er (4)
-
-[] sie (6)
-
-[] manchmal (7)
-
-[] Händen (10)
-[] ölverschmierten (9)
-
-[] ölverschmierten (9)
-
-[] Schraubenschlüssel (14)
-
-[] sie (18)
-
-[] dort (19)
-
-[] Funktion (22)
-[] technische (21)
-
-[] technische (21)
-
-[] einer (24)
-[] der Romanschreibmaschinen (26)
-
-[] Romanschreibmaschinen (26)
+[CLASS] Romanschreibmaschinen (26)
 
 # sent_id = 146
 # text = Sie war ein unternehmungslustig aussehendes Mädchen von etwa siebenundzwanzig Jahren , mit üppigem schwarzen Haar , sommersprossigem Gesicht und raschen , muskulösen Bewegungen .
@@ -2827,47 +2835,49 @@
 23	Bewegungen	Bewegung	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	15	conj	_	_
 24	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Mädchen (6)
-[] Sie (1)
-[] unternehmungslustig aussehendes (5)
-[] von etwa siebenundzwanzig Jahren (10)
-[] , mit üppigem schwarzen Haar , sommersprossigem Gesicht und raschen , muskulösen Bewegungen (15)
+[CLASS] Mädchen (6)
+[has-class] Sie (1)
+[m-scene] unternehmungslustig aussehendes (5)
+[m-quality] von etwa siebenundzwanzig Jahren (10)
+[???] , mit üppigem schwarzen Haar , sommersprossigem Gesicht und raschen , muskulösen Bewegungen (15)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] aussehendes (5)
-[] unternehmungslustig (4)
+[MESSAGE] aussehendes (5)
+[content] unternehmungslustig (4)
+[topic] Mädchen (6)
 
-[] unternehmungslustig (4)
+[QUALITY] unternehmungslustig (4)
+[has-quality] Mädchen (6)
 
-[] Jahren (10)
-[] etwa siebenundzwanzig (9)
+[TIME] Jahren (10)
+[m-quantity] etwa siebenundzwanzig (9)
 
-[] siebenundzwanzig (9)
-[] etwa (8)
+[QUANTITY] siebenundzwanzig (9)
+[m-mode] etwa (8)
 
-[] etwa (8)
+[MODE] etwa (8)
 
-[] Haar (15)
-[] üppigem (13)
-[] schwarzen (14)
+[CLASS] Haar (15)
+[m-quality] üppigem (13)
+[m-quality] schwarzen (14)
 
-[] üppigem (13)
+[QUALITY] üppigem (13)
 
-[] schwarzen (14)
+[QUALITY] schwarzen (14)
 
-[] Gesicht (18)
-[] sommersprossigem (17)
+[CLASS] Gesicht (18)
+[m-quality] sommersprossigem (17)
 
-[] sommersprossigem (17)
+[QUALITY] sommersprossigem (17)
 
-[] Bewegungen (23)
-[] raschen , (20)
-[] muskulösen (22)
+[??? LOCATION-CHANGE] Bewegungen (23)
+[m-quality] raschen , (20)
+[m-quality] muskulösen (22)
 
-[] raschen (20)
+[QUALITY] raschen (20)
 
-[] muskulösen (22)
+[QUALITY] muskulösen (22)
 
 # sent_id = 147
 # text = Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , war mehrmals um die Taille ihres Trainingsanzuges gewunden , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben .
@@ -2905,57 +2915,58 @@
 32	hervorzuheben	hervorheben	VERB	VVIZU	VerbForm=Inf	24	advcl	_	_
 33	.	.	PUNCT	$.	_	21	punct	_	_
 
-[] gewunden (21)
-[] Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , (5)
-[] mehrmals (15)
-[] um die Taille ihres Trainingsanzuges (18)
-[] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
+[WRAPPING-WEARING] gewunden (21)
+[wrapper] Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , (5)
+[m-quantity] mehrmals (15)
+[wearer] um die Taille ihres Trainingsanzuges (18)
+[???] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
 
-[] Schärpe (5)
-[] schmale , scharlachrote (2)
-[] , das Abzeichen der Jugendliga gegen Sexualität (8)
+[CLASS] Schärpe (5)
+[m-quality] schmale , scharlachrote (2)
+[m-scene] , das Abzeichen der Jugendliga gegen Sexualität (8)
 
-[] schmale (2)
+[QUALITY] schmale (2)
 
-[] scharlachrote (4)
+[QUALITY] scharlachrote (4)
 
-[] Abzeichen (8)
-[] der Jugendliga (10)
-[] gegen Sexualität (12)
+[MESSAGE] Abzeichen (8)
+[??? topic] der Jugendliga (10)
+[??? topic] gegen Sexualität (12)
+[x-sender] Schärpe (5)
 
-[] Jugendliga (10)
+[SOCIAL-RELATION] Jugendliga (10)
 
-[] Sexualität (12)
+[??? CLASS || MESSAGE] Sexualität (12)
 
-[] mehrmals (15)
+[QUANTITY] mehrmals (15)
 
-[] Taille (18)
-[] ihres Trainingsanzuges (20)
+[CLASS] Taille (18)
+[m-whole] ihres Trainingsanzuges (20)
 
-[] Trainingsanzuges (20)
-[] ihres (19)
+[CLASS] Trainingsanzuges (20)
+[m-possessor] ihres (19)
 
-[] ihres (19)
+[IDENTIFICATION] ihres (19)
 
-[] eng (24)
-[] gerade (23)
-[] genug (25)
-[] , um die Rundung ihrer Hüften hervorzuheben (32)
+[QUALITY] eng (24)
+[???] gerade (23)
+[m-quantity] genug (25)
+[??? m-purpose] , um die Rundung ihrer Hüften hervorzuheben (32)
 
-[] gerade (23)
+[???] gerade (23)
 
-[] genug (25)
+[QUANTITX] genug (25)
 
-[] hervorzuheben (32)
-[] die Rundung ihrer Hüften (29)
+[MESSAGE] hervorzuheben (32)
+[topic] die Rundung ihrer Hüften (29)
 
-[] Rundung (29)
-[] ihrer Hüften (31)
+[QUALITY] Rundung (29)
+[has-quality] ihrer Hüften (31)
 
-[] Hüften (31)
-[] ihrer (30)
+[CLASS] Hüften (31)
+[m-whole] ihrer (30)
 
-[] ihrer (30)
+[IDENTIFICATION] ihrer (30)
 
 # sent_id = 148
 # text = Winston hatte sie vom aller ersten Augenblick an nicht ausstehen können .
@@ -2972,22 +2983,22 @@
 11	können	können	AUX	VMINF	VerbForm=Inf	10	aux	_	_
 12	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] ausstehen (10)
-[] Winston (1)
-[] sie (3)
-[] vom aller ersten Augenblick an (7)
-[] nicht (9)
+[MESSAGE] ausstehen (10)
+[x-experiencer] Winston (1)
+[topic] sie (3)
+[m-time] vom aller ersten Augenblick an (7)
+[m-mode] nicht (9)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] Augenblick (7)
-[] ersten (6)
+[TIME] Augenblick an (7)
+[m-rank >> m-time] ersten (6)
 
-[] ersten (6)
+[RANK >> TIME] ersten (6)
 
-[] nicht (9)
+[MODE] nicht (9)
 
 # sent_id = 149
 # text = Er wusste auch , weshalb .
@@ -2998,16 +3009,16 @@
 5	weshalb	weshalb	ADV	PWAV	PronType=Int	2	advmod	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Er (1)
-[] auch (3)
-[] , weshalb (5)
+[MESSAGE] wusste (2)
+[x-experiencer] Er (1)
+[m-mode] auch (3)
+[???] , weshalb (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] auch (3)
+[MODE] auch (3)
 
-[] weshalb (5)
+[EXPLANATION] weshalb (5)
 
 # sent_id = 150
 # text = Es war wegen der Atmosphäre von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste .
@@ -3036,38 +3047,41 @@
 23	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl	_	_
 24	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Atmosphäre (5)
-[] Es (1)
-[] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste (7)
+[??? SITUATION] Atmosphäre (5)
+[x-identified] Es (1)
+[??? theme] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste (7)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Hockeyplatz (7)
+[LOCATION] Hockeyplatz (7)
 
-[] Baden (10)
-[] kaltem (9)
+[EVENT] Baden (10)
+[m-state] kaltem (9)
 
-[] kaltem (9)
+[STATE] kaltem (9)
 
-[] Gemeinschaftswanderung (12)
+[LOCATION-CHANGE >> EVENT] Gemeinschaftswanderung (12)
 
-[] Gesinnungstüchtigkeit (15)
-[] allgemeiner (14)
-[] , mit der sie sich zu umgeben wusste (23)
+[??? MESSAGE] Gesinnungstüchtigkeit (15)
+[??? topic] allgemeiner (14)
+[m-scene] , mit der sie sich zu umgeben wusste (23)
 
-[] allgemeiner (14)
+[???] allgemeiner (14)
 
-[] wusste (23)
-[] mit der (18)
+[SCENE-INIT] wusste (23)
+[target-scene] mit der (18)
+[participant] sie (19)
+[target-scene] sich zu umgeben (22)
+[target-scene] Gesinnungstüchtigkeit (15)
+
+[IDENTIFICATION] der (18)
 [] sie (19)
-[] sich zu umgeben (22)
 
-[] der (18)
+[IDENTIFICATION] sie (19)
 
-[] sie (19)
+[??? WRAPPING-WEARING] umgeben (22)
+[wearer] sich (20)
+[x-causer] sie (19)
 
-[] umgeben (22)
-[] sich (20)
-
-[] sich (20)
+[IDENTIFICATION] sich (20)
 
