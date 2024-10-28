@@ -180,14 +180,14 @@
 
 [] herum (6)
 
-[] wusste (11)
-[] er (10)
-[] mit einiger Gewissheit (14)
-[] , dass er selbst neununddreißig Jahre alt war (21)
+[MESSAGE] wusste (11)
+[x-experiencer] er (10)
+[m-accompanier >> m-quality] mit einiger Gewissheit (14)
+[content] , dass er selbst neununddreißig Jahre alt war (21)
 
 [] er (10)
 
-[] Gewissheit (14)
+[MESSAGE >> QUALITY] Gewissheit (14)
 
 [] alt (21)
 [] er (17)
@@ -722,11 +722,11 @@
 
 [] Augenblick (8)
 
-[LOCATION-INIT >> SCENE-INIT] gekommen (19)
-[target-location >> participant] ihm (14)
+[LOCATION-INIT >> MESSAGE-INIT] gekommen (19) # TODO LVC vs. idiom criterion: use noun without verb to denote the same scene
+[target-location >> x-experiencer] ihm (14)
 [m-time] nie (15)
-[x-attribute] in den Sinn (18)
-[has-location >> target-scene] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
+[x-attribute >> x-noncomp] in den Sinn (18)
+[has-location >> target-content] , dass dazu noch etwas anderes nötig sein könnte als Mut (26)
 
 [] ihm (14)
 
@@ -903,13 +903,14 @@
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
 [] angefangen (11)
-[] Außerdem (1)
+[m-scene] Außerdem (1)
 [] das Ekzem (4)
 [] an seinen Krampfadern (7)
 [] unerträglich (8)
 [] zu jucken (10)
 
-[] Außerdem (1)
+[ACCOMPANIMENT] Außerdem (1)
+[accompanier] angefangen (11)
 
 [] Ekzem (4)
 
@@ -1312,7 +1313,7 @@
 19	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 20	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
 21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
-22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	iobj	_	_
+22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	25	obj	_	_
 23	durchs	durchs	ADP	APPRART	_	24	case	_	_
 24	Wasser	Wasser	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	25	obl	_	_
 25	wälzen	wälzen	VERB	VVINF	VerbForm=Inf	19	xcomp	_	_
@@ -1364,19 +1365,19 @@
 [] belustigt (3)
 [] Zuschauer (1)
 [] höchst (2)
-[] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
+[] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , (6)
 
 [] Zuschauer (1)
 
 [] höchst (2)
 
 [] Aufnahme (6)
-[] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
+[] von einem großen dicken Mann , den ein Helikopter verfolgt , (11)
 
 [] Mann (11)
 [] großen (9)
 [] dicken (10)
-[] , den ein Helikopter verfolgt , sich (16)
+[] , den ein Helikopter verfolgt , (16)
 
 [] großen (9)
 
@@ -1385,19 +1386,16 @@
 [] verfolgt (16)
 [] den (13)
 [] ein Helikopter (15)
-[] sich (22)
 
 [] den (13)
 
 [] Helikopter (15)
 
-[] sich (22)
-
 [] sah (19)
 [] zuerst (18)
 [] man (20)
 [] ihn (21)
-[] durchs Wasser wälzen wie ein Nilpferd (25)
+[] sich durchs Wasser wälzen wie ein Nilpferd (25)
 
 [] zuerst (18)
 
@@ -1406,8 +1404,11 @@
 [] ihn (21)
 
 [] wälzen (25)
+[] sich (22)
 [] durchs Wasser (24)
 [] wie ein Nilpferd (28)
+
+[] sich (22)
 
 [] Wasser (24)
 
@@ -1515,7 +1516,7 @@
 8	mit	mit	ADP	APPR	_	10	case	_	_
 9	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	hubschrauber	Hubschrauber	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	5	nmod	_	_
-11	darüber	darüber	ADP	PROAV	PronType=Dem	2	advmod	_	_
+11	darüber	darüber	ADP	PROAV	PronType=Dem	10	advmod	_	_
 12	,	,	PUNCT	$,	_	22	punct	_	_
 13	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	frau	Frau	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -1541,20 +1542,20 @@
 [] sah (2)
 [] Dann (1)
 [] man (3)
-[] ein Rettungsboot voll kinder mit einem hubschrauber (5)
-[] darüber (11)
+[] ein Rettungsboot voll kinder mit einem hubschrauber darüber (5)
 
 [] Dann (1)
 
 [] man (3)
 
-[] Rettungsboot (5)
-[] voll kinder (7)
-[] mit einem hubschrauber (10)
+[CLASS] Rettungsboot (5)
+[m-has-location] voll kinder (7)
+[m-accompanier] mit einem hubschrauber darüber (10)
 
 [] kinder (7)
 
 [] hubschrauber (10)
+[] darüber (11)
 
 [] darüber (11)
 
@@ -1773,7 +1774,7 @@
 176	-	-	PUNCT	$.	_	174	punct	_	_
 177	«	«	PUNCT	$(	_	3	punct	_	_
 
-[] brüllte (3)
+[] brüllte (3) # TODO Syntax korrigieren
 [] Kleiner Junge (2)
 [] vor angst (5)
 [] als wollte er ganz in sie hineinkriechen die arme um ihn und tröstete ihn obwohl sie selbst außer sich vor angst war ihn der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man was nicht vor kindern (19)
@@ -2140,7 +2141,7 @@
 10	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
 11	Flut	Flut	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obj	_	_
 12	von	von	ADP	APPR	_	13	case	_	_
-13	Gestammel	Gestammel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	16	obl	_	_
+13	Gestammel	Gestammel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	nmod	_	_
 14	aus	aus	ADP	APPR	_	15	case	_	_
 15	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	obl	_	_
 16	herauszuschleudern	herausschleudern	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
@@ -2164,12 +2165,13 @@
 
 [] ihn (6)
 
-[] herauszuschleudern (16)
-[] diese Flut (11)
-[] von Gestammel (13)
-[] aus sich (15)
+[LOCATION-DEINIT >> SENDING] herauszuschleudern (16) # TODO manual: no topic, so can use SENDING instead of MESSAGE-INIT
+[has-location >> sent] diese Flut von Gestammel (11)
+[initial-location >> x-noncomp] aus sich (15)
+[x-causer >> sender] ihn (6)
 
 [] Flut (11)
+[] von Gestammel (13)
 
 [] Gestammel (13)
 
@@ -2647,11 +2649,11 @@
 
 [] davon (3)
 
-[] begegnet (14)
-[] dem (8)
-[] er (9)
-[] oft (10)
-[] auf den Gängen (13)
+[LOCATION-INIT || SOCIAL-RELATION-INIT] begegnet (14)
+[target-location || target-social-relation] dem (8)
+[has-location || has-social-relation] er (9)
+[m-time] oft (10)
+[m-location] auf den Gängen (13)
 
 [] dem (8)
 
