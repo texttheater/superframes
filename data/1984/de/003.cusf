@@ -51,23 +51,24 @@
 [TIME] immer (11)
 
 [SOCIAL-RELATION] Parteianhänger (15)
-[m-state] blind ergebenen (14)
+[m-scene] blind ergebenen (14)
 [has-social-relation] Frauen (2)
 
 [SOCIAL-RELATION] ergebenen (14)
 [m-state >> m-quantity] blind (13)
-[has-social-relation] Frauen (2)
+[has-social-relation] Parteianhänger (15)
 
 [STATE] blind (13)
 
 [MESSAGE-CONTINUATION] Nachplapperer (19)
-[m-state] gedankenlosen (18)
+[m-scene] gedankenlosen (18)
 [x-sender] Frauen (2)
 
 [MESSAGE-NEG >> STATE] gedankenlosen (18) # # ??
+[x-experiencer >> has-state] Nachplapperer (19)
 
 [MESSAGE-INIT] Spitzel (23)
-[m-state] freiwilligen (22)
+[m-scene] freiwilligen (22)
 [m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 [x-experiencer] Frauen (2) # # manuell hinzugefügt
 
@@ -118,7 +119,7 @@
 [MESSAGE] machte (6)
 [topic] dieses Mädchen im besonderen (3)
 [x-experiencer] ihm (7)
-[m-noncomp || content] den Eindruck , gefährlicher als die meisten zu sein (9) # # ?? Syntax? (darf Syntax generell eigenhändig geändert werden?)
+[m-noncomp || content] den Eindruck , gefährlicher als die meisten zu sein (9)
 
 [CLASS] Mädchen (3)
 [m-mode] im besonderen (5)
@@ -342,12 +343,11 @@
 [IDENTIFICATION] er (3)
 
 [SCENE-CONTINUATION] weiterhin (4)
-[] fühlte (2) # # ??
+[initial-scene] fühlte (2)
 
 [LOCATION-INIT] kam (11)
 [has-location] sie (7)
 [target-location] in seine Nähe (10)
-[m-result] fühlte (2) # # ?? Warum diese Kante??
 
 [IDENTIFICATION] sie (7)
 
@@ -366,13 +366,15 @@
 
 [ACCOMPANIMENT-INIT] gemischt (26)
 [accompanied] die (17)
-[?? m-quality] zu gleichen Teilen (20) # # Adjunkt, das zu sehr spezifischen Prädikaten gehört. depictive?
+[?? m-depictive] zu gleichen Teilen (20) # # Adjunkt, das zu sehr spezifischen Prädikaten gehört. depictive?
 [target-accompanier] mit Angst und mit Feindschaft (22)
 
 [IDENTIFICATION] die (17)
 
-[?? PART-WHOLE] Teilen (20) # # ??
-[?? m-quantity] gleichen (19) # # ?? m-rank?
+[PART-WHOLE] Teilen (20) # # ??
+[m-quantity] gleichen (19)
+[part] Angst (22)
+[part] Feindschaft (25)
 
 [] gleichen (19)
 
@@ -501,12 +503,12 @@
 24	.	.	PUNCT	$.	_	4	punct	_	_
 
 [UNANCHORED-MOTION >> MESSAGE-INIT] durchlief (4)
-[in-motion >> m-noncomp] Ein kurzes Geflüster (3) # # ?? topic statt m-noncomp?
+[in-motion >> target-content] Ein kurzes Geflüster (3) # # ?? topic oder target-content?
 [transitory-location >> x-sender] die um die Stühle herumstehende Gruppe (10)
 [m-time] , als sie den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei herankommen sah (23)
 
 [MESSAGE-INIT] Geflüster (3)
-[m-quantity] kurzes (2)
+[m-time] kurzes (2)
 [x-sender] Gruppe (10)
 
 [QUANTITY] kurzes (2)
@@ -657,55 +659,59 @@
 12	,	,	PUNCT	$,	_	15	punct	_	_
 13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
 14	seltsam	seltsam	ADJ	ADJD	_	15	advmod	_	_
-15	entwaffnend	entwaffnend	ADJ	ADJD	_	11	advmod	_	_
+15	entwaffnend	entwaffnend	ADJ	ADJD	_	22	advmod	_	_
 16	und	und	CCONJ	KON	_	21	cc	_	_
 17	auf	auf	ADP	APPR	_	20	case	_	_
 18	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	merkwürdige	merkwürdig	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
 20	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	21	nmod	_	_
 21	zivilisiert	zivilisieren	ADJ	ADJD	_	22	xcomp	_	_
-22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
+22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Er (1)
-[] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
+[POSSESSION] hatte (2)
+[possessor] Er (1)
+[possessed] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Manier (4)
-[] , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (11)
+[MEANS] Manier (4)
+[means] , seine Brille auf der Nase zurechtzurücken (11)
+[m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22) # # ??
 
-[] zurechtzurücken (11)
-[] seine Brille (7)
-[] auf der Nase (10)
-[] , die seltsam entwaffnend (15)
+[UNANCHORED-MOTION] zurechtzurücken (11)
+[in-motion] seine Brille (7)
+[transitory-location] auf der Nase (10)
 
-[] Brille (7)
-[] seine (6)
+[MEANS] Brille (7)
+[has-means] seine (6)
 
-[] seine (6)
+[IDENTIFICATION] seine (6)
 
-[] Nase (10)
+[PART-WHOLE] Nase (10)
+[whole] seine (6) # # manuell hinzugefügt
 
-[] entwaffnend (15)
-[] die (13)
-[] seltsam (14)
+[MESSAGE] wirkte (22)
+[content] , die seltsam entwaffnend (15)
+[content] und auf eine merkwürdige Weise zivilisiert (21)
+[topic] Manier (4) # # manuell hinzugefügt
 
-[] die (13)
+[MEANS-DEINIT] entwaffnend (15) # # ??
+[has-means] die (13) # # ??
+[m-quality] seltsam (14)
+[has-means] Manier (4) # # ??
 
-[] seltsam (14)
+[IDENTIFICATION] die (13)
 
-[] wirkte (22)
-[] und auf eine merkwürdige Weise zivilisiert (21)
+[QUALITY] seltsam (14)
 
-[] zivilisiert (21)
-[] auf eine merkwürdige Weise (20)
+[STATE] zivilisiert (21) # # ??
+[m-quality] auf eine merkwürdige Weise (20) # # ??
 
-[] Weise (20)
-[] merkwürdige (19)
+[MEANS] Weise (20)
+[m-quality] merkwürdige (19)
 
-[] merkwürdige (19)
+[QUALITY] merkwürdige (19)
 
 # sent_id = 161
 # text = Es war eine Geste , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , an einen Edelmann aus dem achtzehnten Jahrhundert hätte erinnern können , der seinem Gegenüber die Schnupftabaksdose anbot .
@@ -746,57 +752,60 @@
 35	anbot	anbieten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	acl	_	_
 36	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Geste (4)
-[] Es (1)
-[] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16)
+[MESSAGE-INIT] Geste (4)
+[x-identified] Es (1)
+[m-scene] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16) # # ?? Syntax
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] gedacht (16)
-[] die (6)
-[] einen (7)
-[] überhaupt noch (11)
-[] jemand (12)
-[] in solchen Begriffen (15)
+[MESSAGE] gedacht (16)
+[] die (6) # # ?? Syntax?
+[] einen (7) # # ?? Syntax?
+[m-mode] überhaupt noch (11)
+[x-experiencer] jemand (12)
+[m-means] in solchen Begriffen (15)
+[] Geste (4) # # ??
 
-[] die (6)
+[IDENTIFICATION] die (6)
 
-[] einen (7)
+[IDENTIFICATION] einen (7)
 
-[] noch (11)
-[] überhaupt (10)
+[SCENE-CONTINUATION] noch (11)
+[m-mode] überhaupt (10)
 
-[] überhaupt (10)
+[MODE] überhaupt (10)
 
-[] jemand (12)
+[CLASS] jemand (12)
 
-[] Begriffen (15)
+[MESSAGE] Begriffen (15)
 
-[] erinnern (27)
-[] an einen Edelmann aus dem achtzehnten Jahrhundert , der seinem Gegenüber die Schnupftabaksdose anbot (21)
+[COMPARISON] erinnern (27) # # ?? Vgl. (349)??
+[x-whole:reference] an einen Edelmann aus dem achtzehnten Jahrhundert , der seinem Gegenüber die Schnupftabaksdose anbot (21) # # ??
+[x-part:compared] Geste (4) # # ?? Vgl. (349)??
 
-[] Edelmann (21)
-[] aus dem achtzehnten Jahrhundert (25)
-[] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
+[CLASS] Edelmann (21)
+[m-time >> m-quality] aus dem achtzehnten Jahrhundert (25)
+[m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
 
-[] Jahrhundert (25)
-[] achtzehnten (24)
+[TIME] Jahrhundert (25)
+[m-rank] achtzehnten (24)
 
-[] achtzehnten (24)
+[RANK] achtzehnten (24)
 
-[] anbot (35)
-[] der (30)
-[] seinem Gegenüber (32)
-[] die Schnupftabaksdose (34)
+[POSSESSION-CHANGE-POSSIBILITY] anbot (35)
+[initial-possessor] der (30)
+[target-possessor] seinem Gegenüber (32)
+[possessed] die Schnupftabaksdose (34)
+[initial-possessor] Edelmann (21)
 
-[] der (30)
+[IDENTIFICATION] der (30)
 
-[] Gegenüber (32)
-[] seinem (31)
+[LOCATION >> SOCIAL-RELATION] Gegenüber (32)
+[?? >> has-social-relation] seinem (31) # # ?? 
 
-[] seinem (31)
+[IDENTIFICATION] seinem (31)
 
-[] Schnupftabaksdose (34)
+[MEANS] Schnupftabaksdose (34) # # oder CLASS?
 
 # sent_id = 162
 # text = Winston hatte O'Brien vielleicht ein Dutzend Mal in etwa ebenso vielen Jahren gesehen .
@@ -815,34 +824,36 @@
 13	gesehen	sehen	VERB	VVPP	Verbform=Part	0	root	_	_
 14	.	.	PUNCT	$.	_	13	punct	_	_
 
-[] gesehen (13)
-[] Winston (1)
-[] O'Brien (3)
-[] vielleicht (4)
-[] ein Dutzend Mal (7)
-[] in etwa ebenso vielen Jahren (12)
+[MESSAGE] gesehen (13)
+[x-experiencer] Winston (1)
+[topic] O'Brien (3)
+[m-mode] vielleicht (4)
+[m-time] ein Dutzend Mal (7)
+[m-time] in etwa ebenso vielen Jahren (12)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] O'Brien (3)
+[IDENTIFICATION] O'Brien (3)
 
-[] vielleicht (4)
+[MODE] vielleicht (4)
 
-[] Mal (7)
-[] Dutzend (6)
+[QUANTITY] Mal (7)
+[quantity] Dutzend (6)
 
-[] Dutzend (6)
+[QUANTITY] Dutzend (6)
 
-[] Jahren (12)
-[] etwa ebenso vielen (11)
+[TIME] Jahren (12)
+[m-quantity] etwa ebenso vielen (11)
 
-[] vielen (11)
-[] etwa ebenso (10)
+[QUANTITY] vielen (11)
+[m-quantity] etwa ebenso (10)
 
-[] ebenso (10)
-[] etwa (9)
+[COMPARISON] ebenso (10) # # ?? müssen Kanten mit compared und reference hinzugefügt werden?
+[m-mode] etwa (9)
+[reference] Dutzend (6) # # manuell hinzugefügt
+[compared] vielen (11) # # manuell hinzugefügt
 
-[] etwa (9)
+[MODE] etwa (9)
 
 # sent_id = 163
 # text = Er fühlte sich aufrichtig zu ihm hingezogen , und das nicht nur , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte .
@@ -873,53 +884,53 @@
 25	fesselte	fesseln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] fühlte (2)
-[] Er (1)
-[] sich (3)
-[] aufrichtig (4)
-[] zu ihm (6)
-[] hingezogen (7)
+[MESSAGE] fühlte (2)
+[x-experiencer] Er (1)
+[x-noncomp] sich (3) # # ??
+[m-state] aufrichtig (4)
+[topic] zu ihm (6)
+[m-noncomp] hingezogen (7) # # ??
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION] sich (3)
 
-[] aufrichtig (4)
+[STATE] aufrichtig (4)
 
-[] ihm (6)
+[IDENTIFICATION] ihm (6)
 
-[] hingezogen (7)
+[LOCATION-CHANGE >> MESSAGE] hingezogen (7)
 
-[] das (10)
-[] nicht nur (12)
-[] , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte (25)
+[?? SITUATION] das (10) # # ??
+[m-mode] nicht nur (12)
+[m-explanation] , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte (25)
 
-[] nur (12)
-[] nicht (11)
+[MODE] nur (12)
+[m-mode] nicht (11)
 
-[] nicht (11)
+[MODE] nicht (11)
 
-[] fesselte (25)
-[] ihn (15)
-[] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
+[LOCATION-CHANGE-POSSIBILITY-NEG >> STATE-CHANGE] fesselte (25) # # ??
+[has-location >> has-state] ihn (15)
+[x-causer >> x-causer] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
 
-[] ihn (15)
+[IDENTIFICATION] ihn (15)
 
-[] Gegensatz (17)
-[] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21)
+[COMPARISON] Gegensatz (17)
+[compared] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21) # # ??
 
-[] Manieren (21)
-[] O'Briens (19)
-[] höflichen (20)
+[MEANS] Manieren (21)
+[has-means] O'Briens (19)
+[m-quality] höflichen (20)
 
-[] O'Briens (19)
+[IDENTIFICATION] O'Briens (19)
 
-[] höflichen (20)
+[QUALITY] höflichen (20)
 
-[] Preisboxertypus (24)
-[] seinem (23)
+[COMPARISON] Preisboxertypus (24) # # ??
+[compared] seinem (23)
 
-[] seinem (23)
+[IDENTIFICATION] seinem (23)
 
 # sent_id = 164
 # text = Es beruhte vielmehr auf einem heimlich gehegten Glauben - oder vielleicht nur der Hoffnung - , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei .
@@ -948,45 +959,47 @@
 23	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
 24	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] beruhte (2)
-[] Es (1)
-[] vielmehr (3)
-[] auf einem heimlich gehegten Glauben - oder vielleicht nur der Hoffnung - , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (8)
+[SEQUENCE] beruhte (2)
+[follows] Es (1)
+[m-exception] vielmehr (3) # # Bedeutung: im Gegenteil, hingegen, sondern
+[followed] auf einem heimlich gehegten Glauben - oder vielleicht nur der Hoffnung - , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (8)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] vielmehr (3)
+[EXCEPTION] vielmehr (3)
 
-[] Glauben (8)
-[] heimlich gehegten (7)
+[MESSAGE] Glauben (8)
+[m-scene] heimlich gehegten (7)
+[content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22) # # manuell hinzugefügt
 
-[] gehegten (7)
-[] heimlich (6)
+[STATE-CONTINUATION] gehegten (7) # # ?? sich kümmern um, pflegen, ...
+[m-has-social-relation] heimlich (6) # # ?? Bedeutung: vor anderen verborgen
+[has-state] Glauben (8)
 
-[] heimlich (6)
+[SOCIAL-RELATION-NEG] heimlich (6) # # ??
 
-[] Hoffnung (14)
-[] vielleicht (11)
-[] nur (12)
-[] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22)
+[MESSAGE] Hoffnung (14) # # ??
+[m-mode] vielleicht (11)
+[m-mode] nur (12)
+[content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22)
 
-[] vielleicht (11)
+[MODE] vielleicht (11)
 
-[] nur (12)
+[MODE] nur (12)
 
-[] vollkommen (22)
-[] O'Briens politische Strenggläubigkeit (20)
-[] nicht (21)
+[STATE] vollkommen (22)
+[has-state] O'Briens politische Strenggläubigkeit (20)
+[m-mode] nicht (21)
 
-[] Strenggläubigkeit (20)
-[] O'Briens (18)
-[] politische (19)
+[MESSAGE] Strenggläubigkeit (20)
+[x-experiencer] O'Briens (18)
+[topic] politische (19)
 
-[] O'Briens (18)
+[IDENTIFICATION] O'Briens (18)
 
-[] politische (19)
+[ACTIVITY] politische (19) # # ??
 
-[] nicht (21)
+[MODE] nicht (21)
 
 # sent_id = 165
 # text = Etwas in seinem Gesicht flößte unwiderstehlich diesen Gedanken ein .
@@ -1001,23 +1014,24 @@
 9	ein	ein	ADP	PTKVZ	_	5	compound:prt	_	_
 10	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] flößte (5)
-[] Etwas in seinem Gesicht (1)
-[] unwiderstehlich (6)
-[] diesen Gedanken (8)
-[] ein (9)
+[MESSAGE-INIT] flößte (5)
+[x-causer] Etwas in seinem Gesicht (1)
+[m-scene] unwiderstehlich (6)
+[target-content] diesen Gedanken (8)
+[x-noncomp] ein (9)
 
-[] Etwas (1)
-[] in seinem Gesicht (4)
+[CLASS] Etwas (1)
+[m-location] in seinem Gesicht (4)
 
-[] Gesicht (4)
-[] seinem (3)
+[PART-WHOLE] Gesicht (4) # # ??
+[whole] seinem (3)
 
-[] seinem (3)
+[IDENTIFICATION] seinem (3)
 
-[] unwiderstehlich (6)
+[SCENE-PREVENTION-NEG] unwiderstehlich (6) # # ??
+[target-scene] flößte (5)
 
-[] Gedanken (8)
+[MESSAGE] Gedanken (8)
 
 # sent_id = 166
 # text = Und doch stand in diesem Gesicht eigentlich weniger mangelnde Strenggläubigkeit als einfach Intelligenz geschrieben .
@@ -1028,43 +1042,44 @@
 5	diesem	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	3	obl	_	_
 7	eigentlich	eigentlich	ADV	ADV	_	3	advmod	_	_
-8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	advmod	_	_
+8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	advmod	_	_
 9	mangelnde	mangelnd	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 10	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	nsubj	_	_
 11	als	als	CCONJ	KOKOM	_	13	case	_	_
 12	einfach	einfach	ADJ	ADJD	_	13	advmod	_	_
-13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	14	obl	_	_
+13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	10	obl	_	_
 14	geschrieben	schreiben	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 15	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] stand (3)
-[] doch (2)
-[] in diesem Gesicht (6)
-[] eigentlich (7)
-[] weniger mangelnde Strenggläubigkeit (10)
-[] als einfach Intelligenz geschrieben (14)
+[LOCATION >> MESSAGE] stand (3)
+[m-mode] doch (2)
+[location] in diesem Gesicht (6)
+[m-mode] eigentlich (7)
+[has-location >> topic] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
+[x-depictive >> x-noncomp] geschrieben (14) # # ??
 
-[] doch (2)
+[MODE] doch (2)
 
-[] Gesicht (6)
+[PART-WHOLE] Gesicht (6) # # ?? hier doch CLASS?
 
-[] eigentlich (7)
+[MODE] eigentlich (7)
 
-[] Strenggläubigkeit (10)
-[] weniger mangelnde (9)
+[MESSAGE] Strenggläubigkeit (10)
+[m-quantity || m-rank] weniger (8) # # ??
+[m-scene] mangelnde (9)
+[x-reference] als einfach Intelligenz (13) # # ??
 
-[] mangelnde (9)
-[] weniger (8)
+[QUANTITY] weniger (8)
 
-[] weniger (8)
+[EXISTENCE-NEG || QUANTITY] mangelnde (9) # # kann sowohl "fehlend" als auch "in nicht ausreichendem Maß" bedeuten
+[exists || has-quantity] Strenggläubigkeit (10)
 
-[] geschrieben (14)
-[] als einfach Intelligenz (13)
+[QUALITY] Intelligenz (13)
+[m-mode] einfach (12)
 
-[] Intelligenz (13)
-[] einfach (12)
+[STATE >> MODE] einfach (12)
 
-[] einfach (12)
+[MESSAGE-INIT] geschrieben (14)
 
 # sent_id = 167
 # text = Jedenfalls sah er wie ein Mensch aus , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam .
@@ -1620,7 +1635,7 @@
 [] Gesicht (5)
 [] Immanuel Goldsteins , des Volksfeinds (6)
 
-[] Immanuel (6)
+[] Immanuel Goldsteins (6)
 [] , des Volksfeinds (10)
 
 [] Volksfeinds (10)
