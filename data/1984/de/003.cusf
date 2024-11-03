@@ -69,7 +69,7 @@
 
 [MESSAGE-INIT] Spitzel (23)
 [m-scene] freiwilligen (22)
-[m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
+[?? m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 [x-experiencer] Frauen (2) # # manuell hinzugefügt
 
 [STATE || SOCIAL-RELATION] freiwilligen (22)
@@ -184,7 +184,7 @@
 [x-means] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
 
 [TIME] Einmal (1)
-[m-scene] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
+[?? m-scene] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
 
 [LOCATION-CHANGE] vorbeigekommen (9)
 [has-location] sie (4)
@@ -203,7 +203,7 @@
 [IDENTIFICATION] ihn (14)
 
 [ACTIVITY] Seitenblick (17)
-[m-scene] , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (24)
+[?? m-scene] , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (24)
 [is-active] sie (13) # # manuell hinzugefügt
 
 [MESSAGE] schien (24)
@@ -225,7 +225,7 @@
 [x-sender] der (26)
 [x-experiencer] ihn (27)
 [m-time] für einen Augenblick (30)
-[m-noncomp] mit blankem Entsetzen (33)
+[m-depictive] mit blankem Entsetzen (33) # # Vgl. (96)
 
 [IDENTIFICATION] der (26)
 
@@ -233,8 +233,9 @@
 
 [TIME] Augenblick (30)
 
-[MESSAGE] Entsetzen (33) # # Superframe des Hauptprädikats, da dort m-noncomp und hier mit Argument
+[MESSAGE] Entsetzen (33)
 [m-quality] blankem (32)
+[x-experiencer] ihn (27) # # manuell hinzugefügt wegen m-depictive
 
 [QUALITY] blankem (32)
 
@@ -277,7 +278,7 @@
 
 [MESSAGE] Gedanke (5)
 
-[CLASS] Kopf (8)
+[CLASS >> NONCOMP] Kopf (8)
 [x-whole] Ihm (1) # # manuell hinzugefügt (attribute)
 
 [SOCIAL-RELATION] Agentin (14)
@@ -519,7 +520,7 @@
 [STATE] herumstehende (9)
 [m-location] um die Stühle (8)
 
-[CLASS] Stühle (8)
+[CLASS || MEANS] Stühle (8)
 
 [MESSAGE-INIT] sah (23)
 [x-experiencer] sie (13)
@@ -537,10 +538,10 @@
 [SOCIAL-RELATION] Mitglieds (18)
 [social-relation] der Inneren Partei (21)
 
-[CLASS] Partei (21)
+[IDENTIFICATION] Partei (21)
 [m-noncomp] Inneren (20)
 
-[IDENTIFICATION] Inneren (20)
+[NONCOMP] Inneren (20)
 
 [LOCATION-INIT] herankommen (22)
 [has-location] den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei (16)
@@ -552,7 +553,7 @@
 3	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 4	großer	groß	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	7	amod	_	_
 5	,	,	PUNCT	$,	_	6	punct	_	_
-6	grobschlächtiger	grobschlächtig	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	4	conj	_	_
+6	grobschlächtiger	grobschlächtig	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	7	conj	_	_
 7	Mann	Mann	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 8	mit	mit	ADP	APPR	_	10	case	_	_
 9	dickem	dick	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	10	amod	_	_
@@ -569,8 +570,8 @@
 
 [CLASS] Mann (7)
 [has-class] O'Brien (1)
-[m-quality] großer , grobschlächtiger (4)
-[m-quality] mit dickem Nacken und einem derben , humorvollen und brutalen Gesicht (10)
+[m-quality] großer (4)
+[m-part] mit dickem Nacken und einem derben , humorvollen und brutalen Gesicht (10)
 
 [IDENTIFICATION] O'Brien (1)
 
@@ -639,9 +640,9 @@
 [IDENTIFICATION] seiner (10)
 
 [UNANCHORED-MOTION] bewegen (15)
-[in-motion] sich (13)
+[in-motion >> x-noncomp] sich (13)
 
-[IDENTIFICATION] sich (13)
+[IDENTIFICATION >> NONCOMP] sich (13)
 
 # sent_id = 160
 # text = Er hatte eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte .
@@ -677,7 +678,7 @@
 
 [MEANS] Manier (4)
 [means] , seine Brille auf der Nase zurechtzurücken (11)
-[m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22) # # ??
+[?? m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22) # # ??
 
 [UNANCHORED-MOTION] zurechtzurücken (11)
 [in-motion] seine Brille (7)
@@ -754,7 +755,7 @@
 
 [MESSAGE-INIT] Geste (4)
 [x-identified] Es (1)
-[m-scene] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16) # # ?? Syntax
+[?? m-scene] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16) # # ?? Syntax
 
 [IDENTIFICATION] Es (1)
 
@@ -785,7 +786,7 @@
 
 [CLASS] Edelmann (21)
 [m-time >> m-quality] aus dem achtzehnten Jahrhundert (25)
-[m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
+[?? m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
 
 [TIME] Jahrhundert (25)
 [m-rank] achtzehnten (24)
@@ -801,7 +802,7 @@
 [IDENTIFICATION] der (30)
 
 [LOCATION >> SOCIAL-RELATION] Gegenüber (32)
-[?? >> has-social-relation] seinem (31) # # ?? 
+[location >> has-social-relation] seinem (31)
 
 [IDENTIFICATION] seinem (31)
 
@@ -893,7 +894,7 @@
 
 [IDENTIFICATION] Er (1)
 
-[IDENTIFICATION] sich (3)
+[NONCOMP] sich (3) # # ??
 
 [STATE] aufrichtig (4)
 
@@ -997,7 +998,8 @@
 
 [IDENTIFICATION] O'Briens (18)
 
-[ACTIVITY] politische (19) # # ??
+[SOCIAL-RELATION] politische (19) # # ??
+[has-social-relation] O'Briens (18) # # ?? manuell hinzugefügt
 
 [MODE] nicht (21)
 
@@ -1051,12 +1053,12 @@
 14	geschrieben	schreiben	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 15	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION >> MESSAGE] stand (3)
+[LOCATION >> MESSAGE] stand (3) # # ?? 
 [m-mode] doch (2)
 [location] in diesem Gesicht (6)
 [m-mode] eigentlich (7)
 [has-location >> topic] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
-[x-depictive >> x-noncomp] geschrieben (14) # # ??
+[x-depictive >> x-noncomp] geschrieben (14) # # ?? Vgl. (213) ??
 
 [MODE] doch (2)
 
@@ -1079,7 +1081,8 @@
 
 [STATE >> MODE] einfach (12)
 
-[MESSAGE-INIT] geschrieben (14)
+[MESSAGE-INIT >> NONCOMP] geschrieben (14)
+[topic] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10) # # ?? manuell hinzugefügt wegen x-depictive?
 
 # sent_id = 167
 # text = Jedenfalls sah er wie ein Mensch aus , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam .
@@ -1129,7 +1132,7 @@
 [IDENTIFICATION] er (3)
 
 [CLASS] Mensch (6)
-[m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[?? m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
 [x-compared] er (3)
 
 [MESSAGE-INIT] reden (12)
@@ -1150,22 +1153,22 @@
 
 [IDENTIFICATION] man (16)
 
-[IDENTIFICATION] es (17)
+[NONCOMP] es (17)
 
-[STATE] fertig (18) # # ? QUALITY, wie bei "jung"?
+[NONCOMP] fertig (18)
 
 [HITTING >> EVENT] schlagen (26) # # ?? wörtl. Bedeutung notwendig?
 [hit >> undergoer] dem Televisor (22)
 [x-noncomp] ein Schnippchen (24) # # ?? wörtl. Bedeutung?
 [x-causer] man (16)
 
-[CLASS || MEANS] Televisor (22) # # Vgl. (74)
+[CLASS] Televisor (22) # # Vgl. (74)
 
 [MESSAGE-INIT >> NONCOMP] Schnippchen (24) # # ?? wörtl. Bedeutung? "schnippsende Bewegung und das dabei entstehende Geräusch"
 
 [POSSESSION-INIT >> SOCIAL-RELATION-INIT] bekam (33)
 [possession >> target-social-relation] ihn allein (29)
-[x-noncomp] zu fassen (32)
+[m-has-means >> x-noncomp] zu fassen (32) # # ?? wörtl. Bedeutung?
 [target-possessor >> has-social-relation] man (16)
 
 [IDENTIFICATION] ihn (29)
@@ -1173,7 +1176,7 @@
 
 [STATE] allein (30)
 
-[NONCOMP] fassen (32)
+[LOCATION-CHANGE-POSSIBILITY-NEG >> NONCOMP] fassen (32) # # ??
 
 # sent_id = 168
 # text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
@@ -1262,7 +1265,7 @@
 7	Blick	Blick	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	_
 8	auf	auf	ADP	APPR	_	10	case	_	_
 9	seine	sein	DET	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes	10	det:poss	_	_
-10	Armbanduhr	Armbanduhr	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	nmod	_	_
+10	Armbanduhr	Armbanduhr	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	nmod	_	_
 11	,	,	PUNCT	$,	_	12	punct	_	_
 12	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 13	,	,	PUNCT	$,	_	18	punct	_	_
@@ -1286,65 +1289,66 @@
 31	,	,	PUNCT	$,	_	37	punct	_	_
 32	bis	bis	SCONJ	KOUS	_	37	mark	_	_
 33	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	Zwei-Minuten-Hass-Sendung	Zwei-Minuten-Hass-Sendung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	37	nsubj	_	_
+34	Zwei-Minuten-Hass-Sendung	Zwei-Minuten-Hass-Sendung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	36	nsubj	_	_
 35	zu	zu	ADP	APPR	_	36	case	_	_
 36	Ende	Ende	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	30	obl	_	_
-37	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	advcl	_	_
+37	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	cop	_	_
 38	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] warf (2)
-[] O'Brien (1)
-[] in diesem Augenblick (5)
-[] einen Blick auf seine Armbanduhr (7)
+[LOCATION-CHANGE >> MESSAGE-INIT] warf (2)
+[x-causer >> x-experiencer] O'Brien (1)
+[m-time] in diesem Augenblick (5)
+[has-location >> x-noncomp] einen Blick (7)
+[target-location >> topic] auf seine Armbanduhr (10)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
-[] Augenblick (5)
+[TIME] Augenblick (5)
 
-[] Blick (7)
-[] auf seine Armbanduhr (10)
+[MESSAGE-INIT >> NONCOMP] Blick (7)
 
-[] Armbanduhr (10)
-[] seine (9)
+[MEANS] Armbanduhr (10)
+[x-causer] seine (9)
 
-[] seine (9)
+[IDENTIFICATION] seine (9)
 
-[] sah (12)
-[] , dass es fast elf Uhr war (18)
+[MESSAGE-INIT] sah (12)
+[target-content] , dass es fast elf Uhr war (18)
+[x-experiencer] O'Brien (1) # # manuell hinzugefügt
 
-[] Uhr (18)
-[] es (15)
-[] fast elf (17)
+[TIME] Uhr (18)
+[x-noncomp] es (15)
+[m-quantity] fast elf (17)
 
-[] es (15)
+[NONCOMP] es (15)
 
-[] elf (17)
-[] fast (16)
+[QUANTITY] elf (17)
+[m-quantity] fast (16)
 
-[] fast (16)
+[QUANTITY] fast (16)
 
-[] beschloss (22)
-[] offenbar (23)
-[] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
+[SCENE] beschloss (22)
+[m-mode || m-scene] offenbar (23) # # ?? 
+[scene] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
+[participant] O'Brien (1) # # manuell hinzugefügt
 
-[] offenbar (23)
+[MESSAGE-POSSIBILITY] offenbar (23) # # ?? eine Bedeutung: "[deutlich] erkennbar"
+[target-content] beschloss (22) # # ?? 
 
-[] bleiben (30)
-[] in der Abteilung Registratur (27)
-[] zu Ende (36)
-[] , bis die Zwei-Minuten-Hass-Sendung war (37)
+[LOCATION] bleiben (30)
+[location] in der Abteilung Registratur (27)
+[m-time] , bis die Zwei-Minuten-Hass-Sendung zu Ende war (36)
+[has-location] O'Brien (1)
 
-[] Abteilung (27)
-[] Registratur (28)
+[IDENTIFICATION] Abteilung (27) # # ?? 
+[m-noncomp] Registratur (28)
 
-[] Registratur (28)
+[NONCOMP] Registratur (28)
 
-[] Ende (36)
+[SCENE-DEINIT] Ende (36)
+[initial-scene] die Zwei-Minuten-Hass-Sendung (34)
 
-[] war (37)
-[] die Zwei-Minuten-Hass-Sendung (34)
-
-[] Zwei-Minuten-Hass-Sendung (34)
+[MESSAGE] Zwei-Minuten-Hass-Sendung (34)
 
 # sent_id = 170
 # text = Er setzte sich auf einen Stuhl in derselben Reihe wie Winston , zwei Plätze von ihm entfernt .
@@ -1367,36 +1371,37 @@
 17	entfernt	entfernt	ADJ	ADJD	_	2	conj	_	_
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] setzte (2)
-[] Er (1)
-[] sich (3)
-[] auf einen Stuhl in derselben Reihe wie Winston (6)
+[LOCATION-CHANGE] setzte (2)
+[x-causer >> has-location] Er (1)
+[has-location >> x-noncomp] sich (3)
+[target-location] auf einen Stuhl in derselben Reihe wie Winston (6)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION >> NONCOMP] sich (3)
 
-[] Stuhl (6)
-[] in derselben Reihe wie Winston (9)
+[CLASS] Stuhl (6)
+[m-location] in derselben Reihe wie Winston (9)
 
-[] Reihe (9)
-[] derselben (8)
-[] wie Winston (11)
+[LOCATION] Reihe (9) # # ?? 
+[m-reference] derselben (8)
+[has-location:m-comparison] wie Winston (11) # # ??
 
-[] derselben (8)
+[COMPARISON] derselben (8)
 
-[] Winston (11)
+[IDENTIFICATION] Winston (11)
 
-[] entfernt (17)
-[] zwei Plätze (14)
-[] von ihm (16)
+[LOCATION] entfernt (17)
+[m-quantity] zwei Plätze (14)
+[location] von ihm (16) # # ??
+[has-location] Stuhl (6) # # ?? manuell hinzugefügt
 
-[] Plätze (14)
-[] zwei (13)
+[LOCATION] Plätze (14) # # ??
+[m-quantity] zwei (13)
 
-[] zwei (13)
+[QUANTITY] zwei (13)
 
-[] ihm (16)
+[IDENTIFICATION] ihm (16)
 
 # sent_id = 171
 # text = Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , saß zwischen ihnen ...
@@ -1419,31 +1424,32 @@
 17	ihnen	sie	PRON	PPER	Case=Dat|Gender=Neut|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
 18	...	...	PUNCT	$.	_	15	punct	_	_
 
-[] saß (15)
-[] Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , (4)
-[] zwischen ihnen (17)
+[LOCATION] saß (15)
+[has-location] Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , (4)
+[location] zwischen ihnen (17)
 
-[] Frau (4)
-[] kleine (2)
-[] aschblonde (3)
-[] , die in der Abteilung neben Winston beschäftigt war (12)
+[CLASS] Frau (4)
+[m-quality] kleine (2)
+[m-quality || m-state] aschblonde (3)
+[?? m-scene] , die in der Abteilung neben Winston beschäftigt war (12)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] aschblonde (3)
+[QUALITY || STATE] aschblonde (3)
 
-[] beschäftigt (12)
-[] die (6)
-[] in der Abteilung (9)
-[] neben Winston (11)
+[SOCIAL-RELATION] beschäftigt (12)
+[has-social-relation] die (6)
+[social-relation] in der Abteilung (9)
+[m-location] neben Winston (11)
+[has-social-relation] Frau (4)
 
-[] die (6)
+[IDENTIFICATION] die (6)
 
-[] Abteilung (9)
+[?? CLASS] Abteilung (9) # # ?? 
 
-[] Winston (11)
+[IDENTIFICATION] Winston (11)
 
-[] ihnen (17)
+[IDENTIFICATION] ihnen (17)
 
 # sent_id = 172
 # text = Das Mädchen mit dem schwarzen Haar saß unmittelbar dahinter .
@@ -1458,22 +1464,22 @@
 9	dahinter	dahinter	ADP	PROAV	PronType=Dem	7	advmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] saß (7)
-[] Das Mädchen mit dem schwarzen Haar (2)
-[] unmittelbar dahinter (9)
+[LOCATION] saß (7)
+[has-location] Das Mädchen mit dem schwarzen Haar (2)
+[location] unmittelbar dahinter (9)
 
-[] Mädchen (2)
-[] mit dem schwarzen Haar (6)
+[CLASS] Mädchen (2)
+[m-part] mit dem schwarzen Haar (6) # # ?? 
 
-[] Haar (6)
-[] schwarzen (5)
+[CLASS] Haar (6)
+[m-quality] schwarzen (5)
 
-[] schwarzen (5)
+[QUALITY] schwarzen (5)
 
-[] dahinter (9)
-[] unmittelbar (8)
+[LOCATION] dahinter (9)
+[m-quantity] unmittelbar (8)
 
-[] unmittelbar (8)
+[?? QUANTITY] unmittelbar (8)
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1507,49 +1513,49 @@
 28	hervor	hervor	ADP	PTKVZ	_	4	compound:prt	_	_
 29	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] brach (4)
-[] Im nächsten Augenblick (3)
-[] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
-[] aus dem großen Televisor am Ende des Raumes (23)
-[] hervor (28)
+[MESSAGE-INIT] brach (4)
+[m-time] Im nächsten Augenblick (3)
+[target-content] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
+[x-sender:m-location] aus dem großen Televisor am Ende des Raumes (23) # # ?? 
+[x-noncomp] hervor (28)
 
-[] Augenblick (3)
-[] nächsten (2)
+[TIME] Augenblick (3)
+[m-follows] nächsten (2)
 
-[] nächsten (2)
+[SEQUENCE] nächsten (2)
 
-[] Kreischlaut (9)
-[] scheußlicher , knirschender (6)
-[] , als ob eine riesige Maschine völlig ungeölt liefe , (18)
+[MESSAGE-INIT] Kreischlaut (9)
+[m-quality] scheußlicher , knirschender (6)
+[m-reference] , als ob eine riesige Maschine völlig ungeölt liefe , (18)
 
-[] scheußlicher (6)
+[?? SCENE] scheußlicher (6)
 
-[] knirschender (8)
+[MESSAGE-INIT] knirschender (8)
 
-[] liefe (18)
-[] eine riesige Maschine (15)
-[] völlig ungeölt (17)
+[UNANCHORED-MOTION >> ACTIVITY] liefe (18)
+[in-motion >> is-active] eine riesige Maschine (15)
+[m-state] völlig ungeölt (17)
 
-[] Maschine (15)
-[] riesige (14)
+[CLASS] Maschine (15)
+[m-quality] riesige (14)
 
-[] riesige (14)
+[QUALITY] riesige (14)
 
-[] ungeölt (17)
-[] völlig (16)
+[STATE] ungeölt (17)
+[m-quantity] völlig (16)
 
-[] völlig (16)
+[QUANTITY] völlig (16)
 
-[] Televisor (23)
-[] großen (22)
-[] am Ende des Raumes (25)
+[CLASS] Televisor (23)
+[m-quality] großen (22)
+[m-location] am Ende des Raumes (25)
 
-[] großen (22)
+[QUALITY] großen (22)
 
-[] Ende (25)
-[] des Raumes (27)
+[PART-WHOLE] Ende (25)
+[whole] des Raumes (27)
 
-[] Raumes (27)
+[LOCATION] Raumes (27)
 
 # sent_id = 174
 # text = Es war ein Lärm , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten .
@@ -1571,20 +1577,20 @@
 16	sträubten	sträuben	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
 17	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Lärm (4)
-[] Es (1)
-[] , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten (11)
+[MESSAGE-INIT] Lärm (4)
+[x-identified] Es (1)
+[m-accompanier] , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten (11) # # ?? 
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] überlief (11)
-[] bei dem (7)
-[] einen (8)
-[] eine Gänsehaut (10)
+[UNANCHORED-MOTION || MESSAGE-INIT] überlief (11) # # ?? 
+[x-accompanier] bei dem (7) # # ?? 
+[transitory-location || x-experiencer] einen (8)
+[has-location || topic] eine Gänsehaut (10)
 
-[] dem (7)
+[IDENTIFICATION] dem (7)
 
-[] einen (8)
+[IDENTIFICATION] einen (8)
 
 [] Gänsehaut (10)
 
