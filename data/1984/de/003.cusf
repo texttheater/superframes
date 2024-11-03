@@ -1060,7 +1060,7 @@
 
 [MODE] doch (2)
 
-[PART-WHOLE] Gesicht (6) # # ?? hier doch CLASS?
+[PART-WHOLE] Gesicht (6) # # ?? Vgl. 3.2, ABER (250)...
 
 [MODE] eigentlich (7)
 
@@ -1112,64 +1112,68 @@
 27	,	,	PUNCT	$,	_	33	punct	_	_
 28	und	und	CCONJ	KON	_	33	cc	_	_
 29	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
-30	allein	allein	ADV	ADV	_	32	advmod	_	_
+30	allein	allein	ADV	ADV	_	29	advmod	_	_
 31	zu	zu	PART	PTKZU	_	32	mark	_	_
 32	fassen	fassen	VERB	VVINF	VerbForm=Inf	33	xcomp	_	_
 33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
 34	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sah (2)
-[] Jedenfalls (1)
-[] er (3)
-[] wie ein Mensch , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (6)
-[] aus (7)
+[MESSAGE] sah (2)
+[m-mode] Jedenfalls (1)
+[topic] er (3)
+[content] wie ein Mensch , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (6)
+[x-noncomp] aus (7)
 
-[] Jedenfalls (1)
+[MODE] Jedenfalls (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] Mensch (6)
-[] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[CLASS] Mensch (6)
+[m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[x-compared] er (3)
 
-[] reden (12)
-[] mit dem (10)
-[] man (11)
-[] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (19)
+[MESSAGE-INIT] reden (12)
+[x-accompanier] mit dem (10)
+[x-sender] man (11)
+[m-condition] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (19)
+[x-accompanier] Mensch (6)
 
-[] dem (10)
+[IDENTIFICATION] dem (10)
 
-[] man (11)
+[IDENTIFICATION] man (11)
 
-[] brachte (19)
-[] man (16)
-[] es (17)
-[] fertig (18)
-[] , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (26)
+[RESULTATIVE] brachte (19) # # ??
+[x-causer] man (16)
+[x-noncomp] es (17)
+[x-noncomp] fertig (18)
+[resultative] , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (26)
 
-[] man (16)
+[IDENTIFICATION] man (16)
 
-[] es (17)
+[IDENTIFICATION] es (17)
 
-[] fertig (18)
+[STATE] fertig (18) # # ? QUALITY, wie bei "jung"?
 
-[] schlagen (26)
-[] dem Televisor (22)
-[] ein Schnippchen (24)
+[HITTING >> EVENT] schlagen (26) # # ?? wörtl. Bedeutung notwendig?
+[hit >> undergoer] dem Televisor (22)
+[x-noncomp] ein Schnippchen (24) # # ?? wörtl. Bedeutung?
+[x-causer] man (16)
 
-[] Televisor (22)
+[CLASS || MEANS] Televisor (22) # # Vgl. (74)
 
-[] Schnippchen (24)
+[MESSAGE-INIT >> NONCOMP] Schnippchen (24) # # ?? wörtl. Bedeutung? "schnippsende Bewegung und das dabei entstehende Geräusch"
 
-[] bekam (33)
-[] ihn (29)
-[] allein zu fassen (32)
+[POSSESSION-INIT >> SOCIAL-RELATION-INIT] bekam (33)
+[possession >> target-social-relation] ihn allein (29)
+[x-noncomp] zu fassen (32)
+[target-possessor >> has-social-relation] man (16)
 
-[] ihn (29)
+[IDENTIFICATION] ihn (29)
+[m-has-state] allein (30)
 
-[] fassen (32)
-[] allein (30)
+[STATE] allein (30)
 
-[] allein (30)
+[NONCOMP] fassen (32)
 
 # sent_id = 168
 # text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
@@ -1186,9 +1190,9 @@
 11	auf	auf	ADP	APPR	_	13	case	_	_
 12	ihre	ihr	DET	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes	13	det:poss	_	_
 13	Richtigkeit	Richtigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obl	_	_
-14	hin	hin	ADP	APZR	_	13	advmod	_	_
+14	hin	hin	ADP	APZR	_	13	case	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
-16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
+16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	6	xcomp	_	_
 17	:	:	PUNCT	$.	_	19	punct	_	_
 18	praktisch	praktisch	ADJ	ADJD	_	19	advmod	_	_
 19	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	_
@@ -1196,57 +1200,56 @@
 21	auch	auch	ADV	ADV	_	19	advmod	_	_
 22	keine	kein	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	23	nmod	_	_
 23	Möglichkeit	Möglichkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	19	nsubj	_	_
-24	dazu	dazu	ADP	PROAV	PronType=Dem	19	advmod	_	_
+24	dazu	dazu	ADP	PROAV	PronType=Dem	23	advmod	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] gemacht (7)
-[] Winston (1)
-[] nie (3)
-[] den geringsten Versuch (6)
-[] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[SCENE] gemacht (7)
+[participant || x-causer] Winston (1) # # ?? 
+[m-time] nie (3)
+[scene] den geringsten Versuch , seine Vermutung auf ihre Richtigkeit hin zu prüfen (6)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] nie (3)
+[TIME-NEG] nie (3)
 
-[] Versuch (6)
-[] geringsten (5)
+[SCENE-POSSIBILITY] Versuch (6) # # ??
+[m-quality] geringsten (5)
+[scene] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[x-causer] Winston (1)
 
-[] geringsten (5)
+[QUALITY] geringsten (5)
 
-[] prüfen (16)
-[] seine Vermutung (10)
-[] auf ihre Richtigkeit hin (13)
+[MESSAGE-INIT] prüfen (16)
+[topic] seine Vermutung (10)
+[target-content] auf ihre Richtigkeit hin (13)
 
-[] Vermutung (10)
-[] seine (9)
+[MESSAGE] Vermutung (10)
+[x-experiencer] seine (9)
 
-[] seine (9)
+[IDENTIFICATION] seine (9)
 
-[] Richtigkeit (13)
-[] ihre (12)
-[] hin (14)
+[MODE] Richtigkeit (13)
+[has-mode] ihre (12)
+[has-mode] seine Vermutung (10)
 
-[] ihre (12)
+[IDENTIFICATION] ihre (12)
 
-[] hin (14)
+[SCENE] gab (19) # # Vgl. (130)
+[m-means >> m-mode] praktisch (18) # # ??
+[m-mode] auch (21)
+[scene] keine Möglichkeit dazu (23)
 
-[] gab (19)
-[] praktisch (18)
-[] auch (21)
-[] keine Möglichkeit (23)
-[] dazu (24)
+[MEANS >> MODE] praktisch (18) # # ??
 
-[] praktisch (18)
+[MODE] auch (21)
 
-[] auch (21)
+[SCENE-POSSIBILITY] Möglichkeit (23)
+[m-mode] keine (22)
+[scene] dazu (24)
 
-[] Möglichkeit (23)
-[] keine (22)
+[MODE] keine (22)
 
-[] keine (22)
-
-[] dazu (24)
+[IDENTIFICATION] dazu (24) # # ??
 
 # sent_id = 169
 # text = O'Brien warf in diesem Augenblick einen Blick auf seine Armbanduhr , sah , dass es fast elf Uhr war , und beschloss offenbar , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war .
