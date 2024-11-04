@@ -68,18 +68,17 @@
 [x-experiencer >> has-state] Nachplapperer (19)
 
 [MESSAGE-INIT] Spitzel (23)
-[m-scene] freiwilligen (22)
-[?? m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
+[m-state || m-social-relation] freiwilligen (22)
+[m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 [x-experiencer] Frauen (2) # # manuell hinzugefügt
 
 [STATE || SOCIAL-RELATION] freiwilligen (22)
-[has-social-relation] Spitzel (23)
 
 [MESSAGE-INIT] aushorchen (32)
 [x-attribute] mit deren Hilfe (28) # # ??
 [x-experiencer] man (29)
 [topic] weniger Linientreue (31)
-[m-means] Spitzel (23)
+[m-means] Spitzel (23) # # ?? 
 
 [SCENE-INIT] Hilfe (28) # # Vgl. (379) im Manual
 [x-causer] deren (27)
@@ -89,7 +88,7 @@
 
 [IDENTIFICATION] man (29)
 
-[SCENE] Linientreue (31) # # ?? SOCIAL-RELATION ?
+[?? SCENE] Linientreue (31) # # ?? SITUATION? SOCIAL-RELATION? Bedeutung: "streng einer Ideologie, Parteilinie folgend"
 [m-quantity] weniger (30)
 
 [QUANTITY] weniger (30)
@@ -184,13 +183,13 @@
 [x-means] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
 
 [TIME] Einmal (1)
-[?? m-scene] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
+[m-scene] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
 
 [LOCATION-CHANGE] vorbeigekommen (9)
 [has-location] sie (4)
 [m-location] auf dem Gang (7) # # eher ein Modifier
 [transitory-location] aneinander (8)
-[m-time] Einmal (1)
+[m-time] Einmal (1) # # ?? x-identified?
 
 [IDENTIFICATION] sie (4)
 
@@ -203,7 +202,7 @@
 [IDENTIFICATION] ihn (14)
 
 [ACTIVITY] Seitenblick (17)
-[?? m-scene] , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (24)
+[m-scene] , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (24)
 [is-active] sie (13) # # manuell hinzugefügt
 
 [MESSAGE] schien (24)
@@ -377,7 +376,7 @@
 [part] Angst (22)
 [part] Feindschaft (25)
 
-[] gleichen (19)
+[] gleichen (19) # # ??
 
 [MESSAGE] Angst (22)
 
@@ -402,7 +401,7 @@
 13	Inneren	inner	ADJ	ADJA	Case=Gen|Gender=Fem|Number=Sing	14	amod	_	_
 14	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
 15	und	und	CCONJ	KON	_	16	cc	_	_
-16	Inhaber	Inhaber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	_
+16	Inhaber	Inhaber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	11	conj	_	_
 17	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 18	so	so	ADV	ADV	_	19	advmod	_	_
 19	wichtigen	wichtig	ADJ	ADJA	Case=Gen|Gender=Masc|Number=Sing	24	amod	_	_
@@ -419,60 +418,63 @@
 30	undeutliche	undeutlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	31	amod	_	_
 31	Vorstellung	Vorstellung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	33	obj	_	_
 32	davon	davon	ADP	PROAV	PronType=Dem	33	advmod	_	_
-33	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
+33	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	advcl	_	_
 34	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Mann (6)
+[CLASS] Mann (6)
 [has-class] Die andere Person (3)
 [m-identifier] namens O'Brien (8)
-[] , ein Mitglied der Inneren Partei (11)
-[] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
+[m-scene] , ein Mitglied der Inneren Partei und Inhaber eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (11)
 
-[] Person (3)
-[] andere (2)
+[CLASS] Person (3)
+[m-reference] andere (2)
 
-[] andere (2)
+[COMPARISON] andere (2)
 
-[] O'Brien (8)
+[IDENTIFICATION] O'Brien (8)
 
-[] Mitglied (11)
-[] der Inneren Partei (14)
+[SOCIAL-RELATION] Mitglied (11)
+[social-relation] der Inneren Partei (14)
+[has-social-relation] Mann (6)
 
-[] Partei (14)
-[] Inneren (13)
+[IDENTIFICATION] Partei (14) # # ??
+[m-noncomp] Inneren (13) # # ??
 
-[] Inneren (13)
+[NONCOMP] Inneren (13)
 
-[] Inhaber (16)
-[] eines so wichtigen und der Allgemeinheit entrückten Postens (24)
+[POSSESSION] Inhaber (16)
+[possessed] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
 
-[] Postens (24)
-[] so wichtigen und der Allgemeinheit entrückten (19)
+[LOCATION >> SOCIAL-RELATION] Postens (24) # # ?? ACTIVITY?
+[m-scene] so wichtigen und der Allgemeinheit entrückten , dass Winston nur eine undeutliche Vorstellung davon hatte (19)
 
-[] wichtigen (19)
-[] so (18)
+[QUALITY] wichtigen (19)
+[m-reference] so (18) # # ??
+[m-scene] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
+[has-quality] Postens (24)
 
-[] so (18)
+[COMPARISON] so (18)
 
-[] entrückten (23)
-[] der Allgemeinheit (22)
+[LOCATION-DEINIT >> ??] entrückten (23) # # ?? wörtl. Bedeutung?
+[initial-location] der Allgemeinheit (22)
 
-[] Allgemeinheit (22)
+[CLASS] Allgemeinheit (22) # # ?? SOCIAL-RELATION?
 
 [] hatte (33)
 [] Winston (27)
 [] nur (28)
 [] eine undeutliche Vorstellung (31)
 [] davon (32)
+[] wichtigen (19)
 
-[] Winston (27)
+[IDENTIFICATION] Winston (27)
 
 [] nur (28)
 
-[] Vorstellung (31)
-[] undeutliche (30)
+[MESSAGE] Vorstellung (31)
+[m-quality] undeutliche (30)
 
-[] undeutliche (30)
+[QUALITY] undeutliche (30)
 
 [] davon (32)
 
@@ -579,15 +581,13 @@
 
 [QUALITY] grobschlächtiger (6)
 
-[PART-WHOLE] Nacken (10) # # ?? CLASS?
+[CLASS] Nacken (10) # # Vgl. (250)
 [m-quality] dickem (9)
-[whole] O'Brien (1) # # manuell hinzugefügt
 
 [QUALITY] dickem (9)
 
-[PART-WHOLE] Gesicht (18) # # ?? CLASS?
+[PART-WHOLE] Gesicht (18)
 [m-quality] derben , humorvollen und brutalen (13)
-[whole] O'Brien (1) # # manuell hinzugefügt
 
 [QUALITY] derben (13)
 
@@ -628,10 +628,10 @@
 [QUALITY] wuchtigen (3)
 
 [QUALITY] Charme (8)
-[m-mode >> m-quality] gewisser (7) # # ??
+[?? m-mode] gewisser (7) # # ??
 [has-quality] in seiner Art , sich zu bewegen (11)
 
-[MODE >> QUALITY] gewisser (7) # # ??
+[MODE] gewisser (7) # # ??
 
 [MEANS] Art (11)
 [x-causer] seiner (10)
@@ -660,59 +660,55 @@
 12	,	,	PUNCT	$,	_	15	punct	_	_
 13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
 14	seltsam	seltsam	ADJ	ADJD	_	15	advmod	_	_
-15	entwaffnend	entwaffnend	ADJ	ADJD	_	22	advmod	_	_
+15	entwaffnend	entwaffnend	ADJ	ADJD	_	11	advmod	_	_
 16	und	und	CCONJ	KON	_	21	cc	_	_
 17	auf	auf	ADP	APPR	_	20	case	_	_
 18	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	merkwürdige	merkwürdig	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
 20	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	21	nmod	_	_
 21	zivilisiert	zivilisieren	ADJ	ADJD	_	22	xcomp	_	_
-22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
+22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
-[POSSESSION] hatte (2)
-[possessor] Er (1)
-[possessed] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
+[] hatte (2)
+[] Er (1)
+[] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
 
-[IDENTIFICATION] Er (1)
+[] Er (1)
 
-[MEANS] Manier (4)
-[means] , seine Brille auf der Nase zurechtzurücken (11)
-[?? m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22) # # ??
+[] Manier (4)
+[] , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (11)
 
-[UNANCHORED-MOTION] zurechtzurücken (11)
-[in-motion] seine Brille (7)
-[transitory-location] auf der Nase (10)
+[] zurechtzurücken (11)
+[] seine Brille (7)
+[] auf der Nase (10)
+[] , die seltsam entwaffnend (15)
 
-[MEANS] Brille (7)
-[has-means] seine (6)
+[] Brille (7)
+[] seine (6)
 
-[IDENTIFICATION] seine (6)
+[] seine (6)
 
-[PART-WHOLE] Nase (10)
-[whole] seine (6) # # manuell hinzugefügt
+[] Nase (10)
 
-[MESSAGE] wirkte (22)
-[content] , die seltsam entwaffnend (15)
-[content] und auf eine merkwürdige Weise zivilisiert (21)
-[topic] Manier (4) # # manuell hinzugefügt
-
-[MEANS-DEINIT] entwaffnend (15) # # ??
-[has-means] die (13) # # ??
+[POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
+[x-causer >> has-quality] die (13)
 [m-quality] seltsam (14)
-[has-means] Manier (4) # # ??
 
-[IDENTIFICATION] die (13)
+[] die (13)
 
-[QUALITY] seltsam (14)
+[] seltsam (14)
 
-[STATE] zivilisiert (21) # # ??
-[m-quality] auf eine merkwürdige Weise (20) # # ??
+[] wirkte (22)
+[] und auf eine merkwürdige Weise zivilisiert (21)
 
-[MEANS] Weise (20)
-[m-quality] merkwürdige (19)
+[] zivilisiert (21)
+[] auf eine merkwürdige Weise (20)
 
-[QUALITY] merkwürdige (19)
+[] Weise (20)
+[] merkwürdige (19)
+
+[] merkwürdige (19)
 
 # sent_id = 161
 # text = Es war eine Geste , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , an einen Edelmann aus dem achtzehnten Jahrhundert hätte erinnern können , der seinem Gegenüber die Schnupftabaksdose anbot .
@@ -720,9 +716,9 @@
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
 3	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	Geste	Geste	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
-5	,	,	PUNCT	$,	_	16	punct	_	_
-6	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	_	_
-7	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	obj	_	_
+5	,	,	PUNCT	$,	_	27	punct	_	_
+6	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
+7	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	obj	_	_
 8	,	,	PUNCT	$,	_	16	punct	_	_
 9	wenn	wenn	SCONJ	KOUS	_	16	mark	_	_
 10	überhaupt	überhaupt	ADV	ADV	_	11	advmod	_	_
@@ -731,7 +727,7 @@
 13	in	in	ADP	APPR	_	15	case	_	_
 14	solchen	solch	DET	PIAT	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	15	det	_	_
 15	Begriffen	Begriff	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	16	obl	_	_
-16	gedacht	denken	VERB	VVPP	Verbform=Part	4	acl	_	_
+16	gedacht	denken	VERB	VVPP	Verbform=Part	27	acl	_	_
 17	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
 18	,	,	PUNCT	$,	_	16	punct	_	_
 19	an	an	ADP	APPR	_	21	case	_	_
@@ -742,7 +738,7 @@
 24	achtzehnten	achtzehnte	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	25	amod	_	_
 25	Jahrhundert	Jahrhundert	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	21	nmod	_	_
 26	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux	_	_
-27	erinnern	erinnern	VERB	VVINF	VerbForm=Inf	4	parataxis	_	_
+27	erinnern	erinnern	VERB	VVINF	VerbForm=Inf	4	acl	_	_
 28	können	können	AUX	VMINF	VerbForm=Inf	27	aux	_	_
 29	,	,	PUNCT	$,	_	35	punct	_	_
 30	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	35	nsubj	_	_
@@ -755,21 +751,25 @@
 
 [MESSAGE-INIT] Geste (4)
 [x-identified] Es (1)
-[?? m-scene] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16) # # ?? Syntax
+[m-scene] , die einen , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , an einen Edelmann aus dem achtzehnten Jahrhundert hätte erinnern können , der seinem Gegenüber die Schnupftabaksdose anbot (27)
 
 [IDENTIFICATION] Es (1)
 
-[MESSAGE] gedacht (16)
-[] die (6) # # ?? Syntax?
-[] einen (7) # # ?? Syntax?
-[m-mode] überhaupt noch (11)
-[x-experiencer] jemand (12)
-[m-means] in solchen Begriffen (15)
-[] Geste (4) # # ??
+[COMPARISON] erinnern (27)
+[compared] die (6)
+[x-experiencer] einen (7)
+[m-condition] , wenn überhaupt noch jemand in solchen Begriffen gedacht hätte , (16)
+[reference] an einen Edelmann aus dem achtzehnten Jahrhundert , der seinem Gegenüber die Schnupftabaksdose anbot (21)
+[compared] Geste (4)
 
 [IDENTIFICATION] die (6)
 
 [IDENTIFICATION] einen (7)
+
+[MESSAGE] gedacht (16)
+[m-mode] überhaupt noch (11)
+[x-experiencer] jemand (12)
+[x-depictive] in solchen Begriffen (15) # # ?? Vgl. (213) ?
 
 [SCENE-CONTINUATION] noch (11)
 [m-mode] überhaupt (10)
@@ -780,13 +780,9 @@
 
 [MESSAGE] Begriffen (15)
 
-[COMPARISON] erinnern (27) # # ?? Vgl. (349)??
-[x-whole:reference] an einen Edelmann aus dem achtzehnten Jahrhundert , der seinem Gegenüber die Schnupftabaksdose anbot (21) # # ??
-[x-part:compared] Geste (4) # # ?? Vgl. (349)??
-
 [CLASS] Edelmann (21)
 [m-time >> m-quality] aus dem achtzehnten Jahrhundert (25)
-[?? m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
+[m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
 
 [TIME] Jahrhundert (25)
 [m-rank] achtzehnten (24)
@@ -806,7 +802,7 @@
 
 [IDENTIFICATION] seinem (31)
 
-[MEANS] Schnupftabaksdose (34) # # oder CLASS?
+[CLASS] Schnupftabaksdose (34)
 
 # sent_id = 162
 # text = Winston hatte O'Brien vielleicht ein Dutzend Mal in etwa ebenso vielen Jahren gesehen .
@@ -1025,8 +1021,8 @@
 [CLASS] Etwas (1)
 [m-location] in seinem Gesicht (4)
 
-[PART-WHOLE] Gesicht (4) # # ??
-[whole] seinem (3)
+[CLASS] Gesicht (4)
+[m-whole] seinem (3)
 
 [IDENTIFICATION] seinem (3)
 
@@ -1062,7 +1058,7 @@
 
 [MODE] doch (2)
 
-[PART-WHOLE] Gesicht (6) # # ?? Vgl. 3.2, ABER (250)...
+[CLASS] Gesicht (6) # # ?? Vgl. 3.2, ABER (250)...
 
 [MODE] eigentlich (7)
 
@@ -1132,14 +1128,14 @@
 [IDENTIFICATION] er (3)
 
 [CLASS] Mensch (6)
-[?? m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
 [x-compared] er (3)
 
 [MESSAGE-INIT] reden (12)
-[x-accompanier] mit dem (10)
+[x-experiencer] mit dem (10)
 [x-sender] man (11)
 [m-condition] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (19)
-[x-accompanier] Mensch (6)
+[x-experiencer] Mensch (6)
 
 [IDENTIFICATION] dem (10)
 
@@ -1332,8 +1328,8 @@
 [scene] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
 [participant] O'Brien (1) # # manuell hinzugefügt
 
-[MESSAGE-POSSIBILITY] offenbar (23) # # ?? eine Bedeutung: "[deutlich] erkennbar"
-[target-content] beschloss (22) # # ?? 
+[MODE || SCENE] offenbar (23) # # ?? eine Bedeutung: "[deutlich] erkennbar"
+[has-mode || scene] beschloss (22) # # ?? 
 
 [LOCATION] bleiben (30)
 [location] in der Abteilung Registratur (27)
@@ -1385,7 +1381,7 @@
 
 [LOCATION] Reihe (9) # # ?? 
 [m-reference] derselben (8)
-[has-location:m-comparison] wie Winston (11) # # ??
+[has-location] wie Winston (11) # # ??
 
 [COMPARISON] derselben (8)
 
@@ -1431,7 +1427,7 @@
 [CLASS] Frau (4)
 [m-quality] kleine (2)
 [m-quality || m-state] aschblonde (3)
-[?? m-scene] , die in der Abteilung neben Winston beschäftigt war (12)
+[m-scene] , die in der Abteilung neben Winston beschäftigt war (12)
 
 [QUALITY] kleine (2)
 
@@ -1445,7 +1441,7 @@
 
 [IDENTIFICATION] die (6)
 
-[?? CLASS] Abteilung (9) # # ?? 
+[LOCATION || CLASS] Abteilung (9) # # ?? 
 
 [IDENTIFICATION] Winston (11)
 
@@ -1479,7 +1475,7 @@
 [LOCATION] dahinter (9)
 [m-quantity] unmittelbar (8)
 
-[?? QUANTITY] unmittelbar (8)
+[QUANTITY] unmittelbar (8) # # ??
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1516,7 +1512,7 @@
 [MESSAGE-INIT] brach (4)
 [m-time] Im nächsten Augenblick (3)
 [target-content] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
-[x-sender:m-location] aus dem großen Televisor am Ende des Raumes (23) # # ?? 
+[x-sender || m-location] aus dem großen Televisor am Ende des Raumes (23) # # ?? 
 [x-noncomp] hervor (28)
 
 [TIME] Augenblick (3)
@@ -1528,7 +1524,7 @@
 [m-quality] scheußlicher , knirschender (6)
 [m-reference] , als ob eine riesige Maschine völlig ungeölt liefe , (18)
 
-[?? SCENE] scheußlicher (6)
+[QUALITY] scheußlicher (6)
 
 [MESSAGE-INIT] knirschender (8)
 
@@ -1579,28 +1575,29 @@
 
 [MESSAGE-INIT] Lärm (4)
 [x-identified] Es (1)
-[m-accompanier] , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten (11) # # ?? 
+[m-scene] , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten (11) # # ?? 
 
 [IDENTIFICATION] Es (1)
 
 [UNANCHORED-MOTION || MESSAGE-INIT] überlief (11) # # ?? 
-[x-accompanier] bei dem (7) # # ?? 
+[x-causer] bei dem (7) # # ?? 
 [transitory-location || x-experiencer] einen (8)
 [has-location || topic] eine Gänsehaut (10)
+[x-causer] Lärm (4)
 
 [IDENTIFICATION] dem (7)
 
 [IDENTIFICATION] einen (8)
 
-[] Gänsehaut (10)
+[COMPARISON >> MESSAGE] Gänsehaut (10) # # ?? 
 
-[] sträubten (16)
-[] sich (13)
-[] die Nackenhaare (15)
+[UNANCHORED-MOTION] sträubten (16) # # Bedeutung: "sich aufrichten"
+[x-noncomp] sich (13)
+[in-motion] die Nackenhaare (15)
 
-[] sich (13)
+[NONCOMP] sich (13)
 
-[] Nackenhaare (15)
+[CLASS] Nackenhaare (15) # # ?? PART-WHOLE?
 
 # sent_id = 175
 # text = Die Hass-Sendung hatte begonnen .
