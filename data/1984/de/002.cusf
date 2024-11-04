@@ -508,13 +508,14 @@
 [] Gegenwart (6)
 
 [] schenken (14)
-[] dann (8)
+[m-scene] dann (8)
 [] man (10)
 [] ihm (11)
 [] nicht (12)
 [] Gehör (13)
 
-[] dann (8)
+[CONDITION] dann (8)
+[has-condition] schenken (14)
 
 [] man (10)
 
@@ -699,13 +700,13 @@
 21	dass	dass	SCONJ	KOUS	_	26	mark	_	_
 22	dazu	dazu	ADP	PROAV	PronType=Dem	26	advmod	_	_
 23	noch	noch	ADV	ADV	_	24	advmod	_	_
-24	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	26	nsubj	_	_
+24	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	25	det	_	_
 25	anderes	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	26	nsubj	_	_
 26	nötig	nötig	ADJ	ADJD	_	19	csubj	_	_
 27	sein	sein	AUX	VAINF	VerbForm=Inf	26	cop	_	_
 28	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
 29	als	als	CCONJ	KOKOM	_	30	case	_	_
-30	Mut	Mut	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	26	nmod	_	_
+30	Mut	Mut	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	25	nmod	_	_
 31	.	.	PUNCT	$.	_	9	punct	_	_
 
 [] vorbereitet (9)
@@ -738,18 +739,14 @@
 
 [] nötig (26)
 [] dazu (22)
-[] noch etwas (24)
-[] anderes (25)
-[] als Mut (30)
+[] noch etwas anderes als Mut (25)
 
 [] dazu (22)
 
-[] etwas (24)
-[] noch (23)
-
-[] noch (23)
-
 [] anderes (25)
+[] als Mut (30)
+
+[] noch (23)
 
 [] Mut (30)
 
@@ -1146,13 +1143,13 @@
 16	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	18	det	_	_
 17	großen	groß	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Plur	18	amod	_	_
 18	Anfangsbuchstaben	Anfangsbuchstabe	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	26	obl	_	_
-19	und	und	CCONJ	KON	_	21	cc	_	_
+19	und	und	CCONJ	KON	_	25	cc	_	_
 20	zum	zum	ADP	APPRART	_	21	case	_	_
-21	Schluss	Schluß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	18	conj	_	_
+21	Schluss	Schluß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	25	orphan	_	_
 22	sogar	sogar	ADV	ADV	_	25	advmod	_	_
 23	auf	auf	ADP	APPR	_	25	case	_	_
 24	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	Interpunktion	Interpunktion	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	26	obl	_	_
+25	Interpunktion	Interpunktion	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	18	conj	_	_
 26	verzichtete	verzichten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 27	:	:	PUNCT	$.	_	5	punct	_	_
 
@@ -1180,14 +1177,14 @@
 
 [] Blattes (10)
 
-[] verzichtete (26)
-[] wobei (12)
-[] er (13)
-[] bald (14)
-[] auf die großen Anfangsbuchstaben und zum Schluss (18)
-[] sogar auf die Interpunktion (25)
+[SITUATION-PREVENTION] verzichtete (26)
+[m-scene] wobei (12)
+[theme] er (13)
+[m-time] bald (14)
+[target-situator] auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion (18)
 
-[] wobei (12)
+[ACCOMPANIMENT] wobei (12)
+[accompanier] verzichtete (26)
 
 [] er (13)
 
@@ -1198,10 +1195,11 @@
 
 [] großen (17)
 
-[] Schluss (21)
-
 [] Interpunktion (25)
+[] zum Schluss (21)
 [] sogar (22)
+
+[] Schluss (21)
 
 [] sogar (22)
 
@@ -1331,9 +1329,9 @@
 37	des	d	DET	ART	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	Hubschraubers	Hubschrauber	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	36	nmod	_	_
 39	,	,	PUNCT	$,	_	31	punct	_	_
-40	dann	dann	ADV	ADV	_	31	advmod	_	_
+40	dann	dann	ADV	ADV	_	44	advmod	_	_
 41	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	cop	_	_
-42	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+42	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	44	nsubj	_	_
 43	ganz	ganz	ADV	ADV	_	44	advmod	_	_
 44	durchlöchert	durchlöchern	VERB	VVPP	Verbform=Part	19	conj	_	_
 45	und	und	CCONJ	KON	_	51	cc	_	_
@@ -1419,8 +1417,6 @@
 [] man (32)
 [] ihn (33)
 [] durch das Zielfernrohr des Hubschraubers (36)
-[] dann (40)
-[] er (42)
 
 [] dann (30)
 
@@ -1432,10 +1428,6 @@
 [] des Hubschraubers (38)
 
 [] Hubschraubers (38)
-
-[] dann (40)
-
-[] er (42)
 
 [] färbte (51)
 [] das Meer (47)
@@ -1455,7 +1447,13 @@
 [] rosa (53)
 
 [] durchlöchert (44)
+[] dann (40)
+[] er (42)
 [] ganz (43)
+
+[] dann (40)
+
+[] er (42)
 
 [] ganz (43)
 
@@ -2459,10 +2457,10 @@
 
 [] Es (1)
 
-[] elf (5)
-[] kurz (3)
+[TIME] elf (5)
+[m-quantity >> m-noncomp] kurz (3) # TODO manual: microlanguage of times
 
-[] kurz (3)
+[QUANTITY >> NONCOMP] kurz (3)
 
 [] geholt (24)
 [] in der Registrierabteilung , in der Winston arbeitete , (10)
@@ -2597,12 +2595,12 @@
 
 [] Sehen (19)
 
-[] gewechselt (30)
-[] mit denen (23)
-[] er (24)
-[] aber (25)
-[] noch nie (27)
-[] ein Wort (29)
+[POSSESSION-CHANGE >> MESSAGE-INIT] gewechselt (30)
+[target-possessor >> x-experiencer] mit denen (23) # TODO manual obliqueness hierarchy: nsubj < obj < iobj < obl
+[initial-possessor >> x-sender] er (24)
+[m-mode] aber (25)
+[m-time] noch nie (27)
+[possessed >> x-noncomp] ein Wort (29)
 
 [] denen (23)
 
@@ -2615,7 +2613,7 @@
 
 [] noch (26)
 
-[] Wort (29)
+[MESSAGE >> NONCOMP] Wort (29)
 
 [] unerwartet (33)
 

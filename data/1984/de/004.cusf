@@ -23,24 +23,24 @@
 3	sprachen	sprechen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	davon	davon	ADP	PROAV	PronType=Dem	3	advmod	_	_
 5	,	,	PUNCT	$,	_	9	punct	_	_
-6	wenn	wenn	SCONJ	KOUS	_	9	mark	_	_
+6	wenn	wenn	SCONJ	KOUS	_	3	mark	_	_
 7	überhaupt	überhaupt	ADV	ADV	_	3	advmod	_	_
 8	,	,	PUNCT	$,	_	7	punct	_	_
 9	einfach	einfach	ADV	ADV	_	3	advmod	_	_
-10	als	als	CCONJ	KOKOM	_	3	xcomp	_	_
+10	als	als	CCONJ	KOKOM	_	14	mark	_	_
 11	von	von	ADP	APPR	_	14	case	_	_
 12	»	»	PUNCT	$(	_	14	punct	_	_
 13	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
-14	Buch	Buch	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	10	nmod	_	_
+14	Buch	Buch	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	3	nmod	_	_
 15	«	«	PUNCT	$(	_	14	punct	_	_
 16	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] sprachen (3)
-[] Die Leute (2)
-[] davon (4)
-[] überhaupt , (7)
-[] , wenn einfach (9)
-[] als von » dem Buch « (10)
+[MESSAGE-INIT] sprachen (3)
+[x-sender] Die Leute (2)
+[topic] davon (4)
+[m-mode] überhaupt , (7)
+[m-quality] , einfach (9)
+[m-comparison >> target-content] als von » dem Buch « (14)
 
 [] Leute (2)
 
@@ -49,9 +49,6 @@
 [] überhaupt (7)
 
 [] einfach (9)
-
-[] als (10)
-[] von » dem Buch « (14)
 
 [] Buch (14)
 
@@ -78,11 +75,11 @@
 
 [] Dingen (6)
 
-[] Gerüchte (10)
-[] nur (7)
-[] vage (9)
+[MESSAGE] Gerüchte (10)
+[m-mode] nur (7) # TODO manual
+[m-quality] vage (9)
 
-[] nur (7)
+[MODE] nur (7)
 
 [] vage (9)
 
@@ -115,28 +112,29 @@
 
 [] erwähnt (23)
 [] Weder » Die Bruderschaft « noch » das Buch « (4)
-[] , wenn es sich vermeiden ließ , (17)
+[m-condition] , wenn es sich vermeiden ließ , (17)
 [] von einem gewöhnlichen Parteimitglied (22)
 
 [] Bruderschaft (4)
 
 [] Buch (9)
 
-[] ließ (17)
-[] es (14)
-[] sich (15)
-[] vermeiden (16)
+[SCENE-POSSIBILITY] ließ (17)
+[x-causer >> participant] es (14)
+[participant >> x-noncomp] sich (15)
+[scene] vermeiden (16)
 
 [] es (14)
 
 [] sich (15)
 
-[] vermeiden (16)
+[SCENE-PREVENTION] vermeiden (16)
+[target-scene] es (14)
 
-[] Parteimitglied (22)
-[] gewöhnlichen (21)
+[SOCIAL-RELATION] Parteimitglied (22)
+[m-quality] gewöhnlichen (21)
 
-[] gewöhnlichen (21)
+[QUALITY] gewöhnlichen (21)
 
 # sent_id = 205
 # text = In der zweiten Minute steigerte sich die Hassovation zur Raserei .
@@ -152,11 +150,11 @@
 10	Raserei	Raserei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	5	obl	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] steigerte (5)
-[] In der zweiten Minute (4)
-[] sich (6)
-[] die Hassovation (8)
-[] zur Raserei (10)
+[SCENE-CHANGE] steigerte (5) # TODO manual: do this for scenes instead of TRANSFORMATION-CREATION
+[m-time] In der zweiten Minute (4)
+[x-noncomp] sich (6)
+[initial-scene] die Hassovation (8)
+[target-scene] zur Raserei (10)
 
 [] Minute (4)
 [] zweiten (3)
@@ -212,8 +210,6 @@
 [] ihren (5)
 
 [] ihren (5)
-
-[] auf (7)
 
 [] schrien (9)
 [] mit vollem Stimmaufwand (12)
@@ -417,8 +413,6 @@
 
 [] Woge (25)
 
-[] entgegen (26)
-
 # sent_id = 210
 # text = Das dunkelhaarige Mädchen hinter Winston hatte angefangen » Schwein ! Schwein ! Schwein ! « hinauszuschreien und ergriff plötzlich ein schweres Wörterbuch der Neusprache und schleuderte es gegen den Sehschirm .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	3	det	_	_
@@ -533,8 +527,6 @@
 
 [] ihm (8)
 
-[] ab (9)
-
 [] redete (13)
 [] die Stimme (12)
 [] unerbittlich (14)
@@ -543,8 +535,6 @@
 [] Stimme (12)
 
 [] unerbittlich (14)
-
-[] weiter (15)
 
 # sent_id = 212
 # text = In einem lichten Augenblick ertappte sich Winston , wie er mit den anderen schrie und trampelte .
@@ -1076,8 +1066,6 @@
 [] Goldstein (21)
 
 [] ihm (23)
-
-[] wahr (24)
 
 # sent_id = 219
 # text = In solchen Augenblicken verwandelte sich seine geheime Abneigung gegen den Großen Bruder in Verehrung , und der Große Bruder schien dazustehen als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören .
@@ -2009,8 +1997,6 @@
 
 [] herauszuspringen (30)
 
-[] über (11)
-
 [] zurückprallten (45)
 [] so (33)
 [] manche der Zuschauer (35)
@@ -2602,8 +2588,6 @@
 
 [] Sehschirm (20)
 
-[] entgegen (21)
-
 # sent_id = 240
 # text = Dann barg sie ihr Gesicht in den Händen .
 1	Dann	dann	ADV	ADV	_	2	advmod	_	_
@@ -2694,8 +2678,6 @@
 [] langsamen (8)
 
 [] rhythmischen (10)
-
-[] an (12)
 
 [] G-B (15)
 
@@ -2880,8 +2862,6 @@
 [] sie (6)
 
 [] damit (7)
-
-[] fort (8)
 
 # sent_id = 246
 # text = Es war ein Refrain , den man oft in Augenblicken überwältigender Erregung hörte .
@@ -3076,10 +3056,6 @@
 [] Zwei-Minuten-Hass-Sendung (3)
 
 [] er (5)
-
-[] umhin (7)
-[] nicht (6)
-[] , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . . (14)
 
 [] nicht (6)
 
