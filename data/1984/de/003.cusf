@@ -75,21 +75,21 @@
 [] freiwilligen (22)
 [] Spitzel (23)
 
-[] aushorchen (32)
-[] mit deren Hilfe (28)
-[] man (29)
-[] weniger Linientreue (31)
-[] Spitzel (23)
+[MESSAGE-INIT] aushorchen (32)
+[m-means] mit deren Hilfe (28)
+[x-experiencer] man (29)
+[x-sender || topic] weniger Linientreue (31)
 
-[] Hilfe (28)
+[SCENE-INIT] Hilfe (28)
+[x-causer] deren (27)
+[x-causer] Spitzel (23)
+
 [] deren (27)
 
-[] deren (27)
-
 [] man (29)
 
-[] Linientreue (31)
-[] weniger (30)
+[SOCIAL-RELATION >> QUALITY] Linientreue (31) # TODO manual: interne Struktur zusammengesetzter Wörter
+[m-quantity] weniger (30)
 
 [] weniger (30)
 
@@ -422,10 +422,10 @@
 [] Mitglied (11)
 [] der Inneren Partei (14)
 
-[] Partei (14)
-[] Inneren (13)
+[CLASS >> IDENTIFICATION] Partei (14)
+[m-quality >> m-noncomp] Inneren (13)
 
-[] Inneren (13)
+[QUALITY >> NONCOMP] Inneren (13)
 
 [] Inhaber (16)
 [] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
@@ -637,17 +637,17 @@
 9	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Nase	Nase	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
 11	zurechtzurücken	zurechtrücken	VERB	VVIZU	VerbForm=Inf	4	acl	_	_
-12	,	,	PUNCT	$,	_	15	punct	_	_
-13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
+12	,	,	PUNCT	$,	_	22	punct	_	_
+13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	22	nsubj	_	_
 14	seltsam	seltsam	ADJ	ADJD	_	15	advmod	_	_
-15	entwaffnend	entwaffnend	ADJ	ADJD	_	11	advmod	_	_
+15	entwaffnend	entwaffnend	ADJ	ADJD	_	22	xcomp	_	_
 16	und	und	CCONJ	KON	_	21	cc	_	_
 17	auf	auf	ADP	APPR	_	20	case	_	_
 18	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	merkwürdige	merkwürdig	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
 20	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	21	nmod	_	_
-21	zivilisiert	zivilisieren	ADJ	ADJD	_	22	xcomp	_	_
-22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
+21	zivilisiert	zivilisieren	ADJ	ADJD	_	15	conj	_	_
+22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] hatte (2)
@@ -657,12 +657,12 @@
 [] Er (1)
 
 [] Manier (4)
-[] , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (11)
+[] , seine Brille auf der Nase zurechtzurücken (11)
+[] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22)
 
 [] zurechtzurücken (11)
 [] seine Brille (7)
 [] auf der Nase (10)
-[] , die seltsam entwaffnend (15)
 
 [] Brille (7)
 [] seine (6)
@@ -671,16 +671,17 @@
 
 [] Nase (10)
 
-[POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
-[x-causer >> has-quality] die (13)
-[m-quality] seltsam (14)
+[] wirkte (22)
+[] die (13)
+[] seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert (15)
 
 [] die (13)
 
-[] seltsam (14)
+[POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
+[m-quality] seltsam (14)
+[x-causer >> has-quality] die (13)
 
-[] wirkte (22)
-[] und auf eine merkwürdige Weise zivilisiert (21)
+[] seltsam (14)
 
 [] zivilisiert (21)
 [] auf eine merkwürdige Weise (20)
@@ -821,13 +822,14 @@
 [] Jahren (12)
 [] etwa ebenso vielen (11)
 
-[] vielen (11)
-[] etwa ebenso (10)
+[QUANTITY] vielen (11)
+[m-scene] etwa ebenso (10)
 
-[] ebenso (10)
-[] etwa (9)
+[COMPARISON] ebenso (10)
+[m-mode] etwa (9)
+[compared] vielen (11)
 
-[] etwa (9)
+[MODE] etwa (9)
 
 # sent_id = 163
 # text = Er fühlte sich aufrichtig zu ihm hingezogen , und das nicht nur , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte .
@@ -875,23 +877,24 @@
 
 [] hingezogen (7)
 
-[] das (10)
-[] nicht nur (12)
-[] , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte (25)
+[SITUATION] das (10)
+[m-mode] nicht nur (12)
+[m-causer] , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte (25)
 
 [] nur (12)
 [] nicht (11)
 
 [] nicht (11)
 
-[] fesselte (25)
-[] ihn (15)
-[] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
+[LOCATION-INIT >> MESSAGE] fesselte (25)
+[has-location >> x-experiencer] ihn (15)
+[x-causer >> topic] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
 
 [] ihn (15)
 
-[] Gegensatz (17)
-[] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21)
+[COMPARISON] Gegensatz (17)
+[compared] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21) # TODO checker should split coordination
+[reference] und seinem Preisboxertypus (24) # TODO manual: coordination of unlike role fillers
 
 [] Manieren (21)
 [] O'Briens (19)
@@ -901,8 +904,8 @@
 
 [] höflichen (20)
 
-[] Preisboxertypus (24)
-[] seinem (23)
+[COMPARISON] Preisboxertypus (24)
+[compared] seinem (23)
 
 [] seinem (23)
 
@@ -929,7 +932,7 @@
 19	politische	politisch	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	20	amod	_	_
 20	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	22	nsubj	_	_
 21	nicht	nicht	PART	PTKNEG	Polarity=Neg	22	advmod	_	_
-22	vollkommen	vollkommen	ADJ	ADJD	_	14	ccomp	_	_
+22	vollkommen	vollkommen	ADJ	ADJD	_	8	ccomp	_	_
 23	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
 24	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -942,18 +945,21 @@
 
 [] vielmehr (3)
 
-[] Glauben (8)
-[] heimlich gehegten (7)
+[MESSAGE] Glauben (8)
+[m-scene] heimlich gehegten (7)
+[content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22)
 
-[] gehegten (7)
-[] heimlich (6)
+[STATE-CONTINUATION >> MESSAGE] gehegten (7)
+[m-scene] heimlich (6)
+[has-state >> content] Glauben (8)
 
-[] heimlich (6)
+[MESSAGE-PREVENTION] heimlich (6)
+[topic] gehegten (7)
 
-[] Hoffnung (14)
-[] vielleicht (11)
-[] nur (12)
-[] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22)
+[MESSAGE] Hoffnung (14)
+[m-mode] vielleicht (11)
+[m-mode] nur (12)
+[content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22)
 
 [] vielleicht (11)
 
@@ -1301,8 +1307,8 @@
 [] zu Ende (36)
 [] , bis die Zwei-Minuten-Hass-Sendung war (37)
 
-[] Abteilung (27)
-[] Registratur (28)
+[PART-WHOLE] Abteilung (27)
+[m-scene >> m-identifier] Registratur (28)
 
 [] Registratur (28)
 

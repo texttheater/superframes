@@ -2744,13 +2744,13 @@
 26	Romanschreibmaschinen	Romanschreibmaschine	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	24	nmod	_	_
 27	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] hatte (17)
-[] Vermutlich - (1)
-[] denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - (15)
-[] sie (18)
-[] dort (19)
-[] eine technische Funktion (22)
-[] an einer der Romanschreibmaschinen (24)
+[SCENE] hatte (17)
+[m-mode] Vermutlich - (1)
+[m-explanation] denn er hatte sie manchmal mit ölverschmierten Händen und mit einem Schraubenschlüssel gesehen - (15)
+[participant] sie (18)
+[m-location] dort (19)
+[scene] eine technische Funktion (22)
+[m-situator] an einer der Romanschreibmaschinen (24)
 
 [] Vermutlich (1)
 
@@ -2758,7 +2758,7 @@
 [] er (4)
 [] sie (6)
 [] manchmal (7)
-[] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
+[m-depictive] mit ölverschmierten Händen und mit einem Schraubenschlüssel (10)
 
 [] er (4)
 
@@ -2777,8 +2777,9 @@
 
 [] dort (19)
 
-[] Funktion (22)
-[] technische (21)
+[PURPOSE] Funktion (22)
+[m-quality] technische (21)
+[has-purpose] sie (18)
 
 [] technische (21)
 
@@ -2869,7 +2870,7 @@
 9	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Jugendliga	Jugendliga	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
 11	gegen	gegen	ADP	APPR	_	12	case	_	_
-12	Sexualität	Sexualität	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	8	nmod	_	_
+12	Sexualität	Sexualität	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	10	nmod	_	_
 13	,	,	PUNCT	$,	_	5	punct	_	_
 14	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux	_	_
 15	mehrmals	mehrmals	ADV	ADV	_	21	advmod	_	_
@@ -2898,19 +2899,20 @@
 [] um die Taille ihres Trainingsanzuges (18)
 [] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
 
-[] Schärpe (5)
-[] schmale , scharlachrote (2)
-[] , das Abzeichen der Jugendliga gegen Sexualität (8)
+[CLASS] Schärpe (5)
+[m-quality] schmale , scharlachrote (2)
+[m-scene] , das Abzeichen der Jugendliga gegen Sexualität (8) # TODO manual: appositions
 
 [] schmale (2)
 
 [] scharlachrote (4)
 
-[] Abzeichen (8)
-[] der Jugendliga (10)
-[] gegen Sexualität (12)
+[IDENTIFICATION] Abzeichen (8) # TODO manual: a "visual name"
+[identified] der Jugendliga gegen Sexualität (10)
+[x-identified] Schärpe (5)
 
 [] Jugendliga (10)
+[] gegen Sexualität (12)
 
 [] Sexualität (12)
 
@@ -3015,17 +3017,18 @@
 15	Gesinnungstüchtigkeit	Gesinnungstüchtigkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	conj	_	_
 16	,	,	PUNCT	$,	_	23	punct	_	_
 17	mit	mit	ADP	APPR	_	18	case	_	_
-18	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	23	obl	_	_
+18	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	22	obl	_	_
 19	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
 20	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	22	obj	_	_
 21	zu	zu	PART	PTKZU	_	22	mark	_	_
 22	umgeben	umgeben	VERB	VVINF	VerbForm=Inf	23	xcomp	_	_
-23	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl	_	_
+23	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl	_	_
 24	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Atmosphäre (5)
-[] Es (1)
-[] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit , mit der sie sich zu umgeben wusste (7)
+[MESSAGE] Atmosphäre (5)
+[x-result] Es (1)
+[content] von Hockeyplatz , kaltem Baden , Gemeinschaftswanderung und allgemeiner Gesinnungstüchtigkeit (7)
+[m-scene] , mit der sie sich zu umgeben wusste (23)
 
 [] Es (1)
 
@@ -3040,21 +3043,22 @@
 
 [] Gesinnungstüchtigkeit (15)
 [] allgemeiner (14)
-[] , mit der sie sich zu umgeben wusste (23)
 
 [] allgemeiner (14)
 
-[] wusste (23)
-[] mit der (18)
+[MESSAGE >> SCENE-POSSIBILITY] wusste (23)
+[x-experiencer >> participant] sie (19)
+[topic >> scene] mit der sich zu umgeben (22)
+
 [] sie (19)
-[] sich zu umgeben (22)
+
+[WRAPPING-WEARING-INIT >> SITUATION-INIT] umgeben (22)
+[wrapper >> target-situation] mit der (18)
+[target-wearer >> theme] sich (20)
+[wrapper >> target-situation] Atmosphäre (5) # TODO manual: complex wh-moved element
+[x-causer] sie (19)
 
 [] der (18)
-
-[] sie (19)
-
-[] umgeben (22)
-[] sich (20)
 
 [] sich (20)
 
