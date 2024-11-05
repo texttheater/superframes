@@ -21,14 +21,14 @@ import labels
 FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?: *# *(?P<comment>.*))?$')
 ARG_DEPS = set((
     'nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl', 'advcl',
-    'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod', 'compound', 'orphan',
+    'advmod', 'nmod', 'nummod', 'acl', 'amod', 'compound', 'orphan',
     'det:poss',
     # SUD deps:
     'subj', 'udep', 'mod', 'comp',
 ))
 PRED_DEPS = ARG_DEPS | set((
     'root', 'conj', 'parataxis', 'list', 'reparandum', 'dep', 'vocative',
-    'dislocated',
+    'dislocated', 'appos',
 ))
 
 
@@ -48,7 +48,7 @@ def subtrees(
 
 def form_for_predicate(tree: PyCoNLLTree) -> str:
     def is_mwe_tree(t: PyCoNLLTree) -> bool:
-        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe')
+        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe', 'appos')
     trees = sorted(subtrees(tree, is_mwe_tree), key=lambda t: id_sort_key(t.data.id))
     return ' '.join(t.data.form for t in trees)
 
@@ -154,7 +154,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int, warn_non_semantic_dependent: bool=False) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
         # Convert sentence to tree
         tree = sentence.syntax[0].to_tree()
         # Check for wrong text
@@ -196,13 +196,12 @@ class Frame:
             else:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
-            # Check for dependency edges that should not be annotated:
+            # Check for annotated appos edges:
             arg_token = sentence.syntax[0][arg.head]
-            if warn_non_semantic_dependent and arg_token.head == self.head and \
-                    not any(arg_token.deprel.startswith(r) for r in ARG_DEPS):
-                logging.warning('sent %s line %s: dep label for non-semantic '
-                        'dependent (syntactic relation: %s)',
-                        sentence.syntax[0].id, i, arg_token.deprel)
+            if arg_token.head == self.head and \
+                    arg_token.deprel.startswith('appos'):
+                logging.warning('sent %s line %s appos edges should not be '
+                        'annotated', sentence.syntax[0].id, i)
             # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
@@ -407,7 +406,7 @@ class Sentence:
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
-            ok, w = frame.check(self, head_lineno_map[frame.head], warn_non_semantic_dependent)
+            ok, w = frame.check(self, head_lineno_map[frame.head])
             if ok:
                 annotated_count += 1
             warnings += w
