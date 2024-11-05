@@ -154,7 +154,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int, warn_non_semantic_dependent: bool=False) -> Tuple[bool, int]:
         # Convert sentence to tree
         tree = sentence.syntax[0].to_tree()
         # Check for wrong text
@@ -196,6 +196,13 @@ class Frame:
             else:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
+            # Check for dependency edges that should not be annotated:
+            arg_token = sentence.syntax[0][arg.head]
+            if warn_non_semantic_dependent and arg_token.head == self.head and \
+                    not any(arg_token.deprel.startswith(r) for r in ARG_DEPS):
+                logging.warning('sent %s line %s: dep label for non-semantic '
+                        'dependent (syntactic relation: %s)',
+                        sentence.syntax[0].id, i, arg_token.deprel)
             # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
@@ -381,7 +388,7 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self) -> Tuple[int, int, int]:
+    def check(self, warn_non_semantic_dependent: bool=False) -> Tuple[int, int, int]:
         head_frame_map = {}
         head_lineno_map = {}
         for frame_lineno, frame in zip(self.frame_linenos, self.frames):
@@ -400,7 +407,7 @@ class Sentence:
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
-            ok, w = frame.check(self, head_lineno_map[frame.head])
+            ok, w = frame.check(self, head_lineno_map[frame.head], warn_non_semantic_dependent)
             if ok:
                 annotated_count += 1
             warnings += w
