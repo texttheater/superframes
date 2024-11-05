@@ -3,6 +3,7 @@
 \usepackage{natbib}
 \usepackage{tgpagella}
 
+\usepackage{amssymb}
 \usepackage{amstext}
 \usepackage{booktabs}
 \usepackage{emoji}
@@ -1292,9 +1293,21 @@ When something is broken but not completely destroyed, use \fr{STATE}.
 
 \ex.\dep{bird_sender *song#MESSAGE*}
 
+Senders need not be animate or active:
+
+\ex.\dep{The alarm clock_sender *beeped#SENDING*}
+
 \ex.\dep{Er_x-experiencer *forschte#MESSAGE-INIT* in seinen Kindheitserinnerungen_x-sender nach_topic}
 
+\ex.\dep{Die Polizei_x-experiencer *horchte#MESSAGE-INIT* ihn_x-sender aus_m-noncomp}
+
+\ex.\dep{Kim_x-experiencer had *read#MESSAGE-INIT* that_target-content in a book_x-sender}
+
 \ex.\dep{Miniwahr_identifier , wie_m-identifier es_identified in der Neusprache_m-sender *hieß#IDENTIFICATION*}
+
+Use \fr{SENDING} rather than \fr{MESSAGE} for predicates that cannot take a \rl{topic} argument:
+
+\ex.\dep{Er_x-causer>>sender *schleuderte#LOCATION-DEINIT>>SENDING* eine Flut_has-location>>sent von Gestammel aus sich_initial-location>>x-noncomp heraus}
 
 For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
 
@@ -1623,9 +1636,9 @@ such cases, assign the first role to the syntactically less oblique argument.
 
 \newpage\subsection{When to Use \fr{SCENE}}
 
-\fr{SCENE} should definitely be used if a predicate can add aspectual meaning
-to predicates of more than one type. For example, English \emph{make} can be
-used with states and activities, so \emph{make} itself should be neither
+\fr{SCENE} should definitely be used if a predicate can add aspectual or modal
+meaning to predicates of more than one type. For example, English \emph{make}
+can be used with states and activities, so \emph{make} itself should be neither
 \fr{STATE} nor \fr{ACTIVITY} but \fr{SCENE}.
 
 \ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
@@ -1638,6 +1651,18 @@ certain type, it can have the same type.
 \ex.\dep{I_undergoer *lived#EVENT* my life_event}
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
+
+To distinguish light verb constructions (LVCs) from verbal idioms (VIDs),
+determine whether the complement of the verb by itself can denote the described
+event, e.g., by making the subject a possessive modifier. If this is the case,
+it is an LVC and should be annotated with \fr{SCENE}. Otherwise, treat the
+construction as a verbal idiom and annotate it with \fr{NONCOMP} (see
+Section~\ref{sec:NONCOMP}. For example, treat \emph{ein Bad nehmen} as an LVC,
+but \emph{in den Sinn kommen} as a VID:
+
+\ex.\dep{Kim_participant__undergoer *nahm#SCENE* ein **Bad#EVENT**_scene} $\rightarrow$ \dep{Kims_undergoer *Bad#EVENT*}
+
+\ex.\dep{Ihm_x-experiencer *kam#MESSAGE-INIT* nie_m-time in den Sinn_x-noncomp , dass das nötig_target-content sein könnte} $\nrightarrow$ \dep{sein_x-experiencer *Sinn#MESSAGE*, dass das nötig_content sein könnte}
 
 
 \newpage\section{Aspect, Mode, and Polarity}
@@ -1722,6 +1747,8 @@ and \rl{x-identified} if it is definite.
 \ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
 
 \ex.\dep{My drawing_x-has-class was not_m-mode a *picture#MESSAGE* of a hat_topic}
+
+\ex.\dep{Unwissenheit_x-has-class ist *Stärke#QUALITY*}
 
 
 \newpage\subsection{Predicative Adpositions}
