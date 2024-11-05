@@ -64,8 +64,8 @@
 [m-scene] gedankenlosen (18)
 [x-sender] Frauen (2)
 
-[MESSAGE-NEG >> STATE] gedankenlosen (18) # # ??
-[x-experiencer >> has-state] Nachplapperer (19)
+[STATE] gedankenlosen (18)
+[has-state] Nachplapperer (19)
 
 [MESSAGE-INIT] Spitzel (23)
 [m-state || m-social-relation] freiwilligen (22)
@@ -75,10 +75,9 @@
 [STATE || SOCIAL-RELATION] freiwilligen (22)
 
 [MESSAGE-INIT] aushorchen (32)
-[x-attribute] mit deren Hilfe (28) # # ??
+[m-means] mit deren Hilfe (28)
 [x-experiencer] man (29)
-[topic] weniger Linientreue (31)
-[m-means] Spitzel (23) # # ?? 
+[x-sender || topic] weniger Linientreue (31)
 
 [SCENE-INIT] Hilfe (28) # # Vgl. (379) im Manual
 [x-causer] deren (27)
@@ -88,7 +87,7 @@
 
 [IDENTIFICATION] man (29)
 
-[?? SCENE] Linientreue (31) # # ?? SITUATION? SOCIAL-RELATION? Bedeutung: "streng einer Ideologie, Parteilinie folgend"
+[SOCIAL-RELATION >> QUALITY] Linientreue (31) Bedeutung: "streng einer Ideologie, Parteilinie folgend"
 [m-quantity] weniger (30)
 
 [QUANTITY] weniger (30)
@@ -437,10 +436,10 @@
 [social-relation] der Inneren Partei (14)
 [has-social-relation] Mann (6)
 
-[IDENTIFICATION] Partei (14) # # ??
-[m-noncomp] Inneren (13) # # ??
+[CLASS >> IDENTIFICATION] Partei (14)
+[m-quality >> m-noncomp] Inneren (13)
 
-[NONCOMP] Inneren (13)
+[QUALITY >> NONCOMP] Inneren (13)
 
 [POSSESSION] Inhaber (16)
 [possessed] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
@@ -540,8 +539,8 @@
 [SOCIAL-RELATION] Mitglieds (18)
 [social-relation] der Inneren Partei (21)
 
-[IDENTIFICATION] Partei (21)
-[m-noncomp] Inneren (20)
+[CLASS >> IDENTIFICATION] Partei (21)
+[m-quality >> m-noncomp] Inneren (20)
 
 [NONCOMP] Inneren (20)
 
@@ -657,17 +656,17 @@
 9	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Nase	Nase	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
 11	zurechtzurücken	zurechtrücken	VERB	VVIZU	VerbForm=Inf	4	acl	_	_
-12	,	,	PUNCT	$,	_	15	punct	_	_
-13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
+12	,	,	PUNCT	$,	_	22	punct	_	_
+13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	22	nsubj	_	_
 14	seltsam	seltsam	ADJ	ADJD	_	15	advmod	_	_
-15	entwaffnend	entwaffnend	ADJ	ADJD	_	11	advmod	_	_
+15	entwaffnend	entwaffnend	ADJ	ADJD	_	22	xcomp	_	_
 16	und	und	CCONJ	KON	_	21	cc	_	_
 17	auf	auf	ADP	APPR	_	20	case	_	_
 18	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	merkwürdige	merkwürdig	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
 20	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	21	nmod	_	_
-21	zivilisiert	zivilisieren	ADJ	ADJD	_	22	xcomp	_	_
-22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
+21	zivilisiert	zivilisieren	ADJ	ADJD	_	15	conj	_	_
+22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] hatte (2)
@@ -677,12 +676,12 @@
 [] Er (1)
 
 [] Manier (4)
-[] , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (11)
+[] , seine Brille auf der Nase zurechtzurücken (11)
+[] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22)
 
 [] zurechtzurücken (11)
 [] seine Brille (7)
 [] auf der Nase (10)
-[] , die seltsam entwaffnend (15)
 
 [] Brille (7)
 [] seine (6)
@@ -691,16 +690,17 @@
 
 [] Nase (10)
 
-[POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
-[x-causer >> has-quality] die (13)
-[m-quality] seltsam (14)
+[] wirkte (22)
+[] die (13)
+[] seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert (15)
 
 [] die (13)
 
-[] seltsam (14)
+[POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
+[m-quality] seltsam (14)
+[x-causer >> has-quality] die (13)
 
-[] wirkte (22)
-[] und auf eine merkwürdige Weise zivilisiert (21)
+[] seltsam (14)
 
 [] zivilisiert (21)
 [] auf eine merkwürdige Weise (20)
@@ -843,12 +843,11 @@
 [m-quantity] etwa ebenso vielen (11)
 
 [QUANTITY] vielen (11)
-[m-quantity] etwa ebenso (10)
+[m-scene] etwa ebenso (10)
 
-[COMPARISON] ebenso (10) # # ?? müssen Kanten mit compared und reference hinzugefügt werden?
+[COMPARISON] ebenso (10)
 [m-mode] etwa (9)
-[reference] Dutzend (6) # # manuell hinzugefügt
-[compared] vielen (11) # # manuell hinzugefügt
+[compared] vielen (11)
 
 [MODE] etwa (9)
 
@@ -898,7 +897,7 @@
 
 [LOCATION-CHANGE >> MESSAGE] hingezogen (7)
 
-[?? SITUATION] das (10) # # ??
+[SITUATION] das (10)
 [m-mode] nicht nur (12)
 [m-explanation] , weil ihn der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus fesselte (25)
 
@@ -907,14 +906,15 @@
 
 [MODE] nicht (11)
 
-[LOCATION-CHANGE-POSSIBILITY-NEG >> STATE-CHANGE] fesselte (25) # # ??
-[has-location >> has-state] ihn (15)
-[x-causer >> x-causer] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
+[LOCATION-INIT >> MESSAGE] fesselte (25)
+[has-location >> x-experiencer] ihn (15)
+[x-causer >> topic] der Gegensatz zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (17)
 
 [IDENTIFICATION] ihn (15)
 
 [COMPARISON] Gegensatz (17)
-[compared] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21) # # ??
+[compared] zwischen O'Briens höflichen Manieren und seinem Preisboxertypus (21)
+[reference] und seinem Preisboxertypus (24) # # manuell hinzugefügt
 
 [MEANS] Manieren (21)
 [has-means] O'Briens (19)
@@ -952,7 +952,7 @@
 19	politische	politisch	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	20	amod	_	_
 20	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	22	nsubj	_	_
 21	nicht	nicht	PART	PTKNEG	Polarity=Neg	22	advmod	_	_
-22	vollkommen	vollkommen	ADJ	ADJD	_	14	ccomp	_	_
+22	vollkommen	vollkommen	ADJ	ADJD	_	8	ccomp	_	_
 23	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
 24	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -969,11 +969,12 @@
 [m-scene] heimlich gehegten (7)
 [content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22) # # manuell hinzugefügt
 
-[STATE-CONTINUATION] gehegten (7) # # ?? sich kümmern um, pflegen, ...
-[m-has-social-relation] heimlich (6) # # ?? Bedeutung: vor anderen verborgen
-[has-state] Glauben (8)
+[STATE-CONTINUATION >> MESSAGE] gehegten (7) # # Bedeutung: sich kümmern um, pflegen, ...
+[m-quality] heimlich (6) # # 
+[has-state >> content] Glauben (8)
 
-[SOCIAL-RELATION-NEG] heimlich (6) # # ??
+[MESSAGE-PREVENTION] heimlich (6) # # Bedeutung: vor anderen verborgen
+[topic] gehegten (7)
 
 [MESSAGE] Hoffnung (14) # # ??
 [m-mode] vielleicht (11)
@@ -1336,8 +1337,8 @@
 [m-time] , bis die Zwei-Minuten-Hass-Sendung zu Ende war (36)
 [has-location] O'Brien (1)
 
-[IDENTIFICATION] Abteilung (27) # # ?? 
-[m-noncomp] Registratur (28)
+[PART-WHOLE] Abteilung (27) # # ?? 
+[m-scene >> m-identifier] Registratur (28)
 
 [NONCOMP] Registratur (28)
 
