@@ -424,6 +424,16 @@ such cases, we add those dependency links.
 
 \ex.\dep{the song_topic that_topic I_x-experiencer *like#MESSAGE*} (relative clause)
 
+\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (reduced relative clause)
+
+\ex.\dep{the song_topic *liked#MESSAGE* by Kim_x-experiencer} (non-finite reduced relative clause)
+
+\ex.\dep{students_has-location *living#LOCATION* on campus_location} (non-finite reduced relative clause)
+
+\ex.\dep{eine Gestalt__has-quality , deren **Magerkeit#QUALITY**_topic durch den Trainingsanzug_x-sender noch_m-mode *betont#MESSAGE* wurde} (relative clause with complex extracted element)
+
+\ex.\dep{Atmosphäre_target-situator , mit der_target-situator sie_x-causer sich_theme zu *umgeben#SITUATION-INIT* wusste} (relative clause with extraction across clause boundaries)
+
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
 
 \ex.\dep{ein *sogenannter#IDENTIFICATION-INIT*__m-scene___m-scene **Televisor#CLASS**_identified oder ***Hörsehschirm#CLASS***_identified} (coordination)
@@ -677,6 +687,11 @@ is newly created from \rl{material}, or \rl{material} is transformed to become
 \ex.\dep{Kim_x-causer *built#TRANSFORMATION-CREATION* a castle_created out of sand_material}
 
 \ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
+
+Use this only for non-scene entities; for scenes, use the \fr{SCENE-CHANGE}
+frame:
+
+\ex.\dep{Die Hassovation_initial-scene *steigerte#SCENE-CHANGE* sich zur Raserei_target-scene}
 
 
 \newpage\subsection{\emoji{eye} \fr{EXPERIENCE}}
@@ -1024,6 +1039,8 @@ expressed and/or its relation to the discourse.
 \ex.\dep{That_has-quality 's really_m-mode *great#QUALITY*}
 
 \ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
+
+\ex.\dep{Man wusste davon nur_m-mode durch vage *Gerüchte#MESSAGE*}
 
 
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
@@ -1622,9 +1639,17 @@ thus went for the \fr{TRANSFORMATION-CREATION} frame.
 \newpage\subsection{Symmetric Argument Pairs}
 
 Some predicates have a pair of arguments that are semantically symmetric. In
-such cases, assign the first role to the syntactically less oblique argument.
+such cases, assign the first role to the syntactically less oblique argument,
+where subjects (\rl{nsubj}, \rl{csubj}) are least oblique, followed by direct
+objects (\rl{obj}), then indirect objects (\rl{iobj}), and oblique arguments
+(\rl{obl}) are the most oblique.
 
 \ex.\dep{*distinguish#COMPARISON* China_compared from Arizona_reference}
+
+For predicates of mutual communication, choose \rl{x-sender} for the less
+oblique and \rl{x-experiencer} for the more oblique argument.
+
+\ex.\dep{Personen_x-experiencer, mit denen_x-experiencer er_x-sender noch nie_m-time ein Wort_x-noncomp *gewechselt#MESSAGE-INIT* hatte}
 
 
 \newpage\subsection{When to Use \fr{SCENE}}
@@ -1778,6 +1803,21 @@ modifies the \fr{LOCATION} frame evoked by the adposition \emph{from}, but we
 have to attach it to \emph{habitation}, which evokes a \emph{different}
 \fr{LOCATION} frame which does not have a quantity modifier. Confusion ensues,
 but for now we have to live with these issues.
+
+
+\newpage\subsection{Coordination}
+
+Coordinated dependents are annotated separately. In most cases, conjuncts will have the same role, but they may also differ.
+
+\ex.\dep{Parallelen_x-noncomp *ziehen#COMPARISON* zwischen Spielen_reference und dem täglichen Leben_compared}
+
+\ex.\dep{*Gegensatz#COMPARISON* zwischen seinen höflichen Manieren_compared und seinem Preisboxertypus_reference}
+
+Coordination is even split in cases where semantically it does not really make
+sense because the coordinated phrase fills a role as a whole, not each
+individual conjunct. In these cases, assign the same role to all conjuncts:
+
+\ex.\dep{a *question#MESSAGE* of life_topic or death_topic}
 
 
 \newpage\section{TODO}

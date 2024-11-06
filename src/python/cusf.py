@@ -55,7 +55,7 @@ def arg_subtrees(tree: PyCoNLLTree) -> Iterable[PyCoNLLTree]:
 
 def form_for_predicate(tree: PyCoNLLTree) -> str:
     def is_mwe_tree(t: PyCoNLLTree) -> bool:
-        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe', 'appos')
+        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe', 'appos', 'goeswith')
     trees = sorted(subtrees(tree, is_mwe_tree), key=lambda t: id_sort_key(t.data.id))
     return ' '.join(t.data.form for t in trees)
 
