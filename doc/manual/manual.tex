@@ -80,7 +80,6 @@
             \Sub\emoji{eye} \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} &  &  & \ref{sec:EXPERIENCE} \\
 
             \Sub\emoji{red-exclamation-mark} \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
-            \SubSub\emoji{bullseye} \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
 
             \Sub\emoji{passport-control} \fr{IDENTIFICATION} & \rl{initial-identifier} & \rl{identified} & \rl{identifier} & & \rl{target-identifier} & \ref{sec:IDENTIFICATION} \\
 
@@ -92,7 +91,7 @@
             \SubSub\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
             \SubSub\emoji{t-shirt} \fr{WRAPPING-WEARING} & \rl{initial-wearer} & \rl{wrapper} & \rl{wearer} & & \rl{target-wearer} & \ref{sec:WRAPPING-WEARING} \\
 
-            \Sub\emoji{hammer} \fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
+            \Sub\emoji{hammer} \fr{MEANS} & & \rl{purpose} & \rl{means} & & & \ref{sec:MEANS} \\
 
             \Sub\emoji{left-speech-bubble} \fr{MESSAGE} & \rl{initial-content} & \rl{topic} & \rl{content} & & \rl{target-content} & \ref{sec:MESSAGE} \\
 
@@ -714,28 +713,6 @@ For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 \ex.\dep{I_x-sender am *stressing#MESSAGE-INIT* this_topic because it is important_m-explanation}
 
 
-\newpage\subsection{\emoji{bullseye} \fr{PURPOSE}}
-\label{sec:PURPOSE}
-
-Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
-
-\ex.\dep{die Nische_has-purpose war für ein Bücherregal_purpose *bestimmt#PURPOSE*}
-
-\ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possessed}
-
-\ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
-
-\ex.\dep{lamp_m-purpose *oil#CLASS*}
-
-\ex.\dep{train_m-purpose *station#CLASS*}
-
-\ex.\dep{buffer_m-purpose *state#STATE*}
-
-\ex.\dep{animal_m-purpose *doctor#CLASS*}
-
-\ex.\dep{the NoMa_m-identified infill_m-purpose Metro_m-purpose *station#CLASS*}
-
-
 \newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
 
@@ -879,17 +856,33 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 \newpage\subsection{\emoji{hammer} \fr{MEANS}}
 \label{sec:MEANS}
 
-\rl{has-means} is a scene caused by something via an intermediary \rl{means}.
+\rl{means} is an intermediary causer of or is destined to serve a \rl{purpose}.
 
 \ex.\dep{Kim_x-causer *cut#STATE-CHANGE* the cake_has-state with a knife_m-means}
 
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface by exploding_m-means a paint bomb}
 
-\ex.\dep{Kim_x-causer__x-causer *used#MEANS* a pen_means to **get#LOCATION-DEINIT**_has-means the lid__has-location off__initial-location}
+\ex.\dep{Kim_x-causer__x-causer *used#MEANS* a pen_means to **get#LOCATION-DEINIT**_purpose the lid__has-location off__initial-location}
 
 \ex.\dep{You_x-causer *used#MEANS* me_means !}
 
 \ex.\dep{oil_m-means *lamp#CLASS*}
+
+\ex.\dep{die Nische_means war für ein Bücherregal_purpose *bestimmt#MEANS*}
+
+\ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-purpose food__possessed}
+
+\ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
+
+\ex.\dep{lamp_m-purpose *oil#CLASS*}
+
+\ex.\dep{train_m-purpose *station#CLASS*}
+
+\ex.\dep{buffer_m-purpose *state#STATE*}
+
+\ex.\dep{animal_m-purpose *doctor#CLASS*}
+
+\ex.\dep{the NoMa_m-identified infill_m-purpose Metro_m-purpose *station#CLASS*}
 
 
 \newpage\subsection{\emoji{left-speech-bubble} \fr{MESSAGE}}
