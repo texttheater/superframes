@@ -68,7 +68,7 @@
 [QUANTITY] dreitausend (14)
 
 [QUANTITY] Zahl (19)
-[m-compared] entsprechende (18)
+[m-scene] entsprechende (18)
 [m-location] unter der Erde (22)
 
 [COMPARISON] entsprechende (18)
@@ -150,9 +150,10 @@
 21	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
+
 [POSSESSION >> SITUATION] beherrschten (2)
-[possessor >> has-quantity] Sie (1)
-[possesed >> m-compared] das sie umgebende Stadtbild (6)
+[possessor >> situator] Sie (1)
+[possessed >> theme] das sie umgebende Stadtbild (6)
 [m-quantity] so vollkommen (8)
 [m-result] , dass man vom Dach des Victory-Blocks aus alle vier gleichzeitig sehen konnte (20)
 
@@ -162,8 +163,8 @@
 [m-scene] sie umgebende (5)
 
 [LOCATION] umgebende (5)
-[m-identifier] sie (4)
-[] Stadtbild (6)
+[location >> has-location] sie (4)
+[has-location >> location] Stadtbild (6)
 
 [IDENTIFICATION] sie (4)
 
@@ -446,8 +447,8 @@
 12	auch	auch	ADV	ADV	_	13	advmod	_	_
 13	nie	nie	ADV	ADV	_	24	advmod	_	_
 14	,	,	PUNCT	$,	_	24	punct	_	_
-15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
+15	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advmod	_	_
+16	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	fixed	_	_
 17	nur	nur	ADV	ADV	_	21	advmod	_	_
 18	auf	auf	ADP	APPR	_	21	case	_	_
 19	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -475,12 +476,11 @@
 
 [MESSAGE] Liebe (8)
 
-[LOCATION-DEINIT] gekommen (24)
+[LOCATION-INIT] gekommen (24)
 [target-location] ihm (11)
 [m-time] auch nie (13)
-[m-noncomp] es (16)
-[m-targtet-location] nur auf einen halben Kilometer , (21)
-[m-noncomp || m-location] nahe (23)
+[m-conceded] sei es nur auf einen halben Kilometer , (21)
+[target-location] nahe (23)
 
 [IDENTIFICATION] ihm (11)
 
@@ -489,7 +489,7 @@
 
 [MODE] auch (12)
 
-[NONCOMP] es (16)
+[CONCESSION] sei es (15)
 
 [QUANTITY] Kilometer (21)
 [m-mode] nur (17)
@@ -544,14 +544,15 @@
 
 [LOCATION] es (5)
 
-[MESSAGE] Auftrag (9)
-[m-quality] amtlichem (8)
+[MESSAGE || SOCIAL-RELATION] Auftrag (9)
+[x-sender || x-scene] amtlichem (8)
 
-[QUALITY] amtlichem (8)
+[CLASS || CAUSATION] amtlichem (8)
+[result] Auftrag (9)
 
 [UNANCHORED-MOTION-NECESSITY] musste (16)
 [m-condition] auch dann (15)
-[has-location] man (17)
+[in-motion] man (17)
 [m-time] erst (18)
 [transitory-location] durch einen Irrgarten von Stacheldrahtverhauen und versteckten Maschinengewehrnestern (21)
 [transitory-location] hindurch (27)
@@ -623,14 +624,15 @@
 
 [LOCATION] Vorgelände (7)
 
-[SOCIAL-RELATION] Wachen (13)
-[m-quality] gorillagesichtige (12)
+[CLASS] Wachen (13)
+[m-scene] gorillagesichtige (12)
 [m-wrapper] in schwarzen Uniformen (16)
-[m-accompanier] , die mit schweren Gummiknüppeln bewaffnet waren (23)
+[m-scene] , die mit schweren Gummiknüppeln bewaffnet waren (23)
 
-[QUALITY] gorillagesichtige (12)
+[COMPARISON >> QUALITY] gorillagesichtige (12)
+[compared >> has-quality] Wachen (13)
 
-[WRAPPING-WEARING] Uniformen (16)
+[CLASS] Uniformen (16)
 [m-quality] schwarzen (15)
 
 [QUALITY] schwarzen (15)
@@ -658,14 +660,14 @@
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-CHANGE] drehte (2)
-[has-location] Winston (1)
-[m-noncomp] sich (3)
+[x-causer >> has-location] Winston (1)
+[has-location >> x-noncomp] sich (3)
 [m-means >> m-quality] mit einem Ruck (6)
-[target-location] um (7)
+[transitory-location] um (7)
 
 [IDENTIFICATION] Winston (1)
 
-[NONCOMP] sich (3)
+[IDENTIFICATION >> NONCOMP] sich (3)
 
 [MEANS >> QUALITY] Ruck (6)
 
@@ -681,7 +683,7 @@
 6	Miene	Miene	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
 7	aufgesetzt	aufsetzen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	,	,	PUNCT	$,	_	14	punct	_	_
-9	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	_	_
+9	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	13	obj	_	_
 10	zur	zur	ADP	APPRART	_	11	case	_	_
 11	Schau	Schau	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	13	obl	_	_
 12	zu	zu	PART	PTKZU	_	13	mark	_	_
@@ -713,17 +715,15 @@
 
 [QUALITY] optimistische (5)
 
-[QUALITY] ratsam (14)
-[has-quality] die (9)
-[m-message] zur Schau zu tragen (13)
-[m-time >> m-scene] , wenn man dem Televisor das Gesicht zukehrte (23)
-
-[IDENTIFICATION] die (9)
+[MESSAGE >> SCENE-NECESSITY] ratsam (14)
+[content >> scene] die zur Schau zu tragen (13)
+[m-condition] , wenn man dem Televisor das Gesicht zukehrte (23)
 
 [MESSAGE] tragen (13)
-[m-noncomp] zur Schau (11)
+[topic] die (9)
+[x-noncomp] zur Schau (11)
 
-[NONCOMP] Schau (11)
+[MESSAGE] Schau (11)
 
 [LOOCATION-CHANGE] zukehrte (23)
 [x-causer] man (18)
@@ -819,10 +819,10 @@
 49	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	aux	_	_
 50	.	.	PUNCT	$.	_	20	punct	_	_
 
-[POSSESSION-DEINIT] verzichtet (20)
+[SITUATION-NEG] verzichtet (20)
 [m-means] Indem er zu dieser Tageszeit aus dem Ministerium weggegangen war , (9)
-[possessor] er (13)
-[possession] auf sein Mittagessen in der Kantine (16)
+[theme] er (13)
+[target-situator] auf sein Mittagessen in der Kantine (16)
 
 [LOCATION-CHANGE] weggegangen (9)
 [has-location] er (2)
@@ -846,11 +846,11 @@
 [LOCATION] Kantine (19)
 
 [MESSAGE] wusste (23)
-[m-mode] andererseits (22)
+[m-reference] andererseits (22)
 [x-experiencer] er (24)
 [content] , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (34)
 
-[MODE] andererseits (22)
+[COMPARISON] andererseits (22)
 
 [IDENTIFICATION] er (24)
 
@@ -899,14 +899,14 @@
 10	farblosen	farblos	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	11	amod	_	_
 11	Flüssigkeit	Flüssigkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
 12	,	,	PUNCT	$,	_	20	punct	_	_
-13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	7	nsubj	_	_
+13	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	19	nsubj	_	_
 14	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	17	det	_	_
 15	schmucklosen	schmucklos	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	17	amod	_	_
 16	weißen	weiß	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	17	amod	_	_
 17	Etikett	Etikett	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	19	iobj	_	_
-18	nach	nach	ADP	APPR	_	19	case	_	_
-19	Victory-Gin	Victory-Gin	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	7	nmod	_	_
-20	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
+18	nach	nach	ADP	APPR	_	17	case	_	_
+19	Victory-Gin	Victory-Gin	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	nmod	_	_
+20	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-CHANGE] nahm (2)
@@ -919,21 +919,20 @@
 [LOCATION] Regal (5)
 
 [CLASS] Flasche (7)
-[m-accompanier] mit einer farblosen Flüssigkeit , die war (11)
-[m-followed] dem schmucklosen weißen Etikett nach Victory-Gin (19)
+[m-accompanier] mit einer farblosen Flüssigkeit , die dem schmucklosen weißen Etikett nach Victory-Gin war (11)
 
 [CLASS] Flüssigkeit (11)
 [m-quality] farblosen (10)
+[m-scene] , die dem schmucklosen weißen Etikett nach Victory-Gin war (19)
 
 [QUALITY] farblosen (10)
 
-[IDENTIFICATION] war (20)
-[identifier] die (13)
+[CLASS] Victory-Gin (19)
+[has-class] die (13)
+[m-sender] dem schmucklosen weißen Etikett nach (17)
+[has-class] Flüssigkeit (11)
 
 [IDENTIFICATION] die (13)
-
-[IDENTIFICATION] Victory-Gin (19)
-[m-quality] dem schmucklosen weißen Etikett (17)
 
 [MESSAGE] Etikett (17)
 [m-quality] schmucklosen (15)
@@ -1012,9 +1011,8 @@
 
 [LOCATION-CHANGE] goss (2)
 [x-causer] Winston (1)
-[m-noncomp] sich (3)
-[m-quantity] fast eine Teetasse (6)
-[m-depictive] voll (7)
+[x-experiencer] sich (3)
+[m-quantity] fast eine Teetasse voll (7)
 [has-location] davon (8)
 [m-noncomp] ein (9)
 
@@ -1022,12 +1020,12 @@
 
 [IDENTIFICATION] sich (3)
 
-[CLASS] Teetasse (6)
+[CLASS >> QUANTITY] Teetasse (6)
 [m-quantity] fast (4)
 
 [QUANTITY] fast (4)
 
-[DEPICTIVE] voll (7)
+[QUANTITY] voll (7)
 
 [IDENTIFICATION] davon (8)
 
@@ -1094,16 +1092,16 @@
 
 [QUALITY] krebsrot (5)
 
-[LOCATION-CHANGE >> MESSAGE] trat (11)
+[LOCATION-CHANGE >> STATE-CHANGE] trat (11)
 [has-location >> m-noncomp] das Wasser (10)
-[x-causer >> x-experiencer] ihm (12)
-[target-location >> m-noncomp] in die Augen (15)
+[target-location >> has-state] ihm (12)
+[x-attribute >> m-noncomp] in die Augen (15)
 
-[CLASS] Wasser (10)
+[CLASS >> STATE-CHANGE] Wasser (10)
 
 [IDENTIFICATION] ihm (12)
 
-[LOCATION-DEINIT] Augen (15)
+[LOCATION-DEINIT >> STATE-CHANGE] Augen (15)
 
 # sent_id = 70
 # text = Das Zeug schmeckte wie Salpetersäure , und man hatte beim Herunterschlucken das Gefühl , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen .
@@ -1312,16 +1310,18 @@
 7	Glück	Glück	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	4	obj	_	_
 8	.	.	PUNCT	$.	_	4	punct	_	_
 
-[STATE] hatte (4)
-[x-follows] Mit der nächsten (3)
-[has-state] er (5)
-[m-noncomp] mehr Glück (7)
+[SCENE] hatte (4)
+[participant] Mit der nächsten (3)
+[participant] er (5)
+[scene] mehr Glück (7)
 
 [SEQUENCE] nächsten (3)
 
 [IDENTIFICATION] er (5)
 
-[CLASS || STATE] Glück (7)
+[EXPERIENCE] Glück (7)
+[experiencer] er (5)
+[experienced] nächsten (3)
 
 # sent_id = 74
 # text = Er ging ins Wohnzimmer zurück und setzte sich an ein links vom Televisor stehendes Tischchen .
@@ -1351,7 +1351,7 @@
 
 [LOCATION-DEINIT] Wohnzimmer (4)
 
-[QUALITY || NONCOMP] zurück (5)
+[NONCOMP] zurück (5)
 
 [LOCTION-CHANGE] setzte (7)
 [has-location] sich (8)
@@ -1508,12 +1508,12 @@
 28	.	.	PUNCT	$.	_	27	punct	_	_
 
 [LOCATION-INIT] eingelassen (27)
-[x-quality] Statt wie üblich (3)
+[m-scene] Statt wie üblich (3)
 [x-location] an der kürzeren Wand , von wo aus er den ganzen Raum beherrscht hätte , (7)
 [has-location] er (20)
 [target-location] an der Längswand gegenüber dem Fenster (23)
 
-[QUALITY] üblich (3)
+[SCENE-CONTINUATION] üblich (3)
 
 [CLASS] Wand (7)
 [m-quality] kürzeren (6)
@@ -1649,11 +1649,12 @@
 25	bleiben	bleiben	VERB	VVINF	VerbForm=Inf	0	root	_	_
 26	.	.	PUNCT	$.	_	25	punct	_	_
 
-[LOCATION >> MESSAGE-NEG] bleiben (25)
-[m-condition] Wenn er sich so in die Nische setzte und vorsichtig im Hintergrund hielt , (8)
-[has-location >> content] Winston (16)
-[m-exception] , wenigstens visuell , (19)
-[location >> x-experiencer] außer Reichweite des Televisors (22)
+[SCENE-CONTINUATION] bleiben (25)
+[m-condition] Wenn er sich so in die Nische setzte , (8)
+[m-condition] und vorsichtig im Hintergrund hielt (13)
+[participant] Winston (16)
+[m-quality] , wenigstens visuell , (19)
+[initial-scene] außer Reichweite des Televisors (22)
 
 [LOCATION-INIT] setzte (8)
 [has-location] er (2)
@@ -1681,12 +1682,13 @@
 [IDENTIFICATION] Winston (16)
 
 [QUALITY] visuell (19)
-[m-exception] wenigstens (18)
+[m-mode] wenigstens (18)
 
-[EXCEPTION] wenigstens (18)
+[MODE] wenigstens (18)
 
 [MESSAGE-POSSIBILITY >> LOCATION] Reichweite (22)
-[m-identifier] des Televisors (24)
+[x-experiencer >> location] des Televisors (24)
+[topic >> has-location] Winston (16)
 
 [CLASS] Televisors (24)
 
@@ -1811,21 +1813,21 @@
 18	schuld	schuld	ADJ	ADJD	_	0	root	_	_
 19	.	.	PUNCT	$.	_	18	punct	_	_
 
-[MESSAGE] schuld (18)
-[] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
-[topic] mit daran (17)
+[CAUSATION] schuld (18)
+[causer] auch das Diarium , das er soeben aus der Schublade hervorgezogen hatte , (4)
+[result] mit daran (17)
 
 [MESSAGE] Diarium (4)
-[] auch (2)
-[] , das er soeben aus der Schublade hervorgezogen hatte (12)
+[m-mode] auch (2)
+[m-scene] , das er soeben aus der Schublade hervorgezogen hatte (12)
 
 [MODE] auch (2)
 
 [LOCATION-CHANGE] hervorgezogen (12)
-[] das (6)
-[] er (7)
-[] soeben (8)
-[] aus der Schublade (11)
+[has-location] das (6)
+[x-causer] er (7)
+[m-time] soeben (8)
+[initial-location] aus der Schublade (11)
 
 [IDENTIFICATION] das (6)
 
@@ -1835,7 +1837,7 @@
 
 [CLASS] Schublade (11)
 
-[] daran (17)
+[IDENTIFICATION] daran (17)
 
 # sent_id = 83
 # text = Es war ein ganz besonders schönes Diarium .
@@ -1961,7 +1963,7 @@
 [m-noncomp] Grund (4)
 [scene] zu der Annahme , dass das Buch noch weit älter war (7)
 
-[]IDENTIFICATION Er (1)
+[IDENTIFICATION] Er (1)
 
 [MODE] jedoch (3)
 
@@ -1969,6 +1971,7 @@
 
 [MESSAGE] Annahme (7)
 [content] , dass das Buch noch weit älter war (14)
+[x-experiencer] Er (1)
 
 [QUALITY] älter (14)
 [has-quality] das Buch (11)
@@ -2355,14 +2358,15 @@
 [LOCATION-CHANGE] heimgetragen (8)
 [x-causer] Er (1)
 [has-location] es (3)
-[m-quality] schuldbewusst (4)
+[m-depictive] schuldbewusst (4)
 [location] in seiner Mappe (7)
 
 [IDENTIFICATION] Er (1)
 
 [CLASS] es (3)
 
-[QUALITY] schuldbewusst (4)
+[MESSAGE] schuldbewusst (4)
+[x-experiencer] Er (1)
 
 [WRAPPING-WEARING] Mappe (7)
 [m-identifier] seiner (6)
@@ -2427,6 +2431,7 @@
 
 # sent_id = 93
 # text = Das war nicht illegal ( nichts war illegal , da es ja keine Gesetze mehr gab ) , aber falls es herauskam , war er so gut wie sicher , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde .
+
 1	Das	d	PRON	PDS	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
 3	nicht	nicht	PART	PTKNEG	Polarity=Neg	4	advmod	_	_
@@ -2444,18 +2449,18 @@
 15	mehr	mehr	ADV	ADV	_	16	advmod	_	_
 16	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	advcl	_	_
 17	)	)	PUNCT	$(	_	8	punct	_	_
-18	,	,	PUNCT	$,	_	27	punct	_	_
-19	aber	aber	CCONJ	KON	_	27	cc	_	_
+18	,	,	PUNCT	$,	_	29	punct	_	_
+19	aber	aber	CCONJ	KON	_	29	cc	_	_
 20	falls	falls	SCONJ	KOUS	_	22	mark	_	_
 21	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
-22	herauskam	herauskommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	advcl	_	_
+22	herauskam	herauskommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	advcl	_	_
 23	,	,	PUNCT	$,	_	22	punct	_	_
-24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	cop	_	_
-25	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
-26	so	so	ADV	ADV	_	27	advmod	_	_
-27	gut	gut	ADJ	ADJD	_	4	conj	_	_
-28	wie	wie	CCONJ	KOKOM	_	29	case	_	_
-29	sicher	sicher	ADJ	ADJD	_	27	conj	_	_
+24	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	cop	_	_
+25	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+26	so	so	ADV	ADV	_	29	advmod	_	_
+27	gut	gut	ADJ	ADJD	_	26	fixed	_	_
+28	wie	wie	CCONJ	KOKOM	_	26	fixed	_	_
+29	sicher	sicher	ADJ	ADJD	_	4	conj	_	_
 30	,	,	PUNCT	$,	_	41	punct	_	_
 31	dass	dass	SCONJ	KOUS	_	41	mark	_	_
 32	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	41	nsubj:pass	_	_
@@ -2467,7 +2472,7 @@
 38	fünfundzwanzig	fünfundzwanzig	NUM	CARD	NumType=Card	39	nummod	_	_
 39	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	35	conj	_	_
 40	Zwangsarbeitslager	Zwangsarbeitslager	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	35	conj	_	_
-41	geahndet	ahnden	VERB	VVPP	Verbform=Part	27	ccomp	_	_
+41	geahndet	ahnden	VERB	VVPP	Verbform=Part	29	ccomp	_	_
 42	werden	werden	AUX	VAINF	VerbForm=Inf	41	aux:pass	_	_
 43	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	aux	_	_
 44	.	.	PUNCT	$.	_	4	punct	_	_
@@ -2500,12 +2505,11 @@
 
 [TIME] mehr (15)
 
-[SCENE] sicher (29)
+[MESSAGE] sicher (29)
 [m-condition] falls es herauskam , (22)
-[participant] er (25)
-[m-noncomp] so (26)
-[m-noncomp] gut (27)
-[scene] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
+[x-experiencer] er (25)
+[m-quantity] so gut wie (26) # TODO m-mode ?
+[content] , dass es mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager geahndet werden würde (41)
 
 [MESSAGE-DEINIT] herauskam (22)
 [content] es (21)
@@ -2514,13 +2518,13 @@
 
 [IDENTIFICATION] er (25)
 
-[NONCOMP] so (26)
+[QUANTITY] so gut wie (26)
 
-[NONCOMP] gut (27)
-
-[SEQUENCE] geahndet (41)
-[followed] es (32)
-[follows] mit dem Tode oder zumindest fünfundzwanzig Jahren Zwangsarbeitslager (35)
+[RESULTATIVE] geahndet (41)
+[has-result] es (32)
+[result] mit dem Tode (35)
+[m-condition] oder zumindest fünfundzwanzig Jahren [39]
+[result] Zwangsarbeitslager (35)
 
 [IDENTIFICATION] es (32)
 
