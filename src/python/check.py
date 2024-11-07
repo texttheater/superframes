@@ -17,7 +17,10 @@ import cusf
 
 if __name__ == '__main__':
     # Process command line
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+        format='%(levelname)s %(message)s',
+        level=logging.INFO,
+    )
     arg_parser = argparse.ArgumentParser(description=__doc__)
     arg_parser.add_argument('--warn-incomplete',
             action=argparse.BooleanOptionalAction, default=True)

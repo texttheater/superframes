@@ -21,14 +21,14 @@ import labels
 FRAME_LINE = re.compile(r'\[(?P<label>[^]]*)] (?P<text>.*?) \((?P<head>\d+)\)(?: *# *(?P<comment>.*))?$')
 ARG_DEPS = set((
     'nsubj', 'obj', 'iobj', 'csubj', 'ccomp', 'xcomp', 'obl', 'advcl',
-    'advmod', 'nmod', 'appos', 'nummod', 'acl', 'amod', 'compound', 'orphan',
+    'advmod', 'nmod', 'nummod', 'acl', 'amod', 'compound', 'orphan',
     'det:poss',
     # SUD deps:
     'subj', 'udep', 'mod', 'comp',
 ))
 PRED_DEPS = ARG_DEPS | set((
     'root', 'conj', 'parataxis', 'list', 'reparandum', 'dep', 'vocative',
-    'dislocated',
+    'dislocated', 'appos',
 ))
 
 
@@ -46,15 +46,25 @@ def subtrees(
             yield from subtrees(child)
 
 
+def arg_subtrees(tree: PyCoNLLTree) -> Iterable[PyCoNLLTree]:
+    yield tree
+    for child in tree:
+        if not child.data.deprel.startswith('conj'):
+            yield from subtrees(child)
+
+
 def form_for_predicate(tree: PyCoNLLTree) -> str:
     def is_mwe_tree(t: PyCoNLLTree) -> bool:
-        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe')
+        return t.data.deprel.split(':')[0] in ('fixed', 'flat', 'mwe', 'appos', 'goeswith')
     trees = sorted(subtrees(tree, is_mwe_tree), key=lambda t: id_sort_key(t.data.id))
     return ' '.join(t.data.form for t in trees)
 
 
 def form_for_argument(tree: PyCoNLLTree) -> str:
-    trees = sorted(subtrees(tree), key=lambda t: id_sort_key(t.data.id))
+    trees = [tree]
+    nc_children = [c for c in tree if not c.data.deprel.startswith('conj')]
+    trees.extend(s for c in nc_children for s in subtrees(c))
+    trees.sort(key=lambda t: id_sort_key(t.data.id))
     return ' '.join(t.data.form for t in trees)
 
 
@@ -196,6 +206,12 @@ class Frame:
             else:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
+            # Check for annotated appos edges:
+            arg_token = sentence.syntax[0][arg.head]
+            if arg_token.head == self.head and \
+                    arg_token.deprel.startswith('appos'):
+                logging.warning('sent %s line %s appos edges should not be '
+                        'annotated', sentence.syntax[0].id, i)
             # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 logging.warning('sent %s line %s unknown dep label for %s: %s',
@@ -204,16 +220,34 @@ class Frame:
                 warnings += 1
             # Check for missing depictive backlinks
             if arg.label == 'm-depictive':
-                arg_heads = set(a.head for a in self.args)
+                arg_trees = [
+                    tree_for_token(a.head, tree)
+                    for a in self.args
+                    if a.head != arg.head
+                ]
+                subtree_ids = set(
+                    s.data.id
+                    for a in arg_trees
+                    for s in arg_subtrees(a)
+                )
                 backlink_found = False
                 for frame in sentence.frames:
                     if frame.head == arg.head:
                         for arg2 in frame.args:
-                            if arg2.head in arg_heads:
+                            if arg2.head in subtree_ids:
                                 backlink_found = True
+                                logging.debug(
+                                    'sent %s line %s found backlink: %s',
+                                    sentence.syntax[0].id,
+                                    i,
+                                    arg2.head,
+                                )
                 if not backlink_found:
-                    logging.warning('sent %s line %s depictive has to share an argument with its parent frame',
-                            sentence.syntax[0].id, i)
+                    logging.warning(
+                        'sent %s line %s depictive has to share an argument with its parent frame',
+                        sentence.syntax[0].id,
+                        i,
+                    )
                     ok = False
                     warnings += 1
         return ok, warnings
@@ -316,6 +350,13 @@ class Sentence:
                                 child.data.id,
                                 form_for_argument(arg_tree),
                             ))
+                            for grandchild in child:
+                                if grandchild.data.deprel.startswith('conj'):
+                                    arg_tree = tree_for_token(grandchild.data.id, tree)
+                                    expected_links[subtree.data.id].append((
+                                        grandchild.data.id,
+                                        form_for_argument(arg_tree)
+                                    ))
         # Phase 1b: participant-scene links
         for frame in self.frames:
             if frame.label.split('-')[0] == 'SCENE':
@@ -381,7 +422,7 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self) -> Tuple[int, int, int]:
+    def check(self, warn_non_semantic_dependent: bool=False) -> Tuple[int, int, int]:
         head_frame_map = {}
         head_lineno_map = {}
         for frame_lineno, frame in zip(self.frame_linenos, self.frames):
