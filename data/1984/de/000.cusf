@@ -1919,7 +1919,7 @@
 11	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
 12	.	.	PUNCT	$.	_	4	punct	_	_
 
-[SCENE] möglich (4)
+[SCENE-POSSIBILITY] möglich (4)
 [m-mode] sogar (3)
 [scene] , dass jeder einzelne ständig überwacht wurde (10)
 
@@ -2011,7 +2011,7 @@
 23	man	man	PRON	PIS	Definite=Ind|Gender=Neut	24	nsubj	_	_
 24	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl	_	_
 25	,	,	PUNCT	$,	_	24	punct	_	_
-26	überhört	überhören	VERB	VVPP	Verbform=Part	5	ccomp	_	_
+26	überhört	überhören	VERB	VVPP	Verbform=Part	10	ccomp	_	_
 27	und	und	CCONJ	KON	_	36	cc	_	_
 28	,	,	PUNCT	$,	_	32	punct	_	_
 29	außer	außer	ADP	APPR	_	32	case	_	_
@@ -2025,23 +2025,23 @@
 37	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	aux:pass	_	_
 38	.	.	PUNCT	$.	_	6	punct	_	_
 
-[MESSAGE] leben (6)
-[x-experiencer] Man (1)
-[m-state] in der Annahme (5)
-[content] - , dass jedes Geräusch , das man machte , überhört und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (26)
-
+[EVENT] leben (6)
+[undergoer] Man (1)
+[m-accompanier] in der Annahme (5)
 [IDENTIFICATION] Man (1)
 
 [MESSAGE] Annahme (5)
 [content] - , dass jedes Geräusch , das man machte , überhört und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (26)
 
-[MESSAGE >> STATE-INIT] stellte (10)
-[x-experiencer >> has-state] man (9)
-[m-noncomp] sich (11)
+[MESSAGE-INIT] stellte (10)
+[x-experiencer] man (9)
+[x-noncomp] sich (11)
 [m-mode] tatsächlich (12)
-[m-quality] instinktiv (13)
-[topic >> state] darauf (14)
+[m-causer] instinktiv (13)
+[topic] darauf (14)
 [m-noncomp] ein (15)
+[topic] - , dass jedes Geräusch , das man machte , überhört (26)
+[topic] und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (36)
 
 [IDENTIFICATION] man (9)
 
@@ -2053,18 +2053,17 @@
 
 [IDENTIFICATION] darauf (14)
 
-[MESSAGE] überhört (26)
-[content] jedes Geräusch , das man machte , (20)
-[m-quality] in der Annahme (5)
+[MESSAGE-INIT] Geräusch (20)
+[m-scene] , das man machte , (24)
+[x-sender] man (23)
 
-[MESSAGE] Geräusch (20)
-[m-mode] , das man machte , (24)
+[SCENE] machte (24) # LVC
+[scene] das (22)
+[participant] man (23)
+[scene] Geräusch (20)
 
-[ACTIVITY] machte (24)
-[activity] das (22)
-[is-active] man (23)
-
-[IDENTIFICATION] das (22)
+[MESSAGE-INIT] das (22) # anaphoric roleset
+[x-sender] man (23)
 
 [IDENTIFICATION] man (23)
 
@@ -2093,10 +2092,10 @@
 13	zuwandte	zuwenden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
-[STATE-CHANGE] richtete (2)
+[STATE-INIT] richtete (2)
 [x-causer] Winston (1)
-[m-noncomp] es (3)
-[m-mode] so (4)
+[has-state] es (3)
+[target-state] so (4)
 [m-noncomp] ein (5)
 [target-state] , dass er dem Televisor den Rücken zuwandte (13)
 
@@ -2270,11 +2269,12 @@
 
 [STATE] Art (8)
 
-[LOCATION] London (13)
-[x-identifier] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
+[IDENTIFICATION] London (13)
+[m-scene] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
 
 [PART-WHOLE] Hauptstadt (16)
 [whole] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
+[part] London (13)
 
 [LOCATION] Luftstützpunkts (18)
 [m-rank] Nr. l (19)
@@ -2302,7 +2302,7 @@
 2	versuchte	versuchen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	in	in	ADP	APPR	_	5	case	_	_
 4	seinen	sein	DET	PPOSAT	Case=Dat|Gender=Neut|Number=Plur|Poss=Yes	5	det:poss	_	_
-5	Kindheitserinnerungen	Kindheitserinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
+5	Kindheitserinnerungen	Kindheitserinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	6	obl	_	_
 6	nachzuforschen	nachforschen	VERB	VVIZU	VerbForm=Inf	2	xcomp	_	_
 7	,	,	PUNCT	$,	_	12	punct	_	_
 8	ob	ob	SCONJ	KOUS	_	12	mark	_	_
@@ -2315,30 +2315,30 @@
 
 [SCENE] versuchte (2)
 [participant] Er (1)
-[m-location || m-time] in seinen Kindheitserinnerungen (5)
 [scene] nachzuforschen , ob London immer so ausgesehen hatte (6)
 
 [IDENTIFICATION] Er (1)
 
-[MESSAGE] Kindheitserinnerungen (5)
-[m-identifier] seinen (4)
+[MESSAGE] nachzuforschen (6)
+[m-location >> x-sender] in seinen Kindheitserinnerungen (5)
+[m-condition] , ob London immer so ausgesehen hatte (12)
+
+[CLASS] Kindheitserinnerungen (5)
+[has-class] seinen (4)
 
 [IDENTIFICATION] seinen (4)
 
-[MESSAGE] nachzuforschen (6)
-[m-condition] , ob London immer so ausgesehen hatte (12)
-[x-experiencer] Er (1)
-
-[QUALITY] ausgesehen (12)
-[has-quality] London (9)
+[MESSAGE] ausgesehen (12)
+[topic] London (9)
 [m-time] immer (10)
-[m-quality] so (11)
+[content] so (11)
 
 [LOCATION] London (9)
 
 [TIME] immer (10)
 
 [QUALITY] so (11)
+[has-quality] London (9)
 
 # sent_id = 43
 # text = Hatten da immer diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert gestanden , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten ?
@@ -2348,7 +2348,7 @@
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Neut|Number=Plur|PronType=Dem	6	det	_	_
 5	langen	lang	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Plur	6	amod	_	_
 6	Reihen	Reihe	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	14	nsubj	_	_
-7	heruntergekommen	herunterkommen	ADJ	ADJD	_	14	advmod	_	_
+7	heruntergekommen	herunterkommen	ADJ	ADJD	_	8	xcomp	_	_
 8	aussehender	aussehend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	9	amod	_	_
 9	Häuser	Haus	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	6	nmod	_	_
 10	aus	aus	ADP	APPR	_	13	case	_	_
@@ -2381,98 +2381,99 @@
 37	schiefen	schief	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	38	amod	_	_
 38	Gartenmauern	Gartenmauer	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	45	nsubj	_	_
 39	kreuz	kreuz	ADJ	ADJD	_	45	advmod	_	_
-40	und	und	CCONJ	KON	_	41	cc	_	_
-41	quer	quer	ADJ	ADJD	_	39	conj	_	_
+40	und	und	CCONJ	KON	_	39	fixed	_	_
+41	quer	quer	ADJ	ADJD	_	39	fixed	_	_
 42	in	in	ADP	APPR	_	44	case	_	_
 43	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	Boden	Boden	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	45	obl	_	_
 45	sackten	sacken	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 46	?	?	PUNCT	$.	_	14	punct	_	_
 
-[LOCATION] gestanden (14)
-[location] da (2)
+[STATE-CONTINUATION] gestanden (14)
+[m-location] da (2)
 [m-time] immer (3)
-[has-location] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
-[m-accompanier] , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten (45)
-[] heruntergekommen (7)
+[has-state] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
+[m-scene] , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten (45)
 
-[] da (2)
+[LOCATION] da (2)
 
 [TIME] immer (3)
 
 [CLASS] Reihen (6)
 [m-quality] langen (5)
-[m-quality] aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
+[m-scene] heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (9)
 
 [QUALITY] langen (5)
 
 [CLASS] Häuser (9)
-[m-quality] aussehender (8)
-[m-time] aus dem neunzehnten Jahrhundert (13)
-[m-quality] , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (20)
+[m-scene] heruntergekommen aussehender (8)
+[x-time] aus dem neunzehnten Jahrhundert (13)
+[m-scene] , deren Mauern mit Balken gestützt (20)
+[m-scene] , deren Fenster mit Pappendeckel verschalt (26)
+[m-depictive] und deren Dächer mit Wellblech gedeckt waren (32)
 
-[QUALITY] aussehender (8)
-[m-quality] heruntergekommen (7)
+[SCENE] aussehender (8)
+[scene] heruntergekommen (7)
+[participant] Häuser (9)
+
+[QUALITY] heruntergekommen (7)
 
 [TIME] Jahrhundert (13)
-[m-rank || m-time] neunzehnten (12)
+[m-rank] neunzehnten (12)
 
-[RANK || TIME] neunzehnten (12)
+[RANK] neunzehnten (12)
 
-[ACCOMPANIMENT] gestützt (20)
-[accompanied] deren Mauern (17)
-[accompanier] mit Balken (19)
+[STATE-INIT] gestützt (20)
+[has-state] deren Mauern (17)
+[x-means] mit Balken (19)
 
 [CLASS] Mauern (17)
-[m-identifier] deren (16)
+[has-class] deren (16)
 
 [IDENTIFICATION] deren (16)
 
 [CLASS] Balken (19)
-[m-identifier] deren (16)
 
-[WRAPPING-WEARING] verschalt (26)
-[wearer] deren Fenster (23)
-[wrapper] mit Pappendeckel (25)
+[LOCATION-INIT] verschalt (26)
+[target-location] deren Fenster (23)
+[has-location] mit Pappendeckel (25)
 
 [CLASS] Fenster (23)
-[m-identifier] deren (22)
+[has-class] deren (22)
 
 [IDENTIFICATION] deren (22)
 
-[MEANS] Pappendeckel (25)
+[CLASS] Pappendeckel (25)
 
-[WRAPPING-WEARING] gedeckt (32)
-[wearer] deren Dächer (29)
-[wrapper] mit Wellblech (31)
+[LOCATION-INIT] gedeckt (32)
+[target-location] deren Dächer (29)
+[has-location] mit Wellblech (31)
 
 [CLASS] Dächer (29)
-[m-identifier] deren (28)
+[has-class] deren (28)
 
 [IDENTIFICATION] deren (28)
 
-[MEANS] Wellblech (31)
+[CLASS] Wellblech (31)
 
-[QUALITY] heruntergekommen (7)
-
-[LOCATION-CHANGE] sackten (45)
+[LOCATION-INIT] sackten (45)
 [has-location] ihre schiefen Gartenmauern (38)
-[m-quality || m-target-location] kreuz und quer (39)
+[m-quality] kreuz und quer (39)
 [target-location] in den Boden (44)
 
 [CLASS] Gartenmauern (38)
-[m-identifier] ihre (36)
+[has-class] ihre (36)
 [m-quality] schiefen (37)
 
 [IDENTIFICATION] ihre (36)
 
-[QUALITY] schiefen (37)
+[QUALTITY] schiefen (37)
 
-[QUALITY || LOCATION-DEINIT] kreuz (39)
-
-[QUALITY || LOCATION-DEINIT] quer (41)
+[QUALITY] kreuz und quer (39)
 
 [CLASS] Boden (44)
+
+[NONCOMP] quer (41)
 
 # sent_id = 44
 # text = Und diese zerbombten Ruinen , wo der Pflasterstaub in der Luft wirbelte und Unkrautgestrüpp auf den Trümmern wucherte , dazu die Stellen , wo Bombeneinschläge eine größere Lücke gerissen hatten und trostlose Siedlungen von Holzbaracken entstanden waren , die wie Hühnerställe aussahen ?
@@ -2654,18 +2655,17 @@
 [MODE] nichts (18)
 [m-time] von seiner Kindheit (15)
 
-[QUANTITY >> MESSAGE] Reihe (22)
-[has-quantity >> topic] greller Bilder ohne Hintergrund (24)
+[PART-WHOLE] Reihe (22)
+[part] greller Bilder ohne Hintergrund (24)
 [m-quality] , die ihm zumeist unverständlich waren (31)
-[] nachbehalten (19)
 
 [MESSAGE] Bilder (24)
 [m-quality] greller (23)
-[m-quality] ohne Hintergrund (26)
+[m-part || m-location] ohne Hintergrund (26)
 
 [QUALITY] greller (23)
 
-[CLASS >> QUALITY] Hintergrund (26)
+[PART-WHOLE || LOCATION] Hintergrund (26)
 
 [MESSAGE] unverständlich (31)
 [m-identifier] die (28)
@@ -2716,9 +2716,9 @@
 [x-sender] Das Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
 [m-quality] verblüffend verschieden allem von anderen , was der Gesichtskreis umfasste (24)
 [m-noncomp] aus (25)
-[] verblüffend (20)
-[] verschieden (21)
-[] allem (23)
+[m-scene] verblüffend (20)
+[topic] verschieden (21)
+[m-comparison] allem (23)
 
 [SOCIAL-RELATION] Wahrheitsministerium (2)
 [m-identifier] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
@@ -2743,11 +2743,11 @@
 
 [LOCATION || IDENTIFICATION] Ozeaniens (15)
 
-[QUALITY] verblüffend (20)
+[SCENE] verblüffend (20)
 
 [QUALITY] verschieden (21)
 
-[QUANTITY] allem (23)
+[COMPARISON] allem (23)
 
 [IDENTIFICATION] anderen (24)
 [m-quality] , was der Gesichtskreis umfasste (30)
