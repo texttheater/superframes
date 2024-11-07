@@ -910,13 +910,14 @@
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
 [SCENE-INIT] angefangen (11)
-[m-conceded] Außerdem (1)
+[m-scene] Außerdem (1)
 [participant] das Ekzem (4)
 [location] an seinen Krampfadern (7)
 [m-quantity || m-quality] unerträglich (8)
 [scene] zu jucken (10)
 
-[CONCESSION] Außerdem (1)
+[ACCOMPANIMENT] Außerdem (1)
+[accompanier] angefangen (11)
 
 [CLASS] Ekzem (4)
 
@@ -1319,7 +1320,7 @@
 19	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 20	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
 21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
-22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	16	iobj	_	_
+22	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	25	obj	_	_
 23	durchs	durchs	ADP	APPRART	_	24	case	_	_
 24	Wasser	Wasser	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	25	obl	_	_
 25	wälzen	wälzen	VERB	VVINF	VerbForm=Inf	19	xcomp	_	_
@@ -1337,9 +1338,9 @@
 37	des	d	DET	ART	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	Hubschraubers	Hubschrauber	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	36	nmod	_	_
 39	,	,	PUNCT	$,	_	31	punct	_	_
-40	dann	dann	ADV	ADV	_	31	advmod	_	_
+40	dann	dann	ADV	ADV	_	44	advmod	_	_
 41	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	cop	_	_
-42	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+42	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	44	nsubj	_	_
 43	ganz	ganz	ADV	ADV	_	44	advmod	_	_
 44	durchlöchert	durchlöchern	VERB	VVPP	Verbform=Part	19	conj	_	_
 45	und	und	CCONJ	KON	_	51	cc	_	_
@@ -1389,16 +1390,13 @@
 
 [DEPICTION] dicken (10)
 
-[LOCATION-CHANGE] verfolgt (16)
-[] den (13)
-[] ein Helikopter (15)
-[] sich (22)
+[SEQUENCE] verfolgt (16)
+[followed] den (13)
+[follows] ein Helikopter (15)
 
 [IDENTIFICATION] den (13)
 
 [CLASS] Helikopter (15)
-
-[] sich (22)
 
 [MESSAGE] sah (19)
 [m-time] zuerst (18)
@@ -1516,7 +1514,7 @@
 8	mit	mit	ADP	APPR	_	10	case	_	_
 9	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	hubschrauber	Hubschrauber	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	5	nmod	_	_
-11	darüber	darüber	ADP	PROAV	PronType=Dem	2	advmod	_	_
+11	darüber	darüber	ADP	PROAV	PronType=Dem	10	advmod	_	_
 12	,	,	PUNCT	$,	_	22	punct	_	_
 13	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	frau	Frau	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -1548,8 +1546,9 @@
 
 [IDENTIFICATION] man (3)
 
-[WRAPPING-WEARING] Rettungsboot (5)
-[wearer] voll kinder (7)
+[CLASS] Rettungsboot (5)
+[m-has-location] voll kinder (7)
+[m-accompanier] mit einem hubschrauber darüber (10)
 
 [CLASS] kinder (7)
 
@@ -1593,7 +1592,7 @@
 
 [CLASS] bug (31)
 
-# sent_id = 135
+# sent_id = 135 #jetzt korrekte Syntax
 # text = Kleiner Junge brüllte vor angst und verbarg seinen köpf zwischen den brüsten als wollte er ganz in sie hineinkriechen und die frau legte die arme um ihn und tröstete ihn , obwohl sie selbst außer sich vor angst war bedeckte sie ihn so gut wie möglich als glaubte sie ihre arme könnten die kugeln von ihm abhalten , dann warf der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen und das ganze schiff zersplitterte wie Streichhölzer , dann gab es eine wundervolle aufnähme von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein und es gab viel bei fall aus den parteilogen aber eine frau unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern bis die polizei sie hinauswarf ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - «
 1	Kleiner	klein	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
 2	Junge	Junge	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -1610,7 +1609,7 @@
 13	als	als	CCONJ	KON	_	19	mark	_	_
 14	wollte	wollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
 15	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
-16	ganz	ganz	ADV	ADV	_	18	advmod	_	_
+16	ganz	ganz	ADV	ADV	_	19	advmod	_	_
 17	in	in	ADP	APPR	_	18	case	_	_
 18	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	19	obl	_	_
 19	hineinkriechen	hineinkriechen	VERB	VVINF	VerbForm=Inf	3	advcl	_	_
@@ -1619,64 +1618,64 @@
 22	frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
 23	legte	legen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 24	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	arme	Arm	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	19	obj	_	_
+25	arme	Arm	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	23	obj	_	_
 26	um	um	ADP	APPR	_	27	case	_	_
-27	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+27	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obl	_	_
 28	und	und	CCONJ	KON	_	29	cc	_	_
-29	tröstete	trösten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	_
+29	tröstete	trösten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	conj	_	_
 30	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	obj	_	_
 31	,	,	PUNCT	$,	_	40	punct	_	_
-32	obwohl	obwohl	SCONJ	KOUS	_	19	mark	_	_
-33	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
-34	selbst	selbst	ADV	ADV	_	93	advmod	_	_
+32	obwohl	obwohl	SCONJ	KOUS	_	36	mark	_	_
+33	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	36	nsubj	_	_
+34	selbst	selbst	ADV	ADV	_	36	advmod	_	_
 35	außer	außer	ADP	APPR	_	36	case	_	_
-36	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	19	obl	_	_
+36	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	40	advcl	_	_
 37	vor	vor	ADP	APPR	_	38	case	_	_
-38	angst	Angst	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	93	obl	_	_
-39	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	127	aux	_	_
-40	bedeckte	bedecken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+38	angst	Angst	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	36	obl	_	_
+39	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	aux	_	_
+40	bedeckte	bedecken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 41	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_
-42	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	127	obj	_	_
+42	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	obj	_	_
 43	so	so	ADV	ADV	_	44	advmod	_	_
 44	gut	gut	ADJ	ADJD	_	40	advmod	_	_
-45	wie	wie	CCONJ	KOKOM	_	46	case	_	_
-46	möglich	möglich	ADJ	ADJD	_	148	amod	_	_
+45	wie	wie	CCONJ	KOKOM	_	46	mark	_	_
+46	möglich	möglich	ADJ	ADJD	_	44	advcl	_	_
 47	als	als	CCONJ	KON	_	48	mark	_	_
-48	glaubte	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	148	advcl	_	_
-49	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_
+48	glaubte	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	advcl	_	_
+49	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	48	nsubj	_	_
 50	ihre	ihr	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	51	det:poss	_	_
-51	arme	Arm	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	148	obj	_	_
+51	arme	Arm	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	57	nsubj	_	_
 52	könnten	können	AUX	VMFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	57	aux	_	_
 53	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	54	det	_	_
 54	kugeln	Kugel	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	57	obj	_	_
 55	von	von	ADP	APPR	_	56	case	_	_
-56	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	148	nmod	_	_
-57	abhalten	abhalten	VERB	VVINF	VerbForm=Inf	148	advcl	_	_
+56	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	57	nmod	_	_
+57	abhalten	abhalten	VERB	VVINF	VerbForm=Inf	48	advcl	_	_
 58	,	,	PUNCT	$,	_	157	punct	_	_
 59	dann	dann	ADV	ADV	_	60	advmod	_	_
-60	warf	werfen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	148	conj	_	_
+60	warf	werfen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	parataxis	_	_
 61	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	62	det	_	_
-62	hubschrauber	Hubschrauber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	162	nsubj	_	_
+62	hubschrauber	Hubschrauber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	60	nsubj	_	_
 63	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
-64	20-kilo-Bombe	20-kilo-Bombe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	162	obj	_	_
+64	20-kilo-Bombe	20-kilo-Bombe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	60	obj	_	_
 65	zwischen	zwischen	ADP	APPR	_	66	case	_	_
-66	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	162	obl	_	_
+66	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	60	obl	_	_
 67	schreckliches	schrecklich	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Sing	68	amod	_	_
-68	aufblitzen	Aufblitzen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	157	xcomp	_	_
+68	aufblitzen	Aufblitzen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	60	parataxis	_	_
 69	und	und	CCONJ	KON	_	73	cc	_	_
 70	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	72	det	_	_
 71	ganze	ganz	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	72	amod	_	_
 72	schiff	Schiff	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	73	nsubj	_	_
-73	zersplitterte	zersplittern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	57	conj	_	_
+73	zersplitterte	zersplittern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	60	conj	_	_
 74	wie	wie	CCONJ	KOKOM	_	75	case	_	_
 75	Streichhölzer	Streichholz	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	73	obl	_	_
 76	,	,	PUNCT	$,	_	78	punct	_	_
 77	dann	dann	ADV	ADV	_	78	advmod	_	_
-78	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-79	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	78	expl	_	_
+78	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	60	parataxis	_	_
+79	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	78	nsubj	_	_
 80	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	82	det	_	_
 81	wundervolle	wundervoll	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	82	amod	_	_
-82	aufnähme	Aufnahme	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	78	nsubj	_	_
+82	aufnähme	Aufnahme	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	78	obj	_	_
 83	von	von	ADP	APPR	_	85	case	_	_
 84	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	85	det	_	_
 85	kinderarm	Kinderarm	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	82	nmod	_	_
@@ -1687,12 +1686,12 @@
 90	und	und	CCONJ	KON	_	92	cc	_	_
 91	immer	immer	ADV	ADV	_	92	advmod	_	_
 92	höher	hoch	ADJ	ADJD	_	87	conj	_	_
-93	hinauffliegt	hinauffliegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	98	acl	_	_
+93	hinauffliegt	hinauffliegen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	85	acl	_	_
 94	in	in	ADP	APPR	_	96	case	_	_
 95	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	96	det	_	_
 96	luft	Luft	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	93	obl	_	_
 97	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	98	det	_	_
-98	hubschrauber	Hubschrauber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	19	nsubj	_	_
+98	hubschrauber	Hubschrauber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	108	nsubj	_	_
 99	mit	mit	ADP	APPR	_	101	case	_	_
 100	einer	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	101	det	_	_
 101	kamera	Kamera	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	98	nmod	_	_
@@ -1700,65 +1699,65 @@
 103	in	in	ADP	APPR	_	105	case	_	_
 104	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	105	det	_	_
 105	kanzel	Kanzel	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	101	nmod	_	_
-106	muss	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-107	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	iobj	_	_
-108	nachgeflogen	nachfliegen	VERB	VVPP	Verbform=Part	127	ccomp	_	_
+106	muss	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	108	aux	_	_
+107	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	108	iobj	_	_
+108	nachgeflogen	nachfliegen	VERB	VVPP	Verbform=Part	78	parataxis	_	_
 109	sein	sein	AUX	VAINF	VerbForm=Inf	108	aux	_	_
 110	und	und	CCONJ	KON	_	23	cc	_	_
 111	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	112	nsubj	_	_
-112	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-113	viel	viel	DET	PIAT	Definite=Ind|Gender=Neut	23	obj	_	_
-114	bei	Beifall	X	TRUNC	_	115	case	_	_
-115	fall	Beifall	X	TRUNC	_	23	obl	_	_
-116	aus	aus	ADP	APPR	_	12	case	_	_
-117	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	12	det	_	_
-118	parteilogen	Parteiloge	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	115	nmod	_	_
+112	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	78	conj	_	_
+113	viel	viel	DET	PIAT	Definite=Ind|Gender=Neut	114	amod	_	_
+114	bei	Beifall	NOUN	TRUNC	_	112	obj	_	_
+115	fall	Beifall	X	TRUNC	_	114	goeswith	_	_
+116	aus	aus	ADP	APPR	_	118	case	_	_
+117	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	118	det	_	_
+118	parteilogen	Parteiloge	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	114	nmod	_	_
 119	aber	aber	CCONJ	KON	_	23	cc	_	_
 120	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	121	det	_	_
-121	frau	Frau	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nsubj	_	_
-122	unten	unten	ADV	ADV	_	36	advmod	_	_
-123	wo	wo	ADV	PWAV	PronType=Int	19	advmod	_	_
+121	frau	Frau	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	127	nsubj	_	_
+122	unten	unten	ADV	ADV	_	126	advmod	_	_
+123	wo	wo	ADV	PWAV	PronType=Int	126	advmod	_	_
 124	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	125	det	_	_
-125	proles	Proles	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	93	nsubj	_	_
-126	sitzen	sitzen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	127	xcomp	_	_
-127	fing	anfangen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	_
-128	plötzlich	plötzlich	ADJ	ADJD	_	19	advmod	_	_
-129	an	an	ADP	PTKVZ	_	18	case	_	_
+125	proles	Proles	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	126	nsubj	_	_
+126	sitzen	sitzen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	121	xcomp	_	_
+127	fing	anfangen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	112	conj	_	_
+128	plötzlich	plötzlich	ADJ	ADJD	_	127	advmod	_	_
+129	an	an	ADP	PTKVZ	_	127	compound:prt	_	_
 130	radau	Radau	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	132	obl	_	_
 131	zu	zu	PART	PTKZU	_	132	mark	_	_
 132	machen	machen	VERB	VVINF	VerbForm=Inf	127	xcomp	_	_
 133	und	und	CCONJ	KON	_	135	cc	_	_
 134	zu	zu	PART	PTKZU	_	135	mark	_	_
-135	schreien	schreien	VERB	VVINF	VerbForm=Inf	19	conj	_	_
-136	man	man	PRON	PIS	Definite=Ind|Gender=Neut	127	nsubj	_	_
-137	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
-138	so	so	ADV	ADV	_	44	advmod	_	_
-139	was	was	PRON	PIS	Definite=Ind|Gender=Neut|Number=Sing	127	obj	_	_
-140	nicht	nicht	PART	PTKNEG	Polarity=Neg	135	advmod	_	_
+135	schreien	schreien	VERB	VVINF	VerbForm=Inf	132	conj	_	_
+136	man	man	PRON	PIS	Definite=Ind|Gender=Neut	143	nsubj	_	_
+137	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	143	aux	_	_
+138	so	so	ADV	ADV	_	139	advmod	_	_
+139	was	was	PRON	PIS	Definite=Ind|Gender=Neut|Number=Sing	143	obj	_	_
+140	nicht	nicht	PART	PTKNEG	Polarity=Neg	143	advmod	_	_
 141	vor	vor	ADP	APPR	_	142	case	_	_
-142	kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	126	obl	_	_
-143	zeigen	zeigen	VERB	VVINF	VerbForm=Inf	40	conj	_	_
-144	sollen	sollen	AUX	VMINF	VerbForm=Inf	40	aux	_	_
+142	kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	143	obl	_	_
+143	zeigen	zeigen	VERB	VVINF	VerbForm=Inf	135	ccomp	_	_
+144	sollen	sollen	AUX	VMINF	VerbForm=Inf	143	aux	_	_
 145	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	148	nsubj	_	_
 146	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	148	cop	_	_
 147	nicht	nicht	PART	PTKNEG	Polarity=Neg	148	advmod	_	_
-148	recht	recht	ADJ	ADJD	_	40	conj	_	_
+148	recht	recht	ADJ	ADJD	_	143	parataxis	_	_
 149	vor	vor	ADP	APPR	_	150	case	_	_
 150	kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	148	nmod	_	_
-151	bis	bis	SCONJ	KOUS	_	157	mark	_	_
+151	bis	bis	SCONJ	KOUS	_	155	mark	_	_
 152	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	153	det	_	_
 153	polizei	Polizei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	155	nsubj	_	_
 154	sie	sie	PRON	PPER	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	155	obj	_	_
-155	hinauswarf	hinauswerfen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	148	advcl	_	_
+155	hinauswarf	hinauswerfen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	127	advcl	_	_
 156	ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	157	nsubj	_	_
-157	glaube	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	148	advcl	_	_
+157	glaube	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	127	parataxis	_	_
 158	nicht	nicht	PART	PTKNEG	Polarity=Neg	157	advmod	_	_
 159	dass	dass	SCONJ	KOUS	_	162	mark	_	_
 160	ihr	sie	PRON	PPER	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	162	iobj	_	_
 161	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut	162	obj	_	_
 162	passierte	passieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	157	ccomp	_	_
 163	niemand	niemand	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	164	nsubj	_	_
-164	kümmert	kümmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	157	ccomp	_	_
+164	kümmert	kümmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	157	parataxis	_	_
 165	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	164	obj	_	_
 166	darum	darum	ADP	PROAV	PronType=Dem	164	advmod	_	_
 167	was	was	PRON	PRELS	Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	170	obj	_	_
@@ -1766,9 +1765,9 @@
 169	proles	Proles	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	170	nsubj	_	_
 170	sagen	sagen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	164	ccomp	_	_
 171	typische	typisch	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	172	amod	_	_
-172	prolesreaktion	Prolesreaktion	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	170	obj	_	_
+172	prolesreaktion	Prolesreaktion	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	164	parataxis	_	_
 173	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	174	nsubj	_	_
-174	können	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	164	ccomp	_	_
+174	können	können	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	172	parataxis	_	_
 175	nie	nie	ADV	ADV	_	174	advmod	_	_
 176	-	-	PUNCT	$.	_	174	punct	_	_
 177	«	«	PUNCT	$(	_	3	punct	_	_
@@ -1776,8 +1775,7 @@
 [] brüllte (3)
 [] Kleiner Junge (2)
 [] vor angst (5)
-[] als wollte er ganz in sie hineinkriechen die arme um ihn und tröstete ihn obwohl sie selbst außer sich vor angst war ihn der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man was nicht vor kindern (19)
-[] , bedeckte sie so gut wie möglich als glaubte sie ihre arme könnten die kugeln von ihm abhalten , dann warf der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen und das ganze schiff zersplitterte wie Streichhölzer so zeigen sollen es sei nicht recht vor kindern bis die polizei sie hinauswarf ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - (40)
+[] als wollte er ganz in sie hineinkriechen (19)
 
 [] Junge (2)
 [] Kleiner (1)
@@ -1788,7 +1786,7 @@
 
 [] verbarg (7)
 [] seinen köpf (9)
-[] zwischen den brüsten aus den (12)
+[] zwischen den brüsten (12)
 
 [] köpf (9)
 [] seinen (8)
@@ -1799,22 +1797,21 @@
 
 [] hineinkriechen (19)
 [] er (15)
-[] ganz in sie an (18)
-[] die arme (25)
-[] um ihn (27)
-[] sie (33)
-[] außer sich unten (36)
-[] selbst vor angst der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel die proles (98)
-[] ihm (107)
-[] wo (123)
-[] plötzlich (128)
+[] ganz (16)
+[] in sie (18)
 
 [] er (15)
 
-[] sie (18)
 [] ganz (16)
 
-[] ganz (16)
+[] sie (18)
+
+[] legte (23)
+[] die frau (22)
+[] die arme (25)
+[] um ihn (27)
+
+[] frau (22)
 
 [] arme (25)
 
@@ -1825,28 +1822,110 @@
 
 [] ihn (30)
 
-[] sie (33)
+[] bedeckte (40)
+[] obwohl sie selbst außer sich vor angst war (36)
+[] sie (41)
+[] ihn (42)
+[] so gut wie möglich (44)
+[] als glaubte sie ihre arme könnten die kugeln von ihm abhalten (48)
 
 [] sich (36)
-[] unten (122)
-
-[] unten (122)
-
-[] hubschrauber (98)
-[] selbst vor angst der hoch , hoch und immer höher hinauffliegt in die luft die proles (93)
-[] mit einer kamera vorn in der kanzel (101)
-
-[] hinauffliegt (93)
+[] sie (33)
 [] selbst (34)
 [] vor angst (38)
-[] der (86)
-[] hoch , hoch und immer höher (87)
-[] in die luft (96)
-[] die proles (125)
+
+[] sie (33)
 
 [] selbst (34)
 
 [] angst (38)
+
+[] sie (41)
+
+[] ihn (42)
+
+[] gut (44)
+[] so (43)
+[] wie möglich (46)
+
+[] so (43)
+
+[] möglich (46)
+
+[] glaubte (48)
+[] sie (49)
+[] ihre arme könnten die kugeln von ihm abhalten (57)
+
+[] sie (49)
+
+[] abhalten (57)
+[] ihre arme (51)
+[] die kugeln (54)
+[] von ihm (56)
+
+[] arme (51)
+[] ihre (50)
+
+[] ihre (50)
+
+[] kugeln (54)
+
+[] ihm (56)
+
+[] warf (60)
+[] dann (59)
+[] der hubschrauber (62)
+[] eine 20-kilo-Bombe (64)
+[] zwischen sie (66)
+
+[] dann (59)
+
+[] hubschrauber (62)
+
+[] 20-kilo-Bombe (64)
+
+[] sie (66)
+
+[] aufblitzen (68)
+[] schreckliches (67)
+
+[] schreckliches (67)
+
+[] zersplitterte (73)
+[] das ganze schiff (72)
+[] wie Streichhölzer (75)
+
+[] schiff (72)
+[] ganze (71)
+
+[] ganze (71)
+
+[] Streichhölzer (75)
+
+[] gab (78)
+[] dann (77)
+[] es (79)
+[] eine wundervolle aufnähme von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft (82)
+
+[] dann (77)
+
+[] es (79)
+
+[] aufnähme (82)
+[] wundervolle (81)
+[] von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft (85)
+
+[] wundervolle (81)
+
+[] kinderarm (85)
+[] der hoch , hoch und immer höher hinauffliegt in die luft (93)
+
+[] hinauffliegt (93)
+[] der (86)
+[] hoch (87)
+[] , hoch (89)
+[] und immer höher (92)
+[] in die luft (96)
 
 [] der (86)
 
@@ -1861,7 +1940,12 @@
 
 [] luft (96)
 
-[] proles (125)
+[] nachgeflogen (108)
+[] ein hubschrauber mit einer kamera vorn in der kanzel (98)
+[] ihm (107)
+
+[] hubschrauber (98)
+[] mit einer kamera vorn in der kanzel (101)
 
 [] kamera (101)
 [] vorn in der kanzel (105)
@@ -1873,120 +1957,73 @@
 
 [] ihm (107)
 
-[] wo (123)
+[] gab (112)
+[] es (111)
+[] viel bei fall aus den parteilogen (114)
+
+[] es (111)
+
+[] bei fall (114)
+[] viel (113)
+[] aus den parteilogen (118)
+
+[] viel (113)
+
+[] parteilogen (118)
 
 [] fing (127)
-[] ihn (42)
-[] nachgeflogen sein (108)
-[] sitzen vor kindern (126)
+[] eine frau unten wo die proles sitzen (121)
+[] plötzlich (128)
+[] an (129)
 [] radau zu machen (132)
-[] man (136)
-[] was (139)
+[] und zu schreien man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern (135)
+[] bis die polizei sie hinauswarf (155)
 
-[] ihn (42)
-
-[] nachgeflogen (108)
+[] frau (121)
+[] unten wo die proles sitzen (126)
 
 [] sitzen (126)
-[] vor kindern (142)
+[] unten (122)
+[] wo (123)
+[] die proles (125)
 
-[] kindern (142)
+[] unten (122)
+
+[] wo (123)
+
+[] proles (125)
+
+[] plötzlich (128)
 
 [] machen (132)
 [] radau (130)
 
 [] radau (130)
 
+[] schreien (135)
+[] man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern (143)
+
+[] zeigen (143)
+[] man (136)
+[] so was (139)
+[] nicht (140)
+[] vor kindern (142)
+
 [] man (136)
 
 [] was (139)
-
-[] plötzlich (128)
-
-[] schreien (135)
-[] nicht (140)
-
-[] nicht (140)
-
-[] legte (23)
-[] die frau (22)
-[] viel (113)
-[] bei fall parteilogen (115)
-[] eine frau (121)
-
-[] frau (22)
-
-[] viel (113)
-
-[] fall (115)
-[] parteilogen (118)
-
-[] parteilogen (118)
-
-[] frau (121)
-
-[] bedeckte (40)
-[] sie (41)
-[] so gut so (44)
-[] sie (49)
-
-[] sie (41)
-
-[] gut (44)
-[] so (43)
 [] so (138)
-
-[] so (43)
 
 [] so (138)
 
-[] sie (49)
+[] nicht (140)
 
-[] zeigen (143)
+[] kindern (142)
 
 [] recht (148)
-[] wie möglich (46)
-[] als glaubte (48)
-[] ihre arme (51)
-[] von ihm (56)
-[] könnten die kugeln abhalten und das ganze schiff zersplitterte wie Streichhölzer (57)
 [] es (145)
 [] nicht (147)
 [] vor kindern (150)
-[] die polizei sie hinauswarf (155)
-[] , der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen bis ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - (157)
-
-[] möglich (46)
-
-[] glaubte (48)
-
-[] arme (51)
-[] ihre (50)
-
-[] ihre (50)
-
-[] ihm (56)
-
-[] abhalten (57)
-[] die kugeln (54)
-
-[] kugeln (54)
-
-[] zersplitterte (73)
-[] das ganze schiff (72)
-[] wie Streichhölzer (75)
-
-[] schiff (72)
-[] ganze (71)
-
-[] ganze (71)
-
-[] Streichhölzer (75)
-
-[] warf (60)
-[] dann (59)
-
-[] dann (59)
 
 [] es (145)
 
@@ -2003,33 +2040,17 @@
 [] sie (154)
 
 [] glaube (157)
-[] schreckliches aufblitzen (68)
 [] ich (156)
 [] nicht (158)
-[] der hubschrauber eine 20-kilo-Bombe zwischen sie dass ihr etwas passierte (162)
-[] niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - (164)
-
-[] aufblitzen (68)
-[] schreckliches (67)
-
-[] schreckliches (67)
+[] dass ihr etwas passierte (162)
 
 [] ich (156)
 
 [] nicht (158)
 
 [] passierte (162)
-[] der hubschrauber (62)
-[] eine 20-kilo-Bombe (64)
-[] zwischen sie (66)
 [] ihr (160)
 [] etwas (161)
-
-[] hubschrauber (62)
-
-[] 20-kilo-Bombe (64)
-
-[] sie (66)
 
 [] ihr (160)
 
@@ -2039,8 +2060,7 @@
 [] niemand (163)
 [] sich (165)
 [] darum (166)
-[] was die proles sagen typische prolesreaktion (170)
-[] sie können nie - (174)
+[] was die proles sagen (170)
 
 [] niemand (163)
 
@@ -2051,7 +2071,6 @@
 [] sagen (170)
 [] was (167)
 [] die proles (169)
-[] typische prolesreaktion (172)
 
 [] was (167)
 
@@ -2069,25 +2088,6 @@
 [] sie (173)
 
 [] nie (175)
-
-[] gab (78)
-[] dann (77)
-[] eine wundervolle aufnähme von einem kinderarm (82)
-
-[] dann (77)
-
-[] aufnähme (82)
-[] wundervolle (81)
-[] von einem kinderarm (85)
-
-[] wundervolle (81)
-
-[] kinderarm (85)
-
-[] gab (112)
-[] es (111)
-
-[] es (111)
 
 # sent_id = 136
 # text = Winston hörte zu schreiben auf , auch weil er einen Schreibkrampf bekam .
@@ -2166,10 +2166,10 @@
 
 [IDENTIFICATION] ihn (6)
 
-[EXCRETION] herauszuschleudern (16)
-[m-quantity] diese Flut (11)
-[excreted] von Gestammel (13)
-[excreter] aus sich (15)
+[LOCATION-DEINIT >> SENDING] herauszuschleudern (16)
+[has-location >> sent] diese Flut von Gestammel (13)
+[initial-location >> x-noncomp] aus sich (15)
+[x-causer >> sender] ihn (6)
 
 [QUANTITY] Flut (11)
 
@@ -2597,12 +2597,13 @@
 
 [] Sehen (19)
 
-[] gewechselt (30)
-[] mit denen (23)
-[] er (24)
-[] aber (25)
-[] noch nie (27)
-[] ein Wort (29)
+[POSSESSION-CHANGE >> MESSAGE-INIT] gewechselt (30)
+[target-possessor >> x-experiencer] mit denen (23)
+[initial-possessor >> x-sender] er (24)
+[m-mode] aber (25)
+[m-time] noch nie (27)
+[possessed >> x-noncomp] ein Wort (29)
+[target-possessor >> x-experiencer] Personen (14)
 
 [] denen (23)
 
@@ -2615,7 +2616,7 @@
 
 [] noch (26)
 
-[] Wort (29)
+[MESSAGE >> NONCOMP] Wort (29)
 
 [] unerwartet (33)
 
@@ -2649,12 +2650,11 @@
 
 [PART-WHOLE] davon (3)
 
-[SCENE] begegnet (14)
-[participant] dem (8)
-[participant] er (9)
-[m-quanity] oft (10)
+[LOCATION-INIT || SOCIAL-RELATION-INIT] begegnet (14)
+[target-location || target-social-relation] dem (8)
+[has-location || has-social-relation] er (9)
+[m-time] oft (10)
 [m-location] auf den Gängen (13)
-
 [IDENTIFICATIN] dem (8)
 
 [IDENTIFICATION] er (9)
