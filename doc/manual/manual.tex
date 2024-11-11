@@ -319,6 +319,8 @@ add a reverse dependency with the corresponding role label.
 
 \ex.\dep{Kim war **unvermindert#QUANTITY-CONTINUATION**_m-scene *fröhlich#MESSAGE*__has-quantity}
 
+\ex.\dep{**immer#SCENE-CONTINUATION**_m-scene *höher#LOCATION-INIT*__initial-scene}
+
 \ex.\dep{» Wir haben um Hilfe gebeten « , **so#SENDING**_m-scene *Saqib#IDENTIFICATION*__sender}
 
 \ex.\dep{ein **anderes#COMPARISON**_m-scene *Plakat#CLASS*__compared}
@@ -583,8 +585,6 @@ Examples of comparing scenes:
 
 Examples of comparing non-scene entities:
 
-\ex.\dep{Kim_compared *outranks#COMPARISON* Sandy_reference}
-
 \ex.\dep{Kim_compared *exceeds#COMPARISON* Sandy_reference in height_x-attribute}
 
 \ex.\dep{The Polish restaurant_compared *compared#COMPARISON* favorably_x-quality to the Spanish one_reference}
@@ -607,6 +607,14 @@ an \rl{x-reference} argument.
 \ex.\dep{Kim_has-quality is *taller#QUALITY* than Sandy_x-reference}
 
 \ex.\dep{die unter allen Provinzen__x-reference am **drittstärksten#QUANTITY**_m-quantity *bevölkerte#LOCATION*}
+
+Similarly for comparative verb alternation constructions:
+
+\ex.\dep{Kim_has-rank *outranks#RANK* Sandy_x-reference}
+
+\ex.\dep{Kim_x-sender *outshines#MESSAGE* Sandy_x-reference}
+
+\ex.\dep{Sie_x-sender versuchten , die Stimme_x-reference zu *übertönen#MESSAGE-INIT*}
 
 
 \newpage\subsection{\emoji{ok-hand} \fr{CONCESSION}}
@@ -782,6 +790,14 @@ Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
 \ex.\dep{sugar_m-has-location *cane#CLASS*}
 
 \ex.\dep{cane_m-initial-location *sugar#CLASS*}
+
+Adverbs of location evoke \fr{LOCATION}:
+
+\ex.\dep{Kim_has-location ist *oben#LOCATION*}
+
+Adverbs of direction
+
+\ex.\dep{Kim_has-location **fliegt#LOCATION-INIT** *hoch#LOCATION-INIT*__target-location}
 
 
 \newpage\subsection{\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT}}
@@ -1028,8 +1044,6 @@ Used for adverbial modifiers that have no arguments other than the phrase they
 modify, and that, roughly speaking, indicate the modal strength of what is
 expressed and/or its relation to the discourse.
 
-\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
-
 \ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
 
 \ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
@@ -1040,7 +1054,13 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
 
+\fr{MODE} is also used for focus adverbs:
+
+\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
+
 \ex.\dep{Man wusste davon nur_m-mode durch vage *Gerüchte#MESSAGE*}
+
+\ex.\dep{Sie_has-state war selbst_m-mode außer *sich#STATE* vor Angst}
 
 
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
@@ -1077,7 +1097,7 @@ same as the top predicate:
 
 \rl{part} is part of \rl{whole}.
 
-\ex.\dep{Kim_m-whole 's *leg#CLASS*}
+\ex.\dep{Kim_x-whole 's *leg#PART-WHOLE*}
 
 \ex.\dep{a *man#CLASS* with a mustache_m-part}
 
@@ -1541,7 +1561,9 @@ choice.
 \a.\dep{Kim_x-causer *worked#EVENT*}
 \b.\dep{Kim_x-causer *worked#EVENT* on the drawing_undergoer}
 
-For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) or relation/event nouns. A useful test is to try and add an argument, i.e., a dependent that is assigned a specific role by the noun. For example:
+For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS})
+or relation/event nouns. A useful test is to try and add an argument, i.e., a
+dependent that is assigned a specific role by the noun. For example:
 
 \ex.\dep{a *tree#CLASS*}
 
@@ -1549,9 +1571,17 @@ For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) 
 
 \ex.\dep{Kim_has-social-relation 's *brother#SOCIAL-RELATION*}
 
-Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it is not assigned by the noun \emph{tree} but by the possessive construction, so \emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
+\ex.\dep{Kim_whole 's *leg#PART-WHOLE*}
 
-\ex.\dep{Kim_m-0possessor 's *tree#CLASS*}
+Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it
+is not assigned by the noun \emph{tree} but by the possessive construction, so
+\emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
+
+\ex.\dep{Kim_m-possessor 's *tree#CLASS*}
+
+\ex.\dep{Kim_m-possessor 's *glasses#CLASS*}
+
+\ex.\dep{Kim_m-possessor 's *chair#CLASS*}
 
 
 \newpage\subsection{Shadow and Default Arguments}
@@ -1669,6 +1699,10 @@ certain type, it can have the same type.
 \ex.\dep{I_undergoer *lived#EVENT* my life_event}
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
+
+\ex.\dep{Ich glaube nicht, dass ihr_undergoer etwas_event *passiert#EVENT* ist}
+
+\ex.\dep{Sie_has-state war im Gesicht_x-attribute rot_target-state *angelaufen#STATE-INIT*}
 
 To distinguish light verb constructions (LVCs) from verbal idioms (VIDs),
 determine whether the complement of the verb by itself can denote the described
@@ -1820,10 +1854,19 @@ individual conjunct. In these cases, assign the same role to all conjuncts:
 \ex.\dep{a *question#MESSAGE* of life_topic or death_topic}
 
 
-\newpage\section{TODO}
+\newpage\subsection{Participles vs. Adjectives}
 
-codify the general principle somewhere: if superframe and ARG1 have the same
-name (quasi-unary relations), we can just use m-rel. Otherwise, use m-scene.
+When in doubt whether something is an adjective or a verb participle, treat it
+as the latter. This is relevant for aspect annotation, e.g., compare the
+annotation for the adjective \emph{rot} with that for the participle
+\emph{gerötet}:
+
+\ex.\dep{Sein Gesicht_has-state ist *rot#STATE*}
+
+\ex.\dep{Sein Gesicht_has-state ist *gerötet#STATE-INIT*}
+
+
+\newpage\section{TODO}
 
 Treatment of valency-changing operations:
 
