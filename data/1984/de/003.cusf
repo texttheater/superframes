@@ -160,7 +160,7 @@
 18	gestreift	streifen	VERB	VVPP	Verbform=Part	0	root	_	_
 19	,	,	PUNCT	$,	_	24	punct	_	_
 20	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
-21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obj	_	_
+21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	_	_
 22	zu	zu	PART	PTKZU	_	23	mark	_	_
 23	durchbohren	durchbohren	VERB	VVINF	VerbForm=Inf	24	xcomp	_	_
 24	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	acl	_	_
@@ -177,12 +177,12 @@
 35	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux	_	_
 36	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] gestreift (18)
+[UNANCHORED-MOTION >> SCENE-INIT] gestreift (18)
 [m-time] Einmal (1)
-[] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
-[] sie (13)
-[] ihn (14)
-[] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
+[m-time] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
+[x-causer >> participant] sie (13)
+[transitory-location >> participant] ihn (14)
+[in-motion >> target-scene] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
 
 [] Einmal (1)
 
@@ -201,26 +201,32 @@
 
 [] ihn (14)
 
-[] Seitenblick (17)
-[] , der ihn zu durchbohren schien (24)
-[] und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (34)
+[MESSAGE-INIT] Seitenblick (17)
+[m-scene] , der ihn zu durchbohren schien (24)
+[m-scene] und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (34)
+[topic] ihn (14)
+[x-sender] sie (13)
 
 [] schien (24)
 [] der (20)
-[] ihn (21)
-[] zu durchbohren (23)
+[] ihn zu durchbohren (23)
+[] Seitenblick (17)
 
 [] der (20)
 
-[] ihn (21)
+[UNANCHORED-MOTION >> MESSAGE] durchbohren (23)
+[transitory-location >> x-experiencer] ihn (21)
+[in-motion >> x-sender] der (20)
+[in-motion >> x-sender] Seitenblick (17)
 
-[] durchbohren (23)
+[] ihn (21)
 
 [] erfüllt (34)
 [] der (26)
 [] ihn (27)
 [] für einen Augenblick (30)
 [] mit blankem Entsetzen (33)
+[] Seitenblick (17)
 
 [] der (26)
 
@@ -412,9 +418,9 @@
 33	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	advcl	_	_
 34	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Mann , ein Mitglied der Inneren Partei und Inhaber eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (6)
-[] Die andere Person (3)
-[] namens O'Brien (8)
+[CLASS] Mann , ein Mitglied der Inneren Partei und Inhaber eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (6)
+[has-class] Die andere Person (3)
+[m-identifier] namens O'Brien (8)
 
 [] Person (3)
 [] andere (2)
@@ -574,10 +580,10 @@
 
 [] dickem (9)
 
-[] Gesicht (18)
-[] derben (13)
-[] , humorvollen (15)
-[] und brutalen (17)
+[PART-WHOLE] Gesicht (18)
+[m-quality] derben (13)
+[m-quality] , humorvollen (15)
+[m-quality] und brutalen (17)
 
 [] derben (13)
 
@@ -673,10 +679,10 @@
 [] seine Brille (7)
 [] auf der Nase (10)
 
-[] Brille (7)
-[] seine (6)
+[POSSESSION] Brille (7)
+[possessor] seine (6)
 
-[] seine (6)
+[IDENTIFICATION] seine (6)
 
 [] Nase (10)
 
@@ -906,9 +912,9 @@
 [compared] zwischen O'Briens höflichen Manieren (21)
 [reference] und seinem Preisboxertypus (24)
 
-[] Manieren (21)
-[] O'Briens (19)
-[] höflichen (20)
+[ACTIVITY] Manieren (21)
+[is-active] O'Briens (19)
+[m-quality] höflichen (20)
 
 [] O'Briens (19)
 

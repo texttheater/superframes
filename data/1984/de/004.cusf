@@ -157,16 +157,16 @@
 [initial-scene] die Hassovation (8)
 [target-scene] zur Raserei (10)
 
-[] Minute (4)
-[] zweiten (3)
+[TIME] Minute (4)
+[m-rank] zweiten (3)
 
-[] zweiten (3)
+[RANK] zweiten (3)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] Hassovation (8)
+[MESSAGE] Hassovation (8)
 
-[] Raserei (10)
+[STATE] Raserei (10)
 
 # sent_id = 206
 # text = Die Menschen sprangen von ihren Sitzen auf und schrien mit vollem Stimmaufwand , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen .
@@ -200,10 +200,10 @@
 28	übertönen	übertönen	VERB	VVINF	VerbForm=Inf	9	xcomp	_	_
 29	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] sprangen (3)
-[] Die Menschen (2)
-[] von ihren Sitzen (6)
-[] auf (7)
+[LOCATION-CHANGE] sprangen (3)
+[has-location] Die Menschen (2)
+[initial-location] von ihren Sitzen (6)
+[target-location] auf (7)
 
 [] Menschen (2)
 
@@ -212,26 +212,29 @@
 
 [] ihren (5)
 
-[] schrien (9)
-[] mit vollem Stimmaufwand (12)
-[] , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen (28)
+[MESSAGE-INIT] schrien (9)
+[m-means] mit vollem Stimmaufwand (12)
+[m-purpose] , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen (28)
+[x-sender] Menschen (2)
 
-[] Stimmaufwand (12)
+[MEANS] Stimmaufwand (12)
+[m-quantity] vollem (11)
+
 [] vollem (11)
 
-[] vollem (11)
-
-[] übertönen (28)
-[] die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , (19)
+[MESSAGE-INIT] übertönen (28)
+[x-reference] die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , (19)
+[x-sender] Menschen (2)
 
 [] Blökstimme (19)
 [] zum Wahnsinn treibende (18)
 [] , die aus dem Televisor kam (25)
 
-[] treibende (18)
-[] zum Wahnsinn (17)
+[SCENE-INIT] treibende (18)
+[target-scene] zum Wahnsinn (17)
+[x-causer] Blökstimme (19)
 
-[] Wahnsinn (17)
+[STATE] Wahnsinn (17)
 
 [] kam (25)
 [] die (21)
@@ -269,10 +272,10 @@
 24	Fisch	Fisch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
 25	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] angelaufen (9)
-[] Die kleine aschblonde Frau (4)
-[] im Gesicht (7)
-[] rot (8)
+[STATE-INIT] angelaufen (9)
+[has-state] Die kleine aschblonde Frau (4)
+[m-attribute] im Gesicht (7)
+[target-state] rot (8)
 
 [] Frau (4)
 [] kleine (2)
@@ -284,7 +287,8 @@
 
 [] Gesicht (7)
 
-[] rot (8)
+[STATE] rot (8)
+[has-state] Die kleine aschblonde Frau (4)
 
 [] öffnete (14)
 [] ihr Mund (13)
@@ -300,13 +304,14 @@
 
 [] sich (17)
 
-[] Fisch (24)
-[] an Land geworfenen (23)
+[CLASS] Fisch (24)
+[m-scene] an Land geworfenen (23)
 
-[] geworfenen (23)
-[] an Land (22)
+[LOCATION-INIT] geworfenen (23)
+[target-location] an Land (22)
+[has-location] Fisch (24)
 
-[] Land (22)
+[CLASS || LOCATION-INIT] Land (22)
 
 # sent_id = 208
 # text = Sogar O'Briens großes Gesicht war gerötet .
@@ -318,13 +323,13 @@
 6	gerötet	röten	VERB	VVPP	Verbform=Part	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gerötet (6)
-[] Sogar O'Briens großes Gesicht (4)
+[STATE-INIT] gerötet (6)
+[has-state] Sogar O'Briens großes Gesicht (4)
 
-[] Gesicht (4)
-[] Sogar (1)
-[] O'Briens (2)
-[] großes (3)
+[PART-WHOLE] Gesicht (4)
+[m-mode] Sogar (1)
+[whole] O'Briens (2)
+[m-quality] großes (3)
 
 [] Sogar (1)
 
@@ -589,64 +594,57 @@
 # sent_id = 213
 # text = Das Schreckliche an der Zwei-Minuten-Hass-Sendung war nicht , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
-2	Schreckliche	Schreckliche	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+2	Schreckliche	Schreckliche	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	_
 3	an	an	ADP	APPR	_	5	case	_	_
 4	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Zwei-Minuten-Hass-Sendung	Zwei-Minuten-Hass-Sendung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	2	nmod	_	_
-6	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	nicht	nicht	PART	PTKNEG	Polarity=Neg	2	advmod	_	_
+6	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
+7	nicht	nicht	PART	PTKNEG	Polarity=Neg	11	advmod	_	_
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	dass	dass	SCONJ	KOUS	_	11	mark	_	_
 10	man	man	PRON	PIS	Definite=Ind|Gender=Neut	11	nsubj:pass	_	_
-11	gezwungen	zwingen	VERB	VVPP	Verbform=Part	2	csubj	_	_
+11	gezwungen	zwingen	VERB	VVPP	Verbform=Part	0	root	_	_
 12	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
 13	mitzumachen	mitmachen	VERB	VVIZU	VerbForm=Inf	11	xcomp	_	_
 14	,	,	PUNCT	$,	_	17	punct	_	_
-15	sondern	sondern	CCONJ	KON	_	17	cc	_	_
+15	sondern	sondern	CCONJ	KON	_	21	cc	_	_
 16	im	im	ADP	APPRART	_	17	case	_	_
-17	Gegenteil	Gegenteil	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	13	conj	_	_
+17	Gegenteil	Gegenteil	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	21	obl	_	_
 18	,	,	PUNCT	$,	_	21	punct	_	_
 19	dass	dass	SCONJ	KOUS	_	21	mark	_	_
-20	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
-21	unmöglich	unmöglich	ADJ	ADJD	_	17	ccomp	_	_
+20	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	expl	_	_
+21	unmöglich	unmöglich	ADJ	ADJD	_	11	conj	_	_
 22	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	_
 23	,	,	PUNCT	$,	_	28	punct	_	_
 24	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	28	obj	_	_
 25	ihrer	ihr	DET	PPOSAT	Case=Dat|Gender=Fem|Number=Sing|Poss=Yes	26	det:poss	_	_
 26	Wirkung	Wirkung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	28	iobj	_	_
 27	zu	zu	PART	PTKZU	_	28	mark	_	_
-28	entziehen	entziehen	VERB	VVINF	VerbForm=Inf	21	xcomp	_	_
+28	entziehen	entziehen	VERB	VVINF	VerbForm=Inf	21	csubj	_	_
 29	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] war (6)
-[] Das Schreckliche an der Zwei-Minuten-Hass-Sendung nicht , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (2)
+[] gezwungen (11)
+[] Das Schreckliche an der Zwei-Minuten-Hass-Sendung (2)
+[] nicht (7)
+[] man (10)
+[] mitzumachen (13)
 
 [] Schreckliche (2)
 [] an der Zwei-Minuten-Hass-Sendung (5)
-[] nicht (7)
-[] , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (11)
 
 [] Zwei-Minuten-Hass-Sendung (5)
 
 [] nicht (7)
 
-[] gezwungen (11)
-[] man (10)
-[] mitzumachen (13)
-[] , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (17)
-
 [] man (10)
 
 [] mitzumachen (13)
-
-[] Gegenteil (17)
-[] , dass es unmöglich war , sich ihrer Wirkung zu entziehen (21)
 
 [] unmöglich (21)
-[] es (20)
+[] , im Gegenteil (17)
 [] , sich ihrer Wirkung zu entziehen (28)
 
-[] es (20)
+[] Gegenteil (17)
 
 [] entziehen (28)
 [] sich (24)
