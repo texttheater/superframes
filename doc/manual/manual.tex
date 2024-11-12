@@ -299,6 +299,7 @@ Other non-core arguments are usually rather predicate-specific.
 
 
 \newpage\subsection{Modifiers}
+\label{sec:modifiers}
 
 Like non-core arguments, modifiers are assumed to evoke an additional frame,
 and labeled with the role they fill in that frame, but with a prefix marking
@@ -314,6 +315,8 @@ add a reverse dependency with the corresponding role label.
 \ex.\dep{Ich *spiele#ACTIVITY*__topic **lieber#MESSAGE**_m-scene Schach}
 
 \ex.\dep{Der ist **sowieso#CONDITION**_m-scene *kaputt#STATE*__has-condition}
+
+\ex.\dep{Und **doch#CONCESSION**_m-scene *sah#MESSAGE*__asserted er_topic intelligent_content aus_m-noncomp}
 
 \ex.\dep{Sie *sprangen#LOCATION-INIT*__asserted des Regens__conceded **ungeachtet#CONCESSION**_m-scene nach draußen}
 
@@ -1044,8 +1047,6 @@ Used for adverbial modifiers that have no arguments other than the phrase they
 modify, and that, roughly speaking, indicate the modal strength of what is
 expressed and/or its relation to the discourse.
 
-\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
-
 \ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
 
 \ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
@@ -1056,11 +1057,15 @@ expressed and/or its relation to the discourse.
 
 \fr{MODE} is also used for focus adverbs:
 
+\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+
 \ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
 
 \ex.\dep{Man wusste davon nur_m-mode durch vage *Gerüchte#MESSAGE*}
 
 \ex.\dep{Sie_has-state war selbst_m-mode außer *sich#STATE* vor Angst}
+
+For connective adverbs, see Section~\ref{sec:modifiers}.
 
 
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
@@ -1218,7 +1223,20 @@ in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
-\ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+Note that every dependent of the predicate that is necessarily a participant in
+the embedded \rl{scene} should be labeled \rl{participant}, even when they
+participate in different roles:
+
+\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
+\ex.\dep{Kim_participant__target-possessor *bekam#SCENE-INIT* Sandy_participant__possessed zu **fassen#POSSESSION-INIT**_target-scene}
+
+\ex.\dep{Winston_participant__participant___x-experiencer *machte#SCENE-INIT* nie_m-time den **Versuch#SCENE-INIT**_target-scene , das___topic zu ***prüfen#MESSAGE-INIT***__target-scene}
+
+On the other hand, \fr{SCENE} predicates may have arguments that are not
+members of the embedded \rl{scene}, such as \rl{x-causer}:
+
+\ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
 from an argument to a predicate, as, e.g., with relative clauses, participal
