@@ -986,13 +986,13 @@
 [] O'Briens politische Strenggläubigkeit (20)
 [] nicht (21)
 
-[] Strenggläubigkeit (20)
-[] O'Briens (18)
-[] politische (19)
+[MESSAGE] Strenggläubigkeit (20)
+[x-experiencer] O'Briens (18)
+[topic] politische (19)
 
 [] O'Briens (18)
 
-[] politische (19)
+[ACTIVITY] politische (19)
 
 [] nicht (21)
 
@@ -1011,7 +1011,7 @@
 
 [] flößte (5)
 [] Etwas in seinem Gesicht (1)
-[] unwiderstehlich (6)
+[m-scene] unwiderstehlich (6)
 [] diesen Gedanken (8)
 [] ein (9)
 
@@ -1023,7 +1023,8 @@
 
 [] seinem (3)
 
-[] unwiderstehlich (6)
+[SCENE-PREVENTION-NEG] unwiderstehlich (6)
+[target-scene] flößte (5)
 
 [] Gedanken (8)
 
@@ -1036,43 +1037,45 @@
 5	diesem	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	3	obl	_	_
 7	eigentlich	eigentlich	ADV	ADV	_	3	advmod	_	_
-8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	advmod	_	_
+8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	advmod	_	_
 9	mangelnde	mangelnd	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 10	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	nsubj	_	_
 11	als	als	CCONJ	KOKOM	_	13	case	_	_
 12	einfach	einfach	ADJ	ADJD	_	13	advmod	_	_
-13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	14	obl	_	_
+13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	10	obl	_	_
 14	geschrieben	schreiben	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 15	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] stand (3)
-[] doch (2)
-[] in diesem Gesicht (6)
-[] eigentlich (7)
-[] weniger mangelnde Strenggläubigkeit (10)
-[] als einfach Intelligenz geschrieben (14)
+[LOCATION >> SCENE] stand (3)
+[m-scene] doch (2)
+[location >> m-location] in diesem Gesicht (6)
+[m-mode] eigentlich (7)
+[has-location >> participant] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
+[m-depictive >> scene] geschrieben (14)
 
-[] doch (2)
+[CONCESSION] doch (2) # TODO manual: connectives
+[asserted] stand (3)
 
 [] Gesicht (6)
 
 [] eigentlich (7)
 
-[] Strenggläubigkeit (10)
-[] weniger mangelnde (9)
+[MESSAGE] Strenggläubigkeit (10)
+[m-quantity] weniger (8)
+[m-quantity] mangelnde (9)
+[m-reference] als einfach Intelligenz (13)
 
-[] mangelnde (9)
-[] weniger (8)
+[QUANTITY] weniger (8)
 
-[] weniger (8)
-
-[] geschrieben (14)
-[] als einfach Intelligenz (13)
+[QUANTITY] mangelnde (9)
 
 [] Intelligenz (13)
 [] einfach (12)
 
 [] einfach (12)
+
+[MESSAGE-INIT] geschrieben (14)
+[target-content] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
 
 # sent_id = 167
 # text = Jedenfalls sah er wie ein Mensch aus , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam .
@@ -1092,7 +1095,7 @@
 14	,	,	PUNCT	$,	_	19	punct	_	_
 15	wenn	wenn	SCONJ	KOUS	_	19	mark	_	_
 16	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
-17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	expl	_	_
 18	fertig	fertig	ADJ	ADJD	_	19	xcomp	_	_
 19	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	_
 20	,	,	PUNCT	$,	_	26	punct	_	_
@@ -1105,10 +1108,10 @@
 27	,	,	PUNCT	$,	_	33	punct	_	_
 28	und	und	CCONJ	KON	_	33	cc	_	_
 29	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
-30	allein	allein	ADV	ADV	_	32	advmod	_	_
+30	allein	allein	ADV	ADV	_	33	advmod	_	_
 31	zu	zu	PART	PTKZU	_	32	mark	_	_
 32	fassen	fassen	VERB	VVINF	VerbForm=Inf	33	xcomp	_	_
-33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
+33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	_
 34	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] sah (2)
@@ -1127,24 +1130,22 @@
 [] reden (12)
 [] mit dem (10)
 [] man (11)
-[] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (19)
+[] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen (19)
+[] , und ihn allein zu fassen bekam (33)
 
 [] dem (10)
 
 [] man (11)
 
-[] brachte (19)
-[] man (16)
-[] es (17)
-[] fertig (18)
-[] , dem Televisor ein Schnippchen zu schlagen (26)
-[] , und ihn allein zu fassen bekam (33)
+[SCENE-INIT] brachte (19)
+[x-causer] man (16)
+[target-scene >> x-noncomp] fertig (18)
+[participant >> target-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
 [] man (16)
 
-[] es (17)
-
-[] fertig (18)
+[SCENE-DEINIT] fertig (18) # TODO NONCOMP not needed: manual
+[initial-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
 [] schlagen (26)
 [] dem Televisor (22)
@@ -1154,16 +1155,20 @@
 
 [] Schnippchen (24)
 
-[] bekam (33)
-[] ihn (29)
-[] allein zu fassen (32)
+[SCENE-INIT] bekam (33)
+[participant] ihn (29)
+[m-depictive] allein (30)
+[target-scene] zu fassen (32)
+[participant] man (16) # TODO manual: two "participant" roles with different roles in scene? See also next sentence.
 
-[] ihn (29)
+[IDENTIFICATION] ihn (29)
 
-[] fassen (32)
-[] allein (30)
+[SOCIAL-RELATION-NEG >> STATE] allein (30)
+[has-social-relation >> has-state] ihm (29)
 
-[] allein (30)
+[POSSESSION-INIT] fassen (32)
+[target-possessor] man (16)
+[possessed] ihn (29)
 
 # sent_id = 168
 # text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
@@ -1182,7 +1187,7 @@
 13	Richtigkeit	Richtigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obl	_	_
 14	hin	hin	ADP	APZR	_	13	advmod	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
-16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
+16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	6	xcomp	_	_
 17	:	:	PUNCT	$.	_	19	punct	_	_
 18	praktisch	praktisch	ADJ	ADJD	_	19	advmod	_	_
 19	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	_
@@ -1193,24 +1198,26 @@
 24	dazu	dazu	ADP	PROAV	PronType=Dem	19	advmod	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] gemacht (7)
-[] Winston (1)
-[] nie (3)
-[] den geringsten Versuch (6)
-[] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[SCENE-INIT] gemacht (7)
+[participant] Winston (1)
+[m-time] nie (3)
+[target-scene] den geringsten Versuch , seine Vermutung auf ihre Richtigkeit hin zu prüfen (6)
 
 [] Winston (1)
 
 [] nie (3)
 
-[] Versuch (6)
-[] geringsten (5)
+[SCENE-INIT] Versuch (6)
+[m-quantity] geringsten (5)
+[target-scene] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[participant] Winston (1)
 
 [] geringsten (5)
 
-[] prüfen (16)
-[] seine Vermutung (10)
-[] auf ihre Richtigkeit hin (13)
+[MESSAGE-INIT] prüfen (16)
+[topic] seine Vermutung (10)
+[target-content] auf ihre Richtigkeit hin (13)
+[x-experiencer] Winston (1)
 
 [] Vermutung (10)
 [] seine (9)
@@ -1220,6 +1227,7 @@
 [] Richtigkeit (13)
 [] ihre (12)
 [] hin (14)
+[] seine Vermutung (10)
 
 [] ihre (12)
 
