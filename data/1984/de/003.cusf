@@ -1007,8 +1007,7 @@
 
 [IDENTIFICATION] O'Briens (18)
 
-[SOCIAL-RELATION] politische (19) # # ??
-[has-social-relation] O'Briens (18) # # ?? manuell hinzugefügt
+[ACTIVITY] politische (19)
 
 [MODE] nicht (21)
 
@@ -1039,7 +1038,7 @@
 
 [IDENTIFICATION] seinem (3)
 
-[SCENE-PREVENTION-NEG] unwiderstehlich (6) # # ??
+[SCENE-PREVENTION-NEG] unwiderstehlich (6)
 [target-scene] flößte (5)
 
 [MESSAGE] Gedanken (8)
@@ -1062,36 +1061,36 @@
 14	geschrieben	schreiben	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 15	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION >> MESSAGE] stand (3) # # ?? 
-[m-mode] doch (2)
-[location] in diesem Gesicht (6)
+[LOCATION >> SCENE] stand (3) # # light verb construction
+[m-scene] doch (2)
+[location >> m-location] in diesem Gesicht (6)
 [m-mode] eigentlich (7)
-[has-location >> topic] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
-[x-depictive >> x-noncomp] geschrieben (14) # # ?? Vgl. (213) ??
+[has-location >> participant] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
+[m-depictive >> scene] geschrieben (14) # # Vgl. (213)
 
-[MODE] doch (2)
+[CONCESSION] doch (2)
+[asserted] stand (3)
 
 [PART-WHOLE] Gesicht (6) # # ?? Vgl. 3.2, ABER (250)...
 
 [MODE] eigentlich (7)
 
 [MESSAGE] Strenggläubigkeit (10)
-[m-quantity || m-rank] weniger (8) # # ??
-[m-scene] mangelnde (9)
-[x-reference] als einfach Intelligenz (13) # # ??
+[m-quantity] weniger (8)
+[m-quantity] mangelnde (9)
+[x-reference] als einfach Intelligenz (13)
 
 [QUANTITY] weniger (8)
 
 [EXISTENCE-NEG || QUANTITY] mangelnde (9) # # kann sowohl "fehlend" als auch "in nicht ausreichendem Maß" bedeuten
-[exists || has-quantity] Strenggläubigkeit (10)
 
 [QUALITY] Intelligenz (13)
 [m-mode] einfach (12)
 
 [STATE >> MODE] einfach (12)
 
-[MESSAGE-INIT >> NONCOMP] geschrieben (14)
-[topic] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10) # # ?? manuell hinzugefügt wegen x-depictive?
+[MESSAGE-INIT] geschrieben (14)
+[target-content] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10) # # manuell hinzugefügt wegen x-depictive
 
 # sent_id = 167
 # text = Jedenfalls sah er wie ein Mensch aus , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam .
@@ -1111,7 +1110,7 @@
 14	,	,	PUNCT	$,	_	19	punct	_	_
 15	wenn	wenn	SCONJ	KOUS	_	19	mark	_	_
 16	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
-17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	expl	_	_
 18	fertig	fertig	ADJ	ADJD	_	19	xcomp	_	_
 19	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	_
 20	,	,	PUNCT	$,	_	26	punct	_	_
@@ -1124,7 +1123,7 @@
 27	,	,	PUNCT	$,	_	33	punct	_	_
 28	und	und	CCONJ	KON	_	33	cc	_	_
 29	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
-30	allein	allein	ADV	ADV	_	29	advmod	_	_
+30	allein	allein	ADV	ADV	_	33	advmod	_	_
 31	zu	zu	PART	PTKZU	_	32	mark	_	_
 32	fassen	fassen	VERB	VVINF	VerbForm=Inf	33	xcomp	_	_
 33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
@@ -1154,39 +1153,41 @@
 
 [IDENTIFICATION] man (11)
 
-[RESULTATIVE] brachte (19) # # ??
+[SCENE-INIT] brachte (19)
 [x-causer] man (16)
-[x-noncomp] es (17)
-[x-noncomp] fertig (18)
-[resultative] , dem Televisor ein Schnippchen zu schlagen (26)
-[resultative] , und ihn allein zu fassen bekam (33)
+[target-scene >> x-noncomp] fertig (18)
+[participant >> target-scene] , dem Televisor ein Schnippchen zu schlagen (26)
+[participant >> target-scene] , und ihn allein zu fassen bekam (33)
 
 [IDENTIFICATION] man (16)
 
 [NONCOMP] es (17)
 
-[NONCOMP] fertig (18)
+[SCENE-DEINIT] fertig (18) # # ?? Eigentlich noch NONCOMP. Warte auf Checker
+[initial-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
-[HITTING >> EVENT] schlagen (26) # # ?? wörtl. Bedeutung notwendig?
-[hit >> undergoer] dem Televisor (22)
-[x-noncomp] ein Schnippchen (24) # # ?? wörtl. Bedeutung?
+[EVENT] schlagen (26)
+[undergoer] dem Televisor (22)
+[x-noncomp] ein Schnippchen (24)
 [x-causer] man (16)
 
 [CLASS] Televisor (22) # # Vgl. (74)
 
-[MESSAGE-INIT >> NONCOMP] Schnippchen (24) # # ?? wörtl. Bedeutung? "schnippsende Bewegung und das dabei entstehende Geräusch"
+[NONCOMP] Schnippchen (24)
 
-[POSSESSION-INIT >> SOCIAL-RELATION-INIT] bekam (33)
-[possession >> target-social-relation] ihn allein (29)
-[m-has-means >> x-noncomp] zu fassen (32) # # ?? wörtl. Bedeutung?
-[target-possessor >> has-social-relation] man (16)
+[SCENE-INIT] bekam (33)
+[participant] ihn (29)
+[m-depictive] allein (30)
+[target-scene] zu fassen (32)
+[participant] man (16) ## ?? muss ggf. geändert werden
 
 [IDENTIFICATION] ihn (29)
-[m-has-state] allein (30)
 
-[STATE] allein (30)
+[SOCIAL-RELATION-NEG] allein (30)
+[has-social-relation] ihn (29)
 
-[LOCATION-CHANGE-POSSIBILITY-NEG >> NONCOMP] fassen (32) # # ??
+[POSSESSION-INIT] fassen (32)
+[target-possessor] man (16)
 
 # sent_id = 168
 # text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
@@ -1216,25 +1217,26 @@
 24	dazu	dazu	ADP	PROAV	PronType=Dem	23	advmod	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
-[SCENE] gemacht (7)
-[participant || x-causer] Winston (1) # # ?? 
+[SCENE-INIT] gemacht (7)
+[participant] Winston (1) # # ?? muss ggf. geändert werden
 [m-time] nie (3)
-[scene] den geringsten Versuch , seine Vermutung auf ihre Richtigkeit hin zu prüfen (6)
+[target-scene] den geringsten Versuch , seine Vermutung auf ihre Richtigkeit hin zu prüfen (6)
 
 [IDENTIFICATION] Winston (1)
 
 [TIME-NEG] nie (3)
 
-[SCENE-POSSIBILITY] Versuch (6) # # ??
+[SCENE-INIT] Versuch (6)
 [m-quality] geringsten (5)
-[scene] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
-[x-causer] Winston (1)
+[target-scene] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[participant] Winston (1)
 
 [QUALITY] geringsten (5)
 
 [MESSAGE-INIT] prüfen (16)
 [topic] seine Vermutung (10)
 [target-content] auf ihre Richtigkeit hin (13)
+[x-experiencer] Winston (1)
 
 [MESSAGE] Vermutung (10)
 [x-experiencer] seine (9)
