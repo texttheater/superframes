@@ -1223,7 +1223,20 @@ in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
-\ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+Note that every dependent of the predicate that is necessarily a participant in
+the embedded \rl{scene} should be labeled \rl{participant}, even when they
+participate in different roles:
+
+\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
+\ex.\dep{Kim_participant__target-possessor *bekam#SCENE-INIT* Sandy_participant__possessed zu **fassen#POSSESSION-INIT**_target-scene}
+
+\ex.\dep{Winston_participant__participant___x-experiencer *machte#SCENE-INIT* nie_m-time den **Versuch#SCENE-INIT**_target-scene , das___topic zu ***prüfen#MESSAGE-INIT***__target-scene}
+
+On the other hand, \fr{SCENE} predicates may have arguments that are not
+members of the embedded \rl{scene}, such as \rl{x-causer}:
+
+\ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
 from an argument to a predicate, as, e.g., with relative clauses, participal
