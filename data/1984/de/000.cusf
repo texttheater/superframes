@@ -123,8 +123,8 @@
 [CLASS] Glastüren (39)
 [m-whole] eines der Häuser des Victory-Blocks (40)
 
-[PART-WHOLE] eines (40) # TODO PART-WHOLE vs. QUANTITY: what if "zweier"?
-[whole] der Häuser des Victory-Blocks (42)
+[QUANTITY >> PART-WHOLE] eines (40)
+[has-quantity >> whole] der Häuser des Victory-Blocks (42)
 
 [CLASS] Häuser (42)
 [m-whole] des Victory-Blocks (44)
@@ -189,7 +189,7 @@
 
 [CLASS] Kohl (7)
 [m-scene] gekochtem (6)
-[m-compared] es (4) # TODO x-norole
+[m-compared] es (4)
 
 [] gekochtem (6)
 [] Kohl (7)
@@ -306,9 +306,9 @@
 
 [] nur (3)
 
-[] Gesicht (6)
-[] riesiges (5)
-[m-scene] von mehr als einem Meter Breite (12) # TODO clarify: when to use m-scene and when not
+[PART-WHOLE] Gesicht (6)
+[m-quantity] riesiges (5)
+[m-quality] von mehr als einem Meter Breite (12)
 
 [] riesiges (5)
 
@@ -357,7 +357,6 @@
 
 [QUALITY] Breite (12)
 [m-quantity] mehr als einem Meter (11)
-[has-quality] Gesicht (6)
 
 # sent_id = 5
 # text = Winston ging die Treppe hinauf .
@@ -1353,7 +1352,7 @@
 
 [LOCATION-INIT >> MESSAGE] bohrten (20)
 [x-causer >> x-experiencer] die dunklen Augen (19)
-[has-location >> x-noncomp] sich (21)
+[has-location >> x-experiencer] sich (21)
 [m-quantity >> m-quality] tief (22)
 [target-location >> topic] in Winstons Blick (25)
 
@@ -1677,7 +1676,7 @@
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Televisor	Televisor	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
 3	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
-4	gleichzeitig	gleichzeitig	ADJ	ADJD	_	5	amod	_	_
+4	gleichzeitig	gleichzeitig	ADJ	ADJD	_	5	advmod	_	_
 5	Empfangs-	Empfangs-	X	TRUNC	_	0	root	_	_
 6	und	und	CCONJ	KON	_	7	cc	_	_
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
@@ -1694,7 +1693,7 @@
 [accompanier] Sendegerät (7)
 
 [CLASS] Sendegerät (7)
-[has-class] Der Televisor (2) # TODO add to manual (nominal copula construction)
+[has-class] Der Televisor (2)
 
 # sent_id = 31
 # text = Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , wurde von ihm registriert .
@@ -1892,7 +1891,7 @@
 [m-time] Wie oft (2)
 [m-followed] und nach welchem System (6)
 [x-experiencer] die Gedankenpolizei (8)
-[m-noncomp] sich (9)
+[x-experiencer] sich (9)
 [topic] in einen Privatapparat (12)
 
 [TIME] oft (2)
@@ -1965,7 +1964,7 @@
 [MESSAGE-INIT] einschalten (18)
 [m-mode] Auf alle Fälle aber (3)
 [x-experiencer] sie (6)
-[x-noncomp] sich (7)
+[x-experiencer] sich (7)
 [m-condition || m-time] , wenn sie es wollte , (12)
 [m-time] jederzeit (14)
 [topic] in einen Apparat (17)
@@ -2043,7 +2042,7 @@
 
 [MESSAGE-INIT] stellte (10)
 [x-experiencer] man (9)
-[x-noncomp] sich (11)
+[x-experiencer] sich (11)
 [m-mode] tatsächlich (12)
 [m-causer] instinktiv (13)
 [topic] darauf (14)
@@ -2467,7 +2466,7 @@
 
 [LOCATION-INIT] sackten (45)
 [has-location] ihre schiefen Gartenmauern (38)
-[m-quality] kreuz und quer (39) # TODO manual: fixed MWE
+[m-quality] kreuz und quer (39)
 [target-location] in den Boden (44)
 
 [] Gartenmauern (38)
@@ -2672,11 +2671,11 @@
 
 [MESSAGE] Bilder (24)
 [m-quality] greller (23)
-[m-part || m-location] ohne Hintergrund (26)
+[m-part || m-location] ohne Hintergrund (26) # ambig: Hintergrund innerhalb oder außerhalb des Bildes?
 
 [] greller (23)
 
-[PART-WHOLE || LOCATION] Hintergrund (26) # TODO manual: when do nouns evoke PART_WHOLE frames etc.
+[LOCATION] Hintergrund (26) # Hintergrund von etwas, daher LOCATION
 
 [] unverständlich (31)
 [] die (28)

@@ -668,15 +668,15 @@
 7	um	um	ADP	PTKVZ	_	2	compound:prt	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE] drehte (2) # TODO manual: CHANGE when either *both* or *neither* initial/target exists
+[LOCATION-CHANGE] drehte (2)
 [x-causer >> has-location] Winston (1)
-[has-location >> x-noncomp] sich (3)
+[has-location] sich (3)
 [m-means >> m-quality] mit einem Ruck (6)
 [transitory-location] um (7) # can be interpreted as adposition with elided complement: "um die eigene Achse"
 
 [] Winston (1)
 
-[IDENTIFICATION >> NONCOMP] sich (3)
+[IDENTIFICATION] sich (3)
 
 [] Ruck (6)
 
@@ -811,10 +811,10 @@
 32	zu	zu	PART	PTKZU	_	33	mark	_	_
 33	essen	essen	VERB	VVINF	VerbForm=Inf	31	xcomp	_	_
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	ccomp	_	_
-35	außer	außer	ADP	APPR	_	37	case	_	_
+35	außer	außer	ADP	APPR	_	37	cc	_	_
 36	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	37	det	_	_
-37	Stück	Stück	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	34	obl	_	_
-38	Schwarzbrot	Schwarzbrot	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	37	appos	_	_
+37	Stück	Stück	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	31	conj	_	_
+38	Schwarzbrot	Schwarzbrot	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	37	nmod	_	_
 39	,	,	PUNCT	$,	_	47	punct	_	_
 40	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	47	nsubj:pass	_	_
 41	für	für	ADP	APPR	_	44	case	_	_
@@ -865,11 +865,10 @@
 [] er (24)
 
 [EXISTENCE] gab (34)
-[m-noncomp] es (27)
+[x-noncomp] es (27)
 [m-location] in der Küche (30)
 [exists] nichts zu essen (31)
-[m-exception] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
-[exists] Schwarzbrot (38) # TODO manual: non-local dependency!
+[exists] außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (37)
 
 [NONCOMP] es (27)
 
@@ -880,8 +879,10 @@
 
 [INGESTION] essen (33)
 [ingested] nichts (31)
+[ingested] Stück (37)
 
-[PART-WHOLE >> QUANTITY] Stück Schwarzbrot (37) # TODO PART-WHOLE vs. QUANTITY
+[PART-WHOLE >> QUANTITY] Stück (37)
+[whole >> has-quantity] Schwarzbrot (38)
 [m-scene] , das für den nächsten Tag zum Frühstück aufgehoben werden musste (47)
 
 [] Schwarzbrot (38)
@@ -890,7 +891,7 @@
 [] das (40)
 [] für den nächsten Tag (44)
 [] zum Frühstück (46)
-[] Stück Schwarzbrot (37)
+[] Stück (37)
 
 [] das (40)
 
@@ -1022,7 +1023,7 @@
 22	wie	wie	CCONJ	KOKOM	_	24	case	_	_
 23	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	Dosis	Dosis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	20	obl	_	_
-25	Medizin	Medizin	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	24	appos	_	_
+25	Medizin	Medizin	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	24	nmod	_	_
 26	hinunter	hinunter	ADP	PTKVZ	_	20	compound:prt	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -1067,7 +1068,8 @@
 
 [] es (21)
 
-[QUANTITY] Dosis Medizin (24) # TODO QUANTITY as special case of PART-WHOLE?
+[PART-WHOLE >> QUANTITY] Dosis (24)
+[whole >> has-quantity] Medizin (25)
 
 [CLASS] Medizin (25)
 
@@ -1354,7 +1356,7 @@
 15	Tischchen	Tisch	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-INIT] ging (2) # TODO manual: CHANGE nur wenn es initial- und target- gibt
+[LOCATION-INIT] ging (2)
 [has-location] Er (1)
 [target-location] ins Wohnzimmer (4)
 [m-noncomp] zurück (5)
