@@ -444,7 +444,7 @@
 
 [IDENTIFICATION] Inneren Partei (14)
 
-[QUALITY >> NONCOMP] Inneren (13)
+[NONCOMP] Inneren (13)
 
 [POSSESSION] Inhaber (16)
 [possessed] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
@@ -1179,7 +1179,7 @@
 [participant] ihn (29)
 [m-depictive] allein (30)
 [target-scene] zu fassen (32)
-[participant] man (16) ## ?? muss ggf. geändert werden
+[participant] man (16) # # ?? muss ggf. geändert werden
 
 [IDENTIFICATION] ihn (29)
 
@@ -1187,6 +1187,7 @@
 [has-social-relation] ihn (29)
 
 [POSSESSION-INIT] fassen (32)
+[possessed] ihn (29)
 [target-possessor] man (16)
 
 # sent_id = 168
@@ -1243,7 +1244,7 @@
 
 [IDENTIFICATION] seine (9)
 
-[MODE] Richtigkeit (13)
+[MODE] Richtigkeit (13) # # ?? 
 [has-mode] ihre (12)
 [has-mode] seine Vermutung (10)
 
@@ -1264,7 +1265,7 @@
 
 [MODE] keine (22)
 
-[IDENTIFICATION] dazu (24) # # ??
+[SITUATION] dazu (24)
 
 # sent_id = 169
 # text = O'Brien warf in diesem Augenblick einen Blick auf seine Armbanduhr , sah , dass es fast elf Uhr war , und beschloss offenbar , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war .
@@ -1488,9 +1489,9 @@
 [QUALITY] schwarzen (5)
 
 [LOCATION] dahinter (9)
-[m-quantity] unmittelbar (8)
+[m-mode] unmittelbar (8)
 
-[QUANTITY] unmittelbar (8) # # ??
+[MODE] unmittelbar (8) # # ??
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1527,7 +1528,7 @@
 [MESSAGE-INIT] brach (4)
 [m-time] Im nächsten Augenblick (3)
 [target-content] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
-[m-location >> x-sender] aus dem großen Televisor am Ende des Raumes (23) 
+[m-location >> x-sender] aus dem großen Televisor am Ende des Raumes (23)
 [x-noncomp] hervor (28)
 
 [TIME] Augenblick (3)
@@ -1625,10 +1626,10 @@
 4	begonnen	beginnen	VERB	VVPP	Verbform=Part	0	root	_	_
 5	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] begonnen (4)
-[] Die Hass-Sendung (2)
+[SCENE-INIT] begonnen (4)
+[target-scene] Die Hass-Sendung (2)
 
-[] Hass-Sendung (2)
+[MESSAGE] Hass-Sendung (2)
 
 # sent_id = 176
 # text = Wie gewöhnlich war das Gesicht Immanuel Goldsteins , des Volksfeinds , auf dem Sehschirm erschienen .
@@ -1649,25 +1650,25 @@
 15	erschienen	erscheinen	VERB	VVPP	Verbform=Part	0	root	_	_
 16	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] erschienen (15)
-[] Wie gewöhnlich (2)
-[] das Gesicht Immanuel Goldsteins , des Volksfeinds , (5)
-[] auf dem Sehschirm (14)
+[LOCATION-INIT] erschienen (15)
+[m-reference] Wie gewöhnlich (2)
+[has-location] das Gesicht Immanuel Goldsteins , des Volksfeinds , (5)
+[target-location] auf dem Sehschirm (14)
 
-[] gewöhnlich (2)
+[COMPARISON] gewöhnlich (2)
 
-[] Gesicht (5)
-[] Immanuel Goldsteins , des Volksfeinds (6)
+[PART-WHOLE] Gesicht (5)
+[whole] Immanuel Goldsteins , des Volksfeinds (6)
 
-[] Immanuel Goldsteins , des Volksfeinds (6)
+[IDENTIFICATION] Immanuel Goldsteins , des Volksfeinds (6)
 
-[] Volksfeinds (10)
+[SOCIAL-RELATION >> NONCOMP] Volksfeinds (10) # # ??
 
-[] Sehschirm (14)
+[CLASS] Sehschirm (14)
 
 # sent_id = 177
 # text = Da und dort im Zuschauerraum wurde gezischt .
-1	Da	da	ADV	ADV	_	7	advmod	_	_
+1	Da	da	ADV	ADV	_	5	advmod	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
 3	dort	dort	ADV	ADV	_	1	conj	_	_
 4	im	im	ADP	APPRART	_	5	case	_	_
@@ -1676,16 +1677,16 @@
 7	gezischt	zischen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] gezischt (7)
-[] Da (1)
-[] und dort (3)
-[] im Zuschauerraum (5)
+[MESSAGE-INIT] gezischt (7)
+[x-location] Da und dort im Zuschauerraum (5) # # ?? 
 
-[] Da (1)
+[LOCATION] Zuschauerraum (5)
+[m-location] Da (1) # # ?? 
+[m-location] und dort (3)
 
-[] dort (3)
+[LOCATION] Da (1)
 
-[] Zuschauerraum (5)
+[LOCATION] dort (3)
 
 # sent_id = 178
 # text = Die kleine aschblonde Frau stieß ein aus Furcht und Abscheu gemischtes Quieken hervor .
@@ -1704,29 +1705,29 @@
 13	hervor	hervor	ADP	PTKVZ	_	5	compound:prt	_	_
 14	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] stieß (5)
-[] Die kleine aschblonde Frau (4)
-[] ein aus Furcht und Abscheu gemischtes Quieken (12)
-[] hervor (13)
+[MESSAGE-INIT] stieß (5)
+[x-sender] Die kleine aschblonde Frau (4)
+[target-content] ein aus Furcht und Abscheu gemischtes Quieken (12)
+[x-noncomp] hervor (13)
 
-[] Frau (4)
-[] kleine (2)
-[] aschblonde (3)
+[CLASS] Frau (4)
+[m-quality] kleine (2)
+[m-quality] aschblonde (3)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] aschblonde (3)
+[QUALITY] aschblonde (3)
 
-[] Quieken (12)
-[] aus Furcht und Abscheu gemischtes (11)
+[MESSAGE-INIT] Quieken (12)
+[m-accompanied || m-quality] aus Furcht und Abscheu gemischtes (11) # # ?? muss ggf. geändert werden
 
-[] gemischtes (11)
-[] aus Furcht (8)
-[] und Abscheu (10)
+[ACCOMPANIMENT-INIT] gemischtes (11) # # ?? muss ggf geändert werden
+[accompanied] aus Furcht (8)
+[target-accompanier] und Abscheu (10)
 
-[] Furcht (8)
+[MESSAGE] Furcht (8)
 
-[] Abscheu (10)
+[MESSAGE] Abscheu (10)
 
 # sent_id = 179
 # text = Goldstein war der Renegat , der große Abtrünnige , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden .
@@ -1804,8 +1805,8 @@
 72	verschwinden	verschwinden	VERB	VVINF	VerbForm=Inf	60	conj	_	_
 73	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Renegat , der große Abtrünnige einer der führenden Männer der Partei gewesen und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (4)
-[] Goldstein (1)
+[IDENTIFICATION] Renegat , der große Abtrünnige einer der führenden Männer der Partei gewesen und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (4)
+[identified] Goldstein (1)
 
 [] Goldstein (1)
 
@@ -1921,11 +1922,11 @@
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	2	det	_	_
 2	Programme	Programm	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	6	nsubj	_	_
 3	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-4	Zwei	zwei	NUM	CARD	NumType=Card	5	nummod	_	_
+4	Zwei	zwei	NUM	CARD	NumType=Card	5	appos	_	_
 5	Minuten-Haft-Sendung	Minuten-Haft-Sendung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 6	wechselten	wechseln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	von	von	ADP	APPR	_	8	case	_	_
-8	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
+8	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	10	obl	_	_
 9	zu	zu	ADP	APPR	_	10	case	_	_
 10	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
 11	,	,	PUNCT	$,	_	14	punct	_	_
@@ -1944,42 +1945,44 @@
 24	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 25	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] wechselten (6)
-[] Die Programme der Zwei Minuten-Haft-Sendung (2)
-[] von Tag (8)
-[] zu Tag (10)
+[SCENE-CHANGE] wechselten (6) # # ??
+[initial-scene || target-scene] Die Programme der Zwei Minuten-Haft-Sendung (2) # # ?? gleichzeitig initial-scene und target-scene? transitory-scene?
+[m-time] von Tag zu Tag (10) # # Bedeutung: "immer wieder"
 
-[] Programme (2)
-[] der Zwei Minuten-Haft-Sendung (5)
+[MESSAGE] Programme (2)
+[m-possessor] der Zwei Minuten-Haft-Sendung (5) # # possessor controls possessed
 
-[] Minuten-Haft-Sendung (5)
-[] Zwei (4)
+[MESSAGE] Zwei Minuten-Haft-Sendung (5)
 
-[] Zwei (4)
+[QUANTITY] Zwei (4)
 
-[] Tag (8)
+[TIME] Tag (10)
+[m-time] von Tag (8) # # ?? 
 
-[] Tag (10)
+[TIME] Tag (8)
 
-[] gab (14)
-[] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15)
+[EXISTENCE] gab (14)
+[exists] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15) # # ?? 
 
-[] keines (15)
-[] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
+[CLASS] keines (15) # # ?? 
+[m-scene] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
+[m-part] die Hauptrolle (22)
 
-[] gespielt (23)
-[] in dem (18)
-[] nicht (19)
-[] Goldstein (20)
-[] die Hauptrolle (22)
+[ACTIVITY] gespielt (23)
+[m-depictive] in dem (18)
+[m-mode] nicht (19)
+[is-active] Goldstein (20)
+[x-noncomp] die Hauptrolle (22)
+[m-depictive] keines (15)
 
-[] dem (18)
+[IDENTIFICATION] dem (18)
+[m-part] die Hauptrolle (22)
 
-[] nicht (19)
+[MODE] nicht (19)
 
-[] Goldstein (20)
+[IDENTIFICATION] Goldstein (20)
 
-[] Hauptrolle (22)
+[NONCOMP] Hauptrolle (22)
 
 # sent_id = 181
 # text = Er war der erste Verräter , der früheste Beschmutzer der Reinheit der Partei .
@@ -1998,24 +2001,25 @@
 13	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
 14	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Verräter (5)
-[] Er (1)
-[] erste (4)
+[SOCIAL-RELATION] Verräter (5)
+[has-social-relation] Er (1)
+[m-rank || m-time] erste (4) # # ?? 
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] erste (4)
+[RANK] erste (4) # # ?? 
 
-[] Beschmutzer (9)
-[] früheste (8)
-[] der Reinheit der Partei (11)
+[STATE-CHANGE] Beschmutzer (9)
+[m-time || m-rank] früheste (8) # # ?? m-depictive?
+[has-state] der Reinheit der Partei (11)
+[x-causer] Er (1)
 
-[] früheste (8)
+[TIME || RANK] früheste (8) # # falls (8) bei (9) m-depictive: [x-identified] Er (1)
 
-[] Reinheit (11)
-[] der Partei (13)
+[STATE] Reinheit (11)
+[has-state] der Partei (13)
 
-[] Partei (13)
+[SOCIAL-RELATION >> IDENTIFICATION] Partei (13)
 
 # sent_id = 182
 # text = Alle später gegen die Partei gerichteten Verbrechen , alle Verrätereien , Sabotageakte , Ketzereien , Abweichungen gingen unmittelbar auf seine Irrlehren zurück .
@@ -2043,26 +2047,27 @@
 22	zurück	zurück	ADP	PTKVZ	_	17	compound:prt	_	_
 23	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] gingen (17)
-[] Alle später gegen die Partei gerichteten Verbrechen (7)
-[] , alle Verrätereien (10)
-[] , Sabotageakte (12)
-[] , Ketzereien (14)
-[] , Abweichungen (16)
-[] unmittelbar (18)
-[] auf seine Irrlehren (21)
-[] zurück (22)
+[SEQUENCE] gingen (17)
+[follows] Alle später gegen die Partei gerichteten Verbrechen (7)
+[follows] , alle Verrätereien (10)
+[follows] , Sabotageakte (12)
+[follows] , Ketzereien (14)
+[follows] , Abweichungen (16)
+[m-mode] unmittelbar (18) # # ?? 
+[followed] auf seine Irrlehren (21)
+[x-noncomp] zurück (22)
 
-[] Verbrechen (7)
-[] später gegen die Partei gerichteten (6)
+[SOCIAL-RELATION || ACTIVITY] Verbrechen (7)
+[m-scene] später gegen die Partei gerichteten (6)
 
-[] gerichteten (6)
-[] später (2)
-[] gegen die Partei (5)
+[SCENE-INIT] gerichteten (6) # # ?? oder SCENE?
+[m-time] später (2)
+[participant] gegen die Partei (5)
+[target-scene] Verbrechen (7)
 
-[] später (2)
+[TIME] später (2)
 
-[] Partei (5)
+[SOCIAL-RELATION >> IDENTIFICATION] Partei (5)
 
 [] Verrätereien (10)
 
@@ -2072,12 +2077,12 @@
 
 [] Abweichungen (16)
 
-[] unmittelbar (18)
+[MODE] unmittelbar (18)
 
-[] Irrlehren (21)
-[] seine (20)
+[MESSAGE-INIT] Irrlehren (21)
+[x-sender] seine (20)
 
-[] seine (20)
+[IDENTIFICATION] seine (20)
 
 # sent_id = 183
 # text = Irgendwo lebte er noch und schmiedete seine Ränke : vielleicht irgendwo jenseits des Meeres , unter dem Schutz seiner ausländischen Geldgeber , vielleicht sogar - wie gelegentlich gemunkelt wurde - in einem Versteck in Ozeanien selbst .
@@ -2108,7 +2113,7 @@
 25	-	-	PUNCT	$.	_	28	punct	_	_
 26	wie	wie	SCONJ	KOUS	_	28	mark	_	_
 27	gelegentlich	gelegentlich	ADJ	ADJD	_	28	advmod	_	_
-28	gemunkelt	munkeln	VERB	VVPP	Verbform=Part	18	acl	_	_
+28	gemunkelt	munkeln	VERB	VVPP	Verbform=Part	33	acl	_	_
 29	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux:pass	_	_
 30	-	-	PUNCT	$.	_	28	punct	_	_
 31	in	in	ADP	APPR	_	33	case	_	_
@@ -2119,64 +2124,66 @@
 36	selbst	selbst	ADV	ADV	_	35	advmod	_	_
 37	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] lebte (2)
-[] Irgendwo (1)
-[] er (3)
-[] noch (4)
+[EXISTENCE] lebte (2)
+[m-location] Irgendwo (1)
+[exists] er (3)
+[m-scene] noch (4)
 
-[] Irgendwo (1)
+[LOCATION] Irgendwo (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] noch (4)
+[SCENE-CONTINUATION] noch (4)
+[initial-scene] lebte (2)
 
-[] schmiedete (6)
-[] seine Ränke (8)
-[] : vielleicht irgendwo jenseits des Meeres (14)
-[] , unter dem Schutz seiner ausländischen Geldgeber , vielleicht sogar - wie gelegentlich gemunkelt wurde - (18)
-[] in einem Versteck in Ozeanien selbst (33)
+[SCENE-INIT-POSSIBILITY] schmiedete (6) # # Bedeutung "hinterlistige und treulose Pläne gegen jemanden schaffen"
+[target-scene] seine Ränke (8) # # Bedeutung "hinterhältige Anschläge, Listen, Machenschaften, Intrigen"
+[m-location] : vielleicht irgendwo jenseits des Meeres (14)
+[m-location] , unter dem Schutz seiner ausländischen Geldgeber (18)
+[m-location] , vielleicht sogar - wie gelegentlich gemunkelt wurde - in einem Versteck in Ozeanien selbst (33)
 
-[] Ränke (8)
-[] seine (7)
+[ACTIVITY || SOCIAL-RELATION] Ränke (8)
+[is-active || has-social-relation] seine (7)
 
-[] seine (7)
+[IDENTIFICATION] seine (7)
 
-[] Meeres (14)
-[] vielleicht (10)
-[] irgendwo (11)
+[CLASS] Meeres (14)
+[m-mode] vielleicht (10)
+[m-location] irgendwo (11) # # "irgendwo jenseits"
 
-[] vielleicht (10)
+[MODE] vielleicht (10)
 
-[] irgendwo (11)
+[LOCATION] irgendwo (11) # # "irgendwo jenseits"
 
-[] Schutz (18)
-[] seiner ausländischen Geldgeber (21)
-[] , vielleicht sogar - wie gelegentlich gemunkelt wurde - (28)
+[SCENE] Schutz (18) # # 3.11 "jemanden schützen" vs. "Besitz schützen" vs. "Werte schützen"...
+[x-causer] seiner ausländischen Geldgeber (21)
 
-[] Geldgeber (21)
-[] seiner (19)
-[] ausländischen (20)
+[POSSESSION-INIT] Geldgeber (21)
+[target-possessor] seiner (19)
+[m-location >> m-quality] ausländischen (20)
 
-[] seiner (19)
+[IDENTIFICATION] seiner (19)
 
-[] ausländischen (20)
+[LOCATION >> QUALITY] ausländischen (20)
 
-[] gemunkelt (28)
-[] vielleicht (23)
-[] sogar (24)
-[] gelegentlich (27)
+[LOCATION] Versteck (33) # # "geheimer, anderen nicht bekannter *Ort*"
+[m-scene] , vielleicht sogar - wie gelegentlich gemunkelt wurde - (28)
+[m-location] in Ozeanien selbst (35)
 
-[] vielleicht (23)
+[MESSAGE-INIT] gemunkelt (28)
+[m-mode] vielleicht (23)
+[m-mode] sogar (24)
+[m-time] gelegentlich (27)
+[target-content] Versteck (33)
 
-[] sogar (24)
+[MODE] vielleicht (23)
 
-[] gelegentlich (27)
+[MODE] sogar (24)
 
-[] Versteck (33)
-[] in Ozeanien selbst (35)
+[TIME] gelegentlich (27)
 
-[] Ozeanien (35)
-[] selbst (36)
+[IDENTIFICATION] Ozeanien (35)
+[] selbst (36) # # ?? Vgl. siehe 135, word (36) (issue in progress)
 
 [] selbst (36)
 
@@ -2189,17 +2196,17 @@
 5	zusammen	zusammen	ADP	PTKVZ	_	3	compound:prt	_	_
 6	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] zog (3)
-[] Winstons Zwerchfell (2)
-[] sich (4)
-[] zusammen (5)
+[UNANCHORED-MOTION] zog (3)
+[in-motion] Winstons Zwerchfell (2)
+[x-noncomp] sich (4)
+[x-noncomp] zusammen (5)
 
-[] Zwerchfell (2)
-[] Winstons (1)
+[PART-WHOLE] Zwerchfell (2)
+[whole] Winstons (1)
 
-[] Winstons (1)
+[IDENTIFICATION] Winstons (1)
 
-[] sich (4)
+[NONCOMP] sich (4)
 
 # sent_id = 185
 # text = Nie konnte er das Gesicht Goldsteins sehen , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten .
