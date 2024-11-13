@@ -203,11 +203,14 @@ sort such predicates into a few coarse aspectual classes. For example,
 initiation (\frs{-INIT}) means a state is begun or worked towards, deinitiation
 (\frs{-DEINIT}) means a state is ended, completed, or its end is worked
 towards, change (\frs{-CHANGE}) combines both, where one state is replaced by
-another, continuation (\frs{-CONTINUATION}) means a state persists or is even
+another. Continuation (\frs{-CONTINUATION}) means a state persists or is even
 intensified, and (\frs{-PREVENTION}) means it fails to come about.
-Accordingly, roles with prefix \rl{target-} mark participants at or beyond the
-end of the event, \rl{initial-} marks participants at the beginning of the
+Accordingly, arg2 roles with prefix \rl{target-} mark participants at or beyond
+the end of the event, \rl{initial-} marks participants at the beginning of the
 event, and \rl{transitory-} marks participants at some point during the event.
+Use \fr{-INIT} or \fr{-PREVENTION} when there is a target arg2; use
+\fr{-DEINIT} or \fr{-CONTINUATION} when there is an initial arg1; use
+\fr{-CHANGE} when there is neither or both.
 
 \ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possessed}
 
@@ -299,12 +302,25 @@ Other non-core arguments are usually rather predicate-specific.
 
 
 \newpage\subsection{Modifiers}
+\label{sec:modifiers}
 
 Like non-core arguments, modifiers are assumed to evoke an additional frame,
 and labeled with the role they fill in that frame, but with a prefix marking
 them as modifiers: \rl{m-}.
 
-\ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
+The simplest type of modifier is an adpositional phrase where the adposition
+encodes a type of relation, such as \fr{LOCATION}:
+
+\ex.\dep{Kim_excreter is *sweating#EXCRETION* in the sauna_m-location}
+
+\ex.\dep{Wir_participant *machen#SCENE* das_scene wegen der Kinder_m-explanation}
+
+A slightly more subtle case is adpositional phrases that are multiword
+expressions such as \emph{vor allem}. Here, the relation is not so much
+indicated by the adposition as by the combination of the adposition and its
+complement. We still follow the syntactic edge that points to the complement:
+
+\ex.\dep{Es_x-identified sind vor allem_m-mode die *Frauen#CLASS*}
 
 Adjectival and adverbial modification is characterized by the syntactic
 modifier acting as a predicate, with the syntactic modifiee as an argument.  We
@@ -314,6 +330,8 @@ add a reverse dependency with the corresponding role label.
 \ex.\dep{Ich *spiele#ACTIVITY*__topic **lieber#MESSAGE**_m-scene Schach}
 
 \ex.\dep{Der ist **sowieso#CONDITION**_m-scene *kaputt#STATE*__has-condition}
+
+\ex.\dep{Und **doch#CONCESSION**_m-scene *sah#MESSAGE*__asserted er_topic intelligent_content aus_m-noncomp}
 
 \ex.\dep{Sie *sprangen#LOCATION-INIT*__asserted des Regens__conceded **ungeachtet#CONCESSION**_m-scene nach draußen}
 
@@ -343,11 +361,10 @@ example, the following pairs are equivalent:
 
 Note the polysemy of some connective adverbs:
 
-\ex.\dep{They appreciated how_m-quality Kim_is-active *danced#ACTIVITY*}
-
-\ex.\dep{They wondered how_m-means Kim_participant *did#SCENE* it_scene}
-
-\ex.\dep{I remembered **how#MESSAGE**_m-scene my studies_x-experiencer had *concentrated#MESSAGE*__content on geography_topic}
+\ex.
+\a.\dep{They appreciated how_m-quality Kim_is-active *danced#ACTIVITY*}
+\b.\dep{They wondered how_m-means Kim_participant *did#SCENE* it_scene}
+\c.\dep{I remembered **how#MESSAGE**_m-scene my studies_x-experiencer had *concentrated#MESSAGE*__content on geography_topic}
 
 
 \newpage\subsection{Nonverbal Predicates}
@@ -418,9 +435,7 @@ such cases, we add those dependency links.
 
 \ex.\dep{Kim_has-location seemed to *fly#UNANCHORED-MOTION*} (raising)
 
-\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE-INIT*} (depictive)
-
-\ex.\dep{You're talking me_has-state *silly#STATE*} (resultative)
+\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE-INIT*} (seondary predicate)
 
 \ex.\dep{Kim_topic is hard to *love#MESSAGE*} (\emph{tough} construction)
 
@@ -440,6 +455,22 @@ such cases, we add those dependency links.
 
 \ex.\dep{ein *sogenannter#IDENTIFICATION-INIT*__m-scene___m-scene **Televisor#CLASS**_identified oder ***Hörsehschirm#CLASS***_identified} (coordination)
 
+\subsubsection{Secondary Predicates}
+
+Secondary predicates are modifiers that syntactically attach to a (primary)
+predicate, but semantically predicate over one of the primary predicate's
+arguments, or even something more deeply embedded. The semantic relation
+between the primary and secondary predicate can be one of simple accompaniment
+(depictive), result (resultative), or something else.
+
+\ex.\dep{Kim__has-location_x-sender **entered#LOCATION-INIT** the room *singing#MESSAGE-INIT*__m-depictive}
+
+\ex.\dep{You're__x-sender **talking#MESSAGE-INIT** me_has-state__x-resultative *silly#STATE*__x-resultative}
+
+\ex.\dep{*Stop#SCENE-DEINIT* drawing_initial-scene sheep__has-quality___has-quality , whether **small#QUALITY**_m-condition or ***big#QUALITY***_m-condition}
+
+\ex.\dep{Some people_participant__has-quality , though **short#QUALITY**_m-conceded , *reach#SCENE-INIT* amazing heights_target-scene}
+
 
 \newpage\subsection{Figurativity, Idiomaticity, and Uncertainty}
 
@@ -451,7 +482,11 @@ roles.
 
 \ex.\dep{A hush_in-motion>>scene *passed#UNANCHORED-MOTION>>SCENE* over the group_transitory-location>>participant}
 
+\ex.\dep{Sie_x-causer>>participant__x-experiencer *streifte#UNANCHORED-MOTION>>SCENE* ihn_transitory-location>>participant__topic mit einem **Seitenblick#MESSAGE-INIT**_has-location>>scene}
+
 \ex.\dep{Kim_x-sender>>participant *refused#MESSAGE-INIT>>SCENE* to eat_topic>>scene}
+
+\ex.\dep{ein *Stück#PART-WHOLE>>QUANTITY* Schwarzbrot_whole>>has-quantity}
 
 This mechanism can be used to indicate that an expression has become fixed and
 not fully compositional:
@@ -465,7 +500,7 @@ not fully compositional:
 Similarly, a use of a verb that is ambiguous between transitive (more literal)
 and inherently reflexive (more figurative) can be annotated in this way:
 
-\ex.\dep{Winston_x-causer>>has-location *drehte#LOCATION-CHANGE* sich_has-location>>x-noncomp um_transitory-location}
+\ex.\dep{Winston_x-causer>>has-location *drehte#LOCATION-CHANGE* sich_has-location um_transitory-location}
 
 If you cannot choose between two frames for another reason, use \texttt{||} instead of \texttt{>}\texttt{>}.
 
@@ -752,7 +787,7 @@ predicates denoting naming relationships.
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
 
-\ex.\dep{Obamas *Sonderberaterin#SOCIAL-RELATION* Kori Schulman_m-identifier}
+\ex.\dep{das *Abzeichen#IDENTIFICATION* der Jugendliga_identified gegen Sexualität}
 
 In English, the preposition \emph{of} has an identifying sense, which can also
 be metaphorical:
@@ -1044,8 +1079,6 @@ Used for adverbial modifiers that have no arguments other than the phrase they
 modify, and that, roughly speaking, indicate the modal strength of what is
 expressed and/or its relation to the discourse.
 
-\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
-
 \ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
 
 \ex.\dep{Kim_x-experiencer probably_m-mode *knows#MESSAGE* that_content}
@@ -1056,11 +1089,15 @@ expressed and/or its relation to the discourse.
 
 \fr{MODE} is also used for focus adverbs:
 
+\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+
 \ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
 
 \ex.\dep{Man wusste davon nur_m-mode durch vage *Gerüchte#MESSAGE*}
 
 \ex.\dep{Sie_has-state war selbst_m-mode außer *sich#STATE* vor Angst}
+
+For connective adverbs, see Section~\ref{sec:modifiers}.
 
 
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
@@ -1075,8 +1112,6 @@ treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{It_x-noncomp is *raining#STATE*}
 
-\ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-noncomp to you_x-experiencer}
-
 \ex.\dep{There_x-noncomp *was#SCENE* a famine_scene}
 
 \ex.\dep{Motion Picture_m-purpose>>m-noncomp *Association#CLASS* of America_m-social-relation>>m-noncomp}
@@ -1090,6 +1125,15 @@ same as the top predicate:
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
 
 \ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
+
+Bound pronouns that are part of multiword expressions should get the same role
+as their antecedent:
+
+\ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-sender to you_x-experiencer}
+
+\ex.\dep{I_has-state *jumped#STATE-CHANGE* to my_has-state **feet#STATE-CHANGE**_x-noncomp}
+
+\ex.\dep{I_accompanied *had#ACCOMPANIMENT* with me_accompanied neither a mechanic_accompanier nor any passengers_accompanier}
 
 
 \newpage\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
@@ -1218,7 +1262,20 @@ in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
-\ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+Note that every dependent of the predicate that is necessarily a participant in
+the embedded \rl{scene} should be labeled \rl{participant}, even when they
+participate in different roles:
+
+\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
+\ex.\dep{Kim_participant__target-possessor *bekam#SCENE-INIT* Sandy_participant__possessed zu **fassen#POSSESSION-INIT**_target-scene}
+
+\ex.\dep{Winston_participant__participant___x-experiencer *machte#SCENE-INIT* nie_m-time den **Versuch#SCENE-INIT**_target-scene , das___topic zu ***prüfen#MESSAGE-INIT***__target-scene}
+
+On the other hand, \fr{SCENE} predicates may have arguments that are not
+members of the embedded \rl{scene}, such as \rl{x-causer}:
+
+\ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
 from an argument to a predicate, as, e.g., with relative clauses, participal
@@ -1618,6 +1675,18 @@ the filler of that frame's \rl{topic} role, and so on.
 \ex.\dep{ein *Großteil#PART-WHOLE* des digitalen Übergangs_whole}
 
 \ex.\dep{Obama_social-relation special_m-quality>>m-noncomp *assistant#SOCIAL-RELATION*}
+
+
+\newpage\subsection{Shadow Arguments in Compounds}
+
+Predicates that have the form of compound words sometimes contain one of their
+arguments. This may inform the choice of frame as well. Although we do not, at
+present, annotate relations below the word level, try to stay consistent with
+such an annotation.
+
+\ex.
+\a.\dep{Kim_has-social-relation war linien_social-relation *treu#SOCIAL-RELATION*} (hypothetical sub-word annotation)
+\b.\dep{Kim_has-social-relation>>has-quality war *linientreu#SOCIAL-RELATION>>QUALITY*} (consistent actual annotation)
 
 
 \newpage\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
