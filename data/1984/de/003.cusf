@@ -1964,19 +1964,19 @@
 [EXISTENCE] gab (14)
 [exists] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15) # # ?? 
 
-[CLASS] keines (15) # # ?? 
+[CLASS] keines (15)
 [m-scene] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
-[m-part] die Hauptrolle (22)
+[x-part] die Hauptrolle (22)
 
 [ACTIVITY] gespielt (23)
-[m-depictive] in dem (18)
+[m-location] in dem (18)
 [m-mode] nicht (19)
 [is-active] Goldstein (20)
-[x-noncomp] die Hauptrolle (22)
-[m-depictive] keines (15)
+[x-attribute] die Hauptrolle (22)
+[m-location] keines (15)
 
 [IDENTIFICATION] dem (18)
-[m-part] die Hauptrolle (22)
+[x-part] die Hauptrolle (22)
 
 [MODE] nicht (19)
 
@@ -2226,34 +2226,35 @@
 14	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	15	det	_	_
 15	Gefühle	Gefühl	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	13	nmod	_	_
 16	zu	zu	PART	PTKZU	_	17	mark	_	_
-17	geraten	geraten	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
+17	geraten	geraten	VERB	VVINF	VerbForm=Inf	1	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] sehen (7)
-[] Nie (1)
-[] er (3)
-[] das Gesicht Goldsteins (5)
+[MESSAGE-INIT] sehen (7)
+[m-scene] Nie , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (1) # # ?? 
+[x-experiencer] er (3)
+[topic] das Gesicht Goldsteins (5)
+
+[TIME-NEG] Nie (1)
 [] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
+[] sehen (7)
 
-[] Nie (1)
+[IDENTIFICATION] er (3)
 
-[] er (3)
+[PART-WHOLE] Gesicht (5)
+[whole] Goldsteins (6)
 
-[] Gesicht (5)
-[] Goldsteins (6)
+[IDENTIFICATION] Goldsteins (6)
 
-[] Goldsteins (6)
+[LOCATION-INIT >> SCENE] geraten (17)
+[target-location >> target-scene] in einen schmerzlichen Widerstreit der Gefühle (13)
 
-[] geraten (17)
-[] in einen schmerzlichen Widerstreit der Gefühle (13)
+[MESSAGE] Widerstreit (13)
+[m-quality] schmerzlichen (12)
+[content] der Gefühle (15)
 
-[] Widerstreit (13)
-[] schmerzlichen (12)
-[] der Gefühle (15)
+[MESSAGE] schmerzlichen (12)
 
-[] schmerzlichen (12)
-
-[] Gefühle (15)
+[MESSAGE] Gefühle (15)
 
 # sent_id = 186
 # text = Es war ein mageres jüdisches Gesicht mit einem breiten , wirren Kranz weißer Haare und einem Ziegenbärtchen - ein kluges und doch irgendwie eigentümlich verächtliches Gesicht , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien .
@@ -2304,87 +2305,96 @@
 45	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	acl	_	_
 46	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Gesicht - ein kluges und doch irgendwie eigentümlich verächtliches Gesicht , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (6)
-[] Es (1)
-[] mageres (4)
-[] jüdisches (5)
-[] mit einem breiten , wirren Kranz weißer Haare (12)
-[] und einem Ziegenbärtchen (17)
+[PART-WHOLE] Gesicht - ein kluges und doch irgendwie eigentümlich verächtliches Gesicht , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (6)
+[x-identified] Es (1)
+[m-quality] mageres (4)
+[m-quality] jüdisches (5)
+[m-part] mit einem breiten , wirren Kranz weißer Haare (12)
+[m-part] und einem Ziegenbärtchen (17)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] mageres (4)
+[STATE] mageres (4)
 
-[] jüdisches (5)
+[QUALITY] jüdisches (5)
 
-[] Kranz (12)
-[] breiten (9)
-[] , wirren (11)
-[] weißer Haare (14)
+[COMPARISON] Kranz (12)
+[m-quality] breiten (9)
+[m-quality] , wirren (11)
+[m-material] weißer Haare (14) # # ?? "Kranz [aus] weißen Haaren"
 
-[] breiten (9)
+[QUALITY] breiten (9)
 
-[] wirren (11)
+[QUALITY] wirren (11)
 
-[] Haare (14)
-[] weißer (13)
+[PART-WHOLE] Haare (14)
+[m-quality] weißer (13)
 
-[] weißer (13)
+[QUALITY] weißer (13)
 
-[] Ziegenbärtchen (17)
+[COMPARISON] Ziegenbärtchen (17)
 
-[] Gesicht (26)
-[] kluges (20)
-[] und doch irgendwie eigentümlich verächtliches (25)
-[] , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (45)
+[PART-WHOLE] Gesicht (26)
+[m-quality] kluges (20)
+[m-scene] und doch irgendwie eigentümlich verächtliches (25)
+[m-scene] , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (45)
 
-[] kluges (20)
+[QUALITY] kluges (20)
 
-[] verächtliches (25)
-[] doch (22)
+[MESSAGE] verächtliches (25) # # "Verachtung ausdrückend" ODER "wegen der moralischen Minderwertigkeit Verachtung verdienend"
+[m-scene] doch (22)
 [] irgendwie (23)
-[] eigentümlich (24)
+[m-quality] eigentümlich (24)
+[topic || x-sender || x-experiencer] Gesicht (26) # # ?? 
 
-[] doch (22)
+[CONCESSION] doch (22) # # Vgl. (43) im Manual
+[asserted] verächtliches (25)
 
 [] irgendwie (23)
 
-[] eigentümlich (24)
+[QUALITY] eigentümlich (24)
 
-[] schien (45)
-[] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
-[] eine Art seniler Blödheit (41)
-[] auszustrahlen (44)
+[SCENE] schien (45)
+[x-attribute] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
+[participant] eine Art seniler Blödheit (41)
+[scene] auszustrahlen (44)
+[participant] Gesicht (26)
 
-[] Nase (31)
-[] lange (29)
-[] dünne (30)
-[] , auf deren Ende eine Brille saß , (38)
+[PART-WHOLE] Nase (31)
+[m-quality] lange (29)
+[m-quality] dünne (30)
+[m-scene] , auf deren Ende eine Brille saß , (38)
+[whole] Gesicht (26) # # manuell hinzugefügt wegen x-attribute
 
-[] lange (29)
+[QUALITY] lange (29)
 
-[] dünne (30)
+[QUALITY] dünne (30)
 
-[] saß (38)
-[] auf deren Ende (35)
-[] eine Brille (37)
+[LOCATION] saß (38)
+[x-attribute] auf deren Ende (35)
+[has-location] eine Brille (37)
+[location] Nase (31)
 
-[] Ende (35)
-[] deren (34)
+[PART-WHOLE] Ende (35)
+[whole] deren (34)
+[whole] Nase (31)
 
-[] deren (34)
+[IDENTIFICATION] deren (34)
 
-[] Brille (37)
+[CLASS] Brille (37)
 
-[] Art (41)
-[] seniler Blödheit (43)
+[QUALITY] Art (41) # # ?? oder MEANS wie bei "Art und Weise"?
+[quality] seniler Blödheit (43)
+[has-quality] Gesicht (26)
 
-[] Blödheit (43)
-[] seniler (42)
+[STATE] Blödheit (43)
+[m-quality] seniler (42)
 
-[] seniler (42)
+[QUALITY] seniler (42) # # ?? 
 
-[] auszustrahlen (44)
+[MESSAGE] auszustrahlen (44)
+[topic] Gesicht (26)
+[content] eine Art seniler Blödheit (41)
 
 # sent_id = 187
 # text = Es ähnelte einem Schafsgesicht , und auch die Stimme hatte etwas Schafsmässiges .
@@ -2402,15 +2412,15 @@
 12	Schafsmässiges	schafsmässig	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	10	obj	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] ähnelte (2)
-[] Es (1)
-[] einem Schafsgesicht (4)
+[COMPARISON] ähnelte (2)
+[compared] Es (1)
+[reference] einem Schafsgesicht (4)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Schafsgesicht (4)
+[PART-WHOLE >> COMPARISON] Schafsgesicht (4)
 
-[] hatte (10)
+[SCENE] hatte (10)
 [] auch (7)
 [] die Stimme (9)
 [] etwas Schafsmässiges (12)
@@ -2445,7 +2455,7 @@
 17	übertriebenen	übertrieben	ADJ	ADJA	Case=Acc|Gender=Masc|Number=Sing	20	amod	_	_
 18	und	und	CCONJ	KON	_	19	cc	_	_
 19	verdrehten	verdreht	ADJ	ADJA	Case=Acc|Gender=Masc|Number=Sing	17	conj	_	_
-20	Angriff	Angriff	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	_
+20	Angriff	Angriff	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	6	appos	_	_
 21	,	,	PUNCT	$,	_	27	punct	_	_
 22	dass	dass	SCONJ	KOUS	_	27	mark	_	_
 23	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obj	_	_
@@ -2457,9 +2467,9 @@
 29	,	,	PUNCT	$,	_	34	punct	_	_
 30	und	und	CCONJ	KON	_	34	cc	_	_
 31	doch	doch	ADV	ADV	_	34	advmod	_	_
-32	gerade	gerade	ADV	ADV	_	34	advmod	_	_
+32	gerade	gerade	ADV	ADV	_	33	advmod	_	_
 33	hinreichend	hinreichend	ADJ	ADJD	_	34	advmod	_	_
-34	glaubhaft	glaubhaft	ADJ	ADJD	_	2	conj	_	_
+34	glaubhaft	glaubhaft	ADJ	ADJD	_	17	conj	_	_
 35	,	,	PUNCT	$,	_	43	punct	_	_
 36	um	um	SCONJ	KOUI	_	43	mark	_	_
 37	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
@@ -2490,36 +2500,34 @@
 62	könnten	können	AUX	VMFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	61	aux	_	_
 63	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] ließ (2)
-[] Goldstein (1)
-[] seinen üblichen giftigen Angriff gegen die Lehren der Partei (6)
-[] vom Stapel (13)
-[] - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können (20)
+[MESSAGE] ließ (2) # # vom Stapel lassen: umgangssprachlich abwertend, "etwas von sich geben [was (bei anderen) auf (spöttische) Ablehnung stößt]"
+[x-sender] Goldstein (1)
+[content] seinen üblichen giftigen Angriff gegen die Lehren der Partei - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
+[x-noncomp] vom Stapel (13)
 
-[] Goldstein (1)
+[IDENTIFICATION] Goldstein (1)
 
-[] Angriff (6)
+[] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
 [] seinen (3)
 [] üblichen (4)
-[] giftigen (5)
+[m-quality] giftigen (5)
 [] gegen die Lehren der Partei (9)
 
-[] seinen (3)
+[IDENTIFICATION] seinen (3)
 
 [] üblichen (4)
 
-[] giftigen (5)
+[QUALITY] giftigen (5)
 
-[] Lehren (9)
-[] der Partei (11)
+[MESSAGE] Lehren (9)
+[x-causer] der Partei (11)
 
-[] Partei (11)
-
-[] Stapel (13)
+[SOCIAL-RELATION >> IDENTIFICATION] Partei (11)
 
 [] Angriff (20)
 [] so übertriebenen (17)
 [] und verdrehten (19)
+[] , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (34)
 [] , dass ihn ein Kind hätte durchschauen können (27)
 
 [] übertriebenen (17)
@@ -2529,25 +2537,17 @@
 
 [] verdrehten (19)
 
-[] durchschauen (27)
-[] ihn (23)
-[] ein Kind (25)
-
-[] ihn (23)
-
-[] Kind (25)
-
 [] glaubhaft (34)
 [] doch (31)
-[] gerade (32)
-[] hinreichend (33)
+[] gerade hinreichend (33)
 [] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
 
 [] doch (31)
 
+[] hinreichend (33)
 [] gerade (32)
 
-[] hinreichend (33)
+[] gerade (32)
 
 [] erfüllen (43)
 [] einen mit dem alarmierenden Gefühl (41)
@@ -2592,6 +2592,16 @@
 [] vielleicht (59)
 
 [] verführen (60)
+
+[] durchschauen (27)
+[] ihn (23)
+[] ein Kind (25)
+
+[] ihn (23)
+
+[] Kind (25)
+
+[] Stapel (13)
 
 # sent_id = 189
 # text = Er schmähte den Großen Bruder , klagte die Diktatur der Partei an , forderte sofortigen Friedensschluss mit Eurasien , trat für Rede- , Presse- , Versammlungs- und Gedankenfreiheit ein , schrie hysterisch , die Revolution sei verraten worden - und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte .
