@@ -612,41 +612,39 @@
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
 3	seltsam	seltsam	ADJ	ADJD	_	0	root	_	_
 4	,	,	PUNCT	$,	_	13	punct	_	_
-5	dass	dass	SCONJ	KOUS	_	13	mark	_	_
-6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+5	dass	dass	SCONJ	KOUS	_	20	mark	_	_
+6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
 7	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
 8	nur	nur	ADV	ADV	_	13	advmod	_	_
 9	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Gabe	Gabe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	13	obj	_	_
 11	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	Mitteilung	Mitteilung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
-13	verloren	verlieren	VERB	VVPP	Verbform=Part	3	csubj	_	_
+13	verloren	verlieren	VERB	VVPP	Verbform=Part	20	xcomp	_	_
 14	,	,	PUNCT	$,	_	17	punct	_	_
 15	sondern	sondern	CCONJ	KON	_	17	cc	_	_
 16	sogar	sogar	ADV	ADV	_	17	advmod	_	_
 17	vergessen	vergessen	VERB	VVPP	Verbform=Part	13	conj	_	_
 18	zu	zu	PART	PTKZU	_	17	mark	_	_
 19	haben	haben	AUX	VAINF	VerbForm=Inf	17	aux	_	_
-20	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_
+20	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	csubj	_	_
 21	,	,	PUNCT	$,	_	26	punct	_	_
 22	was	was	PRON	PWS	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	26	obj	_	_
 23	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
 24	ursprünglich	ursprünglich	ADJ	ADJD	_	26	advmod	_	_
 25	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
-26	sagen	sagen	VERB	VVINF	VerbForm=Inf	20	acl	_	_
+26	sagen	sagen	VERB	VVINF	VerbForm=Inf	17	ccomp	_	_
 27	wollen	wollen	AUX	VMINF	VerbForm=Inf	26	aux	_	_
 28	.	.	PUNCT	$.	_	3	punct	_	_
 
 [QUALITY] seltsam (3)
-[has-quality] , dass er nicht nur die Gabe der Mitteilung verloren (13)
-[??? ] , sondern sogar vergessen zu haben (17)
-[??? Syntax: "schien" sollte an "vergessen" hängen?] schien , was er ursprünglich hatte sagen wollen (20)
+[has-quality] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (20)
 
 [POSSESSION-DEINIT >> SCENE-DEINIT] verloren (13)
-[initial-possessor >> participant] er (6)
 [m-mode] nicht (7)
 [m-mode] nur (8)
 [possessed >> initial-scene] die Gabe der Mitteilung (10)
+[initial-possessor >> participant] er (6)
 
 [IDENTIFICATION] er (6)
 
@@ -663,11 +661,14 @@
 
 [MESSAGE-DEINIT] vergessen (17)
 [m-mode] sogar (16)
+[initial-content] , was er ursprünglich hatte sagen wollen (26)
 
 [MODE] sogar (16)
 
 [MESSAGE] schien (20)
-[content] , was er ursprünglich hatte sagen wollen (26)
+[topic] er (6)
+[content] , nicht nur die Gabe der Mitteilung verloren (13)
+[content] , sondern sogar vergessen zu haben , was er ursprünglich hatte sagen wollen (17)
 
 [MESSAGE-INIT] sagen (26)
 [target-content] was (22)
@@ -1631,7 +1632,7 @@
 16	ganz	ganz	ADV	ADV	_	19	advmod	_	_
 17	in	in	ADP	APPR	_	18	case	_	_
 18	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	19	obl	_	_
-19	hineinkriechen	hineinkriechen	VERB	VVINF	VerbForm=Inf	3	advcl	_	_
+19	hineinkriechen	hineinkriechen	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 20	und	und	CCONJ	KON	_	23	cc	_	_
 21	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
@@ -1794,7 +1795,6 @@
 [MESSAGE-INIT] brüllte (3)
 [x-sender] Kleiner Junge (2)
 [x-causer] vor angst (5)
-[??? Syntax: soll an "verbarg"] als wollte er ganz in sie hineinkriechen (19)
 
 [CLASS] Junge (2)
 [m-quality] Kleiner (1)
@@ -1806,6 +1806,7 @@
 [LOCATION-INIT] verbarg (7)
 [has-location] seinen köpf (9)
 [target-location] zwischen den brüsten (12)
+[m-reference] als wollte er ganz in sie hineinkriechen (19)
 
 [CLASS] köpf (9)
 [m-whole] seinen (8)
@@ -1848,14 +1849,14 @@
 [m-quality] so gut wie möglich (44)
 [m-reference] als glaubte sie ihre arme könnten die kugeln von ihm abhalten (48)
 
-[??? Syntax? "außer sich sein", "war" sollte nicht aux?] sich (36)
-[] sie (33)
-[] selbst (34)
-[] vor angst (38)
+[STATE] sich (36)
+[has-state] sie (33)
+[m-mode] selbst (34)
+[m-causer] vor angst (38)
 
 [IDENTIFICATION] sie (33)
 
-[] selbst (34)
+[MODE] selbst (34)
 
 [MESSAGE] angst (38)
 
@@ -1949,14 +1950,15 @@
 
 [IDENTIFICATION] der (86)
 
-[LOCATION] hoch (87)
+[LOCATION-INIT] hoch (87)
 
-[LOCATION] hoch (89)
+[LOCATION-INIT] hoch (89)
 
-[??? LOCATION] höher (92)
-[??? m-noncomp] immer (91)
+[LOCATION-INIT] höher (92)
+[m-scene] immer (91)
 
-[??? NONCOMP] immer (91)
+[SCENE-CONTINUATION] immer (91)
+[initial-scene] höher (92)
 
 [CLASS] luft (96)
 
@@ -2071,13 +2073,13 @@
 
 [MODE] nicht (158)
 
-[??? EVENT] passierte (162)
-[??? undergoer] ihr (160)
-[??? event] etwas (161)
+[EVENT] passierte (162)
+[undergoer] ihr (160)
+[event] etwas (161)
 
 [IDENTIFICATION] ihr (160)
 
-[???] etwas (161)
+[CLASS] etwas (161)
 
 [MESSAGE] kümmert (164)
 [x-experiencer] niemand (163)
@@ -2307,7 +2309,7 @@
 16	nach	nach	ADP	APPR	_	17	case	_	_
 17	Hause	Haus	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	19	obl	_	_
 18	zu	zu	PART	PTKZU	_	19	mark	_	_
-19	gehen	gehen	VERB	VVINF	VerbForm=Inf	13	xcomp	_	_
+19	gehen	gehen	VERB	VVINF	VerbForm=Inf	12	acl	_	_
 20	und	und	CCONJ	KON	_	25	cc	_	_
 21	heute	heute	ADV	ADV	_	25	advmod	_	_
 22	sein	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Sing|Poss=Yes	23	det:poss	_	_
@@ -2327,9 +2329,7 @@
 
 [CAUSATION] schuld (13)
 [causer] dieser andere Vorfall (8)
-[result] an seinem plötzlichen Entschluss (12)
-[??? result ??? Syntax:sollte das nicht an Entschluss hängen] , nach Hause zu gehen (19)
-[??? result ??? Syntax:sollte das nicht an Entschluss hängen] und heute sein Tagebuch zu beginnen (25)
+[result] an seinem plötzlichen Entschluss , nach Hause zu gehen und heute sein Tagebuch zu beginnen (12)
 
 [SITUATION] Vorfall (8)
 [m-scene] andere (7)
@@ -2340,6 +2340,8 @@
 [MESSAGE-INIT] Entschluss (12)
 [x-experiencer] seinem (10)
 [m-time] plötzlichen (11)
+[target-content] , nach Hause zu gehen (19)
+[target-content] und heute sein Tagebuch zu beginnen (25)
 
 [IDENTIFICATION] seinem (10)
 
@@ -2859,7 +2861,7 @@
 [m-quality] von etwa siebenundzwanzig Jahren (10)
 [m-part] , mit üppigem schwarzen Haar (15)
 [m-part] , sommersprossigem Gesicht (18)
-[m-quality] und raschen , muskulösen Bewegungen (23)
+[m-scene] und raschen , muskulösen Bewegungen (23)
 
 [IDENTIFICATION] Sie (1)
 
@@ -2894,6 +2896,7 @@
 [LOCATION-CHANGE >> QUALITY] Bewegungen (23)
 [m-quality] raschen , (20)
 [m-quality] muskulösen (22)
+[has-location >> has-quality] Mädchen (6)
 
 [QUALITY] raschen (20)
 
