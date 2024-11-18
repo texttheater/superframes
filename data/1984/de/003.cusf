@@ -162,7 +162,7 @@
 18	gestreift	streifen	VERB	VVPP	Verbform=Part	0	root	_	_
 19	,	,	PUNCT	$,	_	24	punct	_	_
 20	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
-21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obj	_	_
+21	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	_	_
 22	zu	zu	PART	PTKZU	_	23	mark	_	_
 23	durchbohren	durchbohren	VERB	VVINF	VerbForm=Inf	24	xcomp	_	_
 24	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	acl	_	_
@@ -179,12 +179,12 @@
 35	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux	_	_
 36	.	.	PUNCT	$.	_	18	punct	_	_
 
-[MESSAGE-INIT] gestreift (18)
+[UNANCHORED-MOTION >> SCENE-INIT] gestreift (18)
 [m-time] Einmal (1)
 [m-time] , als sie auf dem Gang aneinander vorbeigekommen waren , (9)
-[x-sender] sie (13)
-[x-experiencer] ihn (14)
-[m-means] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
+[x-causer >> participant] sie (13)
+[transitory-location >> participant] ihn (14)
+[in-motion >> target-scene] mit einem Seitenblick , der ihn zu durchbohren schien und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (17)
 
 [TIME] Einmal (1)
 
@@ -203,14 +203,15 @@
 
 [IDENTIFICATION] ihn (14)
 
-[MESSAGE] Seitenblick (17)
+[MESSAGE-INIT] Seitenblick (17)
 [m-scene] , der ihn zu durchbohren schien (24)
 [m-scene] und der ihn für einen Augenblick mit blankem Entsetzen erfüllt hatte (34)
+[topic] ihn (14)
+[x-sender] sie (13)
 
 [MESSAGE] schien (24)
 [x-sender || topic] der (20)
-[x-experiencer] ihn (21)
-[content] zu durchbohren (23)
+[content] ihn zu durchbohren (23)
 [x-sender || topic] Seitenblick (17)
 
 [IDENTIFICATION] der (20)
@@ -218,6 +219,9 @@
 [IDENTIFICATION] ihn (21)
 
 [UNANCHORED-MOTION >> MESSAGE] durchbohren (23)
+[transitory-location >> x-experiencer] ihn (21)
+[in-motion >> x-sender] der (20)
+[in-motion >> x-sender] Seitenblick (17)
 
 [MESSAGE-INIT] erfüllt (34)
 [x-sender] der (26)
@@ -276,7 +280,7 @@
 
 [MESSAGE] Gedanke (5)
 
-[CLASS >> NONCOMP] Kopf (8)
+[PART-WHOLE >> NONCOMP] Kopf (8)
 
 [SOCIAL-RELATION] Agentin (14)
 [has-social-relation] sie (11)
@@ -583,12 +587,12 @@
 
 [QUALITY] grobschlächtiger (6)
 
-[CLASS] Nacken (10)
+[PART-WHOLE] Nacken (10)
 [m-state] dickem (9)
 
 [STATE] dickem (9)
 
-[CLASS] Gesicht (18)
+[PART-WHOLE] Gesicht (18)
 [m-quality] derben (13)
 [m-quality] , humorvollen (15)
 [m-quality] und brutalen (17)
@@ -680,10 +684,10 @@
 
 [IDENTIFICATION] Er (1)
 
-[MESSAGE] Manier (4)
-[content] , seine Brille auf der Nase zurechtzurücken (11)
+[ACTIVITY] Manier (4)
+[activity] , seine Brille auf der Nase zurechtzurücken (11)
 [m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22)
-[x-sender] Er (1)
+[is-active] Er (1)
 
 [LOCATION-INIT] zurechtzurücken (11)
 [has-location] seine Brille (7)
@@ -694,7 +698,7 @@
 
 [IDENTIFICATION] seine (6)
 
-[CLASS] Nase (10)
+[PART-WHOLE] Nase (10)
 
 [POSSESSION-DEINIT >> QUALITY] entwaffnend (15)
 [m-quality] seltsam (14)
@@ -903,7 +907,7 @@
 [IDENTIFICATION] ihm (6)
 
 [LOCATION-INIT >> MESSAGE] hingezogen (7)
-[target-location >> ??? topic] zu ihm (6)
+[target-location >> topic] zu ihm (6)
 
 [SITUATION] das (10)
 [m-mode] nicht nur (12)
@@ -924,8 +928,8 @@
 [compared] zwischen O'Briens höflichen Manieren (21)
 [reference] und seinem Preisboxertypus (24)
 
-[MESSAGE] Manieren (21)
-[x-sender] O'Briens (19)
+[ACTIVITY] Manieren (21)
+[is-active] O'Briens (19)
 [m-quality] höflichen (20)
 
 [IDENTIFICATION] O'Briens (19)
@@ -1005,7 +1009,7 @@
 
 [IDENTIFICATION] O'Briens (18)
 
-[QUALITY] politische (19)
+[ACTIVITY] politische (19)
 
 [MODE] nicht (21)
 
@@ -1024,19 +1028,20 @@
 
 [LOCATION-INIT >> MESSAGE-INIT] flößte (5)
 [x-causer >> x-sender] Etwas in seinem Gesicht (1)
-[m-quality] unwiderstehlich (6)
+[m-scene] unwiderstehlich (6)
 [has-location >> content] diesen Gedanken (8)
 [target-location >> m-noncomp] ein (9)
 
 [CLASS] Etwas (1)
 [m-location] in seinem Gesicht (4)
 
-[CLASS] Gesicht (4)
-[m-whole] seinem (3)
+[PART-WHOLE] Gesicht (4)
+[whole] seinem (3)
 
 [IDENTIFICATION] seinem (3)
 
-[QUALITY-NEG >> QUALITY] unwiderstehlich (6)
+[SCENE-PREVENTION-NEG] unwiderstehlich (6)
+[target-scene] flößte (5)
 
 [MESSAGE] Gedanken (8)
 
@@ -1049,43 +1054,45 @@
 5	diesem	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	3	obl	_	_
 7	eigentlich	eigentlich	ADV	ADV	_	3	advmod	_	_
-8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	9	advmod	_	_
+8	weniger	wenig	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	10	advmod	_	_
 9	mangelnde	mangelnd	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 10	Strenggläubigkeit	Strenggläubigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	nsubj	_	_
 11	als	als	CCONJ	KOKOM	_	13	case	_	_
 12	einfach	einfach	ADJ	ADJD	_	13	advmod	_	_
-13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	14	obl	_	_
+13	Intelligenz	Intelligenz	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	10	obl	_	_
 14	geschrieben	schreiben	VERB	VVPP	Verbform=Part	3	xcomp	_	_
 15	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] stand (3)
-[] doch (2)
-[] in diesem Gesicht (6)
-[] eigentlich (7)
-[] weniger mangelnde Strenggläubigkeit (10)
-[] als einfach Intelligenz geschrieben (14)
+[LOCATION >> SCENE] stand (3)
+[m-scene] doch (2)
+[location >> m-location] in diesem Gesicht (6)
+[m-mode] eigentlich (7)
+[has-location >> participant] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
+[m-depictive >> scene] geschrieben (14)
 
-[] doch (2)
+[CONCESSION] doch (2)
+[asserted] stand (3)
 
-[] Gesicht (6)
+[PART-WHOLE] Gesicht (6)
 
-[] eigentlich (7)
+[MODE] eigentlich (7)
 
-[] Strenggläubigkeit (10)
-[] weniger mangelnde (9)
+[MESSAGE] Strenggläubigkeit (10)
+[m-quantity] weniger (8)
+[m-quantity] mangelnde (9)
+[m-reference] als einfach Intelligenz (13)
 
-[] mangelnde (9)
-[] weniger (8)
+[QUANTITY] weniger (8)
 
-[] weniger (8)
+[QUANTITY] mangelnde (9)
 
-[] geschrieben (14)
-[] als einfach Intelligenz (13)
+[QUALITY] Intelligenz (13)
+[m-mode] einfach (12)
 
-[] Intelligenz (13)
-[] einfach (12)
+[MODE] einfach (12)
 
-[] einfach (12)
+[MESSAGE-INIT] geschrieben (14)
+[target-content] weniger mangelnde Strenggläubigkeit als einfach Intelligenz (10)
 
 # sent_id = 167
 # text = Jedenfalls sah er wie ein Mensch aus , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam .
@@ -1105,7 +1112,7 @@
 14	,	,	PUNCT	$,	_	19	punct	_	_
 15	wenn	wenn	SCONJ	KOUS	_	19	mark	_	_
 16	man	man	PRON	PIS	Definite=Ind|Gender=Neut	19	nsubj	_	_
-17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+17	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	expl	_	_
 18	fertig	fertig	ADJ	ADJD	_	19	xcomp	_	_
 19	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	_
 20	,	,	PUNCT	$,	_	26	punct	_	_
@@ -1118,65 +1125,69 @@
 27	,	,	PUNCT	$,	_	33	punct	_	_
 28	und	und	CCONJ	KON	_	33	cc	_	_
 29	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
-30	allein	allein	ADV	ADV	_	32	advmod	_	_
+30	allein	allein	ADV	ADV	_	33	advmod	_	_
 31	zu	zu	PART	PTKZU	_	32	mark	_	_
 32	fassen	fassen	VERB	VVINF	VerbForm=Inf	33	xcomp	_	_
-33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
+33	bekam	bekommen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	_
 34	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sah (2)
-[] Jedenfalls (1)
-[] er (3)
-[] wie ein Mensch , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (6)
-[] aus (7)
+[MESSAGE-INIT] sah (2)
+[???] Jedenfalls (1)
+[topic] er (3)
+[target-content] wie ein Mensch , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (6)
+[m-noncomp] aus (7)
 
-[] Jedenfalls (1)
+[???] Jedenfalls (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] Mensch (6)
-[] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[CLASS] Mensch (6)
+[m-scene] , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (12)
+[has-class] er (3)
 
-[] reden (12)
-[] mit dem (10)
-[] man (11)
-[] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (19)
+[MESSAGE] reden (12)
+[x-experiencer] mit dem (10)
+[x-sender] man (11)
+[m-condition] , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen (19)
+[m-condition] , und ihn allein zu fassen bekam (33)
+[x-sender] Mensch (6)
 
-[] dem (10)
+[IDENTIFICATION] dem (10)
 
-[] man (11)
+[IDENTIFICATION] man (11)
 
-[] brachte (19)
-[] man (16)
-[] es (17)
-[] fertig (18)
-[] , dem Televisor ein Schnippchen zu schlagen (26)
-[] , und ihn allein zu fassen bekam (33)
+[SCENE-INIT] brachte (19)
+[x-causer] man (16)
+[target-scene >> x-noncomp] fertig (18)
+[participant >> target-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
-[] man (16)
+[IDENTIFICATION] man (16)
 
-[] es (17)
+[SCENE-DEINIT] fertig (18)
+[initial-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
-[] fertig (18)
+[HITTING >> SITUATION-PREVENTION] schlagen (26)
+[hit >> theme] dem Televisor (22)
+[x-noncomp] ein Schnippchen (24)
 
-[] schlagen (26)
-[] dem Televisor (22)
-[] ein Schnippchen (24)
+[CLASS] Televisor (22)
 
-[] Televisor (22)
+[NONCOMP] Schnippchen (24)
 
-[] Schnippchen (24)
+[SCENE-INIT] bekam (33)
+[participant] ihn (29)
+[m-depictive] allein (30)
+[target-scene] zu fassen (32)
+[participant] man (16)
 
-[] bekam (33)
-[] ihn (29)
-[] allein zu fassen (32)
+[IDENTIFICATION] ihn (29)
 
-[] ihn (29)
+[SOCIAL-RELATION-NEG >> STATE] allein (30)
+[has-social-relation >> has.state] ihn (29)
 
-[] fassen (32)
-[] allein (30)
-
-[] allein (30)
+[POSSESSION-INIT] fassen (32)
+[possessed] ihn (29)
+[target-possessor] man (16)
 
 # sent_id = 168
 # text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
@@ -1195,7 +1206,7 @@
 13	Richtigkeit	Richtigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obl	_	_
 14	hin	hin	ADP	APZR	_	13	advmod	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
-16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
+16	prüfen	prüfen	VERB	VVINF	VerbForm=Inf	6	xcomp	_	_
 17	:	:	PUNCT	$.	_	19	punct	_	_
 18	praktisch	praktisch	ADJ	ADJD	_	19	advmod	_	_
 19	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	_
@@ -1206,54 +1217,57 @@
 24	dazu	dazu	ADP	PROAV	PronType=Dem	19	advmod	_	_
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] gemacht (7)
-[] Winston (1)
-[] nie (3)
-[] den geringsten Versuch (6)
-[] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[SCENE-INIT] gemacht (7)
+[participant] Winston (1)
+[m-time] nie (3)
+[target-scene] den geringsten Versuch , seine Vermutung auf ihre Richtigkeit hin zu prüfen (6)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] nie (3)
+[TIME-NEG] nie (3)
 
-[] Versuch (6)
-[] geringsten (5)
+[SCENE-INIT] Versuch (6)
+[m-quantity] geringsten (5)
+[target-scene] , seine Vermutung auf ihre Richtigkeit hin zu prüfen (16)
+[participant] Winston (1)
 
-[] geringsten (5)
+[QUANTITY] geringsten (5)
 
-[] prüfen (16)
-[] seine Vermutung (10)
-[] auf ihre Richtigkeit hin (13)
+[MESSAGE-INIT] prüfen (16)
+[topic] seine Vermutung (10)
+[target-content] auf ihre Richtigkeit hin (13)
+[x-experiencer] Winston (1)
 
-[] Vermutung (10)
-[] seine (9)
+[MESSAGE] Vermutung (10)
+[x-experiencer] seine (9)
 
-[] seine (9)
+[IDENTIFICATION] seine (9)
 
-[] Richtigkeit (13)
-[] ihre (12)
-[] hin (14)
+[QUALITY] Richtigkeit (13)
+[??? m-noncomp ???oder Syntax] ihre (12)
+[??? m-noncomp ??? Syntax] hin (14)
+[has-quality] seine Vermutung (10)
 
-[] ihre (12)
+[???] ihre (12)
 
-[] hin (14)
+[???] hin (14)
 
-[] gab (19)
-[] praktisch (18)
-[] auch (21)
-[] keine Möglichkeit (23)
-[] dazu (24)
+[SCENE] gab (19)
+[??? m-situator] praktisch (18)
+[m-mode] auch (21)
+[scene] keine Möglichkeit (23)
+[??? scene] dazu (24)
 
-[] praktisch (18)
+[???] praktisch (18)
 
-[] auch (21)
+[MODE] auch (21)
 
-[] Möglichkeit (23)
-[] keine (22)
+[SCENE-POSSIBILITY] Möglichkeit (23)
+[m-mode] keine (22)
 
-[] keine (22)
+[MODE] keine (22)
 
-[] dazu (24)
+[??? IDENTIFICATION] dazu (24)
 
 # sent_id = 169
 # text = O'Brien warf in diesem Augenblick einen Blick auf seine Armbanduhr , sah , dass es fast elf Uhr war , und beschloss offenbar , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war .
@@ -1296,55 +1310,58 @@
 37	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	advcl	_	_
 38	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] warf (2)
-[] O'Brien (1)
-[] in diesem Augenblick (5)
-[] einen Blick auf seine Armbanduhr (7)
+[LOCATION-CHANGE >> MESSAGE-INIT] warf (2)
+[x-causer >> x-experiencer] O'Brien (1)
+[m-time] in diesem Augenblick (5)
+[has-location >> x-noncomp] einen Blick auf seine Armbanduhr (7)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
-[] Augenblick (5)
+[TIME] Augenblick (5)
 
-[] Blick (7)
-[] auf seine Armbanduhr (10)
+[MESSAGE-INIT] Blick (7)
+[topic] auf seine Armbanduhr (10)
 
-[] Armbanduhr (10)
-[] seine (9)
+[CLASS] Armbanduhr (10)
+[m-possessor] seine (9)
 
-[] seine (9)
+[IDENTIFICATION] seine (9)
 
-[] sah (12)
-[] , dass es fast elf Uhr war (18)
+[MESSAGE] sah (12)
+[content] , dass es fast elf Uhr war (18)
+[x-experiencer] O'Brien (1)
 
-[] Uhr (18)
-[] es (15)
-[] fast elf (17)
+[TIME] Uhr (18)
+[x-noncomp] es (15)
+[m-quantity] fast elf (17)
 
-[] es (15)
+[NONCOMP] es (15)
 
-[] elf (17)
-[] fast (16)
+[TIME] elf (17)
+[m-quantity >> m-noncomp] fast (16)
 
-[] fast (16)
+[QUANTITY >> NONCOMP] fast (16)
 
-[] beschloss (22)
-[] offenbar (23)
-[] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
+[MESSAGE-INIT] beschloss (22)
+[??? m-mode] offenbar (23)
+[target-content] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
+[x-experiencer] O'Brien (1)
 
-[] offenbar (23)
+[??? MODE] offenbar (23)
 
-[] bleiben (30)
-[] in der Abteilung Registratur (27)
-[] zu Ende (36)
-[] , bis die Zwei-Minuten-Hass-Sendung war (37)
+[LOCATION-CONTINUATION] bleiben (30)
+[initial-location] in der Abteilung Registratur (27)
+[m-time] zu Ende (36)
+[m-time] , bis die Zwei-Minuten-Hass-Sendung war (37)
+[has-location] O'Brien (1)
 
-[] Abteilung Registratur (27)
+[PART-WHOLE] Abteilung Registratur (27)
 
-[] Registratur (28)
+[MESSAGE] Registratur (28)
 
-[] Ende (36)
+[??? Syntax TIME-DEINIT] Ende (36)
 
-[] war (37)
+[??? Syntax: "... zu Ende war" gehört zusammen, oder] war (37)
 [] die Zwei-Minuten-Hass-Sendung (34)
 
 [] Zwei-Minuten-Hass-Sendung (34)
@@ -1370,36 +1387,37 @@
 17	entfernt	entfernt	ADJ	ADJD	_	2	conj	_	_
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] setzte (2)
-[] Er (1)
-[] sich (3)
-[] auf einen Stuhl in derselben Reihe wie Winston (6)
+[LOCATION-INIT] setzte (2)
+[x-causer >> has-location] Er (1)
+[has-location >> x-noncomp] sich (3)
+[target-location] auf einen Stuhl in derselben Reihe wie Winston (6)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION >> NONCOMP] sich (3)
 
-[] Stuhl (6)
-[] in derselben Reihe wie Winston (9)
+[CLASS] Stuhl (6)
+[m-location] in derselben Reihe wie Winston (9)
 
-[] Reihe (9)
-[] derselben (8)
-[] wie Winston (11)
+[??? SEQUENCE] Reihe (9)
+[m-scene] derselben (8)
+[m-reference] wie Winston (11)
 
-[] derselben (8)
+[COMPARISON] derselben (8)
+[compared] Reihe (9)
 
-[] Winston (11)
+[IDENTIFICATION] Winston (11)
 
-[] entfernt (17)
-[] zwei Plätze (14)
-[] von ihm (16)
+[LOCATION] entfernt (17)
+[m-quantity] zwei Plätze (14)
+[??? location] von ihm (16)
 
-[] Plätze (14)
-[] zwei (13)
+[CLASS] Plätze (14)
+[m-quantity] zwei (13)
 
-[] zwei (13)
+[QUANTITY] zwei (13)
 
-[] ihm (16)
+[IDENTIFICATION] ihm (16)
 
 # sent_id = 171
 # text = Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , saß zwischen ihnen ...
@@ -1422,31 +1440,33 @@
 17	ihnen	sie	PRON	PPER	Case=Dat|Gender=Neut|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
 18	...	...	PUNCT	$.	_	15	punct	_	_
 
-[] saß (15)
-[] Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , (4)
-[] zwischen ihnen (17)
+[LOCATION] saß (15)
+[has-location] Eine kleine aschblonde Frau , die in der Abteilung neben Winston beschäftigt war , (4)
+[location] zwischen ihnen (17)
 
-[] Frau (4)
-[] kleine (2)
-[] aschblonde (3)
-[] , die in der Abteilung neben Winston beschäftigt war (12)
+[CLASS] Frau (4)
+[m-quality] kleine (2)
+[m-scene] aschblonde (3)
+[m-scene] , die in der Abteilung neben Winston beschäftigt war (12)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] aschblonde (3)
+[COMPARISON >> QUALITY] aschblonde (3)
+[compared >> has-quality] Frau (4)
 
-[] beschäftigt (12)
-[] die (6)
-[] in der Abteilung (9)
-[] neben Winston (11)
+[SOCIAL-RELATION] beschäftigt (12)
+[has-social-relation] die (6)
+[social-relation] in der Abteilung (9)
+[social-relation] neben Winston (11)
+[has-social-relation] Frau (4)
 
-[] die (6)
+[IDENTIFICATION] die (6)
 
-[] Abteilung (9)
+[PART-WHOLE] Abteilung (9)
 
-[] Winston (11)
+[IDENTIFICATION] Winston (11)
 
-[] ihnen (17)
+[IDENTIFICATION] ihnen (17)
 
 # sent_id = 172
 # text = Das Mädchen mit dem schwarzen Haar saß unmittelbar dahinter .
@@ -1461,22 +1481,22 @@
 9	dahinter	dahinter	ADP	PROAV	PronType=Dem	7	advmod	_	_
 10	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] saß (7)
-[] Das Mädchen mit dem schwarzen Haar (2)
-[] unmittelbar dahinter (9)
+[LOCATION] saß (7)
+[has-location] Das Mädchen mit dem schwarzen Haar (2)
+[location] unmittelbar dahinter (9)
 
-[] Mädchen (2)
-[] mit dem schwarzen Haar (6)
+[CLASS] Mädchen (2)
+[m-part] mit dem schwarzen Haar (6)
 
-[] Haar (6)
-[] schwarzen (5)
+[PART-WHOLE] Haar (6)
+[m-quality] schwarzen (5)
 
-[] schwarzen (5)
+[QUALITY] schwarzen (5)
 
-[] dahinter (9)
-[] unmittelbar (8)
+[LOCATION] dahinter (9)
+[??? m-mode] unmittelbar (8)
 
-[] unmittelbar (8)
+[??? MODE] unmittelbar (8)
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1510,50 +1530,52 @@
 28	hervor	hervor	ADP	PTKVZ	_	4	compound:prt	_	_
 29	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] brach (4)
-[] Im nächsten Augenblick (3)
-[] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
-[] aus dem großen Televisor am Ende des Raumes (23)
-[] hervor (28)
+[SCENE-INIT] brach (4)
+[m-time] Im nächsten Augenblick (3)
+[target-scene] ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , (9)
+[participant] aus dem großen Televisor am Ende des Raumes (23)
+[m-noncomp] hervor (28)
 
-[] Augenblick (3)
-[] nächsten (2)
+[TIME] Augenblick (3)
+[??? m-time] nächsten (2)
 
-[] nächsten (2)
+[??? SEQUENCE || TIME] nächsten (2)
 
-[] Kreischlaut (9)
-[] scheußlicher (6)
-[] , knirschender (8)
-[] , als ob eine riesige Maschine völlig ungeölt liefe , (18)
+[MESSAGE] Kreischlaut (9)
+[m-quality] scheußlicher (6)
+[m-quality] , knirschender (8)
+[m-reference] , als ob eine riesige Maschine völlig ungeölt liefe , (18)
+[x-sender] aus dem großen Televisor am Ende des Raumes (23)
 
-[] scheußlicher (6)
+[QUALITY] scheußlicher (6)
 
-[] knirschender (8)
+[QUALITY] knirschender (8)
 
-[] liefe (18)
-[] eine riesige Maschine (15)
-[] völlig ungeölt (17)
+[UNANCHORED-MOTION >> EVENT] liefe (18)
+[in-motion >> undergoer] eine riesige Maschine (15)
+[m-depictive] völlig ungeölt (17)
 
-[] Maschine (15)
-[] riesige (14)
+[CLASS] Maschine (15)
+[m-quality] riesige (14)
 
-[] riesige (14)
+[QUALITY] riesige (14)
 
-[] ungeölt (17)
-[] völlig (16)
+[STATE-NEG >> STATE] ungeölt (17)
+[m-quantity] völlig (16)
+[has-state] eine riesige Maschine (15)
 
-[] völlig (16)
+[QUANTITY] völlig (16)
 
-[] Televisor (23)
-[] großen (22)
-[] am Ende des Raumes (25)
+[CLASS] Televisor (23)
+[m-quality] großen (22)
+[m-location] am Ende des Raumes (25)
 
-[] großen (22)
+[QUALITY] großen (22)
 
-[] Ende (25)
-[] des Raumes (27)
+[PART-WHOLE] Ende (25)
+[whole] des Raumes (27)
 
-[] Raumes (27)
+[CLASS] Raumes (27)
 
 # sent_id = 174
 # text = Es war ein Lärm , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten .
@@ -1575,31 +1597,36 @@
 16	sträubten	sträuben	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
 17	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Lärm (4)
-[] Es (1)
-[] , bei dem einen eine Gänsehaut überlief (11)
-[] und sich die Nackenhaare sträubten (16)
+[MESSAGE] Lärm (4)
+[x-identified] Es (1)
+[m-scene] , bei dem einen eine Gänsehaut überlief (11)
+[m-scene] und sich die Nackenhaare sträubten (16)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] überlief (11)
-[] bei dem (7)
-[] einen (8)
-[] eine Gänsehaut (10)
+[SCENE-INIT] überlief (11)
+[participant] bei dem (7)
+[participant] einen (8)
+[target-scene] eine Gänsehaut (10)
+[participant] Lärm (4)
 
-[] dem (7)
+[IDENTIFICATION] dem (7)
 
-[] einen (8)
+[IDENTIFICATION] einen (8)
 
-[] Gänsehaut (10)
+[MESSAGE-INIT] Gänsehaut (10)
+[x-causer || x-sender] bei dem (7)
+[x-experiencer] einen (8)
+[x-causer || x-sender] Lärm (4)
 
-[] sträubten (16)
-[] sich (13)
-[] die Nackenhaare (15)
+[LOCATION-INIT] sträubten (16)
+[x-noncomp] sich (13)
+[has-location] die Nackenhaare (15)
+[x-causer] Lärm (4)
 
-[] sich (13)
+[NONCOMP] sich (13)
 
-[] Nackenhaare (15)
+[PART-WHOLE] Nackenhaare (15)
 
 # sent_id = 175
 # text = Die Hass-Sendung hatte begonnen .
@@ -1609,10 +1636,10 @@
 4	begonnen	beginnen	VERB	VVPP	Verbform=Part	0	root	_	_
 5	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] begonnen (4)
-[] Die Hass-Sendung (2)
+[SCENE-INIT] begonnen (4)
+[target-scene] Die Hass-Sendung (2)
 
-[] Hass-Sendung (2)
+[MESSAGE] Hass-Sendung (2)
 
 # sent_id = 176
 # text = Wie gewöhnlich war das Gesicht Immanuel Goldsteins , des Volksfeinds , auf dem Sehschirm erschienen .
