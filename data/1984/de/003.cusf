@@ -442,9 +442,9 @@
 [social-relation] der Inneren Partei (14)
 [has-social-relation] Mann (6)
 
-[IDENTIFICATION] Inneren Partei (14)
+[SOCIAL-RELATION >> IDENTIFICATION] Inneren Partei (14)
 
-[NONCOMP] Inneren (13)
+[LOCATION] Inneren (13)
 
 [POSSESSION] Inhaber (16)
 [possessed] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
@@ -546,9 +546,9 @@
 [SOCIAL-RELATION] Mitglieds (18)
 [social-relation] der Inneren Partei (21)
 
-[IDENTIFICATION] Inneren Partei (21)
+[SOCIAL-RELATION >> IDENTIFICATION] Inneren Partei (21)
 
-[NONCOMP] Inneren (20)
+[LOCATION] Inneren (20)
 
 [LOCATION-INIT] herankommen (22)
 [has-location] den schwarzen Trainingsanzug eines Mitglieds der Inneren Partei (16)
@@ -1244,18 +1244,18 @@
 
 [IDENTIFICATION] seine (9)
 
-[MODE] Richtigkeit (13) # # ?? 
+[MODE] Richtigkeit (13)
 [has-mode] ihre (12)
 [has-mode] seine Vermutung (10)
 
 [IDENTIFICATION] ihre (12)
 
 [SCENE] gab (19) # # Vgl. (130)
-[m-means >> m-mode] praktisch (18) # # ??
+[m-mode] praktisch (18)
 [m-mode] auch (21)
 [scene] keine Möglichkeit dazu (23)
 
-[MEANS >> MODE] praktisch (18) # # ??
+[MODE] praktisch (18)
 
 [MODE] auch (21)
 
@@ -1299,8 +1299,8 @@
 28	Registratur	Registratur	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	27	appos	_	_
 29	zu	zu	PART	PTKZU	_	30	mark	_	_
 30	bleiben	bleiben	VERB	VVINF	VerbForm=Inf	22	xcomp	_	_
-31	,	,	PUNCT	$,	_	37	punct	_	_
-32	bis	bis	SCONJ	KOUS	_	37	mark	_	_
+31	,	,	PUNCT	$,	_	36	punct	_	_
+32	bis	bis	SCONJ	KOUS	_	36	mark	_	_
 33	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	Zwei-Minuten-Hass-Sendung	Zwei-Minuten-Hass-Sendung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	36	nsubj	_	_
 35	zu	zu	ADP	APPR	_	36	case	_	_
@@ -1341,21 +1341,21 @@
 [QUANTITY] fast (16)
 
 [SCENE] beschloss (22)
-[m-mode || m-scene] offenbar (23) # # ?? 
+[m-scene] offenbar (23)
 [scene] , in der Abteilung Registratur zu bleiben , bis die Zwei-Minuten-Hass-Sendung zu Ende war (30)
 [participant] O'Brien (1) # # manuell hinzugefügt
 
-[MODE || SCENE] offenbar (23) # # ?? eine Bedeutung: "[deutlich] erkennbar"
-[has-mode || scene] beschloss (22) # # ?? 
+[MESSAGE >> MODE] offenbar (23) # # eine Bedeutung: "[deutlich] erkennbar"
+[topic >> has-mode] beschloss (22)
 
 [LOCATION] bleiben (30)
 [location] in der Abteilung Registratur (27)
 [m-time] , bis die Zwei-Minuten-Hass-Sendung zu Ende war (36)
 [has-location] O'Brien (1)
 
-[IDENTIFICATION] Abteilung Registratur (27)
+[PART-WHOLE >> IDENTIFICATION] Abteilung Registratur (27)
 
-[NONCOMP] Registratur (28)
+[SOCIAL-RELATION || MESSAGE-INIT] Registratur (28)
 
 [SCENE-DEINIT] Ende (36)
 [initial-scene] die Zwei-Minuten-Hass-Sendung (34)
@@ -1371,7 +1371,7 @@
 5	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Stuhl	Stuhl	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	2	obl	_	_
 7	in	in	ADP	APPR	_	9	case	_	_
-8	derselben	dieselbe	DET	PDAT	Case=Dat|Gender=Fem|Number=Sing|PronType=Dem	9	amod	_	_
+8	derselben	dieselbe	DET	PDAT	Case=Dat|Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_
 9	Reihe	Reihe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	6	nmod	_	_
 10	wie	wie	CCONJ	KOKOM	_	11	case	_	_
 11	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	9	nmod	_	_
@@ -1380,13 +1380,14 @@
 14	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	17	nsubj	_	_
 15	von	von	ADP	APPR	_	16	case	_	_
 16	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nmod	_	_
-17	entfernt	entfernt	ADJ	ADJD	_	2	conj	_	_
+17	entfernt	entfernt	ADJ	ADJD	_	2	advcl	_	_
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-CHANGE] setzte (2)
 [x-causer >> has-location] Er (1)
 [has-location >> x-noncomp] sich (3)
 [target-location] auf einen Stuhl in derselben Reihe wie Winston (6)
+[m-depictive] , zwei Plätze von ihm entfernt (17)
 
 [IDENTIFICATION] Er (1)
 
@@ -1395,9 +1396,8 @@
 [CLASS] Stuhl (6)
 [m-location] in derselben Reihe wie Winston (9)
 
-[RANK >> LOCATION] Reihe (9) # # ??
-[m-reference] derselben (8)
-[has-location] wie Winston (11) # # ??
+[CLASS || LOCATION] Reihe (9) # # CLASS ist default für Substantive, wenn es keine spezifische Rollen gibt
+[m-reference] wie Winston (11)
 
 [COMPARISON] derselben (8)
 
@@ -1405,10 +1405,10 @@
 
 [LOCATION] entfernt (17)
 [m-quantity] zwei Plätze (14)
-[location] von ihm (16) # # ??
-[has-location] Stuhl (6) # # ?? manuell hinzugefügt
+[location] von ihm (16)
+[has-location] Stuhl (6) # # manuell hinzugefügt wegen m-depictive
 
-[LOCATION] Plätze (14) # # ??
+[LOCATION] Plätze (14)
 [m-quantity] zwei (13)
 
 [QUANTITY] zwei (13)
@@ -1457,7 +1457,7 @@
 
 [IDENTIFICATION] die (6)
 
-[LOCATION || CLASS] Abteilung (9) # # ?? 
+[PART-WHOLE] Abteilung (9)
 
 [IDENTIFICATION] Winston (11)
 
@@ -1489,9 +1489,9 @@
 [QUALITY] schwarzen (5)
 
 [LOCATION] dahinter (9)
-[m-mode] unmittelbar (8)
+[m-quality] unmittelbar (8)
 
-[MODE] unmittelbar (8) # # ??
+[QUALITY] unmittelbar (8) # # ??
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1532,9 +1532,10 @@
 [x-noncomp] hervor (28)
 
 [TIME] Augenblick (3)
-[m-follows] nächsten (2)
+[m-scene] nächsten (2)
 
 [SEQUENCE] nächsten (2)
+[follows] Augenblick (3)
 
 [MESSAGE-INIT] Kreischlaut (9)
 [m-quality] scheußlicher (6)
@@ -1597,17 +1598,18 @@
 
 [IDENTIFICATION] Es (1)
 
-[UNANCHORED-MOTION || MESSAGE-INIT] überlief (11) # # ?? 
-[x-causer] bei dem (7) # # ?? 
-[transitory-location || x-experiencer] einen (8)
-[has-location || topic] eine Gänsehaut (10)
-[x-causer] Lärm (4)
+[UNANCHORED-MOTION || SCENE-INIT] überlief (11)
+[m-causer] bei dem (7)
+[transitory-location || participant] einen (8)
+[in-motion || scene] eine Gänsehaut (10)
+[m-causer] Lärm (4)
 
 [IDENTIFICATION] dem (7)
 
 [IDENTIFICATION] einen (8)
 
-[COMPARISON >> MESSAGE] Gänsehaut (10) # # ?? 
+[PART-WHOLE >> STATE >> MESSAGE] Gänsehaut (10)
+[whole >> has-state >> x-experiencer] einen (8)
 
 [UNANCHORED-MOTION || MESSAGE-INIT] sträubten (16) # # Bedeutung: "sich aufrichten"
 [x-noncomp] sich (13)
@@ -1616,7 +1618,7 @@
 
 [NONCOMP] sich (13)
 
-[PART-WHOLE] Nackenhaare (15) # # ?? PART-WHOLE?
+[PART-WHOLE] Nackenhaare (15)
 
 # sent_id = 175
 # text = Die Hass-Sendung hatte begonnen .
@@ -1662,13 +1664,13 @@
 
 [IDENTIFICATION] Immanuel Goldsteins , des Volksfeinds (6)
 
-[SOCIAL-RELATION >> NONCOMP] Volksfeinds (10) # # ??
+[SOCIAL-RELATION] Volksfeinds (10)
 
 [CLASS] Sehschirm (14)
 
 # sent_id = 177
 # text = Da und dort im Zuschauerraum wurde gezischt .
-1	Da	da	ADV	ADV	_	5	advmod	_	_
+1	Da	da	ADV	ADV	_	7	advmod	_	_
 2	und	und	CCONJ	KON	_	3	cc	_	_
 3	dort	dort	ADV	ADV	_	1	conj	_	_
 4	im	im	ADP	APPRART	_	5	case	_	_
@@ -1678,7 +1680,9 @@
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE-INIT] gezischt (7)
-[x-location] Da und dort im Zuschauerraum (5) # # ?? 
+[m-location] Da (1)
+[m-location] und dort (3)
+[m-location] im Zuschauerraum (5)
 
 [LOCATION] Zuschauerraum (5)
 [m-location] Da (1) # # ?? 
@@ -1926,7 +1930,7 @@
 5	Minuten-Haft-Sendung	Minuten-Haft-Sendung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 6	wechselten	wechseln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	von	von	ADP	APPR	_	8	case	_	_
-8	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	10	obl	_	_
+8	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
 9	zu	zu	ADP	APPR	_	10	case	_	_
 10	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	6	obl	_	_
 11	,	,	PUNCT	$,	_	14	punct	_	_
@@ -1945,9 +1949,10 @@
 24	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 25	.	.	PUNCT	$.	_	6	punct	_	_
 
-[SCENE-CHANGE] wechselten (6) # # ??
-[initial-scene || target-scene] Die Programme der Zwei Minuten-Haft-Sendung (2) # # ?? gleichzeitig initial-scene und target-scene? transitory-scene?
-[m-time] von Tag zu Tag (10) # # Bedeutung: "immer wieder"
+[SCENE-CHANGE] wechselten (6)
+[initial-scene] Die Programme der Zwei Minuten-Haft-Sendung (2)
+[m-time] von Tag (8)
+[m-time] zu Tag (10) # # Bedeutung: "immer wieder"
 
 [MESSAGE] Programme (2)
 [m-possessor] der Zwei Minuten-Haft-Sendung (5) # # possessor controls possessed
@@ -1957,12 +1962,11 @@
 [QUANTITY] Zwei (4)
 
 [TIME] Tag (10)
-[m-time] von Tag (8) # # ?? 
 
 [TIME] Tag (8)
 
 [EXISTENCE] gab (14)
-[exists] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15) # # ?? 
+[exists] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15)
 
 [CLASS] keines (15)
 [m-scene] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
@@ -2003,18 +2007,18 @@
 
 [SOCIAL-RELATION] Verräter (5)
 [has-social-relation] Er (1)
-[m-rank || m-time] erste (4) # # ?? 
+[m-rank >> m-time] erste (4)
 
 [IDENTIFICATION] Er (1)
 
-[RANK] erste (4) # # ?? 
+[RANK >> TIME] erste (4)
 
-[STATE-CHANGE] Beschmutzer (9)
-[m-time || m-rank] früheste (8) # # ?? m-depictive?
-[has-state] der Reinheit der Partei (11)
-[x-causer] Er (1)
+[ADORNMENT-TARNISHMENT-INIT >> STATE-CHANGE >> MESSAGE-INIT] Beschmutzer (9)
+[m-time] früheste (8)
+[target-surface >> has-state >> topic] der Reinheit der Partei (11)
+[x-causer >> x-causer >> x-sender] Er (1)
 
-[TIME || RANK] früheste (8) # # falls (8) bei (9) m-depictive: [x-identified] Er (1)
+[TIME] früheste (8)
 
 [STATE] Reinheit (11)
 [has-state] der Partei (13)
@@ -2047,14 +2051,14 @@
 22	zurück	zurück	ADP	PTKVZ	_	17	compound:prt	_	_
 23	.	.	PUNCT	$.	_	17	punct	_	_
 
-[SEQUENCE] gingen (17)
-[follows] Alle später gegen die Partei gerichteten Verbrechen (7)
-[follows] , alle Verrätereien (10)
-[follows] , Sabotageakte (12)
-[follows] , Ketzereien (14)
-[follows] , Abweichungen (16)
-[m-mode] unmittelbar (18) # # ?? 
-[followed] auf seine Irrlehren (21)
+[CAUSATION] gingen (17)
+[result] Alle später gegen die Partei gerichteten Verbrechen (7)
+[result] , alle Verrätereien (10)
+[result] , Sabotageakte (12)
+[result] , Ketzereien (14)
+[result] , Abweichungen (16)
+[m-quality] unmittelbar (18)
+[causer] auf seine Irrlehren (21)
 [x-noncomp] zurück (22)
 
 [SOCIAL-RELATION || ACTIVITY] Verbrechen (7)
@@ -2077,7 +2081,7 @@
 
 [] Abweichungen (16)
 
-[MODE] unmittelbar (18)
+[QUALITY] unmittelbar (18)
 
 [MESSAGE-INIT] Irrlehren (21)
 [x-sender] seine (20)
