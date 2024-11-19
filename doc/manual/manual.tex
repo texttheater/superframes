@@ -320,7 +320,9 @@ expressions such as \emph{vor allem}. Here, the relation is not so much
 indicated by the adposition as by the combination of the adposition and its
 complement. We still follow the syntactic edge that points to the complement:
 
-\ex.\dep{Es_x-identified sind vor allem_m-mode die *Frauen#CLASS*}
+\ex.\dep{Es_x-identified sind vor allem_m-reference>>m-mode die *Frauen#CLASS*}
+
+\ex.\dep{Die *Sendung#MESSAGE*__initial-scene war zu **Ende#SCENE-DEINIT**_m-scene}
 
 Adjectival and adverbial modification is characterized by the syntactic
 modifier acting as a predicate, with the syntactic modifiee as an argument.  We
@@ -766,9 +768,9 @@ For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 \newpage\subsection{\emoji{red-exclamation-mark} \fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
-\rl{explanation} explains \rl{explained}, but is not a cause.
+\rl{explanation} causes \rl{has-explanation} to be known or supposed.
 
-\ex.\dep{I_x-sender am *stressing#MESSAGE-INIT* this_topic because it is important_m-explanation}
+\ex.\dep{She must be a *gardener#CLASS* , because he had seen_m-explanation her with a spade}
 
 
 \newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
@@ -830,10 +832,9 @@ Adverbs of location evoke \fr{LOCATION}:
 
 \ex.\dep{Kim_has-location ist *oben#LOCATION*}
 
-Adverbs of direction
+Adverbs of direction evoke \fr{LOCATION-INIT}:
 
-\ex.\dep{Kim_has-location **fliegt#LOCATION-INIT** *hoch#LOCATION-INIT*__target-location}
-
+\ex.\dep{Kim_has-location__has-location **fliegt#LOCATION-INIT** *hoch#LOCATION-INIT*__target-location}
 
 \newpage\subsection{\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT}}
 \label{sec:ADORNMENT-TARNISHMENT}
@@ -1118,13 +1119,19 @@ treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{fountain_m-reference>>m-noncomp *pen#CLASS*}
 
-The superframe to assign to such dependents is \fr{NONCOMP}, unless an argument
-of the whole predicate syntactically attaches to it. In that case, label it the
-same as the top predicate:
-
-\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
+If an argument of the whole predicate syntactically attaches to an
+\rl{x-noncomp} dependent, assign it the same frame as the top predicate:
 
 \ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
+
+If annotate a literal and a figurative meaning, only the literal meaning need
+be considered in the annotation of the \rl{x-noncomp} dependent:
+
+\ex.\dep{wenn man es **fertig#SCENE-DEINIT**_target-scene>>x-noncomp *brachte#SCENE-INIT* , dem Televisor ein Schnippchen zu schlagen_participant>>target-scene__initial-scene}
+
+In other cases, frame the \rl{x-noncomp} dependent as \fr{NONCOMP}:
+
+\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
 
 Bound pronouns that are part of multiword expressions should get the same role
 as their antecedent:
@@ -1749,6 +1756,10 @@ For predicates of mutual communication, choose \rl{x-sender} for the less
 oblique and \rl{x-experiencer} for the more oblique argument.
 
 \ex.\dep{Personen_x-experiencer, mit denen_x-experiencer er_x-sender noch nie_m-time ein Wort_x-noncomp *gewechselt#MESSAGE-INIT* hatte}
+
+Relatedly, sometimes a single argument denotes both the initial and the target arg2. In this case, default to \fr{initial-}.
+
+\ex.\dep{Die Programme_initial-scene *wechselten#SCENE-CHANGE* von Tag_m-time zu Tag_m-time}
 
 
 \newpage\subsection{When to Use \fr{SCENE}}
