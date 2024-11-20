@@ -1803,7 +1803,7 @@
 [m-time] früher einmal (12)
 [m-time] , vor langer Zeit (16)
 [whole] der führenden Männer der Partei (36)
-[m-purpose >> m-follows] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60) # TODO manual Modifiers: add adverbial clauses
+[m-purpose >> m-follows] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60)
 [m-purpose >> m-follows] , zum Tode verurteilt zu werden (64)
 [m-purpose >> m-follows] und auf geheimnisvolle Weise zu verschwinden (72)
 [part] Abtrünnige (8)
@@ -1822,9 +1822,9 @@
 
 [MESSAGE] erinnerte (26)
 [content] wie lange Zeit es eigentlich war , (20) # TODO Fragewörter
-[x-experiencer] sich (27) # TODO add more examples of German inherent reflexive verbs; remove IRV from NONCOMP section in manual
+[x-experiencer] sich (27)
 [x-experiencer] niemand (28) # TODO negation that is incorporated in arguments (erst wegdenken, dann Frame bestimmen)
-[m-time] mehr (29) # TODO TIME vs. SCENE-CONTINUATION
+[m-time] mehr (29) # TODO TIME vs. SCENE-CONTINUATION (cf. MODE vs. SCENE-NEGATION)
 [m-quality] genau (30)
 
 [] Zeit (20)
@@ -1931,7 +1931,7 @@
 
 [SCENE-CHANGE] wechselten (6)
 [initial-scene] Die Programme der Zwei Minuten-Haft-Sendung (2)
-[m-time] von Tag (8) # TODO an expression that is not a syntactic unit in UD
+[m-time] von Tag (8) # TODO exocentric construction
 [m-time] zu Tag (10)
 
 [] Programme (2)
@@ -2208,7 +2208,7 @@
 17	geraten	geraten	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
-[MESSAGE] sehen (7) # TODO example of aspectual ambiguity? sehen in the sense of erblicken?
+[MESSAGE] sehen (7)
 [m-time] Nie (1) # an example of the importance of scope: first apply ohne, then nie
 [x-experiencer] er (3)
 [topic] das Gesicht Goldsteins (5)
@@ -2380,7 +2380,7 @@
 8	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Stimme	Stimme	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
 10	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-11	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	12	nmod	_	_
+11	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	12	det	_	_
 12	Schafsmässiges	schafsmässig	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	10	obj	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -2403,10 +2403,7 @@
 [] Stimme (9)
 
 [COMPARISON] Schafsmässiges (12)
-[compared] etwas (11)
-[x-has-quality] die Stimme (9) # TODO add to manual near nominal copula constructions
-
-[] etwas (11)
+[compared] die Stimme (9)
 
 # sent_id = 188
 # text = Goldstein ließ seinen üblichen giftigen Angriff gegen die Lehren der Partei vom Stapel - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten .
