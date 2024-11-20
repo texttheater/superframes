@@ -454,17 +454,17 @@
 [m-scene] und der Allgemeinheit entrückten (23)
 
 [QUALITY] wichtigen (19)
-[m-reference] so (18) # # ??
+[m-reference] so (18) # # ??? 
 [m-scene] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
 [has-quality] Postens (24)
 
-[COMPARISON] so (18)
+[COMPARISON] so (18) # # ?? 
 
 [LOCATION-DEINIT >> MESSAGE-PREVENTION] entrückten (23)
 [initial-location >> x-experiencer] der Allgemeinheit (22)
 [has-location >> topic] Postens (24)
 
-[CLASS] Allgemeinheit (22) # # ?? SOCIAL-RELATION?
+[CLASS] Allgemeinheit (22)
 
 [POSSESSION >> SCENE] hatte (33)
 [possessor >> participant] Winston (27)
@@ -523,10 +523,11 @@
 [QUANTITY] kurzes (2)
 
 [SOCIAL-RELATION] Gruppe (10)
-[m-location] um die Stühle herumstehende (9)
+[m-scene] um die Stühle herumstehende (9)
 
 [STATE] herumstehende (9)
 [m-location] um die Stühle (8)
+[has-state] Gruppe (10)
 
 [CLASS || MEANS] Stühle (8)
 
@@ -714,7 +715,7 @@
 [QUALITY] seltsam (14)
 
 [STATE || QUALITY] zivilisiert (21)
-[m-quality] auf eine merkwürdige Weise (20)
+[m-means] auf eine merkwürdige Weise (20)
 
 [MEANS] Weise (20)
 [m-quality] merkwürdige (19)
@@ -792,7 +793,7 @@
 [MESSAGE] Begriffen (15)
 
 [CLASS] Edelmann (21)
-[m-time >> m-quality] aus dem achtzehnten Jahrhundert (25)
+[m-time] aus dem achtzehnten Jahrhundert (25)
 [m-scene] , der seinem Gegenüber die Schnupftabaksdose anbot (35)
 
 [TIME] Jahrhundert (25)
@@ -893,20 +894,20 @@
 
 [MESSAGE] fühlte (2)
 [x-experiencer] Er (1)
-[x-noncomp] sich (3) # # ??
+[x-noncomp] sich (3)
 [m-quality] aufrichtig (4)
 [topic] zu ihm (6)
-[m-noncomp] hingezogen (7) # # ??
+[x-noncomp] hingezogen (7)
 
 [IDENTIFICATION] Er (1)
 
-[NONCOMP] sich (3) # # ??
+[NONCOMP] sich (3)
 
 [STATE] aufrichtig (4)
 
 [IDENTIFICATION] ihm (6)
 
-[LOCATION-CHANGE >> MESSAGE] hingezogen (7)
+[NONCOMP] hingezogen (7)
 
 [SITUATION] das (10)
 [m-mode] nicht nur (12)
@@ -1071,7 +1072,7 @@
 [CONCESSION] doch (2)
 [asserted] stand (3)
 
-[PART-WHOLE] Gesicht (6) # # ?? Vgl. 3.2, ABER (250)...
+[PART-WHOLE] Gesicht (6)
 
 [MODE] eigentlich (7)
 
@@ -1491,7 +1492,7 @@
 [LOCATION] dahinter (9)
 [m-quality] unmittelbar (8)
 
-[QUALITY] unmittelbar (8) # # ??
+[QUALITY] unmittelbar (8)
 
 # sent_id = 173
 # text = Im nächsten Augenblick brach ein scheußlicher , knirschender Kreischlaut , als ob eine riesige Maschine völlig ungeölt liefe , aus dem großen Televisor am Ende des Raumes hervor .
@@ -1544,7 +1545,7 @@
 
 [QUALITY] scheußlicher (6)
 
-[MESSAGE-INIT] knirschender (8)
+[QUALITY] knirschender (8)
 
 [UNANCHORED-MOTION >> ACTIVITY] liefe (18)
 [in-motion >> is-active] eine riesige Maschine (15)
@@ -1684,13 +1685,11 @@
 [m-location] und dort (3)
 [m-location] im Zuschauerraum (5)
 
-[LOCATION] Zuschauerraum (5)
-[m-location] Da (1) # # ?? 
-[m-location] und dort (3)
-
 [LOCATION] Da (1)
 
 [LOCATION] dort (3)
+
+[LOCATION] Zuschauerraum (5)
 
 # sent_id = 178
 # text = Die kleine aschblonde Frau stieß ein aus Furcht und Abscheu gemischtes Quieken hervor .
@@ -1744,30 +1743,30 @@
 7	große	groß	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	8	amod	_	_
 8	Abtrünnige	Abtrünnige	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	4	appos	_	_
 9	,	,	PUNCT	$,	_	26	punct	_	_
-10	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
+10	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	_	_
 11	früher	früher	ADV	ADV	_	12	advmod	_	_
-12	einmal	einmal	ADV	ADV	_	26	advmod	_	_
+12	einmal	einmal	ADV	ADV	_	33	advmod	_	_
 13	,	,	PUNCT	$,	_	16	punct	_	_
 14	vor	vor	ADP	APPR	_	16	case	_	_
 15	langer	lang	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	16	amod	_	_
 16	Zeit	Zeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	26	obl	_	_
-17	(	(	PUNCT	$(	_	20	punct	_	_
-18	wie	wie	SCONJ	KOUS	_	20	advmod	_	_
+17	(	(	PUNCT	$(	_	26	punct	_	_
+18	wie	wie	SCONJ	KOUS	_	19	advmod	_	_
 19	lange	lang	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
-20	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	22	nmod	_	_
-21	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
-22	eigentlich	eigentlich	ADV	ADV	_	26	advmod	_	_
-23	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	_
-24	,	,	PUNCT	$,	_	26	punct	_	_
-25	daran	daran	ADP	PROAV	PronType=Dem	26	advmod	_	_
-26	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	parataxis	_	_
+20	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	26	ccomp	_	_
+21	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+22	eigentlich	eigentlich	ADV	ADV	_	20	advmod	_	_
+23	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	_
+24	,	,	PUNCT	$,	_	20	punct	_	_
+25	daran	daran	ADP	PROAV	PronType=Dem	26	expl	_	_
+26	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	parataxis	_	_
 27	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	26	obj	_	_
 28	niemand	niemand	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	26	nsubj	_	_
 29	mehr	mehr	ADV	ADV	_	30	advmod	_	_
 30	genau	genau	ADJ	ADJD	_	26	advmod	_	_
 31	)	)	PUNCT	$(	_	26	punct	_	_
 32	,	,	PUNCT	$,	_	26	punct	_	_
-33	einer	ein	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	4	appos	_	_
+33	einer	ein	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	8	acl	_	_
 34	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	36	det	_	_
 35	führenden	führend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	36	amod	_	_
 36	Männer	Mann	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	33	nmod	_	_
@@ -1782,7 +1781,7 @@
 45	Stufe	Stufe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	51	obl	_	_
 46	mit	mit	ADP	APPR	_	49	case	_	_
 47	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
-48	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	49	amod	_	_
+48	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	49	appos	_	_
 49	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	51	obl	_	_
 50	selbst	selbst	ADV	ADV	_	49	advmod	_	_
 51	gestanden	stehen	VERB	VVPP	Verbform=Part	33	conj	_	_
@@ -1794,12 +1793,12 @@
 57	konterrevolutionären	konterrevolutionär	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	58	amod	_	_
 58	Machenschaffen	Machenschaft	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	60	obl	_	_
 59	zu	zu	PART	PTKZU	_	60	mark	_	_
-60	beginnen	beginnen	VERB	VVINF	VerbForm=Inf	51	advcl	_	_
+60	beginnen	beginnen	VERB	VVINF	VerbForm=Inf	33	advcl	_	_
 61	,	,	PUNCT	$,	_	64	punct	_	_
 62	zum	zum	ADP	APPRART	_	63	case	_	_
 63	Tode	Tod	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	64	obl	_	_
 64	verurteilt	verurteilen	VERB	VVPP	Verbform=Part	60	conj	_	_
-65	zu	zu	PART	PTKZU	_	60	mark	_	_
+65	zu	zu	PART	PTKZU	_	64	mark	_	_
 66	werden	werden	AUX	VAINF	VerbForm=Inf	64	aux:pass	_	_
 67	und	und	CCONJ	KON	_	72	cc	_	_
 68	auf	auf	ADP	APPR	_	70	case	_	_
@@ -1809,117 +1808,124 @@
 72	verschwinden	verschwinden	VERB	VVINF	VerbForm=Inf	60	conj	_	_
 73	.	.	PUNCT	$.	_	4	punct	_	_
 
-[IDENTIFICATION] Renegat , der große Abtrünnige einer der führenden Männer der Partei gewesen und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (4)
-[identified] Goldstein (1)
+[CLASS] Renegat , der große Abtrünnige , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (4)
+[has-class] Goldstein (1)
 
-[] Goldstein (1)
+[IDENTIFICATION] Goldstein (1)
 
-[] Abtrünnige (8)
-[] große (7)
+[SOCIAL-RELATION] Abtrünnige (8)
+[m-quality] große (7)
+[m-scene] , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (33)
+[m-scene] und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte (51)
 
-[] große (7)
+[QUALITY] große (7)
 
-[] erinnerte (26)
-[] der (10)
-[] früher einmal (12)
-[] , vor langer Zeit (16)
-[] ( wie lange Zeit es eigentlich war (22)
-[] daran (25)
-[] sich (27)
-[] niemand (28)
-[] mehr genau (30)
+[PART-WHOLE] einer (33)
+[part] der (10)
+[m-time] früher einmal (12)
+[whole] der führenden Männer der Partei (36)
+[m-scene] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60)
+[m-scene] , zum Tode verurteilt zu werden (64)
+[m-scene] und auf geheimnisvolle Weise zu verschwinden (72)
+[part] Abtrünnige (8) # # ??
 
-[] der (10)
+[IDENTIFICATION] der (10)
 
-[] einmal (12)
-[] früher (11)
+[TIME] einmal (12)
+[m-time] früher (11)
 
-[] früher (11)
+[TIME] früher (11)
 
-[] Zeit (16)
-[] langer (15)
+[MESSAGE-INIT] erinnerte (26)
+[target-content] , vor langer Zeit (16)
+[topic] wie lange Zeit es eigentlich war , (20)
+[x-noncomp] sich (27)
+[x-experiencer] niemand (28)
+[m-quality] mehr genau (30)
 
-[] langer (15)
+[TIME] Zeit (16)
+[m-quantity] langer (15)
+[m-identifier] wie lange Zeit es eigentlich war , (20) # # ??
 
-[] eigentlich (22)
-[] ( wie lange Zeit (20)
-[] es (21)
+[QUANTITY] langer (15)
 
-[] Zeit (20)
-[] wie (18)
-[] lange (19)
+[TIME] Zeit (20)
+[m-quantity] wie lange (19)
+[has-time] es (21)
+[m-mode] eigentlich (22)
 
-[] wie (18)
+[QUANTITY] lange (19)
+[m-quantity] wie (18)
 
-[] lange (19)
+[QUANTITY] wie (18)
 
-[] es (21)
+[SITUATION] es (21)
 
-[] daran (25)
+[MODE] eigentlich (22)
 
-[] sich (27)
+[NONCOMP] sich (27)
 
-[] niemand (28)
+[CLASS] niemand (28)
 
-[] genau (30)
-[] mehr (29)
+[QUALITY] genau (30)
+[m-time] mehr (29)
 
-[] mehr (29)
+[TIME] mehr (29)
 
-[] einer (33)
-[] der führenden Männer der Partei (36)
+[CLASS] Männer (36)
+[m-quality] führenden (35)
+[m-social-relation] der Partei (38)
 
-[] Männer (36)
-[] führenden (35)
-[] der Partei (38)
+[QUALITY || SEQUENCE] führenden (35)
 
-[] führenden (35)
+[SOCIAL-RELATION] Partei (38)
 
-[] Partei (38)
+[LOCATION >> SCENE] gestanden (51)
+[location >> scene] fast auf einer Stufe (45)
+[m-accompanier] mit dem Großen Bruder selbst (49)
+[has-location >> participant] Abtrünnige (8)
 
-[] gestanden (51)
-[] fast auf einer Stufe (45)
-[] mit dem Großen Bruder selbst (49)
-[] , um dann mit konterrevolutionären Machenschaffen zu beginnen zu (60)
-[] , zum Tode verurteilt werden (64)
-[] und auf geheimnisvolle Weise zu verschwinden (72)
+[CLASS >> QUALITY] Stufe (45)
+[m-mode] fast (42)
+[m-has-location >> has-quality] Abtrünnige (8)
 
-[] Stufe (45)
-[] fast (42)
+[MODE] fast (42)
 
-[] fast (42)
+[SOCIAL-RELATION >> IDENTIFICATION] Großen Bruder (49)
+[m-mode] selbst (50)
 
-[] Bruder (49)
-[] Großen (48)
-[] selbst (50)
+[QUALITY] Großen (48)
 
-[] Großen (48)
+[MODE] selbst (50)
 
-[] selbst (50)
+[SCENE-INIT] beginnen (60)
+[m-time] dann (55)
+[target-scene] mit konterrevolutionären Machenschaffen (58)
+[participant] einer (33)
 
-[] beginnen (60)
-[] dann (55)
-[] mit konterrevolutionären Machenschaffen (58)
+[TIME] dann (55)
 
-[] dann (55)
+[ACTIVITY] Machenschaffen (58)
+[m-quality] konterrevolutionären (57)
+[is-active] einer (33)
 
-[] Machenschaffen (58)
-[] konterrevolutionären (57)
+[QUALITY || SOCIAL-RELATION] konterrevolutionären (57)
 
-[] konterrevolutionären (57)
+[SOCIAL-RELATION || STATE-CHANGE || MESSAGE-INIT] verurteilt (64)
+[x-resultative] zum Tode (63)
+[has-social-relation || has-state || topic] einer (33)
 
-[] verurteilt (64)
-[] zum Tode (63)
+[DESTRUCTION] Tode (63)
+[destroyed] einer (33)
 
-[] Tode (63)
+[LOCATION-DEINIT] verschwinden (72) # # angenommene zugrundeliegende Bedeutung "aus der Welt verschwinden"
+[m-means] auf geheimnisvolle Weise (70)
+[has-location] einer (33)
 
-[] verschwinden (72)
-[] auf geheimnisvolle Weise (70)
+[MEANS] Weise (70)
+[m-quality] geheimnisvolle (69)
 
-[] Weise (70)
-[] geheimnisvolle (69)
-
-[] geheimnisvolle (69)
+[QUALITY] geheimnisvolle (69)
 
 # sent_id = 180
 # text = Die Programme der Zwei Minuten-Haft-Sendung wechselten von Tag zu Tag , aber es gab keines , in dem nicht Goldstein die Hauptrolle gespielt hätte .
@@ -2064,22 +2070,22 @@
 [SOCIAL-RELATION || ACTIVITY] Verbrechen (7)
 [m-scene] später gegen die Partei gerichteten (6)
 
-[SCENE-INIT] gerichteten (6) # # ?? oder SCENE?
+[SCENE] gerichteten (6)
 [m-time] später (2)
 [participant] gegen die Partei (5)
-[target-scene] Verbrechen (7)
+[scene] Verbrechen (7)
 
 [TIME] später (2)
 
 [SOCIAL-RELATION >> IDENTIFICATION] Partei (5)
 
-[] Verrätereien (10)
+[ACTIVITY || MESSAGE] Verrätereien (10)
 
-[] Sabotageakte (12)
+[ACTIVITY || SOCIAL-RELATION] Sabotageakte (12)
 
-[] Ketzereien (14)
+[MESSAGE] Ketzereien (14)
 
-[] Abweichungen (16)
+[MESSAGE] Abweichungen (16)
 
 [QUALITY] unmittelbar (18)
 
@@ -2143,7 +2149,7 @@
 [SCENE-INIT-POSSIBILITY] schmiedete (6) # # Bedeutung "hinterlistige und treulose Pläne gegen jemanden schaffen"
 [target-scene] seine Ränke (8) # # Bedeutung "hinterhältige Anschläge, Listen, Machenschaften, Intrigen"
 [m-location] : vielleicht irgendwo jenseits des Meeres (14)
-[m-location] , unter dem Schutz seiner ausländischen Geldgeber (18)
+[m-scene] , unter dem Schutz seiner ausländischen Geldgeber (18)
 [m-location] , vielleicht sogar - wie gelegentlich gemunkelt wurde - in einem Versteck in Ozeanien selbst (33)
 
 [ACTIVITY || SOCIAL-RELATION] Ränke (8)
@@ -2159,8 +2165,9 @@
 
 [LOCATION] irgendwo (11) # # "irgendwo jenseits"
 
-[SCENE] Schutz (18) # # 3.11 "jemanden schützen" vs. "Besitz schützen" vs. "Werte schützen"...
+[SCENE-CONTINUATION] Schutz (18) # # 3.11 "jemanden schützen" vs. "Besitz schützen" vs. "Werte schützen"...
 [x-causer] seiner ausländischen Geldgeber (21)
+[initial-scene] schmiedete (6)
 
 [POSSESSION-INIT] Geldgeber (21)
 [target-possessor] seiner (19)
@@ -2187,9 +2194,9 @@
 [TIME] gelegentlich (27)
 
 [IDENTIFICATION] Ozeanien (35)
-[] selbst (36) # # ?? Vgl. siehe 135, word (36) (issue in progress)
+[m-mode] selbst (36)
 
-[] selbst (36)
+[MODE] selbst (36)
 
 # sent_id = 184
 # text = Winstons Zwerchfell zog sich zusammen .
@@ -2230,17 +2237,16 @@
 14	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	15	det	_	_
 15	Gefühle	Gefühl	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	13	nmod	_	_
 16	zu	zu	PART	PTKZU	_	17	mark	_	_
-17	geraten	geraten	VERB	VVINF	VerbForm=Inf	1	advcl	_	_
+17	geraten	geraten	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE-INIT] sehen (7)
-[m-scene] Nie , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (1) # # ?? 
+[m-time] Nie (1)
 [x-experiencer] er (3)
 [topic] das Gesicht Goldsteins (5)
+[m-scene] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
 
 [TIME-NEG] Nie (1)
-[] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
-[] sehen (7)
 
 [IDENTIFICATION] er (3)
 
@@ -2251,6 +2257,7 @@
 
 [LOCATION-INIT >> SCENE] geraten (17)
 [target-location >> target-scene] in einen schmerzlichen Widerstreit der Gefühle (13)
+[m-condition] sehen (7)
 
 [MESSAGE] Widerstreit (13)
 [m-quality] schmerzlichen (12)
@@ -2336,7 +2343,7 @@
 
 [QUALITY] weißer (13)
 
-[COMPARISON] Ziegenbärtchen (17)
+[PART-WHOLE] Ziegenbärtchen (17)
 
 [PART-WHOLE] Gesicht (26)
 [m-quality] kluges (20)
@@ -2347,14 +2354,14 @@
 
 [MESSAGE] verächtliches (25) # # "Verachtung ausdrückend" ODER "wegen der moralischen Minderwertigkeit Verachtung verdienend"
 [m-scene] doch (22)
-[] irgendwie (23)
+[m-quality || m-mode] irgendwie (23)
 [m-quality] eigentümlich (24)
-[topic || x-sender || x-experiencer] Gesicht (26) # # ?? 
+[x-sender || x-experiencer] Gesicht (26) # # ?? siehe ambige Bedeutung "verächtlich"
 
 [CONCESSION] doch (22) # # Vgl. (43) im Manual
 [asserted] verächtliches (25)
 
-[] irgendwie (23)
+[QUALITY || MODE] irgendwie (23)
 
 [QUALITY] eigentümlich (24)
 
@@ -2394,7 +2401,7 @@
 [STATE] Blödheit (43)
 [m-quality] seniler (42)
 
-[QUALITY] seniler (42) # # ?? 
+[QUALITY] seniler (42)
 
 [MESSAGE] auszustrahlen (44)
 [topic] Gesicht (26)
@@ -2422,21 +2429,23 @@
 
 [IDENTIFICATION] Es (1)
 
-[PART-WHOLE >> COMPARISON] Schafsgesicht (4)
+[PART-WHOLE] Schafsgesicht (4)
 
 [SCENE] hatte (10)
-[] auch (7)
-[] die Stimme (9)
-[] etwas Schafsmässiges (12)
+[m-scene] auch (7)
+[participant] die Stimme (9)
+[scene] etwas Schafsmässiges (12)
 
-[] auch (7)
+[ACCOMPANIMENT] auch (7) # # Vgl. sent_id 122 "Außerdem"
+[accompanier] hatte (10)
 
-[] Stimme (9)
+[MESSAGE] Stimme (9)
 
-[] Schafsmässiges (12)
-[] etwas (11)
+[COMPARISON] Schafsmässiges (12)
+[reference] etwas (11)
+[compared] die Stimme (9)
 
-[] etwas (11)
+[CLASS] etwas (11)
 
 # sent_id = 188
 # text = Goldstein ließ seinen üblichen giftigen Angriff gegen die Lehren der Partei vom Stapel - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten .
@@ -2466,7 +2475,7 @@
 24	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	25	det	_	_
 25	Kind	Kind	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	27	nsubj	_	_
 26	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux	_	_
-27	durchschauen	durchschauen	VERB	VVINF	VerbForm=Inf	20	acl	_	_
+27	durchschauen	durchschauen	VERB	VVINF	VerbForm=Inf	17	acl	_	_
 28	können	können	AUX	VMINF	VerbForm=Inf	27	aux	_	_
 29	,	,	PUNCT	$,	_	34	punct	_	_
 30	und	und	CCONJ	KON	_	34	cc	_	_
@@ -2476,7 +2485,7 @@
 34	glaubhaft	glaubhaft	ADJ	ADJD	_	17	conj	_	_
 35	,	,	PUNCT	$,	_	43	punct	_	_
 36	um	um	SCONJ	KOUI	_	43	mark	_	_
-37	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+37	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	43	obj	_	_
 38	mit	mit	ADP	APPR	_	41	case	_	_
 39	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	41	det	_	_
 40	alarmierenden	alarmierend	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	41	amod	_	_
@@ -2486,7 +2495,7 @@
 44	,	,	PUNCT	$,	_	51	punct	_	_
 45	dass	dass	SCONJ	KOUS	_	61	mark	_	_
 46	andere	ander	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	47	amod	_	_
-47	Menschen	Mensch	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	43	nsubj	_	_
+47	Menschen	Mensch	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	61	nsubj	_	_
 48	,	,	PUNCT	$,	_	51	punct	_	_
 49	die	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Plur|PronType=Rel	51	nsubj	_	_
 50	weniger	weniger	ADV	ADV	_	51	advmod	_	_
@@ -2500,7 +2509,7 @@
 58	dadurch	dadurch	ADP	PROAV	PronType=Dem	61	advmod	_	_
 59	vielleicht	vielleicht	ADV	ADV	_	61	advmod	_	_
 60	verführen	verführen	VERB	VVINF	VerbForm=Inf	61	xcomp	_	_
-61	lassen	lassen	VERB	VVINF	VerbForm=Inf	43	ccomp	_	_
+61	lassen	lassen	VERB	VVINF	VerbForm=Inf	41	ccomp	_	_
 62	könnten	können	AUX	VMFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	61	aux	_	_
 63	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -2511,15 +2520,16 @@
 
 [IDENTIFICATION] Goldstein (1)
 
-[] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
-[] seinen (3)
-[] üblichen (4)
+[EVENT] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
+[x-causer] seinen (3)
+[m-scene] üblichen (4)
 [m-quality] giftigen (5)
-[] gegen die Lehren der Partei (9)
+[undergoer] gegen die Lehren der Partei (9)
 
 [IDENTIFICATION] seinen (3)
 
-[] üblichen (4)
+[SCENE-CONTINUATION] üblichen (4)
+[initial-scene] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
 
 [QUALITY] giftigen (5)
 
@@ -2528,84 +2538,98 @@
 
 [SOCIAL-RELATION >> IDENTIFICATION] Partei (11)
 
-[] Angriff (20)
-[] so übertriebenen (17)
-[] und verdrehten (19)
-[] , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (34)
-[] , dass ihn ein Kind hätte durchschauen können (27)
+[EVENT] Angriff (20)
+[m-scene] so übertriebenen , dass ihn ein Kind hätte durchschauen können (17)
+[m-quality] und verdrehten (19)
+[m-scene] , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (34)
 
-[] übertriebenen (17)
-[] so (16)
+[QUALITY] übertriebenen (17)
+[m-quantity] so (16)
+[m-scene] , dass ihn ein Kind hätte durchschauen können (27)
+[has-quality] Angriff (20)
 
-[] so (16)
+[QUANTITY] so (16) # # "so" bezeichnet [in diesem Fall] einen durch Kontext oder Situation näher bestimmten (hohen) Grad, ein durch Kontext oder Situation näher bestimmtes (hohes) Maß oder einen (sehr) hohen Grad, ein (sehr) hohes Maß
 
-[] verdrehten (19)
+[QUALITY] verdrehten (19)
 
-[] glaubhaft (34)
-[] doch (31)
-[] gerade hinreichend (33)
-[] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
+[MESSAGE-INIT] durchschauen (27) # # "etwas durch den äußeren Schein hindurch in seiner wahren Gestalt erkennen"; "verstehen, begreifen", 
+[topic] ihn (23)
+[x-experiencer] ein Kind (25)
+[m-explanation] übertriebenen (17) # # "so übertrieben, dass"
 
-[] doch (31)
+[IDENTIFICATION] ihn (23)
 
-[] hinreichend (33)
-[] gerade (32)
+[CLASS] Kind (25)
 
-[] gerade (32)
+[SCENE >> QUALITY] glaubhaft (34)
+[m-scene] doch (31)
+[m-quantity] gerade hinreichend (33)
+[m-scene] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
+[scene >> has-quality] Angriff (20)
 
-[] erfüllen (43)
-[] einen mit dem alarmierenden Gefühl (41)
-[] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
-[] dass sich dadurch vielleicht verführen lassen könnten (61)
+[CONCESSION] doch (31)
+[asserted] glaubhaft (34)
 
-[] Gefühl (41)
-[] alarmierenden (40)
+[QUANTITY] hinreichend (33)
+[m-mode] gerade (32)
 
-[] alarmierenden (40)
+[MODE] gerade (32) # # ?? 
 
-[] Menschen (47)
-[] andere (46)
-[] , , die weniger vernünftig waren als man selbst , (51)
+[MESSAGE] erfüllen (43) # # Vgl. sent_id 153
+[x-experiencer] einen (37)
+[m-depictive] mit dem alarmierenden Gefühl , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (41)
+[m-explanation] glaubhaft (34) # # "hinreichend glaubhaften Angriff, um..."
 
-[] andere (46)
+[CLASS] einen (37)
 
-[] vernünftig (51)
-[] die (49)
-[] weniger (50)
-[] als man selbst (54)
+[MESSAGE] Gefühl (41)
+[m-scene >> m-quality] alarmierenden (40)
+[content] , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (61)
+[x-experiencer] einen (37) # # manuell hinzugefügt wegen m-depictive
 
-[] die (49)
+[SENDING >> QUALITY] alarmierenden (40) # # Vgl. (348) im Manual
+[sender] Gefühl (41)
 
-[] weniger (50)
+[SCENE-INIT] lassen (61)
+[participant] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
+[participant] sich (57)
+[participant] dadurch (58)
+[m-mode] vielleicht (59)
+[target-scene] verführen (60)
 
-[] man (54)
-[] selbst (55)
+[CLASS] Menschen (47)
+[m-reference] andere (46)
+[m-scene] , , die weniger vernünftig waren als man selbst , (51)
 
-[] selbst (55)
+[COMPARISON] andere (46)
 
-[] lassen (61)
-[] sich (57)
-[] dadurch (58)
-[] vielleicht (59)
-[] verführen (60)
+[QUALITY] vernünftig (51)
+[has-quality] die (49)
+[m-quantity] weniger (50)
+[x-reference] als man selbst (54)
+[has-quality] Menschen (47)
 
-[] sich (57)
+[CLASS] die (49) # # Menschen
 
-[] dadurch (58)
+[QUANTITY] weniger (50)
 
-[] vielleicht (59)
+[IDENTIFICATION] man (54)
+[m-mode] selbst (55)
 
-[] verführen (60)
+[MODE] selbst (55)
 
-[] durchschauen (27)
-[] ihn (23)
-[] ein Kind (25)
+[CLASS] sich (57)
 
-[] ihn (23)
+[SITUATION] dadurch (58)
 
-[] Kind (25)
+[MODE] vielleicht (59)
 
-[] Stapel (13)
+[SCENE-INIT] verführen (60) # # ?? hier wohl gemeint: "sich *dazu* verführen lassen, es zu glauben", Vgl. Originaltext "to be taken in by it"
+[?] dadurch (58)
+[?] sich (57)
+[?] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
+
+[NONCOMP] Stapel (13)
 
 # sent_id = 189
 # text = Er schmähte den Großen Bruder , klagte die Diktatur der Partei an , forderte sofortigen Friedensschluss mit Eurasien , trat für Rede- , Presse- , Versammlungs- und Gedankenfreiheit ein , schrie hysterisch , die Revolution sei verraten worden - und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte .
@@ -2830,8 +2854,8 @@
 13	noch	noch	ADV	ADV	_	17	advmod	_	_
 14	im	im	ADP	APPRART	_	16	case	_	_
 15	geringsten	gering	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	16	amod	_	_
-16	Zweifel	Zweifel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	17	obl	_	_
-17	sein	sein	AUX	VAINF	VerbForm=Inf	5	ccomp	_	_
+16	Zweifel	Zweifel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
+17	sein	sein	AUX	VAINF	VerbForm=Inf	16	cop	_	_
 18	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
 19	,	,	PUNCT	$,	_	28	punct	_	_
 20	was	was	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	28	nsubj	_	_
@@ -2842,7 +2866,7 @@
 25	Goldsteins	Goldstein	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	27	nmod	_	_
 26	widerlicher	widerlich	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	27	amod	_	_
 27	Phrasendrescherei	Phrasendrescherei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	28	obl	_	_
-28	verbarg	verbergen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
+28	verbarg	verbergen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	ccomp	_	_
 29	,	,	PUNCT	$,	_	32	punct	_	_
 30	hinter	hinter	ADP	APPR	_	32	case	_	_
 31	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	32	det:poss	_	_
@@ -2893,21 +2917,30 @@
 76	werden	werden	AUX	VAINF	VerbForm=Inf	74	aux:pass	_	_
 77	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] marschierten (5)
-[] die ganze Zeit (4)
-[] für den Fall , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9)
-[] , , dass man noch im geringsten Zweifel sein könnte (17)
-[] , hinter seinem Kopf auf dem Schirm des Televisors (32)
-[] die endlosen Kolonnen der eurasischen Armee - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (40)
-[] vorbei (44)
+[UNANCHORED-MOTION] marschierten (5)
+[m-time] die ganze Zeit (4)
+[m-scene] , für den Fall , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9) ## ?? m-condition?
+[m-location] , hinter seinem Kopf auf dem Schirm des Televisors (32) ## ?? transitory-location?
+[in-motion] die endlosen Kolonnen der eurasischen Armee - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (40)
+[x-noncomp] vorbei (44) ## ?? 
 
-[] Zeit (4)
-[] ganze (3)
+[TIME] Zeit (4)
+[m-quantity] ganze (3)
 
-[] ganze (3)
+[QUANTITY] ganze (3)
 
 [] Fall (9)
+[] , , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (16)
+
+[] Zweifel (16)
+[] geringsten (15)
 [] , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (28)
+
+[] geringsten (15)
+
+[] man (12)
+
+[] noch (13)
 
 [] verbarg (28)
 [] was (20)
@@ -2928,20 +2961,6 @@
 [] Goldsteins (25)
 
 [] widerlicher (26)
-
-[] sein (17)
-[] man (12)
-[] noch (13)
-[] im geringsten Zweifel (16)
-
-[] man (12)
-
-[] noch (13)
-
-[] Zweifel (16)
-[] geringsten (15)
-
-[] geringsten (15)
 
 [] Kopf (32)
 [] seinem (31)
