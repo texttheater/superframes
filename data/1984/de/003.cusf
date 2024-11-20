@@ -454,11 +454,11 @@
 [m-scene] und der Allgemeinheit entrückten (23)
 
 [QUALITY] wichtigen (19)
-[m-reference] so (18) # # ??? 
-[m-scene] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
+[?m-reference] so (18) # # ??? 
+[?m-scene] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
 [has-quality] Postens (24)
 
-[COMPARISON] so (18) # # ?? 
+[?COMPARISON] so (18) # # ?? 
 
 [LOCATION-DEINIT >> MESSAGE-PREVENTION] entrückten (23)
 [initial-location >> x-experiencer] der Allgemeinheit (22)
@@ -469,7 +469,7 @@
 [POSSESSION >> SCENE] hatte (33)
 [possessor >> participant] Winston (27)
 [possessed >> scene] nur eine undeutliche Vorstellung davon (31)
-[m-explanation] wichtigen (19)
+[?m-explanation] wichtigen (19)
 
 [IDENTIFICATION] Winston (27)
 
@@ -523,11 +523,10 @@
 [QUANTITY] kurzes (2)
 
 [SOCIAL-RELATION] Gruppe (10)
-[m-scene] um die Stühle herumstehende (9)
+[m-state] um die Stühle herumstehende (9)
 
 [STATE] herumstehende (9)
 [m-location] um die Stühle (8)
-[has-state] Gruppe (10)
 
 [CLASS || MEANS] Stühle (8)
 
@@ -642,16 +641,16 @@
 
 [MODE] gewisser (7) # # ??
 
-[MEANS] Art (11)
+[MEANS] Art (11) # # ?? wird noch geändert TODO 
 [x-causer] seiner (10)
 [purpose] , sich zu bewegen (15)
 
 [IDENTIFICATION] seiner (10)
 
 [UNANCHORED-MOTION] bewegen (15)
-[in-motion >> x-noncomp] sich (13)
+[in-motion] sich (13)
 
-[IDENTIFICATION >> NONCOMP] sich (13)
+[IDENTIFICATION] sich (13)
 
 # sent_id = 160
 # text = Er hatte eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte .
@@ -894,14 +893,14 @@
 
 [MESSAGE] fühlte (2)
 [x-experiencer] Er (1)
-[x-noncomp] sich (3)
+[x-experiencer] sich (3)
 [m-quality] aufrichtig (4)
 [topic] zu ihm (6)
 [x-noncomp] hingezogen (7)
 
 [IDENTIFICATION] Er (1)
 
-[NONCOMP] sich (3)
+[IDENTIFICATION] sich (3)
 
 [STATE] aufrichtig (4)
 
@@ -1386,13 +1385,13 @@
 
 [LOCATION-CHANGE] setzte (2)
 [x-causer >> has-location] Er (1)
-[has-location >> x-noncomp] sich (3)
+[has-location] sich (3)
 [target-location] auf einen Stuhl in derselben Reihe wie Winston (6)
 [m-depictive] , zwei Plätze von ihm entfernt (17)
 
 [IDENTIFICATION] Er (1)
 
-[IDENTIFICATION >> NONCOMP] sich (3)
+[IDENTIFICATION] sich (3)
 
 [CLASS] Stuhl (6)
 [m-location] in derselben Reihe wie Winston (9)
@@ -1613,11 +1612,11 @@
 [whole >> has-state >> x-experiencer] einen (8)
 
 [UNANCHORED-MOTION || MESSAGE-INIT] sträubten (16) # # Bedeutung: "sich aufrichten"
-[x-noncomp] sich (13)
+[in-motin || topic] sich (13)
 [in-motion || topic] die Nackenhaare (15)
 [x-causer] Lärm (4)
 
-[NONCOMP] sich (13)
+[IDENTIFICATION] sich (13)
 
 [PART-WHOLE] Nackenhaare (15)
 
@@ -1749,7 +1748,7 @@
 13	,	,	PUNCT	$,	_	16	punct	_	_
 14	vor	vor	ADP	APPR	_	16	case	_	_
 15	langer	lang	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	16	amod	_	_
-16	Zeit	Zeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	26	obl	_	_
+16	Zeit	Zeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	33	obl	_	_
 17	(	(	PUNCT	$(	_	26	punct	_	_
 18	wie	wie	SCONJ	KOUS	_	19	advmod	_	_
 19	lange	lang	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
@@ -1762,7 +1761,7 @@
 26	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	parataxis	_	_
 27	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	26	obj	_	_
 28	niemand	niemand	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	26	nsubj	_	_
-29	mehr	mehr	ADV	ADV	_	30	advmod	_	_
+29	mehr	mehr	ADV	ADV	_	26	advmod	_	_
 30	genau	genau	ADJ	ADJD	_	26	advmod	_	_
 31	)	)	PUNCT	$(	_	26	punct	_	_
 32	,	,	PUNCT	$,	_	26	punct	_	_
@@ -1781,7 +1780,7 @@
 45	Stufe	Stufe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	51	obl	_	_
 46	mit	mit	ADP	APPR	_	49	case	_	_
 47	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
-48	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	49	appos	_	_
+48	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	49	amod	_	_
 49	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	51	obl	_	_
 50	selbst	selbst	ADV	ADV	_	49	advmod	_	_
 51	gestanden	stehen	VERB	VVPP	Verbform=Part	33	conj	_	_
@@ -1823,11 +1822,12 @@
 [PART-WHOLE] einer (33)
 [part] der (10)
 [m-time] früher einmal (12)
+[m-time] , vor langer Zeit (16)
 [whole] der führenden Männer der Partei (36)
-[m-scene] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60)
-[m-scene] , zum Tode verurteilt zu werden (64)
-[m-scene] und auf geheimnisvolle Weise zu verschwinden (72)
-[part] Abtrünnige (8) # # ??
+[m-purpose >> m-follows] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60)
+[m-purpose >> m-follows] , zum Tode verurteilt zu werden (64)
+[m-purpose >> m-follows] und auf geheimnisvolle Weise zu verschwinden (72)
+[part] Abtrünnige (8)
 
 [IDENTIFICATION] der (10)
 
@@ -1836,16 +1836,15 @@
 
 [TIME] früher (11)
 
-[MESSAGE-INIT] erinnerte (26)
-[target-content] , vor langer Zeit (16)
-[topic] wie lange Zeit es eigentlich war , (20)
-[x-noncomp] sich (27)
+[MESSAGE] erinnerte (26)
+[content] wie lange Zeit es eigentlich war , (20)
+[x-experiencer] sich (27)
 [x-experiencer] niemand (28)
-[m-quality] mehr genau (30)
+[m-time] mehr (29)
+[m-quality] genau (30)
 
 [TIME] Zeit (16)
 [m-quantity] langer (15)
-[m-identifier] wie lange Zeit es eigentlich war , (20) # # ??
 
 [QUANTITY] langer (15)
 
@@ -1863,7 +1862,7 @@
 
 [MODE] eigentlich (22)
 
-[NONCOMP] sich (27)
+[?] sich (27)
 
 [CLASS] niemand (28)
 
@@ -1882,16 +1881,18 @@
 
 [LOCATION >> SCENE] gestanden (51)
 [location >> scene] fast auf einer Stufe (45)
-[m-accompanier] mit dem Großen Bruder selbst (49)
+[m-accompanier >> participant] mit dem Großen Bruder selbst (49)
 [has-location >> participant] Abtrünnige (8)
 
-[CLASS >> QUALITY] Stufe (45)
-[m-mode] fast (42)
-[m-has-location >> has-quality] Abtrünnige (8)
+[CLASS >> COMPARISON] Stufe (45)
+[m-quantity] fast (42)
+[compared] Abtrünnige (8)
+[reference] mit dem Großen Bruder selbst (49)
 
-[MODE] fast (42)
+[QUANTITY] fast (42)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Großen Bruder (49)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (49)
+[m-quality >> m-noncomp] Großen (48)
 [m-mode] selbst (50)
 
 [QUALITY] Großen (48)
@@ -2118,8 +2119,8 @@
 20	ausländischen	ausländisch	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	21	amod	_	_
 21	Geldgeber	Geldgeber	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	_
 22	,	,	PUNCT	$,	_	28	punct	_	_
-23	vielleicht	vielleicht	ADV	ADV	_	28	advmod	_	_
-24	sogar	sogar	ADV	ADV	_	28	advmod	_	_
+23	vielleicht	vielleicht	ADV	ADV	_	33	advmod	_	_
+24	sogar	sogar	ADV	ADV	_	33	advmod	_	_
 25	-	-	PUNCT	$.	_	28	punct	_	_
 26	wie	wie	SCONJ	KOUS	_	28	mark	_	_
 27	gelegentlich	gelegentlich	ADJ	ADJD	_	28	advmod	_	_
@@ -2178,12 +2179,12 @@
 [LOCATION >> QUALITY] ausländischen (20)
 
 [LOCATION] Versteck (33) # # "geheimer, anderen nicht bekannter *Ort*"
-[m-scene] , vielleicht sogar - wie gelegentlich gemunkelt wurde - (28)
+[m-mode] vielleicht (23)
+[m-mode] sogar (24)
+[m-scene] , - wie gelegentlich gemunkelt wurde - (28)
 [m-location] in Ozeanien selbst (35)
 
 [MESSAGE-INIT] gemunkelt (28)
-[m-mode] vielleicht (23)
-[m-mode] sogar (24)
 [m-time] gelegentlich (27)
 [target-content] Versteck (33)
 
@@ -2209,7 +2210,7 @@
 
 [UNANCHORED-MOTION] zog (3)
 [in-motion] Winstons Zwerchfell (2)
-[x-noncomp] sich (4)
+[in-motion] sich (4)
 [x-noncomp] zusammen (5)
 
 [PART-WHOLE] Zwerchfell (2)
@@ -2217,7 +2218,7 @@
 
 [IDENTIFICATION] Winstons (1)
 
-[NONCOMP] sich (4)
+[IDENTIFICATION] sich (4)
 
 # sent_id = 185
 # text = Nie konnte er das Gesicht Goldsteins sehen , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten .
@@ -2240,11 +2241,11 @@
 17	geraten	geraten	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
-[MESSAGE-INIT] sehen (7)
+[MESSAGE] sehen (7)
 [m-time] Nie (1)
 [x-experiencer] er (3)
 [topic] das Gesicht Goldsteins (5)
-[m-scene] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
+[m-accompanier] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
 
 [TIME-NEG] Nie (1)
 
@@ -2257,7 +2258,6 @@
 
 [LOCATION-INIT >> SCENE] geraten (17)
 [target-location >> target-scene] in einen schmerzlichen Widerstreit der Gefühle (13)
-[m-condition] sehen (7)
 
 [MESSAGE] Widerstreit (13)
 [m-quality] schmerzlichen (12)
@@ -2329,10 +2329,10 @@
 
 [QUALITY] jüdisches (5)
 
-[COMPARISON] Kranz (12)
+[PART-WHOLE] Kranz (12)
 [m-quality] breiten (9)
 [m-quality] , wirren (11)
-[m-material] weißer Haare (14) # # ?? "Kranz [aus] weißen Haaren"
+[part] weißer Haare (14)
 
 [QUALITY] breiten (9)
 
@@ -2352,16 +2352,16 @@
 
 [QUALITY] kluges (20)
 
-[MESSAGE] verächtliches (25) # # "Verachtung ausdrückend" ODER "wegen der moralischen Minderwertigkeit Verachtung verdienend"
+[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # # "wegen der moralischen Minderwertigkeit Verachtung verdienend" ODER  "Verachtung ausdrückend"
 [m-scene] doch (22)
-[m-quality || m-mode] irgendwie (23)
+[m-mode] irgendwie (23) # # bezieht sich mehr auf den Bezug des Sprechers zum Gesagten
 [m-quality] eigentümlich (24)
-[x-sender || x-experiencer] Gesicht (26) # # ?? siehe ambige Bedeutung "verächtlich"
+[topic || x-sender] Gesicht (26) # # siehe ambige Bedeutung "verächtlich"
 
 [CONCESSION] doch (22) # # Vgl. (43) im Manual
 [asserted] verächtliches (25)
 
-[QUALITY || MODE] irgendwie (23)
+[MODE] irgendwie (23)
 
 [QUALITY] eigentümlich (24)
 
@@ -2394,9 +2394,9 @@
 
 [CLASS] Brille (37)
 
-[QUALITY] Art (41) # # ?? oder MEANS wie bei "Art und Weise"?
-[quality] seniler Blödheit (43)
-[has-quality] Gesicht (26)
+[] Art (41) # # ?? "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
+[] seniler Blödheit (43)
+[] Gesicht (26)
 
 [STATE] Blödheit (43)
 [m-quality] seniler (42)
@@ -2442,8 +2442,8 @@
 [MESSAGE] Stimme (9)
 
 [COMPARISON] Schafsmässiges (12)
-[reference] etwas (11)
-[compared] die Stimme (9)
+[compared] etwas (11)
+[x-has-quality] die Stimme (9) # # Vgl. near nominal copula constructions
 
 [CLASS] etwas (11)
 
@@ -2544,18 +2544,18 @@
 [m-scene] , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (34)
 
 [QUALITY] übertriebenen (17)
-[m-quantity] so (16)
-[m-scene] , dass ihn ein Kind hätte durchschauen können (27)
+[?m-quantity] so (16)
+[?m-result] , dass ihn ein Kind hätte durchschauen können (27)
 [has-quality] Angriff (20)
 
-[QUANTITY] so (16) # # "so" bezeichnet [in diesem Fall] einen durch Kontext oder Situation näher bestimmten (hohen) Grad, ein durch Kontext oder Situation näher bestimmtes (hohes) Maß oder einen (sehr) hohen Grad, ein (sehr) hohes Maß
+[?QUANTITY] so (16) # # "so" bezeichnet [in diesem Fall] einen durch Kontext oder Situation näher bestimmten (hohen) Grad, ein durch Kontext oder Situation näher bestimmtes (hohes) Maß oder einen (sehr) hohen Grad, ein (sehr) hohes Maß
 
 [QUALITY] verdrehten (19)
 
 [MESSAGE-INIT] durchschauen (27) # # "etwas durch den äußeren Schein hindurch in seiner wahren Gestalt erkennen"; "verstehen, begreifen", 
 [topic] ihn (23)
 [x-experiencer] ein Kind (25)
-[m-explanation] übertriebenen (17) # # "so übertrieben, dass"
+[?m-explanation] übertriebenen (17) # # "so übertrieben, dass"
 
 [IDENTIFICATION] ihn (23)
 
@@ -2564,7 +2564,7 @@
 [SCENE >> QUALITY] glaubhaft (34)
 [m-scene] doch (31)
 [m-quantity] gerade hinreichend (33)
-[m-scene] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
+[m-result] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
 [scene >> has-quality] Angriff (20)
 
 [CONCESSION] doch (31)
@@ -2919,10 +2919,10 @@
 
 [UNANCHORED-MOTION] marschierten (5)
 [m-time] die ganze Zeit (4)
-[m-scene] , für den Fall , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9) ## ?? m-condition?
-[m-location] , hinter seinem Kopf auf dem Schirm des Televisors (32) ## ?? transitory-location?
+[m-condition] , für den Fall , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9) # # ?? m-condition?
+[m-location] , hinter seinem Kopf auf dem Schirm des Televisors (32) # # ?? transitory-location?
 [in-motion] die endlosen Kolonnen der eurasischen Armee - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (40)
-[x-noncomp] vorbei (44) ## ?? 
+[x-noncomp] vorbei (44) # # ?? 
 
 [TIME] Zeit (4)
 [m-quantity] ganze (3)
