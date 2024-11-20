@@ -640,7 +640,7 @@
 [in-motion] sich (13)
 [in-motion] seiner (10)
 
-[] sich (13)
+[IDENTIFICATION] sich (13)
 
 # sent_id = 160
 # text = Er hatte eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte .
@@ -674,7 +674,7 @@
 
 [] Er (1)
 
-[] Manier (4)
+[] Manier (4) # TODO like Art, see above
 [] , seine Brille auf der Nase zurechtzurücken (11)
 [] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22)
 
@@ -1727,7 +1727,7 @@
 13	,	,	PUNCT	$,	_	16	punct	_	_
 14	vor	vor	ADP	APPR	_	16	case	_	_
 15	langer	lang	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	16	amod	_	_
-16	Zeit	Zeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	26	obl	_	_
+16	Zeit	Zeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	33	obl	_	_
 17	(	(	PUNCT	$(	_	26	punct	_	_
 18	wie	wie	SCONJ	KOUS	_	19	advmod	_	_
 19	lange	lang	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	20	amod	_	_
@@ -1740,7 +1740,7 @@
 26	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	parataxis	_	_
 27	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	26	obj	_	_
 28	niemand	niemand	PRON	PIS	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	26	nsubj	_	_
-29	mehr	mehr	ADV	ADV	_	30	advmod	_	_
+29	mehr	mehr	ADV	ADV	_	26	advmod	_	_
 30	genau	genau	ADJ	ADJD	_	26	advmod	_	_
 31	)	)	PUNCT	$(	_	26	punct	_	_
 32	,	,	PUNCT	$,	_	26	punct	_	_
@@ -1791,20 +1791,22 @@
 
 [] Goldstein (1)
 
-[] Abtrünnige (8)
-[] große (7)
-[] , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (33)
-[] und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte (51)
+[SOCIAL-RELATION] Abtrünnige (8)
+[m-quality] große (7)
+[m-scene] , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (33)
+[m-scene] und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte (51)
 
 [] große (7)
 
-[] einer (33)
-[] der (10)
-[] früher einmal (12)
-[] der führenden Männer der Partei (36)
-[] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60)
-[] , zum Tode verurteilt zu werden (64)
-[] und auf geheimnisvolle Weise zu verschwinden (72)
+[PART-WHOLE] einer (33)
+[part] der (10)
+[m-time] früher einmal (12)
+[m-time] , vor langer Zeit (16)
+[whole] der führenden Männer der Partei (36)
+[m-purpose >> m-follows] , um dann mit konterrevolutionären Machenschaffen zu beginnen (60) # TODO manual Modifiers: add adverbial clauses
+[m-purpose >> m-follows] , zum Tode verurteilt zu werden (64)
+[m-purpose >> m-follows] und auf geheimnisvolle Weise zu verschwinden (72)
+[part] Abtrünnige (8)
 
 [] der (10)
 
@@ -1813,17 +1815,17 @@
 
 [] früher (11)
 
-[] erinnerte (26)
-[] , vor langer Zeit (16)
-[] wie lange Zeit es eigentlich war , (20)
-[] sich (27)
-[] niemand (28)
-[] mehr genau (30)
-
 [] Zeit (16)
 [] langer (15)
 
 [] langer (15)
+
+[MESSAGE] erinnerte (26)
+[content] wie lange Zeit es eigentlich war , (20) # TODO Fragewörter
+[x-experiencer] sich (27) # TODO add more examples of German inherent reflexive verbs; remove IRV from NONCOMP section in manual
+[x-experiencer] niemand (28) # TODO negation that is incorporated in arguments (erst wegdenken, dann Frame bestimmen)
+[m-time] mehr (29) # TODO TIME vs. SCENE-CONTINUATION
+[m-quality] genau (30)
 
 [] Zeit (20)
 [] wie lange (19)
@@ -1843,10 +1845,9 @@
 
 [] niemand (28)
 
-[] genau (30)
 [] mehr (29)
 
-[] mehr (29)
+[] genau (30)
 
 [] Männer (36)
 [] führenden (35)
@@ -1856,18 +1857,21 @@
 
 [] Partei (38)
 
-[] gestanden (51)
-[] fast auf einer Stufe (45)
-[] mit dem Großen Bruder selbst (49)
+[LOCATION >> SCENE] gestanden (51)
+[location >> scene] fast auf einer Stufe (45)
+[m-accompanier >> participant] mit dem Großen Bruder selbst (49)
+[has-location >> participant] Abtrünnige (8) # TODO checker: why is only one participant added to the SCENE below?
 
-[] Stufe (45)
+[CLASS >> COMPARISON] Stufe (45)
+[m-quantity] fast (42)
+[reference] mit dem Großen Bruder selbst (49) # TODO why doesn't the checker complain about CLASS?
+[compared] Abtrünnige (8)
+
 [] fast (42)
 
-[] fast (42)
-
-[] Bruder (49)
-[] Großen (48)
-[] selbst (50)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (49)
+[m-quality >> m-noncomp] Großen (48)
+[m-mode] selbst (50)
 
 [] Großen (48)
 
@@ -2204,13 +2208,13 @@
 17	geraten	geraten	VERB	VVINF	VerbForm=Inf	7	advcl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] sehen (7)
-[] Nie (1)
-[] er (3)
-[] das Gesicht Goldsteins (5)
-[] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
+[MESSAGE] sehen (7) # TODO example of aspectual ambiguity? sehen in the sense of erblicken?
+[m-time] Nie (1) # an example of the importance of scope: first apply ohne, then nie
+[x-experiencer] er (3)
+[topic] das Gesicht Goldsteins (5)
+[m-accompanier] , ohne in einen schmerzlichen Widerstreit der Gefühle zu geraten (17)
 
-[] Nie (1)
+[TIME-NEG] Nie (1)
 
 [] er (3)
 
@@ -2292,10 +2296,10 @@
 
 [] jüdisches (5)
 
-[] Kranz (12)
-[] breiten (9)
-[] , wirren (11)
-[] weißer Haare (14)
+[PART-WHOLE] Kranz (12) # TODO manual: metaphor/polysemy
+[m-quality] breiten (9)
+[m-quality] , wirren (11)
+[part] weißer Haare (14)
 
 [] breiten (9)
 
@@ -2308,19 +2312,21 @@
 
 [] Ziegenbärtchen (17)
 
-[] Gesicht (26)
-[] kluges (20)
-[] und doch irgendwie eigentümlich verächtliches (25)
-[] , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (45)
+[PART-WHOLE] Gesicht (26)
+[m-quality] kluges (20)
+[m-scene] und doch irgendwie eigentümlich verächtliches (25)
+[m-scene] , dessen lange dünne Nase , auf deren Ende eine Brille saß , eine Art seniler Blödheit auszustrahlen schien (45)
 
 [] kluges (20)
 
-[] verächtliches (25)
-[] doch (22)
-[] irgendwie (23)
-[] eigentümlich (24)
+[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # Verachtung verdienend oder Verachtung ausdrückend
+[m-scene] doch (22)
+[m-mode] irgendwie (23)
+[m-quality] eigentümlich (24)
+[topic || x-sender] Gesicht (26)
 
-[] doch (22)
+[CONCESSION] doch (22)
+[asserted] verächtliches (25)
 
 [] irgendwie (23)
 
@@ -2330,6 +2336,7 @@
 [] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
 [] eine Art seniler Blödheit (41)
 [] auszustrahlen (44)
+[] Gesicht (26)
 
 [] Nase (31)
 [] lange (29)
@@ -2351,7 +2358,7 @@
 
 [] Brille (37)
 
-[] Art (41)
+[] Art (41) # TODO hyponymy superframe?
 [] seniler Blödheit (43)
 
 [] Blödheit (43)
@@ -2385,17 +2392,19 @@
 
 [] Schafsgesicht (4)
 
-[] hatte (10)
-[] auch (7)
-[] die Stimme (9)
-[] etwas Schafsmässiges (12)
+[SCENE] hatte (10)
+[m-scene] auch (7)
+[participant] die Stimme (9)
+[scene] etwas Schafsmässiges (12)
 
 [] auch (7)
+[] hatte (10)
 
 [] Stimme (9)
 
-[] Schafsmässiges (12)
-[] etwas (11)
+[COMPARISON] Schafsmässiges (12)
+[compared] etwas (11)
+[x-has-quality] die Stimme (9) # TODO add to manual near nominal copula constructions
 
 [] etwas (11)
 
