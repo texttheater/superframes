@@ -75,6 +75,7 @@ def render(depstr: str) -> str:
     Returns a rendering of this local tree in LaTeX code, using
     tikz-dependency.
     """
+    print(depstr, file=sys.stderr)
     # Front matter
     tokens = list(tokenize(depstr))
     result = ''
