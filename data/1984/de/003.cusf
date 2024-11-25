@@ -454,11 +454,11 @@
 [m-scene] und der Allgemeinheit entrückten (23)
 
 [QUALITY] wichtigen (19)
-[?m-reference] so (18) # # ??? 
-[?m-scene] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
+[m-quantity] so (18)
+[m-result] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
 [has-quality] Postens (24)
 
-[?COMPARISON] so (18) # # ?? 
+[QUANTITY] so (18)
 
 [LOCATION-DEINIT >> MESSAGE-PREVENTION] entrückten (23)
 [initial-location >> x-experiencer] der Allgemeinheit (22)
@@ -469,7 +469,6 @@
 [POSSESSION >> SCENE] hatte (33)
 [possessor >> participant] Winston (27)
 [possessed >> scene] nur eine undeutliche Vorstellung davon (31)
-[?m-explanation] wichtigen (19)
 
 [IDENTIFICATION] Winston (27)
 
@@ -1862,7 +1861,7 @@
 
 [MODE] eigentlich (22)
 
-[?] sich (27)
+[IDENTIFICATION] sich (27)
 
 [CLASS] niemand (28)
 
@@ -1912,9 +1911,9 @@
 
 [QUALITY || SOCIAL-RELATION] konterrevolutionären (57)
 
-[SOCIAL-RELATION || STATE-CHANGE || MESSAGE-INIT] verurteilt (64)
-[x-resultative] zum Tode (63)
-[has-social-relation || has-state || topic] einer (33)
+[SOCIAL-RELATION-INIT] verurteilt (64)
+[target-social-relation] zum Tode (63)
+[has-social-relation] einer (33)
 
 [DESTRUCTION] Tode (63)
 [destroyed] einer (33)
@@ -2068,8 +2067,9 @@
 [causer] auf seine Irrlehren (21)
 [x-noncomp] zurück (22)
 
-[SOCIAL-RELATION || ACTIVITY] Verbrechen (7)
+[EVENT] Verbrechen (7)
 [m-scene] später gegen die Partei gerichteten (6)
+[undergoer] gegen die Partei (5)
 
 [SCENE] gerichteten (6)
 [m-time] später (2)
@@ -2166,17 +2166,17 @@
 
 [LOCATION] irgendwo (11) # # "irgendwo jenseits"
 
-[SCENE-CONTINUATION] Schutz (18) # # 3.11 "jemanden schützen" vs. "Besitz schützen" vs. "Werte schützen"...
-[x-causer] seiner ausländischen Geldgeber (21)
-[initial-scene] schmiedete (6)
+[SCENE-PREVENTION] Schutz (18) # # 3.11 "jemanden schützen *vor*" vs. "Besitz schützen *vor*" vs. "Werte schützen *vor*"...
+[x-causer] seiner ausländischen Geldgeber (21) # # in der target-scene spielen Geldgeber keine Rolle, deshalb nicht participant sondern x-causer
+[target-scene] schmiedete (6)
 
 [POSSESSION-INIT] Geldgeber (21)
 [target-possessor] seiner (19)
-[m-location >> m-quality] ausländischen (20)
+[m-social-relation] ausländischen (20)
 
 [IDENTIFICATION] seiner (19)
 
-[LOCATION >> QUALITY] ausländischen (20)
+[SOCIAL-RELATION] ausländischen (20)
 
 [LOCATION] Versteck (33) # # "geheimer, anderen nicht bekannter *Ort*"
 [m-mode] vielleicht (23)
@@ -2327,7 +2327,7 @@
 
 [STATE] mageres (4)
 
-[QUALITY] jüdisches (5)
+[SOCIAL-RELATION] jüdisches (5)
 
 [PART-WHOLE] Kranz (12)
 [m-quality] breiten (9)
@@ -2544,26 +2544,26 @@
 [m-scene] , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (34)
 
 [QUALITY] übertriebenen (17)
-[?m-quantity] so (16)
-[?m-result] , dass ihn ein Kind hätte durchschauen können (27)
+[m-quantity] so (16)
+[m-result] , dass ihn ein Kind hätte durchschauen können (27)
 [has-quality] Angriff (20)
 
-[?QUANTITY] so (16) # # "so" bezeichnet [in diesem Fall] einen durch Kontext oder Situation näher bestimmten (hohen) Grad, ein durch Kontext oder Situation näher bestimmtes (hohes) Maß oder einen (sehr) hohen Grad, ein (sehr) hohes Maß
+[QUANTITY] so (16) # # "so" bezeichnet [in diesem Fall] einen durch Kontext oder Situation näher bestimmten (hohen) Grad, ein durch Kontext oder Situation näher bestimmtes (hohes) Maß oder einen (sehr) hohen Grad, ein (sehr) hohes Maß
 
 [QUALITY] verdrehten (19)
 
 [MESSAGE-INIT] durchschauen (27) # # "etwas durch den äußeren Schein hindurch in seiner wahren Gestalt erkennen"; "verstehen, begreifen", 
 [topic] ihn (23)
 [x-experiencer] ein Kind (25)
-[?m-explanation] übertriebenen (17) # # "so übertrieben, dass"
+[m-explanation] übertriebenen (17) # # "so übertrieben, dass"
 
 [IDENTIFICATION] ihn (23)
 
 [CLASS] Kind (25)
 
-[SCENE >> QUALITY] glaubhaft (34)
+[MESSAGE-POSSIBILITY >> QUALITY] glaubhaft (34)
 [m-scene] doch (31)
-[m-quantity] gerade hinreichend (33)
+[m-quantity] gerade hinreichend (33) # # Vgl. "so wichtig, dass..."
 [m-result] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
 [scene >> has-quality] Angriff (20)
 
@@ -2571,9 +2571,9 @@
 [asserted] glaubhaft (34)
 
 [QUANTITY] hinreichend (33)
-[m-mode] gerade (32)
+[m-quantity] gerade (32)
 
-[MODE] gerade (32) # # ?? 
+[QUANTITY] gerade (32)
 
 [MESSAGE] erfüllen (43) # # Vgl. sent_id 153
 [x-experiencer] einen (37)
@@ -2590,12 +2590,12 @@
 [SENDING >> QUALITY] alarmierenden (40) # # Vgl. (348) im Manual
 [sender] Gefühl (41)
 
-[SCENE-INIT] lassen (61)
-[participant] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
+[SCENE-POSSIBILITY >> SCENE-INIT] lassen (61) # # im Sinne von "zulassen" (nicht "veranlassen")
+[x-causer] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
 [participant] sich (57)
 [participant] dadurch (58)
 [m-mode] vielleicht (59)
-[target-scene] verführen (60)
+[scene >> target-scene] verführen (60)
 
 [CLASS] Menschen (47)
 [m-reference] andere (46)
@@ -2624,10 +2624,9 @@
 
 [MODE] vielleicht (59)
 
-[SCENE-INIT] verführen (60) # # ?? hier wohl gemeint: "sich *dazu* verführen lassen, es zu glauben", Vgl. Originaltext "to be taken in by it"
-[?] dadurch (58)
-[?] sich (57)
-[?] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
+[SCENE-INIT] verführen (60) # # hier wohl gemeint: "sich *dazu* verführen lassen, es zu glauben", Vgl. Originaltext "to be taken in by it"
+[x-causer] dadurch (58)
+[participant] sich (57)
 
 [NONCOMP] Stapel (13)
 
@@ -2641,7 +2640,7 @@
 6	,	,	PUNCT	$,	_	14	punct	_	_
 7	klagte	klagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 8	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Diktatur	Diktatur	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	14	obj	_	_
+9	Diktatur	Diktatur	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
 10	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	9	nmod	_	_
 12	an	an	ADP	PTKVZ	_	7	compound:prt	_	_
@@ -2661,7 +2660,7 @@
 26	Versammlungs-	Versammlungs-	X	TRUNC	_	22	conj	_	_
 27	und	und	CCONJ	KON	_	28	cc	_	_
 28	Gedankenfreiheit	Gedankenfreiheit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	22	conj	_	_
-29	ein	ein	ADP	PTKVZ	_	31	compound:prt	_	_
+29	ein	ein	ADP	PTKVZ	_	20	compound:prt	_	_
 30	,	,	PUNCT	$,	_	31	punct	_	_
 31	schrie	schreien	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 32	hysterisch	hysterisch	ADJ	ADJD	_	31	advmod	_	_
@@ -2715,61 +2714,61 @@
 80	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	79	aux	_	_
 81	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] schmähte (2)
-[] Er (1)
-[] den Großen Bruder (5)
+[MESSAGE-INIT] schmähte (2)
+[x-sender] Er (1)
+[topic] den Großen Bruder (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Bruder (5)
-[] Großen (4)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (5)
+[m-quality >> m-noncomp] Großen (4)
 
-[] Großen (4)
+[QUALITY] Großen (4)
 
-[] klagte (7)
-[] an (12)
+[MESSAGE-INIT] klagte (7)
+[topic] die Diktatur der Partei (9)
+[m-noncomp] an (12)
 
-[] forderte (14)
-[] die Diktatur der Partei (9)
-[] sofortigen Friedensschluss mit Eurasien (16)
+[SOCIAL-RELATION] Diktatur (9)
+[has-social-relation] der Partei (11)
 
-[] Diktatur (9)
-[] der Partei (11)
+[SOCIAL-RELATION] Partei (11)
 
-[] Partei (11)
+[MESSAGE-INIT] forderte (14)
+[target-content] sofortigen Friedensschluss mit Eurasien (16)
 
-[] Friedensschluss (16)
-[] sofortigen (15)
-[] mit Eurasien (18)
+[SOCIAL-RELATION-INIT] Friedensschluss (16)
+[m-time] sofortigen (15)
+[target-social-relation] mit Eurasien (18)
 
-[] sofortigen (15)
+[TIME] sofortigen (15)
 
-[] Eurasien (18)
+[IDENTIFICATION] Eurasien (18)
 
-[] trat (20)
-[] für Rede- (22)
-[] , Presse- (24)
-[] , Versammlungs- (26)
-[] und Gedankenfreiheit (28)
+[MESSAGE] trat (20)
+[topic] für Rede- (22)
+[topic] , Presse- (24)
+[topic] , Versammlungs- (26)
+[topic] und Gedankenfreiheit (28)
+[m-noncomp] ein (29)
 
-[] Rede- (22)
+[SOCIAL-RELATION] Rede- (22)
 
-[] Presse- (24)
+[SOCIAL-RELATION] Presse- (24)
 
-[] Versammlungs- (26)
+[SOCIAL-RELATION] Versammlungs- (26)
 
-[] Gedankenfreiheit (28)
+[SOCIAL-RELATION] Gedankenfreiheit (28)
 
-[] schrie (31)
-[] ein (29)
-[] hysterisch (32)
-[] , die Revolution sei verraten worden - (37)
-[] und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (42)
+[MESSAGE-INIT] schrie (31)
+[m-quality] hysterisch (32)
+[target-content] , die Revolution sei verraten worden - (37)
+[m-scene] und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (42)
 
-[] hysterisch (32)
+[QUALITY] hysterisch (32)
 
-[] verraten (37)
-[] die Revolution (35)
+[SOCIAL-RELATION-DEINIT] verraten (37) ## "etwas oder jemandem gegenüber nicht loyal sein, oft indem man etwas Schädliches tut, wie etwa Feinden zu helfen"
+[initial-social-relation] die Revolution (35)
 
 [] Revolution (35)
 
