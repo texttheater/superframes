@@ -405,20 +405,20 @@
 
 [] sich (16)
 
-[] stemme (19)
-[] er (20)
-[] sich (21)
-[] dem Anprall einer Woge (23)
-[] entgegen (26)
+[LOCATION-INIT >> REACTION] stemme (19) # TODO reaction to an anticipated event
+[has-location >> x-causer] er (20)
+[has-location >> x-causer] sich (21)
+[target-location >> trigger] dem Anprall einer Woge (23)
+[target-location >> trigger] entgegen (26)
 
 [] er (20)
 
 [] sich (21)
 
-[] Anprall (23)
-[] einer Woge (25)
+[HITTING] Anprall (23)
+[hitting] einer Woge (25)
 
-[] Woge (25)
+[CLASS] Woge (25)
 
 # sent_id = 210
 # text = Das dunkelhaarige Mädchen hinter Winston hatte angefangen » Schwein ! Schwein ! Schwein ! « hinauszuschreien und ergriff plötzlich ein schweres Wörterbuch der Neusprache und schleuderte es gegen den Sehschirm .
@@ -432,7 +432,7 @@
 8	»	»	PUNCT	$(	_	9	punct	_	_
 9	Schwein	Schwein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	16	obj	_	_
 10	!	!	PUNCT	$.	_	11	punct	_	_
-11	Schwein	Schwein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	9	appos	_	_
+11	Schwein	Schwein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	9	conj	_	_
 12	!	!	PUNCT	$.	_	13	punct	_	_
 13	Schwein	Schwein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	9	conj	_	_
 14	!	!	PUNCT	$.	_	9	punct	_	_
@@ -454,9 +454,9 @@
 30	Sehschirm	Sehschirm	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	26	obl	_	_
 31	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] angefangen (7)
-[] Das dunkelhaarige Mädchen hinter Winston (3)
-[] » Schwein ! Schwein ! Schwein ! « hinauszuschreien (16)
+[SCENE-INIT] angefangen (7)
+[participant] Das dunkelhaarige Mädchen hinter Winston (3)
+[target-scene] » Schwein ! Schwein ! Schwein ! « hinauszuschreien (16)
 
 [] Mädchen (3)
 [] dunkelhaarige (2)
@@ -466,11 +466,13 @@
 
 [] Winston (5)
 
-[] hinauszuschreien (16)
-[] » Schwein ! Schwein ! « (9)
-[] ! Schwein (13)
+[MESSAGE-INIT] hinauszuschreien (16)
+[target-content] » Schwein ! « (9)
+[target-content] ! Schwein (11)
+[target-content] ! Schwein (13)
+[x-sender] Das dunkelhaarige Mädchen hinter Winston (3)
 
-[] Schwein ! Schwein (9)
+[] Schwein (9)
 
 [] Schwein (11)
 
@@ -490,13 +492,14 @@
 
 [] Neusprache (24)
 
-[] schleuderte (26)
-[] es (27)
-[] gegen den Sehschirm (30)
+[LOCATION-INIT] schleuderte (26)
+[has-location] es (27)
+[target-location] gegen den Sehschirm (30)
+[x-causer] Mädchen (3)
 
-[] es (27)
+[IDENTIFICATION] es (27)
 
-[] Sehschirm (30)
+[CLASS] Sehschirm (30)
 
 # sent_id = 211
 # text = Es traf Goldsteins Nase und prallte von ihm ab ; die Stimme redete unerbittlich weiter .
@@ -528,9 +531,9 @@
 
 [] Goldsteins (3)
 
-[] prallte (6)
-[] von ihm (8)
-[] ab (9)
+[LOCATION-DEINIT] prallte (6)
+[initial-location] von ihm (8)
+[m-noncomp] ab (9) # TODO manual?
 
 [] ihm (8)
 

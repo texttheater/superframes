@@ -444,9 +444,9 @@
 [] so wichtigen , dass Winston nur eine undeutliche Vorstellung davon hatte (19)
 [] und der Allgemeinheit entrückten (23)
 
-[] wichtigen (19)
-[] so (18)
-[] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
+[QUALITY] wichtigen (19)
+[m-quantity] so (18) # TODO manual
+[m-result] , dass Winston nur eine undeutliche Vorstellung davon hatte (33)
 
 [] so (18)
 
@@ -1339,8 +1339,8 @@
 
 [] Registratur (28)
 
-[] Ende (36)
-[] die Zwei-Minuten-Hass-Sendung (34)
+[SCENE-DEINIT] Ende (36)
+[initial-scene] die Zwei-Minuten-Hass-Sendung (34)
 
 [] Zwei-Minuten-Hass-Sendung (34)
 
@@ -1841,9 +1841,9 @@
 
 [] eigentlich (22)
 
-[] sich (27)
+[IDENTIFICATION] sich (27)
 
-[] niemand (28)
+[CLASS] niemand (28)
 
 [] mehr (29)
 
@@ -1888,8 +1888,9 @@
 
 [] konterrevolutionären (57)
 
-[] verurteilt (64)
-[] zum Tode (63)
+[SOCIAL-RELATION-INIT] verurteilt (64)
+[target-social-relation] zum Tode (63)
+[has-social-relation] einer (33)
 
 [] Tode (63)
 
@@ -2039,12 +2040,14 @@
 [causer] auf seine Irrlehren (21)
 [x-noncomp] zurück (22)
 
-[] Verbrechen (7)
-[] später gegen die Partei gerichteten (6)
+[EVENT] Verbrechen (7)
+[m-scene] später gegen die Partei gerichteten (6)
+[undergoer] gegen die Partei (5)
 
-[] gerichteten (6)
-[] später (2)
-[] gegen die Partei (5)
+[SCENE] gerichteten (6)
+[m-time] später (2)
+[participant] gegen die Partei (5)
+[scene] Verbrechen (7)
 
 [] später (2)
 
@@ -2089,12 +2092,12 @@
 20	ausländischen	ausländisch	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	21	amod	_	_
 21	Geldgeber	Geldgeber	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	_
 22	,	,	PUNCT	$,	_	28	punct	_	_
-23	vielleicht	vielleicht	ADV	ADV	_	28	advmod	_	_
-24	sogar	sogar	ADV	ADV	_	28	advmod	_	_
+23	vielleicht	vielleicht	ADV	ADV	_	33	advmod	_	_
+24	sogar	sogar	ADV	ADV	_	33	advmod	_	_
 25	-	-	PUNCT	$.	_	28	punct	_	_
 26	wie	wie	SCONJ	KOUS	_	28	mark	_	_
 27	gelegentlich	gelegentlich	ADJ	ADJD	_	28	advmod	_	_
-28	gemunkelt	munkeln	VERB	VVPP	Verbform=Part	18	acl	_	_
+28	gemunkelt	munkeln	VERB	VVPP	Verbform=Part	33	acl	_	_
 29	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux:pass	_	_
 30	-	-	PUNCT	$.	_	28	punct	_	_
 31	in	in	ADP	APPR	_	33	case	_	_
@@ -2119,8 +2122,8 @@
 [] schmiedete (6)
 [] seine Ränke (8)
 [] : vielleicht irgendwo jenseits des Meeres (14)
-[] , unter dem Schutz seiner ausländischen Geldgeber , vielleicht sogar - wie gelegentlich gemunkelt wurde - (18)
-[] in einem Versteck in Ozeanien selbst (33)
+[] , unter dem Schutz seiner ausländischen Geldgeber (18)
+[] , vielleicht sogar - wie gelegentlich gemunkelt wurde - in einem Versteck in Ozeanien selbst (33)
 
 [] Ränke (8)
 [] seine (7)
@@ -2135,31 +2138,31 @@
 
 [] irgendwo (11)
 
-[] Schutz (18)
-[] seiner ausländischen Geldgeber (21)
-[] , vielleicht sogar - wie gelegentlich gemunkelt wurde - (28)
+[SCENE-PREVENTION] Schutz (18)
+[x-causer] seiner ausländischen Geldgeber (21)
 
-[] Geldgeber (21)
+[POSSESSION-INIT] Geldgeber (21)
+[target-possessor] seiner (19)
+[m-social-relation] ausländischen (20)
+
 [] seiner (19)
-[] ausländischen (20)
 
-[] seiner (19)
-
-[] ausländischen (20)
-
-[] gemunkelt (28)
-[] vielleicht (23)
-[] sogar (24)
-[] gelegentlich (27)
-
-[] vielleicht (23)
-
-[] sogar (24)
-
-[] gelegentlich (27)
+[SOCIAL-RELATION] ausländischen (20)
 
 [] Versteck (33)
+[] vielleicht (23)
+[] sogar (24)
+[] , - wie gelegentlich gemunkelt wurde - (28)
 [] in Ozeanien selbst (35)
+
+[] vielleicht (23)
+
+[] sogar (24)
+
+[] gemunkelt (28)
+[] gelegentlich (27)
+
+[] gelegentlich (27)
 
 [] Ozeanien (35)
 [] selbst (36)
@@ -2438,7 +2441,7 @@
 29	,	,	PUNCT	$,	_	34	punct	_	_
 30	und	und	CCONJ	KON	_	34	cc	_	_
 31	doch	doch	ADV	ADV	_	34	advmod	_	_
-32	gerade	gerade	ADV	ADV	_	34	advmod	_	_
+32	gerade	gerade	ADV	ADV	_	33	advmod	_	_
 33	hinreichend	hinreichend	ADJ	ADJD	_	34	advmod	_	_
 34	glaubhaft	glaubhaft	ADJ	ADJD	_	2	conj	_	_
 35	,	,	PUNCT	$,	_	43	punct	_	_
@@ -2453,7 +2456,7 @@
 44	,	,	PUNCT	$,	_	51	punct	_	_
 45	dass	dass	SCONJ	KOUS	_	61	mark	_	_
 46	andere	ander	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	47	amod	_	_
-47	Menschen	Mensch	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	43	nsubj	_	_
+47	Menschen	Mensch	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	61	nsubj	_	_
 48	,	,	PUNCT	$,	_	51	punct	_	_
 49	die	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Plur|PronType=Rel	51	nsubj	_	_
 50	weniger	weniger	ADV	ADV	_	51	advmod	_	_
@@ -2467,7 +2470,7 @@
 58	dadurch	dadurch	ADP	PROAV	PronType=Dem	61	advmod	_	_
 59	vielleicht	vielleicht	ADV	ADV	_	61	advmod	_	_
 60	verführen	verführen	VERB	VVINF	VerbForm=Inf	61	xcomp	_	_
-61	lassen	lassen	VERB	VVINF	VerbForm=Inf	43	ccomp	_	_
+61	lassen	lassen	VERB	VVINF	VerbForm=Inf	41	ccomp	_	_
 62	könnten	können	AUX	VMFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	61	aux	_	_
 63	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -2518,27 +2521,34 @@
 
 [] Kind (25)
 
-[] glaubhaft (34)
-[] doch (31)
-[] gerade (32)
-[] hinreichend (33)
-[] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
+[MESSAGE-POSSIBILITY] glaubhaft (34)
+[m-scene] doch (31)
+[m-quantity] gerade hinreichend (33) # TODO vgl. "so wichtig, dass"
+[m-purpose >> m-result] , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (43)
 
-[] doch (31)
+[CONCESSION] doch (31)
+[asserted] glaubhaft (34)
 
-[] gerade (32)
+[QUANTITY] hinreichend (33)
+[m-quantity] gerade (32)
 
-[] hinreichend (33)
+[QUANTITY] gerade (32)
 
 [] erfüllen (43)
-[] einen mit dem alarmierenden Gefühl (41)
-[] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
-[] dass sich dadurch vielleicht verführen lassen könnten (61)
+[] einen mit dem alarmierenden Gefühl , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (41)
 
 [] Gefühl (41)
 [] alarmierenden (40)
+[] , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (61)
 
 [] alarmierenden (40)
+
+[SCENE-POSSIBILITY >> SCENE-INIT] lassen (61)
+[x-causer] , andere Menschen , die weniger vernünftig waren als man selbst , (47)
+[participant] sich (57)
+[participant] dadurch (58)
+[m-mode] vielleicht (59)
+[scene >> target-scene] verführen (60)
 
 [] Menschen (47)
 [] andere (46)
@@ -2560,19 +2570,15 @@
 
 [] selbst (55)
 
-[] lassen (61)
-[] sich (57)
-[] dadurch (58)
-[] vielleicht (59)
-[] verführen (60)
-
 [] sich (57)
 
 [] dadurch (58)
 
 [] vielleicht (59)
 
-[] verführen (60)
+[SCENE-INIT] verführen (60)
+[participant] sich (57)
+[x-causer] dadurch (58)
 
 # sent_id = 189
 # text = Er schmähte den Großen Bruder , klagte die Diktatur der Partei an , forderte sofortigen Friedensschluss mit Eurasien , trat für Rede- , Presse- , Versammlungs- und Gedankenfreiheit ein , schrie hysterisch , die Revolution sei verraten worden - und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte .
@@ -2669,8 +2675,9 @@
 
 [] Großen (4)
 
-[] klagte (7)
-[] an (12)
+[MESSAGE-INIT] klagte (7)
+[m-noncomp] an (12)
+[topic] die Diktatur der Partei (9)
 
 [] forderte (14)
 [] die Diktatur der Partei (9)
