@@ -315,6 +315,11 @@ encodes a type of relation, such as \fr{LOCATION}:
 
 \ex.\dep{Wir_participant *machen#SCENE* das_scene wegen der Kinder_m-explanation}
 
+Adverbial clauses work much the same way, the have a conjunction instead of an
+adposition:
+
+\ex.\dep{*gekommen#LOCATION-INIT* , um zu bleiben_m-purpose}
+
 A slightly more subtle case is adpositional phrases that are multiword
 expressions such as \emph{vor allem}. Here, the relation is not so much
 indicated by the adposition as by the combination of the adposition and its
@@ -1105,9 +1110,9 @@ For connective adverbs, see Section~\ref{sec:modifiers}.
 \label{sec:NONCOMP}
 
 Used to mark syntactic arguments that are thought of as part of the predicate,
-as in verbal idioms, weather verbs, inherently reflexive verbs, existential
-\emph{there}, names, or other fixed expressions. (Light verbs, on the other hand, are
-treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.)
+as in verbal idioms, weather verbs, existential \emph{there}, names, or other
+fixed expressions. (Light verbs, on the other hand, are treated with
+\fr{SCENE}, see Section~\ref{sec:SCENE}.)
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
@@ -1124,8 +1129,8 @@ If an argument of the whole predicate syntactically attaches to an
 
 \ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
 
-If annotate a literal and a figurative meaning, only the literal meaning need
-be considered in the annotation of the \rl{x-noncomp} dependent:
+If you annotate a literal and a figurative meaning, only the literal meaning
+need be considered in the annotation of the \rl{x-noncomp} dependent:
 
 \ex.\dep{wenn man es **fertig#SCENE-DEINIT**_target-scene>>x-noncomp *brachte#SCENE-INIT* , dem Televisor ein Schnippchen zu schlagen_participant>>target-scene__initial-scene}
 
@@ -1133,8 +1138,10 @@ In other cases, frame the \rl{x-noncomp} dependent as \fr{NONCOMP}:
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
 
-Bound pronouns that are part of multiword expressions should get the same role
-as their antecedent:
+Bound pronouns that are part of multiword expressions (e.g., inherently
+reflexive verbs) should get the same role as their antecedent:
+
+\ex.\dep{Kim_x-experiencer *erinnert#MESSAGE* sich_x-experiencer nicht_m-mode}
 
 \ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-sender to you_x-experiencer}
 
@@ -1752,6 +1759,8 @@ objects (\rl{obj}), then indirect objects (\rl{iobj}), and oblique arguments
 
 \ex.\dep{*distinguish#COMPARISON* China_compared from Arizona_reference}
 
+\ex.\dep{Alice_x-causer *mixed#ACCOMPANIMENT-INIT* the egg_accompanied with the cream_target-accompanier}
+
 For predicates of mutual communication, choose \rl{x-sender} for the less
 oblique and \rl{x-experiencer} for the more oblique argument.
 
@@ -1808,6 +1817,16 @@ possession ends. \fr{POSSESSION-INIT} would be incorrect because although a
 losing event begins, the state that the superframe \fr{POSSESSION} describes
 ends. In general, aspectual suffixes modify superframes, they do not
 necessarily indicate the aspectual class of the predicate (here: \emph{lost}).
+
+
+\newpage\subsection{Ambiguity between Static and Dynamic? Prefer Dynamic?}
+
+Some predicates are ambiguous between a static and a dynamic reading. If they
+make equal sense in context, prefer the static one.
+
+\ex.
+\a.\dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE* , ohne sich aufzuregen_m-accompanier}
+\b. Rather than: \dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE-INIT* , ohne sich aufzuregen_m-accompanier}
 
 
 \newpage\section{Construction-specific Guidelines}
