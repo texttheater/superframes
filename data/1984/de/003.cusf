@@ -2394,9 +2394,9 @@
 
 [CLASS] Brille (37)
 
-[] Art (41) # # ?? "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
-[] seniler Blödheit (43)
-[] Gesicht (26)
+[?] Art (41) # # ?? "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
+[?] seniler Blödheit (43)
+[?] Gesicht (26)
 
 [STATE] Blödheit (43)
 [m-quality] seniler (42)
@@ -2710,7 +2710,7 @@
 76	im	im	ADP	APPRART	_	78	case	_	_
 77	wirklichen	wirklich	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	78	amod	_	_
 78	Leben	Leben	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	79	obl	_	_
-79	angewendet	anwenden	VERB	VVPP	Verbform=Part	66	advcl	_	_
+79	angewendet	anwenden	VERB	VVPP	Verbform=Part	70	advcl	_	_
 80	hätte	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	79	aux	_	_
 81	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -2763,78 +2763,83 @@
 [MESSAGE-INIT] schrie (31)
 [m-quality] hysterisch (32)
 [target-content] , die Revolution sei verraten worden - (37)
-[m-scene] und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (42)
+[?topic] und alles das in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (42)
 
 [QUALITY] hysterisch (32)
 
-[SOCIAL-RELATION-DEINIT] verraten (37) ## "etwas oder jemandem gegenüber nicht loyal sein, oft indem man etwas Schädliches tut, wie etwa Feinden zu helfen"
+[SOCIAL-RELATION-DEINIT] verraten (37) # # "etwas oder jemandem gegenüber nicht loyal sein, oft indem man etwas Schädliches tut, wie etwa Feinden zu helfen"
 [initial-social-relation] die Revolution (35)
 
-[] Revolution (35)
+[SOCIAL-RELATION] Revolution (35)
 
-[] das (42)
-[] alles (41)
-[] in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (48)
+[SITUATION] das (42)
+[?theme ?m-quantity] alles (41)
+[?situator ?m-scene] in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (48)
 
-[] alles (41)
+[QUANTITY] alles (41)
 
-[] Ansprache (48)
-[] überstürzten , (45)
-[] vielsilbigen (47)
-[] , die eine Art Parodie des üblichen Stils der Parteiredner war (53)
-[] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
+[MESSAGE] Ansprache (48)
+[m-quality] überstürzten , (45)
+[m-quality] vielsilbigen (47)
+[m-scene] , die eine Art Parodie des üblichen Stils der Parteiredner war (53)
+[m-scene] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
+[?content] das (42)
 
-[] überstürzten (45)
+[QUALITY] überstürzten (45)
 
-[] vielsilbigen (47)
+[QUALITY] vielsilbigen (47)
 
-[] Parodie (53)
-[] die (50)
-[] eine Art (52)
-[] des üblichen Stils der Parteiredner (56)
+[?COMPARISON] Parodie (53) # # "komisch-satirische Nachahmung oder Umbildung eines Werkes oder jemandes Stils"
+[compared] die (50)
+[?m-example] eine Art (52) # # Vgl. "eine Art seniler Blödheit"
+[reference] des üblichen Stils der Parteiredner (56)
+[compared] Ansprache (48)
 
-[] die (50)
+[IDENTIFICATION] die (50)
 
-[] Art (52)
+[?] Art (52)
 
+[MEANS] Stils (56)
+[m-scene] üblichen (55)
+[x-causer] der Parteiredner (58)
+
+[SCENE-CONTINUATION] üblichen (55)
 [] Stils (56)
-[] üblichen (55)
-[] der Parteiredner (58)
 
-[] üblichen (55)
+[SOCIAL-RELATION] Parteiredner (58)
 
-[] Parteiredner (58)
+[PART-WHOLE] enthielt (66)
+[m-mode] sogar (61)
+[part] einige Worte der Neusprache (63)
+[part] : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (70)
+[whole] Ansprache (48)
 
-[] enthielt (66)
-[] sogar (61)
-[] einige Worte der Neusprache (63)
-[] : praktisch mehr Neusprach-Worte (70)
-[] , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (79)
+[MODE] sogar (61)
 
-[] sogar (61)
+[MESSAGE] Worte (63) # # ?? 
+[topic] der Neusprache (65)
 
-[] Worte (63)
-[] der Neusprache (65)
+[MEANS] Neusprache (65) # # ?? 
 
-[] Neusprache (65)
+[CLASS] Neusprach-Worte (70) # # ?? 
+[m-means] , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (79) # # ?? Syntax?
 
-[] Neusprach-Worte (70)
+[MODE] praktisch (68)
 
-[] praktisch (68)
+[MEANS] angewendet (79)
+[x-causer] irgendein Parteimitglied (74)
+[m-scene] normalerweise (75)
+[m-event] im wirklichen Leben (78) # # ?? 
 
-[] angewendet (79)
-[] irgendein Parteimitglied (74)
-[] normalerweise (75)
-[] im wirklichen Leben (78)
+[SOCIAL-RELATION] Parteimitglied (74)
 
-[] Parteimitglied (74)
+[SCENE-CONTINUATION] normalerweise (75)
+[initial-scene] angewendet (79)
 
-[] normalerweise (75)
+[EVENT] Leben (78)
+[m-mode] wirklichen (77)
 
-[] Leben (78)
-[] wirklichen (77)
-
-[] wirklichen (77)
+[MODE] wirklichen (77)
 
 # sent_id = 190
 # text = Und die ganze Zeit marschierten , für den Fall , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg , hinter seinem Kopf auf dem Schirm des Televisors die endlosen Kolonnen der eurasischen Armee vorbei - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden .
@@ -2850,7 +2855,7 @@
 10	,	,	PUNCT	$,	_	17	punct	_	_
 11	dass	dass	SCONJ	KOUS	_	17	mark	_	_
 12	man	man	PRON	PIS	Definite=Ind|Gender=Neut	17	nsubj	_	_
-13	noch	noch	ADV	ADV	_	17	advmod	_	_
+13	noch	noch	ADV	ADV	_	16	advmod	_	_
 14	im	im	ADP	APPRART	_	16	case	_	_
 15	geringsten	gering	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	16	amod	_	_
 16	Zweifel	Zweifel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
@@ -2928,18 +2933,20 @@
 
 [QUANTITY] ganze (3)
 
-[] Fall (9)
-[] , , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (16)
+[SITUATION] Fall (9) # # ??
+[theme] , , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (16)
 
-[] Zweifel (16)
-[] geringsten (15)
-[] , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (28)
+[MESSAGE] Zweifel (16)
+[m-scene] noch (13)
+[m-quantity] geringsten (15)
+[topic] , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (28)
 
-[] geringsten (15)
+[SCENE-CONTINUATION] noch (13)
+[initial-scene] Zweifel (16)
 
-[] man (12)
+[QUANTITY] geringsten (15)
 
-[] noch (13)
+[IDENTIFICATION] man (12)
 
 [] verbarg (28)
 [] was (20)
