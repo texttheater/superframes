@@ -133,7 +133,7 @@
 [content] , gefährlicher als die meisten zu sein (11)
 [topic] dieses Mädchen im besonderen (3)
 
-[QUALITY] gefährlicher (11) # # Bzgl. Komparativ vgl. "COMPARISON" im manuel
+[QUALITY] gefährlicher (11) # # Bzgl. Komparativ vgl. "COMPARISON" im manual
 [x-reference] als die meisten (14)
 [has-quality] dieses Mädchen im besonderen (3) # # manuell hinzugefügte Kante, Vgl. 2.25 im manual
 
@@ -292,14 +292,14 @@
 
 [IDENTIFICATION] sie (11)
 
-[CLASS] Gedankenpolizei (16) # # ?? social-relation?
+[CLASS] Gedankenpolizei (16)
 
 [MODE] unwahrscheinlich (22)
 [has-mode] was (19)
 [m-mode] freilich (20)
 [m-quantity] sehr (21)
 
-[IDENTIFICATION] was (19)
+[SITUATION] was (19)
 
 [MODE] freilich (20)
 
@@ -981,7 +981,7 @@
 [content] , dass O'Briens politische Strenggläubigkeit nicht vollkommen sei (22) # # manuell hinzugefügt
 
 [STATE-CONTINUATION >> MESSAGE] gehegten (7) # # Bedeutung: sich kümmern um, pflegen, ...
-[m-quality] heimlich (6) # # 
+[?m-quality] heimlich (6) # # m-scene?
 [has-state >> content] Glauben (8)
 
 [MESSAGE-PREVENTION] heimlich (6) # # Bedeutung: vor anderen verborgen
@@ -2892,7 +2892,7 @@
 47	Reihen	Reihe	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	40	appos	_	_
 48	kräftig	kräftig	ADJ	ADJD	_	49	advmod	_	_
 49	aussehender	aussehend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	50	amod	_	_
-50	Männer	Mann	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	40	nmod	_	_
+50	Männer	Mann	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	47	nmod	_	_
 51	mit	mit	ADP	APPR	_	54	case	_	_
 52	ausdruckslosen	ausdruckslos	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	54	amod	_	_
 53	asiatischen	asiatisch	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	54	amod	_	_
@@ -2914,7 +2914,7 @@
 69	anderen	ander	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	74	obl	_	_
 70	,	,	PUNCT	$,	_	72	punct	_	_
 71	genau	genau	ADJ	ADJD	_	72	advmod	_	_
-72	gleichen	gleichen	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	74	amod	_	_
+72	gleichen	gleichen	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	69	amod	_	_
 73	,	,	PUNCT	$,	_	72	punct	_	_
 74	abgelöst	ablösen	VERB	VVPP	Verbform=Part	62	advcl	_	_
 75	zu	zu	PART	PTKZU	_	74	mark	_	_
@@ -2948,100 +2948,106 @@
 
 [IDENTIFICATION] man (12)
 
-[] verbarg (28)
-[] was (20)
-[] sich (21)
-[] in Wahrheit (23)
-[] hinter Goldsteins widerlicher Phrasendrescherei (27)
+[MESSAGE-PREVENTION] verbarg (28) # # "den Blicken anderer entziehen; verstecken"
+[target-content] was (20)
+[target-content] sich (21)
+[m-mode] in Wahrheit (23)
+[?x-location >> ?topic] hinter Goldsteins widerlicher Phrasendrescherei (27) # # ?? 
 
-[] was (20)
+[IDENTIFICATION] was (20)
 
-[] sich (21)
+[IDENTIFICATION] sich (21)
 
-[] Wahrheit (23)
+[MODE] Wahrheit (23)
 
-[] Phrasendrescherei (27)
-[] Goldsteins (25)
-[] widerlicher (26)
+[MESSAGE] Phrasendrescherei (27)
+[x-sender] Goldsteins (25)
+[m-quality] widerlicher (26)
 
-[] Goldsteins (25)
+[IDENTIFICATION] Goldsteins (25)
 
-[] widerlicher (26)
+[QUALITY] widerlicher (26)
 
-[] Kopf (32)
-[] seinem (31)
-[] auf dem Schirm des Televisors (35)
+[PART-WHOLE] Kopf (32)
+[whole] seinem (31)
+[m-location] auf dem Schirm des Televisors (35)
 
-[] seinem (31)
+[IDENTIFICATION] seinem (31)
 
-[] Schirm (35)
-[] des Televisors (37)
+[PART-WHOLE] Schirm (35)
+[whole] des Televisors (37)
 
-[] Televisors (37)
+[CLASS] Televisors (37)
 
-[] Kolonnen - endlose Reihen (40)
-[] endlosen (39)
-[] der eurasischen Armee (43)
-[] kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (50)
+[PART-WHOLE] Kolonnen - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (40)
+[m-quantity] endlosen (39)
+[whole] der eurasischen Armee (43)
 
-[] endlosen (39)
+[?QUANTITY] endlosen (39) # # ??
 
-[] Armee (43)
-[] eurasischen (42)
+[SOCIAL-RELATION] Armee (43)
+[has-social-relation] eurasischen (42)
 
-[] eurasischen (42)
+[IDENTIFICATION] eurasischen (42)
 
-[] Reihen (47)
-[] endlose (46)
+[?PART-WHOLE] Reihen (47)
+[m-quantity] endlose (46)
+[part] kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (50)
 
-[] endlose (46)
+[?QUANTITY] endlose (46)
 
-[] Männer (50)
-[] kräftig aussehender (49)
-[] mit ausdruckslosen asiatischen Gesichtern (54)
-[] , die an die Oberfläche des Sehschirms heranbrandeten , um von anderen , genau gleichen , abgelöst zu werden (62)
-[] und wieder zerflossen (65)
+[CLASS] Männer (50)
+[m-scene] kräftig aussehender (49)
+[m-part] mit ausdruckslosen asiatischen Gesichtern (54)
+[m-scene] , die an die Oberfläche des Sehschirms heranbrandeten , um von anderen , genau gleichen , abgelöst zu werden (62)
+[m-scene] und wieder zerflossen (65)
 
-[] aussehender (49)
-[] kräftig (48)
+[MESSAGE] aussehender (49)
+[content] kräftig (48)
+[topic] Männer (50)
 
-[] kräftig (48)
+[QUALITY] kräftig (48)
+[has-quality] Männer (50)
 
-[] Gesichtern (54)
-[] ausdruckslosen (52)
-[] asiatischen (53)
+[PART-WHOLE] Gesichtern (54)
+[m-scene] ausdruckslosen (52)
+[m-social-relation] asiatischen (53)
 
-[] ausdruckslosen (52)
+[?MESSAGE-NEG >> QUALITY] ausdruckslosen (52) # # "keinen Ausdruck zeigend"
+[?] Gesichtern (54)
 
-[] asiatischen (53)
+[SOCIAL-RELATION] asiatischen (53)
 
-[] heranbrandeten (62)
-[] die (56)
-[] an die Oberfläche des Sehschirms (59)
-[] , um von anderen , genau gleichen , abgelöst zu werden (74)
+[LOCATION-INIT] heranbrandeten (62)
+[has-location] die (56)
+[target-location] an die Oberfläche des Sehschirms (59)
+[m-purpose >> m-follows] , um von anderen , genau gleichen , abgelöst zu werden (74)
+[has-location] Männer (50)
 
-[] die (56)
+[IDENTIFICATION] die (56)
 
-[] Oberfläche (59)
-[] des Sehschirms (61)
+[PART-WHOLE] Oberfläche (59)
+[whole] des Sehschirms (61)
 
-[] Sehschirms (61)
+[CLASS] Sehschirms (61)
 
-[] zerflossen (65)
-[] wieder (64)
+[UNANCHORED-MOTION] zerflossen (65)
+[m-scene] wieder (64)
+[in-motion] Männer (50)
 
-[] wieder (64)
+[SCENE-CONTINUATION] wieder (64)
+[initial-scene] zerflossen (65)
 
-[] abgelöst (74)
-[] von anderen (69)
-[] , genau gleichen , (72)
+[SEQUENCE] abgelöst (74) # # "eine Aufgabe für jemanden übernehmen, jemanden ersetzen", ersetzen: "für jemanden, etwas ein Ersatz sein; an die Stelle von jemanden, etwas treten"
+[m-follows] von anderen , genau gleichen , (69)
 
-[] anderen (69)
+[COMPARISON] anderen (69)
+[?m-reference] , genau gleichen , (72)
 
-[] gleichen (72)
-[] genau (71)
+[COMPARISON] gleichen (72)
+[m-quantity] genau (71)
 
-[] genau (71)
+[QUANTITY] genau (71)
 
 # sent_id = 191
 # text = Der sture rhythmische Marschtritt der Soldatenstiefel bildete die Geräuschkulisse , von der Goldsteins blökende Stimme sich abhob .
@@ -3064,40 +3070,42 @@
 17	abhob	abheben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
 18	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] bildete (7)
-[] Der sture rhythmische Marschtritt der Soldatenstiefel (4)
-[] die Geräuschkulisse , von der Goldsteins blökende Stimme sich abhob (9)
+[TRANSFORMATION-CREATION] bildete (7)
+[material] Der sture rhythmische Marschtritt der Soldatenstiefel (4)
+[created] die Geräuschkulisse , von der Goldsteins blökende Stimme sich abhob (9)
 
-[] Marschtritt (4)
-[] sture (2)
-[] rhythmische (3)
-[] der Soldatenstiefel (6)
+[?MESSAGE] Marschtritt (4) # # "Marschtritt" tritt meist in Kontexten auf, wo der Fokus auf das Geräusch liegt.
+[m-quality] sture (2)
+[m-quality] rhythmische (3)
+[x-sender] der Soldatenstiefel (6)
 
-[] sture (2)
+[QUALITY] sture (2)
 
-[] rhythmische (3)
+[QUALITY] rhythmische (3) # # ?? oder STATE?
 
-[] Soldatenstiefel (6)
+[CLASS] Soldatenstiefel (6)
 
-[] Geräuschkulisse (9)
-[] , von der Goldsteins blökende Stimme sich abhob (17)
+[MESSAGE] Geräuschkulisse (9)
+[m-scene] , von der Goldsteins blökende Stimme sich abhob (17)
 
-[] abhob (17)
-[] von der (12)
-[] Goldsteins blökende Stimme (15)
-[] sich (16)
+[COMPARISON] abhob (17) # # "sich deutlich, scharf von seiner Umgebung abheben, einen Kontrast bilden, erkennbar sein"
+[reference] von der (12)
+[compared] Goldsteins blökende Stimme (15)
+[compared] sich (16)
+[reference] Geräuschkulisse (9)
 
-[] der (12)
+[IDENTIFICATION] der (12)
 
-[] Stimme (15)
-[] Goldsteins (13)
-[] blökende (14)
+[?POSSESSION] Stimme (15)
+[?possessor] Goldsteins (13)
+[m-scene] blökende (14)
 
-[] Goldsteins (13)
+[IDENTIFICATION] Goldsteins (13)
 
-[] blökende (14)
+[MESSAGE] blökende (14)
+[?x-means] Stimme (15)
 
-[] sich (16)
+[IDENTIFICATION] sich (16)
 
 # sent_id = 192
 # text = Ehe die Hassovation dreißig Sekunden gedauert hatte , brachen von den Lippen der Hälfte der im Raum versammelten Menschen unbeherrschte Wutschreie .
@@ -3124,40 +3132,42 @@
 21	Wutschreie	Wutschreie	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	9	nsubj	_	_
 22	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] brachen (9)
-[] Ehe die Hassovation dreißig Sekunden gedauert hatte , (6)
-[] von den Lippen der Hälfte der im Raum versammelten Menschen (12)
-[] unbeherrschte Wutschreie (21)
+[SENDING] brachen (9)
+[m-time] Ehe die Hassovation dreißig Sekunden gedauert hatte , (6)
+[x-sender] von den Lippen der Hälfte der im Raum versammelten Menschen (12)
+[sent] unbeherrschte Wutschreie (21)
 
-[] gedauert (6)
-[] die Hassovation (3)
-[] dreißig Sekunden (5)
+[TIME] gedauert (6)
+[has-time] die Hassovation (3)
+[time] dreißig Sekunden (5)
 
-[] Hassovation (3)
+[MESSAGE] Hassovation (3)
 
-[] Sekunden (5)
-[] dreißig (4)
+[TIME] Sekunden (5)
+[m-quantity] dreißig (4)
 
-[] dreißig (4)
+[QUANTITY] dreißig (4)
 
-[] Lippen (12)
-[] der Hälfte der im Raum versammelten Menschen (14)
+[PART-WHOLE] Lippen (12)
+[whole] der Hälfte der im Raum versammelten Menschen (14)
 
-[] Hälfte (14)
-[] der im Raum versammelten Menschen (19)
+[PART-WHOLE] Hälfte (14)
+[whole] der im Raum versammelten Menschen (19)
 
-[] Menschen (19)
-[] im Raum versammelten (18)
+[CLASS] Menschen (19)
+[m-scene] im Raum versammelten (18)
 
-[] versammelten (18)
-[] im Raum (17)
+[SOCIAL-RELATION] versammelten (18)
+[x-location] im Raum (17)
+[has-social-relation] Menschen (19)
 
-[] Raum (17)
+[LOCATION] Raum (17)
 
-[] Wutschreie (21)
-[] unbeherrschte (20)
+[MESSAGE] Wutschreie (21)
+[m-scene] unbeherrschte (20)
 
-[] unbeherrschte (20)
+[POSSESSION-NEG] unbeherrschte (20) # # "[nicht] zügeln, bezähmen, zurückhalten, unter Kontrolle halten"
+[possessed] Wutschreie (21)
 
 # sent_id = 193
 # text = Das selbstzufriedene Schafsgesicht auf dem Sehschirm und die erschreckende Wucht der dahinter vorbeiziehenden eurasischen Armee waren einfach zuviel : außerdem weckte der Anblick oder auch nur der Gedanke an Goldstein schon automatisch Angst und Zorn .
@@ -3191,76 +3201,80 @@
 28	Gedanke	Gedanke	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	23	conj	_	_
 29	an	an	ADP	APPR	_	30	case	_	_
 30	Goldstein	Goldstein	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	28	nmod	_	_
-31	schon	schon	ADV	ADV	_	32	advmod	_	_
+31	schon	schon	ADV	ADV	_	21	advmod	_	_
 32	automatisch	automatisch	ADJ	ADJD	_	21	advmod	_	_
 33	Angst	Angst	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	21	obj	_	_
 34	und	und	CCONJ	KON	_	35	cc	_	_
 35	Zorn	Zorn	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	33	conj	_	_
 36	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] zuviel (18)
-[] Das selbstzufriedene Schafsgesicht auf dem Sehschirm (3)
-[] und die erschreckende Wucht der dahinter vorbeiziehenden eurasischen Armee (10)
-[] einfach (17)
+[QUANTITY] zuviel (18)
+[has-quantity] Das selbstzufriedene Schafsgesicht auf dem Sehschirm (3)
+[has-quantity] und die erschreckende Wucht der dahinter vorbeiziehenden eurasischen Armee (10)
+[m-mode] einfach (17)
 
-[] Schafsgesicht (3)
-[] selbstzufriedene (2)
-[] auf dem Sehschirm (6)
+[PART-WHOLE] Schafsgesicht (3)
+[m-state] selbstzufriedene (2)
+[m-location] auf dem Sehschirm (6)
 
-[] selbstzufriedene (2)
+[STATE] selbstzufriedene (2) # # "(auf unkritische Weise) mit sich und seinen Leistungen zufrieden [und sich daher nicht weiter anstrengend]"
 
-[] Sehschirm (6)
+[CLASS] Sehschirm (6)
 
-[] Wucht (10)
-[] erschreckende (9)
-[] der dahinter vorbeiziehenden eurasischen Armee (15)
+[QUANTITY] Wucht (10) # # "durch Gewicht, Kraft, Schwung o. Ä. erzeugte *Heftigkeit*, mit der sich ein Körper gegen jemanden, etwas bewegt, auf jemanden, etwas auftrifft"
+[m-scene] erschreckende (9)
+[has-quantity] der dahinter vorbeiziehenden eurasischen Armee (15)
 
-[] erschreckende (9)
+[MESSAGE-INIT] erschreckende (9)
+[x-sender] Wucht (10)
 
-[] Armee (15)
-[] dahinter vorbeiziehenden (13)
-[] eurasischen (14)
+[SOCIAL-RELATION] Armee (15)
+[m-scene] dahinter vorbeiziehenden (13)
+[has-social-relation] eurasischen (14)
 
-[] vorbeiziehenden (13)
-[] dahinter (12)
+[UNANCHORED-MOTION] vorbeiziehenden (13)
+[transitory-location] dahinter (12)
+[in-motion] Armee (15)
 
-[] dahinter (12)
+[LOCATION] dahinter (12)
 
-[] eurasischen (14)
+[IDENTIFICATION] eurasischen (14)
 
-[] einfach (17)
+[MODE] einfach (17)
 
-[] weckte (21)
-[] außerdem (20)
-[] der Anblick (23)
-[] oder auch nur der Gedanke an Goldstein (28)
-[] schon automatisch (32)
-[] Angst (33)
-[] und Zorn (35)
+[MESSAGE-INIT] weckte (21)
+[m-scene] außerdem (20)
+[x-sender] der Anblick (23)
+[x-sender] oder auch nur der Gedanke an Goldstein (28)
+[m-mode] schon (31) # # "verstärkt [emotional] eine Aussage, Feststellung"
+[m-causer] automatisch (32) # # Vgl. sent_id 37 "instinktiv"
+[target-content] Angst (33)
+[target-content] und Zorn (35)
 
-[] außerdem (20)
+[ACCOMPANIMENT] außerdem (20)
+[accompanier] weckte (21)
 
-[] Anblick (23)
+[MESSAGE] Anblick (23)
 
-[] Gedanke (28)
-[] auch (25)
-[] nur (26)
-[] an Goldstein (30)
+[MESSAGE] Gedanke (28)
+[m-scene] auch (25)
+[m-mode] nur (26)
+[topic] an Goldstein (30)
 
-[] auch (25)
+[ACCOMPANIMENT] auch (25)
+[accompanier] Gedanke (28)
 
-[] nur (26)
+[MODE] nur (26)
 
-[] Goldstein (30)
+[IDENTIFICATION] Goldstein (30)
 
-[] automatisch (32)
-[] schon (31)
+[MODE] schon (31)
 
-[] schon (31)
+[CAUSATION] automatisch (32) # # "durch Selbststeuerung oder -regelung erfolgend, unaufgefordert, spontan", spontan: "von selbst, ohne [erkennbaren] äußeren Anlass, Einfluss [ausgelöst]", Vgl. sent_id 37 "instinktiv"
 
-[] Angst (33)
+[MESSAGE] Angst (33)
 
-[] Zorn (35)
+[MESSAGE] Zorn (35)
 
 # sent_id = 194
 # text = Er war ein dauerhafteres Hassobjekt als Eurasien oder Ostasien , denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , so befand es sich gewöhnlich mit der anderen im Friedenszustand .
@@ -3270,7 +3284,7 @@
 4	dauerhafteres	dauerhaft	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Sing	5	amod	_	_
 5	Hassobjekt	Haßobjekt	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 6	als	als	CCONJ	KOKOM	_	7	case	_	_
-7	Eurasien	Eurasien	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	5	nmod	_	_
+7	Eurasien	Eurasien	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	4	nmod	_	_
 8	oder	oder	CCONJ	KON	_	9	cc	_	_
 9	Ostasien	Ostasien	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	conj	_	_
 10	,	,	PUNCT	$,	_	23	punct	_	_
@@ -3297,51 +3311,57 @@
 31	Friedenszustand	Friedenszustand	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	23	obl	_	_
 32	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Hassobjekt (5)
-[] Er (1)
-[] dauerhafteres (4)
-[] als Eurasien (7)
-[] oder Ostasien (9)
+[CLASS] Hassobjekt (5) # # "etwas, das gehasst wird"
+[x-identified] Er (1)
+[m-scene] dauerhafteres als Eurasien oder Ostasien (4)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] dauerhafteres (4)
+[TIME] dauerhafteres (4) # # "einen langen Zeitraum überdauernd"
+[x-reference] als Eurasien (7) # # Vgl. sent_id 152, word (11)
+[x-reference] oder Ostasien (9)
+[has-time] Hassobjekt (5)
 
-[] Eurasien (7)
+[IDENTIFICATION] Eurasien (7)
 
-[] Ostasien (9)
+[IDENTIFICATION] Ostasien (9)
 
-[] befand (23)
-[] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
-[] so (22)
-[] es (24)
-[] gewöhnlich (26)
-[] mit der anderen (29)
-[] im Friedenszustand (31)
+[SCENE] befand (23)
+[m-condition] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
+[?] so (22)
+[participant] es (24)
+[m-scene] gewöhnlich (26)
+[participant] mit der anderen (29)
+[scene] im Friedenszustand (31)
 
-[] lag (20)
-[] Ozeanien (13)
-[] mit einer dieser Mächte (15)
-[] im Krieg (19)
+[SCENE] lag (20)
+[participant] Ozeanien (13)
+[participant] mit einer dieser Mächte (15)
+[scene] im Krieg (19)
 
-[] Ozeanien (13)
+[IDENTIFICATION] Ozeanien (13)
 
-[] einer (15)
-[] dieser Mächte (17)
+[PART-WHOLE] einer (15)
+[whole] dieser Mächte (17)
 
-[] Mächte (17)
+[CLASS] Mächte (17) # # hier gemeint: "politisch und wirtschaftlich einflussreicher Staat"
 
-[] Krieg (19)
+[SOCIAL-RELATION] Krieg (19)
+[has-social-relation] Ozeanien (13)
+[social-relation] mit einer dieser Mächte (15)
 
-[] so (22)
+[?] so (22)
 
-[] es (24)
+[IDENTIFICATION] es (24)
 
-[] gewöhnlich (26)
+[SCENE-CONTINUATION] gewöhnlich (26)
+[initial-scene] befand (23)
 
-[] anderen (29)
+[COMPARISON] anderen (29)
 
-[] Friedenszustand (31)
+[SOCIAL-RELATION] Friedenszustand (31)
+[has-social-relation] es (24)
+[social-relation] mit der anderen (29)
 
 # sent_id = 195
 # text = Das merkwürdige aber war , dass Goldsteins Einfluss , wenn er auch von jedermann gehasst und verachtet wurde , wenn auch tagtäglich und tausendmal am Tag auf Rednertribünen , durch den Televisor , in Zeitungen , in Büchern seine Theorien verdammt , zerpflückt , lächerlich gemacht , der Allgemeinheit als der jammervolle Unsinn , der sie waren , vor Augen gehalten wurde - dass trotz alledem dieser Einfluss nie abzunehmen schien .
@@ -3418,8 +3438,8 @@
 71	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	61	advcl	_	_
 72	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] merkwürdige (2)
-[] aber (3)
+[QUALITY] merkwürdige (2)
+[m-scene] aber (3)
 [] , dass Goldsteins Einfluss , wenn er auch von jedermann gehasst wurde , auch am Tag (15)
 [] und verachtet (17)
 [] wenn tagtäglich und tausendmal auf Rednertribünen , durch den Televisor , in Zeitungen , in Büchern seine Theorien verdammt (41)
@@ -3427,7 +3447,8 @@
 [] , lächerlich gemacht (46)
 [] , der Allgemeinheit als der jammervolle Unsinn , der sie waren , vor Augen gehalten wurde - dass trotz alledem dieser Einfluss nie abzunehmen schien (61)
 
-[] aber (3)
+[CONCESSION] aber (3) # # Vgl. "doch"
+[asserted] merkwürdige (2)
 
 [] gehasst (15)
 [] Goldsteins Einfluss (8)
@@ -3437,20 +3458,20 @@
 [] auch (21)
 [] am Tag (26)
 
-[] Einfluss (8)
+[] Einfluss (8) # # "beeinflussende, bestimmende Wirkung auf jemanden, etwas; Einwirkung"
 [] Goldsteins (7)
 
-[] Goldsteins (7)
+[IDENTIFICATION] Goldsteins (7)
 
-[] er (11)
+[IDENTIFICATION] er (11)
 
-[] auch (12)
+[???ACCOMPANIMENT] auch (12)
 
-[] jedermann (14)
+[IDENTIFICATION] jedermann (14)
 
 [] verachtet (17)
 
-[] auch (21)
+[?ACCOMPANIMENT] auch (21)
 
 [] Tag (26)
 
@@ -3463,29 +3484,29 @@
 [] , in Büchern (38)
 [] seine Theorien (40)
 
-[] tagtäglich (22)
+[TIME] tagtäglich (22)
 
-[] tausendmal (24)
+[QUANTITY] tausendmal (24)
 
-[] Rednertribünen (28)
+[CLASS] Rednertribünen (28)
 
-[] Televisor (32)
+[CLASS] Televisor (32)
 
-[] Zeitungen (35)
+[MESSAGE] Zeitungen (35)
 
-[] Büchern (38)
+[MESSAGE] Büchern (38)
 
-[] Theorien (40)
-[] seine (39)
+[MESSAGE] Theorien (40)
+[x-causer] seine (39)
 
-[] seine (39)
+[IDENTIFICATION] seine (39)
 
 [] zerpflückt (43)
 
-[] gemacht (46)
-[] lächerlich (45)
+[SCENE-INIT] gemacht (46)
+[target-scene] lächerlich (45)
 
-[] lächerlich (45)
+[QUALITY] lächerlich (45) # # "[in ärgerlicher Weise] töricht, albern, unsinnig"
 
 [] gehalten (61)
 [] , der Allgemeinheit (49)
@@ -3500,27 +3521,28 @@
 
 [] jammervolle (52)
 
-[] Augen (60)
+[PART-WHOLE] Augen (60)
 
-[] schien (71)
+[MESSAGE] schien (71)
 [] der (55)
 [] sie (56)
 [] trotz alledem (66)
-[] dieser Einfluss (68)
-[] nie (69)
-[] abzunehmen (70)
+[topic] dieser Einfluss (68)
+[m-time] nie (69)
+[content] abzunehmen (70)
 
-[] der (55)
+[IDENTIFICATION] der (55) # # [Unsinn]
 
-[] sie (56)
+[IDENTIFICATION] sie (56) # # [seine Theorien]
 
 [] alledem (66)
 
 [] Einfluss (68)
 
-[] nie (69)
+[TIME-NEG] nie (69)
 
-[] abzunehmen (70)
+[SCENE] abzunehmen (70)
+[] dieser Einfluss (68)
 
 # sent_id = 196
 # text = Immer wieder warteten neue Opfer darauf , von ihm verführt zu werden .
@@ -3529,36 +3551,36 @@
 3	warteten	warten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	neue	neu	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	5	amod	_	_
 5	Opfer	Opfer	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	3	nsubj	_	_
-6	darauf	darauf	ADP	PROAV	PronType=Dem	3	dep	_	_
+6	darauf	darauf	ADP	PROAV	PronType=Dem	10	case	_	_
 7	,	,	PUNCT	$,	_	10	punct	_	_
 8	von	von	ADP	APPR	_	9	case	_	_
 9	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obl	_	_
-10	verführt	verführen	VERB	VVPP	Verbform=Part	6	acl	_	_
+10	verführt	verführen	VERB	VVPP	Verbform=Part	3	acl	_	_
 11	zu	zu	PART	PTKZU	_	10	mark	_	_
 12	werden	werden	AUX	VAINF	VerbForm=Inf	10	aux:pass	_	_
 13	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] warteten (3)
-[] Immer wieder (2)
-[] neue Opfer (5)
+[SCENE-INIT-POSSIBILITY] warteten (3) # # hier: "dem Eintreffen einer Person, einer Sache, eines Ereignisses entgegensehen"
+[m-scene] Immer wieder (2)
+[participant] neue Opfer (5)
+[target-scene] darauf , von ihm verführt zu werden (10)
 
-[] wieder (2)
-[] Immer (1)
+[SCENE-CONTINUATION] wieder (2)
+[m-time] Immer (1)
+[initial-scene] warteten (3)
 
-[] Immer (1)
+[TIME] Immer (1)
 
-[] Opfer (5)
-[] neue (4)
+[SOCIAL-RELATION] Opfer (5)
+[m-quality] neue (4)
 
-[] neue (4)
+[QUALITY] neue (4)
 
-[] darauf (6)
-[] , von ihm verführt zu werden (10)
+[SCENE-INIT] verführt (10)
+[x-causer] von ihm (9)
+[participant] neue Opfer (5)
 
-[] verführt (10)
-[] von ihm (9)
-
-[] ihm (9)
+[IDENTIFICATION] ihm (9)
 
 # sent_id = 197
 # text = Nie verging ein Tag , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden .
@@ -3584,40 +3606,42 @@
 20	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] verging (2)
-[] Nie (1)
-[] ein Tag , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (4)
+[TIME] verging (2)
+[?m-time] Nie (1)
+[has-time] ein Tag , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (4)
 
-[] Nie (1)
+[TIME-NEG] Nie (1)
 
-[] Tag (4)
-[] , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (19)
+[TIME] Tag (4)
+[m-scene] , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (19)
 
-[] entlarvt (19)
-[] an dem (7)
-[] nicht (8)
-[] nach seinen Weisungen tätige Spione (13)
-[] und Saboteure (15)
-[] von der Gedankenpolizei (18)
+[MESSAGE-INIT] entlarvt (19) # # "den wahren Charakter einer Person, Sache, jemandes verborgene [üble] Absichten aufdecken"
+[m-time] an dem (7)
+[m-mode] nicht (8)
+[target-content] nach seinen Weisungen tätige Spione (13)
+[target-content] und Saboteure (15)
+[x-causer] von der Gedankenpolizei (18)
+[m-time] Tag (4)
 
-[] dem (7)
+[IDENTIFICATION] dem (7)
 
-[] nicht (8)
+[MODE] nicht (8)
 
-[] Spione (13)
-[] nach seinen Weisungen tätige (12)
+[SOCIAL-RELATION] Spione (13)
+[m-activity] nach seinen Weisungen tätige (12)
 
-[] tätige (12)
-[] nach seinen Weisungen (11)
+[ACTIVITY] tätige (12)
+[m-scene] nach seinen Weisungen (11)
 
-[] Weisungen (11)
-[] seinen (10)
+[?MESSAGE] Weisungen (11) # # "Befehl, Anweisung; Direktive", "Anordnung, Hinweis, wie etwas zu tun ist, wie man sich verhalten soll"
+[?x-sender] seinen (10)
+[?] tätige (12)
 
-[] seinen (10)
+[IDENTIFICATION] seinen (10)
 
-[] Saboteure (15)
+[SOCIAL-RELATION] Saboteure (15)
 
-[] Gedankenpolizei (18)
+[CLASS] Gedankenpolizei (18)
 
 # sent_id = 198
 # text = Er war der Befehlshaber einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte .
@@ -3644,39 +3668,40 @@
 21	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Befehlshaber (4)
-[] Er (1)
-[] einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
+[POSSESSION] Befehlshaber (4)
+[x-identified] Er (1)
+[possessed] einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
+[SOCIAL-RELATION] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[m-quality] großen (6)
+[m-scene] , das sich den Sturz der Regierung zum Ziel setzte (21)
+
+[QUALITY] großen (6)
+
+[SOCIAL-RELATION] Verschwörernetzes (11)
+[m-location >> m-social-relation] Untergrund- (10)
+
+[LOCATION >> SOCIAL-RELATION] Untergrund- (10)
+
+[?MESSAGE] setzte (21) # # "etwas anpeilen, anvisieren, anstreben"
+[?x-sender || x-experiencer] das (13) # # mehr wie Forderung oder mehr wie Wunsch?
+[?] sich (14)
+[content] den Sturz der Regierung (16)
+[x-noncomp] zum Ziel (20)
 [] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
-[] großen (6)
-[] , das sich den Sturz der Regierung zum Ziel setzte (21)
 
-[] großen (6)
+[IDENTIFICATION] das (13)
 
-[] Verschwörernetzes (11)
-[] Untergrund- (10)
+[IDENTIFICATION] sich (14)
 
-[] Untergrund- (10)
+[LOCATION-CHANGE >> HITTING >> SOCIAL-RELATION] Sturz (16) # # wörtl.: "aus mehr oder weniger großer Höhe jäh in die Tiefe fallen" ODER "mit Wucht hinfallen, zu Boden fallen" figurativ: "Entfernung aus dem Amt mit Gewalt"
+[has-location >> hitting >> has-social-relation] der Regierung (18)
 
-[] setzte (21)
-[] das (13)
-[] sich (14)
-[] den Sturz der Regierung (16)
-[] zum Ziel (20)
+[SOCIAL-RELATION] Regierung (18)
 
-[] das (13)
-
-[] sich (14)
-
-[] Sturz (16)
-[] der Regierung (18)
-
-[] Regierung (18)
-
-[] Ziel (20)
+[?SEQUENCE || PART-WHOLE] Ziel (20)
 
 # sent_id = 199
 # text = Der Name der Organisation sei » Die Bruderschaft « , so hieß es .
@@ -3695,22 +3720,22 @@
 13	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 14	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] hieß (12)
-[] Der Name der Organisation sei » Die Bruderschaft « , (8)
-[] so (11)
-[] es (13)
+[MESSAGE-INIT] hieß (12)
+[target-content] Der Name der Organisation sei » Die Bruderschaft « , (8)
+[?] so (11)
+[x-noncomp] es (13)
 
-[] Bruderschaft (8)
-[] Der Name der Organisation (2)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruderschaft (8)
+[x-identified] Der Name der Organisation (2)
 
-[] Name (2)
-[] der Organisation (4)
+[?PART-WHOLE] Name (2)
+[whole] der Organisation (4)
 
-[] Organisation (4)
+[SOCIAL-RELATION] Organisation (4)
 
-[] so (11)
+[?] so (11)
 
-[] es (13)
+[IDENTIFICATION] es (13)
 
 # sent_id = 200
 # text = Auch flüsterte man von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war und das heimlich da und dort zirkulierte .
@@ -3728,7 +3753,7 @@
 12	Irrlehren	Irrlehre	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	10	nmod	_	_
 13	,	,	PUNCT	$,	_	15	punct	_	_
 14	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	15	det	_	_
-15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
 16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
 17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
 18	und	und	CCONJ	KON	_	24	cc	_	_
@@ -3737,45 +3762,49 @@
 21	da	da	ADV	ADV	_	24	advmod	_	_
 22	und	und	CCONJ	KON	_	23	cc	_	_
 23	dort	dort	ADV	ADV	_	21	conj	_	_
-24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] flüsterte (2)
-[] Auch (1)
-[] man (3)
-[] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
+[MESSAGE-INIT] flüsterte (2)
+[m-scene] Auch (1)
+[x-sender] man (3)
+[topic] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war und das heimlich da und dort zirkulierte (7)
 
-[] Auch (1)
+[ACCOMPANIMENT] Auch (1)
+[accompanier] flüsterte (2)
 
-[] man (3)
+[IDENTIFICATION] man (3)
 
-[] Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
-[] schrecklichen (6)
+[MESSAGE] Buch , einer Zusammenfassung aller Irrlehren (7)
+[m-quality] schrecklichen (6)
+[m-scene] , dessen Verfasser Goldstein war (15)
+[m-scene] und das heimlich da und dort zirkulierte (24)
 
-[] schrecklichen (6)
+[QUALITY] schrecklichen (6)
 
-[] Zusammenfassung (10)
-[] aller Irrlehren (12)
-[] , dessen Verfasser Goldstein war (15)
+[?TRANSFORMATION-CREATION] Zusammenfassung (10) # # "kurz zusammengefasste schriftliche oder mündliche Darstellung von etwas"
+[material] aller Irrlehren (12)
 
-[] Irrlehren (12)
+[MESSAGE] Irrlehren (12)
 
-[] Verfasser (15)
-[] Goldstein (16)
+[?MESSAGE-INIT] Verfasser (15)
+[x-identified] Goldstein (16) # # gleichzeitig x-sender
+[target-content] Buch , einer Zusammenfassung aller Irrlehren (7)
 
-[] Goldstein (16)
+[IDENTIFICATION] Goldstein (16)
 
-[] zirkulierte (24)
-[] das (19)
-[] heimlich (20)
-[] da (21)
-[] und dort (23)
+[UNANCHORED-MOTION] zirkulierte (24)
+[in-motion] das (19)
+[?m-scene] heimlich (20)
+[transitory-location] da (21)
+[transitory-location] und dort (23)
+[in-motion] Buch , einer Zusammenfassung aller Irrlehren (7)
 
-[] das (19)
+[IDENTIFICATION] das (19)
 
-[] heimlich (20)
+[MESSAGE-PREVENTION] heimlich (20)
 
-[] da (21)
+[LOCATION] da (21)
 
-[] dort (23)
+[LOCATION] dort (23)
 
