@@ -344,10 +344,10 @@
 [SCENE-CONTINUATION] weiterhin (4)
 [initial-scene] fühlte (2)
 
-[] Unsicherheit (15)
-[] , sooft sie in seine Nähe kam , (11)
-[] merkwürdige (14)
-[] , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (26)
+[MESSAGE] Unsicherheit (15)
+[m-time] , sooft sie in seine Nähe kam , (11)
+[m-quality] merkwürdige (14)
+[m-scene] , die zu gleichen Teilen mit Angst und mit Feindschaft gemischt war (26)
 
 [] kam (11)
 [] sie (7)
@@ -367,15 +367,17 @@
 [m-depictive] zu gleichen Teilen (20) # TODO manual
 [target-accompanier] mit Angst (22)
 [target-accompanier] und mit Feindschaft (25)
+[accompanied] Unsicherheit (15)
 
 [] die (17)
 
 [PART-WHOLE] Teilen (20)
-[m-quantity] gleichen (19)
+[m-scene] gleichen (19)
 [part] Angst (22)
 [part] Feindschaft (25)
 
-[] gleichen (19)
+[COMPARISON] gleichen (19)
+[compared] Teilen (20)
 
 [] Angst (22)
 
@@ -2630,17 +2632,17 @@
 46	,	,	PUNCT	$,	_	45	punct	_	_
 47	vielsilbigen	vielsilbig	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	48	amod	_	_
 48	Ansprache	Ansprache	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	42	nmod	_	_
-49	,	,	PUNCT	$,	_	53	punct	_	_
-50	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	53	nsubj	_	_
+49	,	,	PUNCT	$,	_	52	punct	_	_
+50	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	52	nsubj	_	_
 51	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-52	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	53	nmod	_	_
-53	Parodie	Parodie	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	48	acl	_	_
+52	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	48	acl	_	_
+53	Parodie	Parodie	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	52	nmod	_	_
 54	des	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	56	det	_	_
 55	üblichen	üblich	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Sing	56	amod	_	_
 56	Stils	Stil	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	53	nmod	_	_
 57	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	58	det	_	_
 58	Parteiredner	Parteiredner	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	56	nmod	_	_
-59	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	cop	_	_
+59	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	52	cop	_	_
 60	und	und	CCONJ	KON	_	66	cc	_	_
 61	sogar	sogar	ADV	ADV	_	66	advmod	_	_
 62	einige	einige	DET	PIAT	Case=Acc|Definite=Ind|Gender=Neut|Number=Plur	63	det	_	_
@@ -2723,30 +2725,32 @@
 
 [] Revolution (35)
 
-[] das (42)
-[] alles (41)
-[] in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (48)
+[IDENTIFICATION] das (42)
+[m-quantity] alles (41)
+[m-scene] in einer überstürzten , vielsilbigen Ansprache , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (48)
 
 [] alles (41)
 
 [] Ansprache (48)
 [] überstürzten , (45)
 [] vielsilbigen (47)
-[] , die eine Art Parodie des üblichen Stils der Parteiredner war (53)
-[] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
+[] , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (52)
+[m-purpose || m-part] das (42)
 
 [] überstürzten (45)
 
 [] vielsilbigen (47)
 
-[] Parodie (53)
+[] Art (52) # TODO ?
 [] die (50)
-[] eine Art (52)
-[] des üblichen Stils der Parteiredner (56)
+[] Parodie des üblichen Stils der Parteiredner (53)
+[] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
 
 [] die (50)
 
-[] Art (52)
+[MESSAGE] Parodie (53)
+[topic] des üblichen Stils der Parteiredner (56)
+[x-has-class] die (50)
 
 [] Stils (56)
 [] üblichen (55)
@@ -2760,12 +2764,12 @@
 [] sogar (61)
 [] einige Worte der Neusprache (63)
 [] : praktisch mehr Neusprach-Worte (70)
-[] , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (79)
+[m-reference] , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (79)
 
 [] sogar (61)
 
-[] Worte (63)
-[] der Neusprache (65)
+[MESSAGE] Worte (63)
+[m-whole] der Neusprache (65)
 
 [] Neusprache (65)
 
@@ -2776,7 +2780,7 @@
 [] angewendet (79)
 [] irgendein Parteimitglied (74)
 [] normalerweise (75)
-[] im wirklichen Leben (78)
+[m-situator] im wirklichen Leben (78)
 
 [] Parteimitglied (74)
 
@@ -2794,7 +2798,7 @@
 3	ganze	ganz	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	4	amod	_	_
 4	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	5	nsubj	_	_
 5	marschierten	marschieren	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	,	,	PUNCT	$,	_	17	punct	_	_
+6	,	,	PUNCT	$,	_	9	punct	_	_
 7	für	für	ADP	APPR	_	9	case	_	_
 8	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	Fall	Fall	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	obl	_	_
@@ -2804,9 +2808,9 @@
 13	noch	noch	ADV	ADV	_	17	advmod	_	_
 14	im	im	ADP	APPRART	_	16	case	_	_
 15	geringsten	gering	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	16	amod	_	_
-16	Zweifel	Zweifel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	17	obl	_	_
-17	sein	sein	AUX	VAINF	VerbForm=Inf	5	ccomp	_	_
-18	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
+16	Zweifel	Zweifel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	acl	_	_
+17	sein	sein	AUX	VAINF	VerbForm=Inf	16	cop	_	_
+18	könnte	können	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
 19	,	,	PUNCT	$,	_	28	punct	_	_
 20	was	was	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	28	nsubj	_	_
 21	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	28	obj	_	_
@@ -2816,7 +2820,7 @@
 25	Goldsteins	Goldstein	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	27	nmod	_	_
 26	widerlicher	widerlich	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	27	amod	_	_
 27	Phrasendrescherei	Phrasendrescherei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	28	obl	_	_
-28	verbarg	verbergen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
+28	verbarg	verbergen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	nmod	_	_
 29	,	,	PUNCT	$,	_	32	punct	_	_
 30	hinter	hinter	ADP	APPR	_	32	case	_	_
 31	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	32	det:poss	_	_
@@ -2869,8 +2873,7 @@
 
 [] marschierten (5)
 [] die ganze Zeit (4)
-[] für den Fall , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9)
-[] , , dass man noch im geringsten Zweifel sein könnte (17)
+[m-condition] , für den Fall , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (9)
 [] , hinter seinem Kopf auf dem Schirm des Televisors (32)
 [] die endlosen Kolonnen der eurasischen Armee - endlose Reihen kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (40)
 [] vorbei (44)
@@ -2880,14 +2883,24 @@
 
 [] ganze (3)
 
-[] Fall (9)
+[SCENE] Fall (9)
+[scene] , dass man noch im geringsten Zweifel sein könnte , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (16)
+
+[] Zweifel (16)
+[] geringsten (15)
 [] , was sich in Wahrheit hinter Goldsteins widerlicher Phrasendrescherei verbarg (28)
 
-[] verbarg (28)
-[] was (20)
-[] sich (21)
-[] in Wahrheit (23)
-[] hinter Goldsteins widerlicher Phrasendrescherei (27)
+[] geringsten (15)
+
+[] man (12)
+
+[] noch (13)
+
+[MESSAGE-PREVENTION] verbarg (28)
+[target-content] was (20)
+[target-content] sich (21)
+[m-mode] in Wahrheit (23)
+[x-causer] hinter Goldsteins widerlicher Phrasendrescherei (27)
 
 [] was (20)
 
@@ -2903,20 +2916,6 @@
 
 [] widerlicher (26)
 
-[] sein (17)
-[] man (12)
-[] noch (13)
-[] im geringsten Zweifel (16)
-
-[] man (12)
-
-[] noch (13)
-
-[] Zweifel (16)
-[] geringsten (15)
-
-[] geringsten (15)
-
 [] Kopf (32)
 [] seinem (31)
 [] auf dem Schirm des Televisors (35)
@@ -2929,21 +2928,22 @@
 [] Televisors (37)
 
 [] Kolonnen - endlose Reihen (40)
-[] endlosen (39)
+[m-quantity] endlosen (39)
 [] der eurasischen Armee (43)
 [] kräftig aussehender Männer mit ausdruckslosen asiatischen Gesichtern , die an die Oberfläche des Sehschirms heranbrandeten und wieder zerflossen , um von anderen , genau gleichen , abgelöst zu werden (50)
 
-[] endlosen (39)
+[QUANTITY] endlosen (39)
 
 [] Armee (43)
 [] eurasischen (42)
 
 [] eurasischen (42)
 
-[] Reihen (47)
-[] endlose (46)
+[PART-WHOLE || QUANTITY] Reihen (47)
+[m-quantity] endlose (46)
+[part || has-quantity] Männer (50)
 
-[] endlose (46)
+[QUANTITY] endlose (46)
 
 [] Männer (50)
 [] kräftig aussehender (49)
@@ -2985,10 +2985,10 @@
 [] von anderen (69)
 [] , genau gleichen , (72)
 
-[] anderen (69)
+[COMPARISON] anderen (69)
 
-[] gleichen (72)
-[] genau (71)
+[COMPARISON] gleichen (72)
+[m-quantity] genau (71)
 
 [] genau (71)
 
@@ -3017,14 +3017,14 @@
 [] Der sture rhythmische Marschtritt der Soldatenstiefel (4)
 [] die Geräuschkulisse , von der Goldsteins blökende Stimme sich abhob (9)
 
-[] Marschtritt (4)
-[] sture (2)
-[] rhythmische (3)
-[] der Soldatenstiefel (6)
+[ACTIVITY] Marschtritt (4)
+[m-quality] sture (2)
+[m-quality] rhythmische (3) # TODO manual: STATE not applicable to events
+[is-active] der Soldatenstiefel (6)
 
 [] sture (2)
 
-[] rhythmische (3)
+[QUALITY] rhythmische (3)
 
 [] Soldatenstiefel (6)
 
@@ -3038,13 +3038,14 @@
 
 [] der (12)
 
-[] Stimme (15)
-[] Goldsteins (13)
-[] blökende (14)
+[MESSAGE] Stimme (15)
+[x-sender] Goldsteins (13)
+[m-scene] blökende (14)
 
 [] Goldsteins (13)
 
-[] blökende (14)
+[MESSAGE >> QUALITY] blökende (14)
+[x-sender >> has-quality] Stimme (15)
 
 [] sich (16)
 
@@ -3261,8 +3262,8 @@
 [] Ostasien (9)
 
 [] befand (23)
-[] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
-[] so (22)
+[m-condition] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
+[m-scene] so (22)
 [] es (24)
 [] gewöhnlich (26)
 [] mit der anderen (29)
@@ -3282,7 +3283,8 @@
 
 [] Krieg (19)
 
-[] so (22)
+[CONDITION] so (22)
+[has-condition] befand (23)
 
 [] es (24)
 
@@ -3298,28 +3300,28 @@
 2	merkwürdige	merkwürdig	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	aber	aber	ADV	ADV	_	2	advmod	_	_
 4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
-5	,	,	PUNCT	$,	_	15	punct	_	_
-6	dass	dass	SCONJ	KOUS	_	15	mark	_	_
+5	,	,	PUNCT	$,	_	71	punct	_	_
+6	dass	dass	SCONJ	KOUS	_	64	reparandum	_	_
 7	Goldsteins	Goldstein	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
-8	Einfluss	Einfluß	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	15	nsubj:pass	_	_
+8	Einfluss	Einfluß	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	68	reparandum	_	_
 9	,	,	PUNCT	$,	_	15	punct	_	_
 10	wenn	wenn	SCONJ	KOUS	_	15	mark	_	_
 11	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj:pass	_	_
 12	auch	auch	ADV	ADV	_	15	advmod	_	_
 13	von	von	ADP	APPR	_	14	case	_	_
 14	jedermann	jedermann	PRON	PIS	Definite=Ind|Gender=Neut	15	obl	_	_
-15	gehasst	hassen	VERB	VVPP	Verbform=Part	2	advcl	_	_
+15	gehasst	hassen	VERB	VVPP	Verbform=Part	71	advcl	_	_
 16	und	und	CCONJ	KON	_	17	cc	_	_
 17	verachtet	verachten	VERB	VVPP	Verbform=Part	15	conj	_	_
 18	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
 19	,	,	PUNCT	$,	_	15	punct	_	_
 20	wenn	wenn	SCONJ	KOUS	_	41	mark	_	_
-21	auch	auch	ADV	ADV	_	15	advmod	_	_
+21	auch	auch	ADV	ADV	_	41	advmod	_	_
 22	tagtäglich	tagtäglich	ADJ	ADJD	_	41	advmod	_	_
 23	und	und	CCONJ	KON	_	24	cc	_	_
 24	tausendmal	tausendmal	ADV	ADV	_	22	conj	_	_
 25	am	am	ADP	APPRART	_	26	case	_	_
-26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	15	obl	_	_
+26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	41	obl	_	_
 27	auf	auf	ADP	APPR	_	28	case	_	_
 28	Rednertribünen	Rednertribüne	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	41	obl	_	_
 29	,	,	PUNCT	$,	_	32	punct	_	_
@@ -3334,7 +3336,7 @@
 38	Büchern	Buch	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	32	conj	_	_
 39	seine	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	40	det:poss	_	_
 40	Theorien	Theorie	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	41	obj	_	_
-41	verdammt	verdammen	VERB	VVPP	Verbform=Part	2	advcl	_	_
+41	verdammt	verdammen	VERB	VVPP	Verbform=Part	71	advcl	_	_
 42	,	,	PUNCT	$,	_	43	punct	_	_
 43	zerpflückt	zerpflücken	VERB	VVPP	Verbform=Part	41	conj	_	_
 44	,	,	PUNCT	$,	_	46	punct	_	_
@@ -3348,9 +3350,9 @@
 52	jammervolle	jammervoll	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	53	amod	_	_
 53	Unsinn	Unsinn	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	61	obl	_	_
 54	,	,	PUNCT	$,	_	71	punct	_	_
-55	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	71	nsubj	_	_
-56	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	71	nsubj	_	_
-57	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	53	cop	_	_
+55	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	53	acl	_	_
+56	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	55	nsubj	_	_
+57	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	55	cop	_	_
 58	,	,	PUNCT	$,	_	53	punct	_	_
 59	vor	vor	ADP	APPR	_	60	case	_	_
 60	Augen	Auge	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	61	obl	_	_
@@ -3364,32 +3366,31 @@
 68	Einfluss	Einfluß	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	71	nsubj	_	_
 69	nie	nie	ADV	ADV	_	71	advmod	_	_
 70	abzunehmen	abnehmen	VERB	VVIZU	VerbForm=Inf	71	xcomp	_	_
-71	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	61	advcl	_	_
+71	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	csubj	_	_
 72	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] merkwürdige (2)
 [] aber (3)
-[] , dass Goldsteins Einfluss , wenn er auch von jedermann gehasst wurde , auch am Tag (15)
-[] und verachtet (17)
-[] wenn tagtäglich und tausendmal auf Rednertribünen , durch den Televisor , in Zeitungen , in Büchern seine Theorien verdammt (41)
-[] , zerpflückt (43)
-[] , lächerlich gemacht (46)
-[] , der Allgemeinheit als der jammervolle Unsinn , der sie waren , vor Augen gehalten wurde - dass trotz alledem dieser Einfluss nie abzunehmen schien (61)
+[] , dass Goldsteins Einfluss , wenn er auch von jedermann gehasst und verachtet wurde , wenn auch tagtäglich und tausendmal am Tag auf Rednertribünen , durch den Televisor , in Zeitungen , in Büchern seine Theorien verdammt , zerpflückt , lächerlich gemacht , der Allgemeinheit als der jammervolle Unsinn , der sie waren , vor Augen gehalten wurde - dass trotz alledem dieser Einfluss nie abzunehmen schien (71)
 
 [] aber (3)
 
+[MESSAGE] schien (71)
+[m-conceded] , wenn er auch von jedermann gehasst wurde , (15)
+[m-conceded] und verachtet (17)
+[m-conceded] wenn auch tagtäglich und tausendmal am Tag auf Rednertribünen , durch den Televisor , in Zeitungen , in Büchern seine Theorien verdammt (41)
+[m-conceded] , zerpflückt (43)
+[m-conceded] , lächerlich gemacht (46)
+[m-conceded] , der Allgemeinheit als der jammervolle Unsinn der sie waren , vor Augen gehalten wurde (61)
+[m-conceded] trotz alledem (66)
+[topic] Goldsteins Einfluss dieser Einfluss (68)
+[m-time] nie (69)
+[content] abzunehmen (70)
+
 [] gehasst (15)
-[] Goldsteins Einfluss (8)
 [] er (11)
 [] auch (12)
 [] von jedermann (14)
-[] auch (21)
-[] am Tag (26)
-
-[] Einfluss (8)
-[] Goldsteins (7)
-
-[] Goldsteins (7)
 
 [] er (11)
 
@@ -3399,22 +3400,24 @@
 
 [] verachtet (17)
 
-[] auch (21)
-
-[] Tag (26)
-
 [] verdammt (41)
+[] auch (21)
 [] tagtäglich (22)
 [] und tausendmal (24)
+[] am Tag (26)
 [] auf Rednertribünen (28)
 [] , durch den Televisor (32)
 [] , in Zeitungen (35)
 [] , in Büchern (38)
 [] seine Theorien (40)
 
+[] auch (21)
+
 [] tagtäglich (22)
 
 [] tausendmal (24)
+
+[] Tag (26)
 
 [] Rednertribünen (28)
 
@@ -3438,38 +3441,39 @@
 
 [] gehalten (61)
 [] , der Allgemeinheit (49)
-[] als der jammervolle Unsinn waren , (53)
+[] als der jammervolle Unsinn der sie waren , (53)
 [] vor Augen (60)
-[] , der sie - dass trotz alledem dieser Einfluss nie abzunehmen schien (71)
 
 [] Allgemeinheit (49)
 
 [] Unsinn (53)
 [] jammervolle (52)
+[] der sie waren (55)
 
 [] jammervolle (52)
 
+[] der (55)
+[] sie (56)
+
+[] sie (56)
+
 [] Augen (60)
 
-[] schien (71)
-[] der (55)
-[] sie (56)
-[] trotz alledem (66)
-[] dieser Einfluss (68)
-[] nie (69)
-[] abzunehmen (70)
-
-[] der (55)
-
-[] sie (56)
+[] dass (6)
 
 [] alledem (66)
 
 [] Einfluss (68)
 
+[] Einfluss (8)
+[] Goldsteins (7)
+
+[] Goldsteins (7)
+
 [] nie (69)
 
 [] abzunehmen (70)
+[] Goldsteins Einfluss dieser Einfluss (68)
 
 # sent_id = 196
 # text = Immer wieder warteten neue Opfer darauf , von ihm verführt zu werden .
@@ -3478,11 +3482,11 @@
 3	warteten	warten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	neue	neu	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	5	amod	_	_
 5	Opfer	Opfer	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	3	nsubj	_	_
-6	darauf	darauf	ADP	PROAV	PronType=Dem	3	dep	_	_
+6	darauf	darauf	ADP	PROAV	PronType=Dem	10	case	_	_
 7	,	,	PUNCT	$,	_	10	punct	_	_
 8	von	von	ADP	APPR	_	9	case	_	_
 9	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obl	_	_
-10	verführt	verführen	VERB	VVPP	Verbform=Part	6	acl	_	_
+10	verführt	verführen	VERB	VVPP	Verbform=Part	3	acl	_	_
 11	zu	zu	PART	PTKZU	_	10	mark	_	_
 12	werden	werden	AUX	VAINF	VerbForm=Inf	10	aux:pass	_	_
 13	.	.	PUNCT	$.	_	3	punct	_	_
@@ -3490,6 +3494,7 @@
 [] warteten (3)
 [] Immer wieder (2)
 [] neue Opfer (5)
+[] darauf , von ihm verführt zu werden (10)
 
 [] wieder (2)
 [] Immer (1)
@@ -3500,9 +3505,6 @@
 [] neue (4)
 
 [] neue (4)
-
-[] darauf (6)
-[] , von ihm verführt zu werden (10)
 
 [] verführt (10)
 [] von ihm (9)
@@ -3533,9 +3535,9 @@
 20	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] verging (2)
-[] Nie (1)
-[] ein Tag , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (4)
+[SCENE-DEINIT] verging (2)
+[m-time] Nie (1)
+[initial-scene] ein Tag , an dem nicht nach seinen Weisungen tätige Spione und Saboteure von der Gedankenpolizei entlarvt wurden (4)
 
 [] Nie (1)
 
