@@ -627,37 +627,39 @@
 28	entziehen	entziehen	VERB	VVINF	VerbForm=Inf	21	csubj	_	_
 29	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gezwungen (11)
-[] Das Schreckliche an der Zwei-Minuten-Hass-Sendung (2)
+[SCENE-INIT] gezwungen (11) # TODO INIT vs. NECESSITY
+[x-identified] Das Schreckliche an der Zwei-Minuten-Hass-Sendung (2)
+[m-mode] nicht (7)
+[participant] man (10)
+[target-scene] mitzumachen (13)
+
+[QUALITY] Schreckliche (2) # TODO referent with "attribute" role? Cf. "seine Art sich zu bewegen"
+[has-quality] an der Zwei-Minuten-Hass-Sendung (5)
+
+[MESSAGE] Zwei-Minuten-Hass-Sendung (5)
+
 [] nicht (7)
-[] man (10)
-[] mitzumachen (13)
-
-[] Schreckliche (2)
-[] an der Zwei-Minuten-Hass-Sendung (5)
-
-[] Zwei-Minuten-Hass-Sendung (5)
-
-[] nicht (7)
 
 [] man (10)
 
-[] mitzumachen (13)
+[ACCOMPANIMENT] mitzumachen (13)
+[accompanier] man (10)
 
-[] unmöglich (21)
-[] , im Gegenteil (17)
-[] , sich ihrer Wirkung zu entziehen (28)
+[SCENE-PREVENTION] unmöglich (21)
+[m-scene] , im Gegenteil (17)
+[target-scene] , sich ihrer Wirkung zu entziehen (28)
 
-[] Gegenteil (17)
+[COMPARISON] Gegenteil (17)
+[compared] unmöglich (21)
 
-[] entziehen (28)
+[LOCATION-DEINIT >> SCENE-PREVENTION || SCENE-DEINIT] entziehen (28)
+[has-location >> participant || participant] sich (24)
+[initial-location >> target-scene || initial-scene] ihrer Wirkung (26)
+
 [] sich (24)
-[] ihrer Wirkung (26)
 
-[] sich (24)
-
-[] Wirkung (26)
-[] ihrer (25)
+[EVENT >> MESSAGE] Wirkung (26)
+[x-causer >> x-sender] ihrer (25)
 
 [] ihrer (25)
 
@@ -673,9 +675,9 @@
 8	Rachsucht	Rachsucht	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	5	conj	_	_
 9	,	,	PUNCT	$,	_	13	punct	_	_
 10	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
-11	Verlangen	Verlangen	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	_
+11	Verlangen	Verlangen	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	conj	_	_
 12	zu	zu	PART	PTKZU	_	13	mark	_	_
-13	töten	töten	VERB	VVINF	VerbForm=Inf	3	acl	_	_
+13	töten	töten	VERB	VVINF	VerbForm=Inf	11	acl	_	_
 14	,	,	PUNCT	$,	_	16	punct	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
 16	foltern	foltern	VERB	VVINF	VerbForm=Inf	13	conj	_	_
@@ -690,7 +692,7 @@
 25	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 26	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 27	ganze	ganz	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	28	amod	_	_
-28	Versammlung	Versammlung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	25	nsubj	_	_
+28	Versammlung	Versammlung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	32	obj	_	_
 29	wie	wie	CCONJ	KOKOM	_	32	case	_	_
 30	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 31	elektrischer	elektrisch	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	32	amod	_	_
@@ -715,30 +717,29 @@
 50	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	49	aux:pass	_	_
 51	.	.	PUNCT	$.	_	25	punct	_	_
 
-[] schien (25)
-[] Eine schreckliche Ekstase der Angst und der Rachsucht , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (3)
-[] die ganze Versammlung (28)
-[] wie ein elektrischer Strom zu durchfluten (34)
-[] , so dass man gegen seinen Willen in eine Grimasse schneidenden , schreienden Verrückten verwandelt wurde (49)
+[MESSAGE] schien (25)
+[topic] Eine schreckliche Ekstase der Angst und der Rachsucht (3)
+[topic] , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (11)
+[content] die ganze Versammlung wie ein elektrischer Strom zu durchfluten (34)
+[m-result] , so dass man gegen seinen Willen in eine Grimasse schneidenden , schreienden Verrückten verwandelt wurde (49)
 
-[] Ekstase (3)
+[MESSAGE] Ekstase (3)
+[m-quality] schreckliche (2)
+[x-sender] der Angst (5) # TODO ?
+[x-sender] und der Rachsucht (8)
+
 [] schreckliche (2)
-[] der Angst (5)
-[] und der Rachsucht (8)
-[] , das Verlangen zu töten , (13)
+
+[MESSAGE] Angst (5)
+
+[MESSAGE] Rachsucht (8)
+
+[] Verlangen (11)
+[] , zu töten , (13)
 [] , zu foltern (16)
 [] , Gesichter mit einem Vorschlaghammer zu zertrümmern (23)
 
-[] schreckliche (2)
-
-[] Angst (5)
-
-[] Rachsucht (8)
-
 [] töten (13)
-[] das Verlangen (11)
-
-[] Verlangen (11)
 
 [] foltern (16)
 
@@ -750,16 +751,18 @@
 
 [] Vorschlaghammer (21)
 
+[] durchfluten (34)
+[] die ganze Versammlung wie ein elektrischer Strom (32)
+[] Eine schreckliche Ekstase der Angst und der Rachsucht (3)
+
+[] Strom (32)
+[] die ganze Versammlung (28)
+[] elektrischer (31)
+
 [] Versammlung (28)
 [] ganze (27)
 
 [] ganze (27)
-
-[] durchfluten (34)
-[] wie ein elektrischer Strom (32)
-
-[] Strom (32)
-[] elektrischer (31)
 
 [] elektrischer (31)
 
