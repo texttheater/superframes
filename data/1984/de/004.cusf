@@ -405,7 +405,7 @@
 
 [] sich (16)
 
-[LOCATION-INIT >> REACTION] stemme (19) # TODO reaction to an anticipated event
+[LOCATION-INIT >> REACTION] stemme (19) # reaction to an anticipated event
 [has-location >> x-causer] er (20)
 [has-location >> x-causer] sich (21)
 [target-location >> trigger] dem Anprall einer Woge (23)
@@ -533,7 +533,7 @@
 
 [LOCATION-DEINIT] prallte (6)
 [initial-location] von ihm (8)
-[m-noncomp] ab (9) # TODO manual?
+[m-noncomp] ab (9)
 
 [] ihm (8)
 
@@ -627,13 +627,13 @@
 28	entziehen	entziehen	VERB	VVINF	VerbForm=Inf	21	csubj	_	_
 29	.	.	PUNCT	$.	_	6	punct	_	_
 
-[SCENE-INIT] gezwungen (11) # TODO INIT vs. NECESSITY
+[SCENE-INIT] gezwungen (11)
 [x-identified] Das Schreckliche an der Zwei-Minuten-Hass-Sendung (2)
 [m-mode] nicht (7)
 [participant] man (10)
 [target-scene] mitzumachen (13)
 
-[QUALITY] Schreckliche (2) # TODO referent with "attribute" role? Cf. "seine Art sich zu bewegen"
+[QUALITY] Schreckliche (2)
 [has-quality] an der Zwei-Minuten-Hass-Sendung (5)
 
 [MESSAGE] Zwei-Minuten-Hass-Sendung (5)
@@ -725,7 +725,7 @@
 
 [MESSAGE] Ekstase (3)
 [m-quality] schreckliche (2)
-[x-sender] der Angst (5) # TODO ?
+[x-sender] der Angst (5)
 [x-sender] und der Rachsucht (8)
 
 [] schreckliche (2)
@@ -756,20 +756,20 @@
 [m-reference] wie ein elektrischer Strom (32)
 [has-location >> target-scene] Eine schreckliche Ekstase der Angst und der Rachsucht (3)
 
-[SOCIAL-RELATION] Versammlung (28) # TODO SOCIAL-RELATION vs. PART-WHOLE
+[SOCIAL-RELATION] Versammlung (28) # v2 will have something like MEMBER-GROUP
 [m-quantity] ganze (27)
 
 [QUANTITY] ganze (27)
 
 [CLASS] Strom (32)
-[m-quality >> m-noncomp] elektrischer (31) # TODO manual as example
+[m-quality >> m-noncomp] elektrischer (31)
 
 [] elektrischer (31)
 
 [TRANSFORMATION-CREATION] verwandelt (49)
 [m-means] so (36)
 [material] man (38)
-[m-conceded] gegen seinen Willen (41) # TODO manual as example
+[m-conceded] gegen seinen Willen (41)
 [created] in eine Grimasse schneidenden , schreienden Verrückten (48)
 
 [MEANS] so (36)
@@ -995,7 +995,7 @@
 [] Sehschirm (17)
 
 [MESSAGE-INIT] Verfechter (21)
-[m-identifier] einzigen (20) # TODO manual: answers the question "which one" (?)
+[m-quantity] einzigen (20)
 [topic] von Wahrheit (23)
 [topic] und Vernunft (25)
 [m-location] in einer Welt der Lügen (28)
@@ -1060,8 +1060,9 @@
 
 [] wieder (9)
 
-[ACCOMPANIMENT-INIT] eins (10) # TODO manual as example
+[ACCOMPANIMENT-INIT] eins (10)
 [accompanied] mit den ihn umgebenden Menschen (15)
+[target-accompanier] er (4)
 
 [] Menschen (15)
 [] ihn umgebenden (14)

@@ -1147,7 +1147,7 @@
 5	wirbelten	wirbeln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	schwache	schwach	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	7	amod	_	_
 7	Windstöße	Windstoß	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	5	nsubj	_	_
-8	Staub	Staub	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	7	appos	_	_
+8	Staub	Staub	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	_
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	Papierfetzen	Papierfetzen	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	8	conj	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
@@ -1181,8 +1181,10 @@
 [LOCATION-INIT] wirbelten (5)
 [m-location] Unten (1)
 [m-location] auf der Straße (4)
-[x-causer] schwache Windstöße Staub und Papierfetzen (7)
-[m-means] in Spiralen (12) # TODO manual: dare to interpret an abstract noun as an event
+[x-causer] schwache Windstöße (7)
+[has-location] Staub (8)
+[has-location] und Papierfetzen (10)
+[m-means] in Spiralen (12)
 [target-location] hoch (13)
 [m-conceded] obwohl die Sonne strahlte , (19)
 [m-conceded] und der Himmel leuchtend blau war (24)
@@ -1191,7 +1193,7 @@
 
 [] Straße (4)
 
-[] Windstöße Staub und Papierfetzen (7)
+[] Windstöße (7)
 [] schwache (6)
 
 [] schwache (6)
@@ -1200,7 +1202,9 @@
 
 [] Papierfetzen (10)
 
-[LOCATION-CHANGE] Spiralen (12)
+[CLASS >> UNANCHORED-MOTION] Spiralen (12)
+[in-motion] Staub (7)
+[in-motion] Papierfetzen (9)
 
 [] hoch (13)
 
@@ -2090,7 +2094,7 @@
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
 2	richtete	richten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
-4	so	so	ADV	ADV	_	13	advmod	_	_
+4	so	so	ADV	ADV	_	2	advmod	_	_
 5	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 6	,	,	PUNCT	$,	_	13	punct	_	_
 7	dass	dass	SCONJ	KOUS	_	13	mark	_	_
@@ -2105,27 +2109,27 @@
 [STATE-INIT] richtete (2)
 [x-causer] Winston (1)
 [has-state] es (3)
+[m-quality] so (4) # TODO exocentric construction
 [m-noncomp] ein (5)
-[target-state] so , dass er dem Televisor den Rücken zuwandte (13)
+[target-state] , dass er dem Televisor den Rücken zuwandte (13)
 
 [] Winston (1)
 
 [] es (3)
 
-[LOCATION] zuwandte (13) # TODO new frame ORIENTATION
-[m-causer] so (4) # TODO manual ?
+[QUALITY] so (4)
+
+[LOCATION] zuwandte (13)
 [has-location] er (8)
 [location] dem Televisor (10)
 [x-attribute] den Rücken (12)
-
-[] so (4)
 
 [] er (8)
 
 [] Televisor (10)
 
-[CLASS] Rücken (12) # TODO front vs. Rücken
-[m-whole] er (8)
+[PART-WHOLE] Rücken (12)
+[whole] er (8)
 
 # sent_id = 39
 # text = Das war sicherer , wenn auch , wie er wohl wusste , sogar ein Rücken verräterisch sein kann .
