@@ -15,30 +15,30 @@
 13	gewesen	sein	AUX	VAPP	Verbform=Part	12	cop	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stand (2)
-[] Natürlich (1)
-[] er (3)
-[] den übrigen (5)
-[] nicht (6)
-[] nach (7)
+[SEQUENCE] stand (2) # # jemandem nachstehen: "an zweiter/hinterer Position liegen, weil es jemanden, etwas Besseres gibt; nicht ebenbürtig sein; unterlegen sein."
+[m-mode] Natürlich (1)
+[follows] er (3)
+[followed] den übrigen (5)
+[m-mode] nicht (6)
+[x-noncomp] nach (7)
 
-[] Natürlich (1)
+[MODE] Natürlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] übrigen (5)
+[?COMPARISON] übrigen (5) # # "(als Rest) vorhanden, verbleibend, restlich"
 
-[] nicht (6)
+[MODE] nicht (6)
 
-[] nach (7)
+[NONCOMP] nach (7)
 
-[] unmöglich (12)
-[] etwas (9)
-[] anderes (10)
+[SCENE-POSSIBILITY-NEG] unmöglich (12)
+[scene] etwas (9)
+[scene] anderes (10)
 
-[] etwas (9)
+[IDENTIFICATION] etwas (9)
 
-[] anderes (10)
+[COMPARISON] anderes (10)
 
 # sent_id = 252
 # text = Seine Gefühle zu verschleiern , sein Gesicht zu beherrschen , zu tun , was jeder tat , gebot schon der Instinkt .
@@ -65,40 +65,40 @@
 21	Instinkt	Instinkt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
 22	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] verschleiern (4)
-[] Seine Gefühle (2)
+[MESSAGE-PREVENTION] verschleiern (4)
+[topic] Seine Gefühle (2)
 
-[] Gefühle (2)
-[] Seine (1)
+[MESSAGE] Gefühle (2)
+[x-experiencer] Seine (1)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] beherrschen (9)
-[] sein Gesicht (7)
+[POSSESSION] beherrschen (9)
+[possessed] sein Gesicht (7)
 
-[] Gesicht (7)
-[] sein (6)
+[PART-WHOLE] Gesicht (7)
+[whole] sein (6)
 
-[] sein (6)
+[IDENTIFICATION] sein (6)
 
-[] tun (12)
-[] , was jeder tat , (16)
+[ACTIVITY] tun (12)
+[activity] , was jeder tat , (16)
 
-[] tat (16)
-[] was (14)
-[] jeder (15)
+[ACTIVITY] tat (16)
+[activity] was (14)
+[is-active] jeder (15)
 
-[] was (14)
+[IDENTIFICATION] was (14)
 
-[] jeder (15)
+[IDENTIFICATION] jeder (15)
 
-[] gebot (18)
-[] schon (19)
-[] der Instinkt (21)
+[SEQUENCE] gebot (18)
+[m-mode] schon (19)
+[?followed] der Instinkt (21)
 
-[] schon (19)
+[MODE] schon (19)
 
-[] Instinkt (21)
+[?CAUSATION] Instinkt (21) # # "innerer Impuls, der jemanden in bestimmten Situationen ohne Überlegen das Richtige tun lässt"
 
 # sent_id = 253
 # text = Aber es gab eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können .
@@ -126,37 +126,39 @@
 22	können	können	AUX	VMINF	VerbForm=Inf	21	aux	_	_
 23	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] gab (3)
-[] eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (5)
+[EXISTENCE] gab (3)
+[exists] eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (5)
 
-[] Zeitspanne (5)
-[] von einigen Sekunden (8)
-[] , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (21)
+[TIME] Zeitspanne (5)
+[time] von einigen Sekunden (8)
+[m-scene] , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (21)
 
-[] Sekunden (8)
+[TIME] Sekunden (8)
 
-[] verraten (21)
-[] in der (11)
-[] ihn (12)
-[] der Ausdruck seiner Augen (14)
-[] in bedenklicher Weise (19)
+[MESSAGE-PREVENTION-NEG] verraten (21) # # "durch eine Äußerung, Handlung etc. etwas, was man geheim halten wollte, ungewollt preisgeben"
+[m-time] in der (11)
+[topic] ihn (12)
+[x-causer] der Ausdruck seiner Augen (14)
+[m-scene] in bedenklicher Weise (19)
+[m-time] Zeitspanne (5)
 
-[] der (11)
+[IDENTIFICATION] der (11)
 
-[] ihn (12)
+[IDENTIFICATION] ihn (12)
 
-[] Ausdruck (14)
+[?] Ausdruck (14)
 [] seiner Augen (16)
 
-[] Augen (16)
-[] seiner (15)
+[PART-WHOLE] Augen (16)
+[whole] seiner (15)
 
-[] seiner (15)
+[IDENTIFICATION] seiner (15)
 
-[] Weise (19)
-[] bedenklicher (18)
+[MEANS] Weise (19)
+[m-quality] bedenklicher (18)
+[purpose] verraten (21)
 
-[] bedenklicher (18)
+[QUALITY] bedenklicher (18)
 
 # sent_id = 254
 # text = Und genau in diesem Augenblick ereignete sich das Bedeutsame - wenn es sich wirklich ereignete .
@@ -177,31 +179,31 @@
 15	ereignete	ereignen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 16	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] ereignete (6)
-[] genau in diesem Augenblick (5)
-[] sich (7)
-[] das Bedeutsame (9)
-[] - wenn es sich wirklich ereignete (15)
+[EVENT] ereignete (6)
+[m-time] genau in diesem Augenblick (5)
+[x-noncomp] sich (7)
+[event] das Bedeutsame (9)
+[m-condition] - wenn es sich wirklich ereignete (15)
 
-[] Augenblick (5)
-[] genau (2)
+[TIME] Augenblick (5)
+[m-quantity] genau (2)
 
-[] genau (2)
+[QUANTITY] genau (2)
 
-[] sich (7)
+[NONCOMP] sich (7)
 
-[] Bedeutsame (9)
+[?SITUATION] Bedeutsame (9)
 
-[] ereignete (15)
-[] es (12)
-[] sich (13)
-[] wirklich (14)
+[EVENT] ereignete (15)
+[x-noncomp] es (12)
+[x-noncomp] sich (13)
+[m-mode] wirklich (14)
 
-[] es (12)
+[NONCOMP] es (12)
 
-[] sich (13)
+[NONCOMP] sich (13)
 
-[] wirklich (14)
+[MODE] wirklich (14)
 
 # sent_id = 255
 # text = Er fing flüchtig O'Briens Blick auf .
@@ -213,22 +215,21 @@
 6	auf	auf	ADP	PTKVZ	_	2	compound:prt	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] fing (2)
-[] Er (1)
-[] flüchtig (3)
-[] O'Briens Blick (5)
-[] auf (6)
+[MESSAGE] fing (2) # # "auffangen" -> "erhaschen, heimlich wahrnehmen"
+[x-experiencer] Er (1)
+[m-scene] flüchtig (3)
+[topic] O'Briens Blick (5)
+[x-noncomp] auf (6)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] flüchtig (3)
+[?TIME || ACCOMPANIMENT] flüchtig (3) # # "von kurzer Dauer [und geringer Intensität]; im Vorübergehen, nebenbei [erfolgend]"
+[?has-time || accompanier] fing (2)
 
-[] Blick (5)
-[] O'Briens (4)
+[MESSAGE-INIT] Blick (5)
+[x-sender] O'Briens (4)
 
-[] O'Briens (4)
-
-[] auf (6)
+[IDENTIFICATION] O'Briens (4)
 
 # sent_id = 256
 # text = O'Brien war aufgestanden .
@@ -237,10 +238,10 @@
 3	aufgestanden	aufstehen	VERB	VVPP	Verbform=Part	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] aufgestanden (3)
-[] O'Brien (1)
+[LOCATION-DEINIT] aufgestanden (3) # # "sich [von seinem Sitzplatz] erheben"
+[has-location] O'Brien (1)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
 # sent_id = 257
 # text = Er hatte seine Brille abgenommen und war gerade im Begriff , sie wieder mit seiner charakteristischen Geste aufzusetzen .
@@ -264,42 +265,44 @@
 18	aufzusetzen	aufsetzen	VERB	VVIZU	VerbForm=Inf	10	acl	_	_
 19	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] abgenommen (5)
-[] Er (1)
-[] seine Brille (4)
+[LOCATION-DEINIT] abgenommen (5)
+[x-causer] Er (1)
+[has-location] seine Brille (4)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Brille (4)
-[] seine (3)
+[POSSESSION] Brille (4)
+[possessor] seine (3)
 
-[] seine (3)
+[IDENTIFICATION] seine (3)
 
-[] war (7)
+[SCENE] war (7)
 [] gerade (8)
 [] im Begriff , sie wieder mit seiner charakteristischen Geste aufzusetzen (10)
 
-[] gerade (8)
+[TIME] gerade (8)
 
 [] Begriff (10)
 [] , sie wieder mit seiner charakteristischen Geste aufzusetzen (18)
 
-[] aufzusetzen (18)
-[] sie (12)
-[] wieder (13)
-[] mit seiner charakteristischen Geste (17)
+[LOCATION-INIT] aufzusetzen (18)
+[has-location] sie (12)
+[m-scene] wieder (13)
+[m-means] mit seiner charakteristischen Geste (17)
+[x-causer] Er (1)
 
-[] sie (12)
+[IDENTIFICATION] sie (12)
 
-[] wieder (13)
+[SCENE-CONTINUATION] wieder (13)
+[initial-scene] aufzusetzen (18)
 
-[] Geste (17)
-[] seiner (15)
-[] charakteristischen (16)
+[?MESSAGE-INIT] Geste (17)
+[?x-causer] seiner (15)
+[?m-quality] charakteristischen (16)
 
-[] seiner (15)
+[IDENTIFICATION] seiner (15)
 
-[] charakteristischen (16)
+[?QUALITY] charakteristischen (16)
 
 # sent_id = 258
 # text = Aber dazwischen lag der Bruchteil einer Sekunde , währenddessen sich ihre Augen begegneten , und in diesem winzigen Zeitraum wusste Winston - ja , er wusste es ! - , dass O'Brien das gleiche dachte wie er .
@@ -452,7 +455,8 @@
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] war (2)
-[] , als hätten ihre beiden Denkwelten sich aufgetan und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (10)
+[] , als hätten ihre beiden Denkwelten sich aufgetan (10)
+[] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
 
 [] aufgetan (10)
 [] ihre beiden Denkwelten (8)
@@ -482,8 +486,6 @@
 [] einen (21)
 
 [] anderen (24)
-
-[] über (25)
 
 # sent_id = 261
 # text = » Ich halte es mit dir « , schien O'Brien zu ihm zu sagen .
@@ -573,7 +575,9 @@
 
 [] kenne (2)
 [] Ich (1)
-[] deine ganze Verachtung , deinen Hass , deinen Abscheu (5)
+[] deine ganze Verachtung (5)
+[] , deinen Hass (8)
+[] , deinen Abscheu (11)
 
 [] Ich (1)
 
@@ -788,7 +792,8 @@
 [] hielten (2)
 [] Sie (1)
 [] lediglich (3)
-[] den Glauben - oder die Hoffnung - (5)
+[] den Glauben - (5)
+[] - oder die Hoffnung (9)
 [] in ihm lebendig , dass es außer ihm noch andere Feinde der Partei gab (13)
 
 [] Sie (1)
@@ -901,7 +906,9 @@
 26	.	.	PUNCT	$.	_	12	punct	_	_
 
 [] sicher (12)
-[] Trotz der endlosen Verhaftungen , Geständnisse und Hinrichtungen (4)
+[] Trotz der endlosen Verhaftungen (4)
+[] , Geständnisse (6)
+[] und Hinrichtungen (8)
 [] man (10)
 [] nie (11)
 [] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
@@ -1015,7 +1022,8 @@
 47	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] gab (2)
-[] keinen greifbaren Beweis , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (5)
+[] keinen greifbaren Beweis (5)
+[] , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (9)
 
 [] Beweis (5)
 [] keinen (3)
@@ -1025,11 +1033,10 @@
 
 [] greifbaren (4)
 
-[] Andeutungen (9)
+[] Andeutungen : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (9)
 [] nur (7)
 [] flüchtige (8)
 [] , die alles oder nichts bedeuten konnten (15)
-[] : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (18)
 
 [] nur (7)
 
@@ -1037,7 +1044,8 @@
 
 [] bedeuten (15)
 [] die (11)
-[] alles oder nichts (12)
+[] alles (12)
+[] oder nichts (14)
 
 [] die (11)
 
@@ -1310,7 +1318,8 @@
 [] einen zweideutigen Blick (10)
 
 [] Sekunden (4)
-[] Eine oder zwei (1)
+[] Eine (1)
+[] oder zwei (3)
 [] lang (5)
 
 [] Eine (1)
@@ -1812,7 +1821,8 @@
 
 [] versucht (33)
 [] einen Augenblick (31)
-[] , die beschriebenen Seiten herauszureißen und die ganze Sache aufzugeben (38)
+[] , die beschriebenen Seiten herauszureißen (38)
+[] und die ganze Sache aufzugeben (43)
 
 [] Augenblick (31)
 
@@ -2118,7 +2128,8 @@
 [] machen (14)
 [] Man (1)
 [] vielleicht (3)
-[] eine Weile , oder sogar Jahre lang , (5)
+[] eine Weile (5)
+[] , oder sogar Jahre lang , (10)
 [] schlaue Winkelzüge (13)
 
 [] Man (1)
@@ -2141,7 +2152,8 @@
 [] schlaue (12)
 
 [] kamen (20)
-[] früher oder später (17)
+[] früher (17)
+[] oder später (19)
 [] sie (21)
 [] einem (22)
 [] doch (23)
@@ -2196,6 +2208,4 @@
 [] unabänderlich (9)
 
 [] nachts (10)
-
-[] statt (11)
 
