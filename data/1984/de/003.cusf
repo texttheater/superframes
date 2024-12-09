@@ -2649,7 +2649,7 @@
 63	Worte	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	66	obj	_	_
 64	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_
 65	Neusprache	Neusprache	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	63	nmod	_	_
-66	enthielt	enthalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	conj	_	_
+66	enthielt	enthalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	52	conj	_	_
 67	:	:	PUNCT	$.	_	70	punct	_	_
 68	praktisch	praktisch	ADJ	ADJD	_	69	advmod	_	_
 69	mehr	mehr	ADV	ADV	_	70	det	_	_
@@ -2733,12 +2733,12 @@
 [m-purpose || m-part] das (42)
 [] überstürzten , (45)
 [] vielsilbigen (47)
-[] , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (52)
-
-[] Art (52) # TODO ?
-[] die (50)
-[] Parodie des üblichen Stils der Parteiredner (53)
+[] , die eine Art Parodie des üblichen Stils der Parteiredner war (52)
 [] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
+
+[SUPERCLASS] Art (52) # TODO ?
+[has-superclass] die (50)
+[superclass] Parodie des üblichen Stils der Parteiredner (53)
 
 [] die (50)
 
@@ -3316,7 +3316,7 @@
 23	und	und	CCONJ	KON	_	24	cc	_	_
 24	tausendmal	tausendmal	ADV	ADV	_	22	conj	_	_
 25	am	am	ADP	APPRART	_	26	case	_	_
-26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	41	obl	_	_
+26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	24	obl	_	_
 27	auf	auf	ADP	APPR	_	28	case	_	_
 28	Rednertribünen	Rednertribüne	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	41	obl	_	_
 29	,	,	PUNCT	$,	_	32	punct	_	_
@@ -3384,33 +3384,35 @@
 
 [] gehasst (15)
 [] er (11)
-[] auch (12)
+[m-scene] auch (12)
 [] von jedermann (14)
 
 [] er (11)
 
-[] auch (12)
+[ACCOMPANIMENT >> CONCESSION] auch (12) # TODO manual: exocentric construction
+[accompanier >> conceded] gehasst (15)
 
 [] jedermann (14)
 
 [] verachtet (17)
 
-[] verdammt (41)
-[] auch (21)
-[] tagtäglich (22)
-[] und tausendmal (24)
-[] am Tag (26)
-[] auf Rednertribünen (28)
-[] , durch den Televisor (32)
-[] , in Zeitungen (35)
-[] , in Büchern (38)
-[] seine Theorien (40)
+[MESSAGE-INIT] verdammt (41)
+[m-scene] auch (21)
+[m-time] tagtäglich (22)
+[m-time] und tausendmal am Tag (24)
+[m-location] auf Rednertribünen (28)
+[m-means] , durch den Televisor (32)
+[m-location >> m-means] , in Zeitungen (35)
+[m-location >> m-means] , in Büchern (38)
+[topic] seine Theorien (40)
 
-[] auch (21)
+[ACCOMPANIMENT >> CONCESSION] auch (21)
+[accompanier >> conceded] verdammt (41)
 
-[] tagtäglich (22)
+[TIME] tagtäglich (22)
 
-[] tausendmal (24)
+[TIME] tausendmal (24) # TODO manual: frequencies: TIME, not QUANTITY
+[m-followed] am Tag (26) # TODO manual: proportional amount
 
 [] Tag (26)
 
@@ -3554,11 +3556,11 @@
 [] Spione (13)
 [] nach seinen Weisungen tätige (12)
 
-[] tätige (12)
-[] nach seinen Weisungen (11)
+[ACTIVITY] tätige (12) # TODO Kriterium für EVENT vs. ACTIVITY: ACTIVITY = undergoer ist aktiv
+[m-followed] nach seinen Weisungen (11)
 
-[] Weisungen (11)
-[] seinen (10)
+[MESSAGE] Weisungen (11)
+[x-sender] seinen (10)
 
 [] seinen (10)
 
@@ -3588,7 +3590,7 @@
 18	Regierung	Regierung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	_
 19	zum	zum	ADP	APPRART	_	20	case	_	_
 20	Ziel	Ziel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	21	obl	_	_
-21	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
+21	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
 [] Befehlshaber (4)
@@ -3597,22 +3599,22 @@
 
 [] Er (1)
 
-[] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
-[] großen (6)
-[] , das sich den Sturz der Regierung zum Ziel setzte (21)
-
+[] Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
 [] großen (6)
 
-[] Verschwörernetzes (11)
-[] Untergrund- (10)
+[] großen (6)
 
-[] Untergrund- (10)
+[SOCIAL-RELATION] Verschwörernetzes (11) # TODO manual: SOCIAL-RELATION vs. PART-WHOLE
+[m-location >> m-quality] Untergrund- (10)
+[m-scene] , das sich den Sturz der Regierung zum Ziel setzte (21)
 
-[] setzte (21)
-[] das (13)
-[] sich (14)
-[] den Sturz der Regierung (16)
-[] zum Ziel (20)
+[LOCATION >> QUALITY] Untergrund- (10)
+
+[SCENE-INIT] setzte (21)
+[x-causer >> participant] das (13)
+[participant] sich (14)
+[participant] den Sturz der Regierung (16)
+[target-scene] zum Ziel (20)
 
 [] das (13)
 
@@ -3623,7 +3625,9 @@
 
 [] Regierung (18)
 
-[] Ziel (20)
+[MEANS] Ziel (20)
+[purpose] den Sturz der Regierung (16)
+[means] Verschwörernetzes (11)
 
 # sent_id = 199
 # text = Der Name der Organisation sei » Die Bruderschaft « , so hieß es .

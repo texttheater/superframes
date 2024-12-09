@@ -484,13 +484,13 @@
 
 [] plötzlich (19)
 
-[] Wörterbuch (22)
-[] schweres (21)
-[] der Neusprache (24)
+[MESSAGE] Wörterbuch (22)
+[m-quality] schweres (21)
+[topic] der Neusprache (24)
 
 [] schweres (21)
 
-[] Neusprache (24)
+[MESSAGE] Neusprache (24)
 
 [LOCATION-INIT] schleuderte (26)
 [has-location] es (27)
@@ -692,7 +692,7 @@
 25	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 26	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 27	ganze	ganz	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	28	amod	_	_
-28	Versammlung	Versammlung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	32	obj	_	_
+28	Versammlung	Versammlung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	34	obj	_	_
 29	wie	wie	CCONJ	KOKOM	_	32	case	_	_
 30	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 31	elektrischer	elektrisch	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	32	amod	_	_
@@ -734,45 +734,45 @@
 
 [MESSAGE] Rachsucht (8)
 
-[] Verlangen (11)
-[] , zu töten , (13)
-[] , zu foltern (16)
-[] , Gesichter mit einem Vorschlaghammer zu zertrümmern (23)
+[MESSAGE] Verlangen (11)
+[topic] , zu töten , (13)
+[topic] , zu foltern (16)
+[topic] , Gesichter mit einem Vorschlaghammer zu zertrümmern (23)
 
-[] töten (13)
+[DESTRUCTION] töten (13)
 
-[] foltern (16)
+[EVENT] foltern (16)
 
-[] zertrümmern (23)
-[] Gesichter (18)
-[] mit einem Vorschlaghammer (21)
+[DESTRUCTION] zertrümmern (23)
+[destroyed] Gesichter (18)
+[m-means] mit einem Vorschlaghammer (21)
 
-[] Gesichter (18)
+[PART-WHOLE] Gesichter (18)
 
 [] Vorschlaghammer (21)
 
-[] durchfluten (34)
-[] die ganze Versammlung wie ein elektrischer Strom (32)
-[] Eine schreckliche Ekstase der Angst und der Rachsucht (3)
+[UNANCHORED-MOTION >> SCENE-INIT] durchfluten (34)
+[transitory-location >> participant] die ganze Versammlung (28)
+[m-reference] wie ein elektrischer Strom (32)
+[has-location >> target-scene] Eine schreckliche Ekstase der Angst und der Rachsucht (3)
 
-[] Strom (32)
-[] die ganze Versammlung (28)
+[SOCIAL-RELATION] Versammlung (28) # TODO SOCIAL-RELATION vs. PART-WHOLE
+[m-quantity] ganze (27)
+
+[QUANTITY] ganze (27)
+
+[CLASS] Strom (32)
+[m-quality >> m-noncomp] elektrischer (31) # TODO manual as example
+
 [] elektrischer (31)
 
-[] Versammlung (28)
-[] ganze (27)
+[TRANSFORMATION-CREATION] verwandelt (49)
+[m-means] so (36)
+[material] man (38)
+[m-conceded] gegen seinen Willen (41) # TODO manual as example
+[created] in eine Grimasse schneidenden , schreienden Verrückten (48)
 
-[] ganze (27)
-
-[] elektrischer (31)
-
-[] verwandelt (49)
-[] so (36)
-[] man (38)
-[] gegen seinen Willen (41)
-[] in eine Grimasse schneidenden , schreienden Verrückten (48)
-
-[] so (36)
+[MEANS] so (36)
 
 [] man (38)
 
@@ -945,7 +945,7 @@
 5	schwoll	schwellen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	sein	sein	DET	PPOSAT	Case=Nom|Gender=Neut|Number=Sing|Poss=Yes	7	det:poss	_	_
 7	Herz	Herz	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
-8	über	über	ADP	APZR	_	14	case	_	_
+8	über	über	ADP	APZR	_	5	compound:prt	_	_
 9	für	für	ADP	APPR	_	14	case	_	_
 10	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 11	einsamen	einsam	ADJ	ADJA	Case=Acc|Gender=Masc|Number=Sing	14	amod	_	_
@@ -970,15 +970,16 @@
 30	Lügen	Lüge	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	28	nmod	_	_
 31	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] schwoll (5)
-[] in solchen Augenblicken (4)
-[] sein Herz (7)
-[] über für den einsamen , verachteten Abtrünnigen auf dem Sehschirm , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
+[EXCRETION >> MESSAGE-INIT] schwoll (5)
+[m-time] in solchen Augenblicken (4)
+[excreter >> x-noncomp] sein Herz (7)
+[m-noncomp] über (8)
+[m-experiencer >> topic] für den einsamen , verachteten Abtrünnigen auf dem Sehschirm , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
 
 [] Augenblicken (4)
 
-[] Herz (7)
-[] sein (6)
+[PART-WHOLE >> MESSAGE-INIT] Herz (7)
+[whole >> x-experiencer] sein (6)
 
 [] sein (6)
 
@@ -993,11 +994,11 @@
 
 [] Sehschirm (17)
 
-[] Verfechter (21)
-[] einzigen (20)
-[] von Wahrheit (23)
-[] und Vernunft (25)
-[] in einer Welt der Lügen (28)
+[MESSAGE-INIT] Verfechter (21)
+[m-identifier] einzigen (20) # TODO manual: answers the question "which one" (?)
+[topic] von Wahrheit (23)
+[topic] und Vernunft (25)
+[m-location] in einer Welt der Lügen (28)
 
 [] einzigen (20)
 
@@ -1059,8 +1060,8 @@
 
 [] wieder (9)
 
-[] eins (10)
-[] mit den ihn umgebenden Menschen (15)
+[ACCOMPANIMENT-INIT] eins (10) # TODO manual as example
+[accompanied] mit den ihn umgebenden Menschen (15)
 
 [] Menschen (15)
 [] ihn umgebenden (14)
