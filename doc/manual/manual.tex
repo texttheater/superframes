@@ -100,7 +100,6 @@
             \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
             \Sub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
-            \SubSub\emoji{light-bulb} \fr{EXAMPLE} & \rl{} & \rl{example} & \rl{exemplified} & & \rl{} & \ref{sec:EXAMPLE} \\
 
             \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
 
@@ -125,6 +124,8 @@
             \SubSub\emoji{sneezing-face} \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
 
             \Sub\emoji{handshake} \fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
+
+            \Sub\emoji{red-triangle-pointed-up} \fr{SUBCLASS} & & \rl{subclass} & \rl{superclass} & \rl{} & \rl{} & \ref{sec:SUBCLASS} \\
 
             \Sub\emoji{alarm-clock} \fr{TIME} & \rl{initial-time} & \rl{has-time} & \rl{time} & & \rl{target-time} & \ref{sec:TIME} \\
 
@@ -1178,16 +1179,6 @@ reflexive verbs) should get the same role as their antecedent:
 \ex.\dep{sugar_m-part *cube#CLASS*}
 
 
-\newpage\subsection{\emoji{light-bulb} \fr{EXAMPLE}}
-\label{sec:EXAMPLE}
-
-Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as an example of \fr{exemplified} (aka \fr{whole}).
-
-\ex.\dep{*birds#CLASS* such as storks_m-example}
-
-\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_m-scene wissenschaftliche Methoden_target-content}
-
-
 \newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
 
@@ -1568,6 +1559,20 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 \ex.\dep{The judge_x-causer *sentenced#SOCIAL-RELATION-INIT* Kim_has-social-relation to three days_target-social-relation in prison}
 
 \ex.\dep{Kim_has-social-relation was *pardoned#SOCIAL-RELATION-DEINIT*}
+
+
+\newpage\subsection{\emoji{red-triangle-pointed-up} \fr{SUBCLASS}}
+\label{sec:SUBCLASS}
+
+\rl{subclass} denotes a subclass of \rl{superclass}.
+
+\ex.\dep{eine *Art#SUBCLASS* Paranoia_superclass}
+
+\ex.\dep{Das_x-subclass ist seine_participant *Art#SCENE* , sich zu bewegen_scene}
+
+\ex.\dep{*birds#CLASS* such as storks_m-subclass}
+
+\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__subclass **beispielsweise#SUBCLASS**_m-scene wissenschaftliche Methoden_target-content}
 
 
 \newpage\subsection{\emoji{alarm-clock} \fr{TIME}}

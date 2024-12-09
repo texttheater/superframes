@@ -85,7 +85,6 @@ FRAMES = {
     'MEANS': Rigid('purpose', 'means'),
     'MESSAGE': Flexible('topic', 'content'),
     'PART-WHOLE': Flexible('part', 'whole'),
-    'EXAMPLE': Rigid('example', 'exemplified'),
     'POSSESSION': Flexible('possessed', 'possessor'),
     'QUANTITY': Flexible('has-quantity', 'quantity'),
     'SENDING': Rigid('sent', 'sender'),
@@ -96,6 +95,7 @@ FRAMES = {
     'CONDITION': Rigid('has-condition', 'condition'),
     'EXCEPTION': Rigid('has-exception', 'exception'),
     'SOCIAL-RELATION': Flexible('has-social-relation', 'social-relation'),
+    'SUBCLASS': Rigid('subclass', 'superclass'),
     'TIME': Rigid('has-time', 'time'),
     'NONCOMP': Rigid('has-noncomp', 'noncomp'),
 }
