@@ -2284,7 +2284,7 @@
 38	saß	sitzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	acl	_	_
 39	,	,	PUNCT	$,	_	38	punct	_	_
 40	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	45	obj	_	_
+41	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	44	obj	_	_
 42	seniler	senil	ADJ	ADJA	Case=Gen|Gender=Fem|Number=Sing	43	amod	_	_
 43	Blödheit	Blödheit	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	41	nmod	_	_
 44	auszustrahlen	ausstrahlen	VERB	VVIZU	VerbForm=Inf	45	xcomp	_	_
@@ -2340,27 +2340,27 @@
 
 [] eigentümlich (24)
 
-[] schien (45)
-[] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
-[] eine Art seniler Blödheit (41)
-[] auszustrahlen (44)
-[] Gesicht (26)
+[MESSAGE] schien (45)
+[topic] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
+[content] eine Art seniler Blödheit auszustrahlen (44)
 
-[] Nase (31)
+[PART-WHOLE] Nase (31)
+[m-quality] lange (29)
+[m-quality] dünne (30)
+[m-scene] , auf deren Ende eine Brille saß , (38)
+[whole] Gesicht (26)
+
 [] lange (29)
-[] dünne (30)
-[] , auf deren Ende eine Brille saß , (38)
-
-[] lange (29)
 
 [] dünne (30)
 
-[] saß (38)
-[] auf deren Ende (35)
-[] eine Brille (37)
+[LOCATION] saß (38)
+[location] auf deren Ende (35)
+[has-location] eine Brille (37)
 
-[] Ende (35)
-[] deren (34)
+[PART-WHOLE] Ende (35)
+[whole] deren (34)
+[whole] Nase (31)
 
 [] deren (34)
 
@@ -2374,7 +2374,9 @@
 
 [] seniler (42)
 
-[] auszustrahlen (44)
+[MESSAGE] auszustrahlen (44)
+[content] eine Art seniler Blödheit (41)
+[x-sender] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
 
 # sent_id = 187
 # text = Es ähnelte einem Schafsgesicht , und auch die Stimme hatte etwas Schafsmässiges .
@@ -2894,9 +2896,9 @@
 
 [] noch (13)
 
-[MESSAGE-PREVENTION] verbarg (28)
-[target-content] was (20)
-[target-content] sich (21)
+[MESSAGE-PREVENTION] verbarg (28) # TODO manual: some examples for MESSAGE-PREVENTION
+[topic] was (20)
+[topic] sich (21)
 [m-mode] in Wahrheit (23)
 [x-causer] hinter Goldsteins widerlicher Phrasendrescherei (27)
 
@@ -3441,16 +3443,18 @@
 [QUALITY] lächerlich (45)
 [has-quality] Theorien (40)
 
-[] gehalten (61)
-[] , der Allgemeinheit (49)
-[] als der jammervolle Unsinn der sie waren , (53)
-[] vor Augen (60)
+[MESSAGE-INIT] gehalten (61)
+[x-experiencer] , der Allgemeinheit (49)
+[target-content] als der jammervolle Unsinn der sie waren , (53)
+[x-noncomp] vor Augen (60)
+[topic] Theorien (40)
 
 [] Allgemeinheit (49)
 
 [MESSAGE] Unsinn (53)
 [m-quality] jammervolle (52)
 [m-scene] der sie waren (55)
+[x-identified] Theorien (40)
 
 [] jammervolle (52)
 
@@ -3464,10 +3468,10 @@
 
 [IDENTIFICATION] alledem (66)
 
-[] Einfluss (68)
+[POSSESSION || EVENT] Einfluss (68)
 
-[] Einfluss (8)
-[] Goldsteins (7)
+[POSSESSION || EVENT] Einfluss (8)
+[possessor || x-causer] Goldsteins (7)
 
 [] Goldsteins (7)
 
@@ -3623,14 +3627,16 @@
 
 [] sich (14)
 
-[] Sturz (16)
-[] der Regierung (18)
+[LOCATION-CHANGE >> POSSESSION-DEINIT] Sturz (16) # v2: POSSESSION und SOCIAL-RELATION mergen
+[has-location >> initial-possessor] der Regierung (18)
 
-[] Regierung (18)
+[POSSESSION] Regierung (18)
 
 [MEANS] Ziel (20)
 [purpose] den Sturz der Regierung (16)
 [means] Verschwörernetzes (11)
+[means] sich (14)
+[means] das (13)
 
 # sent_id = 199
 # text = Der Name der Organisation sei » Die Bruderschaft « , so hieß es .
@@ -3649,20 +3655,20 @@
 13	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 14	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] hieß (12)
-[] Der Name der Organisation sei » Die Bruderschaft « , (8)
-[] so (11)
-[] es (13)
+[MESSAGE] hieß (12)
+[content] Der Name der Organisation sei » Die Bruderschaft « , (8)
+[content] so (11)
+[x-noncomp] es (13)
 
 [] Bruderschaft (8)
 [] Der Name der Organisation (2)
 
-[] Name (2)
-[] der Organisation (4)
+[IDENTIFICATION] Name (2)
+[identified] der Organisation (4)
 
 [] Organisation (4)
 
-[] so (11)
+[IDENTIFICATION] so (11) # TODO manual: non-pronoun anaphora
 
 [] es (13)
 
@@ -3680,50 +3686,53 @@
 10	Zusammenfassung	Zusammenfassung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	appos	_	_
 11	aller	alle	DET	PIAT	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	12	det	_	_
 12	Irrlehren	Irrlehre	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	10	nmod	_	_
-13	,	,	PUNCT	$,	_	15	punct	_	_
+13	,	,	PUNCT	$,	_	16	punct	_	_
 14	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	15	det	_	_
-15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
-16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
-17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
+15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
+16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	acl	_	_
+17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	_	_
 18	und	und	CCONJ	KON	_	24	cc	_	_
 19	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	24	nsubj	_	_
 20	heimlich	heimlich	ADJ	ADJD	_	24	advmod	_	_
 21	da	da	ADV	ADV	_	24	advmod	_	_
 22	und	und	CCONJ	KON	_	23	cc	_	_
 23	dort	dort	ADV	ADV	_	21	conj	_	_
-24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] flüsterte (2)
 [] Auch (1)
 [] man (3)
-[] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
+[] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war und das heimlich da und dort zirkulierte (7)
 
 [] Auch (1)
 
 [] man (3)
 
-[] Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
-[] schrecklichen (6)
+[MESSAGE] Buch , einer Zusammenfassung aller Irrlehren (7)
+[m-quality] schrecklichen (6)
+[m-scene] , dessen Verfasser Goldstein war (16)
+[m-scene] und das heimlich da und dort zirkulierte (24)
 
 [] schrecklichen (6)
 
-[] Zusammenfassung (10)
-[] aller Irrlehren (12)
-[] , dessen Verfasser Goldstein war (15)
+[REPRODUCTION || MESSAGE] Zusammenfassung (10)
+[original || topic] aller Irrlehren (12)
 
 [] Irrlehren (12)
 
-[] Verfasser (15)
-[] Goldstein (16)
+[IDENTIFICATION] Goldstein (16)
+[identified] dessen Verfasser (15)
 
-[] Goldstein (16)
+[SENDING] Verfasser (15)
+[sent] Buch (7)
 
 [] zirkulierte (24)
 [] das (19)
 [] heimlich (20)
 [] da (21)
 [] und dort (23)
+[] Buch , einer Zusammenfassung aller Irrlehren (7)
 
 [] das (19)
 

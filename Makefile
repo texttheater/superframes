@@ -9,6 +9,8 @@ check :
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/002.cusf
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/003.cusf
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/004.cusf
+	python3 src/python/check.py --no-warn-incomplete data/1984/de/005.cusf
+	python3 src/python/check.py --no-warn-incomplete data/1984/de/006.cusf
 
 manual :
 	cd doc/manual; make manual.pdf
