@@ -1978,7 +1978,7 @@
 
 [CLASS] keines (15)
 [m-scene] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
-[x-part] die Hauptrolle (22) ## hinzugefügt wegen x-attribute
+[x-part] die Hauptrolle (22) # # hinzugefügt wegen x-attribute
 
 [ACTIVITY] gespielt (23)
 [m-location] in dem (18)
@@ -1994,7 +1994,7 @@
 
 [IDENTIFICATION] Goldstein (20)
 
-[PART-WHOLE] Hauptrolle (22) ## "wichtigste Rolle in Schauspiel, Oper oder Film"
+[PART-WHOLE] Hauptrolle (22) # # "wichtigste Rolle in Schauspiel, Oper oder Film"
 
 # sent_id = 181
 # text = Er war der erste Verräter , der früheste Beschmutzer der Reinheit der Partei .
@@ -2311,7 +2311,7 @@
 38	saß	sitzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	acl	_	_
 39	,	,	PUNCT	$,	_	38	punct	_	_
 40	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	45	obj	_	_
+41	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	44	obj	_	_
 42	seniler	senil	ADJ	ADJA	Case=Gen|Gender=Fem|Number=Sing	43	amod	_	_
 43	Blödheit	Blödheit	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	41	nmod	_	_
 44	auszustrahlen	ausstrahlen	VERB	VVIZU	VerbForm=Inf	45	xcomp	_	_
@@ -2367,26 +2367,23 @@
 
 [QUALITY] eigentümlich (24)
 
-[SCENE] schien (45)
-[x-attribute] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
-[participant] eine Art seniler Blödheit (41)
-[scene] auszustrahlen (44)
-[participant] Gesicht (26)
+[MESSAGE] schien (45)
+[topic] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
+[content] eine Art seniler Blödheit auszustrahlen (44)
 
 [PART-WHOLE] Nase (31)
 [m-quality] lange (29)
 [m-quality] dünne (30)
 [m-scene] , auf deren Ende eine Brille saß , (38)
-[whole] Gesicht (26) # # manuell hinzugefügt wegen x-attribute
+[whole] Gesicht (26) # # "relative clause with extracted ..."
 
 [QUALITY] lange (29)
 
 [QUALITY] dünne (30)
 
 [LOCATION] saß (38)
-[x-attribute] auf deren Ende (35)
+[location] auf deren Ende (35)
 [has-location] eine Brille (37)
-[location] Nase (31)
 
 [PART-WHOLE] Ende (35)
 [whole] deren (34)
@@ -2398,16 +2395,15 @@
 
 [SUPERCLASS] Art (41) # # "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
 [superclass] seniler Blödheit (43)
-[?m-has-quality] Gesicht (26)
 
 [STATE] Blödheit (43)
 [m-quality] seniler (42)
 
 [QUALITY] seniler (42)
 
-[MESSAGE] auszustrahlen (44)
-[topic] Gesicht (26)
-[content] eine Art seniler Blödheit (41)
+[?MESSAGE] auszustrahlen (44)
+[?content] eine Art seniler Blödheit (41)
+[?x-sender] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
 
 # sent_id = 187
 # text = Es ähnelte einem Schafsgesicht , und auch die Stimme hatte etwas Schafsmässiges .
@@ -2945,8 +2941,8 @@
 [SCENE-CONTINUATION] noch (13)
 
 [MESSAGE-PREVENTION] verbarg (28) # # "den Blicken anderer entziehen; verstecken"
-[target-content] was (20)
-[target-content] sich (21)
+[topic] was (20)
+[topic] sich (21)
 [m-mode] in Wahrheit (23)
 [x-causer] hinter Goldsteins widerlicher Phrasendrescherei (27)
 
@@ -3508,18 +3504,18 @@
 [QUALITY] lächerlich (45) # # "[in ärgerlicher Weise] töricht, albern, unsinnig"
 [has-quality] seine Theorien (40)
 
-[MESSAGE] gehalten (61) # # "vor Augen halten: denken an, sich erinnern an, sich vorstellen"
+[MESSAGE-INIT] gehalten (61) # # "vor Augen halten: denken an, sich erinnern an, sich vorstellen"
 [x-experiencer] , der Allgemeinheit (49)
-[?content] als der jammervolle Unsinn der sie waren , (53) # # [seine Theorien]
+[target-content] als der jammervolle Unsinn der sie waren , (53) # # [seine Theorien]
 [x-noncomp] vor Augen (60)
-[?topic] seine Theorien (40) # # ?? Kann diese Kante so hinzugefügt werden?
+[topic] seine Theorien (40) # # manuell hinzugefügt
 
 [CLASS] Allgemeinheit (49)
 
 [MESSAGE] Unsinn (53)
 [m-quality] jammervolle (52)
 [m-scene] der sie waren (55)
-[?topic] seine Theorien (40) # # Kante hinzugekommen wegen (61) content/topic
+[x-identified] seine Theorien (40) # # Kante hinzugekommen wegen (61) content/topic
 
 [QUALITY] jammervolle (52)
 
@@ -3533,10 +3529,10 @@
 
 [IDENTIFICATION] alledem (66)
 
-[?POSSESSION] Einfluss (68) # # "Geltung, Überlegenheit, Autorität, Ansehen" -> "Einfluss besitzen"
+[POSSESSION || EVENT] Einfluss (68)
 
-[?POSSESSION] Einfluss (8)
-[?possessor] Goldsteins (7)
+[POSSESSION || EVENT] Einfluss (8)
+[possessor || x-causer] Goldsteins (7)
 
 [IDENTIFICATION] Goldsteins (7)
 
@@ -3690,22 +3686,22 @@
 [participant] sich (14)
 [participant] den Sturz der Regierung (16)
 [target-scene] zum Ziel (20)
-[participant] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[x-causer >> participant] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
 
 [IDENTIFICATION] das (13)
 
 [IDENTIFICATION] sich (14)
 
-[LOCATION-CHANGE >> HITTING >> SOCIAL-RELATION] Sturz (16) # # wörtl.: "aus mehr oder weniger großer Höhe jäh in die Tiefe fallen" ODER "mit Wucht hinfallen, zu Boden fallen" figurativ: "Entfernung aus dem Amt mit Gewalt"
-[has-location >> hitting >> has-social-relation] der Regierung (18)
+[LOCATION-CHANGE >> POSSESSION-DEINIT] Sturz (16) # # wörtl.: "aus mehr oder weniger großer Höhe jäh in die Tiefe fallen" ODER figurativ: "Entfernung aus dem Amt mit Gewalt"
+[has-location >> initial-possessor] der Regierung (18)
 
-[SOCIAL-RELATION] Regierung (18)
+[POSSESSION] Regierung (18)
 
 [MEANS] Ziel (20)
 [purpose] den Sturz der Regierung (16)
-[?means] das (13)
-[?means] sich (14)
-[?means] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[means] das (13)
+[means] sich (14)
+[means] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
 
 # sent_id = 199
 # text = Der Name der Organisation sei » Die Bruderschaft « , so hieß es .
@@ -3726,18 +3722,18 @@
 
 [MESSAGE-INIT] hieß (12)
 [target-content] Der Name der Organisation sei » Die Bruderschaft « , (8)
-[?target-content] so (11)
+[target-content] so (11)
 [x-noncomp] es (13)
 
 [SOCIAL-RELATION >> IDENTIFICATION] Bruderschaft (8)
 [x-identified] Der Name der Organisation (2)
 
-[?PART-WHOLE] Name (2)
-[whole] der Organisation (4)
+[IDENTIFICATION] Name (2)
+[identified] der Organisation (4)
 
 [SOCIAL-RELATION] Organisation (4)
 
-[?SITUATION] so (11)
+[IDENTIFICATION] so (11) # # Anapher, also wie Pronomen.
 
 [IDENTIFICATION] es (13)
 
@@ -3757,8 +3753,8 @@
 12	Irrlehren	Irrlehre	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	10	nmod	_	_
 13	,	,	PUNCT	$,	_	15	punct	_	_
 14	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	15	det	_	_
-15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
-16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
+15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
+16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
 17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
 18	und	und	CCONJ	KON	_	24	cc	_	_
 19	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	24	nsubj	_	_
@@ -3766,7 +3762,7 @@
 21	da	da	ADV	ADV	_	24	advmod	_	_
 22	und	und	CCONJ	KON	_	23	cc	_	_
 23	dort	dort	ADV	ADV	_	21	conj	_	_
-24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
+24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE-INIT] flüsterte (2)
@@ -3781,21 +3777,21 @@
 
 [MESSAGE] Buch , einer Zusammenfassung aller Irrlehren (7)
 [m-quality] schrecklichen (6)
-[m-scene] , dessen Verfasser Goldstein war (15)
+[m-scene] , dessen Verfasser Goldstein war (16) # # siehe "complex extracted element" im Manual
 [m-scene] und das heimlich da und dort zirkulierte (24)
 
 [QUALITY] schrecklichen (6)
 
-[?TRANSFORMATION-CREATION] Zusammenfassung (10) # # "kurz zusammengefasste schriftliche oder mündliche Darstellung von etwas"
-[material] aller Irrlehren (12)
+[REPRODUCTION || MESSAGE] Zusammenfassung (10) # # "kurz zusammengefasste schriftliche oder mündliche Darstellung von etwas"
+[original || topic] aller Irrlehren (12)
 
 [MESSAGE] Irrlehren (12)
 
-[MESSAGE-INIT] Verfasser (15) # # Vgl. sent_id 217, "Verfechter"
-[?x-identified] Goldstein (16) # # gleichzeitig x-sender?
-[topic] Buch , einer Zusammenfassung aller Irrlehren (7)
+[SENDING] Verfasser (15)
+[sent] Buch (7)
 
 [IDENTIFICATION] Goldstein (16)
+[identified] , dessen Verfasser war (15)
 
 [UNANCHORED-MOTION] zirkulierte (24)
 [in-motion] das (19)
