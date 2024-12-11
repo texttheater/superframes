@@ -66,6 +66,12 @@
 21	Instinkt	Instinkt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
 22	.	.	PUNCT	$.	_	18	punct	_	_
 
+[MESSAGE-INIT] gebot (18) # # normative (Aufforderung) Messages: hat nur topic, kein content
+[topic] Seine Gefühle zu verschleiern (4)
+[topic] , sein Gesicht zu beherrschen (9)
+[m-mode] schon (19)
+[x-sender] der Instinkt (21)
+
 [MESSAGE-PREVENTION] verschleiern (4)
 [topic] Seine Gefühle (2)
 
@@ -93,15 +99,9 @@
 
 [IDENTIFICATION] jeder (15)
 
-[MESSAGE-INIT] gebot (18)
-[topic] Seine Gefühle zu verschleiern (4) # # normative (Aufforderung) Messages: hat nur topic, kein content
-[topic] , sein Gesicht zu beherrschen (9)
-[m-mode] schon (19)
-[x-sender] der Instinkt (21)
-
 [MODE] schon (19)
 
-[MESSAGE] Instinkt (21) # # "innerer Impuls, der jemanden in bestimmten Situationen ohne Überlegen das Richtige tun lässt"
+[MESSAGE] Instinkt (21) # # normative Message; "innerer Impuls, der jemanden in bestimmten Situationen ohne Überlegen das Richtige tun lässt"
 
 # sent_id = 253
 # text = Aber es gab eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können .
@@ -277,13 +277,10 @@
 
 [IDENTIFICATION] seine (3)
 
-[] Begriff (10)
-[] gerade (8)
-[] , sie wieder mit seiner charakteristischen Geste aufzusetzen (18)
-
-[SCENE] war (7)
-[] gerade (8)
-[] im Begriff , sie wieder mit seiner charakteristischen Geste aufzusetzen (10)
+[SCENE-INIT] Begriff (10)
+[m-time] gerade (8)
+[target-scene] , sie wieder mit seiner charakteristischen Geste aufzusetzen (18)
+[participant] Er (1)
 
 [TIME] gerade (8)
 
@@ -300,11 +297,11 @@
 
 [MESSAGE-INIT] Geste (17)
 [x-sender] seiner (15)
-[m-scene] charakteristischen (16) # # "charakteristisch für ..."
+[m-scene] charakteristischen (16)
 
 [IDENTIFICATION] seiner (15)
 
-[IDENTIFICATION] charakteristischen (16)
+[IDENTIFICATION] charakteristischen (16) # # "charakteristisch für ..."
 [identifier] Geste (17)
 
 # sent_id = 258
@@ -360,12 +357,12 @@
 
 [TIME] Sekunde (7)
 
-[] begegneten (13)
-[] sich (10)
-[] ihre Augen (12)
-[] Bruchteil (5)
+[SOCIAL-RELATION-INIT >> MESSAGE-INIT] begegneten (13)
+[target-social-relation >> x-experiencer] sich (10)
+[has-social-relation >> topic] ihre Augen (12)
+[m-time] Bruchteil (5)
 
-[] sich (10)
+[IDENTIFICATION] sich (10)
 
 [PART-WHOLE] Augen (12)
 [whole] ihre (11)
@@ -448,51 +445,50 @@
 18	Gedanken	Gedanke	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	13	nsubj	_	_
 19	von	von	ADP	APPR	_	21	case	_	_
 20	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	21	det	_	_
-21	einen	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	18	nmod	_	_
+21	einen	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	13	nmod	_	_
 22	in	in	ADP	APPR	_	24	case	_	_
 23	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	24	det	_	_
-24	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	obl	_	_
-25	über	über	ADP	PTKVZ	_	13	compound:prt	_	_
+24	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	nmod	_	_
+25	über	über	ADP	PTKVZ	_	24	case	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] , als hätten ihre beiden Denkwelten sich aufgetan (10)
-[] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
+[?SCENE] war (2)
+[scene] , als hätten ihre beiden Denkwelten sich aufgetan (10)
+[scene] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
 
-[] aufgetan (10)
-[] ihre beiden Denkwelten (8)
-[] sich (9)
+[STATE-CHANGE >> MESSAGE-INIT] aufgetan (10)
+[has-state] ihre beiden Denkwelten (8)
+[has-state] sich (9)
 
-[] Denkwelten (8)
-[] ihre (6)
+[MESSAGE] Denkwelten (8)
+[x-sender || x-experiencer] ihre (6)
 
-[] ihre (6)
+[IDENTIFICATION] ihre (6)
 
-[] sich (9)
+[IDENTIFICATION] sich (9)
 
-[] strömten (13)
-[] durch ihre Augen (16)
-[] die Gedanken von dem einen (18)
-[] in den anderen (24)
-[] über (25)
+[LOCATION-CHANGE >> MESSAGE-INIT] strömten (13)
+[transitory-location >> x-causer] durch ihre Augen (16)
+[has-location >> topic] die Gedanken (18)
+[x-initial-location >> x-sender] von dem einen (21)
+[x-target-location >> x-experiencer] in den anderen über (24)
 
-[] Augen (16)
-[] ihre (15)
+[PART-WHOLE] Augen (16)
+[whole] ihre (15)
 
-[] ihre (15)
+[IDENTIFICATION] ihre (15)
 
-[] Gedanken (18)
-[] von dem einen (21)
+[MESSAGE] Gedanken (18)
 
-[] einen (21)
+[IDENTIFICATION] einen (21) # # "dem einen"
 
-[] anderen (24)
+[IDENTIFICATION] anderen (24) # # "den anderen"
 
 # sent_id = 261
 # text = » Ich halte es mit dir « , schien O'Brien zu ihm zu sagen .
 1	»	»	PUNCT	$(	_	3	punct	_	_
 2	Ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
-3	halte	halten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+3	halte	halten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5	mit	mit	ADP	APPR	_	6	case	_	_
 6	dir	du	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=2|PronType=Prs	3	obl	_	_
@@ -506,28 +502,29 @@
 14	sagen	sagen	VERB	VVINF	VerbForm=Inf	9	xcomp	_	_
 15	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] schien (9)
-[] » Ich halte es mit dir « , (3)
-[] O'Brien (10)
-[] zu ihm zu sagen (14)
+[MESSAGE] schien (9)
+[topic] O'Brien (10)
+[content] » Ich halte es mit dir « , zu ihm zu sagen (14)
 
-[] halte (3)
-[] Ich (2)
-[] es (4)
-[] mit dir (6)
+[IDENTIFICATION] O'Brien (10)
 
-[] Ich (2)
+[MESSAGE-INIT] sagen (14)
+[target-content] » Ich halte es mit dir « , (3)
+[x-experiencer] zu ihm (12)
+[x-sender] O'Brien (10)
 
-[] es (4)
+[?MESSAGE] halte (3) # # "es mit jemandem halten" -> "mit jemandem die Ansichten teilen" / "ich denke wie du"
+[x-experiencer] Ich (2)
+[x-noncomp] es (4)
+[x-reference] mit dir (6)
 
-[] dir (6)
+[IDENTIFICATION] Ich (2)
 
-[] O'Brien (10)
+[NONCOMP] es (4)
 
-[] sagen (14)
-[] zu ihm (12)
+[IDENTIFICATION] dir (6)
 
-[] ihm (12)
+[IDENTIFICATION] ihm (12)
 
 # sent_id = 262
 # text = » Ich weiß genau , was in dir vorgeht .
@@ -542,22 +539,22 @@
 9	vorgeht	vorgehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] weiß (3)
-[] Ich (2)
-[] genau (4)
-[] , was in dir vorgeht (9)
+[MESSAGE] weiß (3)
+[x-experiencer] Ich (2)
+[m-quantity] genau (4)
+[content] , was in dir vorgeht (9)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] genau (4)
+[QUANTITY] genau (4)
 
-[] vorgeht (9)
+[?EVENT] vorgeht (9)
+[event] was (6)
+[x-location >> undergoer] in dir (8)
+
 [] was (6)
-[] in dir (8)
 
-[] was (6)
-
-[] dir (8)
+[IDENTIFICATION] dir (8)
 
 # sent_id = 263
 # text = Ich kenne deine ganze Verachtung , deinen Hass , deinen Abscheu .
@@ -574,31 +571,31 @@
 11	Abscheu	Abscheu	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	conj	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] kenne (2)
-[] Ich (1)
-[] deine ganze Verachtung (5)
-[] , deinen Hass (8)
-[] , deinen Abscheu (11)
+[MESSAGE] kenne (2)
+[x-experiencer] Ich (1)
+[content] deine ganze Verachtung (5)
+[conten] , deinen Hass (8)
+[content] , deinen Abscheu (11)
 
-[] Ich (1)
+[IDENTIFICATION] Ich (1)
 
-[] Verachtung (5)
-[] deine (3)
-[] ganze (4)
+[MESSAGE] Verachtung (5)
+[x-sender] deine (3)
+[m-quantity] ganze (4)
 
-[] deine (3)
+[IDENTIFICATION] deine (3)
 
-[] ganze (4)
+[QUANTITY] ganze (4)
 
-[] Hass (8)
-[] deinen (7)
+[MESSAGE] Hass (8)
+[x-sender] deinen (7)
 
-[] deinen (7)
+[IDENTIFICATION] deinen (7)
 
-[] Abscheu (11)
-[] deinen (10)
+[MESSAGE] Abscheu (11)
+[x-sender] deinen (10)
 
-[] deinen (10)
+[IDENTIFICATION] deinen (10)
 
 # sent_id = 264
 # text = Aber hab keine Angst , ich stehe auf deiner Seite ! «
@@ -615,24 +612,24 @@
 11	!	!	PUNCT	$.	_	2	punct	_	_
 12	«	«	PUNCT	$(	_	2	punct	_	_
 
-[] hab (2)
-[] keine Angst (4)
+[POSSESSION >> MESSAGE] hab (2)
+[possessed >> topic] keine Angst (4)
 
-[] Angst (4)
-[] keine (3)
+[MESSAGE] Angst (4)
+[m-mode] keine (3)
 
-[] keine (3)
+[MODE] keine (3)
 
-[] stehe (7)
-[] ich (6)
-[] auf deiner Seite (10)
+[LOCATION >> SOCIAL-RELATION] stehe (7) # # figurativ: "ich meine es gut mit dir" / "ich kämpfe für das Gleiche"
+[has-location >> has-social-relation] ich (6)
+[location >> social-relation] auf deiner Seite (10)
 
-[] ich (6)
+[IDENTIFICATION] ich (6)
 
-[] Seite (10)
-[] deiner (9)
+[LOCATION >> SOCIAL-RELATION] Seite (10)
+[location >> social-relation] deiner (9)
 
-[] deiner (9)
+[IDENTIFICATION] deiner (9)
 
 # sent_id = 265
 # text = Dann war der Blitz des Einverständnisses erloschen , und O'Briens Gesicht war ebenso undurchdringlich wie das aller anderen .
@@ -656,33 +653,34 @@
 18	anderen	ander	PRON	PIS	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	16	nmod	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] erloschen (7)
-[] Dann (1)
-[] der Blitz des Einverständnisses (4)
+[SCENE-DEINIT] erloschen (7)
+[m-time] Dann (1)
+[initial-scene] der Blitz des Einverständnisses (4)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] Blitz (4)
-[] des Einverständnisses (6)
+[QUALITY] Blitz (4) # # "drückt in Bildungen mit Substantiven aus, dass etwas überaus schnell, überraschend [und unerwartet] erfolgt"
+[has-quality] des Einverständnisses (6)
 
-[] Einverständnisses (6)
+[SOCIAL-RELATION-INIT || MESSAGE] Einverständnisses (6) # # "Einigkeit in Bezug auf etwas, wozu jemand anderes die gleiche Einstellung hat"
 
-[] undurchdringlich (14)
-[] O'Briens Gesicht (11)
-[] ebenso (13)
-[] wie das aller anderen (16)
+[MESSAGE-PREVENTION] undurchdringlich (14) # # "nicht zu durchschauen oder in seinem eigentlichen Wesen zu erkennen"
+[topic] O'Briens Gesicht (11)
+[m-scene] ebenso (13)
+[m-reference] wie das aller anderen (16)
 
-[] Gesicht (11)
-[] O'Briens (10)
+[PART-WHOLE] Gesicht (11)
+[whole] O'Briens (10)
 
-[] O'Briens (10)
+[IDENTIFICATION] O'Briens (10)
 
-[] ebenso (13)
+[COMPARISON] ebenso (13)
+[compared] undurchdringlich (14)
 
-[] das (16)
-[] aller anderen (18)
+[PART-WHOLE] das (16) ## "das [Gesicht]"
+[whole] aller anderen (18)
 
-[] anderen (18)
+[IDENTIFICATION] anderen (18) ## "all der anderen" -> definit
 
 # sent_id = 266
 # text = Das war alles gewesen , und er war schon nicht mehr sicher , ob es sich wirklich zugetragen hatte .
