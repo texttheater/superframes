@@ -2354,13 +2354,13 @@
 
 [QUALITY] kluges (20)
 
-[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # # "wegen der moralischen Minderwertigkeit Verachtung verdienend" ODER  "Verachtung ausdrückend"
+[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # Verachtung verdienend oder Verachtung ausdrückend
 [m-scene] doch (22)
 [m-mode] irgendwie (23) # # bezieht sich mehr auf den Bezug des Sprechers zum Gesagten
 [m-quality] eigentümlich (24)
-[topic || x-sender] Gesicht (26) # # siehe ambige Bedeutung "verächtlich"
+[topic || x-sender] Gesicht (26) # # Siehe Manual "relative clause with complex extracted element"
 
-[CONCESSION] doch (22) # # Vgl. (43) im Manual
+[CONCESSION] doch (22)
 [asserted] verächtliches (25)
 
 [MODE] irgendwie (23)
@@ -2375,7 +2375,7 @@
 [m-quality] lange (29)
 [m-quality] dünne (30)
 [m-scene] , auf deren Ende eine Brille saß , (38)
-[whole] Gesicht (26) # # "relative clause with extracted ..."
+[whole] Gesicht (26) # # Siehe Manual "relative clause with complex extracted element"
 
 [QUALITY] lange (29)
 
@@ -2387,23 +2387,23 @@
 
 [PART-WHOLE] Ende (35)
 [whole] deren (34)
-[whole] Nase (31)
+[whole] Nase (31) # # Siehe Manual "relative clause with complex extracted element"
 
 [IDENTIFICATION] deren (34)
 
 [CLASS] Brille (37)
 
-[SUPERCLASS] Art (41) # # "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
+[MESSAGE] auszustrahlen (44)
+[content] eine Art seniler Blödheit (41)
+[x-sender] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
+
+[SUBCLASS] Art (41) # # "angeborene Eigenart, Eigentümlichkeit; Wesen[sart], Natur"
 [superclass] seniler Blödheit (43)
 
 [STATE] Blödheit (43)
 [m-quality] seniler (42)
 
 [QUALITY] seniler (42)
-
-[?MESSAGE] auszustrahlen (44)
-[?content] eine Art seniler Blödheit (41)
-[?x-sender] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
 
 # sent_id = 187
 # text = Es ähnelte einem Schafsgesicht , und auch die Stimme hatte etwas Schafsmässiges .
@@ -2782,10 +2782,10 @@
 
 [QUALITY] vielsilbigen (47)
 
-[SUPERCLASS] Art (52)
-[has-superclass] die (50)
+[SUBCLASS] Art (52)
+[subclass] die (50)
 [superclass] Parodie des üblichen Stils der Parteiredner (53)
-[has-superclass] Ansprache (48)
+[subclass] Ansprache (48)
 
 [IDENTIFICATION] die (50)
 
@@ -3525,7 +3525,7 @@
 
 [IDENTIFICATION] sie (56) # # [seine Theorien]
 
-[?NONCOMP] Augen (60)
+[NONCOMP] Augen (60)
 
 [IDENTIFICATION] alledem (66)
 
