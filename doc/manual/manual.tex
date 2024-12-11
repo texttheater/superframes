@@ -100,7 +100,6 @@
             \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
             \Sub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
-            \SubSub\emoji{light-bulb} \fr{EXAMPLE} & \rl{} & \rl{example} & \rl{exemplified} & & \rl{} & \ref{sec:EXAMPLE} \\
 
             \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
 
@@ -125,6 +124,8 @@
             \SubSub\emoji{sneezing-face} \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
 
             \Sub\emoji{handshake} \fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
+
+            \Sub\emoji{red-triangle-pointed-up} \fr{SUBCLASS} & & \rl{subclass} & \rl{superclass} & \rl{} & \rl{} & \ref{sec:SUBCLASS} \\
 
             \Sub\emoji{alarm-clock} \fr{TIME} & \rl{initial-time} & \rl{has-time} & \rl{time} & & \rl{target-time} & \ref{sec:TIME} \\
 
@@ -502,7 +503,9 @@ not fully compositional:
 
 \ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
 
-\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
+\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>m-noncomp my drawings_has-location>>topic}
+
+\ex.\dep{elektrischer_m-quality>>m-noncomp *Strom#CLASS*}
 
 Similarly, a use of a verb that is ambiguous between transitive (more literal)
 and inherently reflexive (more figurative) can be annotated in this way:
@@ -556,6 +559,11 @@ with it or participates equally in the same scene.
 \ex.\dep{Rolling thunder_accompanier *accompanies#ACCOMPANIMENT* the rain_accompanied}
 
 \ex.\dep{boy_m-accompanier *king#SOCIAL-RELATION*}
+
+\ex.\dep{Alice_x-causer *mixed#ACCOMPANIMENT-INIT* the egg_accompanied with the cream_target-accompanier}
+
+\ex.\dep{Er_accompanier wurde mit den ihn umgebenden Menschen_accompanied *eins#ACCOMPANIMENT*}
+
 
 Often, the accompanier denotes not the accompanying scene but an entity
 participating in it, and must be metonymically understood as the scene.
@@ -671,6 +679,8 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 \ex.\dep{Kim_sender *sent#SENDING* Sandy_x-experiencer a letter_sent , but it never arrived_m-asserted}
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
+
+\ex.\dep{man_material wurde gegen seinen Willen_m-conceded in einen Verrückten_created *verwandelt#TRANSFORMATION-CREATION*}
 
 
 \newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
@@ -832,6 +842,12 @@ Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
 \ex.\dep{sugar_m-has-location *cane#CLASS*}
 
 \ex.\dep{cane_m-initial-location *sugar#CLASS*}
+
+Also used for orientations:
+
+\ex.\dep{Die Nadel_has-location *zeigte#LOCATION* nach Norden_location}
+
+\ex.\dep{Er_has-location *wandte#LOCATION* dem Televisor_location den Rücken_x-attribute zu}
 
 Adverbs of location evoke \fr{LOCATION}:
 
@@ -1112,9 +1128,10 @@ For connective adverbs, see Section~\ref{sec:modifiers}.
 \label{sec:NONCOMP}
 
 Used to mark syntactic arguments that are thought of as part of the predicate,
-as in verbal idioms, weather verbs, existential \emph{there}, names, or other
-fixed expressions. (Light verbs, on the other hand, are treated with
-\fr{SCENE}, see Section~\ref{sec:SCENE}.)
+as in verbal idioms, weather verbs, existential \emph{there}, names, other
+fixed expressions, or specialized sublanguages for such things as dates and
+times. (Light verbs, on the other hand, are treated with \fr{SCENE}, see
+Section~\ref{sec:SCENE}.)
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
@@ -1125,6 +1142,8 @@ fixed expressions. (Light verbs, on the other hand, are treated with
 \ex.\dep{Motion Picture_m-purpose>>m-noncomp *Association#CLASS* of America_m-social-relation>>m-noncomp}
 
 \ex.\dep{fountain_m-reference>>m-noncomp *pen#CLASS*}
+
+\ex.\dep{kurz_m-quantity>>m-noncomp vor *elf#TIME*}
 
 If an argument of the whole predicate syntactically attaches to an
 \rl{x-noncomp} dependent, assign it the same frame as the top predicate:
@@ -1178,16 +1197,6 @@ reflexive verbs) should get the same role as their antecedent:
 \ex.\dep{sugar_m-part *cube#CLASS*}
 
 
-\newpage\subsection{\emoji{light-bulb} \fr{EXAMPLE}}
-\label{sec:EXAMPLE}
-
-Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as an example of \fr{exemplified} (aka \fr{whole}).
-
-\ex.\dep{*birds#CLASS* such as storks_m-example}
-
-\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_m-scene wissenschaftliche Methoden_target-content}
-
-
 \newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
 
@@ -1230,6 +1239,8 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 \ex.\dep{three_m-quantity *liters#QUANTITY* of coke_has-quantity}
 
 \ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
+
+\ex.\dep{Sie sang so_m-quantity *schön#QUALITY* , dass wir weinten}
 
 
 \newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
@@ -1343,6 +1354,8 @@ qualitites of events, i.e., manners.
 \ex.\dep{such_m-quality *knowledge#MESSAGE* is valuable}
 
 \ex.\dep{The leaves_has-quality *reddened#QUALITY-INIT*}
+
+\ex.\dep{Sie_x-sender *sang#MESSAGE-INIT* so_m-quality , dass wir weinten_m-result}
 
 
 \newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
@@ -1499,6 +1512,10 @@ Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
 
 \ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE-INIT**_reaction}
 
+Can also be the reaction to an \emph{anticipated} scene:
+
+\ex.\dep{als *stemme#REACTION* er_x-causer sich_x-causer dem Anprall_trigger einer Woge entgegen_m-noncomp}
+
 
 \newpage\subsection{\emoji{sneezing-face} \fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
@@ -1570,6 +1587,20 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 \ex.\dep{Kim_has-social-relation was *pardoned#SOCIAL-RELATION-DEINIT*}
 
 
+\newpage\subsection{\emoji{red-triangle-pointed-up} \fr{SUBCLASS}}
+\label{sec:SUBCLASS}
+
+\rl{subclass} denotes a subclass of \rl{superclass}.
+
+\ex.\dep{eine *Art#SUBCLASS* Paranoia_superclass}
+
+\ex.\dep{Das_x-subclass ist seine_participant *Art#SCENE* , sich zu bewegen_scene}
+
+\ex.\dep{*birds#CLASS* such as storks_m-subclass}
+
+\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__subclass **beispielsweise#SUBCLASS**_m-scene wissenschaftliche Methoden_target-content}
+
+
 \newpage\subsection{\emoji{alarm-clock} \fr{TIME}}
 \label{sec:TIME}
 
@@ -1582,6 +1613,8 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 \ex.\dep{Kim_in-motion *swam#UNANCHORED-MOTION* for an hour_m-time}
 
 \ex.\dep{Kim_x-sender *says#MESSAGE-INIT* hello_content whenever I meet_m-time them}
+
+\ex.\dep{Die Hassovation_has-time *dauerte#TIME* dreißig Sekunden_time}
 
 \ex.\dep{*Once#TIME* when I was six years old}
 
@@ -1821,14 +1854,21 @@ ends. In general, aspectual suffixes modify superframes, they do not
 necessarily indicate the aspectual class of the predicate (here: \emph{lost}).
 
 
-\newpage\subsection{Ambiguity between Static and Dynamic? Prefer Dynamic?}
+\newpage\subsection{Ambiguity between Static and Dynamic? Prefer Static!}
 
 Some predicates are ambiguous between a static and a dynamic reading. If they
 make equal sense in context, prefer the static one.
 
 \ex.
 \a.\dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE* , ohne sich aufzuregen_m-accompanier}
-\b. Rather than: \dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE-INIT* , ohne sich aufzuregen_m-accompanier}
+\b.Rather than: \dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE-INIT* , ohne sich aufzuregen_m-accompanier}
+
+
+\newpage\subsection{Stacking of Aspect and Mode}
+
+Modal suffixes take scope over aspectual ones, which is reflected in their order: \fr{SCENE-INIT-NECESSITY} is a valid superframe, \fr{SCENE-NECESSITY-INIT} is not. The former denotes the need for a scene to be initiated, the latter denotes the initiation of a need. Only the latter could be used to describe a predicate such as \emph{force}. Because it is not available (to keep things simple), we just use \fr{SCENE-INIT} in such a case.
+
+\ex. \dep{dass man_participant *gezwungen#SCENE-INIT* wurde mitzumachen_target-scene}
 
 
 \newpage\section{Construction-specific Guidelines}
