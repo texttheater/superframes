@@ -82,7 +82,7 @@
 [x-experiencer] man (29)
 [x-sender || topic] weniger Linientreue (31)
 
-[SCENE-INIT] Hilfe (28) # # Vgl. (379) im Manual
+[SCENE-INIT] Hilfe (28) # # Vgl. "help" im Manual
 [x-causer] deren (27)
 [x-causer] Spitzel (23) # # manuell hinzugefügt wegen x-attribute
 
@@ -693,8 +693,8 @@
 [in-motion] seine Brille (7)
 [transitory-location] auf der Nase (10)
 
-[POSSESSION] Brille (7)
-[possessor] seine (6)
+[CLASS] Brille (7)
+[m-possessor] seine (6)
 
 [IDENTIFICATION] seine (6)
 
@@ -1896,7 +1896,7 @@
 [m-quality >> m-noncomp] Großen (48)
 [m-mode] selbst (50)
 
-[QUALITY] Großen (48)
+[QUALITY >> NONCOMP] Großen (48)
 
 [MODE] selbst (50)
 
@@ -1914,7 +1914,7 @@
 [QUALITY || SOCIAL-RELATION] konterrevolutionären (57)
 
 [SOCIAL-RELATION-INIT] verurteilt (64)
-[target-social-relation] zum Tode (63) ## ? "Tod" ist target-social-relation?
+[target-social-relation] zum Tode (63) # # ? "Tod" ist target-social-relation?
 [has-social-relation] einer (33)
 
 [DESTRUCTION] Tode (63)
@@ -3237,7 +3237,7 @@
 [x-sender] der Anblick (23)
 [x-sender] oder auch nur der Gedanke an Goldstein (28)
 [m-mode] schon (31) # # "verstärkt [emotional] eine Aussage, Feststellung"
-[m-causer] automatisch (32) # # Vgl. sent_id 37 "instinktiv"
+[m-scene] automatisch (32) # # Vgl. sent_id 37 "instinktiv"
 [target-content] Angst (33)
 [target-content] und Zorn (35)
 
@@ -3260,7 +3260,8 @@
 
 [MODE] schon (31)
 
-[CAUSATION] automatisch (32) # # "durch Selbststeuerung oder -regelung erfolgend, unaufgefordert, spontan", spontan: "von selbst, ohne [erkennbaren] äußeren Anlass, Einfluss [ausgelöst]", Vgl. sent_id 37 "instinktiv"
+[CAUSATION >> QUALITY] automatisch (32) # # "durch Selbststeuerung oder -regelung erfolgend, unaufgefordert, spontan", spontan: "von selbst, ohne [erkennbaren] äußeren Anlass, Einfluss [ausgelöst]", Vgl. sent_id 37 "instinktiv"
+[result >> has-quality] weckte (21)
 
 [MESSAGE] Angst (33)
 
