@@ -446,9 +446,9 @@
 25	über	über	ADP	PTKVZ	_	13	compound:prt	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] , als hätten ihre beiden Denkwelten sich aufgetan (10)
-[] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
+[COMPARISON >> MESSAGE] war (2)
+[reference >> content] , als hätten ihre beiden Denkwelten sich aufgetan (10)
+[reference >> content] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
 
 [] aufgetan (10)
 [] ihre beiden Denkwelten (8)
@@ -475,9 +475,9 @@
 [] Gedanken (18)
 [] von dem einen (21)
 
-[] einen (21)
+[CLASS] einen (21) # TODO indefinite pronoun
 
-[] anderen (24)
+[COMPARISON >> CLASS] anderen (24) # TODO manual: used as indefinite pronoun?
 
 # sent_id = 261
 # text = » Ich halte es mit dir « , schien O'Brien zu ihm zu sagen .
@@ -542,11 +542,11 @@
 
 [] genau (4)
 
-[] vorgeht (9)
-[] was (6)
-[] in dir (8)
+[SCENE >> MESSAGE] vorgeht (9) # TODO vorgehen vs. vor sich gehen
+[scene >> content] was (6)
+[m-location >> x-experiencer] in dir (8)
 
-[] was (6)
+[CLASS] was (6)
 
 [] dir (8)
 
@@ -1861,7 +1861,7 @@
 
 [] Er (1)
 
-[] es (3)
+[IDENTIFICATION] es (3) # TODO manual: "man" ist ein Indefinitpronomen; Abschnitt "Pronouns with Arguments" ist redundant
 
 [] jedoch (4)
 
@@ -1886,7 +1886,7 @@
 4	mit	mit	ADP	APPR	_	7	case	_	_
 5	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	7	amod	_	_
-7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	8	obl	_	_
+7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 8	hinschrieb	hinschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	csubj	_	_
 9	oder	oder	CCONJ	KON	_	8	cc	_	_
 10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
@@ -1902,13 +1902,13 @@
 
 [] hinschrieb (8)
 [] er (2)
-[] nieder (3)
-[] mit dem Großen Bruder (7)
+[] nieder mit dem Großen Bruder (3)
 [] nicht (10)
 
 [] er (2)
 
 [] nieder (3)
+[] mit dem Großen Bruder (7)
 
 [] Bruder (7)
 [] Großen (6)

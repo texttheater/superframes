@@ -706,10 +706,10 @@
 39	gegen	gegen	ADP	APPR	_	41	case	_	_
 40	seinen	sein	DET	PPOSAT	Case=Acc|Gender=Masc|Number=Sing|Poss=Yes	41	det:poss	_	_
 41	Willen	Wille	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	49	obl	_	_
-42	in	in	ADP	APPR	_	44	case	_	_
-43	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
-44	Grimasse	Grimasse	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	45	nmod	_	_
-45	schneidenden	schneidend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Sing	48	amod	_	_
+42	in	in	ADP	APPR	_	48	case	_	_
+43	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
+44	Grimasse	Grimasse	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	45	obj	_	_
+45	schneidenden	schneidend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Sing	48	acl	_	_
 46	,	,	PUNCT	$,	_	47	punct	_	_
 47	schreienden	schreiend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Sing	45	conj	_	_
 48	Verrückten	Verrückte	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing	49	obl	_	_
@@ -781,16 +781,19 @@
 
 [] seinen (40)
 
-[] Verrückten (48)
-[] in eine Grimasse schneidenden (45)
-[] , schreienden (47)
+[STATE] Verrückten (48)
+[m-scene] Grimasse schneidenden (45)
+[m-scene] , schreienden (47)
 
-[] schneidenden (45)
-[] in eine Grimasse (44)
+[SCENE-INIT] schneidenden (45)
+[target-scene] Grimasse (44)
+[participant] Verrückten (48)
 
-[] Grimasse (44)
+[STATE || MESSAGE] Grimasse (44)
+[has-state || x-sender] Verrückten (48)
 
-[] schreienden (47)
+[MESSAGE-INIT] schreienden (47)
+[x-sender] Verrückten (48)
 
 # sent_id = 215
 # text = Und doch war der Zorn , den man empfand , eine abstrakte , ziellose Regung , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte .
@@ -827,14 +830,17 @@
 31	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	aux	_	_
 32	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] Regung (15)
-[] doch (2)
-[] der Zorn , den man empfand , (5)
-[] abstrakte , (12)
-[] ziellose (14)
-[] , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte (29)
+[MESSAGE] Regung (15)
+[m-scene] doch (2)
+[x-has-class] der Zorn , den man empfand , (5)
+[m-quality] abstrakte , (12)
+[m-scene] ziellose (14)
+[m-scene] , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte (29)
+[topic] von einem Gegenstand (25)
+[topic] auf den anderen (28)
 
-[] doch (2)
+[CONCESSION] doch (2)
+[asserted] Regung (15)
 
 [] Zorn (5)
 [] , den man empfand (9)
@@ -849,24 +855,28 @@
 
 [] abstrakte (12)
 
-[] ziellose (14)
+[MEANS-NEG >> QUALITY] ziellose (14)
+[means >> has-quality] Regung (15)
 
-[] gerichtet (29)
-[] die (17)
-[] wie der Schein einer Blendlaterne (20)
-[] von einem Gegenstand (25)
-[] auf den anderen (28)
+[LOCATION-CHANGE >> SCENE-CHANGE] gerichtet (29)
+[has-location >> target-scene] die (17)
+[m-reference] wie der Schein einer Blendlaterne (20)
+[initial-location >> participant] von einem Gegenstand (25)
+[target-location >> participant] auf den anderen (28)
+[has-location >> target-scene] Regung (15)
 
-[] die (17)
+[MESSAGE] die (17)
+[topic] von einem Gegenstand (25)
+[topic] auf den anderen (28)
 
-[] Schein (20)
-[] einer Blendlaterne (22)
+[MESSAGE] Schein (20)
+[x-sender] einer Blendlaterne (22)
 
-[] Blendlaterne (22)
+[CLASS] Blendlaterne (22)
 
-[] Gegenstand (25)
+[CLASS] Gegenstand (25)
 
-[] anderen (28)
+[COMPARISON] anderen (28) # TODO manual?
 
 # sent_id = 216
 # text = So war für einen Augenblick der Hass Winstons durchaus nicht gegen Goldstein gerichtet , sondern im Gegenteil gegen den Großen Bruder , gegen die Partei und die Gedankenpolizei .
@@ -901,13 +911,14 @@
 29	.	.	PUNCT	$.	_	13	punct	_	_
 
 [] gerichtet (13)
-[] So (1)
+[m-scene] So (1)
 [] für einen Augenblick (5)
 [] der Hass Winstons (7)
-[] durchaus nicht (10)
+[m-mode] durchaus nicht (10)
 [] gegen Goldstein (12)
 
-[] So (1)
+[COMPARISON >> SUBCLASS || CAUSATION] So (1) # TODO manual as example
+[compared >> subclass || result] gerichtet (13)
 
 [] Augenblick (5)
 
@@ -916,10 +927,10 @@
 
 [] Winstons (8)
 
-[] nicht (10)
-[] durchaus (9)
+[MODE] nicht (10)
+[m-mode] durchaus (9)
 
-[] durchaus (9)
+[MODE] durchaus (9)
 
 [] Goldstein (12)
 
@@ -1112,7 +1123,7 @@
 24	unbesieglicher	unbesieglich	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	27	amod	_	_
 25	,	,	PUNCT	$,	_	26	punct	_	_
 26	furchtloser	furchtloser	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	24	conj	_	_
-27	Beschützer	Beschützer	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	20	obl	_	_
+27	Beschützer	Beschützer	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	21	obl	_	_
 28	,	,	PUNCT	$,	_	39	punct	_	_
 29	der	d	PRON	PRELS	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	39	nsubj	_	_
 30	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	39	obj	_	_
@@ -1202,9 +1213,8 @@
 
 [] schien (20)
 [] der Große Bruder (19)
-[] dazustehen (21)
-[] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
-[] , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (68)
+[] dazustehen als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (21)
+[m-time >> m-accompanier] , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (68)
 
 [] Bruder (19)
 [] Große (18)
@@ -1212,6 +1222,7 @@
 [] Große (18)
 
 [] dazustehen (21)
+[] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
 
 [] Beschützer (27)
 [] unbesieglicher (24)
@@ -1222,11 +1233,11 @@
 
 [] furchtloser (26)
 
-[] stemmte (39)
-[] der (29)
-[] sich (30)
-[] wie ein Felsen (33)
-[] gegen die anbrandenden asiatischen Horden (38)
+[HITTING >> EVENT] stemmte (39)
+[hitting >> x-causer] der (29)
+[hitting >> x-causer] sich (30)
+[m-reference] wie ein Felsen (33)
+[hit >> undergoer] gegen die anbrandenden asiatischen Horden (38)
 
 [] der (29)
 
@@ -1613,20 +1624,21 @@
 14	durchschneiden	durchschneiden	VERB	VVINF	VerbForm=Inf	4	conj	_	_
 15	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] vergewaltigen (4)
-[] Er (1)
-[] sie (3)
+[EVENT] vergewaltigen (4)
+[x-causer] Er (1)
+[undergoer] sie (3)
 
 [] Er (1)
 
 [] sie (3)
 
-[] durchschneiden (14)
-[] ihr (6)
-[] im Augenblick der höchsten Lust (8)
-[] die Kehle (13)
+[STATE-CHANGE] durchschneiden (14)
+[has-state] ihr (6)
+[m-time] im Augenblick der höchsten Lust (8)
+[x-attribute] die Kehle (13)
 
-[] ihr (6)
+[IDENTIFICATION] ihr (6)
+[m-part] Kehle (13)
 
 [] Augenblick (8)
 [] der höchsten Lust (11)
@@ -1765,10 +1777,10 @@
 
 [] geschlechtslos (11)
 
-[] gehen (20)
-[] er (15)
-[] mit ihr (17)
-[] ins Bett (19)
+[LOCATION-INIT || ACTIVITY] gehen (20)
+[has-location || is-active] er (15)
+[m-accompanier || x-accompanier] mit ihr (17)
+[target-location || x-noncomp] ins Bett (19)
 
 [] er (15)
 
