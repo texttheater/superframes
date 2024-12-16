@@ -452,9 +452,9 @@
 25	über	über	ADP	PTKVZ	_	24	case	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[?SCENE] war (2)
-[scene] , als hätten ihre beiden Denkwelten sich aufgetan (10)
-[scene] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
+[COMPARISON >> MESSAGE] war (2)
+[reference >> content] , als hätten ihre beiden Denkwelten sich aufgetan (10)
+[reference >> content] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
 
 [STATE-CHANGE >> MESSAGE-INIT] aufgetan (10)
 [has-state] ihre beiden Denkwelten (8)
@@ -480,9 +480,9 @@
 
 [MESSAGE] Gedanken (18)
 
-[IDENTIFICATION] einen (21) # # "dem einen"
+[CLASS] einen (21)
 
-[IDENTIFICATION] anderen (24) # # "den anderen"
+[COMPARISON >> CLASS] anderen (24)
 
 # sent_id = 261
 # text = » Ich halte es mit dir « , schien O'Brien zu ihm zu sagen .
@@ -513,7 +513,7 @@
 [x-experiencer] zu ihm (12)
 [x-sender] O'Brien (10)
 
-[?MESSAGE] halte (3) # # "es mit jemandem halten" -> "mit jemandem die Ansichten teilen" / "ich denke wie du"
+[MESSAGE] halte (3) # # "es mit jemandem halten" -> "mit jemandem die Ansichten teilen" / "ich denke wie du"
 [x-experiencer] Ich (2)
 [x-noncomp] es (4)
 [x-reference] mit dir (6)
@@ -548,11 +548,11 @@
 
 [QUANTITY] genau (4)
 
-[?EVENT] vorgeht (9)
-[event] was (6)
-[x-location >> undergoer] in dir (8)
+[SCENE >> MESSAGE] vorgeht (9)
+[scene >> content] was (6)
+[m-location >> x-experiencer] in dir (8) # # nicht participant, weil unklar ist, welcher Art SCENE ist
 
-[] was (6)
+[CLASS] was (6) # # hat keine Argumente
 
 [IDENTIFICATION] dir (8)
 
@@ -1716,25 +1716,22 @@
 6	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 7	halbe	halb	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	8	amod	_	_
 8	Seite	Seite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	nmod	_	_
-9	hinweg	hinweg	ADP	APZR	_	8	advmod	_	_
+9	hinweg	hinweg	ADP	APZR	_	8	case	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wieder (2)
+[SCENE-CONTINUATION] wieder (2)
 [m-time] immer (1)
-[] , fast über eine halbe Seite hinweg (8)
+[x-target-location || m-quantity] , fast über eine halbe Seite hinweg (8) # # [Er schrieb es]
 
 [TIME] immer (1)
 
 [PART-WHOLE] Seite (8) # # "Buchseite"
 [m-quantity] fast (4)
 [m-quantity] halbe (7)
-[] hinweg (9)
 
 [QUANTITY] fast (4)
 
 [QUANTITY] halbe (7)
-
-[] hinweg (9)
 
 # sent_id = 290
 # text = Unwillkürlich durchzuckte ihn ein furchtbarer Schrecken .
@@ -1913,7 +1910,7 @@
 
 [IDENTIFICATION] Er (1)
 
-[IDENTIFICATION] es (3)
+[SITUATION] es (3)
 
 [CONCESSION] jedoch (4)
 [asserted] tat (2)
@@ -1939,7 +1936,7 @@
 4	mit	mit	ADP	APPR	_	7	case	_	_
 5	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	7	amod	_	_
-7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	8	obl	_	_
+7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 8	hinschrieb	hinschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	csubj	_	_
 9	oder	oder	CCONJ	KON	_	8	cc	_	_
 10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
@@ -1955,13 +1952,13 @@
 
 [] hinschrieb (8)
 [] er (2)
-[] nieder (3)
-[] mit dem Großen Bruder (7)
+[] nieder mit dem Großen Bruder (3)
 [] nicht (10)
 
 [] er (2)
 
 [] nieder (3)
+[] mit dem Großen Bruder (7)
 
 [] Bruder (7)
 [] Großen (6)
@@ -1991,13 +1988,13 @@
 12	Unterschied	Unterschied	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
 13	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] machte (10)
+[] machte (10) # # "nicht relevant sein"
 [] Ob er mit dem Tagebuch fortfuhr oder nicht , (6)
 [] keinen Unterschied (12)
 
-[] fortfuhr (6)
+[SCENE-CONTINUATION] fortfuhr (6)
 [] er (2)
-[] mit dem Tagebuch (5)
+[] mit dem Tagebuch (5) # [schreiben]
 [] nicht (8)
 
 [] er (2)
