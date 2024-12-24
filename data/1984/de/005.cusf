@@ -1150,7 +1150,7 @@
 [topic] Alles (1)
 [m-mode] nur (3)
 
-[CLASS] Alles (1) # # hier: Indefinitpronomen
+[?CLASS] Alles (1) # # hier: Indefinitpronomen
 
 [MODE] nur (3)
 
@@ -1309,16 +1309,16 @@
 
 [IDENTIFICATION] er (9)
 
-[?SCENE-INIT || ACTIVITY] machen (16) # # im Sinne von "etwas bewerkstelligen, zustande bringen, erreichen", Vgl. "es fertig brachte" im Manual?
-[?m-means] wie (13)
-[participant || is-active] er (14)
-[target-scene || activity] das (15)
+[SCENE] machen (16) # # im Sinne von "etwas bewerkstelligen, zustande bringen, erreichen", Vgl. "they wondered how Kim did it" im Manual
+[m-means] wie (13)
+[participant] er (14)
+[scene] das (15)
 
 [MEANS] wie (13)
 
 [IDENTIFICATION] er (14)
 
-[?SITUATION] das (15)
+[SITUATION] das (15)
 [?x-causer] er (14)
 
 # sent_id = 277
@@ -1656,10 +1656,10 @@
 [QUALITY] glatte (7)
 
 [MESSAGE-INIT] hingemalt (16)
-[?quality] in großer klarer Blockschrift (15)
+[m-quality] in großer klarer Blockschrift (15)
 [x-causer] Seine Feder (2)
 
-[QUALITY] Blockschrift (15) # # Vgl. "big red letters"??!
+[QUALITY] Blockschrift (15) # # Vgl. "big red letters"
 [m-quality] großer (13)
 [m-scene] klarer (14)
 
@@ -1838,9 +1838,9 @@
 
 [MODE] nicht (14)
 
-[?] Schritt (19) # # "(einem bestimmten Zweck dienende) Handlung; Maßnahme"
+[ACTIVITY] Schritt (19) # # "(einem bestimmten Zweck dienende) Handlung; Maßnahme"
 [m-rank] erste (18)
-[] , ein Tagebuch anzulegen (23)
+[activity] , ein Tagebuch anzulegen (23)
 
 [RANK] erste (18)
 
@@ -1962,7 +1962,7 @@
 [MESSAGE-INIT] hinschrieb (8)
 [x-causer] er (2)
 [target-content] nieder mit dem Großen Bruder (3)
-[?m-compared] nicht (10)
+[?m-compared] nicht (10) # # [oder nicht]
 
 [IDENTIFICATION] er (2)
 
@@ -2030,9 +2030,9 @@
 6	erwischen	erwischen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[MESSAGE-INIT >> POSSESSION-INIT] erwischen (6) # # "bei einem Vergehen o. Ä. ertappen" oder (weniger wahrscheinlich so gemeint): "nach einem Vergehen o. Ä. fassen, ergreifen"
-[x-causer >> target-possessor] Die Gedankenpolizei (2)
-[?topic ?x-sender >> possessed] ihn (4) # # gedanklich hinzufügen: [target-content] beim Tagebuch schreiben (...)
+[MESSAGE-INIT || POSSESSION-INIT] erwischen (6) # # "bei einem Vergehen o. Ä. ertappen" oder "nach einem Vergehen o. Ä. fassen, ergreifen"
+[x-causer || target-possessor] Die Gedankenpolizei (2)
+[?topic ?x-sender || possessed] ihn (4) # # gedanklich hinzufügen: [target-content] beim Tagebuch schreiben (...)
 [m-exception] trotzdem (5)
 
 [CLASS] Gedankenpolizei (2)

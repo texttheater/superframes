@@ -57,11 +57,11 @@
 [m-scene] blind ergebenen (14)
 [has-social-relation] Frauen (2)
 
-[SOCIAL-RELATION] ergebenen (14)
+[POSSESSION] ergebenen (14)
 [m-state >> m-quantity] blind (13)
-[has-social-relation] Parteianhänger (15)
+[possessed] Parteianhänger (15)
 
-[STATE] blind (13)
+[STATE >> QUANTITY] blind (13)
 
 [MESSAGE-CONTINUATION] Nachplapperer (19)
 [m-scene] gedankenlosen (18)
@@ -71,11 +71,12 @@
 [has-state] Nachplapperer (19)
 
 [MESSAGE-INIT] Spitzel (23)
-[m-state || m-social-relation] freiwilligen (22)
+[m-scene] freiwilligen (22)
 [m-scene] , mit deren Hilfe man weniger Linientreue aushorchen konnte (32)
 [x-experiencer] Frauen (2) # # manuell hinzugefügt
 
 [STATE || SOCIAL-RELATION] freiwilligen (22)
+[has-state || has-social-relation] Spitzel (23)
 
 [MESSAGE-INIT] aushorchen (32)
 [m-means] mit deren Hilfe (28)
@@ -451,7 +452,7 @@
 [POSSESSION] Inhaber (16)
 [possessed] eines so wichtigen und der Allgemeinheit entrückten Postens , dass Winston nur eine undeutliche Vorstellung davon hatte (24)
 
-[LOCATION >> SOCIAL-RELATION] Postens (24) # # ?? ACTIVITY?
+[LOCATION >> SOCIAL-RELATION] Postens (24) ## "Stelle, die jmdm. (besonders einer Wache) zugewiesen wurde und die während einer bestimmten Zeit nicht verlassen werden darf"
 [m-scene] so wichtigen , dass Winston nur eine undeutliche Vorstellung davon hatte (19)
 [m-scene] und der Allgemeinheit entrückten (23)
 
@@ -1872,10 +1873,11 @@
 [TIME] mehr (29)
 
 [CLASS] Männer (36)
-[m-quality] führenden (35)
+[m-rank || m-scene] führenden (35) ## "an der Spitze liegen, an oberster Stelle stehen", "das Geschehen in einem bestimmten Bereich bestimmend; maßgebend"
 [m-social-relation] der Partei (38)
 
-[QUALITY || SEQUENCE] führenden (35)
+[RANK || POSSESSION] führenden (35)
+[possessor] Männer (36)
 
 [SOCIAL-RELATION] Partei (38)
 
@@ -3665,7 +3667,7 @@
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
 [POSSESSION] Befehlshaber (4)
-[x-identified] Er (1)
+[possessor] Er (1)
 [possessed] einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
 
 [IDENTIFICATION] Er (1)
