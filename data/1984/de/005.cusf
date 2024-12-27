@@ -945,7 +945,7 @@
 
 [MODE] lediglich (21)
 
-[?MESSAGE] sagenhafte (23) # # "nur aus rühmenden Erwähnungen, Erzählungen anderer bekannt"
+[MESSAGE] sagenhafte (23) # # "nur aus rühmenden Erwähnungen, Erzählungen anderer bekannt"
 [topic] Erfindung (24)
 
 # sent_id = 271
@@ -1052,21 +1052,17 @@
 
 [QUALITY] flüchtige (8)
 
-[MESSAGE || SEQUENCE] bedeuten (15) # # Vgl. sent_id 49
-[topic || followed] die (11)
-[content || follows] alles (12)
-[content || follows] oder nichts (14)
-[topic || followed] Andeutungen : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah (9)
+[SEQUENCE] bedeuten (15) # # "~ Andeutungen, aus denen man alles oder nichts schlussfolgern kann"
+[followed] die (11)
+[follows] alles (12)
+[follows] oder nichts (14)
+[followed] Andeutungen : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah (9)
 
 [IDENTIFICATION] die (11)
 
 [CLASS] alles (12) # # hier: Indefinitpronomen
-[?] die (11)
-[?] Andeutungen (7)
 
 [CLASS] nichts (14)
-[?] die (11)
-[?] Andeutungen (7)
 
 [PART-WHOLE] Bruchstücke (18)
 [whole] erlauschter Gespräche (20)
@@ -1297,8 +1293,8 @@
 
 [IDENTIFICATION] Es (1)
 
-[?MESSAGE-POSSIBILITY-NEG] unvorstellbar (3)
-[topic] gefährlich (4)
+[MESSAGE-POSSIBILITY-NEG >> QUANTITY] unvorstellbar (3)
+[topic >> has-quantity] gefährlich (4)
 
 [MESSAGE] gewusst (10)
 [m-mode] selbst (7) # # "sogar"
@@ -1411,10 +1407,10 @@
 
 [STATE] abgeschlossenen (10)
 
-[SCENE-INIT] gezwungen (18)
+[SCENE-NECESSITY] gezwungen (18)
 [participant] in der (14)
 [participant] man (15)
-[target-scene] zu leben (17)
+[scene] zu leben (17)
 [participant] Einsamkeit (11)
 
 [IDENTIFICATION] der (14)
@@ -2032,7 +2028,7 @@
 
 [MESSAGE-INIT || POSSESSION-INIT] erwischen (6) # # "bei einem Vergehen o. Ä. ertappen" oder "nach einem Vergehen o. Ä. fassen, ergreifen"
 [x-causer || target-possessor] Die Gedankenpolizei (2)
-[?topic ?x-sender || possessed] ihn (4) # # gedanklich hinzufügen: [target-content] beim Tagebuch schreiben (...)
+[x-sender || possessed] ihn (4) # # gedanklich hinzufügen: [target-content] beim Tagebuch schreiben (...)
 [m-exception] trotzdem (5)
 
 [CLASS] Gedankenpolizei (2)
@@ -2206,9 +2202,9 @@
 
 [MODE] sogar (8)
 
-[?ACTIVITY >> CAUSATION] Winkelzüge (13) # # "geschicktes, nicht gleich durchschaubares Vorgehen zur Erreichung eines bestimmten, dem eigenen Interesse dienenden Ziels"
+[ACTIVITY >> CAUSATION] Winkelzüge (13) # # "geschicktes, nicht gleich durchschaubares Vorgehen zur Erreichung eines bestimmten, dem eigenen Interesse dienenden Ziels"
 [m-quality] schlaue (12)
-[?is-active >> causer] Man (1)
+[is-active >> causer] Man (1)
 
 [QUALITY] schlaue (12)
 
@@ -2216,7 +2212,7 @@
 [m-time] früher (17)
 [m-time] oder später (19)
 [x-experiencer] sie (21)
-[?topic ?x-sender] einem (22)
+[x-sender] einem (22) # # Vgl. sent_id 295 "erwischen"
 [m-scene] doch (23)
 [target-content] darauf (24)
 

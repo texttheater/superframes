@@ -296,7 +296,7 @@
 
 [MODE] sogar (36)
 
-[?SCENE-CONTINUATION] noch (37) # # vor dem Komparativ: "gibt an, dass etw. zu etw. Vorhandenem hinzukommt"
+[SCENE-CONTINUATION] noch (37) # # vor dem Komparativ: "gibt an, dass etw. zu etw. Vorhandenem hinzukommt"
 [initial-scene] mehr (35)
 
 [CLASS] Gedankenpolizei (41)
@@ -360,7 +360,7 @@
 
 [TIME] Jahren (3)
 [m-quantity] fünfunddreißig (2)
-[?has-time] er (5)
+[has-time] er (5)
 
 [QUANTITY] fünfunddreißig (2)
 
@@ -379,7 +379,7 @@
 
 [QUANTITY] sehr (8)
 
-[?SOCIAL-RELATION] Jugendliga (12)
+[?CLASS] Jugendliga (12)
 
 [SCENE-INIT] fertiggebracht (27)
 [m-follows] ehe er in die Jugendliga aufgerückt war , (21)
@@ -388,38 +388,41 @@
 [target-scene] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
 
 [RANK-CHANGE] aufgerückt (21) # # "befördert werden, [im Rang] aufsteigen"
-[?x-experiencer] er (17)
+[x-experiencer] er (17)
 [target-rank] in die Jugendliga (20)
 
 [IDENTIFICATION] er (17)
 
-[?SOCIAL-RELATION] Jugendliga (20)
+[?CLASS] Jugendliga (20)
 
 [IDENTIFICATION] er (25)
 
 [NONCOMP] es (26)
 
 [SCENE-CONTINUATION] verbleiben (41)
-[] ein Jahr (30)
-[] über das satzungsgemäß festgesetzte Alter hinaus (35)
+[m-time] ein Jahr (30)
+[participant] über das satzungsgemäß festgesetzte Alter hinaus (35)
 [initial-scene] bei den Spähern (39)
 [participant] er (25)
 
 [TIME] Jahr (30)
 
-[] Alter (35)
-[] satzungsgemäß festgesetzte (34)
-[] hinaus (36)
+[QUALITY] Alter (35)
+[m-scene] satzungsgemäß festgesetzte (34)
+[m-scene] hinaus (36)
 
-[] festgesetzte (34)
-[] satzungsgemäß (33)
+[SEQUENCE] festgesetzte (34) ## "festlegen: verbindlich beschließen, bestimmen, regeln, vorschreiben"
+[followed] satzungsgemäß (33)
+[follows] Alter (35)
 
-[] satzungsgemäß (33)
+[SEQUENCE] satzungsgemäß (33)
 
-[] hinaus (36)
+[SCENE-CONTINUATION] hinaus (36)
+[initial-scene] Alter (35)
 
 [MESSAGE-INIT >> SOCIAL-RELATION] Spähern (39) # # hier als Verein gemeint, sonst:  "jemand, der etwas auskundschaften soll; Kundschafter", Vgl. sent_id 151 "Spitzel"
 [x-experiencer >> has-social-relation] er (25)
+[?condition] über das satzungsgemäß festgesetzte Alter hinaus (35)
 
 # sent_id = 358
 # text = Im Ministerium wurde er auf einem untergeordneten Posten verwendet , für den kein Verstand nötig war , doch war er andererseits ein führender Mann beim Sportausschuss und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand .
@@ -474,7 +477,7 @@
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
 [?MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
-[?m-depictive || m-location] Im Ministerium (2) # # Posten im Ministerium?
+[m-location >> ?m-depictive] Im Ministerium (2) # # Posten im Ministerium?
 [means] er (4)
 [?] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
@@ -1512,7 +1515,7 @@
 
 [SOCIAL-RELATION] Bruder (24)
 [has-social-relation] ihrem (23)
-[m-activity] jede Bewegung (26) 
+[m-activity] jede Bewegung (26)
 
 [IDENTIFICATION] ihrem (23)
 
