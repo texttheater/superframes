@@ -8,13 +8,13 @@
 6	Titel	Titel	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	4	nmod	_	_
 7	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Buch (4)
-[] Es (1)
-[] ohne Titel (6)
+[MESSAGE] Buch (4)
+[m-noncomp] Es (1)
+[topic] ohne Titel (6)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] Titel (6)
+[CLASS] Titel (6)
 
 # sent_id = 202
 # text = Die Leute sprachen davon , wenn überhaupt , einfach als von » dem Buch « .
@@ -23,7 +23,7 @@
 3	sprachen	sprechen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	davon	davon	ADP	PROAV	PronType=Dem	3	advmod	_	_
 5	,	,	PUNCT	$,	_	9	punct	_	_
-6	wenn	wenn	SCONJ	KOUS	_	9	mark	_	_
+6	wenn	wenn	SCONJ	KOUS	_	7	mark	_	_
 7	überhaupt	überhaupt	ADV	ADV	_	3	advmod	_	_
 8	,	,	PUNCT	$,	_	7	punct	_	_
 9	einfach	einfach	ADV	ADV	_	3	advmod	_	_
@@ -35,25 +35,25 @@
 15	«	«	PUNCT	$(	_	14	punct	_	_
 16	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] sprachen (3)
-[] Die Leute (2)
-[] davon (4)
-[] überhaupt , (7)
-[] , wenn einfach (9)
-[] als von » dem Buch « (10)
+[MESSAGE] sprachen (3)
+[x-sender] Die Leute (2)
+[topic] davon (4)
+[m-condition] wenn überhaupt , (7)
+[m-mode] einfach (9)
+[content] als von » dem Buch « (10)
 
-[] Leute (2)
+[CLASS] Leute (2)
 
-[] davon (4)
+[IDENTIFICATION] davon (4)
 
-[] überhaupt (7)
+[CONDITION] überhaupt (7)
 
-[] einfach (9)
+[MODE] einfach (9)
 
 [] als (10)
 [] von » dem Buch « (14)
 
-[] Buch (14)
+[CLASS] Buch (14)
 
 # sent_id = 203
 # text = Aber man wusste von derlei Dingen nur durch vage Gerüchte .
@@ -69,22 +69,22 @@
 10	Gerüchte	Gerücht	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	3	obl	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] wusste (3)
-[] man (2)
-[] von derlei Dingen (6)
-[] nur durch vage Gerüchte (10)
+[MESSAGE] wusste (3)
+[x-experiencer] man (2)
+[topic] von derlei Dingen (6)
+[m-means] nur durch vage Gerüchte (10)
 
-[] man (2)
+[IDENTIFICATION] man (2)
 
-[] Dingen (6)
+[CLASS] Dingen (6)
 
-[] Gerüchte (10)
-[] nur (7)
-[] vage (9)
+[MESSAGE] Gerüchte (10)
+[m-quantity] nur (7)
+[m-quality] vage (9)
 
-[] nur (7)
+[QUANTITY] nur (7)
 
-[] vage (9)
+[QUALITY] vage (9)
 
 # sent_id = 204
 # text = Weder » Die Bruderschaft « noch » das Buch « wurde , wenn es sich vermeiden ließ , von einem gewöhnlichen Parteimitglied erwähnt .
@@ -113,30 +113,30 @@
 23	erwähnt	erwähnen	VERB	VVPP	Verbform=Part	0	root	_	_
 24	.	.	PUNCT	$.	_	23	punct	_	_
 
-[] erwähnt (23)
-[] Weder » Die Bruderschaft « noch » das Buch « (4)
-[] , wenn es sich vermeiden ließ , (17)
-[] von einem gewöhnlichen Parteimitglied (22)
+[MESSAGE] erwähnt (23)
+[content] Weder » Die Bruderschaft « noch » das Buch « (4)
+[m-condition] , wenn es sich vermeiden ließ , (17)
+[x-sender] von einem gewöhnlichen Parteimitglied (22)
 
-[] Bruderschaft (4)
+[SOCIAL-RELATION] Bruderschaft (4)
 
-[] Buch (9)
+[CLASS] Buch (9)
 
-[] ließ (17)
-[] es (14)
-[] sich (15)
-[] vermeiden (16)
+[SCENE-NEG] ließ (17)
+[participant] es (14)
+[participant] sich (15)
+[scene] vermeiden (16)
 
-[] es (14)
+[NONCOMP] es (14)
 
-[] sich (15)
+[IDENTIFICATION] sich (15)
 
-[] vermeiden (16)
+[STATE-NEG] vermeiden (16)
 
-[] Parteimitglied (22)
-[] gewöhnlichen (21)
+[SOCIAL-RELATION] Parteimitglied (22)
+[m-quality] gewöhnlichen (21)
 
-[] gewöhnlichen (21)
+[QUALITY] gewöhnlichen (21)
 
 # sent_id = 205
 # text = In der zweiten Minute steigerte sich die Hassovation zur Raserei .
@@ -152,22 +152,22 @@
 10	Raserei	Raserei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	5	obl	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] steigerte (5)
-[] In der zweiten Minute (4)
-[] sich (6)
-[] die Hassovation (8)
-[] zur Raserei (10)
+[SEQUENCE-CHANGE] steigerte (5)
+[m-time] In der zweiten Minute (4)
+[m-noncomp] sich (6)
+[followed] die Hassovation (8)
+[follows] zur Raserei (10)
 
-[] Minute (4)
-[] zweiten (3)
+[TIME] Minute (4)
+[m-rank] zweiten (3)
 
-[] zweiten (3)
+[RANK] zweiten (3)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] Hassovation (8)
+[MESSAGE] Hassovation (8)
 
-[] Raserei (10)
+[STATE] Raserei (10)
 
 # sent_id = 206
 # text = Die Menschen sprangen von ihren Sitzen auf und schrien mit vollem Stimmaufwand , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen .
@@ -201,48 +201,49 @@
 28	übertönen	übertönen	VERB	VVINF	VerbForm=Inf	9	xcomp	_	_
 29	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] sprangen (3)
-[] Die Menschen (2)
-[] von ihren Sitzen (6)
-[] auf (7)
+[LOCATION-CHANGE] sprangen (3)
+[has-location] Die Menschen (2)
+[initial-location] von ihren Sitzen (6)
+[target-location] auf (7)
 
-[] Menschen (2)
+[CLASS] Menschen (2)
 
-[] Sitzen (6)
-[] ihren (5)
+[CLASS] Sitzen (6)
+[m-identifier] ihren (5)
 
-[] ihren (5)
+[IDENTIFICATION] ihren (5)
 
-[] auf (7)
+[MESSAGE-INIT] schrien (9)
+[m-means] mit vollem Stimmaufwand (12)
+[m-scene] , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen (28)
+[x-sender] Menschen (2)
 
-[] schrien (9)
-[] mit vollem Stimmaufwand (12)
-[] , um die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , zu übertönen (28)
+[CLASS] Stimmaufwand (12)
+[m-quantity] vollem (11)
 
-[] Stimmaufwand (12)
-[] vollem (11)
+[QUANTITY] vollem (11)
 
-[] vollem (11)
+[MESSAGE-INIT] übertönen (28)
+[topic] die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , (19)
+[x-sender] Menschen (2)
 
-[] übertönen (28)
-[] die zum Wahnsinn treibende Blökstimme , die aus dem Televisor kam , (19)
+[CLASS] Blökstimme (19)
+[m-scene] zum Wahnsinn treibende (18)
+[m-scene] , die aus dem Televisor kam (25)
 
-[] Blökstimme (19)
-[] zum Wahnsinn treibende (18)
-[] , die aus dem Televisor kam (25)
+[scene-init] treibende (18)
+[target-scene] zum Wahnsinn (17)
+[x-causer] Blöckstimme (19)
 
-[] treibende (18)
-[] zum Wahnsinn (17)
+[STATE] Wahnsinn (17)
 
-[] Wahnsinn (17)
+[LOCATION-CHANGE] kam (25)
+[has-location] die (21)
+[initial-location] aus dem Televisor (24)
 
-[] kam (25)
-[] die (21)
-[] aus dem Televisor (24)
+[IDENTIFICATION] die (21)
 
-[] die (21)
-
-[] Televisor (24)
+[CLASS] Televisor (24)
 
 # sent_id = 207
 # text = Die kleine aschblonde Frau war im Gesicht rot angelaufen , und ihr Mund öffnete und schloss sich wie bei einem an Land geworfenen Fisch .
@@ -272,44 +273,45 @@
 24	Fisch	Fisch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
 25	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] angelaufen (9)
-[] Die kleine aschblonde Frau (4)
-[] im Gesicht (7)
-[] rot (8)
+[STATE-CHANGE] angelaufen (9)
+[has-state] Die kleine aschblonde Frau (4)
+[m-attribute] im Gesicht (7)
+[target-state] rot (8)
 
-[] Frau (4)
-[] kleine (2)
-[] aschblonde (3)
+[CLASS] Frau (4)
+[m-quality] kleine (2)
+[m-quality] aschblonde (3)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] aschblonde (3)
+[QUALITY] aschblonde (3)
 
-[] Gesicht (7)
+[CLASS] Gesicht (7)
 
-[] rot (8)
+[QUALITY] rot (8)
 
-[] öffnete (14)
+[STATE-CHANGE] öffnete (14)
 [] ihr Mund (13)
 
-[] Mund (13)
-[] ihr (12)
+[CLASS] Mund (13)
+[m-identifier] ihr (12)
 
-[] ihr (12)
+[IDENTIFICATION] ihr (12)
 
-[] schloss (16)
+[STATE-CHANGE] schloss (16)
 [] sich (17)
 [] wie bei einem an Land geworfenen Fisch (24)
 
-[] sich (17)
+[NONCOMP] sich (17)
 
-[] Fisch (24)
-[] an Land geworfenen (23)
+[CLASS] Fisch (24)
+[m-scene] an Land geworfenen (23)
 
-[] geworfenen (23)
-[] an Land (22)
+[LOCATION-INIT] geworfenen (23)
+[target-location] an Land (22)
+[has-location] Fisch (24)
 
-[] Land (22)
+[CLASS || LOCATION-INIT] Land (22)
 
 # sent_id = 208
 # text = Sogar O'Briens großes Gesicht war gerötet .
@@ -321,19 +323,19 @@
 6	gerötet	röten	VERB	VVPP	Verbform=Part	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gerötet (6)
+[STATE-INIThas-state] gerötet (6)
 [] Sogar O'Briens großes Gesicht (4)
 
-[] Gesicht (4)
-[] Sogar (1)
-[] O'Briens (2)
-[] großes (3)
+[PART-WHOLE] Gesicht (4)
+[m-mode] Sogar (1)
+[whole] O'Briens (2)
+[m-quality] großes (3)
 
-[] Sogar (1)
+[MODE] Sogar (1)
 
-[] O'Briens (2)
+[IDENTIFICATION] O'Briens (2)
 
-[] großes (3)
+[QUALITY] großes (3)
 
 # sent_id = 209
 # text = Er saß sehr gerade aufgerichtet auf seinem Stuhl , seine mächtige Brust hob und senkte sich , als stemme er sich dem Anprall einer Woge entgegen .
@@ -365,59 +367,57 @@
 26	entgegen	entgegen	ADP	PTKVZ	_	19	compound:prt	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] saß (2)
-[] Er (1)
-[] sehr gerade aufgerichtet (5)
-[] auf seinem Stuhl (8)
-[] , als stemme er sich dem Anprall einer Woge entgegen (19)
+[LOCATION-CONTINUATION] saß (2)
+[has-location] Er (1)
+[m-depictive] sehr gerade aufgerichtet (5)
+[location] auf seinem Stuhl (8)
+[m-scene] , als stemme er sich dem Anprall einer Woge entgegen (19)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] aufgerichtet (5)
+[SCENE] aufgerichtet (5)
 [] sehr gerade (4)
 
-[] gerade (4)
-[] sehr (3)
+[QUALITY] gerade (4)
+[m-quantity] sehr (3)
 
-[] sehr (3)
+[QUANTITY] sehr (3)
 
-[] Stuhl (8)
-[] seinem (7)
+[POSSESSION] Stuhl (8)
+[possessor] seinem (7)
 
-[] seinem (7)
+[IDENTIFICATION] seinem (7)
 
-[] hob (13)
-[] seine mächtige Brust (12)
+[LOCATION-CHANGE] hob (13)
+[has-location] seine mächtige Brust (12)
 
-[] Brust (12)
-[] seine (10)
-[] mächtige (11)
+[PART-WHOLE] Brust (12)
+[whole] seine (10)
+[m-quality] mächtige (11)
 
-[] seine (10)
+[IDENTIFICATION] seine (10)
 
-[] mächtige (11)
+[QUALITY] mächtige (11)
 
-[] senkte (15)
-[] sich (16)
+[LOCATION-CHANGE] senkte (15)
+[has-location] sich (16)
 
-[] sich (16)
+[IDENTIFICATION] sich (16)
 
-[] stemme (19)
-[] er (20)
-[] sich (21)
-[] dem Anprall einer Woge (23)
-[] entgegen (26)
+[SCENE-INIT] stemme (19)
+[participant] er (20)
+[m-noncomp] sich (21)
+[target-scene] dem Anprall einer Woge (23)
+[target-scene] entgegen (26)
 
-[] er (20)
+[IDENTIFICATION] er (20)
 
-[] sich (21)
+[NONCOMP] sich (21)
 
-[] Anprall (23)
-[] einer Woge (25)
+[SCENE-INIT] Anprall (23)
+[x-causer] einer Woge (25)
 
-[] Woge (25)
-
-[] entgegen (26)
+[CLASS] Woge (25)
 
 # sent_id = 210
 # text = Das dunkelhaarige Mädchen hinter Winston hatte angefangen » Schwein ! Schwein ! Schwein ! « hinauszuschreien und ergriff plötzlich ein schweres Wörterbuch der Neusprache und schleuderte es gegen den Sehschirm .
@@ -453,49 +453,42 @@
 30	Sehschirm	Sehschirm	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	26	obl	_	_
 31	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] angefangen (7)
-[] Das dunkelhaarige Mädchen hinter Winston (3)
-[] » Schwein ! Schwein ! Schwein ! « hinauszuschreien (16)
+[SCENE-INIT] angefangen (7)
+[participant] Das dunkelhaarige Mädchen hinter Winston (3)
+[scene] » Schwein ! Schwein ! Schwein ! « hinauszuschreien (16)
 
-[] Mädchen (3)
-[] dunkelhaarige (2)
-[] hinter Winston (5)
+[CLASS] Mädchen (3)
+[m-quality] dunkelhaarige (2)
+[m-location] hinter Winston (5)
 
-[] dunkelhaarige (2)
+[QUALITY] dunkelhaarige (2)
 
-[] Winston (5)
+[IDENTIFICATION] Winston (5)
 
-[] hinauszuschreien (16)
-[] » Schwein ! Schwein ! Schwein ! « (9)
+[MESSAGE-INIT] hinauszuschreien (16)
+[content] » Schwein ! Schwein ! Schwein ! « (9)
 
-[] Schwein (9)
-[] ! Schwein (11)
+[LOCATION-INIT] ergriff (18)
+[m-time] plötzlich (19)
+[has-location] ein schweres Wörterbuch der Neusprache (22)
 
-[] Schwein (11)
+[TIME] plötzlich (19)
 
-[] Schwein (13)
+[MESSAGE] Wörterbuch (22)
+[m-quality] schweres (21)
+[m-depictive] der Neusprache (24)
 
-[] ergriff (18)
-[] plötzlich (19)
-[] ein schweres Wörterbuch der Neusprache (22)
+[QUALITY] schweres (21)
 
-[] plötzlich (19)
+[CLASS] Neusprache (24)
 
-[] Wörterbuch (22)
-[] schweres (21)
-[] der Neusprache (24)
+[LOCATION-CHANGE] schleuderte (26)
+[has-location] es (27)
+[target-location] gegen den Sehschirm (30)
 
-[] schweres (21)
+[IDENTIFICATION] es (27)
 
-[] Neusprache (24)
-
-[] schleuderte (26)
-[] es (27)
-[] gegen den Sehschirm (30)
-
-[] es (27)
-
-[] Sehschirm (30)
+[CLASS] Sehschirm (30)
 
 # sent_id = 211
 # text = Es traf Goldsteins Nase und prallte von ihm ab ; die Stimme redete unerbittlich weiter .
@@ -516,35 +509,31 @@
 15	weiter	weiter	ADP	PTKVZ	_	13	compound:prt	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] traf (2)
-[] Es (1)
-[] Goldsteins Nase (4)
+[LOCATION-INIT] traf (2)
+[has-location] Es (1)
+[target-location] Goldsteins Nase (4)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Nase (4)
-[] Goldsteins (3)
+[CLASS] Nase (4)
+[m-identifier] Goldsteins (3)
 
-[] Goldsteins (3)
+[IDENTIFICATION] Goldsteins (3)
 
-[] prallte (6)
-[] von ihm (8)
-[] ab (9)
+[LOCATION-CHANGE] prallte (6)
+[initial-location] von ihm (8)
+[m-noncomp] ab (9)
 
-[] ihm (8)
+[IDENTIFICATION] ihm (8)
 
-[] ab (9)
+[MESSAGE-INIT] redete (13)
+[x-causer] die Stimme (12)
+[m-quality] unerbittlich (14)
+[m-noncomp] weiter (15)
 
-[] redete (13)
-[] die Stimme (12)
-[] unerbittlich (14)
-[] weiter (15)
+[CLASS] Stimme (12)
 
-[] Stimme (12)
-
-[] unerbittlich (14)
-
-[] weiter (15)
+[QUALITY] unerbittlich (14)
 
 # sent_id = 212
 # text = In einem lichten Augenblick ertappte sich Winston , wie er mit den anderen schrie und trampelte .
@@ -563,36 +552,39 @@
 13	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	14	obl	_	_
 14	schrie	schreien	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 15	und	und	CCONJ	KON	_	16	cc	_	_
-16	trampelte	trampeln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	_	_
+16	trampelte	trampeln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 17	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] ertappte (5)
-[] In einem lichten Augenblick (4)
-[] sich (6)
-[] Winston (7)
-[] , wie er mit den anderen schrie und trampelte (14)
+[MESSAGE-INIT] ertappte (5)
+[m-time] In einem lichten Augenblick (4)
+[m-noncomp] sich (6)
+[x-experiencer] Winston (7)
+[m-scene] , wie er mit den anderen schrie und trampelte (14)
 
-[] Augenblick (4)
-[] lichten (3)
+[TIME] Augenblick (4)
+[m-quality] lichten (3)
 
-[] lichten (3)
+[QUALITY] lichten (3)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] Winston (7)
+[IDENTIFICATION] Winston (7)
 
-[] schrie (14)
+[MESSAGE] schrie (14)
+[m-comparison] wie (9)
+[x-causer] er (10)
+[m-accompanier] mit den anderen (13)
+
+[SCENE] trampelte (16)
 [] wie (9)
 [] er (10)
 [] mit den anderen (13)
 
-[] wie (9)
+[COMPARISON] wie (9)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] anderen (13)
-
-[] trampelte (16)
+[IDENTIFICATION] anderen (13)
 
 # sent_id = 213
 # text = Das Schreckliche an der Zwei-Minuten-Hass-Sendung war nicht , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen .
@@ -626,45 +618,45 @@
 28	entziehen	entziehen	VERB	VVINF	VerbForm=Inf	21	xcomp	_	_
 29	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] war (6)
-[] Das Schreckliche an der Zwei-Minuten-Hass-Sendung nicht , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (2)
+[SCENE] war (6)
+[scene] Das Schreckliche an der Zwei-Minuten-Hass-Sendung nicht , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (2)
 
-[] Schreckliche (2)
-[] an der Zwei-Minuten-Hass-Sendung (5)
-[] nicht (7)
-[] , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (11)
+[QUALITY] Schreckliche (2)
+[has-quality] an der Zwei-Minuten-Hass-Sendung (5)
+[m-mode] nicht (7)
+[m-scene] , dass man gezwungen wurde mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (11)
 
-[] Zwei-Minuten-Hass-Sendung (5)
+[MESSAGE] Zwei-Minuten-Hass-Sendung (5)
 
-[] nicht (7)
+[MODE] nicht (7)
 
-[] gezwungen (11)
-[] man (10)
-[] mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (13)
+[CAUSATION] gezwungen (11)
+[causer] man (10)
+[result] mitzumachen , sondern im Gegenteil , dass es unmöglich war , sich ihrer Wirkung zu entziehen (13)
 
-[] man (10)
+[IDENTIFICATION] man (10)
 
-[] mitzumachen (13)
+[ACTIVITY] mitzumachen (13)
 
-[] Gegenteil (17)
-[] , dass es unmöglich war , sich ihrer Wirkung zu entziehen (21)
+[MESSAGE] Gegenteil (17)
+[m-scene] , dass es unmöglich war , sich ihrer Wirkung zu entziehen (21)
 
-[] unmöglich (21)
-[] es (20)
-[] , sich ihrer Wirkung zu entziehen (28)
+[SCENE-PREVENTION] unmöglich (21)
+[participant] es (20)
+[scene] , sich ihrer Wirkung zu entziehen (28)
 
-[] es (20)
+[IDENTIFICATION] es (20)
 
-[] entziehen (28)
-[] sich (24)
-[] ihrer Wirkung (26)
+[SCENE-DEINIT] entziehen (28)
+[participant] sich (24)
+[scene] ihrer Wirkung (26)
 
-[] sich (24)
+[IDENTIFICATION] sich (24)
 
-[] Wirkung (26)
-[] ihrer (25)
+[MESSAGE] Wirkung (26)
+[topic] ihrer (25)
 
-[] ihrer (25)
+[IDENTIFICATION] ihrer (25)
 
 # sent_id = 214
 # text = Eine schreckliche Ekstase der Angst und der Rachsucht , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , schien die ganze Versammlung wie ein elektrischer Strom zu durchfluten , so dass man gegen seinen Willen in eine Grimasse schneidenden , schreienden Verrückten verwandelt wurde .
@@ -720,75 +712,75 @@
 50	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	49	aux:pass	_	_
 51	.	.	PUNCT	$.	_	25	punct	_	_
 
-[] schien (25)
-[] Eine schreckliche Ekstase der Angst und der Rachsucht , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (3)
-[] die ganze Versammlung (28)
-[] wie ein elektrischer Strom zu durchfluten (34)
-[] , so dass man gegen seinen Willen in eine Grimasse schneidenden , schreienden Verrückten verwandelt wurde (49)
+[SCENE] schien (25)
+[participant] Eine schreckliche Ekstase der Angst und der Rachsucht , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (3)
+[participant] die ganze Versammlung (28)
+[scene] wie ein elektrischer Strom zu durchfluten (34)
+[m-scene] , so dass man gegen seinen Willen in eine Grimasse schneidenden , schreienden Verrückten verwandelt wurde (49)
 
-[] Ekstase (3)
-[] schreckliche (2)
+[MESSAGE] Ekstase (3)
+[m-quality] schreckliche (2)
 [] der Angst und der Rachsucht (5)
-[] , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (13)
+[m-scene] , das Verlangen zu töten , zu foltern , Gesichter mit einem Vorschlaghammer zu zertrümmern , (13)
 
-[] schreckliche (2)
+[QUALITY] schreckliche (2)
 
-[] Angst (5)
+[MESSAGE] Angst (5)
 
-[] Rachsucht (8)
+[MESSAGE] Rachsucht (8)
 
-[] töten (13)
-[] das Verlangen (11)
+[DESTRUCTION] töten (13)
+[m-scene] das Verlangen (11)
 
-[] Verlangen (11)
+[STATE] Verlangen (11)
 
-[] foltern (16)
+[DESTRUCTION] foltern (16)
 
-[] zertrümmern (23)
+[DESTRUCTION] zertrümmern (23)
 [] Gesichter (18)
-[] mit einem Vorschlaghammer (21)
+[m-means] mit einem Vorschlaghammer (21)
 
-[] Gesichter (18)
+[CLASS] Gesichter (18)
 
-[] Vorschlaghammer (21)
+[MEAN] Vorschlaghammer (21)
 
-[] Versammlung (28)
-[] ganze (27)
+[CLASS || SOCIAL-RELATION] Versammlung (28)
+[m-quality] ganze (27)
 
-[] ganze (27)
+[QUANTITY] ganze (27)
 
-[] durchfluten (34)
-[] wie ein elektrischer Strom (32)
+[UNANCHORED-MOTION] durchfluten (34)
+[m-depictive] wie ein elektrischer Strom (32)
 
-[] Strom (32)
-[] elektrischer (31)
+[CLASS] Strom (32)
+[m-depictive] elektrischer (31)
 
-[] elektrischer (31)
+[QUALITY] elektrischer (31)
 
-[] verwandelt (49)
-[] so (36)
-[] man (38)
-[] gegen seinen Willen (41)
-[] in eine Grimasse schneidenden , schreienden Verrückten (48)
+[TRANSFORMATION-CHANGE] verwandelt (49)
+[m-mode] so (36)
+[material] man (38)
+[m-concession] gegen seinen Willen (41)
+[created] in eine Grimasse schneidenden , schreienden Verrückten (48)
 
-[] so (36)
+[MODE] so (36)
 
-[] man (38)
+[IDENTIFICATION] man (38)
 
-[] Willen (41)
-[] seinen (40)
+[MESSAGE] Willen (41)
+[m-identifier] seinen (40)
 
-[] seinen (40)
+[IDENTIFICATION] seinen (40)
 
-[] Verrückten (48)
-[] in eine Grimasse schneidenden , schreienden (45)
+[STATE] Verrückten (48)
+[m-scene] in eine Grimasse schneidenden , schreienden (45)
 
-[] schneidenden (45)
-[] in eine Grimasse (44)
+[SCENE-INIT] schneidenden (45)
+[target-scene] in eine Grimasse (44)
 
-[] Grimasse (44)
+[STATE || MESSAGE] Grimasse (44)
 
-[] schreienden (47)
+[SCENE] schreienden (47)
 
 # sent_id = 215
 # text = Und doch war der Zorn , den man empfand , eine abstrakte , ziellose Regung , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte .
@@ -825,45 +817,45 @@
 31	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	aux	_	_
 32	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] Regung (15)
-[] doch (2)
-[] der Zorn , den man empfand , (5)
-[] abstrakte , ziellose (12)
-[] , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte (29)
+[MESSAGE] Regung (15)
+[m-mode] doch (2)
+[content] der Zorn , den man empfand , (5)
+[m-quality] abstrakte , ziellose (12)
+[m-scene] , die wie der Schein einer Blendlaterne von einem Gegenstand auf den anderen gerichtet werden konnte (29)
 
-[] doch (2)
+[MODE] doch (2)
 
-[] Zorn (5)
-[] , den man empfand (9)
+[MESSAGE] Zorn (5)
+[m-scene] , den man empfand (9)
 
-[] empfand (9)
-[] den (7)
-[] man (8)
+[MESSAGE] empfand (9)
+[content] den (7)
+[x-experiencer] man (8)
 
-[] den (7)
+[IDENTIFICATION] den (7)
 
-[] man (8)
+[IDENTIFICATION] man (8)
 
-[] abstrakte (12)
+[QUALITY] abstrakte (12)
 
-[] ziellose (14)
+[MEANS-NEG >> QUALITY] ziellose (14)
 
-[] gerichtet (29)
-[] die (17)
-[] wie der Schein einer Blendlaterne (20)
-[] von einem Gegenstand (25)
-[] auf den anderen (28)
+[LOCATION-CHANGE] gerichtet (29)
+[has-location] die (17)
+[m-scene] wie der Schein einer Blendlaterne (20)
+[initial-location] von einem Gegenstand (25)
+[target-location] auf den anderen (28)
 
-[] die (17)
+[IDENTIFICATION] die (17)
 
-[] Schein (20)
-[] einer Blendlaterne (22)
+[CLASS] Schein (20)
+[m-identifier] einer Blendlaterne (22)
 
-[] Blendlaterne (22)
+[CLASS] Blendlaterne (22)
 
-[] Gegenstand (25)
+[CLASS] Gegenstand (25)
 
-[] anderen (28)
+[CLASS] anderen (28)
 
 # sent_id = 216
 # text = So war für einen Augenblick der Hass Winstons durchaus nicht gegen Goldstein gerichtet , sondern im Gegenteil gegen den Großen Bruder , gegen die Partei und die Gedankenpolizei .
@@ -897,40 +889,41 @@
 28	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	25	conj	_	_
 29	.	.	PUNCT	$.	_	13	punct	_	_
 
-[] gerichtet (13)
-[] So (1)
-[] für einen Augenblick (5)
-[] der Hass Winstons (7)
-[] durchaus nicht (10)
-[] gegen Goldstein (12)
+[SENDING] gerichtet (13)
+[m-scene] So (1)
+[m-time] für einen Augenblick (5)
+[sent] der Hass Winstons (7)
+[m-mode] durchaus nicht (10)
+[x-experiencer] gegen Goldstein (12)
 
-[] So (1)
+[SUBCLASS] So (1)
+[subclass] gerichtet (13)
 
-[] Augenblick (5)
+[TIME] Augenblick (5)
 
-[] Hass (7)
-[] Winstons (8)
+[MESSAGE] Hass (7)
+[m-identifier] Winstons (8)
 
-[] Winstons (8)
+[IDENTIFICATION] Winstons (8)
 
-[] nicht (10)
-[] durchaus (9)
+[MODE] nicht (10)
+[m-mode] durchaus (9)
 
-[] durchaus (9)
+[MODE] durchaus (9)
 
-[] Goldstein (12)
+[IDENTIFICATION] Goldstein (12)
 
-[] Gegenteil (17)
-[] gegen den Großen Bruder , gegen die Partei und die Gedankenpolizei (21)
+[CLASS] Gegenteil (17)
+[m-scene] gegen den Großen Bruder , gegen die Partei und die Gedankenpolizei (21)
 
-[] Bruder (21)
-[] Großen (20)
+[IDENTIFICATION] Bruder (21)
+[m-noncomp] Großen (20)
 
-[] Großen (20)
+[NONCOMP] Großen (20)
 
-[] Partei (25)
+[CLASS] Partei (25)
 
-[] Gedankenpolizei (28)
+[CLASS] Gedankenpolizei (28)
 
 # sent_id = 217
 # text = Und in solchen Augenblicken schwoll sein Herz über für den einsamen , verachteten Abtrünnigen auf dem Sehschirm , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen .
@@ -966,44 +959,45 @@
 30	Lügen	Lüge	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	28	nmod	_	_
 31	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] schwoll (5)
-[] in solchen Augenblicken (4)
-[] sein Herz (7)
-[] über für den einsamen , verachteten Abtrünnigen auf dem Sehschirm , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
+[MESSAGE] schwoll (5)
+[M-time] in solchen Augenblicken (4)
+[excreter >> X-noncomp] sein Herz (7)
+[m-noncomp] über (8)
+[m-experiencer >> topic] für den einsamen , verachteten Abtrünnigen auf dem Sehschirm , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
 
-[] Augenblicken (4)
+[TIME] Augenblicken (4)
 
-[] Herz (7)
-[] sein (6)
+[PART-WHOLE >> MESSAGE-INIT] Herz (7)
+[whole >> x-experiencer] sein (6)
 
-[] sein (6)
+[POSSESSION] sein (6)
 
-[] Abtrünnigen (14)
-[] einsamen , verachteten (11)
-[] auf dem Sehschirm (17)
-[] , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (21)
+[CLASS] Abtrünnigen (14)
+[m-quality] einsamen , verachteten (11)
+[m-location] auf dem Sehschirm (17)
+[x-scene] , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (21)
 
-[] einsamen (11)
+[QUALITY] einsamen (11)
 
-[] verachteten (13)
+[MESSAGE] verachteten (13)
 
-[] Sehschirm (17)
+[CLASS] Sehschirm (17)
 
-[] Verfechter (21)
-[] einzigen (20)
-[] von Wahrheit und Vernunft (23)
-[] in einer Welt der Lügen (28)
+[MESSAGE-INIT] Verfechter (21)
+[m-quantity] einzigen (20)
+[topic] von Wahrheit und Vernunft (23)
+[m-location] in einer Welt der Lügen (28)
 
-[] einzigen (20)
+[QUANTITY] einzigen (20)
 
-[] Wahrheit (23)
+[MESSAGE] Wahrheit (23)
 
-[] Vernunft (25)
+[MESSAGE] Vernunft (25)
 
-[] Welt (28)
-[] der Lügen (30)
+[LOCATION] Welt (28)
+[has-location] der Lügen (30)
 
-[] Lügen (30)
+[CLASS] Lügen (30)
 
 # sent_id = 218
 # text = Und doch fühlte er sich im nächsten Augenblick wieder eins mit den ihn umgebenden Menschen , und alle Behauptungen über Goldstein schienen ihm wahr .
@@ -1033,51 +1027,51 @@
 24	wahr	wahr	ADJ	ADJD	_	22	compound:prt	_	_
 25	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] fühlte (3)
-[] doch (2)
-[] er (4)
-[] sich (5)
-[] im nächsten Augenblick (8)
-[] wieder (9)
-[] eins mit den ihn umgebenden Menschen (10)
+[MESSAGE] fühlte (3)
+[m-mode] doch (2)
+[x-experiencer] er (4)
+[m-noncomp] sich (5)
+[m-time] im nächsten Augenblick (8)
+[m-time] wieder (9)
+[topic] eins mit den ihn umgebenden Menschen (10)
 
-[] doch (2)
+[MODE] doch (2)
 
-[] er (4)
+[IDENTIFICATION] er (4)
 
-[] sich (5)
+[NONCOMP] sich (5)
 
-[] Augenblick (8)
-[] nächsten (7)
+[TIME] Augenblick (8)
+[followed] nächsten (7)
 
-[] nächsten (7)
+[SEQUENCE >> TIME] nächsten (7)
 
-[] wieder (9)
+[TIME] wieder (9)
 
-[] eins (10)
-[] mit den ihn umgebenden Menschen (15)
+[ACCOMPANIMENT] eins (10)
+[accompanied] mit den ihn umgebenden Menschen (15)
 
-[] Menschen (15)
-[] ihn umgebenden (14)
+[CLASS] Menschen (15)
+[x-scene] ihn umgebenden (14)
 
-[] umgebenden (14)
-[] ihn (13)
+[SCENE] umgebenden (14)
+[participant] ihn (13)
 
-[] ihn (13)
+[IDENTIFICATION] ihn (13)
 
-[] schienen (22)
-[] alle Behauptungen über Goldstein (19)
-[] ihm (23)
-[] wahr (24)
+[MESSAGE] schienen (22)
+[topic] alle Behauptungen über Goldstein (19)
+[x-experiencer] ihm (23)
+[cintent] wahr (24)
 
-[] Behauptungen (19)
-[] über Goldstein (21)
+[MESSAGE] Behauptungen (19)
+[topic] über Goldstein (21)
 
-[] Goldstein (21)
+[IDENTIFICATION] Goldstein (21)
 
-[] ihm (23)
+[IDENTIFICATION] ihm (23)
 
-[] wahr (24)
+[QUALITY] wahr (24)
 
 # sent_id = 219
 # text = In solchen Augenblicken verwandelte sich seine geheime Abneigung gegen den Großen Bruder in Verehrung , und der Große Bruder schien dazustehen als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören .
@@ -1169,156 +1163,156 @@
 86	zerstören	zerstören	VERB	VVINF	VerbForm=Inf	79	xcomp	_	_
 87	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] verwandelte (4)
-[] In solchen Augenblicken (3)
-[] sich (5)
-[] seine geheime Abneigung gegen den Großen Bruder (8)
-[] in Verehrung (14)
+[STATE-INIT] verwandelte (4)
+[m-time] In solchen Augenblicken (3)
+[m-noncomp] sich (5)
+[has-state] seine geheime Abneigung gegen den Großen Bruder (8)
+[target-state] in Verehrung (14)
 
-[] Augenblicken (3)
+[TIME] Augenblicken (3)
 
-[] sich (5)
+[NONCOMP] sich (5)
 
-[] Abneigung (8)
-[] seine (6)
-[] geheime (7)
-[] gegen den Großen Bruder (12)
+[MESSAGE] Abneigung (8)
+[x-experiencer] seine (6)
+[m-quality] geheime (7)
+[topic] gegen den Großen Bruder (12)
 
-[] seine (6)
+[IDENTIFICATION] seine (6)
 
-[] geheime (7)
+[QUALITY] geheime (7)
 
-[] Bruder (12)
-[] Großen (11)
+[CLASS] Bruder (12)
+[noncomp] Großen (11)
 
-[] Großen (11)
+[NONCOMP] Großen (11)
 
-[] Verehrung (14)
+[MESSAGE] Verehrung (14)
 
-[] schien (20)
-[] der Große Bruder (19)
-[] dazustehen (21)
-[] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
-[] , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (68)
+[SCENE-INIT] schien (20)
+[participant] der Große Bruder (19)
+[scene] dazustehen (21)
+[m-scene] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
+[m-time >> m-accompanier] , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (68)
 
-[] Bruder (19)
-[] Große (18)
+[CLASS] Bruder (19)
+[noncomp] Große (18)
 
-[] Große (18)
+[NONCOMP] Große (18)
 
-[] dazustehen (21)
+[LOCATION >> SCENE] dazustehen (21)
 
-[] Beschützer (27)
-[] unbesieglicher , furchtloser (24)
-[] , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (39)
+[CLASS] Beschützer (27)
+[m-quality] unbesieglicher , furchtloser (24)
+[x-scene] , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (39)
 
-[] unbesieglicher (24)
+[QUALITY] unbesieglicher (24)
 
-[] furchtloser (26)
+[QUALITY] furchtloser (26)
 
-[] stemmte (39)
-[] der (29)
-[] sich (30)
-[] wie ein Felsen (33)
-[] gegen die anbrandenden asiatischen Horden (38)
+[HITTING] stemmte (39)
+[x-causer] der (29)
+[noncomp] sich (30)
+[m-depictive] wie ein Felsen (33)
+[hit] gegen die anbrandenden asiatischen Horden (38)
 
-[] der (29)
+[IDENTIFICATION] der (29)
 
-[] sich (30)
+[NONCOMP] sich (30)
 
-[] Felsen (33)
+[CLASS] Felsen (33)
 
-[] Horden (38)
-[] anbrandenden (36)
-[] asiatischen (37)
+[CLASS] Horden (38)
+[m-scene] anbrandenden (36)
+[m-quality] asiatischen (37)
 
-[] anbrandenden (36)
+[QUALITY] anbrandenden (36)
 
-[] asiatischen (37)
+[QUALITY] asiatischen (37)
 
-[] vorkam (68)
-[] Goldstein (42)
-[] ihm (43)
-[] trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (46)
-[] wie ein unheilvoller Betörer (67)
+[MESSAGE] vorkam (68)
+[x-experiencer] Goldstein (42)
+[topic] ihm (43)
+[m-concession] trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (46)
+[content] wie ein unheilvoller Betörer (67)
 
-[] Goldstein (42)
+[IDENTIFICATION] Goldstein (42)
 
-[] ihm (43)
+[IDENTIFICATION] ihm (43)
 
-[] Vereinsamung (46)
-[] seiner (45)
+[MESSAGE] Vereinsamung (46)
+[m-identifier] seiner (45)
 
-[] seiner (45)
+[IDENTIFICATION] seiner (45)
 
-[] Hilflosigkeit (49)
-[] seiner (48)
+[MESSAGE] Hilflosigkeit (49)
+[m-identifier] seiner (48)
 
-[] seiner (48)
+[IDENTIFICATION] seiner (48)
 
-[] Zweifel (52)
-[] , die sich allein schon an sein tatsächliches Vorhandensein knüpften (62)
-[] , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (79)
+[MESSAGE] Zweifel (52)
+[m-scene] , die sich allein schon an sein tatsächliches Vorhandensein knüpften (62)
+[m-scene] , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (79)
 
-[] knüpften (62)
-[] die (54)
-[] sich (55)
-[] allein schon (57)
-[] an sein tatsächliches Vorhandensein (61)
+[ACCOMPANIMENT] knüpften (62)
+[accompanied] die (54)
+[m-noncomp] sich (55)
+[m-mode] allein schon (57)
+[accompanier] an sein tatsächliches Vorhandensein (61)
 
-[] die (54)
+[IDENTIFICATION] die (54)
 
-[] sich (55)
+[NONCOMP] sich (55)
 
-[] schon (57)
-[] allein (56)
+[TIME >> MODE] schon (57)
+[m-quality] allein (56)
 
-[] allein (56)
+[QUANTITY] allein (56)
 
-[] Vorhandensein (61)
-[] sein (59)
-[] tatsächliches (60)
+[EXSISTENCE] Vorhandensein (61)
+[exists] sein (59)
+[m-quality] tatsächliches (60)
 
-[] sein (59)
+[IDENTIFICATION] sein (59)
 
-[] tatsächliches (60)
+[MODE] tatsächliches (60)
 
-[] brachte (79)
-[] der (70)
-[] es (71)
-[] lediglich (72)
-[] durch die Macht seiner Stimme (75)
-[] fertig (78)
-[] , die Fundamente der Zivilisation zu zerstören (86)
+[SCENE-INIT] brachte (79)
+[participant] der (70)
+[target-scene] es (71)
+[m-quality] lediglich (72)
+[m-means] durch die Macht seiner Stimme (75)
+[m-noncomp] fertig (78)
+[target-scene] , die Fundamente der Zivilisation zu zerstören (86)
 
-[] der (70)
+[IDENTIFICATION] der (70)
 
-[] es (71)
+[IDENTIFICATION] es (71)
 
-[] lediglich (72)
+[QUANTITY] lediglich (72)
 
-[] Macht (75)
-[] seiner Stimme (77)
+[CLASS] Macht (75)
+[has-class] seiner Stimme (77)
 
-[] Stimme (77)
-[] seiner (76)
+[MESSAGE] Stimme (77)
+[m-identifier] seiner (76)
 
-[] seiner (76)
+[IDENTIFICATION] seiner (76)
 
-[] fertig (78)
+[NONCOMP] fertig (78)
 
-[] zerstören (86)
-[] die Fundamente der Zivilisation (82)
+[DESTRUCTION] zerstören (86)
+[destroyed] die Fundamente der Zivilisation (82)
 
-[] Fundamente (82)
-[] der Zivilisation (84)
+[CLASS] Fundamente (82)
+[has-class] der Zivilisation (84)
 
-[] Zivilisation (84)
+[CLASS] Zivilisation (84)
 
-[] Betörer (67)
-[] unheilvoller (66)
+[MESSAGE] Betörer (67)
+[m-quality] unheilvoller (66)
 
-[] unheilvoller (66)
+[QUALITY] unheilvoller (66)
 
 # sent_id = 220
 # text = In manchen Augenblicken war es sogar möglich , seinen Hass durch einen Willensakt da- oder dorthin zu lenken .
@@ -1342,30 +1336,30 @@
 18	lenken	lenken	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] möglich (7)
-[] In manchen Augenblicken (3)
-[] sogar (6)
-[] , seinen Hass durch einen Willensakt da- oder dorthin zu lenken (18)
+[SCENE-POSSIBILITY] möglich (7)
+[m-time] In manchen Augenblicken (3)
+[m-mode] sogar (6)
+[scene] , seinen Hass durch einen Willensakt da- oder dorthin zu lenken (18)
 
-[] Augenblicken (3)
+[TIME] Augenblicken (3)
 
-[] sogar (6)
+[MODE] sogar (6)
 
-[] lenken (18)
-[] seinen Hass (10)
-[] durch einen Willensakt (13)
-[] da- oder dorthin (14)
+[LOCATION-CHANGE >> MESSAGE] lenken (18)
+[has-location >> topic] seinen Hass (10)
+[m-means] durch einen Willensakt (13)
+[target-location] da- oder dorthin (14)
 
-[] Hass (10)
-[] seinen (9)
+[MESSAGE] Hass (10)
+[m-identifier] seinen (9)
 
-[] seinen (9)
+[IDENTIFICATION] seinen (9)
 
-[] Willensakt (13)
+[MESSAGE] Willensakt (13)
 
-[] da- (14)
+[LOCATION] da- (14)
 
-[] dorthin (16)
+[LOCATION] dorthin (16)
 
 # sent_id = 221
 # text = So gelang es Winston plötzlich , durch eine heftige Anstrengung , ähnlich der , mit der man in einem Alptraum seinen Kopf vom Kissen losreißt , seinen Hass von dem Gesicht auf dem Sehschirm auf das hinter ihm sitzende dunkelhaarige Mädchen zu übertragen .
@@ -1414,76 +1408,76 @@
 43	übertragen	übertragen	VERB	VVINF	VerbForm=Inf	2	csubj	_	_
 44	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] gelang (2)
-[] So (1)
-[] Winston (4)
-[] plötzlich (5)
-[] durch eine heftige Anstrengung , ähnlich der , mit der man in einem Alptraum seinen Kopf vom Kissen losreißt , (10)
-[] , seinen Hass von dem Gesicht auf dem Sehschirm auf das hinter ihm sitzende dunkelhaarige Mädchen zu übertragen (43)
+[SCENE-INIT] gelang (2)
+[m-quality] So (1)
+[participant] Winston (4)
+[m-time] plötzlich (5)
+[m-means] durch eine heftige Anstrengung , ähnlich der , mit der man in einem Alptraum seinen Kopf vom Kissen losreißt , (10)
+[target-scene ] , seinen Hass von dem Gesicht auf dem Sehschirm auf das hinter ihm sitzende dunkelhaarige Mädchen zu übertragen (43)
 
-[] So (1)
+[QUALITY] So (1)
 
-[] Winston (4)
+[IDENTIFICATION] Winston (4)
 
-[] plötzlich (5)
+[TIME] plötzlich (5)
 
-[] Anstrengung (10)
-[] heftige (9)
-[] ähnlich (12)
-[] , der (13)
+[STATE] Anstrengung (10)
+[m-quantity] heftige (9)
+[m-quality] ähnlich (12)
+[m-compared] , der (13)
 [] , mit der man in einem Alptraum seinen Kopf vom Kissen losreißt , (25)
 
-[] heftige (9)
+[QUALITY] heftige (9)
 
-[] ähnlich (12)
+[COMPARISON] ähnlich (12)
 
-[] der (13)
+[IDENTIFICATION] der (13)
 
-[] losreißt (25)
-[] mit der (16)
-[] man (17)
-[] in einem Alptraum (20)
-[] seinen Kopf (22)
-[] vom Kissen (24)
+[LOCATION-CHANGE] losreißt (25)
+[m-means] mit der (16)
+[x-causer] man (17)
+[m-state] in einem Alptraum (20)
+[has-state] seinen Kopf (22)
+[initial-location] vom Kissen (24)
 
-[] der (16)
+[IDENTIFICATION] der (16)
 
-[] man (17)
+[IDENTIFICATION] man (17)
 
-[] Alptraum (20)
+[MESSAGE] Alptraum (20)
 
-[] Kopf (22)
-[] seinen (21)
+[PART-WHOLE] Kopf (22)
+[whole] seinen (21)
 
-[] seinen (21)
+[POSSESSOR] seinen (21)
 
-[] Kissen (24)
+[CLASS] Kissen (24)
 
-[] übertragen (43)
-[] seinen Hass von dem Gesicht auf dem Sehschirm (28)
-[] auf das hinter ihm sitzende dunkelhaarige Mädchen (41)
+[LOCATION-CHANGE >> MESSAGE] übertragen (43)
+[has-location >> content] seinen Hass (28)
+[initial-location >> ?] von dem Gesicht auf dem Sehschirm (24)
+[target-location >> ?] auf das hinter ihm sitzende dunkelhaarige Mädchen (41)
 
-[] Hass (28)
-[] seinen (27)
-[] von dem Gesicht auf dem Sehschirm (31)
+[MESSAGE] Hass (28)
+[x-experiencer] seinen (27)
 
-[] seinen (27)
+[IDENTIFICATION] seinen (27)
 
-[] Gesicht (31)
-[] auf dem Sehschirm (34)
+[CLASS] Gesicht (31)
+[m-location] auf dem Sehschirm (34)
 
-[] Sehschirm (34)
+[CLASS] Sehschirm (34)
 
-[] Mädchen (41)
-[] hinter ihm sitzende (39)
-[] dunkelhaarige (40)
+[CLASS] Mädchen (41)
+[m-location] hinter ihm sitzende (39)
+[m-quality] dunkelhaarige (40)
 
-[] sitzende (39)
-[] hinter ihm (38)
+[SCENE] sitzende (39)
+[m-location] hinter ihm (38)
 
-[] ihm (38)
+[IDENTIFICATION] ihm (38)
 
-[] dunkelhaarige (40)
+[QUALITY] dunkelhaarige (40)
 
 # sent_id = 222
 # text = Lebhafte , berückende Vorstellungen huschten ihm durch den Sinn .
@@ -1498,21 +1492,21 @@
 9	Sinn	Sinn	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	obl	_	_
 10	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] huschten (5)
-[] Lebhafte , berückende Vorstellungen (4)
-[] ihm (6)
-[] durch den Sinn (9)
+[LOCATION >> MESSAGE] huschten (5)
+[has-location >> topic] Lebhafte , berückende Vorstellungen (4)
+[x-experiencer >> x-experiencer] ihm (6)
+[location >> m-noncomp] durch den Sinn (9)
 
-[] Vorstellungen (4)
-[] Lebhafte , berückende (1)
+[MESSAGE] Vorstellungen (4)
+[m-quality] Lebhafte , berückende (1)
 
-[] Lebhafte (1)
+[QUALITY] Lebhafte (1)
 
-[] berückende (3)
+[QUALITY] berückende (3)
 
-[] ihm (6)
+[IDENTIFICATION] ihm (6)
 
-[] Sinn (9)
+[CLASS] Sinn (9)
 
 # sent_id = 223
 # text = Er würde sie mit einem Gummiknüppel zu Tode prügeln , sie nackt an einen Pfahl binden und sie mit Pfeilen durchlöchern , gleich dem heiligen Sebastian .
@@ -1544,47 +1538,47 @@
 26	Sebastian	Sebastian	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	21	iobj	_	_
 27	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] prügeln (9)
-[] Er (1)
-[] sie (3)
-[] mit einem Gummiknüppel (6)
-[] zu Tode (8)
+[HITTING] prügeln (9)
+[x-causer] Er (1)
+[hit] sie (3)
+[hitting] mit einem Gummiknüppel (6)
+[m-destruction] zu Tode (8)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] Gummiknüppel (6)
+[MEANS] Gummiknüppel (6)
 
-[] Tode (8)
+[DESTRUCTION] Tode (8)
 
-[] binden (16)
-[] sie (11)
-[] nackt (12)
-[] an einen Pfahl (15)
+[LOCATION-CONTINUATION] binden (16)
+[has-location] sie (11)
+[m-quality] nackt (12)
+[location] an einen Pfahl (15)
 
-[] sie (11)
+[IDENTIFICATION] sie (11)
 
-[] nackt (12)
+[WRAPPING-WEARING-NEG] nackt (12)
 
-[] Pfahl (15)
+[CLASS] Pfahl (15)
 
-[] durchlöchern (21)
-[] sie (18)
-[] mit Pfeilen (20)
-[] , gleich dem heiligen Sebastian (26)
+[DESTRUCTION] durchlöchern (21)
+[destroyed] sie (18)
+[m-means] mit Pfeilen (20)
+[m-reference] , gleich dem heiligen Sebastian (26)
 
-[] sie (18)
+[IDENTIFICATION] sie (18)
 
-[] Pfeilen (20)
+[CLASS] Pfeilen (20)
 
-[] Sebastian (26)
-[] gleich (23)
-[] heiligen (25)
+[IDENTIFICATION] Sebastian (26)
+[m-reference] gleich (23)
+[m-quality] heiligen (25)
 
-[] gleich (23)
+[COMPARISON] gleich (23)
 
-[] heiligen (25)
+[QUALITY] heiligen (25)
 
 # sent_id = 224
 # text = Er würde sie vergewaltigen und ihr im Augenblick der höchsten Lust die Kehle durchschneiden .
@@ -1604,30 +1598,31 @@
 14	durchschneiden	durchschneiden	VERB	VVINF	VerbForm=Inf	4	conj	_	_
 15	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] vergewaltigen (4)
-[] Er (1)
-[] sie (3)
+[EVENT] vergewaltigen (4)
+[x-causer] Er (1)
+[undergoer] sie (3)
 
-[] Er (1)
+[IDENTIFICTION] Er (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] durchschneiden (14)
-[] ihr (6)
-[] im Augenblick der höchsten Lust (8)
-[] die Kehle (13)
+[STATE-CHANGE >> DESTRUCTION] durchschneiden (14)
+[has-state >> destroyed] ihr (6)
+[m-time] im Augenblick der höchsten Lust (8)
+[x-attribute >> m-noncomp] die Kehle (13)
 
-[] ihr (6)
+[IDENTIFICATION] ihr (6)
+[m-part] die Kehle (13)
 
-[] Augenblick (8)
-[] der höchsten Lust (11)
+[TIME] Augenblick (8)
+[m-state] der höchsten Lust (11)
 
-[] Lust (11)
-[] höchsten (10)
+[STATE] Lust (11)
+[m-quantity] höchsten (10)
 
-[] höchsten (10)
+[QUANTITY] höchsten (10)
 
-[] Kehle (13)
+[CLASS] Kehle (13)
 
 # sent_id = 225
 # text = Deutlicher als zuvor war er sich auch bewusst , warum er sie hasste .
@@ -1646,34 +1641,32 @@
 13	hasste	hassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	_	_
 14	.	.	PUNCT	$.	_	1	punct	_	_
 
-[] Deutlicher (1)
-[] als zuvor (3)
-[] er (5)
-[] sich auch bewusst , warum er sie hasste (8)
+[QUALITY] Deutlicher (1)
+[m-time] als zuvor (3)
 
-[] zuvor (3)
+[TIME] zuvor (3)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] bewusst (8)
-[] sich (6)
-[] auch (7)
-[] , warum er sie hasste (13)
+[MESSAGE] bewusst (8)
+[m-noncomp] sich (6)
+[m-mode] auch (7)
+[content] , warum er sie hasste (13)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] auch (7)
+[MODE] auch (7)
 
-[] hasste (13)
-[] warum (10)
-[] er (11)
-[] sie (12)
+[MESSAGE] hasste (13)
+[m-causer] warum (10)
+[x-experiencer] er (11)
+[topic] sie (12)
 
-[] warum (10)
+[CAUSATION] warum (10)
 
-[] er (11)
+[IDENTIFICATION] er (11)
 
-[] sie (12)
+[IDENTIFICATION] sie (12)
 
 # sent_id = 226
 # text = Er hasste sie , weil sie jung , hübsch und geschlechtslos war , weil er mit ihr ins Bett gehen wollte und daraus nie etwas werden würde , denn um ihre reizende , biegsame Taille , die einen zur Umarmung aufzufordern schien , wand sich nur die verhexte scharlachrote Schärpe , das aufreizende Symbol der Keuschheit .
@@ -1735,98 +1728,97 @@
 56	Keuschheit	Keuschheit	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	54	nmod	_	_
 57	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hasste (2)
-[] Er (1)
-[] sie (3)
-[] , weil sie jung , hübsch und geschlechtslos war , weil er mit ihr ins Bett gehen wollte und daraus nie etwas werden würde (7)
+[MESSAGE] hasste (2)
+[x-experiencer] Er (1)
+[topic] sie (3)
+[m-causer] , weil sie jung , hübsch und geschlechtslos war , weil er mit ihr ins Bett gehen wollte und daraus nie etwas werden würde (7)
+[m-causer] , weil er mit ihr ins Bett gehen wollte und daraus nie etwas werden würde (20)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] jung (7)
-[] sie (6)
-[] , weil er mit ihr ins Bett gehen wollte und daraus nie etwas werden würde (20)
+[QUALITY] jung (7)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] hübsch (9)
+[QUALITY] hübsch (9)
 
-[] geschlechtslos (11)
+[QUALITY] geschlechtslos (11)
 
-[] gehen (20)
-[] er (15)
-[] mit ihr (17)
-[] ins Bett (19)
+[LOCATION-CHANGE >> ACTIVITY] gehen (20)
+[has-location >> is-active] er (15)
+[m-accompanier >> x-accompanier] mit ihr (17)
+[target-location >> x-noncomp] ins Bett (19)
 
-[] er (15)
+[IDENTIFICATION] er (15)
 
-[] ihr (17)
+[IDENTIFICATION] ihr (17)
 
-[] Bett (19)
+[CLASS >> ACTIVITY] Bett (19)
 
-[] werden (26)
+[SEQUENCE >> SCENE] werden (26)
 [] daraus (23)
 [] nie (24)
 [] etwas (25)
 
-[] daraus (23)
+[IDENTIFICATION] daraus (23)
 
-[] nie (24)
+[TIME] nie (24)
 
-[] etwas (25)
+[SCENE] etwas (25)
 
-[] wand (44)
-[] um ihre reizende , biegsame Taille , die einen zur Umarmung aufzufordern schien , (35)
-[] sich (45)
-[] nur (46)
-[] die verhexte scharlachrote Schärpe , das aufreizende Symbol der Keuschheit (50)
+[WRAPPING-WEARING] wand (44)
+[wearer] um ihre reizende , biegsame Taille , die einen zur Umarmung aufzufordern schien , (35)
+[m-noncomp] sich (45)
+[m-mode] nur (46)
+[wrapper] die verhexte scharlachrote Schärpe , das aufreizende Symbol der Keuschheit (50)
 
-[] Taille (35)
-[] ihre (31)
-[] reizende , biegsame (32)
-[] , die einen zur Umarmung aufzufordern schien (42)
+[PART-WHOLE] Taille (35)
+[whole] ihre (31)
+[m-quality] reizende , biegsame (32)
+[m-scene] , die einen zur Umarmung aufzufordern schien (42)
 
-[] ihre (31)
+[IDENTIFICATION] ihre (31)
 
-[] reizende (32)
+[QUALITY] reizende (32)
 
-[] biegsame (34)
+[QUALITY] biegsame (34)
 
-[] schien (42)
-[] die (37)
-[] einen (38)
-[] zur Umarmung (40)
-[] aufzufordern (41)
+[SCENE-INIT] schien (42)
+[participant] die (37)
+[participant] einen (38)
+[target-scene] zur Umarmung (40)
+[scene] aufzufordern (41)
 
-[] die (37)
+[IDENTIFICATION] die (37)
 
-[] einen (38)
+[IDENTIFICATION] einen (38)
 
-[] Umarmung (40)
+[MESSAGE] Umarmung (40)
 
-[] aufzufordern (41)
+[MESSAGE] aufzufordern (41)
 
-[] sich (45)
+[NONCOMP] sich (45)
 
-[] nur (46)
+[MODE] nur (46)
 
-[] Schärpe (50)
-[] verhexte (48)
-[] scharlachrote (49)
-[] , das aufreizende Symbol der Keuschheit (54)
+[WRAPPING-WEARING] Schärpe (50)
+[m-quality] verhexte (48)
+[m-quality] scharlachrote (49)
+[m-depictive] , das aufreizende Symbol der Keuschheit (54)
 
-[] verhexte (48)
+[STATE-CHANGE] verhexte (48)
 
-[] scharlachrote (49)
+[QUALITY] scharlachrote (49)
 
-[] Symbol (54)
-[] aufreizende (53)
-[] der Keuschheit (56)
+[MESSAGE] Symbol (54)
+[m-quality] aufreizende (53)
+[content] der Keuschheit (56)
 
-[] aufreizende (53)
+[QUALITY] aufreizende (53)
 
-[] Keuschheit (56)
+[STATE] Keuschheit (56)
 
 # sent_id = 227
 # text = Die Hasswelle erreichte ihren Höhepunkt .
@@ -1837,16 +1829,16 @@
 5	Höhepunkt	Höhepunkt	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	3	obj	_	_
 6	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] erreichte (3)
-[] Die Hasswelle (2)
-[] ihren Höhepunkt (5)
+[STATE-INIT] erreichte (3)
+[has-state] Die Hasswelle (2)
+[target-state] ihren Höhepunkt (5)
 
-[] Hasswelle (2)
+[STATE >> MESSAGE] Hasswelle (2)
 
-[] Höhepunkt (5)
-[] ihren (4)
+[QUANTITY] Höhepunkt (5)
+[has-quantity] ihren (4)
 
-[] ihren (4)
+[IDENTIFICATION] ihren (4)
 
 # sent_id = 228
 # text = Goldsteins Stimme war tatsächlich zu einem Blöken geworden , und einen Augenblick lang verwandelte sich sein Gesicht in das eines Schafes .
@@ -1873,42 +1865,42 @@
 21	Schafes	Schaf	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing	19	nmod	_	_
 22	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] geworden (8)
-[] Goldsteins Stimme (2)
-[] tatsächlich (4)
-[] zu einem Blöken (7)
+[STATE-CHANGE] geworden (8)
+[initial-state] Goldsteins Stimme (2)
+[m-mode] tatsächlich (4)
+[target-state] zu einem Blöken (7)
 
-[] Stimme (2)
-[] Goldsteins (1)
+[MESSAGE] Stimme (2)
+[x-sender] Goldsteins (1)
 
-[] Goldsteins (1)
+[IDENTIFICATION] Goldsteins (1)
 
-[] tatsächlich (4)
+[MODE] tatsächlich (4)
 
-[] Blöken (7)
+[MESSAGE] Blöken (7)
 
-[] verwandelte (14)
-[] einen Augenblick lang (13)
-[] sich (15)
-[] sein Gesicht (17)
-[] in das eines Schafes (19)
+[STATE-CHANGE] verwandelte (14)
+[m-time] einen Augenblick lang (13)
+[m-noncomp] sich (15)
+[initial-state] sein Gesicht (17)
+[target-state] in das eines Schafes (19)
 
-[] lang (13)
-[] einen Augenblick (12)
+[TIME] lang (13)
+[m-time >> m-quantity] einen Augenblick (12)
 
-[] Augenblick (12)
+[TIME] Augenblick (12)
 
-[] sich (15)
+[NONCOMP] sich (15)
 
-[] Gesicht (17)
-[] sein (16)
+[PART-WHOLE] Gesicht (17)
+[whole] sein (16)
 
-[] sein (16)
+[IDENTIFICATION] sein (16)
 
-[] das (19)
-[] eines Schafes (21)
+[IDENTIFICATION] das (19)
+[identifier] eines Schafes (21)
 
-[] Schafes (21)
+[CLASS] Schafes (21)
 
 # sent_id = 229
 # text = Dann blendete das Schafsgesicht in die Gestalt eines eurasischen Soldaten über , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien , so dass manche der Zuschauer in der ersten Reihe auf ihren Sitzen zurückprallten .
@@ -1959,80 +1951,78 @@
 45	zurückprallten	zurückprallen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 46	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] blendete (2)
-[] Dann (1)
-[] das Schafsgesicht (4)
-[] in die Gestalt eines eurasischen Soldaten , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (7)
-[] über (11)
-[] , so dass manche der Zuschauer in der ersten Reihe auf ihren Sitzen zurückprallten (45)
+[STATE-CHANGE] blendete (2)
+[m-time] Dann (1)
+[initial-state] das Schafsgesicht (4)
+[target-state] in die Gestalt eines eurasischen Soldaten , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (7)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] Schafsgesicht (4)
+[CLASS] Schafsgesicht (4)
 
-[] Gestalt (7)
-[] eines eurasischen Soldaten , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (10)
+[CLASS] Gestalt (7)
+[m-depictive] eines eurasischen Soldaten , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (10)
 
-[] Soldaten (10)
-[] eurasischen (9)
-[] , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (23)
+[CLASS] Soldaten (10)
+[m-quality] eurasischen (9)
+[m-scene] , der riesig und furchtbar mit ratternder Maschinenpistole auf den Besucher zuzuschreiten und aus der Fläche des Sehschirms herauszuspringen schien (23)
 
-[] eurasischen (9)
+[QUALITY] eurasischen (9)
 
-[] zuzuschreiten (23)
-[] der (13)
-[] riesig und furchtbar (14)
-[] mit ratternder Maschinenpistole (19)
-[] auf den Besucher (22)
+[LOCATION-CHANGE] zuzuschreiten (23)
+[has-location] der (13)
+[m-quality] riesig und furchtbar (14)
+[m-depictive] mit ratternder Maschinenpistole (19)
+[target-location] auf den Besucher (22)
 
-[] der (13)
+[IDENTIFICATION] der (13)
 
-[] riesig (14)
+[QUALITY] riesig (14)
 
-[] furchtbar (16)
+[QUALITY] furchtbar (16)
 
-[] Maschinenpistole (19)
-[] ratternder (18)
+[CLASS] Maschinenpistole (19)
+[m-quality] ratternder (18)
 
-[] ratternder (18)
+[QUALITY] ratternder (18)
 
-[] Besucher (22)
+[BLASS] Besucher (22)
 
-[] schien (31)
-[] aus der Fläche des Sehschirms (27)
-[] herauszuspringen (30)
+[SCENE] schien (31)
+[m-initial-location] aus der Fläche des Sehschirms (27)
+[scene] herauszuspringen (30)
 
-[] Fläche (27)
-[] des Sehschirms (29)
+[CLASS] Fläche (27)
+[m-identifier] des Sehschirms (29)
 
-[] Sehschirms (29)
+[CLASS] Sehschirms (29)
 
-[] herauszuspringen (30)
+[LOCATION-CHANGE] herauszuspringen (30)
 
-[] über (11)
+[LOCATION] über (11)
 
-[] zurückprallten (45)
-[] so (33)
-[] manche der Zuschauer (35)
-[] in der ersten Reihe (41)
-[] auf ihren Sitzen (44)
+[LOCATION-DEINIT] zurückprallten (45)
+[m-result] so (33)
+[has-location] manche der Zuschauer (35)
+[m-location] in der ersten Reihe (41)
+[m-location] auf ihren Sitzen (44)
 
-[] so (33)
+[RESULTATIVE] so (33)
 
-[] manche (35)
-[] der Zuschauer (37)
+[PART-WHOLE] manche (35)
+[part] der Zuschauer (37)
 
-[] Zuschauer (37)
+[CLASS] Zuschauer (37)
 
-[] Reihe (41)
-[] ersten (40)
+[LOCATION] Reihe (41)
+[m-rank] ersten (40)
 
-[] ersten (40)
+[RANK] ersten (40)
 
-[] Sitzen (44)
-[] ihren (43)
+[CLASS] Sitzen (44)
+[m-posessor] ihren (43)
 
-[] ihren (43)
+[IDENTIFICATION] ihren (43)
 
 # sent_id = 230
 # text = Aber im gleichen Augenblick , während jedem Munde ein tiefer Seufzer der Erleichterung entfuhr , zerschmolz die feindliche Gestalt in das Gesicht des Großen Bruders mit seinen dunklen Haaren und seinem Schnurrbart , das Macht und geheimnisvolle Ruhe ausstrahlte und mit seiner riesigen Größe fast den ganzen Sehschirm ausfüllte .
@@ -2087,91 +2077,90 @@
 49	ausfüllte	ausfüllen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	conj	_	_
 50	.	.	PUNCT	$.	_	16	punct	_	_
 
-[] zerschmolz (16)
-[] Aber im gleichen Augenblick (4)
-[] , während jedem Munde ein tiefer Seufzer der Erleichterung entfuhr , (14)
-[] die feindliche Gestalt (19)
-[] in das Gesicht des Großen Bruders mit seinen dunklen Haaren und seinem Schnurrbart , das Macht und geheimnisvolle Ruhe ausstrahlte und mit seiner riesigen Größe fast den ganzen Sehschirm ausfüllte (22)
+[STATE-CHANGE] zerschmolz (16)
+[m-time] Aber im gleichen Augenblick (4)
+[m-scene] , während jedem Munde ein tiefer Seufzer der Erleichterung entfuhr , (14)
+[has-state] die feindliche Gestalt (19)
+[target-state] in das Gesicht des Großen Bruders mit seinen dunklen Haaren und seinem Schnurrbart , das Macht und geheimnisvolle Ruhe ausstrahlte und mit seiner riesigen Größe fast den ganzen Sehschirm ausfüllte (22)
 
-[] Augenblick (4)
-[] gleichen (3)
+[TIME] Augenblick (4)
+[m-reference] gleichen (3)
 
-[] gleichen (3)
+[COMPARISON] gleichen (3)
 
-[] entfuhr (14)
-[] jedem Munde (8)
-[] ein tiefer Seufzer (11)
-[] der Erleichterung (13)
+[MESSAGE-INIT] entfuhr (14)
+[x-sender] jedem Munde (8)
+[topic] ein tiefer Seufzer der Erleichterung (13)
 
-[] Munde (8)
+[CLASS] Munde (8)
 
-[] Seufzer (11)
-[] tiefer (10)
+[MESSAGE] Seufzer (11)
+[m-quality] tiefer (10)
 
-[] tiefer (10)
+[QUALITY] tiefer (10)
 
-[] Erleichterung (13)
+[STATE] Erleichterung (13)
 
-[] Gestalt (19)
-[] feindliche (18)
+[CLASS] Gestalt (19)
+[m-quality] feindliche (18)
 
-[] feindliche (18)
+[QUALITY] feindliche (18)
 
-[] Gesicht (22)
-[] des Großen Bruders (25)
-[] mit seinen dunklen Haaren und seinem Schnurrbart (29)
-[] , das Macht und geheimnisvolle Ruhe ausstrahlte und mit seiner riesigen Größe fast den ganzen Sehschirm ausfüllte (39)
+[PART-WHOLE] Gesicht (22)
+[whole] des Großen Bruders (25)
+[m-depictive] mit seinen dunklen Haaren und seinem Schnurrbart (29)
+[m-scene] , das Macht und geheimnisvolle Ruhe ausstrahlte und mit seiner riesigen Größe fast den ganzen Sehschirm ausfüllte (39)
 
-[] Bruders (25)
-[] Großen (24)
+[CLASS] Bruders (25)
+[m-noncomp] Großen (24)
 
-[] Großen (24)
+[NONCOMP] Großen (24)
 
-[] Haaren (29)
-[] seinen (27)
-[] dunklen (28)
+[PART-WHOLE] Haaren (29)
+[whole] seinen (27)
+[m-quality] dunklen (28)
 
-[] seinen (27)
+[POSSESSOR] seinen (27)
 
-[] dunklen (28)
+[QUALITY] dunklen (28)
 
-[] Schnurrbart (32)
-[] seinem (31)
+[PART-WHOLE] Schnurrbart (32)
+[whole] seinem (31)
 
-[] seinem (31)
+[IDENTIFICATION] seinem (31)
 
-[] ausstrahlte (39)
-[] das (34)
-[] Macht und geheimnisvolle Ruhe (35)
+[MESSAGE] ausstrahlte (39)
+[x-sender] das (34)
+[topic] Macht und geheimnisvolle Ruhe (35)
 
-[] das (34)
+[IDENTIFICATION] das (34)
 
-[] Macht (35)
+[STATE] Macht (35)
 
-[] Ruhe (38)
-[] geheimnisvolle (37)
+[STATE] Ruhe (38)
+[m-quality] geheimnisvolle (37)
 
-[] geheimnisvolle (37)
+[QUALITY] geheimnisvolle (37)
 
-[] ausfüllte (49)
-[] mit seiner riesigen Größe (44)
-[] fast (45)
-[] den ganzen Sehschirm (48)
+[SCENE] ausfüllte (49)
+[participant] mit seiner riesigen Größe (44)
+[m-quantity] fast (45)
+[scene] den ganzen Sehschirm (48)
 
-[] Größe (44)
-[] seiner (42)
-[] riesigen (43)
+[CLASS] Größe (44)
+[m-identifier] seiner (42)
+[m-quality] riesigen (43)
 
-[] seiner (42)
+[QUALITY] seiner (42)
 
-[] riesigen (43)
+[QUALITY] riesigen (43)
 
-[] fast (45)
+[MODE] fast (45)
 
-[] Sehschirm (48)
-[] ganzen (47)
+[CLASS] Sehschirm (48)
+[m-whole] ganzen (47)
 
-[] ganzen (47)
+[PART-WHOLE] ganzen (47)
 
 # sent_id = 231
 # text = Niemand verstand , was der Große Bruder sagte .
@@ -2185,22 +2174,22 @@
 8	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] verstand (2)
-[] Niemand (1)
-[] , was der Große Bruder sagte (8)
+[MESSAGE] verstand (2)
+[x-experiencer] Niemand (1)
+[topic] , was der Große Bruder sagte (8)
 
-[] Niemand (1)
+[IDENTIFICATION] Niemand (1)
 
-[] sagte (8)
-[] was (4)
-[] der Große Bruder (7)
+[MESSAGE] sagte (8)
+[topic] was (4)
+[x-sender] der Große Bruder (7)
 
-[] was (4)
+[IDENTIFICATION] was (4)
 
-[] Bruder (7)
-[] Große (6)
+[CLASS] Bruder (7)
+[m-noncomp] Große (6)
 
-[] Große (6)
+[NONCOMP] Große (6)
 
 # sent_id = 232
 # text = Es waren nur ein paar Worte der Ermutigung , Worte , wie sie im Kampflärm einer Schlacht ausgestoßen werden , nicht im einzelnen unterscheidbar , die aber einfach dadurch , dass sie ausgesprochen werden , die Zuversicht wiederherstellen .
@@ -2244,62 +2233,63 @@
 38	wiederherstellen	wiederherstellen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	conj	_	_
 39	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Worte (6)
-[] Es (1)
-[] nur (3)
-[] der Ermutigung (8)
-[] , Worte , wie sie im Kampflärm einer Schlacht ausgestoßen werden , nicht im einzelnen unterscheidbar , die aber einfach dadurch , dass sie ausgesprochen werden , die Zuversicht wiederherstellen (24)
+[MESSAGE] Worte (6)
+[m-noncomp] Es (1)
+[m-mode] nur (3)
+[topic] der Ermutigung (8)
+[m-scene] , Worte , wie sie im Kampflärm einer Schlacht ausgestoßen werden , nicht im einzelnen unterscheidbar , die aber einfach dadurch , dass sie ausgesprochen werden , die Zuversicht wiederherstellen (24)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] nur (3)
+[MODE] nur (3)
 
-[] Ermutigung (8)
+[MESSAGE] Ermutigung (8)
 
-[] unterscheidbar (24)
-[] , Worte , wie sie im Kampflärm einer Schlacht ausgestoßen werden , (10)
-[] nicht (21)
-[] im einzelnen (23)
+[COMPARISON] unterscheidbar (24)
+[compared] , Worte (10)
+[reference] , wie sie im Kampflärm einer Schlacht ausgestoßen werden , (18)
+[m-mode] nicht (21)
+[m-quanity] im einzelnen (23)
 
-[] Worte (10)
-[] , wie sie im Kampflärm einer Schlacht ausgestoßen werden , (18)
+[MESSAGE] Worte (10)
+[m-depictive] , wie sie im Kampflärm einer Schlacht ausgestoßen werden , (18)
 
-[] ausgestoßen (18)
-[] sie (13)
-[] im Kampflärm einer Schlacht (15)
+[MESSAGE] ausgestoßen (18)
+[topic] sie (13)
+[m-location] im Kampflärm einer Schlacht (15)
 
-[] sie (13)
+[IDENTIFICATION] sie (13)
 
-[] Kampflärm (15)
-[] einer Schlacht (17)
+[MESSAGE] Kampflärm (15)
+[x-sender] einer Schlacht (17)
 
-[] Schlacht (17)
+[CLASS] Schlacht (17)
 
-[] nicht (21)
+[MODE] nicht (21)
 
-[] einzelnen (23)
+[QUANTITY] einzelnen (23)
 
-[] wiederherstellen (38)
-[] die (26)
-[] die Zuversicht (37)
+[MEANS] wiederherstellen (38)
+[means] die (26)
+[purpose] die Zuversicht (37)
 
-[] die (26)
+[IDENTIFICATION] die (26)
 
-[] dadurch (29)
-[] aber (27)
-[] einfach (28)
-[] , dass sie ausgesprochen werden , (33)
+[MEANS] dadurch (29)
+[m-mode] aber (27)
+[m-mode] einfach (28)
+[means] , dass sie ausgesprochen werden , (33)
 
-[] aber (27)
+[MODE] aber (27)
 
-[] einfach (28)
+[MODE] einfach (28)
 
-[] ausgesprochen (33)
-[] sie (32)
+[MESSAGE] ausgesprochen (33)
+[topic] sie (32)
 
-[] sie (32)
+[IDENTIFICATION] sie (32)
 
-[] Zuversicht (37)
+[STATE] Zuversicht (37)
 
 # sent_id = 233
 # text = Dann zerrann das Gesicht des Großen Bruders wieder , und statt seiner erschienen in klaren großen Buchstaben die drei Parteiwahlsprüche :
@@ -2325,42 +2315,42 @@
 20	Parteiwahlsprüche	Parteiwahlspruch	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	13	nsubj	_	_
 21	:	:	PUNCT	$.	_	2	punct	_	_
 
-[] zerrann (2)
-[] Dann (1)
-[] das Gesicht des Großen Bruders (4)
-[] wieder (8)
+[SCENE-INIT] zerrann (2)
+[m-time || m-follows] Dann (1)
+[participant] das Gesicht des Großen Bruders (4)
+[m-time] wieder (8)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] Gesicht (4)
-[] des Großen Bruders (7)
+[PART-WHOLE] Gesicht (4)
+[whole] des Großen Bruders (7)
 
-[] Bruders (7)
-[] Großen (6)
+[IDENTIFICATION] Bruders (7)
+[m-noncomp] Großen (6)
 
-[] Großen (6)
+[NONCOMP] Großen (6)
 
-[] wieder (8)
+[TIME] wieder (8)
 
-[] erschienen (13)
-[] statt seiner (12)
-[] in klaren großen Buchstaben (17)
-[] die drei Parteiwahlsprüche (20)
+[SCENE-INIT] erschienen (13)
+[m-conceded] statt seiner (12)
+[m-depictive] in klaren großen Buchstaben (17)
+[participant] die drei Parteiwahlsprüche (20)
 
-[] seiner (12)
+[IDENTIFICATION] seiner (12)
 
-[] Buchstaben (17)
-[] klaren (15)
-[] großen (16)
+[CLASS] Buchstaben (17)
+[m-quality] klaren (15)
+[m-quality] großen (16)
 
-[] klaren (15)
+[QUALITY] klaren (15)
 
-[] großen (16)
+[QUALITY] großen (16)
 
-[] Parteiwahlsprüche (20)
-[] drei (19)
+[MESSAGE] Parteiwahlsprüche (20)
+[m-quantity] drei (19)
 
-[] drei (19)
+[QUANTITY] drei (19)
 
 # sent_id = 234
 # text = KRIEG BEDEUTET FRIEDEN
@@ -2368,13 +2358,13 @@
 2	BEDEUTET	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	FRIEDEN	Frieden	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	obj	_	_
 
-[] BEDEUTET (2)
-[] KRIEG (1)
-[] FRIEDEN (3)
+[MESSAGE || SEQUENCE] BEDEUTET (2)
+[topic || followed] KRIEG (1)
+[content || follows] FRIEDEN (3)
 
-[] KRIEG (1)
+[SOCIAL-RELATION || STATE] KRIEG (1)
 
-[] FRIEDEN (3)
+[SOCIAL-RELATION || STATE] FRIEDEN (3)
 
 # sent_id = 235
 # text = FREIHEIT IST SKLAVEREI
@@ -2382,10 +2372,10 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	SKLAVEREI	Sklaverei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] SKLAVEREI (3)
-[] FREIHEIT (1)
+[SOCIAL-RELATION] SKLAVEREI (3)
+[x-identified] FREIHEIT (1)
 
-[] FREIHEIT (1)
+[STATE || SOCIAL-RELATION] FREIHEIT (1)
 
 # sent_id = 236
 # text = UNWISSENHEIT IST STÄRKE
@@ -2393,10 +2383,10 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	STÄRKE	Stärke	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[] STÄRKE (3)
-[] UNWISSENHEIT (1)
+[SOCIAL-RELATION] STÄRKE (3)
+[x-identified] UNWISSENHEIT (1)
 
-[] UNWISSENHEIT (1)
+[STATE || SOCIAL-RELATION] UNWISSENHEIT (1)
 
 # sent_id = 237
 # text = Aber das Gesicht des Großen Bruders schien sich noch einige Sekunden auf dem Sehschirm zu behaupten , so als sei der Eindruck , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , zu lebhaft , um sogleich zu verlöschen .
@@ -2442,64 +2432,63 @@
 40	verlöschen	verlöschen	VERB	VVINF	VerbForm=Inf	35	advcl	_	_
 41	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] schien (7)
-[] das Gesicht des Großen Bruders (3)
-[] sich (8)
-[] noch (9)
-[] einige Sekunden auf dem Sehschirm zu behaupten (16)
-[] , so als sei der Eindruck , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , zu lebhaft , um sogleich zu verlöschen (35)
+[SCENE-INIT] schien (7)
+[participant] das Gesicht des Großen Bruders (3)
+[m-noncomp] sich (8)
+[m-time] noch (9)
+[SCENE] einige Sekunden auf dem Sehschirm zu behaupten (16)
+[m-depictive] , so als sei der Eindruck , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , zu lebhaft , um sogleich zu verlöschen (35)
 
-[] Gesicht (3)
-[] des Großen Bruders (6)
+[PART-WHOLE] Gesicht (3)
+[whole] des Großen Bruders (6)
 
-[] Bruders (6)
-[] Großen (5)
+[IDENTIFICATION] Bruders (6)
+[m-noncomp] Großen (5)
 
-[] Großen (5)
+[NONCOMP] Großen (5)
 
-[] sich (8)
+[NONCOMP] sich (8)
 
-[] noch (9)
+[TIME] noch (9)
 
-[] behaupten (16)
-[] einige Sekunden (11)
-[] auf dem Sehschirm (14)
+[MESSAGE-CONTINUATION] behaupten (16)
+[x-causer] das Gesicht des Großen Bruders (3)
+[m-time] einige Sekunden (11)
+[m-location] auf dem Sehschirm (14)
 
-[] Sekunden (11)
+[TIME] Sekunden (11)
 
-[] Sehschirm (14)
+[CLASS] Sehschirm (14)
 
-[] lebhaft (35)
-[] so (18)
-[] der Eindruck , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , (22)
-[] zu (34)
-[] , um sogleich zu verlöschen (40)
+[COMPARISON] lebhaft (35)
+[m-quantity] zu (34)
+[reference] , um sogleich zu verlöschen (40)
 
-[] so (18)
+[MODE] so (18)
 
-[] Eindruck (22)
-[] , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , (31)
+[MESSAGE] Eindruck (22)
+[m-scene] , den es auf der Netzhaut aller Zuschauer hervorgebracht hatte , (31)
 
-[] hervorgebracht (31)
-[] den (24)
-[] es (25)
-[] auf der Netzhaut aller Zuschauer (28)
+[TRANSFORMATION-CREATION-INIT] hervorgebracht (31)
+[created] den (24)
+[x-causer] es (25)
+[m-location] auf der Netzhaut aller Zuschauer (28)
 
-[] den (24)
+[IDENTIFICATION] den (24)
 
-[] es (25)
+[IDENTIFICATION] es (25)
 
-[] Netzhaut (28)
-[] aller Zuschauer (30)
+[PART-WHOLE] Netzhaut (28)
+[whole] aller Zuschauer (30)
 
-[] Zuschauer (30)
+[POSSESSOR] Zuschauer (30)
 
-[] zu (34)
+[MODE] zu (34)
 
-[] verlöschen (40)
-[] sogleich (38)
+[TRANSFORMATION-CREATION-DEINIT] verlöschen (40)
+[m-time] sogleich (38)
 
-[] sogleich (38)
+[TIME] sogleich (38)
 
 # sent_id = 238
 # text = Die kleine Frau hatte sich über die Lehne des vor ihr stehenden Stuhles nach vorne geworfen .
@@ -2521,31 +2510,31 @@
 16	geworfen	werfen	VERB	VVPP	Verbform=Part	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
-[] geworfen (16)
-[] Die kleine Frau (3)
-[] sich (5)
-[] über die Lehne des vor ihr stehenden Stuhles (8)
-[] nach vorne (15)
+[LOCATION-CHANGE] geworfen (16)
+[has-location] Die kleine Frau (3)
+[m-noncomp] sich (5)
+[target-location] über die Lehne des vor ihr stehenden Stuhles (8)
+[m-location] nach vorne (15)
 
-[] Frau (3)
-[] kleine (2)
+[CLASS] Frau (3)
+[m-quality] kleine (2)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] sich (5)
+[NONCOMP] sich (5)
 
-[] Lehne (8)
-[] des vor ihr stehenden Stuhles (13)
+[LOCATION || PART-WHOLE] Lehne (8)
+[m-identifier || whole] des vor ihr stehenden Stuhles (13)
 
-[] Stuhles (13)
-[] vor ihr stehenden (12)
+[CLASS] Stuhles (13)
+[m-scene] vor ihr stehenden (12)
 
-[] stehenden (12)
-[] vor ihr (11)
+[SCENE] stehenden (12)
+[m-location] vor ihr (11)
 
-[] ihr (11)
+[IDENTIFICATION] ihr (11)
 
-[] vorne (15)
+[LOCATION] vorne (15)
 
 # sent_id = 239
 # text = Mit einem bebenden Flüstern , das wie » Mein Retter ! « klang , breitete sie die Arme dem Sehschirm entgegen .
@@ -2572,37 +2561,36 @@
 21	entgegen	entgegen	ADP	PTKVZ	_	15	compound:prt	_	_
 22	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] breitete (15)
-[] Mit einem bebenden Flüstern , das wie » Mein Retter ! « klang , (4)
-[] sie (16)
-[] die Arme (18)
-[] dem Sehschirm (20)
-[] entgegen (21)
+[LOCATION-CHANGE] breitete (15)
+[m-scene] Mit einem bebenden Flüstern , das wie » Mein Retter ! « klang , (4)
+[x-causer] sie (16)
+[has-location] die Arme (18)
+[target-location] dem Sehschirm entgegen (21)
 
-[] Flüstern (4)
-[] bebenden (3)
-[] , das wie » Mein Retter ! « klang (13)
+[MESSAGE] Flüstern (4)
+[m-quality] bebenden (3)
+[m-depictive] , das wie » Mein Retter ! « klang (13)
 
-[] bebenden (3)
+[QUALITY] bebenden (3)
 
-[] klang (13)
-[] das (6)
-[] wie » Mein Retter ! « (10)
+[MESSAGE] klang (13)
+[topic] das (6)
+[m-reference] wie » Mein Retter ! « (10)
 
-[] das (6)
+[IDENTIFICATION] das (6)
 
-[] Retter (10)
-[] Mein (9)
+[SOCIAL-RELATION] Retter (10)
+[has-social-relation] Mein (9)
 
-[] Mein (9)
+[IDENTIFICATION] Mein (9)
 
-[] sie (16)
+[IDENTIFICATION] sie (16)
 
-[] Arme (18)
+[CLASS] Arme (18)
 
-[] Sehschirm (20)
+[CLASS] Sehschirm (20)
 
-[] entgegen (21)
+[LOCATION] entgegen (21)
 
 # sent_id = 240
 # text = Dann barg sie ihr Gesicht in den Händen .
@@ -2616,22 +2604,22 @@
 8	Händen	Hand	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] barg (2)
-[] Dann (1)
-[] sie (3)
-[] ihr Gesicht (5)
-[] in den Händen (8)
+[WRAPPING-WEARING] barg (2)
+[m-time] Dann (1)
+[x-causer] sie (3)
+[wearer] ihr Gesicht (5)
+[wrapper] in den Händen (8)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] Gesicht (5)
-[] ihr (4)
+[PART-WHOLE] Gesicht (5)
+[whole] ihr (4)
 
-[] ihr (4)
+[IDENTIFICATION] ihr (4)
 
-[] Händen (8)
+[CLASS] Händen (8)
 
 # sent_id = 241
 # text = Offensichtlich sprach sie ein Gebet .
@@ -2642,16 +2630,16 @@
 5	Gebet	Gebet	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sprach (2)
-[] Offensichtlich (1)
-[] sie (3)
-[] ein Gebet (5)
+[MESSAGE] sprach (2)
+[m-mode] Offensichtlich (1)
+[x-sender] sie (3)
+[topic] ein Gebet (5)
 
-[] Offensichtlich (1)
+[MODE] Offensichtlich (1)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] Gebet (5)
+[MESSAGE] Gebet (5)
 
 # sent_id = 242
 # text = Jetzt stimmten alle Versammelten einen kraftvollen , langsamen und rhythmischen Sprechchor an : » G-B ! . . .
@@ -2675,29 +2663,29 @@
 18	.	.	PUNCT	$.	_	15	punct	_	_
 19	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stimmten (2)
-[] Jetzt (1)
-[] alle Versammelten (4)
-[] einen kraftvollen , langsamen und rhythmischen Sprechchor (11)
-[] an (12)
-[] : » G-B ! . . (15)
+[MESSASGE] stimmten (2)
+[m-time] Jetzt (1)
+[x-sender] alle Versammelten (4)
+[topic] einen kraftvollen , langsamen und rhythmischen Sprechchor (11)
+[m-noncomp] an (12)
+[content] : » G-B ! . . (15)
 
-[] Jetzt (1)
+[TIME] Jetzt (1)
 
-[] Versammelten (4)
+[CLASS] Versammelten (4)
 
-[] Sprechchor (11)
-[] kraftvollen , langsamen und rhythmischen (6)
+[MESSAGE] Sprechchor (11)
+[m-quality] kraftvollen , langsamen und rhythmischen (6)
 
-[] kraftvollen (6)
+[QUALITY] kraftvollen (6)
 
-[] langsamen (8)
+[QUALITY] langsamen (8)
 
-[] rhythmischen (10)
+[QUALITY] rhythmischen (10)
 
-[] an (12)
+[NONCOMP] an (12)
 
-[] G-B (15)
+[MESSAGE] G-B (15)
 
 # sent_id = 243
 # text = G-B ! . . .
@@ -2707,7 +2695,7 @@
 4	.	.	PUNCT	$.	_	1	punct	_	_
 5	.	.	PUNCT	$.	_	1	punct	_	_
 
-[] G-B (1)
+[MESSAGE] G-B (1)
 
 # sent_id = 244
 # text = G-B ! « - wieder und immer wieder , sehr langsam , mit einer langen Pause zwischen dem ersten G und dem zweiten B - in einem feierlichen , murmelnden , seltsam ungestüm wirkenden Ton , so dass man als Begleitung das Stampfen nackter Füße und das dumpfe Dröhnen von Tamtams zu hören glaubte .
@@ -2767,86 +2755,86 @@
 54	glaubte	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	advcl	_	_
 55	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] langsam (11)
+[QUALITY] langsam (11)
 [] wieder und immer wieder (5)
 [] sehr (10)
 [] , mit einer langen Pause zwischen dem ersten G und dem zweiten B (16)
 [] - in einem feierlichen , murmelnden , seltsam ungestüm wirkenden Ton , so dass man als Begleitung das Stampfen nackter Füße und das dumpfe Dröhnen von Tamtams zu hören glaubte (35)
 
-[] G-B (1)
+[MESSAGE] G-B (1)
 
-[] wieder (5)
+[QUANTITY] wieder (5)
 
-[] wieder (8)
+[QUANTITY] wieder (8)
 [] immer (7)
 
-[] immer (7)
+[TIME] immer (7)
 
-[] sehr (10)
+[QUANTITY] sehr (10)
 
-[] Pause (16)
+[ACTIVITY-NEG] Pause (16) #
 [] langen (15)
 [] zwischen dem ersten G und dem zweiten B (20)
 
-[] langen (15)
+[QUALITY] langen (15)
 
-[] G (20)
+[MESSAGE] G (20)
 [] ersten (19)
 
-[] ersten (19)
+[RANK] ersten (19)
 
-[] B (24)
+[MESSAGE] B (24)
 [] zweiten (23)
 
-[] zweiten (23)
+[RANK] zweiten (23)
 
-[] Ton (35)
+[MESSAGE] Ton (35)
 [] feierlichen , murmelnden , (28)
 [] seltsam ungestüm wirkenden (34)
 [] , so dass man als Begleitung das Stampfen nackter Füße und das dumpfe Dröhnen von Tamtams zu hören glaubte (54)
 
-[] feierlichen (28)
+[QUALITY] feierlichen (28)
 
-[] murmelnden (30)
+[SCENE-INIT] murmelnden (30)
 
-[] wirkenden (34)
+[SCENE-INIT] wirkenden (34)
 [] seltsam ungestüm (33)
 
-[] ungestüm (33)
+[QUALITY] ungestüm (33)
 [] seltsam (32)
 
-[] seltsam (32)
+[QUALITY] seltsam (32)
 
-[] glaubte (54)
+[MESSAGE] glaubte (54)
 [] so (37)
 [] man (39)
 [] als Begleitung (41)
 [] das Stampfen nackter Füße und das dumpfe Dröhnen von Tamtams (43)
 [] zu hören (53)
 
-[] so (37)
+[MODE] so (37)
 
-[] man (39)
+[IDENTIFICATION] man (39)
 
-[] Begleitung (41)
+[ACCOMPANIMENT] Begleitung (41) #
 
-[] Stampfen (43)
+[ACTIVITY] Stampfen (43)
 [] nackter Füße (45)
 
-[] Füße (45)
+[CLASS] Füße (45)
 [] nackter (44)
 
-[] nackter (44)
+[QUALITY] nackter (44)
 
-[] Dröhnen (49)
+[MESSAGE] Dröhnen (49)
 [] dumpfe (48)
 [] von Tamtams (51)
 
-[] dumpfe (48)
+[QUALITY] dumpfe (48)
 
-[] Tamtams (51)
+[MESSAGE] Tamtams (51)
 
-[] hören (53)
+[MESSAGE] hören (53)
 
 # sent_id = 245
 # text = Vielleicht dreißig Sekunden lang fuhren sie damit fort .
@@ -2860,28 +2848,26 @@
 8	fort	fort	ADP	PTKVZ	_	5	compound:prt	_	_
 9	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] fuhren (5)
-[] Vielleicht dreißig Sekunden lang (4)
-[] sie (6)
-[] damit (7)
-[] fort (8)
+[MESSAGE-CONTINUATION] fuhren (5)
+[m-time] Vielleicht dreißig Sekunden lang (4)
+[x-sender] sie (6)
+[topic] damit (7)
+[m-noncomp] fort (8)
 
-[] lang (4)
-[] Vielleicht dreißig Sekunden (3)
+[TIME] lang (4)
+[m-quantity] Vielleicht dreißig Sekunden (3)
 
-[] Sekunden (3)
-[] Vielleicht dreißig (2)
+[TIME] Sekunden (3)
+[m-quantity] Vielleicht dreißig (2)
 
-[] dreißig (2)
-[] Vielleicht (1)
+[QUANTITIY] dreißig (2)
+[m-mode] Vielleicht (1)
 
-[] Vielleicht (1)
+[MODE] Vielleicht (1)
 
-[] sie (6)
+[IDENTOFOCATION] sie (6)
 
-[] damit (7)
-
-[] fort (8)
+[IDENTIFICATION] damit (7)
 
 # sent_id = 246
 # text = Es war ein Refrain , den man oft in Augenblicken überwältigender Erregung hörte .
@@ -2900,31 +2886,31 @@
 13	hörte	hören	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 14	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Refrain (4)
-[] Es (1)
-[] , den man oft in Augenblicken überwältigender Erregung hörte (13)
+[MESSAGE] Refrain (4)
+[m-noncomp] Es (1)
+[m-scene] , den man oft in Augenblicken überwältigender Erregung hörte (13)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] hörte (13)
-[] den (6)
-[] man (7)
-[] oft (8)
-[] in Augenblicken überwältigender Erregung (10)
+[MESSAGE] hörte (13)
+[topic] den (6)
+[x-experiencer] man (7)
+[m-quantity] oft (8)
+[m-time] in Augenblicken überwältigender Erregung (10)
 
-[] den (6)
+[IDENTIFICATION] den (6)
 
-[] man (7)
+[IDENTIFICATION] man (7)
 
-[] oft (8)
+[QUANTITY] oft (8)
 
-[] Augenblicken (10)
-[] überwältigender Erregung (12)
+[TIME] Augenblicken (10)
+[has-time] überwältigender Erregung (12)
 
-[] Erregung (12)
-[] überwältigender (11)
+[STATE] Erregung (12)
+[m-quality] überwältigender (11)
 
-[] überwältigender (11)
+[QUALITY] überwältigender (11)
 
 # sent_id = 247
 # text = Zum Teil war es eine Art Hymne auf die Weisheit und Majestät des Großen Bruders , mehr aber noch ein Akt der Selbsthypnose , ein absichtliches Übertönen des Bewusstseins durch das Mittel rhythmischen Lärms .
@@ -2964,56 +2950,53 @@
 34	Lärms	Lärm	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	32	nmod	_	_
 35	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] Art (6)
-[] Zum Teil (2)
-[] es (4)
-[] Hymne (7)
-[] auf die Weisheit und Majestät des Großen Bruders , mehr aber noch ein Akt der Selbsthypnose , ein absichtliches Übertönen des Bewusstseins durch das Mittel rhythmischen Lärms (10)
+[COMPARISON] Art (6)
+[m-quantity] Zum Teil (2)
+[compared] es (4)
+[reference] Hymne auf die Weisheit und Majestät des Großen Bruders , mehr aber noch ein Akt der Selbsthypnose , ein absichtliches Übertönen des Bewusstseins durch das Mittel rhythmischen Lärms (10)
 
-[] Teil (2)
+[QUANTITY || PART-WHOLE] Teil (2)
 
-[] es (4)
+[IDENTIFICATION] es (4)
 
-[] Hymne (7)
+[MESSAGE] Hymne (7)
 
-[] Weisheit (10)
-[] des Großen Bruders (15)
-[] , ein absichtliches Übertönen des Bewusstseins durch das Mittel rhythmischen Lärms (27)
+[STATE] Weisheit (10)
+[has-state] des Großen Bruders (15)
 
-[] Majestät (12)
+[STATE] Majestät (12)
 
-[] Bruders (15)
-[] Großen (14)
+[IDENTIFICATION] Bruders (15)
+[m-noncomp] Großen (14)
 
-[] Großen (14)
+[NONCOMP] Großen (14)
 
-[] Akt (21)
-[] mehr (17)
-[] noch (19)
-[] der Selbsthypnose (23)
+[SCENE] Akt (21)
+[m-mode] mehr (17)
+[m-mode] noch (19)
+[scene] der Selbsthypnose (23)
 
-[] mehr (17)
+[QUANTITY] mehr (17)
 
-[] noch (19)
+[MODE] noch (19)
 
-[] Selbsthypnose (23)
+[STATE] Selbsthypnose (23)
 
-[] Übertönen (27)
-[] absichtliches (26)
-[] des Bewusstseins (29)
-[] durch das Mittel rhythmischen Lärms (32)
+[MESSAGE] Übertönen des Bewusstseins (29)
+[m-quality] absichtliches (26)
+[m-means] durch das Mittel rhythmischen Lärms (32)
 
-[] absichtliches (26)
+[QUALITY] absichtliches (26)
 
-[] Bewusstseins (29)
+[STATE] Bewusstseins (29)
 
-[] Mittel (32)
-[] rhythmischen Lärms (34)
+[MEANS] Mittel (32)
+[means] rhythmischen Lärms (34)
 
-[] Lärms (34)
-[] rhythmischen (33)
+[MESSAGE] Lärms (34)
+[m-quality] rhythmischen (33)
 
-[] rhythmischen (33)
+[QUALITY] rhythmischen (33)
 
 # sent_id = 248
 # text = Winston fühlte eine Kälte in seinen Eingeweiden .
@@ -3026,19 +3009,19 @@
 7	Eingeweiden	Eingeweide	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	2	obl	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] fühlte (2)
-[] Winston (1)
-[] eine Kälte (4)
-[] in seinen Eingeweiden (7)
+[MESSAGE] fühlte (2)
+[x-experiencer] Winston (1)
+[topic] eine Kälte (4)
+[m-location] in seinen Eingeweiden (7)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Kälte (4)
+[STATE] Kälte (4)
 
-[] Eingeweiden (7)
-[] seinen (6)
+[PART-WHOLE] Eingeweiden (7)
+[whole] seinen (6)
 
-[] seinen (6)
+[POSSESSOR] seinen (6)
 
 # sent_id = 249
 # text = Während der Zwei-Minuten-Hass-Sendung konnte er nicht umhin , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . .
@@ -3068,42 +3051,42 @@
 24	.	.	PUNCT	$.	_	21	punct	_	_
 25	.	.	PUNCT	$.	_	21	punct	_	_
 
-[] konnte (4)
-[] Während der Zwei-Minuten-Hass-Sendung (3)
-[] er (5)
-[] nicht umhin , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . . (7)
+[SCENE] konnte (4)
+[m-time] Während der Zwei-Minuten-Hass-Sendung (3)
+[participant] er (5)
+[scene] nicht umhin , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . . (7)
 
-[] Zwei-Minuten-Hass-Sendung (3)
+[MESSAGE] Zwei-Minuten-Hass-Sendung (3)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] umhin (7)
-[] nicht (6)
+[NONCOMP] umhin (7) ?
+[m-mode] nicht (6)
 [] , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . . (14)
 
-[] nicht (6)
+[MODE] nicht (6)
 
-[] zufallen (14)
+[] zufallen (14) ?
 [] gleichfalls (9)
 [] dem allgemeinen Delirium (12)
 [] anheim (13)
 
-[] gleichfalls (9)
+[TIME] gleichfalls (9)
 
-[] Delirium (12)
-[] allgemeinen (11)
+[STATE] Delirium (12)
+[m-quality >> m-quantity] allgemeinen (11)
 
-[] allgemeinen (11)
+[QUALITY] allgemeinen (11)
 
-[] anheim (13)
+[NONCOMP] anheim (13) #
 
-[] Singsang (19)
-[] unmenschliche (18)
-[] » G-B ! . . . (21)
+[MESSAGE] Singsang (19)
+[m-quality] unmenschliche (18)
+[content] » G-B ! . . . (21)
 
-[] unmenschliche (18)
+[QUALITY] unmenschliche (18)
 
-[] G-B (21)
+[MESSAGE] G-B (21)
 
 # sent_id = 250
 # text = G-B ! « . . . erfüllte ihn immer mit Abscheu .
@@ -3120,16 +3103,16 @@
 11	Abscheu	Abscheu	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	obl	_	_
 12	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] erfüllte (7)
-[] ihn (8)
-[] immer (9)
-[] mit Abscheu (11)
+[MESSAGE-INIT] erfüllte (7)
+[x-experiencer] ihn (8)
+[m-time] immer (9)
+[topic] mit Abscheu (11)
 
-[] G-B (1)
+[MESSAGE] G-B (1)
 
-[] ihn (8)
+[IDENTIFICATION] ihn (8)
 
-[] immer (9)
+[TIME] immer (9)
 
-[] Abscheu (11)
+[STATE] Abscheu (11)
 
