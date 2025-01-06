@@ -1419,7 +1419,7 @@
 28	Hass	Haß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	43	obj	_	_
 29	von	von	ADP	APPR	_	31	case	_	_
 30	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	31	det	_	_
-31	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	28	nmod	_	_
+31	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	43	nmod	_	_
 32	auf	auf	ADP	APPR	_	34	case	_	_
 33	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	Sehschirm	Sehschirm	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	31	nmod	_	_
@@ -1478,13 +1478,15 @@
 
 [] Kissen (24)
 
-[] übertragen (43)
-[] seinen Hass von dem Gesicht auf dem Sehschirm (28)
-[] auf das hinter ihm sitzende dunkelhaarige Mädchen (41)
+[SITUATION-CHANGE] übertragen (43) # TODO should be SCENE but with arg1 and arg2 reversed
+[theme] seinen Hass (28)
+[initial-situator] von dem Gesicht auf dem Sehschirm (31)
+[target-situator] auf das hinter ihm sitzende dunkelhaarige Mädchen (41)
 
-[] Hass (28)
-[] seinen (27)
-[] von dem Gesicht auf dem Sehschirm (31)
+[MESSAGE] Hass (28)
+[x-experiencer] seinen (27)
+[topic] von dem Gesicht auf dem Sehschirm (31)
+[topic] auf das hinter ihm sitzende dunkelhaarige Mädchen (41)
 
 [] seinen (27)
 
@@ -1524,11 +1526,12 @@
 
 [] Vorstellungen (4)
 [] Lebhafte (1)
-[] , berückende (3)
+[m-scene] , berückende (3)
 
 [] Lebhafte (1)
 
-[] berückende (3)
+[MESSAGE >> QUALITY] berückende (3)
+[topic >> has-quality] Vorstellungen (4)
 
 [] ihm (6)
 
@@ -1734,9 +1737,9 @@
 35	Taille	Taille	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	44	obl	_	_
 36	,	,	PUNCT	$,	_	42	punct	_	_
 37	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	42	nsubj	_	_
-38	einen	ein	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	42	obj	_	_
+38	einen	ein	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	41	obj	_	_
 39	zur	zur	ADP	APPRART	_	40	case	_	_
-40	Umarmung	Umarmung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	42	obl	_	_
+40	Umarmung	Umarmung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	41	obl	_	_
 41	aufzufordern	auffordern	VERB	VVIZU	VerbForm=Inf	42	xcomp	_	_
 42	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl	_	_
 43	,	,	PUNCT	$,	_	35	punct	_	_
@@ -1788,14 +1791,14 @@
 
 [] Bett (19)
 
-[] werden (26)
-[] daraus (23)
-[] nie (24)
-[] etwas (25)
+[SCENE-INIT] werden (26) # TODO abolish PREVENTION
+[target-scene] daraus (23)
+[m-time] nie (24) # TODO manual: negative polarity idioms
+[x-noncomp] etwas (25)
 
-[] daraus (23)
+[IDENTIFICATION] daraus (23)
 
-[] nie (24)
+[TIME-NEG] nie (24)
 
 [] etwas (25)
 
@@ -1817,19 +1820,20 @@
 
 [] biegsame (34)
 
-[] schien (42)
-[] die (37)
-[] einen (38)
-[] zur Umarmung (40)
-[] aufzufordern (41)
+[MESSAGE] schien (42)
+[topic] die (37)
+[content] einen zur Umarmung aufzufordern (41)
 
-[] die (37)
+[IDENTIFICATION] die (37)
+
+[MESSAGE-INIT >> SCENE-INIT] aufzufordern (41) # TODO manual: speech acts
+[x-experiencer >> participant] einen (38)
+[target-content >> target-scene] zur Umarmung (40)
+[x-sender >> x-causer] die (37)
 
 [] einen (38)
 
 [] Umarmung (40)
-
-[] aufzufordern (41)
 
 [] sich (45)
 
@@ -2546,11 +2550,11 @@
 16	geworfen	werfen	VERB	VVPP	Verbform=Part	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
-[] geworfen (16)
-[] Die kleine Frau (3)
-[] sich (5)
-[] über die Lehne des vor ihr stehenden Stuhles (8)
-[] nach vorne (15)
+[LOCATION-INIT] geworfen (16)
+[x-causer >> has-location] Die kleine Frau (3)
+[has-location] sich (5)
+[transitory-location] über die Lehne des vor ihr stehenden Stuhles (8)
+[target-location] nach vorne (15)
 
 [] Frau (3)
 [] kleine (2)
@@ -2559,8 +2563,8 @@
 
 [] sich (5)
 
-[] Lehne (8)
-[] des vor ihr stehenden Stuhles (13)
+[PART-WHOLE] Lehne (8)
+[whole] des vor ihr stehenden Stuhles (13)
 
 [] Stuhles (13)
 [] vor ihr stehenden (12)
@@ -3071,7 +3075,7 @@
 3	Zwei-Minuten-Hass-Sendung	Zwei-Minuten-Hass-Sendung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
 4	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
-6	nicht	nicht	PART	PTKNEG	Polarity=Neg	7	advmod	_	_
+6	nicht	nicht	PART	PTKNEG	Polarity=Neg	4	advmod	_	_
 7	umhin	umhin	ADP	PTKVZ	_	4	compound:prt	_	_
 8	,	,	PUNCT	$,	_	14	punct	_	_
 9	gleichfalls	gleichfalls	ADV	ADV	_	14	advmod	_	_
@@ -3079,12 +3083,12 @@
 11	allgemeinen	allgemein	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	12	amod	_	_
 12	Delirium	Delirium	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	14	iobj	_	_
 13	anheim	anheim	X	TRUNC	_	14	advmod	_	_
-14	zufallen	zufallen	VERB	VVIZU	VerbForm=Inf	7	xcomp	_	_
+14	zufallen	zufallen	VERB	VVIZU	VerbForm=Inf	4	xcomp	_	_
 15	,	,	PUNCT	$,	_	19	punct	_	_
 16	aber	aber	CCONJ	KON	_	19	cc	_	_
 17	dieser	dies	DET	PDAT	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	19	det	_	_
 18	unmenschliche	unmenschlich	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	19	amod	_	_
-19	Singsang	Singsang	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	14	conj	_	_
+19	Singsang	Singsang	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	4	conj	_	_
 20	»	»	PUNCT	$(	_	21	punct	_	_
 21	G-B	G-B	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing	19	appos	_	_
 22	!	!	PUNCT	$.	_	21	punct	_	_
@@ -3092,10 +3096,12 @@
 24	.	.	PUNCT	$.	_	21	punct	_	_
 25	.	.	PUNCT	$.	_	21	punct	_	_
 
-[] konnte (4)
-[] Während der Zwei-Minuten-Hass-Sendung (3)
-[] er (5)
-[] nicht umhin , gleichfalls dem allgemeinen Delirium anheim zufallen , aber dieser unmenschliche Singsang » G-B ! . . . (7)
+[SCENE-NECESSITY-NEG] konnte (4)
+[m-time] Während der Zwei-Minuten-Hass-Sendung (3)
+[participant] er (5)
+[m-mode] nicht (6)
+[m-noncomp] umhin (7)
+[scene] , gleichfalls dem allgemeinen Delirium anheim zufallen (14)
 
 [] Zwei-Minuten-Hass-Sendung (3)
 
@@ -3103,12 +3109,14 @@
 
 [] nicht (6)
 
-[] zufallen (14)
-[] gleichfalls (9)
-[] dem allgemeinen Delirium (12)
-[] anheim (13)
+[POSSESSION-INIT >> SCENE-INIT] zufallen (14)
+[m-scene] gleichfalls (9)
+[target-possessor >> target-scene] dem allgemeinen Delirium (12)
+[m-noncomp] anheim (13)
+[possessum >> participant] er (5)
 
-[] gleichfalls (9)
+[COMPARISON >> ACCOMPANIMENT] gleichfalls (9) # TODO manual: even, also, too, auch ... als ACCOMPANIMENT
+[compared >> accompanier] zufallen (14)
 
 [] Delirium (12)
 [] allgemeinen (11)

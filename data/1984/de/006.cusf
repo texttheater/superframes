@@ -64,16 +64,17 @@
 [] Lichter (20)
 [] , die einem die Augen blendeten (26)
 
-[] blendeten (26)
-[] die (22)
-[] einem (23)
-[] die Augen (25)
+[MESSAGE-INIT] blendeten (26)
+[x-sender] die (22)
+[x-experiencer] einem (23)
+[x-attribute >> x-noncomp] die Augen (25)
 
 [] die (22)
 
 [] einem (23)
 
-[] Augen (25)
+[PART-WHOLE] Augen (25)
+[whole] einem (23)
 
 [] Kreis (29)
 [] harter Gesichter (31)
@@ -149,10 +150,10 @@
 10	Nacht	Nacht	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] verschwanden (3)
-[] Die Menschen (2)
-[] einfach (4)
-[] , immer mitten in der Nacht (10)
+[LOCATION-DEINIT >> DESTRUCTION] verschwanden (3)
+[has-location >> destroyed] Die Menschen (2)
+[m-mode] einfach (4) # TODO better definition of MODE (vs. QUALITY)
+[m-time] , immer mitten in der Nacht (10)
 
 [] Menschen (2)
 
@@ -371,27 +372,27 @@
 13	mit	mit	ADP	APPR	_	15	case	_	_
 14	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	genickschuss	Genickschuß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
-16	erschießen	erschießen	VERB	VVINF	VerbForm=Inf	5	ccomp	_	_
+16	erschießen	erschießen	VERB	VVINF	VerbForm=Inf	5	conj	_	_
 17	wenn	wenn	SCONJ	KOUS	_	20	mark	_	_
 18	ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	20	nsubj	_	_
 19	nicht	nicht	PART	PTKNEG	Polarity=Neg	20	advmod	_	_
 20	aufpasse	aufpassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	advcl	_	_
-21	nieder	nieder	ADV	ADV	_	27	advmod	_	_
+21	nieder	nieder	ADV	ADV	_	5	conj	_	_
 22	mit	mit	ADP	APPR	_	25	case	_	_
 23	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 24	großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	25	amod	_	_
-25	bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	20	obl	_	_
+25	bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	21	obl	_	_
 26	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	27	nsubj	_	_
-27	erschießen	erschießen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
+27	erschießen	erschießen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 28	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	obj	_	_
 29	immer	immer	ADV	ADV	_	27	advmod	_	_
-30	mit	mit	ADP	APPR	_	25	case	_	_
+30	mit	mit	ADP	APPR	_	31	case	_	_
 31	genickschuss	Genickschuß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	27	obl	_	_
-32	mir	ich	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=1|PronType=Prs	27	iobj	_	_
-33	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	cop	_	_
-34	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
-35	egal	egal	ADJ	ADJD	_	27	advmod	_	_
-36	nieder	nieder	ADV	ADV	_	27	advmod	_	_
+32	mir	ich	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=1|PronType=Prs	35	iobj	_	_
+33	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	_
+34	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+35	egal	egal	ADJ	ADJD	_	5	conj	_	_
+36	nieder	nieder	ADV	ADV	_	5	conj	_	_
 37	mit	mit	ADP	APPR	_	40	case	_	_
 38	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 39	großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	40	amod	_	_
@@ -403,7 +404,6 @@
 [] sie (2)
 [] mich (4)
 [] wenn ich nicht aufpasse (9)
-[] sie werden mich mit einem genickschuss erschießen wenn ich nicht aufpasse nieder mit dem großen bruder sie erschießen einen immer mit genickschuss mir ist es egal nieder mit dem großen bruder (16)
 
 [] sie (2)
 
@@ -421,8 +421,7 @@
 [] sie (10)
 [] mich (12)
 [] mit einem genickschuss (15)
-[] wenn ich nicht aufpasse mit dem großen bruder mit (20)
-[] nieder sie erschießen einen immer genickschuss mir ist es egal nieder mit dem großen bruder (27)
+[] wenn ich nicht aufpasse (20)
 
 [] sie (10)
 
@@ -433,11 +432,13 @@
 [] aufpasse (20)
 [] ich (18)
 [] nicht (19)
-[] mit dem großen bruder mit (25)
 
 [] ich (18)
 
 [] nicht (19)
+
+[] nieder (21)
+[] mit dem großen bruder (25)
 
 [] bruder (25)
 [] großen (24)
@@ -445,17 +446,10 @@
 [] großen (24)
 
 [] erschießen (27)
-[] nieder (21)
 [] sie (26)
 [] einen (28)
 [] immer (29)
-[] genickschuss (31)
-[] mir (32)
-[] es (34)
-[] egal (35)
-[] ist nieder mit dem großen bruder (36)
-
-[] nieder (21)
+[] mit genickschuss (31)
 
 [] sie (26)
 
@@ -465,11 +459,13 @@
 
 [] genickschuss (31)
 
+[] egal (35)
+[] mir (32)
+[] es (34)
+
 [] mir (32)
 
 [] es (34)
-
-[] egal (35)
 
 [] nieder (36)
 [] mit dem großen bruder (40)
@@ -491,7 +487,7 @@
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
 10	wenig	wenig	DET	PIAT	Definite=Ind|Gender=Neut	11	advmod	_	_
-11	beschämt	beschämt	ADJ	ADJD	_	2	appos	_	_
+11	beschämt	beschämt	ADJ	ADJD	_	2	advcl	_	_
 12	über	über	ADP	APPR	_	13	case	_	_
 13	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	nmod	_	_
 14	selbst	selbst	ADV	ADV	_	13	advmod	_	_
@@ -503,11 +499,12 @@
 20	hin	hin	ADP	PTKVZ	_	17	compound:prt	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] lehnte , ein wenig beschämt über sich selbst (2)
+[] lehnte (2)
 [] Er (1)
 [] sich (3)
 [] in seinen Stuhl (6)
 [] zurück (7)
+[] , ein wenig beschämt über sich selbst (11)
 
 [] Er (1)
 
@@ -632,8 +629,8 @@
 
 [] Draussenstehende (12)
 
-[] Versuch (17)
-[] einmaligen (16)
+[SCENE-INIT] Versuch (17)
+[m-time] einmaligen (16)
 
 [] einmaligen (16)
 
@@ -659,31 +656,32 @@
 # sent_id = 315
 # text = Das Schlimmste , was er tun konnte , war zu zögern .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
-2	Schlimmste	Schlimmste	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	11	nsubj:pass	_	_
+2	Schlimmste	Schlimmste	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	,	,	PUNCT	$,	_	6	punct	_	_
 4	was	was	PRON	PRELS	Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	6	obj	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
 6	tun	tun	VERB	VVINF	VerbForm=Inf	2	acl	_	_
 7	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
 8	,	,	PUNCT	$,	_	6	punct	_	_
-9	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
+9	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_
 10	zu	zu	PART	PTKZU	_	11	mark	_	_
-11	zögern	zögern	VERB	VVINF	VerbForm=Inf	0	root	_	_
-12	.	.	PUNCT	$.	_	11	punct	_	_
+11	zögern	zögern	VERB	VVINF	VerbForm=Inf	2	nsubj	_	_
+12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] zögern (11)
-[] Das Schlimmste , was er tun konnte , (2)
-
-[] Schlimmste (2)
-[] , was er tun konnte , (6)
+[QUALITY] Schlimmste (2) # TODO manual
+[m-scene] , was er tun konnte , (6)
+[has-quality] war zu zögern (11)
 
 [] tun (6)
 [] was (4)
 [] er (5)
+[] Schlimmste (2)
 
 [] was (4)
 
 [] er (5)
+
+[] zögern (11)
 
 # sent_id = 316
 # text = Sein Herz klopfte wie eine Pauke , aber sein Gesicht war , vermutlich aus langer Gewohnheit , ganz ausdruckslos .
@@ -759,11 +757,11 @@
 [] Er (1)
 
 [] ging (5)
-[] schweren Schrittes (7)
+[m-means >> m-quality] schweren Schrittes (7) # TODO manual
 [] zur Tür (9)
 
-[] Schrittes (7)
-[] schweren (6)
+[UNANCHORED-MOTION >> QUALITY] Schrittes (7)
+[m-quality] schweren (6)
 
 [] schweren (6)
 
@@ -844,7 +842,7 @@
 9	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 10	halbe	halb	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	11	amod	_	_
 11	Seite	Seite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	obl	_	_
-12	hinweg	hinweg	ADV	ADV	_	11	advmod	_	_
+12	hinweg	hinweg	ADV	ADV	_	6	case	_	_
 13	in	in	ADP	APPR	_	14	case	_	_
 14	Buchstaben	Buchstabe	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	6	obl	_	_
 15	,	,	PUNCT	$,	_	18	punct	_	_
@@ -867,7 +865,7 @@
 [] stand (6)
 [] Nieder mit dem Großen Bruder (1)
 [] da (7)
-[] über die halbe Seite hinweg (11)
+[m-location] über die halbe Seite hinweg (11)
 [] in Buchstaben , die beinahe groß genug waren , um durch das ganze Zimmer leserlich zu sein (14)
 
 [] Nieder (1)
@@ -880,26 +878,23 @@
 
 [] da (7)
 
-[] Seite (11)
-[] halbe (10)
-[] hinweg (12)
+[CLASS] Seite (11)
+[m-quantity] halbe (10)
 
 [] halbe (10)
-
-[] hinweg (12)
 
 [] Buchstaben (14)
 [] , die beinahe groß genug waren , um durch das ganze Zimmer leserlich zu sein (18)
 
 [] groß (18)
 [] die (16)
-[] beinahe (17)
+[m-mode] beinahe (17)
 [] genug (19)
 [] , um durch das ganze Zimmer leserlich zu sein (27)
 
 [] die (16)
 
-[] beinahe (17)
+[MODE] beinahe (17) # TODO manual (warum nicht COMPARISON, warum nicht QUANTITY)
 
 [] genug (19)
 
