@@ -439,7 +439,7 @@
 [PART-WHOLE >> SOCIAL-RELATION] Mitglied (11)
 [whole >> social-relation] der Inneren Partei (14)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (14)
+[CLASS >> IDENTIFICATION] Partei (14)
 [m-quality >> m-noncomp] Inneren (13)
 
 [QUALITY >> NONCOMP] Inneren (13)
@@ -679,20 +679,21 @@
 22	wirkte	wirken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
-[SCENE-CONTINUATION] hatte (2)
+[SCENE] hatte (2)
 [participant] Er (1)
-[initial-scene] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
+[scene] eine Manier , seine Brille auf der Nase zurechtzurücken , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (4)
 
 [IDENTIFICATION] Er (1)
 
-[ACTIVITY] Manier (4)
-[activity] , seine Brille auf der Nase zurechtzurücken (11)
+[SCENE] Manier (4)
+[scene] , seine Brille auf der Nase zurechtzurücken (11)
 [m-scene] , die seltsam entwaffnend und auf eine merkwürdige Weise zivilisiert wirkte (22)
-[is-active] Er (1)
+[participant] Er (1)
 
 [LOCATION-INIT] zurechtzurücken (11)
 [has-location] seine Brille (7)
 [target-location] auf der Nase (10)
+[x-causer] Er (1)
 
 [CLASS] Brille (7)
 [m-possessor] seine (6)
@@ -2029,7 +2030,7 @@
 [STATE] Reinheit (11)
 [has-state] der Partei (13)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (13)
+[CLASS >> IDENTIFICATION] Partei (13)
 
 # sent_id = 182
 # text = Alle später gegen die Partei gerichteten Verbrechen , alle Verrätereien , Sabotageakte , Ketzereien , Abweichungen gingen unmittelbar auf seine Irrlehren zurück .
@@ -2363,9 +2364,9 @@
 
 [QUALITY] eigentümlich (24)
 
-[MESSAGE-INIT] schien (45)
+[MESSAGE] schien (45)
 [topic] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
-[target-content] eine Art seniler Blödheit auszustrahlen (44)
+[content] eine Art seniler Blödheit auszustrahlen (44)
 [topic] Gesicht (26)
 
 [PART-WHOLE] Nase (31)
@@ -2382,20 +2383,20 @@
 [has-location] eine Brille (37)
 [location] Nase (31)
 
-[LOCATION] Ende (35)
-[location] deren (34)
+[PART-WHOLE] Ende (35)
+[whole] deren (34)
+[whole] Nase (31)
 
 [IDENTIFICATION] deren (34)
 
 [CLASS] Brille (37)
 
-[MESSAGE-INIT] auszustrahlen (44)
-[target-content] eine Art seniler Blödheit (41)
+[MESSAGE] auszustrahlen (44)
+[content] eine Art seniler Blödheit (41)
 [x-sender] dessen lange dünne Nase , auf deren Ende eine Brille saß , (31)
-[x-sender] Gesicht (26)
 
-[PART-WHOLE] Art (41)
-[part] seniler Blödheit (43)
+[SUBCLASS] Art (41)
+[superclass] seniler Blödheit (43)
 
 [MESSAGE] Blödheit (43)
 [m-quality] seniler (42)
@@ -2684,7 +2685,7 @@
 63	Worte	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	66	obj	_	_
 64	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_
 65	Neusprache	Neusprache	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	63	nmod	_	_
-66	enthielt	enthalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	conj	_	_
+66	enthielt	enthalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	52	conj	_	_
 67	:	:	PUNCT	$.	_	70	punct	_	_
 68	praktisch	praktisch	ADJ	ADJD	_	69	advmod	_	_
 69	mehr	mehr	ADV	ADV	_	70	det	_	_
@@ -2764,22 +2765,23 @@
 [m-purpose || m-part ] alles das (42)
 [m-quality] überstürzten , (45)
 [m-quality] vielsilbigen (47)
-[m-scene] , die eine Art Parodie des üblichen Stils der Parteiredner war und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (52)
+[m-scene] , die eine Art Parodie des üblichen Stils der Parteiredner war (52)
+[m-part] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
 
 [QUALITY] überstürzten (45)
 
 [QUALITY] vielsilbigen (47)
 
-[???] Art (52)
-[] die (50)
-[] Parodie des üblichen Stils der Parteiredner (53)
-[] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
-[] Ansprache (48)
+[SUBCLASS] Art (52)
+[subclass] die (50)
+[superclass] Parodie des üblichen Stils der Parteiredner (53)
+[subclass] Ansprache (48)
 
 [IDENTIFICATION] die (50)
 
 [MESSAGE] Parodie (53)
 [topic] des üblichen Stils der Parteiredner (56)
+[x-has-class] die (50)
 
 [MESSAGE] Stils (56)
 [m-scene] üblichen (55)
@@ -2930,8 +2932,8 @@
 [SCENE-CONTINUATION] noch (13)
 
 [MESSAGE-PREVENTION] verbarg (28)
-[target-content] was (20)
-[target-content] sich (21)
+[topic] was (20)
+[topic] sich (21)
 [m-mode] in Wahrheit (23)
 [x-causer] hinter Goldsteins widerlicher Phrasendrescherei (27)
 
@@ -3068,11 +3070,11 @@
 [MESSAGE] Geräuschkulisse (9)
 [m-scene] , von der Goldsteins blökende Stimme sich abhob (17)
 
-[???] abhob (17)
-[] von der (12)
-[] Goldsteins blökende Stimme (15)
-[] sich (16)
-[] Geräuschkulisse (9)
+[LOCATION-DEINIT] abhob (17)
+[initial-location] von der (12)
+[x-causer >> has-location] Goldsteins blökende Stimme (15)
+[has-location] sich (16)
+[initial-location] Geräuschkulisse (9)
 
 [IDENTIFICATION] der (12)
 
@@ -3085,7 +3087,7 @@
 [MESSAGE >> QUALITY] blökende (14)
 [x-sender >> has-quality] Stimme (15)
 
-[] sich (16)
+[IDENTIFICATION] sich (16)
 
 # sent_id = 192
 # text = Ehe die Hassovation dreißig Sekunden gedauert hatte , brachen von den Lippen der Hälfte der im Raum versammelten Menschen unbeherrschte Wutschreie .
@@ -3351,7 +3353,7 @@
 3	aber	aber	ADV	ADV	_	2	advmod	_	_
 4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
 5	,	,	PUNCT	$,	_	71	punct	_	_
-6	dass	dass	SCONJ	KOUS	_	64	mark	_	_
+6	dass	dass	SCONJ	KOUS	_	8	mark	_	_
 7	Goldsteins	Goldstein	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
 8	Einfluss	Einfluß	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	68	reparandum	_	_
 9	,	,	PUNCT	$,	_	15	punct	_	_
@@ -3371,7 +3373,7 @@
 23	und	und	CCONJ	KON	_	24	cc	_	_
 24	tausendmal	tausendmal	ADV	ADV	_	22	conj	_	_
 25	am	am	ADP	APPRART	_	26	case	_	_
-26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	41	obl	_	_
+26	Tag	Tag	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	24	obl	_	_
 27	auf	auf	ADP	APPR	_	28	case	_	_
 28	Rednertribünen	Rednertribüne	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	41	obl	_	_
 29	,	,	PUNCT	$,	_	32	punct	_	_
@@ -3434,18 +3436,19 @@
 [m-conceded] , lächerlich gemacht (46)
 [m-conceded] , der Allgemeinheit als der jammervolle Unsinn der sie waren , vor Augen gehalten wurde (61)
 [m-conceded] trotz alledem (66)
-[topic] Goldsteins Einfluss dieser Einfluss (68)
+[topic] dass Goldsteins Einfluss dieser Einfluss (68)
 [m-time] nie (69)
 [content] abzunehmen (70)
 
 [MESSAGE] gehasst (15)
 [topic] er (11)
-[m-mode] auch (12)
+[m-scene] auch (12)
 [x-experiencer] von jedermann (14)
 
 [IDENTIFICATION] er (11)
 
-[MODE] auch (12)
+[ACCOMPANIMENT >> CONCESSION] auch (12)
+[accompanier >> conceded] gehasst (15)
 
 [CLASS] jedermann (14)
 
@@ -3454,21 +3457,23 @@
 [x-experiencer] von jedermann (14)
 
 [MESSAGE-INIT] verdammt (41)
-[m-mode] auch (21)
+[m-scene] auch (21)
 [m-time] tagtäglich (22)
 [m-time] und tausendmal (24)
-[m-time] am Tag (26)
 [x-sender] auf Rednertribünen (28)
 [x-sender] , durch den Televisor (32)
 [x-sender] , in Zeitungen (35)
 [x-sender] , in Büchern (38)
 [topic] seine Theorien (40)
+[m-time] am Tag (26)
 
-[MODE] auch (21)
+[ACCOMPANIMENT >> CONCESSION] auch (21)
+[accompanier >> conceded] verdammt (41)
 
 [TIME] tagtäglich (22)
 
 [TIME] tausendmal (24)
+[m-followed] am Tag (26)
 
 [TIME] Tag (26)
 
@@ -3495,16 +3500,18 @@
 [QUALITY] lächerlich (45)
 [has-quality] seine Theorien (40)
 
-[??? MESSAGE] gehalten (61)
-[??? x-experiencer] , der Allgemeinheit (49)
-[??? topic] als der jammervolle Unsinn der sie waren , (53)
-[???] vor Augen (60)
+[MESSAGE-INIT] gehalten (61)
+[x-experiencer] , der Allgemeinheit (49)
+[target-content] als der jammervolle Unsinn der sie waren , (53)
+[x-noncomp] vor Augen (60)
+[topic] Theorien (40)
 
 [CLASS] Allgemeinheit (49)
 
 [MESSAGE] Unsinn (53)
 [m-quality] jammervolle (52)
 [m-scene] der sie waren (55)
+[x-identified] Theorien (40)
 
 [QUALITY] jammervolle (52)
 
@@ -3514,14 +3521,14 @@
 
 [IDENTIFICATION] sie (56)
 
-[??? NONCOMP] Augen (60)
+[NONCOMP] Augen (60)
 
 [IDENTIFICATION] alledem (66)
 
 [MEANS] Einfluss (68)
 
-[MEANS] Einfluss (8)
-[x-causer] Goldsteins (7)
+[POSSESSION || EVENT] Einfluss (8)
+[possessor || x-causer] Goldsteins (7)
 
 [IDENTIFICATION] Goldsteins (7)
 
@@ -3615,10 +3622,10 @@
 [SOCIAL-RELATION] Spione (13)
 [m-scene] nach seinen Weisungen tätige (12)
 
-[??? EVENT ??? kein ACTIVITY, weil der causer nicht gleich undergoer sei?] tätige (12)
-[x-causer] nach seinen Weisungen (11)
-[undergoer] Spione (13)
-[undergoer] Saboteure (15)
+[ACTIVITY] tätige (12)
+[m-followed] nach seinen Weisungen (11)
+[is-active] Spione (13)
+[is-active] Saboteure (15)
 
 [MESSAGE] Weisungen (11)
 [x-sender] seinen (10)
@@ -3652,46 +3659,47 @@
 18	Regierung	Regierung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	_
 19	zum	zum	ADP	APPRART	_	20	case	_	_
 20	Ziel	Ziel	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	21	obl	_	_
-21	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
+21	setzte	setzen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
-[PART-WHOLE] Befehlshaber (4)
-[part] Er (1)
-[whole] einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
+[PART-WHOLE || SOCIAL-RELATION] Befehlshaber (4)
+[part || has-social-relation] Er (1)
+[whole || social-relation] einer großen Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
 
 [IDENTIFICATION] Er (1)
 
-[SOCIAL-RELATION] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[SOCIAL-RELATION] Schatten-Armee , eines Untergrund- Verschwörernetzes , das sich den Sturz der Regierung zum Ziel setzte (7)
 [m-quality] großen (6)
-[m-scene] , das sich den Sturz der Regierung zum Ziel setzte (21)
 
 [QUALITY] großen (6)
 
-[??? SOCIAL-RELATION] Verschwörernetzes (11)
-[???] Untergrund- (10)
+[SOCIAL-RELATION] Verschwörernetzes (11)
+[m-location >> m-quality] Untergrund- (10)
+[m-scene] , das sich den Sturz der Regierung zum Ziel setzte (21)
 
-[???] Untergrund- (10)
+[LOCATION >> QUALITY] Untergrund- (10)
 
 [SCENE-INIT] setzte (21)
-[participant] das (13)
+[x-causer >> participant] das (13)
 [participant] sich (14)
-[??? target-scene] den Sturz der Regierung (16)
-[??? target-scene] zum Ziel (20)
-[participant] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[participant] den Sturz der Regierung (16)
+[target-scene] zum Ziel (20)
+[x-causer >> participant] Verschwörernetzes (11)
 
 [IDENTIFICATION] das (13)
 
 [IDENTIFICATION] sich (14)
 
-[LOCATION-DEINIT >> EVENT] Sturz (16)
-[has-location >> undergoer] der Regierung (18)
-[x-causer] das (13)
-[x-causer] sich (14)
-[x-causer] Schatten-Armee , eines Untergrund- Verschwörernetzes (7)
+[LOCATION-CHANGE >> POSSESSION-DEINIT] Sturz (16)
+[has-location >> initial-possessor] der Regierung (18)
 
 [SOCIAL-RELATION] Regierung (18)
 
-[SEQUENCE] Ziel (20)
+[MEANS] Ziel (20)
+[purpose] den Sturz der Regierung (16)
+[means] Verschwörernetzes (11)
+[means] das (13)
+[means] sich (14)
 
 # sent_id = 199
 # text = Der Name der Organisation sei » Die Bruderschaft « , so hieß es .
@@ -3710,10 +3718,10 @@
 13	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 14	.	.	PUNCT	$.	_	12	punct	_	_
 
-[IDENTIFICATION] hieß (12)
-[identifier] Der Name der Organisation sei » Die Bruderschaft « , (8)
-[m-scene] so (11)
-[identified] es (13)
+[MESSAGE] hieß (12)
+[content] Der Name der Organisation sei » Die Bruderschaft « , (8)
+[content] so (11)
+[x-noncomp] es (13)
 
 [IDENTIFICATION] Bruderschaft (8)
 [identified] Der Name der Organisation (2)
@@ -3724,7 +3732,6 @@
 [CLASS] Organisation (4)
 
 [IDENTIFICATION] so (11)
-[identified] hieß (12)
 
 [IDENTIFICATION] es (13)
 
@@ -3742,52 +3749,54 @@
 10	Zusammenfassung	Zusammenfassung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	appos	_	_
 11	aller	alle	DET	PIAT	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	12	det	_	_
 12	Irrlehren	Irrlehre	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	10	nmod	_	_
-13	,	,	PUNCT	$,	_	15	punct	_	_
+13	,	,	PUNCT	$,	_	16	punct	_	_
 14	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	15	det	_	_
-15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	12	nsubj	_	_
-16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
-17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
+15	Verfasser	Verfasser	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
+16	Goldstein	Goldstein	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	acl	_	_
+17	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	_	_
 18	und	und	CCONJ	KON	_	24	cc	_	_
 19	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	24	nsubj	_	_
 20	heimlich	heimlich	ADJ	ADJD	_	24	advmod	_	_
 21	da	da	ADV	ADV	_	24	advmod	_	_
 22	und	und	CCONJ	KON	_	23	cc	_	_
 23	dort	dort	ADV	ADV	_	21	conj	_	_
-24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+24	zirkulierte	zirkulieren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE-INIT] flüsterte (2)
 [m-scene] Auch (1)
 [x-sender] man (3)
-[topic] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
+[topic] von einem schrecklichen Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war und das heimlich da und dort zirkulierte (7)
 
 [ACCOMPANIMENT] Auch (1)
 [accompanier] flüsterte (2)
 
 [IDENTIFICATION] man (3)
 
-[MESSAGE] Buch , einer Zusammenfassung aller Irrlehren , dessen Verfasser Goldstein war (7)
+[MESSAGE] Buch , einer Zusammenfassung aller Irrlehren (7)
 [m-quality] schrecklichen (6)
+[x-sender] , dessen Verfasser Goldstein war (16)
+[m-scene] und das heimlich da und dort zirkulierte (24)
 
 [QUALITY] schrecklichen (6)
 
-[MESSAGE] Zusammenfassung (10)
-[topic] aller Irrlehren , dessen Verfasser Goldstein war (12)
+[REPRODUCTION || MESSAGE] Zusammenfassung (10)
+[original || topic] aller Irrlehren (12)
 
 [MESSAGE] Irrlehren (12)
-[m-scene] , dessen Verfasser Goldstein war (15)
-
-[SENDING] Verfasser (15)
-[sender] Goldstein (16)
-[sent] Irrlehren (12)
 
 [IDENTIFICATION] Goldstein (16)
+[identified] dessen Verfasser (15)
+
+[SENDING] Verfasser (15)
+[sent] Buch , einer Zusammenfassung aller Irrlehren (7)
 
 [UNANCHORED-MOTION] zirkulierte (24)
 [in-motion] das (19)
 [m-scene] heimlich (20)
 [transitory-location] da (21)
 [transitory-location] und dort (23)
+[in-motion] Buch , einer Zusammenfassung aller Irrlehren (7)
 
 [IDENTIFICATION] das (19)
 
