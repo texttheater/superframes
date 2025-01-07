@@ -9,13 +9,13 @@
 7	verstummt	verstummen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] verstummt (7)
-[] Die Musik aus dem Televisor (2)
+[?SCENE-DEINIT] verstummt (7) # # "(von Lauten, Geräuschen, von Hörbarem) aufhören, enden"
+[initial-scene] Die Musik aus dem Televisor (2)
 
-[] Musik (2)
-[] aus dem Televisor (5)
+[MESSAGE] Musik (2)
+[x-sender] aus dem Televisor (5)
 
-[] Televisor (5)
+[CLASS] Televisor (5)
 
 # sent_id = 402
 # text = Statt dessen verlas eine forsche militärische Stimme mit einer Art brutalen Behagens eine Beschreibung von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war .
@@ -54,68 +54,70 @@
 33	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	aux	_	_
 34	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] verlas (3)
-[] Statt dessen (2)
-[] eine forsche militärische Stimme (7)
-[] mit einer Art brutalen Behagens (10)
-[] eine Beschreibung von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (14)
+[MESSAGE-INIT] verlas (3)
+[m-reference] Statt dessen (2)
+[x-sender] eine forsche militärische Stimme (7)
+[m-accompanier] mit einer Art brutalen Behagens (10)
+[target-content] eine Beschreibung von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (14)
 
-[] dessen (2)
+[IDENTIFICATION] dessen (2)
 
-[] Stimme (7)
-[] forsche (5)
-[] militärische (6)
+[MESSAGE] Stimme (7)
+[m-quality] forsche (5)
+[x-sender || m-quality] militärische (6)
 
-[] forsche (5)
+[QUALITY] forsche (5)
 
-[] militärische (6)
+[SOCIAL-RELATION || QUALITY] militärische (6)
 
-[] Art (10)
-[] brutalen Behagens (12)
+[SUBCLASS] Art (10)
+[superclass] brutalen Behagens (12)
 
-[] Behagens (12)
-[] brutalen (11)
+[MESSAGE] Behagens (12)
+[m-quality] brutalen (11)
 
-[] brutalen (11)
+[QUALITY] brutalen (11)
 
-[] Beschreibung (14)
-[] von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (17)
+[MESSAGE] Beschreibung (14)
+[topic] von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (17)
 
-[] Bewaffnung (17)
-[] der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (21)
+[POSSESSION-INIT || STATE-CHANGE] Bewaffnung (17)
+[target-possessor || has-state] der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (21)
 
-[] Festung (21)
-[] neuen (19)
-[] Schwimmenden (20)
-[] , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (32)
+[CLASS >> IDENTIFICATION] Festung (21)
+[m-time >> m-quality] neuen (19)
+[m-state >> m-noncomp] Schwimmenden (20)
+[m-scene] , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (32)
 
-[] neuen (19)
+[TIME >> QUALITY] neuen (19)
 
-[] Schwimmenden (20)
+[STATE >> NONCOMP] Schwimmenden (20)
 
-[] gegangen (32)
-[] die (23)
-[] soeben (24)
-[] zwischen Island und den Faröer-Inseln (26)
-[] vor Anker (31)
+[LOCATION-INIT] gegangen (32)
+[has-location] die (23)
+[m-time] soeben (24)
+[target-location] zwischen Island (26)
+[target-location] und den Faröer-Inseln (29)
+[x-noncomp] vor Anker (31)
+[has-location] Festung (21)
 
-[] die (23)
+[IDENTIFICATION] die (23)
 
-[] soeben (24)
+[TIME] soeben (24)
 
-[] Island (26)
+[IDENTIFICATION] Island (26)
 
-[] Faröer-Inseln (29)
+[IDENTIFICATION] Faröer-Inseln (29)
 
-[] Anker (31)
+[NONCOMP] Anker (31)
 
 # sent_id = 403
 # text = Mit diesen Kindern , dachte Winston , musste die arme Frau ein Höllenleben haben .
 1	Mit	mit	ADP	APPR	_	3	case	_	_
 2	diesen	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Plur|PronType=Dem	3	det	_	_
-3	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	5	obl	_	_
+3	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	14	obl	_	_
 4	,	,	PUNCT	$,	_	3	punct	_	_
-5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	parataxis	_	_
+5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
 7	,	,	PUNCT	$,	_	3	punct	_	_
 8	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
@@ -124,31 +126,33 @@
 11	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	14	nsubj	_	_
 12	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
 13	Höllenleben	Höllenleben	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	14	obj	_	_
-14	haben	haben	AUX	VAINF	VerbForm=Inf	0	root	_	_
+14	haben	haben	AUX	VAINF	VerbForm=Inf	5	parataxis	_	_
 15	.	.	PUNCT	$.	_	14	punct	_	_
 
-[] haben (14)
-[] die arme Frau (11)
-[] ein Höllenleben (13)
+[MESSAGE] dachte (5)
+[x-experiencer] Winston (6)
 
-[] dachte (5)
-[] Mit diesen Kindern , , (3)
-[] Winston (6)
+[IDENTIFICATION] Winston (6)
 
-[] Kindern (3)
+[POSSESSION >> SCENE] haben (14)
+[m-accompanier >> participant] Mit diesen Kindern , , (3)
+[possessor >> participant] die arme Frau (11)
+[possessed >> scene] ein Höllenleben (13)
 
-[] Winston (6)
+[CLASS] Kindern (3)
 
-[] Frau (11)
-[] arme (10)
+[CLASS] Frau (11)
+[m-state] arme (10)
 
-[] arme (10)
+[STATE] arme (10)
 
-[] Höllenleben (13)
+[EVENT >> STATE] Höllenleben (13)
+[m-accompanier >> m-causer] Mit diesen Kindern , , (3)
+[undergoer >> has-state] die arme Frau (11)
 
 # sent_id = 404
 # text = Noch ein , zwei Jahre , und sie würden sie Tag und Nacht nach Anzeichen nachlassender Parteitreue bespitzeln .
-1	Noch	noch	ADV	ADV	_	2	advmod	_	_
+1	Noch	noch	ADV	ADV	_	5	advmod	_	_
 2	ein	ein	NUM	CARD	NumType=Card	5	nummod	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	zwei	zwei	NUM	CARD	NumType=Card	5	nummod	_	_
@@ -157,7 +161,7 @@
 7	und	und	CCONJ	KON	_	18	cc	_	_
 8	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_
 9	würden	werden	AUX	VAFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	_
-10	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_
+10	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	18	obj	_	_
 11	Tag	Tag	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	18	obj	_	_
 12	und	und	CCONJ	KON	_	13	cc	_	_
 13	Nacht	Nacht	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	11	conj	_	_
@@ -168,39 +172,42 @@
 18	bespitzeln	bespitzeln	VERB	VVINF	VerbForm=Inf	0	root	_	_
 19	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] bespitzeln (18)
-[] Noch ein , zwei Jahre , (5)
-[] sie (8)
-[] sie (10)
-[] Tag und Nacht (11)
-[] nach Anzeichen nachlassender Parteitreue (15)
+[MESSAGE-INIT] bespitzeln (18)
+[m-time] Noch ein , zwei Jahre , (5)
+[x-experiencer] sie (8)
+[x-sender] sie (10)
+[m-time] Tag (11)
+[m-time] und Nacht (13)
+[topic] nach Anzeichen nachlassender Parteitreue (15) # # Vgl. sent_id 151
 
-[] Jahre (5)
-[] Noch ein , (2)
-[] zwei (4)
+[TIME] Jahre (5)
+[m-scene] Noch (1)
+[m-quantity] ein , (2)
+[m-quantity] zwei (4)
 
-[] ein (2)
-[] Noch (1)
+[SCENE-CONTINUATION] Noch (1)
+[initial-scene] Jahre (5)
 
-[] Noch (1)
+[QUANTITY] ein (2)
 
-[] zwei (4)
+[QUANTITY] zwei (4)
 
-[] sie (8)
+[IDENTIFICATION] sie (8)
 
-[] sie (10)
+[IDENTIFICATION] sie (10)
 
-[] Tag (11)
+[TIME] Tag (11)
 
-[] Nacht (13)
+[TIME] Nacht (13)
 
-[] Anzeichen (15)
-[] nachlassender Parteitreue (17)
+[MESSAGE] Anzeichen (15)
+[?topic] nachlassender Parteitreue (17)
 
-[] Parteitreue (17)
-[] nachlassender (16)
+[SOCIAL-RELATION >> QUALITY] Parteitreue (17)
+[m-scene] nachlassender (16)
 
-[] nachlassender (16)
+[SCENE-DEINIT] nachlassender (16)
+[initial-scene] Parteitreue (17)
 
 # sent_id = 405
 # text = Fast alle Kinder waren heutzutage schrecklich .
@@ -212,15 +219,15 @@
 6	schrecklich	schrecklich	ADJ	ADJD	_	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] schrecklich (6)
-[] Fast alle Kinder (3)
-[] heutzutage (5)
+[QUALITY] schrecklich (6)
+[has-quality] Fast alle Kinder (3)
+[m-time] heutzutage (5)
 
-[] Kinder (3)
+[CLASS] Kinder (3)
 
-[] Fast (1)
+[QUANTITY] Fast (1)
 
-[] heutzutage (5)
+[TIME] heutzutage (5)
 
 # sent_id = 406
 # text = Am schlimmsten von allem war jedoch , dass sie mit Hilfe von solchen Organisationen wie den Spähern systematisch zu unbezähmbaren kleinen Wilden erzogen wurden .
@@ -250,40 +257,43 @@
 24	wurden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] schlimmsten (2)
-[] von allem (4)
-[] jedoch (6)
-[] , dass sie mit Hilfe von solchen Organisationen wie den Spähern systematisch zu unbezähmbaren kleinen Wilden erzogen wurden (23)
+[QUALITY] schlimmsten (2)
+[x-reference] von allem (4)
+[m-scene] jedoch (6)
+[has-quality] , dass sie mit Hilfe von solchen Organisationen wie den Spähern systematisch zu unbezähmbaren kleinen Wilden erzogen wurden (23)
 
-[] allem (4)
+[CLASS] allem (4)
 
-[] jedoch (6)
+[CONCESSION] jedoch (6)
+[asserted] schlimmsten (2)
 
-[] erzogen (23)
-[] sie (9)
-[] mit Hilfe von solchen Organisationen wie den Spähern (11)
-[] systematisch (18)
-[] zu unbezähmbaren kleinen Wilden (22)
+[?POSSESSION] erzogen (23)
+[possessed] sie (9)
+[?possessor] mit Hilfe von solchen Organisationen wie den Spähern (11)
+[m-scene] systematisch (18)
+[x-resultative] zu unbezähmbaren kleinen Wilden (22)
 
-[] sie (9)
+[IDENTIFICATION] sie (9)
 
-[] Hilfe (11)
-[] von solchen Organisationen wie den Spähern (14)
+[SCENE-INIT] Hilfe (11) # # Vgl. "help" im Manual
+[x-causer] von solchen Organisationen wie den Spähern (14)
 
-[] Organisationen (14)
-[] wie den Spähern (17)
+[SOCIAL-RELATION] Organisationen (14)
+[m-subclass] wie den Spähern (17)
 
-[] Spähern (17)
+[MESSAGE-INIT >> SOCIAL-RELATION] Spähern (17)
 
-[] systematisch (18)
+[SEQUENCE] systematisch (18) # # "einem System folgend"
+[follows] erzogen (23)
 
-[] Wilden (22)
-[] unbezähmbaren (20)
-[] kleinen (21)
+[STATE] Wilden (22)
+[m-state] unbezähmbaren (20)
+[m-quality] kleinen (21)
+[has-state] sie (9)
 
-[] unbezähmbaren (20)
+[STATE] unbezähmbaren (20)
 
-[] kleinen (21)
+[QUALITY] kleinen (21)
 
 # sent_id = 407
 # text = Und doch weckte das in ihnen keineswegs die Neigung , sich gegen die Parteidisziplin aufzulehnen .
@@ -371,7 +381,13 @@
 37	.	.	PUNCT	$.	_	36	punct	_	_
 
 [] Spiel (36)
-[] Die Marschlieder , die Umzüge , die Fahnen , die Wanderungen , das Exerzieren mit Holzgewehren , das Brüllen von Schlagworten , die Verehrung des Großen Bruders (2)
+[] Die Marschlieder (2)
+[] , die Umzüge (5)
+[] , die Fahnen (8)
+[] , die Wanderungen (11)
+[] , das Exerzieren mit Holzgewehren (14)
+[] , das Brüllen von Schlagworten (19)
+[] , die Verehrung des Großen Bruders (24)
 [] - alles (29)
 [] das (30)
 [] für sie (33)
@@ -438,7 +454,8 @@
 [] gelenkt (7)
 [] Ihre ganze Wildheit (3)
 [] nach außen (6)
-[] , gegen die Staatsfeinde , gegen Ausländer , Verräter , Saboteure , Gedankenverbrecher (11)
+[] , gegen die Staatsfeinde (11)
+[] , gegen Ausländer (14)
 
 [] Wildheit (3)
 [] Ihre (1)
@@ -589,7 +606,8 @@
 [] nicht (16)
 [] in der Times (19)
 [] ein Bericht (21)
-[] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (33)
+[] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört seine Eltern (33)
+[] und bei der Gedankenpolizei angezeigt hatte (50)
 
 [] der (15)
 
@@ -607,10 +625,9 @@
 
 [] wie (24)
 
-[] Angeber (28)
+[] Angeber - » Kinderheld « - (28)
 [] lauschender (26)
 [] kleiner (27)
-[] - » Kinderheld « - (31)
 
 [] lauschender (26)
 
@@ -628,7 +645,8 @@
 
 [] Bemerkung (41)
 [] kompromittierende (40)
-[] mit angehört seine Eltern (43)
+[] mit angehört (43)
+[] seine Eltern (46)
 
 [] kompromittierende (40)
 
@@ -947,7 +965,8 @@
 
 [] nebenbei (8)
 [] fast (7)
-[] - als eine Feststellung , kein Befehl (12)
+[] - als eine Feststellung (12)
+[] , kein Befehl (15)
 
 [] fast (7)
 
@@ -1044,7 +1063,8 @@
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
 [] angenommen (10)
-[] Erst später und allmählich (2)
+[] Erst später (2)
+[] und allmählich (4)
 [] sie (6)
 [] anscheinend (7)
 [] eine Bedeutung (9)
@@ -1290,7 +1310,8 @@
 [] er (18)
 [] dessen (19)
 [] nicht (20)
-[] , ob O'Brien ein Freund oder ein Feind war (28)
+[] , ob O'Brien ein Freund war (28)
+[] oder ein Feind (31)
 
 [] Blick (13)
 [] auch (8)
@@ -1378,7 +1399,8 @@
 
 [] wichtiger (8)
 [] das (7)
-[] als Zuneigung oder Parteizugehörigkeit (11)
+[] als Zuneigung (11)
+[] oder Parteizugehörigkeit (13)
 
 [] das (7)
 
@@ -1508,8 +1530,6 @@
 
 [] Televisor (5)
 
-[] ab (7)
-
 # sent_id = 431
 # text = Ein Fanfarenstoß schmetterte klar und schön durch die stille Luft .
 1	Ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
@@ -1526,7 +1546,8 @@
 
 [] schmetterte (3)
 [] Ein Fanfarenstoß (2)
-[] klar und schön (4)
+[] klar (4)
+[] und schön (6)
 [] durch die stille Luft (10)
 
 [] Fanfarenstoß (2)
@@ -1553,7 +1574,8 @@
 
 [] fuhr (3)
 [] Die Stimme (2)
-[] rasch und krächzend (4)
+[] rasch (4)
+[] und krächzend (6)
 [] fort (7)
 
 [] Stimme (2)
@@ -1561,8 +1583,6 @@
 [] rasch (4)
 
 [] krächzend (6)
-
-[] fort (7)
 
 # sent_id = 433
 # text = » Achtung !
@@ -1826,7 +1846,8 @@
 
 [] Zahlen (18)
 [] riesige (17)
-[] von Toten und Gefangenen (20)
+[] von Toten (20)
+[] und Gefangenen (22)
 
 [] riesige (17)
 
@@ -1914,8 +1935,6 @@
 
 [] Erschlaffung (12)
 
-[] zurück (13)
-
 # sent_id = 443
 # text = Der Televisor stimmte - vielleicht um den Sieg zu feiern , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - die schmetternden Klänge von » Ozeanien , mein Land , für Dich mit Herz und Hand « an .
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
@@ -1962,7 +1981,8 @@
 
 [] stimmte (3)
 [] Der Televisor (2)
-[] - vielleicht um den Sieg zu feiern , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - (10)
+[] - vielleicht um den Sieg zu feiern (10)
+[] , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - (21)
 [] die schmetternden Klänge von » Ozeanien , mein Land , für Dich mit Herz und Hand « (25)
 [] an (40)
 
@@ -1993,10 +2013,10 @@
 
 [] schmetternden (24)
 
-[] Ozeanien (28)
-[] , mein Land (31)
+[] Ozeanien , mein Land (28)
 [] , für Dich (34)
-[] mit Herz und Hand (36)
+[] mit Herz (36)
+[] und Hand (38)
 
 [] Land (31)
 [] mein (30)
@@ -2008,8 +2028,6 @@
 [] Herz (36)
 
 [] Hand (38)
-
-[] an (40)
 
 # sent_id = 444
 # text = Vom Zuhörer wurde erwartet , dass er dabei stramme Haltung annahm .
@@ -2180,7 +2198,8 @@
 [] mit dumpfem , widerhallendem Dröhnen (12)
 
 [] Dröhnen (12)
-[] dumpfem , widerhallendem (9)
+[] dumpfem (9)
+[] , widerhallendem (11)
 
 [] dumpfem (9)
 
