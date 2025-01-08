@@ -238,9 +238,6 @@ class Frame:
                 backlink_found = False
                 for frame in sentence.frames:
                     if frame.head == arg.head:
-                        if frame.label.startswith('IDENTIFICATION'):
-                            # HACK: do not require shared arguments for pronouns
-                            backlink_found = True
                         for arg2 in frame.args:
                             if arg2.head in subtree_ids:
                                 backlink_found = True
