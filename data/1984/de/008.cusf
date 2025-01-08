@@ -117,7 +117,7 @@
 2	diesen	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Plur|PronType=Dem	3	det	_	_
 3	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	14	obl	_	_
 4	,	,	PUNCT	$,	_	3	punct	_	_
-5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	parataxis	_	_
 6	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
 7	,	,	PUNCT	$,	_	3	punct	_	_
 8	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
@@ -126,7 +126,7 @@
 11	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	14	nsubj	_	_
 12	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
 13	Höllenleben	Höllenleben	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	14	obj	_	_
-14	haben	haben	AUX	VAINF	VerbForm=Inf	5	parataxis	_	_
+14	haben	haben	AUX	VAINF	VerbForm=Inf	0	root	_	_
 15	.	.	PUNCT	$.	_	14	punct	_	_
 
 [MESSAGE] dachte (5)
@@ -330,7 +330,7 @@
 
 [MODE] keineswegs (7)
 
-[MESSAGE] Neigung (9) ## "Interesse"
+[MESSAGE] Neigung (9) # # "Interesse"
 [topic] , sich gegen die Parteidisziplin aufzulehnen (15)
 [x-experiencer] in ihnen (6)
 
@@ -340,7 +340,7 @@
 
 [IDENTIFICATION] sich (11)
 
-[?STATE] Parteidisziplin (14) ## "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
+[?STATE || SEQUENCE] Parteidisziplin (14) # # "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
 
 # sent_id = 408
 # text = Die Marschlieder , die Umzüge , die Fahnen , die Wanderungen , das Exerzieren mit Holzgewehren , das Brüllen von Schlagworten , die Verehrung des Großen Bruders - alles das war für sie ein herrliches Spiel .
@@ -403,7 +403,7 @@
 
 [ACTIVITY] Wanderungen (11)
 
-[MEANS || ACTIVITY] Exerzieren (14) ## "militärisch ausbilden; militärisches Üben"
+[MEANS || ACTIVITY] Exerzieren (14) # # "militärisch ausbilden; militärisches Üben"
 [means || m-means] mit Holzgewehren (16)
 
 [CLASS] Holzgewehren (16)
@@ -462,6 +462,9 @@
 [STATE] Wildheit (3)
 [has-state] Ihre (1)
 [m-quantity] ganze (2)
+[?m-experiencer] nach außen (6)
+[?m-experiencer] , gegen die Staatsfeinde (11)
+[?m-experiencer] , gegen Ausländer (14)
 
 [IDENTIFICATION] Ihre (1)
 
@@ -493,40 +496,42 @@
 10	vor	vor	ADP	APPR	_	13	case	_	_
 11	ihren	ihr	DET	PPOSAT	Case=Dat|Gender=Neut|Number=Plur|Poss=Yes	13	det:poss	_	_
 12	eigenen	eigen	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	13	amod	_	_
-13	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	16	obl	_	_
+13	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	14	obl	_	_
 14	Angst	Angst	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	obj	_	_
 15	zu	zu	PART	PTKZU	_	16	mark	_	_
 16	haben	haben	AUX	VAINF	VerbForm=Inf	8	xcomp	_	_
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] normal (8)
-[] Es (1)
-[] für Leute über dreißig (4)
-[] nahezu (7)
-[] , vor ihren eigenen Kindern Angst zu haben (16)
+[QUALITY || COMPARISON] normal (8)
+[?has-quality || compared] Es (1)
+[x-experiencer] für Leute über dreißig (4)
+[m-quantity] nahezu (7)
+[has-quality || compared] , vor ihren eigenen Kindern Angst zu haben (16)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Leute (4)
-[] über dreißig (6)
+[CLASS] Leute (4)
+[?m-time >> m-quality] über dreißig (6)
 
-[] dreißig (6)
+[?TIME] dreißig (6)
 
-[] nahezu (7)
+[QUANTITY] nahezu (7)
 
-[] haben (16)
-[] vor ihren eigenen Kindern (13)
-[] Angst (14)
+[?SCENE] haben (16)
+[scene] Angst (14)
+[participant] Leute (4)
 
-[] Kindern (13)
-[] ihren (11)
+[MESSAGE] Angst (14)
+[x-causer] vor ihren eigenen Kindern (13)
+[x-experiencer] Leute (4)
+
+[CLASS] Kindern (13)
+[x-possessor] ihren (11)
 [] eigenen (12)
 
-[] ihren (11)
+[IDENTIFICATION] ihren (11)
 
 [] eigenen (12)
-
-[] Angst (14)
 
 # sent_id = 411
 # text = Und das mit gutem Grund , denn es verging kaum eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte .

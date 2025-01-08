@@ -209,15 +209,15 @@
 31	und	und	CCONJ	KON	_	47	cc	_	_
 32	von	von	ADP	APPR	_	33	case	_	_
 33	denen	d	PRON	PRELS	Case=Dat|Gender=Neut|Number=Plur|PronType=Rel	47	obl	_	_
-34	-	-	PUNCT	$.	_	37	punct	_	_
+34	-	-	PUNCT	$.	_	35	punct	_	_
 35	mehr	mehr	ADV	ADV	_	47	advmod	_	_
 36	sogar	sogar	ADV	ADV	_	35	advmod	_	_
 37	noch	noch	ADV	ADV	_	35	advmod	_	_
 38	als	als	CCONJ	KOKOM	_	41	case	_	_
 39	von	von	ADP	APPR	_	41	case	_	_
 40	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	47	nmod	_	_
-42	-	-	PUNCT	$.	_	41	punct	_	_
+41	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	35	nmod	_	_
+42	-	-	PUNCT	$.	_	35	punct	_	_
 43	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	Bestand	Bestand	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	47	nsubj	_	_
 45	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
@@ -281,23 +281,22 @@
 [x-sender] die (26)
 [x-sender] Gimpeln (24)
 
-[POSSESSION] abhing (47) # # "⟨etw. hängt von etw., einer Sache ab⟩ von etw. maßgeblich, entscheidend beeinflusst, bestimmt oder bedingt werden"
-[possessor] von denen (33)
+[CONDITION] abhing (47) # # "⟨etw. hängt von etw., einer Sache ab⟩ von etw. maßgeblich, entscheidend beeinflusst, bestimmt oder bedingt werden"
+[condition] von denen (33)
 [m-quantity] - mehr sogar noch (35)
 [x-reference] als von der Gedankenpolizei - (41) # # Vgl. sent_id 188 "weniger vernünftig als"
-[possessed] der Bestand der Partei (44)
-[possessor] Gimpeln (24)
+[has-condition] der Bestand der Partei (44)
+[condition] Gimpeln (24)
 
 [IDENTIFICATION] denen (33)
 
 [QUANTITY] mehr (35)
 [m-mode] sogar (36)
-[m-scene] - noch (37)
+[m-quantity] - noch (37)
 
 [MODE] sogar (36)
 
-[SCENE-CONTINUATION] noch (37) # # vor dem Komparativ: "gibt an, dass etw. zu etw. Vorhandenem hinzukommt"
-[initial-scene] mehr (35)
+[QUANTITY] noch (37) # # vor dem Komparativ: "gibt an, dass etw. zu etw. Vorhandenem hinzukommt"
 
 [CLASS] Gedankenpolizei (41)
 
@@ -507,8 +506,8 @@
 [has-class] er (20)
 [m-scene] andererseits (21)
 [m-rank || m-scene || ?m-depictive] führender (23)
-[?m-possessed] beim Sportausschuss (26)
-[?m-possessed] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
+[?m-social-relation] beim Sportausschuss (26)
+[?m-social-relation] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
 [IDENTIFICATION] er (20)
 
@@ -1577,20 +1576,20 @@
 # sent_id = 380
 # text = Es war etwas von berechnender Wildheit im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein .
 1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	expl	_	_
-2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	etwas	etwas	ADV	ADV	_	2	nsubj	_	_
+2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+3	etwas	etwas	ADV	ADV	_	8	nsubj	_	_
 4	von	von	ADP	APPR	_	6	case	_	_
 5	berechnender	berechnend	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	6	amod	_	_
 6	Wildheit	Wildheit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	nmod	_	_
 7	im	im	ADP	APPRART	_	8	case	_	_
-8	Auge	Auge	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	2	obl	_	_
+8	Auge	Auge	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	0	root	_	_
 9	des	d	DET	ART	Case=Gen|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	Jungen	Junge	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
 11	,	,	PUNCT	$,	_	15	punct	_	_
 12	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	15	det	_	_
 13	ganz	ganz	ADV	ADV	_	14	advmod	_	_
 14	offensichtliches	offensichtlich	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	15	amod	_	_
-15	Verlangen	Verlangen	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	conj	_	_
+15	Verlangen	Verlangen	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	8	conj	_	_
 16	,	,	PUNCT	$,	_	19	punct	_	_
 17	Winston	Winston	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	19	obj	_	_
 18	zu	zu	PART	PTKZU	_	19	mark	_	_
@@ -1601,7 +1600,7 @@
 23	,	,	PUNCT	$,	_	26	punct	_	_
 24	und	und	CCONJ	KON	_	26	cc	_	_
 25	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	26	det	_	_
-26	Bewusstsein	Bewußtsein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	_
+26	Bewusstsein	Bewußtsein	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	8	conj	_	_
 27	,	,	PUNCT	$,	_	30	punct	_	_
 28	schon	schon	ADV	ADV	_	30	advmod	_	_
 29	beinahe	beinahe	ADV	ADV	_	30	advmod	_	_
@@ -1629,6 +1628,7 @@
 [means] Wildheit (6)
 
 [PART-WHOLE] Auge (8)
+[] etwas von berechnender Wildheit (3)
 [whole] des Jungen (10)
 
 [CLASS] Jungen (10)
@@ -2309,8 +2309,8 @@
 [QUANTITY] Wucht (17) # # "Heftigkeit"
 [m-scene] furchtbarer (16)
 
-[?MESSAGE-INIT >> QUALITY] furchtbarer (16) # # "bange Beklemmung, Abscheu, Entsetzen, ... *erregend*"
-[target-content >> has-quality] Wucht (17)
+[MESSAGE-INIT >> QUALITY] furchtbarer (16) # # "bange Beklemmung, Abscheu, Entsetzen, ... *erregend*"
+[x-causer >> has-quality] Wucht (17)
 
 [MESSAGE] schmerzhaft (19)
 [m-quantity] höchst (18)
