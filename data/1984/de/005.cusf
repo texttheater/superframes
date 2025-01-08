@@ -764,9 +764,9 @@
 7	oder	oder	CCONJ	KON	_	9	cc	_	_
 8	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Hoffnung	Hoffnung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-10	-	-	PUNCT	$.	_	5	punct	_	_
+10	-	-	PUNCT	$.	_	9	punct	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
-12	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nmod	_	_
+12	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
 13	lebendig	lebendig	ADJ	ADJD	_	2	xcomp	_	_
 14	,	,	PUNCT	$,	_	24	punct	_	_
 15	dass	dass	SCONJ	KOUS	_	24	mark	_	_
@@ -778,27 +778,25 @@
 21	Feinde	Feind	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	24	nsubj	_	_
 22	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
-24	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	_	_
+24	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
 [] hielten (2)
 [] Sie (1)
 [] lediglich (3)
-[] den Glauben - (5)
-[] - oder die Hoffnung (9)
-[] in ihm lebendig , dass es außer ihm noch andere Feinde der Partei gab (13)
+[] den Glauben in ihm , dass es außer ihm noch andere Feinde der Partei gab (5)
+[] - oder die Hoffnung - (9)
+[] lebendig (13)
 
 [] Sie (1)
 
 [] lediglich (3)
 
 [] Glauben (5)
-
-[] Hoffnung (9)
-
-[] lebendig (13)
 [] in ihm (12)
 [] , dass es außer ihm noch andere Feinde der Partei gab (24)
+
+[] Hoffnung (9)
 
 [] ihm (12)
 
@@ -818,6 +816,8 @@
 [] andere (20)
 
 [] Partei (23)
+
+[] lebendig (13)
 
 # sent_id = 269
 # text = Vielleicht waren die Gerüchte von großen Untergrundverschwörungen doch wahr - vielleicht existierte » Die Bruderschaft « wirklich !
@@ -942,15 +942,14 @@
 6	daran	daran	ADP	PROAV	PronType=Dem	4	advmod	_	_
 7	,	,	PUNCT	$,	_	9	punct	_	_
 8	an	an	ADP	APPR	_	9	case	_	_
-9	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	4	obl	_	_
-10	nicht	nicht	PART	PTKNEG	Polarity=Neg	9	advmod	_	_
+9	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	10	obl	_	_
+10	nicht	nicht	PART	PTKNEG	Polarity=Neg	4	parataxis	_	_
 11	.	.	PUNCT	$.	_	4	punct	_	_
 
 [] glaubte (4)
 [] An manchen Tagen (3)
 [] er (5)
 [] daran (6)
-[] , an anderen nicht (9)
 
 [] Tagen (3)
 
@@ -958,10 +957,10 @@
 
 [] daran (6)
 
-[] anderen (9)
-[] nicht (10)
+[MODE] nicht (10)
+[m-time] , an anderen (9)
 
-[] nicht (10)
+[] anderen (9)
 
 # sent_id = 272
 # text = Es gab keinen greifbaren Beweis , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah .
@@ -1041,9 +1040,9 @@
 
 [] die (11)
 
-[] alles (12)
+[CLASS] alles (12) # TODO indefinite pronouns, so CLASS - right?
 
-[] nichts (14)
+[CLASS] nichts (14)
 
 [] Bruchstücke (18)
 [] erlauschter Gespräche (20)
@@ -1169,8 +1168,8 @@
 
 [] Er (1)
 
-[] Arbeitsplatz (5)
-[] seinen (4)
+[LOCATION] Arbeitsplatz (5) # TODO
+[x-has-social-relation] seinen (4)
 
 [] seinen (4)
 
@@ -1180,10 +1179,11 @@
 
 [] O'Brien (9)
 
-[] einmal (11)
-[] noch (10)
+[TIME] einmal (11)
+[m-scene] noch (10)
 
-[] noch (10)
+[ACCOMPANIMENT] noch (10) # TODO manual
+[accompanier] einmal (11)
 
 # sent_id = 275
 # text = Der Gedanke , ihre kurze Fühlungnahme weiter zu verfolgen , war ihm kaum durch den Sinn gegangen .
@@ -1274,10 +1274,10 @@
 
 [] er (9)
 
-[] machen (16)
-[] wie (13)
-[] er (14)
-[] das (15)
+[CAUSATION] machen (16) # TODO cf. manual: how Kim did it
+[m-means] wie (13)
+[causer] er (14)
+[result] das (15)
 
 [] wie (13)
 
@@ -1347,7 +1347,7 @@
 11	Einsamkeit	Einsamkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
 12	,	,	PUNCT	$,	_	18	punct	_	_
 13	in	in	ADP	APPR	_	14	case	_	_
-14	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	18	obl	_	_
+14	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	17	obl	_	_
 15	man	man	PRON	PIS	Definite=Ind|Gender=Neut	18	nsubj	_	_
 16	zu	zu	PART	PTKZU	_	17	mark	_	_
 17	leben	leben	VERB	VVINF	VerbForm=Inf	18	xcomp	_	_
@@ -1358,7 +1358,7 @@
 [] Augenblick (7)
 [] sogar das (3)
 [] denkwürdiger (6)
-[] in der abgeschlossenen Einsamkeit , in der man zu leben gezwungen war (11)
+[m-whole] in der abgeschlossenen Einsamkeit , in der man zu leben gezwungen war (11)
 
 [] das (3)
 [] sogar (2)
@@ -1367,22 +1367,25 @@
 
 [] denkwürdiger (6)
 
-[] Einsamkeit (11)
-[] abgeschlossenen (10)
-[] , in der man zu leben gezwungen war (18)
+[STATE] Einsamkeit (11)
+[m-quality] abgeschlossenen (10)
+[m-scene] , in der man zu leben gezwungen war (18)
+[has-state] man (15)
 
 [] abgeschlossenen (10)
 
-[] gezwungen (18)
-[] in der (14)
-[] man (15)
-[] zu leben (17)
-
-[] der (14)
+[SCENE-NECESSITY] gezwungen (18)
+[participant] man (15)
+[scene] in der zu leben (17)
 
 [] man (15)
 
-[] leben (17)
+[EVENT] leben (17)
+[m-depictive] in der (14)
+[undergoer] man (15)
+[m-depictive] Einsamkeit (11) # TODO checker bug
+
+[IDENTIFICATION] der (14)
 
 # sent_id = 279
 # text = Winston rappelte sich hoch und setzte sich gerade .
@@ -1504,11 +1507,11 @@
 
 [] Er (1)
 
-[] weitergeschrieben (16)
-[] er (5)
-[] , während er in hilflosem Grübeln dagesessen , (12)
-[] gleichzeitig (14)
-[] automatisch (15)
+[MESSAGE-INIT] weitergeschrieben (16)
+[x-sender] er (5)
+[m-time] , während er in hilflosem Grübeln dagesessen , (12)
+[m-time] gleichzeitig (14)
+[m-scene] automatisch (15)
 
 [] er (5)
 
@@ -1523,9 +1526,10 @@
 
 [] hilflosem (10)
 
-[] gleichzeitig (14)
+[TIME] gleichzeitig (14)
 
-[] automatisch (15)
+[CAUSATION >> QUALITY] automatisch (15)
+[result >> has-quality] weitergeschrieben (16)
 
 # sent_id = 284
 # text = Und zwar war es nicht mehr die gleiche verkrampfte Handschrift von vorhin .
@@ -1543,24 +1547,27 @@
 12	vorhin	vorhin	ADV	ADV	_	10	advmod	_	_
 13	.	.	PUNCT	$.	_	10	punct	_	_
 
+[SENDING] Handschrift (10)
+[m-scene] zwar (2)
+[x-identified] es (4)
+[m-scene] nicht mehr (6)
+[m-scene] gleiche (8)
+[m-quality] verkrampfte (9)
+[m-time] von vorhin (12)
+
+[] zwar (2)
 [] Handschrift (10)
-[] zwar (2)
-[] es (4)
-[] nicht mehr (6)
-[] gleiche (8)
-[] verkrampfte (9)
-[] von vorhin (12)
-
-[] zwar (2)
 
 [] es (4)
 
-[] mehr (6)
-[] nicht (5)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (6) # TODO manual?
+[m-mode >> m-noncomp] nicht (5)
+[initial-scene] Handschrift (10)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] gleiche (8)
+[COMPARISON] gleiche (8)
+[compared] Handschrift (10)
 
 [] verkrampfte (9)
 
@@ -1889,21 +1896,21 @@
 7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 8	hinschrieb	hinschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	csubj	_	_
 9	oder	oder	CCONJ	KON	_	8	cc	_	_
-10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
+10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	conj	_	_
 11	,	,	PUNCT	$,	_	8	punct	_	_
 12	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	keinen	kein	DET	PIAT	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	nmod	_	_
 14	Unterschied	Unterschied	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	12	obj	_	_
 15	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] machte (12)
-[] Ob er nieder mit dem Großen Bruder hinschrieb oder nicht , (8)
-[] keinen Unterschied (14)
+[SCENE-INIT >> SCENE] machte (12)
+[x-causer >> participant] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
+[x-causer >> participant] nicht (10)
+[target-scene >> scene] keinen Unterschied (14)
 
 [] hinschrieb (8)
 [] er (2)
 [] nieder mit dem Großen Bruder (3)
-[] nicht (10)
 
 [] er (2)
 
@@ -1915,10 +1922,12 @@
 
 [] Großen (6)
 
-[] nicht (10)
+[MODE] nicht (10)
 
-[] Unterschied (14)
-[] keinen (13)
+[COMPARISON] Unterschied (14)
+[m-mode] keinen (13)
+[compared] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
+[reference] nicht (10)
 
 [] keinen (13)
 
@@ -2005,10 +2014,10 @@
 22	einschloss	einschließen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
 23	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] begangen (15)
-[] Er (1)
-[] - auch wenn er nie die Feder angesetzt hätte - (10)
-[] das Kapitalverbrechen , das alle anderen in sich einschloss (14)
+[SCENE] begangen (15)
+[participant] Er (1)
+[m-conceded] - auch wenn er nie die Feder angesetzt hätte - (10)
+[scene] das Kapitalverbrechen , das alle anderen in sich einschloss (14)
 
 [] Er (1)
 
@@ -2026,13 +2035,15 @@
 
 [] Feder (9)
 
-[] Kapitalverbrechen (14)
-[] , das alle anderen in sich einschloss (22)
+[EVENT] Kapitalverbrechen (14)
+[m-scene] , das alle anderen in sich einschloss (22)
+[x-causer] Er (1)
 
 [] einschloss (22)
 [] das (17)
 [] alle anderen (19)
 [] in sich (21)
+[] Kapitalverbrechen (14)
 
 [] das (17)
 
@@ -2048,16 +2059,16 @@
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] nannten (2)
-[] Gedankenverbrechen (1)
+[IDENTIFICATION-INIT] nannten (2)
+[target-identifier] Gedankenverbrechen (1)
+[x-causer] sie (3)
+[identified] es (4)
+
+[EVENT] Gedankenverbrechen (1)
+
 [] sie (3)
-[] es (4)
 
-[] Gedankenverbrechen (1)
-
-[] sie (3)
-
-[] es (4)
+[IDENTIFICATION] es (4)
 
 # sent_id = 298
 # text = Gedankenverbrechen konnte man auf die Dauer nicht geheim halten .
