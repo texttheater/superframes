@@ -191,6 +191,11 @@ class Frame:
         ok = True
         warnings = 0
         for i, arg in enumerate(self.args, start=lineno + 1):
+            logging.debug(
+                'sent %s line %s checking arg',
+                sentence.syntax[0].id,
+                i,
+            )
             # Check for wrong text
             arg_token = sentence.syntax[0][arg.head]
             if arg_token.head == self.head:
