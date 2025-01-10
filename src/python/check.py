@@ -24,8 +24,13 @@ if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(description=__doc__)
     arg_parser.add_argument('--warn-incomplete',
             action=argparse.BooleanOptionalAction, default=True)
+    arg_parser.add_argument('--debug',
+            action=argparse.BooleanOptionalAction, default=False)
     arg_parser.add_argument('file')
     args = arg_parser.parse_args()
+    # Set log level
+    if args.debug:
+        logging.getLogger().setLevel(logging.DEBUG)
     # Make backup file
     backup_file = args.file + '~'
     shutil.copyfile(args.file, backup_file)
