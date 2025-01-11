@@ -9,8 +9,8 @@
 7	verstummt	verstummen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[?SCENE-DEINIT] verstummt (7) # # "(von Lauten, Geräuschen, von Hörbarem) aufhören, enden"
-[initial-scene] Die Musik aus dem Televisor (2)
+[SCENE-DEINIT || MESSAGE-DEINIT] verstummt (7) # # "(von Lauten, Geräuschen, von Hörbarem) aufhören, enden"
+[initial-scene || initial-content] Die Musik aus dem Televisor (2)
 
 [MESSAGE] Musik (2)
 [x-sender] aus dem Televisor (5)
@@ -200,7 +200,7 @@
 
 [TIME] Nacht (13)
 
-[MESSAGE] Anzeichen (15)
+[?MESSAGE] Anzeichen (15) # # "Beweis"
 [?topic] nachlassender Parteitreue (17)
 
 [SOCIAL-RELATION >> QUALITY] Parteitreue (17)
@@ -267,9 +267,9 @@
 [CONCESSION] jedoch (6)
 [asserted] schlimmsten (2)
 
-[?POSSESSION] erzogen (23)
+[POSSESSION] erzogen (23)
 [possessed] sie (9)
-[?possessor] mit Hilfe von solchen Organisationen wie den Spähern (11)
+[?possessor || m-means] mit Hilfe von solchen Organisationen wie den Spähern (11)
 [m-scene] systematisch (18)
 [x-resultative] zu unbezähmbaren kleinen Wilden (22)
 
@@ -337,6 +337,7 @@
 [SOCIAL-RELATION-INIT] aufzulehnen (15)
 [has-social-relation] sich (11)
 [target-social-relation] gegen die Parteidisziplin (14)
+[x-causer] ihnen (6)
 
 [IDENTIFICATION] sich (11)
 
@@ -372,7 +373,7 @@
 26	Großen	groß	PROPN	NE	Case=Gen|Gender=Fem|Number=Sing	27	amod	_	_
 27	Bruders	Bruder	PROPN	NE	Case=Gen|Gender=Masc|Number=Sing	24	nmod	_	_
 28	-	-	PUNCT	$.	_	29	punct	_	_
-29	alles	alle	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	36	nsubj	_	_
+29	alles	alle	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	30	det	_	_
 30	das	d	PRON	PDS	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	36	nsubj	_	_
 31	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	cop	_	_
 32	für	für	ADP	APPR	_	33	case	_	_
@@ -390,8 +391,7 @@
 [activity] , das Exerzieren mit Holzgewehren (14)
 [activity] , das Brüllen von Schlagworten (19)
 [activity] , die Verehrung des Großen Bruders (24)
-[] - alles (29)
-[] das (30)
+[activity] - alles das (30)
 [is-active] für sie (33)
 [m-quality] herrliches (35)
 
@@ -421,9 +421,7 @@
 
 [QUALITY >> NONCOMP] Großen (26)
 
-[] alles (29)
-
-[] das (30)
+[IDENTIFICATION] das (30)
 
 [IDENTIFICATION] sie (33)
 
@@ -455,16 +453,13 @@
 
 [LOCATION-INIT >> POSSESSION] gelenkt (7)
 [has-location >> possessed] Ihre ganze Wildheit (3)
-[?target-location >> x-resultative] nach außen (6)
-[?target-location >> x-resultative] , gegen die Staatsfeinde (11)
-[?target-location >> x-restultative] , gegen Ausländer (14)
+[target-location >> ?x-target-location] nach außen (6)
+[target-location >> ?x-experiencer] , gegen die Staatsfeinde (11)
+[target-location >> ?x-experiencer] , gegen Ausländer (14)
 
 [STATE] Wildheit (3)
 [has-state] Ihre (1)
 [m-quantity] ganze (2)
-[?m-experiencer] nach außen (6)
-[?m-experiencer] , gegen die Staatsfeinde (11)
-[?m-experiencer] , gegen Ausländer (14)
 
 [IDENTIFICATION] Ihre (1)
 
@@ -503,7 +498,7 @@
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
 [QUALITY || COMPARISON] normal (8)
-[?has-quality || compared] Es (1)
+[has-quality || compared] Es (1)
 [x-experiencer] für Leute über dreißig (4)
 [m-quantity] nahezu (7)
 [has-quality || compared] , vor ihren eigenen Kindern Angst zu haben (16)
@@ -513,12 +508,12 @@
 [CLASS] Leute (4)
 [?m-time >> m-quality] über dreißig (6)
 
-[?TIME] dreißig (6)
+[QUANTITY] dreißig (6)
 
 [QUANTITY] nahezu (7)
 
-[?SCENE] haben (16)
-[scene] Angst (14)
+[SCENE] haben (16)
+[scene] vor ihren eigenen Kindern Angst (14)
 [participant] Leute (4)
 
 [MESSAGE] Angst (14)
@@ -527,11 +522,11 @@
 
 [CLASS] Kindern (13)
 [x-possessor] ihren (11)
-[] eigenen (12)
+[m-mode] eigenen (12)
 
 [IDENTIFICATION] ihren (11)
 
-[] eigenen (12)
+[MODE] eigenen (12) # # "jemandem selbst gehörend (oft nur *verstärkend* beim Possessivpronomen oder an dessen Stelle)"
 
 # sent_id = 411
 # text = Und das mit gutem Grund , denn es verging kaum eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte .
@@ -542,7 +537,7 @@
 5	Grund	Grund	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	2	nmod	_	_
 6	,	,	PUNCT	$,	_	9	punct	_	_
 7	denn	denn	CCONJ	KON	_	9	cc	_	_
-8	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+8	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	expl	_	_
 9	verging	vergehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 10	kaum	kaum	ADV	ADV	_	9	advmod	_	_
 11	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
@@ -557,17 +552,17 @@
 20	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	Bericht	Bericht	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	22	nsubj	_	_
 22	stand	stehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
-23	,	,	PUNCT	$,	_	33	punct	_	_
-24	wie	wie	SCONJ	KOUS	_	33	advmod	_	_
+23	,	,	PUNCT	$,	_	43	punct	_	_
+24	wie	wie	SCONJ	KOUS	_	43	case	_	_
 25	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 26	lauschender	lauschend	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	28	amod	_	_
 27	kleiner	klein	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	28	amod	_	_
-28	Angeber	Angeber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	33	nsubj	_	_
+28	Angeber	Angeber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	43	nsubj	_	_
 29	-	-	PUNCT	$.	_	31	punct	_	_
 30	»	»	PUNCT	$(	_	31	punct	_	_
-31	Kinderheld	Kinderheld	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	28	appos	_	_
+31	Kinderheld	Kinderheld	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	33	nsubj	_	_
 32	«	«	PUNCT	$(	_	31	punct	_	_
-33	lautete	lauten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	advcl	_	_
+33	lautete	lauten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	acl	_	_
 34	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 35	gewöhnlich	gewöhnlich	ADJ	ADJD	_	36	advmod	_	_
 36	gebrauchte	gebraucht	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	37	amod	_	_
@@ -575,99 +570,100 @@
 38	-	-	PUNCT	$.	_	31	punct	_	_
 39	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 40	kompromittierende	kompromittierend	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	41	amod	_	_
-41	Bemerkung	Bemerkung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	33	obj	_	_
+41	Bemerkung	Bemerkung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	43	obj	_	_
 42	mit	mit	ADP	APPO	Case=Acc	43	case	_	_
-43	angehört	anhören	VERB	VVPP	Verbform=Part	41	acl	_	_
+43	angehört	anhören	VERB	VVPP	Verbform=Part	21	acl	_	_
 44	und	und	CCONJ	KON	_	50	cc	_	_
 45	seine	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	46	det:poss	_	_
-46	Eltern	Eltern	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	43	conj	_	_
+46	Eltern	Eltern	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	50	obj	_	_
 47	bei	bei	ADP	APPR	_	49	case	_	_
 48	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
 49	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	50	obl	_	_
-50	angezeigt	anzeigen	VERB	VVPP	Verbform=Part	33	conj	_	_
+50	angezeigt	anzeigen	VERB	VVPP	Verbform=Part	43	conj	_	_
 51	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	50	aux	_	_
 52	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] das (2)
-[] mit gutem Grund (5)
+[SITUATION] das (2) # # Vgl. sent_id 163
+[m-causer] mit gutem Grund (5)
 
-[] Grund (5)
-[] gutem (4)
+[CAUSATION] Grund (5)
+[m-quality] gutem (4)
 
-[] gutem (4)
+[QUALITY] gutem (4)
 
-[] verging (9)
-[] es (8)
-[] kaum (10)
-[] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (12)
+[SCENE-DEINIT] verging (9) # # Vgl. sent_id 197
+[m-quantity] kaum (10) # # "so gut wie nie", "selten"
+[initial-scene] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (12)
 
-[] es (8)
+[QUANTITY] kaum (10)
 
-[] kaum (10)
+[TIME] Woche (12)
+[m-scene] , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (22)
 
-[] Woche (12)
-[] , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (22)
+[LOCATION] stand (22)
+[m-time] in der (15)
+[m-mode] nicht (16)
+[location] in der Times (19)
+[has-location] ein Bericht , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (21)
+[m-time] Woche (12)
 
-[] stand (22)
-[] in der (15)
-[] nicht (16)
-[] in der Times (19)
-[] ein Bericht (21)
-[] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört seine Eltern (33)
-[] und bei der Gedankenpolizei angezeigt hatte (50)
+[IDENTIFICATION] der (15)
 
-[] der (15)
+[MODE] nicht (16)
 
-[] nicht (16)
+[IDENTIFICATION] Times (19)
 
-[] Times (19)
+[MESSAGE] Bericht (21)
+[topic] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört (43)
+[topic] und seine Eltern bei der Gedankenpolizei angezeigt hatte (50)
 
-[] Bericht (21)
+[MESSAGE-INIT] angehört (43) # # "aufmerksam zuhören" -> obvservation
+[x-experiencer] ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - (28)
+[target-content] eine kompromittierende Bemerkung (41)
 
-[] lautete (33)
-[] wie (24)
-[] ein lauschender kleiner Angeber - » Kinderheld « - (28)
-[] die gewöhnlich gebrauchte Bezeichnung (37)
-[] eine kompromittierende Bemerkung mit angehört seine Eltern (41)
+[?SENDING] Angeber (28) # # "hier: Denunziant" (engl. Version "a sneak")
+[m-state] lauschender (26)
+[m-quality] kleiner (27)
+[m-scene] - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - (33)
 
-[] wie (24)
+[MESSAGE-INIT] lauschender (26)
+[x-experiencer] Angeber (28)
 
-[] Angeber - » Kinderheld « - (28)
-[] lauschender (26)
-[] kleiner (27)
+[QUALITY] kleiner (27)
 
-[] lauschender (26)
+[IDENTIFICATION-INIT] lautete (33)
+[target-identifier] - » Kinderheld « - (31)
+[identified] die gewöhnlich gebrauchte Bezeichnung (37)
+[x-reference] Angeber (28)
 
-[] kleiner (27)
+[CLASS] Kinderheld (31)
 
-[] Kinderheld (31)
+[IDENTIFICATION-INIT] Bezeichnung (37) # # "Repräsentation eines Begriffs mit sprachlichen oder anderen Mitteln. Erfolgt diese Repräsentation mittels Wörtern, handelt es sich um eine Benennung"
+[m-scene] gewöhnlich gebrauchte (36)
 
-[] Bezeichnung (37)
-[] gewöhnlich gebrauchte (36)
+[MEANS] gebrauchte (36)
+[m-reference] gewöhnlich (35)
+[means] Bezeichnung (37)
 
-[] gebrauchte (36)
-[] gewöhnlich (35)
+[COMPARISON] gewöhnlich (35)
 
-[] gewöhnlich (35)
+[MESSAGE-INIT] Bemerkung (41)
+[m-scene] kompromittierende (40)
 
-[] Bemerkung (41)
-[] kompromittierende (40)
-[] mit angehört (43)
-[] seine Eltern (46)
+[?MESSAGE-INIT] kompromittierende (40) # # "durch eine Äußerung oder ein Verhalten jemandes, dem eigenen Ansehen schaden; bloßstellen"
+[?x-causer] Bemerkung (41)
 
-[] kompromittierende (40)
+[MESSAGE-INIT] angezeigt (50)
+[topic] seine Eltern (46)
+[x-experiencer] bei der Gedankenpolizei (49)
+[x-sender] Angeber (28)
 
-[] angehört (43)
+[SOCIAL-RELATION] Eltern (46)
+[has-social-relation] seine (45)
 
-[] Eltern (46)
-[] seine (45)
+[IDENTIFICATION] seine (45)
 
-[] seine (45)
-
-[] angezeigt (50)
-[] bei der Gedankenpolizei (49)
-
-[] Gedankenpolizei (49)
+[CLASS] Gedankenpolizei (49)
 
 # sent_id = 412
 # text = Der durch das Geschoss der Schleuder verursachte Schmerz war vergangen .
@@ -683,19 +679,20 @@
 10	vergangen	vergehen	VERB	VVPP	Verbform=Part	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] vergangen (10)
-[] Der durch das Geschoss der Schleuder verursachte Schmerz (8)
+[SCENE-DEINIT] vergangen (10)
+[initial-scene] Der durch das Geschoss der Schleuder verursachte Schmerz (8)
 
-[] Schmerz (8)
-[] durch das Geschoss der Schleuder verursachte (7)
+[MESSAGE] Schmerz (8)
+[m-scene] durch das Geschoss der Schleuder verursachte (7)
 
-[] verursachte (7)
-[] durch das Geschoss der Schleuder (4)
+[CAUSATION] verursachte (7)
+[causer] durch das Geschoss der Schleuder (4)
+[result] Schmerz (8)
 
-[] Geschoss (4)
-[] der Schleuder (6)
+[CLASS] Geschoss (4) # # "aus oder mithilfe einer Waffe auf ein Ziel geschossener [meist länglicher] Körper"
+[m-initial-location || m-means] der Schleuder (6)
 
-[] Schleuder (6)
+[CLASS] Schleuder (6)
 
 # sent_id = 413
 # text = Winston griff unentschlossen zum Federhalter und fragte sich , ob ihm wohl noch etwas für sein Tagebuch einfallen würde .
@@ -711,7 +708,7 @@
 10	ob	ob	SCONJ	KOUS	_	18	mark	_	_
 11	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	iobj	_	_
 12	wohl	wohl	ADV	ADV	_	18	advmod	_	_
-13	noch	noch	ADV	ADV	_	18	advmod	_	_
+13	noch	noch	ADV	ADV	_	14	advmod	_	_
 14	etwas	etwas	PRON	PIS	Definite=Ind|Gender=Neut	18	nsubj	_	_
 15	für	für	ADP	APPR	_	17	case	_	_
 16	sein	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Sing|Poss=Yes	17	det:poss	_	_
@@ -720,42 +717,45 @@
 19	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] griff (2)
-[] Winston (1)
-[] unentschlossen (3)
-[] zum Federhalter (5)
+[POSSESSION-INIT] griff (2)
+[target-possessor] Winston (1)
+[m-depictive] unentschlossen (3)
+[possessed] zum Federhalter (5)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] unentschlossen (3)
+[MESSAGE] unentschlossen (3)
+[x-experiencer] Winston (1)
 
-[] Federhalter (5)
+[CLASS] Federhalter (5)
 
-[] fragte (7)
-[] sich (8)
-[] , ob ihm wohl noch etwas für sein Tagebuch einfallen würde (18)
+[MESSAGE-INIT] fragte (7)
+[x-experiencer] sich (8)
+[target-content] , ob ihm wohl noch etwas für sein Tagebuch einfallen würde (18)
+[x-sender] Winston (1)
 
-[] sich (8)
+[IDENTIFICATION] sich (8)
 
-[] einfallen (18)
-[] ihm (11)
-[] wohl (12)
-[] noch (13)
-[] etwas für sein Tagebuch (14)
+[MESSAGE-INIT] einfallen (18) # # reasoning
+[x-experiencer] ihm (11)
+[m-mode] wohl (12)
+[topic] noch etwas für sein Tagebuch (14)
 
-[] ihm (11)
+[IDENTIFICATION] ihm (11)
 
-[] wohl (12)
+[MODE] wohl (12)
 
-[] noch (13)
+[CLASS] etwas (14)
+[m-scene] noch (13)
+[m-purpose] für sein Tagebuch (17)
 
-[] etwas (14)
-[] für sein Tagebuch (17)
+[ACCOMPANIMENT] noch (13)
+[accompanier] etwas (14)
 
-[] Tagebuch (17)
-[] sein (16)
+[MESSAGE] Tagebuch (17)
+[x-sender || m-possessor] sein (16)
 
-[] sein (16)
+[IDENTIFICATION] sein (16)
 
 # sent_id = 414
 # text = Plötzlich dachte er von neuem an O'Brien .
@@ -768,19 +768,19 @@
 7	O'Brien	O'Brien	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	2	obl	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] dachte (2)
-[] Plötzlich (1)
-[] er (3)
-[] von neuem (5)
-[] an O'Brien (7)
+[MESSAGE] dachte (2)
+[m-quality] Plötzlich (1)
+[x-experiencer] er (3)
+[m-reference] von neuem (5) # # ~ "ein weiteres Mal", "wiederholt"
+[topic] an O'Brien (7)
 
-[] Plötzlich (1)
+[QUALITY] Plötzlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] neuem (5)
+[COMPARISON] neuem (5)
 
-[] O'Brien (7)
+[IDENTIFICATION] O'Brien (7)
 
 # sent_id = 415
 # text = Vor Jahren - wie lange war es her ?
@@ -794,22 +794,23 @@
 8	her	her	ADV	ADV	_	6	advmod	_	_
 9	?	?	PUNCT	$.	_	6	punct	_	_
 
-[] war (6)
-[] Vor Jahren (2)
-[] wie lange (5)
-[] es (7)
-[] her (8)
+[?SCENE] war (6)
+[m-time] Vor Jahren (2)
+[m-time] wie lange (5)
+[participant] es (7)
+[scene] her (8)
 
-[] Jahren (2)
+[TIME] Jahren (2)
 
-[] lange (5)
-[] wie (4)
+[TIME] lange (5)
+[m-quantity] wie (4)
 
-[] wie (4)
+[QUANTITY] wie (4)
 
-[] es (7)
+[IDENTIFICATION] es (7)
 
-[] her (8)
+[?SCENE-DEINIT] her (8) # # "zurückliegend"
+[initial-scene] es (7)
 
 # sent_id = 416
 # text = Es musste vor sieben Jahren gewesen sein - hatte er geträumt , er gehe durch ein stockdunkles Zimmer .
@@ -833,33 +834,33 @@
 18	Zimmer	Zimmer	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	14	obl	_	_
 19	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gewesen (6)
-[] Es (1)
-[] vor sieben Jahren (5)
+[SCENE] gewesen (6)
+[scene] Es (1)
+[m-time] vor sieben Jahren (5)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Jahren (5)
-[] sieben (4)
+[TIME] Jahren (5)
+[m-quantity] sieben (4)
 
-[] sieben (4)
+[QUANTITY] sieben (4)
 
-[] geträumt (11)
-[] er (10)
-[] , er gehe durch ein stockdunkles Zimmer (14)
+[MESSAGE] geträumt (11)
+[x-experiencer] er (10)
+[topic] , er gehe durch ein stockdunkles Zimmer (14)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] gehe (14)
-[] er (13)
-[] durch ein stockdunkles Zimmer (18)
+[UNANCHORED-MOTION] gehe (14)
+[in-motion] er (13)
+[transitory-location] durch ein stockdunkles Zimmer (18)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] Zimmer (18)
-[] stockdunkles (17)
+[CLASS] Zimmer (18)
+[m-quality] stockdunkles (17)
 
-[] stockdunkles (17)
+[QUALITY] stockdunkles (17)
 
 # sent_id = 417
 # text = Und jemand , der seitlich von ihm saß , hatte , als er vorüberkam , gesagt : » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht . «
@@ -884,7 +885,7 @@
 19	Wir	wir	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=1|PronType=Prs	22	nsubj	_	_
 20	wollen	wollen	AUX	VMFIN	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	aux	_	_
 21	uns	wir	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=1|PronType=Prs	22	obj	_	_
-22	wiedersehen	wiedersehen	VERB	VVINF	VerbForm=Inf	16	parataxis	_	_
+22	wiedersehen	wiedersehen	VERB	VVINF	VerbForm=Inf	16	ccomp	_	_
 23	,	,	PUNCT	$,	_	27	punct	_	_
 24	wo	wo	ADV	PWAV	PronType=Int	27	advmod	_	_
 25	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	26	nmod	_	_
@@ -893,48 +894,51 @@
 28	.	.	PUNCT	$.	_	22	punct	_	_
 29	«	«	PUNCT	$(	_	22	punct	_	_
 
-[] gesagt (16)
-[] jemand , der seitlich von ihm saß , (2)
-[] , als er vorüberkam , (14)
+[MESSAGE-INIT] gesagt (16)
+[x-sender] jemand , der seitlich von ihm saß , (2)
+[m-depictive] , als er vorüberkam , (14)
+[target-content] : » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht . « (22)
 
-[] jemand (2)
-[] , der seitlich von ihm saß , (8)
+[CLASS] jemand (2)
+[m-scene] , der seitlich von ihm saß , (8)
 
-[] saß (8)
-[] der (4)
-[] seitlich (5)
-[] von ihm (7)
+[LOCATION] saß (8)
+[has-location] der (4)
+[location] seitlich (5)
+[m-reference] von ihm (7)
+[has-location] jemand (2)
 
-[] der (4)
+[IDENTIFICATION] der (4)
 
-[] seitlich (5)
+[COMPARISON] seitlich (5)
 
-[] ihm (7)
+[IDENTIFICATION] ihm (7)
 
-[] vorüberkam (14)
-[] er (13)
+[UNANCHORED-MOTION] vorüberkam (14)
+[in-motion] er (13)
+[in-motion] jemand (2)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] wiedersehen (22)
-[] Wir (19)
-[] uns (21)
-[] , wo keine Dunkelheit herrscht (27)
+[MESSAGE-CONTINUATION || SOCIAL-RELATION-CONTINUATION] wiedersehen (22)
+[x-experiencer || has-social-relation] Wir (19)
+[initial-content || initial-relation] uns (21)
+[m-location] , wo keine Dunkelheit herrscht (27)
 
-[] Wir (19)
+[IDENTIFICATION] Wir (19)
 
-[] uns (21)
+[IDENTIFICATION] uns (21)
 
-[] herrscht (27)
-[] wo (24)
-[] keine Dunkelheit (26)
+[MESSAGE >> EXISTENCE] herrscht (27) # # "in bestimmter, auffallender Weise [allgemein] verbreitet, [fortdauernd] vorhanden, deutlich fühlbar sein"
+[m-location >> x-location] wo (24)
+[topic >> exists] keine Dunkelheit (26)
 
-[] wo (24)
+[LOCATION] wo (24)
 
-[] Dunkelheit (26)
-[] keine (25)
+[QUALITY] Dunkelheit (26)
+[m-mode] keine (25)
 
-[] keine (25)
+[MODE] keine (25)
 
 # sent_id = 418
 # text = Er sagte das ganz ruhig , fast nebenbei - als eine Feststellung , kein Befehl .
@@ -949,40 +953,42 @@
 9	-	-	PUNCT	$.	_	12	punct	_	_
 10	als	als	CCONJ	KOKOM	_	12	case	_	_
 11	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Feststellung	Feststellung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	8	nmod	_	_
+12	Feststellung	Feststellung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	nmod	_	_
 13	,	,	PUNCT	$,	_	15	punct	_	_
 14	kein	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	15	nmod	_	_
 15	Befehl	Befehl	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	12	conj	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sagte (2)
-[] Er (1)
-[] das (3)
-[] ganz ruhig (5)
-[] , fast nebenbei - als eine Feststellung , kein Befehl (8)
+[MESSAGE-INIT] sagte (2)
+[x-sender] Er (1)
+[target-content] das (3)
+[m-depictive] ganz ruhig (5)
+[m-scene] , fast nebenbei (8)
+[m-quality] - als eine Feststellung (12)
+[m-quality] , kein Befehl (15)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] das (3)
+[IDENTIFICATION] das (3)
 
-[] ruhig (5)
-[] ganz (4)
+[STATE] ruhig (5)
+[m-quantity] ganz (4)
+[has-state] Er (1)
 
-[] ganz (4)
+[QUANTITY] ganz (4)
 
-[] nebenbei (8)
-[] fast (7)
-[] - als eine Feststellung (12)
-[] , kein Befehl (15)
+[ACCOMPANIMENT] nebenbei (8)
+[m-quantity] fast (7)
+[accompanier] sagte (2)
 
-[] fast (7)
+[QUANTITY] fast (7)
 
-[] Feststellung (12)
+[MESSAGE] Feststellung (12)
 
-[] Befehl (15)
-[] kein (14)
+[MESSAGE] Befehl (15)
+[m-mode] kein (14)
 
-[] kein (14)
+[MODE] kein (14)
 
 # sent_id = 419
 # text = Er war weitergegangen , ohne stehen zubleiben .
@@ -995,16 +1001,18 @@
 7	zubleiben	zubleiben	VERB	VVIZU	VerbForm=Inf	3	advcl	_	_
 8	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] weitergegangen (3)
-[] Er (1)
-[] , ohne stehen zubleiben (7)
+[UNANCHORED-MOTION] weitergegangen (3)
+[in-motion] Er (1)
+[m-accompanier] , ohne stehen zubleiben (7)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] zubleiben (7)
-[] stehen (6)
+[SCENE-CONTINUATION] zubleiben (7)
+[initial-scene] stehen (6)
+[participant] Er (1)
 
-[] stehen (6)
+[LOCATION] stehen (6)
+[has-location] Er (1)
 
 # sent_id = 420
 # text = Das seltsame war , dass damals , im Traum , die Worte keinen großen Eindruck auf ihn gemacht hatten .
@@ -1029,31 +1037,34 @@
 19	hatten	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] seltsame (2)
-[] , dass damals , im Traum , die Worte keinen großen Eindruck auf ihn gemacht hatten (18)
+[QUALITY] seltsame (2)
+[has-quality] , dass damals , im Traum , die Worte keinen großen Eindruck auf ihn gemacht hatten (18)
 
-[] gemacht (18)
-[] damals (6)
-[] , im Traum , (9)
-[] die Worte (12)
-[] keinen großen Eindruck (15)
-[] auf ihn (17)
+[SCENE] gemacht (18)
+[m-time] damals (6)
+[m-depictive] , im Traum , (9)
+[participant] die Worte (12)
+[scene] keinen großen Eindruck (15)
+[participant] auf ihn (17)
 
-[] damals (6)
+[TIME] damals (6)
 
-[] Traum (9)
+[MESSAGE] Traum (9)
+[x-experiencer] auf ihn (17)
 
-[] Worte (12)
+[MESSAGE] Worte (12)
 
-[] Eindruck (15)
-[] keinen (13)
-[] großen (14)
+[MESSAGE] Eindruck (15) # # "Eindruck machen" -> "beeindrucken"
+[m-mode] keinen (13)
+[m-quantity] großen (14) # # "starken" im Sinne von "viel"
+[topic] die Worte (12)
+[x-experiencer] auf ihn (17)
 
-[] keinen (13)
+[MODE] keinen (13)
 
-[] großen (14)
+[QUANTITY] großen (14)
 
-[] ihn (17)
+[IDENTIFICATION] ihn (17)
 
 # sent_id = 421
 # text = Erst später und allmählich hatten sie anscheinend eine Bedeutung angenommen .
@@ -1069,25 +1080,26 @@
 10	angenommen	annehmen	VERB	VVPP	Verbform=Part	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] angenommen (10)
-[] Erst später (2)
-[] und allmählich (4)
-[] sie (6)
-[] anscheinend (7)
-[] eine Bedeutung (9)
+[QUALITY-INIT] angenommen (10) # # "drückt aus, dass sich etwas in bestimmter Weise verändert, entwickelt"
+[m-time] Erst später (2)
+[m-quality] und allmählich (4)
+[has-quality] sie (6)
+[m-scene] anscheinend (7)
+[target-quality] eine Bedeutung (9)
 
-[] später (2)
+[TIME] später (2)
 [] Erst (1)
 
-[] Erst (1)
+[] Erst (1) # "nicht eher als"
 
-[] allmählich (4)
+[QUALITY] allmählich (4)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] anscheinend (7)
+[MESSAGE >> MODE] anscheinend (7) # # "Vgl. sent_id 169 "offenbar"
+[topic >> has-mode] angenommen (10)
 
-[] Bedeutung (9)
+[QUALITY] Bedeutung (9) # # "Sinn, der in Handlungen, Gegebenheiten, Dingen, Erscheinungen liegt"
 
 # sent_id = 422
 # text = Er konnte sich jetzt nicht mehr erinnern , ob es vor oder nach dem Traum war , dass er O'Brien zum erstenmal gesehen hatte ; so wenig wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte .
@@ -1129,88 +1141,94 @@
 36	erstenmal	erstenmal	ADV	ADV	_	42	obl	_	_
 37	jene	jen	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	38	det	_	_
 38	Stimme	Stimme	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	42	obj	_	_
-39	als	als	CCONJ	KOKOM	_	41	case	_	_
-40	die	d	PRON	PDS	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	41	det	_	_
-41	O'Briens	O'Brien	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	38	nmod	_	_
+39	als	als	CCONJ	KOKOM	_	40	case	_	_
+40	die	d	PRON	PDS	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	42	obj	_	_
+41	O'Briens	O'Brien	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	40	nmod	_	_
 42	identifiziert	identifizieren	VERB	VVPP	Verbform=Part	31	ccomp	_	_
 43	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	aux	_	_
 44	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] erinnern (7)
-[] Er (1)
-[] sich (3)
-[] jetzt (4)
-[] nicht mehr (5)
-[] , ob es vor oder nach dem Traum war , dass er O'Brien zum erstenmal gesehen hatte (16)
-[] ; so wenig wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (31)
+[MESSAGE] erinnern (7)
+[x-causer] Er (1)
+[x-experiencer] sich (3)
+[m-time] jetzt (4)
+[m-scene] nicht mehr (5) # # Vgl. sent_id 284
+[topic] , ob es vor oder nach dem Traum war , dass er O'Brien zum erstenmal gesehen hatte (16)
+[m-quantity >> m-reference] ; so wenig wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (31)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION] sich (3)
 
-[] jetzt (4)
+[TIME] jetzt (4)
 
-[] nicht (5)
+[?SCENE-DEINIT] nicht (5)
+[x-noncomp] mehr (6)
+[initial-scene] erinnern (7)
+
 [] mehr (6)
 
-[] mehr (6)
-
-[] war (16)
+[SCENE] war (16) # # "passierte..."
 [] es (10)
-[] vor oder nach dem Traum (15)
-[] , dass er O'Brien zum erstenmal gesehen hatte (23)
+[m-time] vor oder nach dem Traum (15)
+[scene] , dass er O'Brien zum erstenmal gesehen hatte (23)
 
-[] es (10)
+[IDENTIFICATION] es (10)
 
-[] Traum (15)
+[MESSAGE] Traum (15)
 
 [] nach (13)
 
+[MESSAGE] gesehen (23)
+[x-experiencer] er (19)
+[topic] O'Brien (20)
+[m-scene] zum erstenmal (22)
+
+[IDENTIFICATION] er (19)
+
+[IDENTIFICATION] O'Brien (20)
+
+[?SEQUENCE-INIT || ?MODE] erstenmal (22)
 [] gesehen (23)
-[] er (19)
-[] O'Brien (20)
-[] zum erstenmal (22)
 
-[] er (19)
-
-[] O'Brien (20)
-
-[] erstenmal (22)
-
-[] entsann (31)
+[MESSAGE] entsann (31) # # "sich erinnern"
 [] ; so wenig (27)
 [] wie (28)
-[] er (29)
-[] sich (30)
-[] , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (42)
+[x-experiencer] er (29)
+[x-noncomp] sich (30)
+[topic] , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (42)
 
-[] wenig (27)
-[] so (26)
+[QUANTITY] wenig (27)
+[m-quantity] so (26)
 
-[] so (26)
+[QUANTITY] so (26)
 
 [] wie (28)
 
-[] er (29)
+[IDENTIFICATION] er (29)
 
-[] sich (30)
+[NONCOMP] sich (30)
 
-[] identifiziert (42)
-[] wann (33)
-[] er (34)
+[MESSAGE-INIT] identifiziert (42) # # "erkennen"
+[m-time] wann (33)
+[x-experiencer] er (34)
 [] zum erstenmal (36)
-[] jene Stimme als die O'Briens (38)
+[topic] jene Stimme (38)
+[target-content] als die O'Briens (40)
 
-[] wann (33)
+[TIME] wann (33)
 
-[] er (34)
+[IDENTIFICATION] er (34)
 
 [] erstenmal (36)
 
-[] Stimme (38)
-[] als die O'Briens (41)
+[MESSAGE] Stimme (38)
 
-[] O'Briens (41)
+[MESSAGE] die (40) # # "die Stimme"
+[x-sender] O'Briens (41)
+[x-identified] jene Stimme (38)
+
+[IDENTIFICATION] O'Briens (41)
 
 # sent_id = 423
 # text = Jedenfalls war es für ihn jetzt die Stimme O'Briens .
@@ -1225,22 +1243,22 @@
 9	O'Briens	O'Brien	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
 10	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] Stimme (8)
-[] Jedenfalls (1)
-[] es (3)
-[] für ihn (5)
-[] jetzt (6)
-[] O'Briens (9)
+[MESSAGE] Stimme (8)
+[m-condition >> m-mode] Jedenfalls (1)
+[x-identified] es (3)
+[x-experiencer] für ihn (5)
+[m-time] jetzt (6)
+[x-sender] O'Briens (9)
 
-[] Jedenfalls (1)
+[CONDITION >> MODE] Jedenfalls (1)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] ihn (5)
+[IDENTIFICATION] ihn (5)
 
-[] jetzt (6)
+[TIME] jetzt (6)
 
-[] O'Briens (9)
+[IDENTIFICATION] O'Briens (9)
 
 # sent_id = 424
 # text = O'Brien hatte aus der Dunkelheit zu ihm gesprochen .
@@ -1254,16 +1272,16 @@
 8	gesprochen	sprechen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] gesprochen (8)
-[] O'Brien (1)
-[] aus der Dunkelheit (5)
-[] zu ihm (7)
+[MESSAGE-INIT] gesprochen (8)
+[x-sender] O'Brien (1)
+[m-location] aus der Dunkelheit (5)
+[x-experiencer] zu ihm (7)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
-[] Dunkelheit (5)
+[STATE] Dunkelheit (5)
 
-[] ihm (7)
+[IDENTIFICATION] ihm (7)
 
 # sent_id = 425
 # text = Winston hatte nie genau herausfinden können - auch nach dem flüchtigen zweideutigen Blick von heute morgen konnte er dessen nicht sicher sein - , ob O'Brien ein Freund oder ein Feind war .
@@ -1294,61 +1312,63 @@
 25	ob	ob	SCONJ	KOUS	_	28	mark	_	_
 26	O'Brien	O'Brien	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	28	nsubj	_	_
 27	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	Freund	Freund	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	21	ccomp	_	_
+28	Freund	Freund	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	5	ccomp	_	_
 29	oder	oder	CCONJ	KON	_	31	cc	_	_
 30	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	Feind	Feind	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	28	conj	_	_
 32	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	cop	_	_
 33	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] herausfinden (5)
-[] Winston (1)
-[] nie (3)
-[] genau (4)
+[MESSAGE-INIT] herausfinden (5)
+[x-experiencer] Winston (1)
+[m-time] nie (3)
+[m-quantity] genau (4)
+[target-content] , ob O'Brien ein Freund war (28)
+[target-content] oder ein Feind (31)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] nie (3)
+[TIME-NEG] nie (3)
 
-[] genau (4)
+[QUANTITY] genau (4)
 
-[] sicher (21)
-[] auch nach dem flüchtigen zweideutigen Blick von heute morgen (13)
-[] er (18)
-[] dessen (19)
-[] nicht (20)
-[] , ob O'Brien ein Freund war (28)
-[] oder ein Feind (31)
+[MESSAGE] sicher (21)
+[m-followed] auch nach dem flüchtigen zweideutigen Blick von heute morgen (13)
+[x-experiencer] er (18)
+[topic] dessen (19)
+[m-mode] nicht (20)
 
-[] Blick (13)
-[] auch (8)
-[] flüchtigen (11)
-[] zweideutigen (12)
-[] von heute morgen (16)
+[MESSAGE-INIT] Blick (13)
+[m-mode] auch (8) # # "hier: selbst"
+[m-quality] flüchtigen (11)
+[m-scene] zweideutigen (12)
+[m-time] von heute morgen (16)
 
-[] auch (8)
+[MODE] auch (8)
 
-[] flüchtigen (11)
+[QUALITY] flüchtigen (11)
 
-[] zweideutigen (12)
+[MESSAGE] zweideutigen (12)
+[topic] Blick (13)
 
-[] morgen (16)
-[] heute (15)
+[TIME] morgen (16)
+[m-time] heute (15)
 
-[] heute (15)
+[TIME] heute (15)
 
-[] er (18)
+[IDENTIFICATION] er (18)
 
-[] dessen (19)
+[IDENTIFICATION] dessen (19)
 
-[] nicht (20)
+[MODE] nicht (20)
 
-[] Freund (28)
-[] O'Brien (26)
+[SOCIAL-RELATION] Freund (28)
+[social-relation] O'Brien (26)
 
-[] O'Brien (26)
+[IDENTIFICATION] O'Brien (26)
 
-[] Feind (31)
+[SOCIAL-RELATION] Feind (31)
+[social-relation] O'Brien (26)
 
 # sent_id = 426
 # text = Aber das schien nicht einmal viel auszumachen .
@@ -1361,22 +1381,23 @@
 7	auszumachen	ausmachen	VERB	VVIZU	VerbForm=Inf	3	xcomp	_	_
 8	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schien (3)
-[] das (2)
+[MESSAGE] schien (3)
+[topic] das (2)
 [] nicht einmal (5)
-[] viel auszumachen (7)
+[content] viel auszumachen (7)
 
-[] das (2)
+[IDENTIFICATION] das (2)
 
 [] einmal (5)
 [] nicht (4)
 
-[] nicht (4)
+[MODE] nicht (4)
 
 [] auszumachen (7)
-[] viel (6)
+[m-quantity] viel (6)
+[] das (2)
 
-[] viel (6)
+[QUANTITY] viel (6)
 
 # sent_id = 427
 # text = Zwischen ihnen herrschte ein Einverständnis , das wichtiger war als Zuneigung oder Parteizugehörigkeit .

@@ -118,10 +118,10 @@
 16	sein	sein	AUX	VAINF	VerbForm=Inf	11	cop	_	_
 17	.	.	PUNCT	$.	_	6	punct	_	_
 
-[MESSAGE] machte (6)
-[topic] dieses Mädchen im besonderen (3)
-[x-experiencer] ihm (7)
-[m-noncomp || content] den Eindruck , gefährlicher als die meisten zu sein (9)
+[SCENE] machte (6)
+[participant] dieses Mädchen im besonderen (3)
+[participant] ihm (7)
+[scene] den Eindruck , gefährlicher als die meisten zu sein (9)
 
 [CLASS] Mädchen (3)
 [m-mode] im besonderen (5)
@@ -133,10 +133,11 @@
 [MESSAGE] Eindruck (9)
 [content] , gefährlicher als die meisten zu sein (11)
 [topic] dieses Mädchen im besonderen (3)
+[x-experiencer] ihm (7)
 
 [QUALITY] gefährlicher (11) # # Bzgl. Komparativ vgl. "COMPARISON" im manual
 [x-reference] als die meisten (14)
-[has-quality] dieses Mädchen im besonderen (3) # # manuell hinzugefügte Kante, Vgl. 2.25 im manual
+[has-quality] dieses Mädchen im besonderen (3) # # manuell hinzugefügte Kante, Vgl. "nonlocal dependencies" im manual
 
 [QUANTITY] meisten (14)
 
@@ -478,6 +479,7 @@
 [MESSAGE] Vorstellung (31)
 [m-quality] nur undeutliche (30)
 [topic] davon (32) # # manuell hinzugefügt
+[x-experiencer] Winston (27)
 
 [QUALITY] undeutliche (30)
 [m-mode] nur (28)
@@ -651,6 +653,7 @@
 
 [UNANCHORED-MOTION] bewegen (15)
 [in-motion] sich (13)
+[x-causer] seiner (10)
 
 [IDENTIFICATION] sich (13)
 
@@ -693,6 +696,7 @@
 [UNANCHORED-MOTION] zurechtzurücken (11)
 [in-motion] seine Brille (7)
 [transitory-location] auf der Nase (10)
+[x-causer] Er (1)
 
 [CLASS] Brille (7)
 [m-possessor] seine (6)
@@ -811,7 +815,7 @@
 [IDENTIFICATION] der (30)
 
 [LOCATION >> SOCIAL-RELATION] Gegenüber (32)
-[location >> has-social-relation] seinem (31)
+[x-reference >> has-social-relation] seinem (31)
 
 [IDENTIFICATION] seinem (31)
 
@@ -1132,12 +1136,13 @@
 34	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE] sah (2)
-[m-mode] Jedenfalls (1)
+[m-scene] Jedenfalls (1)
 [topic] er (3)
 [content] wie ein Mensch , mit dem man reden konnte , wenn man es fertig brachte , dem Televisor ein Schnippchen zu schlagen , und ihn allein zu fassen bekam (6)
 [x-noncomp] aus (7)
 
-[MODE] Jedenfalls (1)
+[CONDITION >> MODE] Jedenfalls (1)
+[has-condition >> has-mode] sah (2)
 
 [IDENTIFICATION] er (3)
 
@@ -1350,8 +1355,8 @@
 [MESSAGE >> MODE] offenbar (23) # # eine Bedeutung: "[deutlich] erkennbar"
 [topic >> has-mode] beschloss (22)
 
-[LOCATION] bleiben (30)
-[location] in der Abteilung Registratur (27)
+[LOCATION-CONTINUATION] bleiben (30)
+[initial-location] in der Abteilung Registratur (27)
 [m-time] , bis die Zwei-Minuten-Hass-Sendung zu Ende war (36)
 [has-location] O'Brien (1)
 
@@ -1571,7 +1576,7 @@
 [PART-WHOLE] Ende (25)
 [whole] des Raumes (27)
 
-[LOCATION] Raumes (27)
+[CLASS] Raumes (27)
 
 # sent_id = 174
 # text = Es war ein Lärm , bei dem einen eine Gänsehaut überlief und sich die Nackenhaare sträubten .
@@ -1659,7 +1664,7 @@
 [has-location] das Gesicht Immanuel Goldsteins , des Volksfeinds , (5)
 [target-location] auf dem Sehschirm (14)
 
-[COMPARISON] gewöhnlich (2)
+[COMPARISON] gewöhnlich (2) # # "durchschnittlichen, normalen Verhältnissen entsprechend"
 
 [PART-WHOLE] Gesicht (5)
 [whole] Immanuel Goldsteins , des Volksfeinds (6)
@@ -2155,9 +2160,11 @@
 [m-location] : vielleicht irgendwo jenseits des Meeres (14)
 [m-scene] , unter dem Schutz seiner ausländischen Geldgeber (18)
 [m-location] , vielleicht sogar - wie gelegentlich gemunkelt wurde - in einem Versteck in Ozeanien selbst (33)
+[x-causer >> participant] er (3)
 
-[ACTIVITY || SOCIAL-RELATION] Ränke (8)
-[is-active || has-social-relation] seine (7)
+[EVENT || SOCIAL-RELATION] Ränke (8)
+[x-causer || has-social-relation] seine (7)
+[x-causer || has-social-relation] er (3)
 
 [IDENTIFICATION] seine (7)
 
@@ -2261,10 +2268,12 @@
 
 [LOCATION-INIT >> SCENE] geraten (17)
 [target-location >> target-scene] in einen schmerzlichen Widerstreit der Gefühle (13)
+[has-location >> participant] er (3)
 
 [MESSAGE] Widerstreit (13)
 [m-quality] schmerzlichen (12)
 [content] der Gefühle (15)
+[x-experiencer] er (3)
 
 [MESSAGE] schmerzlichen (12)
 
@@ -2521,19 +2530,18 @@
 
 [EVENT] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
 [x-causer] seinen (3)
-[m-scene] üblichen (4)
+[m-reference] üblichen (4)
 [m-quality] giftigen (5)
 [undergoer] gegen die Lehren der Partei (9)
 
 [IDENTIFICATION] seinen (3)
 
-[SCENE-CONTINUATION] üblichen (4)
-[initial-scene] Angriff - einen so übertriebenen und verdrehten Angriff , dass ihn ein Kind hätte durchschauen können , und doch gerade hinreichend glaubhaft , um einen mit dem alarmierenden Gefühl zu erfüllen , dass andere Menschen , die weniger vernünftig waren als man selbst , sich dadurch vielleicht verführen lassen könnten (6)
+[COMPARISON] üblichen (4)
 
 [QUALITY] giftigen (5)
 
 [MESSAGE] Lehren (9)
-[x-causer] der Partei (11)
+[x-sender] der Partei (11)
 
 [SOCIAL-RELATION >> IDENTIFICATION] Partei (11)
 
@@ -2727,6 +2735,7 @@
 [MESSAGE-INIT] klagte (7)
 [topic] die Diktatur der Partei (9)
 [m-noncomp] an (12)
+[x-sender] Er (1)
 
 [SOCIAL-RELATION] Diktatur (9) # # "unumschränkte, andere gesellschaftliche Kräfte mit Gewalt unterdrückende Ausübung der Herrschaft durch eine bestimmte Person, gesellschaftliche Gruppierung, Partei o. Ä. in einem Staat"
 [has-social-relation] der Partei (11)
@@ -2735,6 +2744,7 @@
 
 [MESSAGE-INIT] forderte (14)
 [topic] sofortigen Friedensschluss mit Eurasien (16)
+[x-sender] Er (1)
 
 [SOCIAL-RELATION-INIT] Friedensschluss (16)
 [m-time] sofortigen (15)
@@ -2750,6 +2760,7 @@
 [topic] , Versammlungs- (26)
 [topic] und Gedankenfreiheit (28)
 [m-noncomp] ein (29)
+[x-sender] Er (1)
 
 [SOCIAL-RELATION] Rede- (22)
 
@@ -2762,6 +2773,7 @@
 [MESSAGE-INIT] schrie (31)
 [m-quality] hysterisch (32)
 [target-content] , die Revolution sei verraten worden - (37)
+[x-sender] Er (1)
 
 [QUALITY] hysterisch (32)
 
@@ -2776,6 +2788,7 @@
 [m-quality] vielsilbigen (47)
 [m-scene] , die eine Art Parodie des üblichen Stils der Parteiredner war (52)
 [m-scene] und sogar einige Worte der Neusprache enthielt : praktisch mehr Neusprach-Worte , als irgendein Parteimitglied normalerweise im wirklichen Leben angewendet hätte (66)
+[x-sender] Er (1)
 
 [IDENTIFICATION] das (42)
 
@@ -2794,11 +2807,10 @@
 [topic] des üblichen Stils der Parteiredner (56) # # Vgl. performance im Manual
 
 [MEANS] Stils (56)
-[m-scene] üblichen (55)
+[m-reference] üblichen (55)
 [x-causer] der Parteiredner (58)
 
-[SCENE-CONTINUATION] üblichen (55)
-[initial-scene] Stils (56)
+[COMPARISON] üblichen (55)
 
 [SOCIAL-RELATION] Parteiredner (58)
 
@@ -3149,7 +3161,7 @@
 [m-scene] im Raum versammelten (18)
 
 [SOCIAL-RELATION] versammelten (18)
-[x-location] im Raum (17)
+[m-location] im Raum (17)
 [has-social-relation] Menschen (19)
 
 [LOCATION] Raum (17)
@@ -3322,7 +3334,7 @@
 [m-condition] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
 [m-scene] so (22) # # "dann", "in dem Fall"
 [participant] es (24)
-[m-scene] gewöhnlich (26)
+[m-reference] gewöhnlich (26)
 [participant] mit der anderen (29)
 [scene] im Friedenszustand (31)
 
@@ -3347,8 +3359,7 @@
 
 [IDENTIFICATION] es (24)
 
-[SCENE-CONTINUATION] gewöhnlich (26)
-[initial-scene] befand (23)
+[COMPARISON] gewöhnlich (26) # # "gewohnt, üblich"
 
 [COMPARISON] anderen (29)
 
@@ -3493,7 +3504,7 @@
 [MESSAGE] Büchern (38)
 
 [MESSAGE] Theorien (40)
-[x-causer] seine (39)
+[x-sender] seine (39)
 
 [IDENTIFICATION] seine (39)
 

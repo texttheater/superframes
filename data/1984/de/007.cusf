@@ -166,13 +166,13 @@
 [SOCIAL-RELATION] Kollege (4)
 [social-relation] Parsons (1)
 [has-social-relation] Winstons (3)
-[? || m-location] im Wahrheitsministerium (6)
+[m-social-relation || m-location] im Wahrheitsministerium (6)
 
 [IDENTIFICATION] Parsons (1)
 
 [IDENTIFICATION] Winstons (3)
 
-[? || LOCATION] Wahrheitsministerium (6) # "höchste Verwaltungsbehörde eines Landes mit einem bestimmten Aufgabenbereich" oder "Gebäude, in dem sich ein Ministerium befindet"
+[SOCIAL-RELATION || CLASS] Wahrheitsministerium (6) # "höchste Verwaltungsbehörde eines Landes mit einem bestimmten Aufgabenbereich" oder "Gebäude, in dem sich ein Ministerium befindet"
 
 # sent_id = 356
 # text = Er war ein rundlicher , jedoch sehr beweglicher Mann von entwaffnender Dummheit , ein Klotz voll törichter Begeisterung - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing .
@@ -378,7 +378,7 @@
 
 [QUANTITY] sehr (8)
 
-[?CLASS] Jugendliga (12)
+[SOCIAL-RELATION] Jugendliga (12)
 
 [SCENE-INIT] fertiggebracht (27)
 [m-follows] ehe er in die Jugendliga aufgerückt war , (21)
@@ -392,7 +392,7 @@
 
 [IDENTIFICATION] er (17)
 
-[?CLASS] Jugendliga (20)
+[SOCIAL-RELATION] Jugendliga (20)
 
 [IDENTIFICATION] er (25)
 
@@ -480,7 +480,7 @@
 [means] er (4)
 [?] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
-[] Ministerium (2)
+[SOCIAL-RELATION] Ministerium (2)
 
 [IDENTIFICATION] er (4)
 
@@ -506,8 +506,8 @@
 [has-class] er (20)
 [m-scene] andererseits (21)
 [m-rank || m-scene || ?m-depictive] führender (23)
-[?m-social-relation] beim Sportausschuss (26)
-[?m-social-relation] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
+[m-social-relation] beim Sportausschuss (26)
+[m-social-relation] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
 [IDENTIFICATION] er (20)
 
@@ -519,13 +519,14 @@
 [?possessed] beim Sportausschuss (26)
 [?possessed] und allen anderen Ausschüssen (30)
 
-[?SOCIAL-RELATION] Sportausschuss (26) # # Vgl. "Komitee: gewählte Gruppe von Personen, die eine besondere Aufgabe zu erfüllen hat"
+[SOCIAL-RELATION] Sportausschuss (26) # # Vgl. "Komitee: gewählte Gruppe von Personen, die eine besondere Aufgabe zu erfüllen hat"
 
-[?SOCIAL-RELATION] Ausschüssen (30)
-[m-reference] anderen (29)
+[SOCIAL-RELATION] Ausschüssen (30)
+[m-scene] anderen (29)
 [m-scene] , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (48)
 
 [COMPARISON] anderen (29)
+[compared] Ausschüssen (30)
 
 [POSSESSION] unterstand (48)
 [possessor] denen (32)
@@ -569,7 +570,7 @@
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	erzählte	erzählen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	obj	_	_
-4	voll	voll	ADJ	ADJD	_	5	advmod	_	_
+4	voll	voll	ADJ	ADJD	_	6	advmod	_	_
 5	ruhigen	ruhig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	6	amod	_	_
 6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	2	iobj	_	_
 7	,	,	PUNCT	$,	_	14	punct	_	_
@@ -608,13 +609,14 @@
 [CLASS] einem (3)
 
 [MESSAGE] Stolzes (6) # # "von Selbstbewusstsein und Freude über einen Besitz, eine [eigene] Leistung erfüllt"
-[m-quality] voll ruhigen (5)
+[m-depictive] voll (4)
+[m-quality] ruhigen (5)
 [x-experiencer] Er (1)
 
-[QUALITY] ruhigen (5)
-[] voll (4)
+[STATE] voll (4)
+[has-state] Er (1)
 
-[] voll (4)
+[QUALITY] ruhigen (5)
 
 [LOCATION-DEINIT] entlockte (14)
 [x-causer] er (9)
@@ -696,7 +698,7 @@
 
 [IDENTIFICATION] ihm (5)
 
-[MESSAGE] Zeugnis (9) # # "stichhaltiger Beweis, deutliches, unverkennbares Zeichen"
+[?MESSAGE] Zeugnis (9) # # "stichhaltiger Beweis, deutliches, unverkennbares Zeichen", Vgl. sent_id 169 "offenbar"??
 [m-scene] unfreiwilliges (8)
 [?topic] für die Angestrengtheit seines Lebens (12)
 [?x-sender] Schweißgeruch (3)
@@ -717,6 +719,7 @@
 [m-time] nach seinem Weggehen (21)
 [m-scene] noch (22)
 [location] im Zimmer (24)
+[has-location] Schweißgeruch (3)
 
 [MODE] sogar (18)
 
@@ -884,9 +887,9 @@
 
 [ACTIVITY] Schuhgetrampel (3)
 
-[EXCRETION] Trompetenstoß (7) # # "kurzes, rasches Blasen in eine Trompete"
+[EXCRETION || MESSAGE] Trompetenstoß (7) # # "kurzes, rasches Blasen in eine Trompete"
 [m-scene] neuen (6)
-[m-location] auf dem Kamm (10)
+[m-location >> m-means] auf dem Kamm (10) # Vgl. sent_id 343
 
 [COMPARISON] neuen (6)
 [compared] Trompetenstoß (7)
@@ -1408,7 +1411,7 @@
 5	ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
 6	werde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	aux	_	_
 7	Sie	Sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	8	obj	_	_
-8	vaporisieren	vaporisieren	VERB	VVINF	VerbForm=Inf	2	ccomp	_	_
+8	vaporisieren	vaporisieren	VERB	VVINF	VerbForm=Inf	2	parataxis	_	_
 9	,	,	PUNCT	$,	_	16	punct	_	_
 10	ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
 11	werde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	aux	_	_
@@ -1416,15 +1419,13 @@
 13	in	in	ADP	APPR	_	15	case	_	_
 14	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	15	det	_	_
 15	Salzbergwerke	Salzbergwerk	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	16	obl	_	_
-16	verbannen	verbannen	VERB	VVINF	VerbForm=Inf	8	conj	_	_
+16	verbannen	verbannen	VERB	VVINF	VerbForm=Inf	2	parataxis	_	_
 17	!	!	PUNCT	$.	_	2	punct	_	_
 18	«	«	PUNCT	$(	_	2	punct	_	_
 
 [DESTRUCTION] erschieße (2)
 [x-causer] Ich (1)
 [destroyed] Sie (3)
-[] , ich werde Sie vaporisieren (8)
-[] , ich werde Sie in die Salzbergwerke verbannen (16)
 
 [IDENTIFICATION] Ich (1)
 
@@ -1483,7 +1484,7 @@
 [UNANCHORED-MOTION] sprangen (2)
 [m-quality] Plötzlich (1)
 [in-motion] beide (3)
-[transitory-location] um ihn (5)
+[?m-reference] um ihn (5)
 [transitory-location] herum (6)
 [m-accompanier] , wobei das kleine Mädchen ihrem Bruder jede Bewegung nachmachte (27)
 
@@ -1891,7 +1892,7 @@
 
 [MESSAGE-INIT] ansehen (14)
 [x-noncomp] sich (11)
-[topic] das Hängen (13)
+[target-content] das Hängen (13)
 [x-experiencer] sie (7)
 
 [NONCOMP] sich (11)
@@ -2121,7 +2122,7 @@
 [topic] denen (5)
 [content] Kriegsverbrechen (6)
 [x-noncomp] zur Last (8)
-[] Gefangene (3)
+[topic] Gefangene (3)
 
 [IDENTIFICATION] denen (5)
 
@@ -2399,6 +2400,7 @@
 
 [MESSAGE] sehen (10)
 [topic] , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (20)
+[x-experiencer] Er (1)
 
 [LOCATION-INIT] hineinzerrte (20)
 [x-causer] Frau Parsons (14)
