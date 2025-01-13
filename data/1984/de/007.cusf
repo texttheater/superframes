@@ -336,13 +336,13 @@
 27	fertiggebracht	fertigbringen	VERB	VVPP	Verbform=Part	13	conj	_	_
 28	,	,	PUNCT	$,	_	41	punct	_	_
 29	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	30	det	_	_
-30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
+30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	35	obl	_	_
 31	über	über	ADP	APPR	_	35	case	_	_
 32	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	35	det	_	_
 33	satzungsgemäß	satzungsgemäß	ADJ	ADJD	_	34	advmod	_	_
 34	festgesetzte	festgesetzt	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	35	amod	_	_
 35	Alter	Alter	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
-36	hinaus	hinaus	ADP	APZR	_	35	advmod	_	_
+36	hinaus	hinaus	ADP	APZR	_	35	case	_	_
 37	bei	bei	ADP	APPR	_	39	case	_	_
 38	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	39	det	_	_
 39	Spähern	Späher	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	41	obl	_	_
@@ -357,19 +357,18 @@
 [m-scene] sehr ungern (9)
 [initial-social-relation] aus der Jugendliga (12)
 
-[TIME] Jahren (3)
+[TIME >> STATE] Jahren (3)
 [m-quantity] fünfunddreißig (2)
-[has-time] er (5)
+[has-time >> has-state] er (5)
 
 [QUANTITY] fünfunddreißig (2)
 
 [IDENTIFICATION] er (5)
 
 [TIME] kürzlich (7)
-[?m-mode || m-scene] erst (6) # # "drückt eine Steigerung, Hervorhebung aus"
+[??m-time] erst (6) # # "drückt Verstärkung aus"
 
-[?MODE || CONCESSION] erst (6)
-[?asserted] kürzlich (7)
+[TIME] erst (6)
 
 [MESSAGE] ungern (9) # # "mit Widerwillen, freudlos, abgeneigt"
 [m-quantity] sehr (8)
@@ -386,9 +385,9 @@
 [x-noncomp] es (26)
 [target-scene] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
 
-[RANK-CHANGE] aufgerückt (21) # # "befördert werden, [im Rang] aufsteigen"
-[x-experiencer] er (17)
-[target-rank] in die Jugendliga (20)
+[RANK-CHANGE >> SOCIAL-RELATION-INIT] aufgerückt (21) # # "befördert werden, [im Rang] aufsteigen"
+[has-rank >> has-social-relation] er (17)
+[target-rank >> target-social-relation] in die Jugendliga (20)
 
 [IDENTIFICATION] er (17)
 
@@ -399,29 +398,25 @@
 [NONCOMP] es (26)
 
 [SCENE-CONTINUATION] verbleiben (41)
-[m-time] ein Jahr (30)
-[participant] über das satzungsgemäß festgesetzte Alter hinaus (35)
+[m-time] ein Jahr über das satzungsgemäß festgesetzte Alter hinaus (35)
 [initial-scene] bei den Spähern (39)
 [participant] er (25)
 
 [TIME] Jahr (30)
 
-[QUALITY] Alter (35)
+[STATE] Alter (35)
+[m-quantity] ein Jahr (30)
 [m-scene] satzungsgemäß festgesetzte (34)
-[m-scene] hinaus (36)
 
-[SEQUENCE] festgesetzte (34) # # "festlegen: verbindlich beschließen, bestimmen, regeln, vorschreiben"
-[followed] satzungsgemäß (33)
-[follows] Alter (35)
+[MESSAGE-INIT] festgesetzte (34) # # "festlegen: verbindlich beschließen, bestimmen, regeln, vorschreiben"
+[m-scene] satzungsgemäß (33)
+[topic] Alter (35)
 
 [SEQUENCE] satzungsgemäß (33)
-
-[SCENE-CONTINUATION] hinaus (36)
-[initial-scene] Alter (35)
+[follows] festgesetzte (34)
 
 [MESSAGE-INIT >> SOCIAL-RELATION] Spähern (39) # # hier als Verein gemeint, sonst:  "jemand, der etwas auskundschaften soll; Kundschafter", Vgl. sent_id 151 "Spitzel"
 [x-experiencer >> has-social-relation] er (25)
-[?condition] über das satzungsgemäß festgesetzte Alter hinaus (35)
 
 # sent_id = 358
 # text = Im Ministerium wurde er auf einem untergeordneten Posten verwendet , für den kein Verstand nötig war , doch war er andererseits ein führender Mann beim Sportausschuss und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand .
@@ -476,9 +471,9 @@
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
 [?MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
-[m-location >> ?m-depictive] Im Ministerium (2) # # Posten im Ministerium?
+[m-location >> ?m-purpose] Im Ministerium (2) # # Posten im Ministerium?
 [means] er (4)
-[?] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
+[?m-depictive] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
 [SOCIAL-RELATION] Ministerium (2)
 
@@ -1136,9 +1131,9 @@
 [QUALITY] robust (4)
 [has-quality] Junge (6)
 
-[TIME] Jahren (9)
+[TIME >> STATE] Jahren (9)
 [m-quantity] neun (8)
-[?has-time] Junge (6)
+[has-time >> has-state] Junge (6)
 
 [QUANTITY] neun (8)
 
@@ -1364,7 +1359,7 @@
 [target-content] » Sie sind ein Verräter ! « (5)
 [x-sender] der Junge (10)
 
-[SOCIAL-RELATION] Verräter (5)
+[SOCIAL-RELATION-DEINIT] Verräter (5)
 [has-social-relation] » Sie (2)
 
 [IDENTIFICATION] Sie (2)
@@ -1484,7 +1479,7 @@
 [UNANCHORED-MOTION] sprangen (2)
 [m-quality] Plötzlich (1)
 [in-motion] beide (3)
-[?m-reference] um ihn (5)
+[transitory-location] um ihn (5)
 [transitory-location] herum (6)
 [m-accompanier] , wobei das kleine Mädchen ihrem Bruder jede Bewegung nachmachte (27)
 
@@ -1499,7 +1494,7 @@
 [target-content] und » Gedankenverbrecher ! (15)
 [x-sender] beide (3)
 
-[SOCIAL-RELATION] Verräter (10)
+[SOCIAL-RELATION-DEINIT] Verräter (10)
 
 [SENDING] Gedankenverbrecher (15)
 
@@ -1750,7 +1745,7 @@
 
 [CLASS] Kindern (11)
 
-[SCENE-CONTINUATION] wieder (13)
+[SEQUENCE] wieder (13)
 
 # sent_id = 383
 # text = In dem besseren Licht des Wohnzimmers bemerkte er voller Mitleid , dass es tatsächlich Staub war , was sich in ihren Runzeln eingenistet hatte .
@@ -2576,8 +2571,8 @@
 
 [IDENTIFICATION] sich (17)
 
-[SCENE-CONTINUATION] wieder (18)
-[initial-scene] setzte (16)
+[SEQUENCE] wieder (18)
+[follows] setzte (16)
 
 [CLASS] Tisch (21)
 

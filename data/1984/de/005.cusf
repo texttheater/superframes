@@ -292,8 +292,8 @@
 
 [IDENTIFICATION] sie (12)
 
-[SCENE-CONTINUATION] wieder (13)
-[initial-scene] aufzusetzen (18)
+[SEQUENCE] wieder (13)
+[follows] aufzusetzen (18)
 
 [MESSAGE-INIT] Geste (17)
 [x-sender] seiner (15)
@@ -622,7 +622,7 @@
 
 [LOCATION >> SOCIAL-RELATION] stehe (7) # # figurativ: "ich meine es gut mit dir" / "ich kämpfe für das Gleiche"
 [has-location >> has-social-relation] ich (6)
-[location >> social-relation] auf deiner Seite (10)
+[location >> x-noncomp] auf deiner Seite (10)
 
 [IDENTIFICATION] ich (6)
 
@@ -659,8 +659,8 @@
 
 [TIME] Dann (1)
 
-[QUALITY] Blitz (4) # # "drückt in Bildungen mit Substantiven aus, dass etwas überaus schnell, überraschend [und unerwartet] erfolgt"
-[has-quality] des Einverständnisses (6)
+[EVENT >> QUALITY] Blitz (4) # # "drückt in Bildungen mit Substantiven aus, dass etwas überaus schnell, überraschend [und unerwartet] erfolgt"
+[x-identified >> has-quality] des Einverständnisses (6)
 
 [SOCIAL-RELATION-INIT || MESSAGE] Einverständnisses (6) # # "Einigkeit in Bezug auf etwas, wozu jemand anderes die gleiche Einstellung hat"
 
@@ -919,14 +919,14 @@
 [m-time] nie (11)
 [content] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
 
-[STATE-CHANGE || SOCIAL-RELATION-INIT] Verhaftungen (4) # # Vgl. sent_id 179 "verurteilt"
+[STATE-CHANGE || SOCIAL-RELATION-INIT] Verhaftungen (4)
 [m-quantity] endlosen (3)
 
 [QUANTITY] endlosen (3)
 
 [MESSAGE-INIT] Geständnisse (6)
 
-[DESTRUCTION || SOCIAL-RELATION-INIT] Hinrichtungen (8) # # Vgl. sent_id 179 "zum Tode verurteilt"
+[DESTRUCTION || EVENT] Hinrichtungen (8) # # "Urteilvollstreckung"
 
 [CLASS] man (10)
 
@@ -1509,8 +1509,8 @@
 
 [IDENTIFICATION] sich (4)
 
-[SCENE-CONTINUATION] wieder (5)
-[initial-scene] richtete (3)
+[SEQUENCE] wieder (5)
+[follows] richtete (3)
 
 [CLASS] Blatt (8)
 
@@ -1722,7 +1722,7 @@
 9	hinweg	hinweg	ADP	APZR	_	8	case	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[SCENE-CONTINUATION] wieder (2)
+[?SCENE-CONTINUATION] wieder (2)
 [m-time] immer (1)
 [x-target-location || m-quantity] , fast über eine halbe Seite hinweg (8) # # [Er schrieb es]
 

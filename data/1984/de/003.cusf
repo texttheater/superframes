@@ -815,7 +815,7 @@
 [IDENTIFICATION] der (30)
 
 [LOCATION >> SOCIAL-RELATION] Gegenüber (32)
-[x-reference >> has-social-relation] seinem (31)
+[has-location >> has-social-relation] seinem (31)
 
 [IDENTIFICATION] seinem (31)
 
@@ -1404,7 +1404,7 @@
 [m-location] in derselben Reihe wie Winston (9)
 
 [CLASS || LOCATION] Reihe (9) # # CLASS ist default für Substantive, wenn es keine spezifische Rollen gibt
-[m-reference] wie Winston (11)
+[m-reference || location] wie Winston (11)
 
 [COMPARISON] derselben (8)
 
@@ -1819,7 +1819,7 @@
 
 [IDENTIFICATION] Goldstein (1)
 
-[SOCIAL-RELATION] Abtrünnige (8)
+[SOCIAL-RELATION-DEINIT] Abtrünnige (8)
 [m-quality] große (7)
 [m-scene] , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (33)
 [m-scene] und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte (51)
@@ -1920,7 +1920,7 @@
 [QUALITY || SOCIAL-RELATION] konterrevolutionären (57)
 
 [SOCIAL-RELATION-INIT] verurteilt (64)
-[target-social-relation] zum Tode (63) # # ? "Tod" ist target-social-relation?
+[target-social-relation] zum Tode (63)
 [has-social-relation] einer (33)
 
 [DESTRUCTION] Tode (63)
@@ -2019,7 +2019,7 @@
 13	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	11	nmod	_	_
 14	.	.	PUNCT	$.	_	5	punct	_	_
 
-[SOCIAL-RELATION] Verräter (5)
+[SOCIAL-RELATION-INIT] Verräter (5)
 [has-social-relation] Er (1)
 [m-rank >> m-time] erste (4)
 
@@ -2780,7 +2780,7 @@
 [SOCIAL-RELATION-DEINIT] verraten (37) # # "etwas oder jemandem gegenüber nicht loyal sein, oft indem man etwas Schädliches tut, wie etwa Feinden zu helfen"
 [initial-social-relation] die Revolution (35)
 
-[SOCIAL-RELATION] Revolution (35)
+[SOCIAL-RELATION-DEINIT] Revolution (35)
 
 [MESSAGE] Ansprache (48)
 [m-purpose || m-part] alles das (42)
@@ -3038,8 +3038,8 @@
 [m-scene] wieder (64)
 [in-motion] Männer (50)
 
-[SCENE-CONTINUATION] wieder (64)
-[initial-scene] zerflossen (65)
+[SEQUENCE] wieder (64)
+[follows] zerflossen (65) ## im Sinne von "zurück in den ursprünglichen Zustand"
 
 [SEQUENCE] abgelöst (74) # # "eine Aufgabe für jemanden übernehmen, jemanden ersetzen", ersetzen: "für jemanden, etwas ein Ersatz sein; an die Stelle von jemanden, etwas treten"
 [follows] von anderen (69)
@@ -3575,16 +3575,17 @@
 [participant] neue Opfer (5)
 [target-scene] darauf , von ihm verführt zu werden (10)
 
-[SCENE-CONTINUATION] wieder (2)
+[SEQUENCE] wieder (2)
 [m-time] Immer (1)
-[initial-scene] warteten (3)
+[follows] warteten (3)
 
 [TIME] Immer (1)
 
 [SOCIAL-RELATION] Opfer (5)
-[m-quality] neue (4)
+[m-scene] neue (4)
 
-[QUALITY] neue (4)
+[COMPARISON] neue (4)
+[compared] Opfer (5)
 
 [SCENE-INIT] verführt (10)
 [x-causer] von ihm (9)
