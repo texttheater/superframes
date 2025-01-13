@@ -933,7 +933,7 @@
 6	dass	dass	SCONJ	KOUS	_	16	mark	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
 8	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	_
-9	sogar	sogar	ADV	ADV	_	16	advmod	_	_
+9	sogar	sogar	ADV	ADV	_	12	advmod	_	_
 10	in	in	ADP	APPR	_	12	case	_	_
 11	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	12	det:poss	_	_
 12	Schrecken	Schrecken	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
@@ -971,23 +971,24 @@
 
 [] er (2)
 
-[] gebracht (16)
-[] er (7)
-[] es (8)
-[] sogar (9)
-[] in seinem Schrecken (12)
-[] nicht (13)
-[] über sich (15)
-[] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
+[LOCATION-INIT >> SCENE-INIT] gebracht (16)
+[x-causer] er (7)
+[x-noncomp] es (8) # TODO manual
+[m-depictive] sogar in seinem Schrecken (12)
+[m-mode] nicht (13)
+[target-location >> x-causer] über sich (15)
+[has-location >> target-scene] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
 
 [] er (7)
 
 [] es (8)
 
-[] sogar (9)
+[MESSAGE] Schrecken (12)
+[m-mode] sogar (9)
+[x-experiencer] seinem (11)
+[x-experiencer] er (7)
 
-[] Schrecken (12)
-[] seinem (11)
+[] sogar (9)
 
 [] seinem (11)
 
@@ -1044,7 +1045,7 @@
 
 [] Er (1)
 
-[] Atem (4)
+[EVENT] Atem (4)
 
 [] öffnete (7)
 [] die Tür (9)
@@ -1130,9 +1131,9 @@
 # sent_id = 325
 # text = » Ach , Genosse « , begann sie mit leidender Jammerstimme , » mir war so , als ob ich Sie heimkommen hörte .
 1	»	»	PUNCT	$(	_	2	punct	_	_
-2	Ach	ach	INTJ	ITJ	_	4	advmod	_	_
+2	Ach	ach	INTJ	ITJ	_	4	discourse	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
-4	Genosse	Genosse	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	7	ccomp	_	_
+4	Genosse	Genosse	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	7	vocative	_	_
 5	«	«	PUNCT	$(	_	4	punct	_	_
 6	,	,	PUNCT	$,	_	4	punct	_	_
 7	begann	beginnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -1155,14 +1156,10 @@
 24	.	.	PUNCT	$.	_	7	punct	_	_
 
 [] begann (7)
-[] » Ach , Genosse « , (4)
 [] sie (8)
 [] mit leidender Jammerstimme (11)
 
-[] Genosse (4)
-[] » Ach , (2)
-
-[] Ach (2)
+[SOCIAL-RELATION] Genosse (4)
 
 [] sie (8)
 
@@ -1171,14 +1168,14 @@
 
 [] leidender (10)
 
-[] war (15)
-[] mir (14)
-[] so (16)
-[] , als ob ich Sie heimkommen hörte (23)
+[MESSAGE] war (15)
+[x-experiencer] mir (14)
+[content >> x-noncomp] so (16) # TODO expletive
+[x-reference >> content] , als ob ich Sie heimkommen hörte (23)
 
 [] mir (14)
 
-[] so (16)
+[IDENTIFICATION >> NONCOMP] so (16)
 
 [] hörte (23)
 [] ich (20)

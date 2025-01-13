@@ -934,9 +934,9 @@
 
 [] Goldstein (12)
 
-[] Gegenteil (17)
-[] gegen den Großen Bruder (21)
-[] , gegen die Partei (25)
+[COMPARISON] Gegenteil (17)
+[compared] gegen den Großen Bruder (21)
+[compared] , gegen die Partei (25)
 
 [] Bruder (21)
 [] Großen (20)
@@ -994,14 +994,16 @@
 
 [] sein (6)
 
-[] Abtrünnigen , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
-[] einsamen (11)
-[] , verachteten (13)
-[] auf dem Sehschirm (17)
+[SOCIAL-RELATION-DEINIT] Abtrünnigen , diesen einzigen Verfechter von Wahrheit und Vernunft in einer Welt der Lügen (14)
+[m-scene] einsamen (11)
+[m-scene] , verachteten (13)
+[m-location] auf dem Sehschirm (17)
 
-[] einsamen (11)
+[SOCIAL-RELATION-NEG >> QUALITY] einsamen (11)
+[has-social-relation >> has-quality] Abtrünnigen (14)
 
-[] verachteten (13)
+[MESSAGE] verachteten (13)
+[topic] Abtrünnigen (14)
 
 [] Sehschirm (17)
 
@@ -1017,10 +1019,10 @@
 
 [] Vernunft (25)
 
-[] Welt (28)
-[] der Lügen (30)
+[CLASS] Welt (28)
+[m-situator] der Lügen (30)
 
-[] Lügen (30)
+[MESSAGE] Lügen (30)
 
 # sent_id = 218
 # text = Und doch fühlte er sich im nächsten Augenblick wieder eins mit den ihn umgebenden Menschen , und alle Behauptungen über Goldstein schienen ihm wahr .
@@ -1055,7 +1057,7 @@
 [] er (4)
 [] sich (5)
 [] im nächsten Augenblick (8)
-[] wieder (9)
+[m-scene] wieder (9)
 [] eins mit den ihn umgebenden Menschen (10)
 
 [] doch (2)
@@ -1069,24 +1071,26 @@
 
 [] nächsten (7)
 
-[] wieder (9)
+[SEQUENCE] wieder (9) # TODO manual
+[follows] fühlte (3)
 
-[ACCOMPANIMENT-INIT] eins (10)
-[accompanied] mit den ihn umgebenden Menschen (15)
-[target-accompanier] er (4)
+[ACCOMPANIMENT >> SOCIAL-RELATION] eins (10)
+[accompanied >> social-relation] mit den ihn umgebenden Menschen (15)
+[accompanier >> has-social-relation] er (4)
 
-[] Menschen (15)
-[] ihn umgebenden (14)
+[CLASS] Menschen (15)
+[m-scene] ihn umgebenden (14)
 
-[] umgebenden (14)
+[LOCATION] umgebenden (14) # v2: SURROUND frame?
+[location] ihn (13)
+[has-location] Menschen (15)
+
 [] ihn (13)
 
-[] ihn (13)
-
-[] schienen (22)
-[] alle Behauptungen über Goldstein (19)
-[] ihm (23)
-[] wahr (24)
+[MESSAGE] schienen (22)
+[topic] alle Behauptungen über Goldstein (19)
+[x-experiencer] ihm (23)
+[content] wahr (24)
 
 [] Behauptungen (19)
 [] über Goldstein (21)
@@ -1204,8 +1208,8 @@
 
 [] geheime (7)
 
-[] Bruder (12)
-[] Großen (11)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (12)
+[m-quality >> m-noncomp] Großen (11)
 
 [] Großen (11)
 
@@ -1224,20 +1228,23 @@
 [] dazustehen (21)
 [] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
 
-[] Beschützer (27)
-[] unbesieglicher (24)
-[] , furchtloser (26)
-[] , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (39)
+[SCENE-INIT-NEG] Beschützer (27)
+[m-scene] unbesieglicher (24)
+[m-scene] , furchtloser (26)
+[m-scene] , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (39)
 
-[] unbesieglicher (24)
+[COMPARISON-INIT-POSSIBILITY-NEG >> QUALITY] unbesieglicher (24)
+[target-reference >> has-quality] Beschützer (27)
 
-[] furchtloser (26)
+[MESSAGE-NEG >> QUALITY] furchtloser (26)
+[x-experiencer >> has-quality] Beschüter (27)
 
 [HITTING >> EVENT] stemmte (39)
 [hitting >> x-causer] der (29)
 [hitting >> x-causer] sich (30)
 [m-reference] wie ein Felsen (33)
 [hit >> undergoer] gegen die anbrandenden asiatischen Horden (38)
+[hitting >> x-causer] Beschützer (27)
 
 [] der (29)
 

@@ -297,7 +297,7 @@
 3	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	13	obl	_	_
 4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
-6	erst	erst	ADV	ADV	_	9	advmod	_	_
+6	erst	erst	ADV	ADV	_	7	advmod	_	_
 7	kürzlich	kürzlich	ADV	ADV	_	13	advmod	_	_
 8	sehr	sehr	ADV	ADV	_	9	advmod	_	_
 9	ungern	ungern	ADV	ADV	_	13	advmod	_	_
@@ -321,13 +321,13 @@
 27	fertiggebracht	fertigbringen	VERB	VVPP	Verbform=Part	13	conj	_	_
 28	,	,	PUNCT	$,	_	41	punct	_	_
 29	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	30	det	_	_
-30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
+30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	35	nmod	_	_
 31	über	über	ADP	APPR	_	35	case	_	_
 32	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	35	det	_	_
 33	satzungsgemäß	satzungsgemäß	ADJ	ADJD	_	34	advmod	_	_
 34	festgesetzte	festgesetzt	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	35	amod	_	_
 35	Alter	Alter	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
-36	hinaus	hinaus	ADP	APZR	_	35	advmod	_	_
+36	hinaus	hinaus	ADP	APZR	_	35	case	_	_
 37	bei	bei	ADP	APPR	_	39	case	_	_
 38	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	39	det	_	_
 39	Spähern	Späher	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	41	obl	_	_
@@ -336,26 +336,27 @@
 42	.	.	PUNCT	$.	_	13	punct	_	_
 
 [] ausgeschieden (13)
-[] Mit fünfunddreißig Jahren (3)
+[m-depictive] Mit fünfunddreißig Jahren (3)
 [] er (5)
-[] kürzlich (7)
-[] erst sehr ungern (9)
+[m-time] kürzlich (7)
+[] sehr ungern (9)
 [] aus der Jugendliga (12)
 
-[] Jahren (3)
-[] fünfunddreißig (2)
+[TIME >> STATE] Jahren (3)
+[m-quantity] fünfunddreißig (2)
+[has-time >> has-state] er (5) # TODO manual (also clarify QUALITY vs. STATE further)
 
 [] fünfunddreißig (2)
 
 [] er (5)
 
-[] kürzlich (7)
+[TIME] kürzlich (7)
+[m-time] erst (6) # TODO manual
+
+[TIME] erst (6)
 
 [] ungern (9)
-[] erst (6)
 [] sehr (8)
-
-[] erst (6)
 
 [] sehr (8)
 
@@ -367,9 +368,9 @@
 [] es (26)
 [] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
 
-[] aufgerückt (21)
-[] er (17)
-[] in die Jugendliga (20)
+[RANK-CHANGE >> SOCIAL-RELATION-INIT] aufgerückt (21)
+[has-rank >> has-social-relation] er (17)
+[target-rank >> target-social-relation] in die Jugendliga (20) # TODO ?
 
 [] er (17)
 
@@ -379,23 +380,22 @@
 
 [] es (26)
 
-[] verbleiben (41)
-[] ein Jahr (30)
-[] über das satzungsgemäß festgesetzte Alter hinaus (35)
-[] bei den Spähern (39)
+[SCENE-CONTINUATION] verbleiben (41) # TODO v2: SOCIAL-RELATION-CONTINUATION
+[m-time] ein Jahr über das satzungsgemäß festgesetzte Alter hinaus (35)
+[initial-scene] bei den Spähern (39)
 
-[] Jahr (30)
+[STATE] Alter (35)
+[m-quantity] ein Jahr (30)
+[m-scene] satzungsgemäß festgesetzte (34)
 
-[] Alter (35)
-[] satzungsgemäß festgesetzte (34)
-[] hinaus (36)
+[TIME] Jahr (30)
 
-[] festgesetzte (34)
-[] satzungsgemäß (33)
+[MESSAGE-INIT] festgesetzte (34) # TODO v2: clarify speech acts
+[m-scene] satzungsgemäß (33)
+[topic] Alter (35)
 
-[] satzungsgemäß (33)
-
-[] hinaus (36)
+[SEQUENCE] satzungsgemäß (33)
+[follows] festgesetzte (34)
 
 [] Spähern (39)
 
