@@ -66,10 +66,10 @@
 [CLASS] Lichter (20)
 [m-scene] , die einem die Augen blendeten (26)
 
-[MESSAGE-PREVENTION] blendeten (26)
+[MESSAGE-INIT] blendeten (26)
 [x-sender] die (22)
 [x-experiencer] einem (23)
-[???  x-experiencer || topic || oder wieder x-attribute?] die Augen (25)
+[x-attribute >> x-noncomp] die Augen (25)
 [x-sender] Lichter (20)
 
 [IDENTIFICATION] die (22)
@@ -77,6 +77,7 @@
 [IDENTIFICATION] einem (23)
 
 [PART-WHOLE] Augen (25)
+[whole] einem (23)
 
 [LOCATION || PART-WHOLE] Kreis (29)
 [has-location || whole] harter Gesichter (31)
@@ -152,8 +153,8 @@
 10	Nacht	Nacht	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-DEINIT >> EXISTENCE-NEG] verschwanden (3)
-[has-location >> exists] Die Menschen (2)
+[LOCATION-DEINIT >> DESTRUCTION] verschwanden (3)
+[has-location >> destroyed] Die Menschen (2)
 [m-mode] einfach (4)
 [m-time] , immer mitten in der Nacht (10)
 
@@ -277,8 +278,8 @@
 18	lautete	lauten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	advcl	_	_
 19	.	.	PUNCT	$.	_	3	punct	_	_
 
-[MESSAGE-DEINIT >> EXISTENCE-NEG] ausgelöscht (3)
-[initial-content >> exists] Man (1)
+[MESSAGE-DEINIT >> DESTRUCTION] ausgelöscht (3)
+[initial-content >> destroyed] Man (1)
 
 [IDENTIFICATION] Man (1)
 
@@ -287,8 +288,8 @@
 
 [CLASS] nichts (6)
 
-[STATE-CHANGE >> EXISTENCE-NEG] vaporisiert (11) # zu Dampf werden
-[has-state >> exists] man (9)
+[STATE-CHANGE >> DESTRUCTION] vaporisiert (11) # zu Dampf werden
+[has-state >> destroyed] man (9)
 [m-scene] , wie das gebräuchliche Wort dafür lautete (18)
 
 [IDENTIFICATION] man (9)
@@ -379,27 +380,27 @@
 13	mit	mit	ADP	APPR	_	15	case	_	_
 14	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	genickschuss	Genickschuß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
-16	erschießen	erschießen	VERB	VVINF	VerbForm=Inf	5	ccomp	_	_
+16	erschießen	erschießen	VERB	VVINF	VerbForm=Inf	5	conj	_	_
 17	wenn	wenn	SCONJ	KOUS	_	20	mark	_	_
 18	ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	20	nsubj	_	_
 19	nicht	nicht	PART	PTKNEG	Polarity=Neg	20	advmod	_	_
 20	aufpasse	aufpassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	advcl	_	_
-21	nieder	nieder	ADV	ADV	_	27	advmod	_	_
+21	nieder	nieder	ADV	ADV	_	5	conj	_	_
 22	mit	mit	ADP	APPR	_	25	case	_	_
 23	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 24	großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	25	amod	_	_
-25	bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	20	obl	_	_
+25	bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	21	obl	_	_
 26	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	27	nsubj	_	_
-27	erschießen	erschießen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
+27	erschießen	erschießen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 28	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	obj	_	_
 29	immer	immer	ADV	ADV	_	27	advmod	_	_
-30	mit	mit	ADP	APPR	_	25	case	_	_
+30	mit	mit	ADP	APPR	_	31	case	_	_
 31	genickschuss	Genickschuß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	27	obl	_	_
-32	mir	ich	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=1|PronType=Prs	27	iobj	_	_
-33	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	cop	_	_
-34	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
-35	egal	egal	ADJ	ADJD	_	27	advmod	_	_
-36	nieder	nieder	ADV	ADV	_	27	advmod	_	_
+32	mir	ich	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=1|PronType=Prs	35	iobj	_	_
+33	ist	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	_
+34	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+35	egal	egal	ADJ	ADJD	_	5	conj	_	_
+36	nieder	nieder	ADV	ADV	_	5	conj	_	_
 37	mit	mit	ADP	APPR	_	40	case	_	_
 38	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 39	großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	40	amod	_	_
@@ -411,7 +412,6 @@
 [x-causer] sie (2)
 [destroyed] mich (4)
 [m-condition] wenn ich nicht aufpasse (9)
-[??? Syntax? vllt bei 16 statt ccomp (clausal complement) soll parataxis as stand alone sentence] sie werden mich mit einem genickschuss erschießen wenn ich nicht aufpasse nieder mit dem großen bruder sie erschießen einen immer mit genickschuss mir ist es egal nieder mit dem großen bruder (16)
 
 [IDENTIFICATION] sie (2)
 
@@ -425,67 +425,63 @@
 
 [MODE] nicht (8)
 
-[??? Syntax] erschießen (16)
-[] sie (10)
-[] mich (12)
-[] mit einem genickschuss (15)
-[] wenn ich nicht aufpasse mit dem großen bruder mit (20)
-[??? Syntax] nieder sie erschießen einen immer genickschuss mir ist es egal nieder mit dem großen bruder (27)
+[DESTRUCTION] erschießen (16)
+[x-causer] sie (10)
+[destroyed] mich (12)
+[m-means] mit einem genickschuss (15)
+[m-condition] wenn ich nicht aufpasse (20)
 
-[] sie (10)
+[IDENTIFICATION] sie (10)
 
-[] mich (12)
+[IDENTIFICATION] mich (12)
 
-[] genickschuss (15)
+[EVENT || DESTRUCTION] genickschuss (15)
 
-[] aufpasse (20)
-[] ich (18)
-[] nicht (19)
-[] mit dem großen bruder mit (25)
+[MESSAGE] aufpasse (20)
+[x-experiencer] ich (18)
+[m-mode] nicht (19)
 
-[] ich (18)
+[IDENTIFICATION] ich (18)
 
-[] nicht (19)
+[MODE] nicht (19)
 
-[] bruder (25)
-[] großen (24)
+[LOCATION-CHANGE >> DESTRUCTION] nieder (21)
+[has-location >> destroyed] mit dem großen bruder (25)
 
-[] großen (24)
+[SOCIAL-RELATION >> IDENTIFICATION] bruder (25)
+[m-quality >> m-noncomp] großen (24)
 
-[] erschießen (27)
-[] nieder (21)
-[] sie (26)
-[] einen (28)
-[] immer (29)
-[] genickschuss (31)
-[] mir (32)
-[] es (34)
-[] egal (35)
-[] ist nieder mit dem großen bruder (36)
+[QUALITY >> NONCOMP] großen (24)
 
-[] nieder (21)
+[DESTRUCTION] erschießen (27)
+[x-causer] sie (26)
+[destroyed] einen (28)
+[m-time] immer (29)
+[m-means] mit genickschuss (31)
 
-[] sie (26)
+[IDENTIFICATION] sie (26)
 
-[] einen (28)
+[IDENTIFICATION] einen (28)
 
-[] immer (29)
+[TIME] immer (29)
 
-[] genickschuss (31)
+[EVENT || DESTRUCTION] genickschuss (31)
 
-[] mir (32)
+[MESSAGE || STATE] egal (35)
+[x-experiencer || has-state] mir (32)
+[x-noncomp] es (34)
 
-[] es (34)
+[IDENTIFICATION] mir (32)
 
-[] egal (35)
+[NONCOMP] es (34)
 
-[] nieder (36)
-[] mit dem großen bruder (40)
+[LOCATION-CHANGE >> DESTRUCTION] nieder (36)
+[has-location >> destroyed] mit dem großen bruder (40)
 
-[] bruder (40)
-[] großen (39)
+[SOCIAL-RELATION >> IDENTIFICATION] bruder (40)
+[m-quality >> m-noncomp] großen (39)
 
-[] großen (39)
+[QUALITY >> NONCOMP] großen (39)
 
 # sent_id = 309
 # text = Er lehnte sich in seinen Stuhl zurück , ein wenig beschämt über sich selbst , und legte den Federhalter hin .
@@ -499,7 +495,7 @@
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
 10	wenig	wenig	DET	PIAT	Definite=Ind|Gender=Neut	11	advmod	_	_
-11	beschämt	beschämt	ADJ	ADJD	_	2	appos	_	_
+11	beschämt	beschämt	ADJ	ADJD	_	2	advcl	_	_
 12	über	über	ADP	APPR	_	13	case	_	_
 13	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	nmod	_	_
 14	selbst	selbst	ADV	ADV	_	13	advmod	_	_
@@ -511,11 +507,12 @@
 20	hin	hin	ADP	PTKVZ	_	17	compound:prt	_	_
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
-[??? Syntax: appos(appositional modifier, in de-UD guidelines steht; Both the apposition and the noun phrase have to be full noun phrases.) is intended to be used between two nominals. LOCATION-INIT] lehnte , ein wenig beschämt über sich selbst (2)
+[LOCATION-INIT] lehnte (2)
 [has-location] Er (1)
 [has-location] sich (3)
 [target-location] in seinen Stuhl (6)
 [target-location] zurück (7) # vgl. Manual Particle Verbs: separated adpositional adverbs this way
+[m-depictive] , ein wenig beschämt über sich selbst (11)
 
 [IDENTIFICATION] Er (1)
 
@@ -529,6 +526,7 @@
 [MESSAGE] beschämt (11)
 [m-quantity] wenig (10)
 [topic] über sich selbst (13)
+[x-experiencer] Er (1)
 
 [QUANTITY] wenig (10)
 
@@ -642,7 +640,7 @@
 
 [CLASS] Draussenstehende (12)
 
-[??? SCENE-INIT? auch wenn kein Infinitivsatz danach folgt] Versuch (17)
+[SCENE-INIT] Versuch (17)
 [m-time] einmaligen (16)
 
 [TIME] einmaligen (16)
@@ -669,31 +667,32 @@
 # sent_id = 315
 # text = Das Schlimmste , was er tun konnte , war zu zögern .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
-2	Schlimmste	Schlimmste	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	11	nsubj:pass	_	_
+2	Schlimmste	Schlimmste	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 3	,	,	PUNCT	$,	_	6	punct	_	_
 4	was	was	PRON	PRELS	Case=Acc|Gender=Neut|Number=Sing|PronType=Rel	6	obj	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
 6	tun	tun	VERB	VVINF	VerbForm=Inf	2	acl	_	_
 7	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
 8	,	,	PUNCT	$,	_	6	punct	_	_
-9	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
+9	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_
 10	zu	zu	PART	PTKZU	_	11	mark	_	_
-11	zögern	zögern	VERB	VVINF	VerbForm=Inf	0	root	_	_
-12	.	.	PUNCT	$.	_	11	punct	_	_
-
-[SCENE-PREVENTION] zögern (11)
-[??? es ist keine Nominal Copula Construction] Das Schlimmste , was er tun konnte , (2)
+11	zögern	zögern	VERB	VVINF	VerbForm=Inf	2	nsubj	_	_
+12	.	.	PUNCT	$.	_	2	punct	_	_
 
 [QUALITY] Schlimmste (2)
-[has-quality] , was er tun konnte , (6)
+[m-scene] , was er tun konnte , (6)
+[has-quality] war zu zögern (11)
 
 [ACTIVITY] tun (6)
 [activity] was (4)
 [is-active] er (5)
+[activity] Schlimmste (2)
 
 [IDENTIFICATION] was (4)
 
 [IDENTIFICATION] er (5)
+
+[SCENE-INIT-NEG] zögern (11)
 
 # sent_id = 316
 # text = Sein Herz klopfte wie eine Pauke , aber sein Gesicht war , vermutlich aus langer Gewohnheit , ganz ausdruckslos .
@@ -769,13 +768,13 @@
 [IDENTIFICATION] Er (1)
 
 [LOCATION-INIT] ging (5)
-[??? m-depictive || m-quality ] schweren Schrittes (7)
+[m-means >> m-quality] schweren Schrittes (7)
 [target-location] zur Tür (9)
 
-[??? LOCATION-INIT || ACTIVITY || UNANCHORED-MOTION || CLASS] Schrittes (7)
-[m-quality >> m-noncomp] schweren (6)
+[UNANCHORED-MOTION >> QUALITY] Schrittes (7)
+[m-quality] schweren (6)
 
-[QUALITY >> NONCOMP] schweren (6)
+[QUALITY] schweren (6)
 
 [CLASS] Tür (9)
 
@@ -811,10 +810,10 @@
 [x-experiencer] Winston (11)
 [target-content] , dass er das Tagebuch offen auf dem Tisch hatte liegen lassen (23)
 
-[LOCATION-INTI] legte (8)
+[LOCATION-INIT] legte (8)
 [x-causer] er (2)
 [has-location] die Hand (4)
-[targte-location] auf die Türklinke (7)
+[target-location] auf die Türklinke (7)
 
 [IDENTIFICATION] er (2)
 
@@ -856,7 +855,7 @@
 9	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 10	halbe	halb	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	11	amod	_	_
 11	Seite	Seite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	obl	_	_
-12	hinweg	hinweg	ADV	ADV	_	11	advmod	_	_
+12	hinweg	hinweg	ADV	ADV	_	6	case	_	_
 13	in	in	ADP	APPR	_	14	case	_	_
 14	Buchstaben	Buchstabe	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	6	obl	_	_
 15	,	,	PUNCT	$,	_	18	punct	_	_
@@ -879,7 +878,7 @@
 [LOCATION-CONTINUATION] stand (6)
 [has-location] Nieder mit dem Großen Bruder (1)
 [m-location] da (7)
-[??? m-quantity] über die halbe Seite hinweg (11)
+[m-location] über die halbe Seite (11)
 [m-depictive] in Buchstaben , die beinahe groß genug waren , um durch das ganze Zimmer leserlich zu sein (14)
 
 [LOCATION-CHANGE >> DESTRUCTION] Nieder (1)
@@ -892,28 +891,25 @@
 
 [LOCATION] da (7)
 
-[??? CLASS] Seite (11)
-[??? m-quantity] halbe (10)
-[??? m-quantity] hinweg (12)
+[CLASS] Seite (11)
+[m-quantity] halbe (10)
 
 [QUANTITY] halbe (10)
 
-[??? QUANTITY] hinweg (12) # hinüber und weiter
-
 [MESSAGE] Buchstaben (14)
 [m-scene] , die beinahe groß genug waren , um durch das ganze Zimmer leserlich zu sein (18)
+[content] Nieder mit dem Großen Bruder (1)
 
 [QUALITY] groß (18)
 [has-quality] die (16)
-[??? m-scene] beinahe (17)
+[m-mode] beinahe (17)
 [m-quantity] genug (19)
 [m-purpose >> m-follows] , um durch das ganze Zimmer leserlich zu sein (27)
 [has-quality] Buchstaben (14)
 
 [IDENTIFICATION] die (16)
 
-[??? COMPARISON] beinahe (17)
-[??? compared] groß (18)
+[MODE] beinahe (17)
 
 [QUANTITY] genug (19)
 
@@ -983,65 +979,65 @@
 37	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	cop	_	_
 38	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] stellte (3)
-[] er (2)
-[] fest (4)
-[] , dass er es sogar in seinem Schrecken nicht über sich gebracht hatte , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (16)
+[MESSAGE-INIT] stellte (3)
+[x-experiencer] er (2)
+[m-noncomp] fest (4)
+[target-content] , dass er es sogar in seinem Schrecken nicht über sich gebracht hatte , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (16)
 
-[] er (2)
+[IDENTIFICATION] er (2)
 
-[] gebracht (16)
-[] er (7)
-[] es (8)
-[] sogar (9)
-[] in seinem Schrecken (12)
-[] nicht (13)
-[] über sich (15)
-[] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
+[LOCATION-INIT >> SCENE-INIT] gebracht (16) # es über sich bringen, zu Inf -> jemandem nicht leicht fallen; sich überwinden zu
+[x-causer >> participant] er (7)
+[has-location >> x-noncomp] es (8)
+[m-mode ?? Syntax? vllt an Schrecken hängen?] sogar (9)
+[??? m-conceded] in seinem Schrecken (12)
+[m-mode] nicht (13)
+[target-location >> x-noncomp] über sich (15)
+[??? >> target-scene] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
 
-[] er (7)
+[IDENTIFICATION] er (7)
 
-[] es (8)
+[IDENTIFICATION >> NONCOMP] es (8)
 
-[] sogar (9)
+[MODE] sogar (9)
 
-[] Schrecken (12)
-[] seinem (11)
+[EVENT] Schrecken (12)
+[undergoer] seinem (11)
 
-[] seinem (11)
+[IDENTIFICATION] seinem (11)
 
-[] nicht (13)
+[MODE] nicht (13)
 
-[] sich (15)
+[??? IDENTIFICATION >> NONCOMP] sich (15)
 
-[] besudeln (24)
-[] das weiße Papier (21)
-[] dadurch (22)
-[] , dass er das Buch zuklappte , solange die Tinte noch nass war (30)
+[QUALITY-CHANGE] besudeln (24) # verschmutzen
+[has-quality] das weiße Papier (21)
+[x-causer] dadurch (22)
+[x-causer] , dass er das Buch zuklappte , solange die Tinte noch nass war (30)
 
-[] Papier (21)
-[] weiße (20)
+[CLASS] Papier (21)
+[m-quality] weiße (20)
 
-[] weiße (20)
+[QUALITY] weiße (20)
 
-[] dadurch (22)
+[IDENTIFICATION] dadurch (22)
 
-[] zuklappte (30)
-[] er (27)
-[] das Buch (29)
-[] , solange die Tinte noch nass war (36)
+[STATE-CHANGE] zuklappte (30)
+[x-causer] er (27)
+[has-state] das Buch (29)
+[m-condition] , solange die Tinte noch nass war (36)
 
-[] er (27)
+[IDENTIFICATION] er (27)
 
-[] Buch (29)
+[MESSAGE] Buch (29)
 
-[] nass (36)
-[] die Tinte (34)
-[] noch (35)
+[STATE] nass (36)
+[has-state] die Tinte (34)
+[m-time] noch (35)
 
-[] Tinte (34)
+[CLASS] Tinte (34)
 
-[] noch (35)
+[TIME] noch (35)
 
 # sent_id = 322
 # text = Er hielt den Atem an und öffnete die Tür .
@@ -1056,19 +1052,20 @@
 9	Tür	Tür	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hielt (2)
-[] Er (1)
-[] den Atem (4)
-[] an (5)
+[SCENE-INIT-NEG] hielt (2)
+[participant] Er (1)
+[target-scene] den Atem (4)
+[m-noncomp] an (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Atem (4)
+[??? EXCRETION; discharge carbon dioxide/Kohlendioxid abgeben? || EVENT] Atem (4)
+[??? excreter || undergoer] Er (1)
 
-[] öffnete (7)
-[] die Tür (9)
+[STATE-CHANGE] öffnete (7)
+[has-state] die Tür (9)
 
-[] Tür (9)
+[CLASS] Tür (9)
 
 # sent_id = 323
 # text = Sofort durchflutete ihn eine warme Welle der Erleichterung .
@@ -1082,22 +1079,23 @@
 8	Erleichterung	Erleichterung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] durchflutete (2)
-[] Sofort (1)
-[] ihn (3)
-[] eine warme Welle der Erleichterung (6)
+[UNANCHORED-MOTION >> SCENE-INIT] durchflutete (2) # ähnlich wie "a hush passed over the group" im Manual?
+[m-time] Sofort (1)
+[transitory-location >> participant] ihn (3)
+[in-motion >> target-scene] eine warme Welle der Erleichterung (6)
 
-[] Sofort (1)
+[TIME] Sofort (1)
 
-[] ihn (3)
+[IDENTIFICATION] ihn (3)
 
-[] Welle (6)
-[] warme (5)
-[] der Erleichterung (8)
+[MESSAGE] Welle (6) # Welle der Erleichterung als Idiom
+[m-state] warme (5) # könnte man auch die riesige Welle der Erleichterung sagen
+[x-noncomp] der Erleichterung (8)
+[x-experiencer] ihn (3)
 
-[] warme (5)
+[STATE] warme (5)
 
-[] Erleichterung (8)
+[NONCOMP] Erleichterung (8)
 
 # sent_id = 324
 # text = Draußen stand eine farblose , zerknittert aussehende Frau mit strähnigem Haar und tiefgefurchtem Gesicht .
@@ -1117,34 +1115,37 @@
 14	Gesicht	Gesicht	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	11	conj	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stand (2)
-[] Draußen (1)
-[] eine farblose , zerknittert aussehende Frau mit strähnigem Haar und tiefgefurchtem Gesicht (8)
+[LOCATION] stand (2)
+[location] Draußen (1)
+[has-location] eine farblose , zerknittert aussehende Frau mit strähnigem Haar und tiefgefurchtem Gesicht (8)
 
-[] Draußen (1)
+[LOCATION] Draußen (1)
 
-[] Frau (8)
-[] farblose (4)
-[] , zerknittert aussehende (7)
-[] mit strähnigem Haar (11)
-[] und tiefgefurchtem Gesicht (14)
+[CLASS] Frau (8)
+[m-quality] farblose (4)
+[m-scene] , zerknittert aussehende (7)
+[m-part] mit strähnigem Haar (11)
+[m-part] und tiefgefurchtem Gesicht (14)
 
-[] farblose (4)
+[QUALITY-NEG >> QUALITY] farblose (4)
 
-[] aussehende (7)
-[] zerknittert (6)
+[MESSAGE] aussehende (7)
+[content] zerknittert (6)
+[topic] Frau (8)
 
-[] zerknittert (6)
+[STATE] zerknittert (6)
+[has-state] Frau (8)
 
-[] Haar (11)
-[] strähnigem (10)
+[PART-WHOLE] Haar (11)
+[m-quality] strähnigem (10)
 
-[] strähnigem (10)
+[QUALITY] strähnigem (10)
 
-[] Gesicht (14)
-[] tiefgefurchtem (13)
+[PART-WHOLE] Gesicht (14)
+[???m-scene] tiefgefurchtem (13) # Furche=vaga; annotieren wie "pyramidenartiger"?
 
-[] tiefgefurchtem (13)
+[COMPARISON >> QUALITY] tiefgefurchtem (13)
+[compared >> has-quality] Gesicht (14)
 
 # sent_id = 325
 # text = » Ach , Genosse « , begann sie mit leidender Jammerstimme , » mir war so , als ob ich Sie heimkommen hörte .
@@ -1173,42 +1174,43 @@
 23	hörte	hören	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	15	advcl	_	_
 24	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] begann (7)
-[] » Ach , Genosse « , (4)
-[] sie (8)
-[] mit leidender Jammerstimme (11)
+[MESSAGE-INIT] begann (7)
+[target-content] » Ach , Genosse « , (4)
+[x-sender] sie (8)
+[m-means] mit leidender Jammerstimme (11)
 
-[] Genosse (4)
-[] » Ach , (2)
+[SOCIAL-RELATION] Genosse (4)
+[??? m-situator] » Ach , (2)
 
-[] Ach (2)
+[??? SITUATION] Ach (2)
 
-[] sie (8)
+[IDENTIFICATION] sie (8)
 
-[] Jammerstimme (11)
-[] leidender (10)
+[MESSAGE] Jammerstimme (11)
+[m-quality] leidender (10)
 
-[] leidender (10)
+[QUALITY] leidender (10)
 
-[] war (15)
-[] mir (14)
-[] so (16)
-[] , als ob ich Sie heimkommen hörte (23)
+[???SCENE] war (15)
+[participant] mir (14)
+[scene] so (16)
+[m-reference] , als ob ich Sie heimkommen hörte (23)
 
-[] mir (14)
+[IDENTIFICATION] mir (14)
 
-[] so (16)
+[??? IDENTIFICATION] so (16)
 
-[] hörte (23)
-[] ich (20)
-[] Sie (21)
-[] heimkommen (22)
+[MESSAGE-INIT] hörte (23)
+[x-experiencer] ich (20)
+[topic] Sie (21)
+[target-content] heimkommen (22)
 
-[] ich (20)
+[IDENTIFICATION] ich (20)
 
-[] Sie (21)
+[IDENTIFICATION] Sie (21)
 
-[] heimkommen (22)
+[LOCATION-INIT] heimkommen (22)
+[has-location] Sie (21)
 
 # sent_id = 326
 # text = Könnten Sie wohl herüberkommen und sich eben mal unsern Ausguss in der Küche ansehen ?
@@ -1228,33 +1230,33 @@
 14	ansehen	ansehen	VERB	VVINF	VerbForm=Inf	4	conj	_	_
 15	?	?	PUNCT	$.	_	4	punct	_	_
 
-[] herüberkommen (4)
-[] Sie (2)
-[] wohl (3)
+[LOCATION-INIT] herüberkommen (4)
+[has-location] Sie (2)
+[m-mode] wohl (3)
 
-[] Sie (2)
+[IDENTIFICATION] Sie (2)
 
-[] wohl (3)
+[MODE] wohl (3)
 
-[] ansehen (14)
-[] sich (6)
-[] eben mal (8)
-[] unsern Ausguss (10)
-[] in der Küche (13)
+[MESSAGE-INIT] ansehen (14)
+[x-experiencer] sich (6)
+[m-mode] eben mal (8)
+[topic] unsern Ausguss (10)
+[m-location] in der Küche (13)
 
-[] sich (6)
+[IDENTIFICATION] sich (6)
 
-[] mal (8)
-[] eben (7)
+[MODE] mal (8)
+[m-mode] eben (7)
 
-[] eben (7)
+[MODE] eben (7)
 
-[] Ausguss (10)
-[] unsern (9)
+[CLASS] Ausguss (10) # Abfluss
+[m-possessor] unsern (9)
 
-[] unsern (9)
+[IDENTIFICATION] unsern (9)
 
-[] Küche (13)
+[CLASS] Küche (13)
 
 # sent_id = 327
 # text = Er ist verstopft und - «
@@ -1265,10 +1267,10 @@
 5	-	-	PUNCT	$.	_	3	punct	_	_
 6	«	«	PUNCT	$(	_	3	punct	_	_
 
-[] verstopft (3)
-[] Er (1)
+[STATE] verstopft (3)
+[has-state] Er (1)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
 # sent_id = 328
 # text = Es war Frau Parsons , die Frau des Nachbarn auf dem gleichen Flur .
@@ -1284,24 +1286,25 @@
 10	auf	auf	ADP	APPR	_	13	case	_	_
 11	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 12	gleichen	gleich	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	13	amod	_	_
-13	Flur	Flur	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	7	nmod	_	_
+13	Flur	Flur	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	nmod	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] Frau Parsons , die Frau des Nachbarn auf dem gleichen Flur (3)
-[] Es (1)
+[IDENTIFICATION] Frau Parsons , die Frau des Nachbarn auf dem gleichen Flur (3)
+[identified] Es (1)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Frau (7)
-[] des Nachbarn (9)
-[] auf dem gleichen Flur (13)
+[SOCIAL-RELATION] Frau (7)
+[has-social-relation] des Nachbarn auf dem gleichen Flur (9)
 
-[] Nachbarn (9)
+[SOCIAL-RELATION] Nachbarn (9)
+[m-location] auf dem gleichen Flur (13)
 
-[] Flur (13)
-[] gleichen (12)
+[CLASS] Flur (13)
+[m-scene] gleichen (12)
 
-[] gleichen (12)
+[COMPARISON] gleichen (12)
+[compared] Flur (13)
 
 # sent_id = 329
 # text = ( Die Bezeichnung » Frau « wurde von der Partei nicht gern gesehen - man erwartete , dass man alle Leute mit » Genosse « oder » Genossin « anredete - , aber bei einigen Frauen gebrauchte man das Wort ganz unwillkürlich . )
@@ -1315,7 +1318,7 @@
 8	von	von	ADP	APPR	_	10	case	_	_
 9	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Partei	Partei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	13	obl	_	_
-11	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
+11	nicht	nicht	PART	PTKNEG	Polarity=Neg	12	advmod	_	_
 12	gern	gern	ADV	ADV	_	13	advmod	_	_
 13	gesehen	sehen	VERB	VVPP	Verbform=Part	0	root	_	_
 14	-	-	PUNCT	$.	_	16	punct	_	_
@@ -1350,58 +1353,59 @@
 43	.	.	PUNCT	$.	_	13	punct	_	_
 44	)	)	PUNCT	$(	_	13	punct	_	_
 
-[] gesehen (13)
-[] Die Bezeichnung » Frau « (3)
-[] von der Partei (10)
-[] nicht (11)
-[] gern (12)
+[MESSAGE] gesehen (13)
+[topic] Die Bezeichnung » Frau « (3)
+[x-experiencer] von der Partei (10)
+[??? m-scene] nicht gern (12) # wie_pud_de_"Unter Druck setzen"
 
-[] Bezeichnung » Frau « (3)
+[MESSAGE] Bezeichnung » Frau « (3)
 
-[] Frau (5)
+[CLASS] Frau (5)
 
-[] Partei (10)
+[CLASS >> IDENTIFICATION] Partei (10)
 
-[] nicht (11)
+[??? MESSAGE] gern (12) # wie_pud_de_"Unter Druck setzen"
+[m-mode] nicht (11)
+[topic] gesehen (13)
 
-[] gern (12)
+[MODE] nicht (11)
 
-[] erwartete (16)
-[] man (15)
-[] , dass man alle Leute mit » Genosse « oder » Genossin « anredete - (30)
+[MESSAGE] erwartete (16)
+[x-experiencer] man (15)
+[content] , dass man alle Leute mit » Genosse « oder » Genossin « anredete - (30)
 
-[] man (15)
+[IDENTIFICATION] man (15)
 
-[] anredete (30)
-[] man (19)
-[] alle Leute (21)
-[] mit » Genosse « (24)
-[] oder » Genossin « (28)
+[MESSAGE-INIT] anredete (30)
+[x-sender] man (19)
+[x-experiencer] alle Leute (21)
+[target-content] mit » Genosse « (24)
+[target-content] oder » Genossin « (28)
 
-[] man (19)
+[IDENTIFICATION] man (19)
 
-[] Leute (21)
+[CLASS] Leute (21)
 
-[] Genosse (24)
+[SOCIAL-RELATION] Genosse (24)
 
-[] Genossin (28)
+[SOCIAL-RELATION] Genossin (28)
 
-[] gebrauchte (37)
-[] bei einigen Frauen (36)
-[] man (38)
-[] das Wort (40)
-[] ganz unwillkürlich (42)
+[MEANS] gebrauchte (37)
+[??? m-situator] bei einigen Frauen (36)
+[x-causer] man (38)
+[means] das Wort (40)
+[??? m-causer] ganz unwillkürlich (42) # "automatisch" wie instinktiv annotieren?
 
-[] Frauen (36)
+[CLASS] Frauen (36)
 
-[] man (38)
+[IDENTIFICATION] man (38)
 
-[] Wort (40)
+[MESSAGE] Wort (40)
 
-[] unwillkürlich (42)
-[] ganz (41)
+[??? CAUSATION] unwillkürlich (42) # "automatisch" wie instinktiv annotieren?
+[m-mode] ganz (41)
 
-[] ganz (41)
+[MODE] ganz (41)
 
 # sent_id = 330
 # text = Sie war eine Frau von etwa dreißig Jahren , sah aber viel älter aus .
@@ -1421,31 +1425,34 @@
 14	aus	aus	ADP	PTKVZ	_	10	compound:prt	_	_
 15	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Frau (4)
-[] Sie (1)
-[] von etwa dreißig Jahren (8)
+[CLASS] Frau (4)
+[has-class] Sie (1)
+[m-quality] von etwa dreißig Jahren (8)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Jahren (8)
-[] etwa dreißig (7)
+[TIME] Jahren (8)
+[m-quantity] etwa dreißig (7)
 
-[] dreißig (7)
-[] etwa (6)
+[QUANTITY] dreißig (7)
+[m-mode] etwa (6)
 
-[] etwa (6)
+[MODE] etwa (6)
 
-[] sah (10)
-[] aber (11)
-[] viel älter (13)
-[] aus (14)
+[MESSAGE] sah (10)
+[m-scene] aber (11)
+[content] viel älter (13)
+[m-noncomp] aus (14)
+[topic] Sie (1)
 
-[] aber (11)
+[CONCESSION] aber (11)
+[asserted] sah (10)
 
-[] älter (13)
-[] viel (12)
+[QUALITY] älter (13)
+[m-quantity] viel (12)
+[has-quality] Sie (1)
 
-[] viel (12)
+[QUANTITY] viel (12)
 
 # sent_id = 331
 # text = Man hatte den Eindruck , dass sich in den Falten ihres Gesichts Staub angesetzt hatte .
@@ -1466,31 +1473,31 @@
 15	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
 16	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Man (1)
-[] den Eindruck , dass sich in den Falten ihres Gesichts Staub angesetzt hatte (4)
+[SCENE-INIT] hatte (2)
+[x-experiencer] Man (1)
+[target-scene] den Eindruck , dass sich in den Falten ihres Gesichts Staub angesetzt hatte (4)
 
-[] Man (1)
+[IDENTIFICATION] Man (1)
 
-[] Eindruck (4)
-[] , dass sich in den Falten ihres Gesichts Staub angesetzt hatte (14)
+[MESSAGE] Eindruck (4)
+[content] , dass sich in den Falten ihres Gesichts Staub angesetzt hatte (14)
 
-[] angesetzt (14)
-[] sich (7)
-[] in den Falten ihres Gesichts (10)
-[] Staub (13)
+[LOCATION-INIT] angesetzt (14)
+[has-location] sich (7)
+[target-location] in den Falten ihres Gesichts (10)
+[has-location] Staub (13)
 
-[] sich (7)
+[IDENTIFICATION] sich (7)
 
-[] Falten (10)
-[] ihres Gesichts (12)
+[PART-WHOLE] Falten (10)
+[whole] ihres Gesichts (12)
 
-[] Gesichts (12)
-[] ihres (11)
+[PART-WHOLE] Gesichts (12)
+[whole] ihres (11)
 
-[] ihres (11)
+[IDENTIFICATION] ihres (11)
 
-[] Staub (13)
+[CLASS] Staub (13)
 
 # sent_id = 332
 # text = Winston folgte ihr durch den Gang .
@@ -1502,16 +1509,16 @@
 6	Gang	Gang	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	2	obl	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] folgte (2)
-[] Winston (1)
-[] ihr (3)
-[] durch den Gang (6)
+[LOCATION-INIT] folgte (2)
+[has-location] Winston (1)
+[target-location] ihr (3)
+[transitory-location] durch den Gang (6)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] ihr (3)
+[IDENTIFICATION] ihr (3)
 
-[] Gang (6)
+[CLASS] Gang (6)
 
 # sent_id = 333
 # text = Solche eigenhändigen , unfachgemäßen Reparaturarbeiten waren eine fast alltägliche Last .
@@ -1527,22 +1534,22 @@
 10	Last	Last	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] Last (10)
-[] Solche eigenhändigen , unfachgemäßen Reparaturarbeiten (5)
-[] fast alltägliche (9)
+[??? EVENT] Last (10)
+[x-has-class] Solche eigenhändigen , unfachgemäßen Reparaturarbeiten (5)
+[m-time] fast alltägliche (9)
 
-[] Reparaturarbeiten (5)
-[] eigenhändigen , (2)
-[] unfachgemäßen (4)
+[STATE-CHANGE] Reparaturarbeiten (5)
+[m-means] eigenhändigen , (2) # von der eigenen Hand ausgeführt
+[m-quality] unfachgemäßen (4) # amateurhaft
 
-[] eigenhändigen (2)
+[MEANS] eigenhändigen (2)
 
-[] unfachgemäßen (4)
+[QUALITY-NEG >> QUALITY] unfachgemäßen (4)
 
-[] alltägliche (9)
-[] fast (8)
+[TIME] alltägliche (9)
+[m-mode] fast (8)
 
-[] fast (8)
+[MODE] fast (8)
 
 # sent_id = 334
 # text = Der Victory-Block war ein alter , etwa um das Jahr 1930 gebauter Wohnungskomplex und ging langsam in die Brüche .
@@ -1567,33 +1574,34 @@
 19	Brüche	Bruch	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	15	obl	_	_
 20	.	.	PUNCT	$.	_	13	punct	_	_
 
-[] Wohnungskomplex (13)
-[] Der Victory-Block (2)
-[] alter , (5)
-[] etwa um das Jahr 1930 gebauter (12)
+[CLASS] Wohnungskomplex (13)
+[has-class] Der Victory-Block (2)
+[m-quality] alter , (5)
+[m-scene] etwa um das Jahr 1930 gebauter (12)
 
-[] Victory-Block (2)
+[IDENTIFICATION] Victory-Block (2)
 
-[] alter (5)
+[QUALITY] alter (5)
 
-[] gebauter (12)
-[] etwa um das Jahr 1930 (10)
+[TRANSFORMATION-CREATION] gebauter (12)
+[m-time] etwa um das Jahr 1930 (10)
+[created] Wohnungskomplex (13)
 
-[] Jahr (10)
-[] etwa (7)
-[] 1930 (11)
+[TIME] Jahr (10)
+[m-mode] etwa (7)
+[m-quantity >> m-time] 1930 (11)
 
-[] etwa (7)
+[MODE] etwa (7)
 
-[] 1930 (11)
+[QUANTITY >> TIME] 1930 (11)
 
-[] ging (15)
-[] langsam (16)
-[] in die Brüche (19)
+[SCENE-INIT] ging (15) # in die Brüche gehen=kaputtgehen
+[m-quality] langsam (16)
+[target-scene] in die Brüche (19)
 
-[] langsam (16)
+[QUALITY] langsam (16)
 
-[] Brüche (19)
+[STATE] Brüche (19)
 
 # sent_id = 335
 # text = Dauernd bröckelte der Verputz von Decken und Wänden , die Leitungsrohre platzten bei jedem starken Frost , das Dach ließ Wasser durchsickern , sobald es schneite , die Zentralheizung war gewöhnlich nur unter halbem Druck , wenn sie nicht aus Sparsamkeitsgründen ganz abgestellt war .
@@ -1617,7 +1625,7 @@
 18	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	19	det	_	_
 19	Dach	Dach	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	20	nsubj	_	_
 20	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-21	Wasser	Wasser	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	20	obj	_	_
+21	Wasser	Wasser	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	22	obj	_	_
 22	durchsickern	durchsickern	VERB	VVINF	VerbForm=Inf	20	xcomp	_	_
 23	,	,	PUNCT	$,	_	26	punct	_	_
 24	sobald	sobald	SCONJ	KOUS	_	26	mark	_	_
@@ -1643,79 +1651,81 @@
 44	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	aux:pass	_	_
 45	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] bröckelte (2)
-[] Dauernd (1)
-[] der Verputz von Decken und Wänden (4)
+[LOCATION-DEINIT] bröckelte (2)
+[m-time] Dauernd (1)
+[??? has-location ???evtl. Syntaxänderung, um die Annotation initial-location zu ermöglichen?] der Verputz von Decken und Wänden (4)
 
-[] Dauernd (1)
+[TIME] Dauernd (1)
 
-[] Verputz (4)
-[] von Decken (6)
-[] und Wänden (8)
+[ADORNMENT-TARNISHMENT] Verputz (4)
+[surface] von Decken (6)
+[surface] und Wänden (8)
 
-[] Decken (6)
+[CLASS] Decken (6)
 
-[] Wänden (8)
+[CLASS] Wänden (8)
 
-[] platzten (12)
-[] die Leitungsrohre (11)
-[] bei jedem starken Frost (16)
+[STATE-CHANGE] platzten (12)
+[has-state] die Leitungsrohre (11)
+[m-condition || x-causer] bei jedem starken Frost (16)
 
-[] Leitungsrohre (11)
+[CLASS] Leitungsrohre (11)
 
-[] Frost (16)
-[] starken (15)
+[STATE] Frost (16)
+[m-quality] starken (15)
 
-[] starken (15)
+[QUALITY] starken (15)
 
-[] ließ (20)
-[] das Dach (19)
-[] Wasser (21)
-[] durchsickern (22)
-[] , sobald es schneite (26)
+[SCENE-INIT] ließ (20) # durschsickern lassen=etwas leaken
+[x-causer] das Dach (19)
+[target-scene] Wasser durchsickern (22)
+[m-condition] , sobald es schneite (26)
 
-[] Dach (19)
+[CLASS] Dach (19)
 
-[] Wasser (21)
+[LOCATION-CHANGE] durchsickern (22) # langsam durch poröses Material fließen
+[has-location] Wasser (21)
 
-[] durchsickern (22)
+[CLASS] Wasser (21)
 
-[] schneite (26)
-[] es (25)
+[STATE] schneite (26)
+[x-noncomp] es (25)
 
-[] es (25)
+[NONCOMP] es (25)
 
-[] war (30)
-[] die Zentralheizung (29)
-[] gewöhnlich (31)
-[] nur unter halbem Druck (35)
-[] , wenn sie nicht aus Sparsamkeitsgründen ganz abgestellt war (43)
+[SCENE-INIT] war (30)
+[participant] die Zentralheizung (29)
+[m-scene] gewöhnlich (31)
+[target-scene] nur unter halbem Druck (35)
+[m-condition] , wenn sie nicht aus Sparsamkeitsgründen ganz abgestellt war (43)
 
-[] Zentralheizung (29)
+[CLASS] Zentralheizung (29)
 
-[] gewöhnlich (31)
+[SCENE-CONTINUATION] gewöhnlich (31)
+[initial-scene] war (30)
 
-[] Druck (35)
-[] nur (32)
-[] halbem (34)
+[STATE] Druck (35)
+[m-mode] nur (32)
+[m-quantity] halbem (34)
+[has-state] die Zentralheizung (29)
 
-[] nur (32)
+[MODE] nur (32)
 
-[] halbem (34)
+[QUANTITY] halbem (34)
 
-[] abgestellt (43)
-[] sie (38)
-[] nicht (39)
-[] aus Sparsamkeitsgründen (41)
-[] ganz (42)
+[STATE-CHANGE] abgestellt (43)
+[has-state] sie (38)
+[m-mode] nicht (39)
+[??? m-causer] aus Sparsamkeitsgründen (41)
+[m-quantity] ganz (42)
 
-[] sie (38)
+[IDENTIFICATION] sie (38)
 
-[] nicht (39)
+[MODE] nicht (39)
 
-[] Sparsamkeitsgründen (41)
+[??? CAUSATION] Sparsamkeitsgründen (41)
 
-[] ganz (42)
+[QUANTITY] ganz (42)
 
 # sent_id = 336
 # text = Reparaturen mussten , wenn man sie nicht selbst machte , von abgelegenen Ämtern genehmigt werden , die es fertig brachten , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern .
@@ -1750,61 +1760,62 @@
 29	hinauszuzögern	hinauszögern	VERB	VVIZU	VerbForm=Inf	20	xcomp	_	_
 30	.	.	PUNCT	$.	_	14	punct	_	_
 
-[] genehmigt (14)
-[] Reparaturen (1)
-[] , wenn man sie nicht selbst machte , (9)
-[] von abgelegenen Ämtern , die es fertig brachten , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (13)
+[MESSAGE-INIT] genehmigt (14)
+[topic] Reparaturen (1)
+[m-condition] , wenn man sie nicht selbst machte , (9)
+[x-sender] von abgelegenen Ämtern , die es fertig brachten , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (13)
 
-[] Reparaturen (1)
+[STATE-CHANGE] Reparaturen (1)
 
-[] machte (9)
-[] man (5)
-[] sie (6)
-[] nicht (7)
-[] selbst (8)
+[ACTIVITY] machte (9)
+[is-active] man (5)
+[activity] sie (6)
+[m-mode] nicht (7)
+[m-mode] selbst (8) # als Fokus-Element
 
-[] man (5)
+[IDENTIFICATION] man (5)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] nicht (7)
+[MODE] nicht (7)
 
-[] selbst (8)
+[MODE] selbst (8)
 
-[] Ämtern (13)
-[] abgelegenen (12)
-[] , die es fertig brachten , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (20)
+[SOCIAL-RELATION] Ämtern (13)
+[m-location] abgelegenen (12) # recht weit vom Zentrum o. Ä. entfernt gelegen
+[m-scene] , die es fertig brachten , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (20)
 
-[] abgelegenen (12)
+[LOCATION] abgelegenen (12)
 
-[] brachten (20)
-[] die (17)
-[] es (18)
-[] fertig (19)
-[] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
+[SCENE-INIT] brachten (20)
+[x-causer] die (17)
+[??? participant] es (18)
+[target-scene] fertig (19)
+[??? evtl. Syntaxänderung: 29 muss an 19 hängen?] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
+[x-causer] Ämtern (13)
 
-[] die (17)
+[IDENTIFICATION] die (17)
 
-[] es (18)
+[??? IDENTIFICATION] es (18)
 
-[] fertig (19)
+[STATE] fertig (19)
 
-[] hinauszuzögern (29)
-[] sogar (22)
-[] das Wiedereinsetzen einer Fensterscheibe (24)
-[] zwei Jahre (28)
+[SCENE-INIT-NEG] hinauszuzögern (29)
+[m-mode] sogar (22)
+[target-scene] das Wiedereinsetzen einer Fensterscheibe (24)
+[m-time] zwei Jahre (28)
 
-[] sogar (22)
+[MODE] sogar (22)
 
-[] Wiedereinsetzen (24)
-[] einer Fensterscheibe (26)
+[LOCATION-CONTINUATION] Wiedereinsetzen (24)
+[has-location] einer Fensterscheibe (26)
 
-[] Fensterscheibe (26)
+[CLASS] Fensterscheibe (26)
 
-[] Jahre (28)
-[] zwei (27)
+[TIME] Jahre (28)
+[m-quantity] zwei (27)
 
-[] zwei (27)
+[QUANTITY] zwei (27)
 
 # sent_id = 337
 # text = » Ich komme natürlich nur , weil Tom nicht zu Hause ist « , murmelte Frau Parsons unbestimmt vor sich hin .
@@ -1828,47 +1839,46 @@
 18	unbestimmt	unbestimmt	ADJ	ADJD	_	15	advmod	_	_
 19	vor	vor	ADP	APPR	_	20	case	_	_
 20	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	15	obl	_	_
-21	hin	hin	ADP	PTKVZ	_	15	compound:prt	_	_
+21	hin	hin	ADP	PTKVZ	_	20	case	_	_
 22	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] murmelte (15)
-[] » Ich komme natürlich nur , weil Tom nicht zu Hause ist « , (3)
-[] Frau Parsons (17)
-[] unbestimmt (18)
-[] vor sich (20)
-[] hin (21)
+[MESSAGE-INIT] murmelte (15)
+[target-content] » Ich komme natürlich nur , weil Tom nicht zu Hause ist « , (3)
+[x-sender] Frau Parsons (17)
+[m-quality] unbestimmt (18)
+[??? m-quality] vor sich hin (20) # ganz für sich und gleichmäßig fortdauernd
 
-[] komme (3)
-[] Ich (2)
-[] natürlich (4)
-[] nur (5)
-[] , weil Tom nicht zu Hause ist (12)
+[LOCATION-INIT] komme (3)
+[has-location] Ich (2)
+[m-mode] natürlich (4)
+[m-mode] nur (5)
+[m-explanation] , weil Tom nicht zu Hause ist (12)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] natürlich (4)
+[MODE] natürlich (4)
 
-[] nur (5)
+[MODE] nur (5)
 
-[] ist (12)
-[] Tom (8)
-[] nicht (9)
-[] zu Hause (11)
+[LOCATION] ist (12)
+[has-location] Tom (8)
+[m-mode] nicht (9)
+[location] zu Hause (11)
 
-[] Tom (8)
+[IDENTIFICATION] Tom (8)
 
-[] nicht (9)
+[MODE] nicht (9)
 
-[] Hause (11)
+[LOCATION] Hause (11)
 
-[] Parsons (17)
-[] Frau (16)
+[IDENTIFICATION] Parsons (17)
+[??? identified || m-identfier] Frau (16)
 
-[] Frau (16)
+[???] Frau (16)
 
-[] unbestimmt (18)
+[QUALITY] unbestimmt (18)
 
-[] sich (20)
+[IDENTIFICATION] sich (20)
 
 # sent_id = 338
 # text = Die Wohnung der Parsons war größer als die von Winston und auf eine andere Art schäbig .
@@ -1890,27 +1900,29 @@
 16	schäbig	schäbig	ADJ	ADJD	_	6	conj	_	_
 17	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] größer (6)
-[] Die Wohnung der Parsons (2)
-[] als die von Winston (8)
+[QUALITY] größer (6)
+[has-quality] Die Wohnung der Parsons (2)
+[x-reference] als die von Winston (8)
 
-[] Wohnung (2)
-[] der Parsons (4)
+[CLASS] Wohnung (2)
+[m-possessor] der Parsons (4)
 
-[] Parsons (4)
+[IDENTIFICATION] Parsons (4)
 
-[] die (8)
-[] von Winston (10)
+[CLASS] die (8)
+[m-possessor] von Winston (10)
 
-[] Winston (10)
+[IDENTIFICATION] Winston (10)
 
-[] schäbig (16)
-[] auf eine andere Art (15)
+[??? QUALITY] schäbig (16) # abgenutzt
+[??? m-scene] auf eine andere Art (15)
 
-[] Art (15)
-[] andere (14)
+[??? SUBCLASS] Art (15)
+[??? m-scene] andere (14)
+[??? superclass] schäbig (16)
 
-[] andere (14)
+[??? COMPARISON] andere (14)
+[??? compared] Art (15)
 
 # sent_id = 339
 # text = Alles sah hier abgestoßen und niedergetrampelt aus , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden .
@@ -1937,62 +1949,64 @@
 21	worden	werden	AUX	VAPP	Verbform=Part	20	aux:pass	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] sah (2)
-[] Alles (1)
-[] hier (3)
-[] abgestoßen (4)
-[] und niedergetrampelt (6)
-[] aus (7)
-[] , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden (20)
+[MESSAGE] sah (2)
+[topic] Alles (1)
+[m-location] hier (3)
+[content] abgestoßen (4)
+[content] und niedergetrampelt (6)
+[m-noncomp] aus (7)
+[m-reference] , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden (20)
 
-[] Alles (1)
+[CLASS] Alles (1)
 
-[] hier (3)
+[LOCATION] hier (3)
 
-[] abgestoßen (4)
+[STATE] abgestoßen (4) # beschädigt
+[has-state] Alles (1)
 
-[] niedergetrampelt (6)
+[STATE] niedergetrampelt (6)
+[has-state] Alles (1)
 
-[] heimgesucht (20)
-[] so (9)
-[] die Räume (13)
-[] eben (14)
-[] von einem großen wilden Tier (19)
+[??? LOCATION-INIT] heimgesucht (20) # befallen
+[??? m-reference] so (9)
+[??? x-accompanied] die Räume (13)
+[m-time] eben (14)
+[??? has-location] von einem großen wilden Tier (19)
 
-[] so (9)
+[IDENTIFICATION] so (9)
 
-[] Räume (13)
+[CLASS] Räume (13)
 
-[] eben (14)
+[TIME] eben (14)
 
-[] Tier (19)
-[] großen (17)
-[] wilden (18)
+[CLASS] Tier (19)
+[m-quality] großen (17)
+[m-quality] wilden (18)
 
-[] großen (17)
+[QUALITY] großen (17)
 
-[] wilden (18)
+[QUALITY] wilden (18)
 
 # sent_id = 340
 # text = Sportgeräte - Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - lagen sämtlich über den Fußboden verstreut , und auf dem Tisch war ein Durcheinander von schmutzigem Geschirr und eselsohrigen Schulbüchern .
-1	Sportgeräte	Sportgerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	3	compound	_	_
+1	Sportgeräte	Sportgerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	20	subj	_	_
 2	-	-	PUNCT	$.	_	1	punct	_	_
-3	Hockeyschläger	Hockeyschläger	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	20	nsubj	_	_
+3	Hockeyschläger	Hockeyschläger	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
 4	,	,	PUNCT	$,	_	5	punct	_	_
-5	Boxhandschuhe	Boxhandschuh	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
+5	Boxhandschuhe	Boxhandschuh	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
 6	,	,	PUNCT	$,	_	12	punct	_	_
 7	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 8	aus	aus	ADP	APPR	_	10	case	_	_
 9	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	10	det	_	_
 10	Nähten	Naht	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	11	nmod	_	_
 11	geplatzter	geplatzt	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	12	amod	_	_
-12	Fußball	Fußball	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	3	conj	_	_
+12	Fußball	Fußball	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
 13	,	,	PUNCT	$,	_	18	punct	_	_
 14	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 15	verschwitzte	verschwitzt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	18	amod	_	_
 16	,	,	PUNCT	$,	_	15	punct	_	_
 17	umgekrempelte	umgekrempelt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	15	conj	_	_
-18	Turnhose	Turnhose	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	conj	_	_
+18	Turnhose	Turnhose	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	1	conj	_	_
 19	-	-	PUNCT	$.	_	3	punct	_	_
 20	lagen	liegen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 21	sämtlich	sämtlich	ADJ	ADJD	_	20	advmod	_	_
@@ -2007,7 +2021,7 @@
 30	Tisch	Tisch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	33	nmod	_	_
 31	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	cop	_	_
 32	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	33	det	_	_
-33	Durcheinander	Durcheinander	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	20	nsubj	_	_
+33	Durcheinander	Durcheinander	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	20	conj	_	_
 34	von	von	ADP	APPR	_	36	case	_	_
 35	schmutzigem	schmutzig	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	36	amod	_	_
 36	Geschirr	Geschirr	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	33	nmod	_	_
@@ -2016,61 +2030,62 @@
 39	Schulbüchern	Schulbuch	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	36	conj	_	_
 40	.	.	PUNCT	$.	_	20	punct	_	_
 
-[] lagen (20)
-[] Sportgeräte - Hockeyschläger - (3)
-[] , Boxhandschuhe (5)
-[] , ein aus den Nähten geplatzter Fußball (12)
-[] , eine verschwitzte , umgekrempelte Turnhose (18)
-[] sämtlich (21)
-[] über den Fußboden verstreut (25)
-[] , und auf dem Tisch war ein Durcheinander von schmutzigem Geschirr und eselsohrigen Schulbüchern (33)
+[??? LOCATION-CONTINUATION] lagen (20)
+[has-location] Sportgeräte - (1)
+[has-location] Hockeyschläger - (3)
+[has-location] , Boxhandschuhe (5)
+[has-location] , ein aus den Nähten geplatzter Fußball (12)
+[has-location] , eine verschwitzte , umgekrempelte Turnhose (18)
+[??? m-situator || m-quality] sämtlich (21) # ausnahmslos alle
+[??? initial-location] über den Fußboden verstreut (25)
 
-[] Hockeyschläger (3)
-[] Sportgeräte - (1)
+[CLASS] Sportgeräte (1)
 
-[] Sportgeräte (1)
+[CLASS] Hockeyschläger (3)
 
-[] Boxhandschuhe (5)
+[CLASS] Boxhandschuhe (5)
 
-[] Fußball (12)
-[] aus den Nähten geplatzter (11)
+[CLASS] Fußball (12)
+[m-scene] aus den Nähten geplatzter (11)
 
-[] geplatzter (11)
-[] aus den Nähten (10)
+[STATE-CHANGE] geplatzter (11)
+[initial-state] aus den Nähten (10)
+[has-state] Fußball (12)
 
-[] Nähten (10)
+[CLASS] Nähten (10)
 
-[] Turnhose (18)
-[] verschwitzte , (15)
-[] umgekrempelte (17)
+[CLASS] Turnhose (18)
+[m-quality] verschwitzte , (15)
+[m-state] umgekrempelte (17)
 
-[] verschwitzte (15)
+[QUALITY] verschwitzte (15)
 
-[] umgekrempelte (17)
+[STATE] umgekrempelte (17)
 
-[] sämtlich (21)
+[???] sämtlich (21)
 
-[] verstreut (25)
-[] über den Fußboden (24)
+[LOCATION-INIT] verstreut (25)
+[target-location] über den Fußboden (24)
 
-[] Fußboden (24)
+[CLASS] Fußboden (24)
 
-[] Durcheinander (33)
-[] auf dem Tisch (30)
-[] von schmutzigem Geschirr (36)
-[] und eselsohrigen Schulbüchern (39)
+[STATE] Durcheinander (33)
+[m-location] auf dem Tisch (30)
+[has-state] von schmutzigem Geschirr (36)
+[has-state] und eselsohrigen Schulbüchern (39)
 
-[] Tisch (30)
+[CLASS] Tisch (30)
 
-[] Geschirr (36)
-[] schmutzigem (35)
+[CLASS] Geschirr (36)
+[m-state] schmutzigem (35)
 
-[] schmutzigem (35)
+[STATE] schmutzigem (35)
 
-[] Schulbüchern (39)
-[] eselsohrigen (38)
+[MESSAGE] Schulbüchern (39)
+[m-scene] eselsohrigen (38)
 
-[] eselsohrigen (38)
+[COMPARISON >> QUALITY] eselsohrigen (38)
+[compared >> has-quality] Schulbüchern (39)
 
 # sent_id = 341
 # text = An den Wänden hingen knallrote Wimpel der Jugendliga und der sogenannten Späher , nebst einem Plakat vom Großen Bruder in Großformat .
