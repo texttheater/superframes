@@ -451,24 +451,27 @@
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] verwendet (9)
-[] Im Ministerium (2)
-[] er (4)
-[] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
+[MEANS] verwendet (9)
+[m-location >> m-situator] Im Ministerium (2)
+[means] er (4)
+[m-depictive >> purpose] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
 [] Ministerium (2)
 
 [] er (4)
 
-[] Posten (8)
-[] untergeordneten (7)
-[] , für den kein Verstand nötig war (15)
+[SOCIAL-RELATION] Posten (8)
+[m-scene] untergeordneten (7)
+[m-scene] , für den kein Verstand nötig war (15)
+[has-social-relation] er (4)
 
-[] untergeordneten (7)
+[COMPARISON >> RANK] untergeordneten (7)
+[compared >> has-rank] Posten (8)
 
 [] nötig (15)
 [] für den (12)
 [] kein Verstand (14)
+[] Posten (8)
 
 [] den (12)
 
@@ -480,7 +483,7 @@
 [] Mann (24)
 [] er (20)
 [] andererseits (21)
-[] führender (23)
+[m-scene] führender (23)
 [m-social-relation] beim Sportausschuss (26)
 [] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
@@ -488,7 +491,8 @@
 
 [] andererseits (21)
 
-[] führender (23)
+[POSSESSION] führender (23)
+[possessor] Mann (24)
 
 [SOCIAL-RELATION] Sportausschuss (26) # TODO vgl. Wahrheitsministerium
 
@@ -536,10 +540,10 @@
 # text = Er erzählte einem voll ruhigen Stolzes , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	erzählte	erzählen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-4	voll	voll	ADJ	ADJD	_	5	advmod	_	_
+3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	iobj	_	_
+4	voll	voll	ADJ	ADJD	_	2	advmod	_	_
 5	ruhigen	ruhig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	6	amod	_	_
-6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	2	iobj	_	_
+6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	4	iobj	_	_
 7	,	,	PUNCT	$,	_	14	punct	_	_
 8	während	während	SCONJ	KOUS	_	14	mark	_	_
 9	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
@@ -564,20 +568,25 @@
 28	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
 29	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erzählte (2)
-[] Er (1)
-[] einem voll ruhigen Stolzes (6)
-[] , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (14)
+[MESSAGE-INIT] erzählte (2)
+[x-sender] Er (1)
+[x-experiencer] einem (3)
+[m-depictive] voll ruhigen Stolzes (4)
+[m-time] , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (14)
 
 [] Er (1)
 
-[] Stolzes (6)
-[] voll ruhigen (5)
+[] einem (3)
+
+[LOCATION >> SCENE] voll (4) # v2: SCENE-QUANTITY?
+[has-location >> scene] ruhigen Stolzes (6)
+[location >> participant] Er (1)
+
+[MESSAGE] Stolzes (6)
+[m-quality] ruhigen (5)
+[x-experiencer] Er (1)
 
 [] ruhigen (5)
-[] voll (4)
-
-[] voll (4)
 
 [] entlockte (14)
 [] er (9)
@@ -651,18 +660,19 @@
 [] wie ein unfreiwilliges Zeugnis für die Angestrengtheit seines Lebens (9)
 [] überallhin (15)
 
-[] Schweißgeruch (3)
-[] durchdringender (2)
+[MESSAGE] Schweißgeruch (3)
+[m-quality] durchdringender (2)
 
 [] durchdringender (2)
 
 [] ihm (5)
 
-[] Zeugnis (9)
-[] unfreiwilliges (8)
-[] für die Angestrengtheit seines Lebens (12)
+[MESSAGE] Zeugnis (9)
+[m-scene] unfreiwilliges (8)
+[topic] für die Angestrengtheit seines Lebens (12)
 
-[] unfreiwilliges (8)
+[CAUSATION >> QUALITY] unfreiwilliges (8)
+[result >> has-quality] Zeugnis (9)
 
 [] Angestrengtheit (12)
 [] seines Lebens (14)
@@ -939,11 +949,11 @@
 5	so	so	ADV	ADV	_	6	advmod	_	_
 6	gut	gut	ADJ	ADJD	_	2	advmod	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
-8	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
+8	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 9	in	in	ADP	APPR	_	12	case	_	_
 10	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	12	det	_	_
 11	kalten	kalt	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	12	amod	_	_
-12	Leitungswasser	Leitungswasser	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	8	obl	_	_
+12	Leitungswasser	Leitungswasser	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	2	obl	_	_
 13	und	und	CCONJ	KON	_	14	cc	_	_
 14	ging	gehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 15	in	in	ADP	APPR	_	18	case	_	_
@@ -956,8 +966,8 @@
 [] reinigte (2)
 [] Er (1)
 [] seine Hände (4)
-[] so gut (6)
-[] er konnte in dem kalten Leitungswasser (8)
+[] so gut er konnte (6)
+[] in dem kalten Leitungswasser (12)
 
 [] Er (1)
 
@@ -966,14 +976,14 @@
 
 [] seine (3)
 
-[] gut (6)
-[] so (5)
+[QUALITY] gut (6)
+[m-quantity] so (5)
+[m-reference] er konnte (8)
 
 [] so (5)
 
-[] konnte (8)
-[] er (7)
-[] in dem kalten Leitungswasser (12)
+[SCENE-POSSIBILITY] konnte (8)
+[participant] er (7)
 
 [] er (7)
 
@@ -1102,14 +1112,14 @@
 [] mit einem Stück Holz (33)
 [] dieselbe Geste (36)
 
-[] Schwester (30)
-[] seine (24)
-[] um etwa zwei Jahre jüngere (29)
+[SOCIAL-RELATION] Schwester (30)
+[has-social-relation] seine (24)
+[m-state] um etwa zwei Jahre jüngere (29)
 
 [] seine (24)
 
-[] jüngere (29)
-[] um etwa zwei Jahre (28)
+[STATE] jüngere (29)
+[m-quantity] um etwa zwei Jahre (28)
 
 [] Jahre (28)
 [] etwa zwei (27)
@@ -1398,7 +1408,7 @@
 16	!	!	PUNCT	$.	_	15	punct	_	_
 17	«	«	PUNCT	$(	_	10	punct	_	_
 18	,	,	PUNCT	$,	_	27	punct	_	_
-19	wobei	wobei	ADV	PWAV	PronType=Int	27	advmod	_	_
+19	wobei	wobei	ADV	PWAV	PronType=Int	27	mark	_	_
 20	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	22	det	_	_
 21	kleine	klein	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Sing	22	amod	_	_
 22	Mädchen	Mädchen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	27	nsubj	_	_
@@ -1430,13 +1440,10 @@
 
 [] Gedankenverbrecher (15)
 
-[] nachmachte (27)
-[] wobei (19)
-[] das kleine Mädchen (22)
-[] ihrem Bruder (24)
-[] jede Bewegung (26)
-
-[] wobei (19)
+[REPRODUCTION] nachmachte (27)
+[x-causer] das kleine Mädchen (22)
+[x-attribute] ihrem Bruder (24)
+[original] jede Bewegung (26)
 
 [] Mädchen (22)
 [] kleine (21)
@@ -1448,7 +1455,8 @@
 
 [] ihrem (23)
 
-[] Bewegung (26)
+[ACTIVITY] Bewegung (26)
+[is-active] Bruder (24)
 
 # sent_id = 379
 # text = Es war irgendwie erschreckend , gleich den Freudensprüngen von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden .

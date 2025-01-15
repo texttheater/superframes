@@ -637,7 +637,7 @@
 # sent_id = 314
 # text = Aber nein , das Klopfen wurde wiederholt .
 1	Aber	aber	CCONJ	KON	_	7	cc	_	_
-2	nein	nein	PART	PTKANT	_	7	advmod	_	_
+2	nein	nein	PART	PTKANT	_	7	discourse	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
 5	Klopfen	Klopfen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	7	nsubj:pass	_	_
@@ -645,11 +645,8 @@
 7	wiederholt	wiederholt	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] wiederholt (7)
-[] nein , (2)
-[] das Klopfen (5)
-
-[] nein (2)
+[SEQUENCE] wiederholt (7) # TODO manual
+[followed] das Klopfen (5)
 
 [] Klopfen (5)
 
@@ -1293,7 +1290,7 @@
 8	von	von	ADP	APPR	_	10	case	_	_
 9	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Partei	Partei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	13	obl	_	_
-11	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
+11	nicht	nicht	PART	PTKNEG	Polarity=Neg	12	advmod	_	_
 12	gern	gern	ADV	ADV	_	13	advmod	_	_
 13	gesehen	sehen	VERB	VVPP	Verbform=Part	0	root	_	_
 14	-	-	PUNCT	$.	_	16	punct	_	_
@@ -1328,11 +1325,10 @@
 43	.	.	PUNCT	$.	_	13	punct	_	_
 44	)	)	PUNCT	$(	_	13	punct	_	_
 
-[] gesehen (13)
-[] Die Bezeichnung » Frau « (3)
-[] von der Partei (10)
-[] nicht (11)
-[] gern (12)
+[MESSAGE] gesehen (13)
+[topic] Die Bezeichnung » Frau « (3)
+[x-experiencer] von der Partei (10)
+[m-scene >> x-noncomp] nicht gern (12)
 
 [] Bezeichnung » Frau « (3)
 
@@ -1340,9 +1336,11 @@
 
 [] Partei (10)
 
-[] nicht (11)
+[MESSAGE] gern (12)
+[m-mode] nicht (11)
+[topic] gesehen (13)
 
-[] gern (12)
+[MODE] nicht (11)
 
 [] erwartete (16)
 [] man (15)
@@ -1364,11 +1362,11 @@
 
 [] Genossin (28)
 
-[] gebrauchte (37)
-[] bei einigen Frauen (36)
-[] man (38)
-[] das Wort (40)
-[] ganz unwillkürlich (42)
+[MEANS] gebrauchte (37)
+[m-trigger] bei einigen Frauen (36)
+[x-causer] man (38)
+[means] das Wort (40)
+[m-scene] ganz unwillkürlich (42)
 
 [] Frauen (36)
 
@@ -1376,8 +1374,9 @@
 
 [] Wort (40)
 
-[] unwillkürlich (42)
-[] ganz (41)
+[CAUSATION] unwillkürlich (42)
+[m-quantity] ganz (41)
+[result] gebrauchte (37)
 
 [] ganz (41)
 
@@ -1580,7 +1579,7 @@
 3	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	Verputz	Verputz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 5	von	von	ADP	APPR	_	6	case	_	_
-6	Decken	Decke	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	4	nmod	_	_
+6	Decken	Decke	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
 7	und	und	CCONJ	KON	_	8	cc	_	_
 8	Wänden	Wand	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	6	conj	_	_
 9	,	,	PUNCT	$,	_	12	punct	_	_
@@ -1623,13 +1622,13 @@
 
 [] bröckelte (2)
 [] Dauernd (1)
-[] der Verputz von Decken und Wänden (4)
+[] der Verputz (4)
+[] von Decken (6)
+[] und Wänden (8)
 
 [] Dauernd (1)
 
 [] Verputz (4)
-[] von Decken (6)
-[] und Wänden (8)
 
 [] Decken (6)
 
@@ -1755,17 +1754,18 @@
 
 [] abgelegenen (12)
 
-[] brachten (20)
-[] die (17)
-[] es (18)
-[] fertig (19)
-[] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
+[SCENE-INIT] brachten (20)
+[x-causer] die (17)
+[participant >> target-scene] es (18)
+[target-scene >> x-noncomp] fertig (19)
+[participant >> target-scene] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
 
 [] die (17)
 
 [] es (18)
 
-[] fertig (19)
+[SCENE-DEINIT] fertig (19)
+[initial-scene] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
 
 [] hinauszuzögern (29)
 [] sogar (22)
@@ -1801,20 +1801,19 @@
 13	«	«	PUNCT	$(	_	3	punct	_	_
 14	,	,	PUNCT	$,	_	3	punct	_	_
 15	murmelte	murmeln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	17	compound	_	_
-17	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
+16	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	_
+17	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	16	flat	_	_
 18	unbestimmt	unbestimmt	ADJ	ADJD	_	15	advmod	_	_
 19	vor	vor	ADP	APPR	_	20	case	_	_
 20	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	15	obl	_	_
-21	hin	hin	ADP	PTKVZ	_	15	compound:prt	_	_
+21	hin	hin	ADP	PTKVZ	_	20	case	_	_
 22	.	.	PUNCT	$.	_	15	punct	_	_
 
 [] murmelte (15)
 [] » Ich komme natürlich nur , weil Tom nicht zu Hause ist « , (3)
-[] Frau Parsons (17)
+[] Frau Parsons (16)
 [] unbestimmt (18)
-[] vor sich (20)
-[] hin (21)
+[] vor sich hin (20)
 
 [] komme (3)
 [] Ich (2)
@@ -1839,10 +1838,7 @@
 
 [] Hause (11)
 
-[] Parsons (17)
-[] Frau (16)
-
-[] Frau (16)
+[] Frau Parsons (16)
 
 [] unbestimmt (18)
 
@@ -1900,7 +1896,7 @@
 6	niedergetrampelt	niedertrampeln	VERB	VVPP	Verbform=Part	4	conj	_	_
 7	aus	aus	ADP	PTKVZ	_	2	compound:prt	_	_
 8	,	,	PUNCT	$,	_	20	punct	_	_
-9	so	so	ADV	ADV	_	20	advmod	_	_
+9	so	so	SCONJ	KOUS	_	20	mark	_	_
 10	als	als	SCONJ	KOUS	_	20	mark	_	_
 11	seien	sein	AUX	VAFIN	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
 12	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
@@ -1921,7 +1917,7 @@
 [] abgestoßen (4)
 [] und niedergetrampelt (6)
 [] aus (7)
-[] , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden (20)
+[m-reference] , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden (20)
 
 [] Alles (1)
 
@@ -1931,13 +1927,10 @@
 
 [] niedergetrampelt (6)
 
-[] heimgesucht (20)
-[] so (9)
-[] die Räume (13)
-[] eben (14)
-[] von einem großen wilden Tier (19)
-
-[] so (9)
+[EVENT] heimgesucht (20)
+[undergoer] die Räume (13)
+[m-time] eben (14)
+[x-causer] von einem großen wilden Tier (19)
 
 [] Räume (13)
 
