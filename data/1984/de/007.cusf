@@ -1,25 +1,22 @@
 # sent_id = 351
 # text = Frau Parsons machte ein hilfloses Gesicht .
-1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	compound	_	_
-2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	1	flat	_	_
 3	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
 5	hilfloses	hilflos	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SCENE-INIT] machte (3)
-[participant] Frau Parsons (2)
+[?SCENE-INIT] machte (3)
+[participant] Frau Parsons (1)
 [target-scene] ein hilfloses Gesicht (6)
 
-[IDENTIFICATION] Parsons (2)
-[m-class >> m-noncomp] Frau (1)
-
-[CLASS >> NONCOMP] Frau (1)
+[IDENTIFICATION] Frau Parsons (1)
 
 [PART-WHOLE] Gesicht (6)
 [m-scene] hilfloses (5)
-[whole] Frau Parsons (2)
+[whole] Frau Parsons (1)
 
 [MEANS-NEG >> QUALITY] hilfloses (5)
 [means >> has-quality] Gesicht (6)
@@ -366,7 +363,7 @@
 [IDENTIFICATION] er (5)
 
 [TIME] kürzlich (7)
-[??m-time] erst (6) # # "drückt Verstärkung aus"
+[m-time] erst (6)
 
 [TIME] erst (6)
 
@@ -470,20 +467,22 @@
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
-[?MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
-[m-location >> ?m-purpose] Im Ministerium (2) # # Posten im Ministerium?
+[MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
+[m-location >> m-situator] Im Ministerium (2) # # Posten im Ministerium?
 [means] er (4)
-[?m-depictive] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
+[m-depictive >> purpose] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
 [SOCIAL-RELATION] Ministerium (2)
 
 [IDENTIFICATION] er (4)
 
-[LOCATION >> SOCIAL-RELATION] Posten (8)
-[m-rank] untergeordneten (7) # # "weniger wichtig, zweitrangig"
+[SOCIAL-RELATION] Posten (8)
+[m-scene] untergeordneten (7) # # "weniger wichtig, zweitrangig"
 [m-scene] , für den kein Verstand nötig war (15)
+[has-social-relation] er (4)
 
-[RANK] untergeordneten (7)
+[COMPARISON >> RANK] untergeordneten (7)
+[compared >> has-rank] Posten (8)
 
 [MEANS-NECESSITY] nötig (15) # # "für einen bestimmten Zweck unerlässlich, erforderlich"
 [purpose] für den (12)
@@ -492,7 +491,7 @@
 
 [IDENTIFICATION] den (12)
 
-[?MEANS] Verstand (14) # # "Fähigkeit zu verstehen, Begriffe zu bilden, Schlüsse zu ziehen, zu urteilen, zu denken"
+[MEANS] Verstand (14) # # "Fähigkeit zu verstehen, Begriffe zu bilden, Schlüsse zu ziehen, zu urteilen, zu denken"
 [m-mode] kein (13)
 
 [MODE] kein (13)
@@ -500,7 +499,7 @@
 [CLASS] Mann (24)
 [has-class] er (20)
 [m-scene] andererseits (21)
-[m-rank || m-scene || ?m-depictive] führender (23)
+[m-scene] führender (23)
 [m-social-relation] beim Sportausschuss (26)
 [m-social-relation] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
@@ -509,10 +508,8 @@
 [COMPARISON] andererseits (21)
 [compared] Mann (24)
 
-[RANK || POSSESSION] führender (23) # # "an der Spitze liegen, an oberster Stelle stehen", "das Geschehen in einem bestimmten Bereich bestimmend; maßgebend"
+[POSSESSION] führender (23) # # "an der Spitze liegen, an oberster Stelle stehen", "das Geschehen in einem bestimmten Bereich bestimmend; maßgebend"
 [possessor] Mann (24)
-[?possessed] beim Sportausschuss (26)
-[?possessed] und allen anderen Ausschüssen (30)
 
 [SOCIAL-RELATION] Sportausschuss (26) # # Vgl. "Komitee: gewählte Gruppe von Personen, die eine besondere Aufgabe zu erfüllen hat"
 
@@ -565,9 +562,9 @@
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	erzählte	erzählen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	obj	_	_
-4	voll	voll	ADJ	ADJD	_	6	advmod	_	_
+4	voll	voll	ADJ	ADJD	_	2	advmod	_	_
 5	ruhigen	ruhig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	6	amod	_	_
-6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	2	iobj	_	_
+6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	4	iobj	_	_
 7	,	,	PUNCT	$,	_	14	punct	_	_
 8	während	während	SCONJ	KOUS	_	14	mark	_	_
 9	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
@@ -595,7 +592,7 @@
 [MESSAGE-INIT] erzählte (2)
 [x-sender] Er (1)
 [x-experiencer] einem (3)
-[m-depictive] voll ruhigen Stolzes (6)
+[m-depictive] voll ruhigen Stolzes (4)
 [m-accompanier] , während er seiner Pfeife kleine Rauchwölkchen entlockte (14)
 [target-content] , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (27)
 
@@ -604,12 +601,12 @@
 [CLASS] einem (3)
 
 [MESSAGE] Stolzes (6) # # "von Selbstbewusstsein und Freude über einen Besitz, eine [eigene] Leistung erfüllt"
-[m-depictive] voll (4)
 [m-quality] ruhigen (5)
 [x-experiencer] Er (1)
 
-[STATE] voll (4)
-[has-state] Er (1)
+[LOCATION >> SCENE] voll (4)
+[has-location >> scene] ruhigen Stolzes (6)
+[location >> participant] Er (1)
 
 [QUALITY] ruhigen (5)
 
@@ -693,12 +690,11 @@
 
 [IDENTIFICATION] ihm (5)
 
-[?MESSAGE] Zeugnis (9) # # "stichhaltiger Beweis, deutliches, unverkennbares Zeichen", Vgl. sent_id 169 "offenbar"??
+[MESSAGE] Zeugnis (9) # # "stichhaltiger Beweis, deutliches, unverkennbares Zeichen", Vgl. sent_id 169 "offenbar"??
 [m-scene] unfreiwilliges (8)
-[?topic] für die Angestrengtheit seines Lebens (12)
-[?x-sender] Schweißgeruch (3)
+[topic] für die Angestrengtheit seines Lebens (12)
 
-[?CAUSATION >> QUALITY] unfreiwilliges (8) # # "nicht beabsichtigt; aus Versehen geschehend"
+[CAUSATION >> QUALITY] unfreiwilliges (8) # # "nicht beabsichtigt; aus Versehen geschehend"
 [result >> has-quality] Zeugnis (9)
 
 [STATE] Angestrengtheit (12) # # "Zustand/Qualität erhöhter Anstrengung oder des Mangels an Gelassenheit, Lockerheit"
@@ -790,8 +786,8 @@
 4	«	«	PUNCT	$(	_	3	punct	_	_
 5	,	,	PUNCT	$,	_	3	punct	_	_
 6	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	8	compound	_	_
-8	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+7	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+8	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	flat	_	_
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
 11	sofort	sofort	ADV	ADV	_	10	advmod	_	_
@@ -800,14 +796,11 @@
 
 [MESSAGE-INIT] sagte (6)
 [target-content] » Einen Schraubenschlüssel « , (3)
-[x-sender] Frau Parsons (8)
+[x-sender] Frau Parsons (7)
 
 [CLASS] Schraubenschlüssel (3)
 
-[IDENTIFICATION] Parsons (8)
-[m-class >> m-noncomp] Frau (7)
-
-[CLASS >> NONCOMP] Frau (7)
+[IDENTIFICATION] Frau Parsons (7)
 
 [SCENE-INIT] wurde (10)
 [m-scene] sofort (11) # # "unmittelbar nach einem bestimmten Geschehen", "ohne zeitliche Verzögerung; unverzüglich"
@@ -901,22 +894,19 @@
 
 # sent_id = 367
 # text = Frau Parsons brachte den Schraubenschlüssel .
-1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	compound	_	_
-2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	1	flat	_	_
 3	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Schraubenschlüssel	Schraubenschlüssel	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	3	obj	_	_
 6	.	.	PUNCT	$.	_	3	punct	_	_
 
 [UNANCHORED-MOTION] brachte (3)
-[in-motion] Frau Parsons (2)
+[in-motion] Frau Parsons (1)
 [x-depictive] den Schraubenschlüssel (5)
 
-[IDENTIFICATION] Parsons (2)
-[m-class >> m-noncomp] Frau (1)
+[IDENTIFICATION] Frau Parsons (1)
 [m-possessed] den Schraubenschlüssel (5)
-
-[CLASS >> NONCOMP] Frau (1)
 
 [CLASS] Schraubenschlüssel (5)
 
@@ -990,7 +980,7 @@
 5	so	so	ADV	ADV	_	6	advmod	_	_
 6	gut	gut	ADJ	ADJD	_	2	advmod	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
-8	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	_	_
+8	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 9	in	in	ADP	APPR	_	12	case	_	_
 10	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	12	det	_	_
 11	kalten	kalt	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	12	amod	_	_
@@ -1017,14 +1007,14 @@
 
 [IDENTIFICATION] seine (3)
 
-[QUALITY >> QUANTITY] gut (6)
+[QUALITY] gut (6)
 [m-quantity] so (5)
-[?x-reference] er konnte (8)
+[m-reference] er konnte (8)
 
 [QUANTITY] so (5)
 
-[?SCENE-POSSIBILITY] konnte (8)
-[?x-causer] er (7)
+[SCENE-POSSIBILITY] konnte (8)
+[participant] er (7)
 
 [IDENTIFICATION] er (7)
 
@@ -1162,14 +1152,12 @@
 
 [SOCIAL-RELATION] Schwester (30)
 [has-social-relation] seine (24)
-[m-scene] um etwa zwei Jahre jüngere (29)
+[m-state] um etwa zwei Jahre jüngere (29)
 
 [IDENTIFICATION] seine (24)
 
-[COMPARISON] jüngere (29)
-[?m-quantity] um etwa zwei Jahre (28)
-[m-compared] Schwester (30)
-[m-reference] Junge (6) # # manuell hinzugefügt
+[STATE] jüngere (29)
+[m-quantity] um etwa zwei Jahre (28)
 
 [TIME] Jahre (28)
 [m-quantity] etwa zwei (27)
@@ -1498,10 +1486,10 @@
 
 [SENDING] Gedankenverbrecher (15)
 
-[ACTIVITY] nachmachte (27)
-[is-active] das kleine Mädchen (22)
-[?x-reference] ihrem Bruder (24)
-[?x-attribute] jede Bewegung (26)
+[REPRODUCTION] nachmachte (27)
+[x-causer] das kleine Mädchen (22)
+[x-attribute] ihrem Bruder (24) # # nach syntaktischer Obliqueness
+[original] jede Bewegung (26)
 
 [CLASS] Mädchen (22)
 [m-quality] kleine (21)
@@ -1515,6 +1503,7 @@
 [IDENTIFICATION] ihrem (23)
 
 [ACTIVITY] Bewegung (26)
+[is-active] ihrem Bruder (24)
 
 # sent_id = 379
 # text = Es war irgendwie erschreckend , gleich den Freudensprüngen von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden .
@@ -1707,9 +1696,9 @@
 
 # sent_id = 382
 # text = Frau Parsons ' Blicke huschten nervös von Winston zu den Kindern und wieder zurück .
-1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	compound	_	_
-2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	4	nmod	_	_
-3	'	'	PUNCT	$(	_	2	punct	_	_
+1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	4	nmod	_	_
+2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	1	flat	_	_
+3	'	'	PUNCT	$(	_	1	punct	_	_
 4	Blicke	Blick	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
 5	huschten	huschen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	nervös	nervös	ADJ	ADJD	_	5	advmod	_	_
@@ -1731,12 +1720,9 @@
 [transitory-location] wieder zurück (14)
 
 [MESSAGE-INIT] Blicke (4)
-[x-sender] Frau Parsons ' (2)
+[x-sender] Frau Parsons ' (1)
 
-[IDENTIFICATION] Parsons (2)
-[m-class >> m-noncomp] Frau (1)
-
-[CLASS >> NONCOMP] Frau (1)
+[IDENTIFICATION] Frau Parsons (1)
 
 [MESSAGE] nervös (6)
 [topic] Frau Parsons ' Blicke (4)
@@ -2202,9 +2188,9 @@
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	verabschiedete	verabschieden	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	2	obj	_	_
-4	von	von	ADP	APPR	_	6	case	_	_
-5	Frau	Frau	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	6	compound	_	_
-6	Parsons	Parsons	PROPN	NE	Case=Dat|Gender=Neut|Number=Sing	2	obl	_	_
+4	von	von	ADP	APPR	_	5	case	_	_
+5	Frau	Frau	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	2	obl	_	_
+6	Parsons	Parsons	PROPN	NE	Case=Dat|Gender=Neut|Number=Sing	5	flat	_	_
 7	und	und	CCONJ	KON	_	8	cc	_	_
 8	ging	gehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 9	zur	zur	ADP	APPRART	_	10	case	_	_
@@ -2214,16 +2200,13 @@
 [MESSAGE-INIT || SOCIAL-RELATION-DEINIT] verabschiedete (2)
 [x-sender || x-causer] Er (1)
 [x-noncomp || has-social-relation] sich (3)
-[x-experiencer || initial-social-relation] von Frau Parsons (6)
+[x-experiencer || initial-social-relation] von Frau Parsons (5)
 
 [IDENTIFICATION] Er (1)
 
 [NONCOMP || IDENTIFICATION] sich (3)
 
-[IDENTIFICATION] Parsons (6)
-[m-class >> m-noncomp] Frau (5)
-
-[CLASS >> NONCOMP] Frau (5)
+[IDENTIFICATION] Frau Parsons (5)
 
 [LOCATION-CHANGE] ging (8)
 [target-location] zur Tür (10)
@@ -2358,8 +2341,8 @@
 10	sehen	sehen	VERB	VVINF	VerbForm=Inf	2	advcl	_	_
 11	,	,	PUNCT	$,	_	20	punct	_	_
 12	wie	wie	SCONJ	KOUS	_	20	case	_	_
-13	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	14	compound	_	_
-14	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	20	nsubj	_	_
+13	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	20	nsubj	_	_
+14	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	13	flat	_	_
 15	ihren	ihr	DET	PPOSAT	Case=Acc|Gender=Masc|Number=Sing|Poss=Yes	16	det:poss	_	_
 16	Sohn	Sohn	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	20	obj	_	_
 17	durch	durch	ADP	APPR	_	19	case	_	_
@@ -2398,15 +2381,12 @@
 [x-experiencer] Er (1)
 
 [LOCATION-INIT] hineinzerrte (20)
-[x-causer] Frau Parsons (14)
+[x-causer] Frau Parsons (13)
 [has-location] ihren Sohn (16)
 [transitory-location] durch die Wohnungstür (19)
 [m-accompanier] , während der Junge eine Schleuder einsteckte (27)
 
-[IDENTIFICATION] Parsons (14)
-[m-class >> m-noncomp] Frau (13)
-
-[CLASS >> NONCOMP] Frau (13)
+[IDENTIFICATION] Frau Parsons (13)
 
 [SOCIAL-RELATION] Sohn (16)
 [has-social-relation] ihren (15)
