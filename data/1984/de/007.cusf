@@ -8,9 +8,9 @@
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[?SCENE-INIT] machte (3)
-[participant] Frau Parsons (1)
-[target-scene] ein hilfloses Gesicht (6)
+[SCENE-INIT || MESSAGE-INIT] machte (3) # # ähnlich wie "Grimasse schneiden"
+[participant || x-sender] Frau Parsons (1)
+[target-scene || target-content] ein hilfloses Gesicht (6)
 
 [IDENTIFICATION] Frau Parsons (1)
 
@@ -468,7 +468,7 @@
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
 [MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
-[m-location >> m-situator] Im Ministerium (2) # # Posten im Ministerium?
+[m-location >> m-situator] Im Ministerium (2)
 [means] er (4)
 [m-depictive >> purpose] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
@@ -683,14 +683,14 @@
 [transitory-location] überallhin (15)
 
 [MESSAGE] Schweißgeruch (3)
-[m-scene >> m-quantity] durchdringender (2)
+[m-scene] durchdringender (2)
 
 [LOCATION-INIT >> QUANTITY] durchdringender (2) # # "aufgrund seiner Stärke, Intensität o. Ä. in alle Teile eines Körpers oder Raumes dringend"
-[has-location] Schweißgeruch (3)
+[has-location >> has-quantity] Schweißgeruch (3)
 
 [IDENTIFICATION] ihm (5)
 
-[MESSAGE] Zeugnis (9) # # "stichhaltiger Beweis, deutliches, unverkennbares Zeichen", Vgl. sent_id 169 "offenbar"??
+[MESSAGE] Zeugnis (9) # # "Beweis"
 [m-scene] unfreiwilliges (8)
 [topic] für die Angestrengtheit seines Lebens (12)
 
@@ -1546,7 +1546,7 @@
 [CLASS] Tigerjungen (10)
 [m-scene] , die bald zu Menschenfressern herangewachsen sein werden (16)
 
-[?CLASS-CHANGE] herangewachsen (16)
+[CLASS-CHANGE] herangewachsen (16)
 [has-class] die (12)
 [m-time] bald (13)
 [target-class] zu Menschenfressern (15)
@@ -1637,15 +1637,14 @@
 [QUALITY] groß (30)
 [m-time] schon (28)
 [m-quantity] beinahe (29)
-[m-scene] genug (31)
+[m-quantity] genug (31)
 [m-purpose] dazu (32)
 
 [TIME] schon (28)
 
 [QUANTITY] beinahe (29)
 
-[?COMPARISON] genug (31)
-[compared] groß (30) # ?? [reference] dazu (32)
+[QUANTITY] genug (31) # # "in zufriedenstellendem, seinen Zweck erfüllendem Maß", Vgl. sent_id 188 "hinreichend"
 
 [IDENTIFICATION] dazu (32)
 
@@ -1762,7 +1761,7 @@
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE-INIT] bemerkte (7)
-[m-accompaniment] In dem besseren Licht des Wohnzimmers (4)
+[m-accompanier] In dem besseren Licht des Wohnzimmers (4)
 [x-experiencer] er (8)
 [m-depictive] voller Mitleid (10)
 [target-content] , dass es tatsächlich Staub war , was sich in ihren Runzeln eingenistet hatte (15)
@@ -1918,7 +1917,7 @@
 [ACTIVITY || STATE-INIT] beschäftigt (4)
 [is-active || has-state] Ich (1)
 [m-quantity] zu (3)
-[?m-result] , um mit ihnen hinauszugehen (9)
+[m-result] , um mit ihnen hinauszugehen (9)
 
 [IDENTIFICATION] Ich (1)
 
@@ -1976,11 +1975,11 @@
 [m-depictive] mit seiner kräftigen Stimme (19)
 
 [LOCATION-CHANGE] gehen (6)
-[x-explanation] Warum (2)
+[m-explanation || m-causer] Warum (2)
 [has-location] wir (4)
 [m-mode] nicht (5)
 
-[EXPLANATION] Warum (2)
+[EXPLANATION || CAUSATION] Warum (2)
 
 [IDENTIFICATION] wir (4)
 
@@ -2101,14 +2100,15 @@
 
 [MESSAGE-INIT] gelegt (9) # # "jemanden beschuldigen"
 [topic] denen (5)
-[content] Kriegsverbrechen (6)
+[target-content] Kriegsverbrechen (6)
 [x-noncomp] zur Last (8)
 [topic] Gefangene (3)
 
 [IDENTIFICATION] denen (5)
 
-[ACTIVITY] Kriegsverbrechen (6)
-[is-active] denen (5)
+[EVENT] Kriegsverbrechen (6)
+[m-causer] denen (5)
+[m-causer] Gefangene (3)
 
 [NONCOMP] Last (8)
 
@@ -2220,7 +2220,7 @@
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 3	aber	aber	ADV	ADV	_	10	advmod	_	_
 4	noch	noch	ADV	ADV	_	5	advmod	_	_
-5	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	7	nmod	_	_
+5	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	nmod	_	_
 6	sechs	sechs	NUM	CARD	NumType=Card	7	nummod	_	_
 7	Stufen	Stufe	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	10	obl	_	_
 8	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -2254,15 +2254,15 @@
 [asserted] hinuntergestiegen (10)
 
 [CLASS] Stufen (7)
+[m-quantity] noch keine sechs (6)
+
+[QUANTITY] sechs (6)
 [m-mode] noch keine (5)
-[m-quantity] sechs (6)
 
 [MODE] keine (5)
 [] noch (4)
 
 [] noch (4) # # "hier: bis jetzt [nicht]"
-
-[QUANTITY] sechs (6)
 
 [CLASS] Treppe (9)
 
@@ -2360,17 +2360,16 @@
 
 [LOCATION-CHANGE] fuhr (2)
 [has-location] Er (1)
-[m-scene] gerade noch rechtzeitig (5)
+[m-time] gerade noch rechtzeitig (5)
 [x-noncomp] herum (6)
 [m-result] , um zu sehen , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (10)
 
 [IDENTIFICATION] Er (1)
 
-[TIME >> COMPARISON] rechtzeitig (5)
+[TIME] rechtzeitig (5) # # Vgl. sen_id 188 "hinreichend"
 [m-quantity] gerade (3)
 [] noch (4)
-[has-time >> compared] fuhr (2)
-[?reference] sehen (10)
+[has-time] fuhr (2)
 
 [QUANTITY] gerade (3)
 
@@ -2569,7 +2568,7 @@
 
 [ACTIVITY] rieb (2)
 [is-active] Er (1)
-[x-undergoer] seinen immer noch schmerzenden Nacken (7)
+[x-location] seinen immer noch schmerzenden Nacken (7)
 
 [IDENTIFICATION] Er (1)
 

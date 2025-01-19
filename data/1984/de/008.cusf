@@ -13,7 +13,7 @@
 [initial-scene || initial-content] Die Musik aus dem Televisor (2)
 
 [MESSAGE] Musik (2)
-[x-sender] aus dem Televisor (5)
+[m-initial-location] aus dem Televisor (5)
 
 [CLASS] Televisor (5)
 
@@ -81,7 +81,7 @@
 [MESSAGE] Beschreibung (14)
 [topic] von der Bewaffnung der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (17)
 
-[POSSESSION-INIT || STATE-CHANGE] Bewaffnung (17)
+[POSSESSION-INIT || STATE-INIT] Bewaffnung (17)
 [target-possessor || has-state] der neuen Schwimmenden Festung , die soeben zwischen Island und den Faröer-Inseln vor Anker gegangen war (21)
 
 [CLASS >> IDENTIFICATION] Festung (21)
@@ -146,9 +146,9 @@
 
 [STATE] arme (10)
 
-[EVENT >> ?STATE] Höllenleben (13)
+[EVENT] Höllenleben (13)
 [m-accompanier >> m-causer] Mit diesen Kindern , , (3)
-[undergoer >> has-state] die arme Frau (11)
+[undergoer] die arme Frau (11)
 
 # sent_id = 404
 # text = Noch ein , zwei Jahre , und sie würden sie Tag und Nacht nach Anzeichen nachlassender Parteitreue bespitzeln .
@@ -269,7 +269,7 @@
 
 [POSSESSION] erzogen (23)
 [possessed] sie (9)
-[?possessor || m-means] mit Hilfe von solchen Organisationen wie den Spähern (11)
+[m-means] mit Hilfe von solchen Organisationen wie den Spähern (11)
 [m-scene] systematisch (18)
 [x-resultative] zu unbezähmbaren kleinen Wilden (22)
 
@@ -334,14 +334,14 @@
 [topic] , sich gegen die Parteidisziplin aufzulehnen (15)
 [x-experiencer] in ihnen (6)
 
-[SOCIAL-RELATION-DEINIT] aufzulehnen (15)
+[SOCIAL-RELATION-INIT] aufzulehnen (15)
 [has-social-relation] sich (11)
-[initial-social-relation] gegen die Parteidisziplin (14)
+[target-social-relation] gegen die Parteidisziplin (14)
 [x-causer] ihnen (6)
 
 [IDENTIFICATION] sich (11)
 
-[?STATE || SEQUENCE] Parteidisziplin (14) # # "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
+[STATE || SEQUENCE] Parteidisziplin (14) # # "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
 
 # sent_id = 408
 # text = Die Marschlieder , die Umzüge , die Fahnen , die Wanderungen , das Exerzieren mit Holzgewehren , das Brüllen von Schlagworten , die Verehrung des Großen Bruders - alles das war für sie ein herrliches Spiel .
@@ -453,9 +453,9 @@
 
 [LOCATION-INIT >> POSSESSION] gelenkt (7)
 [has-location >> possessed] Ihre ganze Wildheit (3)
-[target-location >> ?x-target-location] nach außen (6)
-[target-location >> ?x-experiencer] , gegen die Staatsfeinde (11)
-[target-location >> ?x-experiencer] , gegen Ausländer (14)
+[target-location >> m-target-location] nach außen (6)
+[target-location >> m-experiencer] , gegen die Staatsfeinde (11)
+[target-location >> m-experiencer] , gegen Ausländer (14)
 
 [STATE] Wildheit (3)
 [has-state] Ihre (1)
@@ -506,7 +506,7 @@
 [IDENTIFICATION] Es (1)
 
 [CLASS] Leute (4)
-[?m-time >> m-quality] über dreißig (6)
+[m-time >> m-state] über dreißig (6)
 
 [QUANTITY] dreißig (6)
 
@@ -648,10 +648,9 @@
 [COMPARISON] gewöhnlich (35)
 
 [MESSAGE-INIT] Bemerkung (41)
-[m-scene] kompromittierende (40)
+[m-purpose] kompromittierende (40)
 
 [?MESSAGE-INIT] kompromittierende (40) # # "durch eine Äußerung oder ein Verhalten jemandes, dem eigenen Ansehen schaden; bloßstellen"
-[?x-causer] Bemerkung (41)
 
 [MESSAGE-INIT] angezeigt (50)
 [topic] seine Eltern (46)
@@ -794,11 +793,11 @@
 8	her	her	ADV	ADV	_	6	advmod	_	_
 9	?	?	PUNCT	$.	_	6	punct	_	_
 
-[?SCENE] war (6)
+[SCENE-DEINIT] war (6) # # "zurückliegen"
 [m-time] Vor Jahren (2)
 [m-time] wie lange (5)
-[participant] es (7)
-[scene] her (8)
+[initial-scene] es (7)
+[x-noncomp] her (8)
 
 [TIME] Jahren (2)
 
@@ -809,8 +808,7 @@
 
 [IDENTIFICATION] es (7)
 
-[?SCENE-DEINIT] her (8) # # "zurückliegend"
-[initial-scene] es (7)
+[NONCOMP] her (8)
 
 # sent_id = 416
 # text = Es musste vor sieben Jahren gewesen sein - hatte er geträumt , er gehe durch ein stockdunkles Zimmer .
@@ -896,7 +894,7 @@
 
 [MESSAGE-INIT] gesagt (16)
 [x-sender] jemand , der seitlich von ihm saß , (2)
-[m-depictive] , als er vorüberkam , (14)
+[m-time >> m-accompanier] , als er vorüberkam , (14)
 [target-content] : » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht . « (22)
 
 [CLASS] jemand (2)
@@ -928,9 +926,9 @@
 
 [IDENTIFICATION] uns (21)
 
-[MESSAGE >> EXISTENCE] herrscht (27) # # "in bestimmter, auffallender Weise [allgemein] verbreitet, [fortdauernd] vorhanden, deutlich fühlbar sein"
-[m-location >> x-location] wo (24)
-[topic >> exists] keine Dunkelheit (26)
+[POSSESSION >> SCENE] herrscht (27) # # "in bestimmter, auffallender Weise [allgemein] verbreitet, [fortdauernd] vorhanden, deutlich fühlbar sein"
+[possessed >> m-location] wo (24)
+[possessor >> scene] keine Dunkelheit (26)
 
 [LOCATION] wo (24)
 
@@ -1089,7 +1087,7 @@
 [TIME] später (2)
 [m-time] Erst (1)
 
-[m-time] Erst (1) # "nicht eher als"
+[TIME] Erst (1) # "nicht eher als"
 
 [QUALITY] allmählich (4)
 
@@ -1168,7 +1166,7 @@
 [] mehr (6)
 
 [SCENE] war (16) # # "passierte..."
-[] es (10)
+[scene] es (10)
 [m-time] vor oder nach dem Traum (15)
 [scene] , dass er O'Brien zum erstenmal gesehen hatte (23)
 
@@ -1181,17 +1179,16 @@
 [MESSAGE] gesehen (23)
 [x-experiencer] er (19)
 [topic] O'Brien (20)
-[m-scene] zum erstenmal (22)
+[m-quantity || m-time] zum erstenmal (22)
 
 [IDENTIFICATION] er (19)
 
 [IDENTIFICATION] O'Brien (20)
 
-[?SEQUENCE-INIT || ?MODE] erstenmal (22)
-[] gesehen (23)
+[QUANTITY || TIME] erstenmal (22)
 
 [MESSAGE] entsann (31) # # "sich erinnern"
-[] ; so wenig (27)
+[m-quantity] ; so wenig (27)
 [] wie (28)
 [x-experiencer] er (29)
 [x-noncomp] sich (30)
@@ -1211,7 +1208,7 @@
 [MESSAGE-INIT] identifiziert (42) # # "erkennen"
 [m-time] wann (33)
 [x-experiencer] er (34)
-[] zum erstenmal (36)
+[m-quantity || m-time] zum erstenmal (36)
 [topic] jene Stimme (38)
 [target-content] als die O'Briens (40)
 
@@ -1219,7 +1216,7 @@
 
 [IDENTIFICATION] er (34)
 
-[] erstenmal (36)
+[TIME || QUANTITY] erstenmal (36)
 
 [MESSAGE] Stimme (38)
 
@@ -1382,19 +1379,19 @@
 
 [MESSAGE] schien (3)
 [topic] das (2)
-[] nicht einmal (5)
+[m-mode] nicht einmal (5)
 [content] viel auszumachen (7)
 
 [IDENTIFICATION] das (2)
 
-[] einmal (5)
-[] nicht (4)
+[MODE] einmal (5) # # "eine Verneinung betonend"
+[x-noncomp] nicht (4)
 
-[MODE] nicht (4)
+[NONCOMP] nicht (4)
 
-[] auszumachen (7) ## Unterschied 
+[QUALITY] auszumachen (7) # # "etwas macht nichts aus (= etw. fällt nicht ins Gewicht)" / ~ "bedeutend sein"
 [m-quantity] viel (6)
-[] das (2)
+[has-quality] das (2)
 
 [QUANTITY] viel (6)
 
@@ -1415,25 +1412,27 @@
 13	Parteizugehörigkeit	Parteizugehörigkeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	11	conj	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] herrschte (3)
-[] Zwischen ihnen (2)
-[] ein Einverständnis , das wichtiger war als Zuneigung oder Parteizugehörigkeit (5)
+[SCENE] herrschte (3)
+[participant] Zwischen ihnen (2)
+[scene] ein Einverständnis , das wichtiger war als Zuneigung oder Parteizugehörigkeit (5)
 
-[] ihnen (2)
+[IDENTIFICATION] ihnen (2)
 
-[] Einverständnis (5)
-[] , das wichtiger war als Zuneigung oder Parteizugehörigkeit (8)
+[SOCIAL-RELATION-INIT || MESSAGE] Einverständnis (5)
+[m-scene] , das wichtiger war als Zuneigung oder Parteizugehörigkeit (8)
+[has-social-relation || x-experiencer] Zwischen ihnen (2)
 
-[] wichtiger (8)
-[] das (7)
-[] als Zuneigung (11)
-[] oder Parteizugehörigkeit (13)
+[QUALITY] wichtiger (8)
+[has-quality] das (7)
+[x-reference] als Zuneigung (11)
+[x-reference] oder Parteizugehörigkeit (13)
+[has-quality] Einverständnis (5)
 
-[] das (7)
+[IDENTIFICATION] das (7)
 
-[] Zuneigung (11)
+[MESSAGE] Zuneigung (11)
 
-[] Parteizugehörigkeit (13)
+[SOCIAL-RELATION] Parteizugehörigkeit (13)
 
 # sent_id = 428
 # text = » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht « , hatte er gesagt .
@@ -1454,31 +1453,31 @@
 15	gesagt	sagen	VERB	VVPP	Verbform=Part	0	root	_	_
 16	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] gesagt (15)
-[] » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht « , (5)
-[] er (14)
+[MESSAGE-INIT] gesagt (15)
+[target-content] » Wir wollen uns wiedersehen , wo keine Dunkelheit herrscht « , (5)
+[x-sender] er (14)
 
-[] wiedersehen (5)
-[] » Wir (2)
-[] uns (4)
-[] , wo keine Dunkelheit herrscht (10)
+[MESSAGE-INIT || SOCIAL-RELATION-CONTINUATION] wiedersehen (5)
+[x-experiencer || has-social-relation] » Wir (2)
+[target-content || initial-social-relation] uns (4)
+[m-location] , wo keine Dunkelheit herrscht (10)
 
-[] Wir (2)
+[IDENTIFICATION] Wir (2)
 
-[] uns (4)
+[IDENTIFICATION] uns (4)
 
-[] herrscht (10)
-[] wo (7)
-[] keine Dunkelheit (9)
+[POSSESSION >> SCENE] herrscht (10)
+[possessed >> m-location] wo (7)
+[possessor >> scene] keine Dunkelheit (9)
 
-[] wo (7)
+[LOCATION] wo (7)
 
-[] Dunkelheit (9)
-[] keine (8)
+[QUALITY] Dunkelheit (9)
+[m-mode] keine (8)
 
-[] keine (8)
+[MODE] keine (8)
 
-[] er (14)
+[IDENTIFICATION] er (14)
 
 # sent_id = 429
 # text = Winston wusste nicht , was das zu bedeuten hatte , sondern nur , dass es sich auf irgendeine Weise bewahrheiten würde .
@@ -1505,37 +1504,37 @@
 21	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Winston (1)
-[] nicht (3)
-[] , was das zu bedeuten hatte (8)
-[] nur (12)
-[] , sondern , dass es sich auf irgendeine Weise bewahrheiten würde (20)
+[MESSAGE] wusste (2)
+[x-experiencer] Winston (1)
+[m-mode] nicht (3)
+[content] , was das zu bedeuten hatte (8)
+[m-mode] nur (12)
+[content] , sondern , dass es sich auf irgendeine Weise bewahrheiten würde (20)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] nicht (3)
+[MODE] nicht (3)
 
-[] bedeuten (8)
-[] was (5)
-[] das (6)
+[SEQUENCE] bedeuten (8)
+[follows] was (5)
+[followed] das (6)
 
-[] was (5)
+[CLASS] was (5)
 
-[] das (6)
+[IDENTIFICATION] das (6)
 
-[] nur (12)
+[MODE] nur (12)
 
-[] bewahrheiten (20)
-[] es (15)
-[] sich (16)
-[] auf irgendeine Weise (19)
+[SCENE-INIT] bewahrheiten (20)
+[target-scene] es (15)
+[x-noncomp] sich (16)
+[m-means] auf irgendeine Weise (19)
 
-[] es (15)
+[IDENTIFICATION] es (15)
 
-[] sich (16)
+[NONCOMP] sich (16)
 
-[] Weise (19)
+[MEANS] Weise (19)
 
 # sent_id = 430
 # text = Die Stimme aus dem Televisor brach ab .
@@ -1548,14 +1547,14 @@
 7	ab	ab	ADP	PTKVZ	_	6	compound:prt	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] brach (6)
-[] Die Stimme aus dem Televisor (2)
-[] ab (7)
+[SCENE-DEINIT || MESSAGE-DEINIT] brach (6)
+[initial-scene || x-sender] Die Stimme aus dem Televisor (2)
+[x-noncomp] ab (7)
 
-[] Stimme (2)
-[] aus dem Televisor (5)
+[MESSAGE] Stimme (2)
+[m-initial-location] aus dem Televisor (5)
 
-[] Televisor (5)
+[CLASS] Televisor (5)
 
 # sent_id = 431
 # text = Ein Fanfarenstoß schmetterte klar und schön durch die stille Luft .
@@ -1571,22 +1570,22 @@
 10	Luft	Luft	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schmetterte (3)
-[] Ein Fanfarenstoß (2)
-[] klar (4)
-[] und schön (6)
-[] durch die stille Luft (10)
+[MESSAGE-INIT] schmetterte (3)
+[x-sender || topic] Ein Fanfarenstoß (2)
+[m-quality] klar (4)
+[m-quality] und schön (6)
+[m-location] durch die stille Luft (10)
 
-[] Fanfarenstoß (2)
+[MESSAGE] Fanfarenstoß (2) # # "Ton aus Fanfare"
 
-[] klar (4)
+[QUALITY] klar (4)
 
-[] schön (6)
+[QUALITY] schön (6)
 
-[] Luft (10)
-[] stille (9)
+[CLASS] Luft (10)
+[m-quality] stille (9)
 
-[] stille (9)
+[QUALITY] stille (9)
 
 # sent_id = 432
 # text = Die Stimme fuhr rasch und krächzend fort :
@@ -1599,17 +1598,18 @@
 7	fort	fort	ADP	PTKVZ	_	3	compound:prt	_	_
 8	:	:	PUNCT	$.	_	3	punct	_	_
 
-[] fuhr (3)
-[] Die Stimme (2)
-[] rasch (4)
-[] und krächzend (6)
-[] fort (7)
+[MESSAGE-INIT || MESSAGE-CONTINUATION] fuhr (3)
+[x-sender] Die Stimme (2)
+[m-quality] rasch (4)
+[m-depictive] und krächzend (6)
+[x-noncomp] fort (7)
 
-[] Stimme (2)
+[MESSAGE] Stimme (2)
 
-[] rasch (4)
+[QUALITY] rasch (4)
 
-[] krächzend (6)
+[QUALITY] krächzend (6)
+[has-quality] Stimme (2)
 
 # sent_id = 433
 # text = » Achtung !
@@ -1617,7 +1617,7 @@
 2	Achtung	Achtung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	!	!	PUNCT	$.	_	2	punct	_	_
 
-[] Achtung (2)
+[] Achtung (2) # # "als Ruf oder Aufschrift, um zur Vorsicht oder Aufmerksamkeit zu mahnen"
 
 # sent_id = 434
 # text = Achtung !
@@ -1638,16 +1638,17 @@
 8	eingetroffen	eintreffen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] eingetroffen (8)
-[] Soeben (1)
-[] eine Sondermeldung (4)
-[] von der Malabar-Front (7)
+[LOCATION-CHANGE] eingetroffen (8)
+[m-time] Soeben (1)
+[has-location] eine Sondermeldung (4)
+[initial-location] von der Malabar-Front (7)
 
-[] Soeben (1)
+[TIME] Soeben (1)
 
-[] Sondermeldung (4)
+[MESSAGE] Sondermeldung (4)
+[x-sender] von der Malabar-Front (7)
 
-[] Malabar-Front (7)
+[LOCATION] Malabar-Front (7) # # "Kriegsfront, die Grenze zum Gegner"
 
 # sent_id = 436
 # text = Unsere Streitkräfte in Süd-Indien haben einen glänzenden Sieg erfochten .
@@ -1662,22 +1663,22 @@
 9	erfochten	erfechten	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] erfochten (9)
-[] Unsere Streitkräfte in Süd-Indien (2)
-[] einen glänzenden Sieg (8)
+[SOCIAL-RELATION-INIT] erfochten (9) # # "durch Kämpfen erlangen, bekommen; erkämpfen"
+[has-social-relation] Unsere Streitkräfte in Süd-Indien (2)
+[target-social-relation] einen glänzenden Sieg (8)
 
-[] Streitkräfte (2)
-[] Unsere (1)
-[] in Süd-Indien (4)
+[SOCIAL-RELATION] Streitkräfte (2)
+[has-social-relation] Unsere (1)
+[m-location] in Süd-Indien (4)
 
-[] Unsere (1)
+[IDENTIFICATION] Unsere (1)
 
-[] Süd-Indien (4)
+[IDENTIFICATION >> LOCATION] Süd-Indien (4)
 
-[] Sieg (8)
-[] glänzenden (7)
+[SOCIAL-RELATION-INIT] Sieg (8)
+[m-quality] glänzenden (7)
 
-[] glänzenden (7)
+[QUALITY] glänzenden (7)
 
 # sent_id = 437
 # text = Ich bin zu der Durchsage ermächtigt , dass die kriegerische Operation , von der wir gleich berichten werden , das Kriegsende in errechenbare Nähe rücken dürfte .
@@ -1705,47 +1706,51 @@
 22	in	in	ADP	APPR	_	24	case	_	_
 23	errechenbare	errechenbar	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	24	amod	_	_
 24	Nähe	Nähe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	25	obl	_	_
-25	rücken	rücken	VERB	VVINF	VerbForm=Inf	6	ccomp	_	_
+25	rücken	rücken	VERB	VVINF	VerbForm=Inf	5	ccomp	_	_
 26	dürfte	dürfen	AUX	VMFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux	_	_
 27	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] ermächtigt (6)
-[] Ich (1)
-[] zu der Durchsage (5)
-[] , dass die kriegerische Operation , von der wir gleich berichten werden , das Kriegsende in errechenbare Nähe rücken dürfte (25)
+[SCENE-POSSIBILITY] ermächtigt (6)
+[participant] Ich (1)
+[scene] zu der Durchsage , dass die kriegerische Operation , von der wir gleich berichten werden , das Kriegsende in errechenbare Nähe rücken dürfte (5)
 
-[] Ich (1)
+[IDENTIFICATION] Ich (1)
 
-[] Durchsage (5)
+[MESSAGE-INIT] Durchsage (5)
+[target-content] , dass die kriegerische Operation , von der wir gleich berichten werden , das Kriegsende in errechenbare Nähe rücken dürfte (25)
+[x-sender] Ich (1)
 
-[] rücken (25)
-[] die kriegerische Operation , von der wir gleich berichten werden , (11)
-[] das Kriegsende (21)
-[] in errechenbare Nähe (24)
+[LOCATION-INIT >> SCENE-INIT-POSSIBILITY] rücken (25)
+[x-causer] die kriegerische Operation , von der wir gleich berichten werden , (11)
+[has-location >> target-scene] das Kriegsende (21)
+[target-location >> m-noncomp] in errechenbare Nähe (24)
 
+[ACTIVITY] Operation (11) # # "Einsatz von Streitkräften; militärische Unternehmung"
+[m-scene] kriegerische (10)
+[m-scene] , von der wir gleich berichten werden , (17)
+
+[] kriegerische (10)
 [] Operation (11)
-[] kriegerische (10)
-[] , von der wir gleich berichten werden , (17)
 
-[] kriegerische (10)
+[MESSAGE-INIT] berichten (17)
+[topic] von der (14)
+[x-sender] wir (15)
+[m-time] gleich (16)
+[topic] Operation (11)
 
-[] berichten (17)
-[] von der (14)
-[] wir (15)
-[] gleich (16)
+[IDENTIFICATION] der (14)
 
-[] der (14)
+[IDENTIFICATION] wir (15)
 
-[] wir (15)
+[TIME] gleich (16)
 
-[] gleich (16)
+[PART-WHOLE] Kriegsende (21)
 
-[] Kriegsende (21)
+[LOCATION] Nähe (24)
+[m-scene] errechenbare (23)
 
-[] Nähe (24)
-[] errechenbare (23)
-
-[] errechenbare (23)
+[MESSAGE-INIT >> QUANTITY] errechenbare (23) # # ~ "ermittelbar, feststellbar, ..."
+[topic >> has-quantity] Nähe (24)
 
 # sent_id = 438
 # text = Es folgt jetzt die Sondermeldung - «
@@ -1757,41 +1762,41 @@
 6	-	-	PUNCT	$.	_	2	punct	_	_
 7	«	«	PUNCT	$(	_	2	punct	_	_
 
-[] folgt (2)
-[] jetzt (3)
-[] die Sondermeldung (5)
+[SEQUENCE] folgt (2)
+[m-time] jetzt (3)
+[follows] die Sondermeldung (5)
 
-[] jetzt (3)
+[TIME] jetzt (3)
 
-[] Sondermeldung (5)
+[MESSAGE] Sondermeldung (5)
 
 # sent_id = 439
 # text = Das bedeutet nichts Gutes , dachte Winston .
 1	Das	d	PRON	PDS	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	bedeutet	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
-3	nichts	nichts	DET	PIAT	Definite=Ind|Gender=Neut	2	obj	_	_
+3	nichts	nichts	DET	PIAT	Definite=Ind|Gender=Neut	4	obj	_	_
 4	Gutes	Gute	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
 5	,	,	PUNCT	$,	_	2	punct	_	_
 6	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
 8	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] dachte (6)
-[] Das bedeutet nichts Gutes , (2)
-[] Winston (7)
+[MESSAGE] dachte (6)
+[content] Das bedeutet nichts Gutes , (2)
+[x-experiencer] Winston (7)
 
-[] bedeutet (2)
-[] Das (1)
-[] nichts (3)
-[] Gutes (4)
+[SEQUENCE] bedeutet (2)
+[followed] Das (1)
+[follows] nichts Gutes (4)
 
-[] Das (1)
+[IDENTIFICATION] Das (1)
 
-[] nichts (3)
+[QUALITY] Gutes (4)
+[m-mode] nichts (3)
 
-[] Gutes (4)
+[MODE] nichts (3)
 
-[] Winston (7)
+[IDENTIFICATION] Winston (7)
 
 # sent_id = 440
 # text = Und tatsächlich , nach einer blutrünstigen Schilderung der vollständigen Vernichtung einer eurasischen Armee , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , kam die Ankündigung , dass ab nächster Woche die Schokoladeration von dreißig auf zwanzig Gramm herabgesetzt werden sollte .
@@ -1830,7 +1835,7 @@
 33	Woche	Woche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	41	obl	_	_
 34	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	Schokoladeration	Schokoladeration	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	41	nsubj:pass	_	_
-36	von	von	ADP	APPR	_	40	case	_	_
+36	von	von	ADP	APPR	_	37	case	_	_
 37	dreißig	dreißig	NUM	CARD	NumType=Card	41	obl	_	_
 38	auf	auf	ADP	APPR	_	40	case	_	_
 39	zwanzig	zwanzig	NUM	CARD	NumType=Card	40	nummod	_	_
@@ -1840,70 +1845,72 @@
 43	sollte	sollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	aux	_	_
 44	.	.	PUNCT	$.	_	26	punct	_	_
 
-[] kam (26)
-[] tatsächlich (2)
-[] , nach einer blutrünstigen Schilderung der vollständigen Vernichtung einer eurasischen Armee , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , (7)
-[] die Ankündigung , dass ab nächster Woche die Schokoladeration von dreißig auf zwanzig Gramm herabgesetzt werden sollte (28)
+[SCENE-INIT] kam (26) # # "eintreten, sich ereignen"
+[m-mode] tatsächlich (2)
+[m-time >> m-followed] , nach einer blutrünstigen Schilderung der vollständigen Vernichtung einer eurasischen Armee , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , (7)
+[target-scene] die Ankündigung , dass ab nächster Woche die Schokoladeration von dreißig auf zwanzig Gramm herabgesetzt werden sollte (28)
 
-[] tatsächlich (2)
+[MODE] tatsächlich (2)
 
-[] Schilderung (7)
-[] blutrünstigen (6)
-[] der vollständigen Vernichtung einer eurasischen Armee (10)
-[] , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , (23)
+[MESSAGE] Schilderung (7)
+[topic >> m-quality] blutrünstigen (6)
+[topic] der vollständigen Vernichtung einer eurasischen Armee (10)
+[m-scene] , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , (23)
 
-[] blutrünstigen (6)
+[QUALITY] blutrünstigen (6) # # "von Mord und Grausamkeit handelnd"
 
-[] Vernichtung (10)
-[] vollständigen (9)
-[] einer eurasischen Armee (13)
+[DESTRUCTION] Vernichtung (10)
+[m-quantity] vollständigen (9)
+[destroyed] einer eurasischen Armee (13)
 
-[] vollständigen (9)
+[QUANTITY] vollständigen (9)
 
-[] Armee (13)
-[] eurasischen (12)
+[SOCIAL-RELATION] Armee (13)
+[has-social-relation] eurasischen (12)
 
-[] eurasischen (12)
+[IDENTIFICATION] eurasischen (12)
 
-[] genannt (23)
-[] bei der (16)
-[] riesige Zahlen von Toten und Gefangenen (18)
+[MESSAGE-INIT] genannt (23)
+[m-situator] bei der (16)
+[target-content] riesige Zahlen von Toten und Gefangenen (18)
+[m-situator] Schilderung (7)
 
-[] der (16)
+[IDENTIFICATION] der (16)
 
-[] Zahlen (18)
-[] riesige (17)
-[] von Toten (20)
-[] und Gefangenen (22)
+[QUANTITY] Zahlen (18) # # Vgl. "they number in the thousands" im Manual
+[quality >> quantity] riesige (17)
+[has-quantity] von Toten (20)
+[has-quantity] und Gefangenen (22)
 
-[] riesige (17)
+[QUALITY >> QUANTITY] riesige (17)
 
-[] Toten (20)
+[CLASS] Toten (20)
 
-[] Gefangenen (22)
+[SOCIAL-RELATION] Gefangenen (22)
 
-[] Ankündigung (28)
-[] , dass ab nächster Woche die Schokoladeration von dreißig auf zwanzig Gramm herabgesetzt werden sollte (41)
+[MESSAGE-INIT] Ankündigung (28)
+[target-content] , dass ab nächster Woche die Schokoladeration von dreißig auf zwanzig Gramm herabgesetzt werden sollte (41)
 
-[] herabgesetzt (41)
-[] ab nächster Woche (33)
-[] die Schokoladeration (35)
-[] dreißig (37)
-[] von auf zwanzig Gramm (40)
+[QUANTITY-CHANGE] herabgesetzt (41)
+[m-time] ab nächster Woche (33)
+[has-quantity] die Schokoladeration (35)
+[initial-quantity] von dreißig (37)
+[target-quantity] auf zwanzig Gramm (40)
 
-[] Woche (33)
-[] nächster (32)
+[TIME] Woche (33)
+[m-scene] nächster (32)
 
-[] nächster (32)
+[SEQUENCE] nächster (32)
+[follows] Woche (33)
 
-[] Schokoladeration (35)
+[QUANTITY] Schokoladeration (35) # # "zugeteilte *Menge* an Lebens- und Genussmitteln"
 
-[] dreißig (37)
+[QUANTITY] dreißig (37)
 
-[] Gramm (40)
-[] zwanzig (39)
+[QUANTITY] Gramm (40)
+[m-quantity] zwanzig (39)
 
-[] zwanzig (39)
+[QUANTITY] zwanzig (39)
 
 # sent_id = 441
 # text = Winston musste noch einmal aufstoßen .
@@ -1914,16 +1921,17 @@
 5	aufstoßen	aufstoßen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 6	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] aufstoßen (5)
-[] Winston (1)
-[] noch einmal (4)
+[EXCRETION || MESSAGE-INIT] aufstoßen (5) # # "Luft, die aus dem Magen aufgestiegen ist, hörbar durch den Mund entweichen lassen"
+[excreter || x-sender] Winston (1)
+[m-time] noch einmal (4)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] einmal (4)
-[] noch (3)
+[TIME] einmal (4)
+[m-scene] noch (3)
 
-[] noch (3)
+[ACCOMPANIMENT] noch (3)
+[accompanier] einmal (4)
 
 # sent_id = 442
 # text = Die Wirkung des Gins verflüchtigte sich und ließ ein Gefühl der Erschlaffung zurück .
@@ -1942,25 +1950,26 @@
 13	zurück	zurück	ADP	PTKVZ	_	8	compound:prt	_	_
 14	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] verflüchtigte (5)
-[] Die Wirkung des Gins (2)
-[] sich (6)
+[SCENE-DEINIT] verflüchtigte (5)
+[initial-scene] Die Wirkung des Gins (2)
+[x-noncomp] sich (6)
 
-[] Wirkung (2)
-[] des Gins (4)
+[POSSESSION] Wirkung (2)
+[possessor] des Gins (4)
 
-[] Gins (4)
+[CLASS] Gins (4)
 
-[] sich (6)
+[NONCOMP] sich (6)
 
-[] ließ (8)
-[] ein Gefühl der Erschlaffung (10)
-[] zurück (13)
+[CAUSATION] ließ (8) # # "durch vorausgehende Anwesenheit, Einwirkung verursachen, hervorrufen; als Wirkung zurücklassen"
+[result] ein Gefühl der Erschlaffung (10)
+[x-noncomp] zurück (13)
+[causer] Die Wirkung des Gins (2)
 
-[] Gefühl (10)
-[] der Erschlaffung (12)
+[MESSAGE] Gefühl (10)
+[topic] der Erschlaffung (12)
 
-[] Erschlaffung (12)
+[STATE-INIT] Erschlaffung (12) # # "kraftlos werden"
 
 # sent_id = 443
 # text = Der Televisor stimmte - vielleicht um den Sieg zu feiern , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - die schmetternden Klänge von » Ozeanien , mein Land , für Dich mit Herz und Hand « an .
@@ -2006,55 +2015,59 @@
 40	an	an	ADP	PTKVZ	_	3	compound:prt	_	_
 41	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] stimmte (3)
-[] Der Televisor (2)
-[] - vielleicht um den Sieg zu feiern (10)
-[] , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - (21)
-[] die schmetternden Klänge von » Ozeanien , mein Land , für Dich mit Herz und Hand « (25)
-[] an (40)
+[MESSAGE-INIT] stimmte (3) # # "zu singen, zu spielen beginnen"
+[x-sender] Der Televisor (2)
+[m-purpose] - vielleicht um den Sieg zu feiern (10)
+[m-purpose] , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - (21)
+[topic] die schmetternden Klänge von » Ozeanien , mein Land , für Dich mit Herz und Hand « (25)
+[x-noncomp] an (40)
 
-[] Televisor (2)
+[CLASS] Televisor (2)
 
-[] feiern (10)
-[] vielleicht (5)
-[] den Sieg (8)
+[ACTIVITY >> MESSAGE] feiern (10) # # "etwas wertschätzen und dem Ausdruck geben"
+[m-mode] vielleicht (5)
+[x-causer >> topic] den Sieg (8)
+[is-active >> x-sender] Der Televisor (2)
 
-[] vielleicht (5)
+[MODE] vielleicht (5)
 
-[] Sieg (8)
+[SOCIAL-RELATION-INIT] Sieg (8)
 
-[] übertönen (21)
-[] aber (13)
-[] die Erinnerung an die Schokoladen-kürzung (16)
+[MESSAGE-INIT] übertönen (21)
+[m-scene] aber (13)
+[x-reference] die Erinnerung an die Schokoladen-kürzung (16)
+[x-sender] Der Televisor (2)
 
-[] aber (13)
+[CONCESSION] aber (13)
+[asserted] übertönen (21)
 
-[] Erinnerung (16)
-[] an die Schokoladen-kürzung (19)
+[MESSAGE] Erinnerung (16)
+[topic] an die Schokoladen-kürzung (19)
 
-[] Schokoladen-kürzung (19)
+[QUANTITY-CHANGE] Schokoladen-kürzung (19)
 
-[] Klänge (25)
-[] schmetternden (24)
-[] von » Ozeanien , mein Land , für Dich mit Herz und Hand « (28)
+[MESSAGE] Klänge (25)
+[m-scene] schmetternden (24)
+[topic] von » Ozeanien , mein Land , für Dich mit Herz und Hand « (28)
 
-[] schmetternden (24)
+[MESSAGE-INIT] schmetternden (24) # # "laut klingen, schallen"
+[x-sender] Klänge (25)
 
-[] Ozeanien , mein Land (28)
+[IDENTIFICATION] Ozeanien , mein Land (28)
 [] , für Dich (34)
 [] mit Herz (36)
 [] und Hand (38)
 
-[] Land (31)
-[] mein (30)
+[CLASS >> SOCIAL-RELATION] Land (31)
+[m-situator || m-has-location] mein (30)
 
-[] mein (30)
+[IDENTIFICATION] mein (30)
 
-[] Dich (34)
+[IDENTIFICATION] Dich (34)
 
-[] Herz (36)
+[PART-WHOLE >> ?MESSAGE] Herz (36)
 
-[] Hand (38)
+[PART-WHOLE >> ?MESSAGE] Hand (38)
 
 # sent_id = 444
 # text = Vom Zuhörer wurde erwartet , dass er dabei stramme Haltung annahm .
@@ -2071,25 +2084,28 @@
 11	annahm	annehmen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	csubj:pass	_	_
 12	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] erwartet (4)
-[] Vom Zuhörer (2)
-[] , dass er dabei stramme Haltung annahm (11)
+[MESSAGE] erwartet (4)
+[topic] Vom Zuhörer (2)
+[content] , dass er dabei stramme Haltung annahm (11)
 
-[] Zuhörer (2)
+[CLASS] Zuhörer (2)
 
-[] annahm (11)
-[] er (7)
-[] dabei (8)
-[] stramme Haltung (10)
+[SCENE-INIT] annahm (11) # # "sich etwas zu eigen machen, zulegen"
+[x-causer >> participant] er (7)
+[m-accompanied] dabei (8)
+[target-scene] stramme Haltung (10)
+[x-causer >> participant] Vom Zuhörer (2)
 
-[] er (7)
+[IDENTIFICATION] er (7)
 
-[] dabei (8)
+[IDENTIFICATION] dabei (8)
 
-[] Haltung (10)
-[] stramme (9)
+[STATE] Haltung (10)
+[m-quality] stramme (9)
+[has-state] er (7)
+[has-state] Vom Zuhörer (2)
 
-[] stramme (9)
+[QUALITY] stramme (9)
 
 # sent_id = 445
 # text = Aber an seinem derzeitigen Platz war Winston nicht sichtbar .
@@ -2104,22 +2120,22 @@
 9	sichtbar	sichtbar	ADJ	ADJD	_	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] sichtbar (9)
-[] an seinem derzeitigen Platz (5)
-[] Winston (7)
-[] nicht (8)
+[MESSAGE] sichtbar (9)
+[m-location] an seinem derzeitigen Platz (5)
+[topic] Winston (7)
+[m-mode] nicht (8)
 
-[] Platz (5)
-[] seinem (3)
-[] derzeitigen (4)
+[LOCATION] Platz (5)
+[location] seinem (3)
+[m-time] derzeitigen (4)
 
-[] seinem (3)
+[IDENTIFICATION] seinem (3)
 
-[] derzeitigen (4)
+[TIME] derzeitigen (4)
 
-[] Winston (7)
+[IDENTIFICATION] Winston (7)
 
-[] nicht (8)
+[MODE] nicht (8)
 
 # sent_id = 446
 # text = Die Hymne wurde von leichterer Musik abgelöst .
@@ -2132,16 +2148,16 @@
 7	abgelöst	ablösen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] abgelöst (7)
-[] Die Hymne (2)
-[] von leichterer Musik (6)
+[SEQUENCE] abgelöst (7)
+[followed] Die Hymne (2)
+[follows] von leichterer Musik (6)
 
-[] Hymne (2)
+[MESSAGE] Hymne (2)
 
-[] Musik (6)
-[] leichterer (5)
+[MESSAGE] Musik (6)
+[m-quality] leichterer (5)
 
-[] leichterer (5)
+[QUALITY] leichterer (5)
 
 # sent_id = 447
 # text = Winston trat ans Fenster , mit dem Rücken zum Televisor .
@@ -2157,19 +2173,20 @@
 10	Televisor	Televisor	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	8	nmod	_	_
 11	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] trat (2)
-[] Winston (1)
-[] ans Fenster (4)
-[] , mit dem Rücken zum Televisor (8)
+[LOCATION-INIT] trat (2)
+[has-location] Winston (1)
+[target-location] ans Fenster (4)
+[m-depictive] , mit dem Rücken zum Televisor (8)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Fenster (4)
+[CLASS] Fenster (4)
 
-[] Rücken (8)
-[] zum Televisor (10)
+[PART-WHOLE] Rücken (8)
+[m-location] zum Televisor (10)
+[whole] Winston (1)
 
-[] Televisor (10)
+[CLASS] Televisor (10)
 
 # sent_id = 448
 # text = Der Tag war noch immer kalt und klar .
@@ -2183,18 +2200,21 @@
 8	klar	klar	ADJ	ADJD	_	6	conj	_	_
 9	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] kalt (6)
-[] Der Tag (2)
-[] noch immer (5)
+[QUALITY] kalt (6)
+[has-quality] Der Tag (2)
+[m-scene] noch immer (5)
 
-[] Tag (2)
+[TIME] Tag (2)
 
-[] immer (5)
-[] noch (4)
+[SCENE-CONTINUATION] immer (5)
+[m-noncomp] noch (4)
+[initial-scene] kalt (6)
+[initial-scene] klar (8)
 
-[] noch (4)
+[NONCOMP] noch (4)
 
-[] klar (8)
+[QUALITY] klar (8)
+[has-quality] Der Tag (2)
 
 # sent_id = 449
 # text = Irgendwo in der Ferne explodierte eine Raketenbombe mit dumpfem , widerhallendem Dröhnen .
@@ -2209,28 +2229,30 @@
 9	dumpfem	dumpf	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	12	amod	_	_
 10	,	,	PUNCT	$,	_	11	punct	_	_
 11	widerhallendem	widerhallen	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	9	conj	_	_
-12	Dröhnen	Dröhnen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	7	nmod	_	_
+12	Dröhnen	Dröhnen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	5	nmod	_	_
 13	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] explodierte (5)
-[] Irgendwo in der Ferne (4)
-[] eine Raketenbombe mit dumpfem , widerhallendem Dröhnen (7)
+[DESTRUCTION] explodierte (5)
+[m-location] Irgendwo in der Ferne (4)
+[destroyed] eine Raketenbombe (7)
+[m-depictive] mit dumpfem , widerhallendem Dröhnen (12)
 
-[] Ferne (4)
-[] Irgendwo (1)
+[LOCATION] Ferne (4)
+[m-location] Irgendwo (1)
 
-[] Irgendwo (1)
+[LOCATION] Irgendwo (1)
 
-[] Raketenbombe (7)
-[] mit dumpfem , widerhallendem Dröhnen (12)
+[CLASS] Raketenbombe (7)
 
-[] Dröhnen (12)
-[] dumpfem (9)
-[] , widerhallendem (11)
+[MESSAGE] Dröhnen (12)
+[m-quality] dumpfem (9)
+[m-scene] , widerhallendem (11)
+[x-sender] eine Raketenbombe (7)
 
-[] dumpfem (9)
+[QUALITY] dumpfem (9)
 
-[] widerhallendem (11)
+[REPRODUCTION] widerhallendem (11)
+[original] Dröhnen (12)
 
 # sent_id = 450
 # text = Zur Zeit fielen wöchentlich etwa zwanzig bis dreißig Stück auf London .
@@ -2241,32 +2263,32 @@
 5	etwa	etwa	ADV	ADV	_	6	advmod	_	_
 6	zwanzig	zwanzig	NUM	CARD	NumType=Card	9	nummod	_	_
 7	bis	bis	CCONJ	KON	_	8	case	_	_
-8	dreißig	dreißig	NUM	CARD	NumType=Card	6	nmod	_	_
+8	dreißig	dreißig	NUM	CARD	NumType=Card	9	nummod	_	_
 9	Stück	Stück	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
 10	auf	auf	ADP	APPR	_	11	case	_	_
 11	London	London	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
 12	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] fielen (3)
-[] Zur Zeit (2)
-[] wöchentlich (4)
-[] etwa zwanzig bis dreißig Stück (9)
-[] auf London (11)
+[LOCATION-INIT] fielen (3)
+[m-time] Zur Zeit (2)
+[m-time] wöchentlich (4)
+[has-location] etwa zwanzig bis dreißig Stück (9)
+[target-location] auf London (11)
 
-[] Zeit (2)
+[TIME] Zeit (2)
 
-[] wöchentlich (4)
+[TIME] wöchentlich (4)
 
-[] Stück (9)
-[] etwa zwanzig bis dreißig (6)
+[QUANTITY] Stück (9)
+[m-quantity] etwa zwanzig (6)
+[m-quantity] bis dreißig (8)
 
-[] zwanzig (6)
-[] etwa (5)
-[] bis dreißig (8)
+[QUANTITY] zwanzig (6)
+[m-mode] etwa (5)
 
-[] etwa (5)
+[MODE] etwa (5)
 
-[] dreißig (8)
+[QUANTITY] dreißig (8)
 
-[] London (11)
+[IDENTIFICATION] London (11)
 
