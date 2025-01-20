@@ -8,17 +8,17 @@
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] machte (3)
-[] Frau Parsons (2)
-[] ein hilfloses Gesicht (6)
+[MESSAGE-INIT] machte (3)
+[x-sender] Frau Parsons (2)
+[x-noncomp] ein hilfloses Gesicht (6)
 
 [] Parsons (2)
 [] Frau (1)
 
 [] Frau (1)
 
-[] Gesicht (6)
-[] hilfloses (5)
+[NONCOMP] Gesicht (6)
+[m-quality] hilfloses (5)
 
 [] hilfloses (5)
 
@@ -1859,14 +1859,14 @@
 20	.	.	PUNCT	$.	_	4	punct	_	_
 21	«	«	PUNCT	$(	_	4	punct	_	_
 
-[] beschäftigt (4)
-[] Ich (1)
-[] zu (3)
-[] , um mit ihnen hinauszugehen (9)
+[SITUATION] beschäftigt (4)
+[theme] Ich (1)
+[m-quantity] zu (3)
+[m-reference] , um mit ihnen hinauszugehen (9) # TODO manual: a kind of comparison construction
 
 [] Ich (1)
 
-[] zu (3)
+[QUANTITY] zu (3)
 
 [] hinauszugehen (9)
 [] mit ihnen (8)
@@ -2180,7 +2180,7 @@
 [] hinuntergestiegen (10)
 [] Er (1)
 [] aber (3)
-[] noch (4)
+[m-scene] noch (4)
 [] keine sechs Stufen (7)
 [] die Treppe (9)
 [] , als ihn etwas mit furchtbarer Wucht höchst schmerzhaft in den Nacken traf (23)
@@ -2189,7 +2189,8 @@
 
 [] aber (3)
 
-[] noch (4)
+[TIME] noch (4)
+[time] hinuntergestiegen (10)
 
 [] Stufen (7)
 [] keine (5)
@@ -2266,7 +2267,7 @@
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	fuhr	fahren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	gerade	gerade	ADV	ADV	_	4	advmod	_	_
-4	noch	noch	ADV	ADV	_	2	advmod	_	_
+4	noch	noch	ADV	ADV	_	5	advmod	_	_
 5	rechtzeitig	rechtzeitig	ADJ	ADJD	_	2	advmod	_	_
 6	herum	herum	ADP	PTKVZ	_	2	compound:prt	_	_
 7	,	,	PUNCT	$,	_	10	punct	_	_
@@ -2294,19 +2295,19 @@
 
 [] fuhr (2)
 [] Er (1)
-[] gerade noch (4)
-[] rechtzeitig (5)
+[m-time] gerade noch rechtzeitig (5)
 [] herum (6)
 [] , um zu sehen , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (10)
 
 [] Er (1)
 
-[] noch (4)
-[] gerade (3)
+[TIME] rechtzeitig (5)
+[m-quantity] gerade noch (4)
 
-[] gerade (3)
+[QUANTITY] noch (4)
+[m-quantity] gerade (3)
 
-[] rechtzeitig (5)
+[QUANTITY] gerade (3)
 
 [] sehen (10)
 [] , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (20)

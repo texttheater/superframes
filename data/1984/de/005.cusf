@@ -841,12 +841,12 @@
 17	wirklich	wirklich	ADJ	ADJD	_	12	advmod	_	_
 18	!	!	PUNCT	$.	_	9	punct	_	_
 
-[] wahr (9)
-[] Vielleicht (1)
-[] die Gerüchte von großen Untergrundverschwörungen (4)
-[] doch (8)
+[MODE] wahr (9)
+[m-mode] Vielleicht (1)
+[has-mode] die Gerüchte von großen Untergrundverschwörungen (4)
+[m-mode] doch (8)
 
-[] Vielleicht (1)
+[MODE] Vielleicht (1)
 
 [] Gerüchte (4)
 [] von großen Untergrundverschwörungen (7)
@@ -865,7 +865,7 @@
 
 [] vielleicht (11)
 
-[] Bruderschaft (15)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruderschaft (15)
 
 [] wirklich (17)
 
@@ -906,10 +906,10 @@
 [] nie (11)
 [] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
 
-[] Verhaftungen (4)
-[] endlosen (3)
+[POSSESSION-INIT] Verhaftungen (4)
+[m-quantity] endlosen (3)
 
-[] endlosen (3)
+[SCENE-CONTINUATION >> QUANTITY] endlosen (3)
 
 [] Geständnisse (6)
 
@@ -919,11 +919,11 @@
 
 [] nie (11)
 
-[] Erfindung (24)
-[] » Die Bruderschaft « (18)
-[] nicht (20)
-[] lediglich (21)
-[] sagenhafte (23)
+[TRANSFORMATION-CREATION >> MESSAGE-INIT] Erfindung (24)
+[created >> target-content] » Die Bruderschaft « (18)
+[m-mode] nicht (20)
+[m-quantity] lediglich (21)
+[m-quality] sagenhafte (23)
 
 [] Bruderschaft (18)
 
@@ -1305,10 +1305,10 @@
 15	Schluss	Schluß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	11	conj	_	_
 16	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] getauscht (11)
-[] Eine oder zwei Sekunden lang (4)
-[] sie (7)
-[] einen zweideutigen Blick (10)
+[MESSAGE-INIT] getauscht (11)
+[m-time] Eine oder zwei Sekunden lang (4)
+[x-sender] sie (7)
+[x-noncomp] einen zweideutigen Blick (10)
 
 [] Sekunden (4)
 [] Eine (1)
@@ -1323,10 +1323,11 @@
 
 [] sie (7)
 
-[] Blick (10)
-[] zweideutigen (9)
+[NONCOMP] Blick (10)
+[m-scene >> m-quality] zweideutigen (9)
 
-[] zweideutigen (9)
+[MESSAGE] zweideutigen (9)
+[topic] Blick (10)
 
 [] Schluss (15)
 [] damit (14)
@@ -1465,14 +1466,14 @@
 8	Blatt	Blatt	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] richtete (3)
-[] Sein Blick (2)
-[] sich (4)
-[] wieder (5)
-[] auf das Blatt (8)
+[LOCATION-INIT >> MESSAGE-INIT] richtete (3)
+[has-location >> x-noncomp] Sein Blick (2)
+[has-location >> x-noncomp] sich (4)
+[m-time] wieder (5)
+[target-location >> topic] auf das Blatt (8)
 
-[] Blick (2)
-[] Sein (1)
+[MESSAGE-INIT] Blick (2)
+[x-experiencer] Sein (1)
 
 [] Sein (1)
 

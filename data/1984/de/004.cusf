@@ -1215,9 +1215,9 @@
 
 [] Verehrung (14)
 
-[] schien (20)
-[] der Große Bruder (19)
-[] dazustehen als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (21)
+[MESSAGE] schien (20)
+[topic] der Große Bruder (19)
+[content] dazustehen als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (21)
 [m-time >> m-accompanier] , während Goldstein ihm trotz seiner Vereinsamung , seiner Hilflosigkeit und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , wie ein unheilvoller Betörer vorkam , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (68)
 
 [] Bruder (19)
@@ -1225,13 +1225,15 @@
 
 [] Große (18)
 
-[] dazustehen (21)
-[] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
+[MESSAGE] dazustehen (21)
+[content] als ein unbesieglicher , furchtloser Beschützer , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (27)
+[topic] der Große Bruder (19)
 
 [SCENE-INIT-NEG] Beschützer (27)
 [m-scene] unbesieglicher (24)
 [m-scene] , furchtloser (26)
 [m-scene] , der sich wie ein Felsen gegen die anbrandenden asiatischen Horden stemmte (39)
+[participant] der Große Bruder (19)
 
 [COMPARISON-INIT-POSSIBILITY-NEG >> QUALITY] unbesieglicher (24)
 [target-reference >> has-quality] Beschützer (27)
@@ -1239,12 +1241,12 @@
 [MESSAGE-NEG >> QUALITY] furchtloser (26)
 [x-experiencer >> has-quality] Beschüter (27)
 
-[HITTING >> EVENT] stemmte (39)
-[hitting >> x-causer] der (29)
-[hitting >> x-causer] sich (30)
+[HITTING >> EVENT || REACTION] stemmte (39)
+[hitting >> x-causer || x-causer] der (29)
+[hitting >> x-causer || x-causer] sich (30)
 [m-reference] wie ein Felsen (33)
-[hit >> undergoer] gegen die anbrandenden asiatischen Horden (38)
-[hitting >> x-causer] Beschützer (27)
+[hit >> undergoer || trigger] gegen die anbrandenden asiatischen Horden (38)
+[hitting >> x-causer || x-causer] Beschützer (27)
 
 [] der (29)
 
@@ -1252,13 +1254,15 @@
 
 [] Felsen (33)
 
-[] Horden (38)
-[] anbrandenden (36)
-[] asiatischen (37)
+[PART-WHOLE || QUANTITY] Horden (38)
+[m-scene] anbrandenden (36)
+[m-scene] asiatischen (37)
 
-[] anbrandenden (36)
+[LOCATION-INIT] anbrandenden (36)
+[has-location] Horden (38)
 
-[] asiatischen (37)
+[SOCIAL-RELATION] asiatischen (37) # TODO manual
+[has-social-relation] Horden (38)
 
 [] vorkam (68)
 [] Goldstein (42)
