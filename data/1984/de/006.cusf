@@ -648,7 +648,7 @@
 # sent_id = 314
 # text = Aber nein , das Klopfen wurde wiederholt .
 1	Aber	aber	CCONJ	KON	_	7	cc	_	_
-2	nein	nein	PART	PTKANT	_	7	advmod	_	_
+2	nein	nein	PART	PTKANT	_	7	discourse	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	5	det	_	_
 5	Klopfen	Klopfen	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	7	nsubj:pass	_	_
@@ -656,11 +656,8 @@
 7	wiederholt	wiederholt	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[SCENE-CONTINUATION] wiederholt (7)
-[m-situator] nein , (2)
-[initial-scene] das Klopfen (5)
-
-[SITUATION] nein (2)
+[SEQUENCE] wiederholt (7)
+[followed] das Klopfen (5)
 
 [MESSAGE] Klopfen (5)
 
@@ -948,7 +945,7 @@
 6	dass	dass	SCONJ	KOUS	_	16	mark	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
 8	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	_
-9	sogar	sogar	ADV	ADV	_	16	advmod	_	_
+9	sogar	sogar	ADV	ADV	_	12	advmod	_	_
 10	in	in	ADP	APPR	_	12	case	_	_
 11	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes	12	det:poss	_	_
 12	Schrecken	Schrecken	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	16	obl	_	_
@@ -987,28 +984,29 @@
 [IDENTIFICATION] er (2)
 
 [LOCATION-INIT >> SCENE-INIT] gebracht (16) # es über sich bringen, zu Inf -> jemandem nicht leicht fallen; sich überwinden zu
-[x-causer >> participant] er (7)
-[has-location >> x-noncomp] es (8)
-[m-mode ?? Syntax? vllt an Schrecken hängen?] sogar (9)
-[??? m-conceded] in seinem Schrecken (12)
+[x-causer] er (7)
+[x-noncomp] es (8)
+[m-depictive] sogar in seinem Schrecken (12)
 [m-mode] nicht (13)
-[target-location >> x-noncomp] über sich (15)
-[??? >> target-scene] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
+[target-location >> x-causer] über sich (15)
+[has-location >> target-scene] , das weiße Papier dadurch zu besudeln , dass er das Buch zuklappte , solange die Tinte noch nass war (24)
 
 [IDENTIFICATION] er (7)
 
-[IDENTIFICATION >> NONCOMP] es (8)
+[NONCOMP] es (8)
 
 [MODE] sogar (9)
 
-[EVENT] Schrecken (12)
-[undergoer] seinem (11)
+[MESSAGE] Schrecken (12)
+[m-mode] sogar (9)
+[x-experiencer] seinem (11)
+[x-experiencer] er (7)
 
 [IDENTIFICATION] seinem (11)
 
 [MODE] nicht (13)
 
-[??? IDENTIFICATION >> NONCOMP] sich (15)
+[IDENTIFICATION] sich (15)
 
 [QUALITY-CHANGE] besudeln (24) # verschmutzen
 [has-quality] das weiße Papier (21)
@@ -1059,8 +1057,8 @@
 
 [IDENTIFICATION] Er (1)
 
-[??? EXCRETION; discharge carbon dioxide/Kohlendioxid abgeben? || EVENT] Atem (4)
-[??? excreter || undergoer] Er (1)
+[EVENT] Atem (4)
+[undergoer] Er (1)
 
 [STATE-CHANGE] öffnete (7)
 [has-state] die Tür (9)
@@ -1142,7 +1140,7 @@
 [QUALITY] strähnigem (10)
 
 [PART-WHOLE] Gesicht (14)
-[???m-scene] tiefgefurchtem (13) # Furche=vaga; annotieren wie "pyramidenartiger"?
+[m-scene] tiefgefurchtem (13) # Furche=vaga; annotieren wie "pyramidenartiger"?
 
 [COMPARISON >> QUALITY] tiefgefurchtem (13)
 [compared >> has-quality] Gesicht (14)
@@ -1150,7 +1148,7 @@
 # sent_id = 325
 # text = » Ach , Genosse « , begann sie mit leidender Jammerstimme , » mir war so , als ob ich Sie heimkommen hörte .
 1	»	»	PUNCT	$(	_	2	punct	_	_
-2	Ach	ach	INTJ	ITJ	_	4	advmod	_	_
+2	Ach	ach	INTJ	ITJ	_	4	discourse	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	Genosse	Genosse	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	7	ccomp	_	_
 5	«	«	PUNCT	$(	_	4	punct	_	_
@@ -1180,9 +1178,6 @@
 [m-means] mit leidender Jammerstimme (11)
 
 [SOCIAL-RELATION] Genosse (4)
-[??? m-situator] » Ach , (2)
-
-[??? SITUATION] Ach (2)
 
 [IDENTIFICATION] sie (8)
 
@@ -1191,14 +1186,14 @@
 
 [QUALITY] leidender (10)
 
-[???SCENE] war (15)
-[participant] mir (14)
-[scene] so (16)
-[m-reference] , als ob ich Sie heimkommen hörte (23)
+[MESSAGE] war (15)
+[x-experiencer] mir (14)
+[content >> x-noncomp] so (16)
+[x-reference >> content] , als ob ich Sie heimkommen hörte (23)
 
 [IDENTIFICATION] mir (14)
 
-[??? IDENTIFICATION] so (16)
+[IDENTIFICATION >> NONCOMP] so (16)
 
 [MESSAGE-INIT] hörte (23)
 [x-experiencer] ich (20)
@@ -1356,7 +1351,7 @@
 [MESSAGE] gesehen (13)
 [topic] Die Bezeichnung » Frau « (3)
 [x-experiencer] von der Partei (10)
-[??? m-scene] nicht gern (12) # wie_pud_de_"Unter Druck setzen"
+[m-scene >> x-noncomp] nicht gern (12)
 
 [MESSAGE] Bezeichnung » Frau « (3)
 
@@ -1364,7 +1359,7 @@
 
 [CLASS >> IDENTIFICATION] Partei (10)
 
-[??? MESSAGE] gern (12) # wie_pud_de_"Unter Druck setzen"
+[MESSAGE] gern (12)
 [m-mode] nicht (11)
 [topic] gesehen (13)
 
@@ -1391,10 +1386,10 @@
 [SOCIAL-RELATION] Genossin (28)
 
 [MEANS] gebrauchte (37)
-[??? m-situator] bei einigen Frauen (36)
+[m-trigger] bei einigen Frauen (36)
 [x-causer] man (38)
 [means] das Wort (40)
-[??? m-causer] ganz unwillkürlich (42) # "automatisch" wie instinktiv annotieren?
+[m-scene] ganz unwillkürlich (42)
 
 [CLASS] Frauen (36)
 
@@ -1402,8 +1397,9 @@
 
 [MESSAGE] Wort (40)
 
-[??? CAUSATION] unwillkürlich (42) # "automatisch" wie instinktiv annotieren?
+[CAUSATION] unwillkürlich (42)
 [m-mode] ganz (41)
+[result] gebrauchte (37)
 
 [MODE] ganz (41)
 
@@ -1534,7 +1530,7 @@
 10	Last	Last	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 11	.	.	PUNCT	$.	_	10	punct	_	_
 
-[??? EVENT] Last (10)
+[EVENT] Last (10)
 [x-has-class] Solche eigenhändigen , unfachgemäßen Reparaturarbeiten (5)
 [m-time] fast alltägliche (9)
 
@@ -1610,7 +1606,7 @@
 3	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	Verputz	Verputz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 5	von	von	ADP	APPR	_	6	case	_	_
-6	Decken	Decke	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	4	nmod	_	_
+6	Decken	Decke	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
 7	und	und	CCONJ	KON	_	8	cc	_	_
 8	Wänden	Wand	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	6	conj	_	_
 9	,	,	PUNCT	$,	_	12	punct	_	_
@@ -1653,13 +1649,13 @@
 
 [LOCATION-DEINIT] bröckelte (2)
 [m-time] Dauernd (1)
-[??? has-location ???evtl. Syntaxänderung, um die Annotation initial-location zu ermöglichen?] der Verputz von Decken und Wänden (4)
+[has-location] der Verputz (4)
+[initial-location] von Decken (6)
+[initial-location] und Wänden (8)
 
 [TIME] Dauernd (1)
 
 [ADORNMENT-TARNISHMENT] Verputz (4)
-[surface] von Decken (6)
-[surface] und Wänden (8)
 
 [CLASS] Decken (6)
 
@@ -1716,14 +1712,14 @@
 [STATE-CHANGE] abgestellt (43)
 [has-state] sie (38)
 [m-mode] nicht (39)
-[??? m-causer] aus Sparsamkeitsgründen (41)
+[x-causer] aus Sparsamkeitsgründen (41)
 [m-quantity] ganz (42)
 
 [IDENTIFICATION] sie (38)
 
 [MODE] nicht (39)
 
-[??? CAUSATION] Sparsamkeitsgründen (41)
+[CAUSATION] Sparsamkeitsgründen (41)
 
 [QUANTITY] ganz (42)
 
@@ -1789,16 +1785,17 @@
 
 [SCENE-INIT] brachten (20)
 [x-causer] die (17)
-[??? participant] es (18)
-[target-scene] fertig (19)
-[??? evtl. Syntaxänderung: 29 muss an 19 hängen?] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
+[participant >> target-scene] es (18)
+[target-scene >> x-noncomp] fertig (19)
+[participant >> target-scene] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
 [x-causer] Ämtern (13)
 
 [IDENTIFICATION] die (17)
 
-[??? IDENTIFICATION] es (18)
+[IDENTIFICATION] es (18)
 
-[STATE] fertig (19)
+[SCENE-DEINIT] fertig (19)
+[initial-scene] , sogar das Wiedereinsetzen einer Fensterscheibe zwei Jahre hinauszuzögern (29)
 
 [SCENE-INIT-NEG] hinauszuzögern (29)
 [m-mode] sogar (22)
@@ -1834,8 +1831,8 @@
 13	«	«	PUNCT	$(	_	3	punct	_	_
 14	,	,	PUNCT	$,	_	3	punct	_	_
 15	murmelte	murmeln	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	17	compound	_	_
-17	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
+16	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	_
+17	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	16	flat	_	_
 18	unbestimmt	unbestimmt	ADJ	ADJD	_	15	advmod	_	_
 19	vor	vor	ADP	APPR	_	20	case	_	_
 20	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	15	obl	_	_
@@ -1844,9 +1841,9 @@
 
 [MESSAGE-INIT] murmelte (15)
 [target-content] » Ich komme natürlich nur , weil Tom nicht zu Hause ist « , (3)
-[x-sender] Frau Parsons (17)
+[x-sender] Frau Parsons (16)
 [m-quality] unbestimmt (18)
-[??? m-quality] vor sich hin (20) # ganz für sich und gleichmäßig fortdauernd
+[m-quality] vor sich hin (20) # ganz für sich und gleichmäßig fortdauernd
 
 [LOCATION-INIT] komme (3)
 [has-location] Ich (2)
@@ -1871,10 +1868,7 @@
 
 [LOCATION] Hause (11)
 
-[IDENTIFICATION] Parsons (17)
-[??? identified || m-identfier] Frau (16)
-
-[???] Frau (16)
+[IDENTIFICATION] Frau Parsons (16)
 
 [QUALITY] unbestimmt (18)
 
@@ -1914,15 +1908,15 @@
 
 [IDENTIFICATION] Winston (10)
 
-[??? QUALITY] schäbig (16) # abgenutzt
-[??? m-scene] auf eine andere Art (15)
+[QUALITY] schäbig (16) # abgenutzt
+[m-scene] auf eine andere Art (15)
 
-[??? SUBCLASS] Art (15)
-[??? m-scene] andere (14)
-[??? superclass] schäbig (16)
+[SUBCLASS] Art (15)
+[m-scene] andere (14)
+[superclass] schäbig (16)
 
-[??? COMPARISON] andere (14)
-[??? compared] Art (15)
+[COMPARISON] andere (14)
+[compared] Art (15)
 
 # sent_id = 339
 # text = Alles sah hier abgestoßen und niedergetrampelt aus , so als seien die Räume eben von einem großen wilden Tier heimgesucht worden .
@@ -1934,7 +1928,7 @@
 6	niedergetrampelt	niedertrampeln	VERB	VVPP	Verbform=Part	4	conj	_	_
 7	aus	aus	ADP	PTKVZ	_	2	compound:prt	_	_
 8	,	,	PUNCT	$,	_	20	punct	_	_
-9	so	so	ADV	ADV	_	20	advmod	_	_
+9	so	so	ADV	ADV	_	20	mark	_	_
 10	als	als	SCONJ	KOUS	_	20	mark	_	_
 11	seien	sein	AUX	VAFIN	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
 12	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	13	det	_	_
@@ -1967,13 +1961,10 @@
 [STATE] niedergetrampelt (6)
 [has-state] Alles (1)
 
-[??? LOCATION-INIT] heimgesucht (20) # befallen
-[??? m-reference] so (9)
-[??? x-accompanied] die Räume (13)
+[EVENT] heimgesucht (20) # befallen
+[undergoer] die Räume (13)
 [m-time] eben (14)
-[??? has-location] von einem großen wilden Tier (19)
-
-[IDENTIFICATION] so (9)
+[x-causer] von einem großen wilden Tier (19)
 
 [CLASS] Räume (13)
 
@@ -2112,37 +2103,39 @@
 21	Großformat	Großformat	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	16	nmod	_	_
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] hingen (4)
-[] An den Wänden (3)
-[] knallrote Wimpel der Jugendliga und der sogenannten Späher , nebst einem Plakat vom Großen Bruder in Großformat (6)
+[ADORNMENT-TARNISHMENT] hingen (4)
+[surface] An den Wänden (3)
+[ornament] knallrote Wimpel der Jugendliga und der sogenannten Späher , nebst einem Plakat vom Großen Bruder in Großformat (6)
 
-[] Wänden (3)
+[CLASS] Wänden (3)
 
-[] Wimpel (6)
-[] knallrote (5)
-[] der Jugendliga (8)
-[] und der sogenannten Späher (12)
-[] , nebst einem Plakat vom Großen Bruder in Großformat (16)
+[MESSAGE] Wimpel (6)
+[m-scene] knallrote (5)
+[topic] der Jugendliga (8)
+[topic] und der sogenannten Späher (12)
+[m-accompanier] , nebst einem Plakat vom Großen Bruder in Großformat (16) # "nebst"=einschließlich
 
-[] knallrote (5)
+[COMPARISON >> QUALITY] knallrote (5)
+[compared >> has-quality] Wimpel (6)
 
-[] Jugendliga (8)
+[SOCIAL-RELATION] Jugendliga (8)
 
-[] Späher (12)
-[] sogenannten (11)
+[SOCIAL-RELATION] Späher (12)
+[m-scene] sogenannten (11)
 
-[] sogenannten (11)
+[IDENTIFICATION-INIT] sogenannten (11)
+[identified] Späher (12)
 
-[] Plakat (16)
-[] vom Großen Bruder (19)
-[] in Großformat (21)
+[MESSAGE] Plakat (16)
+[topic] vom Großen Bruder (19)
+[m-quality] in Großformat (21)
 
-[] Bruder (19)
-[] Großen (18)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (19)
+[m-quality >> m-noncomp] Großen (18)
 
-[] Großen (18)
+[QUALITY >> NONCOMP] Großen (18)
 
-[] Großformat (21)
+[QUALITY] Großformat (21)
 
 # sent_id = 342
 # text = Auch hier schwebte der übliche Kohlgeruch , der dem ganzen Haus anhaftete , in der Luft , aber er war von einem schärferen Schweißdunst geschwängert , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen .
@@ -2202,78 +2195,82 @@
 54	Menschen	Mensch	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	48	obl	_	_
 55	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schwebte (3)
-[] Auch hier (2)
-[] der übliche Kohlgeruch , der dem ganzen Haus anhaftete , (6)
-[] in der Luft (16)
+[UNANCHORED-MOTION] schwebte (3)
+[m-location] Auch hier (2)
+[in-motion] der übliche Kohlgeruch , der dem ganzen Haus anhaftete , (6)
+[m-location] in der Luft (16)
 
-[] hier (2)
-[] Auch (1)
+[LOCATION] hier (2)
+[m-scene] Auch (1)
 
-[] Auch (1)
+[ACCOMPANIMENT] Auch (1)
+[accompanied] hier (2)
 
-[] Kohlgeruch (6)
-[] übliche (5)
-[] , der dem ganzen Haus anhaftete , (12)
+[MESSAGE] Kohlgeruch (6)
+[m-scene] übliche (5)
+[m-scene] , der dem ganzen Haus anhaftete , (12)
 
-[] übliche (5)
+[SCENE-CONTINUATION] übliche (5)
+[initial-scene] Kohlgeruch (6)
 
-[] anhaftete (12)
-[] der (8)
-[] dem ganzen Haus (11)
+[ACCOMPANIMENT] anhaftete (12)
+[accompanier] der (8)
+[accompanied] dem ganzen Haus (11)
+[accompanier] Kohlgeruch (6)
 
-[] der (8)
+[IDENTIFICATION] der (8)
 
-[] Haus (11)
-[] ganzen (10)
+[CLASS] Haus (11)
+[m-quantity] ganzen (10)
 
-[] ganzen (10)
+[QUANTITY] ganzen (10)
 
-[] Luft (16)
+[CLASS] Luft (16)
 
-[] geschwängert (25)
-[] er (19)
-[] von einem schärferen Schweißdunst (24)
-[] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
+[??? STATE-INIT] geschwängert (25) # die Luft mit etw. anfüllen, anreichern, sättigen
+[has-state] er (19)
+[target-state] von einem schärferen Schweißdunst (24)
+[target-state] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
 
-[] er (19)
+[IDENTIFICATION] er (19)
 
-[] Schweißdunst (24)
-[] schärferen (23)
+[EXCRETION] Schweißdunst (24)
+[m-quality] schärferen (23)
 
-[] schärferen (23)
+[QUALITY] schärferen (23)
 
-[] Schweiß (29)
-[] eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (38)
+[EXCRETION] Schweiß (29)
+[m-scene] eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (38)
 
-[] wusste (38)
-[] man (33)
-[] vom ersten Schnuppern an (36)
-[] , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (48)
+[MESSAGE] wusste (38)
+[x-experiencer] man (33)
+[m-time] vom ersten Schnuppern an (36)
+[??? Syntax] , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (48)
+[topic] Schweiß (29)
 
-[] man (33)
+[IDENTIFICATION] man (33)
 
-[] Schnuppern an (36)
-[] ersten (35)
+[MESSAGE] Schnuppern an (36)
+[m-rank >> m-time] ersten (35)
 
-[] ersten (35)
+[RANK >> TIME] ersten (35)
 
-[] sagen (48)
-[] man (41)
-[] auch schwer (43)
-[] den Grund dafür (45)
-[] im Augenblick (52)
-[] abwesenden Menschen (54)
+[???MESSAGE-INIT] sagen (48)
+[x-sender] man (41)
+[m-quality] auch schwer (43)
+[???topic] den Grund dafür (45)
+[??? Syntax: sollte zusammen mit "abwesenden Menschen"] im Augenblick (52)
+[???] abwesenden Menschen (54)
 
-[] man (41)
+[IDENTIFICATION] man (41)
 
 [] schwer (43)
-[] auch (42)
+[???] auch (42)
 
 [] auch (42)
 
-[] Grund (45)
-[] dafür (46)
+[CAUSATION] Grund (45)
+[???] dafür (46)
 
 [] dafür (46)
 
@@ -2316,52 +2313,57 @@
 28	blasen	blasen	VERB	VVINF	VerbForm=Inf	5	xcomp	_	_
 29	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] versuchte (5)
-[] In einem anderen Zimmer (4)
-[] jemand (6)
-[] im Takt der Militärmusik , die noch immer aus dem Televisor dröhnte , (8)
-[] auf einem Kamm mit darüber gespanntem Toilettenpapier zu blasen (28)
+[SCENE-INIT] versuchte (5)
+[m-location] In einem anderen Zimmer (4)
+[participant] jemand (6)
+[m-accompanied] im Takt der Militärmusik , die noch immer aus dem Televisor dröhnte , (8)
+[target-scene] auf einem Kamm mit darüber gespanntem Toilettenpapier zu blasen (28)
 
-[] Zimmer (4)
-[] anderen (3)
+[CLASS] Zimmer (4)
+[m-scene] anderen (3)
 
-[] anderen (3)
+[SEQUENCE] anderen (3)
+[follows] Zimmer (4)
 
-[] jemand (6)
+[CLASS] jemand (6)
 
-[] Takt (8)
-[] der Militärmusik , die noch immer aus dem Televisor dröhnte , (10)
+[MESSAGE] Takt (8)
+[x-sender] der Militärmusik , die noch immer aus dem Televisor dröhnte , (10)
 
-[] Militärmusik (10)
-[] , die noch immer aus dem Televisor dröhnte , (18)
+[MESSAGE] Militärmusik (10)
+[m-scene] , die noch immer aus dem Televisor dröhnte , (18)
 
-[] dröhnte (18)
-[] die (12)
-[] noch immer (14)
-[] aus dem Televisor (17)
+[MESSAGE-INIT] dröhnte (18)
+[topic] die (12)
+[m-scene] noch immer (14)
+[x-sender] aus dem Televisor (17)
+[topic] Militärmusik (10)
 
-[] die (12)
+[IDENTIFICATION] die (12)
 
-[] immer (14)
-[] noch (13)
+[SCENE-CONTINUATION] immer (14)
+[m-quantity] noch (13)
+[initial-scene] dröhnte (18)
 
-[] noch (13)
+[QUANTITY] noch (13)
 
-[] Televisor (17)
+[CLASS] Televisor (17)
 
-[] blasen (28)
-[] auf einem Kamm mit darüber gespanntem Toilettenpapier (22)
+[MESSAGE-INIT] blasen (28)
+[m-means] auf einem Kamm mit darüber gespanntem Toilettenpapier (22)
+[x-sender] jemand (6)
 
-[] Kamm (22)
-[] mit darüber gespanntem Toilettenpapier (26)
+[CLASS] Kamm (22)
+[m-accompanier] mit darüber gespanntem Toilettenpapier (26)
 
-[] Toilettenpapier (26)
-[] darüber gespanntem (25)
+[CLASS] Toilettenpapier (26)
+[m-scene] darüber gespanntem (25)
 
-[] gespanntem (25)
-[] darüber (24)
+[LOCATION-INIT] gespanntem (25)
+[target-location] darüber (24)
+[has-location] Toilettenpapier (26)
 
-[] darüber (24)
+[IDENTIFICATION] darüber (24)
 
 # sent_id = 344
 # text = » Es sind die Kinder « , sagte Frau Parsons mit einem halb furchtsamen Blick auf die Tür .
@@ -2373,8 +2375,8 @@
 6	«	«	PUNCT	$(	_	5	punct	_	_
 7	,	,	PUNCT	$,	_	5	punct	_	_
 8	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	10	compound	_	_
-10	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
+9	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+10	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	9	flat	_	_
 11	mit	mit	ADP	APPR	_	15	case	_	_
 12	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 13	halb	halb	ADJ	ADJD	_	14	advmod	_	_
@@ -2385,31 +2387,28 @@
 18	Tür	Tür	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	15	nmod	_	_
 19	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] sagte (8)
-[] » Es sind die Kinder « , (5)
-[] Frau Parsons (10)
-[] mit einem halb furchtsamen Blick auf die Tür (15)
+[MESSAGE-INIT] sagte (8)
+[target-content] » Es sind die Kinder « , (5)
+[x-sender] Frau Parsons (9)
+[m-accompanier] mit einem halb furchtsamen Blick auf die Tür (15)
 
-[] Kinder (5)
-[] Es (2)
+[CLASS] Kinder (5)
+[x-identified] Es (2)
 
-[] Es (2)
+[IDENTIFICATION] Es (2)
 
-[] Parsons (10)
-[] Frau (9)
+[IDENTIFICATION] Frau Parsons (9)
 
-[] Frau (9)
+[MESSAGE] Blick (15)
+[m-quality] halb furchtsamen (14)
+[topic] auf die Tür (18)
 
-[] Blick (15)
-[] halb furchtsamen (14)
-[] auf die Tür (18)
+[QUALITY] furchtsamen (14)
+[m-quantity] halb (13)
 
-[] furchtsamen (14)
-[] halb (13)
+[QUANTITY] halb (13)
 
-[] halb (13)
-
-[] Tür (18)
+[CLASS] Tür (18)
 
 # sent_id = 345
 # text = » Sie sind heute nicht aus dem Haus gekommen .
@@ -2424,19 +2423,19 @@
 9	gekommen	kommen	VERB	VVPP	Verbform=Part	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] gekommen (9)
-[] Sie (2)
-[] heute (4)
-[] nicht (5)
-[] aus dem Haus (8)
+[LOCATION-INIT] gekommen (9)
+[has-location] Sie (2)
+[m-time] heute (4)
+[m-mode] nicht (5)
+[target-location] aus dem Haus (8)
 
-[] Sie (2)
+[IDENTIFICATION] Sie (2)
 
-[] heute (4)
+[TIME] heute (4)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] Haus (8)
+[CLASS] Haus (8)
 
 # sent_id = 346
 # text = Und natürlich - .
@@ -2445,7 +2444,7 @@
 3	-	-	PUNCT	$.	_	2	punct	_	_
 4	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] natürlich (2)
+[MODE] natürlich (2)
 
 # sent_id = 347
 # text = Sie hatte eine Angewohnheit , ihre Sätze mittendrin abzubrechen .
@@ -2460,25 +2459,27 @@
 9	abzubrechen	abbrechen	VERB	VVIZU	VerbForm=Inf	4	acl	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hatte (2)
-[] Sie (1)
-[] eine Angewohnheit , ihre Sätze mittendrin abzubrechen (4)
+[SCENE] hatte (2)
+[participant] Sie (1)
+[scene] eine Angewohnheit , ihre Sätze mittendrin abzubrechen (4)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Angewohnheit (4)
-[] , ihre Sätze mittendrin abzubrechen (9)
+[??? MESSAGE || QUALITY || SCENE-CONTINUATION] Angewohnheit (4)
+[??? content || quality || initial-scene] , ihre Sätze mittendrin abzubrechen (9)
+[??? x-experiencer || has-quality || participant] Sie (1)
 
-[] abzubrechen (9)
-[] ihre Sätze (7)
-[] mittendrin (8)
+[MESSAGE-INIT-NEG] abzubrechen (9)
+[topic] ihre Sätze (7)
+[m-time] mittendrin (8)
+[x-sender] Sie (1)
 
-[] Sätze (7)
-[] ihre (6)
+[MESSAGE] Sätze (7)
+[x-sender] ihre (6)
 
-[] ihre (6)
+[IDENTIFICATION] ihre (6)
 
-[] mittendrin (8)
+[TIME] mittendrin (8)
 
 # sent_id = 348
 # text = Der Küchenausguss war fast bis zum Rand voll mit schmutzig-grünlichem Wasser , das schlimmer als alles andere nach Kohl stank .
@@ -2504,37 +2505,39 @@
 20	stank	stinken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
 21	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] voll (8)
-[] Der Küchenausguss (2)
-[] fast (4)
-[] bis zum Rand (7)
-[] mit schmutzig-grünlichem Wasser , das schlimmer als alles andere nach Kohl stank (11)
+[??? STATE] voll (8)
+[??? has-state] Der Küchenausguss (2)
+[??? Syntax: muss an Rand (7)] fast (4)
+[??? m-quantity] bis zum Rand (7)
+[??? state || m-accompanier] mit schmutzig-grünlichem Wasser , das schlimmer als alles andere nach Kohl stank (11)
 
-[] Küchenausguss (2)
+[CLASS] Küchenausguss (2)
 
-[] fast (4)
+[???] fast (4)
 
-[] Rand (7)
+[CLASS || LOCATION] Rand (7)
 
-[] Wasser (11)
-[] schmutzig-grünlichem (10)
-[] , das schlimmer als alles andere nach Kohl stank (14)
+[CLASS] Wasser (11)
+[m-quality] schmutzig-grünlichem (10)
+[m-scene] , das schlimmer als alles andere nach Kohl stank (14)
 
-[] schmutzig-grünlichem (10)
+[QUALITY] schmutzig-grünlichem (10)
 
-[] schlimmer (14)
-[] das (13)
-[] als alles andere nach Kohl stank (20)
+[QUALITY] schlimmer (14)
+[has-quality] das (13)
+[m-scene] als alles andere nach Kohl stank (20)
+[has-quality] Wasser (11)
 
-[] das (13)
+[IDENTIFICATION] das (13)
 
-[] stank (20)
-[] als alles andere (17)
-[] nach Kohl (19)
+[MESSAGE] stank (20)
+[???] als alles andere (17)
+[??? content] nach Kohl (19)
+[???] schlimmer (14)
 
-[] andere (17)
+[???] andere (17)
 
-[] Kohl (19)
+[CLASS] Kohl (19)
 
 # sent_id = 349
 # text = Winston kniete nieder und untersuchte das gebogene Verbindungsstück des Ableitungsrohres .
@@ -2550,22 +2553,22 @@
 10	Ableitungsrohres	Ableitungsrohr	NOUN	NN	Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	_
 11	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] kniete (2)
-[] Winston (1)
-[] nieder (3)
+[LOCATION-INIT] kniete (2)
+[has-location] Winston (1)
+[target-location] nieder (3)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] untersuchte (5)
-[] das gebogene Verbindungsstück des Ableitungsrohres (8)
+[MESSAGE-INIT] untersuchte (5)
+[topic] das gebogene Verbindungsstück des Ableitungsrohres (8)
 
-[] Verbindungsstück (8)
-[] gebogene (7)
-[] des Ableitungsrohres (10)
+[PART-WHOLE] Verbindungsstück (8)
+[m-quality] gebogene (7)
+[whole] des Ableitungsrohres (10)
 
-[] gebogene (7)
+[QUALITY] gebogene (7)
 
-[] Ableitungsrohres (10)
+[CLASS] Ableitungsrohres (10)
 
 # sent_id = 350
 # text = Er verabscheute manuelle Arbeit sehr , und es war ihm schrecklich , sich bücken zu müssen , weil das fast immer einen Hustenanfall bei ihm auslöste .
@@ -2597,46 +2600,46 @@
 26	auslöste	auslösen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	advcl	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] verabscheute (2)
-[] Er (1)
-[] manuelle Arbeit (4)
-[] sehr (5)
+[MESSAGE] verabscheute (2) # Abscheu gegen etw. empfinden
+[x-experiencer] Er (1)
+[topic] manuelle Arbeit (4)
+[m-quantity] sehr (5)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Arbeit (4)
-[] manuelle (3)
+[ACTIVITY] Arbeit (4)
+[m-means >> m-noncomp] manuelle (3)
 
-[] manuelle (3)
+[MEANS >> NONCOMP] manuelle (3)
 
-[] sehr (5)
+[QUANTITY] sehr (5)
 
-[] schrecklich (11)
-[] ihm (10)
-[] , sich bücken zu müssen (14)
-[] , weil das fast immer einen Hustenanfall bei ihm auslöste (26)
+[MESSAGE] schrecklich (11)
+[x-experiencer] ihm (10)
+[topic] , sich bücken zu müssen (14)
+[m-explanation] , weil das fast immer einen Hustenanfall bei ihm auslöste (26)
 
-[] ihm (10)
+[IDENTIFICATION] ihm (10)
 
-[] bücken (14)
-[] sich (13)
+[LOCATION-CHANGE] bücken (14)
+[has-location] sich (13)
 
-[] sich (13)
+[IDENTIFICATION] sich (13)
 
-[] auslöste (26)
-[] das (19)
-[] fast immer (21)
-[] einen Hustenanfall (23)
-[] bei ihm (25)
+[CAUSATION] auslöste (26)
+[causer] das (19)
+[m-time] fast immer (21)
+[result] einen Hustenanfall (23)
+[x-experiencer] bei ihm (25)
 
-[] das (19)
+[IDENTIFICATION] das (19)
 
-[] immer (21)
-[] fast (20)
+[TIME] immer (21)
+[m-quantity] fast (20)
 
-[] fast (20)
+[QUANTITY] fast (20)
 
-[] Hustenanfall (23)
+[MESSAGE] Hustenanfall (23) #wie "jucken"?
 
-[] ihm (25)
+[IDENTIFICATION] ihm (25)
 
