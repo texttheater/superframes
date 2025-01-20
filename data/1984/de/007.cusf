@@ -1,26 +1,23 @@
 # sent_id = 351
 # text = Frau Parsons machte ein hilfloses Gesicht .
-1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	compound	_	_
-2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+1	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+2	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	1	flat	_	_
 3	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	6	det	_	_
 5	hilfloses	hilflos	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	_
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] machte (3)
-[] Frau Parsons (2)
-[] ein hilfloses Gesicht (6)
+[MESSAGE-INIT] machte (3)
+[x-sender] Frau Parsons (1)
+[target-content] ein hilfloses Gesicht (6)
 
-[] Parsons (2)
-[] Frau (1)
+[IDENTIFICATION] Frau Parsons (1)
 
-[] Frau (1)
+[PART-WHOLE] Gesicht (6)
+[m-quality] hilfloses (5)
 
-[] Gesicht (6)
-[] hilfloses (5)
-
-[] hilfloses (5)
+[MEANS-NEG >> QUALITY] hilfloses (5)
 
 # sent_id = 352
 # text = » Freilich , wenn Tom daheim wäre , würde er es im Nu in Ordnung bringen « , meinte sie .
@@ -28,9 +25,9 @@
 2	Freilich	freilich	ADV	ADV	_	16	advmod	_	_
 3	,	,	PUNCT	$,	_	2	punct	_	_
 4	wenn	wenn	SCONJ	KOUS	_	7	mark	_	_
-5	Tom	Tom	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing	16	nsubj	_	_
-6	daheim	daheim	ADV	ADV	_	16	advmod	_	_
-7	wäre	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
+5	Tom	Tom	PROPN	NE	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+6	daheim	daheim	ADV	ADV	_	16	advcl	_	_
+7	wäre	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
 8	,	,	PUNCT	$,	_	2	punct	_	_
 9	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
@@ -46,34 +43,36 @@
 20	sie	sie	PRON	PPER	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
 21	.	.	PUNCT	$.	_	19	punct	_	_
 
-[] meinte (19)
-[] » Freilich , wenn Tom daheim wäre , würde er es im Nu in Ordnung bringen « , (16)
-[] sie (20)
+[MESSAGE-INIT] meinte (19)
+[target-content] » Freilich , wenn Tom daheim wäre , würde er es im Nu in Ordnung bringen « , (16)
+[x-sender] sie (20)
 
-[] bringen (16)
-[] » Freilich , , (2)
-[] Tom (5)
-[] daheim (6)
-[] er (10)
-[] es (11)
-[] im Nu (13)
-[] in Ordnung (15)
+[SCENE-INIT] bringen (16)
+[m-mode] » Freilich , , (2) # natürlich
+[m-condition] wenn Tom daheim wäre (6)
+[participant] er (10)
+[participant] es (11)
+[m-time] im Nu (13)
+[target-scene] in Ordnung (15)
 
-[] Freilich (2)
+[MODE] Freilich (2)
 
-[] Tom (5)
+[LOCATION] daheim (6)
+[has-location] Tom (5)
 
-[] daheim (6)
+[IDENTIFICATION] Tom (5)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] es (11)
+[IDENTIFICATION] es (11)
 
-[] Nu (13)
+[TIME] Nu (13)
 
-[] Ordnung (15)
+[STATE] Ordnung (15)
+[x-causer] er (10)
+[has-state] es (11)
 
-[] sie (20)
+[IDENTIFICATION] sie (20)
 
 # sent_id = 353
 # text = » Solche Sachen machen ihm Spaß .
@@ -85,16 +84,17 @@
 6	Spaß	Spaß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	4	obj	_	_
 7	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] machen (4)
-[] Solche Sachen (3)
+[SCENE-INIT] machen (4)
+[x-causer] Solche Sachen (3)
+[participant] ihm (5)
+[target-scene] Spaß (6)
+
+[SITUATION] Sachen (3)
+
+[IDENTIFICATION] ihm (5)
+
+[MESSAGE] Spaß (6)
 [] ihm (5)
-[] Spaß (6)
-
-[] Sachen (3)
-
-[] ihm (5)
-
-[] Spaß (6)
 
 # sent_id = 354
 # text = Er ist so geschickt mit seinen Händen , wirklich , er ist so geschickt , der Tom . «
@@ -218,11 +218,11 @@
 47	abhing	abhängen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	conj	_	_
 48	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] Mann (9)
+[] Mann - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (9)
 [] Er (1)
-[] rundlicher , jedoch sehr beweglicher (4)
+[] rundlicher (4)
+[] , jedoch sehr beweglicher (8)
 [] von entwaffnender Dummheit (12)
-[] - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (20)
 
 [] Er (1)
 
@@ -251,7 +251,8 @@
 
 [] Gimpeln (24)
 [] ergebenen (23)
-[] , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (30)
+[] , die niemals eine Frage stellen (30)
+[] und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (47)
 
 [] ergebenen (23)
 
@@ -480,7 +481,8 @@
 [] er (20)
 [] andererseits (21)
 [] führender (23)
-[] beim Sportausschuss und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (26)
+[] beim Sportausschuss (26)
+[] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
 [] er (20)
 
@@ -503,7 +505,10 @@
 [] denen (32)
 
 [] Organisation (34)
-[] von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art (36)
+[] von Gemeinschaftswanderungen (36)
+[] , spontanen Demonstrationen (39)
+[] , Sparwerbewochen (41)
+[] und überhaupt jede Art (45)
 [] freiwilligen Einsatzes (47)
 
 [] Gemeinschaftswanderungen (36)
@@ -665,8 +670,6 @@
 
 [] seines (13)
 
-[] überallhin (15)
-
 [] schwebte (17)
 [] sogar (18)
 [] nach seinem Weggehen (21)
@@ -825,7 +828,8 @@
 
 [] hörte (2)
 [] Man (1)
-[] Schuhgetrampel und einen neuen Trompetenstoß auf dem Kamm (3)
+[] Schuhgetrampel (3)
+[] und einen neuen Trompetenstoß auf dem Kamm (7)
 [] , als die Kinder ins Wohnzimmer hereinstürmten (17)
 
 [] Man (1)
@@ -985,8 +989,6 @@
 
 [] andere (17)
 
-[] zurück (19)
-
 # sent_id = 370
 # text = » Hände hoch ! « schrie eine wilde Stimme .
 1	»	»	PUNCT	$(	_	2	punct	_	_
@@ -1115,8 +1117,7 @@
 
 [] etwa (26)
 
-[] Stück (33)
-[] Holz (34)
+[] Stück Holz (33)
 
 [] Holz (34)
 
@@ -1152,7 +1153,9 @@
 
 [] bekleidet (16)
 [] Beide (1)
-[] mit den kurzen blauen Hosen , den grauen Hemden und dem roten Halstuch , aus denen die Uniform der Späher bestand (7)
+[] mit den kurzen blauen Hosen (7)
+[] , den grauen Hemden (11)
+[] und dem roten Halstuch , aus denen die Uniform der Späher bestand (15)
 
 [] Beide (1)
 
@@ -1347,7 +1350,8 @@
 [] erschieße (2)
 [] Ich (1)
 [] Sie (3)
-[] , ich werde Sie vaporisieren , ich werde Sie in die Salzbergwerke verbannen (8)
+[] , ich werde Sie vaporisieren (8)
+[] , ich werde Sie in die Salzbergwerke verbannen (16)
 
 [] Ich (1)
 
@@ -1416,10 +1420,9 @@
 
 [] ihn (5)
 
-[] herum (6)
-
 [] schrien (8)
-[] » Verräter ! « und » Gedankenverbrecher ! « (10)
+[] » Verräter ! « « (10)
+[] und » Gedankenverbrecher ! (15)
 
 [] Verräter (10)
 
@@ -1536,7 +1539,8 @@
 
 [] war (2)
 [] etwas von berechnender Wildheit (3)
-[] im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein (8)
+[] im Auge des Jungen (8)
+[] , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten (15)
 
 [] etwas (3)
 [] von berechnender Wildheit (6)
@@ -1553,7 +1557,8 @@
 
 [] Verlangen (15)
 [] ganz offensichtliches (14)
-[] , Winston zu schlagen oder zu treten (19)
+[] , Winston zu schlagen (19)
+[] oder zu treten (22)
 
 [] offensichtliches (14)
 [] ganz (13)
@@ -1669,8 +1674,6 @@
 [] Kindern (11)
 
 [] wieder (13)
-
-[] zurück (14)
 
 # sent_id = 383
 # text = In dem besseren Licht des Wohnzimmers bemerkte er voller Mitleid , dass es tatsächlich Staub war , was sich in ihren Runzeln eingenistet hatte .
@@ -1794,7 +1797,8 @@
 
 [] enttäuscht (4)
 [] » Sie (2)
-[] , weil sie nicht ausgehen und sich das Hängen ansehen können (9)
+[] , weil sie nicht ausgehen (9)
+[] und sich das Hängen ansehen können (14)
 
 [] Sie (2)
 
@@ -1878,8 +1882,6 @@
 
 [] Arbeit (18)
 
-[] heim (19)
-
 # sent_id = 387
 # text = » Warum können wir nicht gehen und das Hängen sehen ? « brüllte der Junge mit seiner kräftigen Stimme .
 1	»	»	PUNCT	$(	_	6	punct	_	_
@@ -1904,7 +1906,8 @@
 20	.	.	PUNCT	$.	_	13	punct	_	_
 
 [] brüllte (13)
-[] » Warum können wir nicht gehen und das Hängen sehen ? « (6)
+[] » Warum können wir nicht gehen ? « (6)
+[] und das Hängen sehen (10)
 [] der Junge (15)
 [] mit seiner kräftigen Stimme (19)
 
@@ -2045,8 +2048,6 @@
 
 [] Winston (22)
 
-[] ein (23)
-
 # sent_id = 391
 # text = Dergleichen fand etwa einmal im Monat statt und war ein beliebtes Schauspiel .
 1	Dergleichen	dergleichen	PRON	PIS	Definite=Ind|Gender=Neut	2	nsubj	_	_
@@ -2077,8 +2078,6 @@
 [] etwa (3)
 
 [] Monat (6)
-
-[] statt (7)
 
 [] Schauspiel (12)
 [] beliebtes (11)
@@ -2302,8 +2301,6 @@
 
 [] rechtzeitig (5)
 
-[] herum (6)
-
 [] sehen (10)
 [] , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (20)
 
@@ -2368,8 +2365,6 @@
 [] ihm (6)
 
 [] Junge (8)
-
-[] nach (9)
 
 [] schloss (17)
 [] sich (12)
