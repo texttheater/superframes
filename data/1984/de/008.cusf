@@ -9,11 +9,11 @@
 7	verstummt	verstummen	VERB	VVPP	Verbform=Part	0	root	_	_
 8	.	.	PUNCT	$.	_	7	punct	_	_
 
-[SCENE-DEINIT || MESSAGE-DEINIT] verstummt (7) # # "(von Lauten, Geräuschen, von Hörbarem) aufhören, enden"
-[initial-scene || initial-content] Die Musik aus dem Televisor (2)
+[SCENE-DEINIT] verstummt (7) # # "(von Lauten, Geräuschen, von Hörbarem) aufhören, enden"
+[initial-scene] Die Musik aus dem Televisor (2)
 
 [MESSAGE] Musik (2)
-[m-initial-location] aus dem Televisor (5)
+[m-sender] aus dem Televisor (5)
 
 [CLASS] Televisor (5)
 
@@ -341,7 +341,7 @@
 
 [IDENTIFICATION] sich (11)
 
-[STATE || SEQUENCE] Parteidisziplin (14) # # "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
+[SOCIAL-RELATION] Parteidisziplin (14) # # "Disziplin: das Einhalten von bestimmten Vorschriften; das Sicheinfügen in die Ordnung einer Gruppe"
 
 # sent_id = 408
 # text = Die Marschlieder , die Umzüge , die Fahnen , die Wanderungen , das Exerzieren mit Holzgewehren , das Brüllen von Schlagworten , die Verehrung des Großen Bruders - alles das war für sie ein herrliches Spiel .
@@ -451,11 +451,11 @@
 20	Gedankenverbrecher	Gedankenverbrecher	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	14	conj	_	_
 21	.	.	PUNCT	$.	_	7	punct	_	_
 
-[LOCATION-INIT >> POSSESSION] gelenkt (7)
-[has-location >> possessed] Ihre ganze Wildheit (3)
-[target-location >> m-target-location] nach außen (6)
-[target-location >> m-experiencer] , gegen die Staatsfeinde (11)
-[target-location >> m-experiencer] , gegen Ausländer (14)
+[LOCATION-INIT >> EXPERIENCE-INIT] gelenkt (7)
+[has-location >> experienced] Ihre ganze Wildheit (3)
+[target-location >> target-experiencer] nach außen (6)
+[target-location >> target-experiencer] , gegen die Staatsfeinde (11)
+[target-location >> target-experiencer] , gegen Ausländer (14)
 
 [STATE] Wildheit (3)
 [has-state] Ihre (1)
@@ -1868,7 +1868,7 @@
 [SOCIAL-RELATION] Armee (13)
 [has-social-relation] eurasischen (12)
 
-[IDENTIFICATION] eurasischen (12)
+[SOCIAL-RELATION] eurasischen (12)
 
 [MESSAGE-INIT] genannt (23)
 [m-situator] bei der (16)

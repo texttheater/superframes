@@ -919,10 +919,10 @@
 [m-time] nie (11)
 [content] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
 
-[STATE-CHANGE || SOCIAL-RELATION-INIT] Verhaftungen (4)
+[POSSESSION-INIT] Verhaftungen (4)
 [m-quantity] endlosen (3)
 
-[QUANTITY] endlosen (3)
+[SCENE-CONTINUATION >> QUANTITY] endlosen (3)
 
 [MESSAGE-INIT] Geständnisse (6)
 
@@ -932,8 +932,8 @@
 
 [TIME-NEG] nie (11)
 
-[TRANSFORMATION-CREATION >> MESSAGE] Erfindung (24) # # figurativ eher "Lüge, Ammenmärchen, Einbildung"
-[created >> topic] » Die Bruderschaft « (18)
+[TRANSFORMATION-CREATION >> MESSAGE-INIT] Erfindung (24) # # figurativ eher "Lüge, Ammenmärchen, Einbildung"
+[created >> target-content] » Die Bruderschaft « (18)
 [m-mode] nicht (20)
 [m-mode] lediglich (21)
 [m-scene] sagenhafte (23)
@@ -1336,7 +1336,7 @@
 [MESSAGE-INIT] getauscht (11)
 [m-time] Eine oder zwei Sekunden lang (5)
 [x-sender] sie (7)
-[target-content] einen zweideutigen Blick (10)
+[x-noncomp] einen zweideutigen Blick (10)
 
 [TIME] lang (5)
 [time] Eine oder zwei Sekunden (4)
@@ -1351,12 +1351,11 @@
 
 [IDENTIFICATION] sie (7)
 
-[MESSAGE-INIT] Blick (10)
+[NONCOMP] Blick (10)
 [m-scene] zweideutigen (9)
-[x-sender] sie (7)
 
-[MESSAGE] zweideutigen (9)
-[topic] Blick (10)
+[MESSAGE >> QUALITY] zweideutigen (9)
+[topic >> has-quality] Blick (10)
 
 [SCENE-DEINIT] Schluss (15)
 [initial-scene] damit (14)
@@ -1496,14 +1495,14 @@
 8	Blatt	Blatt	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-INIT] richtete (3)
-[x-causer] Sein Blick (2)
-[has-location] sich (4)
+[LOCATION-INIT >> MESSAGE-INIT] richtete (3)
+[has-location >> x-noncomp] Sein Blick (2)
+[has-location >> x-noncomp] sich (4)
 [m-scene] wieder (5)
-[target-location] auf das Blatt (8)
+[target-location >> topic] auf das Blatt (8)
 
 [MESSAGE-INIT] Blick (2)
-[x-sender] Sein (1)
+[x-experiencer] Sein (1)
 
 [IDENTIFICATION] Sein (1)
 
@@ -2260,7 +2259,7 @@
 [m-time] nachts (10)
 [x-noncomp] statt (11)
 
-[STATE-CHANGE || SOCIAL-RELATION-INIT] Verhaftungen (7)
+[POSSESSION-INIT] Verhaftungen (7)
 
 [SCENE-CONTINUATION-NECESSITY] unabänderlich (9)
 [initial-scene] fanden (8)

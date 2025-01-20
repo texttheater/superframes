@@ -8,15 +8,14 @@
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SCENE-INIT || MESSAGE-INIT] machte (3) # # ähnlich wie "Grimasse schneiden"
-[participant || x-sender] Frau Parsons (1)
-[target-scene || target-content] ein hilfloses Gesicht (6)
+[MESSAGE-INIT] machte (3) # # ähnlich wie "Grimasse schneiden"
+[x-sender] Frau Parsons (1)
+[target-content] ein hilfloses Gesicht (6)
 
 [IDENTIFICATION] Frau Parsons (1)
 
-[PART-WHOLE] Gesicht (6)
+[NONCOMP] Gesicht (6)
 [m-scene] hilfloses (5)
-[whole] Frau Parsons (1)
 
 [MEANS-NEG >> QUALITY] hilfloses (5)
 [means >> has-quality] Gesicht (6)
@@ -1383,7 +1382,7 @@
 
 [IDENTIFICATION] Sie (1)
 
-[IDENTIFICATION] eurasischer (4)
+[SOCIAL-RELATION] eurasischer (4)
 
 # sent_id = 377
 # text = Ich erschieße Sie , ich werde Sie vaporisieren , ich werde Sie in die Salzbergwerke verbannen ! «
@@ -1914,10 +1913,10 @@
 20	.	.	PUNCT	$.	_	4	punct	_	_
 21	«	«	PUNCT	$(	_	4	punct	_	_
 
-[ACTIVITY || STATE-INIT] beschäftigt (4)
-[is-active || has-state] Ich (1)
+[SITUATION] beschäftigt (4)
+[theme] Ich (1)
 [m-quantity] zu (3)
-[m-result] , um mit ihnen hinauszugehen (9)
+[m-reference] , um mit ihnen hinauszugehen (9)
 
 [IDENTIFICATION] Ich (1)
 
@@ -2096,7 +2095,7 @@
 [social-relation] eurasische (2)
 [m-scene] , denen Kriegsverbrechen zur Last gelegt wurden , (9)
 
-[IDENTIFICATION] eurasische (2)
+[SOCIAL-RELATION] eurasische (2)
 
 [MESSAGE-INIT] gelegt (9) # # "jemanden beschuldigen"
 [topic] denen (5)
@@ -2219,7 +2218,7 @@
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 3	aber	aber	ADV	ADV	_	10	advmod	_	_
-4	noch	noch	ADV	ADV	_	5	advmod	_	_
+4	noch	noch	ADV	ADV	_	10	advmod	_	_
 5	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	6	nmod	_	_
 6	sechs	sechs	NUM	CARD	NumType=Card	7	nummod	_	_
 7	Stufen	Stufe	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	10	obl	_	_
@@ -2244,7 +2243,8 @@
 [LOCATION-INIT] hinuntergestiegen (10)
 [has-location] Er (1)
 [m-scene] aber (3)
-[m-quantity] noch keine sechs Stufen (7)
+[m-time] noch (4)
+[m-quantity] keine sechs Stufen (7)
 [transitory-location] die Treppe (9)
 [m-accompanier] , als ihn etwas mit furchtbarer Wucht höchst schmerzhaft in den Nacken traf (23)
 
@@ -2254,15 +2254,14 @@
 [asserted] hinuntergestiegen (10)
 
 [CLASS] Stufen (7)
-[m-quantity] noch keine sechs (6)
+[m-quantity] keine sechs (6)
 
 [QUANTITY] sechs (6)
-[m-mode] noch keine (5)
+[m-mode] keine (5)
 
 [MODE] keine (5)
-[] noch (4)
 
-[] noch (4) # # "hier: bis jetzt [nicht]"
+[TIME] noch (4) # # "hier: bis jetzt [nicht]"
 
 [CLASS] Treppe (9)
 
@@ -2331,7 +2330,7 @@
 # text = Er fuhr gerade noch rechtzeitig herum , um zu sehen , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	fuhr	fahren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	gerade	gerade	ADV	ADV	_	5	advmod	_	_
+3	gerade	gerade	ADV	ADV	_	4	advmod	_	_
 4	noch	noch	ADV	ADV	_	5	advmod	_	_
 5	rechtzeitig	rechtzeitig	ADJ	ADJD	_	2	advmod	_	_
 6	herum	herum	ADP	PTKVZ	_	2	compound:prt	_	_
@@ -2367,13 +2366,14 @@
 [IDENTIFICATION] Er (1)
 
 [TIME] rechtzeitig (5) # # Vgl. sen_id 188 "hinreichend"
+[m-quantity] gerade noch (4)
 [m-quantity] gerade (3)
-[] noch (4)
 [has-time] fuhr (2)
 
 [QUANTITY] gerade (3)
 
-[] noch (4)
+[TIME] noch (4)
+[m-quantity] gerade (3)
 
 [MESSAGE] sehen (10)
 [topic] , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (20)
@@ -2566,9 +2566,9 @@
 7	Nacken	Nacken	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	2	obj	_	_
 8	.	.	PUNCT	$.	_	2	punct	_	_
 
-[ACTIVITY] rieb (2)
-[is-active] Er (1)
-[x-location] seinen immer noch schmerzenden Nacken (7)
+[ACTIVITY || EVENT] rieb (2)
+[is-active || x-causer] Er (1)
+[x-location || undergoer] seinen immer noch schmerzenden Nacken (7)
 
 [IDENTIFICATION] Er (1)
 
