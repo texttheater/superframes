@@ -169,16 +169,20 @@ class Frame:
         tree = sentence.syntax[0].to_tree()
         # Check for wrong text
         pred_tree = tree_for_token(self.head, tree)
-        expected_text = form_for_predicate(pred_tree)
-        if self.text != expected_text:
+        if pred_tree is None:
             logging.warning(
-                'sent %s line %s wrong text for frame: '
-                'is "%s" but should be "%s"',
-                sentence.syntax[0].id,
-                lineno,
-                self.text,
-                expected_text,
+                'sent %s line %s could not find tree for frame token %s. '
+                'Perhaps there is a cycle in the dependency tree.',
+                sentence.syntax[0].id, lineno, self.head,
             )
+        else:
+            expected_text = form_for_predicate(pred_tree)
+            if self.text != expected_text:
+                logging.warning(
+                    'sent %s line %s wrong text for frame: '
+                    'is "%s" but should be "%s"',
+                    sentence.syntax[0].id, lineno, self.text, expected_text,
+                )
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -200,14 +204,21 @@ class Frame:
             arg_token = sentence.syntax[0][arg.head]
             if arg_token.head == self.head:
                 subtree = tree_for_token(arg.head, tree)
-                expected_text = form_for_argument(subtree)
-                if arg.text != expected_text:
+                if subtree is None:
                     logging.warning(
-                        'sent %s line %s wrong text for subtree with root %s: '
-                        'is "%s" but should be "%s"',
-                        sentence.syntax[0].id, i,
-                        arg.head, arg.text, expected_text,
+                        'sent %s line %s could not find tree for arg token %s. '
+                        'Perhaps there is a cycle in the dependency tree.',
+                        sentence.syntax[0].id, lineno, arg.head,
                     )
+                else:
+                    expected_text = form_for_argument(subtree)
+                    if arg.text != expected_text:
+                        logging.warning(
+                            'sent %s line %s wrong text for subtree with root %s: '
+                            'is "%s" but should be "%s"',
+                            sentence.syntax[0].id, i,
+                            arg.head, arg.text, expected_text,
+                        )
             else:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
@@ -237,7 +248,7 @@ class Frame:
                 )
                 backlink_found = False
                 for frame in sentence.frames:
-                    if frame.head == arg.head:
+                    if isinstance(frame, Frame) and frame.head == arg.head:
                         for arg2 in frame.args:
                             if arg2.head in subtree_ids:
                                 backlink_found = True
@@ -345,7 +356,11 @@ class Sentence:
         expected_links = collections.defaultdict(list)
         # Phase 1a: syntactic links
         for sentence in self.syntax:
-            tree = sentence.to_tree()
+            try:
+                tree = sentence.to_tree()
+            except ValueError as e:
+                logging.warning('sent %s line %s invalid syntax: %s', sentence.id, self.lineno, e)
+                return
             for subtree in subtrees(sentence.to_tree()):
                 if is_semantic_predicate(subtree):
                     for child in subtree:
