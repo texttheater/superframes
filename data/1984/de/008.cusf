@@ -117,7 +117,7 @@
 2	diesen	dies	DET	PDAT	Case=Dat|Gender=Neut|Number=Plur|PronType=Dem	3	det	_	_
 3	Kindern	Kind	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	14	obl	_	_
 4	,	,	PUNCT	$,	_	3	punct	_	_
-5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	parataxis	_	_
+5	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
 7	,	,	PUNCT	$,	_	3	punct	_	_
 8	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
@@ -126,7 +126,7 @@
 11	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	14	nsubj	_	_
 12	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	13	det	_	_
 13	Höllenleben	Höllenleben	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	14	obj	_	_
-14	haben	haben	AUX	VAINF	VerbForm=Inf	0	root	_	_
+14	haben	haben	AUX	VAINF	VerbForm=Inf	5	ccomp	_	_
 15	.	.	PUNCT	$.	_	14	punct	_	_
 
 [SCENE] haben (14)
@@ -138,6 +138,7 @@
 
 [MESSAGE-INIT] dachte (5)
 [x-experiencer] Winston (6)
+[target-content] Mit diesen Kindern , , musste die arme Frau ein Höllenleben haben . (14)
 
 [IDENTIFICATION] Winston (6)
 
