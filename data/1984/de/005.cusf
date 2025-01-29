@@ -9,36 +9,37 @@
 7	nach	nach	ADP	PTKVZ	_	2	compound:prt	_	_
 8	;	;	PUNCT	$.	_	12	punct	_	_
 9	etwas	etwas	DET	PIAT	Definite=Ind|Gender=Neut	12	nsubj	_	_
-10	anderes	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	12	nsubj	_	_
+10	anderes	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	9	amod	_	_
 11	wäre	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	_
 12	unmöglich	unmöglich	ADJ	ADJD	_	2	parataxis	_	_
 13	gewesen	sein	AUX	VAPP	Verbform=Part	12	cop	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stand (2)
-[] Natürlich (1)
-[] er (3)
-[] den übrigen (5)
-[] nicht (6)
-[] nach (7)
+[COMPARISON] stand (2)
+[m-mode] Natürlich (1)
+[compared] er (3)
+[reference] den übrigen (5)
+[m-mode] nicht (6)
+[m-noncomp] nach (7)
 
-[] Natürlich (1)
+[MODE] Natürlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] übrigen (5)
+[COMPARISON] übrigen (5)
 
-[] nicht (6)
+[MODE] nicht (6)
 
-[] nach (7)
+[NONCOMP] nach (7)
 
-[] unmöglich (12)
-[] etwas (9)
-[] anderes (10)
+[SCENE-POSSIBILITY-NEG] unmöglich (12)
+[scene] etwas anderes (9)
 
-[] etwas (9)
+[CLASS] etwas (9)
+[m-scene] anderes (10)
 
-[] anderes (10)
+[COMPARISON] anderes (10)
+[compared] etwas (9)
 
 # sent_id = 252
 # text = Seine Gefühle zu verschleiern , sein Gesicht zu beherrschen , zu tun , was jeder tat , gebot schon der Instinkt .
@@ -65,40 +66,42 @@
 21	Instinkt	Instinkt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	18	nsubj	_	_
 22	.	.	PUNCT	$.	_	18	punct	_	_
 
-[] verschleiern (4)
-[] Seine Gefühle (2)
+[MESSAGE-INIT] gebot (18)
+[topic] Seine Gefühle zu verschleiern (4)
+[topic] , sein Gesicht zu beherrschen (9)
+[m-mode] schon (19)
+[x-sender] der Instinkt (21)
 
-[] Gefühle (2)
-[] Seine (1)
+[WRAPPER-WEARER-INIT >> MESSAGE-INIT-NEG] verschleiern (4)
+[target-wearer >> topic] Seine Gefühle (2)
 
-[] Seine (1)
+[MESSAGE] Gefühle (2)
+[x-experiencer] Seine (1)
 
-[] beherrschen (9)
-[] sein Gesicht (7)
+[IDENTIFICATION] Seine (1)
 
-[] Gesicht (7)
-[] sein (6)
+[POSSESSION] beherrschen (9)
+[possessed] sein Gesicht (7)
 
-[] sein (6)
+[PART-WHOLE] Gesicht (7)
+[whole] sein (6)
 
-[] tun (12)
-[] , was jeder tat , (16)
+[IDENTIFICATION] sein (6)
 
-[] tat (16)
-[] was (14)
-[] jeder (15)
+[ACTIVITY] tun (12)
+[activity] , was jeder tat , (16)
 
-[] was (14)
+[ACTIVITY] tat (16)
+[activity] was (14)
+[is-active] jeder (15)
 
-[] jeder (15)
+[CLASS] was (14)
 
-[] gebot (18)
-[] schon (19)
-[] der Instinkt (21)
+[IDENTIFICATION] jeder (15)
 
-[] schon (19)
+[MODE] schon (19)
 
-[] Instinkt (21)
+[MESSAGE] Instinkt (21)
 
 # sent_id = 253
 # text = Aber es gab eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können .
@@ -126,37 +129,38 @@
 22	können	können	AUX	VMINF	VerbForm=Inf	21	aux	_	_
 23	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] gab (3)
-[] eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (5)
+[EXISTENCE] gab (3)
+[exists] eine Zeitspanne von einigen Sekunden , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (5)
 
-[] Zeitspanne (5)
-[] von einigen Sekunden (8)
-[] , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (21)
+[TIME] Zeitspanne (5)
+[time] von einigen Sekunden (8)
+[m-scene] , in der ihn der Ausdruck seiner Augen in bedenklicher Weise hätte verraten können (21)
 
-[] Sekunden (8)
+[TIME] Sekunden (8)
 
-[] verraten (21)
-[] in der (11)
-[] ihn (12)
-[] der Ausdruck seiner Augen (14)
-[] in bedenklicher Weise (19)
+[MESSAGE-INIT] verraten (21)
+[m-time] in der (11)
+[topic] ihn (12)
+[x-sender] der Ausdruck seiner Augen (14)
+[m-quality] in bedenklicher Weise (19)
+[m-time] Zeitspanne (5)
 
-[] der (11)
+[IDENTIFICATION] der (11)
 
-[] ihn (12)
+[IDENTIFICATION] ihn (12)
 
-[] Ausdruck (14)
-[] seiner Augen (16)
+[MESSAGE] Ausdruck (14)
+[x-sender] seiner Augen (16)
 
-[] Augen (16)
-[] seiner (15)
+[PART-WHOLE] Augen (16)
+[whole] seiner (15)
 
-[] seiner (15)
+[IDENTIFICATION] seiner (15)
 
-[] Weise (19)
-[] bedenklicher (18)
+[QUALITY] Weise (19)
+[m-quality] bedenklicher (18)
 
-[] bedenklicher (18)
+[QUALITY] bedenklicher (18)
 
 # sent_id = 254
 # text = Und genau in diesem Augenblick ereignete sich das Bedeutsame - wenn es sich wirklich ereignete .
@@ -177,31 +181,31 @@
 15	ereignete	ereignen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 16	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] ereignete (6)
-[] genau in diesem Augenblick (5)
-[] sich (7)
-[] das Bedeutsame (9)
-[] - wenn es sich wirklich ereignete (15)
+[EVENT] ereignete (6)
+[m-time] genau in diesem Augenblick (5)
+[x-noncomp] sich (7)
+[event] das Bedeutsame (9)
+[m-condition] - wenn es sich wirklich ereignete (15)
 
-[] Augenblick (5)
-[] genau (2)
+[TIME] Augenblick (5)
+[m-quantity] genau (2)
 
-[] genau (2)
+[QUANTITY] genau (2)
 
-[] sich (7)
+[NONCOMP] sich (7)
 
-[] Bedeutsame (9)
+[QUALITY] Bedeutsame (9)
 
-[] ereignete (15)
-[] es (12)
-[] sich (13)
-[] wirklich (14)
+[EVENT] ereignete (15)
+[event] es (12)
+[x-noncomp] sich (13)
+[m-mode] wirklich (14)
 
-[] es (12)
+[IDENTIFICATION] es (12)
 
-[] sich (13)
+[NONCOMP] sich (13)
 
-[] wirklich (14)
+[MODE] wirklich (14)
 
 # sent_id = 255
 # text = Er fing flüchtig O'Briens Blick auf .
@@ -213,22 +217,20 @@
 6	auf	auf	ADP	PTKVZ	_	2	compound:prt	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] fing (2)
-[] Er (1)
-[] flüchtig (3)
-[] O'Briens Blick (5)
-[] auf (6)
+[LOCATION-INIT >> EXPERIENCE] fing (2)
+[target-location >> experiencer] Er (1)
+[m-quality] flüchtig (3)
+[has-location >> experienced] O'Briens Blick (5)
+[m-noncomp] auf (6)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] flüchtig (3)
+[QUALITY] flüchtig (3)
 
-[] Blick (5)
-[] O'Briens (4)
+[MESSAGE-INIT] Blick (5)
+[x-sender] O'Briens (4)
 
-[] O'Briens (4)
-
-[] auf (6)
+[IDENTIFICATION] O'Briens (4)
 
 # sent_id = 256
 # text = O'Brien war aufgestanden .
@@ -237,10 +239,10 @@
 3	aufgestanden	aufstehen	VERB	VVPP	Verbform=Part	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] aufgestanden (3)
-[] O'Brien (1)
+[LOCATION-DEINIT] aufgestanden (3)
+[has-location] O'Brien (1)
 
-[] O'Brien (1)
+[IDENTIFICATION] O'Brien (1)
 
 # sent_id = 257
 # text = Er hatte seine Brille abgenommen und war gerade im Begriff , sie wieder mit seiner charakteristischen Geste aufzusetzen .
@@ -249,11 +251,11 @@
 3	seine	sein	DET	PPOSAT	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes	4	det:poss	_	_
 4	Brille	Brille	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	5	obj	_	_
 5	abgenommen	abnehmen	VERB	VVPP	Verbform=Part	0	root	_	_
-6	und	und	CCONJ	KON	_	7	cc	_	_
-7	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
-8	gerade	gerade	ADV	ADV	_	7	advmod	_	_
+6	und	und	CCONJ	KON	_	10	cc	_	_
+7	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	_	_
+8	gerade	gerade	ADV	ADV	_	10	advmod	_	_
 9	im	im	ADP	APPRART	_	10	case	_	_
-10	Begriff	Begriff	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	7	obl	_	_
+10	Begriff	Begriff	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	5	conj	_	_
 11	,	,	PUNCT	$,	_	18	punct	_	_
 12	sie	sie	PRON	PPER	Case=Acc|Gender=Neut|Number=Plur|Person=3|PronType=Prs	18	obj	_	_
 13	wieder	wieder	ADV	ADV	_	18	advmod	_	_
@@ -264,42 +266,43 @@
 18	aufzusetzen	aufsetzen	VERB	VVIZU	VerbForm=Inf	10	acl	_	_
 19	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] abgenommen (5)
-[] Er (1)
-[] seine Brille (4)
+[LOCATION-DEINIT] abgenommen (5)
+[x-causer] Er (1)
+[has-location] seine Brille (4)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Brille (4)
-[] seine (3)
+[CLASS] Brille (4)
+[m-possessor] seine (3)
 
-[] seine (3)
+[IDENTIFICATION] seine (3)
 
-[] war (7)
-[] gerade (8)
-[] im Begriff , sie wieder mit seiner charakteristischen Geste aufzusetzen (10)
+[SCENE-INIT] Begriff (10)
+[m-time] gerade (8)
+[target-scene] , sie wieder mit seiner charakteristischen Geste aufzusetzen (18)
+[participant] Er (1)
 
-[] gerade (8)
+[TIME] gerade (8)
 
-[] Begriff (10)
-[] , sie wieder mit seiner charakteristischen Geste aufzusetzen (18)
+[LOCATION-INIT] aufzusetzen (18)
+[has-location] sie (12)
+[m-scene] wieder (13)
+[m-means] mit seiner charakteristischen Geste (17)
+[x-causer] Er (1)
 
-[] aufzusetzen (18)
-[] sie (12)
-[] wieder (13)
-[] mit seiner charakteristischen Geste (17)
+[IDENTIFICATION] sie (12)
 
-[] sie (12)
+[SCENE-CONTINUATION] wieder (13)
+[initial-scene] aufzusetzen (18)
 
-[] wieder (13)
+[MESSAGE-INIT] Geste (17)
+[x-sender] seiner (15)
+[m-scene] charakteristischen (16)
 
-[] Geste (17)
-[] seiner (15)
-[] charakteristischen (16)
+[IDENTIFICATION] seiner (15)
 
-[] seiner (15)
-
-[] charakteristischen (16)
+[IDENTIFICATION] charakteristischen (16)
+[identifier] Geste (17)
 
 # sent_id = 258
 # text = Aber dazwischen lag der Bruchteil einer Sekunde , währenddessen sich ihre Augen begegneten , und in diesem winzigen Zeitraum wusste Winston - ja , er wusste es ! - , dass O'Brien das gleiche dachte wie er .
@@ -315,7 +318,7 @@
 10	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	13	obj	_	_
 11	ihre	ihr	DET	PPOSAT	Case=Nom|Gender=Neut|Number=Plur|Poss=Yes	12	det:poss	_	_
 12	Augen	Auge	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	13	nsubj	_	_
-13	begegneten	begegnen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+13	begegneten	begegnen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 14	,	,	PUNCT	$,	_	20	punct	_	_
 15	und	und	CCONJ	KON	_	20	cc	_	_
 16	in	in	ADP	APPR	_	19	case	_	_
@@ -325,7 +328,7 @@
 20	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 21	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	20	nsubj	_	_
 22	-	-	PUNCT	$.	_	26	punct	_	_
-23	ja	ja	PART	PTKANT	_	26	advmod	_	_
+23	ja	ja	PART	PTKANT	_	26	discourse	_	_
 24	,	,	PUNCT	$,	_	26	punct	_	_
 25	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
 26	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	parataxis	_	_
@@ -339,65 +342,63 @@
 34	gleiche	gleich	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	35	obj	_	_
 35	dachte	denken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	ccomp	_	_
 36	wie	wie	CCONJ	KOKOM	_	37	case	_	_
-37	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	obl	_	_
+37	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obl	_	_
 38	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] lag (3)
-[] dazwischen (2)
-[] der Bruchteil einer Sekunde (5)
-[] , währenddessen sich ihre Augen begegneten (13)
+[LOCATION >> TIME] lag (3)
+[location >> time] dazwischen (2)
+[has-location >> has-time] der Bruchteil einer Sekunde , währenddessen sich ihre Augen begegneten (5)
 
-[] dazwischen (2)
+[LOCATION] dazwischen (2)
 
-[] Bruchteil (5)
-[] einer Sekunde (7)
+[PART-WHOLE] Bruchteil (5)
+[whole] einer Sekunde (7)
+[m-scene] , währenddessen sich ihre Augen begegneten (13)
 
-[] Sekunde (7)
+[TIME] Sekunde (7)
 
-[] begegneten (13)
-[] sich (10)
-[] ihre Augen (12)
+[SOCIAL-RELATION-INIT >> MESSAGE-INIT] begegneten (13)
+[target-social-relation >> x-experiencer] sich (10)
+[has-social-relation >> topic] ihre Augen (12)
+[m-time] Bruchteil (5)
 
-[] sich (10)
+[IDENTIFICATION] sich (10)
 
-[] Augen (12)
-[] ihre (11)
+[PART-WHOLE] Augen (12)
+[whole] ihre (11)
 
-[] ihre (11)
+[IDENTIFICATION] ihre (11)
 
-[] wusste (20)
-[] in diesem winzigen Zeitraum (19)
-[] Winston (21)
-[] , dass O'Brien das gleiche dachte wie er (35)
+[MESSAGE] wusste (20)
+[m-time] in diesem winzigen Zeitraum (19)
+[x-experiencer] Winston (21)
+[content] , dass O'Brien das gleiche dachte wie er (35)
 
-[] Zeitraum (19)
-[] winzigen (18)
+[TIME] Zeitraum (19)
+[m-quantity] winzigen (18)
 
-[] winzigen (18)
+[QUANTITY] winzigen (18)
 
-[] Winston (21)
+[IDENTIFICATION] Winston (21)
 
-[] wusste (26)
-[] ja (23)
-[] er (25)
-[] es (27)
+[MESSAGE] wusste (26)
+[x-experiencer] er (25)
+[content] es (27)
 
-[] ja (23)
+[IDENTIFICATION] er (25)
 
-[] er (25)
+[IDENTIFICATION] es (27)
 
-[] es (27)
+[MESSAGE] dachte (35)
+[x-experiencer] O'Brien (32)
+[topic] das gleiche wie er (34)
 
-[] dachte (35)
-[] O'Brien (32)
-[] das gleiche (34)
-[] wie er (37)
+[IDENTIFICATION] O'Brien (32)
 
-[] O'Brien (32)
+[COMPARISON] gleiche (34)
+[reference] wie er (37)
 
-[] gleiche (34)
-
-[] er (37)
+[IDENTIFICATION] er (37)
 
 # sent_id = 259
 # text = Eine unmissverständliche Botschaft war zwischen ihnen ausgetauscht worden .
@@ -411,16 +412,16 @@
 8	worden	werden	AUX	VAPP	Verbform=Part	7	aux:pass	_	_
 9	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] ausgetauscht (7)
-[] Eine unmissverständliche Botschaft (3)
-[] zwischen ihnen (6)
+[MESSAGE-INIT] ausgetauscht (7)
+[target-content] Eine unmissverständliche Botschaft (3)
+[x-sender] zwischen ihnen (6)
 
-[] Botschaft (3)
-[] unmissverständliche (2)
+[MESSAGE] Botschaft (3)
+[m-quality] unmissverständliche (2)
 
-[] unmissverständliche (2)
+[QUALITY] unmissverständliche (2)
 
-[] ihnen (6)
+[IDENTIFICATION] ihnen (6)
 
 # sent_id = 260
 # text = Es war , als hätten ihre beiden Denkwelten sich aufgetan und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über .
@@ -444,52 +445,50 @@
 18	Gedanken	Gedanke	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	13	nsubj	_	_
 19	von	von	ADP	APPR	_	21	case	_	_
 20	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	21	det	_	_
-21	einen	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	18	nmod	_	_
+21	einen	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Sing	13	nmod	_	_
 22	in	in	ADP	APPR	_	24	case	_	_
 23	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	24	det	_	_
-24	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	obl	_	_
-25	über	über	ADP	PTKVZ	_	13	compound:prt	_	_
+24	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	13	nmod	_	_
+25	über	über	ADP	PTKVZ	_	24	case	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] , als hätten ihre beiden Denkwelten sich aufgetan und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (10)
+[COMPARISON >> MESSAGE] war (2)
+[reference >> content] , als hätten ihre beiden Denkwelten sich aufgetan (10)
+[reference >> content] und als strömten durch ihre Augen die Gedanken von dem einen in den anderen über (13)
 
-[] aufgetan (10)
-[] ihre beiden Denkwelten (8)
-[] sich (9)
+[STATE-CHANGE >> MESSAGE-INIT] aufgetan (10)
+[has-state] ihre beiden Denkwelten (8)
+[has-state] sich (9)
 
-[] Denkwelten (8)
-[] ihre (6)
+[MESSAGE] Denkwelten (8)
+[x-sender || x-experiencer] ihre (6)
 
-[] ihre (6)
+[IDENTIFICATION] ihre (6)
 
-[] sich (9)
+[IDENTIFICATION] sich (9)
 
-[] strömten (13)
-[] durch ihre Augen (16)
-[] die Gedanken von dem einen (18)
-[] in den anderen (24)
-[] über (25)
+[LOCATION-CHANGE >> MESSAGE-INIT] strömten (13)
+[transitory-location >> x-causer] durch ihre Augen (16)
+[has-location >> topic] die Gedanken (18)
+[x-initial-location >> x-sender] von dem einen (21)
+[x-target-location >> x-experiencer] in den anderen über (24)
 
-[] Augen (16)
-[] ihre (15)
+[PART-WHOLE] Augen (16)
+[whole] ihre (15)
 
-[] ihre (15)
+[IDENTIFICATION] ihre (15)
 
-[] Gedanken (18)
-[] von dem einen (21)
+[MESSAGE] Gedanken (18)
 
-[] einen (21)
+[CLASS] einen (21)
 
-[] anderen (24)
-
-[] über (25)
+[COMPARISON >> CLASS] anderen (24)
 
 # sent_id = 261
 # text = » Ich halte es mit dir « , schien O'Brien zu ihm zu sagen .
 1	»	»	PUNCT	$(	_	3	punct	_	_
 2	Ich	ich	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
-3	halte	halten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+3	halte	halten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5	mit	mit	ADP	APPR	_	6	case	_	_
 6	dir	du	PRON	PPER	Case=Dat|Gender=Neut|Number=Sing|Person=2|PronType=Prs	3	obl	_	_
@@ -503,28 +502,29 @@
 14	sagen	sagen	VERB	VVINF	VerbForm=Inf	9	xcomp	_	_
 15	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] schien (9)
-[] » Ich halte es mit dir « , (3)
-[] O'Brien (10)
-[] zu ihm zu sagen (14)
+[MESSAGE] schien (9)
+[topic] O'Brien (10)
+[content] » Ich halte es mit dir « , zu ihm zu sagen (14)
 
-[] halte (3)
-[] Ich (2)
-[] es (4)
-[] mit dir (6)
+[IDENTIFICATION] O'Brien (10)
 
-[] Ich (2)
+[MESSAGE-INIT] sagen (14)
+[target-content] » Ich halte es mit dir « , (3)
+[x-experiencer] zu ihm (12)
+[x-sender] O'Brien (10)
 
-[] es (4)
+[MESSAGE] halte (3)
+[x-experiencer] Ich (2)
+[x-noncomp] es (4)
+[x-reference] mit dir (6)
 
-[] dir (6)
+[IDENTIFICATION] Ich (2)
 
-[] O'Brien (10)
+[NONCOMP] es (4)
 
-[] sagen (14)
-[] zu ihm (12)
+[IDENTIFICATION] dir (6)
 
-[] ihm (12)
+[IDENTIFICATION] ihm (12)
 
 # sent_id = 262
 # text = » Ich weiß genau , was in dir vorgeht .
@@ -539,22 +539,22 @@
 9	vorgeht	vorgehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] weiß (3)
-[] Ich (2)
-[] genau (4)
-[] , was in dir vorgeht (9)
+[MESSAGE] weiß (3)
+[x-experiencer] Ich (2)
+[m-quantity] genau (4)
+[content] , was in dir vorgeht (9)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] genau (4)
+[QUANTITY] genau (4)
 
-[] vorgeht (9)
-[] was (6)
-[] in dir (8)
+[SCENE >> MESSAGE] vorgeht (9)
+[scene >> content] was (6)
+[m-location >> x-experiencer] in dir (8)
 
-[] was (6)
+[CLASS] was (6)
 
-[] dir (8)
+[IDENTIFICATION] dir (8)
 
 # sent_id = 263
 # text = Ich kenne deine ganze Verachtung , deinen Hass , deinen Abscheu .
@@ -571,29 +571,31 @@
 11	Abscheu	Abscheu	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	conj	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] kenne (2)
-[] Ich (1)
-[] deine ganze Verachtung , deinen Hass , deinen Abscheu (5)
+[MESSAGE] kenne (2)
+[x-experiencer] Ich (1)
+[content] deine ganze Verachtung (5)
+[content] , deinen Hass (8)
+[content] , deinen Abscheu (11)
 
-[] Ich (1)
+[IDENTIFICATION] Ich (1)
 
-[] Verachtung (5)
-[] deine (3)
-[] ganze (4)
+[MESSAGE] Verachtung (5)
+[x-sender] deine (3)
+[m-quantity] ganze (4)
 
-[] deine (3)
+[IDENTIFICATION] deine (3)
 
-[] ganze (4)
+[QUANTITY] ganze (4)
 
-[] Hass (8)
-[] deinen (7)
+[MESSAGE] Hass (8)
+[x-sender] deinen (7)
 
-[] deinen (7)
+[IDENTIFICATION] deinen (7)
 
-[] Abscheu (11)
-[] deinen (10)
+[MESSAGE] Abscheu (11)
+[x-sender] deinen (10)
 
-[] deinen (10)
+[IDENTIFICATION] deinen (10)
 
 # sent_id = 264
 # text = Aber hab keine Angst , ich stehe auf deiner Seite ! «
@@ -610,24 +612,24 @@
 11	!	!	PUNCT	$.	_	2	punct	_	_
 12	«	«	PUNCT	$(	_	2	punct	_	_
 
-[] hab (2)
-[] keine Angst (4)
+[SCENE] hab (2)
+[scene] keine Angst (4)
 
-[] Angst (4)
-[] keine (3)
+[MESSAGE] Angst (4)
+[m-mode] keine (3)
 
-[] keine (3)
+[MODE] keine (3)
 
-[] stehe (7)
-[] ich (6)
-[] auf deiner Seite (10)
+[LOCATION >> SOCIAL-RELATION] stehe (7)
+[has-location >> has-social-relation] ich (6)
+[location >> x-noncomp] auf deiner Seite (10)
 
-[] ich (6)
+[IDENTIFICATION] ich (6)
 
-[] Seite (10)
-[] deiner (9)
+[LOCATION >> SOCIAL-RELATION] Seite (10)
+[has-location >> social-relation] deiner (9)
 
-[] deiner (9)
+[IDENTIFICATION] deiner (9)
 
 # sent_id = 265
 # text = Dann war der Blitz des Einverständnisses erloschen , und O'Briens Gesicht war ebenso undurchdringlich wie das aller anderen .
@@ -651,33 +653,34 @@
 18	anderen	ander	PRON	PIS	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	16	nmod	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] erloschen (7)
-[] Dann (1)
-[] der Blitz des Einverständnisses (4)
+[SCENE-DEINIT] erloschen (7)
+[m-time] Dann (1)
+[initial-scene] der Blitz des Einverständnisses (4)
 
-[] Dann (1)
+[TIME] Dann (1)
 
-[] Blitz (4)
-[] des Einverständnisses (6)
+[EVENT >> QUALITY] Blitz (4)
+[x-identifier >> has-quality] des Einverständnisses (6)
 
-[] Einverständnisses (6)
+[MESSAGE] Einverständnisses (6)
 
-[] undurchdringlich (14)
-[] O'Briens Gesicht (11)
-[] ebenso (13)
-[] wie das aller anderen (16)
+[MESSAGE-PREVENTION] undurchdringlich (14)
+[topic] O'Briens Gesicht (11)
+[m-scene] ebenso (13)
+[m-reference] wie das aller anderen (16)
 
-[] Gesicht (11)
-[] O'Briens (10)
+[PART-WHOLE] Gesicht (11)
+[whole] O'Briens (10)
 
-[] O'Briens (10)
+[IDENTIFICATION] O'Briens (10)
 
-[] ebenso (13)
+[COMPARISON] ebenso (13)
+[compared] undurchdringlich (14)
 
-[] das (16)
-[] aller anderen (18)
+[PART-WHOLE] das (16)
+[whole] aller anderen (18)
 
-[] anderen (18)
+[COMPARISON] anderen (18)
 
 # sent_id = 266
 # text = Das war alles gewesen , und er war schon nicht mehr sicher , ob es sich wirklich zugetragen hatte .
@@ -689,7 +692,7 @@
 6	und	und	CCONJ	KON	_	12	cc	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 8	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	_
-9	schon	schon	ADV	ADV	_	10	advmod	_	_
+9	schon	schon	ADV	ADV	_	12	advmod	_	_
 10	nicht	nicht	PART	PTKNEG	Polarity=Neg	12	advmod	_	_
 11	mehr	mehr	ADV	ADV	_	12	advmod	_	_
 12	sicher	sicher	ADJ	ADJD	_	3	conj	_	_
@@ -702,36 +705,36 @@
 19	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux	_	_
 20	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] alles (3)
-[] Das (1)
+[QUANTITY] alles (3)
+[x-identified] Das (1)
 
-[] Das (1)
+[IDENTIFICATION] Das (1)
 
-[] sicher (12)
-[] er (7)
-[] schon nicht (10)
-[] mehr (11)
-[] , ob es sich wirklich zugetragen hatte (18)
+[MESSAGE] sicher (12)
+[x-experiencer] er (7)
+[m-time] schon (9)
+[m-mode] nicht (10)
+[m-time] mehr (11)
+[content] , ob es sich wirklich zugetragen hatte (18)
 
-[] er (7)
+[IDENTIFICATION] er (7)
 
-[] nicht (10)
-[] schon (9)
+[MODE] nicht (10)
 
-[] schon (9)
+[TIME] schon (9)
 
-[] mehr (11)
+[TIME] mehr (11)
 
-[] zugetragen (18)
-[] es (15)
-[] sich (16)
-[] wirklich (17)
+[SCENE] zugetragen (18)
+[scene] es (15)
+[x-noncomp] sich (16)
+[m-mode] wirklich (17)
 
-[] es (15)
+[IDENTIFICATION] es (15)
 
-[] sich (16)
+[NONCOMP] sich (16)
 
-[] wirklich (17)
+[MODE] wirklich (17)
 
 # sent_id = 267
 # text = Derartige Zwischenfälle hatten nie eine Fortsetzung .
@@ -743,19 +746,21 @@
 6	Fortsetzung	Fortsetzung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] hatten (3)
-[] Derartige Zwischenfälle (2)
-[] nie (4)
-[] eine Fortsetzung (6)
+[SCENE] hatten (3)
+[participant] Derartige Zwischenfälle (2)
+[m-time] nie (4)
+[scene] eine Fortsetzung (6)
 
-[] Zwischenfälle (2)
-[] Derartige (1)
+[SITUATION] Zwischenfälle (2)
+[m-scene] Derartige (1)
 
-[] Derartige (1)
+[IDENTIFICATION] Derartige (1)
+[identifier] Zwischenfälle (2)
 
-[] nie (4)
+[TIME-NEG] nie (4)
 
-[] Fortsetzung (6)
+[SCENE-CONTINUATION || SEQUENCE] Fortsetzung (6)
+[initial-scene || followed] Derartige Zwischenfälle (2)
 
 # sent_id = 268
 # text = Sie hielten lediglich den Glauben - oder die Hoffnung - in ihm lebendig , dass es außer ihm noch andere Feinde der Partei gab .
@@ -768,9 +773,9 @@
 7	oder	oder	CCONJ	KON	_	9	cc	_	_
 8	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Hoffnung	Hoffnung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	5	conj	_	_
-10	-	-	PUNCT	$.	_	5	punct	_	_
+10	-	-	PUNCT	$.	_	9	punct	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
-12	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nmod	_	_
+12	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
 13	lebendig	lebendig	ADJ	ADJD	_	2	xcomp	_	_
 14	,	,	PUNCT	$,	_	24	punct	_	_
 15	dass	dass	SCONJ	KOUS	_	24	mark	_	_
@@ -782,45 +787,50 @@
 21	Feinde	Feind	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	24	nsubj	_	_
 22	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Partei	Partei	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
-24	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	_	_
+24	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl	_	_
 25	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] hielten (2)
-[] Sie (1)
-[] lediglich (3)
-[] den Glauben - oder die Hoffnung - (5)
-[] in ihm lebendig , dass es außer ihm noch andere Feinde der Partei gab (13)
+[SCENE-CONTINUATION] hielten (2)
+[x-causer] Sie (1)
+[m-mode] lediglich (3)
+[participant] den Glauben in ihm , dass es außer ihm noch andere Feinde der Partei gab (5)
+[participant] - oder die Hoffnung - (9)
+[initial-scene] lebendig (13)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] lediglich (3)
+[MODE] lediglich (3)
 
-[] Glauben (5)
+[MESSAGE] Glauben (5)
+[x-experiencer] in ihm (12)
+[content] , dass es außer ihm noch andere Feinde der Partei gab (24)
 
-[] Hoffnung (9)
+[MESSAGE] Hoffnung (9)
+[content] , dass es außer ihm noch andere Feinde der Partei gab (24)
 
-[] lebendig (13)
-[] in ihm (12)
-[] , dass es außer ihm noch andere Feinde der Partei gab (24)
+[IDENTIFICATION] ihm (12)
 
-[] ihm (12)
+[EXISTENCE] gab (24)
+[m-reference] außer ihm (18)
+[m-scene] noch (19)
+[exists] andere Feinde der Partei (21)
 
-[] gab (24)
-[] außer ihm (18)
-[] noch (19)
-[] andere Feinde der Partei (21)
+[IDENTIFICATION] ihm (18)
 
-[] ihm (18)
+[ACCOMPANIMENT] noch (19)
+[accompanier] gab (24)
 
-[] noch (19)
+[SOCIAL-RELATION] Feinde (21)
+[m-reference] andere (20)
+[has-social-relation] der Partei (23)
 
-[] Feinde (21)
-[] andere (20)
-[] der Partei (23)
+[COMPARISON] andere (20)
 
-[] andere (20)
+[SOCIAL-RELATION] Partei (23)
 
-[] Partei (23)
+[STATE] lebendig (13)
+[has-state] Glauben (5)
+[has-state] Hoffnung (9)
 
 # sent_id = 269
 # text = Vielleicht waren die Gerüchte von großen Untergrundverschwörungen doch wahr - vielleicht existierte » Die Bruderschaft « wirklich !
@@ -843,33 +853,34 @@
 17	wirklich	wirklich	ADJ	ADJD	_	12	advmod	_	_
 18	!	!	PUNCT	$.	_	9	punct	_	_
 
-[] wahr (9)
-[] Vielleicht (1)
-[] die Gerüchte von großen Untergrundverschwörungen (4)
-[] doch (8)
+[MODE] wahr (9)
+[m-mode] Vielleicht (1)
+[has-mode] die Gerüchte von großen Untergrundverschwörungen (4)
+[m-scene] doch (8)
 
-[] Vielleicht (1)
+[MODE] Vielleicht (1)
 
-[] Gerüchte (4)
-[] von großen Untergrundverschwörungen (7)
+[MESSAGE] Gerüchte (4)
+[topic] von großen Untergrundverschwörungen (7)
 
-[] Untergrundverschwörungen (7)
-[] großen (6)
+[SOCIAL-RELATION] Untergrundverschwörungen (7)
+[m-quality] großen (6)
 
-[] großen (6)
+[QUALITY] großen (6)
 
-[] doch (8)
+[CONCESSION] doch (8)
+[asserted] wahr (9)
 
-[] existierte (12)
-[] vielleicht (11)
-[] » Die Bruderschaft « (15)
-[] wirklich (17)
+[EXISTENCE] existierte (12)
+[m-mode] vielleicht (11)
+[exists] » Die Bruderschaft « (15)
+[m-mode] wirklich (17)
 
-[] vielleicht (11)
+[MODE] vielleicht (11)
 
-[] Bruderschaft (15)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruderschaft (15)
 
-[] wirklich (17)
+[MODE] wirklich (17)
 
 # sent_id = 270
 # text = Trotz der endlosen Verhaftungen , Geständnisse und Hinrichtungen konnte man nie sicher sein , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war .
@@ -900,38 +911,41 @@
 25	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	cop	_	_
 26	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] sicher (12)
-[] Trotz der endlosen Verhaftungen , Geständnisse und Hinrichtungen (4)
-[] man (10)
-[] nie (11)
-[] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
+[MESSAGE] sicher (12)
+[m-conceded] Trotz der endlosen Verhaftungen (4)
+[m-conceded] , Geständnisse (6)
+[m-conceded] und Hinrichtungen (8)
+[x-experiencer] man (10)
+[m-time] nie (11)
+[content] , dass » Die Bruderschaft « nicht lediglich eine sagenhafte Erfindung war (24)
 
-[] Verhaftungen (4)
-[] endlosen (3)
+[POSSESSION-INIT] Verhaftungen (4)
+[m-quantity] endlosen (3)
 
-[] endlosen (3)
+[sSCENE-CONTINUATION >> QUANTITY] endlosen (3)
 
-[] Geständnisse (6)
+[MESSAGE-INIT] Geständnisse (6)
 
-[] Hinrichtungen (8)
+[DESTRUCTION] Hinrichtungen (8)
 
-[] man (10)
+[CLASS] man (10)
 
-[] nie (11)
+[TIME-NEG] nie (11)
 
-[] Erfindung (24)
-[] » Die Bruderschaft « (18)
-[] nicht (20)
-[] lediglich (21)
-[] sagenhafte (23)
+[TRANSFORMATION-CREATION >> MESSAGE-INIT] Erfindung (24)
+[created >> target-content] » Die Bruderschaft « (18)
+[m-mode] nicht (20)
+[m-mode] lediglich (21)
+[m-quality] sagenhafte (23)
 
-[] Bruderschaft (18)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruderschaft (18)
 
-[] nicht (20)
+[MODE] nicht (20)
 
-[] lediglich (21)
+[MODE] lediglich (21)
 
-[] sagenhafte (23)
+[QUALITY] sagenhafte (23)
+[has-quality] Erfindung (24)
 
 # sent_id = 271
 # text = An manchen Tagen glaubte er daran , an anderen nicht .
@@ -943,26 +957,27 @@
 6	daran	daran	ADP	PROAV	PronType=Dem	4	advmod	_	_
 7	,	,	PUNCT	$,	_	9	punct	_	_
 8	an	an	ADP	APPR	_	9	case	_	_
-9	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	4	obl	_	_
-10	nicht	nicht	PART	PTKNEG	Polarity=Neg	9	advmod	_	_
+9	anderen	ander	PRON	PIS	Case=Dat|Definite=Ind|Gender=Neut|Number=Plur	10	obl	_	_
+10	nicht	nicht	PART	PTKNEG	Polarity=Neg	4	parataxis	_	_
 11	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] glaubte (4)
-[] An manchen Tagen (3)
-[] er (5)
-[] daran (6)
-[] , an anderen nicht (9)
+[MESSAGE] glaubte (4)
+[m-time] An manchen Tagen (3)
+[x-experiencer] er (5)
+[content] daran (6)
 
-[] Tagen (3)
+[TIME] Tagen (3)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] daran (6)
+[IDENTIFICATION] daran (6)
 
-[] anderen (9)
-[] nicht (10)
+[MODE] nicht (10)
+[m-time] , an anderen (9)
 
-[] nicht (10)
+[COMPARISON] anderen (9)
+
+__________________________________________________________________________________________
 
 # sent_id = 272
 # text = Es gab keinen greifbaren Beweis , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah .
@@ -1003,7 +1018,7 @@
 35	,	,	PUNCT	$,	_	38	punct	_	_
 36	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 37	kleine	klein	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	38	amod	_	_
-38	Bewegung	Bewegung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
+38	Bewegung	Bewegung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	18	conj	_	_
 39	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	40	det	_	_
 40	Hände	Hand	NOUN	NN	Case=Gen|Gender=Fem|Number=Plur	38	nmod	_	_
 41	,	,	PUNCT	$,	_	46	punct	_	_
@@ -1014,87 +1029,96 @@
 46	sah	sehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	acl	_	_
 47	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] gab (2)
-[] keinen greifbaren Beweis , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (5)
+[EXISTENCE] gab (2)
+[exists] keinen greifbaren Beweis (5)
+[exists] , nur flüchtige Andeutungen , die alles oder nichts bedeuten konnten : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah (9)
 
-[] Beweis (5)
-[] keinen (3)
-[] greifbaren (4)
+[MESSAGE] Beweis (5)
+[m-mode] keinen (3)
+[m-scene] greifbaren (4)
 
-[] keinen (3)
+[MODE] keinen (3)
 
-[] greifbaren (4)
+[QUALITY] greifbaren (4)
+[has-quality] Beweis (5)
 
-[] Andeutungen (9)
-[] nur (7)
-[] flüchtige (8)
-[] , die alles oder nichts bedeuten konnten (15)
-[] : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden (18)
+[MESSAGE] Andeutungen : Bruchstücke erlauschter Gespräche , verwischte Aufschriften an Abortwänden - oder einmal , wenn zwei Freunde sich trafen , eine kleine Bewegung der Hände , die einem Verständigungszeichen ähnlich sah (9)
+[m-mode] nur (7)
+[m-quality] flüchtige (8)
+[m-scene] , die alles oder nichts bedeuten konnten (15)
 
-[] nur (7)
+[MODE] nur (7)
 
-[] flüchtige (8)
+[QUALITY] flüchtige (8)
 
-[] bedeuten (15)
-[] die (11)
-[] alles oder nichts (12)
+[MESSAGE] bedeuten (15)
+[topic] die (11)
+[content] alles (12)
+[content] oder nichts (14)
 
-[] die (11)
+[IDENTIFICATION] die (11)
 
-[] alles (12)
+[CLASS] alles (12)
 
-[] nichts (14)
+[CLASS] nichts (14)
 
-[] Bruchstücke (18)
-[] erlauschter Gespräche (20)
+[PART-WHOLE] Bruchstücke (18)
+[whole] erlauschter Gespräche (20)
 
-[] Gespräche (20)
-[] erlauschter (19)
+[MESSAGE] Gespräche (20)
+[m-scene] erlauschter (19)
 
-[] erlauschter (19)
+[MESSAGE-INIT] erlauschter (19)
+[target-content] Gespräche (20)
 
-[] Aufschriften (23)
-[] verwischte (22)
-[] an Abortwänden (25)
+[MESSAGE] Aufschriften (23)
+[m-scene] verwischte (22)
+[x-target-location] an Abortwänden (25)
 
-[] verwischte (22)
+[MESSAGE-NEG-INIT] verwischte (22)
+[topic] Aufschriften (23)
 
-[] Abortwänden (25)
+[CLASS] Abortwänden (25)
 
-[] Bewegung (38)
-[] einmal (28)
-[] - , wenn zwei Freunde sich trafen (34)
-[] kleine (37)
-[] der Hände (40)
-[] , die einem Verständigungszeichen ähnlich sah (46)
+[UNANCHORED-MOTION >> MESSAGE-INIT] Bewegung (38)
+[m-time] einmal (28)
+[m-condition] - , wenn zwei Freunde sich trafen (34)
+[m-quality] kleine (37)
+[in-motion >> x-sender] der Hände (40)
+[m-scene] , die einem Verständigungszeichen ähnlich sah (46)
 
-[] einmal (28)
+[TIME] einmal (28)
 
-[] trafen (34)
-[] zwei Freunde (32)
-[] sich (33)
+[SOCIAL-RELATION-INIT] trafen (34)
+[has-social-relation] zwei Freunde (32)
+[target-social-relation] sich (33)
 
-[] Freunde (32)
-[] zwei (31)
+[SOCIAL-RELATION] Freunde (32)
+[m-quantity] zwei (31)
 
-[] zwei (31)
+[QUANTITY] zwei (31)
 
-[] sich (33)
+[IDENTIFICATION] sich (33)
 
-[] kleine (37)
+[QUALITY] kleine (37)
 
-[] Hände (40)
+[PART-WHOLE] Hände (40)
 
-[] sah (46)
-[] die (42)
-[] einem Verständigungszeichen (44)
-[] ähnlich (45)
+[SCENE] sah (46)
+[participant] die (42)
+[participant] einem Verständigungszeichen (44)
+[scene] ähnlich (45)
+[participant] Bewegung (38)
 
-[] die (42)
+[IDENTIFICATION] die (42)
 
-[] Verständigungszeichen (44)
+[MESSAGE] Verständigungszeichen (44)
+[m-compared] die (42)
+[m-compared] Bewegung (38)
 
-[] ähnlich (45)
+[COMPARISON] ähnlich (45)
+[compared] die (42)
+[reference] einem Verständigungszeichen (44)
 
 # sent_id = 273
 # text = Alles war nur eine Mutmaßung : sehr wahrscheinlich hatte er sich das alles nur eingebildet .
@@ -1110,41 +1134,41 @@
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
 11	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	15	iobj	_	_
 12	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	15	obj	_	_
-13	alles	alle	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	15	obj	_	_
+13	alles	alle	PRON	PIS	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing	12	obj	_	_
 14	nur	nur	ADV	ADV	_	15	advmod	_	_
 15	eingebildet	einbilden	VERB	VVPP	Verbform=Part	5	parataxis	_	_
 16	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] Mutmaßung (5)
-[] Alles (1)
-[] nur (3)
+[MESSAGE] Mutmaßung (5)
+[topic] Alles (1)
+[m-mode] nur (3)
 
-[] Alles (1)
+[CLASS] Alles (1)
 
-[] nur (3)
+[MODE] nur (3)
 
-[] eingebildet (15)
-[] sehr wahrscheinlich (8)
-[] er (10)
-[] sich (11)
-[] das (12)
-[] alles (13)
-[] nur (14)
+[MESSAGE] eingebildet (15)
+[m-mode] sehr wahrscheinlich (8)
+[x-experiencer] er (10)
+[x-noncomp] sich (11)
+[topic] das alles (12)
+[m-mode] nur (14)
 
-[] wahrscheinlich (8)
-[] sehr (7)
+[MODE] wahrscheinlich (8)
+[m-quantity] sehr (7)
 
-[] sehr (7)
+[QUANTITY] sehr (7)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] sich (11)
+[NONCOMP] sich (11)
 
-[] das (12)
+[IDENTIFICATION] das (12)
+[m-quantity] alles (13)
 
-[] alles (13)
+[QUANTITY] alles (13)
 
-[] nur (14)
+[MODE] nur (14)
 
 # sent_id = 274
 # text = Er war an seinen Arbeitsplatz zurückgegangen , ohne O'Brien noch einmal anzusehen .
@@ -1162,28 +1186,30 @@
 12	anzusehen	ansehen	VERB	VVIZU	VerbForm=Inf	6	advcl	_	_
 13	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] zurückgegangen (6)
-[] Er (1)
-[] an seinen Arbeitsplatz (5)
-[] , ohne O'Brien noch einmal anzusehen (12)
+[LOCATION-INIT] zurückgegangen (6)
+[has-location] Er (1)
+[target-location] an seinen Arbeitsplatz (5)
+[m-accompanier] , ohne O'Brien noch einmal anzusehen (12)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Arbeitsplatz (5)
-[] seinen (4)
+[LOCATION] Arbeitsplatz (5)
+[x-has-social-relation] seinen (4)
 
-[] seinen (4)
+[IDENTIFICATION] seinen (4)
 
-[] anzusehen (12)
-[] O'Brien (9)
-[] noch einmal (11)
+[MESSAGE-INIT] anzusehen (12)
+[topic] O'Brien (9)
+[m-time] noch einmal (11)
+[x-experiencer] Er (1)
 
-[] O'Brien (9)
+[IDENTIFICATION] O'Brien (9)
 
-[] einmal (11)
-[] noch (10)
+[TIME] einmal (11)
+[m-scene] noch (10)
 
-[] noch (10)
+[ACCOMPANIMENT] noch (10)
+[accompanied] einmal (11)
 
 # sent_id = 275
 # text = Der Gedanke , ihre kurze Fühlungnahme weiter zu verfolgen , war ihm kaum durch den Sinn gegangen .
@@ -1206,34 +1232,36 @@
 17	gegangen	gehen	VERB	VVPP	Verbform=Part	0	root	_	_
 18	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] gegangen (17)
-[] Der Gedanke , ihre kurze Fühlungnahme weiter zu verfolgen , (2)
-[] ihm (12)
-[] kaum (13)
-[] durch den Sinn (16)
+[MESSAGE-INIT] gegangen (17)
+[target-content] Der Gedanke , ihre kurze Fühlungnahme weiter zu verfolgen , (2)
+[x-experiencer] ihm (12)
+[m-quantity] kaum (13)
+[x-noncomp] durch den Sinn (16)
 
-[] Gedanke (2)
-[] , ihre kurze Fühlungnahme weiter zu verfolgen (9)
+[MESSAGE] Gedanke (2)
+[content] , ihre kurze Fühlungnahme weiter zu verfolgen (9)
 
-[] verfolgen (9)
-[] ihre kurze Fühlungnahme (6)
-[] weiter (7)
+[UNANCHORED-MOTION] verfolgen (9)
+[in-motion] ihre kurze Fühlungnahme (6)
+[m-scene] weiter (7)
+[x-accompanier] ihm (12)
 
-[] Fühlungnahme (6)
-[] ihre (4)
-[] kurze (5)
+[SOCIAL-RELATION-INIT] Fühlungnahme (6)
+[has-social-relation] ihre (4)
+[m-quality] kurze (5)
 
-[] ihre (4)
+[IDENTIFICATION] ihre (4)
 
-[] kurze (5)
+[QUALITY] kurze (5)
 
-[] weiter (7)
+[SCENE-CONTINUATION] weiter (7)
+[initial-scene] verfolgen (9)
 
-[] ihm (12)
+[IDENTIFICATION] ihm (12)
 
-[] kaum (13)
+[QUANTITY] kaum (13)
 
-[] Sinn (16)
+[NONCOMP] Sinn (16)
 
 # sent_id = 276
 # text = Es wäre unvorstellbar gefährlich gewesen , selbst wenn er gewusst hätte , wie er das machen sollte .
@@ -1256,42 +1284,43 @@
 17	sollte	sollen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
 18	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] gefährlich (4)
-[] Es (1)
-[] unvorstellbar (3)
-[] , selbst wenn er gewusst hätte , wie er das machen sollte (10)
+[QUALITY] gefährlich (4)
+[has-quality] Es (1)
+[m-scene] unvorstellbar (3)
+[m-condition] , selbst wenn er gewusst hätte , wie er das machen sollte (10)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] unvorstellbar (3)
+[MESSAGE-POSSIBILITY-NEG >> QUANTITY] unvorstellbar (3)
+[topic >> has-quantity] gefährlich (4)
 
-[] gewusst (10)
-[] selbst (7)
-[] er (9)
-[] , wie er das machen sollte (16)
+[MESSAGE] gewusst (10)
+[m-mode] selbst (7)
+[x-experiencer] er (9)
+[content] , wie er das machen sollte (16)
 
-[] selbst (7)
+[MODE] selbst (7)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] machen (16)
-[] wie (13)
-[] er (14)
-[] das (15)
+[CAUSATION] machen (16)
+[m-means] wie (13)
+[causer] er (14)
+[result] das (15)
 
-[] wie (13)
+[MEANS] wie (13)
 
-[] er (14)
+[IDENTIFICATION] er (14)
 
-[] das (15)
+[IDENTIFICATION] das (15)
 
 # sent_id = 277
 # text = Eine oder zwei Sekunden lang hatten sie einen zweideutigen Blick getauscht - und damit Schluss .
 1	Eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	nummod	_	_
 2	oder	oder	CCONJ	KON	_	3	cc	_	_
 3	zwei	zwei	NUM	CARD	NumType=Card	1	conj	_	_
-4	Sekunden	Sekunde	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	11	obl	_	_
-5	lang	lang	ADJ	ADJD	_	4	advmod	_	_
+4	Sekunden	Sekunde	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	5	nmod	_	_
+5	lang	lang	ADJ	ADJD	_	11	obl	_	_
 6	hatten	haben	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
 7	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
 8	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
@@ -1304,32 +1333,34 @@
 15	Schluss	Schluß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	11	conj	_	_
 16	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] getauscht (11)
-[] Eine oder zwei Sekunden lang (4)
-[] sie (7)
-[] einen zweideutigen Blick (10)
+[MESSAGE-INIT] getauscht (11)
+[m-time] Eine oder zwei Sekunden lang (5)
+[x-sender] sie (7)
+[m-noncomp] einen zweideutigen Blick (10)
 
-[] Sekunden (4)
-[] Eine oder zwei (1)
-[] lang (5)
+[TIME] lang (5)
+[time] Eine oder zwei Sekunden (4)
 
-[] Eine (1)
+[TIME] Sekunden (4)
+[m-quantity] Eine (1)
+[m-quantity] oder zwei (3)
 
-[] zwei (3)
+[QUANTITY] Eine (1)
 
-[] lang (5)
+[QUANTITY] zwei (3)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] Blick (10)
-[] zweideutigen (9)
+[NONCOMP] Blick (10)
+[m-scene] zweideutigen (9)
 
-[] zweideutigen (9)
+[MESSAGE] zweideutigen (9)
+[topic] Blick (10)
 
-[] Schluss (15)
-[] damit (14)
+[SCENE-DEINIT] Schluss (15)
+[initial-scene] damit (14)
 
-[] damit (14)
+[IDENTIFICATION] damit (14)
 
 # sent_id = 278
 # text = Aber sogar das war ein denkwürdiger Augenblick in der abgeschlossenen Einsamkeit , in der man zu leben gezwungen war .
@@ -1346,7 +1377,7 @@
 11	Einsamkeit	Einsamkeit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
 12	,	,	PUNCT	$,	_	18	punct	_	_
 13	in	in	ADP	APPR	_	14	case	_	_
-14	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	18	obl	_	_
+14	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	17	obl	_	_
 15	man	man	PRON	PIS	Definite=Ind|Gender=Neut	18	nsubj	_	_
 16	zu	zu	PART	PTKZU	_	17	mark	_	_
 17	leben	leben	VERB	VVINF	VerbForm=Inf	18	xcomp	_	_
@@ -1354,34 +1385,38 @@
 19	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	_
 20	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] Augenblick (7)
-[] sogar das (3)
-[] denkwürdiger (6)
-[] in der abgeschlossenen Einsamkeit , in der man zu leben gezwungen war (11)
+[TIME] Augenblick (7)
+[x-has-class] sogar das (3)
+[m-quality] denkwürdiger (6)
+[m-whole] in der abgeschlossenen Einsamkeit , in der man zu leben gezwungen war (11)
 
-[] das (3)
-[] sogar (2)
+[IDENTIFICATION] das (3)
+[m-mode] sogar (2)
 
-[] sogar (2)
+[MODE] sogar (2)
 
-[] denkwürdiger (6)
+[QUALITY] denkwürdiger (6)
 
-[] Einsamkeit (11)
-[] abgeschlossenen (10)
-[] , in der man zu leben gezwungen war (18)
+[STATE] Einsamkeit (11)
+[m-quality] abgeschlossenen (10)
+[m-scene] , in der man zu leben gezwungen war (18)
+[has-state] man (15)
 
-[] abgeschlossenen (10)
+[QUALITY] abgeschlossenen (10)
 
-[] gezwungen (18)
-[] in der (14)
-[] man (15)
-[] zu leben (17)
+[SCENE-NECESSITY] gezwungen (18)
+[participant] man (15)
+[scene] in der zu leben (17)
 
-[] der (14)
+[CLASS] man (15)
 
-[] man (15)
+[EVENT] leben (17)
+[m-depictive] in der (14)
+[m-depictive] Einsamkeit (11)
+[undergoer] man (15)
 
-[] leben (17)
+[STATE] der (14)
+[has-state] man (15)
 
 # sent_id = 279
 # text = Winston rappelte sich hoch und setzte sich gerade .
@@ -1395,24 +1430,25 @@
 8	gerade	gerade	ADJ	ADJD	_	6	advmod	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] rappelte (2)
-[] Winston (1)
-[] sich (3)
-[] hoch (4)
+[LOCATION-CHANGE] rappelte (2)
+[has-location] Winston (1)
+[x-noncomp] sich (3)
+[target-location] hoch (4)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] sich (3)
+[NONCOMP] sich (3)
 
-[] hoch (4)
+[LOCATION] hoch (4)
 
-[] setzte (6)
-[] sich (7)
-[] gerade (8)
+[UNANCHORED-MOTION] setzte (6)
+[in-motion] sich (7)
+[x-quality] gerade (8)
+[x-causer] Winston (1)
 
-[] sich (7)
+[IDENTIFICATION] sich (7)
 
-[] gerade (8)
+[QUALITY] gerade (8)
 
 # sent_id = 280
 # text = Er musste rülpsen .
@@ -1421,10 +1457,10 @@
 3	rülpsen	rülpsen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] rülpsen (3)
-[] Er (1)
+[EXCRETION] rülpsen (3)
+[excreter] Er (1)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
 # sent_id = 281
 # text = Der Gin rumorte in seinem Magen .
@@ -1436,16 +1472,16 @@
 6	Magen	Magen	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] rumorte (3)
-[] Der Gin (2)
-[] in seinem Magen (6)
+[MESSAGE-INIT] rumorte (3)
+[x-causer] Der Gin (2)
+[x-sender] in seinem Magen (6)
 
-[] Gin (2)
+[CLASS] Gin (2)
 
-[] Magen (6)
-[] seinem (5)
+[PART-WHOLE] Magen (6)
+[whole] seinem (5)
 
-[] seinem (5)
+[IDENTIFICATION] seinem (5)
 
 # sent_id = 282
 # text = Sein Blick richtete sich wieder auf das Blatt .
@@ -1459,22 +1495,23 @@
 8	Blatt	Blatt	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obl	_	_
 9	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] richtete (3)
-[] Sein Blick (2)
-[] sich (4)
-[] wieder (5)
-[] auf das Blatt (8)
+[LOCATION-INIT >> MESSAGE-INIT] richtete (3)
+[x-causer >> x-noncomp] Sein Blick (2)
+[has-location >> x-noncomp] sich (4)
+[m-scene] wieder (5)
+[target-location >> topic] auf das Blatt (8)
 
-[] Blick (2)
-[] Sein (1)
+[MESSAGE-INIT] Blick (2)
+[x-sender] Sein (1)
 
-[] Sein (1)
+[IDENTIFICATION] Sein (1)
 
-[] sich (4)
+[IDENTIFICATION] sich (4)
 
-[] wieder (5)
+[SEQUENCE] wieder (5)
+[follows] richtete (3)
 
-[] Blatt (8)
+[CLASS] Blatt (8)
 
 # sent_id = 283
 # text = Er entdeckte , dass er , während er in hilflosem Grübeln dagesessen , gleichzeitig automatisch weitergeschrieben hatte .
@@ -1497,34 +1534,40 @@
 17	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] entdeckte (2)
-[] Er (1)
-[] , dass er , während er in hilflosem Grübeln dagesessen , gleichzeitig automatisch weitergeschrieben hatte (16)
+[MESSAGE-INIT] entdeckte (2)
+[x-experiencer] Er (1)
+[target-content] , dass er , während er in hilflosem Grübeln dagesessen , gleichzeitig automatisch weitergeschrieben hatte (16)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] weitergeschrieben (16)
-[] er (5)
-[] , während er in hilflosem Grübeln dagesessen , (12)
-[] gleichzeitig (14)
-[] automatisch (15)
+[MESSAGE-INIT] weitergeschrieben (16)
+[x-sender] er (5)
+[m-time >> m-scene] , während er in hilflosem Grübeln dagesessen , (12)
+[m-time >> m-scene] gleichzeitig (14)
+[m-scene] automatisch (15)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] dagesessen (12)
-[] er (8)
-[] in hilflosem Grübeln (11)
+[LOCATION-CONTINUATION] dagesessen (12)
+[has-location] er (8)
+[m-scene] in hilflosem Grübeln (11)
+[m-accompanied] weitergeschrieben (16)
 
-[] er (8)
+[IDENTIFICATION] er (8)
 
-[] Grübeln (11)
-[] hilflosem (10)
+[MESSAGE-INIT] Grübeln (11)
+[m-scene] hilflosem (10)
+[m-accompanied] dagesessen (12)
 
-[] hilflosem (10)
+[MEANS-NEG >> QUALITY] hilflosem (10)
+[means >> has-quality] Grübeln (11)
 
-[] gleichzeitig (14)
+[TIME] gleichzeitig (14)
+[has-time] dagesessen (12)
+[has-time] weitergeschrieben (16)
 
-[] automatisch (15)
+[QUALITY] automatisch (15)
+[has-quality] weitergeschrieben (16)
 
 # sent_id = 284
 # text = Und zwar war es nicht mehr die gleiche verkrampfte Handschrift von vorhin .
@@ -1542,28 +1585,31 @@
 12	vorhin	vorhin	ADV	ADV	_	10	advmod	_	_
 13	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] Handschrift (10)
-[] zwar (2)
-[] es (4)
-[] nicht mehr (6)
-[] gleiche (8)
-[] verkrampfte (9)
-[] von vorhin (12)
+[SENDING] Handschrift (10)
+[m-scene] zwar (2)
+[x-identified] es (4)
+[m-time] nicht mehr (6)
+[m-compared] gleiche (8)
+[m-quality] verkrampfte (9)
+[m-time || m-reference] von vorhin (12)
 
-[] zwar (2)
+[CONCESSION] zwar (2)
+[asserted] Handschrift (10)
 
-[] es (4)
+[IDENTIFICATION] es (4)
 
-[] mehr (6)
-[] nicht (5)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (6)
+[m-mode >> m-noncomp] nicht (5)
+[initial-scene] Handschrift (10)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] gleiche (8)
+[COMPARISON] gleiche (8)
+[compared] Handschrift (10)
 
-[] verkrampfte (9)
+[STATE-INIT] verkrampfte (9)
 
-[] vorhin (12)
+[TIME] vorhin (12)
 
 # sent_id = 285
 # text = Seine Feder war beschwingt über das glatte Papier geglitten und hatte in großer klarer Blockschrift hingemalt :
@@ -1585,33 +1631,35 @@
 16	hingemalt	hinmalen	VERB	VVPP	Verbform=Part	9	conj	_	_
 17	:	:	PUNCT	$.	_	9	punct	_	_
 
-[] geglitten (9)
-[] Seine Feder (2)
-[] beschwingt (4)
-[] über das glatte Papier (8)
+[UNANCHORED-MOTION] geglitten (9)
+[in-motion] Seine Feder (2)
+[m-state] beschwingt (4)
+[transitory-location] über das glatte Papier (8)
 
-[] Feder (2)
-[] Seine (1)
+[CLASS] Feder (2)
+[m-possessor] Seine (1)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] beschwingt (4)
+[STATE-INIT] beschwingt (4)
 
-[] Papier (8)
-[] glatte (7)
+[CLASS] Papier (8)
+[m-quality] glatte (7)
 
-[] glatte (7)
+[QUALITY] glatte (7)
 
-[] hingemalt (16)
-[] in großer klarer Blockschrift (15)
+[MESSAGE-INIT] hingemalt (16)
+[m-quality] in großer klarer Blockschrift (15)
+[x-sender] Seine Feder (2)
 
-[] Blockschrift (15)
-[] großer (13)
-[] klarer (14)
+[QUALITY] Blockschrift (15)
+[m-quality] großer (13)
+[m-scene] klarer (14)
 
-[] großer (13)
+[QUALITY] großer (13)
 
-[] klarer (14)
+[MESSAGE] klarer (14)
+[topic] Blockschrift (15)
 
 # sent_id = 286
 # text = NIEDER MIT DEM GROSSEN BRUDER
@@ -1621,13 +1669,13 @@
 4	GROSSEN	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	5	amod	_	_
 5	BRUDER	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	1	nmod	_	_
 
-[] NIEDER (1)
-[] MIT DEM GROSSEN BRUDER (5)
+[LOCATION-CHANGE] NIEDER (1)
+[has-location] MIT DEM GROSSEN BRUDER (5)
 
-[] BRUDER (5)
-[] GROSSEN (4)
+[SOCIAL-RELATION >> IDENTIFICATION] BRUDER (5)
+[m-quality >> m-noncomp] GROSSEN (4)
 
-[] GROSSEN (4)
+[QUALITY >> NONCOMP] GROSSEN (4)
 
 # sent_id = 287
 # text = NIEDER MIT DEM-GROSSEN BRUDER
@@ -1636,13 +1684,13 @@
 3	DEM-GROSSEN	DEM-GROSSEN	DET	ART	Case=Nom|Gender=Neut|Number=Sing	4	amod	_	_
 4	BRUDER	Bruder	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	1	nmod	_	_
 
-[] NIEDER (1)
-[] MIT DEM-GROSSEN BRUDER (4)
+[LOCATION-CHANGE] NIEDER (1)
+[has-location] MIT DEM-GROSSEN BRUDER (4)
 
-[] BRUDER (4)
-[] DEM-GROSSEN (3)
+[SOCIAL-RELATION >> IDENTIFICATION] BRUDER (4)
+[m-quality >> m-noncomp] DEM-GROSSEN (3)
 
-[] DEM-GROSSEN (3)
+[QUALITY >> NONCOMP] DEM-GROSSEN (3)
 
 # sent_id = 288
 # text = NIEDER MIT DEM GROSSEN BRUDER
@@ -1652,13 +1700,13 @@
 4	GROSSEN	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	5	amod	_	_
 5	BRUDER	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	1	nmod	_	_
 
-[] NIEDER (1)
-[] MIT DEM GROSSEN BRUDER (5)
+[LOCATION-CHANGE] NIEDER (1)
+[has-location] MIT DEM GROSSEN BRUDER (5)
 
-[] BRUDER (5)
-[] GROSSEN (4)
+[SOCIAL-RELATION >> IDENTIFICATION] BRUDER (5)
+[m-quality >> m-noncomp] GROSSEN (4)
 
-[] GROSSEN (4)
+[QUALITY >> NONCOMP] GROSSEN (4)
 
 # sent_id = 289
 # text = immer wieder , fast über eine halbe Seite hinweg .
@@ -1669,26 +1717,23 @@
 5	über	über	ADP	APPR	_	8	case	_	_
 6	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 7	halbe	halb	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	8	amod	_	_
-8	Seite	Seite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	nmod	_	_
-9	hinweg	hinweg	ADP	APZR	_	8	advmod	_	_
+8	Seite	Seite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	parataxis	_	_
+9	hinweg	hinweg	ADP	APZR	_	8	case	_	_
 10	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wieder (2)
-[] immer (1)
-[] , fast über eine halbe Seite hinweg (8)
+[SEQUENCE >> TIME] wieder (2)
+[m-scene >> x-noncomp] immer (1)
 
-[] immer (1)
+[SCENE-CONTINUATION] immer (1)
+[initial-scene] wieder (2)
 
-[] Seite (8)
-[] fast (4)
-[] halbe (7)
-[] hinweg (9)
+[PART-WHOLE] Seite (8)
+[m-quantity] fast (4)
+[part] halbe (7)
 
-[] fast (4)
+[QUANTITY] fast (4)
 
-[] halbe (7)
-
-[] hinweg (9)
+[QUANTITY] halbe (7)
 
 # sent_id = 290
 # text = Unwillkürlich durchzuckte ihn ein furchtbarer Schrecken .
@@ -1700,19 +1745,20 @@
 6	Schrecken	Schrecken	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 7	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] durchzuckte (2)
-[] Unwillkürlich (1)
-[] ihn (3)
-[] ein furchtbarer Schrecken (6)
+[MESSAGE-INIT] durchzuckte (2)
+[m-scene] Unwillkürlich (1)
+[x-experiencer] ihn (3)
+[topic] ein furchtbarer Schrecken (6)
 
-[] Unwillkürlich (1)
+[TIME] Unwillkürlich (1)
+[m-scene] durchzuckte (2)
 
-[] ihn (3)
+[IDENTIFICATION] ihn (3)
 
-[] Schrecken (6)
-[] furchtbarer (5)
+[MESSAGE] Schrecken (6)
+[m-quality] furchtbarer (5)
 
-[] furchtbarer (5)
+[QUALITY] furchtbarer (5)
 
 # sent_id = 291
 # text = Das war im Grunde töricht , denn das Niederschreiben gerade dieser Worte war nicht gefährlicher als der erste Schritt , ein Tagebuch anzulegen ; und doch fühlte er sich einen Augenblick lang versucht , die beschriebenen Seiten herauszureißen und die ganze Sache aufzugeben .
@@ -1746,8 +1792,8 @@
 28	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
 29	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	27	iobj	_	_
 30	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	Augenblick	Augenblick	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	33	obl	_	_
-32	lang	lang	ADJ	ADJD	_	27	advmod	_	_
+31	Augenblick	Augenblick	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	32	nmod	_	_
+32	lang	lang	ADJ	ADJD	_	27	obl	_	_
 33	versucht	versuchen	VERB	VVPP	Verbform=Part	27	xcomp	_	_
 34	,	,	PUNCT	$,	_	38	punct	_	_
 35	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	37	det	_	_
@@ -1761,76 +1807,82 @@
 43	aufzugeben	aufgeben	VERB	VVIZU	VerbForm=Inf	38	conj	_	_
 44	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] töricht (5)
-[] Das (1)
-[] im Grunde (4)
+[QUALITY] töricht (5)
+[has-quality] Das (1)
+[m-mode] im Grunde (4)
 
-[] Das (1)
+[IDENTIFICATION] Das (1)
 
-[] Grunde (4)
+[MODE] Grunde (4)
 
-[] gefährlicher (15)
-[] das Niederschreiben gerade dieser Worte (9)
-[] nicht (14)
-[] als der erste Schritt , ein Tagebuch anzulegen (19)
+[QUALITY] gefährlicher (15)
+[has-quality] das Niederschreiben gerade dieser Worte (9)
+[m-mode] nicht (14)
+[x-reference] als der erste Schritt , ein Tagebuch anzulegen (19)
 
-[] Niederschreiben (9)
-[] gerade dieser Worte (12)
+[MESSAGE-INIT] Niederschreiben (9)
+[target-content] gerade dieser Worte (12)
 
-[] Worte (12)
-[] gerade (10)
+[MESSAGE] Worte (12)
+[m-mode] gerade (10)
 
-[] gerade (10)
+[MODE] gerade (10)
 
-[] nicht (14)
+[MODE] nicht (14)
 
-[] Schritt (19)
-[] erste (18)
-[] , ein Tagebuch anzulegen (23)
+[ACTIVITY] Schritt (19)
+[m-rank] erste (18)
+[activity] , ein Tagebuch anzulegen (23)
 
-[] erste (18)
+[RANK] erste (18)
 
-[] anzulegen (23)
-[] ein Tagebuch (22)
+[TRANSFORMATION-CREATION] anzulegen (23)
+[created] ein Tagebuch (22)
 
-[] Tagebuch (22)
+[MESSAGE] Tagebuch (22)
 
-[] fühlte (27)
-[] doch (26)
-[] er (28)
-[] sich (29)
-[] lang (32)
-[] einen Augenblick versucht , die beschriebenen Seiten herauszureißen und die ganze Sache aufzugeben (33)
+[MESSAGE] fühlte (27)
+[m-scene] doch (26)
+[x-experiencer] er (28)
+[x-noncomp] sich (29)
+[m-time] einen Augenblick lang (32)
+[topic] versucht , die beschriebenen Seiten herauszureißen und die ganze Sache aufzugeben (33)
 
-[] doch (26)
+[CONCESSION] doch (26)
+[asserted] fühlte (27)
 
-[] er (28)
+[IDENTIFICATION] er (28)
 
-[] sich (29)
+[NONCOMP] sich (29)
 
-[] lang (32)
+[TIME] lang (32)
+[time] einen Augenblick (31)
 
-[] versucht (33)
-[] einen Augenblick (31)
-[] , die beschriebenen Seiten herauszureißen und die ganze Sache aufzugeben (38)
+[TIME] Augenblick (31)
 
-[] Augenblick (31)
+[SCENE-INIT] versucht (33)
+[target-scene] , die beschriebenen Seiten herauszureißen (38)
+[target-scene] und die ganze Sache aufzugeben (43)
+[participant] er (28)
 
-[] herauszureißen (38)
-[] die beschriebenen Seiten (37)
+[LOCATION-DEINIT] herauszureißen (38)
+[has-location] die beschriebenen Seiten (37)
+[x-causer] er (28)
 
-[] Seiten (37)
-[] beschriebenen (36)
+[PART-WHOLE] Seiten (37)
+[m-scene] beschriebenen (36)
 
-[] beschriebenen (36)
+[MESSAGE-INIT] beschriebenen (36)
+[x-target-location] Seiten (37)
 
-[] aufzugeben (43)
-[] die ganze Sache (42)
+[SCENE-DEINIT] aufzugeben (43)
+[initial-scene] die ganze Sache (42)
+[x-causer] er (28)
 
-[] Sache (42)
-[] ganze (41)
+[CLASS] Sache (42)
+[m-quantity] ganze (41)
 
-[] ganze (41)
+[QUANTITY] ganze (41)
 
 # sent_id = 292
 # text = Er tat es jedoch nicht , weil er wusste , dass es zwecklos war .
@@ -1850,31 +1902,32 @@
 14	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_
 15	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] tat (2)
-[] Er (1)
-[] es (3)
-[] jedoch (4)
-[] nicht (5)
-[] , weil er wusste , dass es zwecklos war (9)
+[ACTIVITY] tat (2)
+[is-active] Er (1)
+[activity] es (3)
+[m-conceded] jedoch (4)
+[m-mode] nicht (5)
+[m-explanation] , weil er wusste , dass es zwecklos war (9)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] jedoch (4)
+[CONCESSION] jedoch (4)
+[asserted] tat (2)
 
-[] nicht (5)
+[MODE] nicht (5)
 
-[] wusste (9)
-[] er (8)
-[] , dass es zwecklos war (13)
+[MESSAGE] wusste (9)
+[x-experiencer] er (8)
+[content] , dass es zwecklos war (13)
 
-[] er (8)
+[IDENTIFICATION] er (8)
 
-[] zwecklos (13)
-[] es (12)
+[QUALITY] zwecklos (13)
+[has-quality] es (12)
 
-[] es (12)
+[IDENTIFICATION] es (12)
 
 # sent_id = 293
 # text = Ob er nieder mit dem Großen Bruder hinschrieb oder nicht , machte keinen Unterschied .
@@ -1884,41 +1937,43 @@
 4	mit	mit	ADP	APPR	_	7	case	_	_
 5	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	Großen	groß	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	7	amod	_	_
-7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	8	obl	_	_
+7	Bruder	Bruder	PROPN	NE	Case=Dat|Gender=Masc|Number=Sing	3	obl	_	_
 8	hinschrieb	hinschreiben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	csubj	_	_
 9	oder	oder	CCONJ	KON	_	8	cc	_	_
-10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	advmod	_	_
+10	nicht	nicht	PART	PTKNEG	Polarity=Neg	8	conj	_	_
 11	,	,	PUNCT	$,	_	8	punct	_	_
 12	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	keinen	kein	DET	PIAT	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	14	nmod	_	_
 14	Unterschied	Unterschied	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	12	obj	_	_
 15	.	.	PUNCT	$.	_	12	punct	_	_
 
-[] machte (12)
-[] Ob er nieder mit dem Großen Bruder hinschrieb oder nicht , (8)
-[] keinen Unterschied (14)
+[RESULTATIVE] machte (12)
+[has-resultative] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
+[has-resultative] nicht (10)
+[resultative] keinen Unterschied (14)
 
-[] hinschrieb (8)
-[] er (2)
-[] nieder (3)
-[] mit dem Großen Bruder (7)
-[] nicht (10)
+[MESSAGE-INIT] hinschrieb (8)
+[x-sender] er (2)
+[target-content] nieder mit dem Großen Bruder (3)
 
-[] er (2)
+[IDENTIFICATION] er (2)
 
-[] nieder (3)
+[LOCATION-CHANGE] nieder (3)
+[has-location] mit dem Großen Bruder (7)
 
-[] Bruder (7)
-[] Großen (6)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (7)
+[m-quality >> m-noncomp] Großen (6)
 
-[] Großen (6)
+[QUALITY >> NONCOMP] Großen (6)
 
-[] nicht (10)
+[MODE] nicht (10)
 
-[] Unterschied (14)
-[] keinen (13)
+[COMPARISON] Unterschied (14)
+[m-mode] keinen (13)
+[compared] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
+[reference] nicht (10)
 
-[] keinen (13)
+[MODE] keinen (13)
 
 # sent_id = 294
 # text = Ob er mit dem Tagebuch fortfuhr oder nicht , machte keinen Unterschied .
@@ -1929,7 +1984,7 @@
 5	Tagebuch	Tagebuch	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	6	obl	_	_
 6	fortfuhr	fortfahren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	_	_
 7	oder	oder	CCONJ	KON	_	6	cc	_	_
-8	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+8	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	conj	_	_
 9	,	,	PUNCT	$,	_	6	punct	_	_
 10	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	keinen	kein	DET	PIAT	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	12	nmod	_	_
@@ -1937,24 +1992,27 @@
 13	.	.	PUNCT	$.	_	10	punct	_	_
 
 [] machte (10)
-[] Ob er mit dem Tagebuch fortfuhr oder nicht , (6)
+[] Ob er mit dem Tagebuch fortfuhr oder , (6)
+[] nicht (8)
 [] keinen Unterschied (12)
 
-[] fortfuhr (6)
-[] er (2)
-[] mit dem Tagebuch (5)
-[] nicht (8)
+[MESSAGE-CONTINUATION] fortfuhr (6)
+[x-causer] er (2)
+[topic] mit dem Tagebuch (5)
 
-[] er (2)
+[IDENTIFICATION] er (2)
 
-[] Tagebuch (5)
+[MESSAGE] Tagebuch (5)
+[x-sender] er (2)
 
-[] nicht (8)
+[MODE] nicht (8)
 
-[] Unterschied (12)
-[] keinen (11)
+[COMPARISON] Unterschied (12)
+[m-mode] keinen (11)
+[compared] Ob er mit dem Tagebuch fortfuhr oder , (6)
+[reference] nicht (8)
 
-[] keinen (11)
+[MODE] keinen (11)
 
 # sent_id = 295
 # text = Die Gedankenpolizei würde ihn trotzdem erwischen .
@@ -1966,16 +2024,16 @@
 6	erwischen	erwischen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 7	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] erwischen (6)
-[] Die Gedankenpolizei (2)
-[] ihn (4)
-[] trotzdem (5)
+[POSSESSION-INIT] erwischen (6)
+[target-possessor] Die Gedankenpolizei (2)
+[possessed] ihn (4)
+[m-exception] trotzdem (5)
 
-[] Gedankenpolizei (2)
+[CLASS] Gedankenpolizei (2)
 
-[] ihn (4)
+[IDENTIFICATION] ihn (4)
 
-[] trotzdem (5)
+[EXCEPTION] trotzdem (5)
 
 # sent_id = 296
 # text = Er hatte - auch wenn er nie die Feder angesetzt hätte - das Kapitalverbrechen begangen , das alle anderen in sich einschloss .
@@ -2003,40 +2061,43 @@
 22	einschloss	einschließen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
 23	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] begangen (15)
-[] Er (1)
-[] - auch wenn er nie die Feder angesetzt hätte - (10)
-[] das Kapitalverbrechen , das alle anderen in sich einschloss (14)
+[SCENE] begangen (15)
+[participant] Er (1)
+[m-conceded] - auch wenn er nie die Feder angesetzt hätte - (10)
+[scene] das Kapitalverbrechen , das alle anderen in sich einschloss (14)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] angesetzt (10)
-[] auch (4)
-[] er (6)
-[] nie (7)
-[] die Feder (9)
+[HITTING] angesetzt (10)
+[m-scene] auch (4)
+[x-causer] er (6)
+[m-time] nie (7)
+[hitting] die Feder (9)
 
-[] auch (4)
+[ACCOMPANIMENT] auch (4)
+[accompanier] angesetzt (10)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
-[] nie (7)
+[TIME-NEG] nie (7)
 
-[] Feder (9)
+[CLASS] Feder (9)
 
-[] Kapitalverbrechen (14)
-[] , das alle anderen in sich einschloss (22)
+[EVENT] Kapitalverbrechen (14)
+[m-scene] , das alle anderen in sich einschloss (22)
+[x-causer] Er (1)
 
-[] einschloss (22)
-[] das (17)
-[] alle anderen (19)
-[] in sich (21)
+[SUBCLASS] einschloss (22)
+[superclass] das (17)
+[subclass] alle anderen (19)
+[x-noncomp] in sich (21)
+[superclass] Kapitalverbrechen (14)
 
-[] das (17)
+[IDENTIFICATION] das (17)
 
-[] anderen (19)
+[COMPARISON] anderen (19)
 
-[] sich (21)
+[NONCOMP] sich (21)
 
 # sent_id = 297
 # text = Gedankenverbrechen nannten sie es .
@@ -2046,16 +2107,17 @@
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] nannten (2)
-[] Gedankenverbrechen (1)
-[] sie (3)
-[] es (4)
+[MESSAGE-INIT || IDENTIFICATION-INIT] nannten (2)
+[target-content || target-identifier] Gedankenverbrechen (1)
+[x-sender || x-causer] sie (3)
+[topic || identified] es (4)
 
-[] Gedankenverbrechen (1)
+[EVENT] Gedankenverbrechen (1)
+[x-has-class] es (4)
 
-[] sie (3)
+[IDENTIFICATION] sie (3)
 
-[] es (4)
+[IDENTIFICATION] es (4)
 
 # sent_id = 298
 # text = Gedankenverbrechen konnte man auf die Dauer nicht geheim halten .
@@ -2070,22 +2132,23 @@
 9	halten	halten	VERB	VVINF	VerbForm=Inf	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] halten (9)
-[] Gedankenverbrechen (1)
-[] man (3)
-[] auf die Dauer (6)
-[] nicht (7)
-[] geheim (8)
+[SCENE-CONTINUATION] halten (9)
+[participant] Gedankenverbrechen (1)
+[x-causer] man (3)
+[m-time] auf die Dauer (6)
+[m-mode] nicht (7)
+[scene] geheim (8)
 
-[] Gedankenverbrechen (1)
+[EVENT] Gedankenverbrechen (1)
 
-[] man (3)
+[CLASS] man (3)
 
-[] Dauer (6)
+[TIME] Dauer (6)
 
-[] nicht (7)
+[MODE] nicht (7)
 
-[] geheim (8)
+[MESSAGE-PREVENTION] geheim (8)
+[topic] Gedankenverbrechen (1)
 
 # sent_id = 299
 # text = Man konnte vielleicht eine Weile , oder sogar Jahre lang , schlaue Winkelzüge machen , aber früher oder später kamen sie einem doch darauf .
@@ -2115,49 +2178,52 @@
 24	darauf	darauf	ADP	PROAV	PronType=Dem	20	advmod	_	_
 25	.	.	PUNCT	$.	_	14	punct	_	_
 
-[] machen (14)
-[] Man (1)
-[] vielleicht (3)
-[] eine Weile , oder sogar Jahre lang , (5)
-[] schlaue Winkelzüge (13)
+[SCENE-INIT] machen (14)
+[participant] Man (1)
+[m-mode] vielleicht (3)
+[m-time] eine Weile (5)
+[m-time] , oder sogar Jahre lang , (10)
+[target-scene] schlaue Winkelzüge (13)
 
-[] Man (1)
+[CLASS] Man (1)
 
-[] vielleicht (3)
+[MODE] vielleicht (3)
 
-[] Weile (5)
+[TIME] Weile (5)
 
-[] lang (10)
-[] oder sogar Jahre (9)
+[TIME] lang (10)
+[time] oder sogar Jahre (9)
 
-[] Jahre (9)
-[] sogar (8)
+[TIME] Jahre (9)
+[m-mode] sogar (8)
 
-[] sogar (8)
+[MODE] sogar (8)
 
-[] Winkelzüge (13)
-[] schlaue (12)
+[CLASS] Winkelzüge (13)
+[m-quality] schlaue (12)
 
-[] schlaue (12)
+[QUALITY] schlaue (12)
 
-[] kamen (20)
-[] früher oder später (17)
-[] sie (21)
-[] einem (22)
-[] doch (23)
-[] darauf (24)
+[MESSAGE-INIT] kamen (20)
+[m-time] früher (17)
+[m-time] oder später (19)
+[x-experiencer] sie (21)
+[x-sender] einem (22)
+[m-scene] doch (23)
+[target-content] darauf (24)
 
-[] früher (17)
+[TIME] früher (17)
 
-[] später (19)
+[TIME] später (19)
 
-[] sie (21)
+[IDENTIFICATION] sie (21)
 
-[] einem (22)
+[CLASS] einem (22)
 
-[] doch (23)
+[CONCESSION] doch (23)
+[asserted] kamen (20)
 
-[] darauf (24)
+[IDENTIFICATION] darauf (24)
 
 # sent_id = 300
 # text = Immer war es nachts - die Verhaftungen fanden unabänderlich nachts statt .
@@ -2174,28 +2240,26 @@
 11	statt	statt	ADP	PTKVZ	_	8	compound:prt	_	_
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] Immer (1)
-[] es (3)
-[] nachts (4)
+[SCENE-INIT] war (2)
+[m-time] Immer (1)
+[target-scene] es (3)
+[m-time] nachts (4)
 
-[] Immer (1)
+[TIME] Immer (1)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] nachts (4)
+[TIME] nachts (4)
 
-[] fanden (8)
-[] die Verhaftungen (7)
-[] unabänderlich (9)
-[] nachts (10)
-[] statt (11)
+[SCENE] fanden (8)
+[scene] die Verhaftungen (7)
+[m-scene] unabänderlich (9)
+[m-time] nachts (10)
+[x-noncomp] statt (11)
 
-[] Verhaftungen (7)
+[SOCIAL-RELATION-INIT] Verhaftungen (7)
 
-[] unabänderlich (9)
+[SCENE-CONTINUATION-NECESSITY] unabänderlich (9)
+[initial-scene] fanden (8)
 
-[] nachts (10)
-
-[] statt (11)
-
+[TIME] nachts (10)
