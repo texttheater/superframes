@@ -764,9 +764,9 @@
 9	Pyramide	Pyramide	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	3	obl	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] verzagte (3)
-[] Winstons Herz (2)
-[] angesichts dieser riesig sich hochtürmenden Pyramide (9)
+[MESSAGE-DEINIT] verzagte (3) # # "die Zuversicht, die Hoffnung, das Selbstvertrauen und die Lust zum Handeln verlieren"
+[x-experiencer || x-sender] Winstons Herz (2)
+[x-causer] angesichts dieser riesig sich hochtürmenden Pyramide (9)
 
 [PART-WHOLE] Herz (2)
 [whole] Winstons (1)
@@ -776,14 +776,14 @@
 [CLASS] Pyramide (9)
 [m-scene] riesig sich hochtürmenden (8)
 
-[] hochtürmenden (8)
+[TRANSFORMATION-CREATION >> QUALITY-INIT] hochtürmenden (8)
 [m-quantity] riesig (6)
-[] sich (7)
-[] Pyramide (9)
+[x-causer >> x-noncomp] sich (7)
+[created >> has-quality] Pyramide (9)
 
 [QUANTITY] riesig (6)
 
-[] sich (7)
+[IDENTIFICATION >> NONCOMP] sich (7)
 
 # sent_id = 471
 # text = Sie war zu unerschütterlich , um erstürmt zu werden , tausend Raketenbomben vermochten sie nicht zu zertrümmern .
@@ -806,25 +806,25 @@
 17	zertrümmern	zertrümmern	VERB	VVINF	VerbForm=Inf	13	xcomp	_	_
 18	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] unerschütterlich (4)
-[] Sie (1)
-[] zu (3)
-[] , um erstürmt zu werden (7)
+[DESTRUCTION-POSSIBILITY-NEG] unerschütterlich (4)
+[destroyed] Sie (1)
+[m-quantity] zu (3)
+[m-reference] , um erstürmt zu werden (7)
 
 [IDENTIFICATION] Sie (1)
 
-[] zu (3)
+[QUANTITY] zu (3)
 
-[] erstürmt (7)
-[.] Sie (1)
+[POSSESSION-INIT] erstürmt (7) # # "durch einen Sturmangriff einnehmen, erobern"
+[possessed] Sie (1)
 
-[?SCENE-INIT-POSSIBILITY] vermochten (13)
+[SCENE-INIT-POSSIBILITY] vermochten (13)
 [participant] tausend Raketenbomben (12)
 [participant] sie (14)
 [m-mode] nicht (15)
 [target-scene] zu zertrümmern (17)
 
-[] Raketenbomben (12)
+[CLASS] Raketenbomben (12)
 [m-quantity] tausend (11)
 
 [QUANTITY] tausend (11)
@@ -853,12 +853,13 @@
 12	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE-INIT >> MESSAGE] fragte (2)
-[] Wieder (1)
+[m-scene] Wieder (1)
 [x-sender >> x-experiencer] er (3)
 [x-experiencer >> x-noncomp] sich (4)
 [target-content >> content] , für wen er sein Tagebuch schrieb (11)
 
-[] Wieder (1)
+[SEQUENCE] Wieder (1)
+[follows] fragte (2)
 
 [IDENTIFICATION] er (3)
 
@@ -869,7 +870,7 @@
 [x-sender] er (8)
 [target-content] sein Tagebuch (10)
 
-[] wen (7)
+[CLASS] wen (7)
 
 [IDENTIFICATION] er (8)
 
@@ -933,64 +934,64 @@
 10	Austilgung	Austilgung	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	conj	_	_
 11	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erwartete (2)
-[] Ihn (1)
-[] nicht allein (4)
-[] der Tod (6)
-[] , sondern vollständige Austilgung (10)
+[SCENE-INIT-POSSIBILITY] erwartete (2)
+[participant] Ihn (1)
+[m-mode] nicht allein (4)
+[target-scene] der Tod (6)
+[target-scene] , sondern vollständige Austilgung (10)
 
 [IDENTIFICATION] Ihn (1)
 
-[] allein (4)
-[] nicht (3)
+[MODE] allein (4)
+[m-mode] nicht (3)
 
 [MODE] nicht (3)
 
 [DESTRUCTION] Tod (6)
+[destroyed] Ihn (1)
 
 [DESTRUCTION] Austilgung (10)
 [m-quantity] vollständige (9)
+[destroyed] Ihn (1)
 
 [QUANTITY] vollständige (9)
 
 # sent_id = 475
 # text = Das Tagebuch würde zu Asche , er selbst zu bloßem Rauch verbrannt werden .
 1	Das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	2	det	_	_
-2	Tagebuch	Tagebuch	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
-3	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	Tagebuch	Tagebuch	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	12	nsubj	_	_
+3	würde	werden	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	_
 4	zu	zu	ADP	APPR	_	5	case	_	_
-5	Asche	Asche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
+5	Asche	Asche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	12	obl	_	_
 6	,	,	PUNCT	$,	_	12	punct	_	_
 7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj:pass	_	_
 8	selbst	selbst	ADV	ADV	_	12	advmod	_	_
 9	zu	zu	ADP	APPR	_	11	case	_	_
 10	bloßem	bloß	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	11	amod	_	_
-11	Rauch	Rauch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	12	obl	_	_
-12	verbrannt	verbrennen	VERB	VVPP	Verbform=Part	3	conj	_	_
+11	Rauch	Rauch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	5	conj	_	_
+12	verbrannt	verbrennen	VERB	VVPP	Verbform=Part	0	root	_	_
 13	werden	werden	AUX	VAINF	VerbForm=Inf	12	aux:pass	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] würde (3)
-[] Das Tagebuch (2)
-[] zu Asche (5)
+[TRANSFORMATION-CREATION] verbrannt (12)
+[material] Das Tagebuch (2)
+[created] zu Asche (5)
+[created] zu bloßem Rauch (11)
+[material] er (7)
+[m-mode] selbst (8)
 
-[] Tagebuch (2)
+[MESSAGE] Tagebuch (2)
 
-[] Asche (5)
+[CLASS] Asche (5)
 
-[] verbrannt (12)
-[] er (7)
-[] selbst (8)
-[] zu bloßem Rauch (11)
+[CLASS] Rauch (11)
+[m-mode] bloßem (10)
 
-[] er (7)
+[MODE] bloßem (10)
 
-[] selbst (8)
+[IDENTIFICATION] er (7)
 
-[] Rauch (11)
-[] bloßem (10)
-
-[] bloßem (10)
+[MODE] selbst (8)
 
 # sent_id = 476
 # text = Nur die Gedankenpolizei würde das von ihm Geschriebene lesen , ehe sie es aus der Welt und aus der Erinnerung tilgte .
@@ -1020,7 +1021,7 @@
 [MESSAGE-INIT] lesen (9)
 [x-experiencer] Nur die Gedankenpolizei (3)
 [target-content] das von ihm Geschriebene (8)
-[] , ehe sie es aus der Welt und aus der Erinnerung tilgte (21)
+[m-time >> m-follows] , ehe sie es aus der Welt und aus der Erinnerung tilgte (21)
 
 [CLASS] Gedankenpolizei (3)
 [m-mode] Nur (1)
@@ -1106,12 +1107,12 @@
 [m-scene] mit ein paar darauf gekritzelten anonymen Worten (27)
 
 [QUANTITY] Stückchen (19)
-[] nicht einmal (17)
+[m-mode] nicht einmal (17)
 
-[] einmal (17)
-[] nicht (16)
+[MODE] einmal (17)
+[x-noncomp] nicht (16)
 
-[] nicht (16)
+[NONCOMP] nicht (16)
 
 [MESSAGE] Worten (27)
 [m-scene] darauf gekritzelten (25)
@@ -1124,7 +1125,7 @@
 
 [IDENTIFICATION] darauf (24)
 
-[] anonymen (26)
+[?SENDING] anonymen (26)
 
 # sent_id = 478
 # text = Im Televisor schlug es vierzehn Uhr .
@@ -1146,9 +1147,9 @@
 [NONCOMP] es (4)
 
 [TIME] Uhr (6)
-[] vierzehn (5)
+[m-quantity] vierzehn (5)
 
-[] vierzehn (5)
+[QUANTITY] vierzehn (5)
 
 # sent_id = 479
 # text = In zehn Minuten musste er aufbrechen .
@@ -1189,20 +1190,21 @@
 [LOCATION] sein (11)
 [m-time] Um vierzehn Uhr dreißig (3)
 [has-location] er (6)
-[] zurück (7)
-[?m-purpose] an der Arbeit (10)
+[m-scene] zurück (7)
+[location] an der Arbeit (10)
 
 [TIME] Uhr (3)
-[] vierzehn (2)
-[] dreißig (4)
+[m-quantity] vierzehn (2)
+[m-quantity] dreißig (4)
 
-[] vierzehn (2)
+[QUANTITY] vierzehn (2)
 
-[] dreißig (4)
+[QUANTITY] dreißig (4)
 
 [IDENTIFICATION] er (6)
 
-[] zurück (7)
+[SEQUENCE] zurück (7)
+[follows] sein (11)
 
 [ACTIVITY] Arbeit (10)
 
@@ -1238,9 +1240,9 @@
 [target-content] der vollen Stunde (8)
 
 [TIME] Stunde (8)
-[?m-quantity] vollen (7)
+[m-quantity] vollen (7)
 
-[] vollen (7)
+[QUANTITY] vollen (7)
 
 [SCENE-INIT] erfüllt (12)
 [target-scene] mit neuem Mut (11)
@@ -1330,10 +1332,10 @@
 16	abgerissen	abreißen	VERB	VVPP	Verbform=Part	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
-[] abgerissen (16)
+[DESTRUCTION >> SCENE-DEINIT] abgerissen (16)
 [m-condition] Aber solange er sie verkündete , (5)
 [m-means] auf eine geheimnisvolle Weise (11)
-[] der rote Faden (14)
+[destroyed >> initial-scene] der rote Faden (14)
 [m-mode] nicht (15)
 
 [MESSAGE-INIT] verkündete (5)
@@ -1344,12 +1346,12 @@
 
 [IDENTIFICATION] sie (4)
 
-[] Weise (11)
-[] geheimnisvolle (10)
+[MEANS] Weise (11)
+[m-quality] geheimnisvolle (10)
 
-[] geheimnisvolle (10)
+[QUALITY] geheimnisvolle (10)
 
-[CLASS >> NONCOMP] Faden (14)
+[CLASS >> MESSAGE] Faden (14) # # "Grundmotiv, Leitsatz"
 [m-quality >> m-noncomp] rote (13)
 
 [QUALITY >> NONCOMP] rote (13)
@@ -1386,21 +1388,21 @@
 [m-means] , sondern indem man sich unversehrt bewahrte (13)
 [initial-possessor] man (16)
 [possessed] das Erbe der Menschheit (18)
-[] weiter (21)
+[target-possessor] weiter (21)
 
-[] verschaffte (6)
-[] Nicht (1)
-[] man (3)
-[] sich (4)
-[] Gehör (5)
+[POSSESSION-INIT >> SENDING-POSSIBILITY] verschaffte (6) # # "dafür sorgen, dass jemandem etwas zuteilwird, jemand etwas bekommt" >> "für Beachtung sorgen; dafür sorgen, dass einem zugehört wird"
+[m-mode] Nicht (1)
+[x-causer >> sender] man (3)
+[target-possessor >> x-noncomp] sich (4)
+[possessed >> x-noncomp] Gehör (5)
 
-[] Nicht (1)
+[MODE] Nicht (1)
 
-[] man (3)
+[CLASS] man (3)
 
-[] sich (4)
+[IDENTIFICATION >> NONCOMP] sich (4)
 
-[] Gehör (5)
+[MEANS >> NONCOMP] Gehör (5)
 
 [SCENE-CONTINUATION] bewahrte (13)
 [x-causer] man (10)
@@ -1416,10 +1418,10 @@
 
 [CLASS] man (16)
 
-[] Erbe (18)
-[] der Menschheit (20)
+[POSSESSION] Erbe (18) # # "bedeutet, dass manche Orte der gesamten Menschheit gehören und dass die Ressourcen dieser Orte allen Menschen zur Verfügung stehen sollten"
+[possessor] der Menschheit (20)
 
-[] Menschheit (20)
+[CLASS] Menschheit (20)
 
 # sent_id = 485
 # text = Er kehrte an den Tisch zurück , tauchte seine Feder ein und schrieb :
@@ -1441,7 +1443,7 @@
 [LOCATION-INIT] kehrte (2)
 [has-location] Er (1)
 [target-location] an den Tisch (5)
-[] zurück (6)
+[x-noncomp] zurück (6)
 
 [IDENTIFICATION] Er (1)
 
@@ -1449,7 +1451,7 @@
 
 [LOCATION-INIT] tauchte (8)
 [has-location] seine Feder (10)
-[] ein (11)
+[target-location] ein (11)
 [x-causer] Er (1)
 
 [CLASS] Feder (10)
@@ -1531,15 +1533,15 @@
 67	.	.	PUNCT	$.	_	44	punct	_	_
 68	«	«	PUNCT	$(	_	44	punct	_	_
 
-[] schicke (44)
-[] » Einer Zukunft (3)
-[] oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (6)
-[] - einer Zeit , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (28)
-[] ich (45)
-[] diesen Gruß (47)
-[] aus einem Zeitalter der Gleichmachung und der Vereinsamung (50)
-[] , dem Zeitalter des Großen Bruders (58)
-[] , dem Zeitalter des Zwiegedankens (64)
+[SENDING] schicke (44)
+[m-target-time] » Einer Zukunft (3)
+[m-target-time] oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (6)
+[m-target-time] - einer Zeit , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (28)
+[sender] ich (45)
+[sent] diesen Gruß (47)
+[m-initial-time] aus einem Zeitalter der Gleichmachung und der Vereinsamung (50)
+[m-initial-time] , dem Zeitalter des Großen Bruders (58)
+[m-initial-time] , dem Zeitalter des Zwiegedankens (64)
 
 [TIME] Zukunft (3)
 
