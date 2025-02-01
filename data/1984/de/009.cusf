@@ -1550,14 +1550,14 @@
 [m-scene] , in der die Menschen voneinander verschieden sind (18)
 [m-scene] und nicht jeder für sich lebt (25)
 
-[] herrscht (11)
-[] in der (9)
-[] Gedankenfreiheit (10)
-[] Vergangenheit (6)
+[SCENE] herrscht (11)
+[m-time] in der (9)
+[scene] Gedankenfreiheit (10)
+[m-time] Vergangenheit (6)
 
 [IDENTIFICATION] der (9)
 
-[] Gedankenfreiheit (10)
+[SOCIAL-RELATION] Gedankenfreiheit (10)
 
 [COMPARISON] verschieden (18)
 [m-time] in der (14)
@@ -1574,30 +1574,31 @@
 [EVENT] lebt (25)
 [m-mode] nicht (21)
 [undergoer] jeder (22)
-[] für sich (24)
+[m-purpose || m-depictive] für sich (24) # # "zu seinem eigenen Vorteil" vs "allein" (im Original auch "alone")
 [m-time] Vergangenheit (6)
 
 [MODE] nicht (21)
 
 [CLASS] jeder (22)
 
-[] sich (24)
+[IDENTIFICATION || STATE] sich (24)
+[has-state] jeder (22)
 
 [TIME] Zeit (28)
 [m-scene] , in der es Wahrheit gibt , (34)
 [m-scene] und das Geschehene nicht ungeschehen gemacht werden kann (40)
 
-[] gibt (34)
-[] in der (31)
-[] es (32)
-[] Wahrheit (33)
-[] Zeit (28)
+[EXISTENCE] gibt (34)
+[m-time] in der (31)
+[x-noncomp] es (32)
+[exists] Wahrheit (33)
+[m-time] Zeit (28)
 
 [IDENTIFICATION] der (31)
 
-[] es (32)
+[NONCOMP] es (32)
 
-[] Wahrheit (33)
+[?CLASS] Wahrheit (33)
 
 [SCENE-INIT] gemacht (40)
 [participant] das Geschehene (37)
@@ -1605,12 +1606,12 @@
 [target-scene] ungeschehen (39)
 [m-time] Zeit (28)
 
-[] Geschehene (37)
+[SITUATION] Geschehene (37)
 
 [MODE] nicht (38)
 
-[] ungeschehen (39)
-[] das Geschehene (37)
+[SITUATION-NEG] ungeschehen (39)
+[theme] das Geschehene (37)
 
 [IDENTIFICATION] ich (45)
 
@@ -1620,7 +1621,7 @@
 [m-quality] der Gleichmachung (52)
 [m-quality] und der Vereinsamung (55)
 
-[COMPARISON-INIT] Gleichmachung (52)
+[?COMPARISON-INIT] Gleichmachung (52)
 
 [STATE-INIT] Vereinsamung (55)
 
@@ -1633,9 +1634,9 @@
 [QUALITY >> NONCOMP] Großen (60)
 
 [TIME] Zeitalter (64)
-[] des Zwiegedankens (66)
+[has-time] des Zwiegedankens (66)
 
-[] Zwiegedankens (66)
+[STATE || MESSAGE] Zwiegedankens (66)
 
 # sent_id = 487
 # text = Er war bereits tot , überlegte er .
@@ -1649,11 +1650,11 @@
 8	.	.	PUNCT	$.	_	6	punct	_	_
 
 [MESSAGE] überlegte (6)
-[] Er war bereits tot , (4)
+[content] Er war bereits tot , (4)
 [x-experiencer] er (7)
 
-[?STATE] tot (4)
-[has-state] Er (1)
+[DESTRUCTION] tot (4)
+[destroyed] Er (1)
 [m-time] bereits (3)
 
 [IDENTIFICATION] Er (1)
@@ -1668,15 +1669,15 @@
 2	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	iobj	_	_
 4	,	,	PUNCT	$,	_	25	punct	_	_
-5	als	als	SCONJ	KOUS	_	13	mark	_	_
-6	habe	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+5	als	als	SCONJ	KOUS	_	25	mark	_	_
+6	habe	haben	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
+7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_
 8	erst	erst	ADV	ADV	_	9	advmod	_	_
-9	jetzt	jetzt	ADV	ADV	_	13	advmod	_	_
+9	jetzt	jetzt	ADV	ADV	_	25	advmod	_	_
 10	,	,	PUNCT	$,	_	13	punct	_	_
 11	seit	seit	SCONJ	KOUS	_	13	mark	_	_
 12	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
-13	angefangen	anfangen	VERB	VVPP	Verbform=Part	2	advcl	_	_
+13	angefangen	anfangen	VERB	VVPP	Verbform=Part	25	advcl	_	_
 14	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
 15	,	,	PUNCT	$,	_	18	punct	_	_
 16	seine	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	17	det:poss	_	_
@@ -1693,43 +1694,44 @@
 
 [MESSAGE] schien (2)
 [x-experiencer] ihm (3)
-[] als habe er erst jetzt , seit er angefangen hatte , seine Gedanken formulieren zu können , (13)
-[] , den entscheidenden Schritt getan (25)
+[content] , als habe er erst jetzt , seit er angefangen hatte , seine Gedanken formulieren zu können , den entscheidenden Schritt getan (25)
 
 [IDENTIFICATION] ihm (3)
 
-[] angefangen (13)
-[] er (7)
-[] erst jetzt (9)
-[] er (12)
-[] , seine Gedanken formulieren zu können (18)
+[SCENE-INIT] getan (25)
+[participant] er (7)
+[m-time] erst jetzt (9)
+[m-time >> m-causer] , seit er angefangen hatte , seine Gedanken formulieren zu können , (13)
+[target-scene] den entscheidenden Schritt (24)
 
-[] er (7)
+[IDENTIFICATION] er (7)
 
-[] jetzt (9)
-[] erst (8)
+[TIME] jetzt (9)
+[m-time] erst (8)
 
-[] erst (8)
+[TIME] erst (8)
 
-[] er (12)
+[SCENE-INIT] angefangen (13)
+[participant] er (12)
+[target-scene] , seine Gedanken formulieren zu können (18)
 
-[] formulieren (18)
-[] seine Gedanken (17)
-[.] er (12)
+[IDENTIFICATION] er (12)
 
-[] Gedanken (17)
-[] seine (16)
+[MESSAGE-INIT] formulieren (18)
+[topic] seine Gedanken (17)
+[x-sender] er (12)
 
-[] seine (16)
+[MESSAGE] Gedanken (17)
+[x-experiencer] seine (16)
 
-[] getan (25)
-[] den entscheidenden Schritt (24)
-[.] er (12)
+[IDENTIFICATION] seine (16)
 
-[] Schritt (24)
-[] entscheidenden (23)
+[ACTIVITY] Schritt (24)
+[m-scene] entscheidenden (23)
+[is-active] er (7)
 
-[] entscheidenden (23)
+[SEQUENCE] entscheidenden (23)
+[followed] Schritt (24)
 
 # sent_id = 489
 # text = Die Folgen jeder Handlung sind schon in der Handlung selbst beschlossen .
@@ -1748,7 +1750,7 @@
 
 [SEQUENCE] beschlossen (11)
 [follows] Die Folgen jeder Handlung (2)
-[] schon (6)
+[m-mode] schon (6)
 [followed] in der Handlung selbst (9)
 
 [SEQUENCE] Folgen (2)
@@ -1756,7 +1758,7 @@
 
 [ACTIVITY] Handlung (4)
 
-[] schon (6)
+[MODE] schon (6)
 
 [ACTIVITY] Handlung (9)
 [m-mode] selbst (10)
@@ -1800,7 +1802,7 @@
 [follows] den Tod (7)
 [x-noncomp] nach sich (9)
 
-[] Gedankenverbrechen (3)
+[EVENT] Gedankenverbrechen (3)
 
 [MODE] nicht (5)
 
@@ -1811,7 +1813,7 @@
 [DESTRUCTION] Tod (15)
 [x-identified] das Gedankenverbrechen (12)
 
-[] Gedankenverbrechen (12)
+[EVENT] Gedankenverbrechen (12)
 
 # sent_id = 492
 # text = Jetzt aber , seit er sich als einen toten Mann betrachtete , wurde es wichtig , so lange wie möglich am Leben zu bleiben .
@@ -1820,11 +1822,11 @@
 3	,	,	PUNCT	$,	_	11	punct	_	_
 4	seit	seit	SCONJ	KOUS	_	11	mark	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
-6	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	7	nsubj	_	_
-7	als	als	CCONJ	KOKOM	_	11	xcomp	_	_
+6	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	11	nsubj	_	_
+7	als	als	CCONJ	KOKOM	_	10	case	_	_
 8	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 9	toten	tot	ADJ	ADJA	Case=Acc|Gender=Masc|Number=Sing	10	amod	_	_
-10	Mann	Mann	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	7	nmod	_	_
+10	Mann	Mann	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	11	obl	_	_
 11	betrachtete	betrachten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	advcl	_	_
 12	,	,	PUNCT	$,	_	11	punct	_	_
 13	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -1834,56 +1836,59 @@
 17	so	so	ADV	ADV	_	18	advmod	_	_
 18	lange	lange	ADJ	ADJD	_	24	advmod	_	_
 19	wie	wie	CCONJ	KOKOM	_	20	case	_	_
-20	möglich	möglich	ADJ	ADJD	_	18	conj	_	_
+20	möglich	möglich	ADJ	ADJD	_	18	advmod	_	_
 21	am	am	ADP	APPRART	_	22	case	_	_
 22	Leben	Leben	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	24	obl	_	_
 23	zu	zu	PART	PTKZU	_	24	mark	_	_
 24	bleiben	bleiben	VERB	VVINF	VerbForm=Inf	15	xcomp	_	_
 25	.	.	PUNCT	$.	_	13	punct	_	_
 
-[] wurde (13)
-[] Jetzt (1)
-[] aber (2)
-[] , seit er sich als einen toten Mann betrachtete , (11)
-[] wichtig , so lange wie möglich am Leben zu bleiben (15)
+[SCENE-INIT] wurde (13)
+[m-time] Jetzt (1)
+[m-scene] aber (2)
+[m-time >> m-causer] , seit er sich als einen toten Mann betrachtete , (11)
+[target-scene] wichtig , so lange wie möglich am Leben zu bleiben (15)
 
-[] Jetzt (1)
+[TIME] Jetzt (1)
 
-[] aber (2)
+[CONCESSION] aber (2)
+[asserted] wurde (13)
 
-[] betrachtete (11)
-[] er (5)
-[] sich als einen toten Mann (7)
+[MESSAGE] betrachtete (11)
+[x-experiencer] er (5)
+[topic] sich (6)
+[content] als einen toten Mann (10)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] als (7)
-[] sich (6)
-[] einen toten Mann (10)
+[IDENTIFICATION] sich (6)
 
-[] sich (6)
+[CLASS] Mann (10)
+[m-scene] toten (9)
+[has-class] sich (6)
 
-[] Mann (10)
-[] toten (9)
+[DESTRUCTION] toten (9)
+[destroyed] Mann (10)
 
-[] toten (9)
+[QUALITY] wichtig (15)
+[has-quality] , so lange wie möglich am Leben zu bleiben (24)
 
-[] wichtig (15)
-[] , so lange wie möglich am Leben zu bleiben (24)
+[SCENE-CONTINUATION] bleiben (24)
+[m-time] so lange wie möglich (18)
+[initial-scene] am Leben (22)
+[participant] er (5)
 
-[] bleiben (24)
-[] so lange (18)
-[] wie möglich (20)
-[] am Leben (22)
+[TIME] lange (18)
+[m-quantity] so (17)
+[m-scene] wie möglich (20)
 
-[] lange (18)
-[] so (17)
+[QUANTITY] so (17)
 
-[] so (17)
+[SCENE-POSSIBILITY] möglich (20)
+[scene] lange (18)
 
-[] möglich (20)
-
-[] Leben (22)
+[EVENT] Leben (22)
+[undergoer] er (5)
 
 # sent_id = 493
 # text = Zwei Finger seiner rechten Hand waren mit Tinte bekleckst .
@@ -1910,11 +1915,12 @@
 
 [PART-WHOLE] Hand (5)
 [whole] seiner (3)
-[m-location >> m-identifier] rechten (4)
+[m-scene] rechten (4)
 
 [IDENTIFICATION] seiner (3)
 
-[LOCATION >> ?] rechten (4)
+[LOCATION >> IDENTIFICATION] rechten (4)
+[has-location >> identified] Hand (5)
 
 [CLASS] Tinte (8)
 
@@ -1931,19 +1937,19 @@
 9	verraten	verraten	VERB	VVINF	VerbForm=Inf	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] verraten (9)
-[] Gerade durch eine solche Kleinigkeit (5)
-[] man (7)
-[] sich (8)
+[MESSAGE-INIT] verraten (9) # # Vgl. sent_id 253
+[m-means] Gerade durch eine solche Kleinigkeit (5)
+[x-sender] man (7)
+[topic] sich (8)
 
-[] Kleinigkeit (5)
-[] Gerade (1)
+[QUALITY] Kleinigkeit (5)
+[m-mode] Gerade (1)
 
-[] Gerade (1)
+[MODE] Gerade (1)
 
 [CLASS] man (7)
 
-[] sich (8)
+[IDENTIFICATION] sich (8)
 
 # sent_id = 495
 # text = Ein schnüffelnder fanatischer Eiferer im Ministerium ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) konnte sich zu wundern anfangen , warum er während der Mittagspause geschrieben , warum er eine altmodische Stahlfeder benützt und was er geschrieben hatte - um dann an zuständiger Stelle einen Wink zu geben .
@@ -2006,24 +2012,26 @@
 57	einen	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
 58	Wink	Wink	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	60	obj	_	_
 59	zu	zu	PART	PTKZU	_	60	mark	_	_
-60	geben	geben	VERB	VVINF	VerbForm=Inf	49	advcl	_	_
+60	geben	geben	VERB	VVINF	VerbForm=Inf	31	advcl	_	_
 61	.	.	PUNCT	$.	_	31	punct	_	_
 
 [SCENE-INIT] anfangen (31)
 [participant] Ein schnüffelnder fanatischer Eiferer im Ministerium ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
-[target-scene] sich zu wundern , warum er während der Mittagspause geschrieben , warum er eine altmodische Stahlfeder benützt und was er geschrieben hatte - um dann an zuständiger Stelle einen Wink zu geben (30)
+[target-scene] sich zu wundern , warum er während der Mittagspause geschrieben , warum er eine altmodische Stahlfeder benützt und was er geschrieben hatte (30)
+[m-result || m-follows] - um dann an zuständiger Stelle einen Wink zu geben (60)
 
-[] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
+[CLASS] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4) # # "von Fanatismus gekennzeichnete Person, Aufhetzer, Aufrührer, Volksaufwiegler, ..."
 [m-scene] schnüffelnder (2)
-[] fanatischer (3)
+[m-scene] fanatischer (3)
 [m-location] im Ministerium (6)
 
-[] schnüffelnder (2)
-[] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
+[MESSAGE] schnüffelnder (2)
+[x-experiencer] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 
-[] fanatischer (3)
+[MESSAGE] fanatischer (3) # # "sich leidenschaftlich und rücksichtslos für etwas einsetzend"
+[x-sender] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 
-[] Ministerium (6)
+[SOCIAL-RELATION] Ministerium (6)
 
 [CLASS] Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (10)
 [m-mode] vermutlich (8)
@@ -2031,11 +2039,12 @@
 [MODE] vermutlich (8)
 
 [CLASS] jemand (13)
-[] so (12)
+[m-scene] so (12)
 [m-reference] wie die kleine Aschblonde (17)
 [m-reference] oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (21)
 
-[] so (12)
+[IDENTIFICATION] so (12)
+[identified] jemand (13)
 
 [QUALITY] Aschblonde (17)
 [m-quality] kleine (16)
@@ -2043,21 +2052,21 @@
 [QUALITY] kleine (16)
 
 [CLASS] Mädchen (21)
-[?m-part] schwarzhaarige (20)
-[] aus der Literatur- Abteilung (25)
+[m-part] schwarzhaarige (20)
+[m-location] aus der Literatur- Abteilung (25)
 
-[] schwarzhaarige (20)
+[PART-WHOLE] schwarzhaarige (20)
 
 [PART-WHOLE] Abteilung (25)
-[] Literatur- (24)
+[m-purpose] Literatur- (24)
 
-[] Literatur- (24)
+[MESSAGE] Literatur- (24)
 
 [MESSAGE] wundern (30)
 [x-noncomp] sich (28)
-[] , warum er während der Mittagspause geschrieben (38)
-[] , warum er eine altmodische Stahlfeder benützt (45)
-[] und was er geschrieben hatte - um dann an zuständiger Stelle einen Wink zu geben (49)
+[content] , warum er während der Mittagspause geschrieben (38)
+[content] , warum er eine altmodische Stahlfeder benützt (45)
+[content] und was er geschrieben hatte (49)
 [x-experiencer] Ein schnüffelnder fanatischer Eiferer im Ministerium ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 
 [NONCOMP] sich (28)
@@ -2065,20 +2074,20 @@
 [MESSAGE-INIT] geschrieben (38)
 [m-explanation || m-causer] warum (33)
 [x-sender] er (34)
-[m-time] während der Mittagspause (37)
+[m-time >> m-accompanier] während der Mittagspause (37)
 
 [EXPLANATION || CAUSATION] warum (33)
 
 [IDENTIFICATION] er (34)
 
-[] Mittagspause (37)
+[PART-WHOLE] Mittagspause (37)
 
 [MEANS] benützt (45)
-[?purpose] warum (40)
+[purpose || m-explanation] warum (40)
 [x-causer] er (41)
 [means] eine altmodische Stahlfeder (44)
 
-[EXPLANATION || CAUSATION] warum (40)
+[CAUSATION || EXPLANATION] warum (40)
 
 [IDENTIFICATION] er (41)
 
@@ -2090,26 +2099,28 @@
 [MESSAGE-INIT] geschrieben (49)
 [target-content] was (47)
 [x-sender] er (48)
-[m-purpose >> m-follows] - um dann an zuständiger Stelle einen Wink zu geben (60)
 
 [IDENTIFICATION] was (47)
 
 [IDENTIFICATION] er (48)
 
-[] geben (60)
+[SCENE-INIT] geben (60) ## "etwas andeuten, durchblicken lassen"
 [m-time] dann (53)
-[] an zuständiger Stelle (56)
-[] einen Wink (58)
-[?.] Eiferer (4)
+[participant] an zuständiger Stelle (56)
+[target-scene] einen Wink (58)
+[participant] Eiferer (4)
 
 [TIME] dann (53)
 
 [CLASS] Stelle (56)
-[] zuständiger (55)
+[m-scene] zuständiger (55)
 
-[] zuständiger (55)
+[POSSESSION] zuständiger (55)
+[possessor] Stelle (56)
 
-[] Wink (58)
+[MESSAGE] Wink (58) ## "Äußerung, mit der man jemanden meist unauffällig auf etwas aufmerksam machen will"
+[x-sender] Eiferer (4)
+[x-experiencer] an zuständiger Stelle (56)
 
 # sent_id = 496
 # text = Er ging ins Badezimmer und schrubbte die Tintenflecke sorgfältig mit der sandigen dunkelbraunen Seife , die einem die Hand wie Schmirgelpapier aufscheuerte und deshalb für seinen Zweck geeignet war .
@@ -2189,11 +2200,11 @@
 [CLASS] Schmirgelpapier (21)
 
 [] geeignet (28)
-[] deshalb (24)
+[m-explanation] deshalb (24)
 [] für seinen Zweck (27)
 [] Seife (14)
 
-[IDENTIFICATION] deshalb (24)
+[IDENTIFICATION || EXPLANATION] deshalb (24)
 
 [] Zweck (27)
 [] seinen (26)
