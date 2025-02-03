@@ -10,11 +10,11 @@
 
 [MESSAGE-INIT] machte (3)
 [x-sender] Frau Parsons (1)
-[target-content] ein hilfloses Gesicht (6)
+[x-noncomp] ein hilfloses Gesicht (6)
 
 [IDENTIFICATION] Frau Parsons (1)
 
-[PART-WHOLE] Gesicht (6)
+[NONCOMP] Gesicht (6)
 [m-quality] hilfloses (5)
 
 [MEANS-NEG >> QUALITY] hilfloses (5)
@@ -118,7 +118,7 @@
 18	.	.	PUNCT	$.	_	4	punct	_	_
 19	«	«	PUNCT	$(	_	4	punct	_	_
 
-[QUALITY] geschickt (4) #zu etwas geeignet sein
+[QUALITY] geschickt (4) # zu etwas geeignet sein
 [has-quality] Er (1)
 [m-quantity] so (3)
 [m-means] mit seinen Händen (7)
@@ -202,15 +202,15 @@
 31	und	und	CCONJ	KON	_	47	cc	_	_
 32	von	von	ADP	APPR	_	33	case	_	_
 33	denen	d	PRON	PRELS	Case=Dat|Gender=Neut|Number=Plur|PronType=Rel	47	obl	_	_
-34	-	-	PUNCT	$.	_	37	punct	_	_
+34	-	-	PUNCT	$.	_	35	punct	_	_
 35	mehr	mehr	ADV	ADV	_	47	advmod	_	_
-36	sogar	sogar	ADV	ADV	_	37	advmod	_	_
-37	noch	noch	ADV	ADV	_	47	advmod	_	_
+36	sogar	sogar	ADV	ADV	_	35	advmod	_	_
+37	noch	noch	ADV	ADV	_	35	advmod	_	_
 38	als	als	CCONJ	KOKOM	_	41	case	_	_
 39	von	von	ADP	APPR	_	41	case	_	_
 40	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	37	nmod	_	_
-42	-	-	PUNCT	$.	_	41	punct	_	_
+41	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	35	nmod	_	_
+42	-	-	PUNCT	$.	_	35	punct	_	_
 43	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	Bestand	Bestand	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	47	nsubj	_	_
 45	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
@@ -218,77 +218,84 @@
 47	abhing	abhängen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	conj	_	_
 48	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] Mann - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (9)
-[] Er (1)
-[] rundlicher (4)
-[] , jedoch sehr beweglicher (8)
-[] von entwaffnender Dummheit (12)
+[CLASS] Mann - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (9)
+[has-class] Er (1)
+[m-quality] rundlicher (4)
+[m-quality] , jedoch sehr beweglicher (8)
+[??? m-quality || m-scene] von entwaffnender Dummheit (12)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] rundlicher (4)
+[QUALITY] rundlicher (4)
 
-[] beweglicher (8)
-[] sehr (7)
+[QUALITY] beweglicher (8)
+[m-quantity] sehr (7)
 
-[] sehr (7)
+[QUANTITY] sehr (7)
 
-[] Dummheit (12)
-[] entwaffnender (11)
+[QUALITY] Dummheit (12)
+[m-scene] entwaffnender (11)
 
-[] entwaffnender (11)
+[POSSESSION-DEINIT >> QUALITY] entwaffnender (11)
+[x-causer >> has-quality] Dummheit (12)
 
-[] Klotz (15)
-[] voll törichter Begeisterung (18)
+[CLASS] Klotz (15) # Stück Holz; ugs. unsensibler Mensch
+[m-scene] voll törichter Begeisterung (18)
 
-[] Begeisterung (18)
-[] törichter (17)
+[MESSAGE] Begeisterung (18)
+[m-quality] törichter (17) # dumm
+[x-experiencer] Klotz (15)
 
-[] törichter (17)
+[QUALITY] törichter (17)
 
-[] einer (20)
-[] von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (24)
+[PART-WHOLE] einer (20)
+[whole] von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (24)
 
-[] Gimpeln (24)
-[] ergebenen (23)
-[] , die niemals eine Frage stellen (30)
-[] und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (47)
+[CLASS] Gimpeln (24) # einfältiger Mensch
+[m-scene] ergebenen (23) # bereit, jemandem zu dienen
+[m-scene] , die niemals eine Frage stellen (30)
+[m-scene] und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (47)
 
-[] ergebenen (23)
+[POSSESSION] ergebenen (23)
+[possessed] Gimpeln (24)
 
-[] stellen (30)
-[] die (26)
-[] niemals (27)
-[] eine Frage (29)
+[SCENE-INIT] stellen (30)
+[participant] die (26)
+[m-time] niemals (27)
+[target-scene] eine Frage (29)
+[participant] Gimpeln (24)
 
-[] die (26)
+[IDENTIFICATION] die (26)
 
-[] niemals (27)
+[TIME-NEG] niemals (27)
 
-[] Frage (29)
+[MESSAGE-INIT] Frage (29)
+[x-sender] die (26)
+[x-sender] Gimpeln (24)
 
-[] abhing (47)
-[] von denen (33)
-[] mehr (35)
-[] - sogar noch als von der Gedankenpolizei - (37)
-[] der Bestand der Partei (44)
+[CONDITION] abhing (47)
+[condition] von denen (33)
+[m-quantity] - mehr sogar noch als von der Gedankenpolizei - (35)
+[has-condition] der Bestand der Partei (44)
+[condition] Gimpeln (24)
 
-[] denen (33)
+[IDENTIFICATION] denen (33)
 
-[] mehr (35)
+[QUANTITY] mehr (35)
+[m-mode] sogar (36)
+[m-quantity] noch (37)
+[x-reference] als von der Gedankenpolizei (41)
 
-[] noch (37)
-[] sogar (36)
-[] als von der Gedankenpolizei - (41)
+[MODE] sogar (36)
 
-[] sogar (36)
+[QUANTITY] noch (37)
 
-[] Gedankenpolizei (41)
+[SOCIAL-RELATION] Gedankenpolizei (41)
 
-[] Bestand (44)
-[] der Partei (46)
+[STATE-CONTINUATION] Bestand (44) # Stabilität
+[has-state] der Partei (46)
 
-[] Partei (46)
+[SOCIAL-RELATION] Partei (46)
 
 # sent_id = 357
 # text = Mit fünfunddreißig Jahren war er erst kürzlich sehr ungern aus der Jugendliga ausgeschieden , und ehe er in die Jugendliga aufgerückt war , hatte er es fertiggebracht , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben .
@@ -297,7 +304,7 @@
 3	Jahren	Jahr	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	13	obl	_	_
 4	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
 5	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
-6	erst	erst	ADV	ADV	_	9	advmod	_	_
+6	erst	erst	ADV	ADV	_	7	advmod	_	_
 7	kürzlich	kürzlich	ADV	ADV	_	13	advmod	_	_
 8	sehr	sehr	ADV	ADV	_	9	advmod	_	_
 9	ungern	ungern	ADV	ADV	_	13	advmod	_	_
@@ -321,13 +328,13 @@
 27	fertiggebracht	fertigbringen	VERB	VVPP	Verbform=Part	13	conj	_	_
 28	,	,	PUNCT	$,	_	41	punct	_	_
 29	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	30	det	_	_
-30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
+30	Jahr	Jahr	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	35	nmod	_	_
 31	über	über	ADP	APPR	_	35	case	_	_
 32	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	35	det	_	_
 33	satzungsgemäß	satzungsgemäß	ADJ	ADJD	_	34	advmod	_	_
 34	festgesetzte	festgesetzt	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	35	amod	_	_
 35	Alter	Alter	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	41	obl	_	_
-36	hinaus	hinaus	ADP	APZR	_	35	advmod	_	_
+36	hinaus	hinaus	ADP	APZR	_	35	case	_	_
 37	bei	bei	ADP	APPR	_	39	case	_	_
 38	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	39	det	_	_
 39	Spähern	Späher	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	41	obl	_	_
@@ -335,69 +342,73 @@
 41	verbleiben	verbleiben	VERB	VVINF	VerbForm=Inf	27	xcomp	_	_
 42	.	.	PUNCT	$.	_	13	punct	_	_
 
-[] ausgeschieden (13)
-[] Mit fünfunddreißig Jahren (3)
-[] er (5)
-[] kürzlich (7)
-[] erst sehr ungern (9)
-[] aus der Jugendliga (12)
+[SOCIAL-RELATION-DEINIT] ausgeschieden (13) # verlassen
+[m-depictive] Mit fünfunddreißig Jahren (3)
+[has-social-relation] er (5)
+[m-time] erst kürzlich (7)
+[m-scene] sehr ungern (9)
+[initial-social-relation] aus der Jugendliga (12)
 
-[] Jahren (3)
-[] fünfunddreißig (2)
+[TIME >> STATE] Jahren (3)
+[m-quantity] fünfunddreißig (2)
+[has- time >> has-state] er (5)
 
-[] fünfunddreißig (2)
+[QUANTITY] fünfunddreißig (2)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] kürzlich (7)
+[TIME] kürzlich (7)
+[m-time] erst (6)
 
-[] ungern (9)
-[] erst (6)
-[] sehr (8)
+[TIME] erst (6)
 
-[] erst (6)
+[MESSAGE] ungern (9)
+[m-quantity] sehr (8)
+[topic] ausgeschieden (13)
+[x-experiencer] er (5)
 
-[] sehr (8)
+[QUANTITY] sehr (8)
 
-[] Jugendliga (12)
+[SOCIAL-RELATION] Jugendliga (12)
 
-[] fertiggebracht (27)
-[] ehe er in die Jugendliga aufgerückt war , (21)
-[] er (25)
-[] es (26)
-[] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
+[SCENE-INIT] fertiggebracht (27) # erreichen
+[m-follows] ehe er in die Jugendliga aufgerückt war , (21)
+[participant] er (25)
+[x-noncomp] es (26)
+[target-scene] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
 
-[] aufgerückt (21)
-[] er (17)
-[] in die Jugendliga (20)
+[RANK-CHANGE >> SOCIAL-RELATION-INIT] aufgerückt (21) # im Range aufsteigen
+[has-rank >> has-social-relation] er (17)
+[target-rank >> target-social-relation] in die Jugendliga (20)
 
-[] er (17)
+[IDENTIFICATION] er (17)
 
-[] Jugendliga (20)
+[SOCIAL-RELATION] Jugendliga (20)
 
-[] er (25)
+[IDENTIFICATION] er (25)
 
-[] es (26)
+[NONCOMP] es (26)
 
-[] verbleiben (41)
-[] ein Jahr (30)
-[] über das satzungsgemäß festgesetzte Alter hinaus (35)
-[] bei den Spähern (39)
+[SCENE-CONTINUATION] verbleiben (41)
+[m-time] ein Jahr über das satzungsgemäß festgesetzte Alter hinaus (35)
+[initial-scene] bei den Spähern (39)
+[participant] er (25)
 
-[] Jahr (30)
+[STATE] Alter (35)
+[m-quantity] ein Jahr (30)
+[m-scene] satzungsgemäß festgesetzte (34)
 
-[] Alter (35)
-[] satzungsgemäß festgesetzte (34)
-[] hinaus (36)
+[TIME] Jahr (30)
 
-[] festgesetzte (34)
-[] satzungsgemäß (33)
+[MESSAGE-INIT] festgesetzte (34)
+[m-scene] satzungsgemäß (33)
+[topic] Alter (35)
 
-[] satzungsgemäß (33)
+[SEQUENCE] satzungsgemäß (33)
+[follows] festgesetzte (34)
 
-[] hinaus (36)
-
-[] Spähern (39)
+[SOCIAL-RELATION] Spähern (39)
+[has-social-relation] er (25)
 
 # sent_id = 358
 # text = Im Ministerium wurde er auf einem untergeordneten Posten verwendet , für den kein Verstand nötig war , doch war er andererseits ein führender Mann beim Sportausschuss und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand .
@@ -451,74 +462,81 @@
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] verwendet (9)
-[] Im Ministerium (2)
-[] er (4)
-[] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
+[MEANS] verwendet (9)
+[m-location >> m-situator] Im Ministerium (2)
+[means] er (4)
+[m-depictive >> purpose] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
 
-[] Ministerium (2)
+[SOCIAL-RELATION] Ministerium (2)
 
-[] er (4)
+[IDENTIFICATION] er (4)
 
-[] Posten (8)
-[] untergeordneten (7)
-[] , für den kein Verstand nötig war (15)
+[SOCIAL-RELATION] Posten (8)
+[m-scene] untergeordneten (7)
+[m-scene] , für den kein Verstand nötig war (15)
+[has-social-relation] er (4)
 
-[] untergeordneten (7)
+[COMPARISON >> RANK] untergeordneten (7)
+[compared >> has-rank] Posten (8)
 
-[] nötig (15)
-[] für den (12)
-[] kein Verstand (14)
+[SCENE-NECESSITY] nötig (15)
+[m-purpose] für den (12)
+[scene] kein Verstand (14)
+[m-purpose] Posten (8)
 
-[] den (12)
+[IDENTIFICATION] den (12)
 
-[] Verstand (14)
-[] kein (13)
+[QUALITY] Verstand (14)
+[m-mode] kein (13)
 
-[] kein (13)
+[MODE] kein (13)
 
-[] Mann (24)
-[] er (20)
-[] andererseits (21)
-[] führender (23)
-[] beim Sportausschuss (26)
-[] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
+[CLASS] Mann (24)
+[has-class] er (20)
+[m-scene] andererseits (21)
+[m-scene] führender (23)
+[m-social-relation] beim Sportausschuss (26)
+[m-social-relation] und allen anderen Ausschüssen , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (30)
 
-[] er (20)
+[IDENTIFICATION] er (20)
 
-[] andererseits (21)
+[COMPARISON] andererseits (21)
+[compared] Mann (24)
 
-[] führender (23)
+[POSSESSION] führender (23)
+[possessor] Mann (24)
 
-[] Sportausschuss (26)
+[SOCIAL-RELATION] Sportausschuss (26)
 
-[] Ausschüssen (30)
-[] anderen (29)
-[] , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (48)
+[SOCIAL-RELATION] Ausschüssen (30)
+[m-scene] anderen (29)
+[m-scene] , denen die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes unterstand (48)
 
-[] anderen (29)
+[COMPARISON] anderen (29)
+[compared] Ausschüssen (30)
 
-[] unterstand (48)
-[] denen (32)
-[] die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes (34)
+[POSSESSION >> CAUSATION] unterstand (48) # einem Vorgesetzten, einer vorgesetzten Institution dienstlich unterstellt
+[possessor >> causer] denen (32)
+[possessed >> result] die Organisation von Gemeinschaftswanderungen , spontanen Demonstrationen , Sparwerbewochen und überhaupt jede Art freiwilligen Einsatzes (34)
+[possessor >> causer] Ausschüssen (30)
 
-[] denen (32)
+[IDENTIFICATION] denen (32)
 
-[] Organisation (34)
-[] von Gemeinschaftswanderungen (36)
-[] , spontanen Demonstrationen (39)
-[] , Sparwerbewochen (41)
-[] und überhaupt jede Art (45)
-[] freiwilligen Einsatzes (47)
+[SCENE-INIT] Organisation (34)
+[target-scene] von Gemeinschaftswanderungen (36)
+[target-scene] , spontanen Demonstrationen (39)
+[target-scene] , Sparwerbewochen (41)
+[??? target-scene; Syntax] und überhaupt jede Art (45)
+[??? target-scene; Syntax] freiwilligen Einsatzes (47)
 
-[] Gemeinschaftswanderungen (36)
+[ACTIVITY] Gemeinschaftswanderungen (36)
 
-[] Demonstrationen (39)
-[] spontanen (38)
+[ACTIVITY] Demonstrationen (39)
+[m-time] spontanen (38)
 
-[] spontanen (38)
+[TIME] spontanen (38)
 
-[] Sparwerbewochen (41)
+[EVENT] Sparwerbewochen (41)
 
 [] Art (45)
 [] überhaupt (43)
@@ -534,10 +552,10 @@
 # text = Er erzählte einem voll ruhigen Stolzes , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei .
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	erzählte	erzählen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-4	voll	voll	ADJ	ADJD	_	5	advmod	_	_
+3	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	iobj	_	_
+4	voll	voll	ADJ	ADJD	_	2	advmod	_	_
 5	ruhigen	ruhig	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	6	amod	_	_
-6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	2	iobj	_	_
+6	Stolzes	Stolz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	4	iobj	_	_
 7	,	,	PUNCT	$,	_	14	punct	_	_
 8	während	während	SCONJ	KOUS	_	14	mark	_	_
 9	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
@@ -558,62 +576,68 @@
 24	Abend	Abend	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	27	obl	_	_
 25	im	im	ADP	APPRART	_	26	case	_	_
 26	Gemeinschaftshaus	Gemeinschaftshaus	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	27	obl	_	_
-27	erschienen	erscheinen	VERB	VVPP	Verbform=Part	14	ccomp	_	_
+27	erschienen	erscheinen	VERB	VVPP	Verbform=Part	2	ccomp	_	_
 28	sei	sein	AUX	VAFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
 29	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erzählte (2)
-[] Er (1)
-[] einem voll ruhigen Stolzes (6)
-[] , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (14)
+[MESSAGE-INIT] erzählte (2)
+[x-sender] Er (1)
+[x-experiencer] einem (3)
+[m-depictive] voll ruhigen Stolzes (4)
+[m-time] , während er seiner Pfeife kleine Rauchwölkchen entlockte (14)
+[target-content] , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (27)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Stolzes (6)
-[] voll ruhigen (5)
+[IDENTIFICATION] einem (3)
 
-[] ruhigen (5)
-[] voll (4)
+[LOCATION >> SCENE] voll (4)
+[has-location >> scene] ruhigen Stolzes (6)
+[location >> participant] Er (1)
 
-[] voll (4)
+[MESSAGE] Stolzes (6)
+[m-quality] ruhigen (5)
+[x-experiencer] Er (1)
 
-[] entlockte (14)
-[] er (9)
-[] seiner Pfeife (11)
-[] kleine Rauchwölkchen (13)
-[] , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (27)
+[QUALITY] ruhigen (5)
 
-[] er (9)
+[SCENE-INIT] entlockte (14) # (etwas aus jemandem) herausbekommen  
+[x-causer] er (9)
+[participant] seiner Pfeife (11)
+[target-scene] kleine Rauchwölkchen (13)
 
-[] Pfeife (11)
-[] seiner (10)
+[IDENTIFICATION] er (9)
 
-[] seiner (10)
+[CLASS] Pfeife (11)
+[m-possessor] seiner (10)
 
-[] Rauchwölkchen (13)
-[] kleine (12)
+[IDENTIFICATION] seiner (10)
 
-[] kleine (12)
+[EXCRETION] Rauchwölkchen (13)
+[m-quality] kleine (12)
+[excreter] seiner Pfeife (11)
 
-[] erschienen (27)
-[] er (17)
-[] in den letzten vier Jahren (22)
-[] jeden Abend (24)
-[] im Gemeinschaftshaus (26)
+[QUALITY] kleine (12)
 
-[] er (17)
+[LOCATION-INIT] erschienen (27)
+[has-location] er (17)
+[m-time] in den letzten vier Jahren (22)
+[m-time] jeden Abend (24)
+[target-location] im Gemeinschaftshaus (26)
 
-[] Jahren (22)
-[] letzten (20)
-[] vier (21)
+[IDENTIFICATION] er (17)
 
-[] letzten (20)
+[TIME] Jahren (22)
+[m-rank >> m-time] letzten (20)
+[m-quantity] vier (21)
 
-[] vier (21)
+[RANK >> TIME] letzten (20)
 
-[] Abend (24)
+[QUANTITY] vier (21)
 
-[] Gemeinschaftshaus (26)
+[TIME] Abend (24)
+
+[SOCIAL-RELATION] Gemeinschaftshaus (26)
 
 # sent_id = 360
 # text = Ein durchdringender Schweißgeruch folgte ihm wie ein unfreiwilliges Zeugnis für die Angestrengtheit seines Lebens überallhin und schwebte sogar nach seinem Weggehen noch im Zimmer .
@@ -634,7 +658,7 @@
 15	überallhin	überallhin	ADV	ADV	_	4	compound:prt	_	_
 16	und	und	CCONJ	KON	_	17	cc	_	_
 17	schwebte	schweben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-18	sogar	sogar	ADV	ADV	_	17	advmod	_	_
+18	sogar	sogar	ADV	ADV	_	21	advmod	_	_
 19	nach	nach	ADP	APPR	_	21	case	_	_
 20	seinem	sein	DET	PPOSAT	Case=Dat|Gender=Neut|Number=Sing|Poss=Yes	21	det:poss	_	_
 21	Weggehen	Weggehen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	17	obl	_	_
@@ -643,49 +667,51 @@
 24	Zimmer	Zimmer	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	17	obl	_	_
 25	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] folgte (4)
-[] Ein durchdringender Schweißgeruch (3)
-[] ihm (5)
-[] wie ein unfreiwilliges Zeugnis für die Angestrengtheit seines Lebens (9)
-[] überallhin (15)
+[ACCOMPANIMENT] folgte (4)
+[accompanier] Ein durchdringender Schweißgeruch (3)
+[accompanied] ihm (5)
+[m-reference] wie ein unfreiwilliges Zeugnis für die Angestrengtheit seines Lebens (9)
+[m-location] überallhin (15)
 
-[] Schweißgeruch (3)
-[] durchdringender (2)
+[MESSAGE] Schweißgeruch (3)
+[m-quality] durchdringender (2)
 
-[] durchdringender (2)
+[QUALITY] durchdringender (2)
 
-[] ihm (5)
+[IDENTIFICATION] ihm (5)
 
-[] Zeugnis (9)
-[] unfreiwilliges (8)
-[] für die Angestrengtheit seines Lebens (12)
+[MESSAGE] Zeugnis (9)
+[m-scene] unfreiwilliges (8)
+[topic] für die Angestrengtheit seines Lebens (12)
 
-[] unfreiwilliges (8)
+[CAUSATION >> QUALITY] unfreiwilliges (8)
+[result >> has-quality] Zeugnis (9)
 
-[] Angestrengtheit (12)
-[] seines Lebens (14)
+[QUALITY] Angestrengtheit (12)
+[has-quality] seines Lebens (14)
 
-[] Lebens (14)
-[] seines (13)
+[EVENT] Lebens (14)
+[undergoer] seines (13)
 
-[] seines (13)
+[IDENTIFICATION] seines (13)
 
-[] schwebte (17)
-[] sogar (18)
-[] nach seinem Weggehen (21)
-[] noch (22)
-[] im Zimmer (24)
+[UNANCHORED-MOTION] schwebte (17)
+[??? m-depictive] sogar nach seinem Weggehen (21)
+[m-time] noch (22)
+[m-location] im Zimmer (24)
+[in-motion] Ein durchdringender Schweißgeruch (3)
 
-[] sogar (18)
+[LOCATION-DEINIT] Weggehen (21)
+[m-mode] sogar (18)
+[has-location] seinem (20)
 
-[] Weggehen (21)
-[] seinem (20)
+[MODE] sogar (18)
 
-[] seinem (20)
+[IDENTIFICATION] seinem (20)
 
-[] noch (22)
+[TIME] noch (22)
 
-[] Zimmer (24)
+[CLASS] Zimmer (24)
 
 # sent_id = 361
 # text = » Haben Sie einen Schraubenschlüssel ? «
@@ -697,13 +723,13 @@
 6	?	?	PUNCT	$.	_	2	punct	_	_
 7	«	«	PUNCT	$(	_	2	punct	_	_
 
-[] Haben (2)
-[] Sie (3)
-[] einen Schraubenschlüssel (5)
+[POSSESSION] Haben (2)
+[possessor] Sie (3)
+[possessed] einen Schraubenschlüssel (5)
 
-[] Sie (3)
+[IDENTIFICATION] Sie (3)
 
-[] Schraubenschlüssel (5)
+[CLASS || MEANS] Schraubenschlüssel (5)
 
 # sent_id = 362
 # text = fragte Winston und machte sich mit der Schraubenmutter am Verbindungsstück zu schaffen .
@@ -721,24 +747,24 @@
 12	schaffen	schaffen	VERB	VVINF	VerbForm=Inf	4	xcomp	_	_
 13	.	.	PUNCT	$.	_	1	punct	_	_
 
-[] fragte (1)
-[] Winston (2)
+[MESSAGE-INIT] fragte (1)
+[x-sender] Winston (2)
 
-[] Winston (2)
+[IDENTIFICATION] Winston (2)
 
-[] machte (4)
-[] sich (5)
-[] mit der Schraubenmutter (8)
-[] am Verbindungsstück zu schaffen (12)
+[???SCENE-INIT] machte (4)
+[participant] sich (5)
+[m-means] mit der Schraubenmutter (8) # das mit einem Innengewinde versehene Gegenstück zu einer Schraube oder einem Gewindebolzen
+[target-scene] am Verbindungsstück zu schaffen (12)
 
-[] sich (5)
+[IDENTIFICATION] sich (5)
 
-[] Schraubenmutter (8)
+[CLASS || MEANS] Schraubenmutter (8)
 
-[] schaffen (12)
-[] am Verbindungsstück (10)
+[??? SCENE-INIT] schaffen (12)
+[??? target-scene] am Verbindungsstück (10)
 
-[] Verbindungsstück (10)
+[CLASS] Verbindungsstück (10)
 
 # sent_id = 363
 # text = » Einen Schraubenschlüssel « , sagte Frau Parsons und wurde sofort unsicher .
@@ -748,26 +774,23 @@
 4	«	«	PUNCT	$(	_	3	punct	_	_
 5	,	,	PUNCT	$,	_	3	punct	_	_
 6	sagte	sagen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	8	compound	_	_
-8	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+7	Frau	Frau	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+8	Parsons	Parsons	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	flat	_	_
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
 11	sofort	sofort	ADV	ADV	_	10	advmod	_	_
 12	unsicher	unsicher	ADJ	ADJD	_	10	xcomp	_	_
 13	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] sagte (6)
-[] » Einen Schraubenschlüssel « , (3)
-[] Frau Parsons (8)
+[MESSAGE-INIT] sagte (6)
+[target-content] » Einen Schraubenschlüssel « , (3)
+[x-sender] Frau Parsons (7)
 
-[] Schraubenschlüssel (3)
+[CLASS || MEANS] Schraubenschlüssel (3)
 
-[] Parsons (8)
-[] Frau (7)
+[IDENTIFICATION] Frau Parsons (7)
 
-[] Frau (7)
-
-[] wurde (10)
+[??? Syntax?] wurde (10)
 [] sofort (11)
 [] unsicher (12)
 
@@ -783,13 +806,13 @@
 4	nicht	nicht	PART	PTKNEG	Polarity=Neg	3	advmod	_	_
 5	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] weiß (3)
-[] Ich (2)
-[] nicht (4)
+[MESSAGE] weiß (3)
+[x-experiencer] Ich (2)
+[m-mode] nicht (4)
 
-[] Ich (2)
+[IDENTIFICATION] Ich (2)
 
-[] nicht (4)
+[MODE] nicht (4)
 
 # sent_id = 365
 # text = Vielleicht , dass die Kinder- «
@@ -800,10 +823,10 @@
 5	Kinder-	Kind	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	1	nsubj	_	_
 6	«	«	PUNCT	$(	_	1	punct	_	_
 
-[] Vielleicht (1)
-[] , dass die Kinder- (5)
+[??? MODE] Vielleicht (1)
+[m-explanation] , dass die Kinder- (5)
 
-[] Kinder- (5)
+[CLASS] Kinder- (5)
 
 # sent_id = 366
 # text = Man hörte Schuhgetrampel und einen neuen Trompetenstoß auf dem Kamm , als die Kinder ins Wohnzimmer hereinstürmten .
