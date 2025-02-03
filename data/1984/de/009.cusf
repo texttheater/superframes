@@ -115,7 +115,7 @@
 14	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	ungeheuerliche	ungeheuerlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	16	amod	_	_
 16	Welt	Welt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	17	obl	_	_
-17	verirrt	verirren	VERB	VVPP	Verbform=Part	5	ccomp	_	_
+17	verirrt	verirren	VERB	VVPP	Verbform=Part	5	advcl	_	_
 18	,	,	PUNCT	$,	_	24	punct	_	_
 19	in	in	ADP	APPR	_	20	case	_	_
 20	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	24	nmod	_	_
@@ -144,9 +144,9 @@
 
 [CLASS] Meeresgrund (11)
 
-[LOCATION-INIT >> STATE] verirrt (17)
-[location >> m-location] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
-[has-location >> has-state] er (6)
+[LOCATION-INIT] verirrt (17)
+[location] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
+[has-location] er (6)
 
 [CLASS] Welt (16)
 [m-quality] ungeheuerliche (15)
@@ -195,8 +195,8 @@
 
 [TIME] Vergangenheit (2)
 
-[MESSAGE-PREVENTION] unvorstellbar (8)
-[target-content] Zukunft (7)
+[MESSAGE-INIT-POSSIBILITY-NEG] unvorstellbar (8)
+[topic] Zukunft (7)
 
 [TIME] Zukunft (7)
 
@@ -688,8 +688,8 @@
 15	die	d	PRON	PRELS	Case=Acc|Gender=Fem|Number=Sing|PronType=Rel	20	obl	_	_
 16	ihre	ihr	DET	PPOSAT	Case=Nom|Gender=Neut|Number=Plur|Poss=Yes	17	det:poss	_	_
 17	Strahlen	Strahl	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	20	nsubj	_	_
-18	nicht	nicht	PART	PTKNEG	Polarity=Neg	20	advmod	_	_
-19	mehr	mehr	ADV	ADV	_	18	advmod	_	_
+18	nicht	nicht	PART	PTKNEG	Polarity=Neg	19	advmod	_	_
+19	mehr	mehr	ADV	ADV	_	20	advmod	_	_
 20	fielen	fallen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
 21	,	,	PUNCT	$,	_	9	punct	_	_
 22	sahen	sehen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
@@ -727,6 +727,7 @@
 [LOCATION-INIT] fielen (20)
 [target-location] auf die (15)
 [has-location] ihre Strahlen (17)
+[m-scene] nicht mehr (19)
 [m-mode] nicht mehr (18)
 [target-location] Fenster (9)
 
@@ -737,10 +738,11 @@
 
 [IDENTIFICATION] ihre (16)
 
-[MODE] nicht (18)
-[] mehr (19)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (19)
+[m-mode >> m-noncomp] nicht (18)
+[initial-scene] fielen (20)
 
-[] mehr (19)
+[MODE] nicht (18)
 
 [QUALITY] grimmig (23)
 [m-reference] wie die Schießscharten einer Festung (26)
@@ -2104,7 +2106,7 @@
 
 [IDENTIFICATION] er (48)
 
-[SCENE-INIT] geben (60) ## "etwas andeuten, durchblicken lassen"
+[SCENE-INIT] geben (60) # # "etwas andeuten, durchblicken lassen"
 [m-time] dann (53)
 [participant] an zuständiger Stelle (56)
 [target-scene] einen Wink (58)
@@ -2118,7 +2120,7 @@
 [POSSESSION] zuständiger (55)
 [possessor] Stelle (56)
 
-[MESSAGE] Wink (58) ## "Äußerung, mit der man jemanden meist unauffällig auf etwas aufmerksam machen will"
+[MESSAGE] Wink (58) # # "Äußerung, mit der man jemanden meist unauffällig auf etwas aufmerksam machen will"
 [x-sender] Eiferer (4)
 [x-experiencer] an zuständiger Stelle (56)
 
