@@ -144,3 +144,9 @@ def check_dep_label_part(dep, frame):
     a = mtch.group(2)
     m = mtch.group(3)
     return FRAMES[f].check_core(a, m, dep)
+
+
+def simplify(part):
+    if part.startswith('m-') or part.startswith('x-'):
+        return part[2:]
+    return part
