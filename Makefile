@@ -13,6 +13,7 @@ check :
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/006.cusf
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/007.cusf
 	python3 src/python/check.py --no-warn-incomplete data/1984/de/008.cusf
+	python3 src/python/check.py --no-warn-incomplete data/1984/de/009.cusf
 
 manual :
 	cd doc/manual; make manual.pdf
