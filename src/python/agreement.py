@@ -43,12 +43,15 @@ def create_pred_edges_map(sentences: Iterable[cusf.Sentence]) -> \
     return result
 
 
-def count_matches(head_label_map_1, head_label_map_2):
+def count_matches(head_label_map_1, head_label_map_2, simplify=False):
     edge_count = 0
     match_count = 0
     for head, label1 in head_label_map_1.items():
         parts1 = set(labels.split_label(label1))
         parts2 = set(labels.split_label(head_label_map_2[head]))
+        if simplify:
+            parts1 = set(labels.simplify(p) for p in parts1)
+            parts2 = set(labels.simplify(p) for p in parts2)
         if parts1:
             edge_count += 1
         if parts1 & parts2:
@@ -61,6 +64,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('file1', type=argparse.FileType())
     arg_parser.add_argument('file2', type=argparse.FileType())
     arg_parser.add_argument('--ignore-preds', type=argparse.FileType())
+    arg_parser.add_argument('--simplify', action='store_true')
     args = arg_parser.parse_args()
     map1 = create_pred_edges_map(cusf.read(args.file1))
     map2 = create_pred_edges_map(cusf.read(args.file2))
@@ -77,10 +81,10 @@ if __name__ == '__main__':
     for pred in common_predicates:
         head_label_map_1 = map1[pred]
         head_label_map_2 = map2[pred]
-        edge_count, match_count = count_matches(head_label_map_1, head_label_map_2)
+        edge_count, match_count = count_matches(head_label_map_1, head_label_map_2, args.simplify)
         total1 += edge_count
         match1 += match_count
-        edge_count, match_count = count_matches(head_label_map_2, head_label_map_1)
+        edge_count, match_count = count_matches(head_label_map_2, head_label_map_1, args.simplify)
         total2 += edge_count
         match2 += match_count
     print(f"{match1}/{total1} ({match1 / total1}) of annotators 1's edges matched by annotator 2")
