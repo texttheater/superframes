@@ -543,33 +543,33 @@
 21	Bericht	Bericht	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	22	nsubj	_	_
 22	stand	stehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
 23	,	,	PUNCT	$,	_	33	punct	_	_
-24	wie	wie	SCONJ	KOUS	_	33	advmod	_	_
+24	wie	wie	SCONJ	KOUS	_	43	mark	_	_
 25	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 26	lauschender	lauschend	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	28	amod	_	_
 27	kleiner	klein	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	28	amod	_	_
-28	Angeber	Angeber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	33	nsubj	_	_
-29	-	-	PUNCT	$.	_	31	punct	_	_
+28	Angeber	Angeber	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	43	nsubj	_	_
+29	-	-	PUNCT	$.	_	33	punct	_	_
 30	»	»	PUNCT	$(	_	31	punct	_	_
-31	Kinderheld	Kinderheld	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	28	appos	_	_
+31	Kinderheld	Kinderheld	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	33	ccomp	_	_
 32	«	«	PUNCT	$(	_	31	punct	_	_
-33	lautete	lauten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	advcl	_	_
+33	lautete	lauten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	parataxis	_	_
 34	die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 35	gewöhnlich	gewöhnlich	ADJ	ADJD	_	36	advmod	_	_
 36	gebrauchte	gebraucht	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	37	amod	_	_
 37	Bezeichnung	Bezeichnung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	33	nsubj	_	_
-38	-	-	PUNCT	$.	_	31	punct	_	_
+38	-	-	PUNCT	$.	_	33	punct	_	_
 39	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 40	kompromittierende	kompromittierend	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	41	amod	_	_
-41	Bemerkung	Bemerkung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	33	obj	_	_
-42	mit	mit	ADP	APPO	Case=Acc	43	case	_	_
-43	angehört	anhören	VERB	VVPP	Verbform=Part	41	acl	_	_
+41	Bemerkung	Bemerkung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	43	obj	_	_
+42	mit	mit	ADP	APPO	Case=Acc	43	compound:prt	_	_
+43	angehört	anhören	VERB	VVPP	Verbform=Part	21	acl	_	_
 44	und	und	CCONJ	KON	_	50	cc	_	_
 45	seine	sein	DET	PPOSAT	Case=Acc|Gender=Neut|Number=Plur|Poss=Yes	46	det:poss	_	_
 46	Eltern	Eltern	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	43	conj	_	_
 47	bei	bei	ADP	APPR	_	49	case	_	_
 48	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
 49	Gedankenpolizei	Gedankenpolizei	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	50	obl	_	_
-50	angezeigt	anzeigen	VERB	VVPP	Verbform=Part	33	conj	_	_
+50	angezeigt	anzeigen	VERB	VVPP	Verbform=Part	43	conj	_	_
 51	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	50	aux	_	_
 52	.	.	PUNCT	$.	_	9	punct	_	_
 
@@ -597,9 +597,7 @@
 [] in der (15)
 [] nicht (16)
 [] in der Times (19)
-[] ein Bericht (21)
-[] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört seine Eltern (33)
-[] und bei der Gedankenpolizei angezeigt hatte (50)
+[] ein Bericht , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (21)
 
 [] der (15)
 
@@ -608,22 +606,27 @@
 [] Times (19)
 
 [] Bericht (21)
+[] , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört (43)
+[] seine Eltern (46)
+[] und bei der Gedankenpolizei angezeigt hatte (50)
+
+[] angehört (43)
+[] ein lauschender kleiner Angeber (28)
+[] eine kompromittierende Bemerkung (41)
+[] mit (42)
+
+[MESSAGE-INIT] Angeber (28)
+[m-scene] lauschender (26)
+[m-quality] kleiner (27)
+
+[MESSAGE-INIT] lauschender (26)
+[x-experiencer] Angeber (28)
+
+[] kleiner (27)
 
 [] lautete (33)
-[] wie (24)
-[] ein lauschender kleiner Angeber - » Kinderheld « - (28)
+[] » Kinderheld « (31)
 [] die gewöhnlich gebrauchte Bezeichnung (37)
-[] eine kompromittierende Bemerkung mit angehört seine Eltern (41)
-
-[] wie (24)
-
-[] Angeber - » Kinderheld « - (28)
-[] lauschender (26)
-[] kleiner (27)
-
-[] lauschender (26)
-
-[] kleiner (27)
 
 [] Kinderheld (31)
 
@@ -635,14 +638,11 @@
 
 [] gewöhnlich (35)
 
-[] Bemerkung (41)
-[] kompromittierende (40)
-[] mit angehört (43)
-[] seine Eltern (46)
+[MESSAGE-INIT] Bemerkung (41)
+[m-scene] kompromittierende (40)
 
-[] kompromittierende (40)
-
-[] angehört (43)
+[MESSAGE-INIT || STATE-CHANGE] kompromittierende (40)
+[x-sender || x-causer] Bemerkung (41)
 
 [] Eltern (46)
 [] seine (45)
@@ -1080,12 +1080,12 @@
 2	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
 3	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	7	obj	_	_
 4	jetzt	jetzt	ADV	ADV	_	7	advmod	_	_
-5	nicht	nicht	PART	PTKNEG	Polarity=Neg	7	advmod	_	_
-6	mehr	mehr	ADV	ADV	_	5	advmod	_	_
+5	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
+6	mehr	mehr	ADV	ADV	_	7	advmod	_	_
 7	erinnern	erinnern	VERB	VVINF	VerbForm=Inf	0	root	_	_
 8	,	,	PUNCT	$,	_	16	punct	_	_
 9	ob	ob	SCONJ	KOUS	_	16	mark	_	_
-10	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+10	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	expl	_	_
 11	vor	vor	ADP	APPR	_	15	case	_	_
 12	oder	oder	CCONJ	KON	_	13	cc	_	_
 13	nach	nach	ADP	APPR	_	11	conj	_	_
@@ -1098,15 +1098,15 @@
 20	O'Brien	O'Brien	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	23	obj	_	_
 21	zum	zum	ADP	APPRART	_	22	case	_	_
 22	erstenmal	erstenmal	ADV	ADV	_	23	advmod	_	_
-23	gesehen	sehen	VERB	VVPP	Verbform=Part	16	ccomp	_	_
+23	gesehen	sehen	VERB	VVPP	Verbform=Part	16	csubj	_	_
 24	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 25	;	;	PUNCT	$.	_	27	punct	_	_
 26	so	so	ADV	ADV	_	27	advmod	_	_
-27	wenig	wenig	DET	PIAT	Definite=Ind|Gender=Neut	31	advmod	_	_
+27	wenig	wenig	DET	PIAT	Definite=Ind|Gender=Neut	7	advmod	_	_
 28	wie	wie	SCONJ	KOUS	_	31	advmod	_	_
 29	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
 30	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	31	obj	_	_
-31	entsann	entsinnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	_	_
+31	entsann	entsinnen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	advcl	_	_
 32	,	,	PUNCT	$,	_	42	punct	_	_
 33	wann	wann	ADV	PWAV	PronType=Int	42	advmod	_	_
 34	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	42	nsubj	_	_
@@ -1125,9 +1125,9 @@
 [] Er (1)
 [] sich (3)
 [] jetzt (4)
-[] nicht mehr (5)
+[] nicht mehr (6)
 [] , ob es vor oder nach dem Traum war , dass er O'Brien zum erstenmal gesehen hatte (16)
-[] ; so wenig wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (31)
+[m-quantity] ; so wenig wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (27)
 
 [] Er (1)
 
@@ -1135,21 +1135,18 @@
 
 [] jetzt (4)
 
+[] mehr (6)
 [] nicht (5)
-[] mehr (6)
 
-[] mehr (6)
+[] nicht (5)
 
-[] war (16)
-[] es (10)
-[] vor oder nach dem Traum (15)
-[] , dass er O'Brien zum erstenmal gesehen hatte (23)
-
-[] es (10)
+[SCENE] war (16)
+[m-time] vor oder nach dem Traum (15)
+[scene] , dass er O'Brien zum erstenmal gesehen hatte (23)
 
 [] Traum (15)
 
-[] nach (13)
+[] nach (13) # TODO this should not be here
 
 [] gesehen (23)
 [] er (19)
@@ -1162,17 +1159,17 @@
 
 [] erstenmal (22)
 
+[QUANTITY] wenig (27)
+[m-quantity] so (26)
+[m-reference] wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (31)
+
+[] so (26)
+
 [] entsann (31)
-[] ; so wenig (27)
 [] wie (28)
 [] er (29)
 [] sich (30)
 [] , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (42)
-
-[] wenig (27)
-[] so (26)
-
-[] so (26)
 
 [] wie (28)
 
@@ -1348,13 +1345,14 @@
 
 [] schien (3)
 [] das (2)
-[] nicht einmal (5)
+[m-scene] nicht einmal (5)
 [] viel auszumachen (7)
 
 [] das (2)
 
-[] einmal (5)
-[] nicht (4)
+[TIME >> MODE] einmal (5)
+[m-mode >> m-noncomp] nicht (4)
+[] schien (3)
 
 [] nicht (4)
 
@@ -1536,11 +1534,11 @@
 10	Luft	Luft	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schmetterte (3)
-[] Ein Fanfarenstoß (2)
-[] klar (4)
-[] und schön (6)
-[] durch die stille Luft (10)
+[MESSAGE-INIT] schmetterte (3)
+[topic] Ein Fanfarenstoß (2) # TODO manual
+[m-quality] klar (4)
+[m-quality] und schön (6)
+[x-location] durch die stille Luft (10)
 
 [] Fanfarenstoß (2)
 
@@ -1582,14 +1580,14 @@
 2	Achtung	Achtung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 3	!	!	PUNCT	$.	_	2	punct	_	_
 
-[] Achtung (2)
+[MESSAGE >> SITUATION] Achtung (2) # TODO manual
 
 # sent_id = 434
 # text = Achtung !
 1	Achtung	Achtung	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 2	!	!	PUNCT	$.	_	1	punct	_	_
 
-[] Achtung (1)
+[MESSAGE >> SITUATION] Achtung (1)
 
 # sent_id = 435
 # text = Soeben ist eine Sondermeldung von der Malabar-Front eingetroffen .
@@ -1688,16 +1686,17 @@
 [] das Kriegsende (21)
 [] in errechenbare Nähe (24)
 
-[] Operation (11)
-[] kriegerische (10)
-[] , von der wir gleich berichten werden , (17)
+[ACTIVITY] Operation (11)
+[m-quality] kriegerische (10) # TODO v2
+[m-scene] , von der wir gleich berichten werden , (17)
 
-[] kriegerische (10)
+[QUALITY] kriegerische (10)
 
 [] berichten (17)
 [] von der (14)
 [] wir (15)
 [] gleich (16)
+[] Operation (11)
 
 [] der (14)
 

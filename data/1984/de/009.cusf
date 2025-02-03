@@ -29,7 +29,8 @@
 [] Unten auf der Straße (4)
 [] der Wind (7)
 [] das zerrissene Plakat (10)
-[] hin und her (11)
+[] hin (11)
+[] und her (13)
 
 [] Straße (4)
 [] Unten (1)
@@ -43,16 +44,13 @@
 
 [] zerrissene (9)
 
-[] hin (11)
-
 [] her (13)
 
 [] sichtbar (21)
 [] das Wort Engsoz (17)
 [] abwechselnd (20)
 
-[] Wort (17)
-[] Engsoz (18)
+[] Wort Engsoz (17)
 
 [] Engsoz (18)
 
@@ -79,11 +77,10 @@
 15	Vergangenheit	Vergangenheit	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	13	nmod	_	_
 16	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Grundsätze (4)
+[] Grundsätze : Neusprache , Zwiegedanke , die Verwandlung der Vergangenheit (4)
 [] heiligen (2)
 [] politischen (3)
 [] von Engsoz (6)
-[] : Neusprache , Zwiegedanke , die Verwandlung der Vergangenheit (8)
 
 [] heiligen (2)
 
@@ -102,11 +99,11 @@
 
 # sent_id = 453
 # text = Ihm war , als wandle er durch Wälder auf dem Meeresgrund , in eine ungeheuerliche Welt verirrt , in der er selbst das Ungeheuer war .
-1	Ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	iobj	_	_
-2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
+1	Ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	iobj	_	_
+2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	,	,	PUNCT	$,	_	5	punct	_	_
 4	als	als	SCONJ	KOUS	_	5	mark	_	_
-5	wandle	wandeln	VERB	VVFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
+5	wandle	wandeln	VERB	VVFIN	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_
 6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
 7	durch	durch	ADP	APPR	_	8	case	_	_
 8	Wälder	Wald	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	5	obl	_	_
@@ -118,7 +115,7 @@
 14	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	ungeheuerliche	ungeheuerlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	16	amod	_	_
 16	Welt	Welt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	17	obl	_	_
-17	verirrt	verirren	VERB	VVPP	Verbform=Part	0	root	_	_
+17	verirrt	verirren	VERB	VVPP	Verbform=Part	5	advcl	_	_
 18	,	,	PUNCT	$,	_	24	punct	_	_
 19	in	in	ADP	APPR	_	20	case	_	_
 20	der	d	PRON	PRELS	Case=Dat|Gender=Fem|Number=Sing|PronType=Rel	24	nmod	_	_
@@ -129,16 +126,16 @@
 25	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	cop	_	_
 26	.	.	PUNCT	$.	_	17	punct	_	_
 
-[] verirrt (17)
-[] Ihm (1)
-[] , als wandle er durch Wälder auf dem Meeresgrund , (5)
-[] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
+[MESSAGE] war (2)
+[x-experiencer] Ihm (1)
+[content] , als wandle er durch Wälder auf dem Meeresgrund , in eine ungeheuerliche Welt verirrt , in der er selbst das Ungeheuer war . (5)
 
 [] Ihm (1)
 
-[] wandle (5)
-[] er (6)
-[] durch Wälder auf dem Meeresgrund (8)
+[UNANCHORED-MOTION] wandle (5)
+[in-motion] er (6)
+[transitory-location] durch Wälder auf dem Meeresgrund (8)
+[m-depictive] in eine ungeheuerliche Welt verirrt , in der er selbst das Ungeheuer war . (17)
 
 [] er (6)
 
@@ -146,6 +143,10 @@
 [] auf dem Meeresgrund (11)
 
 [] Meeresgrund (11)
+
+[LOCATION-INIT] verirrt (17)
+[target-location] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
+[has-location] er (6)
 
 [] Welt (16)
 [] ungeheuerliche (15)
@@ -193,8 +194,8 @@
 
 [] Vergangenheit (2)
 
-[] unvorstellbar (8)
-[] Zukunft (7)
+[MESSAGE-INIT-POSSIBILITY-NEG] unvorstellbar (8) # TODO manual (nice example)
+[topic] Zukunft (7)
 
 [] Zukunft (7)
 
@@ -264,11 +265,11 @@
 10	dauern	dauern	VERB	VVINF	VerbForm=Inf	0	root	_	_
 11	?	?	PUNCT	$.	_	10	punct	_	_
 
-[] dauern (10)
-[] warum (2)
-[] die Herrschaft der Partei (5)
-[] nicht (8)
-[] ewig (9)
+[SCENE-CONTINUATION] dauern (10)
+[m-explanation] warum (2)
+[initial-scene] die Herrschaft der Partei (5)
+[m-mode] nicht (8)
+[m-time] ewig (9)
 
 [] warum (2)
 
@@ -307,8 +308,7 @@
 [] die drei Wahlsprüche auf der weißen Front des WahrheitsMinisteriums (9)
 [] ein (16)
 
-[] Art (3)
-[] Antwort (4)
+[] Art Antwort (3)
 
 [] Antwort (4)
 
@@ -327,8 +327,6 @@
 [] weißen (12)
 
 [] WahrheitsMinisteriums (15)
-
-[] ein (16)
 
 # sent_id = 459
 # text = KRIEG BEDEUTET FRIEDEN
@@ -506,7 +504,12 @@
 19	.	.	PUNCT	$.	_	16	punct	_	_
 
 [] verfolgten (16)
-[] Von Geldmünzen , Briefmarken , Bucheinbänden , Fahnen , Plakaten , Zigarettenschachteln - (2)
+[] Von Geldmünzen - (2)
+[] , Briefmarken (4)
+[] , Bucheinbänden (6)
+[] , Fahnen (8)
+[] , Plakaten (10)
+[] , Zigarettenschachteln (12)
 [] von überall (15)
 [] sie (17)
 [] einen (18)
@@ -729,8 +732,6 @@
 
 [] Festung (28)
 
-[] aus (29)
-
 # sent_id = 470
 # text = Winstons Herz verzagte angesichts dieser riesig sich hochtürmenden Pyramide .
 1	Winstons	Winston	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	_
@@ -912,7 +913,8 @@
 [] erwartete (2)
 [] Ihn (1)
 [] nicht allein (4)
-[] der Tod , sondern vollständige Austilgung (6)
+[] der Tod (6)
+[] , sondern vollständige Austilgung (10)
 
 [] Ihn (1)
 
@@ -1010,7 +1012,8 @@
 [] tilgte (21)
 [] sie (12)
 [] es (13)
-[] aus der Welt und aus der Erinnerung (16)
+[] aus der Welt (16)
+[] und aus der Erinnerung (20)
 
 [] sie (12)
 
@@ -1349,7 +1352,8 @@
 22	.	.	PUNCT	$.	_	15	punct	_	_
 
 [] gab (15)
-[] Nicht indem man sich Gehör verschaffte , sondern indem man sich unversehrt bewahrte , (6)
+[] Nicht indem man sich Gehör verschaffte , (6)
+[] , sondern indem man sich unversehrt bewahrte (13)
 [] man (16)
 [] das Erbe der Menschheit (18)
 [] weiter (21)
@@ -1386,8 +1390,6 @@
 
 [] Menschheit (20)
 
-[] weiter (21)
-
 # sent_id = 485
 # text = Er kehrte an den Tisch zurück , tauchte seine Feder ein und schrieb :
 1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
@@ -1414,8 +1416,6 @@
 
 [] Tisch (5)
 
-[] zurück (6)
-
 [] tauchte (8)
 [] seine Feder (10)
 [] ein (11)
@@ -1424,8 +1424,6 @@
 [] seine (9)
 
 [] seine (9)
-
-[] ein (11)
 
 [] schrieb (13)
 
@@ -1501,17 +1499,20 @@
 68	«	«	PUNCT	$(	_	44	punct	_	_
 
 [] schicke (44)
-[] » Einer Zukunft oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (3)
+[] » Einer Zukunft (3)
+[] oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (6)
 [] - einer Zeit , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (28)
 [] ich (45)
 [] diesen Gruß (47)
-[] aus einem Zeitalter der Gleichmachung und der Vereinsamung , dem Zeitalter des Großen Bruders , dem Zeitalter des Zwiegedankens (50)
+[] aus einem Zeitalter der Gleichmachung und der Vereinsamung , dem Zeitalter des Zwiegedankens (50)
+[] , dem Zeitalter des Großen Bruders (58)
 
 [] Zukunft (3)
 
 [] Vergangenheit (6)
 [] , der Gedankenfreiheit herrscht (11)
-[] in , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (18)
+[] in , in der die Menschen voneinander verschieden sind (18)
+[] und nicht jeder für sich lebt (25)
 
 [] herrscht (11)
 [] der (9)
@@ -1544,7 +1545,8 @@
 [] sich (24)
 
 [] Zeit (28)
-[] , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (34)
+[] , in der es Wahrheit gibt , (34)
+[] und das Geschehene nicht ungeschehen gemacht werden kann (40)
 
 [] gibt (34)
 [] in der (31)
@@ -1573,7 +1575,9 @@
 [] Gruß (47)
 
 [] Zeitalter (50)
-[] der Gleichmachung und der Vereinsamung , dem Zeitalter des Zwiegedankens (52)
+[] der Gleichmachung (52)
+[] und der Vereinsamung (55)
+[] , dem Zeitalter des Zwiegedankens (64)
 
 [] Gleichmachung (52)
 
@@ -1824,7 +1828,8 @@
 [] toten (9)
 
 [] bleiben (24)
-[] so lange wie möglich (18)
+[] so lange (18)
+[] wie möglich (20)
 [] am Leben (22)
 
 [] lange (18)
@@ -1964,13 +1969,13 @@
 [] Ein schnüffelnder fanatischer Eiferer im Ministerium ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 [] sich (28)
 [] zu wundern (30)
-[] , warum er während der Mittagspause geschrieben , warum er eine altmodische Stahlfeder benützt und was er geschrieben hatte - um dann an zuständiger Stelle einen Wink zu geben (38)
+[] , warum er während der Mittagspause geschrieben (38)
+[] , warum er eine altmodische Stahlfeder benützt - um dann an zuständiger Stelle einen Wink zu geben (45)
 
-[] Eiferer (4)
+[] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 [] schnüffelnder (2)
 [] fanatischer (3)
 [] im Ministerium (6)
-[] ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (10)
 
 [] schnüffelnder (2)
 
@@ -1978,15 +1983,15 @@
 
 [] Ministerium (6)
 
-[] Frau (10)
+[] Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (10)
 [] vermutlich (8)
-[] : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (13)
 
 [] vermutlich (8)
 
 [] jemand (13)
 [] so (12)
-[] wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (17)
+[] wie die kleine Aschblonde (17)
+[] oder das schwarzhaarige Mädchen aus der Literatur- Abteilung (21)
 
 [] so (12)
 
@@ -2111,7 +2116,8 @@
 [] Seife (14)
 [] sandigen (12)
 [] dunkelbraunen (13)
-[] , die einem die Hand wie Schmirgelpapier aufscheuerte und deshalb für seinen Zweck geeignet war (22)
+[] , die einem die Hand wie Schmirgelpapier aufscheuerte (22)
+[] und deshalb für seinen Zweck geeignet war (28)
 
 [] sandigen (12)
 
@@ -2321,8 +2327,6 @@
 [] gerade (7)
 
 [] weißliches (10)
-
-[] auf (12)
 
 [] legte (14)
 [] es (15)

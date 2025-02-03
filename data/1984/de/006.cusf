@@ -2128,7 +2128,7 @@
 27	nach	nach	ADP	APPR	_	29	case	_	_
 28	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	Schweiß	Schweiß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	24	nmod	_	_
-30	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+30	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
 31	-	-	PUNCT	$.	_	38	punct	_	_
 32	wie	wie	SCONJ	KOUS	_	38	mark	_	_
 33	man	man	PRON	PIS	Definite=Ind|Gender=Neut	38	nsubj	_	_
@@ -2150,9 +2150,9 @@
 49	können	können	AUX	VMINF	VerbForm=Inf	48	aux	_	_
 50	-	-	PUNCT	$.	_	48	punct	_	_
 51	im	im	ADP	APPRART	_	52	case	_	_
-52	Augenblick	Augenblick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	48	obl	_	_
+52	Augenblick	Augenblick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	53	obl	_	_
 53	abwesenden	abwesend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	54	amod	_	_
-54	Menschen	Mensch	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	48	obl	_	_
+54	Menschen	Mensch	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	24	nmod	_	_
 55	.	.	PUNCT	$.	_	3	punct	_	_
 
 [] schwebte (3)
@@ -2192,12 +2192,13 @@
 
 [] Schweißdunst (24)
 [] schärferen (23)
-[] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
+[] , nach dem Schweiß - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - (29)
+[] eines im Augenblick abwesenden Menschen (54)
 
 [] schärferen (23)
 
 [] Schweiß (29)
-[] eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (38)
+[] - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - (38)
 
 [] wusste (38)
 [] man (33)
@@ -2214,9 +2215,7 @@
 [] sagen (48)
 [] man (41)
 [] auch schwer (43)
-[] den Grund dafür (45)
-[] im Augenblick (52)
-[] abwesenden Menschen (54)
+[topic] den Grund dafür (45)
 
 [] man (41)
 
@@ -2230,12 +2229,13 @@
 
 [] dafür (46)
 
-[] Augenblick (52)
-
 [] Menschen (54)
-[] abwesenden (53)
+[] im Augenblick abwesenden (53)
 
 [] abwesenden (53)
+[] im Augenblick (52)
+
+[] Augenblick (52)
 
 # sent_id = 343
 # text = In einem anderen Zimmer versuchte jemand im Takt der Militärmusik , die noch immer aus dem Televisor dröhnte , auf einem Kamm mit darüber gespanntem Toilettenpapier zu blasen .
@@ -2477,10 +2477,10 @@
 
 [] schmutzig-grünlichem (10)
 
-[] stank (20)
-[] das (13)
-[] schlimmer als alles andere (14)
-[] nach Kohl (19)
+[MESSAGE] stank (20)
+[topic] das (13)
+[m-quality] schlimmer als alles andere (14)
+[x-reference] nach Kohl (19) # TODO manual
 
 [] das (13)
 
@@ -2489,7 +2489,7 @@
 
 [] andere (17)
 
-[] Kohl (19)
+[CLASS] Kohl (19)
 
 # sent_id = 349
 # text = Winston kniete nieder und untersuchte das gebogene Verbindungsstück des Ableitungsrohres .

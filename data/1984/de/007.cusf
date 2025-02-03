@@ -236,7 +236,8 @@
 [] Dummheit (12)
 [] entwaffnender (11)
 
-[] entwaffnender (11)
+[POSSESSION-DEINIT >> STATE-CHANGE >> QUALITY] entwaffnender (11)
+[x-causer >> x-causer >> has-quality] Dummheit (12)
 
 [] Klotz (15)
 [] voll törichter Begeisterung (18)
@@ -447,7 +448,7 @@
 44	jede	jed	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	45	det	_	_
 45	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	36	conj	_	_
 46	freiwilligen	freiwillig	ADJ	ADJA	Case=Gen|Gender=Masc|Number=Sing	47	amod	_	_
-47	Einsatzes	Einsatz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	34	nmod	_	_
+47	Einsatzes	Einsatz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	45	nmod	_	_
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
@@ -514,8 +515,7 @@
 [] von Gemeinschaftswanderungen (36)
 [] , spontanen Demonstrationen (39)
 [] , Sparwerbewochen (41)
-[] und überhaupt jede Art (45)
-[] freiwilligen Einsatzes (47)
+[] und überhaupt jede Art freiwilligen Einsatzes (45)
 
 [] Gemeinschaftswanderungen (36)
 
@@ -526,8 +526,9 @@
 
 [] Sparwerbewochen (41)
 
-[] Art (45)
-[] überhaupt (43)
+[SUBCLASS] Art (45)
+[m-mode] überhaupt (43)
+[superclass] freiwilligen Einsatzes (47)
 
 [] überhaupt (43)
 
@@ -779,13 +780,15 @@
 
 [] Frau (7)
 
-[] wurde (10)
-[] sofort (11)
-[] unsicher (12)
+[SCENE-INIT] wurde (10)
+[m-time] sofort (11)
+[target-scene] unsicher (12)
+[participant] Frau Parsons (8)
 
 [] sofort (11)
 
 [] unsicher (12)
+[] Frau Parsons (8)
 
 # sent_id = 364
 # text = » Ich weiß nicht .
@@ -812,8 +815,8 @@
 5	Kinder-	Kind	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	1	nsubj	_	_
 6	«	«	PUNCT	$(	_	1	punct	_	_
 
-[] Vielleicht (1)
-[] , dass die Kinder- (5)
+[MODE] Vielleicht (1)
+[has-mode] , dass die Kinder- (5)
 
 [] Kinder- (5)
 
