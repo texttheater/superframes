@@ -615,16 +615,16 @@
 18	weggehen	weggehen	VERB	VVINF	VerbForm=Inf	9	ccomp	_	_
 19	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CONTINUATION] saß (2)
+[LOCATION] saß (2)
 [has-location] Er (1)
-[m-scene] mucksmäuschenstill (3)
-[m-location] da (4)
+[m-depictive] mucksmäuschenstill (3)
+[location] da (4)
 [m-accompanier] , in der vergeblichen Hoffnung , der Draussenstehende könnte nach einem einmaligen Versuch weggehen (9)
 
 [IDENTIFICATION] Er (1)
 
 [COMPARISON >> QUALITY] mucksmäuschenstill (3)
-[compared >> has-quality] saß (2)
+[compared >> has-quality] Er (1)
 
 [LOCATION] da (4)
 
@@ -738,7 +738,7 @@
 
 [MODE] vermutlich (13)
 
-[SCENE-CONTINUATION] Gewohnheit (16)
+[SCENE] Gewohnheit (16)
 [m-time] langer (15)
 
 [TIME] langer (15)
@@ -836,7 +836,7 @@
 
 [CLASS] Tisch (20)
 
-[LOCATION-CONTINUATION] liegen (22)
+[LOCATION] liegen (22)
 [has-location] das Tagebuch (16)
 
 # sent_id = 319
@@ -872,7 +872,7 @@
 29	sein	sein	AUX	VAINF	VerbForm=Inf	27	cop	_	_
 30	.	.	PUNCT	$.	_	6	punct	_	_
 
-[LOCATION-CONTINUATION] stand (6)
+[LOCATION] stand (6)
 [has-location] Nieder mit dem Großen Bruder (1)
 [m-location] da (7)
 [m-location] über die halbe Seite (11)
@@ -1804,7 +1804,7 @@
 
 [MODE] sogar (22)
 
-[LOCATION-CONTINUATION] Wiedereinsetzen (24)
+[LOCATION-INIT] Wiedereinsetzen (24)
 [has-location] einer Fensterscheibe (26)
 
 [CLASS] Fensterscheibe (26)
@@ -1980,24 +1980,24 @@
 
 # sent_id = 340
 # text = Sportgeräte - Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - lagen sämtlich über den Fußboden verstreut , und auf dem Tisch war ein Durcheinander von schmutzigem Geschirr und eselsohrigen Schulbüchern .
-1	Sportgeräte	Sportgerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	20	subj	_	_
+1	Sportgeräte	Sportgerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	20	nsubj	_	_
 2	-	-	PUNCT	$.	_	1	punct	_	_
-3	Hockeyschläger	Hockeyschläger	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+3	Hockeyschläger	Hockeyschläger	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	1	appos	_	_
 4	,	,	PUNCT	$,	_	5	punct	_	_
-5	Boxhandschuhe	Boxhandschuh	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	1	conj	_	_
+5	Boxhandschuhe	Boxhandschuh	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	_
 6	,	,	PUNCT	$,	_	12	punct	_	_
 7	ein	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 8	aus	aus	ADP	APPR	_	10	case	_	_
 9	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	10	det	_	_
 10	Nähten	Naht	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	11	nmod	_	_
 11	geplatzter	geplatzt	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	12	amod	_	_
-12	Fußball	Fußball	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	1	conj	_	_
+12	Fußball	Fußball	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	3	conj	_	_
 13	,	,	PUNCT	$,	_	18	punct	_	_
 14	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 15	verschwitzte	verschwitzt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	18	amod	_	_
 16	,	,	PUNCT	$,	_	15	punct	_	_
 17	umgekrempelte	umgekrempelt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	15	conj	_	_
-18	Turnhose	Turnhose	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	1	conj	_	_
+18	Turnhose	Turnhose	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	conj	_	_
 19	-	-	PUNCT	$.	_	3	punct	_	_
 20	lagen	liegen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 21	sämtlich	sämtlich	ADJ	ADJD	_	20	advmod	_	_
@@ -2021,16 +2021,12 @@
 39	Schulbüchern	Schulbuch	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	36	conj	_	_
 40	.	.	PUNCT	$.	_	20	punct	_	_
 
-[??? LOCATION-CONTINUATION] lagen (20)
-[has-location] Sportgeräte - (1)
-[has-location] Hockeyschläger - (3)
-[has-location] , Boxhandschuhe (5)
-[has-location] , ein aus den Nähten geplatzter Fußball (12)
-[has-location] , eine verschwitzte , umgekrempelte Turnhose (18)
-[??? m-situator || m-quality] sämtlich (21) # ausnahmslos alle
-[??? initial-location] über den Fußboden verstreut (25)
+[LOCATION] lagen (20)
+[has-location] Sportgeräte - Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - (1)
+[m-depictive] sämtlich (21) # ausnahmslos alle
+[m-depictive] über den Fußboden verstreut (25)
 
-[CLASS] Sportgeräte (1)
+[CLASS] Sportgeräte Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - (1)
 
 [CLASS] Hockeyschläger (3)
 
@@ -2053,10 +2049,12 @@
 
 [STATE] umgekrempelte (17)
 
-[???] sämtlich (21)
+[QUANTITY] sämtlich (21)
+[has-quantity] Sportgeräte - Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - (1)
 
 [LOCATION-INIT] verstreut (25)
 [target-location] über den Fußboden (24)
+[has-location] Sportgeräte - Hockeyschläger , Boxhandschuhe , ein aus den Nähten geplatzter Fußball , eine verschwitzte , umgekrempelte Turnhose - (1)
 
 [CLASS] Fußboden (24)
 
@@ -2167,7 +2165,7 @@
 26	,	,	PUNCT	$,	_	29	punct	_	_
 27	nach	nach	ADP	APPR	_	29	case	_	_
 28	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Schweiß	Schweiß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	25	nmod	_	_
+29	Schweiß	Schweiß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	24	nmod	_	_
 30	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 31	-	-	PUNCT	$.	_	38	punct	_	_
 32	wie	wie	SCONJ	KOUS	_	38	mark	_	_
@@ -2227,15 +2225,15 @@
 
 [CLASS] Luft (16)
 
-[??? STATE-INIT] geschwängert (25) # die Luft mit etw. anfüllen, anreichern, sättigen
-[has-state] er (19)
-[target-state] von einem schärferen Schweißdunst (24)
-[target-state] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
+[ACCOMPANIMENT-INIT] geschwängert (25) # die Luft mit etw. anfüllen, anreichern, sättigen
+[accompanied] er (19)
+[target-accompanier] von einem schärferen Schweißdunst , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (24)
 
 [IDENTIFICATION] er (19)
 
-[EXCRETION] Schweißdunst (24)
+[EXCRETION || STATE] Schweißdunst (24)
 [m-quality] schärferen (23)
+[excreted || has-state] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
 
 [QUALITY] schärferen (23)
 
@@ -2245,7 +2243,7 @@
 [MESSAGE] wusste (38)
 [x-experiencer] man (33)
 [m-time] vom ersten Schnuppern an (36)
-[??? Syntax] , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (48)
+[m-conceded] , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (48)
 [topic] Schweiß (29)
 
 [IDENTIFICATION] man (33)
@@ -2255,7 +2253,7 @@
 
 [RANK >> TIME] ersten (35)
 
-[???MESSAGE-INIT] sagen (48)
+[MESSAGE-INIT] sagen (48)
 [x-sender] man (41)
 [m-quality] auch schwer (43)
 [???topic] den Grund dafür (45)
@@ -2465,9 +2463,9 @@
 
 [IDENTIFICATION] Sie (1)
 
-[??? MESSAGE || QUALITY || SCENE-CONTINUATION] Angewohnheit (4)
-[??? content || quality || initial-scene] , ihre Sätze mittendrin abzubrechen (9)
-[??? x-experiencer || has-quality || participant] Sie (1)
+[SCENE] Angewohnheit (4)
+[scene] , ihre Sätze mittendrin abzubrechen (9)
+[participant] Sie (1)
 
 [MESSAGE-INIT-NEG] abzubrechen (9)
 [topic] ihre Sätze (7)
@@ -2486,7 +2484,7 @@
 1	Der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Küchenausguss	Küchenausguss	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
 3	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
-4	fast	fast	ADV	ADV	_	8	advmod	_	_
+4	fast	fast	ADV	ADV	_	7	advmod	_	_
 5	bis	bis	ADP	APPR	_	7	case	_	_
 6	zum	zum	ADP	APPRART	_	7	case	_	_
 7	Rand	Rand	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	8	nmod	_	_
@@ -2494,50 +2492,50 @@
 9	mit	mit	ADP	APPR	_	11	case	_	_
 10	schmutzig-grünlichem	schmutzig-grünlich	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Sing	11	amod	_	_
 11	Wasser	Wasser	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	8	nmod	_	_
-12	,	,	PUNCT	$,	_	14	punct	_	_
-13	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	14	nsubj	_	_
-14	schlimmer	schlimm	ADJ	ADJD	_	11	acl	_	_
+12	,	,	PUNCT	$,	_	20	punct	_	_
+13	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	20	nsubj	_	_
+14	schlimmer	schlimm	ADJ	ADJD	_	20	advmod	_	_
 15	als	als	CCONJ	KOKOM	_	17	case	_	_
 16	alles	alle	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	17	det	_	_
-17	andere	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	20	obl	_	_
+17	andere	ander	PRON	PIS	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	14	obl	_	_
 18	nach	nach	ADP	APPR	_	19	case	_	_
 19	Kohl	Kohl	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	20	obl	_	_
-20	stank	stinken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
+20	stank	stinken	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 21	.	.	PUNCT	$.	_	8	punct	_	_
 
-[??? STATE] voll (8)
-[??? has-state] Der Küchenausguss (2)
-[??? Syntax: muss an Rand (7)] fast (4)
-[??? m-quantity] bis zum Rand (7)
-[??? state || m-accompanier] mit schmutzig-grünlichem Wasser , das schlimmer als alles andere nach Kohl stank (11)
+[LOCATION] voll (8)
+[location] Der Küchenausguss (2)
+[m-quantity] fast bis zum Rand (7)
+[has-location] mit schmutzig-grünlichem Wasser , das schlimmer als alles andere nach Kohl stank (11)
 
 [CLASS] Küchenausguss (2)
 
-[???] fast (4)
+[QUANTITY] fast (4)
 
-[CLASS || LOCATION] Rand (7)
+[PART-WHOLE] Rand (7)
+[m-quantity] fast (4)
 
 [CLASS] Wasser (11)
 [m-quality] schmutzig-grünlichem (10)
-[m-scene] , das schlimmer als alles andere nach Kohl stank (14)
+[m-scene] , das schlimmer als alles andere nach Kohl stank (20)
 
 [QUALITY] schmutzig-grünlichem (10)
 
 [QUALITY] schlimmer (14)
-[has-quality] das (13)
-[m-scene] als alles andere nach Kohl stank (20)
-[has-quality] Wasser (11)
+[m-reference] als alles andere (17)
+
+[COMPARISON] andere (17)
 
 [IDENTIFICATION] das (13)
 
 [MESSAGE] stank (20)
-[???] als alles andere (17)
-[??? content] nach Kohl (19)
-[???] schlimmer (14)
-
-[???] andere (17)
+[topic] das (13)
+[m-quality] schlimmer als alles andere (14)
+[content] nach Kohl (19)
+[topic] Wasser (11)
 
 [CLASS] Kohl (19)
+[] das (13)
 
 # sent_id = 349
 # text = Winston kniete nieder und untersuchte das gebogene Verbindungsstück des Ableitungsrohres .
@@ -2639,7 +2637,7 @@
 
 [QUANTITY] fast (20)
 
-[MESSAGE] Hustenanfall (23) #wie "jucken"?
+[MESSAGE] Hustenanfall (23) # wie "jucken"?
 
 [IDENTIFICATION] ihm (25)
 
