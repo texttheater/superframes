@@ -83,7 +83,15 @@ def remove_features(deprel: str) -> str:
 
 
 def is_semantic_predicate(tree: PyCoNLLTree) -> bool:
-    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS) and tree.data.deprel != 'compound:prt'
+    # Prevent spuriously including function word conjuncts
+    if tree.data.deprel == 'conj' and tree.parent \
+            and not is_semantic_predicate(tree.parent):
+        return False
+    # Exclude verb particles
+    if tree.data.deprel == 'compound:prt':
+        return False
+    # Include any predicate with one of PRED_DEPS as relation
+    return any(tree.data.deprel.startswith(r) for r in PRED_DEPS)
 
 
 def is_semantic_dependent(tree: PyCoNLLTree) -> bool:
