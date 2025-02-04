@@ -2166,7 +2166,7 @@
 27	nach	nach	ADP	APPR	_	29	case	_	_
 28	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	Schweiß	Schweiß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	24	nmod	_	_
-30	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+30	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
 31	-	-	PUNCT	$.	_	38	punct	_	_
 32	wie	wie	SCONJ	KOUS	_	38	mark	_	_
 33	man	man	PRON	PIS	Definite=Ind|Gender=Neut	38	nsubj	_	_
@@ -2188,9 +2188,9 @@
 49	können	können	AUX	VMINF	VerbForm=Inf	48	aux	_	_
 50	-	-	PUNCT	$.	_	48	punct	_	_
 51	im	im	ADP	APPRART	_	52	case	_	_
-52	Augenblick	Augenblick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	48	obl	_	_
+52	Augenblick	Augenblick	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	53	obl	_	_
 53	abwesenden	abwesend	ADJ	ADJA	Case=Gen|Gender=Neut|Number=Plur	54	amod	_	_
-54	Menschen	Mensch	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	48	obl	_	_
+54	Menschen	Mensch	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	24	nmod	_	_
 55	.	.	PUNCT	$.	_	3	punct	_	_
 
 [UNANCHORED-MOTION] schwebte (3)
@@ -2231,19 +2231,20 @@
 
 [IDENTIFICATION] er (19)
 
-[EXCRETION || STATE] Schweißdunst (24)
+[EXCRETION] Schweißdunst (24)
 [m-quality] schärferen (23)
-[excreted || has-state] , nach dem Schweiß eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (29)
+[excreted] , nach dem Schweiß - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - (29)
+[excreter] eines im Augenblick abwesenden Menschen (54)
 
 [QUALITY] schärferen (23)
 
 [EXCRETION] Schweiß (29)
-[m-scene] eines - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (38)
+[m-scene] - wie man vom ersten Schnuppern an wusste , wenn man auch schwer den Grund dafür hätte sagen können - (38)
 
 [MESSAGE] wusste (38)
 [x-experiencer] man (33)
 [m-time] vom ersten Schnuppern an (36)
-[m-conceded] , wenn man auch schwer den Grund dafür hätte sagen können - im Augenblick abwesenden Menschen (48)
+[m-conceded] , wenn man auch schwer den Grund dafür hätte sagen können - (48)
 [topic] Schweiß (29)
 
 [IDENTIFICATION] man (33)
@@ -2256,28 +2257,28 @@
 [MESSAGE-INIT] sagen (48)
 [x-sender] man (41)
 [m-quality] auch schwer (43)
-[???topic] den Grund dafür (45)
-[??? Syntax: sollte zusammen mit "abwesenden Menschen"] im Augenblick (52)
-[???] abwesenden Menschen (54)
+[topic] den Grund dafür (45)
 
 [IDENTIFICATION] man (41)
 
-[] schwer (43)
-[???] auch (42)
+[QUALITY] schwer (43)
+[m-mode] auch (42)
 
-[] auch (42)
+[MODE] auch (42)
 
 [CAUSATION] Grund (45)
-[???] dafür (46)
+[result] dafür (46)
 
-[] dafür (46)
+[IDENTIFICATION] dafür (46)
 
-[] Augenblick (52)
+[CLASS] Menschen (54)
+[m-scene] im Augenblick abwesenden (53)
 
-[] Menschen (54)
-[] abwesenden (53)
+[LOCATION-NEG] abwesenden (53)
+[m-time] im Augenblick (52)
+[has-location] Menschen (54)
 
-[] abwesenden (53)
+[TIME] Augenblick (52)
 
 # sent_id = 343
 # text = In einem anderen Zimmer versuchte jemand im Takt der Militärmusik , die noch immer aus dem Televisor dröhnte , auf einem Kamm mit darüber gespanntem Toilettenpapier zu blasen .
@@ -2531,11 +2532,10 @@
 [MESSAGE] stank (20)
 [topic] das (13)
 [m-quality] schlimmer als alles andere (14)
-[content] nach Kohl (19)
+[x-reference] nach Kohl (19)
 [topic] Wasser (11)
 
 [CLASS] Kohl (19)
-[] das (13)
 
 # sent_id = 349
 # text = Winston kniete nieder und untersuchte das gebogene Verbindungsstück des Ableitungsrohres .

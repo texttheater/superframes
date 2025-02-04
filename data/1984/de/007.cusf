@@ -222,7 +222,7 @@
 [has-class] Er (1)
 [m-quality] rundlicher (4)
 [m-quality] , jedoch sehr beweglicher (8)
-[??? m-quality || m-scene] von entwaffnender Dummheit (12)
+[m-quality] von entwaffnender Dummheit (12)
 
 [IDENTIFICATION] Er (1)
 
@@ -236,8 +236,8 @@
 [QUALITY] Dummheit (12)
 [m-scene] entwaffnender (11)
 
-[POSSESSION-DEINIT >> QUALITY] entwaffnender (11)
-[x-causer >> has-quality] Dummheit (12)
+[POSSESSION-DEINIT >> STATE-CHANGE >> QUALITY] entwaffnender (11)
+[x-causer >> x-causer >> has-quality] Dummheit (12)
 
 [CLASS] Klotz (15) # Stück Holz; ugs. unsensibler Mensch
 [m-scene] voll törichter Begeisterung (18)
@@ -458,7 +458,7 @@
 44	jede	jed	DET	PIAT	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	45	det	_	_
 45	Art	Art	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	36	conj	_	_
 46	freiwilligen	freiwillig	ADJ	ADJA	Case=Gen|Gender=Masc|Number=Sing	47	amod	_	_
-47	Einsatzes	Einsatz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	34	nmod	_	_
+47	Einsatzes	Einsatz	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	45	nmod	_	_
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
@@ -526,8 +526,7 @@
 [target-scene] von Gemeinschaftswanderungen (36)
 [target-scene] , spontanen Demonstrationen (39)
 [target-scene] , Sparwerbewochen (41)
-[??? target-scene; Syntax] und überhaupt jede Art (45)
-[??? target-scene; Syntax] freiwilligen Einsatzes (47)
+[target-scene] und überhaupt jede Art freiwilligen Einsatzes (45)
 
 [ACTIVITY] Gemeinschaftswanderungen (36)
 
@@ -538,15 +537,17 @@
 
 [EVENT] Sparwerbewochen (41)
 
-[] Art (45)
-[] überhaupt (43)
+[SUBCLASS] Art (45)
+[m-mode] überhaupt (43)
+[superclass] freiwilligen Einsatzes (47)
 
-[] überhaupt (43)
+[MODE] überhaupt (43)
 
-[] Einsatzes (47)
-[] freiwilligen (46)
+[ACTIVITY] Einsatzes (47)
+[m-scene] freiwilligen (46)
 
-[] freiwilligen (46)
+[CAUSATION >> QUALITY] freiwilligen (46)
+[result >> has-quality] Einsatzes (47)
 
 # sent_id = 359
 # text = Er erzählte einem voll ruhigen Stolzes , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei .
@@ -696,7 +697,7 @@
 [IDENTIFICATION] seines (13)
 
 [UNANCHORED-MOTION] schwebte (17)
-[??? m-depictive] sogar nach seinem Weggehen (21)
+[m-situator] sogar nach seinem Weggehen (21)
 [m-time] noch (22)
 [m-location] im Zimmer (24)
 [in-motion] Ein durchdringender Schweißgeruch (3)
@@ -752,7 +753,7 @@
 
 [IDENTIFICATION] Winston (2)
 
-[???SCENE-INIT] machte (4)
+[SCENE-INIT] machte (4)
 [participant] sich (5)
 [m-means] mit der Schraubenmutter (8) # das mit einem Innengewinde versehene Gegenstück zu einer Schraube oder einem Gewindebolzen
 [target-scene] am Verbindungsstück zu schaffen (12)
@@ -761,8 +762,9 @@
 
 [CLASS || MEANS] Schraubenmutter (8)
 
-[??? SCENE-INIT] schaffen (12)
-[??? target-scene] am Verbindungsstück (10)
+[EVENT] schaffen (12)
+[undergoer] am Verbindungsstück (10)
+[x-causer] sich (5)
 
 [CLASS] Verbindungsstück (10)
 
@@ -790,13 +792,15 @@
 
 [IDENTIFICATION] Frau Parsons (7)
 
-[??? Syntax?] wurde (10)
-[] sofort (11)
-[] unsicher (12)
+[SCENE-INIT] wurde (10)
+[m-time] sofort (11)
+[target-scene] unsicher (12)
+[participant] Frau Parsons (7)
 
-[] sofort (11)
+[TIME] sofort (11)
 
-[] unsicher (12)
+[MESSAGE] unsicher (12)
+[x-experiencer] Frau Parsons (7)
 
 # sent_id = 364
 # text = » Ich weiß nicht .
@@ -823,8 +827,8 @@
 5	Kinder-	Kind	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	1	nsubj	_	_
 6	«	«	PUNCT	$(	_	1	punct	_	_
 
-[??? MODE] Vielleicht (1)
-[m-explanation] , dass die Kinder- (5)
+[MODE] Vielleicht (1)
+[has-mode] , dass die Kinder- (5)
 
 [CLASS] Kinder- (5)
 
