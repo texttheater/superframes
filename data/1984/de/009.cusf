@@ -145,7 +145,7 @@
 [CLASS] Meeresgrund (11)
 
 [LOCATION-INIT] verirrt (17)
-[location] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
+[target-location] in eine ungeheuerliche Welt , in der er selbst das Ungeheuer war (16)
 [has-location] er (6)
 
 [CLASS] Welt (16)
@@ -1112,7 +1112,7 @@
 [m-mode] nicht einmal (17)
 
 [MODE] einmal (17)
-[x-noncomp] nicht (16)
+[m-noncomp] nicht (16)
 
 [NONCOMP] nicht (16)
 
@@ -1127,7 +1127,7 @@
 
 [IDENTIFICATION] darauf (24)
 
-[?SENDING] anonymen (26)
+[SENDING] anonymen (26)
 
 # sent_id = 478
 # text = Im Televisor schlug es vierzehn Uhr .
@@ -2185,9 +2185,9 @@
 
 [QUALITY] dunkelbraunen (13)
 
-[EVENT] aufscheuerte (22)
+[EVENT || QUALITY-CHANGE] aufscheuerte (22)
 [x-causer] die (16)
-[undergoer] einem (17)
+[undergoer || has-quality] einem (17)
 [x-attribute] die Hand (19)
 [m-reference] wie Schmirgelpapier (21)
 [x-causer] Seife (14)
@@ -2201,15 +2201,15 @@
 
 [CLASS] Schmirgelpapier (21)
 
-[] geeignet (28)
+[SITUATION] geeignet (28)
 [m-explanation] deshalb (24)
-[] für seinen Zweck (27)
-[] Seife (14)
+[x-purpose] für seinen Zweck (27)
+[theme] Seife (14)
 
 [IDENTIFICATION || EXPLANATION] deshalb (24)
 
-[] Zweck (27)
-[] seinen (26)
+[SEQUENCE] Zweck (27) # # Vgl. sent_id 6
+[m-purpose] seinen (26)
 
 [IDENTIFICATION] seinen (26)
 
@@ -2270,15 +2270,15 @@
 28	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
 29	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] sinnlos (10)
-[] Der Gedanke , es zu verstecken , (2)
+[MEANS-NEG >> QUALITY] sinnlos (10) # # "aussichtslos, nutzlos"
+[means >> has-quality] Der Gedanke , es zu verstecken , (2)
 [m-quantity] völlig (9)
 
 [MESSAGE] Gedanke (2)
-[] , es zu verstecken , (6)
+[content] , es zu verstecken , (6)
 
-[] verstecken (6)
-[] es (4)
+[MESSAGE-INIT-NEG] verstecken (6)
+[target-content] es (4)
 
 [IDENTIFICATION] es (4)
 
@@ -2298,15 +2298,15 @@
 [x-causer] er (13)
 [purpose] , um sich zu vergewissern , ob es entdeckt worden war (22)
 
-[MESSAGE] vergewissern (22)
+[MESSAGE-INIT] vergewissern (22)
 [x-experiencer >> x-noncomp] sich (20)
-[] , ob es entdeckt worden war (26)
-[x-causer >> x-experiencer] er (13)
+[topic] , ob es entdeckt worden war (26)
+[x-sender >> x-experiencer] er (13)
 
 [IDENTIFICATION >> NONCOMP] sich (20)
 
-[] entdeckt (26)
-[] es (25)
+[MESSAGE-INIT] entdeckt (26)
+[topic] es (25)
 
 [IDENTIFICATION] es (25)
 
@@ -2323,8 +2323,8 @@
 9	augenfällig	augenfällig	ADJ	ADJD	_	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] augenfällig (9)
-[] Ein zwischen die Seiten gelegtes Haar (6)
+[MESSAGE-INIT-NECESSITY] augenfällig (9) # # "auffällig, nicht zu übersehen"
+[topic] Ein zwischen die Seiten gelegtes Haar (6)
 [m-quantity] zu (8)
 
 [CLASS] Haar (6)
@@ -2387,14 +2387,14 @@
 [m-scene] gerade noch erkennbares (9)
 [m-quality] weißliches (10)
 
-[] erkennbares (9)
+[MESSAGE-INIT-POSSIBILITY] erkennbares (9)
 [m-quantity] gerade noch (8)
-[] Staubkörnchen (11)
+[topic] Staubkörnchen (11)
 
-[] noch (8)
-[] gerade (7)
+[TIME] noch (8)
+[m-quantity] gerade (7)
 
-[] gerade (7)
+[QUANTITY] gerade (7)
 
 [QUALITY] weißliches (10)
 
