@@ -9,10 +9,10 @@
 2	1	1	NUM	CD	NumForm=Digit|NumType=Card	1	nummod	_	TokenRange=8:9
 3	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=10:11
 
-[] Chapter (1)
-[] 1 (2)
+[MESSAGE] Chapter (1)
+[has-rank-in] 1 (2)
 
-[] 1 (2)
+[RANK] 1 (2)
 
 # sent_id = 2
 # text = Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -44,55 +44,55 @@
 26	forest	forest	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=136:142
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=143:144
 
-[] saw (9)
-[] Once when I was six years old (7)
-[] I (8)
-[] a magnificent picture (12)
-[] in a book , called True Stories from Nature , about the primeval forest (15)
+[MESSAGE-INIT] saw (9)
+[time] Once when I was six years old (7)
+[experiencer] I (8)
+[topic] a magnificent picture (12)
+[location] in a book , called True Stories from Nature , about the primeval forest (15)
 
-[] old (7)
-[] Once (1)
-[] when (2)
-[] I (3)
-[] six years (6)
+[PROPERTY] old (7)
+[has-time-in] Once (1)
+[time-in] when (2)
+[has-property] I (3)
+[has-quantity-in] six years (6)
 
-[] Once (1)
+[TIME] Once (1)
 
-[] when (2)
+[TIME] when (2)
 
-[] I (3)
+[IDENTIIFER] I (3)
 
-[] years (6)
-[] six (5)
+[TIME] years (6)
+[has-quantity-in] six (5)
 
-[] six (5)
+[QUANTITY] six (5)
 
-[] I (8)
+[IDENTIIFER] I (8)
 
-[] picture (12)
-[] magnificent (11)
+[MESSAGE] picture (12)
+[has-quality-in] magnificent (11)
 
-[] magnificent (11)
+[QUALITY] magnificent (11)
 
-[] book (15)
-[] called True Stories from Nature (17)
-[] about the primeval forest (26)
+[MESSAGE] book (15)
+[identified-in] called True Stories from Nature (17)
+[topic] about the primeval forest (26)
 
-[] called (17)
-[] True Stories from Nature (19)
+[IDENTIFIER] called (17)
+[identifier] True Stories from Nature (19)
 
-[] Stories (19)
-[] True (18)
-[] from Nature (21)
+[MESSAGE] Stories (19)
+[scene-in] True (18)
+[initial-location] from Nature (21)
 
-[] True (18)
+[META-MOD] True (18)
 
-[] Nature (21)
+[CLASS] Nature (21)
 
-[] forest (26)
-[] primeval (25)
+[CLASS] forest (26)
+[has-kind-in] primeval (25)
 
-[] primeval (25)
+[KIND] primeval (25)
 
 # sent_id = 3
 # text = It was a picture of a boa constrictor in the act of swallowing an animal .
@@ -113,25 +113,26 @@
 15	animal	animal	NOUN	NN	Number=Sing	13	obj	_	TokenRange=212:218
 16	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=219:220
 
-[] picture (4)
-[] It (1)
-[] of a boa constrictor in the act of swallowing an animal (8)
+[MESSAGE] picture (4)
+[has-class] It (1)
+[topic] of a boa constrictor in the act of swallowing an animal (8)
 
-[] It (1)
+[IDENTIFIER] It (1)
 
-[] constrictor (8)
-[] boa (7)
-[] in the act of swallowing an animal (11)
+[CLASS] constrictor (8)
+[*] boa (7)
+[participant-in] in the act of swallowing an animal (11)
 
-[] boa (7)
+[*] boa (7)
 
-[] act (11)
-[] of swallowing an animal (13)
+[META] act (11)
+[scene] of swallowing an animal (13)
 
-[] swallowing (13)
-[] an animal (15)
+[CONTAINMENT-INIT] swallowing (13)
+[contained] an animal (15)
+[target-container] constrictor (8)
 
-[] animal (15)
+[CLASS] animal (15)
 
 # sent_id = 4
 # text = Here is a copy of the drawing .
@@ -144,13 +145,13 @@
 7	drawing	drawing	NOUN	NN	Number=Sing	4	nmod	_	TokenRange=244:251
 8	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\r\n|TokenRange=252:253
 
-[] Here (1)
-[] a copy of the drawing (4)
+[LOCATION] Here (1)
+[has-location] a copy of the drawing (4)
 
-[] copy (4)
-[] of the drawing (7)
+[REPRODUCTION] copy (4)
+[original] of the drawing (7)
 
-[] drawing (7)
+[MESSAGE] drawing (7)
 
 # sent_id = 5
 # text = In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
@@ -173,37 +174,39 @@
 17	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	obj	_	TokenRange=339:341
 18	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=342:343
 
-[] said (5)
-[] In the book (3)
-[] it (4)
-[] Boa constrictors swallow their prey whole , without chewing it (10)
+[MESSAGE] said (5)
+[location] In the book (3)
+[*] it (4)
+[message] Boa constrictors swallow their prey whole , without chewing it (10)
 
-[] book (3)
+[MESSAGE] book (3)
 
-[] it (4)
+[*] it (4)
 
-[] swallow (10)
-[] Boa constrictors (9)
-[] their prey (12)
-[] whole (13)
-[] without chewing it (16)
+[CONTAINMENT-INIT] swallow (10)
+[target-container] Boa constrictors (9)
+[contained] their prey (12)
+[circumstance] whole (13)
+[followed] without chewing it (16)
 
-[] constrictors (9)
-[] Boa (8)
+[CLASS] constrictors (9)
+[*] Boa (8)
 
-[] Boa (8)
+[*] Boa (8)
 
-[] prey (12)
-[] their (11)
+[SOCIAL-ROLE] prey (12)
+[social-relate] their (11)
 
-[] their (11)
+[IDENTIFIER] their (11)
 
-[] whole (13)
+[STATE] whole (13)
+[has-state] their prey (12)
 
-[] chewing (16)
-[] it (17)
+[STATE-INIT] chewing (16)
+[has-state] it (17)
+[causer] Boa constrictors (9)
 
-[] it (17)
+[IDENTIFIER] it (17)
 
 # sent_id = 6
 # text = After that they are not able to move , and they sleep through the six months that they need for digestion . " I pondered deeply , then , over the adventures of the jungle .
@@ -212,7 +215,7 @@
 3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=356:360
 4	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	TokenRange=361:364
 5	not	not	PART	RB	_	6	advmod	_	TokenRange=365:368
-6	able	able	ADJ	JJ	Degree=Pos	25	advcl	_	TokenRange=369:373
+6	able	able	ADJ	JJ	Degree=Pos	25	parataxis	_	TokenRange=369:373
 7	to	to	PART	TO	_	8	mark	_	TokenRange=374:376
 8	move	move	VERB	VB	VerbForm=Inf	6	xcomp	_	TokenRange=377:381
 9	,	,	PUNCT	,	_	12	punct	_	TokenRange=382:383
@@ -244,60 +247,60 @@
 35	jungle	jungle	NOUN	NN	Number=Sing	32	nmod	_	TokenRange=510:516
 36	.	.	PUNCT	.	_	25	punct	_	SpacesAfter=\r\n|TokenRange=517:518
 
-[] pondered (25)
-[] After that they are not able to move , and they sleep through the six months that they need for digestion (6)
-[] I (24)
-[] deeply (26)
-[] then (28)
-[] over the adventures of the jungle (32)
+[MESSAGE-INIT] pondered (25)
+[experiencer] I (24)
+[has-quality-in] deeply (26)
+[has-time-in] then (28)
+[topic] over the adventures of the jungle (32)
 
-[] able (6)
-[] After that (2)
-[] they (3)
-[] not (5)
-[] to move (8)
+[META-POSSIBILITY] able (6)
+[time] After that (2)
+[participant] they (3)
+[scene-in] not (5)
+[scene] to move (8)
 
-[] that (2)
+[IDENTIFIER] that (2)
 
-[] they (3)
+[IDENTIFIER] they (3)
 
-[] not (5)
+[META-NEG] not (5)
 
-[] move (8)
+[LOCATION-DYN] move (8)
+[has-location] 
 
-[] sleep (12)
-[] they (11)
-[] through the six months that they need for digestion (16)
+[STATE] sleep (12)
+[has-state] they (11)
+[time] through the six months that they need for digestion (16)
 
-[] they (11)
+[IDENTIFIER] they (11)
 
-[] months (16)
-[] six (15)
-[] that they need for digestion (19)
+[TIME] months (16)
+[has-quantity-in] six (15)
+[relate-in] that they need for digestion (19)
 
-[] six (15)
+[QUANTITY] six (15)
 
-[] need (19)
-[] that (17)
-[] they (18)
-[] for digestion (21)
+[SITUATION-NECESSITY] need (19)
+[relate] that (17)
+[related] they (18)
+[purpose] for digestion (21)
 
-[] that (17)
+[IDENTIFIER] that (17)
 
-[] they (18)
+[IDENTIFIER] they (18)
 
-[] digestion (21)
+[STATE-INIT] digestion (21)
 
-[] I (24)
+[IDENTIFIER] I (24)
 
-[] deeply (26)
+[QUALITY] deeply (26)
 
-[] then (28)
+[TIME] then (28)
 
-[] adventures (32)
-[] of the jungle (35)
+[SITUATION-DYN] adventures (32)
+[location] of the jungle (35)
 
-[] jungle (35)
+[CLASS] jungle (35)
 
 # sent_id = 7
 # text = And after some work with a colored pencil I succeeded in making my first drawing .
@@ -318,50 +321,51 @@
 15	drawing	drawing	NOUN	NN	Number=Sing	12	obj	_	TokenRange=593:600
 16	.	.	PUNCT	.	_	10	punct	_	SpacesAfter=\r\n|TokenRange=601:602
 
-[] succeeded (10)
-[] after some work with a colored pencil (4)
-[] I (9)
-[] in making my first drawing (12)
+[META-COMPLETION] succeeded (10)
+[time] after some work with a colored pencil (4)
+[participant] I (9)
+[target-scene] in making my first drawing (12)
 
-[] work (4)
-[] with a colored pencil (8)
+[SITUATION-DYN] work (4)
+[means] with a colored pencil (8)
 
-[] pencil (8)
-[] colored (7)
+[CLASS] pencil (8)
+[has-kind-in] colored (7)
 
-[] colored (7)
+[KIND] colored (7)
 
-[] I (9)
+[IDENTIFIER] I (9)
 
-[] making (12)
-[] my first drawing (15)
+[CREATOR-INIT] making (12)
+[target-creation] my first drawing (15)
+[creator] I (9)
 
-[] drawing (15)
-[] my (13)
-[] first (14)
+[MESSAGE] drawing (15)
+[sender] my (13)
+[has-rank-in] first (14)
 
-[] my (13)
+[IDENTIFIER] my (13)
 
-[] first (14)
+[RANK] first (14)
 
 # sent_id = 8
 # text = My Drawing Number One .
-1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=604:606
-2	Drawing	drawing	NOUN	NN	Number=Sing	3	compound	_	TokenRange=607:614
-3	Number	number	NOUN	NN	Number=Sing	0	root	_	TokenRange=615:621
+1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=604:606
+2	Drawing	drawing	NOUN	NN	Number=Sing	0	root	_	TokenRange=607:614
+3	Number	number	NOUN	NN	Number=Sing	2	nmod	_	TokenRange=615:621
 4	One	one	NUM	CD	NumForm=Word|NumType=Card	3	nummod	_	TokenRange=622:625
-5	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=626:627
+5	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=626:627
 
-[] Number (3)
-[] My (1)
-[] Drawing (2)
-[] One (4)
+[MESSAGE] Drawing (2)
+[sender] My (1)
+[has-rank-in] Number One (3)
 
-[] My (1)
+[IDENTIFIER] My (1)
 
-[] Drawing (2)
+[RANK] Number (3)
+[rank] One (4)
 
-[] One (4)
+[RANK] One (4)
 
 # sent_id = 9
 # text = It looked like this :
@@ -371,13 +375,14 @@
 4	this	this	PRON	DT	Number=Sing|PronType=Dem	2	obl	_	TokenRange=644:648
 5	:	:	PUNCT	:	_	2	punct	_	TokenRange=649:650
 
-[] looked (2)
-[] It (1)
-[] like this (4)
+[MESSAGE] looked (2)
+[topic] It (1)
+[message] like this (4)
 
-[] It (1)
+[IDENTIFIER] It (1)
 
-[] this (4)
+[IDENTIFIER] this (4)
+[compared] It (1)
 
 # sent_id = 10
 # text = I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
@@ -401,36 +406,37 @@
 18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	17	obj	_	TokenRange=742:746
 19	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=747:748
 
-[] showed (2)
-[] I (1)
-[] my masterpiece (4)
-[] to the grown - ups (9)
+[MESSAGE-INIT] showed (2)
+[sender] I (1)
+[topic] my masterpiece (4)
+[experiencer] to the grown - ups (9)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] masterpiece (4)
-[] my (3)
+[CREATION] masterpiece (4)
+[creator] my (3)
 
-[] my (3)
+[IDENTIFIER] my (3)
 
-[] ups (9)
-[] grown (7)
+[PROPERTY] ups (9)
+[*] grown (7)
 
-[] grown (7)
+[*] grown (7)
 
-[] asked (12)
-[] them (13)
-[] whether the drawing frightened them (17)
+[MESSAGE] asked (12)
+[experiencer] them (13)
+[message] whether the drawing frightened them (17)
+[sender] I (1)
 
-[] them (13)
+[IDENTIFIER] them (13)
 
-[] frightened (17)
-[] the drawing (16)
-[] them (18)
+[MESSAGE-INIT] frightened (17)
+[topic] the drawing (16)
+[experiencer] them (18)
 
-[] drawing (16)
+[MESSAGE] drawing (16)
 
-[] them (18)
+[IDENTIFIER] them (18)
 
 # sent_id = 11
 # text = But they answered : " Frighten ?
@@ -442,13 +448,13 @@
 6	Frighten	frighten	ADJ	JJ	Degree=Pos	3	ccomp	_	TokenRange=772:780
 7	?	?	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=781:782
 
-[] answered (3)
-[] they (2)
-[] Frighten (6)
+[MESSAGE-INIT] answered (3)
+[sender] they (2)
+[message] Frighten (6)
 
-[] they (2)
+[IDENTIFIER] they (2)
 
-[] Frighten (6)
+[MESSAGE-INIT] Frighten (6)
 
 # sent_id = 12
 # text = Why should any one be frightened by a hat ? "
@@ -464,16 +470,16 @@
 10	?	?	PUNCT	.	_	6	punct	_	TokenRange=826:827
 11	"	"	PUNCT	''	_	6	punct	_	SpacesAfter=\r\n|TokenRange=828:829
 
-[] frightened (6)
-[] Why (1)
-[] any one (4)
-[] by a hat (9)
+[MESSAGE-INIT] frightened (6)
+[has-explanation-in] Why (1)
+[experiencer] any one (4)
+[topic] by a hat (9)
 
-[] Why (1)
+[EXPLANATION] Why (1)
 
-[] one (4)
+[CLASS] one (4)
 
-[] hat (9)
+[CLASS] hat (9)
 
 # sent_id = 13
 # text = My drawing was not a picture of a hat .
@@ -488,19 +494,19 @@
 9	hat	hat	NOUN	NN	Number=Sing	6	nmod	_	TokenRange=865:868
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=869:870
 
-[] picture (6)
-[] My drawing (2)
-[] not (4)
-[] of a hat (9)
+[MESSAGE] picture (6)
+[has-class] My drawing (2)
+[scene-in] not (4)
+[topic] of a hat (9)
 
-[] drawing (2)
-[] My (1)
+[MESSAGE] drawing (2)
+[sender] My (1)
 
-[] My (1)
+[IDENTIFIER] My (1)
 
-[] not (4)
+[META-NEG] not (4)
 
-[] hat (9)
+[CLASS] hat (9)
 
 # sent_id = 14
 # text = It was a picture of a boa constrictor digesting an elephant .
@@ -517,22 +523,22 @@
 11	elephant	elephant	NOUN	NN	Number=Sing	9	obj	_	TokenRange=923:931
 12	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=932:933
 
-[] picture (4)
-[] It (1)
-[] of a boa constrictor digesting an elephant (8)
+[MESSAGE] picture (4)
+[has-class] It (1)
+[topic] of a boa constrictor digesting an elephant (8)
 
-[] It (1)
+[IDENTIFIER] It (1)
 
-[] constrictor (8)
-[] boa (7)
-[] digesting an elephant (9)
+[CLASS] constrictor (8)
+[*] boa (7)
+[causer-in] digesting an elephant (9)
 
-[] boa (7)
+[*] boa (7)
 
-[] digesting (9)
-[] an elephant (11)
+[STATE-INIT] digesting (9)
+[has-state] an elephant (11)
 
-[] elephant (11)
+[CLASS] elephant (11)
 
 # sent_id = 15
 # text = But since the grown - ups were not able to understand it , I made another drawing :
@@ -555,31 +561,31 @@
 17	drawing	drawing	NOUN	NN	Number=Sing	15	obj	_	TokenRange=1009:1016
 18	:	:	PUNCT	:	_	15	punct	_	TokenRange=1017:1018
 
-[] made (15)
-[] since the grown - ups were not able to understand it (9)
-[] I (14)
-[] another drawing (17)
+[CREATOR-INIT] made (15)
+[explanation] since the grown - ups were not able to understand it (9)
+[creator] I (14)
+[target-creation] another drawing (17)
 
-[] able (9)
-[] the grown - ups (6)
-[] not (8)
-[] to understand it (11)
+[META-POSSIBILITY] able (9)
+[participant] the grown - ups (6)
+[scene-in] not (8)
+[scene] to understand it (11)
 
-[] ups (6)
-[] grown (4)
+[PROPERTY] ups (6)
+[*] grown (4)
 
-[] grown (4)
+[*] grown (4)
 
-[] not (8)
+[META-NEG] not (8)
 
-[] understand (11)
-[] it (12)
+[MESSAGE-INIT] understand (11)
+[topic] it (12)
 
-[] it (12)
+[IDENTIFIER] it (12)
 
-[] I (14)
+[IDENTIFIER] I (14)
 
-[] drawing (17)
+[MESSAGE] drawing (17)
 
 # sent_id = 16
 # text = I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
@@ -604,34 +610,34 @@
 19	clearly	clearly	ADV	RB	_	17	advmod	_	TokenRange=1099:1106
 20	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=1107:1108
 
-[] drew (2)
-[] I (1)
-[] the inside of the boa constrictor (4)
-[] so that the grown - ups could see it clearly (17)
+[MESSAGE-INIT] drew (2)
+[sender] I (1)
+[topic] the inside of the boa constrictor (4)
+[purpose] so that the grown - ups could see it clearly (17)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] inside (4)
-[] of the boa constrictor (8)
+[PART-WHOLE] inside (4)
+[whole] of the boa constrictor (8)
 
-[] constrictor (8)
-[] boa (7)
+[CLASS] constrictor (8)
+[*] boa (7)
 
-[] boa (7)
+[*] boa (7)
 
-[] see (17)
-[] the grown - ups (15)
-[] it (18)
-[] clearly (19)
+[MESSAGE] see (17)
+[experiencer] the grown - ups (15)
+[topic] it (18)
+[has-quality-in] clearly (19)
 
-[] ups (15)
-[] grown (13)
+[PROPERTY] ups (15)
+[*] grown (13)
 
-[] grown (13)
+[*] grown (13)
 
-[] it (18)
+[IDENTIFIER] it (18)
 
-[] clearly (19)
+[QUALITY] clearly (19)
 
 # sent_id = 17
 # text = They always need to have things explained .
@@ -644,28 +650,30 @@
 7	explained	explain	VERB	VBN	Tense=Past|VerbForm=Part	5	xcomp	_	TokenRange=1142:1151
 8	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1152:1153
 
-[] need (3)
-[] They (1)
-[] always (2)
-[] to have things explained (5)
+[META-NECESSITY] need (3)
+[participant] They (1)
+[has-time-in] always (2)
+[scene] to have things explained (5)
 
-[] They (1)
+[IDENTIFIER] They (1)
 
-[] always (2)
+[TIME] always (2)
 
-[] have (5)
-[] things (6)
-[] explained (7)
+[META] have (5)
+[participant] things (6)
+[scene] explained (7)
+[experiencer] They (1)
 
-[] things (6)
+[CLASS] things (6)
 
-[] explained (7)
+[MESSAGE-INIT] explained (7)
+[topic] things (6)
 
 # sent_id = 18
 # text = My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
-1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=1155:1157
-2	Drawing	drawing	NOUN	NN	Number=Sing	3	compound	_	TokenRange=1158:1165
-3	Number	number	NOUN	NN	Number=Sing	5	nsubj	_	TokenRange=1166:1172
+1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=1155:1157
+2	Drawing	drawing	NOUN	NN	Number=Sing	5	nsubj	_	TokenRange=1158:1165
+3	Number	number	NOUN	NN	Number=Sing	2	nmod	_	TokenRange=1166:1172
 4	Two	two	NUM	CD	NumForm=Word|NumType=Card	3	nummod	_	TokenRange=1173:1176
 5	looked	look	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=1177:1183
 6	like	like	ADP	IN	_	7	case	_	TokenRange=1184:1188
@@ -716,79 +724,85 @@
 51	grammar	grammar	NOUN	NN	Number=Sing	45	conj	_	TokenRange=1408:1415
 52	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=1416:1417
 
-[] looked (5)
-[] My Drawing Number Two (3)
-[] like this (7)
+[MESSAGE] looked (5)
+[topic] My Drawing Number Two (2)
+[message] like this (7)
 
-[] Number (3)
-[] My (1)
-[] Drawing (2)
-[] Two (4)
+[MESSAGE] Drawing (2)
+[sender] My (1)
+[has-rank-in] Number Two (3)
 
-[] My (1)
+[IDENTIFIER] My (1)
 
-[] Drawing (2)
+[RANK] Number (3)
+[rank] Two (4)
 
-[] Two (4)
+[RANK] Two (4)
 
-[] this (7)
+[IDENTIFIER] this (7)
 
-[] advise (21)
-[] The grown - ups ' response (14)
-[] this time (17)
-[] me (22)
-[] to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar (24)
+[NORM-INIT] advise (21)
+[same] The grown - ups ' response (14)
+[time] this time (17)
+[norm-topic] me (22)
+[target-norm] to lay aside my drawings of boa constrictors , whether from the inside or the outside (24)
+[target-norm] , and devote myself instead to geography , history , arithmetic and grammar (41)
 
-[] response (14)
-[] The grown - ups ' (12)
+[REACTION] response (14)
+[causer] The grown - ups ' (12)
 
-[] ups (12)
-[] grown (10)
+[PROPERTY] ups (12)
+[*] grown (10)
 
-[] grown (10)
+[*] grown (10)
 
-[] time (17)
+[TIME] time (17)
 
-[] me (22)
+[IDENTIFIER] me (22)
 
-[] lay (24)
-[] aside (25)
-[] my drawings of boa constrictors (27)
-[] whether from the inside or the outside (35)
+[SITUATION-DEINIT] lay (24)
+[*] aside (25)
+[relate] my drawings of boa constrictors (27)
+[circumstance] whether from the inside (35)
+[circumstance] or the outside (38)
+[causer] me (22)
 
-[] aside (25)
+[MESSAGE] drawings (27)
+[sender] my (26)
+[topic] of boa constrictors (30)
 
-[] drawings (27)
-[] my (26)
-[] of boa constrictors (30)
+[IDENTIFIER] my (26)
 
-[] my (26)
+[CLASS] constrictors (30)
+[*] boa (29)
 
-[] constrictors (30)
-[] boa (29)
+[*] boa (29)
 
-[] boa (29)
+[PART-WHOLE] inside (35)
+[has-location] my drawings of boa constrictors (27)
 
-[] inside (35)
+[PART-WHOLE] outside (38)
+[has-location] my drawings of boa constrictors (27)
 
-[] outside (38)
+[SOCIAL-ROLE-INIT] devote (41)
+[has-social-role] myself (42)
+[replacement-in] instead (43)
+[social-relate] to geography (45)
+[social-relate] , history (47)
+[social-relate] , arithmetic (49)
+[social-relate] and grammar (51)
 
-[] devote (41)
-[] myself (42)
-[] instead (43)
-[] to geography , history , arithmetic and grammar (45)
+[IDENTIFIER] myself (42)
 
-[] myself (42)
+[REPLACEMENT] instead (43)
 
-[] instead (43)
+[KNOWLEDGE] geography (45)
 
-[] geography (45)
+[KNOWLEDGE] history (47)
 
-[] history (47)
+[KNOWLEDGE] arithmetic (49)
 
-[] arithmetic (49)
-
-[] grammar (51)
+[KNOWLEDGE] grammar (51)
 
 # sent_id = 19
 # text = That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
@@ -817,37 +831,35 @@
 23	painter	painter	NOUN	NN	Number=Sing	20	nmod	_	TokenRange=1510:1517
 24	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1518:1519
 
-[] why (3)
-[] That (1)
-[] at the age of six , I gave up what might have been a magnificent career as a painter (12)
+[EXPLANATION] why (3)
+[explanation] That (1)
+[explained] at the age of six , I gave up what might have been a magnificent career as a painter (12)
 
-[] That (1)
+[IDENTIFIER] That (1)
 
-[] gave (12)
-[] at the age of six (7)
-[] I (11)
-[] up (13)
-[] what might have been a magnificent career as a painter (20)
+[SITUATION-DEINIT] gave (12)
+[time] at the age of six (7)
+[related] I (11)
+[*] up (13)
+[initial-relate] what might have been a magnificent career as a painter (20)
 
-[] age (7)
-[] of six (9)
+[PROPERTY] age (7)
+[has-quantity-in] of six (9)
 
-[] six (9)
+[QUANTITY] six (9)
 
-[] I (11)
+[IDENTIFIER] I (11)
 
-[] up (13)
+[SITUATION-DYN] career (20)
+[has-class] what (14)
+[has-quality-in] magnificent (19)
+[circumstance] as a painter (23)
 
-[] career (20)
-[] what (14)
-[] magnificent (19)
-[] as a painter (23)
+[IDENTIFIER] what (14)
 
-[] what (14)
+[QUALITY] magnificent (19)
 
-[] magnificent (19)
-
-[] painter (23)
+[MESSAGE-INIT] painter (23)
 
 # sent_id = 20
 # text = I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
@@ -858,48 +870,49 @@
 5	by	by	ADP	IN	_	7	case	_	TokenRange=1545:1547
 6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	TokenRange=1548:1551
 7	failure	failure	NOUN	NN	Number=Sing	4	obl	_	TokenRange=1552:1559
-8	of	of	ADP	IN	_	11	case	_	TokenRange=1560:1562
-9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=1563:1565
-10	Drawing	drawing	NOUN	NN	Number=Sing	11	compound	_	TokenRange=1566:1573
-11	Number	number	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1574:1580
+8	of	of	ADP	IN	_	10	case	_	TokenRange=1560:1562
+9	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=1563:1565
+10	Drawing	drawing	NOUN	NN	Number=Sing	7	nmod	_	TokenRange=1566:1573
+11	Number	number	NOUN	NN	Number=Sing	10	nmod	_	TokenRange=1574:1580
 12	One	one	NUM	CD	NumForm=Word|NumType=Card	11	nummod	_	TokenRange=1581:1584
-13	and	and	CCONJ	CC	_	16	cc	_	TokenRange=1585:1588
-14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=1589:1591
-15	Drawing	drawing	NOUN	NN	Number=Sing	16	compound	_	TokenRange=1592:1599
-16	Number	number	NOUN	NN	Number=Sing	11	conj	_	TokenRange=1600:1606
+13	and	and	CCONJ	CC	_	15	cc	_	TokenRange=1585:1588
+14	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=1589:1591
+15	Drawing	drawing	NOUN	NN	Number=Sing	10	conj	_	TokenRange=1592:1599
+16	Number	number	NOUN	NN	Number=Sing	15	nmod	_	TokenRange=1600:1606
 17	Two	two	NUM	CD	NumForm=Word|NumType=Card	16	nummod	_	TokenRange=1607:1610
 18	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=1611:1612
 
-[] disheartened (4)
-[] I (1)
-[] by the failure of my Drawing Number One and my Drawing Number Two (7)
+[MESSAGE-INIT] disheartened (4)
+[experiencer] I (1)
+[topic] by the failure of my Drawing Number One and my Drawing Number Two (7)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] failure (7)
-[] of my Drawing Number One and my Drawing Number Two (11)
+[META-COMPLETION-NEG] failure (7)
+[participant] of my Drawing Number One (10)
+[participant] and my Drawing Number Two (15)
 
-[] Number (11)
-[] my (9)
-[] Drawing (10)
-[] One (12)
+[MESSAGE] Drawing (10)
+[sender] my (9)
+[has-rank-in] Number One (11)
 
-[] my (9)
+[IDENTIFIER] my (9)
 
-[] Drawing (10)
+[RANK] Number (11)
+[rank] One (12)
 
-[] One (12)
+[RANK] One (12)
 
-[] Number (16)
-[] my (14)
-[] Drawing (15)
-[] Two (17)
+[MESSAGE] Drawing (15)
+[sender] my (14)
+[has-rank-in] Number Two (16)
 
-[] my (14)
+[IDENTIFIER] my (14)
 
-[] Drawing (15)
+[RANK] Number (16)
+[rank] Two (17)
 
-[] Two (17)
+[RANK] Two (17)
 
 # sent_id = 21
 # text = Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
@@ -929,41 +942,42 @@
 24	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	21	obl	_	TokenRange=1746:1750
 25	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=1751:1752
 
-[] understand (5)
-[] Grown - ups (3)
-[] never (4)
-[] anything (6)
-[] by themselves (8)
+[MESSAGE-INIT] understand (5)
+[experiencer] Grown - ups (3)
+[has-time-in] never (4)
+[topic] anything (6)
+[means] by themselves (8)
 
-[] ups (3)
-[] Grown (1)
+[PROPERTY] ups (3)
+[*] Grown (1)
 
-[] Grown (1)
+[*] Grown (1)
 
-[] never (4)
+[TIME-NEG] never (4)
 
-[] anything (6)
+[CLASS] anything (6)
 
-[] themselves (8)
+[IDENTIFIER] themselves (8)
 
-[] tiresome (13)
-[] for children to be always and forever explaining things to them (21)
+[PROPERTY] tiresome (13)
+[has-property] for children to be always and forever explaining things to them (21)
 
-[] explaining (21)
-[] children (15)
-[] always and forever (18)
-[] things (22)
-[] to them (24)
+[MESSAGE-INIT] explaining (21)
+[sender] children (15)
+[has-time-in] always (18)
+[has-time-in] and forever (20)
+[topic] things (22)
+[experiencer] to them (24)
 
-[] children (15)
+[CLASS] children (15)
 
-[] always (18)
+[TIME] always (18)
 
-[] forever (20)
+[TIME] forever (20)
 
-[] things (22)
+[CLASS] things (22)
 
-[] them (24)
+[IDENTIFIER] them (24)
 
 # sent_id = 22
 # text = So then I chose another profession , and learned to pilot airplanes .
@@ -981,27 +995,29 @@
 12	airplanes	airplane	NOUN	NNS	Number=Plur	11	obj	_	TokenRange=1812:1821
 13	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=1822:1823
 
-[] chose (4)
-[] So (1)
-[] then (2)
-[] I (3)
-[] another profession (6)
+[SOCIAL-ROLE-INIT] chose (4)
+[explained-in] So (1)
+[has-time-in] then (2)
+[causer] I (3)
+[target-social-relate] another profession (6)
 
-[] So (1)
+[EXPLANATION] So (1)
 
-[] then (2)
+[TIME] then (2)
 
-[] I (3)
+[IDENTIFIER] I (3)
 
-[] profession (6)
+[SOCIAL-ROLE] profession (6)
 
-[] learned (9)
-[] to pilot airplanes (11)
+[KNOWLEDGE-INIT] learned (9)
+[target-knowledge] to pilot airplanes (11)
+[experiencer] I (3)
 
-[] pilot (11)
-[] airplanes (12)
+[LOCATION-DYN] pilot (11)
+[has-location] airplanes (12)
+[causer] I (3)
 
-[] airplanes (12)
+[CLASS] airplanes (12)
 
 # sent_id = 23
 # text = I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
@@ -1031,33 +1047,33 @@
 24	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	22	obl	_	TokenRange=1931:1933
 25	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=1934:1935
 
-[] flown (3)
-[] I (1)
-[] a little (5)
-[] over all parts of the world (8)
+[LOCATION-DYN] flown (3)
+[has-location] I (1)
+[has-quantity-in] a little (5)
+[transitory-location] over all parts of the world (8)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] little (5)
+[QUANTITY] little (5)
 
-[] parts (8)
-[] of the world (11)
+[PART-WHOLE] parts (8)
+[whole] of the world (11)
 
-[] world (11)
+[IDENTIFIER] world (11)
 
-[] true (16)
-[] that geography has been very useful to me (22)
+[META-MOD] true (16)
+[scene] that geography has been very useful to me (22)
 
-[] useful (22)
-[] geography (18)
-[] very (21)
-[] to me (24)
+[MEANS] useful (22)
+[means] geography (18)
+[has-quantity-in] very (21)
+[experiencer] to me (24)
 
-[] geography (18)
+[KNOWLEDGE] geography (18)
 
-[] very (21)
+[QUANTITY] very (21)
 
-[] me (24)
+[IDENTIFIER] me (24)
 
 # sent_id = 24
 # text = At a glance I can distinguish China from Arizona .
@@ -1072,19 +1088,19 @@
 9	Arizona	Arizona	PROPN	NNP	Number=Sing	6	obl	_	TokenRange=1978:1985
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=1986:1987
 
-[] distinguish (6)
-[] At a glance (3)
-[] I (4)
-[] China (7)
-[] from Arizona (9)
+[COMPARISON-INIT] distinguish (6)
+[means] At a glance (3)
+[experiencer] I (4)
+[compared] China (7)
+[reference] from Arizona (9)
 
-[] glance (3)
+[MESSAGE-INIT] glance (3)
 
-[] I (4)
+[IDENTIFIER] I (4)
 
-[] China (7)
+[IDENTIFIER] China (7)
 
-[] Arizona (9)
+[IDENTIFIER] Arizona (9)
 
 # sent_id = 25
 # text = If one gets lost in the night , such knowledge is valuable .
@@ -1102,22 +1118,22 @@
 12	valuable	valuable	ADJ	JJ	Degree=Pos	0	root	_	TokenRange=2039:2047
 13	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\r\n|TokenRange=2048:2049
 
-[] valuable (12)
-[] If one gets lost in the night (4)
-[] such knowledge (10)
+[PROPERTY] valuable (12)
+[condition] If one gets lost in the night (4)
+[has-property] such knowledge (10)
 
-[] lost (4)
-[] one (2)
-[] in the night (7)
+[STATE] lost (4)
+[has-state] one (2)
+[time] in the night (7)
 
-[] one (2)
+[IDENTIFIER] one (2)
 
-[] night (7)
+[TIME] night (7)
 
-[] knowledge (10)
-[] such (9)
+[KNOWLEDGE] knowledge (10)
+[has-kind-in] such (9)
 
-[] such (9)
+[KIND] such (9)
 
 # sent_id = 26
 # text = In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
@@ -1149,46 +1165,46 @@
 26	consequence	consequence	NOUN	NN	Number=Sing	24	nmod	_	TokenRange=2178:2189
 27	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2190:2191
 
-[] had (9)
-[] In the course of this life (3)
-[] I (7)
-[] a great many encounters with a great many people who have been concerned with matters of consequence (13)
+[META] had (9)
+[time] In the course of this life (3)
+[participant] I (7)
+[scene] a great many encounters with a great many people who have been concerned with matters of consequence (13)
 
-[] course (3)
-[] of this life (6)
+[TIME] course (3)
+[time] of this life (6)
 
-[] life (6)
+[SITUATION-DYN] life (6)
 
-[] I (7)
+[IDENTIFIER] I (7)
 
-[] encounters (13)
-[] great (11)
-[] many (12)
-[] with a great many people who have been concerned with matters of consequence (18)
+[SOCIAL-ROLE-INIT] encounters (13)
+[has-quantity-in] great (11)
+[has-quantity-in] many (12)
+[target-social-relate] with a great many people who have been concerned with matters of consequence (18)
 
-[] great (11)
+[QUANTITY] great (11)
 
-[] many (12)
+[QUANTITY] many (12)
 
-[] people (18)
-[] great (16)
-[] many (17)
-[] who have been concerned with matters of consequence (22)
+[CLASS] people (18)
+[has-quantity-in] great (16)
+[has-quantity-in] many (17)
+[has-social-role-in] who have been concerned with matters of consequence (22)
 
-[] great (16)
+[QUANTITY] great (16)
 
-[] many (17)
+[QUANTITY] many (17)
 
-[] concerned (22)
-[] who (19)
-[] with matters of consequence (24)
+[SOCIAL-ROLE] concerned (22)
+[has-social-role] who (19)
+[social-relate] with matters of consequence (24)
 
-[] who (19)
+[IDENTIFIER] who (19)
 
-[] matters (24)
-[] of consequence (26)
+[SITUATION] matters (24)
+[followed-in] of consequence (26)
 
-[] consequence (26)
+[SEQUENCE] consequence (26)
 
 # sent_id = 27
 # text = I have lived a great deal among grown - ups .
@@ -1201,25 +1217,25 @@
 7	among	among	ADP	IN	_	10	case	_	TokenRange=2219:2224
 8	grown	grown	NOUN	NN	Number=Sing	10	compound	_	TokenRange=2225:2230
 9	-	-	PUNCT	HYPH	_	10	punct	_	TokenRange=2231:2232
-10	ups	up	NOUN	NNS	Number=Plur	6	nmod	_	TokenRange=2233:2236
+10	ups	up	NOUN	NNS	Number=Plur	3	obl	_	TokenRange=2233:2236
 11	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2237:2238
 
-[] lived (3)
-[] I (1)
-[] a great deal among grown - ups (6)
+[SITUATION-DYN] lived (3)
+[related] I (1)
+[has-quantity-in] a great deal (6)
+[accompanier] among grown - ups (10)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] deal (6)
-[] great (5)
-[] among grown - ups (10)
+[QUANTITY] deal (6)
+[has-quantity-in] great (5)
 
-[] great (5)
+[QUANTITY] great (5)
 
-[] ups (10)
-[] grown (8)
+[PROPERTY] ups (10)
+[*] grown (8)
 
-[] grown (8)
+[*] grown (8)
 
 # sent_id = 28
 # text = I have seen them intimately , close at hand .
@@ -1234,22 +1250,23 @@
 9	hand	hand	NOUN	NN	Number=Sing	7	obl	_	TokenRange=2279:2283
 10	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2284:2285
 
-[] seen (3)
-[] I (1)
-[] them (4)
-[] intimately (5)
-[] , close at hand (7)
+[MESSAGE] seen (3)
+[experiencer] I (1)
+[topic] them (4)
+[has-quality-in] intimately (5)
+[circumstance] , close at hand (7)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] them (4)
+[IDENTIFIER] them (4)
 
-[] intimately (5)
+[QUALITY] intimately (5)
 
-[] close (7)
-[] at hand (9)
+[LOCATION] close (7)
+[*] at hand (9)
+[has-location] then (4)
 
-[] hand (9)
+[*] hand (9)
 
 # sent_id = 29
 # text = And that has n't much improved my opinion of them .
@@ -1265,25 +1282,25 @@
 10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	nmod	_	TokenRange=2332:2336
 11	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=2337:2338
 
-[] improved (6)
-[] that (2)
-[] n't (4)
-[] much (5)
-[] my opinion of them (8)
+[STATE-CHANGE] improved (6)
+[causer] that (2)
+[scene-in] n't (4)
+[has-quantity-in] much (5)
+[has-state] my opinion of them (8)
 
-[] that (2)
+[IDENTIFIER] that (2)
 
-[] n't (4)
+[scene-in] n't (4)
 
-[] much (5)
+[QUANTITY] much (5)
 
-[] opinion (8)
-[] my (7)
-[] of them (10)
+[MESSAGE] opinion (8)
+[experiencer] my (7)
+[topic] of them (10)
 
-[] my (7)
+[IDENTIFIER] my (7)
 
-[] them (10)
+[IDENTIFIER] them (10)
 
 # sent_id = 30
 # text = Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
@@ -1310,88 +1327,88 @@
 21	of	of	SCONJ	IN	_	22	mark	_	TokenRange=2432:2434
 22	showing	show	VERB	VBG	VerbForm=Ger	20	acl	_	TokenRange=2435:2442
 23	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	iobj	_	TokenRange=2443:2446
-24	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	26	nmod:poss	_	TokenRange=2447:2449
-25	Drawing	drawing	NOUN	NN	Number=Sing	26	compound	_	TokenRange=2450:2457
-26	Number	number	NOUN	NN	Number=Sing	22	obj	_	TokenRange=2458:2464
+24	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	25	nmod:poss	_	TokenRange=2447:2449
+25	Drawing	drawing	NOUN	NN	Number=Sing	22	obj	_	TokenRange=2450:2457
+26	Number	number	NOUN	NN	Number=Sing	25	nmod	_	TokenRange=2458:2464
 27	One	one	NUM	CD	NumForm=Word|NumType=Card	26	nummod	_	TokenRange=2465:2468
-28	,	,	PUNCT	,	_	26	punct	_	TokenRange=2469:2470
+28	,	,	PUNCT	,	_	25	punct	_	TokenRange=2469:2470
 29	which	which	PRON	WDT	PronType=Rel	33	obj	_	TokenRange=2471:2476
 30	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	33	nsubj	_	TokenRange=2477:2478
 31	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	33	aux	_	TokenRange=2479:2483
 32	always	always	ADV	RB	_	33	advmod	_	TokenRange=2484:2490
-33	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	26	acl:relcl	_	TokenRange=2491:2495
+33	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	25	acl:relcl	_	TokenRange=2491:2495
 34	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\r\n|TokenRange=2496:2497
 
-[] tried (18)
-[] Whenever I met one of them who seemed to me at all clear - sighted (3)
-[] I (17)
-[] the experiment of showing him my Drawing Number One , which I have always kept (20)
+[META-INIT] tried (18)
+[time] Whenever I met one of them who seemed to me at all clear - sighted (3)
+[causer] I (17)
+[target-scene] the experiment of showing him my Drawing Number One , which I have always kept (20)
 
-[] met (3)
-[] Whenever (1)
-[] I (2)
-[] one of them who seemed to me at all clear - sighted (4)
+[SOCIAL-ROLE-INIT] met (3)
+[has-time-in] Whenever (1)
+[has-social-role] I (2)
+[target-social-relate] one of them who seemed to me at all clear - sighted (4)
 
-[] Whenever (1)
+[TIME] Whenever (1)
 
-[] I (2)
+[IDENTIFIER] I (2)
 
-[] one (4)
-[] of them (6)
-[] who seemed to me at all clear - sighted (8)
+[QUANTITY] one (4)
+[has-quantity] of them (6)
+[topic-in] who seemed to me at all clear - sighted (8)
 
-[] them (6)
+[IDENTIFIER] them (6)
 
-[] seemed (8)
-[] who (7)
-[] to me (10)
-[] at all clear - sighted (15)
+[MESSAGE] seemed (8)
+[topic] who (7)
+[experiencer] to me (10)
+[message] at all clear - sighted (15)
 
-[] who (7)
+[IDENTIFIER] who (7)
 
-[] me (10)
+[IDENTIFIER] me (10)
 
-[] sighted (15)
-[] all (12)
-[] clear (13)
+[PROPERTY] sighted (15)
+[has-quantity-in] all (12)
+[*] clear (13)
 
-[] all (12)
+[QUANTITY] all (12)
 
-[] clear (13)
+[*] clear (13)
 
-[] I (17)
+[IDENTIFIER] I (17)
 
-[] experiment (20)
-[] of showing him my Drawing Number One , which I have always kept (22)
+[SITUATION-DYN] experiment (20)
+[same-as] of showing him my Drawing Number One , which I have always kept (22)
 
-[] showing (22)
-[] him (23)
-[] my Drawing Number One , which I have always kept (26)
+[MESSAGE-INIT] showing (22)
+[experiencer] him (23)
+[topic] my Drawing Number One , which I have always kept (25)
 
-[] him (23)
+[IDENTIFIER] him (23)
 
-[] Number (26)
-[] my (24)
-[] Drawing (25)
-[] One (27)
-[] which I have always kept (33)
+[MESSAGE] Drawing (25)
+[sender] my (24)
+[has-rank-in] Number One (26)
+[possession-in] which I have always kept (33)
 
-[] my (24)
+[IDENTIFIER] my (24)
 
-[] Drawing (25)
+[RANK] Number (26)
+[rank] One (27)
 
-[] One (27)
+[RANK] One (27)
 
-[] kept (33)
-[] which (29)
-[] I (30)
-[] always (32)
+[POSSESSION-DEINIT-NEG] kept (33)
+[possession] which (29)
+[possession] I (30)
+[has-time-in] always (32)
 
-[] which (29)
+[IDENTIFIER] which (29)
 
-[] I (30)
+[IDENTIFIER] I (30)
 
-[] always (32)
+[TIME] always (32)
 
 # sent_id = 31
 # text = I would try to find out , so , if this was a person of true understanding .
@@ -1414,31 +1431,29 @@
 17	understanding	understanding	NOUN	NN	Number=Sing	14	nmod	_	TokenRange=2559:2572
 18	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2573:2574
 
-[] try (3)
-[] I (1)
-[] to find out , so , if this was a person of true understanding (5)
+[META-INIT] try (3)
+[participant] I (1)
+[target-scene] to find out , so , if this was a person of true understanding (5)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] find (5)
-[] out (6)
-[] so (8)
-[] if this was a person of true understanding (14)
+[MESSAGE-INIT] find (5)
+[*] out (6)
+[purpose-in] so (8)
+[target-message] if this was a person of true understanding (14)
 
-[] out (6)
+[MEANS] so (8)
 
-[] so (8)
+[CLASS] person (14)
+[has-class] this (11)
+[experiencer-in] of true understanding (17)
 
-[] person (14)
-[] this (11)
-[] of true understanding (17)
+[IDENTIFIER] this (11)
 
-[] this (11)
+[MESSAGE] understanding (17)
+[has-property-in] true (16)
 
-[] understanding (17)
-[] true (16)
-
-[] true (16)
+[PROPERTY] true (16)
 
 # sent_id = 32
 # text = But , whoever it was , he , or she , would always say : " That is a hat . "
@@ -1465,27 +1480,28 @@
 21	.	.	PUNCT	.	_	14	punct	_	TokenRange=2648:2649
 22	"	"	PUNCT	''	_	14	punct	_	SpacesAfter=\r\n|TokenRange=2650:2651
 
-[] say (14)
-[] whoever it was (3)
-[] he , or she (7)
-[] always (13)
-[] That is a hat (20)
+[MESSAGE-INIT] say (14)
+[sender] whoever it was (3)
+[sender] he (7)
+[sender] , or she (10)
+[has-time-in] always (13)
+[target-message] That is a hat (20)
 
-[] whoever (3)
-[] it (4)
+[IDENTIFIER] whoever (3)
+[same] it (4)
 
-[] it (4)
+[IDENTIFIER] it (4)
 
-[] he (7)
+[IDENTIFIER] he (7)
 
-[] she (10)
+[IDENTIFIER] she (10)
 
-[] always (13)
+[TIME] always (13)
 
-[] hat (20)
-[] That (17)
+[CLASS] hat (20)
+[has-class] That (17)
 
-[] That (17)
+[IDENTIFIER] That (17)
 
 # sent_id = 33
 # text = Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
@@ -1509,32 +1525,34 @@
 18	stars	star	NOUN	NNS	Number=Plur	11	conj	_	TokenRange=2742:2747
 19	.	.	PUNCT	.	_	5	punct	_	SpacesAfter=\r\n|TokenRange=2748:2749
 
-[] talk (5)
-[] Then (1)
-[] I (2)
-[] never (4)
-[] to that person (8)
-[] about boa constrictors , or primeval forests , or stars (11)
+[MESSAGE-INIT] talk (5)
+[followed-in] Then (1)
+[sender] I (2)
+[has-time-in] never (4)
+[experiencer] to that person (8)
+[topic] about boa constrictors (11)
+[topic] , or primeval forests (15)
+[topic] , or stars (18)
 
-[] Then (1)
+[TIME] Then (1)
 
-[] I (2)
+[IDENTIFIER] I (2)
 
-[] never (4)
+[TIME-NEG] never (4)
 
-[] person (8)
+[CLASS] person (8)
 
-[] constrictors (11)
-[] boa (10)
+[CLASS] constrictors (11)
+[*] boa (10)
 
-[] boa (10)
+[*] boa (10)
 
-[] forests (15)
-[] primeval (14)
+[CLASS] forests (15)
+[has-kind-in] primeval (14)
 
-[] primeval (14)
+[KIND] primeval (14)
 
-[] stars (18)
+[CLASS] stars (18)
 
 # sent_id = 34
 # text = I would bring myself down to his level .
@@ -1542,28 +1560,28 @@
 2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	TokenRange=2753:2758
 3	bring	bring	VERB	VB	VerbForm=Inf	0	root	_	TokenRange=2759:2764
 4	myself	myself	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	3	obj	_	TokenRange=2765:2771
-5	down	down	ADV	RB	_	3	advmod	_	TokenRange=2772:2776
+5	down	down	ADV	RB	_	8	advmod	_	TokenRange=2772:2776
 6	to	to	ADP	IN	_	8	case	_	TokenRange=2777:2779
 7	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=2780:2783
-8	level	level	NOUN	NN	Number=Sing	5	obl	_	TokenRange=2784:2789
+8	level	level	NOUN	NN	Number=Sing	3	obl	_	TokenRange=2784:2789
 9	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2790:2791
 
-[] bring (3)
-[] I (1)
-[] myself (4)
-[] down to his level (5)
+[META-INIT] bring (3)
+[causer] I (1)
+[participant] myself (4)
+[target-scene] down to his level (8)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] myself (4)
+[IDENTIFIER] myself (4)
 
-[] down (5)
-[] to his level (8)
+[QUALITY] level (8)
+[target-scene-in] down (5)
+[has-quality] his (7)
 
-[] level (8)
-[] his (7)
+[META-INIT] down (5) # TODO ?
 
-[] his (7)
+[IDENTIFIER] his (7)
 
 # sent_id = 35
 # text = I would talk to him about bridge , and golf , and politics , and neckties .
@@ -1585,22 +1603,25 @@
 16	neckties	neckty	NOUN	NNS	Number=Plur	7	conj	_	TokenRange=2858:2866
 17	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=2867:2868
 
-[] talk (3)
-[] I (1)
-[] to him (5)
-[] about bridge , and golf , and politics , and neckties (7)
+[MESSAGE-INIT] talk (3)
+[sender] I (1)
+[experiencer] to him (5)
+[topic] about bridge (7)
+[topic] , and golf (10)
+[topic] , and politics (13)
+[topic] , and neckties (16)
 
-[] I (1)
+[IDENTIFIER] I (1)
 
-[] him (5)
+[IDENTIFIER] him (5)
 
-[] bridge (7)
+[SITUATION-DYN] bridge (7)
 
-[] golf (10)
+[SITUATION-DYN] golf (10)
 
-[] politics (13)
+[SITUATION-DYN] politics (13)
 
-[] neckties (16)
+[CLASS] neckties (16)
 
 # sent_id = 36
 # text = And the grown - up would be greatly pleased to have met such a sensible man .
@@ -1622,25 +1643,25 @@
 16	man	man	NOUN	NN	Number=Sing	12	obj	_	TokenRange=2942:2945
 17	.	.	PUNCT	.	_	9	punct	_	SpacesAfter=\r\n|TokenRange=2946:2947
 
-[] pleased (9)
-[] the grown - up (5)
-[] greatly (8)
-[] to have met such a sensible man (12)
+[MESSAGE] pleased (9)
+[experiencer] the grown - up (5)
+[has-quantity-in] greatly (8)
+[topic] to have met such a sensible man (12)
 
-[] up (5)
-[] grown (3)
+[PROPERTY] up (5)
+[*] grown (3)
 
-[] grown (3)
+[*] grown (3)
 
-[] greatly (8)
+[QUANTITY] greatly (8)
 
-[] met (12)
-[] such a sensible man (16)
+[SOCIAL-ROLE-INIT] met (12)
+[social-relate] such a sensible man (16)
 
-[] man (16)
-[] sensible (15)
+[CLASS] man (16)
+[has-quality-in] sensible (15)
 
-[] sensible (15)
+[QUALITY] sensible (15)
 
 # sent_id = 37
 # text = Chapter 2 .
@@ -1809,7 +1830,8 @@
 [] had (4)
 [] I (3)
 [] with me (6)
-[] neither a mechanic nor any passengers (9)
+[] neither a mechanic (9)
+[] nor any passengers (12)
 
 [] I (3)
 
@@ -1853,7 +1875,8 @@
 
 [] question (4)
 [] It (1)
-[] of life or death (6)
+[] of life (6)
+[] or death (8)
 [] for me (10)
 
 [] It (1)
@@ -2458,7 +2481,8 @@
 
 [] draw (24)
 [] anything (25)
-[] except boas from the outside and boas from the inside (28)
+[] except boas from the outside (28)
+[] and boas from the inside (33)
 
 [] anything (25)
 
@@ -2605,7 +2629,8 @@
 [] seemed (6)
 [] yet (2)
 [] my little man (5)
-[] neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear (10)
+[] neither to be straying uncertainly among the sands (10)
+[] , nor to be fainting from fatigue or hunger or thirst or fear (19)
 
 [] yet (2)
 
@@ -2626,7 +2651,10 @@
 [] sands (14)
 
 [] fainting (19)
-[] from fatigue or hunger or thirst or fear (21)
+[] from fatigue (21)
+[] or hunger (23)
+[] or thirst (25)
+[] or fear (27)
 
 [] fatigue (21)
 
@@ -2682,9 +2710,8 @@
 [] lost (10)
 [] in the middle of the desert a thousand miles from any human habitation (13)
 
-[] middle (13)
+[] middle a thousand miles from any human habitation (13)
 [] of the desert (16)
-[] a thousand miles from any human habitation (20)
 
 [] desert (16)
 
@@ -2915,11 +2942,13 @@
 [] Absurd as it might seem to me a thousand miles from any human habitation and in danger of death (1)
 [] I (22)
 [] out of my pocket (27)
-[] a sheet of paper and my fountain - pen (29)
+[] a sheet of paper (29)
+[] and my fountain - pen (36)
 
 [] Absurd (1)
 [] as it might seem to me (5)
-[] a thousand miles from any human habitation and in danger of death (15)
+[] a thousand miles from any human habitation (15)
+[] and in danger of death (18)
 
 [] seem (5)
 [] it (3)
@@ -3022,7 +3051,10 @@
 [] concentrated (10)
 [] how (5)
 [] my studies (7)
-[] on geography , history , arithmetic , and grammar (12)
+[] on geography (12)
+[] , history (14)
+[] , arithmetic (16)
+[] , and grammar (19)
 
 [] how (5)
 
@@ -3533,7 +3565,8 @@
 
 [] smiled (3)
 [] My friend (2)
-[] gently and indulgently (4)
+[] gently (4)
+[] and indulgently (6)
 
 [] friend (2)
 [] My (1)
@@ -3811,8 +3844,6 @@
 
 [] I (2)
 
-[] off (4)
-
 [] drawing (6)
 
 # sent_id = 89
@@ -3835,8 +3866,6 @@
 [] with it (8)
 
 [] I (2)
-
-[] out (4)
 
 [] explanation (6)
 
@@ -4596,8 +4625,6 @@
 
 [] He (1)
 
-[] out (3)
-
 [] then (5)
 
 [] What (8)
@@ -5163,8 +5190,6 @@
 [] out (31)
 [] more on this subject (32)
 
-[] out (31)
-
 [] more (32)
 [] on this subject (35)
 
@@ -5416,7 +5441,8 @@
 [] you (9)
 [] a string (11)
 [] too (13)
-[] so that you can tie him during the day , and a post to tie him to (19)
+[] so that you can tie him during the day (19)
+[] , and a post to tie him to (27)
 
 [] good (5)
 [] you (3)
@@ -5534,7 +5560,8 @@
 [] said (11)
 [] if you do n't tie him (6)
 [] I (10)
-[] he will wander off somewhere , and get lost (16)
+[] he will wander off somewhere (16)
+[] , and get lost (22)
 
 [] tie (6)
 [] you (3)
@@ -5555,8 +5582,6 @@
 [] somewhere (18)
 
 [] he (14)
-
-[] off (17)
 
 [] somewhere (18)
 
@@ -5968,7 +5993,10 @@
 
 [] planets (11)
 [] great (10)
-[] such as the Earth , Jupiter , Mars , Venus (16)
+[] such as the Earth (16)
+[] , Jupiter (18)
+[] , Mars (20)
+[] , Venus (22)
 [] to which we have given names (28)
 
 [] great (10)
@@ -6060,7 +6088,8 @@
 [] he (8)
 [] not (10)
 [] it (12)
-[] a name , but only a number (14)
+[] a name (14)
+[] , but only a number (19)
 
 [] discovers (4)
 [] When (1)
@@ -6491,7 +6520,8 @@
 [] again (11)
 
 [] dressed (13)
-[] with impressive style and elegance (16)
+[] with impressive style (16)
+[] and elegance (18)
 
 [] style (16)
 [] impressive (15)
@@ -6563,9 +6593,11 @@
 34	.	.	PUNCT	.	_	25	punct	_	SpacesAfter=\r\n|TokenRange=11284:11285
 
 [] account (25)
-[] If I have told you these details about the asteroid , and made a note of its number for you (4)
+[] If I have told you these details about the asteroid (4)
+[] , and made a note of its number for you (13)
 [] it (22)
-[] of the grown - ups and their ways (30)
+[] of the grown - ups (30)
+[] and their ways (33)
 
 [] told (4)
 [] I (2)
@@ -6977,7 +7009,9 @@
 [] house (17)
 [] beautiful (16)
 [] made of rosy brick (18)
-[] with geraniums in the windows and doves on the roof (27)
+[] with geraniums in the windows (27)
+[] and doves (29)
+[] on the roof (32)
 
 [] beautiful (16)
 
@@ -7145,7 +7179,9 @@
 [] Just so (2)
 [] you (4)
 [] to them (8)
-[] The proof that the little prince existed is that he was charming , that he laughed , and that he was looking for a sheep (22)
+[] The proof that the little prince existed is that he was charming (22)
+[] , that he laughed (26)
+[] , and that he was looking for a sheep (32)
 
 [] so (2)
 [] Just (1)
@@ -7454,8 +7490,6 @@
 [] grown (8)
 [] up (10)
 
-[] up (10)
-
 # sent_id = 167
 # text = But certainly , for us who understand life , figures are a matter of indifference .
 1	But	but	CCONJ	CC	_	13	cc	_	TokenRange=12705:12708
@@ -7611,7 +7645,8 @@
 [] who (18)
 
 [] planet (22)
-[] that was scarcely any bigger than himself , and who had need of a sheep (27)
+[] that was scarcely any bigger than himself (27)
+[] , and who had need of a sheep (33)
 
 [] bigger (27)
 [] that (23)
@@ -7768,8 +7803,6 @@
 [] setting (8)
 [] down (9)
 [] these memories (11)
-
-[] down (9)
 
 [] memories (11)
 
@@ -8019,7 +8052,8 @@
 
 [] bought (12)
 [] I (10)
-[] a box of paints and some pencils (14)
+[] a box of paints (14)
+[] and some pencils (19)
 
 [] I (10)
 
@@ -8083,8 +8117,6 @@
 [] drawing again (7)
 [] at my age (11)
 
-[] up (6)
-
 [] drawing (7)
 [] again (8)
 
@@ -8109,7 +8141,8 @@
 [] never (16)
 
 [] pictures (19)
-[] except those of the boa constrictor from the outside and the boa constrictor from the inside (21)
+[] except those of the boa constrictor from the outside (21)
+[] and the boa constrictor from the inside (32)
 
 [] those (21)
 [] of the boa constrictor from the outside (25)
@@ -8717,7 +8750,9 @@
 [] our (10)
 
 [] something (13)
-[] about the little prince 's planet , his departure from it , his journey (19)
+[] about the little prince 's planet , (19)
+[] his departure from it (22)
+[] , his journey (27)
 
 [] planet (19)
 [] the little prince 's (17)
@@ -9133,11 +9168,10 @@
 [] I (2)
 [] out (4)
 [] to the little prince (8)
-[] that baobabs were not little bushes , but , on the contrary , trees as big as castles (14)
+[] that baobabs were not little bushes (14)
+[] , but , on the contrary , trees as big as castles (22)
 
 [] I (2)
-
-[] out (4)
 
 [] prince (8)
 [] little (7)
@@ -9202,8 +9236,6 @@
 [] herd (44)
 
 [] not (46)
-
-[] up (48)
 
 [] baobab (51)
 [] one (49)
@@ -9352,8 +9384,6 @@
 [] so (12)
 
 [] baobabs (16)
-
-[] out (18)
 
 [] little (21)
 
@@ -9577,9 +9607,8 @@
 
 [] I (4)
 
-[] planet (11)
+[] planet -- good plants and bad plants (11)
 [] where the little prince lived -- as on all planets (16)
-[] -- good plants and bad plants (24)
 
 [] lived (16)
 [] where (12)
@@ -9628,7 +9657,8 @@
 
 [] were (5)
 [] In consequence (2)
-[] good seeds from good plants , and bad seeds from bad plants (7)
+[] good seeds from good plants (7)
+[] , and bad seeds from bad plants (14)
 
 [] consequence (2)
 
@@ -9830,7 +9860,8 @@
 27	.	.	PUNCT	.	_	20	punct	_	SpacesAfter=\r\n|TokenRange=16868:16869
 
 [] let (20)
-[] If it is only a sprout of radish or the sprig of a rose - bush (6)
+[] If it is only a sprout of radish (6)
+[] or the sprig of a rose - bush (11)
 [] one (18)
 [] it (21)
 [] grow wherever it might wish (22)
@@ -10176,7 +10207,8 @@
 22	"	"	PUNCT	''	_	17	punct	_	TokenRange=17446:17447
 
 [] split (17)
-[] if the planet is too small , and the baobabs are too many (7)
+[] if the planet is too small (7)
+[] , and the baobabs are too many (14)
 [] they (16)
 [] it (18)
 [] in pieces (20)
@@ -10396,8 +10428,6 @@
 [] when they can be distinguished from the rosebushes which they resemble so closely in their earliest youth (24)
 
 [] you (7)
-
-[] up (9)
 
 [] regularly (10)
 
@@ -10661,8 +10691,6 @@
 [] off (14)
 [] a piece of work (16)
 [] until another day (21)
-
-[] off (14)
 
 [] piece (16)
 [] of work (18)
@@ -10980,8 +11008,6 @@
 [] out (49)
 [] for the baobabs (52)
 
-[] out (49)
-
 [] baobabs (52)
 
 # sent_id = 235
@@ -11179,7 +11205,8 @@
 [] drawing (13)
 [] other (12)
 [] in this book (16)
-[] as magnificent and impressive as this drawing of the baobabs (18)
+[] as magnificent as this drawing of the baobabs (18)
+[] and impressive (20)
 
 [] other (12)
 
@@ -11957,7 +11984,8 @@
 
 [] see (3)
 [] You (1)
-[] the day end and the twilight (6)
+[] the day end (6)
+[] and the twilight (9)
 [] falling whenever you like (10)
 
 [] You (1)
@@ -12320,8 +12348,6 @@
 [] up (7)
 [] to it (9)
 
-[] up (7)
-
 [] it (9)
 
 [] born (18)
@@ -12331,7 +12357,8 @@
 [] question (15)
 
 [] meditation (23)
-[] long and silent (20)
+[] long (20)
+[] and silent (22)
 [] on his problem (26)
 
 [] long (20)
@@ -13095,8 +13122,6 @@
 
 [] it (14)
 
-[] out (15)
-
 [] hammer (18)
 
 [] disturbed (25)
@@ -13491,8 +13516,6 @@
 
 [] everything (11)
 
-[] up (12)
-
 [] together (13)
 
 # sent_id = 292
@@ -13699,8 +13722,6 @@
 [] up (11)
 [] figures (12)
 
-[] up (11)
-
 [] figures (12)
 
 # sent_id = 298
@@ -13732,7 +13753,8 @@
 [] says (5)
 [] all day (3)
 [] he (4)
-[] over and over (6)
+[] over (6)
+[] and over (8)
 [] just like you (12)
 [] ' I am busy with matters of consequence (17)
 
@@ -13784,8 +13806,6 @@
 [] swell (5)
 [] up (6)
 [] with pride (8)
-
-[] up (6)
 
 [] pride (8)
 
@@ -14030,7 +14050,8 @@
 [] not (10)
 
 [] warfare (3)
-[] between the sheep and the flowers (6)
+[] between the sheep (6)
+[] and the flowers (9)
 
 [] sheep (6)
 
@@ -14144,7 +14165,8 @@
 [] I , (7)
 [] one (12)
 [] which is unique in the world (16)
-[] which grows nowhere but on my planet , but which one little sheep can destroy in a single bite some morning , without even noticing what he is doing (22)
+[] which grows nowhere but on my planet (22)
+[] , but which one little sheep can destroy in a single bite some morning , without even noticing what he is doing (35)
 
 [] know (4)
 [] I (3)
@@ -14332,7 +14354,8 @@
 [] grows (26)
 [] of which (21)
 [] just one single blossom (25)
-[] in all the millions and millions of stars (30)
+[] in all the millions of stars (30)
+[] and millions (32)
 
 [] which (21)
 
@@ -14594,7 +14617,10 @@
 
 [] moment (3)
 [] now (4)
-[] my hammer , my bolt , or thirst , or death (7)
+[] my hammer (7)
+[] , my bolt (10)
+[] , or thirst (13)
+[] , or death (16)
 
 [] now (4)
 
@@ -14641,21 +14667,18 @@
 [] On one star , one planet , my planet , the Earth (3)
 [] a little prince to be comforted (18)
 
-[] star (3)
-[] one (2)
-[] one planet , my planet , the Earth (6)
-
+[] star one planet , my planet , the Earth (3)
 [] one (2)
 
-[] planet (6)
+[] one (2)
+
+[] planet my planet , the Earth (6)
 [] one (5)
-[] my planet , the Earth (9)
 
 [] one (5)
 
-[] planet (9)
+[] planet the Earth (9)
 [] my (8)
-[] the Earth (12)
 
 [] my (8)
 
@@ -14863,7 +14886,8 @@
 
 [] felt (2)
 [] I (1)
-[] awkward and blundering (3)
+[] awkward (3)
+[] and blundering (5)
 
 [] I (1)
 
@@ -14913,7 +14937,8 @@
 [] how (5)
 [] I (6)
 [] him (9)
-[] where I could overtake him and go on hand in hand with him once more (14)
+[] where I could overtake him (14)
+[] and go on hand in hand with him once more (17)
 
 [] how (5)
 
@@ -14964,10 +14989,9 @@
 11	tears	tear	NOUN	NNS	Number=Plur	9	nmod	_	TokenRange=25465:25470
 12	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=25471:25472
 
-[] place (6)
+[] place the land of tears (6)
 [] It (1)
 [] secret (5)
-[] the land of tears (9)
 
 [] It (1)
 
@@ -15104,8 +15128,6 @@
 [] no room at all (13)
 
 [] they (9)
-
-[] up (11)
 
 [] room (13)
 [] at all (15)
@@ -15247,8 +15269,6 @@
 [] new (16)
 
 [] new (16)
-
-[] up (20)
 
 [] watched (27)
 [] the little prince (25)
@@ -15691,7 +15711,8 @@
 
 [] lasted (5)
 [] her mysterious adornment (4)
-[] for days and days (7)
+[] for days (7)
+[] and days (9)
 
 [] adornment (4)
 [] her (2)
@@ -15992,7 +16013,9 @@
 [] The little prince (24)
 [] easily (27)
 [] enough (28)
-[] that she was not any too modest - - but how moving - - and exciting - - she was (35)
+[] that she was not any too modest - - (35)
+[] how moving - - - - (40)
+[] but she was (48)
 
 [] prince (24)
 [] little (23)
@@ -16902,7 +16925,8 @@
 [] she (17)
 
 [] times (22)
-[] two or three (19)
+[] two (19)
+[] or three (21)
 
 [] two (19)
 
@@ -17092,7 +17116,8 @@
 36	"	"	PUNCT	''	_	30	punct	_	SpacesAfter=\r\n|TokenRange=29267:29268
 
 [] confided (30)
-[] He had taken seriously words which were without importance , and it made him very unhappy . (3)
+[] He had taken seriously words which were without importance . (3)
+[] , and it made him very unhappy (13)
 [] I ought not to have listened to her (20)
 [] he (29)
 [] to me (32)
@@ -17301,7 +17326,8 @@
 [] This tale of claws , which disturbed me so much (2)
 [] only (13)
 [] my heart (17)
-[] with tenderness and pity (19)
+[] with tenderness (19)
+[] and pity (21)
 
 [] tale (2)
 [] of claws which disturbed me so much (4)
@@ -17411,7 +17437,8 @@
 [] I (1)
 
 [] judged (5)
-[] by deeds and not by words (7)
+[] by deeds (7)
+[] and not by words (11)
 
 [] deeds (7)
 
@@ -17435,7 +17462,8 @@
 
 [] cast (2)
 [] She (1)
-[] her fragrance and her radiance (4)
+[] her fragrance (4)
+[] and her radiance (7)
 [] over me (9)
 
 [] She (1)
@@ -17708,8 +17736,6 @@
 
 [] carefully (2)
 
-[] out (4)
-
 [] volcanoes (7)
 [] his (5)
 [] active (6)
@@ -17859,8 +17885,6 @@
 
 [] he (2)
 
-[] out (4)
-
 [] volcano (7)
 [] extinct (6)
 
@@ -17891,7 +17915,8 @@
 [] burn (9)
 [] If they are well cleaned out (5)
 [] volcanoes (8)
-[] slowly and steadily (10)
+[] slowly (10)
+[] and steadily (12)
 [] without any eruptions (16)
 
 [] cleaned (5)
@@ -17902,8 +17927,6 @@
 [] they (2)
 
 [] well (4)
-
-[] out (6)
 
 [] volcanoes (8)
 
@@ -17978,8 +18001,6 @@
 [] clean (11)
 [] out (12)
 [] our volcanoes (14)
-
-[] out (12)
 
 [] volcanoes (14)
 [] our (13)
@@ -18059,8 +18080,6 @@
 [] little (2)
 
 [] also (4)
-
-[] up (6)
 
 [] sense (11)
 [] certain (10)
@@ -18206,7 +18225,8 @@
 [] to the flower (43)
 
 [] realised (26)
-[] when he watered the flower for the last time , and prepared to place her under the shelter of her glass globe (4)
+[] when he watered the flower for the last time (4)
+[] , and prepared to place her under the shelter of her glass globe (13)
 [] he (25)
 [] that he was very close to tears (31)
 
@@ -18530,7 +18550,7 @@
 [] I (3)
 [] you (5)
 
-[] Of (1)
+[] Of course (1)
 
 [] I (3)
 
@@ -18804,7 +18824,8 @@
 [] of two or three caterpillars (26)
 
 [] caterpillars (26)
-[] two or three (23)
+[] two (23)
+[] or three (25)
 
 [] two (23)
 
@@ -19101,10 +19122,9 @@
 9	10	10	NUM	CD	NumForm=Digit|NumType=Card	8	nummod	_	TokenRange=32571:32573
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=32574:32575
 
-[] flower (6)
+[] flower Chapter 10 (6)
 [] She (1)
 [] proud (5)
-[] Chapter 10 (8)
 
 [] She (1)
 
@@ -19150,10 +19170,15 @@
 [] himself (3)
 
 [] neighborhood (6)
-[] of the asteroids 325 , 326 , 327 , 328 , 329 , and 330 (9)
+[] of the asteroids 325 , 326 (9)
+[] , 327 (14)
+[] , 328 (16)
+[] , 329 (18)
+[] , and 330 (21)
 
 [] asteroids (9)
-[] 325 , 326 (10)
+[] 325 (10)
+[] , 326 (12)
 
 [] 325 (10)
 
@@ -19270,7 +19295,8 @@
 [] upon a throne which was at the same time both simple and majestic (13)
 
 [] Clad (1)
-[] in royal purple and ermine (4)
+[] in royal purple (4)
+[] and ermine (6)
 
 [] purple (4)
 [] royal (3)
@@ -19282,7 +19308,8 @@
 [] he (8)
 
 [] throne (13)
-[] which was at the same time both simple and majestic (21)
+[] which was at the same time both simple (21)
+[] and majestic (23)
 
 [] simple (21)
 [] which (14)
@@ -19806,7 +19833,8 @@
 
 [] replied (8)
 [] I can n't stop myself the little prince , thoroughly embarrassed (4)
-[] I have come on a long journey , and I have had no sleep ... " (19)
+[] I have come on a long journey ... " (19)
+[] , and I have had no sleep (28)
 
 [] stop (4)
 [] I (1)
@@ -20091,7 +20119,8 @@
 [] order (6)
 [] I (5)
 [] you (7)
-[] sometimes to yawn and sometimes to - (10)
+[] sometimes to yawn (10)
+[] and sometimes to - (13)
 
 [] I (5)
 
@@ -20381,8 +20410,6 @@
 [] down (12)
 
 [] I (10)
-
-[] down (12)
 
 # sent_id = 446
 # text = " came now a timid inquiry from the little prince . " I order you to do so , " the king answered him , and majestically gathered in a fold of his ermine mantle .
@@ -20735,11 +20762,11 @@
 [] took (8)
 [] which (7)
 [] in (9)
-[] his planet , the other planets , and all the stars (11)
+[] his planet (11)
+[] , the other planets (15)
+[] , and all the stars (20)
 
 [] which (7)
-
-[] in (9)
 
 [] planet (11)
 [] his (10)
@@ -21034,7 +21061,8 @@
 
 [] watch (17)
 [] the sunset (19)
-[] not forty - four times in one day , but seventy - two , or even a hundred , or even two hundred times (25)
+[] not forty - four times in one day (25)
+[] , but seventy - two , or even a hundred , or even two hundred times (44)
 [] without ever having to move his chair (48)
 
 [] sunset (19)
@@ -21057,7 +21085,9 @@
 [] one (27)
 
 [] times (44)
-[] seventy - two , or even a hundred or even two hundred (33)
+[] seventy - two (33)
+[] , or even a hundred (38)
+[] or even two hundred (43)
 
 [] two (33)
 [] seventy (31)
@@ -21182,8 +21212,6 @@
 
 [] he (19)
 
-[] up (21)
-
 [] courage (23)
 [] his (22)
 
@@ -21296,7 +21324,9 @@
 [] ordered (11)
 [] I (10)
 [] a general (13)
-[] to fly from one flower to another like a butterfly , or to write a tragic drama , or to change himself into a sea bird (15)
+[] to fly from one flower to another like a butterfly (15)
+[] , or to write a tragic drama (27)
+[] , or to change himself into a sea bird (34)
 
 [] I (10)
 
@@ -21348,8 +21378,6 @@
 [] general (44)
 
 [] not (46)
-
-[] out (48)
 
 [] order (50)
 [] that he had received (54)
@@ -21405,7 +21433,8 @@
 20	.	.	PUNCT	.	_	12	punct	_	SpacesAfter=\r\n|TokenRange=36618:36619
 
 [] said (12)
-[] The general , or myself (2)
+[] The general (2)
+[] , or myself (5)
 [] You (9)
 [] the little prince (15)
 [] firmly (16)
@@ -21543,7 +21572,8 @@
 [] ordered (3)
 [] you (2)
 [] your people (5)
-[] to go and throw themselves into the sea (7)
+[] to go (7)
+[] and throw themselves into the sea (9)
 
 [] you (2)
 
@@ -21563,8 +21593,6 @@
 [] sea (13)
 
 [] they (15)
-
-[] up (18)
 
 [] revolution (20)
 
@@ -22075,8 +22103,6 @@
 [] So (1)
 
 [] I (2)
-
-[] out (5)
 
 [] way (8)
 [] my (7)
@@ -23312,8 +23338,6 @@
 
 [] king (21)
 
-[] out (23)
-
 [] hastily (25)
 
 # sent_id = 515
@@ -24255,7 +24279,10 @@
 [] me (19)
 
 [] man (36)
-[] the handsomest , the best - dressed , the richest most intelligent (22)
+[] the handsomest (22)
+[] , the best - dressed (27)
+[] , the richest (30)
+[] most intelligent (35)
 [] on this planet (39)
 
 [] handsomest (22)
@@ -24676,9 +24703,8 @@
 [] settled (11)
 [] down (12)
 [] in silence (14)
-[] before a collection of empty bottles and also a collection of full bottles (17)
-
-[] down (12)
+[] before a collection of empty bottles (17)
+[] and also a collection of full bottles (24)
 
 [] silence (14)
 
@@ -24961,8 +24987,6 @@
 
 [] himself (12)
 
-[] up (13)
-
 [] silence (17)
 [] impregnable (16)
 
@@ -25215,7 +25239,8 @@
 6	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=43096:43097
 
 [] make (4)
-[] Three and two (1)
+[] Three (1)
+[] and two (3)
 [] five (5)
 
 [] Three (1)
@@ -25234,7 +25259,8 @@
 6	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=43126:43127
 
 [] make (4)
-[] Five and seven (1)
+[] Five (1)
+[] and seven (3)
 [] twelve (5)
 
 [] Five (1)
@@ -25253,7 +25279,8 @@
 6	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=43159:43160
 
 [] make (4)
-[] Twelve and three (1)
+[] Twelve (1)
+[] and three (3)
 [] fifteen (5)
 
 [] Twelve (1)
@@ -25285,7 +25312,8 @@
 8	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=43214:43215
 
 [] make (4)
-[] FIfteen and seven (1)
+[] FIfteen (1)
+[] and seven (3)
 [] twenty - two (7)
 
 [] FIfteen (1)
@@ -25311,7 +25339,8 @@
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=43258:43259
 
 [] make (6)
-[] Twenty - two and six (3)
+[] Twenty - two (3)
+[] and six (5)
 [] twenty - eight (9)
 
 [] two (3)
@@ -25372,7 +25401,8 @@
 10	.	.	PUNCT	.	_	6	punct	_	SpacesAfter=\r\n|TokenRange=43338:43339
 
 [] make (6)
-[] Twenty - six and five (3)
+[] Twenty - six (3)
+[] and five (5)
 [] thirty - one (9)
 
 [] six (3)
@@ -25444,9 +25474,9 @@
 
 [] that (2)
 
-[] million (12)
-[] five - hundred - - one (6)
-[] six - hundred - twenty - two - thousand , seven - hundred - thirty - one (22)
+[] million six - hundred - twenty - two - thousand , seven - hundred - thirty - one (12)
+[] five - hundred - (6)
+[] - one (10)
 
 [] hundred (6)
 [] five (4)
@@ -25455,10 +25485,9 @@
 
 [] one (10)
 
-[] thousand (22)
+[] thousand seven - hundred - thirty - one (22)
 [] six - hundred twenty - (16)
 [] two (20)
-[] seven - hundred - thirty - one (30)
 
 [] hundred (16)
 [] six (14)
@@ -25555,7 +25584,8 @@
 [] n't (13)
 
 [] million (8)
-[] Five - hundred - and - one (3)
+[] Five - hundred - (3)
+[] and - one (7)
 
 [] hundred (3)
 [] Five (1)
@@ -25661,7 +25691,8 @@
 18	?	?	PUNCT	.	_	4	punct	_	TokenRange=43815:43816
 
 [] make (4)
-[] Two and five (1)
+[] Two (1)
+[] and five (3)
 [] seven (5)
 
 [] Two (1)
@@ -25674,7 +25705,8 @@
 [] Five - hundred - and - one million (16)
 
 [] million (16)
-[] Five - hundred - and - one (11)
+[] Five - hundred - (11)
+[] and - one (15)
 
 [] hundred (11)
 [] Five (9)
@@ -26104,7 +26136,8 @@
 [] then (5)
 
 [] millions (14)
-[] five - hundred - and - one (9)
+[] five - hundred - (9)
+[] and - one (13)
 
 [] hundred (9)
 [] five (7)
@@ -26245,10 +26278,9 @@
 9	"	"	PUNCT	''	_	3	punct	_	SpacesAfter=\r\n|TokenRange=44823:44824
 10	"	"	PUNCT	''	_	3	punct	_	TokenRange=44826:44827
 
-[] objects (3)
+[] objects Bees (3)
 [] Little (1)
 [] glittering (2)
-[] Bees (7)
 
 [] Little (1)
 
@@ -26473,7 +26505,8 @@
 [] stars (12)
 
 [] million (23)
-[] Five - hundred - and - one (18)
+[] Five - hundred - (18)
+[] and - one (22)
 
 [] hundred (18)
 [] Five (16)
@@ -26671,8 +26704,7 @@
 
 [] already (4)
 
-[] king (7)
-[] who (8)
+[] king who (7)
 
 [] who (8)
 
@@ -27235,8 +27267,6 @@
 
 [] you (11)
 
-[] out (13)
-
 [] patent (15)
 [] on it (17)
 
@@ -27370,7 +27400,8 @@
 [] And what do you do with them ? (5)
 [] I administer them (12)
 [] the businessman (18)
-[] I count them and recount them (22)
+[] I count them (22)
+[] and recount them (25)
 
 [] do (5)
 [] what (2)
@@ -27514,7 +27545,8 @@
 [] said (10)
 [] If I owned a silk scarf (3)
 [] he (9)
-[] I could put it around my neck and take it away with me (15)
+[] I could put it around my neck (15)
+[] and take it away with me (21)
 
 [] owned (3)
 [] I (2)
@@ -28041,8 +28073,6 @@
 
 [] I (7)
 
-[] out (9)
-
 [] week (11)
 
 [] clean (16)
@@ -28054,8 +28084,6 @@
 [] I (14)
 
 [] also (15)
-
-[] out (17)
 
 [] one (19)
 [] that is extinct (22)
@@ -28355,7 +28383,8 @@
 [] was (2)
 [] just (3)
 [] enough room on it (5)
-[] for a street lamp and a lamplighter (11)
+[] for a street lamp (11)
+[] and a lamplighter (14)
 
 [] just (3)
 
@@ -28435,7 +28464,8 @@
 [] of the use of a street lamp and a lamplighter , somewhere in the heavens , on a planet which had no people , and not one house (13)
 
 [] use (13)
-[] of a street lamp and a lamplighter , somewhere in the heavens , (17)
+[] of a street lamp , somewhere in the heavens , (17)
+[] and a lamplighter (20)
 [] on a planet which had no people , and not one house (29)
 
 [] lamp (17)
@@ -28456,7 +28486,8 @@
 
 [] had (31)
 [] which (30)
-[] no people , and not one house (33)
+[] no people (33)
+[] , and not one house (38)
 
 [] which (30)
 
@@ -28545,7 +28576,10 @@
 [] he (2)
 [] not (4)
 [] so (5)
-[] as the king , the conceited man , the businessman , and the tippler (9)
+[] as the king (9)
+[] , the conceited man (13)
+[] , the businessman (16)
+[] , and the tippler (20)
 
 [] he (2)
 
@@ -28581,7 +28615,7 @@
 [] his work (5)
 [] some meaning (8)
 
-[] at (2)
+[] at least (2)
 
 [] work (5)
 [] his (4)
@@ -28620,7 +28654,8 @@
 [] When he lights his street lamp (3)
 [] it (8)
 [] he (12)
-[] one more star , or one flower (16)
+[] one more star (16)
+[] , or one flower (22)
 [] to life (18)
 
 [] lights (3)
@@ -28684,7 +28719,8 @@
 [] sends (9)
 [] When he puts out his lamp (3)
 [] he (8)
-[] the flower , or the star (11)
+[] the flower (11)
+[] , or the star (15)
 [] to sleep (18)
 
 [] puts (3)
@@ -28696,8 +28732,6 @@
 [] When (1)
 
 [] he (2)
-
-[] out (4)
 
 [] lamp (6)
 [] his (5)
@@ -28832,8 +28866,6 @@
 
 [] just (4)
 
-[] out (6)
-
 [] lamp (8)
 [] your (7)
 
@@ -28909,8 +28941,6 @@
 [] orders (9)
 
 [] I (12)
-
-[] out (14)
 
 [] lamp (16)
 [] my (15)
@@ -29102,8 +29132,6 @@
 
 [] he (6)
 
-[] out (8)
-
 [] lamp (10)
 [] his (9)
 
@@ -29225,8 +29253,6 @@
 
 [] lamp (4)
 
-[] out (5)
-
 [] morning (8)
 
 [] lighted (15)
@@ -29268,7 +29294,8 @@
 
 [] had (2)
 [] I (1)
-[] the rest of the day and the rest of the night for sleep (4)
+[] the rest of the day (4)
+[] and the rest of the night for sleep (12)
 [] for relaxation (9)
 
 [] I (1)
@@ -29521,7 +29548,8 @@
 [] Once (1)
 [] every minute (3)
 [] I (4)
-[] to light my lamp and put it out (7)
+[] to light my lamp (7)
+[] and put it out (11)
 
 [] Once (1)
 
@@ -29542,8 +29570,6 @@
 [] out (13)
 
 [] it (12)
-
-[] out (13)
 
 # sent_id = 676
 # text = That is very funny !
@@ -29883,8 +29909,6 @@
 
 [] merely (17)
 
-[] up (20)
-
 [] chair (22)
 [] his (21)
 
@@ -30021,7 +30045,8 @@
 17	.	.	PUNCT	.	_	4	punct	_	SpacesAfter=\r\n|TokenRange=51196:51197
 
 [] possible (4)
-[] for a man to be faithful and lazy at the same time (10)
+[] for a man to be faithful at the same time (10)
+[] and lazy (12)
 
 [] faithful (10)
 [] a man (7)
@@ -30369,8 +30394,6 @@
 
 [] he (28)
 
-[] out (30)
-
 [] lamp (32)
 [] his (31)
 
@@ -30462,7 +30485,10 @@
 [] man (22)
 
 [] others (29)
-[] by the king , by the conceited man , by the tippler , by the businessman (33)
+[] by the king (33)
+[] , by the conceited man (38)
+[] , by the tippler (42)
+[] , by the businessman (46)
 
 [] king (33)
 
@@ -31189,7 +31215,11 @@
 [] who (13)
 
 [] location (16)
-[] of all the seas , rivers , towns , mountains , and deserts (20)
+[] of all the seas (20)
+[] , rivers (22)
+[] , towns (24)
+[] , mountains (26)
+[] , and deserts (29)
 
 [] seas (20)
 
@@ -31361,7 +31391,8 @@
 
 [] planet (8)
 [] It (1)
-[] most magnificent and stately (5)
+[] most magnificent (5)
+[] and stately (7)
 [] that he had ever seen (13)
 
 [] It (1)
@@ -31512,7 +31543,9 @@
 22	"	"	PUNCT	''	_	15	punct	_	TokenRange=53796:53797
 
 [] tell (15)
-[] And towns , and rivers , and deserts ? (2)
+[] And towns ? (2)
+[] , and rivers (5)
+[] , and deserts (8)
 [] I (12)
 [] n't (14)
 [] you (16)
@@ -31664,10 +31697,13 @@
 
 [] who (6)
 
-[] out (8)
-
 [] count (10)
-[] the towns , the rivers , the mountains , the seas , the oceans , and the deserts (12)
+[] the towns (12)
+[] , the rivers (15)
+[] , the mountains (18)
+[] , the seas (21)
+[] , the oceans (24)
+[] , and the deserts (28)
 
 [] towns (12)
 
@@ -31801,8 +31837,6 @@
 [] what they recall of their travels (12)
 
 [] he (7)
-
-[] down (9)
 
 [] recall (12)
 [] what (10)
@@ -32075,8 +32109,6 @@
 [] Then (1)
 
 [] geographer (3)
-
-[] down (6)
 
 [] mountains (8)
 [] two (7)
@@ -32476,8 +32508,6 @@
 
 [] explorers (4)
 
-[] down (7)
-
 [] first (8)
 
 [] pencil (10)
@@ -32525,8 +32555,6 @@
 [] in ink (15)
 
 [] them (12)
-
-[] down (13)
 
 [] ink (15)
 
@@ -33134,7 +33162,8 @@
 22	"	"	PUNCT	''	_	18	punct	_	TokenRange=56757:56758
 
 [] said (18)
-[] Whether volcanoes are extinct or alive (4)
+[] Whether volcanoes are extinct (4)
+[] or alive (6)
 [] , it comes to the same thing for us (9)
 [] the geographer (20)
 
@@ -33767,7 +33796,11 @@
 
 [] count (3)
 [] One (1)
-[] 111 kings ( not forgetting , to be sure , the Negro kings among them ) , 7000 geographers , 900,000 businessmen , 7,500,000 tipplers , 311,000,000 conceited men - - that is to say , about 2,000,000,000 grown - ups (7)
+[] 111 kings ( not forgetting , to be sure , the Negro kings among them ) - - that is to say , about 2,000,000,000 grown - ups (7)
+[] , 7000 geographers (24)
+[] , 900,000 businessmen (27)
+[] , 7,500,000 tipplers (30)
+[] , 311,000,000 conceited men (34)
 
 [] One (1)
 
@@ -34042,7 +34075,8 @@
 [] of the lamplighters of New Zealand and Australia (8)
 
 [] lamplighters (8)
-[] of New Zealand and Australia (11)
+[] of New Zealand (11)
+[] and Australia (13)
 
 [] Zealand (11)
 [] New (10)
@@ -34130,7 +34164,8 @@
 [] Next (1)
 
 [] lamplighters (4)
-[] of China and Siberia (6)
+[] of China (6)
+[] and Siberia (8)
 
 [] China (6)
 
@@ -34211,10 +34246,12 @@
 [] that (2)
 
 [] turn (6)
-[] of the lamplighters of Russia and the Indies ; then those of Africa and Europe , then those of South America ; then those of South America ; then those of North America (9)
+[] of the lamplighters of Russia and the Indies ; (9)
+[] then those of Africa and Europe , ; (17)
 
 [] lamplighters (9)
-[] of Russia and the Indies (11)
+[] of Russia (11)
+[] and the Indies (14)
 
 [] Russia (11)
 
@@ -34222,7 +34259,8 @@
 
 [] those (17)
 [] then (16)
-[] of Africa and Europe (19)
+[] of Africa (19)
+[] and Europe (21)
 
 [] then (16)
 
@@ -34374,7 +34412,8 @@
 51	.	.	PUNCT	.	_	37	punct	_	SpacesAfter=\r\n|TokenRange=59151:59152
 
 [] live (37)
-[] Only the man who was in charge of the single lamp at the North Pole , and his colleague who was responsible for the single lamp at the South Pole (3)
+[] Only the man who was in charge of the single lamp at the North Pole (3)
+[] , and his colleague who was responsible for the single lamp at the South Pole (19)
 [] only these two (35)
 [] free from toil and care (38)
 
@@ -34430,7 +34469,8 @@
 [] only (33)
 
 [] free (38)
-[] from toil and care (40)
+[] from toil (40)
+[] and care (42)
 
 [] toil (40)
 
@@ -34706,12 +34746,14 @@
 [] they (29)
 [] easily (31)
 [] into one public square (37)
-[] twenty miles long and twenty miles wide (40)
+[] twenty miles long (40)
+[] and twenty miles wide (44)
 
 [] stand (13)
 [] the two billion inhabitants who people its surface (5)
 [] all (11)
-[] upright and somewhat crowded (14)
+[] upright (14)
+[] and somewhat crowded (17)
 [] together (18)
 [] as they do for some big public assembly (22)
 
@@ -34809,8 +34851,6 @@
 [] on a small Pacific islet (11)
 
 [] humanity (2)
-
-[] up (6)
 
 [] islet (11)
 [] small (9)
@@ -35223,9 +35263,8 @@
 
 [] when (15)
 
-[] coil (17)
+[] coil the color of the moonlight (17)
 [] of gold (19)
-[] the color of the moonlight (22)
 
 [] gold (19)
 
@@ -35486,7 +35525,8 @@
 53	.	.	PUNCT	.	_	24	punct	_	SpacesAfter=\r\n|TokenRange=61053:61054
 
 [] said (24)
-[] The little prince sat down on a stone , and raised his eyes toward the sky . (4)
+[] The little prince sat down on a stone . (4)
+[] , and raised his eyes toward the sky (11)
 [] I wonder (20)
 [] he (23)
 [] whether the stars are set alight in heaven so that one day each one of us may find his own again (31)
@@ -35773,8 +35813,6 @@
 [] little (3)
 
 [] last (6)
-
-[] up (8)
 
 [] conversation (10)
 
@@ -36574,10 +36612,9 @@
 [] It was a flower with three petals , a flower of no account at all . " Good morning , " said the little prince . " Good morning (4)
 [] the flower (34)
 
-[] flower (4)
+[] flower a flower of no account at all (4)
 [] It (1)
 [] with three petals (7)
-[] a flower of no account at all (10)
 
 [] It (1)
 
@@ -36713,7 +36750,8 @@
 [] I (6)
 
 [] are (9)
-[] six or seven of them (10)
+[] six of them (10)
+[] or seven (12)
 [] in existence (16)
 
 [] six (10)
@@ -36837,7 +36875,8 @@
 31	.	.	PUNCT	.	_	28	punct	_	SpacesAfter=\r\n|TokenRange=63219:63220
 
 [] said (28)
-[] They have no roots , and that makes their life very difficult . (2)
+[] They have no roots . (2)
+[] , and that makes their life very difficult (8)
 [] " Goodbye , " said the little prince " Goodbye (19)
 [] the flower (30)
 
@@ -37123,7 +37162,8 @@
 
 [] see (33)
 [] the whole planet (36)
-[] at one glance , and all the people (39)
+[] at one glance (39)
+[] , and all the people (44)
 
 [] planet (36)
 [] whole (35)
@@ -37178,10 +37218,8 @@
 [] the echo (86)
 [] you (91)
 
-[] morning (73)
+[] morning Good morning - Good morning (73)
 [] Good (72)
-[] Good morning (77)
-[] - Good morning (81)
 
 [] Good (72)
 
@@ -37553,7 +37591,9 @@
 
 [] walking (6)
 [] for a long time (10)
-[] through sand , and rocks , and snow (12)
+[] through sand (12)
+[] , and rocks (15)
+[] , and snow (18)
 
 [] time (10)
 [] long (9)
@@ -37657,8 +37697,7 @@
 
 [] He (1)
 
-[] garden (6)
-[] all a - bloom with roses (11)
+[] garden all a - bloom with roses (6)
 
 [] bloom (11)
 [] with roses (13)
@@ -38493,7 +38532,8 @@
 31	"	"	PUNCT	''	_	27	punct	_	TokenRange=66068:66069
 
 [] said (27)
-[] asked the little prince , and added , " You are very pretty to look at . " I am a fox (2)
+[] asked the little prince . " I am a fox (2)
+[] , and added , " You are very pretty to look at (8)
 [] the fox (29)
 
 [] asked (2)
@@ -38574,7 +38614,8 @@
 42	!	!	PUNCT	.	_	31	punct	_	SpacesAfter=\r\n|TokenRange=66222:66223
 
 [] said (31)
-[] Come and play with me , " . (1)
+[] Come , " . (1)
+[] and play with me (3)
 [] proposed the little prince " I am so unhappy . " I can not play with you (8)
 [] the fox (30)
 [] I am not tamed (37)
@@ -39285,7 +39326,7 @@
 
 [] we (8)
 
-[] each (11)
+[] each other (11)
 
 # sent_id = 905
 # text = To me , you will be unique in all the world .
@@ -39513,7 +39554,8 @@
 
 [] seemed (3)
 [] The fox (2)
-[] perplexed , and very curious (4)
+[] perplexed (4)
+[] , and very curious (8)
 
 [] fox (2)
 
@@ -40140,8 +40182,6 @@
 
 [] me (11)
 
-[] back (12)
-
 [] thought (14)
 [] of you (16)
 
@@ -40316,7 +40356,8 @@
 
 [] have (2)
 [] I (1)
-[] friends to discover , and a great many things to understand (3)
+[] friends to discover (3)
+[] , and a great many things to understand (11)
 
 [] I (1)
 
@@ -40902,7 +40943,8 @@
 
 [] feel (3)
 [] I (1)
-[] happier and happier (4)
+[] happier (4)
+[] and happier (6)
 [] as the hour advances (10)
 
 [] I (1)
@@ -41507,7 +41549,8 @@
 [] said (40)
 [] It is your own fault the little prince . (5)
 [] said (8)
-[] I never wished you any sort of harm ; but you wanted me to tame you (16)
+[] I never wished you any sort of harm ; (16)
+[] but you wanted me to tame you (25)
 [] Yes , that is so (37)
 [] the fox (42)
 
@@ -41735,7 +41778,8 @@
 [] added (4)
 [] then (2)
 [] he (3)
-[] Go and look again at the roses (7)
+[] Go (7)
+[] and look again at the roses (9)
 
 [] then (2)
 
@@ -42123,7 +42167,8 @@
 15	"	"	PUNCT	''	_	12	punct	_	TokenRange=72019:72020
 
 [] went (12)
-[] You are beautiful , but you are empty (3)
+[] You are beautiful (3)
+[] , but you are empty (8)
 [] he (11)
 [] on (13)
 
@@ -42211,9 +42256,8 @@
 
 [] my (11)
 
-[] you (16)
+[] you the rose that belongs to me (16)
 [] just (14)
-[] the rose that belongs to me (20)
 
 [] just (14)
 
@@ -42420,7 +42464,8 @@
 [] killed (60)
 [] I (58)
 [] the caterpillars (62)
-[] ( except the two or three that we saved to become butterflies ) (66)
+[] ( except the two that we saved to become butterflies ) (66)
+[] or three (68)
 
 [] I (58)
 
@@ -42447,7 +42492,8 @@
 
 [] she (80)
 [] it (78)
-[] that I have listened to , when she grumbled , or boasted , or ever sometimes when she said nothing (84)
+[] that I have listened to , when she grumbled , or boasted (84)
+[] , or ever sometimes when she said nothing (99)
 
 [] it (78)
 
@@ -42455,7 +42501,8 @@
 [] that (81)
 [] I (82)
 [] to (85)
-[] , when she grumbled , or boasted (89)
+[] , when she grumbled (89)
+[] , or boasted (92)
 
 [] that (81)
 
@@ -42586,9 +42633,8 @@
 
 [] now (2)
 
-[] secret (6)
+[] secret a very simple secret (6)
 [] my (5)
-[] a very simple secret (11)
 
 [] my (5)
 
@@ -43027,9 +43073,8 @@
 [] said the little prince . " Good morning (9)
 [] the railway switchman (22)
 
-[] Chapter (1)
+[] Chapter " Good morning , " (1)
 [] 22 (2)
-[] " Good morning , " (6)
 
 [] 22 (2)
 
@@ -43146,8 +43191,6 @@
 
 [] I (8)
 
-[] out (10)
-
 [] travelers (11)
 
 [] bundles (14)
@@ -43164,15 +43207,14 @@
 
 [] I (25)
 
-[] off (27)
-
 [] trains (29)
 [] that carry them now to the right , now to the left (31)
 
 [] carry (31)
 [] that (30)
 [] them (32)
-[] now to the right , now to the left (37)
+[] now to the right , (37)
+[] now to the left (42)
 
 [] that (30)
 
@@ -43820,7 +43862,9 @@
 39	.	.	PUNCT	.	_	38	punct	_	SpacesAfter=\r\n|TokenRange=75114:75115
 
 [] said (38)
-[] They waste their time over a rag doll and it becomes very important to them ; and if anybody takes it away from them , they cry (2)
+[] They waste their time over a rag doll ; (2)
+[] and it becomes very important to them (11)
+[] and if anybody takes it away from them , they cry (27)
 [] They are lucky (33)
 [] the switchman (37)
 
@@ -43912,9 +43956,8 @@
 [] , said the little prince . " Good morning (9)
 [] the merchant (21)
 
-[] Chapter (1)
+[] Chapter " Good morning " (1)
 [] 23 (2)
-[] " Good morning " (6)
 
 [] 23 (2)
 
@@ -44433,10 +44476,13 @@
 101	"	"	PUNCT	''	_	44	punct	_	TokenRange=76342:76343
 
 [] said (44)
-[] It was now the eighth day since I had had my accident in the desert , and I had listened to the story of the merchant as I was drinking the last drop of my water supply (6)
+[] It was now the eighth day since I had had my accident in the desert (6)
+[] , and I had listened to the story of the merchant as I was drinking the last drop of my water supply (20)
 [] I (43)
 [] to the little prince (48)
-[] these memories of yours are very charming ; but I have not yet succeeded in repairing my plane ; I have nothing more to drink ; and I , too , should be very happy if I could walk at my leisure toward a spring of fresh water (57)
+[] these memories of yours are very charming ; ; I have nothing more to drink ; (57)
+[] but I have not yet succeeded in repairing my plane (64)
+[] and I , too , should be very happy if I could walk at my leisure toward a spring of fresh water (85)
 
 [] day (6)
 [] It (1)
@@ -44598,9 +44644,8 @@
 14	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\r\n|TokenRange=76397:76398
 15	"	"	PUNCT	''	_	2	punct	_	TokenRange=76400:76401
 
-[] friend (2)
+[] friend the fox (2)
 [] My (1)
-[] the fox (4)
 
 [] My (1)
 
@@ -46071,7 +46116,9 @@
 40	"	"	PUNCT	''	_	30	punct	_	SpacesAfter=\r\n|TokenRange=79004:79005
 
 [] said (30)
-[] The house , the stars , the desert - - what gives them their beauty (2)
+[] The house - - what gives them their beauty (2)
+[] , the stars (5)
+[] , the desert (8)
 [] is something that is invisible ! (17)
 [] I am glad (26)
 [] he (29)
@@ -46165,8 +46212,6 @@
 
 [] little (3)
 
-[] off (6)
-
 [] sleep (8)
 
 [] I (10)
@@ -46181,8 +46226,6 @@
 [] set (17)
 [] out (18)
 [] walking once more (19)
-
-[] out (18)
 
 [] walking (19)
 [] once more (20)
@@ -46205,7 +46248,8 @@
 
 [] felt (2)
 [] I (1)
-[] deeply moved , and stirred (4)
+[] deeply moved (4)
+[] , and stirred (7)
 
 [] I (1)
 
@@ -46332,7 +46376,9 @@
 [] looked (5)
 [] In the moonlight (3)
 [] I (4)
-[] at his pale forehead , his closed eyes , his locks of hair that trembled in the wind (9)
+[] at his pale forehead (9)
+[] , his closed eyes (13)
+[] , his locks of hair that trembled in the wind (16)
 
 [] moonlight (3)
 
@@ -46559,11 +46605,10 @@
 
 [] so (34)
 
-[] loyalty (48)
+[] loyalty the image of a rose that shines through his whole being like the flame of a lamp , even when he is asleep (48)
 [] about this little prince who is sleeping here (40)
 [] his (47)
 [] to a flower (51)
-[] the image of a rose that shines through his whole being like the flame of a lamp , even when he is asleep (55)
 
 [] prince (40)
 [] little (39)
@@ -46799,8 +46844,6 @@
 
 [] little (10)
 
-[] out (15)
-
 [] way (18)
 [] their (17)
 
@@ -46893,7 +46936,8 @@
 [] excited (8)
 
 [] turn (11)
-[] round and round (12)
+[] round (12)
+[] and round (14)
 
 [] round (12)
 
@@ -47104,8 +47148,7 @@
 
 [] Everything (1)
 
-[] use (5)
-[] the pulley , the bucket , the rope (8)
+[] use the pulley , the bucket , the rope (5)
 
 [] pulley (8)
 
@@ -47247,7 +47290,8 @@
 35	"	"	PUNCT	''	_	33	punct	_	TokenRange=81016:81017
 
 [] said (33)
-[] We have wakened the well , and it is singing ... I did not want him to tire himself with the rope Leave it to me (3)
+[] We have wakened the well ... I did not want him to tire himself with the rope Leave it to me (3)
+[] , and it is singing (10)
 [] I (32)
 
 [] wakened (3)
@@ -47446,7 +47490,8 @@
 58	.	.	PUNCT	.	_	34	punct	_	SpacesAfter=\r\n|TokenRange=81426:81427
 
 [] said (34)
-[] The song of the pulley was still in my ears , and I could see the sunlight shimmer in the still trembling water . " I am thirsty for this water (10)
+[] The song of the pulley was still in my ears . (10)
+[] , and I could see the sunlight shimmer in the still trembling water " I am thirsty for this water (15)
 [] the little prince (37)
 [] " Give me some of it to drink ... " (40)
 
@@ -47662,7 +47707,9 @@
 
 [] born (4)
 [] Its sweetness (2)
-[] of the walk under the stars , the song of the pulley , the effort of my arms (7)
+[] of the walk under the stars (7)
+[] , the song of the pulley (13)
+[] , the effort of my arms (19)
 
 [] sweetness (2)
 [] Its (1)
@@ -47760,7 +47807,9 @@
 
 [] used (28)
 [] When I was a little boy (6)
-[] the lights of the Christmas tree , the music of the Midnight Mass , the tenderness of smiling faces (9)
+[] the lights of the Christmas tree (9)
+[] , the music of the Midnight Mass (16)
+[] , the tenderness of smiling faces (23)
 [] to make up , so , the radiance of the gifts I received (30)
 
 [] boy (6)
@@ -47802,8 +47851,6 @@
 [] up (31)
 [] so (33)
 [] the radiance of the gifts I received (36)
-
-[] up (31)
 
 [] so (33)
 
@@ -47860,7 +47907,8 @@
 38	"	"	PUNCT	''	_	8	punct	_	TokenRange=82116:82117
 
 [] said (8)
-[] The men where you live the little prince , " raise five thousand roses in the same garden - - and they do not find in it what they are looking for . " (14)
+[] The men where you live the little prince , " raise five thousand roses in the same garden - - . " (14)
+[] and they do not find in it what they are looking for (28)
 
 [] raise (14)
 [] The men where you live (2)
@@ -47993,7 +48041,8 @@
 [] yet (2)
 [] what for (3)
 [] they are looking (6)
-[] in one single rose , or in a little water (14)
+[] in one single rose (14)
+[] , or in a little water (20)
 
 [] yet (2)
 
@@ -48391,8 +48440,6 @@
 
 [] them (5)
 
-[] over (6)
-
 [] laughed (9)
 [] as he said : " Your baobabs - - they look a little like cabbages (12)
 
@@ -48588,7 +48635,8 @@
 [] how (18)
 
 [] anything (21)
-[] except boa constrictors from the outside and boa constrictors from the inside (24)
+[] except boa constrictors from the outside (24)
+[] and boa constrictors from the inside (30)
 
 [] constrictors (24)
 [] boa (23)
@@ -48876,8 +48924,6 @@
 [] silence (5)
 
 [] he (7)
-
-[] on (9)
 
 [] came (13)
 [] I (12)
@@ -50312,8 +50358,6 @@
 [] get (10)
 [] out (11)
 [] my revolver (13)
-
-[] out (11)
 
 [] revolver (13)
 [] my (12)
@@ -51763,7 +51807,8 @@
 [] said (46)
 [] " Little man (42)
 [] I (45)
-[] " , " tell me that it is only a bad dream - - this affair of the snake , and the meeting - place , and the star ... " But he did not answer my plea (49)
+[] " , " tell me that it is only a bad dream - - this affair of the snake , and the meeting - place , and the star ... " (49)
+[] But he did not answer my plea (81)
 
 [] man (42)
 [] Little (41)
@@ -51778,11 +51823,10 @@
 
 [] me (50)
 
-[] dream (57)
+[] dream this affair of the snake , and the meeting - place , and the star (57)
 [] it (52)
 [] only (54)
 [] bad (56)
-[] this affair of the snake , and the meeting - place , and the star (61)
 
 [] it (52)
 
@@ -51791,7 +51835,8 @@
 [] bad (56)
 
 [] affair (61)
-[] of the snake , and the meeting - place (64)
+[] of the snake (64)
+[] , and the meeting - place (70)
 
 [] snake (64)
 
@@ -52045,7 +52090,8 @@
 19	.	.	PUNCT	.	_	18	punct	_	SpacesAfter=\r\n|TokenRange=88940:88941
 
 [] music (18)
-[] Because of the pulley , and the rope (4)
+[] Because of the pulley (4)
+[] , and the rope (8)
 [] what you gave me to drink (10)
 
 [] pulley (4)
@@ -52701,8 +52747,7 @@
 [] the stars (11)
 [] as no one else has them (16)
 
-[] You (1)
-[] you alone (4)
+[] You you alone (1)
 
 [] you (4)
 [] alone (5)
@@ -52850,8 +52895,7 @@
 [] you - - only you - - (23)
 [] stars that can laugh (32)
 
-[] you (23)
-[] - only you - - (27)
+[] you - only you - - (23)
 
 [] you (27)
 [] only (26)
@@ -53723,8 +53767,6 @@
 [] out (9)
 [] on his way (12)
 
-[] out (9)
-
 [] way (12)
 [] his (11)
 
@@ -53801,8 +53843,6 @@
 [] up (6)
 [] with him (8)
 
-[] up (6)
-
 [] him (8)
 
 [] he (9)
@@ -53810,7 +53850,8 @@
 [] along (12)
 
 [] step (18)
-[] quick and resolute (15)
+[] quick (15)
+[] and resolute (17)
 
 [] quick (15)
 
@@ -54260,8 +54301,6 @@
 
 [] stars (3)
 
-[] out (6)
-
 [] water (8)
 [] fresh (7)
 
@@ -54452,8 +54491,6 @@
 
 [] he (2)
 
-[] down (4)
-
 [] afraid (9)
 [] he (7)
 
@@ -54636,8 +54673,6 @@
 [] up (33)
 [] any longer (35)
 
-[] up (33)
-
 [] longer (35)
 [] any (34)
 
@@ -54810,8 +54845,6 @@
 [] He (1)
 
 [] not (3)
-
-[] out (5)
 
 # sent_id = 1239
 # text = He fell as gently as a tree falls .
@@ -55976,7 +56009,8 @@
 [] landscape (11)
 [] This (1)
 [] to me (5)
-[] loveliest and saddest (8)
+[] loveliest (8)
+[] and saddest (10)
 [] in the world (14)
 
 [] This (1)
@@ -56071,7 +56105,8 @@
 14	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\r\n|TokenRange=95523:95524
 
 [] here (3)
-[] that the little prince appeared on Earth , and disappeared (8)
+[] that the little prince appeared on Earth (8)
+[] , and disappeared (13)
 
 [] appeared (8)
 [] the little prince (7)
@@ -56249,7 +56284,9 @@
 
 [] appears (7)
 [] a little man (6)
-[] who laughs , who has golden hair and who refuses to answer questions (9)
+[] who laughs (9)
+[] , who has golden hair (12)
+[] and who refuses to answer questions (17)
 
 [] man (6)
 [] little (5)
