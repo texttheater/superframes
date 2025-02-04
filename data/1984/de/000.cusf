@@ -68,7 +68,8 @@
 
 [CLASS] Tag (7)
 [x-identified] Es (1)
-[m-quality] klarer , kalter (4)
+[m-quality] klarer (4)
+[m-state] , kalter (6)
 [m-time] im April (9)
 
 [IDENTIFICATION] Es (1)
@@ -96,11 +97,11 @@
 
 [IDENTIFICATION] Winston Smith (19)
 
-[CLASS] Kinn (23)
+[PART-WHOLE] Kinn (23)
 [m-location] an die Brust (26)
-[m-whole] Winston Smith (19)
+[whole] Winston Smith (19)
 
-[CLASS] Brust (26)
+[PART-WHOLE] Brust (26)
 
 [UNANCHORED-MOTION] schlüpfte (45)
 [in-motion] Winston Smith (19)
@@ -178,9 +179,10 @@
 11	.	.	PUNCT	$.	_	3	punct	_	_
 
 [MESSAGE] roch (3)
-[m-location] Im Flur (2)
+[m-location || topic] Im Flur (2)
 [topic || x-noncomp] es (4)
-[content] nach gekochtem Kohl und feuchten Fußmatten (7)
+[x-reference] nach gekochtem Kohl (7)
+[x-reference] und feuchten Fußmatten (10)
 
 [LOCATION] Flur (2)
 
@@ -304,10 +306,8 @@
 
 [MODE] nur (3)
 
-[CLASS] Gesicht (6)
+[PART-WHOLE] Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
 [m-quantity] riesiges (5)
-[m-scene] von mehr als einem Meter Breite (12)
-[m-identifier] : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (16)
 
 [QUANTITY] riesiges (5)
 
@@ -323,12 +323,13 @@
 [m-quantity] mehr als einem Meter (11)
 [has-quality] Gesicht (6)
 
-[CLASS] Gesicht (16)
-[m-whole] eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (18)
+[PART-WHOLE] Gesicht (16)
+[whole] eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (18)
 
 [CLASS] Mannes (18)
 [m-quality] von etwa fünfundvierzig Jahren (22)
-[m-part] , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (27)
+[m-part] , mit dickem schwarzen Schnauzbart (27)
+[m-part] und ansprechenden , wenn auch derben Zügen (34)
 
 [TIME] Jahren (22)
 [m-quantity] etwa fünfundvierzig (21)
@@ -338,7 +339,7 @@
 
 [MODE] etwa (20)
 
-[CLASS] Schnauzbart (27)
+[PART-WHOLE] Schnauzbart (27)
 [m-state] dickem (25)
 [m-quality] schwarzen (26)
 
@@ -346,10 +347,12 @@
 
 [QUALITY] schwarzen (26)
 
-[CLASS] Zügen (34)
-[m-quality] ansprechenden , wenn auch derben (29)
+[QUALITY] Zügen (34)
+[m-scene] ansprechenden (29)
+[m-quality] , wenn auch derben (33)
 
-[QUALITY] ansprechenden (29)
+[MESSAGE-INIT >> QUALITY] ansprechenden (29)
+[x-sender >> has-quality] Zügen (34)
 
 [QUALITY] derben (33)
 [m-mode] auch (32)
@@ -575,14 +578,14 @@
 
 [IDENTIFICATION] der (13)
 
-[CLASS] Fußknöchel (17)
+[PART-WHOLE] Fußknöchel (17)
 [m-location || m-quality] rechten (16)
 
 [LOCATION || QUALITY] rechten (16)
 
-[CLASS] Krampfaderknoten (19)
+[PART-WHOLE] Krampfaderknoten (19)
 [m-state] dicke (18)
-[m-whole] der (13)
+[whole] der (13)
 
 [STATE] dicke (18)
 
@@ -638,7 +641,7 @@
 [MESSAGE] Plakat (10)
 [topic] mit dem riesigen Gesicht (14)
 
-[CLASS] Gesicht (14)
+[PART-WHOLE] Gesicht (14)
 [m-quality] riesigen (13)
 
 [QUALITY] riesigen (13)
@@ -690,7 +693,7 @@
 
 [CLASS] einen (13)
 
-[CLASS] Augen (15)
+[PART-WHOLE] Augen (15)
 
 [LOCATION] überallhin (16)
 
@@ -802,7 +805,8 @@
 
 [CLASS] Metallplatte (7)
 [m-quality] länglichen (6)
-[m-scene] , die einem stumpfen Spiegel ähnelte und rechter Hand in die Wand eingelassen war (13)
+[m-scene] , die einem stumpfen Spiegel ähnelte (13)
+[m-scene] und rechter Hand in die Wand eingelassen war (20)
 
 [QUALITY] länglichen (6)
 
@@ -821,6 +825,7 @@
 [LOCATION-INIT] eingelassen (20)
 [m-location] rechter Hand (16)
 [target-location] in die Wand (19)
+[has-location] Metallplatte (7)
 
 [CLASS] Hand (16)
 [m-location || m-quality] rechter (15)
@@ -923,8 +928,7 @@
 [STATE-CHANGE] gedämpft (11)
 [has-state] Der Apparat , ein sogenannter Televisor oder Hursehschirm , (2)
 
-[CLASS] Apparat (2)
-[m-identifier] , ein sogenannter Televisor oder Hursehschirm (6)
+[CLASS] Apparat , ein sogenannter Televisor oder Hursehschirm (2)
 
 [CLASS] Televisor (6)
 [m-scene] sogenannter (5)
@@ -964,7 +968,7 @@
 7	abgezehrte	abgezehrt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 8	,	,	PUNCT	$,	_	9	punct	_	_
 9	gebrechliche	gebrechlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	7	conj	_	_
-10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	appos	_	_
+10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	1	appos	_	_
 11	,	,	PUNCT	$,	_	21	punct	_	_
 12	deren	d	DET	PRELAT	Gender=Neut|PronType=Rel	13	nmod:poss	_	_
 13	Magerkeit	Magerkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	21	nsubj:pass	_	_
@@ -980,31 +984,31 @@
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-INIT] trat (2)
-[has-location] Smith (1)
+[has-location] Smith , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (1)
 [target-location] ans Fenster (4)
-[m-depictive] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
-[IDENTIFICATION] Smith (1)
+[IDENTIFICATION] Smith , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (1)
 
 [CLASS] Fenster (4)
 
 [CLASS] Gestalt (10)
-[m-state] abgezehrte , gebrechliche (7)
+[m-state] abgezehrte (7)
+[m-quality] , gebrechliche (9)
 [m-scene] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
-[x-identified] Smith (1)
 
 [STATE] abgezehrte (7)
 
-[STATE || QUALITY] gebrechliche (9)
+[QUALITY] gebrechliche (9)
 
 [MESSAGE] betont (21)
 [topic] deren Magerkeit (13)
 [x-sender] durch den blauen Trainingsanzug der Parteiuniform (17)
 [m-mode] noch (20)
-[] Gestalt (10)
+[topic] Gestalt (10)
 
 [STATE] Magerkeit (13)
 [has-state] deren (12)
+[has-state] Gestalt (10)
 
 [IDENTIFICATION] deren (12)
 
@@ -1055,8 +1059,8 @@
 [has-quality] Sein Haar (2)
 [m-quantity] sehr (4)
 
-[CLASS] Haar (2)
-[m-whole] Sein (1)
+[PART-WHOLE] Haar (2)
+[whole] Sein (1)
 
 [IDENTIFICATION] Sein (1)
 
@@ -1066,8 +1070,8 @@
 [has-state] sein Gesicht (8)
 [m-quality] unnatürlich (9)
 
-[CLASS] Gesicht (8)
-[m-whole] sein (7)
+[PART-WHOLE] Gesicht (8)
+[whole] sein (7)
 
 [IDENTIFICATION] sein (7)
 
@@ -1075,10 +1079,12 @@
 
 [STATE] rauh (14)
 [has-state] seine Haut (13)
-[x-causer] von der groben Seife , den stumpfen Rasierklingen und der Kälte des gerade überstandenen Winters (18)
+[x-causer] von der groben Seife (18)
+[x-causer] , den stumpfen Rasierklingen (22)
+[x-causer] und der Kälte des gerade überstandenen Winters (25)
 
-[CLASS] Haut (13)
-[m-whole] seine (12)
+[PART-WHOLE] Haut (13)
+[whole] seine (12)
 
 [IDENTIFICATION] seine (12)
 
@@ -1149,7 +1155,7 @@
 5	wirbelten	wirbeln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	schwache	schwach	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	7	amod	_	_
 7	Windstöße	Windstoß	NOUN	NN	Case=Nom|Gender=Neut|Number=Plur	5	nsubj	_	_
-8	Staub	Staub	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	7	appos	_	_
+8	Staub	Staub	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	5	obj	_	_
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	Papierfetzen	Papierfetzen	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	8	conj	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
@@ -1183,10 +1189,13 @@
 [LOCATION-INIT] wirbelten (5)
 [m-location] Unten (1)
 [m-location] auf der Straße (4)
-[x-causer] schwache Windstöße Staub und Papierfetzen (7)
+[x-causer] schwache Windstöße (7)
+[has-location] Staub (8)
+[has-location] und Papierfetzen (10)
 [m-means] in Spiralen (12)
 [target-location] hoch (13)
-[m-conceded] obwohl die Sonne strahlte und der Himmel leuchtend blau war , (19)
+[m-conceded] obwohl die Sonne strahlte , (19)
+[m-conceded] und der Himmel leuchtend blau war (24)
 
 [LOCATION] Unten (1)
 
@@ -1261,10 +1270,10 @@
 [x-location] von jeder beherrschenden Ecke (11)
 [x-location] herunter (12)
 
-[CLASS] Gesicht (2)
+[PART-WHOLE] Gesicht (2)
 [m-part] mit dem schwarzen Schnurrbart (6)
 
-[CLASS] Schnurrbart (6)
+[PART-WHOLE] Schnurrbart (6)
 [m-quality] schwarzen (5)
 
 [QUALITY] schwarzen (5)
@@ -1359,7 +1368,7 @@
 [m-quantity >> m-quality] tief (22)
 [target-location >> topic] in Winstons Blick (25)
 
-[CLASS] Augen (19)
+[PART-WHOLE] Augen (19)
 [m-quality] dunklen (18)
 
 [QUALITY] dunklen (18)
@@ -1392,7 +1401,7 @@
 15	Winde	Wind	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	4	obl	_	_
 16	und	und	CCONJ	KON	_	17	cc	_	_
 17	ließ	lassen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-18	nur	nur	ADV	ADV	_	21	advmod	_	_
+18	nur	nur	ADV	ADV	_	20	advmod	_	_
 19	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
 20	Wort	Wort	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	17	obj	_	_
 21	Engsoz	Engsoz	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	20	appos	_	_
@@ -1416,13 +1425,15 @@
 [LOCATION] Unten (1)
 
 [MESSAGE] Plakat (12)
-[m-reference] anderes , (6)
-[m-quality] an einer Ecke eingerissenes (11)
+[m-scene] anderes , (6)
+[m-scene] an einer Ecke eingerissenes (11)
 
 [COMPARISON] anderes (6)
+[compared] Plakat (12)
 
 [QUALITY] eingerissenes (11)
 [m-location] an einer Ecke (10)
+[has-quality] Plakat (12)
 
 [CLASS] Ecke (10)
 
@@ -1437,11 +1448,10 @@
 
 [MODE] nur (18)
 
-[MESSAGE] Wort (20)
-[content] nur Engsoz (21)
+[MESSAGE] Wort Engsoz (20)
+[m-mode] nur (18)
 
 [IDENTIFICATION] Engsoz (21)
-[m-mode] nur (18)
 
 [WRAPPING-WEARING-INIT] verdeckt (23)
 [m-time] bald (22)
@@ -1456,7 +1466,8 @@
 [TIME] bald (25)
 
 [MESSAGE] erscheinen (27)
-[content] bald verdeckt , bald unverdeckt (23)
+[content] bald verdeckt (23)
+[content] , bald unverdeckt (26)
 [topic] das Wort Engsoz (20)
 
 # sent_id = 25
@@ -1630,10 +1641,11 @@
 [m-location] Hinter Winstons Rücken (3)
 [x-sender] die leise Stimme aus dem Televisor (7)
 [m-time] noch immer (12)
-[topic] von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (14)
+[topic] von Roheisen (14)
+[topic] und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (24)
 
-[CLASS] Rücken (3)
-[m-whole] Winstons (2)
+[PART-WHOLE] Rücken (3)
+[whole] Winstons (2)
 
 [IDENTIFICATION] Winstons (2)
 
@@ -1663,7 +1675,7 @@
 
 [QUANTITY] weit (18)
 
-[SEQUENCE] Ziel (22)
+[MEANS] Ziel (22)
 [m-quality] gesteckte (21)
 
 [QUALITY] gesteckte (21)
@@ -1891,9 +1903,10 @@
 [target-scene] der Mutmaßung (17)
 
 [MESSAGE-INIT] einschaltete (13)
-[m-time] Wie oft und nach welchem System (2)
+[m-time] Wie oft (2)
+[m-followed] und nach welchem System (6)
 [x-experiencer] die Gedankenpolizei (8)
-[m-noncomp] sich (9)
+[x-experiencer] sich (9)
 [topic] in einen Privatapparat (12)
 
 [TIME] oft (2)
@@ -1901,16 +1914,16 @@
 
 [QUANTITY] Wie (1)
 
-[CLASS] System (6)
+[MESSAGE] System (6)
 
 [SOCIAL-RELATION] Gedankenpolizei (8)
 
-[NONCOMP] sich (9)
+[IDENTIFICATION] sich (9)
 
 [CLASS] Privatapparat (12)
 
 [MESSAGE] Mutmaßung (17)
-[topic] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
+[content] Wie oft und nach welchem System die Gedankenpolizei sich in einen Privatapparat einschaltete , (13)
 
 # sent_id = 35
 # text = Es war sogar möglich , dass jeder einzelne ständig überwacht wurde .
@@ -1966,7 +1979,7 @@
 [MESSAGE-INIT] einschalten (18)
 [m-mode] Auf alle Fälle aber (3)
 [x-experiencer] sie (6)
-[m-noncomp] sich (7)
+[x-experiencer] sich (7)
 [m-condition || m-time] , wenn sie es wollte , (12)
 [m-time] jederzeit (14)
 [topic] in einen Apparat (17)
@@ -1978,7 +1991,7 @@
 
 [IDENTIFICATION] sie (6)
 
-[NONCOMP] sich (7)
+[IDENTIFICATION] sich (7)
 
 [MESSAGE] wollte (12)
 [x-experiencer] sie (10)
@@ -2044,20 +2057,22 @@
 
 [MESSAGE-INIT] stellte (10)
 [x-experiencer] man (9)
-[m-noncomp] sich (11)
+[x-experiencer] sich (11)
 [m-mode] tatsächlich (12)
-[m-causer] instinktiv (13)
+[m-scene] instinktiv (13)
 [topic] darauf (14)
 [m-noncomp] ein (15)
-[topic] - , dass jedes Geräusch , das man machte , überhört und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (26)
+[topic] - , dass jedes Geräusch , das man machte , überhört (26)
+[topic] und , außer in der Dunkelheit , jede Bewegung beobachtet wurde (36)
 
 [IDENTIFICATION] man (9)
 
-[NONCOMP] sich (11)
+[IDENTIFICATION] sich (11)
 
 [MODE] tatsächlich (12)
 
 [CAUSATION] instinktiv (13)
+[result] stellte (10)
 
 [IDENTIFICATION] darauf (14)
 
@@ -2125,8 +2140,8 @@
 
 [CLASS] Televisor (10)
 
-[CLASS] Rücken (12)
-[m-whole] er (8)
+[PART-WHOLE] Rücken (12)
+[whole] er (8)
 
 # sent_id = 39
 # text = Das war sicherer , wenn auch , wie er wohl wusste , sogar ein Rücken verräterisch sein kann .
@@ -2175,7 +2190,7 @@
 
 [MODE] sogar (13)
 
-[CLASS] Rücken (15)
+[PART-WHOLE] Rücken (15)
 
 # sent_id = 40
 # text = Einen Kilometer entfernt ragte das Wahrheitsministerium , seine Arbeitsstätte , wuchtig und weiß über der düsteren Landschaft empor .
@@ -2202,7 +2217,8 @@
 [LOCATION-INIT] ragte (4)
 [m-location] Einen Kilometer entfernt (3)
 [has-location] das Wahrheitsministerium , seine Arbeitsstätte (6)
-[m-quality] , wuchtig und weiß über der düsteren Landschaft (11)
+[m-quality] , wuchtig über der düsteren Landschaft (11)
+[m-depictive] und weiß (13)
 [target-location] empor (18)
 
 [LOCATION] entfernt (3)
@@ -2213,8 +2229,7 @@
 
 [QUANTITY] Einen (1)
 
-[SOCIAL-RELATION] Wahrheitsministerium (6)
-[m-identifier] , seine Arbeitsstätte (9)
+[SOCIAL-RELATION] Wahrheitsministerium , seine Arbeitsstätte (6)
 
 [LOCATION] Arbeitsstätte (9)
 [has-location] seine (8)
@@ -2225,6 +2240,7 @@
 [m-location] über der düsteren Landschaft (17)
 
 [QUALITY] weiß (13)
+[has-quality] das Wahrheitsministerium , seine Arbeitsstätte (6)
 
 [LOCATION] Landschaft (17)
 [m-location] düsteren (16)
@@ -2282,20 +2298,17 @@
 
 [MODE] Art (8)
 
-[IDENTIFICATION] London (13)
-[m-identifier] , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (16)
+[IDENTIFICATION] London , die Hauptstadt des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (13)
 
 [SOCIAL-RELATION || PART-WHOLE] Hauptstadt (16)
 [social-relation || whole] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
+[has-social-relation || part] London (13)
 
-[LOCATION] Luftstützpunkts (18)
-[m-rank] Nr. l (19)
-[m-whole] , der am drittstärksten bevölkerten Provinz Ozeaniens (26)
+[LOCATION] Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
 
-[QUANTITY] Nr. (19)
-[m-rank] l (20)
+[RANK] Nr. l (19)
 
-[RANK] l (20)
+[QUANTITY >> RANK] l (20)
 
 [CLASS] Provinz (26)
 [m-quantity] am drittstärksten (24)
@@ -2395,16 +2408,16 @@
 37	schiefen	schief	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	38	amod	_	_
 38	Gartenmauern	Gartenmauer	NOUN	NN	Case=Nom|Gender=Fem|Number=Plur	45	nsubj	_	_
 39	kreuz	kreuz	ADJ	ADJD	_	45	advmod	_	_
-40	und	und	CCONJ	KON	_	41	cc	_	_
-41	quer	quer	ADJ	ADJD	_	39	conj	_	_
+40	und	und	CCONJ	KON	_	39	fixed	_	_
+41	quer	quer	ADJ	ADJD	_	39	fixed	_	_
 42	in	in	ADP	APPR	_	44	case	_	_
 43	den	d	DET	ART	Case=Acc|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	Boden	Boden	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	45	obl	_	_
 45	sackten	sacken	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 46	?	?	PUNCT	$.	_	14	punct	_	_
 
-[LOCATION-CONTINUATION] gestanden (14)
-[initial-location] da (2)
+[LOCATION] gestanden (14)
+[location] da (2)
 [m-time] immer (3)
 [has-location] diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (6)
 [m-time] , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten (45)
@@ -2422,7 +2435,9 @@
 [CLASS] Häuser (9)
 [m-scene] heruntergekommen aussehender (8)
 [m-time] aus dem neunzehnten Jahrhundert (13)
-[m-scene] , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren (20)
+[m-scene] , deren Mauern mit Balken gestützt (20)
+[m-scene] , deren Fenster mit Pappendeckel verschalt (26)
+[m-scene] und deren Dächer mit Wellblech gedeckt waren (32)
 
 [MESSAGE] aussehender (8)
 [content] heruntergekommen (7)
@@ -2448,6 +2463,7 @@
 [LOCATION-INIT] verschalt (26)
 [target-location] deren Fenster (23)
 [has-location] mit Pappendeckel (25)
+[target-location] Häuser (9)
 
 [CLASS] Fenster (23)
 [m-whole] deren (22)
@@ -2459,6 +2475,7 @@
 [LOCATION-INIT] gedeckt (32)
 [target-location] deren Dächer (29)
 [has-location] mit Wellblech (31)
+[target-location] Häuser (9)
 
 [CLASS] Dächer (29)
 [m-whole] deren (28)
@@ -2483,10 +2500,7 @@
 
 [QUALITY] schiefen (37)
 
-[QUALITY] kreuz (39)
-[m-noncomp] und quer (41)
-
-[NONCOMP] quer (41)
+[QUALITY] kreuz und quer (39)
 
 [CLASS] Boden (44)
 
@@ -2538,7 +2552,8 @@
 
 [DESTRUCTION] Ruinen (4)
 [m-quality] zerbombten (3)
-[m-location] , wo der Pflasterstaub in der Luft wirbelte und Unkrautgestrüpp auf den Trümmern wucherte (12)
+[m-location] , wo der Pflasterstaub in der Luft wirbelte (12)
+[m-location] und Unkrautgestrüpp auf den Trümmern wucherte (18)
 
 [QUALITY] zerbombten (3)
 
@@ -2553,16 +2568,17 @@
 
 [CLASS] Luft (11)
 
-[LOCATION-CONTINUATION] wucherte (18)
+[LOCATION] wucherte (18)
 [has-location] Unkrautgestrüpp (14)
-[initial-location] auf den Trümmern (17)
+[location] auf den Trümmern (17)
 
 [CLASS] Unkrautgestrüpp (14)
 
 [DESTRUCTION] Trümmern (17)
 
 [CLASS] Stellen (22)
-[m-scene] , wo Bombeneinschläge eine größere Lücke gerissen hatten und trostlose Siedlungen von Holzbaracken entstanden waren , die wie Hühnerställe aussahen (29)
+[m-scene] , wo Bombeneinschläge eine größere Lücke gerissen hatten (29)
+[m-scene] und trostlose Siedlungen von Holzbaracken entstanden waren , die wie Hühnerställe aussahen (36)
 
 [TRANSFORMATION-CREATION] gerissen (29)
 [m-location] wo (24)
@@ -2581,6 +2597,7 @@
 
 [EXISTENCE-INIT] entstanden (36)
 [target-exists] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
+[material || initial-exists] Stellen (22)
 
 [CLASS || PART-WHOLE] Siedlungen (33)
 [m-quality] trostlose (32)
@@ -2736,12 +2753,10 @@
 [target-content] verblüffend verschieden von allem anderen , was der Gesichtskreis umfasste (21)
 [m-noncomp] aus (25)
 
-[SOCIAL-RELATION] Wahrheitsministerium (2)
-[m-identifier] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
+[SOCIAL-RELATION] Wahrheitsministerium - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (2)
 
 [IDENTIFICATION] Miniwahr (4)
 [m-scene] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
-[identified] es (7)
 
 [IDENTIFICATION] hieß (17)
 [identified] es (7)
@@ -2750,8 +2765,7 @@
 
 [IDENTIFICATION] es (7)
 
-[MESSAGE] Neusprache (10)
-[m-identifier] , der amtlichen Sprache Ozeaniens (14)
+[MESSAGE] Neusprache , der amtlichen Sprache Ozeaniens (10)
 
 [MESSAGE] Sprache (14)
 [topic] amtlichen (13)
@@ -2805,10 +2819,11 @@
 21	.	.	PUNCT	$.	_	9	punct	_	_
 
 [CLASS] Betonbau (9)
-[x-identified] Es (1)
+[has-class] Es (1)
 [m-quality] riesiger (4)
-[m-scene] pyramidenartiger , weiß schimmernder (5)
-[m-location] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
+[m-scene] pyramidenartiger (5)
+[m-scene] , weiß schimmernder (8)
+[m-scene] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
 
 [IDENTIFICATION] Es (1)
 
@@ -2829,6 +2844,7 @@
 [m-quality] terrassenförmig (13)
 [target-location] dreihundert Meter hoch (16)
 [target-location] in die Luft (19)
+[has-location] Betonbau (9)
 
 [IDENTIFICATION] der (11)
 
@@ -2885,10 +2901,10 @@
 [LOCATION] Stelle (3)
 [m-scene] , wo Winston stand (7)
 
-[LOCATION-CONTINUATION] stand (7)
-[initial-location] wo (5)
+[LOCATION] stand (7)
+[location] wo (5)
 [has-location] Winston (6)
-[initial-location] Stelle (3)
+[location] Stelle (3)
 
 [LOCATION] wo (5)
 
@@ -2926,7 +2942,7 @@
 
 [QUANTITY] drei (22)
 
-[SOCIAL-RELATION] Partei (25)
+[CLASS >> IDENTIFICATION] Partei (25)
 
 # sent_id = 49
 # text = KRIEG BEDEUTET FRIEDEN
