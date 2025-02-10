@@ -851,11 +851,12 @@
 
 [] Schuhgetrampel (3)
 
-[] Trompetenstoß (7)
-[] neuen (6)
-[] auf dem Kamm (10)
+[MESSAGE-INIT] Trompetenstoß (7)
+[m-scene] neuen (6)
+[x-means] auf dem Kamm (10)
 
-[] neuen (6)
+[SEQUENCE] neuen (6) # TODO manual
+[follows] Trompetenstoß (7)
 
 [] Kamm (10)
 
@@ -1172,7 +1173,7 @@
 [] , den grauen Hemden (11)
 [] und dem roten Halstuch , aus denen die Uniform der Späher bestand (15)
 
-[] Beide (1)
+[IDENTIFICATION] Beide (1) # TODO manual: indefinite pronouns
 
 [] Hosen (7)
 [] kurzen (5)
@@ -1199,8 +1200,8 @@
 
 [] denen (19)
 
-[] Uniform (21)
-[] der Späher (23)
+[WRAPPING-WEARING || CLASS] Uniform (21) # TODO manual (clothing)
+[wearer || m-possessor] der Späher (23)
 
 [] Späher (23)
 
@@ -1259,11 +1260,11 @@
 
 [] unbehaglichen (12)
 
-[] gebärdete (18)
-[] der Junge (17)
-[] sich (19)
-[] so bösartig (21)
-[] , als ob es wirklich mehr als ein Spiel war (27)
+[ACTIVITY] gebärdete (18)
+[is-active] der Junge (17)
+[is-active] sich (19)
+[m-quality] so bösartig (21)
+[m-reference] , als ob es wirklich mehr als ein Spiel war (27)
 
 [] Junge (17)
 
@@ -1478,7 +1479,7 @@
 13	bald	bald	ADV	ADV	_	16	advmod	_	_
 14	zu	zu	ADP	APPR	_	15	case	_	_
 15	Menschenfressern	Menschenfresser	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	16	obl	_	_
-16	herangewachsen	heranwachsen	VERB	VVPP	Verbform=Part	8	acl	_	_
+16	herangewachsen	heranwachsen	VERB	VVPP	Verbform=Part	10	acl	_	_
 17	sein	sein	AUX	VAINF	VerbForm=Inf	16	aux	_	_
 18	werden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 19	.	.	PUNCT	$.	_	4	punct	_	_
@@ -1492,14 +1493,15 @@
 
 [] irgendwie (3)
 
-[] Freudensprüngen (8)
-[] gleich (6)
-[] von Tigerjungen (10)
-[] , die bald zu Menschenfressern herangewachsen sein werden (16)
+[ACTIVITY] Freudensprüngen (8)
+[m-scene] gleich (6)
+[is-active] von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden (10)
 
-[] gleich (6)
+[COMPARISON] gleich (6)
+[reference] Freudensprüngen (8)
 
 [] Tigerjungen (10)
+[] , die bald zu Menschenfressern herangewachsen sein werden (16)
 
 [] herangewachsen (16)
 [] die (12)

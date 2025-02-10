@@ -793,13 +793,13 @@
 
 [] zu (3)
 
-[] erstürmt (7)
+[LOCATION-INIT || POSSESSION-INIT] erstürmt (7)
 
-[] vermochten (13)
-[] tausend Raketenbomben (12)
-[] sie (14)
-[] nicht (15)
-[] zu zertrümmern (17)
+[SCENE-POSSIBILITY] vermochten (13)
+[participant] tausend Raketenbomben (12)
+[participant] sie (14)
+[m-mode] nicht (15)
+[scene] zu zertrümmern (17)
 
 [] Raketenbomben (12)
 [] tausend (11)
@@ -810,7 +810,9 @@
 
 [] nicht (15)
 
-[] zertrümmern (17)
+[DESTRUCTION] zertrümmern (17)
+[x-causer] tausend Raketenbomben (12)
+[destroyed] sie (14)
 
 # sent_id = 472
 # text = Wieder fragte er sich , für wen er sein Tagebuch schrieb .
@@ -921,10 +923,10 @@
 
 [] nicht (3)
 
-[] Tod (6)
+[DESTRUCTION] Tod (6)
 
-[] Austilgung (10)
-[] vollständige (9)
+[DESTRUCTION] Austilgung (10)
+[m-quantity] vollständige (9)
 
 [] vollständige (9)
 
@@ -1159,11 +1161,11 @@
 11	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] sein (11)
-[] Um vierzehn Uhr dreißig (3)
-[] er (6)
-[] zurück (7)
-[] an der Arbeit (10)
+[SCENE] sein (11)
+[m-time] Um vierzehn Uhr dreißig (3)
+[participant] er (6)
+[m-scene] zurück (7)
+[scene] an der Arbeit (10)
 
 [] Uhr (3)
 [] vierzehn (2)
@@ -1175,9 +1177,11 @@
 
 [] er (6)
 
-[] zurück (7)
+[SEQUENCE] zurück (7)
+[follows] sein (11)
 
 [] Arbeit (10)
+[] er (6)
 
 # sent_id = 481
 # text = Merkwürdigerweise schien ihn das Schlagen der vollen Stunde mit neuem Mut erfüllt zu haben .
@@ -1298,11 +1302,11 @@
 16	abgerissen	abreißen	VERB	VVPP	Verbform=Part	0	root	_	_
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
-[] abgerissen (16)
-[] Aber solange er sie verkündete , (5)
-[] auf eine geheimnisvolle Weise (11)
-[] der rote Faden (14)
-[] nicht (15)
+[SCENE-DEINIT] abgerissen (16)
+[m-time >> m-condition] Aber solange er sie verkündete , (5)
+[m-scene] auf eine geheimnisvolle Weise (11)
+[initial-scene] der rote Faden (14)
+[m-mode] nicht (15)
 
 [] verkündete (5)
 [] er (3)
@@ -1312,13 +1316,14 @@
 
 [] sie (4)
 
-[] Weise (11)
-[] geheimnisvolle (10)
+[QUALITY >> MEANS] Weise (11)
+[m-quality] geheimnisvolle (10)
+[has-quality >> purpose] abgerissen (16)
 
 [] geheimnisvolle (10)
 
-[] Faden (14)
-[] rote (13)
+[MESSAGE] Faden (14)
+[m-noncomp] rote (13)
 
 [] rote (13)
 

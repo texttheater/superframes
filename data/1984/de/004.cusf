@@ -1179,7 +1179,7 @@
 76	seiner	sein	DET	PPOSAT	Case=Gen|Gender=Fem|Number=Sing|Poss=Yes	77	det:poss	_	_
 77	Stimme	Stimme	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	75	nmod	_	_
 78	fertig	fertig	ADJ	ADJD	_	79	xcomp	_	_
-79	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	52	acl	_	_
+79	brachte	bringen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	67	acl	_	_
 80	,	,	PUNCT	$,	_	86	punct	_	_
 81	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	82	det	_	_
 82	Fundamente	Fundament	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	86	obj	_	_
@@ -1269,8 +1269,8 @@
 [] ihm (43)
 [] trotz seiner Vereinsamung , (46)
 [] , seiner Hilflosigkeit (49)
-[] und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (52)
-[] wie ein unheilvoller Betörer (67)
+[] und der Zweifel , die sich allein schon an sein tatsächliches Vorhandensein knüpften (52)
+[] wie ein unheilvoller Betörer , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (67)
 
 [] Goldstein (42)
 
@@ -1286,40 +1286,49 @@
 
 [] seiner (48)
 
-[] Zweifel (52)
-[] , die sich allein schon an sein tatsächliches Vorhandensein knüpften (62)
-[] , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (79)
+[MESSAGE] Zweifel (52)
+[m-scene] , die sich allein schon an sein tatsächliches Vorhandensein knüpften (62)
+[topic] an sein tatsächliches Vorhandensein (61)
 
-[] knüpften (62)
+[SCENE] knüpften (62)
+[scene] die (54)
+[scene] sich (55)
+[m-mode] allein schon (57)
+[participant] an sein tatsächliches Vorhandensein (61)
+[scene] Zweifel (52)
+
 [] die (54)
-[] sich (55)
-[] allein schon (57)
 [] an sein tatsächliches Vorhandensein (61)
 
-[] die (54)
-
 [] sich (55)
 
-[] schon (57)
-[] allein (56)
+[MODE] schon (57)
+[m-mode] allein (56)
 
-[] allein (56)
+[MODE] allein (56)
 
-[] Vorhandensein (61)
+[EXISTENCE] Vorhandensein (61)
+[exists] sein (59)
+[m-mode] tatsächliches (60)
+
 [] sein (59)
+
 [] tatsächliches (60)
 
-[] sein (59)
+[MESSAGE-INIT] Betörer (67)
+[m-quality] unheilvoller (66)
+[m-scene] , der es lediglich durch die Macht seiner Stimme fertig brachte , die Fundamente der Zivilisation zu zerstören (79)
 
-[] tatsächliches (60)
+[QUALITY] unheilvoller (66)
 
-[] brachte (79)
-[] der (70)
-[] es (71)
-[] lediglich (72)
-[] durch die Macht seiner Stimme (75)
-[] fertig (78)
-[] , die Fundamente der Zivilisation zu zerstören (86)
+[SCENE-INIT] brachte (79)
+[x-causer] der (70)
+[x-noncomp] es (71)
+[m-mode] lediglich (72)
+[m-means] durch die Macht seiner Stimme (75)
+[target-scene >> x-noncomp] fertig (78)
+[participant >> target-scene] , die Fundamente der Zivilisation zu zerstören (86)
+[x-causer] Betörer (67)
 
 [] der (70)
 
@@ -1335,20 +1344,16 @@
 
 [] seiner (76)
 
-[] fertig (78)
+[SCENE-DEINIT] fertig (78)
+[initial-scene] , die Fundamente der Zivilisation zu zerstören (86)
 
 [] zerstören (86)
 [] die Fundamente der Zivilisation (82)
 
-[] Fundamente (82)
-[] der Zivilisation (84)
+[SEQUENCE] Fundamente (82)
+[follows] der Zivilisation (84)
 
-[] Zivilisation (84)
-
-[] Betörer (67)
-[] unheilvoller (66)
-
-[] unheilvoller (66)
+[STATE] Zivilisation (84)
 
 # sent_id = 220
 # text = In manchen Augenblicken war es sogar möglich , seinen Hass durch einen Willensakt da- oder dorthin zu lenken .
@@ -1372,20 +1377,20 @@
 18	lenken	lenken	VERB	VVINF	VerbForm=Inf	7	xcomp	_	_
 19	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] möglich (7)
-[] In manchen Augenblicken (3)
-[] sogar (6)
-[] , seinen Hass durch einen Willensakt da- oder dorthin zu lenken (18)
+[SCENE-POSSIBILITY] möglich (7)
+[m-time] In manchen Augenblicken (3)
+[m-mode] sogar (6)
+[scene] , seinen Hass durch einen Willensakt da- oder dorthin zu lenken (18)
 
 [] Augenblicken (3)
 
 [] sogar (6)
 
-[] lenken (18)
-[] seinen Hass (10)
-[] durch einen Willensakt (13)
-[] da- (14)
-[] oder dorthin (16)
+[SITUATION-INIT] lenken (18)
+[theme] seinen Hass (10)
+[m-means] durch einen Willensakt (13)
+[target-situator] da- (14)
+[target-situator] oder dorthin (16)
 
 [] Hass (10)
 [] seinen (9)
@@ -1850,9 +1855,9 @@
 
 [] nur (46)
 
-[] Schärpe , das aufreizende Symbol der Keuschheit (50)
-[] verhexte (48)
-[] scharlachrote (49)
+[WRAPPING-WEARING || CLASS] Schärpe , das aufreizende Symbol der Keuschheit (50) # TODO manual (clothing)
+[m-quality] verhexte (48)
+[m-quality] scharlachrote (49)
 
 [] verhexte (48)
 
