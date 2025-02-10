@@ -620,7 +620,7 @@
 
 [ACTIVITY] Arbeit (9)
 
-[INGESTION || ACTIVITY] Essen (12)
+[INGESTION >> ACTIVITY] Essen (12)
 
 [CLASS] Haus (15)
 
@@ -720,7 +720,7 @@
 [QUANTITY] unzähligen (8)
 
 [CLASS] Ministeriums (12) # # hier: Gebäude
-[m-noncomp >> m-purpose] Wahrheits- (11)
+[m-purpose >> m-noncomp] Wahrheits- (11)
 
 [NONCOMP] Wahrheits- (11)
 
@@ -733,8 +733,8 @@
 
 [IDENTIFICATION] die (15)
 
-[SENDING] Strahlen (17)
-[sender] ihre (16)
+[PART-WHOLE >> SENDING] Strahlen (17)
+[whole >> sender] ihre (16)
 
 [IDENTIFICATION] ihre (16)
 
@@ -778,7 +778,7 @@
 [CLASS] Pyramide (9)
 [m-scene] riesig sich hochtürmenden (8)
 
-[TRANSFORMATION-CREATION >> QUALITY-INIT] hochtürmenden (8)
+[TRANSFORMATION-CREATION >> QUALITY] hochtürmenden (8)
 [m-quantity] riesig (6)
 [x-causer >> x-noncomp] sich (7)
 [created >> has-quality] Pyramide (9)
@@ -817,14 +817,14 @@
 
 [QUANTITY] zu (3)
 
-[POSSESSION-INIT] erstürmt (7) # # "durch einen Sturmangriff einnehmen, erobern"
-[possessed] Sie (1)
+[LOCATION-INIT || POSSESSION-INIT] erstürmt (7) # # "durch einen Sturmangriff einnehmen, erobern"
+[target-location || possessed] Sie (1)
 
-[SCENE-INIT-POSSIBILITY] vermochten (13)
+[SCENE-POSSIBILITY] vermochten (13)
 [participant] tausend Raketenbomben (12)
 [participant] sie (14)
 [m-mode] nicht (15)
-[target-scene] zu zertrümmern (17)
+[scene] zu zertrümmern (17)
 
 [CLASS] Raketenbomben (12)
 [m-quantity] tausend (11)
@@ -857,7 +857,7 @@
 [MESSAGE-INIT >> MESSAGE] fragte (2)
 [m-scene] Wieder (1)
 [x-sender >> x-experiencer] er (3)
-[x-experiencer >> x-noncomp] sich (4)
+[x-experiencer] sich (4)
 [target-content >> content] , für wen er sein Tagebuch schrieb (11)
 
 [SEQUENCE] Wieder (1)
@@ -927,7 +927,7 @@
 1	Ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
 2	erwartete	erwarten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	nicht	nicht	PART	PTKNEG	Polarity=Neg	4	advmod	_	_
-4	allein	allein	ADV	ADV	_	2	advmod	_	_
+4	allein	allein	ADV	ADV	_	6	advmod	_	_
 5	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Tod	Tod	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 7	,	,	PUNCT	$,	_	10	punct	_	_
@@ -938,19 +938,19 @@
 
 [SCENE-INIT-POSSIBILITY] erwartete (2)
 [participant] Ihn (1)
-[m-mode] nicht allein (4)
-[target-scene] der Tod (6)
+[target-scene] nicht allein der Tod (6)
 [target-scene] , sondern vollständige Austilgung (10)
 
 [IDENTIFICATION] Ihn (1)
+
+[DESTRUCTION] Tod (6)
+[m-mode] nicht allein (4)
+[destroyed] Ihn (1)
 
 [MODE] allein (4)
 [m-mode] nicht (3)
 
 [MODE] nicht (3)
-
-[DESTRUCTION] Tod (6)
-[destroyed] Ihn (1)
 
 [DESTRUCTION] Austilgung (10)
 [m-quantity] vollständige (9)
@@ -1189,11 +1189,11 @@
 11	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
 12	.	.	PUNCT	$.	_	11	punct	_	_
 
-[LOCATION] sein (11)
+[SCENE] sein (11)
 [m-time] Um vierzehn Uhr dreißig (3)
-[has-location] er (6)
+[participant] er (6)
 [m-scene] zurück (7)
-[location] an der Arbeit (10)
+[scene] an der Arbeit (10)
 
 [TIME] Uhr (3)
 [m-quantity] vierzehn (2)
@@ -1209,6 +1209,7 @@
 [follows] sein (11)
 
 [ACTIVITY] Arbeit (10)
+[is-active] er (6)
 
 # sent_id = 481
 # text = Merkwürdigerweise schien ihn das Schlagen der vollen Stunde mit neuem Mut erfüllt zu haben .
@@ -1254,8 +1255,8 @@
 [m-scene] neuem (10)
 [x-experiencer] ihn (3)
 
-[?COMPARISON] neuem (10)
-[compared] Mut (11)
+[SEQUENCE] neuem (10)
+[follows] Mut (11)
 
 # sent_id = 482
 # text = Er war ein einsamer Gast auf dieser Erde , der eine Wahrheit verkündete , die niemand jemals hören würde .
@@ -1335,8 +1336,8 @@
 17	.	.	PUNCT	$.	_	16	punct	_	_
 
 [DESTRUCTION >> SCENE-DEINIT] abgerissen (16)
-[m-condition] Aber solange er sie verkündete , (5)
-[m-means] auf eine geheimnisvolle Weise (11)
+[m-time >> m-condition] Aber solange er sie verkündete , (5)
+[m-scene] auf eine geheimnisvolle Weise (11)
 [destroyed >> initial-scene] der rote Faden (14)
 [m-mode] nicht (15)
 
@@ -1348,8 +1349,9 @@
 
 [IDENTIFICATION] sie (4)
 
-[MEANS] Weise (11)
+[QUALITY >> MEANS] Weise (11)
 [m-quality] geheimnisvolle (10)
+[has-quality >> purpose] abgerissen (16)
 
 [QUALITY] geheimnisvolle (10)
 
@@ -1600,19 +1602,19 @@
 
 [NONCOMP] es (32)
 
-[?CLASS] Wahrheit (33)
+[CLASS] Wahrheit (33) # # abstraktes Konzept?
 
-[SCENE-INIT] gemacht (40)
-[participant] das Geschehene (37)
+[SCENE-INIT >> SCENE-DEINIT] gemacht (40)
+[participant >> initial-scene] das Geschehene (37)
 [m-mode] nicht (38)
-[target-scene] ungeschehen (39)
+[target-scene >> x-noncomp] ungeschehen (39)
 [m-time] Zeit (28)
 
 [SITUATION] Geschehene (37)
 
 [MODE] nicht (38)
 
-[SITUATION-NEG] ungeschehen (39)
+[SITUATION-NEG >> NONCOMP] ungeschehen (39)
 [theme] das Geschehene (37)
 
 [IDENTIFICATION] ich (45)
@@ -1623,7 +1625,7 @@
 [m-quality] der Gleichmachung (52)
 [m-quality] und der Vereinsamung (55)
 
-[?COMPARISON-INIT] Gleichmachung (52)
+[EVENT] Gleichmachung (52) # # "jmdn., etw. gleich behandeln, alle Unterschiede, Ungleichheiten beseitigen (wollen) bzw. leugnen"
 
 [STATE-INIT] Vereinsamung (55)
 
@@ -2027,7 +2029,7 @@
 [m-scene] fanatischer (3)
 [m-location] im Ministerium (6)
 
-[MESSAGE] schnüffelnder (2)
+[MESSAGE-INIT] schnüffelnder (2)
 [x-experiencer] Eiferer ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 
 [MESSAGE] fanatischer (3) # # "sich leidenschaftlich und rücksichtslos für etwas einsetzend"
@@ -2054,10 +2056,10 @@
 [QUALITY] kleine (16)
 
 [CLASS] Mädchen (21)
-[m-part] schwarzhaarige (20)
-[m-location] aus der Literatur- Abteilung (25)
+[m-quality >> m-part] schwarzhaarige (20)
+[m-location || m-social-relation] aus der Literatur- Abteilung (25)
 
-[PART-WHOLE] schwarzhaarige (20)
+[QUALITY >> PART-WHOLE] schwarzhaarige (20)
 
 [PART-WHOLE] Abteilung (25)
 [m-purpose] Literatur- (24)
@@ -2065,13 +2067,13 @@
 [MESSAGE] Literatur- (24)
 
 [MESSAGE] wundern (30)
-[x-noncomp] sich (28)
+[x-experiencer] sich (28)
 [content] , warum er während der Mittagspause geschrieben (38)
 [content] , warum er eine altmodische Stahlfeder benützt (45)
 [content] und was er geschrieben hatte (49)
 [x-experiencer] Ein schnüffelnder fanatischer Eiferer im Ministerium ( vermutlich eine Frau : so jemand wie die kleine Aschblonde oder das schwarzhaarige Mädchen aus der Literatur- Abteilung ) (4)
 
-[NONCOMP] sich (28)
+[IDENTIFICATION] sich (28)
 
 [MESSAGE-INIT] geschrieben (38)
 [m-explanation || m-causer] warum (33)
@@ -2082,7 +2084,7 @@
 
 [IDENTIFICATION] er (34)
 
-[PART-WHOLE] Mittagspause (37)
+[PART-WHOLE >> EVENT] Mittagspause (37) ## Teil der Arbeitszeit?
 
 [MEANS] benützt (45)
 [purpose || m-explanation] warum (40)
@@ -2185,9 +2187,9 @@
 
 [QUALITY] dunkelbraunen (13)
 
-[EVENT || QUALITY-CHANGE] aufscheuerte (22)
+[EVENT || STATE-CHANGE] aufscheuerte (22)
 [x-causer] die (16)
-[undergoer || has-quality] einem (17)
+[undergoer || has-state] einem (17)
 [x-attribute] die Hand (19)
 [m-reference] wie Schmirgelpapier (21)
 [x-causer] Seife (14)
@@ -2299,11 +2301,11 @@
 [purpose] , um sich zu vergewissern , ob es entdeckt worden war (22)
 
 [MESSAGE-INIT] vergewissern (22)
-[x-experiencer >> x-noncomp] sich (20)
+[x-experiencer] sich (20)
 [topic] , ob es entdeckt worden war (26)
 [x-sender >> x-experiencer] er (13)
 
-[IDENTIFICATION >> NONCOMP] sich (20)
+[IDENTIFICATION] sich (20)
 
 [MESSAGE-INIT] entdeckt (26)
 [topic] es (25)

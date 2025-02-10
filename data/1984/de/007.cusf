@@ -876,10 +876,10 @@
 
 [EXCRETION || MESSAGE] Trompetenstoß (7) # # "kurzes, rasches Blasen in eine Trompete"
 [m-scene] neuen (6)
-[m-location >> m-means] auf dem Kamm (10) # Vgl. sent_id 343
+[x-means] auf dem Kamm (10) # Vgl. sent_id 343 (x- weil "auf" durch das Prädikat ("auf einem Instrument spielen") vorgegeben ist)
 
-[COMPARISON] neuen (6)
-[compared] Trompetenstoß (7)
+[SEQUENCE] neuen (6)
+[follows] Trompetenstoß (7)
 
 [CLASS] Kamm (10) # # Vermutlich Haarkamm, Vgl. sent_id 343
 
@@ -1209,7 +1209,7 @@
 [wrapper] , den grauen Hemden (11)
 [wrapper] und dem roten Halstuch , aus denen die Uniform der Späher bestand (15)
 
-[CLASS] Beide (1) # # Indefinitpronomen laut Duden
+[IDENTIFICATION] Beide (1) # # auch wenn Indefinitpronomen: Entitäten sind bekannt
 
 [CLASS] Hosen (7)
 [m-quality] kurzen (5)
@@ -1239,8 +1239,8 @@
 
 [IDENTIFICATION] denen (19)
 
-[CLASS] Uniform (21)
-[m-wearer] der Späher (23)
+[WRAPPING-WEARING || CLASS] Uniform (21)
+[wearer || m-possessor] der Späher (23)
 
 [MESSAGE-INIT >> SOCIAL-RELATION] Späher (23)
 
@@ -1301,19 +1301,18 @@
 [SENDING >> QUALITY] unbehaglichen (12) # # "Unbehagen auslösend"
 [sender >> has-quality] Gefühl (13)
 
-[SCENE] gebärdete (18) # # "reflexiv: sich auf eine bestimmte (außergewöhnliche) Weise verhalten"
-[participant] der Junge (17)
-[x-noncomp] sich (19)
-[scene] so bösartig (21)
+[ACTIVITY] gebärdete (18) # # "reflexiv: sich auf eine bestimmte (außergewöhnliche) Weise verhalten"
+[is-active] der Junge (17)
+[is-active] sich (19)
+[m-quality] so bösartig (21)
 [m-reference] , als ob es wirklich mehr als ein Spiel war (27)
 
 [CLASS] Junge (17)
 
-[NONCOMP] sich (19)
+[IDENTIFICATION] sich (19)
 
 [STATE] bösartig (21) # # "~ im Wunsch, anderen zu schaden"
 [m-quantity] so (20)
-[has-state] der Junge (17)
 
 [QUANTITY] so (20)
 
@@ -1540,7 +1539,7 @@
 [is-active] von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden (10)
 
 [COMPARISON] gleich (6)
-[x-reference] Freudensprüngen (8)
+[reference] Freudensprüngen (8)
 
 [CLASS] Tigerjungen (10)
 [m-scene] , die bald zu Menschenfressern herangewachsen sein werden (16)
@@ -1634,12 +1633,12 @@
 [content] , schon beinahe groß genug dazu zu sein (30)
 
 [QUALITY] groß (30)
-[m-time] schon (28)
+[m-mode] schon (28)
 [m-quantity] beinahe (29)
 [m-quantity] genug (31)
 [m-purpose] dazu (32)
 
-[TIME] schon (28)
+[MODE] schon (28)
 
 [QUANTITY] beinahe (29)
 
@@ -1790,13 +1789,13 @@
 
 [LOCATION-INIT] eingenistet (23)
 [has-location] was (18)
-[x-noncomp] sich (19)
+[has-location] sich (19)
 [target-location] in ihren Runzeln (22)
 [has-location] Staub (15)
 
 [CLASS] was (18)
 
-[NONCOMP] sich (19)
+[IDENTIFICATION] sich (19)
 
 [CLASS] Runzeln (22)
 [m-location] ihren (21)
@@ -1870,11 +1869,11 @@
 [MODE] nicht (8)
 
 [MESSAGE-INIT] ansehen (14)
-[x-noncomp] sich (11)
+[x-experiencer] sich (11)
 [target-content] das Hängen (13)
 [x-experiencer] sie (7)
 
-[NONCOMP] sich (11)
+[IDENTIFICATION] sich (11)
 
 [EVENT] Hängen (13)
 
@@ -2197,13 +2196,13 @@
 11	.	.	PUNCT	$.	_	2	punct	_	_
 
 [MESSAGE-INIT || SOCIAL-RELATION-DEINIT] verabschiedete (2)
-[x-sender || x-causer] Er (1)
-[x-noncomp || has-social-relation] sich (3)
+[x-sender || has-social-relation] Er (1)
+[x-sender || has-social-relation] sich (3)
 [x-experiencer || initial-social-relation] von Frau Parsons (5)
 
 [IDENTIFICATION] Er (1)
 
-[NONCOMP || IDENTIFICATION] sich (3)
+[IDENTIFICATION] sich (3)
 
 [IDENTIFICATION] Frau Parsons (5)
 

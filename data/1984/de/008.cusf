@@ -338,7 +338,6 @@
 [SOCIAL-RELATION-INIT] aufzulehnen (15)
 [has-social-relation] sich (11)
 [target-social-relation] gegen die Parteidisziplin (14)
-[x-causer] ihnen (6)
 
 [IDENTIFICATION] sich (11)
 
@@ -500,7 +499,7 @@
 
 [QUALITY || COMPARISON] normal (8)
 [has-quality || compared] Es (1)
-[x-experiencer] für Leute über dreißig (4)
+[m-experiencer] für Leute über dreißig (4)
 [m-quantity] nahezu (7)
 [has-quality || compared] , vor ihren eigenen Kindern Angst zu haben (16)
 
@@ -773,14 +772,15 @@
 [MESSAGE] dachte (2)
 [m-quality] Plötzlich (1)
 [x-experiencer] er (3)
-[m-reference] von neuem (5) # # ~ "ein weiteres Mal", "wiederholt"
+[m-scene] von neuem (5) # # ~ "ein weiteres Mal", "wiederholt"
 [topic] an O'Brien (7)
 
 [QUALITY] Plötzlich (1)
 
 [IDENTIFICATION] er (3)
 
-[COMPARISON] neuem (5)
+[SEQUENCE] neuem (5)
+[follows] dachte (2)
 
 [IDENTIFICATION] O'Brien (7)
 
@@ -1125,7 +1125,7 @@
 20	O'Brien	O'Brien	PROPN	NE	Case=Acc|Gender=Neut|Number=Sing	23	obj	_	_
 21	zum	zum	ADP	APPRART	_	22	case	_	_
 22	erstenmal	erstenmal	ADV	ADV	_	23	advmod	_	_
-23	gesehen	sehen	VERB	VVPP	Verbform=Part	16	ccomp	_	_
+23	gesehen	sehen	VERB	VVPP	Verbform=Part	16	csubj	_	_
 24	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 25	;	;	PUNCT	$.	_	27	punct	_	_
 26	so	so	ADV	ADV	_	27	advmod	_	_
@@ -1142,7 +1142,7 @@
 37	jene	jen	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	38	det	_	_
 38	Stimme	Stimme	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	42	obj	_	_
 39	als	als	CCONJ	KOKOM	_	40	case	_	_
-40	die	d	PRON	PDS	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	42	obj	_	_
+40	die	d	PRON	PDS	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	42	obl	_	_
 41	O'Briens	O'Brien	PROPN	NE	Case=Gen|Gender=Neut|Number=Sing	40	nmod	_	_
 42	identifiziert	identifizieren	VERB	VVPP	Verbform=Part	31	ccomp	_	_
 43	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	aux	_	_
@@ -1187,24 +1187,24 @@
 
 [QUANTITY || TIME] erstenmal (22)
 
-[MESSAGE] entsann (31) # # "sich erinnern"
-[] wie (28)
-[x-experiencer] er (29)
-[x-noncomp] sich (30)
-[topic] , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (42)
-[m-quantity] ; so wenig (27)
-
-[] wie (28)
-
 [QUANTITY] wenig (27)
 [m-quantity] so (26)
 [m-reference] wie er sich entsann , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (31)
 
 [QUANTITY] so (26)
 
+[MESSAGE] entsann (31) # # "sich erinnern"
+[] wie (28)
+[x-experiencer] er (29)
+[x-experiencer] sich (30)
+[topic] , wann er zum erstenmal jene Stimme als die O'Briens identifiziert hatte (42)
+[m-quantity] ; so wenig (27)
+
+[] wie (28)
+
 [IDENTIFICATION] er (29)
 
-[NONCOMP] sich (30)
+[IDENTIFICATION] sich (30)
 
 [MESSAGE-INIT] identifiziert (42) # # "erkennen"
 [m-time] wann (33)
@@ -1750,7 +1750,7 @@
 [LOCATION] Nähe (24)
 [m-scene] errechenbare (23)
 
-[MESSAGE-INIT >> QUANTITY] errechenbare (23) # # ~ "ermittelbar, feststellbar, ..."
+[MESSAGE-INIT-POSSIBILITY >> QUANTITY] errechenbare (23) # # ~ "ermittelbar, feststellbar, ..."
 [topic >> has-quantity] Nähe (24)
 
 # sent_id = 438
@@ -1854,7 +1854,7 @@
 [MODE] tatsächlich (2)
 
 [MESSAGE] Schilderung (7)
-[topic >> m-quality] blutrünstigen (6)
+[topic >> m-quality] blutrünstigen (6) # # "von Mord und Grausamkeit handelnd"
 [topic] der vollständigen Vernichtung einer eurasischen Armee (10)
 [m-scene] , bei der riesige Zahlen von Toten und Gefangenen genannt wurden , (23)
 
@@ -2032,7 +2032,7 @@
 
 [MODE] vielleicht (5)
 
-[SOCIAL-RELATION-INIT] Sieg (8)
+[SOCIAL-RELATION] Sieg (8)
 
 [MESSAGE-INIT] übertönen (21)
 [m-scene] aber (13)
