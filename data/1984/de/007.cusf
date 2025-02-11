@@ -863,11 +863,12 @@
 
 [MESSAGE] Schuhgetrampel (3)
 
-[??? MESSAGE] Trompetenstoß (7)
-[m-time] neuen (6)
-[??? x-sender] auf dem Kamm (10)
+[MESSAGE-INIT] Trompetenstoß (7)
+[m-scene] neuen (6)
+[x-means] auf dem Kamm (10)
 
-[TIME] neuen (6)
+[SEQUENCE] neuen (6)
+[follows] Trompetenstoß (7)
 
 [CLASS] Kamm (10)
 
@@ -983,7 +984,7 @@
 [x-causer] Er (1)
 [has-state] seine Hände (4)
 [m-quality] so gut er konnte (6)
-[??? m-means] in dem kalten Leitungswasser (12)
+[m-means] in dem kalten Leitungswasser (12)
 
 [IDENTIFICATION] Er (1)
 
@@ -1013,9 +1014,10 @@
 [target-location] zurück (19) # vgl. Manual  "separated and nonseparated adpositional adverbs"
 
 [CLASS] Zimmer (18)
-[???] andere (17)
+[m-scene] andere (17)
 
-[???] andere (17)
+[SEQUENCE] andere (17)
+[follows] Zimmer (18)
 
 # sent_id = 370
 # text = » Hände hoch ! « schrie eine wilde Stimme .
@@ -1189,7 +1191,7 @@
 [wrapper] , den grauen Hemden (11)
 [wrapper] und dem roten Halstuch , aus denen die Uniform der Späher bestand (15)
 
-[??? IDENTIFICATION] Beide (1)
+[IDENTIFICATION] Beide (1)
 
 [CLASS] Hosen (7)
 [m-quality] kurzen (5)
@@ -1219,8 +1221,8 @@
 
 [IDENTIFICATION] denen (19)
 
-[??? CLASS || WRAPPING-WEARER] Uniform (21)
-[??? m-possessor || wearer] der Späher (23)
+[WRAPPING-WEARING || CLASS] Uniform (21)
+[wearer || m-possessor] der Späher (23)
 
 [SOCIAL-RELATION] Späher (23)
 
@@ -1280,19 +1282,18 @@
 
 [QUALITY-NEG >> QUALITY] unbehaglichen (12)
 
-[??? SCENE-INIT || ACTIVITY] gebärdete (18) # sich außergewöhnlich, oft in übertriebener und unangemessener Weise, verhalten
-[??? participant || is-active] der Junge (17)
-[??? participant || is-active] sich (19)
-[??? m-depictive?] so bösartig (21)
-[??? m-reference] , als ob es wirklich mehr als ein Spiel war (27)
+[ACTIVITY] gebärdete (18) # sich außergewöhnlich, oft in übertriebener und unangemessener Weise, verhalten
+[is-active] der Junge (17)
+[is-active] sich (19)
+[m-quality] so bösartig (21)
+[m-reference] , als ob es wirklich mehr als ein Spiel war (27)
 
 [CLASS] Junge (17)
 
 [IDENTIFICATION] sich (19)
 
-[??? QUALITY] bösartig (21)
+[QUALITY] bösartig (21)
 [m-quantity] so (20)
-[??? extraKante wg depictive? has-quality] der Junge (17)
 
 [QUANTITY] so (20)
 
@@ -1451,7 +1452,7 @@
 
 [TIME] Plötzlich (1)
 
-[??? CLASS || IDENTIFICATION] beide (3)
+[IDENTIFICATION] beide (3)
 
 [IDENTIFICATION] ihn (5)
 
@@ -1513,11 +1514,12 @@
 
 [MODE] irgendwie (3)
 
-[??? ACTIVITY || MESSAGE] Freudensprüngen (8)
-[??? m-scene] gleich (6) # "like the gambolling of tiger cubs..."
-[??? is-active || x-experiencer] von Tigerjungen (10)
+[ACTIVITY] Freudensprüngen (8)
+[m-scene] gleich (6) # "like the gambolling of tiger cubs..."
+[is-active] von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden (10)
 
-[??? COMPARISON] gleich (6)
+[COMPARISON] gleich (6)
+[reference] Freudensprüngen (8)
 
 [CLASS] Tigerjungen (10)
 [m-scene] , die bald zu Menschenfressern herangewachsen sein werden (16)
@@ -1532,7 +1534,7 @@
 
 [TIME] bald (13)
 
-[??? DESTRUCTION || CLASS] Menschenfressern (15)
+[DESTRUCTION || CLASS] Menschenfressern (15)
 
 # sent_id = 380
 # text = Es war etwas von berechnender Wildheit im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein .
@@ -1741,9 +1743,9 @@
 [m-accompanier] voller Mitleid (10)
 [target-content] , dass es tatsächlich Staub war , was sich in ihren Runzeln eingenistet hatte (15)
 
-[??? MESSAGE || EVENT] Licht (4)
+[STATE] Licht (4)
 [m-quality] besseren (3)
-[??? x-experiencer || undergoer] des Wohnzimmers (6)
+[has-state] des Wohnzimmers (6)
 
 [QUALITY] besseren (3)
 
@@ -2241,14 +2243,14 @@
 [hit] ihn (13)
 [hitting] etwas (14)
 [m-accompanier] mit furchtbarer Wucht (17)
-[???m-follows] höchst schmerzhaft (19)
+[m-follows] höchst schmerzhaft (19)
 [x-attribute] in den Nacken (22)
 
 [IDENTIFICATION] ihn (13)
 
 [CLASS] etwas (14)
 
-[??? MESSAGE] Wucht (17) # durch jmdn., etw. erzeugte Kraft, Gewalt, die jmdn., etw. trifft
+[??? MESSAGE || DESTRUCTION || STATE] Wucht (17) # durch jmdn., etw. erzeugte Kraft, Gewalt, die jmdn., etw. trifft
 [m-quality] furchtbarer (16)
 
 [QUALITY] furchtbarer (16)
@@ -2405,7 +2407,7 @@
 [STATE-CHANGE] schloss (17)
 [has-state] sich (12)
 [has-state] die Tür (14)
-[???] hinter ihm (16)
+[m-location] hinter ihm (16)
 
 [IDENTIFICATION] sich (12)
 
