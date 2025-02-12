@@ -137,7 +137,7 @@
 6	in	in	ADP	APPR	_	7	case	_	_
 7	Erinnerung	Erinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 8	:	:	PUNCT	$.	_	9	punct	_	_
-9	dunkelhaarig	dunkelhaarig	ADJ	ADJD	_	3	parataxis	_	_
+9	dunkelhaarig	dunkelhaarig	ADJ	ADJD	_	2	amod	_	_
 10	und	und	CCONJ	KON	_	11	cc	_	_
 11	hager	hager	ADJ	ADJD	_	9	conj	_	_
 12	,	,	PUNCT	$,	_	17	punct	_	_
@@ -163,31 +163,32 @@
 32	.	.	PUNCT	$.	_	3	punct	_	_
 
 [SCENE] hatte (3)
-[participant] Seinen Vater (2)
+[participant] Seinen Vater : dunkelhaarig und hager , immer in eleganten dunklen Anzügen ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) und mit einer Brille (2)
 [participant] er (4)
 [scene] undeutlicher in Erinnerung (7)
 
 [SOCIAL-RELATION] Vater (2)
 [has-social-relation] Seinen (1)
+[m-part] : dunkelhaarig ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) (9)
+[m-state] und hager (11)
+[m-scene] , immer in eleganten dunklen Anzügen (17)
+[m-scene] und mit einer Brille (31)
 
 [IDENTIFICATION] Seinen (1)
 
 [IDENTIFICATION] er (4)
 
 [MESSAGE] Erinnerung (7)
-[m-scene || m-depictive] undeutlicher (5)
+[m-scene] undeutlicher (5)
 [topic] Seinen Vater (2)
 [x-experiencer] er (4)
 
 [MESSAGE-INIT-POSSIBILITY-NEG] undeutlicher (5)
 [target-content] Erinnerung (7)
-[topic] Seinen Vater (2)
 
-[PART-WHOLE >> QUALITY] dunkelhaarig (9)
-[whole >> has-quality] Vater (2)
+[PART-WHOLE] dunkelhaarig (9)
 
-[QUALITY] hager (11)
-[has-quality] Vater (2)
+[STATE] hager (11)
 
 [CLASS] Anzügen (17)
 [m-time] immer (13)
@@ -225,7 +226,7 @@
 [QUANTITY] sehr (24)
 
 [CLASS] Brille (31)
-[m-wearer || m-possessor] Vater (2)
+[m-wearer] Vater (2)
 
 # sent_id = 505
 # text = Die beiden mussten offenbar bei einer der ersten großen Säuberungsaktionen nach 1950 ums Leben gekommen sein .
@@ -253,7 +254,7 @@
 [m-time >> m-accompanier] bei einer der ersten großen Säuberungsaktionen nach 1950 (6)
 [x-noncomp] ums Leben (14)
 
-[CLASS] beiden (2) # # Indefinitpronomen
+[IDENTIFICATION] beiden (2)
 
 [MESSAGE >> MODE] offenbar (4)
 [topic >> has-mode] gekommen (15)
@@ -416,7 +417,7 @@
 [topic] zu ihm (4)
 [m-target-location] empor (5)
 
-[CLASS] Beide (1)
+[IDENTIFICATION] Beide (1)
 
 [IDENTIFICATION] ihm (4)
 
@@ -464,14 +465,14 @@
 38	tief	tief	ADJ	ADJD	_	41	advmod	_	_
 39	unter	unter	ADP	APPR	_	40	case	_	_
 40	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	41	obl	_	_
-41	gelegen	liegen	VERB	VVPP	Verbform=Part	27	acl	_	_
+41	gelegen	liegen	VERB	VVPP	Verbform=Part	34	advcl	_	_
 42	,	,	PUNCT	$,	_	41	punct	_	_
 43	selbst	selbst	ADV	ADV	_	34	advmod	_	_
-44	noch	noch	ADV	ADV	_	45	advmod	_	_
+44	noch	noch	ADV	ADV	_	43	advmod	_	_
 45	immer	immer	ADV	ADV	_	46	advmod	_	_
 46	tiefer	tief	ADJ	ADJD	_	34	advmod	_	_
 47	nach	nach	ADP	APPR	_	48	case	_	_
-48	unten	unten	ADV	ADV	_	46	advmod	_	_
+48	unten	unten	ADV	ADV	_	34	advmod	_	_
 49	ab	ab	ADP	PTKVZ	_	34	compound:prt	_	_
 50	.	.	PUNCT	$.	_	2	punct	_	_
 
@@ -504,15 +505,16 @@
 
 [QUANTITY] sehr (20)
 
-[LOCATION-CHANGE] sank (34)
-[] der Fleck , auf dem sie saßen , , obwohl bereits tief unter ihm gelegen , (27)
-[m-mode] selbst (43)
-[] noch immer tiefer nach unten (46)
+[LOCATION-INIT] sank (34)
+[has-location] der Fleck , auf dem sie saßen , (27)
+[m-conceded] , obwohl bereits tief unter ihm gelegen , (41)
+[m-mode] selbst noch (43)
+[target-location] immer tiefer (46)
+[target-location] nach unten (48)
 [target-location] ab (49)
 
 [CLASS] Fleck (27)
 [m-scene] , auf dem sie saßen (32)
-[] , obwohl bereits tief unter ihm gelegen , (41)
 
 [LOCATION] saßen (32)
 [location] auf dem (30)
@@ -524,28 +526,28 @@
 [IDENTIFICATION] sie (31)
 
 [LOCATION] gelegen (41)
-[] bereits (37)
-[] tief (38)
-[] unter ihm (40)
+[m-time] bereits (37)
+[location] tief (38)
+[location] unter ihm (40)
 
-[] bereits (37)
+[TIME] bereits (37)
 
-[] tief (38)
+[LOCATION] tief (38)
 
 [IDENTIFICATION] ihm (40)
 
 [MODE] selbst (43)
+[m-mode] noch (44)
 
-[] tiefer (46)
-[] noch immer (45)
-[] nach unten (48)
+[MODE] noch (44)
 
-[] immer (45)
-[] noch (44)
+[LOCATION-INIT] tiefer (46)
+[m-scene] immer (45)
 
-[] noch (44)
+[SCENE-CONTINUATION] immer (45)
+[initial-scene] tiefer (46)
 
-[] unten (48)
+[LOCATION] unten (48)
 
 # sent_id = 510
 # text = Sie waren in der Kajüte eines sinkenden Schiffes und blickten durch das immer dunkler werdende Wasser zu ihm empor .
@@ -582,7 +584,7 @@
 [CLASS] Schiffes (8)
 [m-scene] sinkenden (7)
 
-[LOCATION-CHANGE] sinkenden (7)
+[LOCATION-INIT] sinkenden (7)
 [has-location] Schiffes (8)
 
 [MESSAGE] blickten (10)
@@ -674,13 +676,13 @@
 
 [IDENTIFICATION] einander (11)
 
-[LOCATION-CHANGE] sanken (18)
+[LOCATION-INIT] sanken (18)
 [m-time] die ganze Zeit (17)
 [has-location] sie (19)
-[] tiefer (20)
-[] , immer tiefer (23)
-[] hinunter (24)
-[] in die grünen Wasser , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (28)
+[target-location] tiefer (20)
+[target-location >> m-quantity] , immer tiefer (23)
+[target-location] hinunter (24)
+[target-location] in die grünen Wasser , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (28)
 
 [TIME] Zeit (17)
 [m-quantity] ganze (16)
@@ -689,14 +691,15 @@
 
 [IDENTIFICATION] sie (19)
 
-[] tiefer (20)
+[LOCATION-INIT] tiefer (20)
 
-[] tiefer (23)
-[] immer (22)
+[LOCATION-INIT >> QUANTITY] tiefer (23)
+[m-scene] immer (22)
 
-[] immer (22)
+[SCENE-CONTINUATION] immer (22)
+[initial-scene] tiefer (23)
 
-[] hinunter (24)
+[LOCATION-INIT] hinunter (24)
 
 [CLASS] Wasser (28)
 [m-quality] grünen (27)
@@ -760,7 +763,7 @@
 [theme] Er (1)
 [initial-situator] in Licht (4)
 [initial-situator] und Luft (6)
-[m-accompanier] , während sie in den Tod hinuntergezogen wurden (13)
+[m-time >> m-accompanier] , während sie in den Tod hinuntergezogen wurden (13)
 
 [IDENTIFICATION] Er (1)
 
@@ -768,9 +771,9 @@
 
 [CLASS] Luft (6)
 
-[LOCATION-CHANGE] hinuntergezogen (13)
+[LOCATION-INIT] hinuntergezogen (13)
 [has-location] sie (9)
-[m-resultative] in den Tod (12)
+[target-location >> m-resultative] in den Tod (12)
 
 [IDENTIFICATION] sie (9)
 
@@ -787,7 +790,7 @@
 
 [LOCATION] dort (19)
 
-[] drunten (20)
+[LOCATION] drunten (20)
 
 [LOCATION] war (26)
 [has-location] er (23)
@@ -807,7 +810,7 @@
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
 4	,	,	PUNCT	$,	_	8	punct	_	_
 5	und	und	CCONJ	KON	_	8	cc	_	_
-6	auch	auch	ADV	ADV	_	8	advmod	_	_
+6	auch	auch	ADV	ADV	_	7	advmod	_	_
 7	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
 8	wussten	wissen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 9	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
@@ -832,13 +835,14 @@
 [IDENTIFICATION] es (3)
 
 [MESSAGE] wussten (8)
-[] auch (6)
-[x-experiencer] sie (7)
+[x-experiencer] auch sie (7)
 [content] es (9)
 
-[] auch (6)
-
 [IDENTIFICATION] sie (7)
+[m-scene] auch (6)
+
+[ACCOMPANIMENT] auch (6)
+[accompanier] sie (7)
 
 [IDENTIFICATION] es (9)
 
@@ -946,11 +950,11 @@
 
 [IDENTIFICATION] dies (32)
 
-[] Ordnung (35)
+[SITUATION] Ordnung (35)
 [m-scene] unausweichlichen (34)
-[] der Dinge (37)
+[theme] der Dinge (37)
 
-[SCENE-INIT] unausweichlichen (34)
+[SCENE-INIT-NECESSITY] unausweichlichen (34)
 [target-scene] Ordnung (35)
 
 [CLASS] Dinge (37)
@@ -1004,13 +1008,13 @@
 
 [MODE] nicht (4)
 
-[] geschehen (9)
-[] was (7)
-[] eigentlich (8)
+[SCENE] geschehen (9)
+[scene] was (7)
+[m-mode] eigentlich (8)
 
-[] was (7)
+[CLASS] was (7)
 
-[] eigentlich (8)
+[MODE] eigentlich (8)
 
 [MESSAGE] wusste (14)
 [x-experiencer] er (13)
@@ -1024,10 +1028,10 @@
 
 [IDENTIFICATION] seinem (16)
 
-[] geopfert (31)
-[] das Leben seiner Mutter und seiner Schwester (21)
+[ASSET] geopfert (31)
+[has-asset] das Leben seiner Mutter und seiner Schwester (21)
 [m-mode] irgendwie (27)
-[x-asset] für das seine (30)
+[asset] für das seine (30)
 
 [EVENT] Leben (21)
 [undergoer] seiner Mutter (23)
@@ -1103,16 +1107,18 @@
 
 [SEQUENCE] Fortsetzung (16)
 [follows] die (7)
-[] in der charakteristischen Verkleidung des Traumes (11)
+[m-depictive] in der charakteristischen Verkleidung des Traumes (11)
 [m-scene] doch (14)
 [followed] des seelischen Erlebens (19)
 [follows] Träume (5)
 
 [IDENTIFICATION] die (7)
 
-[WRAPPING-WEARING >> ] Verkleidung (11)
+[WRAPPING-WEARING >> QUALITY] Verkleidung (11)
 [m-scene] charakteristischen (10)
-[] des Traumes (13)
+[wrapper >> quality] des Traumes (13)
+[wearer >> has-quality] Träume (5)
+[wearer >> has-quality] die (7)
 
 [IDENTIFICATION] charakteristischen (10)
 [identifier] Verkleidung (11)
@@ -1122,10 +1128,10 @@
 [CONCESSION] doch (14)
 [asserted] Fortsetzung (16)
 
-[] Erlebens (19)
-[] seelischen (18)
+[EVENT] Erlebens (19)
+[m-situator] seelischen (18)
 
-[] seelischen (18)
+[CLASS] seelischen (18)
 
 [SCENE-INIT] kommen (30) # # "einem klar werden, etwas richtig, in seiner ganzen Bedeutung erfassen"
 [m-situator] in denen (23)
@@ -1146,7 +1152,7 @@
 
 [MESSAGE] erscheinen (40)
 [topic] die (32)
-[] auch (33)
+[m-scene] auch (33)
 [m-time >> m-followed] nach dem Erwachen (36)
 [content] neu (37)
 [content] und wertvoll (39)
@@ -1154,7 +1160,8 @@
 
 [IDENTIFICATION] die (32)
 
-[] auch (33)
+[ACCOMPANIMENT] auch (33)
+[accompanier] erscheinen (40)
 
 [STATE-CHANGE] Erwachen (36)
 
@@ -1305,12 +1312,12 @@
 25	einer	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Familie	Familie	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	24	nmod	_	_
 27	,	,	PUNCT	$,	_	33	punct	_	_
-28	ohne	ohne	SCONJ	KOUI	_	31	case	_	_
+28	ohne	ohne	SCONJ	KOUI	_	33	case	_	_
 29	nach	nach	ADP	APPR	_	31	case	_	_
 30	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	Grund	Grund	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	33	obl	_	_
 32	zu	zu	PART	PTKZU	_	33	mark	_	_
-33	fragen	fragen	VERB	VVINF	VerbForm=Inf	36	conj	_	_
+33	fragen	fragen	VERB	VVINF	VerbForm=Inf	36	advcl	_	_
 34	,	,	PUNCT	$,	_	33	punct	_	_
 35	füreinander	füreinander	ADV	ADV	_	36	advmod	_	_
 36	eintraten	eintreten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	21	conj	_	_
@@ -1321,7 +1328,7 @@
 [situator] einer vergangenen Zeit , als es noch ein Eigenleben , Liebe und Freundschaft gab und die Mitglieder einer Familie , ohne nach dem Grund zu fragen , füreinander eintraten (9)
 [x-noncomp] an (10)
 
-[] Tragik (1)
+[MESSAGE] Tragik (1) # # "schweres, schicksalhaftes, von Trauer und Mitempfinden begleitetes Leid"
 
 [MESSAGE-INIT] erkannte (3)
 [x-experiencer] er (4)
@@ -1331,7 +1338,7 @@
 [TIME] Zeit (9)
 [m-scene] vergangenen (8)
 [has-time] , als es noch ein Eigenleben , Liebe und Freundschaft gab (21)
-[has-time] und die Mitglieder einer Familie füreinander eintraten (36)
+[has-time] und die Mitglieder einer Familie , ohne nach dem Grund zu fragen , füreinander eintraten (36)
 
 [SCENE-DEINIT] vergangenen (8)
 [initial-scene] Zeit (9)
@@ -1345,15 +1352,16 @@
 [SCENE-CONTINUATION] noch (14)
 [initial-scene] gab (21)
 
-[] Eigenleben (16)
+[STATE] Eigenleben (16)
 
-[] Liebe (18)
+[MESSAGE] Liebe (18)
 
 [SOCIAL-RELATION] Freundschaft (20)
 
-[] eintraten (36)
-[] die Mitglieder einer Familie (24)
-[] füreinander (35)
+[SOCIAL-RELATION-INIT || MESSAGE-INIT] eintraten (36) # # kann auch "ein gutes Wort für jemanden einlegen" meinen
+[has-social-relation || x-sender] die Mitglieder einer Familie (24)
+[m-accompanier] , ohne nach dem Grund zu fragen , (33)
+[target-social-relation || topic] füreinander (35)
 
 [PART-WHOLE] Mitglieder (24)
 [whole] einer Familie (26)
@@ -1361,7 +1369,7 @@
 [SOCIAL-RELATION] Familie (26)
 
 [MESSAGE-INIT] fragen (33)
-[] ohne nach dem Grund (31)
+[topic] nach dem Grund (31)
 [x-sender] die Mitglieder einer Familie (24)
 
 [EXPLANATION] Grund (31)
@@ -1458,7 +1466,7 @@
 [destroyed] sie (12)
 [m-causer] aus Liebe zu ihm (15)
 [m-time >> m-accompanier] , als er selbst noch zu jung war , um ihre Liebe zu erwidern (25)
-[] und eigensüchtig (27)
+[m-time >> m-accompanier] und eigensüchtig (27)
 
 [IDENTIFICATION] sie (12)
 
@@ -1471,7 +1479,7 @@
 [STATE] jung (25)
 [has-state] er (21)
 [m-mode] selbst (22)
-[] noch (23)
+[m-scene] noch (23)
 [m-quantity] zu (24)
 [m-reference] , um ihre Liebe zu erwidern (34)
 
@@ -1479,11 +1487,12 @@
 
 [MODE] selbst (22)
 
-[] noch (23)
+[SCENE-CONTINUATION] noch (23)
+[initial-scene] jung (25)
 
 [QUANTITY] zu (24)
 
-[] eigensüchtig (27)
+[STATE] eigensüchtig (27) # # "nur an sich selbst denkend / handelnd"
 
 [REPRODUCTION] erwidern (34)
 [original] ihre Liebe (32)
@@ -1494,25 +1503,25 @@
 
 [IDENTIFICATION] ihre (31)
 
-[] geopfert (54)
-[] sie (38)
-[] sich (39)
-[m-means] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (40)
-[] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53)
+[ASSET] geopfert (54)
+[x-causer >> has-asset] sie (38)
+[has-asset] sich (39)
+[m-quality] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (40)
+[x-experiencer] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53) # # Vgl. manual, "beneficiaries"
 
 [IDENTIFICATION] sie (38)
 
 [IDENTIFICATION] sich (39)
 
-[MEANS] irgendwie (40)
+[QUALITY] irgendwie (40)
 
 [MESSAGE] erinnerte (46)
-[m-means] - auf welche Weise , - (44)
+[content] - auf welche Weise , - (44)
 [x-experiencer] er (47)
 [x-experiencer] sich (48)
 [m-scene] nicht mehr (50)
 
-[MEANS] Weise (44)
+[QUALITY] Weise (44)
 
 [IDENTIFICATION] er (47)
 
@@ -1531,7 +1540,7 @@
 [topic] an den (58)
 [x-experiencer] sie (59)
 [m-mode] persönlich (60)
-[] und unerschütterlich (62)
+[m-scene] und unerschütterlich (62)
 [topic] Treuegedanken (53)
 
 [IDENTIFICATION] den (58)
@@ -1540,7 +1549,8 @@
 
 [MODE] persönlich (60)
 
-[] unerschütterlich (62)
+[SCENE-NECESSITY] unerschütterlich (62)
+[scene] glaubte (63)
 
 # sent_id = 520
 # text = Derlei konnte heutzutage nicht mehr vorkommen , das begriff er .
@@ -1571,7 +1581,7 @@
 
 [MODE >> NONCOMP] nicht (4)
 
-[MESSAGE-INTI] begriff (9)
+[MESSAGE-INIT] begriff (9)
 [topic] das (8)
 [x-experiencer] er (10)
 
@@ -1623,24 +1633,24 @@
 [MESSAGE] Gefühle (15)
 [m-mode] keine (11)
 [m-quality >> m-quantity] starken (12)
-[] und wertvollen (14)
+[m-quality] und wertvollen (14)
 
 [MODE] keine (11)
 
 [QUALITY >> QUANTITY] starken (12)
 
-[] wertvollen (14)
+[QUALITY] wertvollen (14)
 
 [MESSAGE] Schmerzen (21)
 [m-mode] keine (17)
 [m-quality >> m-quantity] tiefen (18)
-[] und echten (20)
+[m-quality] und echten (20)
 
 [MODE] keine (17)
 
 [QUALITY >> QUANTITY] tiefen (18)
 
-[] echten (20)
+[QUALITY] echten (20)
 
 # sent_id = 522
 # text = All das schien er in den großen Augen seiner Mutter und seiner Schwester zu lesen , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen , dabei immer tiefer versinkend .
@@ -1722,7 +1732,7 @@
 [x-experiencer] sie (19)
 [topic] ihn (20)
 [m-transitory-location] durch das grüne Wasser (24)
-[] aus einer Tiefe von vielen hundert Klafter (27)
+[m-initial-location || m-depictive] aus einer Tiefe von vielen hundert Klafter (27)
 [m-means] Augen (8)
 
 [IDENTIFICATION] denen (18)
@@ -1738,6 +1748,7 @@
 
 [QUALITY >> LOCATION] Tiefe (27)
 [m-quantity] von vielen hundert Klafter (31)
+[m-has-location >> has-location] sie (19)
 
 [QUANTITY] Klafter (31) # # "Längeneinheit von ungefähr der Länge, die ein Erwachsener mit ausgebreiteten Armen greifen kann"
 [m-quantity] vielen (29)
@@ -1747,7 +1758,7 @@
 
 [QUANTITY] hundert (30)
 
-[LOCATION-CHANGE] versinkend (37)
+[LOCATION-INIT] versinkend (37)
 [m-accompanied] dabei (34)
 [target-location] immer tiefer (36)
 [has-location] sie (19)
@@ -1773,7 +1784,7 @@
 9	auf	auf	ADP	APPR	_	12	case	_	_
 10	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 11	federnden	federnd	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	12	amod	_	_
-12	Grasnarbe	Grasnarbe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
+12	Grasnarbe	Grasnarbe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	appos	_	_
 13	;	;	PUNCT	$.	_	17	punct	_	_
 14	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
 15	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_
@@ -1800,17 +1811,16 @@
 
 [IDENTIFICATION] er (3)
 
-[CLASS] Wiese (7)
+[CLASS] Wiese , auf der federnden Grasnarbe (7)
 [m-scene] abgemähten (6)
-[] , auf der federnden Grasnarbe (12)
 
 [ADORNMENT-TARNISHMENT-DEINIT] abgemähten (6)
 [initial-surface] Wiese (7)
 
-[] Grasnarbe (12)
-[] federnden (11)
+[CLASS] Grasnarbe (12) # # "zusammenhängende Bewuchs des Bodens durch Gräser und Kräuter"
+[m-quality] federnden (11)
 
-[] federnden (11)
+[QUALITY] federnden (11)
 
 [TIME] Sommerabend (17)
 [x-has-class] es (14)
@@ -1821,8 +1831,8 @@
 [ornament] die Strahlen der untergehenden Sonne (21)
 [target-surface] die Erde (27)
 
-[?SENDING] Strahlen (21)
-[sender] der untergehenden Sonne (24)
+[PART-WHOLE || SENDING] Strahlen (21)
+[whole || sender] der untergehenden Sonne (24)
 
 [CLASS] Sonne (24)
 [m-scene] untergehenden (23)
@@ -1866,11 +1876,11 @@
 30	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	aux	_	_
 31	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] kehrte (8)
-[] Die Landschaft , die er sah , (2)
+[SITUATION-CONTINUATION] kehrte (8)
+[initial-situator] Die Landschaft , die er sah , (2)
 [m-time] so oft (10)
-[] in seinen Träumen (13)
-[] wieder (14)
+[theme] in seinen Träumen (13)
+[x-noncomp] wieder (14)
 [m-result] , dass er nie ganz sicher war , ob er sie nicht in Wirklichkeit gesehen hatte (20)
 
 [CLASS] Landschaft (2)
@@ -1878,9 +1888,8 @@
 
 [MESSAGE] sah (6)
 [topic] die (4)
-[topic] Landschaft (4)
 [x-experiencer] er (5)
-[] Landschaft (2)
+[topic] Landschaft (2)
 
 [IDENTIFICATION] die (4)
 
@@ -1912,7 +1921,7 @@
 [x-experiencer] er (24)
 [topic] sie (25)
 [m-mode] nicht (26)
-[] in Wirklichkeit (28)
+[m-situator] in Wirklichkeit (28)
 
 [IDENTIFICATION] er (24)
 
@@ -1920,7 +1929,7 @@
 
 [MODE] nicht (26)
 
-[] Wirklichkeit (28)
+[SITUATION] Wirklichkeit (28)
 
 # sent_id = 525
 # text = In seiner wachen Vorstellung nannte er sie das Goldene Land .
@@ -1937,7 +1946,7 @@
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
 [MESSAGE-INIT || IDENTIFICATION-INIT] nannte (5)
-[?m-situator] In seiner wachen Vorstellung (4)
+[m-situator] In seiner wachen Vorstellung (4)
 [x-sender || x-causer] er (6)
 [topic || identified] sie (7)
 [target-content || target-identifier] das Goldene Land (10)
@@ -1957,7 +1966,7 @@
 
 [CLASS] Land (10)
 [m-quality] Goldene (9)
-[?has-class] sie (7)
+[has-class] sie (7)
 
 [QUALITY] Goldene (9)
 
@@ -2060,11 +2069,11 @@
 [m-quality] leise (14)
 [transitory-location >> m-causer] in der sanften Brise (18)
 
-[] Baumreihe (4)
-[] unregelmäßigen (3)
+[CLASS] Baumreihe (4)
+[m-quantity >> m-quality] unregelmäßigen (3)
 [m-location] jenseits der Wiese (7)
 
-[] unregelmäßigen (3)
+[QUANTITY >> QUALITY] unregelmäßigen (3)
 
 [CLASS] Wiese (7)
 
@@ -2077,7 +2086,7 @@
 
 [QUALITY] leise (14)
 
-[] Brise (18)
+[CLASS] Brise (18)
 [m-quality >> m-quantity] sanften (17)
 
 [QUALITY >> QUALITY] sanften (17)
@@ -2092,9 +2101,9 @@
 
 [IDENTIFICATION] ihre (21)
 
-[] Büscheln (26)
+[PART-WHOLE] Büscheln (26)
 [m-quality] dichten (25)
-[.] ihre Blätter (22)
+[part] ihre Blätter (22)
 
 [QUALITY] dichten (25)
 
@@ -2120,7 +2129,7 @@
 16	Fluss	Fluß	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
 17	,	,	PUNCT	$,	_	27	punct	_	_
 18	in	in	ADP	APPR	_	21	case	_	_
-19	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	21	det	_	_
+19	dessen	d	DET	PRELAT	Gender=Neut|PronType=Rel	21	nmod:poss	_	_
 20	seichten	seicht	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	21	amod	_	_
 21	Buchten	Bucht	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	27	obl	_	_
 22	unter	unter	ADP	APPR	_	24	case	_	_
@@ -2138,7 +2147,7 @@
 
 [LOCATION] Nähe (3)
 
-[?MESSAGE-INIT-POSSIBILITY] Sicht (9) # # "außer Sicht"
+[MESSAGE-INIT-POSSIBILITY] Sicht (9) # # "außer Sicht"
 [m-scene] auch (7)
 
 [ACCOMPANIMENT >> CONCESSION] auch (7)
@@ -2158,16 +2167,19 @@
 [STATE] träge (14)
 
 [UNANCHORED-MOTION] tummelten (27) # # "sich irgendwo lebhaft, ausgelassen hin und her bewegen"
-[] in dessen seichten Buchten unter den Weidenbäumen (21)
+[transitory-location] in dessen seichten Buchten unter den Weidenbäumen (21)
 [in-motion] sich (25)
 [in-motion] Weißfische (26)
-[transitory-location] Fluss (16)
 
-[] Buchten (21)
-[] seichten (20)
+[PART-WHOLE] Buchten (21)
+[whole] dessen (19)
+[m-quality] seichten (20)
 [m-location] unter den Weidenbäumen (24)
+[whole] Fluss (16)
 
-[] seichten (20)
+[IDENTIFICATION] dessen (19)
+
+[QUALITY] seichten (20)
 
 [CLASS] Weidenbäumen (24)
 
@@ -2229,16 +2241,16 @@
 16	.	.	PUNCT	$.	_	5	punct	_	_
 
 [WRAPPING-WEARING-DEINIT] riss (5)
-[] Mit einer einzigen Bewegung (4)
+[m-means] Mit einer einzigen Bewegung (4)
 [x-causer] sie (6)
 [initial-wearer] sich (7)
 [wrapper] das Kleid (9)
 [m-larget-location >> x-noncomp] herunter (10)
 
-[] Bewegung (4)
-[] einzigen (3)
+[ACTIVITY] Bewegung (4)
+[m-quantity] einzigen (3)
 
-[] einzigen (3)
+[QUANTITY] einzigen (3)
 
 [IDENTIFICATION] sie (6)
 
@@ -2254,8 +2266,8 @@
 
 [IDENTIFICATION] es (13)
 
-[] verächtlich (14)
-[.] sie (6)
+[MESSAGE] verächtlich (14) # "Verachtung verdienend" oder (hier:) "Verachtung ausdrückend"
+[x-sender] sie (6)
 
 # sent_id = 531
 # text = Ihr Leib war weiß und weich , aber er weckte kein Verlangen in ihm , ja er sah ihn kaum an .
@@ -2309,13 +2321,13 @@
 [IDENTIFICATION] ihm (14)
 
 [MESSAGE-INIT] sah (18)
-[] ja (16) # # original: "indeed"
+[m-mode] ja (16) # # original: "indeed"
 [x-experiencer] er (17)
 [topic] ihn (19)
 [m-quantity] kaum (20)
 [x-noncomp] an (21)
 
-[] ja (16)
+[MODE] ja (16)
 
 [IDENTIFICATION] er (17)
 
@@ -2359,7 +2371,7 @@
 [m-time] in diesem Augenblick (5)
 [m-quantity] ganz (6)
 
-[] Was (1)
+[CLASS] Was (1)
 
 [IDENTIFICATION] ihn (2)
 
@@ -2367,14 +2379,14 @@
 
 [QUANTITY] ganz (6)
 
-[] Gebärde (14)
+[ACTIVITY] Gebärde (14) # # "Bewegung des Körpers, besonders der Arme, Hände, die eine Empfindung, Nachahmung oder Mitteilung ausdrücken soll"
 [m-scene] , mit der sie ihre Kleider weggeschleudert hatte (21)
 
 [LOCATION-DEINIT] weggeschleudert (21)
-[] mit der (17)
+[m-means] mit der (17)
 [x-causer] sie (18)
 [has-location] ihre Kleider (20)
-[] Gebärde (14)
+[m-means] Gebärde (14)
 
 [IDENTIFICATION] der (17)
 
@@ -2559,7 +2571,7 @@
 12	Höhe	Höhe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	16	obl	_	_
 13	dreißig	dreißig	NUM	CARD	NumType=Card	14	nummod	_	_
 14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	16	obl	_	_
-15	lang	lang	ADJ	ADJD	_	14	advmod	_	_
+15	lang	lang	ADJ	ADJD	_	16	advmod	_	_
 16	anhielt	anhalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
 
@@ -2579,8 +2591,9 @@
 
 [SCENE-CONTINUATION] anhielt (16)
 [initial-scene] der (9)
-[m-quality || m-reference] in gleicher Höhe (12)
-[m-time] dreißig Sekunden lang (14)
+[m-quality] in gleicher Höhe (12)
+[m-time] dreißig Sekunden (14)
+[m-quantity] lang (15)
 [initial-scene] Pfeifton (6)
 
 [IDENTIFICATION] der (9)
@@ -2591,13 +2604,12 @@
 [COMPARISON] gleicher (11)
 [compared] Höhe (12)
 
-[] Sekunden (14)
-[] dreißig (13)
-[] lang (15)
+[TIME] Sekunden (14)
+[m-quantity] dreißig (13)
 
-[] dreißig (13)
+[QUANTITY] dreißig (13)
 
-[] lang (15)
+[QUANTITY] lang (15)
 
 [MESSAGE] hören (7)
 [topic] Pfeifton (6)
@@ -2716,9 +2728,9 @@
 
 [LOCATION >> NONCOMP] Äußeren (17)
 
-[QUANTITY] Kleiderpunkte (22) ## Einheit
+[QUANTITY] Kleiderpunkte (22) # # Einheit
 [m-quantity] nur dreitausend (21)
-[m-time >> m-followed] im Jahr (24) ## Vgl. Manual "proportional amount"
+[m-time >> m-followed] im Jahr (24) # # Vgl. Manual "proportional amount"
 
 [QUANTITY] dreitausend (21)
 [m-mode] nur (20)
@@ -2931,9 +2943,9 @@
 [scene] ein paar tiefe Atemzüge (31)
 [participant] er (18)
 
-[ACTIVITY || EVENT] Atemzüge (31)
+[EVENT] Atemzüge (31)
 [m-quantity >> m-quality] tiefe (30)
-[is-active || undergoer] er (18)
+[undergoer] er (18)
 
 [QUANTITY >> QUALITY] tiefe (30)
 

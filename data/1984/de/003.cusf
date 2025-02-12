@@ -543,7 +543,7 @@
 
 [WRAPPING-WEARING] Trainingsanzug (16)
 [m-quality] schwarzen (15)
-[wrapper] eines Mitglieds der Inneren Partei (18)
+[wearer] eines Mitglieds der Inneren Partei (18)
 
 [QUALITY] schwarzen (15)
 
@@ -1190,8 +1190,8 @@
 
 [IDENTIFICATION] ihn (29)
 
-[SOCIAL-RELATION-NEG] allein (30)
-[has-social-relation] ihn (29)
+[SOCIAL-RELATION-NEG >> STATE] allein (30)
+[has-social-relation >> has-state] ihn (29)
 
 [POSSESSION-INIT] fassen (32)
 [possessed] ihn (29)
@@ -1871,7 +1871,7 @@
 
 [IDENTIFICATION] sich (27)
 
-[CLASS] niemand (28)
+[CLASS-NEG] niemand (28)
 
 [QUALITY] genau (30)
 
@@ -2364,7 +2364,7 @@
 
 [QUALITY] kluges (20)
 
-[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # Verachtung verdienend oder Verachtung ausdrückend
+[MESSAGE-NECESSITY || MESSAGE] verächtliches (25) # "Verachtung verdienend" oder "Verachtung ausdrückend"
 [m-scene] doch (22)
 [m-mode] irgendwie (23) # # bezieht sich mehr auf den Bezug des Sprechers zum Gesagten
 [m-quality] eigentümlich (24)
@@ -2385,7 +2385,7 @@
 [m-quality] lange (29)
 [m-quality] dünne (30)
 [m-scene] , auf deren Ende eine Brille saß , (38)
-[whole] Gesicht (26) # # Siehe Manual "relative clause with complex extracted element"
+[m-whole] Gesicht (26) # # Siehe Manual "relative clause with complex extracted element"
 
 [QUALITY] lange (29)
 
@@ -2440,7 +2440,7 @@
 [PART-WHOLE] Schafsgesicht (4)
 
 [SCENE] hatte (10)
-[m-depictive] auch (7)
+[m-scene] auch (7)
 [participant] die Stimme (9)
 [scene] etwas Schafsmässiges (12)
 
@@ -2737,8 +2737,8 @@
 [m-noncomp] an (12)
 [x-sender] Er (1)
 
-[SOCIAL-RELATION] Diktatur (9) # # "unumschränkte, andere gesellschaftliche Kräfte mit Gewalt unterdrückende Ausübung der Herrschaft durch eine bestimmte Person, gesellschaftliche Gruppierung, Partei o. Ä. in einem Staat"
-[has-social-relation] der Partei (11)
+[STATE] Diktatur (9) # # "unumschränkte, andere gesellschaftliche Kräfte mit Gewalt unterdrückende Ausübung der Herrschaft durch eine bestimmte Person, gesellschaftliche Gruppierung, Partei o. Ä. in einem Staat"
+[x-causer] der Partei (11)
 
 [SOCIAL-RELATION] Partei (11)
 
@@ -2762,13 +2762,13 @@
 [m-noncomp] ein (29)
 [x-sender] Er (1)
 
-[SOCIAL-RELATION] Rede- (22)
+[MESSAGE] Rede- (22)
 
-[SOCIAL-RELATION] Presse- (24)
+[MESSAGE] Presse- (24)
 
-[SOCIAL-RELATION] Versammlungs- (26)
+[SOCIAL-RELATION-INIT] Versammlungs- (26)
 
-[SOCIAL-RELATION] Gedankenfreiheit (28)
+[SITUATION] Gedankenfreiheit (28)
 
 [MESSAGE-INIT] schrie (31)
 [m-quality] hysterisch (32)
@@ -3160,7 +3160,7 @@
 [CLASS] Menschen (19)
 [m-scene] im Raum versammelten (18)
 
-[SOCIAL-RELATION] versammelten (18)
+[SOCIAL-RELATION-INIT] versammelten (18)
 [m-location] im Raum (17)
 [has-social-relation] Menschen (19)
 

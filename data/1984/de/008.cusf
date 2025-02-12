@@ -383,25 +383,25 @@
 36	Spiel	Spiel	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 37	.	.	PUNCT	$.	_	36	punct	_	_
 
-[ACTIVITY] Spiel (36)
-[activity] Die Marschlieder (2)
-[activity] , die Umzüge (5)
-[activity] , die Fahnen (8)
-[activity] , die Wanderungen (11)
-[activity] , das Exerzieren mit Holzgewehren (14)
-[activity] , das Brüllen von Schlagworten (19)
-[activity] , die Verehrung des Großen Bruders (24)
-[activity] - alles das (30)
-[is-active] für sie (33)
+[EVENT] Spiel (36)
+[x-has-class] Die Marschlieder (2)
+[x-has-class] , die Umzüge (5)
+[x-has-class] , die Fahnen (8)
+[x-has-class] , die Wanderungen (11)
+[x-has-class] , das Exerzieren mit Holzgewehren (14)
+[x-has-class] , das Brüllen von Schlagworten (19)
+[x-has-class] , die Verehrung des Großen Bruders (24)
+[x-has-class] - alles das (30)
+[undergoer] für sie (33)
 [m-quality] herrliches (35)
 
 [MESSAGE] Marschlieder (2)
 
-[EVENT || SOCIAL-RELATION-INIT] Umzüge (5)
+[SOCIAL-RELATION-INIT || UNANCHORED-MOTION] Umzüge (5) ## Veranstaltung, bei der sich eine größere Gruppe aus bestimmtem Anlass durch die Straßen bewegt
 
 [CLASS || MESSAGE] Fahnen (8)
 
-[ACTIVITY] Wanderungen (11)
+[UNANCHORED-MOTION] Wanderungen (11)
 
 [MEANS || ACTIVITY] Exerzieren (14) # # "militärisch ausbilden; militärisches Üben"
 [means || m-means] mit Holzgewehren (16)
@@ -593,7 +593,7 @@
 
 [SCENE-DEINIT] verging (9) # # Vgl. sent_id 197
 [m-quantity] kaum (10) # # "so gut wie nie", "selten"
-[initial-scene] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (12)
+[initial-scene] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern  der Gedankenpolizei angezeigt hatte (12)
 
 [QUANTITY] kaum (10)
 
@@ -1793,9 +1793,9 @@
 [IDENTIFICATION] Das (1)
 
 [QUALITY] Gutes (4)
-[m-mode] nichts (3)
+[has-quality >> m-mode] nichts (3)
 
-[MODE] nichts (3)
+[CLASS-NEG >> MODE] nichts (3)
 
 [IDENTIFICATION] Winston (7)
 
