@@ -2438,61 +2438,65 @@
 37	.	.	PUNCT	$.	_	6	punct	_	_
 
 [MESSAGE] schien (6)
-[] Mit ihrer Grazie (3)
-[] und Unbekümmertheit (5)
+[m-depictive || m-means] Mit ihrer Grazie (3)
+[m-depictive || m-means] und Unbekümmertheit (5)
 [topic] sie (7)
 [content] eine ganze Kultur abzutun , eine ganze Denkordnung (11)
-[] so (17)
-[] , , als könnten der Große Bruder , die Partei und die Gedankenpolizei mit einer einzigen herrlichen Armbewegung weggewischt werden (35)
+[m-quality] so (17)
+[x-reference] , , als könnten der Große Bruder , die Partei und die Gedankenpolizei mit einer einzigen herrlichen Armbewegung weggewischt werden (35)
 
-[] Grazie (3)
-[] ihrer (2)
+[QUALITY] Grazie (3)
+[has-quality] ihrer (2)
+[has-quality] sie (7)
 
-[] ihrer (2)
+[IDENTIFICATION] ihrer (2)
 
-[] Unbekümmertheit (5)
+[STATE] Unbekümmertheit (5)
+[has-state] sie (7)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] abzutun (11)
-[] eine ganze Kultur (10)
-[] , eine ganze Denkordnung (15)
-[] sie (7)
+[MESSAGE || SCENE-DEINIT] abzutun (11) # # "einer [unangenehmen, lästigen] Sache keine Bedeutung beimessen und sie von sich schieben, beiseiteschieben"
+[topic || initial-scene] eine ganze Kultur (10)
+[topic || initial-scene] , eine ganze Denkordnung (15)
+[x-sender || participant] sie (7)
 
-[] Kultur (10)
-[] ganze (9)
+[STATE || CLASS] Kultur (10)
+[m-quantity] ganze (9)
+[m-experiencer] sie (7)
 
-[] ganze (9)
+[QUANTITY] ganze (9)
 
-[] Denkordnung (15)
-[] ganze (14)
+[MESSAGE] Denkordnung (15) # # ??
+[m-quantity] ganze (14)
+[x-experiencer] sie (7)
 
-[] ganze (14)
+[QUANTITY] ganze (14)
 
-[] so (17)
+[QUALITY] so (17)
 
-[] weggewischt (35)
-[] der Große Bruder (23)
-[] , die Partei (26)
-[] und die Gedankenpolizei (29)
-[] mit einer einzigen herrlichen Armbewegung (34)
+[LOCATION-DEINIT] weggewischt (35)
+[has-location] der Große Bruder (23)
+[has-location] , die Partei (26)
+[has-location] und die Gedankenpolizei (29)
+[m-means] mit einer einzigen herrlichen Armbewegung (34)
 
-[] Bruder (23)
-[] Große (22)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (23)
+[m-quality >> m-noncomp] Große (22)
 
-[] Große (22)
+[QUALITY >> NONCOMP] Große (22)
 
-[] Partei (26)
+[SOCIAL-RELATION] Partei (26)
 
-[] Gedankenpolizei (29)
+[CLASS] Gedankenpolizei (29)
 
-[] Armbewegung (34)
-[] einzigen (32)
-[] herrlichen (33)
+[ACTIVITY] Armbewegung (34)
+[m-quantity] einzigen (32)
+[m-quality] herrlichen (33)
 
-[] einzigen (32)
+[QUANTITY] einzigen (32)
 
-[] herrlichen (33)
+[QUALITY] herrlichen (33)
 
 # sent_id = 534
 # text = Auch das war eine der alten Zeit angehörende Geste .
@@ -2512,18 +2516,20 @@
 [m-scene] der alten Zeit angehörende (8)
 
 [IDENTIFICATION] das (2)
-[] Auch (1)
+[m-scene] Auch (1)
 
-[] Auch (1)
+[ACCOMPANIMENT] Auch (1)
+[m-accompanier] das (2)
 
 [SITUATION] angehörende (8)
 [situator] der alten Zeit (7)
 [theme] Geste (9)
 
 [TIME] Zeit (7)
-[] alten (6)
+[m-scene] alten (6)
 
-[] alten (6)
+[SEQUENCE] alten (6)
+[followed] Zeit (7)
 
 # sent_id = 535
 # text = Winston wachte mit dem Wort » Shakespeare « auf den Lippen auf .
@@ -2543,17 +2549,19 @@
 
 [STATE-CHANGE] wachte (2)
 [has-state] Winston (1)
-[] mit dem Wort » Shakespeare « auf den Lippen (5)
+[m-depictive] mit dem Wort » Shakespeare « auf den Lippen (5)
 [x-noncomp] auf (12)
 
 [IDENTIFICATION] Winston (1)
 
 [MESSAGE] Wort » Shakespeare « (5)
-[m-location >> x-sender] auf den Lippen (11)
+[m-attribute] auf den Lippen (11)
+[x-sender] Winston (1)
 
 [IDENTIFICATION] Shakespeare (7)
 
 [PART-WHOLE] Lippen (11)
+[whole] Winston (1)
 
 # sent_id = 536
 # text = Der Televisor ließ einen ohrenbetäubenden Pfeifton hören , der in gleicher Höhe dreißig Sekunden lang anhielt .
@@ -2631,8 +2639,8 @@
 13	Behördenangestellten	Behördenangestellte	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	10	nmod	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] Punkt , Zeit zum Aufstehen für alle Behördenangestellten (3)
-[] sieben Uhr fünfzehn (5)
+[QUANTITY] Punkt , Zeit zum Aufstehen für alle Behördenangestellten (3)
+[has-quantity] sieben Uhr fünfzehn (5)
 
 [TIME] Uhr (5)
 [m-quantity] sieben (4)
@@ -2799,7 +2807,7 @@
 14	ihn	er	PRON	PPER	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
 15	fast	fast	ADV	ADV	_	16	advmod	_	_
 16	immer	immer	ADV	ADV	_	21	advmod	_	_
-17	kurz	kurz	ADJ	ADJD	_	18	amod	_	_
+17	kurz	kurz	ADJ	ADJD	_	18	advmod	_	_
 18	nach	nach	ADP	APPR	_	20	case	_	_
 19	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	20	det	_	_
 20	Erwachen	Erwachen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	21	obl	_	_
@@ -2890,8 +2898,8 @@
 32	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
 33	.	.	PUNCT	$.	_	7	punct	_	_
 
-[STATE-INIT || EVENT] leergepumpt (7)
-[has-state || undergoer] Seine Lungen (2)
+[STATE-INIT] leergepumpt (7)
+[has-state] Seine Lungen (2)
 [m-causer] dadurch (4)
 [m-quantity] so vollständig (6)
 [m-result] , dass er erst wieder Atem schöpfen konnte , indem er sich der Länge nach auf den Rücken streckte und ein paar tiefe Atemzüge machte (14)
@@ -2911,7 +2919,7 @@
 [LOCATION-INIT >> SCENE] schöpfen (14) # # "Atemluft in sich hereinholen"
 [target-location >> participant] er (10)
 [m-time] erst (11)
-[] wieder (12)
+[m-scene] wieder (12)
 [has-location >> scene] Atem (13)
 [m-condition] , indem er sich der Länge nach auf den Rücken streckte (26)
 [m-condition] und ein paar tiefe Atemzüge machte (32)
@@ -2920,16 +2928,17 @@
 
 [TIME] erst (11)
 
-[] wieder (12)
+[SEQUENCE] wieder (12)
+[follows] schöpfen (14)
 
 [EVENT] Atem (13)
 [undergoer] er (10)
 
-[STATE-INIT] streckte (26)
-[x-causer >> has-state] er (18)
-[has-state] sich (19)
-[m-quality || target-state] der Länge nach (21)
-[m-location >> m-state] auf den Rücken (25) # # vermutlich Tippfehler, eigentlich "auf dem Rücken"
+[STATE-INIT || LOCATION-INIT] streckte (26)
+[has-state || has-location] er (18)
+[has-state || has-location] sich (19)
+[target-state || m-quality] der Länge nach (21)
+[m-depictive || target-location] auf den Rücken (25)
 
 [IDENTIFICATION] er (18)
 
@@ -2938,6 +2947,7 @@
 [QUALITY] Länge (21)
 
 [PART-WHOLE] Rücken (25)
+[whole] er (18)
 
 [SCENE] machte (32)
 [scene] ein paar tiefe Atemzüge (31)
@@ -3124,9 +3134,9 @@
 [target-location >> x-sender] auf dessen Schirm (12)
 [m-mode] bereits (13)
 [has-location >> topic] das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen (15)
-[] Televisor (7)
 
 [PART-WHOLE] Schirm (12)
+[whole] Televisor (7)
 
 [MODE] bereits (13)
 
@@ -3173,13 +3183,13 @@
 [x-sender] sie (9)
 [x-noncomp] los (10)
 
-[STATE-INIT || EVENT] beugt (3)
-[has-state || undergoer] Arme (2)
+[STATE-INIT] beugt (3)
+[has-state] Arme (2)
 
 [PART-WHOLE] Arme (2)
 
-[STATE-INIT || EVENT] streckt (5)
-[has-state || undergoer] Arme (2)
+[STATE-INIT] streckt (5)
+[has-state] Arme (2)
 
 [IDENTIFICATION] sie (9)
 
@@ -3192,7 +3202,7 @@
 5	bitte	bitte	PART	PTKANT	_	3	appos	_	_
 6	!	!	PUNCT	$.	_	3	punct	_	_
 
-[] Takt , bitte (3)
+[STATE] Takt , bitte (3)
 
 [MESSAGE >> SITUATION] bitte (5)
 
