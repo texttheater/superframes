@@ -1390,7 +1390,7 @@
 
 [] Sie (12)
 
-[] Salzbergwerke (15)
+[CLASS] Salzbergwerke (15)
 
 # sent_id = 378
 # text = Plötzlich sprangen beide um ihn herum und schrien » Verräter ! « und » Gedankenverbrecher ! « , wobei das kleine Mädchen ihrem Bruder jede Bewegung nachmachte .
@@ -1503,16 +1503,18 @@
 [] Tigerjungen (10)
 [] , die bald zu Menschenfressern herangewachsen sein werden (16)
 
-[] herangewachsen (16)
-[] die (12)
-[] bald (13)
-[] zu Menschenfressern (15)
+[SCENE-INIT] herangewachsen (16) # TODO satisifies preference for core roles, but does not necessarily match argument structure for intransitive heranwachsen
+[participant] die (12)
+[m-time] bald (13)
+[target-scene] zu Menschenfressern (15)
+[participant] Tigerjungen (10)
 
 [] die (12)
 
 [] bald (13)
 
-[] Menschenfressern (15)
+[INGESTION >> CLASS] Menschenfressern (15)
+[ingester >> has-class] die (12)
 
 # sent_id = 380
 # text = Es war etwas von berechnender Wildheit im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein .
@@ -2207,19 +2209,19 @@
 
 [] Treppe (9)
 
-[] traf (23)
-[] ihn (13)
-[] etwas (14)
-[] mit furchtbarer Wucht (17)
-[] höchst schmerzhaft (19)
-[] in den Nacken (22)
+[HITTING] traf (23)
+[hit] ihn (13)
+[hitting] etwas (14)
+[m-quality] mit furchtbarer Wucht (17)
+[m-quality] höchst schmerzhaft (19)
+[x-attribute] in den Nacken (22)
 
 [] ihn (13)
 
 [] etwas (14)
 
-[] Wucht (17)
-[] furchtbarer (16)
+[QUALITY] Wucht (17)
+[m-quality] furchtbarer (16)
 
 [] furchtbarer (16)
 

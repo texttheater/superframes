@@ -402,10 +402,10 @@
 5	empor	empor	ADP	PTKVZ	_	2	advmod	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] blickten (2)
-[] Beide (1)
-[] zu ihm (4)
-[] empor (5)
+[MESSAGE] blickten (2)
+[x-experiencer] Beide (1)
+[topic] zu ihm (4)
+[m-target-location] empor (5)
 
 [] Beide (1)
 
@@ -685,12 +685,12 @@
 
 [] grünen (27)
 
-[] entziehen (39)
-[] die (30)
-[] sie (31)
-[] im nächsten Augenblick (34)
-[] für immer (36)
-[] dem Blick (38)
+[SCENE-DEINIT] entziehen (39)
+[x-causer] die (30)
+[participant] sie (31)
+[m-time] im nächsten Augenblick (34)
+[m-time] für immer (36)
+[initial-scene] dem Blick (38)
 
 [] die (30)
 
@@ -703,7 +703,8 @@
 
 [] immer (36)
 
-[] Blick (38)
+[MESSAGE] Blick (38)
+[topic] sie (31)
 
 # sent_id = 512
 # text = Er weilte in Licht und Luft , während sie in den Tod hinuntergezogen wurden , und sie waren dort drunten , weil er hier oben war .
@@ -735,11 +736,11 @@
 26	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	advcl	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] weilte (2)
-[] Er (1)
-[] in Licht (4)
-[] und Luft (6)
-[] , während sie in den Tod hinuntergezogen wurden (13)
+[SITUATION-CONTINUATION] weilte (2)
+[theme] Er (1)
+[initial-situator] in Licht (4)
+[initial-situator] und Luft (6)
+[m-time] , während sie in den Tod hinuntergezogen wurden (13)
 
 [] Er (1)
 
@@ -997,10 +998,11 @@
 
 [] seinem (16)
 
-[] geopfert (31)
-[] das Leben seiner Mutter und seiner Schwester (21)
-[] irgendwie (27)
-[] für das seine (30)
+[ASSET-INIT] geopfert (31) # TODO manual
+[target-asset] das Leben seiner Mutter und seiner Schwester (21)
+[m-mode] irgendwie (27)
+[has-asset] für das seine (30)
+[x-causer] er (13)
 
 [] Leben (21)
 [] seiner Mutter (23)
@@ -1360,8 +1362,8 @@
 35	,	,	PUNCT	$,	_	54	punct	_	_
 36	und	und	CCONJ	KON	_	54	cc	_	_
 37	weil	weil	SCONJ	KOUS	_	54	mark	_	_
-38	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	46	nsubj	_	_
-39	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	46	obj	_	_
+38	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	54	nsubj	_	_
+39	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	54	obj	_	_
 40	irgendwie	irgendwie	ADV	ADV	_	46	advmod	_	_
 41	-	-	PUNCT	$.	_	44	punct	_	_
 42	auf	auf	ADP	APPR	_	44	case	_	_
@@ -1445,22 +1447,22 @@
 
 [] ihre (31)
 
-[] geopfert (54)
-[] sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (46)
-[] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53)
+[ASSET-INIT] geopfert (54) # TODO manual
+[x-causer] sie (38)
+[target-asset] sich (39)
+[m-means] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (46)
+[has-asset] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53)
+
+[] sie (38)
+
+[] sich (39)
 
 [] erinnerte (46)
-[] sie (38)
-[] sich (39)
 [] irgendwie (40)
 [] - auf welche Weise , - (44)
 [] er (47)
 [] sich (48)
 [] nicht mehr (49)
-
-[] sie (38)
-
-[] sich (39)
 
 [] irgendwie (40)
 
@@ -2951,15 +2953,12 @@
 
 # sent_id = 544
 # text = Bitte , auf die Plätze !
-1	Bitte	bitte	PART	PTKANT	_	0	root	_	_
+1	Bitte	bitte	PART	PTKANT	_	5	discourse	_	_
 2	,	,	PUNCT	$,	_	5	punct	_	_
 3	auf	auf	ADP	APPR	_	5	case	_	_
 4	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	5	det	_	_
-5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	1	nmod	_	_
-6	!	!	PUNCT	$.	_	1	punct	_	_
-
-[] Bitte (1)
-[] , auf die Plätze (5)
+5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	0	root	_	_
+6	!	!	PUNCT	$.	_	5	punct	_	_
 
 [] Plätze (5)
 
@@ -3094,12 +3093,10 @@
 2	Im	im	ADP	APPRART	_	3	case	_	_
 3	Takt	Takt	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
 4	,	,	PUNCT	$,	_	5	punct	_	_
-5	bitte	bitte	PART	PTKANT	_	3	appos	_	_
+5	bitte	bitte	PART	PTKANT	_	3	discourse	_	_
 6	!	!	PUNCT	$.	_	3	punct	_	_
 
-[] Takt , bitte (3)
-
-[] bitte (5)
+[] Takt (3)
 
 # sent_id = 549
 # text = Eins , zwei , drei , vier !
@@ -3112,13 +3109,13 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[] Eins (1)
+[RANK] Eins (1)
 
-[] zwei (3)
+[RANK] zwei (3)
 
-[] drei (5)
+[RANK] drei (5)
 
-[] vier (7)
+[RANK] vier (7)
 
 # sent_id = 550
 # text = Eins , zwei , drei , vier !
@@ -3131,11 +3128,11 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[] Eins (1)
+[RANK] Eins (1)
 
-[] zwei (3)
+[RANK] zwei (3)
 
-[] drei (5)
+[RANK] drei (5)
 
-[] vier (7)
+[RANK] vier (7)
 

@@ -801,8 +801,8 @@
 [m-mode] nicht (15)
 [scene] zu zertrümmern (17)
 
-[] Raketenbomben (12)
-[] tausend (11)
+[CLASS] Raketenbomben (12)
+[m-quantity] tausend (11)
 
 [] tausend (11)
 
@@ -867,7 +867,7 @@
 8	-	-	PUNCT	$.	_	11	punct	_	_
 9	für	für	ADP	APPR	_	11	case	_	_
 10	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	11	det	_	_
-11	Zeitalter	Zeitalter	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	nmod	_	_
+11	Zeitalter	Zeitalter	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	conj	_	_
 12	,	,	PUNCT	$,	_	17	punct	_	_
 13	das	d	PRON	PRELS	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	17	nsubj	_	_
 14	vielleicht	vielleicht	ADV	ADV	_	17	advmod	_	_
@@ -877,18 +877,18 @@
 18	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_
 19	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] Zukunft (3)
-[] - für ein Zeitalter , das vielleicht nur ein Traum war (11)
+[TIME] Zukunft (3)
 
-[] Vergangenheit (7)
+[TIME] Vergangenheit (7)
 
-[] Zeitalter (11)
-[] , das vielleicht nur ein Traum war (17)
+[TIME] Zeitalter (11)
+[m-scene] , das vielleicht nur ein Traum war (17)
 
 [] Traum (17)
 [] das (13)
 [] vielleicht (14)
 [] nur (15)
+[] Zeitalter (11)
 
 [] das (13)
 
@@ -1111,10 +1111,10 @@
 6	Uhr	Uhr	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schlug (3)
-[] Im Televisor (2)
-[] es (4)
-[] vierzehn Uhr (6)
+[MESSAGE-INIT] schlug (3) # TODO illustrates the need for a frame assignment algorithm. Selectional preference for time, but does not talk about time (but about a message about time).
+[x-sender] Im Televisor (2)
+[x-noncomp] es (4) # v2: ?
+[target-content] vierzehn Uhr (6)
 
 [] Televisor (2)
 
@@ -1501,14 +1501,14 @@
 67	.	.	PUNCT	$.	_	44	punct	_	_
 68	«	«	PUNCT	$(	_	44	punct	_	_
 
-[] schicke (44)
-[] » Einer Zukunft (3)
-[] oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (6)
-[] - einer Zeit , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (28)
-[] ich (45)
-[] diesen Gruß (47)
-[] aus einem Zeitalter der Gleichmachung und der Vereinsamung , dem Zeitalter des Zwiegedankens (50)
-[] , dem Zeitalter des Großen Bruders (58)
+[SENDING] schicke (44)
+[x-experiencer] » Einer Zukunft (3)
+[x-experiencer] oder einer Vergangenheit , in der Gedankenfreiheit herrscht , in der die Menschen voneinander verschieden sind und nicht jeder für sich lebt (6)
+[x-experiencer] - einer Zeit , in der es Wahrheit gibt und das Geschehene nicht ungeschehen gemacht werden kann , (28)
+[sender] ich (45)
+[sent] diesen Gruß (47)
+[m-time] aus einem Zeitalter der Gleichmachung und der Vereinsamung , dem Zeitalter des Zwiegedankens (50)
+[m-time] , dem Zeitalter des Großen Bruders (58)
 
 [] Zukunft (3)
 
@@ -1560,7 +1560,7 @@
 
 [] es (32)
 
-[] Wahrheit (33)
+[MODE >> CLASS] Wahrheit (33)
 
 [] gemacht (40)
 [] das Geschehene (37)
