@@ -71,7 +71,7 @@ FRAMES = {
     'ACCOMPANIMENT': Flexible('accompanied', 'accompanier'),
     'DEPICTIVE': Rigid('has-depictive', 'depictive'),
     'ATTRIBUTE': Rigid('has-attribute', 'attribute'),
-    'ASSET': Rigid('has-asset', 'asset'),
+    'ASSET': Flexible('has-asset', 'asset'),
     'COMPARISON': Rigid('compared', 'reference'),
     'CONCESSION': Rigid('asserted', 'conceded'),
     'EXPLANATION': Rigid('explained', 'explanation'),
@@ -96,7 +96,7 @@ FRAMES = {
     'EXCEPTION': Rigid('has-exception', 'exception'),
     'SOCIAL-RELATION': Flexible('has-social-relation', 'social-relation'),
     'SUBCLASS': Rigid('subclass', 'superclass'),
-    'TIME': Rigid('has-time', 'time'),
+    'TIME': Flexible('has-time', 'time'),
     'NONCOMP': Rigid('has-noncomp', 'noncomp'),
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
