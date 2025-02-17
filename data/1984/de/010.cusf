@@ -183,8 +183,8 @@
 [topic] Seinen Vater (2)
 [x-experiencer] er (4)
 
-[MESSAGE-INIT-POSSIBILITY-NEG] undeutlicher (5)
-[target-content] Erinnerung (7)
+[MESSAGE-POSSIBILITY-NEG] undeutlicher (5)
+[content] Erinnerung (7)
 
 [PART-WHOLE] dunkelhaarig (9)
 
@@ -707,12 +707,12 @@
 
 [QUALITY] grünen (27)
 
-[MESSAGE-DEINIT] entziehen (39) # # Vgl. engl.: "waters which in another moment must hide them from side for ever"
+[SCENE-DEINIT] entziehen (39) # # Vgl. engl.: "waters which in another moment must hide them from side for ever"
 [x-causer] die (30)
-[topic] sie (31)
+[participant] sie (31)
 [m-time] im nächsten Augenblick (34)
 [m-time] für immer (36)
-[x-noncomp] dem Blick (38)
+[initial-scene] dem Blick (38)
 [x-causer] Wasser (28)
 
 [IDENTIFICATION] die (30)
@@ -727,7 +727,8 @@
 
 [TIME] immer (36)
 
-[NONCOMP] Blick (38)
+[MESSAGE] Blick (38)
+[topic] sie (31)
 
 # sent_id = 512
 # text = Er weilte in Licht und Luft , während sie in den Tod hinuntergezogen wurden , und sie waren dort drunten , weil er hier oben war .
@@ -784,7 +785,7 @@
 [has-location] sie (17)
 [location] dort (19)
 [location] drunten (20)
-[m-explanation || m-causer] , weil er hier oben war (26)
+[m-causer] , weil er hier oben war (26)
 
 [IDENTIFICATION] sie (17)
 
@@ -1028,10 +1029,10 @@
 
 [IDENTIFICATION] seinem (16)
 
-[ASSET] geopfert (31)
-[has-asset] das Leben seiner Mutter und seiner Schwester (21)
+[ASSET-INIT] geopfert (31)
+[target-asset] das Leben seiner Mutter und seiner Schwester (21)
 [m-mode] irgendwie (27)
-[asset] für das seine (30)
+[has-asset] für das seine (30)
 
 [EVENT] Leben (21)
 [undergoer] seiner Mutter (23)
@@ -1372,7 +1373,7 @@
 [topic] nach dem Grund (31)
 [x-sender] die Mitglieder einer Familie (24)
 
-[EXPLANATION] Grund (31)
+[CAUSATION] Grund (31)
 
 [IDENTIFICATION] füreinander (35)
 
@@ -1446,8 +1447,8 @@
 [MESSAGE] nagte (6) # # "quälend, peinigend, zehrend einwirken"
 [x-sender] Die Erinnerung an seine Mutter (2)
 [x-experiencer] an seinem Herzen (9)
-[m-explanation] , denn sie war aus Liebe zu ihm gestorben , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern (18)
-[m-explanation] , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte (54)
+[m-causer] , denn sie war aus Liebe zu ihm gestorben , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern (18)
+[m-causer] , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte (54)
 
 [MESSAGE] Erinnerung (2)
 [topic] an seine Mutter (5)
@@ -1503,17 +1504,17 @@
 
 [IDENTIFICATION] ihre (31)
 
-[ASSET] geopfert (54)
-[x-causer >> has-asset] sie (38)
-[has-asset] sich (39)
-[m-quality] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (40)
-[x-experiencer] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53) # # Vgl. manual, "beneficiaries"
+[ASSET-INIT] geopfert (54)
+[x-causer] sie (38)
+[target-asset] sich (39)
+[m-quality || m-means] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (40)
+[has-asset] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53) # # Vgl. manual, "beneficiaries"
 
 [IDENTIFICATION] sie (38)
 
 [IDENTIFICATION] sich (39)
 
-[QUALITY] irgendwie (40)
+[QUALITY || MEANS] irgendwie (40)
 
 [MESSAGE] erinnerte (46)
 [content] - auf welche Weise , - (44)
@@ -2717,7 +2718,7 @@
 [STATE] schlief (10)
 [has-state] er (9)
 [m-depictive] nackt (11)
-[m-explanation || m-causer] , denn ein Mitglied der Äußeren Partei erhielt nur dreitausend Kleiderpunkte im Jahr - (19)
+[m-causer] , denn ein Mitglied der Äußeren Partei erhielt nur dreitausend Kleiderpunkte im Jahr - (19)
 
 [IDENTIFICATION] er (9)
 
@@ -3053,15 +3054,12 @@
 
 # sent_id = 544
 # text = Bitte , auf die Plätze !
-1	Bitte	bitte	PART	PTKANT	_	0	root	_	_
+1	Bitte	bitte	PART	PTKANT	_	5	discourse	_	_
 2	,	,	PUNCT	$,	_	5	punct	_	_
 3	auf	auf	ADP	APPR	_	5	case	_	_
 4	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	5	det	_	_
-5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	1	nmod	_	_
-6	!	!	PUNCT	$.	_	1	punct	_	_
-
-[MESSAGE >> SITUATION] Bitte (1)
-[topic >> theme] , auf die Plätze (5)
+5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	0	root	_	_
+6	!	!	PUNCT	$.	_	5	punct	_	_
 
 [LOCATION] Plätze (5)
 
@@ -3199,12 +3197,10 @@
 2	Im	im	ADP	APPRART	_	3	case	_	_
 3	Takt	Takt	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
 4	,	,	PUNCT	$,	_	5	punct	_	_
-5	bitte	bitte	PART	PTKANT	_	3	appos	_	_
+5	bitte	bitte	PART	PTKANT	_	3	discourse	_	_
 6	!	!	PUNCT	$.	_	3	punct	_	_
 
-[STATE] Takt , bitte (3)
-
-[MESSAGE >> SITUATION] bitte (5)
+[QUALITY] Takt (3)
 
 # sent_id = 549
 # text = Eins , zwei , drei , vier !
@@ -3217,13 +3213,13 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[SEQUENCE] Eins (1)
+[RANK] Eins (1)
 
-[SEQUENCE] zwei (3)
+[RANK] zwei (3)
 
-[SEQUENCE] drei (5)
+[RANK] drei (5)
 
-[SEQUENCE] vier (7)
+[RANK] vier (7)
 
 # sent_id = 550
 # text = Eins , zwei , drei , vier !
@@ -3236,11 +3232,11 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[SEQUENCE] Eins (1)
+[RANK] Eins (1)
 
-[SEQUENCE] zwei (3)
+[RANK] zwei (3)
 
-[SEQUENCE] drei (5)
+[RANK] drei (5)
 
-[SEQUENCE] vier (7)
+[RANK] vier (7)
 

@@ -1544,17 +1544,19 @@
 [CLASS] Tigerjungen (10)
 [m-scene] , die bald zu Menschenfressern herangewachsen sein werden (16)
 
-[TRANSFORMATION-CREATION] herangewachsen (16)
-[material] die (12)
+[SCENE-INIT] herangewachsen (16)
+[participant] die (12)
 [m-time] bald (13)
-[created] zu Menschenfressern (15)
-[material] Tigerjungen (10)
+[target-scene] zu Menschenfressern (15)
+[participant] Tigerjungen (10)
 
 [IDENTIFICATION] die (12)
 
 [TIME] bald (13)
 
-[CLASS] Menschenfressern (15)
+[INGESTION >> CLASS] Menschenfressern (15)
+[ingester >> has-class] Tigerjungen (10)
+[ingester >> has-class] die (12)
 
 # sent_id = 380
 # text = Es war etwas von berechnender Wildheit im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein .
