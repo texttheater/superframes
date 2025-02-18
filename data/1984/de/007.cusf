@@ -1410,7 +1410,7 @@
 
 [IDENTIFICATION] Sie (12)
 
-[??? SOCIAL-RELATION || LOCATION || CLASS] Salzbergwerke (15)
+[CLASS] Salzbergwerke (15)
 
 # sent_id = 378
 # text = Plötzlich sprangen beide um ihn herum und schrien » Verräter ! « und » Gedankenverbrecher ! « , wobei das kleine Mädchen ihrem Bruder jede Bewegung nachmachte .
@@ -1524,17 +1524,19 @@
 [CLASS] Tigerjungen (10)
 [m-scene] , die bald zu Menschenfressern herangewachsen sein werden (16)
 
-[??? TRANSFORMATION-CREATION || STATE-CHANGE || SCENE-CHANGE] herangewachsen (16) # vgl. Manual: "TRANSFORMATION-CREATION only for non-scene entities"
-[??? material || has-state || participant] die (12)
+[SCENE-INIT] herangewachsen (16)
+[participant] die (12)
 [m-time] bald (13)
-[??? created || target-state || target-scene] zu Menschenfressern (15)
-[??? material || has-state || participant] Tigerjungen (10)
+[target-scene] zu Menschenfressern (15)
+[participant] Tigerjungen (10)
 
 [IDENTIFICATION] die (12)
 
 [TIME] bald (13)
 
-[DESTRUCTION || CLASS] Menschenfressern (15)
+[INGESTION >> CLASS] Menschenfressern (15)
+[ingester >> has-class] die (12)
+[ingester >> has-class] Tigerjungen (10)
 
 # sent_id = 380
 # text = Es war etwas von berechnender Wildheit im Auge des Jungen , ein ganz offensichtliches Verlangen , Winston zu schlagen oder zu treten , und das Bewusstsein , schon beinahe groß genug dazu zu sein .
@@ -2242,7 +2244,7 @@
 [HITTING] traf (23) # jemanden mit etwas treffen = jmdn., etw. mit etw. empfindlich berühren und dadurch verletzen oder zerstören. vgl. Manual: "Kim hit Sandy on the head with a stick."
 [hit] ihn (13)
 [hitting] etwas (14)
-[m-accompanier] mit furchtbarer Wucht (17)
+[m-quality] mit furchtbarer Wucht (17)
 [m-follows] höchst schmerzhaft (19)
 [x-attribute] in den Nacken (22)
 
@@ -2250,7 +2252,7 @@
 
 [CLASS] etwas (14)
 
-[??? MESSAGE || DESTRUCTION || STATE] Wucht (17) # durch jmdn., etw. erzeugte Kraft, Gewalt, die jmdn., etw. trifft
+[QUALITY] Wucht (17)
 [m-quality] furchtbarer (16)
 
 [QUALITY] furchtbarer (16)
