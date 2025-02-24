@@ -1115,11 +1115,10 @@
 
 [IDENTIFICATION] die (7)
 
-[WRAPPING-WEARING >> QUALITY] Verkleidung (11)
+[WRAPPING-WEARING >> MESSAGE] Verkleidung (11)
 [m-scene] charakteristischen (10)
-[wrapper >> quality] des Traumes (13)
-[wearer >> has-quality] Träume (5)
-[wearer >> has-quality] die (7)
+[wrapper >> content] des Traumes (13)
+[wearer >> topic] Träume (5)
 
 [IDENTIFICATION] charakteristischen (10)
 [identifier] Verkleidung (11)
@@ -1182,7 +1181,7 @@
 # sent_id = 517
 # text = Die Erkenntnis , die Winston jetzt plötzlich dämmerte , war , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig und tragisch gewesen war , die es heutzutage nicht mehr gab .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
 3	,	,	PUNCT	$,	_	8	punct	_	_
 4	die	d	PRON	PRELS	Case=Acc|Gender=Fem|Number=Sing|PronType=Rel	8	obj	_	_
 5	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
@@ -1190,7 +1189,7 @@
 7	plötzlich	plötzlich	ADJ	ADJD	_	8	advmod	_	_
 8	dämmerte	dämmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl	_	_
 9	,	,	PUNCT	$,	_	8	punct	_	_
-10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
 11	,	,	PUNCT	$,	_	23	punct	_	_
 12	dass	dass	SCONJ	KOUS	_	23	mark	_	_
 13	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -1203,13 +1202,13 @@
 20	auf	auf	ADP	APPR	_	22	case	_	_
 21	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-23	traurig	traurig	ADJ	ADJD	_	10	ccomp	_	_
+23	traurig	traurig	ADJ	ADJD	_	0	root	_	_
 24	und	und	CCONJ	KON	_	25	cc	_	_
 25	tragisch	tragisch	ADJ	ADJD	_	23	conj	_	_
 26	gewesen	sein	AUX	VAPP	Verbform=Part	23	cop	_	_
-27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
+27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 28	,	,	PUNCT	$,	_	34	punct	_	_
-29	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	34	nsubj	_	_
+29	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	34	obj	_	_
 30	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	34	expl	_	_
 31	heutzutage	heutzutage	ADV	ADV	_	34	advmod	_	_
 32	nicht	nicht	PART	PTKNEG	Polarity=Neg	33	advmod	_	_
@@ -1217,15 +1216,13 @@
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
 35	.	.	PUNCT	$.	_	10	punct	_	_
 
-[SCENE] war (10)
-[scene] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2)
-[participant] , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig gewesen war , die es heutzutage nicht mehr gab (23)
-[participant] und tragisch (25)
+[MESSAGE >> QUALITY] traurig (23) # # "Trauer, Kummer, Betrübnis hervorrufend, verursachend"
+[x-identified] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2)
+[topic >> has-quality] der Tod seiner Mutter vor dreißig Jahren (14)
+[m-quality] auf eine Weise , die es heutzutage nicht mehr gab (22)
 
 [MESSAGE-INIT] Erkenntnis (2)
 [m-scene] , die Winston jetzt plötzlich dämmerte , (8)
-[target-content] , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig gewesen war , die es heutzutage nicht mehr gab (23)
-[target-content] und tragisch (25)
 
 [MESSAGE] dämmerte (8)
 [topic] die (4)
@@ -1241,10 +1238,6 @@
 [TIME] jetzt (6)
 
 [QUALITY] plötzlich (7)
-
-[MESSAGE] traurig (23) # # "Trauer, Kummer, Betrübnis hervorrufend, verursachend"
-[topic] der Tod seiner Mutter vor dreißig Jahren (14)
-[m-means] auf eine Weise , die es heutzutage nicht mehr gab (22)
 
 [DESTRUCTION] Tod (14)
 [destroyed] seiner Mutter (16)
@@ -1495,8 +1488,8 @@
 
 [STATE] eigensüchtig (27) # # "nur an sich selbst denkend / handelnd"
 
-[REPRODUCTION] erwidern (34)
-[original] ihre Liebe (32)
+[REACTION] erwidern (34)
+[trigger] ihre Liebe (32)
 [x-causer] er (21)
 
 [MESSAGE] Liebe (32)
@@ -1930,7 +1923,7 @@
 
 [MODE] nicht (26)
 
-[SITUATION] Wirklichkeit (28)
+[MODE] Wirklichkeit (28)
 
 # sent_id = 525
 # text = In seiner wachen Vorstellung nannte er sie das Goldene Land .
@@ -1946,11 +1939,11 @@
 10	Land	Land	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	obj	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
-[MESSAGE-INIT || IDENTIFICATION-INIT] nannte (5)
+[IDENTIFICATION-INIT] nannte (5) # # weil "Goldene" groß geschrieben
 [m-situator] In seiner wachen Vorstellung (4)
-[x-sender || x-causer] er (6)
-[topic || identified] sie (7)
-[target-content || target-identifier] das Goldene Land (10)
+[x-causer] er (6)
+[identified] sie (7)
+[target-identifier] das Goldene Land (10)
 
 [MESSAGE] Vorstellung (4)
 [x-experiencer] seiner (2)
@@ -1994,7 +1987,7 @@
 19	und	und	CCONJ	KON	_	20	cc	_	_
 20	dort	dort	ADV	ADV	_	18	conj	_	_
 21	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	amod	_	_
+22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
 23	.	.	PUNCT	$.	_	9	punct	_	_
 
 [CLASS] Weide (9)
@@ -2579,7 +2572,7 @@
 11	gleicher	gleich	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	12	amod	_	_
 12	Höhe	Höhe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	16	obl	_	_
 13	dreißig	dreißig	NUM	CARD	NumType=Card	14	nummod	_	_
-14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	16	obl	_	_
+14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	15	obl	_	_
 15	lang	lang	ADJ	ADJD	_	16	advmod	_	_
 16	anhielt	anhalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
@@ -2600,25 +2593,26 @@
 
 [SCENE-CONTINUATION] anhielt (16)
 [initial-scene] der (9)
-[m-quality] in gleicher Höhe (12)
-[m-time] dreißig Sekunden (14)
-[m-quantity] lang (15)
+[m-depictive] in gleicher Höhe (12)
+[m-time] dreißig Sekunden lang (15)
 [initial-scene] Pfeifton (6)
 
 [IDENTIFICATION] der (9)
 
 [QUALITY] Höhe (12)
 [m-scene] gleicher (11)
+[has-quality] Pfeifton (6)
 
 [COMPARISON] gleicher (11)
 [compared] Höhe (12)
+
+[TIME] lang (15)
+[m-quantity] dreißig Sekunden (14)
 
 [TIME] Sekunden (14)
 [m-quantity] dreißig (13)
 
 [QUANTITY] dreißig (13)
-
-[QUANTITY] lang (15)
 
 [MESSAGE] hören (7)
 [topic] Pfeifton (6)
@@ -2935,11 +2929,11 @@
 [EVENT] Atem (13)
 [undergoer] er (10)
 
-[STATE-INIT || LOCATION-INIT] streckte (26)
-[has-state || has-location] er (18)
-[has-state || has-location] sich (19)
-[target-state || m-quality] der Länge nach (21)
-[m-depictive || target-location] auf den Rücken (25)
+[LOCATION-INIT] streckte (26)
+[x-causer >> has-location] er (18)
+[has-location] sich (19)
+[m-reference] der Länge nach (21)
+[x-attribute] auf den Rücken (25)
 
 [IDENTIFICATION] er (18)
 

@@ -397,7 +397,7 @@
 
 [MESSAGE] Marschlieder (2)
 
-[SOCIAL-RELATION-INIT || UNANCHORED-MOTION] Umzüge (5) ## Veranstaltung, bei der sich eine größere Gruppe aus bestimmtem Anlass durch die Straßen bewegt
+[SOCIAL-RELATION-INIT || UNANCHORED-MOTION] Umzüge (5) # # Veranstaltung, bei der sich eine größere Gruppe aus bestimmtem Anlass durch die Straßen bewegt
 
 [CLASS || MESSAGE] Fahnen (8)
 
@@ -593,7 +593,7 @@
 
 [SCENE-DEINIT] verging (9) # # Vgl. sent_id 197
 [m-quantity] kaum (10) # # "so gut wie nie", "selten"
-[initial-scene] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern  der Gedankenpolizei angezeigt hatte (12)
+[initial-scene] eine Woche , in der nicht in der Times ein Bericht stand , wie ein lauschender kleiner Angeber - » Kinderheld « lautete die gewöhnlich gebrauchte Bezeichnung - eine kompromittierende Bemerkung mit angehört und seine Eltern bei der Gedankenpolizei angezeigt hatte (12)
 
 [QUANTITY] kaum (10)
 
@@ -2000,19 +2000,19 @@
 24	schmetternden	schmetternd	ADJ	ADJA	Case=Nom|Gender=Neut|Number=Plur	25	amod	_	_
 25	Klänge	Klang	NOUN	NN	Case=Nom|Gender=Masc|Number=Plur	3	obj	_	_
 26	von	von	ADP	APPR	_	28	case	_	_
-27	»	»	PUNCT	$(	_	28	punct	_	_
-28	Ozeanien	Ozeanien	PROPN	NE	Case=Dat|Gender=Neut|Number=Sing	25	nmod	_	_
-29	,	,	PUNCT	$,	_	31	punct	_	_
+27	»	»	PUNCT	$(	_	34	punct	_	_
+28	Ozeanien	Ozeanien	PROPN	NE	Case=Dat|Gender=Neut|Number=Sing	34	vocative	_	_
+29	,	,	PUNCT	$,	_	28	punct	_	_
 30	mein	mein	DET	PPOSAT	Case=Nom|Gender=Neut|Number=Sing|Poss=Yes	31	det:poss	_	_
 31	Land	Land	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	28	appos	_	_
 32	,	,	PUNCT	$,	_	34	punct	_	_
 33	für	für	ADP	APPR	_	34	case	_	_
-34	Dich	du	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=2|PronType=Prs	28	nmod	_	_
+34	Dich	du	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=2|PronType=Prs	25	nmod	_	_
 35	mit	mit	ADP	APPR	_	36	case	_	_
-36	Herz	Herz	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	28	nmod	_	_
+36	Herz	Herz	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	34	nmod	_	_
 37	und	und	CCONJ	KON	_	38	cc	_	_
 38	Hand	Hand	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	36	conj	_	_
-39	«	«	PUNCT	$(	_	28	punct	_	_
+39	«	«	PUNCT	$(	_	34	punct	_	_
 40	an	an	ADP	PTKVZ	_	3	compound:prt	_	_
 41	.	.	PUNCT	$.	_	3	punct	_	_
 
@@ -2049,26 +2049,25 @@
 
 [MESSAGE] Klänge (25)
 [m-scene] schmetternden (24)
-[topic] von » Ozeanien , mein Land , für Dich mit Herz und Hand « (28)
+[topic] von » Ozeanien , mein Land , für Dich mit Herz und Hand « (34)
 
 [MESSAGE-INIT] schmetternden (24) # # "laut klingen, schallen"
 [x-sender] Klänge (25)
 
-[IDENTIFICATION] Ozeanien , mein Land (28)
-[] , für Dich (34)
-[] mit Herz (36)
-[] und Hand (38)
+[IDENTIFICATION] Dich (34)
+[m-means] mit Herz (36)
+[m-means] und Hand (38)
 
-[CLASS >> SOCIAL-RELATION] Land (31)
-[m-situator || m-has-location] mein (30)
+[IDENTIFICATION] Ozeanien mein Land (28)
+
+[SOCIAL-RELATION] Land (31)
+[has-social-relation] mein (30)
 
 [IDENTIFICATION] mein (30)
 
-[IDENTIFICATION] Dich (34)
+[PART-WHOLE] Herz (36)
 
-[PART-WHOLE >> ?MESSAGE] Herz (36)
-
-[PART-WHOLE >> ?MESSAGE] Hand (38)
+[PART-WHOLE] Hand (38)
 
 # sent_id = 444
 # text = Vom Zuhörer wurde erwartet , dass er dabei stramme Haltung annahm .
