@@ -97,17 +97,18 @@
 11	jetzt	jetzt	ADV	ADV	_	16	advmod	_	_
 12	wirklich	wirklich	ADJ	ADJD	_	14	advmod	_	_
 13	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
-14	Jahr	Jahr	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	16	nsubj	_	_
+14	Jahr	Jahr	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	8	ccomp	_	_
 15	1984	1984	NUM	CARD	NumType=Card	14	nmod	_	_
-16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	_	_
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] sicher (8)
-[] Zunächst einmal (2)
-[] er (4)
-[] sich (5)
-[] durchaus (6)
-[] nicht (7)
+[MESSAGE] sicher (8)
+[m-rank] Zunächst einmal (2)
+[x-experiencer] er (4)
+[x-experiencer] sich (5)
+[m-mode] durchaus (6)
+[m-mode] nicht (7)
+[topic] wirklich das Jahr 1984 (14)
 
 [] einmal (2)
 [] Zunächst (1)
@@ -122,8 +123,6 @@
 
 [] nicht (7)
 
-[] jetzt (11)
-
 [] Jahr (14)
 [] wirklich (12)
 [] 1984 (15)
@@ -134,17 +133,17 @@
 
 # sent_id = 106
 # text = Es musste um diese Zeit herum sein , denn er wusste mit einiger Gewissheit , dass er selbst neununddreißig Jahre alt war , und er glaubte , 1944 oder 1945 geboren zu sein .
-1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
-2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
+1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
 3	um	um	ADP	APPR	_	5	case	_	_
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	_
-6	herum	herum	ADP	APZR	_	7	advmod	_	_
-7	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
+5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
+6	herum	herum	ADP	APZR	_	5	case	_	_
+7	sein	sein	AUX	VAINF	VerbForm=Inf	5	cop	_	_
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	denn	denn	CCONJ	KON	_	11	cc	_	_
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
-11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
+11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 12	mit	mit	ADP	APPR	_	14	case	_	_
 13	einiger	einige	DET	PIAT	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	14	det	_	_
 14	Gewissheit	Gewißheit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
@@ -169,16 +168,10 @@
 33	sein	sein	AUX	VAINF	VerbForm=Inf	31	aux	_	_
 34	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] sein (7)
-[] Es (1)
-[] um diese Zeit (5)
-[] herum (6)
+[TIME] Zeit (5)
+[x-noncomp] Es (1)
 
-[] Es (1)
-
-[] Zeit (5)
-
-[] herum (6)
+[NONCOMP] Es (1)
 
 [MESSAGE] wusste (11)
 [x-experiencer] er (10)

@@ -1072,27 +1072,30 @@
 
 [] Es (1)
 
-[] Träume (5)
-[] , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind (16)
-[] und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (30)
+[MESSAGE] Träume (5)
+[m-scene] , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind (16)
+[m-scene] und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (30)
 
-[] Fortsetzung (16)
+[SEQUENCE] Fortsetzung (16)
+[follows] die (7)
+[m-depictive] in der charakteristischen Verkleidung des Traumes (11)
+[m-scene] doch (14)
+[followed] des seelischen Erlebens (19)
+[follows] Träume (5)
+
 [] die (7)
-[] in der charakteristischen Verkleidung des Traumes (11)
-[] doch (14)
-[] des seelischen Erlebens (19)
 
-[] die (7)
-
-[] Verkleidung (11)
-[] charakteristischen (10)
-[] des Traumes (13)
+[WRAPPING-WEARING >> MESSAGE] Verkleidung (11)
+[m-quality] charakteristischen (10)
+[wrapper >> content] des Traumes (13)
+[wearer >> topic] Träume (7)
 
 [] charakteristischen (10)
 
 [] Traumes (13)
 
-[] doch (14)
+[CONCESSION] doch (14)
+[asserted] Fortsetzung (16)
 
 [] Erlebens (19)
 [] seelischen (18)
@@ -1105,6 +1108,7 @@
 [] Tatsachen , die auch nach dem Erwachen neu und wertvoll erscheinen (25)
 [] und Gedanken (27)
 [] zum Bewusstsein (29)
+[] Träume (5)
 
 [] denen (23)
 
@@ -1137,7 +1141,7 @@
 # sent_id = 517
 # text = Die Erkenntnis , die Winston jetzt plötzlich dämmerte , war , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig und tragisch gewesen war , die es heutzutage nicht mehr gab .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
 3	,	,	PUNCT	$,	_	8	punct	_	_
 4	die	d	PRON	PRELS	Case=Acc|Gender=Fem|Number=Sing|PronType=Rel	8	obj	_	_
 5	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
@@ -1145,7 +1149,7 @@
 7	plötzlich	plötzlich	ADJ	ADJD	_	8	advmod	_	_
 8	dämmerte	dämmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl	_	_
 9	,	,	PUNCT	$,	_	8	punct	_	_
-10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
 11	,	,	PUNCT	$,	_	23	punct	_	_
 12	dass	dass	SCONJ	KOUS	_	23	mark	_	_
 13	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -1158,11 +1162,11 @@
 20	auf	auf	ADP	APPR	_	22	case	_	_
 21	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-23	traurig	traurig	ADJ	ADJD	_	10	ccomp	_	_
+23	traurig	traurig	ADJ	ADJD	_	0	root	_	_
 24	und	und	CCONJ	KON	_	25	cc	_	_
 25	tragisch	tragisch	ADJ	ADJD	_	23	conj	_	_
 26	gewesen	sein	AUX	VAPP	Verbform=Part	23	cop	_	_
-27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
+27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 28	,	,	PUNCT	$,	_	34	punct	_	_
 29	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	34	obj	_	_
 30	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	34	nsubj	_	_
@@ -1172,10 +1176,11 @@
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
 35	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] war (10)
-[] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2)
-[] , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig gewesen war , die es heutzutage nicht mehr gab (23)
-[] und tragisch (25)
+[MESSAGE >> QUALITY] traurig (23)
+[x-identified] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2) # TODO manual: Sind Sachverhalte definit oder indefinit?
+[topic >> has-quality] der Tod seiner Mutter (14)
+[m-time] vor dreißig Jahren (19)
+[m-quality] auf eine Weise , die es heutzutage nicht mehr gab (22)
 
 [] Erkenntnis (2)
 [] , die Winston jetzt plötzlich dämmerte , (8)
@@ -1193,11 +1198,6 @@
 [] jetzt (6)
 
 [] plötzlich (7)
-
-[] traurig (23)
-[] der Tod seiner Mutter (14)
-[] vor dreißig Jahren (19)
-[] auf eine Weise , die es heutzutage nicht mehr gab (22)
 
 [] Tod (14)
 [] seiner Mutter (16)
@@ -1439,8 +1439,9 @@
 
 [] eigensüchtig (27)
 
-[] erwidern (34)
-[] ihre Liebe (32)
+[REACTION] erwidern (34)
+[trigger] ihre Liebe (32)
+[x-causer] er (21)
 
 [] Liebe (32)
 [] ihre (31)
@@ -1854,11 +1855,11 @@
 
 [] ganz (19)
 
-[] gesehen (29)
-[] er (24)
-[] sie (25)
-[] nicht (26)
-[] in Wirklichkeit (28)
+[MESSAGE] gesehen (29)
+[x-experiencer] er (24)
+[topic] sie (25)
+[m-mode] nicht (26)
+[m-situator] in Wirklichkeit (28)
 
 [] er (24)
 
@@ -1866,7 +1867,7 @@
 
 [] nicht (26)
 
-[] Wirklichkeit (28)
+[MODE] Wirklichkeit (28)
 
 # sent_id = 525
 # text = In seiner wachen Vorstellung nannte er sie das Goldene Land .
@@ -1882,11 +1883,11 @@
 10	Land	Land	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	obj	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] nannte (5)
-[] In seiner wachen Vorstellung (4)
-[] er (6)
-[] sie (7)
-[] das Goldene Land (10)
+[IDENTIFICATION-INIT] nannte (5) # TODO manual: MESSAGE-INIT vs. IDENTIFICATION-INIT
+[m-situator] In seiner wachen Vorstellung (4)
+[x-causer] er (6)
+[identified] sie (7)
+[target-identifier] das Goldene Land (10)
 
 [] Vorstellung (4)
 [] seiner (2)
@@ -1923,19 +1924,20 @@
 14	Fußpfad	Fußpfad	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
 15	lief	laufen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
 16	,	,	PUNCT	$,	_	18	punct	_	_
-17	mit	mit	ADP	APPR	_	18	case	_	_
-18	da	da	ADV	ADV	_	15	advmod	_	_
+17	mit	mit	ADP	APPR	_	22	case	_	_
+18	da	da	ADV	ADV	_	22	advmod	_	_
 19	und	und	CCONJ	KON	_	20	cc	_	_
 20	dort	dort	ADV	ADV	_	18	conj	_	_
 21	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	18	conj	_	_
+22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
 23	.	.	PUNCT	$.	_	9	punct	_	_
 
 [] Weide (9)
 [] Es (1)
 [] alte , (4)
 [] von Kaninchen bevölkerte (8)
-[] , durch die ein Fußpfad lief , mit da und dort einem Maulwurfshügel (15)
+[] , durch die ein Fußpfad lief (15)
+[] , mit da und dort einem Maulwurfshügel (22)
 
 [] Es (1)
 
@@ -1949,19 +1951,18 @@
 [] lief (15)
 [] durch die (12)
 [] ein Fußpfad (14)
-[] , mit da (18)
-[] und dort (20)
-[] einem Maulwurfshügel (22)
 
 [] die (12)
 
 [] Fußpfad (14)
 
+[] Maulwurfshügel (22)
+[] , da (18)
+[] und dort (20)
+
 [] da (18)
 
 [] dort (20)
-
-[] Maulwurfshügel (22)
 
 # sent_id = 527
 # text = In der unregelmäßigen Baumreihe jenseits der Wiese wiegten sich die Zweige der Ulmen leise in der sanften Brise , und ihre Blätter wogten in dichten Büscheln wie Frauenhaar .
@@ -2490,7 +2491,7 @@
 11	gleicher	gleich	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	12	amod	_	_
 12	Höhe	Höhe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	16	obl	_	_
 13	dreißig	dreißig	NUM	CARD	NumType=Card	14	nummod	_	_
-14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	16	obl	_	_
+14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	15	obl	_	_
 15	lang	lang	ADJ	ADJD	_	16	advmod	_	_
 16	anhielt	anhalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
@@ -2509,26 +2510,28 @@
 [STATE-INIT >> QUALITY] ohrenbetäubenden (5)
 [x-causer] Pfeifton (6)
 
-[] anhielt (16)
-[] der (9)
-[] in gleicher Höhe (12)
-[] dreißig Sekunden (14)
-[] lang (15)
-[] Pfeifton (6)
+[SCENE-CONTINUATION] anhielt (16)
+[initial-scene] der (9)
+[m-depictive] in gleicher Höhe (12)
+[m-time] dreißig Sekunden lang (15)
+[initial-scene] Pfeifton (6)
 
 [] der (9)
 
-[] Höhe (12)
-[] gleicher (11)
+[QUALITY] Höhe (12)
+[m-scene] gleicher (11)
+[has-quality] Pfeifton (6)
 
-[] gleicher (11)
+[COMPARISON] gleicher (11)
+[compared] Höhe (12)
 
-[] Sekunden (14)
-[] dreißig (13)
+[TIME] lang (15)
+[m-quantity] dreißig Sekunden (14)
 
-[] dreißig (13)
+[TIME] Sekunden (14)
+[m-quantity] dreißig (13)
 
-[] lang (15)
+[QUANTITY] dreißig (13)
 
 [MESSAGE] hören (7)
 [topic] Pfeifton (6)
@@ -2839,11 +2842,11 @@
 
 [] Atem (13)
 
-[] streckte (26)
-[] er (18)
-[] sich (19)
-[] der Länge nach (21)
-[] auf den Rücken (25)
+[LOCATION-INIT] streckte (26)
+[x-causer >> has-location] er (18)
+[has-location] sich (19)
+[m-reference] der Länge nach (21)
+[x-attribute] auf den Rücken (25)
 
 [] er (18)
 
@@ -3078,12 +3081,12 @@
 [] sie (9)
 [] los (10)
 
-[] beugt (3)
-[] » Arme (2)
+[STATE-INIT] beugt (3)
+[has-state] » Arme (2)
 
 [] Arme (2)
 
-[] streckt (5)
+[STATE-INIT] streckt (5)
 
 [] sie (9)
 
