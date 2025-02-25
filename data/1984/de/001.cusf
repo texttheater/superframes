@@ -294,11 +294,11 @@
 
 [NONCOMP] sich (21)
 
-[MESSAGE] Nachrichtenwesen (24)
+[CLASS] Nachrichtenwesen (24)
 
-[ACTIVITY] Freizeitgestaltung (27)
+[CLASS] Freizeitgestaltung (27)
 
-[SOCIAL-RELATION] Erziehungswesen (30)
+[CLASS] Erziehungswesen (30)
 
 [MESSAGE] Künsten (34)
 [m-quality] schönen (33)
@@ -311,7 +311,7 @@
 
 [MESSAGE] Liebe (48)
 
-[STATE-CONTONUATION] aufrechterhielt (54)
+[STATE-CONTINUATION] aufrechterhielt (54)
 [m-identifier] das (50)
 [has-state] Gesetz und Ordnung (51)
 
@@ -606,8 +606,8 @@
 24	waren	sein	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
 25	.	.	PUNCT	$.	_	17	punct	_	_
 
-[STATE-DEINIT] gesichert (17)
-[has-state] Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen (9)
+[SITUATION-INIT-NEG >> STATE-INIT] gesichert (17)
+[THEME >> has-state] Sogar die zu den Befestigungen im Vorgelände hinaufführenden Straßen (9)
 [m-means] durch gorillagesichtige Wachen in schwarzen Uniformen , die mit schweren Gummiknüppeln bewaffnet waren (13)
 
 [LOCATION] Straßen (9)
@@ -616,8 +616,9 @@
 
 [MODE] Sogar (1)
 
-[LOCATION-DEINIT] hinaufführenden (8)
+[LOCATION-INIT] hinaufführenden (8)
 [target-location] zu den Befestigungen im Vorgelände (5)
+[has-location] Straßen (9)
 
 [CLASS] Befestigungen (5)
 [m-location] im Vorgelände (7)
@@ -700,16 +701,17 @@
 23	zukehrte	zukehren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
 24	.	.	PUNCT	$.	_	7	punct	_	_
 
-[MESSAGE] aufgesetzt (7)
-[x-sender] Er (1)
-[content] die ruhige optimistische Miene , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (6)
+[WRAPPING-WEARING-INIT >> SENDING] aufgesetzt (7)
+[wearer >> sender] Er (1)
+[wrapper >> sent] die ruhige optimistische Miene , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (6)
 
 [IDENTIFICATION] Er (1)
 
 [MESSAGE] Miene (6)
-[m-quality] ruhige (4)
+[m-state] ruhige (4)
 [m-quality] optimistische (5)
-[x-depictive] , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (14)
+[m-scene] , die zur Schau zu tragen ratsam war , wenn man dem Televisor das Gesicht zukehrte (14)
+[x-sender] Er (1)
 
 [QUALITY] ruhige (4)
 
@@ -718,6 +720,7 @@
 [MESSAGE >> SCENE-NECESSITY] ratsam (14)
 [content >> scene] die zur Schau zu tragen (13)
 [m-condition] , wenn man dem Televisor das Gesicht zukehrte (23)
+[content >> scene] Miene (6)
 
 [MESSAGE] tragen (13)
 [topic] die (9)
@@ -725,12 +728,12 @@
 
 [MESSAGE] Schau (11)
 
-[LOOCATION-CHANGE] zukehrte (23)
-[x-causer] man (18)
+[LOCATION-CHANGE] zukehrte (23)
+[has-location] man (18)
 [target-location] dem Televisor (20)
-[has-location] das Gesicht (22)
+[x-attribute] das Gesicht (22)
 
-[CLASS] man (18)
+[IDENTIFICATION] man (18)
 
 [CLASS] Televisor (20)
 
@@ -757,11 +760,11 @@
 
 [IDENTIFICATION] Er (1)
 
-[QUALITY] quer (3)
+[LOCATION] quer (3)
 
-[LOCATION] Zimmer (5)
+[CLASS] Zimmer (5)
 
-[LOCATION] Küche (9)
+[CLASS] Küche (9)
 [m-quality] winzige (8)
 
 [QUALITY] winzige (8)
@@ -824,7 +827,7 @@
 [theme] er (13)
 [target-situator] auf sein Mittagessen in der Kantine (16)
 
-[LOCATION-CHANGE] weggegangen (9)
+[LOCATION-DEINIT] weggegangen (9)
 [has-location] er (2)
 [m-time] zu dieser Tageszeit (5)
 [initial-location] aus dem Ministerium (8)
@@ -846,7 +849,7 @@
 [LOCATION] Kantine (19)
 
 [MESSAGE] wusste (23)
-[m-reference] andererseits (22)
+[m-scene] andererseits (22)
 [x-experiencer] er (24)
 [content] , dass es in der Küche nichts zu essen gab außer einem Stück Schwarzbrot , das für den nächsten Tag zum Frühstück aufgehoben werden musste (34)
 
