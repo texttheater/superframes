@@ -301,8 +301,8 @@
 
 [IDENTIFICATION] seiner (15)
 
-[IDENTIFICATION] charakteristischen (16)
-[identifier] Geste (17)
+[QUALITY] charakteristischen (16)
+[has-quality] Geste (17)
 
 # sent_id = 258
 # text = Aber dazwischen lag der Bruchteil einer Sekunde , währenddessen sich ihre Augen begegneten , und in diesem winzigen Zeitraum wusste Winston - ja , er wusste es ! - , dass O'Brien das gleiche dachte wie er .
@@ -664,7 +664,7 @@
 
 [MESSAGE] Einverständnisses (6)
 
-[MESSAGE-PREVENTION] undurchdringlich (14)
+[MESSAGE-INIT-NEG] undurchdringlich (14)
 [topic] O'Briens Gesicht (11)
 [m-scene] ebenso (13)
 [m-reference] wie das aller anderen (16)
@@ -706,7 +706,7 @@
 20	.	.	PUNCT	$.	_	3	punct	_	_
 
 [QUANTITY] alles (3)
-[x-identified] Das (1)
+[has-quantity] Das (1)
 
 [IDENTIFICATION] Das (1)
 
@@ -754,8 +754,8 @@
 [SITUATION] Zwischenfälle (2)
 [m-scene] Derartige (1)
 
-[IDENTIFICATION] Derartige (1)
-[identifier] Zwischenfälle (2)
+[QUALITY] Derartige (1)
+[has-quality] Zwischenfälle (2)
 
 [TIME-NEG] nie (4)
 
@@ -1060,7 +1060,7 @@ ________________________________________________________________________________
 
 [CLASS] alles (12)
 
-[CLASS] nichts (14)
+[CLASS-NEG] nichts (14)
 
 [PART-WHOLE] Bruchstücke (18)
 [whole] erlauschter Gespräche (20)
@@ -1412,8 +1412,8 @@ ________________________________________________________________________________
 
 [EVENT] leben (17)
 [m-depictive] in der (14)
-[m-depictive] Einsamkeit (11)
 [undergoer] man (15)
+[m-depictive] Einsamkeit (11)
 
 [STATE] der (14)
 [has-state] man (15)
@@ -1947,10 +1947,10 @@ ________________________________________________________________________________
 14	Unterschied	Unterschied	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	12	obj	_	_
 15	.	.	PUNCT	$.	_	12	punct	_	_
 
-[RESULTATIVE] machte (12)
-[has-resultative] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
-[has-resultative] nicht (10)
-[resultative] keinen Unterschied (14)
+[SCENE-INIT >> SCENE] machte (12)
+[x-causer >> participant] Ob er nieder mit dem Großen Bruder hinschrieb oder , (8)
+[x-causer >> participant] nicht (10)
+[target-scene >> scene] keinen Unterschied (14)
 
 [MESSAGE-INIT] hinschrieb (8)
 [x-sender] er (2)
@@ -1991,10 +1991,13 @@ ________________________________________________________________________________
 12	Unterschied	Unterschied	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
 13	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] machte (10)
-[] Ob er mit dem Tagebuch fortfuhr oder , (6)
-[] nicht (8)
-[] keinen Unterschied (12)
+
+[SCENE-INIT >> SCENE] machte (10)
+[x-causer >> participant] Ob er mit dem Tagebuch fortfuhr oder , (6)
+[x-causer >> participant] nicht (8)
+[target-scene >> scene] keinen Unterschied (12)
+
+
 
 [MESSAGE-CONTINUATION] fortfuhr (6)
 [x-causer] er (2)
@@ -2107,8 +2110,8 @@ ________________________________________________________________________________
 4	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
 5	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT || IDENTIFICATION-INIT] nannten (2)
-[target-content || target-identifier] Gedankenverbrechen (1)
+[MESSAGE-INIT || IDENTIFICATION] nannten (2)
+[target-content || identifier] Gedankenverbrechen (1)
 [x-sender || x-causer] sie (3)
 [topic || identified] es (4)
 
@@ -2147,7 +2150,7 @@ ________________________________________________________________________________
 
 [MODE] nicht (7)
 
-[MESSAGE-PREVENTION] geheim (8)
+[MESSAGE-INIT-NEG] geheim (8)
 [topic] Gedankenverbrechen (1)
 
 # sent_id = 299
@@ -2199,7 +2202,7 @@ ________________________________________________________________________________
 
 [MODE] sogar (8)
 
-[CLASS] Winkelzüge (13)
+[ACTIVITY] Winkelzüge (13)
 [m-quality] schlaue (12)
 
 [QUALITY] schlaue (12)
@@ -2259,7 +2262,7 @@ ________________________________________________________________________________
 
 [SOCIAL-RELATION-INIT] Verhaftungen (7)
 
-[SCENE-CONTINUATION-NECESSITY] unabänderlich (9)
+[-NECESSITY] unabänderlich (9)
 [initial-scene] fanden (8)
 
 [TIME] nachts (10)
