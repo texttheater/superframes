@@ -105,17 +105,17 @@
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
 [MESSAGE] sicher (8)
-[m-time] Zunächst einmal (2)
+[m-rank] Zunächst einmal (2)
 [x-experiencer] er (4)
-[m-noncomp] sich (5)
+[x-experiencer] sich (5)
 [m-mode] durchaus (6)
 [m-mode] nicht (7)
-[topic] , dass jetzt wirklich das Jahr 1984 war . (17)
+[topic] wirklich das Jahr 1984 (14)
 
-[TIME] einmal (2)
+[QUANTITY] einmal (2)
 [m-noncomp] Zunächst (1)
 
-[TIME] Zunächst (1)
+[RANK] Zunächst (1)
 
 [IDENTIFICATION] er (4)
 
@@ -129,25 +129,25 @@
 
 [TIME] Jahr (14)
 [m-mode] wirklich (12)
-[time] 1984 (15)
+[time || m-rank] 1984 (15)
 
 [MODE] wirklich (12)
 
-[TIME] 1984 (15)
+[TIME || RANK] 1984 (15)
 
 # sent_id = 106
 # text = Es musste um diese Zeit herum sein , denn er wusste mit einiger Gewissheit , dass er selbst neununddreißig Jahre alt war , und er glaubte , 1944 oder 1945 geboren zu sein .
-1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
-2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
+1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
 3	um	um	ADP	APPR	_	5	case	_	_
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	_
-6	herum	herum	ADP	APZR	_	7	advmod	_	_
-7	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
+5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
+6	herum	herum	ADP	APZR	_	5	case	_	_
+7	sein	sein	AUX	VAINF	VerbForm=Inf	5	cop	_	_
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	denn	denn	CCONJ	KON	_	11	cc	_	_
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
-11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
+11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 12	mit	mit	ADP	APPR	_	14	case	_	_
 13	einiger	einige	DET	PIAT	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	14	det	_	_
 14	Gewissheit	Gewißheit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
@@ -172,25 +172,19 @@
 33	sein	sein	AUX	VAINF	VerbForm=Inf	31	aux	_	_
 34	.	.	PUNCT	$.	_	7	punct	_	_
 
-[STATE] sein (7)
-[has-state] Es (1)
-[state] um diese Zeit (5)
-[m-quality] herum (6)
+[TIME] Zeit (5)
+[x-noncomp] Es (1)
 
 [NONCOMP] Es (1)
 
-[TIME] Zeit (5)
-
-[QUALITY] herum (6)
-
 [MESSAGE] wusste (11)
 [x-experiencer] er (10)
-[m-quality] mit einiger Gewissheit (14)
+[m-accompanier >> m-quality] mit einiger Gewissheit (14)
 [content] , dass er selbst neununddreißig Jahre alt war (21)
 
 [IDENTIFICATION] er (10)
 
-[MESSAGE] Gewissheit (14)
+[MESSAGE >> QUALITY] Gewissheit (14)
 
 [STATE] alt (21)
 [has-state] er (17)
@@ -199,7 +193,7 @@
 
 [IDENTIFICATION] er (17)
 
-[IDENTIFICATION] selbst (18)
+[NONCOMP] selbst (18)
 
 [TIME] Jahre (20)
 [m-quantity] neununddreißig (19)
@@ -212,7 +206,7 @@
 
 [IDENTIFICATION] er (25)
 
-[EXISTENCE] geboren (31)
+[EXISTENCE-INIT] geboren (31)
 [m-time] 1944 oder 1945 (28)
 
 [TIME] 1944 (28)
@@ -240,7 +234,7 @@
 17	bestimmen	bestimmen	VERB	VVINF	VerbForm=Inf	6	csubj	_	_
 18	.	.	PUNCT	$.	_	6	punct	_	_
 
-[SCENE] möglich (6)
+[SCENE-POSSIBILITY] möglich (6)
 [m-time] heutzutage (2)
 [m-time] nie (5)
 [scene] , ein Datum auf ein oder zwei Jahre genau zu bestimmen (17)
@@ -254,7 +248,6 @@
 [m-quality] genau (15)
 
 [TIME] Datum (9)
-[] auf ein oder zwei Jahre (14)
 
 [TIME] Jahre (14)
 [q-quantity] ein oder zwei (11)
@@ -283,7 +276,7 @@
 14	?	?	PUNCT	$.	_	9	punct	_	_
 
 [MESSAGE-INIT] fragte (4)
-[topic] Für wen , (2)
+[target-content] Für wen , (2)
 [x-sender] er (5)
 [x-experiencer] sich (6)
 [m-time] plötzlich (7)
@@ -296,16 +289,14 @@
 
 [TIME] plötzlich (7)
 
-[STATE-INIT] legte (9)
+[TRANSFORMATION-CREATION] legte (9)
 [x-causer] er (10)
-[target-state] dieses Tagebuch (12)
+[created] dieses Tagebuch (12)
 [m-noncomp] an (13)
 
 [IDENTIFICATION] er (10)
 
-[CLASS] Tagebuch (12)
-
-[NONCOMP] an (13)
+[MESSAGE] Tagebuch (12)
 
 # sent_id = 109
 # text = Für die Zukunft , für die Kommenden .
@@ -419,10 +410,10 @@
 [IDENTIFICATION] ihm (4)
 
 [QUANTITY] Größe (6)
-[m-identified] seines Vorhabens (8)
+[has-quantity] seines Vorhabens (8)
 
-[SEQUENCE] Vorhabens (8)
-[m-idemtifier] seines (7)
+[MESSAGE] Vorhabens (8)
+[x-causer || x-experiencer] seines (7)
 
 [IDENTIFICATION] seines (7)
 
@@ -615,63 +606,66 @@
 2	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
 3	seltsam	seltsam	ADJ	ADJD	_	0	root	_	_
 4	,	,	PUNCT	$,	_	13	punct	_	_
-5	dass	dass	SCONJ	KOUS	_	13	mark	_	_
-6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+5	dass	dass	SCONJ	KOUS	_	20	mark	_	_
+6	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
 7	nicht	nicht	PART	PTKNEG	Polarity=Neg	13	advmod	_	_
 8	nur	nur	ADV	ADV	_	13	advmod	_	_
 9	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Gabe	Gabe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	13	obj	_	_
 11	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	Mitteilung	Mitteilung	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
-13	verloren	verlieren	VERB	VVPP	Verbform=Part	3	csubj	_	_
+13	verloren	verlieren	VERB	VVPP	Verbform=Part	20	xcomp	_	_
 14	,	,	PUNCT	$,	_	17	punct	_	_
 15	sondern	sondern	CCONJ	KON	_	17	cc	_	_
 16	sogar	sogar	ADV	ADV	_	17	advmod	_	_
 17	vergessen	vergessen	VERB	VVPP	Verbform=Part	13	conj	_	_
 18	zu	zu	PART	PTKZU	_	17	mark	_	_
 19	haben	haben	AUX	VAINF	VerbForm=Inf	17	aux	_	_
-20	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_
+20	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	csubj	_	_
 21	,	,	PUNCT	$,	_	26	punct	_	_
 22	was	was	PRON	PWS	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	26	obj	_	_
 23	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
 24	ursprünglich	ursprünglich	ADJ	ADJD	_	26	advmod	_	_
 25	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
-26	sagen	sagen	VERB	VVINF	VerbForm=Inf	20	acl	_	_
+26	sagen	sagen	VERB	VVINF	VerbForm=Inf	17	ccomp	_	_
 27	wollen	wollen	AUX	VMINF	VerbForm=Inf	26	aux	_	_
 28	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SCENE] seltsam (3)
-[scene] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (13)
+[QUALITY] seltsam (3)
+[has-quality] , dass er nicht nur die Gabe der Mitteilung verloren , sondern sogar vergessen zu haben schien , was er ursprünglich hatte sagen wollen (20)
 
-[SCENE-DEINIT] verloren (13)
-[participant] er (6)
+[POSSESSION-DEINIT >> SCENE-DEINIT] verloren (13)
 [m-mode] nicht (7)
-[m-quantity] nur (8)
-[initial-scene] die Gabe der Mitteilung (10)
+[m-mode] nur (8)
+[possessed >> initial-scene] die Gabe der Mitteilung (10)
+[initial-possessor >> participant] er (6)
 
 [IDENTIFICATION] er (6)
 
 [MODE] nicht (7)
 
-[QUANTITY] nur (8)
+[MODE] nur (8)
 
 [POSSESSION-INIT >> SCENE-POSSIBILITY] Gabe (10)
-[possession >> scene] der Mitteilung (12)
+[possessed >> scene] der Mitteilung (12)
 [target-possessor >> participant] er (6)
 
-[MESSAGE] Mitteilung (12)
+[MESSAGE-INIT] Mitteilung (12)
+[x-sender] er (6)
+
+[MESSAGE-DEINIT] vergessen (17)
+[m-mode] sogar (16)
+[initial-content] , was er ursprünglich hatte sagen wollen (26)
 
 [MODE] sogar (16)
 
-[SCENE] schien (20)
-[scene] vergessen (17)
+[MESSAGE] schien (20)
+[topic] er (6)
+[content] , nicht nur die Gabe der Mitteilung verloren (13)
+[content] , sondern sogar vergessen zu haben , was er ursprünglich hatte sagen wollen (17)
 
-[MESSAGE-NEG] vergessen (17)
-[m-mode] sogar (16)
-[content] , was er ursprünglich hatte sagen wollen (26)
-
-[MESSAGE] sagen (26)
-[topic] was (22)
+[MESSAGE-INIT] sagen (26)
+[target-content] was (22)
 [x-sender] er (23)
 [m-time] ursprünglich (24)
 
@@ -780,7 +774,7 @@
 [content] für leicht (8)
 
 [MESSAGE] Niederschrift (2)
-[x-identified] als solche (4)
+[m-reference] als solche (4)
 
 [IDENTIFICATION] solche (4)
 
@@ -831,7 +825,7 @@
 
 [MODE] doch (3)
 
-[MODE] nichts (4)
+[CLASS-NEG] nichts (4)
 
 [ACTIVITY] tun (7)
 
@@ -921,8 +915,8 @@
 
 [CLASS] Ekzem (4)
 
-[CLASS] Krampfadern (7)
-[m-identified] seinen (6)
+[PART-WHOLE] Krampfadern (7)
+[whole] seinen (6)
 
 [IDENTIFICATION] seinen (6)
 
@@ -1027,11 +1021,11 @@
 34	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	aux	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE >> MESSAGE] drang (2)
+[LOCATION-INIT >> MESSAGE-INIT] drang (2)
 [has-location >> topic] Nichts (1)
 [target-location >> m-noncomp] in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (5)
 
-[IDENTIFICATION] Nichts (1)
+[CLASS-NEG] Nichts (1)
 
 [MESSAGE] Bewusstsein (5)
 [x-experiencer] sein (4)
@@ -1056,8 +1050,8 @@
 [EXPERIENCE || CLASS] Hautjucken (17)
 [m-location] über seinem Knöchel (20)
 
-[CLASS] Knöchel (20)
-[m-identified] seinem (19)
+[PART-WHOLE] Knöchel (20)
+[whole] seinem (19)
 
 [IDENTIFICATION] seinem (19)
 
@@ -1153,64 +1147,66 @@
 16	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	18	det	_	_
 17	großen	groß	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Plur	18	amod	_	_
 18	Anfangsbuchstaben	Anfangsbuchstabe	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	26	obl	_	_
-19	und	und	CCONJ	KON	_	21	cc	_	_
+19	und	und	CCONJ	KON	_	25	cc	_	_
 20	zum	zum	ADP	APPRART	_	21	case	_	_
-21	Schluss	Schluß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	18	conj	_	_
+21	Schluss	Schluß	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	25	orphan	_	_
 22	sogar	sogar	ADV	ADV	_	25	advmod	_	_
 23	auf	auf	ADP	APPR	_	25	case	_	_
 24	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	Interpunktion	Interpunktion	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	26	obl	_	_
+25	Interpunktion	Interpunktion	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	18	conj	_	_
 26	verzichtete	verzichten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 27	:	:	PUNCT	$.	_	5	punct	_	_
 
-[] bedeckte (5)
-[] Seine kleine kindliche Handschrift (4)
-[] Zeile (6)
-[] um Zeile des Blattes (8)
-[] , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete (26)
+[WRAPPING-WEARING-INIT >> MESSAGE-INIT] bedeckte (5)
+[wrapper >> x-sender] Seine kleine kindliche Handschrift (4)
+[wearer >> m-location] Zeile (6)
+[wearer >> m-location] um Zeile des Blattes (8)
+[m-follows] , wobei er bald auf die großen Anfangsbuchstaben und zum Schluss sogar auf die Interpunktion verzichtete (26)
 
-[] Handschrift (4)
-[] Seine (1)
-[] kleine (2)
-[] kindliche (3)
+[MESSAGE] Handschrift (4)
+[x-sender] Seine (1)
+[m-quality] kleine (2)
+[m-quality] kindliche (3)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] kleine (2)
+[QUALITY] kleine (2)
 
-[] kindliche (3)
+[QUALITY] kindliche (3)
 
-[] Zeile (6)
+[CLASS] Zeile (6)
 
-[] Zeile (8)
-[] des Blattes (10)
+[CLASS] Zeile (8)
+[m-whole] des Blattes (10)
 
-[] Blattes (10)
+[CLASS] Blattes (10)
 
-[] verzichtete (26)
-[] wobei (12)
-[] er (13)
-[] bald (14)
-[] auf die großen Anfangsbuchstaben und zum Schluss (18)
-[] sogar auf die Interpunktion (25)
+[SITUATION-INIT-NEG] verzichtete (26)
+[m-scene] wobei (12)
+[theme] er (13)
+[m-time] bald (14)
+[target-situator] auf die großen Anfangsbuchstaben (18)
+[target-situator] und zum Schluss sogar auf die Interpunktion (25)
 
-[] wobei (12)
+[ACCOMPANIMENT] wobei (12)
+[accompanier] verzichtete (26)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] bald (14)
+[TIME] bald (14)
 
-[] Anfangsbuchstaben (18)
-[] großen (17)
+[MESSAGE] Anfangsbuchstaben (18)
+[m-quality] großen (17)
 
-[] großen (17)
+[QUALITY] großen (17)
 
-[] Schluss (21)
+[SITUATION-DEINIT] Schluss (21)
 
-[] Interpunktion (25)
-[] sogar (22)
+[MESSAGE] Interpunktion (25)
+[m-time] zum Schluss (21)
+[m-mode] sogar (22)
 
-[] sogar (22)
+[MODE] sogar (22)
 
 # sent_id = 128
 # text = » 4 April 1984
@@ -1369,21 +1365,21 @@
 68	eingedrungen	eindringen	VERB	VVPP	Verbform=Part	57	advcl	_	_
 69	.	.	PUNCT	$.	_	3	punct	_	_
 
-[STATE] belustigt (3)
-[has-state] Zuschauer (1)
+[MESSAGE-INIT] belustigt (3)
+[x-experiencer] Zuschauer (1)
 [m-quantity] höchst (2)
-[m-causer] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
+[x-sender] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , sich (6)
 
 [CLASS] Zuschauer (1)
 
 [QUANTITY] höchst (2)
 
 [MESSAGE] Aufnahme (6)
-[content] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
+[topic] von einem großen dicken Mann , den ein Helikopter verfolgt , sich (11)
 
 [CLASS] Mann (11)
-[m-depictive] großen (9)
-[m-depictive] dicken (10)
+[m-quality] großen (9)
+[m-state] dicken (10)
 [m-scene] , den ein Helikopter verfolgt , sich (16)
 
 [DEPICTION] großen (9)
@@ -1411,6 +1407,7 @@
 [IDENTIFICATION] ihn (21)
 
 [LOCATION-CHANGE] wälzen (25)
+[has-location] sich (22)
 [transitory-location] durchs Wasser (24)
 [m-quality] wie ein Nilpferd (28)
 
@@ -1430,12 +1427,12 @@
 
 [IDENTIFICATION] ihn (33)
 
-[CLASS] Zielfernrohr (36)
-[m-identifier] des Hubschraubers (38)
+[PART-WHOLE] Zielfernrohr (36)
+[whole] des Hubschraubers (38)
 
 [CLASS] Hubschraubers (38)
 
-[STATE-INITIAL] färbte (51)
+[STATE-INIT] färbte (51)
 [has-state] das Meer (47)
 [m-location] rund um ihn (50)
 [m-noncomp] sich (52)
@@ -1559,7 +1556,7 @@
 
 [LOCATION-CONTINUATION] saß (22)
 [has-location] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
-[m-depictive] mit einem etwa drei jähre alten knaben (29)
+[m-accompanier] mit einem etwa drei jähre alten knaben (29)
 [location] im bug (31)
 
 [CLASS] frau (14)
@@ -1592,7 +1589,7 @@
 
 [CLASS] bug (31)
 
-# sent_id = 135 #jetzt korrekte Syntax
+# sent_id = 135
 # text = Kleiner Junge brüllte vor angst und verbarg seinen köpf zwischen den brüsten als wollte er ganz in sie hineinkriechen und die frau legte die arme um ihn und tröstete ihn , obwohl sie selbst außer sich vor angst war bedeckte sie ihn so gut wie möglich als glaubte sie ihre arme könnten die kugeln von ihm abhalten , dann warf der hubschrauber eine 20-kilo-Bombe zwischen sie schreckliches aufblitzen und das ganze schiff zersplitterte wie Streichhölzer , dann gab es eine wundervolle aufnähme von einem kinderarm der hoch , hoch und immer höher hinauffliegt in die luft ein hubschrauber mit einer kamera vorn in der kanzel muss ihm nachgeflogen sein und es gab viel bei fall aus den parteilogen aber eine frau unten wo die proles sitzen fing plötzlich an radau zu machen und zu schreien man hätte so was nicht vor kindern zeigen sollen es sei nicht recht vor kindern bis die polizei sie hinauswarf ich glaube nicht dass ihr etwas passierte niemand kümmert sich darum was die proles sagen typische prolesreaktion sie können nie - «
 1	Kleiner	klein	ADJ	ADJA	Case=Nom|Gender=Masc|Number=Sing	2	amod	_	_
 2	Junge	Junge	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -1859,7 +1856,7 @@
 
 [IDENTIFICATION] sie (49)
 
-[SITUATION-PREVENTION] abhalten (57)
+[SITUATION-INIT-NEG] abhalten (57)
 [x-causer] ihre arme (51)
 [target-situator] die kugeln (54)
 [theme] von ihm (56)
@@ -2074,7 +2071,7 @@
 [content] darum (166)
 [content] was die proles sagen (170)
 
-[CLASS] niemand (163)
+[CLASS-NEG] niemand (163)
 
 [NONCOMP] sich (165)
 
@@ -2099,7 +2096,7 @@
 
 [IDENTIFICATION] sie (173)
 
-[TIME] nie (175)
+[TIME-NEG] nie (175)
 
 # sent_id = 136
 # text = Winston hörte zu schreiben auf , auch weil er einen Schreibkrampf bekam .
@@ -2321,9 +2318,11 @@
 
 [QUALITY] andere (7)
 
-[RESULTATIVE] Entschluss (12)
-[m-identifier] seinem (10)
+[MESSAGE-INIT] Entschluss (12)
+[x-experiencer] seinem (10)
 [m-time] plötzlichen (11)
+[target-content] , nach Hause zu gehen (19)
+[target-content] und heute sein Tagebuch zu beginnen (25)
 
 [IDENTIFICATION] seinem (10)
 
@@ -2480,7 +2479,7 @@
 [initial-location] aus den Gemeinschaftsräumen (23)
 
 [SOCIAL-RELATION] Registrierabteilung (10)
-[m-depictive] , in der Winston arbeitete (15)
+[m-scene] , in der Winston arbeitete (15)
 
 [SOCIAL-RELATION] arbeitete (15)
 [social-relation] in der (13)
@@ -2562,52 +2561,51 @@
 37	traten	treten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 38	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] nahm (2)
-[] Winston (1)
-[] gerade (3)
-[] seinen Platz (5)
-[] in einer der Mittelreihen (7)
-[] ein (10)
-[] , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten (37)
+[LOCATION-INIT] nahm (2)
+[has-location] Winston (1)
+[m-time] gerade (3)
+[target-location] seinen Platz (5)
+[m-location] in einer der Mittelreihen (7)
+[m-noncomp] ein (10)
+[m-follows] , als zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , unerwartet in den Raum traten (37)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] gerade (3)
+[TIME] gerade (3)
 
-[] Platz (5)
-[] seinen (4)
+[LOCATION] Platz (5)
+[has-location] seinen (4)
 
-[] seinen (4)
+[IDENTIFICATION] seinen (4)
 
-[] einer (7)
-[] der Mittelreihen (9)
+[PART-WHOLE] einer (7)
+[whole] der Mittelreihen (9)
 
-[] Mittelreihen (9)
+[LOCATION] Mittelreihen (9)
 
-[] ein (10)
+[LOCATION-INIT] traten (37)
+[has-location] zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , (14)
+[m-quality] unerwartet (33)
+[target-location] in den Raum (36)
 
-[] traten (37)
-[] zwei Personen , die er vom Sehen kannte , mit denen er aber noch nie ein Wort gewechselt hatte , (14)
-[] unerwartet (33)
-[] in den Raum (36)
+[CLASS] Personen (14)
+[m-quantity] zwei (13)
+[m-scene] , die er vom Sehen kannte (20)
+[m-scene] , mit denen er aber noch nie ein Wort gewechselt hatte , (30)
 
-[] Personen (14)
-[] zwei (13)
-[] , die er vom Sehen kannte (20)
-[] , mit denen er aber noch nie ein Wort gewechselt hatte , (30)
+[QUANTITY] zwei (13)
 
-[] zwei (13)
+[MESSAGE] kannte (20)
+[topic] die (16)
+[x-experiencer] er (17)
+[x-noncomp] vom Sehen (19)
+[topic] Personen (14)
 
-[] kannte (20)
-[] die (16)
-[] er (17)
-[] vom Sehen (19)
+[IDENTIFICATION] die (16)
 
-[] die (16)
+[IDENTIFICATION] er (17)
 
-[] er (17)
-
-[] Sehen (19)
+[NONCOMP] Sehen (19)
 
 [POSSESSION-CHANGE >> MESSAGE-INIT] gewechselt (30)
 [target-possessor >> x-experiencer] mit denen (23)
@@ -2617,22 +2615,22 @@
 [possessed >> x-noncomp] ein Wort (29)
 [target-possessor >> x-experiencer] Personen (14)
 
-[] denen (23)
+[IDENTIFICATION] denen (23)
 
-[] er (24)
+[IDENTIFICATION] er (24)
 
-[] aber (25)
+[MODE] aber (25)
 
-[] nie (27)
-[] noch (26)
+[TIME] nie (27)
+[m-noncomp] noch (26)
 
-[] noch (26)
+[NONCOMP] noch (26)
 
 [MESSAGE >> NONCOMP] Wort (29)
 
-[] unerwartet (33)
+[QUALITY] unerwartet (33)
 
-[] Raum (36)
+[CLASS] Raum (36)
 
 # sent_id = 143
 # text = Die eine davon war ein Mädchen , dem er oft auf den Gängen begegnet war .
@@ -2703,8 +2701,8 @@
 
 [IDENTIFICATION] Er (1)
 
-[CLASS] Namen (4)
-[m-identified] ihren (3)
+[IDENTIFICATION] Namen (4)
+[identified] ihren (3)
 
 [IDENTIFICATION] ihren (3)
 
@@ -2723,7 +2721,7 @@
 [IDENTIFICATION] sie (11)
 
 [CLASS] Abteilung (14)
-[m-identified] für Prosa-Literatur (16)
+[m-purpose] für Prosa-Literatur (16)
 
 [MESSAGE] Prosa-Literatur (16)
 
@@ -2860,7 +2858,7 @@
 
 [QUALITY] schwarzen (14)
 
-[CLASS] Gesicht (18)
+[PART-WHOLE] Gesicht (18)
 [m-quality] sommersprossigem (17)
 
 [QUALITY] sommersprossigem (17)
@@ -2917,13 +2915,13 @@
 
 [CLASS] Schärpe (5)
 [m-quality] schmale , scharlachrote (2)
-[m-identified] , das Abzeichen der Jugendliga gegen Sexualität (8)
+[m-scene] , das Abzeichen der Jugendliga gegen Sexualität (8)
 
 [QUALITY] schmale (2)
 
 [QUALITY] scharlachrote (4)
 
-[CLASS] Abzeichen (8)
+[IDENTIFICATION] Abzeichen (8)
 [m-identified] der Jugendliga gegen Sexualität (12)
 
 [CLASS] Jugendliga (10)
@@ -2932,11 +2930,11 @@
 
 [QUANTITY] mehrmals (15)
 
-[CLASS] Taille (18)
-[m-identified] ihres Trainingsanzuges (20)
+[PART-WHOLE] Taille (18)
+[whole] ihres Trainingsanzuges (20)
 
-[CLASS] Trainingsanzuges (20)
-[m-identified] ihres (19)
+[WRAPPING-WEARING] Trainingsanzuges (20)
+[wearer] ihres (19)
 
 [IDENTIFICATION] ihres (19)
 
@@ -2952,11 +2950,11 @@
 [SCENE] hervorzuheben (32)
 [participant] die Rundung ihrer Hüften (29)
 
-[CLASS] Rundung (29)
-[m-identified] ihrer Hüften (31)
+[QUALITY] Rundung (29)
+[has-quality] ihrer Hüften (31)
 
-[CLASS] Hüften (31)
-[m-identified] ihrer (30)
+[PART-WHOLE] Hüften (31)
+[whole] ihrer (30)
 
 [IDENTIFICATION] ihrer (30)
 
