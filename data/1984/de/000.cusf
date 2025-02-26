@@ -559,8 +559,8 @@
 
 [QUANTITY] sieben (4)
 
-[UNANCHORED-MOTION] ging (22)
-[in-motion] der neununddreißigjährige Winston , der über dem rechten Fußknöchel dicke Krampfaderknoten hatte , (11)
+[LOCATION-CHANGE] ging (22)
+[has-location] der neununddreißigjährige Winston , der über dem rechten Fußknöchel dicke Krampfaderknoten hatte , (11)
 [m-quality] sehr langsam (24)
 
 [IDENTIFICATION] Winston (11)
@@ -576,7 +576,7 @@
 
 [IDENTIFICATION] der (13)
 
-[CLASS] Fußknöchel (17)
+[PART-WHOLE] Fußknöchel (17)
 [m-location] rechten (16)
 
 [LOCATION] rechten (16)
@@ -689,9 +689,9 @@
 
 [IDENTIFICATION] einen (13)
 
-[IDENTIFICATION] Augen (15)
+[PART-WHOLE] Augen (15)
 
-[LOCATION-DEINIT] überallhin (16)
+[LOCATION] überallhin (16)
 
 # sent_id = 12
 # text = » Der Große Bruder sieht dich an ! « lautete die Schlagzeile darunter .
@@ -720,10 +720,10 @@
 [topic] dich (6)
 [m-noncomp] an (7)
 
-[IDENTIFICATION] Bruder (4)
-[m-noncomp] Große (3)
+[SOCIAL_RELATION >> IDENTIFICATION] Bruder (4)
+[m-quality >> m-noncomp] Große (3)
 
-[NONCOMP] Große (3)
+[QUALITY >> NONCOMP] Große (3)
 
 [IDENTIFICATION] dich (6)
 
@@ -960,7 +960,7 @@
 7	abgezehrte	abgezehrt	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	10	amod	_	_
 8	,	,	PUNCT	$,	_	9	punct	_	_
 9	gebrechliche	gebrechlich	ADJ	ADJA	Case=Acc|Gender=Fem|Number=Sing	7	conj	_	_
-10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	4	appos	_	_
+10	Gestalt	Gestalt	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	1	appos	_	_
 11	,	,	PUNCT	$,	_	21	punct	_	_
 12	deren	d	DET	PRELAT	Gender=Neut|PronType=Rel	13	nmod:poss	_	_
 13	Magerkeit	Magerkeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	21	nsubj:pass	_	_
@@ -975,44 +975,44 @@
 22	wurde	werden	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
 23	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE] trat (2)
-[has-location] Smith (1)
-[target-location] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
-[] ans Fenster (4)
+[LOCATION-INIT] trat (2)
+[has-location] Smith , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (1)
+[target-location] ans Fenster (4)
 
-[IDENTIFICATION] Smith (1)
+[IDENTIFICATION] Smith , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (1)
 
 [CLASS] Fenster (4)
-[] , eine abgezehrte , gebrechliche Gestalt , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (10)
 
-[MESSAGE] Gestalt (10)
-[x-identified] Smith (1)
-[topic] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
-[m-quality] abgezehrte , gebrechliche (7)
+[CLASS] Gestalt (10)
+[m-state] abgezehrte (7)
+[m-quality] , gebrechliche (9)
+[m-scene] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
 
-[QUALITY] abgezehrte (7)
+[STATE] abgezehrte (7)
 
 [QUALITY] gebrechliche (9)
 
 [MESSAGE] betont (21)
 [topic] deren Magerkeit (13)
-[m-means] durch den blauen Trainingsanzug der Parteiuniform (17)
-[m-quantity] noch (20)
+[x-sender] durch den blauen Trainingsanzug der Parteiuniform (17)
+[m-mode] noch (20)
+[topic] Gestalt (10)
 
-[QUALITY] Magerkeit (13)
-[m-identifier] deren (12)
+[STATE] Magerkeit (13)
+[has-state] deren (12)
+[has-state] Gestalt (10)
 
 [IDENTIFICATION] deren (12)
 
 [CLASS] Trainingsanzug (17)
 [m-quality] blauen (16)
-[m-identifier] der Parteiuniform (19)
+[m-whole] der Parteiuniform (19)
 
 [QUALITY] blauen (16)
 
 [CLASS] Parteiuniform (19)
 
-[QUANTITY] noch (20)
+[MODE] noch (20)
 
 # sent_id = 18
 # text = Sein Haar war sehr heil , sein Gesicht unnatürlich gerötet , seine Haut rauh von der groben Seife , den stumpfen Rasierklingen und der Kälte des gerade überstandenen Winters .
@@ -1051,8 +1051,8 @@
 [has-quality] Sein Haar (2)
 [m-quantity] sehr (4)
 
-[CLASS] Haar (2)
-[m-identifier] Sein (1)
+[PART-WHOLE] Haar (2)
+[whole] Sein (1)
 
 [IDENTIFICATION] Sein (1)
 
@@ -1062,8 +1062,8 @@
 [has-quality] sein Gesicht (8)
 [m-quality] unnatürlich (9)
 
-[CLASS] Gesicht (8)
-[m-identifier] sein (7)
+[PART-WHOLE] Gesicht (8)
+[whole] sein (7)
 
 [IDENTIFICATION] sein (7)
 
@@ -1073,8 +1073,8 @@
 [has-quality] seine Haut (13)
 [m-follows] von der groben Seife , den stumpfen Rasierklingen und der Kälte des gerade überstandenen Winters (18)
 
-[CLASS] Haut (13)
-[m-identifier] (12)
+[PART-WHOLE] Haut (13)
+[whole] seine (12)
 
 [IDENTIFICATION] seine (12)
 
@@ -1255,7 +1255,7 @@
 [x-initial-location >> x-location] von jeder beherrschenden Ecke (11)
 [x-target-location >> x-location] herunter (12)
 
-[ACCOMPANIMENT] Gesicht (2)
+[PART-WHOLE] Gesicht (2)
 [m-accompanier] mit dem schwarzen Schnurrbart (6)
 
 [CLASS] Schnurrbart (6)
@@ -1336,10 +1336,10 @@
 [target-content] dich (6)
 [m-noncomp] an (7)
 
-[IDENTIFICATION] Bruder (4)
-[m-noncomp] Große (3)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (4)
+[m-quality >> m-noncomp] Große (3)
 
-[NONCOMP] Große (3)
+[QUALITY >> NONCOMP] Große (3)
 
 [IDENTIFICATION] dich (6)
 
@@ -1355,7 +1355,7 @@
 [m-quantity >> m-quality] tief (22)
 [target-location >> topic] in Winstons Blick (25)
 
-[MESSAGE] Augen (19)
+[PART-WHOLE] Augen (19)
 [m-quality] dunklen (18)
 
 [QUALITY] dunklen (18)
@@ -1365,7 +1365,7 @@
 [QUANTITY >> QUALITY] tief (22)
 
 [MESSAGE] Blick (25)
-[x-identifier] Winstons (24)
+[x-sender >> x-experiencer] Winstons (24)
 
 [IDENTIFICATION] Winstons (24)
 
@@ -1548,7 +1548,7 @@
 
 [IDENTIFICATION] die (6)
 
-[IDENTIFICATION] Leuten (8)
+[CLASS] Leuten (8)
 
 [CLASS] Fenster (11)
 
@@ -1626,7 +1626,8 @@
 [m-location] Hinter Winstons Rücken (3)
 [x-sender] die leise Stimme aus dem Televisor (7)
 [m-time] noch immer (12)
-[topic] von Roheisen und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (14)
+[topic] von Roheisen (14)
+[topic] und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (24)
 
 [PART-WHOLE] Rücken (3)
 [whole] Winstons (2)
@@ -1635,31 +1636,32 @@
 
 [MESSAGE] Stimme (7)
 [m-quality] leise (6)
-[m-initial-location] aus dem Televisor (10)
+[x-sender] aus dem Televisor (10)
 
 [QUALITY] leise (6)
 
-[MEANS] Televisor (10)
+[CLASS] Televisor (10)
 
 [TIME] immer (12)
-[m-time] noch (11)
+[m-mode] noch (11)
 
-[TIME] noch (11)
+[MODE] noch (11)
 
 [CLASS] Roheisen (14)
 
 [SEQUENCE] Erfüllung (24)
-[m-quality] weit über das gesteckte Ziel hinausgehenden (23)
-[m-identifier] des neunten Dreijahresplans (27)
+[m-scene] weit über das gesteckte Ziel hinausgehenden (23)
+[followed] des neunten Dreijahresplans (27)
 
-[QUALITY] hinausgehenden (23)
-[m-quality] weit (18)
-[m-target-state] über das gesteckte Ziel (22)
+[COMPARISON] hinausgehenden (23)
+[m-quantity] weit (18)
+[reference] über das gesteckte Ziel (22)
+[compared] Erfüllung (24)
 
-[QUALITY] weit (18)
+[QUANTITY] weit (18)
 
 [MEANS] Ziel (22)
-[purpose] gesteckte (21)
+[m-quality] gesteckte (21)
 
 [QUALITY] gesteckte (21)
 
@@ -1679,16 +1681,18 @@
 7	Sendegerät	Sendegerät	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
 8	.	.	PUNCT	$.	_	5	punct	_	_
 
-[MEANS] Der Televisor (2)
-[m-time] gleichzeitig (4)
-
-[TIME] gleichzeitig (4)
-
 [CLASS] Empfangs- (5)
 [has-class] Der Televisor (2)
-[time] gleichzeitig (4)
+[m-time >> m-scene] gleichzeitig (4)
 
-[MESSAGE] Sendegerät (7)
+[CLASS] Televisor (2)
+
+[ACCOMPANIMENT] gleichzeitig (4)
+[accompanied] Empfangs- (5)
+[accompanier] Sendegerät (7)
+
+[CLASS] Sendegerät (7)
+[has-class] Der Televisor (2)
 
 # sent_id = 31
 # text = Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , wurde von ihm registriert .
@@ -1712,9 +1716,9 @@
 18	registriert	registrieren	VERB	VVPP	Verbform=Part	0	root	_	_
 19	.	.	PUNCT	$.	_	18	punct	_	_
 
-[MESSAGE] registriert (18)
-[x-experienced] Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , (5)
-[x-experiencer] von ihm (17)
+[MESSAGE-INIT] registriert (18)
+[topic] Jedes von Winston verursachte Geräusch , das über ein ganz leises Flüstern hinausging , (5)
+[x-sender] von ihm (17)
 
 [MESSAGE] Geräusch (5)
 [m-scene] von Winston verursachte (4)
@@ -1722,12 +1726,14 @@
 
 [CAUSATION] verursachte (4)
 [causer] von Winston (3)
+[result] Geräusch (5)
 
 [IDENTIFICATION] Winston (3)
 
 [COMPARISON] hinausging (13)
-[x-identifier] das (7)
-[initial-state] über ein ganz leises Flüstern (12)
+[compared] das (7)
+[reference] über ein ganz leises Flüstern (12)
+[compared] Geräusch (5)
 
 [IDENTIFICATION] das (7)
 
@@ -1735,9 +1741,9 @@
 [m-quality] ganz leises (11)
 
 [QUALITY] leises (11)
-[m-quantity] ganz (10)
+[m-mode] ganz (10)
 
-[QUANTITY] ganz (10)
+[MODE] ganz (10)
 
 [IDENTIFICATION] ihm (17)
 
@@ -1925,7 +1931,7 @@
 [MODE] sogar (3)
 
 [MESSAGE] überwacht (10)
-[m-identifier] jeder einzelne (8)
+[x-experiencer] jeder einzelne (8)
 [m-time] ständig (9)
 
 [IDENTIFICATION] einzelne (8)
@@ -2114,7 +2120,7 @@
 
 [CLASS] Televisor (10)
 
-[CLASS] Rücken (12)
+[PART-WHOLE] Rücken (12)
 
 # sent_id = 39
 # text = Das war sicherer , wenn auch , wie er wohl wusste , sogar ein Rücken verräterisch sein kann .
@@ -2139,7 +2145,7 @@
 19	.	.	PUNCT	$.	_	3	punct	_	_
 
 [QUALITY] sicherer (3)
-[m-identifier] Das (1)
+[has-quality] Das (1)
 [m-conceded] , wenn auch , wie er wohl wusste , sogar ein Rücken verräterisch sein kann (16)
 
 [IDENTIFICATION] Das (1)
@@ -2625,7 +2631,7 @@
 
 [IDENTIFICATION] es (2)
 
-[CLASS] nichts (5)
+[CLASS-NEG] nichts (5)
 
 [MESSAGE] erinnern (11)
 [x-experiencer] er (7)
@@ -2646,14 +2652,14 @@
 [m-content] als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren (22)
 
 [TIME] Kindheit (15)
-[m-identifier] seiner (14)
+[has-time] seiner (14)
 
 [IDENTIFICATION] seiner (14)
 
 [IDENTIFICATION] er (17)
 
-[MODE] nichts (18)
-[m-time] von seiner Kindheit (15)
+[PART-WHOLE] nichts (18)
+[whole] von seiner Kindheit (15)
 
 [PART-WHOLE] Reihe (22)
 [part] greller Bilder ohne Hintergrund (24)
@@ -2668,7 +2674,7 @@
 [PART-WHOLE || LOCATION] Hintergrund (26)
 
 [MESSAGE] unverständlich (31)
-[m-identifier] die (28)
+[topic] die (28)
 [x-experiencer] ihm (29)
 [m-time || m-quantity] zumeist (30)
 
@@ -2721,7 +2727,7 @@
 [m-comparison] allem (23)
 
 [SOCIAL-RELATION] Wahrheitsministerium (2)
-[m-identifier] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
+[m-scene] - Miniwahr , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (4)
 
 [IDENTIFICATION] Miniwahr (4)
 [m-quality] , wie es in der Neusprache , der amtlichen Sprache Ozeaniens , hieß - (17)
@@ -2733,11 +2739,11 @@
 [IDENTIFICATION] es (7)
 
 [MESSAGE] Neusprache (10)
-[m-identified] , der amtlichen Sprache Ozeaniens (14)
+[m-scene] , der amtlichen Sprache Ozeaniens (14)
 
 [MESSAGE] Sprache (14)
 [m-quality] amtlichen (13)
-[m-location || m-identifier] Ozeaniens (15)
+[m-location] Ozeaniens (15)
 
 [QUALITY] amtlichen (13)
 
@@ -2785,28 +2791,31 @@
 21	.	.	PUNCT	$.	_	9	punct	_	_
 
 [CLASS] Betonbau (9)
-[m-identifier] Es (1)
-[m-quality] riesiger (4)
-[m-quality] pyramidenartiger , weiß schimmernder (5)
-[m-quality] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
+[has-class] Es (1)
+[m-scene] riesiger (4)
+[m-scene] pyramidenartiger , weiß schimmernder (5)
+[m-scene] , der sich terrassenförmig dreihundert Meter hoch in die Luft reckte (20)
 
 [IDENTIFICATION] Es (1)
 
 [QUALITY] riesiger (4)
 
-[QUALITY] pyramidenartiger (5)
+[COMPARISON >> QUALITY] pyramidenartiger (5)
+[compared >> has-quality] Betonbau (9)
 
 [QUALITY] schimmernder (8)
 [m-quality] weiß (7)
+[has-quality] Betonbau (9)
 
 [QUALITY] weiß (7)
 
-[LOCATION >> LOCATION-CHANGE] reckte (20)
+[LOCATION-INIT] reckte (20)
 [has-location] der (11)
 [m-noncomp] sich (12)
 [m-quality] terrassenförmig (13)
 [m-quantity >> location-transitory] dreihundert Meter hoch (16)
 [target-location] in die Luft (19)
+[has-quality] Betonbau (9)
 
 [IDENTIFICATION] der (11)
 
@@ -2881,7 +2890,7 @@
 [MESSAGE] Wahlsprüche (23)
 [m-quality] in schönen Lettern in seine weiße Front gemeißelten (21)
 [m-quantity] drei (22)
-[m-identifier] der Partei (25)
+[x-sender] der Partei (25)
 
 [TRANSFORMATION-CREATION] gemeißelten (21)
 [created] in schönen Lettern (16)
@@ -2892,8 +2901,8 @@
 
 [QUALITY] schönen (15)
 
-[LOCATION] Front (20)
-[m-identifier] seine (18)
+[PART-WHOLE] Front (20)
+[whole] seine (18)
 [m-quality] weiße (19)
 
 [IDENTIFICATION] seine (18)
