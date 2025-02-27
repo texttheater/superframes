@@ -35,7 +35,7 @@
 
 [CLASS] Straße (4)
 
-[STATE] Wind (7)
+[CLASS] Wind (7)
 
 [MESSAGE] Plakat (10)
 [m-state] zerrissene (9)
@@ -172,8 +172,8 @@
 3	allein	allein	ADV	ADV	_	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[QUANTITY || STATE] allein (3)
-[has-quantity || has-state] Er (1)
+[STATE] allein (3)
+[has-state] Er (1)
 
 [IDENTIFICATION] Er (1)
 
@@ -222,7 +222,7 @@
 [SCENE] hatte (3)
 [scene] Welche Gewissheit (2)
 [participant] er (4)
-[participant] , dass auch nur ein einziger lebender Mensch auf seiner Seite stand (16)
+[scene] , dass auch nur ein einziger lebender Mensch auf seiner Seite stand (16)
 
 [MESSAGE] Gewissheit (2)
 [topic] , dass auch nur ein einziger lebender Mensch auf seiner Seite stand (16)
@@ -283,7 +283,7 @@
 
 [MODE] nicht (8)
 
-[TIME] ewig (9)
+[TIME-CONTINUATION] ewig (9)
 
 # sent_id = 458
 # text = Wie eine Art Antwort fielen ihm die drei Wahlsprüche auf der weißen Front des WahrheitsMinisteriums ein :
@@ -338,9 +338,9 @@
 2	BEDEUTET	bedeuten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	FRIEDEN	Frieden	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	2	obj	_	_
 
-[SEQUENCE] BEDEUTET (2)
-[followed] KRIEG (1)
-[follows] FRIEDEN (3)
+[MESSAGE || SEQUENCE] BEDEUTET (2)
+[topic || followed] KRIEG (1)
+[content || follows] FRIEDEN (3)
 
 [SOCIAL-RELATION || STATE] KRIEG (1)
 
@@ -388,7 +388,7 @@
 
 [CLASS] Fünfundzwanzig-Cent-Stück (4)
 
-[CLASS] Tasche (7)
+[CLASS || WRAPPING-WEARING] Tasche (7)
 
 # sent_id = 463
 # text = Auch hier waren in winziger , klarer Schrift die gleichen Devisen eingestanzt , während die Kehrseite der Münze den Kopf des Großen Bruders zeigte .
@@ -429,10 +429,10 @@
 
 [MODE] Auch (1)
 
-[QUALITY] Schrift (8)
+[MESSAGE] Schrift (8)
 [m-quality] winziger (5)
-[m-scene] , klarer (7)
-[has-quality] die gleichen Devisen (11)
+[m-quality] , klarer (7)
+[topic] die gleichen Devisen (11)
 
 [QUALITY] winziger (5)
 
@@ -440,7 +440,7 @@
 [has-quality] Schrift (8)
 
 [MESSAGE] Devisen (11)
-[m-scene] gleichen (10)
+[m-reference] gleichen (10)
 
 [COMPARISON] gleichen (10)
 [compared] Devisen (11)
@@ -475,7 +475,7 @@
 9	.	.	PUNCT	$.	_	5	punct	_	_
 
 [UNANCHORED-MOTION >> MESSAGE-INIT] verfolgten (5)
-[m-mode] Sogar auf der Münze (4)
+[m-location] Sogar auf der Münze (4)
 [in-motion >> topic] einen (6)
 [x-accompanier >> x-experiencer] die Augen (8)
 
@@ -511,16 +511,16 @@
 18	einen	ein	PRON	PIS	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	16	obj	_	_
 19	.	.	PUNCT	$.	_	16	punct	_	_
 
-[UNANCHORED-MOTION] verfolgten (16)
-[m-depictive] Von Geldmünzen - (2)
-[m-depictive] , Briefmarken (4)
-[m-depictive] , Bucheinbänden (6)
-[m-depictive] , Fahnen (8)
-[m-depictive] , Plakaten (10)
-[m-depictive] , Zigarettenschachteln (12)
-[m-depictive] von überall (15)
-[x-accompanier] sie (17)
-[in-motion] einen (18)
+[MESSAGE-INIT] verfolgten (16)
+[m-location] Von Geldmünzen - (2)
+[m-location] , Briefmarken (4)
+[m-location] , Bucheinbänden (6)
+[m-location] , Fahnen (8)
+[m-location] , Plakaten (10)
+[m-location] , Zigarettenschachteln (12)
+[m-location] von überall (15)
+[x-experiencer >> topic] sie (17)
+[topic >> x-experiencer] einen (18)
 
 [CLASS] Geldmünzen (2)
 [x-has-location] sie (17)
@@ -726,8 +726,8 @@
 [LOCATION-INIT] fielen (20)
 [target-location] auf die (15)
 [has-location] ihre Strahlen (17)
-[m-scene] nicht mehr (19)
-[m-mode] nicht mehr (18)
+[m-time] mehr (19)
+[m-mode] nicht (18)
 [target-location] Fenster (9)
 
 [IDENTIFICATION] die (15)
@@ -765,7 +765,7 @@
 9	Pyramide	Pyramide	NOUN	NN	Case=Gen|Gender=Fem|Number=Sing	3	obl	_	_
 10	.	.	PUNCT	$.	_	3	punct	_	_
 
-[MESSAGE-DEINIT] verzagte (3)
+[MESSAGE] verzagte (3)
 [x-experiencer] Winstons Herz (2)
 [topic] angesichts dieser riesig sich hochtürmenden Pyramide (9)
 
@@ -784,7 +784,7 @@
 
 [QUANTITY] riesig (6)
 
-[IDENTIFICATION >> NONCOMP] sich (7)
+[NONCOMP] sich (7)
 
 # sent_id = 471
 # text = Sie war zu unerschütterlich , um erstürmt zu werden , tausend Raketenbomben vermochten sie nicht zu zertrümmern .
@@ -810,14 +810,14 @@
 [DESTRUCTION-POSSIBILITY-NEG] unerschütterlich (4)
 [destroyed] Sie (1)
 [m-quantity] zu (3)
-[m-reference] , um erstürmt zu werden (7)
+[m-scene] , um erstürmt zu werden (7)
 
 [IDENTIFICATION] Sie (1)
 
 [QUANTITY] zu (3)
 
-[LOCATION-INIT || POSSESSION-INIT] erstürmt (7)
-[target-scene] Sie (1)
+[LOCATION-INIT >> POSSESSION-INIT] erstürmt (7)
+[target-location >> target-possessed] Sie (1)
 
 [SCENE-POSSIBILITY] vermochten (13)
 [participant] tausend Raketenbomben (12)
@@ -1190,7 +1190,7 @@
 [SCENE] sein (11)
 [m-time] Um vierzehn Uhr dreißig (3)
 [participant] er (6)
-[m-scene] zurück (7)
+[m-location] zurück (7)
 [scene] an der Arbeit (10)
 
 [TIME] Uhr (3)
@@ -1203,8 +1203,8 @@
 
 [IDENTIFICATION] er (6)
 
-[SEQUENCE] zurück (7)
-[follows] sein (11)
+[LOCATION-INIT] zurück (7)
+[m-scene] sein (11)			#?
 
 [ACTIVITY] Arbeit (10)
 
