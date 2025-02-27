@@ -1,0 +1,41 @@
+Changes for Superframes v2
+==========================
+
+Changes in annotation targets
+-----------------------------
+
+* label also dislocated edges
+
+Changes for aspect, mode annotation
+-----------------------------------
+
+* only DYN-, MOD-; no further distinctions
+
+Changes in frame inventory
+--------------------------
+
+* abolish DEPICTIVE; add non-local dependency to mark an argument as depictive.
+  Use accompanier by default.
+* abolish EVENT, ACTIVITY (use SITUATION-DYN instead)
+* rename LOCATION to POSITION? (to include orientation)
+* merge STATE and QUALITY into ISOQ (internal state or quality)
+* add SUBCLASS frame for hyponymy
+* abolish UNANCHORED-MOTION, use POSITION-DYN
+* (rethink POSSESSION and SOCIAL-RELATION, perhaps add GROUP-MEMBERSHIP)
+* rename SCENE to META
+* abolish MODE, replace with META-MOD
+* add FOCUS
+* division into basic and advanced frames: advanced ones always have at least
+  one scene argument. Advanced: ASSET, ATTRIBUTE, EXPERIENCE, EXPLANATION,
+  MEANS, MESSAGE, META, FOCUS, NONCOMP, SEQUENCE, TIME
+* possibly abolish arg2 role of IDENTIFICATION, QUANTITY, RANK, CLASS, ISOQ,
+  FOCUS, TIME
+
+Changes in role labels
+----------------------
+
+* abolish x- m- prefixes; distinction between core arguments on the one hand and
+  non-core arguments and modifiers on the other will be implicit via the frame
+  label. The guideline to prefer core arguments remains. Rename core/non-core to
+  internal/external
+* introduce a new type of role label: reversed. E.g., scene-in, location-in.

@@ -3,6 +3,7 @@
 \usepackage{natbib}
 \usepackage{tgpagella}
 
+\usepackage{amssymb}
 \usepackage{amstext}
 \usepackage{booktabs}
 \usepackage{emoji}
@@ -44,7 +45,9 @@
 %\begin{abstract}
 %\end{abstract}
 
+
 \newpage\tableofcontents
+
 
 \newpage\section{Introduction}
 
@@ -77,7 +80,6 @@
             \Sub\emoji{eye} \fr{EXPERIENCE} & & \rl{experiencer} & \rl{experienced} &  &  & \ref{sec:EXPERIENCE} \\
 
             \Sub\emoji{red-exclamation-mark} \fr{EXPLANATION} & & \rl{explained} & \rl{explanation} & & & \ref{sec:EXPLANATION} \\
-            \SubSub\emoji{bullseye} \fr{PURPOSE} & & \rl{has-purpoe} & \rl{purpose} & & & \ref{sec:PURPOSE} \\
 
             \Sub\emoji{passport-control} \fr{IDENTIFICATION} & \rl{initial-identifier} & \rl{identified} & \rl{identifier} & & \rl{target-identifier} & \ref{sec:IDENTIFICATION} \\
 
@@ -87,9 +89,9 @@
             \SubSub\emoji{cricket-game} \fr{HITTING} & & \rl{hitting} & \rl{hit} & & & \ref{sec:HITTING} \\
             \SubSub\emoji{bowl-with-spoon} \fr{INGESTION} & & \rl{ingested} & & \rl{transitory-location} & \rl{ingester} & \ref{sec:INGESTION} \\
             \SubSub\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION} & & \rl{in-motion} & & \rl{transitory-location} & & \ref{sec:UNANCHORED-MOTION} \\
-            \SubSub\emoji{t-shirt} \fr{WRAPPING-WEARING} & \rl{initial-wearer} & \rl{worn} & \rl{wearer} & & \rl{target-wearer} & \ref{sec:WRAPPING-WEARING} \\
+            \SubSub\emoji{t-shirt} \fr{WRAPPING-WEARING} & \rl{initial-wearer} & \rl{wrapper} & \rl{wearer} & & \rl{target-wearer} & \ref{sec:WRAPPING-WEARING} \\
 
-            \Sub\emoji{hammer} \fr{MEANS} & & \rl{has-means} & \rl{means} & & & \ref{sec:MEANS} \\
+            \Sub\emoji{hammer} \fr{MEANS} & & \rl{purpose} & \rl{means} & & & \ref{sec:MEANS} \\
 
             \Sub\emoji{left-speech-bubble} \fr{MESSAGE} & \rl{initial-content} & \rl{topic} & \rl{content} & & \rl{target-content} & \ref{sec:MESSAGE} \\
 
@@ -98,7 +100,6 @@
             \Sub\emoji{spider-web} \fr{NONCOMP} & & \rl{has-noncomp} & \rl{noncomp} & & & \ref{sec:NONCOMP} \\
 
             \Sub\emoji{puzzle-piece} \fr{PART-WHOLE} & \rl{initial-whole} & \rl{part} & \rl{whole} & & \rl{target-whole} & \ref{sec:PART-WHOLE} \\
-            \SubSub\emoji{light-bulb} \fr{EXAMPLE} & \rl{} & \rl{example} & \rl{exemplified} & & \rl{} & \ref{sec:EXAMPLE} \\
 
             \Sub\emoji{service-dog} \fr{POSSESSION} & \rl{initial-possessor} & \rl{possessed} & \rl{possessor} & & \rl{target-possessor} & \ref{sec:POSSESSION} \\
 
@@ -123,6 +124,8 @@
             \SubSub\emoji{sneezing-face} \fr{RESULTATIVE} & & \rl{has-resultative} & \rl{resultative} & & & \ref{sec:RESULTATIVE} \\
 
             \Sub\emoji{handshake} \fr{SOCIAL-RELATION} & \rl{initial-social-relation} & \rl{has-social-relation} & \rl{social-relation} & & \rl{target-social-relation} & \ref{sec:SOCIAL-RELATION} \\
+
+            \Sub\emoji{red-triangle-pointed-up} \fr{SUBCLASS} & & \rl{subclass} & \rl{superclass} & \rl{} & \rl{} & \ref{sec:SUBCLASS} \\
 
             \Sub\emoji{alarm-clock} \fr{TIME} & \rl{initial-time} & \rl{has-time} & \rl{time} & & \rl{target-time} & \ref{sec:TIME} \\
 
@@ -174,6 +177,7 @@ direct children of \fr{SITUATION}. Some of them have one or more subtypes
 intended to make the annotation of certain special cases more intuitive and
 unambiguous.
 
+
 \newpage\subsection{Core Arguments}
 
 The most prototypical predicate is a verb, and the simplest case is a verb with only one argument. It can for example denote a state or an activity:
@@ -190,6 +194,7 @@ With two core arguments, a verb denotes a relation that holds between them:
 
 \ex.\dep{Kim_topic *seems#MESSAGE* happy_content}
 
+
 \newpage\subsection{Aspect, Mode, and Polarity}
 \label{sec:aspect-mode-polarity}
 
@@ -199,11 +204,14 @@ sort such predicates into a few coarse aspectual classes. For example,
 initiation (\frs{-INIT}) means a state is begun or worked towards, deinitiation
 (\frs{-DEINIT}) means a state is ended, completed, or its end is worked
 towards, change (\frs{-CHANGE}) combines both, where one state is replaced by
-another, continuation (\frs{-CONTINUATION}) means a state persists or is even
+another. Continuation (\frs{-CONTINUATION}) means a state persists or is even
 intensified, and (\frs{-PREVENTION}) means it fails to come about.
-Accordingly, roles with prefix \rl{target-} mark participants at or beyond the
-end of the event, \rl{initial-} marks participants at the beginning of the
+Accordingly, arg2 roles with prefix \rl{target-} mark participants at or beyond
+the end of the event, \rl{initial-} marks participants at the beginning of the
 event, and \rl{transitory-} marks participants at some point during the event.
+Use \fr{-INIT} or \fr{-PREVENTION} when there is a target arg2; use
+\fr{-DEINIT} or \fr{-CONTINUATION} when there is an initial arg1; use
+\fr{-CHANGE} when there is neither or both.
 
 \ex.\dep{Kim_target-possessor *got#POSSESSION-INIT* the house_possessed}
 
@@ -267,6 +275,7 @@ Finally, we can use the polarity suffix \frs{-NEG}. It can combine with aspectua
 
 \ex.\dep{They *never#TIME-NEG* understand}
 
+
 \newpage\subsection{Non-core Arguments}
 
 Core arguments always get role labels from the superframe the predicate evokes.
@@ -292,13 +301,79 @@ Other non-core arguments are usually rather predicate-specific.
 
 \ex.\dep{Kim_initial-possessor *sold#POSSESSION-CHANGE* Sandy_target-possessor the house_possessed for a million dollars_x-asset}
 
+
 \newpage\subsection{Modifiers}
+\label{sec:modifiers}
 
 Like non-core arguments, modifiers are assumed to evoke an additional frame,
 and labeled with the role they fill in that frame, but with a prefix marking
 them as modifiers: \rl{m-}.
 
-\ex.\dep{Kim_excreter is *sweating#EXCRETION* profusely_m-quantity in the sauna_m-location}
+The simplest type of modifier is an adpositional phrase where the adposition
+encodes a type of relation, such as \fr{LOCATION}:
+
+\ex.\dep{Kim_excreter is *sweating#EXCRETION* in the sauna_m-location}
+
+\ex.\dep{Wir_participant *machen#SCENE* das_scene wegen der Kinder_m-explanation}
+
+Adverbial clauses work much the same way, the have a conjunction instead of an
+adposition:
+
+\ex.\dep{*gekommen#LOCATION-INIT* , um zu bleiben_m-purpose}
+
+A slightly more subtle case is adpositional phrases that are multiword
+expressions such as \emph{vor allem}. Here, the relation is not so much
+indicated by the adposition as by the combination of the adposition and its
+complement. We still follow the syntactic edge that points to the complement:
+
+\ex.\dep{Es_x-identified sind vor allem_m-reference>>m-mode die *Frauen#CLASS*}
+
+\ex.\dep{Die *Sendung#MESSAGE*__initial-scene war zu **Ende#SCENE-DEINIT**_m-scene}
+
+Adjectival and adverbial modification is characterized by the syntactic
+modifier acting as a predicate, with the syntactic modifiee as an argument.  We
+label such modifier dependencies \rl{m-scene} (cf. Section~\ref{sec:SCENE}) and
+add a reverse dependency with the corresponding role label.
+
+\ex.\dep{Ich *spiele#ACTIVITY*__topic **lieber#MESSAGE**_m-scene Schach}
+
+\ex.\dep{Der ist **sowieso#CONDITION**_m-scene *kaputt#STATE*__has-condition}
+
+\ex.\dep{Und **doch#CONCESSION**_m-scene *sah#MESSAGE*__asserted er_topic intelligent_content aus_m-noncomp}
+
+\ex.\dep{Sie *sprangen#LOCATION-INIT*__asserted des Regens__conceded **ungeachtet#CONCESSION**_m-scene nach draußen}
+
+\ex.\dep{Kim war **unvermindert#QUANTITY-CONTINUATION**_m-scene *fröhlich#MESSAGE*__has-quantity}
+
+\ex.\dep{**immer#SCENE-CONTINUATION**_m-scene *höher#LOCATION-INIT*__initial-scene}
+
+\ex.\dep{» Wir haben um Hilfe gebeten « , **so#SENDING**_m-scene *Saqib#IDENTIFICATION*__sender}
+
+\ex.\dep{ein **anderes#COMPARISON**_m-scene *Plakat#CLASS*__compared}
+
+If arg2 has the same name as the frame, this structure can be abbreviated to
+just use that as a modifier role instead of \rl{m-scene} and a backlink. For
+example, the following pairs are equivalent:
+
+\ex.
+\a.\dep{a **red#QUALITY**_m-scene *bucket#CLASS*__has-quality}
+\b.\dep{a **red#QUALITY**_m-quality *bucket#CLASS*}
+
+\ex.
+\a.\dep{The water is **very#QUANTITY**_m-scene *cold#STATE*__has-quantity}
+\b.\dep{The water is **very#QUANTITY**_m-quantity *cold#STATE*}
+
+\ex.
+\a.\dep{Kim *kommt#LOCATION-INIT*__has-time **erstmals#TIME**_m-scene mit Sandy}
+\b.\dep{Kim *kommt#LOCATION-INIT* **erstmals#TIME**_m-time mit Sandy}
+
+Note the polysemy of some connective adverbs:
+
+\ex.
+\a.\dep{They appreciated how_m-quality Kim_is-active *danced#ACTIVITY*}
+\b.\dep{They wondered how_m-means Kim_causer *did#CAUSATION* it_result}
+\c.\dep{I remembered **how#MESSAGE**_m-scene my studies_x-experiencer had *concentrated#MESSAGE*__content on geography_topic}
+
 
 \newpage\subsection{Nonverbal Predicates}
 
@@ -346,13 +421,15 @@ Similarly for adverbs denoting, e.g, manner (\rl{quality}) or extent (\rl{quanti
 
 \ex.\dep{Kim_has-location *ran#Motion* far_m-quantity}
 
-\newpage\subsection{Control Relations}
+
+\newpage\subsection{Nonlocal Dependencies}
 \label{sec:control}
 
 %\todo[inline]{spell out strategies for consistent detection (xcomp, MESSAGE/SCENE frames, special cases...)}
 
 Many constructions systematically introduce semantic predicate-dependent
-dependencies that do not correspond to (surface) syntactic dependencies. In such cases, we add those dependency links.
+dependencies that do not correspond to (surface) syntactic dependencies. In
+such cases, we add those dependency links.
 
 \ex.\dep{Kim_has-location promised Sandy to *come#LOCATION-CHANGE*} (subject control)
 
@@ -360,21 +437,48 @@ dependencies that do not correspond to (surface) syntactic dependencies. In such
 
 \ex.\dep{Kim persuaded Sandy_has-location to *come#LOCATION-CHANGE*} (object control)
 
+\ex.\dep{Kim_x-causer left after *trashing#STATE-CHANGE* the room_has-state} (non-obligatory control)
+
+\ex.\dep{Kim_has-location has come to *stay#LOCATION-CONTINUATION*} (infinitive of purpose)
+
 \ex.\dep{Kim_has-location seemed to *fly#UNANCHORED-MOTION*} (raising)
 
-\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE-INIT*} (depictive)
-
-\ex.\dep{You're talking me_has-state *silly#STATE*} (resultative)
-
-\ex.\dep{Kim_has-location has come to *stay#LOCATION-CONTINUATION*} (subjectless adverbial clause)
-
-\ex.\dep{Kim_x-causer left after *trashing#STATE-CHANGE* the room_has-state} (subjectless adverbial clause)
+\ex.\dep{Kim_x-sender entered the room *singing#MESSAGE-INIT*} (seondary predicate)
 
 \ex.\dep{Kim_topic is hard to *love#MESSAGE*} (\emph{tough} construction)
 
-\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (relative clause)
+\ex.\dep{the song_topic that_topic I_x-experiencer *like#MESSAGE*} (relative clause)
+
+\ex.\dep{the song_topic I_x-experiencer *like#MESSAGE*} (reduced relative clause)
+
+\ex.\dep{the song_topic *liked#MESSAGE* by Kim_x-experiencer} (non-finite reduced relative clause)
+
+\ex.\dep{students_has-location *living#LOCATION* on campus_location} (non-finite reduced relative clause)
+
+\ex.\dep{eine Gestalt__has-quality , deren **Magerkeit#QUALITY**_topic durch den Trainingsanzug_x-sender noch_m-mode *betont#MESSAGE* wurde} (relative clause with complex extracted element)
+
+\ex.\dep{Atmosphäre_target-situator , mit der_target-situator sie_x-causer sich_theme zu *umgeben#SITUATION-INIT* wusste} (relative clause with extraction across clause boundaries)
 
 \ex.\dep{the question_topic we_x-sender raised without *answering#MESSAGE-INIT*} (parasitic gap)
+
+\ex.\dep{ein *sogenannter#IDENTIFICATION-INIT*__m-scene___m-scene **Televisor#CLASS**_identified oder ***Hörsehschirm#CLASS***_identified} (coordination)
+
+\subsubsection{Secondary Predicates}
+
+Secondary predicates are modifiers that syntactically attach to a (primary)
+predicate, but semantically predicate over one of the primary predicate's
+arguments, or even something more deeply embedded. The semantic relation
+between the primary and secondary predicate can be one of simple accompaniment
+(depictive), result (resultative), or something else.
+
+\ex.\dep{Kim__has-location_x-sender **entered#LOCATION-INIT** the room *singing#MESSAGE-INIT*__m-depictive}
+
+\ex.\dep{You're__x-sender **talking#MESSAGE-INIT** me_has-state__x-resultative *silly#STATE*__x-resultative}
+
+\ex.\dep{*Stop#SCENE-DEINIT* drawing_initial-scene sheep__has-quality___has-quality , whether **small#QUALITY**_m-condition or ***big#QUALITY***_m-condition}
+
+\ex.\dep{Some people_participant__has-quality , though **short#QUALITY**_m-conceded , *reach#SCENE-INIT* amazing heights_target-scene}
+
 
 \newpage\subsection{Figurativity, Idiomaticity, and Uncertainty}
 
@@ -386,7 +490,11 @@ roles.
 
 \ex.\dep{A hush_in-motion>>scene *passed#UNANCHORED-MOTION>>SCENE* over the group_transitory-location>>participant}
 
+\ex.\dep{Sie_x-causer>>participant__x-experiencer *streifte#UNANCHORED-MOTION>>SCENE* ihn_transitory-location>>participant__topic mit einem **Seitenblick#MESSAGE-INIT**_has-location>>scene}
+
 \ex.\dep{Kim_x-sender>>participant *refused#MESSAGE-INIT>>SCENE* to eat_topic>>scene}
+
+\ex.\dep{ein *Stück#PART-WHOLE>>QUANTITY* Schwarzbrot_whole>>has-quantity}
 
 This mechanism can be used to indicate that an expression has become fixed and
 not fully compositional:
@@ -395,9 +503,17 @@ not fully compositional:
 
 \ex.\dep{colored_m-quality>>m-noncomp *pencil#CLASS*}
 
-\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>x-noncomp my drawings_has-location>>topic}
+\ex.\dep{to *lay#LOCATION-CHANGE>>MESSAGE-DEINIT* aside_target-location>>m-noncomp my drawings_has-location>>topic}
+
+\ex.\dep{elektrischer_m-quality>>m-noncomp *Strom#CLASS*}
+
+Similarly, a use of a verb that is ambiguous between transitive (more literal)
+and inherently reflexive (more figurative) can be annotated in this way:
+
+\ex.\dep{Winston_x-causer>>has-location *drehte#LOCATION-CHANGE* sich_has-location um_transitory-location}
 
 If you cannot choose between two frames for another reason, use \texttt{||} instead of \texttt{>}\texttt{>}.
+
 
 \newpage\section{Superframes Reference}
 
@@ -427,6 +543,7 @@ specified further.
 
 \ex.\dep{they_theme *need#SITUATION-NECESSITY* six months_situator for digestion_x-purpose}
 
+
 \newpage\subsection{\emoji{fork-and-knife} \fr{ACCOMPANIMENT}}
 \label{sec:ACCOMPANIMENT}
 
@@ -440,6 +557,13 @@ with it or participates equally in the same scene.
 \ex.\dep{Kim_x-causer *added#ACCOMPANIMENT-INIT* rice_target-accompanier to the veggies_accompanied}
 
 \ex.\dep{Rolling thunder_accompanier *accompanies#ACCOMPANIMENT* the rain_accompanied}
+
+\ex.\dep{boy_m-accompanier *king#SOCIAL-RELATION*}
+
+\ex.\dep{Alice_x-causer *mixed#ACCOMPANIMENT-INIT* the egg_accompanied with the cream_target-accompanier}
+
+\ex.\dep{Er_accompanier wurde mit den ihn umgebenden Menschen_accompanied *eins#ACCOMPANIMENT*}
+
 
 Often, the accompanier denotes not the accompanying scene but an entity
 participating in it, and must be metonymically understood as the scene.
@@ -456,6 +580,7 @@ participating in it, and must be metonymically understood as the scene.
 
 \ex.\dep{Kim_x-accompanier *accompanied#ACCOMPANIMENT* Sandy_accompanied on the piano_x-means}
 
+
 \newpage\subsection{\emoji{paintbrush} \fr{DEPICTIVE}}
 \label{sec:DEPICTIVE}
 
@@ -464,6 +589,7 @@ assigns a participant of \rl{has-depictive} (aka \rl{accompanied}) a role (cf.
 Sec.~\ref{sec:control}).
 
 \ex.\dep{Kim_has-location__x-sender *entered#LOCATION-INIT* the room_target-location **singing#MESSAGE-INIT**_m-depictive}
+
 
 \newpage\subsection{\emoji{money-bag} \fr{ASSET}}
 \label{sec:ASSET}
@@ -475,6 +601,7 @@ In a scene \rl{has-asset}, \rl{asset} is given or offered in an exchange or wage
 \ex.\dep{Kim_x-sender *offered#MESSAGE-INIT* Sandy_x-experiencer a million dollars_target-content for the house_x-asset}
 
 \ex.\dep{I_x-sender *bet#MESSAGE-INIT* you_x-experiencer 30 bucks_x-asset to an apple_x-reference he will win_target-content}
+
 
 \newpage\subsection{\emoji{keycap-asterisk} \fr{ATTRIBUTE}}
 \label{sec:ATTRIBUTE}
@@ -492,6 +619,7 @@ participant(s) have the attribute.
 
 \ex.\dep{Kim_x-causer *hit#HITTING* Sandy_hit__x-whole on the **head#CLASS**_x-attribute with a stick_hitting}
 
+
 \newpage\subsection{\emoji{balance-scale} \fr{COMPARISON}}
 \label{sec:COMPARISON}
 
@@ -507,13 +635,13 @@ Examples of comparing scenes:
 
 Examples of comparing non-scene entities:
 
-\ex.\dep{Kim_compared *outranks#COMPARISON* Sandy_reference}
-
 \ex.\dep{Kim_compared *exceeds#COMPARISON* Sandy_reference in height_x-attribute}
 
 \ex.\dep{The Polish restaurant_compared *compared#COMPARISON* favorably_x-quality to the Spanish one_reference}
 
 \ex.\dep{Kim_x-experiencer *compared#COMPARISON* Coke_compared to Pepsi_reference}
+
+\ex.\dep{kidney_m-reference *bean#CLASS*}
 
 The \rl{reference} need not be an entity similar to the \rl{compared}, it can also be an abstract constraint:
 
@@ -528,6 +656,17 @@ an \rl{x-reference} argument.
 
 \ex.\dep{Kim_has-quality is *taller#QUALITY* than Sandy_x-reference}
 
+\ex.\dep{die unter allen Provinzen__x-reference am **drittstärksten#QUANTITY**_m-quantity *bevölkerte#LOCATION*}
+
+Similarly for comparative verb alternation constructions:
+
+\ex.\dep{Kim_has-rank *outranks#RANK* Sandy_x-reference}
+
+\ex.\dep{Kim_x-sender *outshines#MESSAGE* Sandy_x-reference}
+
+\ex.\dep{Sie_x-sender versuchten , die Stimme_x-reference zu *übertönen#MESSAGE-INIT*}
+
+
 \newpage\subsection{\emoji{ok-hand} \fr{CONCESSION}}
 \label{sec:CONCESSION}
 
@@ -541,6 +680,9 @@ Special case of \fr{COMPARISON}, where \rl{compared} is what's \rl{asserted} and
 
 \ex.\dep{Kim_has-location *came#LOCATION-INIT* although Sandy had told_m-conceded them not to}
 
+\ex.\dep{man_material wurde gegen seinen Willen_m-conceded in einen Verrückten_created *verwandelt#TRANSFORMATION-CREATION*}
+
+
 \newpage\subsection{\emoji{crossed-swords} \fr{EVENT}}
 \label{sec:EVENT}
 
@@ -551,11 +693,14 @@ Used for predicates that are inherently dynamic and cannot be framed as
 
 \ex.\dep{Kim_x-causer *attacked#EVENT* Sandy_undergoer}
 
+\ex.\dep{career_m-event *girl#CLASS*}
+
 Note that many predicates that denote events in terms of Vendler can be framed differently (as changes):
 
 \ex.\dep{Kim_excreter *sneezed#EXCRETION*}
 
 \ex.\dep{The ambassador_has-location *arrived#LOCATION-INIT* in Moscow_target-location}
+
 
 \newpage\subsection{\emoji{woman-dancing} \fr{ACTIVITY}}
 \label{sec:ACTIVITY}
@@ -565,6 +710,7 @@ Special case of \fr{EVENT} where the \rl{undergoer} is active.
 \ex.\dep{Kim_is-active *partied#ACTIVITY*}
 
 \ex.\dep{Kim_is-active had *sex#ACTIVITY*}
+
 
 \newpage\subsection{\emoji{sparkles} \fr{EXISTENCE}}
 \label{sec:EXISTENCE}
@@ -577,6 +723,7 @@ Special case of \fr{EVENT} where the \rl{undergoer} is active.
 
 \ex.\dep{There_x-noncomp *is#SCENE* a hubbub_scene}
 
+
 \newpage\subsection{\emoji{memo} \fr{REPRODUCTION}}
 \label{sec:REPRODUCTION}
 
@@ -586,6 +733,7 @@ a (modified) \rl{copy} (aka \rl{target-exists}) comes into existence.
 \ex.\dep{Here is a *copy#REPRODUCTION* of the drawing_original}
 
 \ex.\dep{This_copy is a *translation#REPRODUCTION* of the pamphlet_original into English_x-quality}
+
 
 \newpage\subsection{\emoji{magic-wand} \fr{TRANSFORMATION-CREATION}}
 \label{sec:TRANSFORMATION-CREATION}
@@ -599,6 +747,12 @@ is newly created from \rl{material}, or \rl{material} is transformed to become
 \ex.\dep{Kim_x-causer *built#TRANSFORMATION-CREATION* a castle_created out of sand_material}
 
 \ex.\dep{Kim_x-causer *turned#TRANSFORMATION-CREATION* straw_material into gold_created}
+
+Use this only for non-scene entities; for scenes, use the \fr{SCENE-CHANGE}
+frame:
+
+\ex.\dep{Die Hassovation_initial-scene *steigerte#SCENE-CHANGE* sich zur Raserei_target-scene}
+
 
 \newpage\subsection{\emoji{eye} \fr{EXPERIENCE}}
 \label{sec:EXPERIENCE}
@@ -625,21 +779,14 @@ for beneficiaries, and for ``bystander'' roles.
 
 For more uses, see the examples for \fr{MESSAGE} in Section~\ref{sec:MESSAGE}.
 
+
 \newpage\subsection{\emoji{red-exclamation-mark} \fr{EXPLANATION}}
 \label{sec:EXPLANATION}
 
-\rl{explanation} explains \rl{explained}, but is not a cause.
+\rl{explanation} causes \rl{has-explanation} to be known or supposed.
 
-\ex.\dep{I_x-sender am *stressing#MESSAGE-INIT* this_topic because it is important_m-explanation}
+\ex.\dep{She must be a *gardener#CLASS* , because he had seen_m-explanation her with a spade}
 
-\newpage\subsection{\emoji{bullseye} \fr{PURPOSE}}
-\label{sec:PURPOSE}
-
-Special case of \fr{EXPLANATION} where \rl{explanation} is a \rl{purpose}.
-
-\ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-explanation food__possessed}
-
-\ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
 
 \newpage\subsection{\emoji{passport-control} \fr{IDENTIFICATION}}
 \label{sec:IDENTIFICATION}
@@ -657,6 +804,8 @@ predicates denoting naming relationships.
 
 \ex.\dep{This_identified is *Kim#IDENTIFICATION*}
 
+\ex.\dep{das *Abzeichen#IDENTIFICATION* der Jugendliga_identified gegen Sexualität}
+
 In English, the preposition \emph{of} has an identifying sense, which can also
 be metaphorical:
 
@@ -668,10 +817,15 @@ Likewise, \emph{in} has an identifying sense:
 
 \ex.\dep{In answer_m-identifier , he_x-sender *repeated#MESSAGE-INIT* : Please, draw_target-content me a sheep !}
 
+Pronouns with core arguments are instead framed the same as the (presumable) antecedent:
+
+\ex.\dep{It_x-identified was *that#MESSAGE* (picture) of the boa_topic constrictor}
+
+
 \newpage\subsection{\emoji{round-pushpin} \fr{LOCATION}}
 \label{sec:LOCATION}
 
-Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
+Describes \rl{has-location} as located or moving with respect to \rl{location}.
 
 \ex.\dep{the *hat#CLASS* in the box_m-location}
 
@@ -680,6 +834,28 @@ Describes \rl{has-location} as located or moving wrt. respect to \rl{location}.
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* from the living room_initial-location through the door_transitory-location into the kitchen_target-location}
 
 \ex.\dep{Kim_x-causer *placed#LOCATION-CHANGE* the hat_has-location on the table_target-location}
+
+\ex.\dep{house_m-location *music#MESSAGE*}
+
+\ex.\dep{music_m-has-location *hall#CLASS*}
+
+\ex.\dep{sugar_m-has-location *cane#CLASS*}
+
+\ex.\dep{cane_m-initial-location *sugar#CLASS*}
+
+Also used for orientations:
+
+\ex.\dep{Die Nadel_has-location *zeigte#LOCATION* nach Norden_location}
+
+\ex.\dep{Er_has-location *wandte#LOCATION* dem Televisor_location den Rücken_x-attribute zu}
+
+Adverbs of location evoke \fr{LOCATION}:
+
+\ex.\dep{Kim_has-location ist *oben#LOCATION*}
+
+Adverbs of direction evoke \fr{LOCATION-INIT}:
+
+\ex.\dep{Kim_has-location__has-location **fliegt#LOCATION-INIT** *hoch#LOCATION-INIT*__target-location}
 
 \newpage\subsection{\emoji{gem-stone} \fr{ADORNMENT-TARNISHMENT}}
 \label{sec:ADORNMENT-TARNISHMENT}
@@ -694,6 +870,7 @@ Special case of \fr{LOCATION} where \rl{ornament} (aka \rl{has-location}) sits o
 
 \dep{Kim_x-causer *washed#ADORNMENT-TARNISHMENT-DEINIT* Sandy_initial-surface}
 
+
 \newpage\subsection{\emoji{sweat-droplets} \fr{EXCRETION}}
 \label{sec:EXCRETION}
 
@@ -701,6 +878,7 @@ Special case of \fr{LOCATION-DEINIT} where \rl{excreter} (aka
 \rl{initial-location}) excretes \rl{excreted} (aka \rl{has-location}).
 
 \ex.\dep{Kim_excreter *threw#EXCRETION* up the pretzel_excreted}
+
 
 \newpage\subsection{\emoji{cricket-game} \fr{HITTING}}
 \label{sec:HITTING}
@@ -718,6 +896,7 @@ comes into contact with \rl{hit} (aka \rl{target-location}).
 
 \ex.\dep{Kim_x-causer *kicked#HITTING* Sandy_hit}
 
+
 \newpage\subsection{\emoji{bowl-with-spoon} \fr{INGESTION}}
 \label{sec:INGESTION}
 
@@ -727,6 +906,7 @@ Special case of \fr{LOCATION-INIT} where \rl{ingester} (aka
 \ex.\dep{Kim_ingester *ate#INGESTION* an apple_ingested}
 
 \ex.\dep{Kim_ingester *nibbled#INGESTION* on the pretzel_ingested}
+
 
 \newpage\subsection{\emoji{leaf-fluttering-in-wind} \fr{UNANCHORED-MOTION}}
 \label{sec:UNANCHORED-MOTION}
@@ -742,6 +922,7 @@ Special case of \rl{LOCATION-CHANGE} where no initial or target location is indi
 \ex.\dep{Kim_in-motion is an avid_m-quality *unicyclist#UNANCHORED-MOTION*}
 
 %\todo[inline]{define clearly when dancing etc. is UNANCHORED-MOTION and when it is ACTIVITY}
+
 
 \newpage\subsection{\emoji{t-shirt} \fr{WRAPPING-WEARING}}
 \label{sec:WRAPPING-WEARING}
@@ -759,18 +940,38 @@ wrapped in \rl{wrapper} (aka \rl{has-location}).
 
 \ex.\dep{Kim_initial-wearer *took#WRAPPING-WEARING-DEINIT* off their glasses_wrapper}
 
+
 \newpage\subsection{\emoji{hammer} \fr{MEANS}}
 \label{sec:MEANS}
 
-\rl{has-means} is a scene caused by something via an intermediary \rl{means}.
+\rl{means} is an intermediary causer of or is destined to serve a \rl{purpose}.
 
 \ex.\dep{Kim_x-causer *cut#STATE-CHANGE* the cake_has-state with a knife_m-means}
 
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface by exploding_m-means a paint bomb}
 
-\ex.\dep{Kim_x-causer__x-causer *used#MEANS* a pen_means to **get#LOCATION-DEINIT**_has-means the lid__has-location off__initial-location}
+\ex.\dep{Kim_x-causer__x-causer *used#MEANS* a pen_means to **get#LOCATION-DEINIT**_purpose the lid__has-location off__initial-location}
 
 \ex.\dep{You_x-causer *used#MEANS* me_means !}
+
+\ex.\dep{oil_m-means *lamp#CLASS*}
+
+\ex.\dep{die Nische_means war für ein Bücherregal_purpose *bestimmt#MEANS*}
+
+\ex.\dep{Kim_has-location__target-possessor *went#LOCATION-CHANGE* to town_target-location to **buy#POSSESSION-CHANGE**_m-purpose food__possessed}
+
+\ex.\dep{**drinking#INGESTION**_m-purpose *water#CLASS*__ingested}
+
+\ex.\dep{lamp_m-purpose *oil#CLASS*}
+
+\ex.\dep{train_m-purpose *station#CLASS*}
+
+\ex.\dep{buffer_m-purpose *state#STATE*}
+
+\ex.\dep{animal_m-purpose *doctor#CLASS*}
+
+\ex.\dep{the NoMa_m-identified infill_m-purpose Metro_m-purpose *station#CLASS*}
+
 
 \newpage\subsection{\emoji{left-speech-bubble} \fr{MESSAGE}}
 \label{sec:MESSAGE}
@@ -822,6 +1023,14 @@ What is depicted gets the \rl{topic} role:
 
 \ex.\dep{The concert_topic was *recorded#MESSAGE-INIT* on tape_x-target-location}
 
+Recordings of information are framed as messages:
+
+\ex.\dep{history_topic *book#MESSAGE*}
+
+\ex.\dep{a *book#MESSAGE* about the primeval forest_topic}
+
+\ex.\dep{sales_topic *target#MESSAGE*}
+
 The result of recording something gets the \rl{target-content} role:
 
 \ex.\dep{Kim_x-sender *drew#MESSAGE-INIT* a picture_target-content}
@@ -854,6 +1063,10 @@ Predicates of perception use \fr{MESSAGE}, including mental perception:
 
 \ex.\dep{Sandy_x-experiencer is a *professor#MESSAGE* of linguistics_topic}
 
+\ex.\dep{sun_topic *worship#MESSAGE*}
+
+\ex.\dep{They_x-experiencer *revered#MESSAGE* God_topic}
+
 Predicates that denote the initiation of perception (e.g., by acquiring
 knowledge, or observation, or reasoning), use \fr{MESSAGE-INIT}:
 
@@ -867,7 +1080,7 @@ knowledge, or observation, or reasoning), use \fr{MESSAGE-INIT}:
 
 \ex.\dep{Kim_x-experiencer *measured#MESSAGE-INIT* the elasticity_topic}
 
-\ex.\dep{The jury_x-experiencer *found#MESSAGE-INIT* Kim_topic__participant___is-active **guilty#SCENE**_target-content of the ***crime#ACTIVITY***__scene}
+\ex.\dep{The jury_x-experiencer *found#MESSAGE-INIT* Kim_topic__participant___x-causer **guilty#SCENE**_target-content of the ***crime#EVENT***__scene}
 
 Predicates that denote the deinitiation of perception use \fr{MESSAGE-DEINIT}:
 
@@ -880,16 +1093,14 @@ but didn't is framed as \fr{MESSAGE-PREVENTION}:
 
 \ex.\dep{Kim_x-experiencer *forgot#MESSAGE-PREVENTION* to take_target-content the trash out}
 
+
 \newpage\subsection{\emoji{red-question-mark} \fr{MODE}}
 \label{sec:MODE}
 
-Used for adverbial modifiers that have no arguments other than the phrase they
-modify, and that, rouhgly speaking, indicate the modal strength of what is
-expressed and/or its relation to the discourse.
-
-\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
-
-\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+Used for adverbial modifiers that provide information not about the scene
+itself, but about the relationship between the linguistic expression and the
+truth as presented -- for example, modal strength, precision,
+literal/figurative use, etc.
 
 \ex.\dep{*Passt#COMPARISON* das_compared eh_m-mode ?}
 
@@ -899,29 +1110,78 @@ expressed and/or its relation to the discourse.
 
 \ex.\dep{Kim_has-location is not_m-mode *here#LOCATION*}
 
+\ex.\dep{They_x-sender literally_m-mode *screamed#MESSAGE-INIT*}
+
+\ex.\dep{He_destroyed *kicked#DESTRUCTION* the proverbial_m-mode bucket_x-noncomp}
+
+\ex.\dep{They walked for precisely_m-mode one *kilometer#QUANTITY*}
+
+\fr{MODE} is also used for focus adverbs:
+
+\ex.\dep{They_x-causer only_m-mode *rinsed#ADORNMENT-TARNISHMENT-DEINIT* the dishes_initial-surface}
+
+\ex.\dep{Even_m-mode *Kim#IDENTIFICATION* did n't know that}
+
+\ex.\dep{Man wusste davon nur_m-mode durch vage *Gerüchte#MESSAGE*}
+
+\ex.\dep{Sie_has-state war selbst_m-mode außer *sich#STATE* vor Angst}
+
+For connective adverbs, see Section~\ref{sec:modifiers}.
+
+
 \newpage\subsection{\emoji{spider-web} \fr{NONCOMP}}
 \label{sec:NONCOMP}
 
-Used to mark syntactic arguments that are thought of as part of the predicate, as in verbal idioms, weather verbs, inherently reflexive verbs, existential \emph{there}, or other fixed expressions.
+Used to mark syntactic arguments that are thought of as part of the predicate,
+as in verbal idioms, weather verbs, existential \emph{there}, names, other
+fixed expressions, or specialized sublanguages for such things as dates and
+times. (Light verbs, on the other hand, are treated with \fr{SCENE}, see
+Section~\ref{sec:SCENE}.)
 
 \ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the bucket_x-noncomp}
 
 \ex.\dep{It_x-noncomp is *raining#STATE*}
 
-\ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-noncomp to you_x-experiencer}
-
 \ex.\dep{There_x-noncomp *was#SCENE* a famine_scene}
 
-\ex.\dep{fountain_m-noncomp *pen#CLASS*}
+\ex.\dep{Motion Picture_m-purpose>>m-noncomp *Association#CLASS* of America_m-social-relation>>m-noncomp}
 
-Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{sec:SCENE}.
+\ex.\dep{fountain_m-reference>>m-noncomp *pen#CLASS*}
+
+\ex.\dep{kurz_m-quantity>>m-noncomp vor *elf#TIME*}
+
+If an argument of the whole predicate syntactically attaches to an
+\rl{x-noncomp} dependent, assign it the same frame as the top predicate:
+
+\ex.\dep{Kim_x-causer *kicked#EVENT* Sandy__undergoer 's **ass#EVENT**_x-noncomp}
+
+If you annotate a literal and a figurative meaning, only the literal meaning
+need be considered in the annotation of the \rl{x-noncomp} dependent:
+
+\ex.\dep{wenn man es **fertig#SCENE-DEINIT**_target-scene>>x-noncomp *brachte#SCENE-INIT* , dem Televisor ein Schnippchen zu schlagen_participant>>target-scene__initial-scene}
+
+In other cases, frame the \rl{x-noncomp} dependent as \fr{NONCOMP}:
+
+\ex.\dep{Kim_destroyed *kicked#DESTRUCTION* the **bucket#NONCOMP**_x-noncomp}
+
+Bound pronouns that are part of multiword expressions (e.g., inherently
+reflexive verbs) should get the same role as their antecedent:
+
+\ex.\dep{Kim_x-experiencer *erinnert#MESSAGE* sich_x-experiencer nicht_m-mode}
+
+\ex.\dep{I_x-sender *address#MESSAGE-INIT* myself_x-sender to you_x-experiencer}
+
+\ex.\dep{I_has-state *jumped#STATE-CHANGE* to my__has-state **feet#STATE-CHANGE**_x-noncomp}
+
+\ex.\dep{I_accompanied *had#ACCOMPANIMENT* with me_accompanied neither a mechanic_accompanier nor any passengers_accompanier}
+
 
 \newpage\subsection{\emoji{puzzle-piece} \fr{PART-WHOLE}}
 \label{sec:PART-WHOLE}
 
 \rl{part} is part of \rl{whole}.
 
-\ex.\dep{Kim_m-whole 's *leg#CLASS*}
+\ex.\dep{Kim_whole 's *leg#PART-WHOLE*}
 
 \ex.\dep{a *man#CLASS* with a mustache_m-part}
 
@@ -929,14 +1189,18 @@ Light verbs, on the other hand, are treated with \fr{SCENE}, see Section~\ref{se
 
 \ex.\dep{wheat_whole *contains#PART-WHOLE* gluten_part}
 
-\newpage\subsection{\emoji{light-bulb} \fr{EXAMPLE}}
-\label{sec:EXAMPLE}
+\ex.\dep{orange_m-whole *seed#CLASS*}
 
-Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as an example of \fr{exemplified} (aka \fr{whole}).
+\ex.\dep{seed_m-part *orange#CLASS*}
 
-\ex.\dep{*birds#CLASS* such as storks_m-example}
+\ex.\dep{car_m-whole *motor#CLASS*}
 
-\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__example **beispielsweise#EXAMPLE**_m-scene wissenschaftliche Methoden_target-content}
+\ex.\dep{motor_m-part *car#CLASS*}
+
+\ex.\dep{cube_m-whole *sugar#CLASS*}
+
+\ex.\dep{sugar_m-part *cube#CLASS*}
+
 
 \newpage\subsection{\emoji{service-dog} \fr{POSSESSION}}
 \label{sec:POSSESSION}
@@ -967,6 +1231,9 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 
 \ex.\dep{Kim_initial-possessor *owes#POSSESSION-CHANGE-NECESSITY* Sandy_target-possessor money_possessed}
 
+\ex.\dep{family_m-possessor *estate#CLASS*}
+
+
 \newpage\subsection{\emoji{abacus} \fr{QUANTITY}}
 \label{sec:QUANTITY}
 
@@ -978,6 +1245,9 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 
 \ex.\dep{We_x-sender *discourage#MESSAGE-INIT* this_topic emphatically_m-quantity}
 
+\ex.\dep{Sie sang so_m-quantity *schön#QUALITY* , dass wir weinten}
+
+
 \newpage\subsection{\emoji{1st-place-medal} \fr{RANK}}
 \label{sec:RANK}
 
@@ -986,6 +1256,7 @@ Special case of \fr{PART-WHOLE} where \fr{example} (aka \fr{part}) is given as a
 \ex.\dep{*Chapter#MESSAGE* 1_m-rank}
 
 \ex.\dep{my_m-sender first_m-rank *drawing#MESSAGE*}
+
 
 \newpage\subsection{\emoji{performing-arts} \fr{SCENE}}
 \label{sec:SCENE}
@@ -1023,17 +1294,33 @@ in one graph.
 
 \ex.\dep{Kim_participant__participant___is-active *used#SCENE* to **play#SCENE**_scene ***tennis#ACTIVITY***__scene}
 
-\ex.\dep{Kim_participant_x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+Note that every dependent of the predicate that is necessarily a participant in
+the embedded \rl{scene} should be labeled \rl{participant}, even when they
+participate in different roles:
+
+\ex.\dep{Kim_participant__x-causer *gave#SCENE* Sandy_participant__hit a **kick#HITTING**_scene}
+
+\ex.\dep{Kim_participant__target-possessor *bekam#SCENE-INIT* Sandy_participant__possessed zu **fassen#POSSESSION-INIT**_target-scene}
+
+\ex.\dep{Winston_participant__participant___x-experiencer *machte#SCENE-INIT* nie_m-time den **Versuch#SCENE-INIT**_target-scene , das___topic zu ***prüfen#MESSAGE-INIT***__target-scene}
+
+On the other hand, \fr{SCENE} predicates may have arguments that are not
+members of the embedded \rl{scene}, such as \rl{x-causer}:
+
+\ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
 
 The modifier relation \rl{m-scene} is used when a syntactic dependeny points
-from an argument to a predicate, as, e.g., with relative clauses or sentence
-adverbs.
+from an argument to a predicate, as, e.g., with relative clauses, participal
+clauses, or sentence adverbs.
 
 \ex.\dep{the *clown#CLASS*__topic I__x-experiencer **saw#MESSAGE**_m-scene smiled}
+
+\ex.\dep{weit über das gesteckte__m-scene **Ziel#MESSAGE** hinausgehende_m-scene *Erfüllung#SEQUENCE*}
 
 \ex.\dep{**Fortunately#EXPERIENCE**_m-scene for Sandy__experiencer , Kim_has-location is *here#LOCATION*__experienced}
 
 \ex.\dep{I_x-causer *devoted#SCENE-INIT*__follows myself_participant **instead#SEQUENCE**_m-scene to geography_target-scene}
+
 
 \newpage\subsection{\emoji{zzz} \fr{STATE}}
 \label{sec:STATE}
@@ -1054,6 +1341,7 @@ incorporated into the meaning of the predicate.
 
 \ex.\dep{And that_x-causer hasn't much *improved#STATE-CHANGE* my opinion_has-state of them}
 
+
 \newpage\subsection{\emoji{red-apple} \fr{QUALITY}}
 \label{sec:QUALITY}
 
@@ -1072,6 +1360,9 @@ qualitites of events, i.e., manners.
 
 \ex.\dep{The leaves_has-quality *reddened#QUALITY-INIT*}
 
+\ex.\dep{Sie_x-sender *sang#MESSAGE-INIT* so_m-quality , dass wir weinten_m-result}
+
+
 \newpage\subsection{\emoji{deciduous-tree} \fr{CLASS}}
 \label{sec:CLASS}
 
@@ -1089,13 +1380,14 @@ Indefinite pronouns also evoke \fr{CLASS}.
 
 \ex.\dep{She saw *one#CLASS*}
 
-\ex.\dep{*Nothing#CLASS* about him_m-whole suggested a child}
+\ex.\dep{*Nothing#CLASS-NEG* about him_m-whole suggested a child}
 
 \ex.\dep{Why would *anyone#CLASS* be frightened by a hat?}
 
 \ex.\dep{*Something#CLASS* is broken}
 
 \ex.\dep{Where I live *everything#CLASS* is small}
+
 
 \newpage\subsection{\emoji{skull} \fr{DESTRUCTION}}
 \label{sec:DESTRUCTION}
@@ -1110,6 +1402,7 @@ When something is broken but not completely destroyed, use \fr{STATE}.
 
 \ex.\dep{Something_has-state was *broken#STATE* in my enginge_m-location}
 
+
 \newpage\subsection{\emoji{megaphone} \fr{SENDING}}
 \label{sec:SENDING}
 
@@ -1117,7 +1410,28 @@ When something is broken but not completely destroyed, use \fr{STATE}.
 
 \ex.\dep{According to Kim_m-sender , it_x-noncomp is *raining#STATE*}
 
+\ex.\dep{song_sent *bird#CLASS*}
+
+\ex.\dep{bird_sender *song#MESSAGE*}
+
+Senders need not be animate or active:
+
+\ex.\dep{The alarm clock_sender *beeped#SENDING*}
+
+\ex.\dep{Er_x-experiencer *forschte#MESSAGE-INIT* in seinen Kindheitserinnerungen_x-sender nach_topic}
+
+\ex.\dep{Die Polizei_x-experiencer *horchte#MESSAGE-INIT* ihn_x-sender aus_m-noncomp}
+
+\ex.\dep{Kim_x-experiencer had *read#MESSAGE-INIT* that_target-content in a book_x-sender}
+
+\ex.\dep{Miniwahr_identifier , wie_m-identifier es_identified in der Neusprache_m-sender *hieß#IDENTIFICATION*}
+
+Use \fr{SENDING} rather than \fr{MESSAGE} for predicates that cannot take a \rl{topic} argument:
+
+\ex.\dep{Er_x-causer>>sender *schleuderte#LOCATION-DEINIT>>SENDING* eine Flut_has-location>>sent von Gestammel aus sich_initial-location>>x-noncomp heraus}
+
 For more uses, see \fr{MESSAGE} (Section~\ref{sec:MESSAGE}).
+
 
 \newpage\subsection{\emoji{right-arrow} \fr{SEQUENCE}}
 \label{sec:SEQUENCE}
@@ -1138,6 +1452,7 @@ Also used to indicate proportional amounts: for each scoop (\rl{followed}), it c
 
 \ex.\dep{It costs 1 *euro#QUANTITY* per scoop_m-followed}
 
+
 \newpage\subsection{\emoji{joystick} \fr{CAUSATION}}
 \label{sec:CAUSATION}
 
@@ -1157,6 +1472,12 @@ Special case of \fr{SEQUENCE} where \rl{causer} (aka \rl{followed}) causes \rl{r
 
 \ex.\dep{Die Qualität_result ist der Motivation_causer *geschuldet#CAUSATION*}
 
+\ex.\dep{tear_m-result *gas#CLASS*}
+
+\ex.\dep{sun_m-causer *burn#STATE-CHANGE*}
+
+\ex.\dep{honey_m-result *bee#CLASS*}
+
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location because they wanted_m-causer to buy food}
 
 Note how the last example expresses a purpose, but expresses it as a cause, so
@@ -1164,6 +1485,7 @@ Note how the last example expresses a purpose, but expresses it as a cause, so
 purpose:
 
 \ex.\dep{Kim_has-location *went#LOCATION-CHANGE* to town_target-location to buy_m-purpose food}
+
 
 \newpage\subsection{\emoji{scroll} \fr{CONDITION}}
 \label{sec:CONDITION}
@@ -1175,7 +1497,8 @@ condition to \rl{has-condition} (aka \rl{follows}).
 
 \ex.\dep{The start date_has-condition is *contingent#CONDITION* on their approval_condition}
 
-\ex.\dep{Eine Aussöhung_has-condition *bedingt#SEQUENCE* eine Entschuldigung_condition}
+\ex.\dep{Eine Aussöhung_has-condition *bedingt#CONDITION* eine Entschuldigung_condition}
+
 
 \newpage\subsection{\emoji{prohibited} \fr{EXCEPTION}}
 \label{sec:EXCEPTION}
@@ -1185,6 +1508,7 @@ exception (a negative condition, if you will) to \rl{has-exception} (aka \rl{fol
 
 \ex.\dep{Except for Kim_m-exception , everybody_has-social-relation *joined#SOCIAL-RELATION-INIT*}
 
+
 \newpage\subsection{\emoji{collision} \fr{REACTION}}
 \label{sec:REACTION}
 
@@ -1192,6 +1516,11 @@ Special case of \fr{CAUSATION} where \rl{trigger} (aka \rl{causer}) triggers a
 \rl{reaction} (aka \rl{result}) in the \rl{x-causer}.
 
 \ex.\dep{Kim_x-causer__x-sender *reacted#SEQUENCE* to the allegations_trigger with a **denial#MESSAGE-INIT**_reaction}
+
+Can also be the reaction to an \emph{anticipated} scene:
+
+\ex.\dep{als *stemme#REACTION* er_x-causer sich_x-causer dem Anprall_trigger einer Woge entgegen_m-noncomp}
+
 
 \newpage\subsection{\emoji{sneezing-face} \fr{RESULTATIVE}}
 \label{sec:RESULTATIVE}
@@ -1206,12 +1535,8 @@ than \rl{m-resultative}.
 
 \ex.\dep{Kim_x-causer *painted#ADORNMENT-TARNISHMENT* the room_surface__has-quality **red#QUALITY**_x-resultative}
 
-\ex.\dep{Kim_excreter *sneezed#EXCRETION* the napkin_x-resultative__x-initial-location:has-location off the **table#CLASS**_x-resultative}
+\ex.\dep{Kim_excreter *sneezed#EXCRETION* the napkin_x-resultative__x-has-location off the **table#CLASS**_x-resultative}
 
-In the last example, we use \rl{x-initial-location:has-location} to specify not
-only the role of the napkin in the resulting event (\rl{has-location}) but also
-that of the table (\rl{initial-location}). Using \rl{x-has-location} would be
-imprecise because we would then assume that the table has \rl{location}.
 
 \newpage\subsection{\emoji{handshake} \fr{SOCIAL-RELATION}}
 \label{sec:SOCIAL-RELATION}
@@ -1266,6 +1591,21 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_has-social-relation was *pardoned#SOCIAL-RELATION-DEINIT*}
 
+
+\newpage\subsection{\emoji{red-triangle-pointed-up} \fr{SUBCLASS}}
+\label{sec:SUBCLASS}
+
+\rl{subclass} denotes a subclass of \rl{superclass}.
+
+\ex.\dep{eine *Art#SUBCLASS* Paranoia_superclass}
+
+\ex.\dep{Das_x-subclass ist seine_participant *Art#SCENE* , sich zu bewegen_scene}
+
+\ex.\dep{*birds#CLASS* such as storks_m-subclass}
+
+\ex.\dep{Sie_x-experiencer *lernen#MESSAGE-INIT*__subclass **beispielsweise#SUBCLASS**_m-scene wissenschaftliche Methoden_target-content}
+
+
 \newpage\subsection{\emoji{alarm-clock} \fr{TIME}}
 \label{sec:TIME}
 
@@ -1279,7 +1619,14 @@ relative, a friend, an organization, a responsibility, or a judicial sentence.
 
 \ex.\dep{Kim_x-sender *says#MESSAGE-INIT* hello_content whenever I meet_m-time them}
 
+\ex.\dep{Die Hassovation_has-time *dauerte#TIME* dreißig Sekunden_time}
+
 \ex.\dep{*Once#TIME* when I was six years old}
+
+\ex.\dep{summer_m-time *job#ACTIVITY*}
+
+\ex.\dep{golf_has-time *season#TIME*}
+
 
 \newpage\section{Argument Structure and Frame Choice}
 
@@ -1295,6 +1642,14 @@ annotate the former.
 \ex.\dep{They_target-possessor *plundered#POSSESSION-CHANGE* Rome_initial-possessor}
 
 \ex.\dep{Kim_initial-wearer *undressed#WRAPPING-WEARING-DEINIT*}
+
+Also, when in doubt, choose the frame so that you can use core roles rather
+than resorting to non-core roles. For example, in the following sentence, we
+should use \fr{LOCATION-INIT} rather than \fr{UNANCHORED-MOTION} so that we can
+use \rl{target-location} and do not have to resort to \fr{x-target-location}.
+
+\ex.\dep{Kim_x-accompanier *followed#LOCATION-INIT* Sandy_has-location into the room_target-location}
+
 
 \newpage\subsection{Arguments Determine Frames}
 
@@ -1317,7 +1672,9 @@ choice.
 \a.\dep{Kim_x-causer *worked#EVENT*}
 \b.\dep{Kim_x-causer *worked#EVENT* on the drawing_undergoer}
 
-For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) or relation/event nouns. A useful test is to try and add an argument, i.e., a dependent that is assigned a specific role by the noun. For example:
+For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS})
+or relation/event nouns. A useful test is to try and add an argument, i.e., a
+dependent that is assigned a specific role by the noun. For example:
 
 \ex.\dep{a *tree#CLASS*}
 
@@ -1325,9 +1682,18 @@ For nouns, you have to decide whether they are nonrelational nouns (\fr{CLASS}) 
 
 \ex.\dep{Kim_has-social-relation 's *brother#SOCIAL-RELATION*}
 
-Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it is not assigned by the noun \emph{tree} but by the possessive construction, so \emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
+\ex.\dep{Kim_whole 's *leg#PART-WHOLE*}
 
-\ex.\dep{Kim_m-0possessor 's *tree#CLASS*}
+Note that in \emph{Kim 's tree}, Kim's role is that of \rl{possessor}, but it
+is not assigned by the noun \emph{tree} but by the possessive construction, so
+\emph{tree} is still \fr{CLASS} and we annotate \emph{Kim} as a modifier.
+
+\ex.\dep{Kim_m-possessor 's *tree#CLASS*}
+
+\ex.\dep{Kim_m-possessor 's *glasses#CLASS*}
+
+\ex.\dep{Kim_m-possessor 's *chair#CLASS*}
+
 
 \newpage\subsection{Shadow and Default Arguments}
 
@@ -1347,6 +1713,7 @@ are incorporated into the predicate or logically implied, like the bones in
 
 \ex.\label{ex:rise}\dep{at *sunrise#LOCATION-CHANGE>>TIME*}
 
+
 \newpage\subsection{Predicates that Refer to a Shadow Argument}
 
 A special case of shadow argument are those that the predicate itself refers
@@ -1363,6 +1730,19 @@ the filler of that frame's \rl{topic} role, and so on.
 
 \ex.\dep{Obama_social-relation special_m-quality>>m-noncomp *assistant#SOCIAL-RELATION*}
 
+
+\newpage\subsection{Shadow Arguments in Compounds}
+
+Predicates that have the form of compound words sometimes contain one of their
+arguments. This may inform the choice of frame as well. Although we do not, at
+present, annotate relations below the word level, try to stay consistent with
+such an annotation.
+
+\ex.
+\a.\dep{Kim_has-social-relation war linien_social-relation *treu#SOCIAL-RELATION*} (hypothetical sub-word annotation)
+\b.\dep{Kim_has-social-relation>>has-quality war *linientreu#SOCIAL-RELATION>>QUALITY*} (consistent actual annotation)
+
+
 \newpage\subsection{A Participant whose Syntactic Argument Position is Occupied Should Not Be Treated like an Implicit Argument}
 
 For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject position and should be treated as the causer of the cutting. We could add the person handling the knife as the causer, and treat the knife as an instrument. However, to add the former to the sentence, we would not merely have to add another realized argument, but also change the syntactic argument structure so that the the subject position goes to that causer, as in \ref{ex:cut2}. Thus, we treat this as a different framing with a different causer, rather than a more explicit version of the same framing. Likewise, \ref{ex:high1} and \ref{ex:high2} are two different framings, one with \emph{price} as \rl{has-state}, and one with \emph{butter}.
@@ -1375,6 +1755,7 @@ For example, consider \ref{ex:cut1}, Here, \emph{The knife} occupies the subject
 
 \ex.\label{ex:high2}\dep{The butter_has-quantity__has-quality is *high#QUANTITY* in **price#QUALITY**_x-attribute}
 
+
 \newpage\subsection{When in Doubt, Treat Different Syntactic Frames of the Same Predicate Consistently}
 
 For example, in \ref{ex:chase1}, \emph{chase} could be framed as caused motion
@@ -1386,6 +1767,7 @@ with Kim as \rl{x-causer} or as accompanied motion with Kim as
 
 \ex.\label{ex:chase2}\dep{Kim_x-accompanier *chased#UNACHORED-MOTION* after Sandy_in-motion}
 
+
 \newpage\subsection{However, Different Senses of a Predicate Can Have Different Arguments and Therefore Different Superframes}
 
 One special case of this is when a predicate occurs as part of an opaque fixed
@@ -1393,6 +1775,7 @@ expression, like \emph{hand} in \emph{close at hand}. In this case, \emph{hand}
 is not annotated with \fr{CLASS}, but with \fr{NONCOMP}.
 
 \ex.\dep{I have seen them_has-location intimately , *close#LOCATION* at **hand#NONCOMP**_m-noncomp}
+
 
 \newpage\subsection{Look Up Unfamiliar Words in a Dictionary}
 
@@ -1405,18 +1788,34 @@ thus went for the \fr{TRANSFORMATION-CREATION} frame.
 
 \ex.\dep{So_m-explanation I_x-causer *tossed#TRANSFORMATION-CREATION* off_m-noncomp this drawing_created}
 
+
 \newpage\subsection{Symmetric Argument Pairs}
 
 Some predicates have a pair of arguments that are semantically symmetric. In
-such cases, assign the first role to the syntactically less oblique argument.
+such cases, assign the first role to the syntactically less oblique argument,
+where subjects (\rl{nsubj}, \rl{csubj}) are least oblique, followed by direct
+objects (\rl{obj}), then indirect objects (\rl{iobj}), and oblique arguments
+(\rl{obl}) are the most oblique.
 
 \ex.\dep{*distinguish#COMPARISON* China_compared from Arizona_reference}
 
+\ex.\dep{Alice_x-causer *mixed#ACCOMPANIMENT-INIT* the egg_accompanied with the cream_target-accompanier}
+
+For predicates of mutual communication, choose \rl{x-sender} for the less
+oblique and \rl{x-experiencer} for the more oblique argument.
+
+\ex.\dep{Personen_x-experiencer, mit denen_x-experiencer er_x-sender noch nie_m-time ein Wort_x-noncomp *gewechselt#MESSAGE-INIT* hatte}
+
+Relatedly, sometimes a single argument denotes both the initial and the target arg2. In this case, default to \fr{initial-}.
+
+\ex.\dep{Die Programme_initial-scene *wechselten#SCENE-CHANGE* von Tag_m-time zu Tag_m-time}
+
+
 \newpage\subsection{When to Use \fr{SCENE}}
 
-\fr{SCENE} should definitely be used if a predicate can add aspectual meaning
-to predicates of more than one type. For example, English \emph{make} can be
-used with states and activities, so \emph{make} itself should be neither
+\fr{SCENE} should definitely be used if a predicate can add aspectual or modal
+meaning to predicates of more than one type. For example, English \emph{make}
+can be used with states and activities, so \emph{make} itself should be neither
 \fr{STATE} nor \fr{ACTIVITY} but \fr{SCENE}.
 
 \ex.\dep{Kim_x-causer *made#SCENE-INIT* Sandy_participant__is-active **dance#ACTIVITY**_scene}
@@ -1430,6 +1829,23 @@ certain type, it can have the same type.
 
 \ex.\dep{They_has-quantity *number#QUANTITY* in the thousands_quantity}
 
+\ex.\dep{Ich glaube nicht, dass ihr_undergoer etwas_event *passiert#EVENT* ist}
+
+\ex.\dep{Sie_has-state war im Gesicht_x-attribute rot_target-state *angelaufen#STATE-INIT*}
+
+To distinguish light verb constructions (LVCs) from verbal idioms (VIDs),
+determine whether the complement of the verb by itself can denote the described
+event, e.g., by making the subject a possessive modifier. If this is the case,
+it is an LVC and should be annotated with \fr{SCENE}. Otherwise, treat the
+construction as a verbal idiom and annotate it with \fr{NONCOMP} (see
+Section~\ref{sec:NONCOMP}. For example, treat \emph{ein Bad nehmen} as an LVC,
+but \emph{in den Sinn kommen} as a VID:
+
+\ex.\dep{Kim_participant__undergoer *nahm#SCENE* ein **Bad#EVENT**_scene} $\rightarrow$ \dep{Kims_undergoer *Bad#EVENT*}
+
+\ex.\dep{Ihm_x-experiencer *kam#MESSAGE-INIT* nie_m-time in den Sinn_x-noncomp , dass das nötig_target-content sein könnte} $\nrightarrow$ \dep{sein_x-experiencer *Sinn#MESSAGE*, dass das nötig_content sein könnte}
+
+
 \newpage\section{Aspect, Mode, and Polarity}
 
 \subsection{Aspect Annotation is wrt. the Superframe, Not the Predicate}
@@ -1441,6 +1857,24 @@ possession ends. \fr{POSSESSION-INIT} would be incorrect because although a
 losing event begins, the state that the superframe \fr{POSSESSION} describes
 ends. In general, aspectual suffixes modify superframes, they do not
 necessarily indicate the aspectual class of the predicate (here: \emph{lost}).
+
+
+\newpage\subsection{Ambiguity between Static and Dynamic? Prefer Static!}
+
+Some predicates are ambiguous between a static and a dynamic reading. If they
+make equal sense in context, prefer the static one.
+
+\ex.
+\a.\dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE* , ohne sich aufzuregen_m-accompanier}
+\b.Rather than: \dep{Er_x-experiencer konnte ihn_topic nie_m-time *sehen#MESSAGE-INIT* , ohne sich aufzuregen_m-accompanier}
+
+
+\newpage\subsection{Stacking of Aspect and Mode}
+
+Modal suffixes take scope over aspectual ones, which is reflected in their order: \fr{SCENE-INIT-NECESSITY} is a valid superframe, \fr{SCENE-NECESSITY-INIT} is not. The former denotes the need for a scene to be initiated, the latter denotes the initiation of a need. Only the latter could be used to describe a predicate such as \emph{force}. Because it is not available (to keep things simple), we just use \fr{SCENE-INIT} in such a case.
+
+\ex. \dep{dass man_participant *gezwungen#SCENE-INIT* wurde mitzumachen_target-scene}
+
 
 \newpage\section{Construction-specific Guidelines}
 
@@ -1462,31 +1896,34 @@ their role in a social context:
 
 \ex.\dep{She_has-social-relation is the *president#SOCIAL-RELATION* of our club_social-relation}
 
+
 \newpage\subsection{Particle Verbs}
 
-We follow the PARSEME classification of particle verbs into spatial,
-semi-non-compositional, and fully non-compositional ones
-\citep{savary-etal-2017-parseme,ramisch-etal-2018-edition,ramisch-etal-2020-edition,savary-etal-2023-parseme}.
-
 In UD, particle verbs are connected to their particle via the
-\texttt{compound:prt} relation. If the meaning is spatial, this dependency is
-labeled with \rl{initial-location} or \rl{target-location}.
+\texttt{compound:prt} relation.
 
-\ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location}
+If the particle can be interpreted as an adposition with an elided complement
+(often the case with spatial meanings), label that relation as the elided
+complement would be labeled:
 
-\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location now_m-time}
+\ex.\dep{*get#LOCATION-DEINIT* the lid_has-location off_initial-location (the jar)}
 
-In semi-non-compositional particle verbs, where the particle adds a partially predictable
-but nonspatial meaning to the verb, use an appropriate role.
+\ex.\dep{You_has-location may *go#LOCATION-INIT* in_target-location (-to the room) now_m-time}
 
-\ex.\dep{*eat#INGESTION* up_m-quantity the cookies_ingested} (implies \emph{eat} the cookies)
+Also treat separated and nonseparated adpositional adverbs this way:
 
-In fully non-compositional particle verbs, where the meaning is not
-predictable, use \rl{m-noncomp}.
+\ex.\dep{*Komm#LOCATION-INIT* herein_target-location !}
 
-\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp} (does not imply \emph{do} somebody)
+\ex.\dep{*Geh#LOCATION-INIT* da_target-location jetzt_m-time rein_target-location !}
 
-\ex.\dep{Es_x-sender *stellte#MESSAGE* ein riesiges Gesicht_topic dar_m-noncomp} (does not imply \emph{stellen} something)
+Otherwise, use \rl{m-noncomp}:
+
+\ex.\dep{*eat#INGESTION* up_m-noncomp the cookies_ingested}
+
+\ex.\dep{*do#EVENT* somebody_undergoer in_m-noncomp}
+
+\ex.\dep{Es_x-sender *stellte#MESSAGE* ein riesiges Gesicht_topic dar_m-noncomp}
+
 
 \newpage\subsection{Pronouns with Arguments}
 
@@ -1498,6 +1935,7 @@ they do have arguments, in which case give them their antecendent's superframe:
 
 \ex.\dep{I drew a picture of a dog , *one#MESSAGE* of a cat_topic , and **another#MESSAGE** of a sheep__topic}
 
+
 \newpage\subsection{Nominal Copula Constructions}
 
 In nominal copula constructions, the copula subject is interpreted as a
@@ -1507,6 +1945,9 @@ and \rl{x-identified} if it is definite.
 \ex.\dep{This_x-identified is the *book#MESSAGE* I like_m-scene}
 
 \ex.\dep{My drawing_x-has-class was not_m-mode a *picture#MESSAGE* of a hat_topic}
+
+\ex.\dep{Unwissenheit_x-has-class ist *Stärke#QUALITY*}
+
 
 \newpage\subsection{Predicative Adpositions}
 
@@ -1543,17 +1984,35 @@ have to attach it to \emph{habitation}, which evokes a \emph{different}
 \fr{LOCATION} frame which does not have a quantity modifier. Confusion ensues,
 but for now we have to live with these issues.
 
+
+\newpage\subsection{Coordination}
+
+Coordinated dependents are annotated separately. In most cases, conjuncts will have the same role, but they may also differ.
+
+\ex.\dep{Parallelen_x-noncomp *ziehen#COMPARISON* zwischen Spielen_reference und dem täglichen Leben_compared}
+
+\ex.\dep{*Gegensatz#COMPARISON* zwischen seinen höflichen Manieren_compared und seinem Preisboxertypus_reference}
+
+Coordination is even split in cases where semantically it does not really make
+sense because the coordinated phrase fills a role as a whole, not each
+individual conjunct. In these cases, assign the same role to all conjuncts:
+
+\ex.\dep{a *question#MESSAGE* of life_topic or death_topic}
+
+
+\newpage\subsection{Participles vs. Adjectives}
+
+When in doubt whether something is an adjective or a verb participle, treat it
+as the latter. This is relevant for aspect annotation, e.g., compare the
+annotation for the adjective \emph{rot} with that for the participle
+\emph{gerötet}:
+
+\ex.\dep{Sein Gesicht_has-state ist *rot#STATE*}
+
+\ex.\dep{Sein Gesicht_has-state ist *gerötet#STATE-INIT*}
+
+
 \newpage\section{TODO}
-
-A whole section on sentence adverbs: lieber (MESSAGE), sowieso (CONDITION),
-ungeachtet (CONCESSION), erstmals (TIME), unvermindert (QUANTITY-CONTINUATION)
-
-Speaker-oriented adverbs: MESSAGE? erstaunlicherweise, geheimnisvollerweise,
-glücklicherweise, möglicherweise, notwendigerweise, tragischerweise,
-unglaublicherweise (MESSAGE-PREVENTION?), unglücklicherweise, zweckmäßigerweise?
-
-codify the general principle somewhere: if superframe and ARG1 have the same
-name (quasi-unary relations), we can just use m-rel. Otherwise, use m-scene.
 
 Treatment of valency-changing operations:
 

@@ -71,22 +71,20 @@ FRAMES = {
     'ACCOMPANIMENT': Flexible('accompanied', 'accompanier'),
     'DEPICTIVE': Rigid('has-depictive', 'depictive'),
     'ATTRIBUTE': Rigid('has-attribute', 'attribute'),
-    'ASSET': Rigid('has-asset', 'asset'),
+    'ASSET': Flexible('has-asset', 'asset'),
     'COMPARISON': Rigid('compared', 'reference'),
     'CONCESSION': Rigid('asserted', 'conceded'),
     'EXPLANATION': Rigid('explained', 'explanation'),
-    'PURPOSE': Rigid('has-purpose', 'purpose'),
     'LOCATION': Flexible('has-location', 'location'),
-    'WRAPPING-WEARING': Flexible('worn', 'wearer'),
+    'WRAPPING-WEARING': Flexible('wrapper', 'wearer'),
     'ADORNMENT-TARNISHMENT': Flexible('ornament', 'surface'),
     'HITTING': Rigid('hitting', 'hit'),
     'INGESTION': Rigid('ingested', 'transitory-location', 'ingester'),
     'EXCRETION': Rigid('excreter', 'excreted', 'transitory-location'),
     'UNANCHORED-MOTION': Rigid('in-motion', 'transitory-location'),
-    'MEANS': Rigid('has-means', 'means'),
+    'MEANS': Rigid('purpose', 'means'),
     'MESSAGE': Flexible('topic', 'content'),
     'PART-WHOLE': Flexible('part', 'whole'),
-    'EXAMPLE': Rigid('example', 'exemplified'),
     'POSSESSION': Flexible('possessed', 'possessor'),
     'QUANTITY': Flexible('has-quantity', 'quantity'),
     'SENDING': Rigid('sent', 'sender'),
@@ -97,7 +95,8 @@ FRAMES = {
     'CONDITION': Rigid('has-condition', 'condition'),
     'EXCEPTION': Rigid('has-exception', 'exception'),
     'SOCIAL-RELATION': Flexible('has-social-relation', 'social-relation'),
-    'TIME': Rigid('has-time', 'time'),
+    'SUBCLASS': Rigid('subclass', 'superclass'),
+    'TIME': Flexible('has-time', 'time'),
     'NONCOMP': Rigid('has-noncomp', 'noncomp'),
 }
 ASPECTS = ('INIT', 'DEINIT', 'CHANGE', 'CONTINUATION', 'PREVENTION')
@@ -106,10 +105,15 @@ POLARITIES = ('NEG',)
 FRAME_PATTERN = re.compile('(' + '|'.join(FRAMES.keys()) + ')(?:-(' +
         '|'.join(ASPECTS) + '))?(?:-(' + '|'.join(MODES) + '))?(?:-(' +
         '|'.join(POLARITIES) + '))?$')
+SEPARATOR_PATTERN = re.compile(r' (?:>>|\|\|) ')
+
+
+def split_label(label):
+    return SEPARATOR_PATTERN.split(label)
 
 
 def check_frame_label(frame):
-    return all(check_frame_label_part(p) for p in re.split(r' (?:>>|\|\|) ', frame))
+    return all(check_frame_label_part(p) for p in split_label(frame))
 
 
 def check_frame_label_part(frame):
@@ -117,8 +121,8 @@ def check_frame_label_part(frame):
 
 
 def check_dep_label(dep, frame):
-    frame_label_parts = re.split(r' (?:>>|\|\|) ', frame)
-    dep_label_parts = re.split(r' (?:>>|\|\|) ', dep)
+    frame_label_parts = split_label(frame)
+    dep_label_parts = split_label(dep)
     if len(dep_label_parts) == 1:
         dep_label_parts *= len(frame_label_parts)
     if len(frame_label_parts) == 1:
@@ -140,3 +144,9 @@ def check_dep_label_part(dep, frame):
     a = mtch.group(2)
     m = mtch.group(3)
     return FRAMES[f].check_core(a, m, dep)
+
+
+def simplify(part):
+    if part.startswith('m-') or part.startswith('x-'):
+        return part[2:]
+    return part
