@@ -7,20 +7,20 @@
 5	Mutter	Mutter	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	2	obl	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] träumte (2)
-[] Winston (1)
-[] von seiner Mutter (5)
+[MESSAGE] träumte (2)
+[x-experiencer] Winston (1)
+[topic] von seiner Mutter (5)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Mutter (5)
-[] seiner (4)
+[SOCIAL-RELATION] Mutter (5)
+[has-social-relation] seiner (4)
 
-[] seiner (4)
+[IDENTIFICATION] seiner (4)
 
 # sent_id = 502
 # text = Er musste , so überlegte er , zehn oder elf Jahre alt gewesen sein , als seine Mutter verschwunden war .
-1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+1	Er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	_
 3	,	,	PUNCT	$,	_	5	punct	_	_
 4	so	so	ADV	ADV	_	5	advmod	_	_
@@ -42,36 +42,37 @@
 20	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
 21	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] überlegte (5)
-[] Er (1)
-[] so (4)
-[] er (6)
-[] musste , zehn oder elf Jahre alt gewesen sein , als seine Mutter verschwunden war (12)
+[MESSAGE-INIT] überlegte (5)
+[target-content] so (4)
+[x-experiencer] er (6)
+[target-content] Er musste , zehn oder elf Jahre alt gewesen sein , als seine Mutter verschwunden war (12)
 
-[] Er (1)
+[IDENTIFICATION] so (4)
 
-[] so (4)
+[IDENTIFICATION] er (6)
 
-[] er (6)
+[STATE] alt (12)
+[has-state] Er (1)
+[m-quantity] zehn oder elf Jahre (11)
+[m-time || m-situator] , als seine Mutter verschwunden war (19)
 
-[] alt (12)
-[] zehn oder elf Jahre (11)
-[] , als seine Mutter verschwunden war (19)
+[IDENTIFICATION] Er (1)
 
-[] Jahre (11)
-[] zehn oder elf (8)
+[TIME >> STATE] Jahre (11)
+[m-quantity] zehn (8)
+[m-quantity] oder elf (10)
 
-[] zehn (8)
+[QUANTITY] zehn (8)
 
-[] elf (10)
+[QUANTITY] elf (10)
 
-[] verschwunden (19)
-[] seine Mutter (18)
+[LOCATION-DEINIT >> DESTRUCTION] verschwunden (19)
+[has-location >> destroyed] seine Mutter (18)
 
-[] Mutter (18)
-[] seine (17)
+[SOCIAL-RELATION] Mutter (18)
+[has-social-relation] seine (17)
 
-[] seine (17)
+[IDENTIFICATION] seine (17)
 
 # sent_id = 503
 # text = Sie war eine große , würdevolle , ziemlich stille Frau mit gemessenen Bewegungen und wundervollen blonden Haaren gewesen .
@@ -95,34 +96,37 @@
 18	gewesen	sein	AUX	VAPP	Verbform=Part	10	cop	_	_
 19	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] Frau (10)
-[] Sie (1)
-[] große , würdevolle , ziemlich stille (4)
-[] mit gemessenen Bewegungen und wundervollen blonden Haaren (13)
+[CLASS] Frau (10)
+[has-class] Sie (1)
+[m-quality] große (4)
+[m-quality] , würdevolle , (6)
+[m-quality] ziemlich stille (9)
+[m-accompanier] mit gemessenen Bewegungen (13)
+[m-part] und wundervollen blonden Haaren (17)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] große (4)
+[QUALITY] große (4)
 
-[] würdevolle (6)
+[QUALITY] würdevolle (6)
 
-[] stille (9)
-[] ziemlich (8)
+[QUALITY] stille (9)
+[m-quantity] ziemlich (8)
 
-[] ziemlich (8)
+[QUANTITY] ziemlich (8)
 
-[] Bewegungen (13)
-[] gemessenen (12)
+[ACTIVITY] Bewegungen (13)
+[m-quality] gemessenen (12) # langsam und würdevoll
 
-[] gemessenen (12)
+[QUALITY] gemessenen (12)
 
-[] Haaren (17)
-[] wundervollen (15)
-[] blonden (16)
+[PART-WHOLE] Haaren (17)
+[m-quality] wundervollen (15)
+[m-quality] blonden (16)
 
-[] wundervollen (15)
+[QUALITY] wundervollen (15)
 
-[] blonden (16)
+[QUALITY] blonden (16)
 
 # sent_id = 504
 # text = Seinen Vater hatte er undeutlicher in Erinnerung : dunkelhaarig und hager , immer in eleganten dunklen Anzügen ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) und mit einer Brille .
@@ -134,7 +138,7 @@
 6	in	in	ADP	APPR	_	7	case	_	_
 7	Erinnerung	Erinnerung	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
 8	:	:	PUNCT	$.	_	9	punct	_	_
-9	dunkelhaarig	dunkelhaarig	ADJ	ADJD	_	3	parataxis	_	_
+9	dunkelhaarig	dunkelhaarig	ADJ	ADJD	_	2	amod	_	_
 10	und	und	CCONJ	KON	_	11	cc	_	_
 11	hager	hager	ADJ	ADJD	_	9	conj	_	_
 12	,	,	PUNCT	$,	_	17	punct	_	_
@@ -156,65 +160,73 @@
 28	und	und	CCONJ	KON	_	31	cc	_	_
 29	mit	mit	ADP	APPR	_	31	case	_	_
 30	einer	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	Brille	Brille	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	20	conj	_	_
+31	Brille	Brille	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	9	conj	_	_
 32	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] hatte (3)
-[] Seinen Vater (2)
-[] er (4)
-[] undeutlicher (5)
-[] in Erinnerung (7)
+[SCENE] hatte (3)
+[participant] Seinen Vater : dunkelhaarig und hager , immer in eleganten dunklen Anzügen ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) und mit einer Brille (2)
+[participant] er (4)
+[m-quality] undeutlicher (5)
+[scene] in Erinnerung (7)
 
-[] Vater (2)
-[] Seinen (1)
+[SOCIAL-RELATION] Vater (2)
+[has-social-relation] Seinen (1)
+[m-quality] : dunkelhaarig ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) (9)
+[m-state] und hager (11) # knochig, sehnig, mager und lang
+[m-scene] , immer in eleganten dunklen Anzügen (17)
+[m-scene] und mit einer Brille (31)
 
-[] Seinen (1)
+[IDENTIFICATION] Seinen (1)
 
-[] er (4)
+[QUALITY] dunkelhaarig (9)
 
-[] undeutlicher (5)
+[STATE] hager (11)
 
-[] Erinnerung (7)
+[CLASS] Anzügen (17)
+[m-time] immer (13)
+[m-quality] eleganten (15)
+[m-quality] dunklen (16)
+[m-wearer] Vater (2)
 
-[] dunkelhaarig (9)
+[TIME] immer (13)
 
-[] hager (11)
+[QUALITY] eleganten (15)
 
-[] Anzügen (17)
-[] immer (13)
-[] eleganten (15)
-[] dunklen (16)
+[QUALITY] dunklen (16)
 
-[] immer (13)
+[IDENTIFICATION] er (4)
 
-[] eleganten (15)
+[QUALITY-NEG >> QUALITY] undeutlicher (5)
 
-[] dunklen (16)
+[MESSAGE] Erinnerung (7)
+[topic] Seinen Vater : dunkelhaarig und hager , immer in eleganten dunklen Anzügen ( Winston entsann sich insbesondere seiner sehr dünnen Schuhsohlen ) und mit einer Brille (2)
+[x-experiencer] er (4)
 
-[] entsann (20)
-[] Winston (19)
-[] sich (21)
-[] insbesondere (22)
-[] seiner sehr dünnen Schuhsohlen (26)
+[MESSAGE-INIT] entsann (20) # sich an etw. erinnern, etw. im Gedächtnis haben
+[x-experiencer] Winston (19)
+[x-experiencer] sich (21)
+[m-mode] insbesondere (22)
+[topic] seiner sehr dünnen Schuhsohlen (26)
 
-[] Winston (19)
+[IDENTIFICATION] Winston (19)
 
-[] sich (21)
+[IDENTIFICATION] sich (21)
 
-[] insbesondere (22)
+[MODE] insbesondere (22)
 
-[] Schuhsohlen (26)
-[] seiner (23)
-[] sehr dünnen (25)
+[CLASS] Schuhsohlen (26)
+[m-wearer] seiner (23)
+[m-quality] sehr dünnen (25)
 
-[] seiner (23)
+[IDENTIFICATION] seiner (23)
 
-[] dünnen (25)
-[] sehr (24)
+[QUALITY] dünnen (25)
+[m-quantity] sehr (24)
 
-[] sehr (24)
+[QUANTITY] sehr (24)
 
-[] Brille (31)
+[CLASS] Brille (31)
+[m-wearer] Vater (2)
 
 # sent_id = 505
 # text = Die beiden mussten offenbar bei einer der ersten großen Säuberungsaktionen nach 1950 ums Leben gekommen sein .
@@ -236,31 +248,31 @@
 16	sein	sein	AUX	VAINF	VerbForm=Inf	15	aux	_	_
 17	.	.	PUNCT	$.	_	15	punct	_	_
 
-[] gekommen (15)
-[] Die beiden (2)
-[] offenbar (4)
-[] bei einer der ersten großen Säuberungsaktionen nach 1950 (6)
-[] ums Leben (14)
+[DESTRUCTION] gekommen (15)
+[destroyed] Die beiden (2)
+[m-mode] offenbar (4)
+[m-time] bei einer der ersten großen Säuberungsaktionen nach 1950 (6)
+[x-noncomp] ums Leben (14)
 
-[] beiden (2)
+[IDENTIFICATION] beiden (2)
 
-[] offenbar (4)
+[MODE] offenbar (4)
 
-[] einer (6)
-[] der ersten großen Säuberungsaktionen nach 1950 (10)
+[PART-WHOLE] einer (6)
+[whole] der ersten großen Säuberungsaktionen nach 1950 (10)
 
-[] Säuberungsaktionen (10)
-[] ersten (8)
-[] großen (9)
-[] nach 1950 (12)
+[EVENT] Säuberungsaktionen (10)
+[m-time] ersten (8)
+[m-quality] großen (9)
+[m-time] nach 1950 (12)
 
-[] ersten (8)
+[RANK >> TIME] ersten (8)
 
-[] großen (9)
+[QUALITY] großen (9)
 
-[] 1950 (12)
+[TIME] 1950 (12)
 
-[] Leben (14)
+[NONCOMP] Leben (14)
 
 # sent_id = 506
 # text = Im Traum saß seine Mutter an einem Platz tief unter ihm , seine kleine Schwester in den Armen .
@@ -284,36 +296,37 @@
 18	Armen	Arm	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	15	nmod	_	_
 19	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] saß (3)
-[] Im Traum (2)
-[] seine Mutter (5)
-[] an einem Platz tief (8)
-[] unter ihm (11)
+[LOCATION] saß (3)
+[m-situator] Im Traum (2)
+[has-location] seine Mutter (5)
+[location] an einem Platz tief (8)
+[location] unter ihm (11)
 
-[] Traum (2)
+[MESSAGE] Traum (2)
 
-[] Mutter (5)
-[] seine (4)
+[SOCIAL-RELATION] Mutter (5)
+[has-social-relation] seine (4)
 
-[] seine (4)
+[IDENTIFICATION] seine (4)
 
-[] Platz (8)
-[] tief (9)
+[LOCATION] Platz (8)
+[m-location] tief (9)
 
-[] tief (9)
+[LOCATION] tief (9)
 
-[] ihm (11)
+[IDENTIFICATION] ihm (11)
 
-[] Schwester (15)
-[] seine (13)
-[] kleine (14)
-[] in den Armen (18)
+[SOCIAL-RELATION] Schwester (15)
+[has-social-relation] seine (13)
+[m-quality || m-state] kleine (14)
+[x-attribute] in den Armen (18)
 
-[] seine (13)
+[IDENTIFICATION] seine (13)
 
-[] kleine (14)
+[QUALITY || STATE] kleine (14)
 
-[] Armen (18)
+[PART-WHOLE] Armen (18)
+[whole] Mutter (5)
 
 # sent_id = 507
 # text = Er erinnerte sich an seine Schwester nur noch als an ein winziges , schwächliches , immer lautloses Kind mit großen , aufmerksamen Augen .
@@ -325,7 +338,7 @@
 6	Schwester	Schwester	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
 7	nur	nur	ADV	ADV	_	8	advmod	_	_
 8	noch	noch	ADV	ADV	_	2	advmod	_	_
-9	als	als	CCONJ	KOKOM	_	2	xcomp	_	_
+9	als	als	CCONJ	KOKOM	_	18	case	_	_
 10	an	an	ADP	APPR	_	18	case	_	_
 11	ein	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Neut|Number=Sing|PronType=Art	18	det	_	_
 12	winziges	winzig	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	18	amod	_	_
@@ -334,7 +347,7 @@
 15	,	,	PUNCT	$,	_	17	punct	_	_
 16	immer	immer	ADV	ADV	_	17	advmod	_	_
 17	lautloses	lautlos	ADJ	ADJA	Case=Acc|Gender=Neut|Number=Sing	12	conj	_	_
-18	Kind	Kind	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	9	nmod	_	_
+18	Kind	Kind	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	2	obl	_	_
 19	mit	mit	ADP	APPR	_	23	case	_	_
 20	großen	groß	ADJ	ADJA	Case=Dat|Gender=Neut|Number=Plur	23	amod	_	_
 21	,	,	PUNCT	$,	_	22	punct	_	_
@@ -342,49 +355,50 @@
 23	Augen	Auge	NOUN	NN	Case=Dat|Gender=Neut|Number=Plur	18	nmod	_	_
 24	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] erinnerte (2)
-[] Er (1)
-[] sich (3)
-[] an seine Schwester (6)
-[] nur noch (8)
-[] als an ein winziges , schwächliches , immer lautloses Kind mit großen , aufmerksamen Augen (9)
+[MESSAGE] erinnerte (2)
+[x-experiencer] Er (1)
+[x-experiencer] sich (3)
+[topic] an seine Schwester (6)
+[m-mode] nur noch (8)
+[x-reference] als an ein winziges , schwächliches , immer lautloses Kind mit großen , aufmerksamen Augen (18) # vgl. 000.cusf sent_id=2 "roch"
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION] sich (3)
 
-[] Schwester (6)
-[] seine (5)
+[SOCIAL-RELATION] Schwester (6)
+[has-social-relation] seine (5)
 
-[] seine (5)
+[IDENTIFICATION] seine (5)
 
-[] noch (8)
-[] nur (7)
+[MODE] noch (8)
+[m-mode] nur (7)
 
-[] nur (7)
+[MODE] nur (7)
 
-[] als (9)
-[] an ein winziges , schwächliches , immer lautloses Kind mit großen , aufmerksamen Augen (18)
+[CLASS] Kind (18)
+[m-quality] winziges (12)
+[m-state] , schwächliches (14)
+[m-scene] , immer lautloses (17)
+[m-part] mit großen , aufmerksamen Augen (23)
 
-[] Kind (18)
-[] winziges , schwächliches , immer lautloses (12)
-[] mit großen , aufmerksamen Augen (23)
+[QUALITY] winziges (12)
 
-[] winziges (12)
+[STATE] schwächliches (14)
 
-[] schwächliches (14)
+[MESSAGE-NEG >> QUALITY] lautloses (17)
+[m-time] immer (16)
+[x-sender >> has-quality] Kind (18)
 
-[] lautloses (17)
-[] immer (16)
+[TIME] immer (16)
 
-[] immer (16)
+[PART-WHOLE] Augen (23)
+[m-quality] großen (20)
+[m-quality] , aufmerksamen (22)
 
-[] Augen (23)
-[] großen , aufmerksamen (20)
+[QUALITY] großen (20)
 
-[] großen (20)
-
-[] aufmerksamen (22)
+[QUALITY] aufmerksamen (22)
 
 # sent_id = 508
 # text = Beide blickten zu ihm empor .
@@ -395,16 +409,16 @@
 5	empor	empor	ADP	PTKVZ	_	2	advmod	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] blickten (2)
-[] Beide (1)
-[] zu ihm (4)
-[] empor (5)
+[MESSAGE] blickten (2) # emporblicken=nach oben blicken
+[x-experiencer] Beide (1)
+[topic] zu ihm (4)
+[m-target-location] empor (5)
 
-[] Beide (1)
+[IDENTIFICATION] Beide (1)
 
-[] ihm (4)
+[IDENTIFICATION] ihm (4)
 
-[] empor (5)
+[LOCATION] empor (5)
 
 # sent_id = 509
 # text = Sie befanden sich an einer Stelle unter der Erde - etwa auf dem Grunde eines Ziehbrunnens oder in einem sehr tiefen Grab - , aber der Fleck , auf dem sie saßen , sank , obwohl bereits tief unter ihm gelegen , selbst noch immer tiefer nach unten ab .
@@ -448,7 +462,7 @@
 38	tief	tief	ADJ	ADJD	_	41	advmod	_	_
 39	unter	unter	ADP	APPR	_	40	case	_	_
 40	ihm	er	PRON	PPER	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	41	obl	_	_
-41	gelegen	liegen	VERB	VVPP	Verbform=Part	27	acl	_	_
+41	gelegen	liegen	VERB	VVPP	Verbform=Part	34	advcl	_	_
 42	,	,	PUNCT	$,	_	41	punct	_	_
 43	selbst	selbst	ADV	ADV	_	46	advmod	_	_
 44	noch	noch	ADV	ADV	_	45	advmod	_	_
@@ -459,77 +473,78 @@
 49	ab	ab	ADP	PTKVZ	_	34	compound:prt	_	_
 50	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] befanden (2)
-[] Sie (1)
-[] an einer Stelle unter der Erde (6)
-[] - etwa auf dem Grunde eines Ziehbrunnens oder in einem sehr tiefen Grab - (14)
+[LOCATION] befanden (2)
+[has-location] Sie (1)
+[location] an einer Stelle unter der Erde (6)
+[location] - etwa auf dem Grunde eines Ziehbrunnens - (14)
+[location] oder in einem sehr tiefen Grab (22)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Stelle (6)
-[] unter der Erde (9)
+[LOCATION] Stelle (6)
+[m-location] unter der Erde (9)
 
-[] Erde (9)
+[CLASS] Erde (9)
 
-[] Grunde (14)
-[] etwa (11)
-[] eines Ziehbrunnens (16)
+[PART-WHOLE] Grunde (14)
+[m-mode] etwa (11)
+[whole] eines Ziehbrunnens (16)
 
-[] etwa (11)
+[MODE] etwa (11)
 
-[] Ziehbrunnens (16)
+[CLASS] Ziehbrunnens (16)
 
-[] Grab (22)
-[] sehr tiefen (21)
+[CLASS] Grab (22)
+[m-quality] sehr tiefen (21)
 
-[] tiefen (21)
-[] sehr (20)
+[QUALITY] tiefen (21)
+[m-quantity] sehr (20)
 
-[] sehr (20)
+[QUANTITY] sehr (20)
 
-[] sank (34)
-[] der Fleck , auf dem sie saßen , , obwohl bereits tief unter ihm gelegen , (27)
-[] selbst noch immer tiefer nach unten (46)
-[] ab (49)
+[LOCATION-INIT] sank (34)
+[has-location] der Fleck , auf dem sie saßen , (27)
+[m-conceded] , obwohl bereits tief unter ihm gelegen , (41)
+[target-location] selbst noch immer tiefer nach unten (46)
+[m-noncomp] ab (49)
 
-[] Fleck (27)
-[] , auf dem sie saßen (32)
-[] , obwohl bereits tief unter ihm gelegen , (41)
+[CLASS] Fleck (27)
+[m-scene] , auf dem sie saßen (32)
 
-[] saßen (32)
-[] auf dem (30)
-[] sie (31)
+[LOCATION] saßen (32)
+[location] auf dem (30)
+[has-location] sie (31)
+[location] Fleck (27)
 
-[] dem (30)
+[IDENTIFICATION] dem (30)
 
-[] sie (31)
+[IDENTIFICATION] sie (31)
 
-[] gelegen (41)
-[] bereits (37)
-[] tief (38)
-[] unter ihm (40)
+[LOCATION] gelegen (41)
+[m-time] bereits (37)
+[location] tief (38)
+[location] unter ihm (40)
 
-[] bereits (37)
+[TIME] bereits (37)
 
-[] tief (38)
+[LOCATION] tief (38)
 
-[] ihm (40)
+[IDENTIFICATION] ihm (40)
 
-[] tiefer (46)
-[] selbst (43)
-[] noch immer (45)
-[] nach unten (48)
+[LOCATION-INIT] tiefer (46)
+[m-mode] selbst (43)
+[m-scene] noch immer (45)
+[target-location] nach unten (48)
 
-[] selbst (43)
+[MODE] selbst (43)
 
-[] immer (45)
-[] noch (44)
+[SCENE-CONTINUATION] immer (45)
+[m-time] noch (44)
+[initial-scene] tiefer (46)
 
-[] noch (44)
+[TIME] noch (44)
 
-[] unten (48)
-
-[] ab (49)
+[LOCATION] unten (48)
 
 # sent_id = 510
 # text = Sie waren in der Kajüte eines sinkenden Schiffes und blickten durch das immer dunkler werdende Wasser zu ihm empor .
@@ -554,39 +569,40 @@
 19	empor	empor	ADP	PTKVZ	_	10	compound:prt	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] waren (2)
-[] Sie (1)
-[] in der Kajüte eines sinkenden Schiffes (5)
+[LOCATION] waren (2)
+[has-location] Sie (1)
+[location] in der Kajüte eines sinkenden Schiffes (5)
 
-[] Sie (1)
+[IDENTIFICATION] Sie (1)
 
-[] Kajüte (5)
-[] eines sinkenden Schiffes (8)
+[PART-WHOLE] Kajüte (5)
+[whole] eines sinkenden Schiffes (8)
 
-[] Schiffes (8)
-[] sinkenden (7)
+[CLASS] Schiffes (8)
+[m-scene] sinkenden (7)
 
-[] sinkenden (7)
+[LOCATION-CHANGE] sinkenden (7)
+[has-location] Schiffes (8)
 
-[] blickten (10)
-[] durch das immer dunkler werdende Wasser (16)
-[] zu ihm (18)
-[] empor (19)
+[MESSAGE] blickten (10)
+[m-transitory-location] durch das immer dunkler werdende Wasser (16)
+[topic] zu ihm (18)
+[m-target-location] empor (19)
 
-[] Wasser (16)
-[] immer dunkler werdende (15)
+[CLASS] Wasser (16)
+[m-scene] immer dunkler werdende (15)
 
-[] werdende (15)
-[] immer dunkler (14)
+[QUALITY-CHANGE] werdende (15)
+[target-quality] immer dunkler (14)
+[has-quality] Wasser (16)
 
-[] dunkler (14)
-[] immer (13)
+[QUALITY] dunkler (14)
+[m-scene] immer (13)
 
-[] immer (13)
+[SCENE-CONTINUATION] immer (13)
+[initial-scene] dunkler (14)
 
-[] ihm (18)
-
-[] empor (19)
+[IDENTIFICATION] ihm (18)
 
 # sent_id = 511
 # text = Noch war Luft in der Kajüte , noch konnten sie einander sehen , aber die ganze Zeit sanken sie tiefer , immer tiefer hinunter in die grünen Wasser , die sie im nächsten Augenblick für immer dem Blick entziehen mussten .
@@ -632,73 +648,78 @@
 40	mussten	müssen	AUX	VMFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	39	aux	_	_
 41	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] war (2)
-[] Noch (1)
-[] Luft (3)
-[] in der Kajüte (6)
+[LOCATION] war (2)
+[m-time] Noch (1)
+[has-location] Luft (3)
+[location] in der Kajüte (6)
 
-[] Noch (1)
+[TIME] Noch (1)
 
-[] Luft (3)
+[CLASS] Luft (3)
 
-[] Kajüte (6)
+[CLASS] Kajüte (6)
 
-[] sehen (12)
-[] sie (10)
-[] einander (11)
+[MESSAGE] sehen (12)
+[x-experiencer] sie (10)
+[topic] einander (11)
 
-[] sie (10)
+[IDENTIFICATION] sie (10)
 
-[] einander (11)
+[IDENTIFICATION] einander (11)
 
-[] sanken (18)
-[] die ganze Zeit (17)
-[] sie (19)
-[] tiefer , immer tiefer (20)
-[] hinunter (24)
-[] in die grünen Wasser , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (28)
+[LOCATION-INIT] sanken (18)
+[m-time] die ganze Zeit (17)
+[has-location] sie (19)
+[target-location] tiefer (20)
+[target-location] , immer tiefer (23)
+[target-location] hinunter (24)
+[target-location] in die grünen Wasser , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (28)
 
-[] Zeit (17)
-[] ganze (16)
+[TIME] Zeit (17)
+[m-quantity] ganze (16)
 
-[] ganze (16)
+[QUANTITY] ganze (16)
 
-[] sie (19)
+[IDENTIFICATION] sie (19)
 
-[] tiefer (20)
+[LOCATION-INIT] tiefer (20)
 
-[] tiefer (23)
-[] immer (22)
+[LOCATION-INIT] tiefer (23)
+[m-scene] immer (22)
 
-[] immer (22)
+[SCENE-CONTINUATION] immer (22)
+[initial-scene] tiefer (23)
 
-[] hinunter (24)
+[LOCATION-INIT] hinunter (24)
 
-[] Wasser (28)
-[] grünen (27)
-[] , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (39)
+[CLASS] Wasser (28)
+[m-quality] grünen (27)
+[m-scene] , die sie im nächsten Augenblick für immer dem Blick entziehen mussten (39)
 
-[] grünen (27)
+[QUALITY] grünen (27)
 
-[] entziehen (39)
-[] die (30)
-[] sie (31)
-[] im nächsten Augenblick (34)
-[] für immer (36)
-[] dem Blick (38)
+[SCENE-DEINIT] entziehen (39) # "er entzog sich ihren Blicken, der Aufmerksamkeit, Beobachtung (= verbarg sich davor)"
+[x-causer] die (30)
+[participant] sie (31)
+[m-time] im nächsten Augenblick (34)
+[m-time] für immer (36)
+[initial-scene] dem Blick (38)
+[x-causer] Wasser (28)
 
-[] die (30)
+[IDENTIFICATION] die (30)
 
-[] sie (31)
+[IDENTIFICATION] sie (31)
 
-[] Augenblick (34)
-[] nächsten (33)
+[TIME] Augenblick (34)
+[m-scene] nächsten (33)
 
-[] nächsten (33)
+[SEQUENCE] nächsten (33)
+[follows] Augenblick (34)
 
-[] immer (36)
+[TIME] immer (36)
 
-[] Blick (38)
+[MESSAGE] Blick (38)
+[topic] sie (31)
 
 # sent_id = 512
 # text = Er weilte in Licht und Luft , während sie in den Tod hinuntergezogen wurden , und sie waren dort drunten , weil er hier oben war .
@@ -730,44 +751,46 @@
 26	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	advcl	_	_
 27	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] weilte (2)
-[] Er (1)
-[] in Licht und Luft (4)
-[] , während sie in den Tod hinuntergezogen wurden (13)
+[SITUATION-CONTINUATION] weilte (2)
+[theme] Er (1)
+[initial-situator] in Licht (4)
+[initial-situator] und Luft (6)
+[m-time] , während sie in den Tod hinuntergezogen wurden (13)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] Licht (4)
+[CLASS || STATE] Licht (4)
 
-[] Luft (6)
+[CLASS] Luft (6)
 
-[] hinuntergezogen (13)
-[] sie (9)
-[] in den Tod (12)
+[SCENE-INIT] hinuntergezogen (13)
+[participant] sie (9)
+[target-scene] in den Tod (12)
 
-[] sie (9)
+[IDENTIFICATION] sie (9)
 
-[] Tod (12)
+[DESTRUCTION] Tod (12)
+[destroyed] sie (9)
 
-[] drunten (20)
-[] sie (17)
-[] dort (19)
-[] , weil er hier oben war (26)
+[LOCATION] drunten (20)
+[has-location] sie (17)
+[location] dort (19)
+[m-explanation] , weil er hier oben war (26)
 
-[] sie (17)
+[IDENTIFICATION] sie (17)
 
-[] dort (19)
+[LOCATION] dort (19)
 
-[] war (26)
-[] er (23)
-[] hier (24)
-[] oben (25)
+[LOCATION] war (26)
+[has-location] er (23)
+[location] hier (24)
+[location] oben (25)
 
-[] er (23)
+[IDENTIFICATION] er (23)
 
-[] hier (24)
+[LOCATION] hier (24)
 
-[] oben (25)
+[LOCATION] oben (25)
 
 # sent_id = 513
 # text = Er wusste es , und auch sie wussten es , und er konnte dieses Wissen in ihren Gesichtern lesen .
@@ -792,38 +815,39 @@
 19	lesen	lesen	VERB	VVINF	VerbForm=Inf	2	conj	_	_
 20	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wusste (2)
-[] Er (1)
-[] es (3)
+[MESSAGE] wusste (2)
+[x-experiencer] Er (1)
+[content] es (3)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] es (3)
+[IDENTIFICATION] es (3)
 
-[] wussten (8)
-[] auch (6)
-[] sie (7)
-[] es (9)
+[MESSAGE] wussten (8)
+[m-scene] auch (6)
+[x-experiencer] sie (7)
+[content] es (9)
 
-[] auch (6)
+[SCENE-CONTINUATION] auch (6)
+[initial-scene] wussten (8)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] es (9)
+[IDENTIFICATION] es (9)
 
-[] lesen (19)
-[] er (12)
-[] dieses Wissen (15)
-[] in ihren Gesichtern (18)
+[MESSAGE] lesen (19)
+[x-experiencer] er (12)
+[content] dieses Wissen (15)
+[x-sender] in ihren Gesichtern (18)
 
-[] er (12)
+[IDENTIFICATION] er (12)
 
-[] Wissen (15)
+[MESSAGE] Wissen (15)
 
-[] Gesichtern (18)
-[] ihren (17)
+[PART-WHOLE] Gesichtern (18)
+[whole] ihren (17)
 
-[] ihren (17)
+[IDENTIFICATION] ihren (17)
 
 # sent_id = 514
 # text = Es war kein Vorwurf , weder in ihren Gesichtern noch in ihren Herzen , nur das Bewusstsein , dass sie sterben mussten , damit er am Leben blieb , und dass dies zur unausweichlichen Ordnung der Dinge gehörte .
@@ -867,58 +891,62 @@
 38	gehörte	gehören	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	conj	_	_
 39	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] Vorwurf (4)
-[] Es (1)
-[] kein (3)
-[] , weder in ihren Gesichtern noch in ihren Herzen (9)
+[MESSAGE] Vorwurf (4)
+[x-noncomp] Es (1)
+[m-mode] kein (3)
+[x-sender] , weder in ihren Gesichtern (9)
+[x-sender] noch in ihren Herzen (13)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] kein (3)
+[MODE] kein (3)
 
-[] Gesichtern (9)
-[] ihren (8)
+[PART-WHOLE] Gesichtern (9)
+[whole] ihren (8)
 
-[] ihren (8)
+[IDENTIFICATION] ihren (8)
 
-[] Herzen (13)
-[] ihren (12)
+[PART-WHOLE] Herzen (13)
+[whole] ihren (12)
 
-[] ihren (12)
+[IDENTIFICATION] ihren (12)
 
-[] Bewusstsein (17)
-[] nur (15)
-[] , dass sie sterben mussten , damit er am Leben blieb , und dass dies zur unausweichlichen Ordnung der Dinge gehörte (21)
+[MESSAGE] Bewusstsein (17)
+[m-mode] nur (15)
+[content] , dass sie sterben mussten , damit er am Leben blieb (21)
+[content] , und dass dies zur unausweichlichen Ordnung der Dinge gehörte (38)
 
-[] nur (15)
+[MODE] nur (15)
 
-[] sterben (21)
-[] sie (20)
-[] , damit er am Leben blieb (28)
+[DESTRUCTION] sterben (21)
+[destroyed] sie (20)
+[m-purpose] , damit er am Leben blieb (28)
 
-[] sie (20)
+[IDENTIFICATION] sie (20)
 
-[] blieb (28)
-[] er (25)
-[] am Leben (27)
+[SCENE-CONTINUATION] blieb (28)
+[participant] er (25)
+[initial-scene] am Leben (27)
 
-[] er (25)
+[IDENTIFICATION] er (25)
 
-[] Leben (27)
+[EVENT] Leben (27)
+[undergoer] er (25)
 
-[] gehörte (38)
-[] dies (32)
-[] zur unausweichlichen Ordnung der Dinge (35)
+[PART-WHOLE] gehörte (38)
+[part] dies (32)
+[whole] zur unausweichlichen Ordnung der Dinge (35)
 
-[] dies (32)
+[IDENTIFICATION] dies (32)
 
-[] Ordnung (35)
-[] unausweichlichen (34)
-[] der Dinge (37)
+[MESSAGE] Ordnung (35)
+[m-scene] unausweichlichen (34) # nicht vermeidbar 
+[topic] der Dinge (37)
 
-[] unausweichlichen (34)
+[SCENE-INIT-NECESSITY] unausweichlichen (34)
+[target-scene] Ordnung (35)
 
-[] Dinge (37)
+[CLASS >> SITUATION] Dinge (37)
 
 # sent_id = 515
 # text = Er konnte sich nicht erinnern , was eigentlich geschehen war , aber er wusste in seinem Traum , dass das Leben seiner Mutter und seiner Schwester irgendwie für das seine geopfert worden war .
@@ -957,59 +985,61 @@
 33	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	aux	_	_
 34	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] erinnern (5)
-[] Er (1)
-[] sich (3)
-[] nicht (4)
-[] , was eigentlich geschehen war (9)
+[MESSAGE] erinnern (5)
+[x-experiencer] Er (1)
+[x-experiencer] sich (3)
+[m-mode] nicht (4)
+[content] , was eigentlich geschehen war (9)
 
-[] Er (1)
+[IDENTIFICATION] Er (1)
 
-[] sich (3)
+[IDENTIFICATION] sich (3)
 
-[] nicht (4)
+[MODE] nicht (4)
 
-[] geschehen (9)
-[] was (7)
-[] eigentlich (8)
+[SCENE] geschehen (9)
+[scene] was (7)
+[m-mode] eigentlich (8)
 
-[] was (7)
+[IDENTIFICATION] was (7)
 
-[] eigentlich (8)
+[MODE] eigentlich (8)
 
-[] wusste (14)
-[] er (13)
-[] in seinem Traum (17)
-[] , dass das Leben seiner Mutter und seiner Schwester irgendwie für das seine geopfert worden war (31)
+[MESSAGE] wusste (14)
+[x-experiencer] er (13)
+[m-situator] in seinem Traum (17)
+[content] , dass das Leben seiner Mutter und seiner Schwester irgendwie für das seine geopfert worden war (31)
 
-[] er (13)
+[IDENTIFICATION] er (13)
 
-[] Traum (17)
-[] seinem (16)
+[MESSAGE] Traum (17)
+[x-experiencer] seinem (16)
 
-[] seinem (16)
+[IDENTIFICATION] seinem (16)
 
-[] geopfert (31)
-[] das Leben seiner Mutter und seiner Schwester (21)
-[] irgendwie (27)
-[] für das seine (30)
+[ASSET-INIT] geopfert (31)
+[target-asset] das Leben seiner Mutter und seiner Schwester (21)
+[m-mode] irgendwie (27)
+[has-asset] für das seine (30)
+[x-causer] er (13)
 
-[] Leben (21)
-[] seiner Mutter und seiner Schwester (23)
+[EVENT] Leben (21)
+[undergoer] seiner Mutter (23)
+[undergoer] und seiner Schwester (26)
 
-[] Mutter (23)
-[] seiner (22)
+[SOCIAL-RELATION] Mutter (23)
+[has-social-relation] seiner (22)
 
-[] seiner (22)
+[IDENTIFICATION] seiner (22)
 
-[] Schwester (26)
-[] seiner (25)
+[SOCIAL-RELATION] Schwester (26)
+[has-social-relation] seiner (25)
 
-[] seiner (25)
+[IDENTIFICATION] seiner (25)
 
-[] irgendwie (27)
+[MODE] irgendwie (27)
 
-[] seine (30)
+[IDENTIFICATION] seine (30)
 
 # sent_id = 516
 # text = Es war einer jener Träume , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen .
@@ -1048,82 +1078,96 @@
 33	auch	auch	ADV	ADV	_	40	advmod	_	_
 34	nach	nach	ADP	APPR	_	36	case	_	_
 35	dem	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	36	det	_	_
-36	Erwachen	Erwachen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	37	nmod	_	_
+36	Erwachen	Erwachen	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	40	iobj	_	_
 37	neu	neu	ADJ	ADJD	_	40	xcomp	_	_
 38	und	und	CCONJ	KON	_	39	cc	_	_
 39	wertvoll	wertvoll	ADJ	ADJD	_	37	conj	_	_
 40	erscheinen	erscheinen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl	_	_
 41	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] einer (3)
-[] Es (1)
-[] jener Träume , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (5)
+[PART-WHOLE] einer (3)
+[part] Es (1)
+[whole] jener Träume , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (5)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] Träume (5)
-[] , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (16)
+[MESSAGE] Träume (5)
+[m-scene] , die in der charakteristischen Verkleidung des Traumes doch eine Fortsetzung des seelischen Erlebens sind (16)
+[m-scene] und in denen einem Tatsachen und Gedanken zum Bewusstsein kommen , die auch nach dem Erwachen neu und wertvoll erscheinen (30)
 
-[] Fortsetzung (16)
-[] die (7)
-[] in der charakteristischen Verkleidung des Traumes (11)
-[] doch (14)
-[] des seelischen Erlebens (19)
+[SEQUENCE] Fortsetzung (16)
+[follows] die (7)
+[m-depictive] in der charakteristischen Verkleidung des Traumes (11)
+[m-scene] doch (14)
+[followed] des seelischen Erlebens (19)
+[follows] Träume (5)
 
-[] die (7)
+[IDENTIFICATION] die (7)
 
-[] Verkleidung (11)
-[] charakteristischen (10)
-[] des Traumes (13)
+[WRAPPING-WEARING >> MESSAGE] Verkleidung (11)
+[m-quality] charakteristischen (10)
+[wrapper >> content] des Traumes (13)
+[wearer >> topic] Träume (5)
 
-[] charakteristischen (10)
+[QUALITY] charakteristischen (10)
 
-[] Traumes (13)
+[MESSAGE] Traumes (13)
 
-[] doch (14)
+[CONCESSION] doch (14)
+[asserted] Fortsetzung (16)
 
-[] Erlebens (19)
-[] seelischen (18)
+[EVENT] Erlebens (19)
+[m-quality] seelischen (18)
 
-[] seelischen (18)
+[QUALITY] seelischen (18)
 
-[] kommen (30)
-[] in denen (23)
-[] einem (24)
-[] Tatsachen und Gedanken , die auch nach dem Erwachen neu und wertvoll erscheinen (25)
-[] zum Bewusstsein (29)
+[LOCATION-INIT >> MESSAGE-INIT] kommen (30)
+[m-situator] in denen (23)
+[target-location >> x-experiencer] einem (24)
+[has-location >> target-content] Tatsachen , die auch nach dem Erwachen neu und wertvoll erscheinen (25)
+[has-location >> target-content] und Gedanken (27)
+[x-attribute >> x-noncomp] zum Bewusstsein (29)
+[m-situator] Träume (5)
 
-[] denen (23)
+[IDENTIFICATION] denen (23)
 
-[] einem (24)
+[IDENTIFICATION] einem (24)
 
-[] Tatsachen (25)
-[] , die auch nach dem Erwachen neu und wertvoll erscheinen (40)
+[MESSAGE] Tatsachen (25)
+[m-scene] , die auch nach dem Erwachen neu und wertvoll erscheinen (40)
 
-[] Gedanken (27)
+[MESSAGE] Gedanken (27)
 
-[] erscheinen (40)
-[] die (32)
-[] auch (33)
-[] nach dem Erwachen neu und wertvoll (37)
+[MESSAGE] erscheinen (40)
+[topic] die (32)
+[m-scene] auch (33)
+[m-time] nach dem Erwachen (36)
+[content] neu (37)
+[content] und wertvoll (39)
+[topic] Tatsachen (25)
 
-[] die (32)
+[IDENTIFICATION] die (32)
 
-[] auch (33)
+[QUALITY] neu (37)
+[has-quality] die (32)
+[has-quality] Tatsachen (25)
 
-[] neu (37)
-[] nach dem Erwachen (36)
+[STATE-CHANGE] Erwachen (36)
 
-[] Erwachen (36)
+[ACCOMPANIMENT] auch (33)
+[accompanier] erscheinen (40)
 
-[] wertvoll (39)
+[QUALITY] wertvoll (39)
+[has-quality] die (32)
+[has-quality] Tatsachen (25)
 
-[] Bewusstsein (29)
+[MESSAGE] Bewusstsein (29)
+[x-experiencer] einem (24)
 
 # sent_id = 517
 # text = Die Erkenntnis , die Winston jetzt plötzlich dämmerte , war , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig und tragisch gewesen war , die es heutzutage nicht mehr gab .
 1	Die	d	DET	ART	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+2	Erkenntnis	Erkenntnis	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
 3	,	,	PUNCT	$,	_	8	punct	_	_
 4	die	d	PRON	PRELS	Case=Acc|Gender=Fem|Number=Sing|PronType=Rel	8	obj	_	_
 5	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
@@ -1131,7 +1175,7 @@
 7	plötzlich	plötzlich	ADJ	ADJD	_	8	advmod	_	_
 8	dämmerte	dämmern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl	_	_
 9	,	,	PUNCT	$,	_	8	punct	_	_
-10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
 11	,	,	PUNCT	$,	_	23	punct	_	_
 12	dass	dass	SCONJ	KOUS	_	23	mark	_	_
 13	der	d	DET	ART	Case=Nom|Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -1144,87 +1188,87 @@
 20	auf	auf	ADP	APPR	_	22	case	_	_
 21	eine	ein	DET	ART	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	23	nmod	_	_
-23	traurig	traurig	ADJ	ADJD	_	10	ccomp	_	_
+23	traurig	traurig	ADJ	ADJD	_	0	root	_	_
 24	und	und	CCONJ	KON	_	25	cc	_	_
 25	tragisch	tragisch	ADJ	ADJD	_	23	conj	_	_
 26	gewesen	sein	AUX	VAPP	Verbform=Part	23	cop	_	_
-27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	_
+27	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
 28	,	,	PUNCT	$,	_	34	punct	_	_
 29	die	d	PRON	PRELS	Case=Nom|Gender=Fem|Number=Sing|PronType=Rel	34	obj	_	_
 30	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	34	nsubj	_	_
 31	heutzutage	heutzutage	ADV	ADV	_	34	advmod	_	_
-32	nicht	nicht	PART	PTKNEG	Polarity=Neg	34	advmod	_	_
-33	mehr	mehr	ADV	ADV	_	32	advmod	_	_
+32	nicht	nicht	PART	PTKNEG	Polarity=Neg	33	advmod	_	_
+33	mehr	mehr	ADV	ADV	_	34	advmod	_	_
 34	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
 35	.	.	PUNCT	$.	_	10	punct	_	_
 
-[] war (10)
-[] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2)
-[] , dass der Tod seiner Mutter vor dreißig Jahren auf eine Weise traurig und tragisch gewesen war , die es heutzutage nicht mehr gab (23)
+[MESSAGE >> QUALITY] traurig (23)
+[x-identified] Die Erkenntnis , die Winston jetzt plötzlich dämmerte , (2)
+[topic >> has-quality] der Tod seiner Mutter (14)
+[m-time] vor dreißig Jahren (19)
+[m-quality] auf eine Weise , die es heutzutage nicht mehr gab (22)
 
-[] Erkenntnis (2)
-[] , die Winston jetzt plötzlich dämmerte , (8)
+[MESSAGE] Erkenntnis (2)
+[m-scene] , die Winston jetzt plötzlich dämmerte , (8)
 
-[] dämmerte (8)
-[] die (4)
-[] Winston (5)
-[] jetzt (6)
-[] plötzlich (7)
+[MESSAGE] dämmerte (8) # eine Erinnerung, Erkenntnis erwacht langsam
+[topic] die (4)
+[x-experiencer] Winston (5)
+[m-time] jetzt (6)
+[m-time] plötzlich (7)
+[topic] Erkenntnis (2)
 
-[] die (4)
+[IDENTIFICATION] die (4)
 
-[] Winston (5)
+[IDENTIFICATION] Winston (5)
 
-[] jetzt (6)
+[TIME] jetzt (6)
 
-[] plötzlich (7)
+[TIME] plötzlich (7)
 
-[] traurig (23)
-[] der Tod seiner Mutter (14)
-[] vor dreißig Jahren (19)
-[] auf eine Weise , die es heutzutage nicht mehr gab (22)
+[DESTRUCTION] Tod (14)
+[destroyed] seiner Mutter (16)
 
-[] Tod (14)
-[] seiner Mutter (16)
+[SOCIAL-RELATION] Mutter (16)
+[has-social-relation] seiner (15)
 
-[] Mutter (16)
-[] seiner (15)
+[IDENTIFICATION] seiner (15)
 
-[] seiner (15)
+[TIME] Jahren (19)
+[m-quantity] dreißig (18)
 
-[] Jahren (19)
-[] dreißig (18)
+[QUANTITY] dreißig (18)
 
-[] dreißig (18)
+[QUALITY] Weise (22)
+[m-scene] , die es heutzutage nicht mehr gab (34)
 
-[] Weise (22)
-[] , die es heutzutage nicht mehr gab (34)
+[SCENE] gab (34)
+[scene] die (29)
+[x-noncomp] es (30)
+[m-time] heutzutage (31)
+[m-scene] nicht mehr (33)
+[scene] Weise (22)
 
-[] gab (34)
-[] die (29)
-[] es (30)
-[] heutzutage (31)
-[] nicht mehr (32)
+[IDENTIFICATION] die (29)
 
-[] die (29)
+[NONCOMP] es (30)
 
-[] es (30)
+[TIME] heutzutage (31)
 
-[] heutzutage (31)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (33)
+[m-mode >> m-noncomp] nicht (32)
+[initial-scene] gab (34)
 
-[] nicht (32)
-[] mehr (33)
+[MODE >> NONCOMP] nicht (32)
 
-[] mehr (33)
-
-[] tragisch (25)
+[QUALITY] tragisch (25)
 
 # sent_id = 518
 # text = Tragik , erkannte er , gehörte einer vergangenen Zeit an , als es noch ein Eigenleben , Liebe und Freundschaft gab und die Mitglieder einer Familie , ohne nach dem Grund zu fragen , füreinander eintraten .
 1	Tragik	Tragik	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
 2	,	,	PUNCT	$,	_	1	punct	_	_
 3	erkannte	erkennen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	_	_
-4	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+4	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 5	,	,	PUNCT	$,	_	1	punct	_	_
 6	gehörte	gehören	VERB	VVFIN	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	einer	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -1241,7 +1285,7 @@
 18	Liebe	Liebe	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	conj	_	_
 19	und	und	CCONJ	KON	_	20	cc	_	_
 20	Freundschaft	Freundschaft	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	16	conj	_	_
-21	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
+21	gab	geben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	advcl	_	_
 22	und	und	CCONJ	KON	_	36	cc	_	_
 23	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	24	det	_	_
 24	Mitglieder	Mitglied	NOUN	NN	Case=Acc|Gender=Neut|Number=Plur	36	nsubj	_	_
@@ -1259,53 +1303,56 @@
 36	eintraten	eintreten	VERB	VVFIN	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	21	conj	_	_
 37	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] gehörte (6)
-[] Tragik , , (1)
-[] er (4)
-[] einer vergangenen Zeit (9)
-[] an (10)
-[] , als es noch ein Eigenleben , Liebe und Freundschaft gab und die Mitglieder einer Familie , ohne nach dem Grund zu fragen , füreinander eintraten (21)
+[POSSESSION >> SITUATION] gehörte (6)
+[possessed >> theme] Tragik , , (1)
+[possessor >> situator] einer vergangenen Zeit , als es noch ein Eigenleben , Liebe und Freundschaft gab und die Mitglieder einer Familie , ohne nach dem Grund zu fragen , füreinander eintraten (9)
+[m-noncomp] an (10)
 
-[] Tragik (1)
+[MESSAGE] Tragik (1) # schweres Leid, das jmd. (unverschuldet) tragen muss, Trauer und Erschütterung hervorrufendes Geschehen
 
-[] erkannte (3)
+[MESSAGE] erkannte (3)
+[x-experiencer] er (4)
 
-[] er (4)
+[IDENTIFICATION] er (4)
 
-[] Zeit (9)
-[] vergangenen (8)
+[TIME] Zeit (9)
+[m-scene] vergangenen (8)
+[m-time] , als es noch ein Eigenleben , Liebe und Freundschaft gab (21)
+[m-time] und die Mitglieder einer Familie füreinander eintraten (36)
 
-[] vergangenen (8)
+[SCENE-DEINIT] vergangenen (8)
+[initial-scene] Zeit (9)
 
-[] an (10)
+[SCENE] gab (21)
+[m-scene] noch (14)
+[scene] ein Eigenleben (16)
+[scene] , Liebe (18)
+[scene] und Freundschaft (20)
 
-[] gab (21)
-[] noch (14)
-[] ein Eigenleben , Liebe und Freundschaft (16)
+[SCENE-CONTINUATION] noch (14)
+[initial-scene] gab (21)
 
-[] noch (14)
+[EVENT] Eigenleben (16) # individuelles, persönliches Leben
 
-[] Eigenleben (16)
+[MESSAGE] Liebe (18)
 
-[] Liebe (18)
+[SOCIAL-RELATION] Freundschaft (20)
 
-[] Freundschaft (20)
+[SOCIAL-RELATION-INIT] eintraten (36)
+[has-social-relation] die Mitglieder einer Familie (24)
+[target-social-relation] füreinander (35)
 
-[] eintraten (36)
-[] die Mitglieder einer Familie (24)
-[] füreinander (35)
+[PART-WHOLE] Mitglieder (24)
+[whole] einer Familie (26)
 
-[] Mitglieder (24)
-[] einer Familie (26)
+[SOCIAL-RELATION] Familie (26)
 
-[] Familie (26)
+[MESSAGE-INIT] fragen (33)
+[topic] ohne nach dem Grund (31)
 
-[] fragen (33)
-[] ohne nach dem Grund (31)
+[CAUSATION] Grund (31)
 
-[] Grund (31)
-
-[] füreinander (35)
+[IDENTIFICATION] füreinander (35)
 
 # sent_id = 519
 # text = Die Erinnerung an seine Mutter nagte an seinem Herzen , denn sie war aus Liebe zu ihm gestorben , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte .
@@ -1346,23 +1393,23 @@
 35	,	,	PUNCT	$,	_	54	punct	_	_
 36	und	und	CCONJ	KON	_	54	cc	_	_
 37	weil	weil	SCONJ	KOUS	_	54	mark	_	_
-38	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	46	nsubj	_	_
-39	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	46	obj	_	_
-40	irgendwie	irgendwie	ADV	ADV	_	46	advmod	_	_
+38	sie	sie	PRON	PPER	Case=Nom|Gender=Neut|Number=Plur|Person=3|PronType=Prs	54	nsubj	_	_
+39	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	54	obj	_	_
+40	irgendwie	irgendwie	ADV	ADV	_	54	advmod	_	_
 41	-	-	PUNCT	$.	_	44	punct	_	_
 42	auf	auf	ADP	APPR	_	44	case	_	_
 43	welche	welch	DET	PWAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Int	44	det	_	_
 44	Weise	Weise	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	46	obl	_	_
 45	,	,	PUNCT	$,	_	44	punct	_	_
-46	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	54	advcl	_	_
+46	erinnerte	erinnern	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	parataxis	_	_
 47	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	nsubj	_	_
 48	sich	er|es|sie	PRON	PRF	Gender=Neut|Person=3|Reflex=Yes	46	obj	_	_
-49	nicht	nicht	PART	PTKNEG	Polarity=Neg	46	advmod	_	_
-50	mehr	mehr	ADV	ADV	_	49	advmod	_	_
+49	nicht	nicht	PART	PTKNEG	Polarity=Neg	50	advmod	_	_
+50	mehr	mehr	ADV	ADV	_	46	advmod	_	_
 51	-	-	PUNCT	$.	_	44	punct	_	_
 52	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_
 53	Treuegedanken	Treuegedanke	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	54	iobj	_	_
-54	geopfert	opfern	VERB	VVPP	Verbform=Part	25	conj	_	_
+54	geopfert	opfern	VERB	VVPP	Verbform=Part	18	conj	_	_
 55	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	54	aux	_	_
 56	,	,	PUNCT	$,	_	63	punct	_	_
 57	an	an	ADP	APPR	_	58	case	_	_
@@ -1374,114 +1421,120 @@
 63	glaubte	glauben	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	acl	_	_
 64	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] nagte (6)
-[] Die Erinnerung an seine Mutter (2)
-[] an seinem Herzen (9)
-[] , denn sie war aus Liebe zu ihm gestorben , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte (18)
+[MESSAGE] nagte (6) # sehr kleine Stücke wiederholt von etw. abbeißen; etw. nagt an jmdm. = etw. quält, peinigt jmdn. anhaltend
+[x-sender] Die Erinnerung an seine Mutter (2)
+[x-experiencer] an seinem Herzen (9)
+[m-explanation] , denn sie war aus Liebe zu ihm gestorben , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern (18)
+[m-explanation] , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte (54)
 
-[] Erinnerung (2)
-[] an seine Mutter (5)
+[MESSAGE] Erinnerung (2)
+[topic] an seine Mutter (5)
 
-[] Mutter (5)
-[] seine (4)
+[SOCIAL-RELATION] Mutter (5)
+[has-social-relation] seine (4)
 
-[] seine (4)
+[IDENTIFICATION] seine (4)
 
-[] Herzen (9)
-[] seinem (8)
+[PART-WHOLE] Herzen (9)
+[whole] seinem (8)
 
-[] seinem (8)
+[IDENTIFICATION] seinem (8)
 
-[] gestorben (18)
-[] sie (12)
-[] aus Liebe zu ihm (15)
-[] , als er selbst noch zu jung und eigensüchtig war , um ihre Liebe zu erwidern , und weil sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - einem Treuegedanken geopfert hatte , an den sie persönlich und unerschütterlich glaubte (25)
+[DESTRUCTION] gestorben (18)
+[destroyed] sie (12)
+[x-causer] aus Liebe zu ihm (15)
+[m-time] , als er selbst noch zu jung war , um ihre Liebe zu erwidern (25)
+[m-time] und eigensüchtig (27)
 
-[] sie (12)
+[IDENTIFICATION] sie (12)
 
-[] Liebe (15)
-[] zu ihm (17)
+[MESSAGE] Liebe (15)
+[topic] zu ihm (17)
 
-[] ihm (17)
+[IDENTIFICATION] ihm (17)
 
-[] jung (25)
-[] er (21)
-[] selbst (22)
-[] noch (23)
-[] zu (24)
-[] , um ihre Liebe zu erwidern (34)
+[STATE] jung (25)
+[has-state] er (21)
+[m-mode] selbst (22)
+[m-scene] noch (23)
+[m-quantity] zu (24)
+[m-result] , um ihre Liebe zu erwidern (34)
 
-[] er (21)
+[IDENTIFICATION] er (21)
 
-[] selbst (22)
+[MODE] selbst (22)
 
-[] noch (23)
+[SCENE-CONTINUATION] noch (23)
+[initial-scene] jung (25)
 
-[] zu (24)
+[QUANTITY] zu (24)
 
-[] eigensüchtig (27)
+[QUALITY] eigensüchtig (27) # egoistisch
 
-[] erwidern (34)
-[] ihre Liebe (32)
+[REACTION] erwidern (34) # auf etw., was von jmdm. ausgeht, in gleicher Weise reagieren
+[trigger] ihre Liebe (32)
+[x-causer] er (21)
 
-[] Liebe (32)
-[] ihre (31)
+[MESSAGE] Liebe (32)
+[x-sender] ihre (31)
 
-[] ihre (31)
+[IDENTIFICATION] ihre (31)
 
-[] geopfert (54)
-[] sie sich irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (46)
-[] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53)
+[ASSET-INIT] geopfert (54)
+[x-causer] sie (38)
+[target-asset] sich (39)
+[m-means] irgendwie - auf welche Weise , erinnerte er sich nicht mehr - (40)
+[has-asset] einem Treuegedanken , an den sie persönlich und unerschütterlich glaubte (53)
 
-[] erinnerte (46)
-[] sie (38)
-[] sich (39)
-[] irgendwie (40)
-[] - auf welche Weise , - (44)
-[] er (47)
-[] sich (48)
-[] nicht mehr (49)
+[IDENTIFICATION] sie (38)
 
-[] sie (38)
+[IDENTIFICATION] sich (39)
 
-[] sich (39)
+[MEANS] irgendwie (40)
 
-[] irgendwie (40)
+[MESSAGE] erinnerte (46)
+[topic] - auf welche Weise , - (44)
+[x-experiencer] er (47)
+[x-experiencer] sich (48)
+[m-scene] nicht mehr (50)
 
-[] Weise (44)
+[QUALITY] Weise (44)
 
-[] er (47)
+[IDENTIFICATION] er (47)
 
-[] sich (48)
+[IDENTIFICATION] sich (48)
 
-[] nicht (49)
-[] mehr (50)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (50)
+[m-mode >> m-noncomp] nicht (49)
+[initial-scene] erinnerte (46)
 
-[] mehr (50)
+[MODE >> NONCOMP] nicht (49)
 
-[] Treuegedanken (53)
-[] , an den sie persönlich und unerschütterlich glaubte (63)
+[MESSAGE] Treuegedanken (53)
+[m-scene] , an den sie persönlich und unerschütterlich glaubte (63)
 
-[] glaubte (63)
-[] an den (58)
-[] sie (59)
-[] persönlich und unerschütterlich (60)
+[MESSAGE] glaubte (63)
+[topic] an den (58)
+[x-experiencer] sie (59)
+[m-mode] persönlich (60)
+[m-quality] und unerschütterlich (62) # sehr fest
+[topic] Treuegedanken (53)
 
-[] den (58)
+[IDENTIFICATION] den (58)
 
-[] sie (59)
+[IDENTIFICATION] sie (59)
 
-[] persönlich (60)
+[MODE] persönlich (60)
 
-[] unerschütterlich (62)
+[QUALITY-NEG >> QUALITY] unerschütterlich (62)
 
 # sent_id = 520
 # text = Derlei konnte heutzutage nicht mehr vorkommen , das begriff er .
 1	Derlei	derlei	PRON	PIS	Definite=Ind|Gender=Neut	6	nsubj	_	_
 2	konnte	können	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
 3	heutzutage	heutzutage	ADV	ADV	_	6	advmod	_	_
-4	nicht	nicht	PART	PTKNEG	Polarity=Neg	6	advmod	_	_
-5	mehr	mehr	ADV	ADV	_	4	advmod	_	_
+4	nicht	nicht	PART	PTKNEG	Polarity=Neg	5	advmod	_	_
+5	mehr	mehr	ADV	ADV	_	6	advmod	_	_
 6	vorkommen	vorkommen	VERB	VVINF	VerbForm=Inf	0	root	_	_
 7	,	,	PUNCT	$,	_	9	punct	_	_
 8	das	d	PRON	PDS	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	9	obj	_	_
@@ -1489,27 +1542,28 @@
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
 11	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] vorkommen (6)
-[] Derlei (1)
-[] heutzutage (3)
-[] nicht mehr (4)
+[SCENE-INIT] vorkommen (6)
+[target-scene] Derlei (1)
+[m-time] heutzutage (3)
+[m-scene] nicht mehr (5)
 
-[] Derlei (1)
+[IDENTIFICATION] Derlei (1) # solch, derartig
 
-[] heutzutage (3)
+[TIME] heutzutage (3)
 
-[] nicht (4)
-[] mehr (5)
+[SCENE-CONTINUATION >> SCENE-DEINIT] mehr (5)
+[m-mode >> m-noncomp] nicht (4)
+[initial-scene] vorkommen (6)
 
-[] mehr (5)
+[MODE >> NONCOMP] nicht (4)
 
-[] begriff (9)
-[] das (8)
-[] er (10)
+[MESSAGE] begriff (9)
+[content] das (8)
+[x-experiencer] er (10)
 
-[] das (8)
+[IDENTIFICATION] das (8)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
 # sent_id = 521
 # text = Heutzutage gab es Angst , Hass und Leid , aber keine starken und wertvollen Gefühle , keine tiefen und echten Schmerzen .
@@ -1536,44 +1590,50 @@
 21	Schmerzen	Schmerz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	4	conj	_	_
 22	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] gab (2)
-[] Heutzutage (1)
-[] es (3)
-[] Angst , Hass und Leid , aber keine starken und wertvollen Gefühle , keine tiefen und echten Schmerzen (4)
+[SCENE] gab (2)
+[m-time] Heutzutage (1)
+[x-noncomp] es (3)
+[scene] Angst (4)
+[scene] , Hass (6)
+[scene] und Leid (8)
+[scene] , aber keine starken und wertvollen Gefühle (15)
+[scene] , keine tiefen und echten Schmerzen (21)
 
-[] Heutzutage (1)
+[TIME] Heutzutage (1)
 
-[] es (3)
+[NONCOMP] es (3)
 
-[] Angst (4)
+[MESSAGE] Angst (4)
 
-[] Hass (6)
+[MESSAGE] Hass (6)
 
-[] Leid (8)
+[MESSAGE] Leid (8)
 
-[] Gefühle (15)
-[] keine (11)
-[] starken und wertvollen (12)
+[MESSAGE] Gefühle (15)
+[m-mode] keine (11)
+[m-quality] starken (12)
+[m-quality] und wertvollen (14)
 
-[] keine (11)
+[MODE] keine (11)
 
-[] starken (12)
+[QUALITY] starken (12)
 
-[] wertvollen (14)
+[QUALITY] wertvollen (14)
 
-[] Schmerzen (21)
-[] keine (17)
-[] tiefen und echten (18)
+[MESSAGE] Schmerzen (21)
+[m-mode] keine (17)
+[m-quality] tiefen (18)
+[m-quality] und echten (20)
 
-[] keine (17)
+[MODE] keine (17)
 
-[] tiefen (18)
+[QUALITY] tiefen (18)
 
-[] echten (20)
+[QUALITY] echten (20)
 
 # sent_id = 522
 # text = All das schien er in den großen Augen seiner Mutter und seiner Schwester zu lesen , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen , dabei immer tiefer versinkend .
-1	All	all	DET	PIAT	Definite=Ind|Gender=Neut	3	nsubj	_	_
+1	All	all	DET	PIAT	Definite=Ind|Gender=Neut	2	det	_	_
 2	das	d	PRON	PDS	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	obj	_	_
 3	schien	scheinen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
@@ -1612,77 +1672,80 @@
 37	versinkend	versinkend	ADJ	ADJD	_	3	conj	_	_
 38	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] schien (3)
-[] All (1)
-[] das (2)
-[] er (4)
-[] in den großen Augen seiner Mutter und seiner Schwester zu lesen , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (15)
+[MESSAGE] schien (3)
+[topic] All das (2)
+[x-experiencer] er (4)
+[content] in den großen Augen seiner Mutter und seiner Schwester zu lesen , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (15)
 
-[] All (1)
+[IDENTIFICATION] das (2)
 
-[] das (2)
+[IDENTIFICATION] er (4)
 
-[] er (4)
+[MESSAGE] lesen (15)
+[x-sender] in den großen Augen seiner Mutter und seiner Schwester , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (8)
+[topic] All das (2)
+[x-experiencer] er (4)
 
-[] lesen (15)
-[] in den großen Augen seiner Mutter und seiner Schwester , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (8)
+[PART-WHOLE] Augen (8)
+[m-quality] großen (7)
+[whole] seiner Mutter (10)
+[whole] und seiner Schwester (13)
+[m-scene] , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (32)
 
-[] Augen (8)
-[] großen (7)
-[] seiner Mutter und seiner Schwester (10)
-[] , mit denen sie ihn durch das grüne Wasser aus einer Tiefe von vielen hundert Klafter ansahen (32)
+[QUALITY] großen (7)
 
-[] großen (7)
+[SOCIAL-RELATION] Mutter (10)
+[has-social-relation] seiner (9)
 
-[] Mutter (10)
-[] seiner (9)
+[IDENTIFICATION] seiner (9)
 
-[] seiner (9)
+[SOCIAL-RELATION] Schwester (13)
+[has-social-relation] seiner (12)
 
-[] Schwester (13)
-[] seiner (12)
+[IDENTIFICATION] seiner (12)
 
-[] seiner (12)
+[MESSAGE] ansahen (32)
+[m-means] mit denen (18)
+[x-experiencer] sie (19)
+[topic] ihn (20)
+[m-transitory-location] durch das grüne Wasser (24)
+[m-initial-location] aus einer Tiefe von vielen hundert Klafter (27)
+[m-means] Augen (8)
 
-[] ansahen (32)
-[] mit denen (18)
-[] sie (19)
-[] ihn (20)
-[] durch das grüne Wasser (24)
-[] aus einer Tiefe von vielen hundert Klafter (27)
+[IDENTIFICATION] denen (18)
 
-[] denen (18)
+[IDENTIFICATION] sie (19)
 
-[] sie (19)
+[IDENTIFICATION] ihn (20)
 
-[] ihn (20)
+[CLASS] Wasser (24)
+[m-quality] grüne (23)
 
-[] Wasser (24)
-[] grüne (23)
+[QUALITY] grüne (23)
 
-[] grüne (23)
+[LOCATION] Tiefe (27)
+[m-quantity] von vielen hundert Klafter (31)
 
-[] Tiefe (27)
-[] von vielen hundert Klafter (31)
+[QUANTITY] Klafter (31) # altes, je nach Land, Ort verschiedenes Längenmaß von rund 1,90 Meter
+[m-quantity] vielen (29)
+[m-quantity] hundert (30)
 
-[] Klafter (31)
-[] vielen (29)
-[] hundert (30)
+[QUANTITY] vielen (29)
 
-[] vielen (29)
+[QUANTITY] hundert (30)
 
-[] hundert (30)
+[LOCATION-INIT] versinkend (37)
+[m-scene] dabei (34) # wie "wobei" annotiert
+[target-location] immer tiefer (36)
 
-[] versinkend (37)
-[] dabei (34)
-[] immer tiefer (36)
+[ACCOMPANIMENT] dabei (34)
+[accompanier] versinkend (37)
 
-[] dabei (34)
+[LOCATION-INIT] tiefer (36)
+[m-scene] immer (35)
 
-[] tiefer (36)
-[] immer (35)
-
-[] immer (35)
+[SCENE-CONTINUATION] immer (35)
+[initial-scene] tiefer (36)
 
 # sent_id = 523
 # text = Plötzlich stand er auf einer abgemähten Wiese , auf der federnden Grasnarbe ; es war ein Sommerabend , und die Strahlen der untergehenden Sonne vergoldeten die Erde .
@@ -1697,7 +1760,7 @@
 9	auf	auf	ADP	APPR	_	12	case	_	_
 10	der	d	DET	ART	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 11	federnden	federnd	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	12	amod	_	_
-12	Grasnarbe	Grasnarbe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	nmod	_	_
+12	Grasnarbe	Grasnarbe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	7	conj	_	_
 13	;	;	PUNCT	$.	_	17	punct	_	_
 14	es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
 15	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_
@@ -1715,44 +1778,45 @@
 27	Erde	Erde	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	25	obj	_	_
 28	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] stand (2)
-[] Plötzlich (1)
-[] er (3)
-[] auf einer abgemähten Wiese , auf der federnden Grasnarbe (7)
+[LOCATION] stand (2)
+[m-time] Plötzlich (1)
+[has-location] er (3)
+[location] auf einer abgemähten Wiese (7)
+[location] , auf der federnden Grasnarbe (12)
 
-[] Plötzlich (1)
+[TIME] Plötzlich (1)
 
-[] er (3)
+[IDENTIFICATION] er (3)
 
-[] Wiese (7)
-[] abgemähten (6)
-[] , auf der federnden Grasnarbe (12)
+[CLASS] Wiese (7)
+[m-state] abgemähten (6)
 
-[] abgemähten (6)
+[STATE] abgemähten (6)
 
-[] Grasnarbe (12)
-[] federnden (11)
+[CLASS] Grasnarbe (12) # Springy turf -> means ground that feels bouncy under your feet;  zusammenhängende Bewuchs des Bodens durch Gräser und Kräuter
+[m-quality] federnden (11)
 
-[] federnden (11)
+[QUALITY] federnden (11)
 
-[] Sommerabend (17)
-[] es (14)
+[TIME] Sommerabend (17)
+[x-noncomp] es (14)
 
-[] es (14)
+[NONCOMP] es (14)
 
-[] vergoldeten (25)
-[] die Strahlen der untergehenden Sonne (21)
-[] die Erde (27)
+[ADORNMENT-TARNISHMENT] vergoldeten (25)
+[x-causer] die Strahlen der untergehenden Sonne (21)
+[surface] die Erde (27)
 
-[] Strahlen (21)
-[] der untergehenden Sonne (24)
+[PART-WHOLE] Strahlen (21)
+[whole] der untergehenden Sonne (24)
 
-[] Sonne (24)
-[] untergehenden (23)
+[CLASS] Sonne (24)
+[m-scene] untergehenden (23)
 
-[] untergehenden (23)
+[LOCATION-DEINIT >> STATE] untergehenden (23)
+[has-location >> has-state] Sonne (24)
 
-[] Erde (27)
+[CLASS] Erde (27)
 
 # sent_id = 524
 # text = Die Landschaft , die er sah , kehrte so oft in seinen Träumen wieder , dass er nie ganz sicher war , ob er sie nicht in Wirklichkeit gesehen hatte .
@@ -1788,61 +1852,60 @@
 30	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	aux	_	_
 31	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] kehrte (8)
-[] Die Landschaft , die er sah , (2)
-[] so oft (10)
-[] in seinen Träumen (13)
-[] wieder (14)
-[] , dass er nie ganz sicher war , ob er sie nicht in Wirklichkeit gesehen hatte (20)
+[SEQUENCE] kehrte (8) # wie "wiederholte"
+[followed] Die Landschaft , die er sah , (2)
+[m-time] so oft (10)
+[m-situator] in seinen Träumen (13)
+[m-noncomp] wieder (14)
+[m-result] , dass er nie ganz sicher war , ob er sie nicht in Wirklichkeit gesehen hatte (20)
 
-[] Landschaft (2)
-[] , die er sah , (6)
+[CLASS] Landschaft (2)
+[m-scene] , die er sah , (6)
 
-[] sah (6)
-[] die (4)
-[] er (5)
+[MESSAGE] sah (6)
+[topic] die (4)
+[x-experiencer] er (5)
+[topic] Landschaft (2)
 
-[] die (4)
+[IDENTIFICATION] die (4)
 
-[] er (5)
+[IDENTIFICATION] er (5)
 
-[] oft (10)
-[] so (9)
+[TIME] oft (10)
+[m-quantity] so (9)
 
-[] so (9)
+[QUANTITY] so (9)
 
-[] Träumen (13)
-[] seinen (12)
+[MESSAGE] Träumen (13)
+[x-experiencer] seinen (12)
 
-[] seinen (12)
+[IDENTIFICATION] seinen (12)
 
-[] wieder (14)
+[MESSAGE] sicher (20)
+[x-experiencer] er (17)
+[m-time] nie (18)
+[m-quantity] ganz (19)
+[topic] , ob er sie nicht in Wirklichkeit gesehen hatte (29)
 
-[] sicher (20)
-[] er (17)
-[] nie (18)
-[] ganz (19)
-[] , ob er sie nicht in Wirklichkeit gesehen hatte (29)
+[IDENTIFICATION] er (17)
 
-[] er (17)
+[TIME-NEG] nie (18)
 
-[] nie (18)
+[QUANTITY] ganz (19)
 
-[] ganz (19)
+[MESSAGE] gesehen (29)
+[x-experiencer] er (24)
+[topic] sie (25)
+[m-mode] nicht (26)
+[m-situator] in Wirklichkeit (28)
 
-[] gesehen (29)
-[] er (24)
-[] sie (25)
-[] nicht (26)
-[] in Wirklichkeit (28)
+[IDENTIFICATION] er (24)
 
-[] er (24)
+[IDENTIFICATION] sie (25)
 
-[] sie (25)
+[MODE] nicht (26)
 
-[] nicht (26)
-
-[] Wirklichkeit (28)
+[MODE] Wirklichkeit (28)
 
 # sent_id = 525
 # text = In seiner wachen Vorstellung nannte er sie das Goldene Land .
@@ -1858,28 +1921,29 @@
 10	Land	Land	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	5	obj	_	_
 11	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] nannte (5)
-[] In seiner wachen Vorstellung (4)
-[] er (6)
-[] sie (7)
-[] das Goldene Land (10)
+[IDENTIFICATION-INIT] nannte (5)
+[m-situator] In seiner wachen Vorstellung (4)
+[x-causer] er (6)
+[identified] sie (7)
+[target-identifier] das Goldene Land (10)
 
-[] Vorstellung (4)
-[] seiner (2)
-[] wachen (3)
+[MESSAGE] Vorstellung (4)
+[x-experiencer] seiner (2)
+[m-depictive] wachen (3)
 
-[] seiner (2)
+[IDENTIFICATION] seiner (2)
 
-[] wachen (3)
+[STATE] wachen (3)
+[has-state] seiner (2)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
-[] sie (7)
+[IDENTIFICATION] sie (7)
 
-[] Land (10)
-[] Goldene (9)
+[CLASS >> IDENTIFICATION] Land (10)
+[m-quality >> m-noncomp] Goldene (9)
 
-[] Goldene (9)
+[QUALITY >> NONCOMP] Goldene (9)
 
 # sent_id = 526
 # text = Es war eine alte , von Kaninchen bevölkerte Weide , durch die ein Fußpfad lief , mit da und dort einem Maulwurfshügel .
@@ -1899,43 +1963,47 @@
 14	Fußpfad	Fußpfad	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	15	nsubj	_	_
 15	lief	laufen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
 16	,	,	PUNCT	$,	_	18	punct	_	_
-17	mit	mit	ADP	APPR	_	18	case	_	_
-18	da	da	ADV	ADV	_	15	advmod	_	_
+17	mit	mit	ADP	APPR	_	22	case	_	_
+18	da	da	ADV	ADV	_	22	advmod	_	_
 19	und	und	CCONJ	KON	_	20	cc	_	_
 20	dort	dort	ADV	ADV	_	18	conj	_	_
 21	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	18	conj	_	_
+22	Maulwurfshügel	Maulwurfshügel	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	9	obl	_	_
 23	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] Weide (9)
-[] Es (1)
-[] alte , (4)
-[] von Kaninchen bevölkerte (8)
-[] , durch die ein Fußpfad lief , mit da und dort einem Maulwurfshügel (15)
+[CLASS] Weide (9)
+[has-class] Es (1)
+[m-state] alte , (4)
+[m-scene] von Kaninchen bevölkerte (8)
+[m-scene] , durch die ein Fußpfad lief (15)
+[m-accompanier] , mit da und dort einem Maulwurfshügel (22)
 
-[] Es (1)
+[IDENTIFICATION] Es (1)
 
-[] alte (4)
+[STATE] alte (4)
 
-[] bevölkerte (8)
-[] von Kaninchen (7)
+[LOCATION] bevölkerte (8)
+[has-location] von Kaninchen (7)
+[location] Weide (9)
 
-[] Kaninchen (7)
+[CLASS] Kaninchen (7)
 
-[] lief (15)
-[] durch die (12)
-[] ein Fußpfad (14)
-[] , mit da und dort einem Maulwurfshügel (18)
+[UNANCHORED-MOTION >> LOCATION] lief (15)
+[transitory-location >> location] durch die (12)
+[in-motion >> has-location] ein Fußpfad (14) # foot track; Trampelpfad
+[transitory-location >> location] Weide (9)
 
-[] die (12)
+[IDENTIFICATION] die (12)
 
-[] Fußpfad (14)
+[CLASS] Fußpfad (14)
 
-[] da (18)
+[LOCATION] da (18)
 
-[] dort (20)
+[LOCATION] dort (20)
 
-[] Maulwurfshügel (22)
+[CLASS] Maulwurfshügel (22)
+[m-location] , da (18)
+[m-location] und dort (20)
 
 # sent_id = 527
 # text = In der unregelmäßigen Baumreihe jenseits der Wiese wiegten sich die Zweige der Ulmen leise in der sanften Brise , und ihre Blätter wogten in dichten Büscheln wie Frauenhaar .
@@ -1969,51 +2037,51 @@
 28	Frauenhaar	Frauenhaar	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	26	nmod	_	_
 29	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] wiegten (8)
-[] In der unregelmäßigen Baumreihe jenseits der Wiese (4)
-[] sich (9)
-[] die Zweige der Ulmen (11)
-[] leise (14)
-[] in der sanften Brise (18)
+[UNANCHORED-MOTION] wiegten (8) # jmdn., sich sanft und leicht schaukeln
+[m-location] In der unregelmäßigen Baumreihe jenseits der Wiese (4)
+[in-motion] sich (9)
+[in-motion] die Zweige der Ulmen (11)
+[m-quality] leise (14)
+[??? m-accompanier || m-causer] in der sanften Brise (18)
 
-[] Baumreihe (4)
-[] unregelmäßigen (3)
-[] jenseits der Wiese (7)
+[CLASS] Baumreihe (4)
+[m-quality] unregelmäßigen (3)
+[m-location] jenseits der Wiese (7)
 
-[] unregelmäßigen (3)
+[QUALITY-NEG >> QUALITY] unregelmäßigen (3)
 
-[] Wiese (7)
+[CLASS] Wiese (7)
 
-[] sich (9)
+[IDENTIFICATION] sich (9)
 
-[] Zweige (11)
-[] der Ulmen (13)
+[PART-WHOLE] Zweige (11)
+[whole] der Ulmen (13)
 
-[] Ulmen (13)
+[CLASS] Ulmen (13)
 
-[] leise (14)
+[QUALITY] leise (14)
 
-[] Brise (18)
-[] sanften (17)
+[CLASS] Brise (18)
+[m-quality] sanften (17)
 
-[] sanften (17)
+[QUALITY] sanften (17)
 
-[] wogten (23)
-[] ihre Blätter (22)
-[] in dichten Büscheln wie Frauenhaar (26)
+[UNANCHORED-MOTION] wogten (23) # sich wie Wogen hin und her, auf und ab bewegen
+[in-motion] ihre Blätter (22)
+[m-quality] in dichten Büscheln wie Frauenhaar (26)
 
-[] Blätter (22)
-[] ihre (21)
+[PART-WHOLE] Blätter (22)
+[whole] ihre (21)
 
-[] ihre (21)
+[IDENTIFICATION] ihre (21)
 
-[] Büscheln (26)
-[] dichten (25)
-[] wie Frauenhaar (28)
+[CLASS] Büscheln (26) # viele dünngewachsene und langgewachsene Dinge gleicher Art
+[m-quality] dichten (25)
+[m-reference] wie Frauenhaar (28)
 
-[] dichten (25)
+[QUALITY] dichten (25)
 
-[] Frauenhaar (28)
+[CLASS] Frauenhaar (28)
 
 # sent_id = 528
 # text = In der Nähe war , wenn auch außer Sicht , ein klarer , träge dahinfließender Fluss , in dessen seichten Buchten unter den Weidenbäumen sich Weißfische tummelten .
@@ -2046,45 +2114,48 @@
 27	tummelten	tummeln	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	acl	_	_
 28	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] war (4)
-[] In der Nähe (3)
-[] , wenn auch außer Sicht , (9)
-[] ein klarer , träge dahinfließender Fluss , in dessen seichten Buchten unter den Weidenbäumen sich Weißfische tummelten (16)
+[LOCATION] war (4)
+[location] In der Nähe (3)
+[m-conceded] , wenn auch außer Sicht , (9)
+[has-location] ein klarer , träge dahinfließender Fluss , in dessen seichten Buchten unter den Weidenbäumen sich Weißfische tummelten (16)
 
-[] Nähe (3)
+[LOCATION] Nähe (3)
 
-[] Sicht (9)
-[] auch (7)
+[??? MESSAGE] Sicht (9)
+[??? Syntax?] auch (7)
 
-[] auch (7)
+[???] auch (7)
 
-[] Fluss (16)
-[] klarer , träge (12)
-[] dahinfließender (15)
-[] , in dessen seichten Buchten unter den Weidenbäumen sich Weißfische tummelten (27)
+[CLASS] Fluss (16)
+[m-state] klarer , (12)
+[m-quality] träge (14) # langsam und lustlos in seiner Tätigkeit, Bewegung
+[m-scene] dahinfließender (15)
+[m-scene] , in dessen seichten Buchten unter den Weidenbäumen sich Weißfische tummelten (27)
 
-[] klarer (12)
+[STATE] klarer (12)
 
-[] träge (14)
+[QUALITY] träge (14)
 
-[] dahinfließender (15)
+[LOCATION-INIT] dahinfließender (15)
+[has-location] Fluss (16)
 
-[] tummelten (27)
-[] in dessen seichten Buchten (21)
-[] unter den Weidenbäumen (24)
-[] sich (25)
-[] Weißfische (26)
+[UNANCHORED-MOTION] tummelten (27)
+[transitory-location] in dessen seichten Buchten (21)
+[transitory-location] unter den Weidenbäumen (24)
+[in-motion] sich (25)
+[x-causer >> in-motion] Weißfische (26)
+[transitory-location] Fluss (16)
 
-[] Buchten (21)
-[] seichten (20)
+[CLASS] Buchten (21) # ins Land hineinragender Teil eines Meeres oder Binnengewässers
+[m-quality] seichten (20)
 
-[] seichten (20)
+[QUALITY] seichten (20) # flach, ohne größere Tiefe
 
-[] Weidenbäumen (24)
+[CLASS] Weidenbäumen (24)
 
-[] sich (25)
+[IDENTIFICATION] sich (25)
 
-[] Weißfische (26)
+[CLASS] Weißfische (26)
 
 # sent_id = 529
 # text = Das Mädchen mit dem dunklen Haar kam über die Wiese auf ihn zu .
@@ -2103,25 +2174,23 @@
 13	zu	zu	ADP	PTKVZ	_	7	compound:prt	_	_
 14	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] kam (7)
-[] Das Mädchen mit dem dunklen Haar (2)
-[] über die Wiese (10)
-[] auf ihn (12)
-[] zu (13)
+[LOCATION-INIT] kam (7)
+[has-location] Das Mädchen mit dem dunklen Haar (2)
+[transitory-location] über die Wiese (10)
+[target-location] auf ihn (12)
+[m-noncomp] zu (13)
 
-[] Mädchen (2)
-[] mit dem dunklen Haar (6)
+[CLASS] Mädchen (2)
+[m-part] mit dem dunklen Haar (6)
 
-[] Haar (6)
-[] dunklen (5)
+[CLASS] Haar (6)
+[m-quality] dunklen (5)
 
-[] dunklen (5)
+[QUALITY] dunklen (5)
 
-[] Wiese (10)
+[CLASS] Wiese (10)
 
-[] ihn (12)
-
-[] zu (13)
+[IDENTIFICATION] ihn (12)
 
 # sent_id = 530
 # text = Mit einer einzigen Bewegung riss sie sich das Kleid herunter und warf es verächtlich beiseite .
@@ -2142,36 +2211,32 @@
 15	beiseite	beiseite	ADP	PTKVZ	_	12	compound:prt	_	_
 16	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] riss (5)
-[] Mit einer einzigen Bewegung (4)
-[] sie (6)
-[] sich (7)
-[] das Kleid (9)
-[] herunter (10)
+[WRAPPING-WEARING-DEINIT] riss (5)
+[m-means] Mit einer einzigen Bewegung (4)
+[x-causer >> initial-wearer] sie (6)
+[initial-wearer] sich (7)
+[wrapper] das Kleid (9)
+[m-noncomp] herunter (10)
 
-[] Bewegung (4)
-[] einzigen (3)
+[ACTIVITY] Bewegung (4)
+[m-quantity] einzigen (3)
 
-[] einzigen (3)
+[QUANTITY] einzigen (3)
 
-[] sie (6)
+[IDENTIFICATION] sie (6)
 
-[] sich (7)
+[IDENTIFICATION] sich (7)
 
-[] Kleid (9)
+[CLASS] Kleid (9)
 
-[] herunter (10)
+[LOCATION-INIT] warf (12)
+[has-location] es (13)
+[m-quality] verächtlich (14)
+[target-location] beiseite (15)
 
-[] warf (12)
-[] es (13)
-[] verächtlich (14)
-[] beiseite (15)
+[IDENTIFICATION] es (13)
 
-[] es (13)
-
-[] verächtlich (14)
-
-[] beiseite (15)
+[QUALITY] verächtlich (14)
 
 # sent_id = 531
 # text = Ihr Leib war weiß und weich , aber er weckte kein Verlangen in ihm , ja er sah ihn kaum an .
@@ -2198,46 +2263,46 @@
 21	an	an	ADP	PTKVZ	_	18	compound:prt	_	_
 22	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] weiß (4)
-[] Ihr Leib (2)
+[QUALITY] weiß (4)
+[has-quality] Ihr Leib (2)
 
-[] Leib (2)
-[] Ihr (1)
+[PART-WHOLE] Leib (2)
+[whole] Ihr (1)
 
-[] Ihr (1)
+[IDENTIFICATION] Ihr (1)
 
-[] weich (6)
+[QUALITY] weich (6)
+[has-quality] Ihr Leib (2)
 
-[] weckte (10)
-[] er (9)
-[] kein Verlangen (12)
-[] in ihm (14)
+[SCENE-INIT] weckte (10)
+[x-causer] er (9)
+[target-scene] kein Verlangen (12)
+[participant] in ihm (14)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] Verlangen (12)
-[] kein (11)
+[MESSAGE] Verlangen (12)
+[m-mode] kein (11)
+[x-experiencer] in ihm (14)
 
-[] kein (11)
+[MODE] kein (11)
 
-[] ihm (14)
+[IDENTIFICATION] ihm (14)
 
-[] sah (18)
-[] ja (16)
-[] er (17)
-[] ihn (19)
-[] kaum (20)
-[] an (21)
+[MESSAGE] sah (18)
+[m-mode] ja (16)
+[x-experiencer] er (17)
+[topic] ihn (19)
+[m-quantity] kaum (20)
+[m-noncomp] an (21)
 
-[] ja (16)
+[MODE] ja (16)
 
-[] er (17)
+[IDENTIFICATION] er (17)
 
-[] ihn (19)
+[IDENTIFICATION] ihn (19)
 
-[] kaum (20)
-
-[] an (21)
+[QUANTITY] kaum (20)
 
 # sent_id = 532
 # text = Was ihn in diesem Augenblick ganz erfüllte , war die Bewunderung für die Gebärde , mit der sie ihre Kleider weggeschleudert hatte .
@@ -2265,40 +2330,42 @@
 22	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux	_	_
 23	.	.	PUNCT	$.	_	11	punct	_	_
 
-[] Bewunderung (11)
-[] Was ihn in diesem Augenblick ganz erfüllte , (7)
-[] für die Gebärde , mit der sie ihre Kleider weggeschleudert hatte (14)
+[MESSAGE] Bewunderung (11)
+[m-scene] Was ihn in diesem Augenblick ganz erfüllte , (7)
+[topic] für die Gebärde , mit der sie ihre Kleider weggeschleudert hatte (14)
 
-[] erfüllte (7)
-[] Was (1)
-[] ihn (2)
-[] in diesem Augenblick (5)
-[] ganz (6)
+[MESSAGE] erfüllte (7)
+[topic] Was (1)
+[x-experiencer] ihn (2)
+[m-time] in diesem Augenblick (5)
+[m-quantity] ganz (6)
+[topic] Bewunderung (11)
 
-[] Was (1)
+[IDENTIFICATION] Was (1)
 
-[] ihn (2)
+[IDENTIFICATION] ihn (2)
 
-[] Augenblick (5)
+[TIME] Augenblick (5)
 
-[] ganz (6)
+[QUANTITY] ganz (6)
 
-[] Gebärde (14)
-[] , mit der sie ihre Kleider weggeschleudert hatte (21)
+[ACTIVITY] Gebärde (14) # Bewegung der Hände, Gesichtszüge, Augen, die einen inneren Vorgang, ein Gefühl ausdrückt
+[m-scene] , mit der sie ihre Kleider weggeschleudert hatte (21)
 
-[] weggeschleudert (21)
-[] mit der (17)
-[] sie (18)
-[] ihre Kleider (20)
+[LOCATION-DEINIT] weggeschleudert (21)
+[m-means] mit der (17)
+[x-causer] sie (18)
+[has-location] ihre Kleider (20)
+[m-means] Gebärde (14)
 
-[] der (17)
+[IDENTIFICATION] der (17)
 
-[] sie (18)
+[IDENTIFICATION] sie (18)
 
-[] Kleider (20)
-[] ihre (19)
+[CLASS] Kleider (20)
+[m-possessor] ihre (19)
 
-[] ihre (19)
+[IDENTIFICATION] ihre (19)
 
 # sent_id = 533
 # text = Mit ihrer Grazie und Unbekümmertheit schien sie eine ganze Kultur abzutun , eine ganze Denkordnung , so , als könnten der Große Bruder , die Partei und die Gedankenpolizei mit einer einzigen herrlichen Armbewegung weggewischt werden .
@@ -2340,57 +2407,62 @@
 36	werden	werden	AUX	VAINF	VerbForm=Inf	35	aux:pass	_	_
 37	.	.	PUNCT	$.	_	6	punct	_	_
 
-[] schien (6)
-[] Mit ihrer Grazie und Unbekümmertheit (3)
+[MESSAGE] schien (6)
+[??? m-means] Mit ihrer Grazie (3)
+[??? m-means] und Unbekümmertheit (5)
+[topic] sie (7)
+[??? Syntax? content] eine ganze Kultur (10)
+[content] , eine ganze Denkordnung (15)
+[content] abzutun (11)
+[??? m-quality] so (17)
+[??? m-reference] , , als könnten der Große Bruder , die Partei und die Gedankenpolizei mit einer einzigen herrlichen Armbewegung weggewischt werden (35)
+
+[QUALITY] Grazie (3)
+[has-quality] ihrer (2)
+
+[IDENTIFICATION] ihrer (2)
+
+[MESSAGE] Unbekümmertheit (5)
+
+[IDENTIFICATION] sie (7)
+
+[??? MESSAGE || CLASS] Kultur (10)
+[m-quantity] ganze (9)
+
+[QUANTITY] ganze (9)
+
+[??? MESSAGE || SITUATION] Denkordnung (15)
+[m-quantity] ganze (14)
 [] sie (7)
-[] eine ganze Kultur , eine ganze Denkordnung (10)
-[] abzutun (11)
-[] so (17)
-[] , , als könnten der Große Bruder , die Partei und die Gedankenpolizei mit einer einzigen herrlichen Armbewegung weggewischt werden (35)
 
-[] Grazie (3)
-[] ihrer (2)
+[QUANTITY] ganze (14)
 
-[] ihrer (2)
+[??? DESTRUCTION] abzutun (11) # etw. ins Reine bringen, erledigen; annihilate=destroy
 
-[] Unbekümmertheit (5)
+[QUALITY] so (17)
 
-[] sie (7)
+[LOCATION-DEINIT >> DESTRUCTION] weggewischt (35)
+[has-location >> destroyed] der Große Bruder (23)
+[has-location >> destroyed] , die Partei (26)
+[has-location >> destroyed] und die Gedankenpolizei (29)
+[??? m-means] mit einer einzigen herrlichen Armbewegung (34)
 
-[] Kultur (10)
-[] ganze (9)
+[SOCIAL-RELATION >> IDENTIFICATION] Bruder (23)
+[m-quality >> m-noncomp] Große (22)
 
-[] ganze (9)
+[QUALITY >> NONCOMP] Große (22)
 
-[] Denkordnung (15)
-[] ganze (14)
+[CLASS >> SOCIAL-RELATION] Partei (26)
 
-[] ganze (14)
+[SOCIAL-RELATION] Gedankenpolizei (29)
 
-[] abzutun (11)
+[ACTIVITY] Armbewegung (34)
+[m-quantity] einzigen (32)
+[m-quality] herrlichen (33)
 
-[] so (17)
+[QUANTITY] einzigen (32)
 
-[] weggewischt (35)
-[] der Große Bruder , die Partei und die Gedankenpolizei (23)
-[] mit einer einzigen herrlichen Armbewegung (34)
-
-[] Bruder (23)
-[] Große (22)
-
-[] Große (22)
-
-[] Partei (26)
-
-[] Gedankenpolizei (29)
-
-[] Armbewegung (34)
-[] einzigen (32)
-[] herrlichen (33)
-
-[] einzigen (32)
-
-[] herrlichen (33)
+[QUALITY] herrlichen (33)
 
 # sent_id = 534
 # text = Auch das war eine der alten Zeit angehörende Geste .
@@ -2405,22 +2477,24 @@
 9	Geste	Geste	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] Geste (9)
-[] Auch das (2)
-[] der alten Zeit angehörende (8)
+[ACTIVITY] Geste (9)
+[x-has-class] Auch das (2)
+[m-scene] der alten Zeit angehörende (8)
 
-[] das (2)
-[] Auch (1)
+[IDENTIFICATION] das (2)
+[m-scene] Auch (1)
 
-[] Auch (1)
+[ACCOMPANIMENT] Auch (1)
+[accompanier] das (2)
 
-[] angehörende (8)
-[] der alten Zeit (7)
+[POSSESSION >> SITUATION] angehörende (8)
+[possessor >> situator] der alten Zeit (7)
+[possessed >> theme] Geste (9)
 
-[] Zeit (7)
-[] alten (6)
+[TIME] Zeit (7)
+[m-state] alten (6)
 
-[] alten (6)
+[STATE] alten (6)
 
 # sent_id = 535
 # text = Winston wachte mit dem Wort » Shakespeare « auf den Lippen auf .
@@ -2434,26 +2508,23 @@
 8	«	«	PUNCT	$(	_	7	punct	_	_
 9	auf	auf	ADP	APPR	_	11	case	_	_
 10	den	d	DET	ART	Case=Dat|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	11	det	_	_
-11	Lippen	Lippe	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	2	obl	_	_
+11	Lippen	Lippe	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	5	obl	_	_
 12	auf	auf	ADP	PTKVZ	_	2	compound:prt	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wachte (2)
-[] Winston (1)
-[] mit dem Wort » Shakespeare « (5)
-[] auf den Lippen (11)
-[] auf (12)
+[STATE-CHANGE] wachte (2)
+[has-state] Winston (1)
+[m-accompanier] mit dem Wort » Shakespeare « auf den Lippen (5)
+[m-noncomp] auf (12)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Wort (5)
-[] » Shakespeare « (7)
+[MESSAGE] Wort » Shakespeare « (5)
+[x-sender] auf den Lippen (11)
 
-[] Shakespeare (7)
+[IDENTIFICATION] Shakespeare (7)
 
-[] Lippen (11)
-
-[] auf (12)
+[PART-WHOLE] Lippen (11)
 
 # sent_id = 536
 # text = Der Televisor ließ einen ohrenbetäubenden Pfeifton hören , der in gleicher Höhe dreißig Sekunden lang anhielt .
@@ -2470,45 +2541,51 @@
 11	gleicher	gleich	ADJ	ADJA	Case=Dat|Gender=Fem|Number=Sing	12	amod	_	_
 12	Höhe	Höhe	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	16	obl	_	_
 13	dreißig	dreißig	NUM	CARD	NumType=Card	14	nummod	_	_
-14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	16	obl	_	_
+14	Sekunden	Sekunde	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	15	obl	_	_
 15	lang	lang	ADJ	ADJD	_	16	advmod	_	_
 16	anhielt	anhalten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
 17	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] ließ (3)
-[] Der Televisor (2)
-[] einen ohrenbetäubenden Pfeifton , der in gleicher Höhe dreißig Sekunden lang anhielt (6)
-[] hören (7)
+[SCENE-INIT >> MESSAGE-INIT] ließ (3)
+[x-causer >> x-sender] Der Televisor (2)
+[participant >> target-content] einen ohrenbetäubenden Pfeifton , der in gleicher Höhe dreißig Sekunden lang anhielt (6)
+[target-scene >> x-noncomp] hören (7)
 
-[] Televisor (2)
+[CLASS] Televisor (2)
 
-[] Pfeifton (6)
-[] ohrenbetäubenden (5)
-[] , der in gleicher Höhe dreißig Sekunden lang anhielt (16)
+[MESSAGE] Pfeifton (6)
+[m-scene] ohrenbetäubenden (5)
+[m-scene] , der in gleicher Höhe dreißig Sekunden lang anhielt (16)
 
-[] ohrenbetäubenden (5)
+[STATE-INIT >> QUALITY] ohrenbetäubenden (5)
+[x-causer] Pfeifton (6)
 
-[] anhielt (16)
-[] der (9)
-[] in gleicher Höhe (12)
-[] dreißig Sekunden (14)
-[] lang (15)
+[SCENE-CONTINUATION] anhielt (16)
+[initial-scene] der (9)
+[m-depictive] in gleicher Höhe (12)
+[m-time] dreißig Sekunden lang (15)
+[initial-scene] Pfeifton (6)
 
-[] der (9)
+[IDENTIFICATION] der (9)
 
-[] Höhe (12)
-[] gleicher (11)
+[QUALITY] Höhe (12)
+[m-scene] gleicher (11)
+[has-quality] der (9)
+[has-quality] Pfeifton (6)
 
-[] gleicher (11)
+[COMPARISON] gleicher (11)
+[compared] Höhe (12)
 
-[] Sekunden (14)
-[] dreißig (13)
+[TIME] Sekunden (14)
+[m-quantity] dreißig (13)
 
-[] dreißig (13)
+[QUANTITY] dreißig (13)
 
-[] lang (15)
+[TIME] lang (15)
+[m-quantity] dreißig Sekunden (14)
 
-[] hören (7)
+[MESSAGE] hören (7)
+[topic] Pfeifton (6)
 
 # sent_id = 537
 # text = Es war Punkt sieben Uhr fünfzehn , Zeit zum Aufstehen für alle Behördenangestellten .
@@ -2517,7 +2594,7 @@
 3	Punkt	Punkt	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 4	sieben	sieben	NUM	CARD	NumType=Card	5	nummod	_	_
 5	Uhr	Uhr	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	3	nmod	_	_
-6	fünfzehn	fünfzehn	NUM	CARD	NumType=Card	5	appos	_	_
+6	fünfzehn	fünfzehn	NUM	CARD	NumType=Card	5	nummod	_	_
 7	,	,	PUNCT	$,	_	8	punct	_	_
 8	Zeit	Zeit	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	3	appos	_	_
 9	zum	zum	ADP	APPRART	_	10	case	_	_
@@ -2527,28 +2604,27 @@
 13	Behördenangestellten	Behördenangestellte	NOUN	NN	Case=Acc|Gender=Fem|Number=Plur	10	nmod	_	_
 14	.	.	PUNCT	$.	_	3	punct	_	_
 
-[] Punkt (3)
-[] Es (1)
-[] sieben Uhr fünfzehn (5)
-[] , Zeit zum Aufstehen für alle Behördenangestellten (8)
+[TIME] Punkt , Zeit zum Aufstehen für alle Behördenangestellten (3)
+[x-noncomp] Es (1)
+[time] sieben Uhr fünfzehn (5)
 
-[] Es (1)
+[NONCOMP] Es (1)
 
-[] Uhr (5)
-[] sieben (4)
-[] fünfzehn (6)
+[TIME] Uhr (5)
+[m-quantity] sieben (4)
+[m-quantity] fünfzehn (6)
 
-[] sieben (4)
+[QUANTITY] sieben (4)
 
-[] fünfzehn (6)
+[QUANTITY] fünfzehn (6)
 
-[] Zeit (8)
-[] zum Aufstehen für alle Behördenangestellten (10)
+[TIME] Zeit (8)
+[m-follows] zum Aufstehen für alle Behördenangestellten (10)
 
-[] Aufstehen (10)
-[] für alle Behördenangestellten (13)
+[LOCATION-CHANGE >> STATE-CHANGE] Aufstehen (10)
+[has-location >> has-state] für alle Behördenangestellten (13)
 
-[] Behördenangestellten (13)
+[SOCIAL-RELATION] Behördenangestellten (13)
 
 # sent_id = 538
 # text = Winston wälzte seinen Körper aus dem Bett - er schlief nackt , denn ein Mitglied der Äußeren Partei erhielt nur dreitausend Kleiderpunkte im Jahr - und ergriff ein über dem Stuhl liegendes graufarbenes Unterhemd und eine kurze Sporthose .
@@ -2592,70 +2668,74 @@
 38	Sporthose	Sporthose	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	34	conj	_	_
 39	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] wälzte (2)
-[] Winston (1)
-[] seinen Körper (4)
-[] aus dem Bett (7)
+[LOCATION-DEINIT] wälzte (2) # etw. Großes, Schweres, jmdn. um seine eigene Achse drehend irgendwohin bewegen
+[x-causer] Winston (1)
+[has-location] seinen Körper (4)
+[initial-location] aus dem Bett (7)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Körper (4)
-[] seinen (3)
+[PART-WHOLE] Körper (4)
+[whole] seinen (3)
 
-[] seinen (3)
+[IDENTIFICATION] seinen (3)
 
-[] Bett (7)
+[CLASS] Bett (7)
 
-[] schlief (10)
-[] er (9)
-[] nackt (11)
-[] , denn ein Mitglied der Äußeren Partei erhielt nur dreitausend Kleiderpunkte im Jahr - (19)
+[STATE] schlief (10)
+[has-state] er (9)
+[m-depictive] nackt (11)
+[m-explanation] , denn ein Mitglied der Äußeren Partei erhielt nur dreitausend Kleiderpunkte im Jahr - (19)
 
-[] er (9)
+[IDENTIFICATION] er (9)
 
-[] nackt (11)
+[WRAPPING-WEARING-INIT-NEG] nackt (11)
+[target-wearer] er (9)
 
-[] erhielt (19)
-[] ein Mitglied der Äußeren Partei (15)
-[] nur dreitausend Kleiderpunkte im Jahr (22)
+[POSSESSION-INIT] erhielt (19)
+[target-possessor] ein Mitglied der Äußeren Partei (15)
+[possessed] nur dreitausend Kleiderpunkte im Jahr (22)
 
-[] Mitglied (15)
-[] der Äußeren Partei (18)
+[PART-WHOLE >> SOCIAL-RELATION] Mitglied (15)
+[whole >> social-relation] der Äußeren Partei (18)
 
-[] Partei (18)
-[] Äußeren (17)
+[CLASS >> IDENTIFICATION] Partei (18)
+[m-location >> m-noncomp] Äußeren (17)
 
-[] Äußeren (17)
+[LOCATION >> NONCOMP] Äußeren (17)
 
-[] Kleiderpunkte (22)
-[] nur dreitausend (21)
-[] im Jahr (24)
+[QUANTITY] Kleiderpunkte (22)
+[m-quantity] nur dreitausend (21)
+[m-time >> m-followed] im Jahr (24)
 
-[] dreitausend (21)
-[] nur (20)
+[QUANTITY] dreitausend (21)
+[m-mode] nur (20)
 
-[] nur (20)
+[MODE] nur (20)
 
-[] Jahr (24)
+[TIME] Jahr (24)
 
-[] ergriff (27)
-[] ein über dem Stuhl liegendes graufarbenes Unterhemd und eine kurze Sporthose (34)
+[LOCATION-CHANGE] ergriff (27)
+[has-location] ein über dem Stuhl liegendes graufarbenes Unterhemd (34)
+[has-location] und eine kurze Sporthose (38)
+[x-causer] er (9)
 
-[] Unterhemd (34)
-[] über dem Stuhl liegendes (32)
-[] graufarbenes (33)
+[CLASS] Unterhemd (34)
+[m-scene] über dem Stuhl liegendes (32)
+[m-quality] graufarbenes (33)
 
-[] liegendes (32)
-[] über dem Stuhl (31)
+[LOCATION] liegendes (32)
+[location] über dem Stuhl (31)
+[has-location] Unterhemd (34)
 
-[] Stuhl (31)
+[CLASS] Stuhl (31)
 
-[] graufarbenes (33)
+[QUALITY] graufarbenes (33)
 
-[] Sporthose (38)
-[] kurze (37)
+[CLASS] Sporthose (38)
+[m-quality] kurze (37)
 
-[] kurze (37)
+[QUALITY] kurze (37)
 
 # sent_id = 539
 # text = In drei Minuten begann die Morgengymnastik .
@@ -2667,16 +2747,16 @@
 6	Morgengymnastik	Morgengymnastik	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
 7	.	.	PUNCT	$.	_	4	punct	_	_
 
-[] begann (4)
-[] In drei Minuten (3)
-[] die Morgengymnastik (6)
+[SCENE-INIT] begann (4)
+[m-time] In drei Minuten (3)
+[target-scene] die Morgengymnastik (6)
 
-[] Minuten (3)
-[] drei (2)
+[TIME] Minuten (3)
+[m-quantity] drei (2)
 
-[] drei (2)
+[QUANTITY] drei (2)
 
-[] Morgengymnastik (6)
+[ACTIVITY] Morgengymnastik (6)
 
 # sent_id = 540
 # text = Doch im nächsten Augenblick krümmte er sich unter einem heftigen Hustenanfall , der ihn fast immer kurz nach dem Erwachen überfiel .
@@ -2703,49 +2783,52 @@
 21	überfiel	überfallen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 22	.	.	PUNCT	$.	_	5	punct	_	_
 
-[] krümmte (5)
-[] Doch (1)
-[] im nächsten Augenblick (4)
-[] er (6)
-[] sich (7)
-[] unter einem heftigen Hustenanfall , der ihn fast immer kurz nach dem Erwachen überfiel (11)
+[LOCATION-CHANGE] krümmte (5)
+[m-scene] Doch (1)
+[m-time] im nächsten Augenblick (4)
+[has-location] er (6)
+[has-location] sich (7)
+[x-causer] unter einem heftigen Hustenanfall , der ihn fast immer kurz nach dem Erwachen überfiel (11)
 
-[] Doch (1)
+[CONCESSION] Doch (1)
+[asserted] krümmte (5)
 
-[] Augenblick (4)
-[] nächsten (3)
+[TIME] Augenblick (4)
+[m-scene] nächsten (3)
 
-[] nächsten (3)
+[SEQUENCE] nächsten (3)
+[follows] Augenblick (4)
 
-[] er (6)
+[IDENTIFICATION] er (6)
 
-[] sich (7)
+[IDENTIFICATION] sich (7)
 
-[] Hustenanfall (11)
-[] heftigen (10)
-[] , der ihn fast immer kurz nach dem Erwachen überfiel (21)
+[MESSAGE] Hustenanfall (11) # wie "jucken"
+[m-quality] heftigen (10)
+[m-scene] , der ihn fast immer kurz nach dem Erwachen überfiel (21)
 
-[] heftigen (10)
+[QUALITY] heftigen (10)
 
-[] überfiel (21)
-[] der (13)
-[] ihn (14)
-[] fast immer (16)
-[] kurz nach dem Erwachen (20)
+[EVENT] überfiel (21)
+[event] der (13)
+[undergoer] ihn (14)
+[m-time] fast immer (16)
+[m-time] kurz nach dem Erwachen (20)
+[event] Hustenanfall (11)
 
-[] der (13)
+[IDENTIFICATION] der (13)
 
-[] ihn (14)
+[IDENTIFICATION] ihn (14)
 
-[] immer (16)
-[] fast (15)
+[TIME] immer (16)
+[m-quantity] fast (15)
 
-[] fast (15)
+[QUANTITY] fast (15)
 
-[] Erwachen (20)
-[] kurz (17)
+[STATE-CHANGE] Erwachen (20)
+[m-time] kurz (17)
 
-[] kurz (17)
+[TIME] kurz (17)
 
 # sent_id = 541
 # text = Seine Lungen wurden dadurch so vollständig leergepumpt , dass er erst wieder Atem schöpfen konnte , indem er sich der Länge nach auf den Rücken streckte und ein paar tiefe Atemzüge machte .
@@ -2783,60 +2866,64 @@
 32	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
 33	.	.	PUNCT	$.	_	7	punct	_	_
 
-[] leergepumpt (7)
-[] Seine Lungen (2)
-[] dadurch (4)
-[] so vollständig (6)
-[] , dass er erst wieder Atem schöpfen konnte , indem er sich der Länge nach auf den Rücken streckte und ein paar tiefe Atemzüge machte (14)
+[STATE-CHANGE] leergepumpt (7)
+[has-state] Seine Lungen (2)
+[x-causer] dadurch (4)
+[m-quantity] so vollständig (6)
+[m-follows] , dass er erst wieder Atem schöpfen konnte , indem er sich der Länge nach auf den Rücken streckte und ein paar tiefe Atemzüge machte (14)
 
-[] Lungen (2)
-[] Seine (1)
+[PART-WHOLE] Lungen (2)
+[whole] Seine (1)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] dadurch (4)
+[IDENTIFICATION] dadurch (4)
 
-[] vollständig (6)
-[] so (5)
+[QUANTITY] vollständig (6)
+[m-quantity] so (5)
 
-[] so (5)
+[QUANTITY] so (5)
 
-[] schöpfen (14)
-[] er (10)
-[] erst (11)
-[] wieder (12)
-[] Atem (13)
-[] , indem er sich der Länge nach auf den Rücken streckte und ein paar tiefe Atemzüge machte (26)
+[SCENE-INIT] schöpfen (14)
+[x-causer >> participant] er (10)
+[m-time] erst (11)
+[m-scene] wieder (12)
+[target-scene] Atem (13)
+[m-means] , indem er sich der Länge nach auf den Rücken streckte (26)
+[m-means] und ein paar tiefe Atemzüge machte (32)
 
-[] er (10)
+[IDENTIFICATION] er (10)
 
-[] erst (11)
+[TIME] erst (11)
 
-[] wieder (12)
+[SEQUENCE] wieder (12)
+[follows] schöpfen (14)
 
-[] Atem (13)
+[EVENT] Atem (13)
+[undergoer] er (10)
 
-[] streckte (26)
-[] er (18)
-[] sich (19)
-[] der Länge nach (21)
-[] auf den Rücken (25)
+[LOCATION-INIT] streckte (26)
+[x-causer >> has-location] er (18)
+[has-location] sich (19)
+[m-reference] der Länge nach (21) # flach?
+[x-attribute] auf den Rücken (25)
 
-[] er (18)
+[IDENTIFICATION] er (18)
 
-[] sich (19)
+[IDENTIFICATION] sich (19)
 
-[] Länge (21)
+[??? LOCATION || QUALITY] Länge (21)
 
-[] Rücken (25)
+[PART-WHOLE] Rücken (25)
+[whole] er (18) # wg x-attribute extra Kante
 
-[] machte (32)
-[] ein paar tiefe Atemzüge (31)
+[SCENE-INIT] machte (32)
+[target-scene] ein paar tiefe Atemzüge (31)
 
-[] Atemzüge (31)
-[] tiefe (30)
+[EVENT] Atemzüge (31)
+[m-quality] tiefe (30)
 
-[] tiefe (30)
+[QUALITY] tiefe (30)
 
 # sent_id = 542
 # text = Seine Adern waren unter der Anstrengung des Hustens geschwollen , und die Krampfaderknoten hatten angefangen zu schmerzen .
@@ -2859,32 +2946,33 @@
 17	schmerzen	schmerzen	VERB	VVINF	VerbForm=Inf	15	xcomp	_	_
 18	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] geschwollen (9)
-[] Seine Adern (2)
-[] unter der Anstrengung des Hustens (6)
+[STATE-CHANGE] geschwollen (9)
+[has-state] Seine Adern (2)
+[x-causer] unter der Anstrengung des Hustens (6)
 
-[] Adern (2)
-[] Seine (1)
+[PART-WHOLE] Adern (2)
+[whole] Seine (1)
 
-[] Seine (1)
+[IDENTIFICATION] Seine (1)
 
-[] Anstrengung (6)
-[] des Hustens (8)
+[STATE] Anstrengung (6)
+[has-state] des Hustens (8)
 
-[] Hustens (8)
+[MESSAGE] Hustens (8)
 
-[] angefangen (15)
-[] die Krampfaderknoten (13)
-[] zu schmerzen (17)
+[SCENE-INIT] angefangen (15)
+[participant] die Krampfaderknoten (13)
+[target-scene] zu schmerzen (17)
 
-[] Krampfaderknoten (13)
+[PART-WHOLE] Krampfaderknoten (13)
 
-[] schmerzen (17)
+[MESSAGE-INIT] schmerzen (17)
+[x-sender] die Krampfaderknoten (13)
 
 # sent_id = 543
 # text = » Gruppe der Dreißig- bis Vierzigjährigen ! « kläffte eine schrille Frauenstimme . » Gruppe der Dreißig- bis Vierzigjährigen .
 1	»	»	PUNCT	$(	_	2	punct	_	_
-2	Gruppe	Gruppe	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	9	dep	_	_
+2	Gruppe	Gruppe	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	9	obj	_	_
 3	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	4	det	_	_
 4	Dreißig-	Dreißig-	X	TRUNC	_	2	nmod	_	_
 5	bis	bis	CCONJ	KON	_	6	case	_	_
@@ -2895,53 +2983,51 @@
 10	eine	ein	DET	ART	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 11	schrille	schrill	ADJ	ADJA	Case=Nom|Gender=Fem|Number=Sing	12	amod	_	_
 12	Frauenstimme	Frauenstimme	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_
-13	.	.	PUNCT	$.	_	15	punct	_	_
+13	.	.	PUNCT	$.	_	9	punct	_	_
 14	»	»	PUNCT	$(	_	15	punct	_	_
-15	Gruppe	Gruppe	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	12	appos	_	_
+15	Gruppe	Gruppe	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	_
 16	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	17	det	_	_
 17	Dreißig-	Dreißig-	X	TRUNC	_	15	nmod	_	_
 18	bis	bis	CCONJ	KON	_	19	case	_	_
 19	Vierzigjährigen	Vierzigjährige	NOUN	NN	Case=Gen|Gender=Neut|Number=Plur	17	nmod	_	_
 20	.	.	PUNCT	$.	_	9	punct	_	_
 
-[] kläffte (9)
-[] eine schrille Frauenstimme . » Gruppe der Dreißig- bis Vierzigjährigen (12)
+[MESSAGE-INIT] kläffte (9)
+[target-content] » Gruppe der Dreißig- bis Vierzigjährigen ! « (2)
+[target-content] » Gruppe der Dreißig- bis Vierzigjährigen (15)
+[x-sender] eine schrille Frauenstimme (12)
 
-[] Gruppe (2)
-[] der Dreißig- bis Vierzigjährigen (4)
+[SUBCLASS] Gruppe (2)
+[subclass] der Dreißig- bis Vierzigjährigen (4)
 
-[] Dreißig- (4)
-[] bis Vierzigjährigen (6)
+[STATE] Dreißig- (4)
+[m-follows] bis Vierzigjährigen (6)
 
-[] Vierzigjährigen (6)
+[STATE] Vierzigjährigen (6)
 
-[] Frauenstimme (12)
-[] schrille (11)
-[] . » Gruppe der Dreißig- bis Vierzigjährigen (15)
+[SUBCLASS] Gruppe (15)
+[subclass] der Dreißig- bis Vierzigjährigen (17)
 
-[] schrille (11)
+[STATE] Dreißig- (17)
+[m-follows] bis Vierzigjährigen (19)
 
-[] Gruppe (15)
-[] der Dreißig- bis Vierzigjährigen (17)
+[STATE] Vierzigjährigen (19)
 
-[] Dreißig- (17)
-[] bis Vierzigjährigen (19)
+[MESSAGE] Frauenstimme (12)
+[m-quality] schrille (11)
 
-[] Vierzigjährigen (19)
+[QUALITY] schrille (11)
 
 # sent_id = 544
 # text = Bitte , auf die Plätze !
-1	Bitte	bitte	PART	PTKANT	_	0	root	_	_
+1	Bitte	bitte	PART	PTKANT	_	5	discourse	_	_
 2	,	,	PUNCT	$,	_	5	punct	_	_
 3	auf	auf	ADP	APPR	_	5	case	_	_
 4	die	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	5	det	_	_
-5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	1	nmod	_	_
-6	!	!	PUNCT	$.	_	1	punct	_	_
+5	Plätze	Platz	NOUN	NN	Case=Acc|Gender=Masc|Number=Plur	0	root	_	_
+6	!	!	PUNCT	$.	_	5	punct	_	_
 
-[] Bitte (1)
-[] , auf die Plätze (5)
-
-[] Plätze (5)
+[LOCATION-INIT] Plätze (5)
 
 # sent_id = 545
 # text = Dreißig- bis Vierzigjährige . «
@@ -2951,10 +3037,10 @@
 4	.	.	PUNCT	$.	_	1	punct	_	_
 5	«	«	PUNCT	$(	_	1	punct	_	_
 
-[] Dreißig- (1)
-[] bis Vierzigjährige (3)
+[STATE] Dreißig- (1)
+[m-follows] bis Vierzigjährige (3)
 
-[] Vierzigjährige (3)
+[STATE] Vierzigjährige (3)
 
 # sent_id = 546
 # text = Winston nahm stramme Haltung vor dem Televisor an , auf dessen Schirm bereits das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen erschienen war .
@@ -2991,52 +3077,55 @@
 31	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	aux	_	_
 32	.	.	PUNCT	$.	_	2	punct	_	_
 
-[] nahm (2)
-[] Winston (1)
-[] stramme Haltung (4)
-[] vor dem Televisor , auf dessen Schirm bereits das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen erschienen war (7)
-[] an (8)
+[SCENE-INIT] nahm (2)
+[participant] Winston (1)
+[target-scene] stramme Haltung (4) # gespannt
+[m-location] vor dem Televisor , auf dessen Schirm bereits das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen erschienen war (7)
+[m-noncomp] an (8)
 
-[] Winston (1)
+[IDENTIFICATION] Winston (1)
 
-[] Haltung (4)
-[] stramme (3)
+[STATE] Haltung (4)
+[m-quality] stramme (3)
+[has-state] Winston (1)
 
-[] stramme (3)
+[QUALITY] stramme (3)
 
-[] Televisor (7)
-[] , auf dessen Schirm bereits das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen erschienen war (30)
+[CLASS] Televisor (7)
+[m-scene] , auf dessen Schirm bereits das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen erschienen war (30)
 
-[] erschienen (30)
-[] auf dessen Schirm (12)
-[] bereits (13)
-[] das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen (15)
+[MESSAGE-INIT] erschienen (30)
+[x-sender] auf dessen Schirm (12)
+[m-time] bereits (13)
+[topic] das Bild einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen (15)
+[x-sender] Televisor (7)
 
-[] Schirm (12)
+[CLASS] Schirm (12)
 
-[] bereits (13)
+[TIME] bereits (13)
 
-[] Bild (15)
-[] einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen (24)
+[MESSAGE] Bild (15)
+[x-sender || topic] einer ziemlich jungen , mageren , aber muskulösen Frau in einem Kittel und Turnschuhen (24)
 
-[] Frau (24)
-[] ziemlich jungen , mageren , aber muskulösen (18)
-[] in einem Kittel und Turnschuhen (27)
+[CLASS] Frau (24)
+[m-state] ziemlich jungen (18)
+[m-state] , mageren (20)
+[m-state] , aber muskulösen (23)
+[m-wrapper] in einem Kittel (27)
+[m-wrapper] und Turnschuhen (29)
 
-[] jungen (18)
-[] ziemlich (17)
+[STATE] jungen (18)
+[m-mode] ziemlich (17)
 
-[] ziemlich (17)
+[MODE] ziemlich (17)
 
-[] mageren (20)
+[STATE] mageren (20)
 
-[] muskulösen (23)
+[STATE] muskulösen (23)
 
-[] Kittel (27)
+[CLASS] Kittel (27)
 
-[] Turnschuhen (29)
-
-[] an (8)
+[CLASS] Turnschuhen (29)
 
 # sent_id = 547
 # text = » Arme beugt und streckt ! « legte sie los .
@@ -3052,21 +3141,20 @@
 10	los	los	ADP	PTKVZ	_	8	compound:prt	_	_
 11	.	.	PUNCT	$.	_	8	punct	_	_
 
-[] legte (8)
-[] » Arme beugt und streckt ! « (3)
-[] sie (9)
-[] los (10)
+[MESSAGE-INIT] legte (8)
+[target-content] » Arme beugt ! « (3)
+[target-content] und streckt (5)
+[x-sender] sie (9)
+[m-noncomp] los (10)
 
-[] beugt (3)
-[] » Arme (2)
+[STATE-INIT] beugt (3)
+[has-state] » Arme (2)
 
-[] Arme (2)
+[PART-WHOLE] Arme (2)
 
-[] streckt (5)
+[STATE-INIT] streckt (5)
 
-[] sie (9)
-
-[] los (10)
+[IDENTIFICATION] sie (9)
 
 # sent_id = 548
 # text = » Im Takt , bitte !
@@ -3074,13 +3162,10 @@
 2	Im	im	ADP	APPRART	_	3	case	_	_
 3	Takt	Takt	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	0	root	_	_
 4	,	,	PUNCT	$,	_	5	punct	_	_
-5	bitte	bitte	PART	PTKANT	_	3	appos	_	_
+5	bitte	bitte	PART	PTKANT	_	3	discourse	_	_
 6	!	!	PUNCT	$.	_	3	punct	_	_
 
-[] Takt (3)
-[] , bitte (5)
-
-[] bitte (5)
+[SEQUENCE] Takt (3) # SEQUENCE wie für Wiederholungen? "to do something repeatedly in a synchronized manner"
 
 # sent_id = 549
 # text = Eins , zwei , drei , vier !
@@ -3093,13 +3178,13 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[] Eins (1)
+[RANK] Eins (1)
 
-[] zwei (3)
+[RANK] zwei (3)
 
-[] drei (5)
+[RANK] drei (5)
 
-[] vier (7)
+[RANK] vier (7)
 
 # sent_id = 550
 # text = Eins , zwei , drei , vier !
@@ -3112,11 +3197,11 @@
 7	vier	vier	NUM	CARD	NumType=Card	1	conj	_	_
 8	!	!	PUNCT	$.	_	1	punct	_	_
 
-[] Eins (1)
+[RANK] Eins (1)
 
-[] zwei (3)
+[RANK] zwei (3)
 
-[] drei (5)
+[RANK] drei (5)
 
-[] vier (7)
+[RANK] vier (7)
 
