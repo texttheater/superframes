@@ -724,13 +724,16 @@
 [content >> scene] die zur Schau zu tragen (13)
 [m-condition] , wenn man dem Televisor das Gesicht zukehrte (23)
 
-[MESSAGE] tragen (13)
-[topic] die (9)
-[x-noncomp] zur Schau (11)
+[MESSAGE || SCENE] tragen (13) # v2: avoid difficult decision between light verb construction and idiom?
+[topic || participant] die (9)
+[x-noncomp || scene] zur Schau (11)
+[topic || participant] Miene (6)
 
 [] die (9)
 
-[MESSAGE] Schau (11)
+[NONCOMP || MESSAGE] Schau (11)
+[topic] die (9)
+[topic] Miene (6)
 
 [] zukehrte (23)
 [] man (18)
@@ -1108,13 +1111,14 @@
 [LOCATION-INIT >> STATE-CHANGE] trat (11)
 [has-location >> x-noncomp] das Wasser (10)
 [target-location >> has-state] ihm (12)
-[x-attribute >> x-noncomp] in die Augen (15)
+[x-attribute >> x-noncomp] in die Augen (15) # TODO checker should warn about missing backlink for x-attribute
 
 [CLASS >> NONCOMP] Wasser (10)
 
 [] ihm (12)
 
-[CLASS >> NONCOMP] Augen (15)
+[PART-WHOLE >> NONCOMP] Augen (15)
+[whole] ihm (12)
 
 # sent_id = 70
 # text = Das Zeug schmeckte wie Salpetersäure , und man hatte beim Herunterschlucken das Gefühl , eins mit dem Gummiknüppel über den Hinterkopf zu bekommen .
