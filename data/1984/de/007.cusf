@@ -8,17 +8,17 @@
 6	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
 7	.	.	PUNCT	$.	_	3	punct	_	_
 
-[MESSAGE-INIT] machte (3) # # ähnlich wie "Grimasse schneiden"
+[MESSAGE-INIT] machte (3)
 [x-sender] Frau Parsons (1)
-[target-content] ein hilfloses Gesicht (6)
+[x-noncomp] ein hilfloses Gesicht (6)
 
 [IDENTIFICATION] Frau Parsons (1)
 
 [NONCOMP] Gesicht (6)
 [m-scene] hilfloses (5)
 
-[MEANS-NEG >> QUALITY] hilfloses (5)
-[means >> has-quality] Gesicht (6)
+[MESSAGE >> QUALITY] hilfloses (5)
+[x-sender >> has-quality] Gesicht (6)
 
 # sent_id = 352
 # text = » Freilich , wenn Tom daheim wäre , würde er es im Nu in Ordnung bringen « , meinte sie .
@@ -48,12 +48,12 @@
 [target-content] » Freilich , wenn Tom daheim wäre , würde er es im Nu in Ordnung bringen « , (16)
 [x-sender] sie (20)
 
-[SCENE-INIT] bringen (16) # # "etwas [wieder] in einen brauchbaren, ordentlichen Zustand bringen"
-[m-scene] » Freilich (2) # # "jedoch, allerdings" oder, "besonders süddeutsch: gewiss doch, selbstverständlich"
+[SCENE-INIT] bringen (16)
+[m-scene] » Freilich (2)
 [m-condition] , wenn Tom daheim wäre , (6)
 [x-causer] er (10)
 [participant] es (11) # # [ein kaputtes Rohr]
-[m-time || m-quality] im Nu (13) # # "in kurzer Zeit", "schnell"
+[m-time] im Nu (13)
 [target-scene] in Ordnung (15)
 
 [CONCESSION] Freilich (2)
@@ -68,7 +68,7 @@
 
 [IDENTIFICATION] es (11)
 
-[TIME || QUALITY] Nu (13)
+[TIME] Nu (13)
 
 [STATE] Ordnung (15)
 [has-state] es (11)
@@ -85,18 +85,18 @@
 6	Spaß	Spaß	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	4	obj	_	_
 7	.	.	PUNCT	$.	_	4	punct	_	_
 
-[SCENE-INIT] machen (4)
-[participant] Solche Sachen (3)
+[SCENE-INIT || SCENE] machen (4)
+[x-causer || participant] Solche Sachen (3)
 [participant] ihm (5)
-[target-scene] Spaß (6)
+[target-scene || scene] Spaß (6)
 
 [CLASS] Sachen (3)
 
 [IDENTIFICATION] ihm (5)
 
-[MESSAGE] Spaß (6)
-[x-causer] Solche Sachen (3)
+[MESSAGE || QUALITY] Spaß (6)
 [x-experiencer] ihm (5)
+[has-quality] Solche Sachen (3)
 
 # sent_id = 354
 # text = Er ist so geschickt mit seinen Händen , wirklich , er ist so geschickt , der Tom . «
@@ -162,13 +162,13 @@
 [SOCIAL-RELATION] Kollege (4)
 [social-relation] Parsons (1)
 [has-social-relation] Winstons (3)
-[m-social-relation || m-location] im Wahrheitsministerium (6)
+[x-social-relation || m-location] im Wahrheitsministerium (6)
 
 [IDENTIFICATION] Parsons (1)
 
 [IDENTIFICATION] Winstons (3)
 
-[SOCIAL-RELATION || CLASS] Wahrheitsministerium (6) # "höchste Verwaltungsbehörde eines Landes mit einem bestimmten Aufgabenbereich" oder "Gebäude, in dem sich ein Ministerium befindet"
+[SOCIAL-RELATION || CLASS] Wahrheitsministerium (6) # "Verwaltungsbehörde" oder "Gebäude"
 
 # sent_id = 356
 # text = Er war ein rundlicher , jedoch sehr beweglicher Mann von entwaffnender Dummheit , ein Klotz voll törichter Begeisterung - einer von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing .
@@ -231,7 +231,7 @@
 
 [QUALITY] rundlicher (4)
 
-[QUALITY] beweglicher (8) # "wendig, schnell reagierend"
+[QUALITY] beweglicher (8)
 [m-quantity] sehr (7)
 
 [QUANTITY] sehr (7)
@@ -242,20 +242,20 @@
 [POSSESSION-DEINIT >> QUALITY] entwaffnender (11)
 [x-causer >> has-quality] Dummheit (12)
 
-[CLASS] Klotz (15) # "ein Stück Holz"; "ein Gegenstand aus Holz"
+[CLASS] Klotz (15)
 [m-scene] voll törichter Begeisterung (18)
 
 [MESSAGE] Begeisterung (18)
 [m-scene] törichter (17)
 [x-experiencer] Klotz (15)
 
-[SEQUENCE-NEG >> QUALITY] törichter (17) # # Vgl. sent_id 291
+[SEQUENCE-NEG >> QUALITY] törichter (17)
 [followed >> has-quality] Begeisterung (18)
 
 [PART-WHOLE] einer (20)
 [whole] von diesen ergebenen Gimpeln , die niemals eine Frage stellen und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (24)
 
-[CLASS] Gimpeln (24) # # "umgangssprachlich abwertend: einfältiger, unerfahrener, unbeholfener Mensch" (eigentlich: "(zu den Finken gehörender) Vogel")
+[CLASS] Gimpeln (24)
 [m-scene] ergebenen (23)
 [m-scene] , die niemals eine Frage stellen (30)
 [m-scene] und von denen - mehr sogar noch als von der Gedankenpolizei - der Bestand der Partei abhing (47)
@@ -264,20 +264,18 @@
 [possessed] Gimpeln (24)
 
 [SCENE-INIT] stellen (30)
-[participant] die (26)
+[x-sender] die (26)
 [m-time] niemals (27)
-[target-scene] eine Frage (29)
-[participant] Gimpeln (24)
+[x-noncomp] eine Frage (29)
+[x-sender] Gimpeln (24)
 
 [IDENTIFICATION] die (26)
 
 [TIME-NEG] niemals (27)
 
-[MESSAGE-INIT] Frage (29)
-[x-sender] die (26)
-[x-sender] Gimpeln (24)
+[NONCOMP] Frage (29)
 
-[CONDITION] abhing (47) # # "⟨etw. hängt von etw., einer Sache ab⟩ von etw. maßgeblich, entscheidend beeinflusst, bestimmt oder bedingt werden"
+[CONDITION] abhing (47)
 [condition] von denen (33)
 [m-quantity] - mehr sogar noch als von der Gedankenpolizei - (35)
 [has-condition] der Bestand der Partei (44)
@@ -292,7 +290,7 @@
 
 [MODE] sogar (36)
 
-[QUANTITY] noch (37) # # vor dem Komparativ: "gibt an, dass etw. zu etw. Vorhandenem hinzukommt"
+[QUANTITY] noch (37)
 
 [CLASS] Gedankenpolizei (41)
 
@@ -366,10 +364,10 @@
 
 [TIME] erst (6)
 
-[MESSAGE] ungern (9) # # "mit Widerwillen, freudlos, abgeneigt"
+[MESSAGE] ungern (9)
 [m-quantity] sehr (8)
 [topic] ausgeschieden (13)
-[x-experiencer] er (5) # # manuell hinzugefügt
+[x-experiencer] er (5) # # manuell hinzugefügt, da "ungern" Kontrolladverb
 
 [QUANTITY] sehr (8)
 
@@ -381,7 +379,7 @@
 [x-noncomp] es (26)
 [target-scene] , ein Jahr über das satzungsgemäß festgesetzte Alter hinaus bei den Spähern zu verbleiben (41)
 
-[RANK-CHANGE >> SOCIAL-RELATION-INIT] aufgerückt (21) # # "befördert werden, [im Rang] aufsteigen"
+[RANK-CHANGE >> SOCIAL-RELATION-INIT] aufgerückt (21)
 [has-rank >> has-social-relation] er (17)
 [target-rank >> target-social-relation] in die Jugendliga (20)
 
@@ -411,7 +409,7 @@
 [SEQUENCE] satzungsgemäß (33)
 [follows] festgesetzte (34)
 
-[MESSAGE-INIT >> SOCIAL-RELATION] Spähern (39) # # hier als Verein gemeint, sonst:  "jemand, der etwas auskundschaften soll; Kundschafter", Vgl. sent_id 151 "Spitzel"
+[MESSAGE-INIT >> SOCIAL-RELATION] Spähern (39)
 [x-experiencer >> has-social-relation] er (25)
 
 # sent_id = 358
@@ -466,7 +464,7 @@
 48	unterstand	unterstehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
 49	.	.	PUNCT	$.	_	9	punct	_	_
 
-[MEANS] verwendet (9) # # "(für einen bestimmten Zweck, zur Herstellung, Ausführung o. Ä. von etwas) benutzen, anwenden"
+[MEANS] verwendet (9)
 [m-location >> m-situator] Im Ministerium (2)
 [means] er (4)
 [m-depictive >> purpose] auf einem untergeordneten Posten , für den kein Verstand nötig war (8)
@@ -476,21 +474,21 @@
 [IDENTIFICATION] er (4)
 
 [SOCIAL-RELATION] Posten (8)
-[m-scene] untergeordneten (7) # # "weniger wichtig, zweitrangig"
+[m-scene] untergeordneten (7)
 [m-scene] , für den kein Verstand nötig war (15)
 [has-social-relation] er (4)
 
 [COMPARISON >> RANK] untergeordneten (7)
 [compared >> has-rank] Posten (8)
 
-[MEANS-NECESSITY] nötig (15) # # "für einen bestimmten Zweck unerlässlich, erforderlich"
+[MEANS-NECESSITY] nötig (15)
 [purpose] für den (12)
 [means] kein Verstand (14)
 [purpose] Posten (8)
 
 [IDENTIFICATION] den (12)
 
-[MEANS] Verstand (14) # # "Fähigkeit zu verstehen, Begriffe zu bilden, Schlüsse zu ziehen, zu urteilen, zu denken"
+[CLASS] Verstand (14)
 [m-mode] kein (13)
 
 [MODE] kein (13)
@@ -504,13 +502,13 @@
 
 [IDENTIFICATION] er (20)
 
-[COMPARISON] andererseits (21)
-[compared] Mann (24)
+[CONCESSION] andererseits (21)
+[asserted] Mann (24)
 
-[POSSESSION] führender (23) # # "an der Spitze liegen, an oberster Stelle stehen", "das Geschehen in einem bestimmten Bereich bestimmend; maßgebend"
+[POSSESSION] führender (23)
 [possessor] Mann (24)
 
-[SOCIAL-RELATION] Sportausschuss (26) # # Vgl. "Komitee: gewählte Gruppe von Personen, die eine besondere Aufgabe zu erfüllen hat"
+[SOCIAL-RELATION] Sportausschuss (26)
 
 [SOCIAL-RELATION] Ausschüssen (30)
 [m-scene] anderen (29)
@@ -526,7 +524,7 @@
 
 [IDENTIFICATION] denen (32)
 
-[SCENE-INIT] Organisation (34) # # "organisieren: etwas sorgfältig und systematisch vorbereiten, aufbauen; für einen bestimmten Zweck einheitlich gestalten"
+[SCENE-INIT] Organisation (34)
 [target-scene] von Gemeinschaftswanderungen (36)
 [target-scene] , spontanen Demonstrationen (39)
 [target-scene] , Sparwerbewochen (41)
@@ -534,15 +532,15 @@
 [x-causer] denen (32)
 [x-causer] Ausschüssen (30)
 
-[ACTIVITY] Gemeinschaftswanderungen (36)
+[UNANCHORED-MOTION] Gemeinschaftswanderungen (36)
 
-[SOCIAL-RELATION-INIT || MESSAGE-INIT] Demonstrationen (39) # # "in der Öffentlichkeit stattfindende *Versammlung* mehrerer Personen zum Zwecke der gemeinsamen *Meinungsäußerung*"
+[SOCIAL-RELATION-INIT || MESSAGE-INIT] Demonstrationen (39)
 [m-scene] spontanen (38)
 
-[CAUSATION >> QUALITY] spontanen (38) # # Vgl. "automatisch"
+[CAUSATION >> QUALITY] spontanen (38)
 [result >> has-quality] Demonstrationen (39)
 
-[EVENT] Sparwerbewochen (41)
+[TIME >> EVENT] Sparwerbewochen (41)
 
 [SUBCLASS] Art (45)
 [m-mode] überhaupt (43)
@@ -553,8 +551,8 @@
 [ACTIVITY] Einsatzes (47) # # "Militär, Polizei, Sportspiel: abgegrenzte Aktion zur Erledigung einer Aufgabe"
 [m-scene] freiwilligen (46)
 
-[STATE || SOCIAL-RELATION] freiwilligen (46)
-[has-state || social-relation] Einsatzes (47)
+[SOCIAL-RELATION] freiwilligen (46)
+[social-relation] Einsatzes (47)
 
 # sent_id = 359
 # text = Er erzählte einem voll ruhigen Stolzes , während er seiner Pfeife kleine Rauchwölkchen entlockte , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei .
