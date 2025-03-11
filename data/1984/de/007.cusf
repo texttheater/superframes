@@ -264,16 +264,18 @@
 [possessed] Gimpeln (24)
 
 [SCENE-INIT] stellen (30)
-[x-sender] die (26)
+[participant] die (26)
 [m-time] niemals (27)
-[x-noncomp] eine Frage (29)
-[x-sender] Gimpeln (24)
+[target-scene] eine Frage (29)
+[participant] Gimpeln (24)
 
 [IDENTIFICATION] die (26)
 
 [TIME-NEG] niemals (27)
 
-[NONCOMP] Frage (29)
+[MESSAGE] Frage (29)
+[x-sender] die (26)
+[x-sender] Gimpeln (24)
 
 [CONDITION] abhing (47)
 [condition] von denen (33)
@@ -590,20 +592,20 @@
 [x-sender] Er (1)
 [x-experiencer] einem (3)
 [m-depictive] voll ruhigen Stolzes (4)
-[m-accompanier] , während er seiner Pfeife kleine Rauchwölkchen entlockte (14)
+[m-time >> m-accompanier] , während er seiner Pfeife kleine Rauchwölkchen entlockte (14)
 [target-content] , dass er in den letzten vier Jahren jeden Abend im Gemeinschaftshaus erschienen sei (27)
 
 [IDENTIFICATION] Er (1)
 
 [CLASS] einem (3)
 
-[MESSAGE] Stolzes (6) # # "von Selbstbewusstsein und Freude über einen Besitz, eine [eigene] Leistung erfüllt"
-[m-quality] ruhigen (5)
-[x-experiencer] Er (1)
-
 [LOCATION >> SCENE] voll (4)
 [has-location >> scene] ruhigen Stolzes (6)
 [location >> participant] Er (1)
+
+[MESSAGE] Stolzes (6)
+[m-quality] ruhigen (5)
+[x-experiencer] Er (1)
 
 [QUALITY] ruhigen (5)
 
@@ -636,7 +638,7 @@
 [m-scene] letzten (20)
 [m-quantity] vier (21)
 
-[SEQUENCE] letzten (20) # Vgl. "nächsten" (u.A. sent_id 173)
+[SEQUENCE] letzten (20)
 [followed] Jahren (22)
 
 [QUANTITY] vier (21)
@@ -673,7 +675,7 @@
 24	Zimmer	Zimmer	NOUN	NN	Case=Dat|Gender=Neut|Number=Sing	17	obl	_	_
 25	.	.	PUNCT	$.	_	4	punct	_	_
 
-[UNANCHORED-MOTION] folgte (4) # # Vgl. "chase" im Manual
+[UNANCHORED-MOTION] folgte (4)
 [x-accompanier] Ein durchdringender Schweißgeruch (3)
 [in-motion] ihm (5)
 [m-reference] wie ein unfreiwilliges Zeugnis für die Angestrengtheit seines Lebens (9)
@@ -682,20 +684,20 @@
 [MESSAGE] Schweißgeruch (3)
 [m-scene] durchdringender (2)
 
-[LOCATION-INIT >> QUANTITY] durchdringender (2) # # "aufgrund seiner Stärke, Intensität o. Ä. in alle Teile eines Körpers oder Raumes dringend"
-[has-location >> has-quantity] Schweißgeruch (3)
+[LOCATION-INIT >> QUALITY] durchdringender (2) # # "aufgrund seiner Stärke, Intensität o. Ä. in alle Teile eines Körpers oder Raumes dringend"
+[has-location >> has-quality] Schweißgeruch (3)
 
 [IDENTIFICATION] ihm (5)
 
-[MESSAGE] Zeugnis (9) # # "Beweis"
+[MESSAGE] Zeugnis (9)
 [m-scene] unfreiwilliges (8)
 [topic] für die Angestrengtheit seines Lebens (12)
 
-[CAUSATION >> QUALITY] unfreiwilliges (8) # # "nicht beabsichtigt; aus Versehen geschehend"
+[CAUSATION >> QUALITY] unfreiwilliges (8)
 [result >> has-quality] Zeugnis (9)
 
-[STATE] Angestrengtheit (12) # # "Zustand/Qualität erhöhter Anstrengung oder des Mangels an Gelassenheit, Lockerheit"
-[has-state] seines Lebens (14)
+[STATE >> QUALITY] Angestrengtheit (12) # # "Zustand/Qualität erhöhter Anstrengung oder des Mangels an Gelassenheit, Lockerheit"
+[m-situator >> has-quality] seines Lebens (14)
 
 [EVENT] Lebens (14)
 [undergoer] seines (13)
@@ -760,7 +762,7 @@
 
 [IDENTIFICATION] Winston (2)
 
-[EVENT] machte (4) # # "sich an etw. zu schaffen machen: an etw. herumwerkeln, tischlern, tüfteln", Vgl. "Kim worked on the drawing" im Manual
+[EVENT] machte (4) # # Vgl. "Kim worked on the drawing" im Manual
 [x-noncomp] sich (5)
 [m-means] mit der Schraubenmutter (8)
 [undergoer] am Verbindungsstück (10)
@@ -800,13 +802,11 @@
 [IDENTIFICATION] Frau Parsons (7)
 
 [SCENE-INIT] wurde (10)
-[m-scene] sofort (11) # # "unmittelbar nach einem bestimmten Geschehen", "ohne zeitliche Verzögerung; unverzüglich"
+[m-time] sofort (11)
 [target-scene] unsicher (12)
 [participant] Frau Parsons (8)
 
-[COMPARISON] sofort (11)
-[compared] wurde (10)
-[reference] sagte (6) # # manuell hinzugefügt
+[TIME] sofort (11)
 
 [MESSAGE] unsicher (12)
 [x-experiencer] Frau Parsons (8)
@@ -872,14 +872,14 @@
 
 [ACTIVITY] Schuhgetrampel (3)
 
-[EXCRETION || MESSAGE] Trompetenstoß (7) # # "kurzes, rasches Blasen in eine Trompete"
+[MESSAGE-INIT] Trompetenstoß (7)
 [m-scene] neuen (6)
-[x-means] auf dem Kamm (10) # Vgl. sent_id 343 (x- weil "auf" durch das Prädikat ("auf einem Instrument spielen") vorgegeben ist)
+[x-means] auf dem Kamm (10) # (x-, weil "auf" durch das Prädikat ("auf einem Instrument spielen") vorgegeben ist)
 
 [SEQUENCE] neuen (6)
 [follows] Trompetenstoß (7)
 
-[CLASS] Kamm (10) # # Vermutlich Haarkamm, Vgl. sent_id 343
+[CLASS] Kamm (10)
 
 [LOCATION-INIT] hereinstürmten (17)
 [has-location] die Kinder (14)
@@ -898,12 +898,11 @@
 5	Schraubenschlüssel	Schraubenschlüssel	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	3	obj	_	_
 6	.	.	PUNCT	$.	_	3	punct	_	_
 
-[UNANCHORED-MOTION] brachte (3)
-[in-motion] Frau Parsons (1)
-[x-depictive] den Schraubenschlüssel (5)
+[LOCATION-INIT] brachte (3)
+[x-causer] Frau Parsons (1)
+[has-location] den Schraubenschlüssel (5)
 
 [IDENTIFICATION] Frau Parsons (1)
-[m-possessed] den Schraubenschlüssel (5)
 
 [CLASS] Schraubenschlüssel (5)
 
@@ -945,12 +944,11 @@
 [m-depictive] angeekelt (8)
 [has-location] den Pfropfen menschlicher Haare , der die Röhre verstopft hatte (10)
 [x-causer] Winston (1)
-[initial-location] die Röhre (16)
 
 [MESSAGE] angeekelt (8)
 [x-experiencer] Winston (1)
 
-[PART-WHOLE] Pfropfen (10) # # "Gegenstand zum Verschließen, Abdichten einer Öffnung", Vgl. sent_id 186 "Kranz weißer Haare"
+[PART-WHOLE] Pfropfen (10) # # Vgl. sent_id 186 "Kranz weißer Haare"
 [part] menschlicher Haare (12)
 [m-scene] , der die Röhre verstopft hatte (17)
 
@@ -1004,7 +1002,7 @@
 
 [IDENTIFICATION] seine (3)
 
-[QUALITY] gut (6)
+[QUALITY >> QUANTITY] gut (6)
 [m-quantity] so (5)
 [m-reference] er konnte (8)
 
@@ -1022,7 +1020,7 @@
 
 [LOCATION-INIT] ging (14)
 [target-location] in das andere Zimmer (18)
-[x-reference] zurück (19)
+[target-location] zurück (19)
 [has-location] Er (1)
 
 [CLASS] Zimmer (18)
@@ -1096,13 +1094,12 @@
 34	Holz	Holz	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	33	nmod	_	_
 35	dieselbe	dieselbe	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	36	det	_	_
 36	Geste	Geste	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	37	obj	_	_
-37	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
+37	machte	machen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
 38	.	.	PUNCT	$.	_	14	punct	_	_
 
 [LOCATION-DEINIT] hervorgesprungen (14)
 [has-location] Ein hübscher , robust aussehender Junge von neun Jahren (6)
 [initial-location] hinter dem Tisch (13)
-[m-accompanier] , während seine um etwa zwei Jahre jüngere Schwester mit einem Stück Holz dieselbe Geste machte (37)
 
 [CLASS] Junge (6)
 [m-quality] hübscher , (2)
@@ -1126,10 +1123,10 @@
 
 [CLASS] Tisch (13)
 
-[MESSAGE-INIT || EVENT] bedrohte (16) # # "(jemandem) mit Anwendung von Gewalt drohen"; "jemanden gefährden"
+[MESSAGE-INIT || EVENT] bedrohte (16)
 [x-experiencer || undergoer] ihn (17)
-[m-means] mit seiner automatischen Kinderpistole (21)
-[m-accompanier] , während seine um etwa zwei Jahre jüngere Schwester mit einem Stück Holz dieselbe Geste machte (37)
+[m-accompanier || m-means] mit seiner automatischen Kinderpistole (21)
+[m-time >> m-accompanier] , während seine um etwa zwei Jahre jüngere Schwester mit einem Stück Holz dieselbe Geste machte (37)
 [x-sender || x-causer] Junge (6)
 
 [IDENTIFICATION] ihn (17)
@@ -1171,7 +1168,7 @@
 
 [MESSAGE] Geste (36)
 [x-sender] seine um etwa zwei Jahre jüngere Schwester (30)
-[m-means] mit einem Stück Holz (33)
+[m-accompanier] mit einem Stück Holz (33)
 
 # sent_id = 372
 # text = Beide waren mit den kurzen blauen Hosen , den grauen Hemden und dem roten Halstuch bekleidet , aus denen die Uniform der Späher bestand .
@@ -1198,20 +1195,21 @@
 21	Uniform	Uniform	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	24	nsubj	_	_
 22	der	d	DET	ART	Case=Gen|Definite=Def|Gender=Neut|Number=Plur|PronType=Art	23	det	_	_
 23	Späher	Späher	NOUN	NN	Case=Gen|Gender=Masc|Number=Plur	21	nmod	_	_
-24	bestand	bestehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl	_	_
+24	bestand	bestehen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
 25	.	.	PUNCT	$.	_	16	punct	_	_
 
-[WRAPPING-WEARING-INIT] bekleidet (16)
-[target-wearer] Beide (1)
-[wrapper] mit den kurzen blauen Hosen (7)
+[WRAPPING-WEARING] bekleidet (16)
+[wearer] Beide (1)
+[wrapper] mit den kurzen blauen Hosen , aus denen die Uniform der Späher bestand (7)
 [wrapper] , den grauen Hemden (11)
-[wrapper] und dem roten Halstuch , aus denen die Uniform der Späher bestand (15)
+[wrapper] und dem roten Halstuch (15)
 
-[IDENTIFICATION] Beide (1) # # auch wenn Indefinitpronomen: Entitäten sind bekannt
+[IDENTIFICATION] Beide (1) # # auch wenn Indefinitpronomen: Entitäten sind bekannt, daher IDENTIFICATION
 
 [CLASS] Hosen (7)
 [m-quality] kurzen (5)
 [m-quality] blauen (6)
+[m-scene] , aus denen die Uniform der Späher bestand (24)
 
 [QUALITY] kurzen (5)
 
@@ -1224,7 +1222,6 @@
 
 [CLASS] Halstuch (15)
 [m-quality] roten (14)
-[m-scene] , aus denen die Uniform der Späher bestand (24)
 
 [QUALITY] roten (14)
 
@@ -1293,13 +1290,12 @@
 [PART-WHOLE] Kopf (7)
 
 [MESSAGE] Gefühl (13)
-[m-scene >> m-quality] unbehaglichen (12)
+[m-quality] unbehaglichen (12)
 [x-experiencer] Winston (1)
 
-[SENDING >> QUALITY] unbehaglichen (12) # # "Unbehagen auslösend"
-[sender >> has-quality] Gefühl (13)
+[QUALITY] unbehaglichen (12)
 
-[ACTIVITY] gebärdete (18) # # "reflexiv: sich auf eine bestimmte (außergewöhnliche) Weise verhalten"
+[ACTIVITY] gebärdete (18)
 [is-active] der Junge (17)
 [is-active] sich (19)
 [m-quality] so bösartig (21)
@@ -1359,8 +1355,8 @@
 5	Gedankenverbrecher	Gedankenverbrecher	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 6	!	!	PUNCT	$.	_	5	punct	_	_
 
-[SENDING] Gedankenverbrecher (5)
-[sender] » Sie (2)
+[EVENT] Gedankenverbrecher (5)
+[x-causer] » Sie (2)
 
 [IDENTIFICATION] Sie (2)
 
@@ -1418,7 +1414,7 @@
 
 [IDENTIFICATION] Sie (7)
 
-[LOCATION-CHANGE] verbannen (16) # # "(als Strafe) aus dem Land weisen, an einen entlegenen Ort schicken und zwingen, dort zu bleiben"
+[LOCATION-CHANGE] verbannen (16)
 [x-causer] ich (10)
 [has-location] Sie (12)
 [target-location] in die Salzbergwerke (15)
@@ -1467,9 +1463,9 @@
 [transitory-location] herum (6)
 [m-accompanier] , wobei das kleine Mädchen ihrem Bruder jede Bewegung nachmachte (27)
 
-[QUALITY] Plötzlich (1) # # "unerwartet, von einem Augenblick zum anderen"
+[QUALITY] Plötzlich (1)
 
-[CLASS] beide (3)
+[IDENTIFICATION] beide (3)
 
 [IDENTIFICATION] ihn (5)
 
@@ -1480,7 +1476,7 @@
 
 [SOCIAL-RELATION-DEINIT] Verräter (10)
 
-[SENDING] Gedankenverbrecher (15)
+[EVENT] Gedankenverbrecher (15)
 
 [REPRODUCTION] nachmachte (27)
 [x-causer] das kleine Mädchen (22)
@@ -1494,7 +1490,6 @@
 
 [SOCIAL-RELATION] Bruder (24)
 [has-social-relation] ihrem (23)
-[m-activity] jede Bewegung (26)
 
 [IDENTIFICATION] ihrem (23)
 
@@ -1598,11 +1593,11 @@
 [m-scene] etwas von berechnender Wildheit (3)
 [whole] des Jungen (10)
 
-[PART-WHOLE] etwas (3)
-[whole] von berechnender Wildheit (6)
+[CLASS] etwas (3)
+[m-quality] von berechnender Wildheit (6)
 [m-location >> m-sender] Auge (8)
 
-[STATE] Wildheit (6)
+[STATE >> QUALITY] Wildheit (6)
 [m-scene] berechnender (5)
 
 [MEANS] berechnender (5) # # "stets auf Gewinn, eigenen Vorteil bedacht"
@@ -1642,7 +1637,7 @@
 
 [QUANTITY] beinahe (29)
 
-[QUANTITY] genug (31) # # "in zufriedenstellendem, seinen Zweck erfüllendem Maß", Vgl. sent_id 188 "hinreichend"
+[QUANTITY] genug (31)
 
 [IDENTIFICATION] dazu (32)
 
@@ -1671,20 +1666,21 @@
 [EXPERIENCE] Glück (2) # # Vgl. "fortunately" im Manual
 [experienced] , dass er keine richtige Pistole in Händen hielt (11)
 
-[POSSESSION] hielt (11)
-[possessor] er (5)
-[possessed] keine richtige Pistole (8)
-[x-location] in Händen (10)
+[LOCATION] hielt (11)
+[location] er (5)
+[has-location] keine richtige Pistole (8)
+[x-attribute] in Händen (10)
 
 [IDENTIFICATION] er (5)
 
 [CLASS] Pistole (8)
 [m-mode] keine (6)
-[m-mode] richtige (7)
+[m-scene] richtige (7)
 
 [MODE] keine (6)
 
-[MODE] richtige (7)
+[COMPARISON] richtige (7)
+[compared] Pistole (8)
 
 [PART-WHOLE] Händen (10)
 [whole] er (5)
@@ -1711,7 +1707,7 @@
 
 [UNANCHORED-MOTION] huschten (5)
 [in-motion] Frau Parsons ' Blicke (4)
-[m-depictive] nervös (6)
+[m-quality] nervös (6)
 [transitory-location] von Winston (8)
 [transitory-location] zu den Kindern (11)
 [transitory-location] wieder zurück (14)
@@ -1721,8 +1717,7 @@
 
 [IDENTIFICATION] Frau Parsons (1)
 
-[MESSAGE] nervös (6)
-[topic] Frau Parsons ' Blicke (4)
+[MESSAGE >> QUALITY] nervös (6)
 
 [IDENTIFICATION] Winston (8)
 
@@ -1759,17 +1754,16 @@
 25	.	.	PUNCT	$.	_	7	punct	_	_
 
 [MESSAGE-INIT] bemerkte (7)
-[m-accompanier] In dem besseren Licht des Wohnzimmers (4)
+[m-situator] In dem besseren Licht des Wohnzimmers (4)
 [x-experiencer] er (8)
 [m-depictive] voller Mitleid (10)
 [target-content] , dass es tatsächlich Staub war , was sich in ihren Runzeln eingenistet hatte (15)
 
 [CLASS] Licht (4)
-[m-scene] besseren (3)
+[m-quality] besseren (3)
 [m-location] des Wohnzimmers (6)
 
-[COMPARISON] besseren (3)
-[compared] Licht (4)
+[QUALITY] besseren (3)
 
 [CLASS] Wohnzimmers (6)
 
@@ -1793,7 +1787,7 @@
 [target-location] in ihren Runzeln (22)
 [has-location] Staub (15)
 
-[CLASS] was (18)
+[IDENTIFICATION] was (18)
 
 [IDENTIFICATION] sich (19)
 
@@ -1819,7 +1813,7 @@
 [target-content] » Sie sind so laut « , (5)
 [x-sender] sie (9)
 
-[QUALITY >> MESSAGE] laut (5) # # "weithin hörbar, stark im Ton"
+[QUALITY >> MESSAGE] laut (5)
 [has-quality >> x-sender] Sie (2)
 [m-quantity] so (4)
 
@@ -1870,16 +1864,16 @@
 
 [MESSAGE-INIT] ansehen (14)
 [x-experiencer] sich (11)
-[target-content] das Hängen (13)
+[topic] das Hängen (13)
 [x-experiencer] sie (7)
 
 [IDENTIFICATION] sich (11)
 
 [EVENT] Hängen (13)
 
-[SEQUENCE] kommt (18)
-[followed] daher (17)
-[follows] es (19)
+[CAUSATION] kommt (18)
+[causer] daher (17)
+[result] es (19)
 [m-mode] wohl (20)
 
 [IDENTIFICATION] daher (17)
@@ -1922,22 +1916,21 @@
 [QUANTITY] zu (3)
 
 [LOCATION-DEINIT] hinauszugehen (9)
-[m-accompanier] mit ihnen (8)
+[m-accompanier || m-accompanied] mit ihnen (8)
 [has-location] Ich (1)
 
 [IDENTIFICATION] ihnen (8)
 
 [LOCATION-CHANGE] kommt (13)
 [has-location] Tom (12)
-[m-scene] nicht rechtzeitig (15)
+[m-time] nicht rechtzeitig (15)
 [initial-location] von der Arbeit (18)
 [target-location] heim (19)
 
 [IDENTIFICATION] Tom (12)
 
-[TIME >> COMPARISON] rechtzeitig (15) # # "zum richtigen Zeitpunkt (so, dass es noch früh genug ist)"
+[TIME] rechtzeitig (15)
 [m-mode] nicht (14)
-[has-time >> compared] kommt (13)
 
 [MODE] nicht (14)
 
@@ -2085,8 +2078,8 @@
 [x-experiencer] Winston (22)
 [x-noncomp] ein (23)
 
-[DESTRUCTION] gehängt (18)
-[destroyed] Einige eurasische Gefangene , denen Kriegsverbrechen zur Last gelegt wurden , (3)
+[EVENT >> DESTRUCTION] gehängt (18)
+[undergoer >> destroyed] Einige eurasische Gefangene , denen Kriegsverbrechen zur Last gelegt wurden , (3)
 [m-time] an diesem Abend (15)
 [m-location] im Park (17)
 
@@ -2096,7 +2089,7 @@
 
 [SOCIAL-RELATION] eurasische (2)
 
-[MESSAGE-INIT] gelegt (9) # # "jemanden beschuldigen"
+[MESSAGE-INIT] gelegt (9)
 [topic] denen (5)
 [target-content] Kriegsverbrechen (6)
 [x-noncomp] zur Last (8)
@@ -2132,12 +2125,12 @@
 12	Schauspiel	Schauspiel	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	2	conj	_	_
 13	.	.	PUNCT	$.	_	2	punct	_	_
 
-[EVENT] fand (2)
-[event] Dergleichen (1)
-[m-time] etwa einmal im Monat (4)
+[SCENE >> TIME] fand (2)
+[scene >> has-time] Dergleichen (1)
+[m-time >> time] etwa einmal im Monat (4)
 [x-noncomp] statt (7)
 
-[COMPARISON] Dergleichen (1)
+[IDENTIFICATION >> CLASS] Dergleichen (1)
 
 [TIME] einmal (4)
 [m-mode] etwa (3)
@@ -2147,7 +2140,7 @@
 
 [TIME] Monat (6)
 
-[EVENT] Schauspiel (12)
+[MESSAGE] Schauspiel (12)
 [m-scene] beliebtes (11)
 [x-has-class] Dergleichen (1)
 
@@ -2166,10 +2159,10 @@
 8	werden	werden	AUX	VAINF	VerbForm=Inf	6	aux:pass	_	_
 9	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT] verlangten (2)
-[x-sender] Kinder (1)
+[MESSAGE >> MESSAGE-INIT] verlangten (2)
+[x-experiencer >> x-sender] Kinder (1)
 [m-time] immer (3)
-[target-content] , dazu mitgenommen zu werden (6)
+[topic >> target-content] , dazu mitgenommen zu werden (6)
 
 [CLASS] Kinder (1)
 
@@ -2260,14 +2253,14 @@
 
 [MODE] keine (5)
 
-[TIME] noch (4) # # "hier: bis jetzt [nicht]"
+[TIME] noch (4)
 
 [CLASS] Treppe (9)
 
 [HITTING] traf (23)
 [hit] ihn (13)
 [hitting] etwas (14)
-[m-quantity] mit furchtbarer Wucht (17)
+[m-quality] mit furchtbarer Wucht (17)
 [m-result] höchst schmerzhaft (19)
 [x-attribute] in den Nacken (22)
 
@@ -2275,11 +2268,10 @@
 
 [CLASS] etwas (14)
 
-[QUANTITY] Wucht (17) # # "Heftigkeit"
-[m-scene] furchtbarer (16)
+[QUALITY] Wucht (17)
+[m-quality] furchtbarer (16)
 
-[MESSAGE-INIT >> QUALITY] furchtbarer (16) # # "bange Beklemmung, Abscheu, Entsetzen, ... *erregend*"
-[x-causer >> has-quality] Wucht (17)
+[QUALITY] furchtbarer (16)
 
 [MESSAGE] schmerzhaft (19)
 [m-quantity] höchst (18)
@@ -2306,21 +2298,20 @@
 13	worden	werden	AUX	VAPP	Verbform=Part	12	aux:pass	_	_
 14	.	.	PUNCT	$.	_	2	punct	_	_
 
-[COMPARISON >> MESSAGE] war (2) # # "Vgl. sent_id 260
+[COMPARISON >> MESSAGE] war (2)
 [reference >> content] , als sei ihm ein rotglühender Draht ins Fleisch gestoßen worden (12)
 
 [HITTING] gestoßen (12)
-[hitting] ihm (6)
+[hit] ihm (6)
 [hitting] ein rotglühender Draht (9)
 [x-attribute] ins Fleisch (11)
 
 [IDENTIFICATION] ihm (6)
 
 [CLASS] Draht (9)
-[m-scene] rotglühender (8)
+[m-state] rotglühender (8)
 
-[STATE-INIT] rotglühender (8) # # "rot vor Hitze leuchten"
-[has-state] Draht (9)
+[STATE] rotglühender (8)
 
 [PART-WHOLE] Fleisch (11)
 [whole] ihm (6)
@@ -2359,12 +2350,12 @@
 [LOCATION-CHANGE] fuhr (2)
 [has-location] Er (1)
 [m-time] gerade noch rechtzeitig (5)
-[x-noncomp] herum (6)
-[m-result] , um zu sehen , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (10)
+[m-noncomp] herum (6)
+[m-purpose] , um zu sehen , wie Frau Parsons ihren Sohn durch die Wohnungstür hineinzerrte , während der Junge eine Schleuder einsteckte (10)
 
 [IDENTIFICATION] Er (1)
 
-[TIME] rechtzeitig (5) # # Vgl. sen_id 188 "hinreichend"
+[TIME] rechtzeitig (5)
 [m-quantity] gerade noch (4)
 [has-time] fuhr (2)
 
@@ -2392,9 +2383,9 @@
 
 [CLASS] Wohnungstür (19)
 
-[LOCATION-INIT >> POSSESSION-INIT] einsteckte (27)
-[x-causer >> target-possessor] der Junge (24)
-[has-location >> possessed] eine Schleuder (26)
+[LOCATION-INIT] einsteckte (27)
+[x-causer] der Junge (24)
+[has-location] eine Schleuder (26)
 
 [CLASS] Junge (24)
 
@@ -2426,7 +2417,7 @@
 [x-experiencer] ihm (6)
 [x-sender] der Junge (8)
 [x-noncomp] nach (9)
-[m-accompanier] , während sich die Tür hinter ihm schloss (17)
+[m-time >> m-accompanier] , während sich die Tür hinter ihm schloss (17)
 
 [IDENTIFICATION] Goldstein (2)
 
@@ -2435,7 +2426,7 @@
 [CLASS] Junge (8)
 
 [STATE-CHANGE] schloss (17)
-[x-causer >> has-state] sich (12)
+[has-state] sich (12)
 [has-state] die Tür (14)
 [m-location] hinter ihm (16)
 
@@ -2465,7 +2456,7 @@
 16	.	.	PUNCT	$.	_	9	punct	_	_
 
 [MESSAGE] Ausdruck (9)
-[x-result] Was Winston am betroffensten machte , (5)
+[m-reaction] Was Winston am betroffensten machte , (5)
 [content] hilfloser Angst (11)
 [x-sender] im Antlitz der Frau (13)
 
@@ -2478,16 +2469,15 @@
 
 [IDENTIFICATION] Winston (2)
 
-[MESSAGE] betroffensten (4) # # "durch etwas (Negatives, Trauriges) verwirrt, innerlich bewegt, berührt"
+[MESSAGE] betroffensten (4)
 [x-experiencer] Winston (2)
 
 [MESSAGE] Angst (11)
-[m-scene] hilfloser (10)
+[m-quality] hilfloser (10)
 
-[MEANS-NEG >> QUALITY] hilfloser (10)
-[purpose >> has-quality] Angst (11)
+[QUALITY] hilfloser (10)
 
-[PART-WHOLE] Antlitz (13) # # "Gesicht"
+[PART-WHOLE] Antlitz (13)
 [whole] der Frau (15)
 
 [CLASS] Frau (15)
@@ -2530,7 +2520,7 @@
 [IDENTIFICATION] er (2)
 
 [CLASS] Wohnung (5)
-[m-possessor] seine (4)
+[m-possessor || m-theme] seine (4)
 
 [IDENTIFICATION] seine (4)
 
@@ -2540,7 +2530,7 @@
 
 [CLASS] Televisor (14)
 
-[LOCATION-CHANGE] setzte (16)
+[LOCATION-INIT] setzte (16)
 [has-location] sich (17)
 [m-scene] wieder (18)
 [target-location] an den Tisch (21)
