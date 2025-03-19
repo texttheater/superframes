@@ -69,14 +69,14 @@
 [CLASS] Tag (7)
 [x-identified] Es (1)
 [m-quality] klarer (4)
-[m-state] , kalter (6)
+[m-state || m-quality] , kalter (6)
 [m-time] im April (9)
 
 [IDENTIFICATION] Es (1)
 
 [QUALITY] klarer (4)
 
-[STATE] kalter (6)
+[STATE || QUALITY] kalter (6)
 
 [TIME] April (9)
 
@@ -92,7 +92,7 @@
 
 [TIME] gerade (15)
 
-[STATE] gepresst (27)
+[STATE-INIT] gepresst (27)
 [has-state] , das Kinn an die Brust (23)
 
 [IDENTIFICATION] Winston Smith (19)
@@ -111,7 +111,7 @@
 [transitory-location] durch die Glastüren eines der Häuser des Victory-Blocks (39)
 [m-quality] auch nicht rasch genug , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (50)
 
-[SCENE-PREVENTION] entgehen (34)
+[SCENE-INIT-NEG] entgehen (34)
 [target-scene] dem rauhen Wind (32)
 
 [CLASS] Wind (32)
@@ -124,21 +124,22 @@
 [CLASS] Glastüren (39)
 [m-whole] eines der Häuser des Victory-Blocks (40)
 
-[PART-WHOLE] eines (40)
-[whole] der Häuser des Victory-Blocks (42)
+[QUANTITY >> PART-WHOLE] eines (40)
+[has-quantity >> whole] der Häuser des Victory-Blocks (42)
 
 [CLASS] Häuser (42)
-[m-location] des Victory-Blocks (44)
+[m-whole] des Victory-Blocks (44)
 
 [IDENTIFICATION] Victory-Blocks (44)
 
 [QUALITY] rasch (50)
-[m-mode] auch (48)
+[m-scene] auch (48)
 [m-mode] nicht (49)
 [m-quantity] genug (51)
 [m-result] , als dass nicht zugleich mit ihm ein Wirbel griesigen Staubs eingedrungen wäre (63)
 
-[MODE] auch (48)
+[ACCOMPANIMENT >> CONCESSION] auch (48)
+[accompanier >> conceded] rasch (50)
 
 [MODE] nicht (49)
 
@@ -184,14 +185,15 @@
 [x-reference] nach gekochtem Kohl (7)
 [x-reference] und feuchten Fußmatten (10)
 
-[LOCATION] Flur (2)
+[CLASS] Flur (2)
 
 [IDENTIFICATION || NONCOMP] es (4)
 
 [CLASS] Kohl (7)
-[m-quality] gekochtem (6)
+[m-scene] gekochtem (6)
 
-[TRANSFORMATION-CREATION] gekochtem (6)
+[STATE-CHANGE] gekochtem (6)
+[has-state] Kohl (7)
 
 [CLASS] Fußmatten (10)
 [m-state] feuchten (9)
@@ -225,11 +227,11 @@
 23	befestigt	befestigen	VERB	VVPP	Verbform=Part	0	root	_	_
 24	.	.	PUNCT	$.	_	23	punct	_	_
 
-[STATE] befestigt (23)
+[ADORNMENT-TARNISHMENT] befestigt (23)
 [m-location] An der Rückwand (3)
-[has-state] ein grellfarbiges Plakat , das für einen Innenraum eigentlich zu groß war , (7)
+[ornament] ein grellfarbiges Plakat , das für einen Innenraum eigentlich zu groß war , (7)
 [m-means] mit Reißnägeln (19)
-[m-location] an der Wand (22)
+[surface] an der Wand (22)
 
 [CLASS] Rückwand (3)
 
@@ -271,11 +273,11 @@
 9	als	als	CCONJ	KOKOM	_	11	case	_	_
 10	einem	ein	DET	ART	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	nummod	_	_
 11	Meter	Meter	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	12	nmod	_	_
-12	Breite	Breite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	appos	_	_
+12	Breite	Breite	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	6	nmod	_	_
 13	dar	dar	ADP	PTKVZ	_	2	compound:prt	_	_
 14	:	:	PUNCT	$.	_	16	punct	_	_
 15	das	d	DET	ART	Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	16	det	_	_
-16	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	6	appos	_	_
+16	Gesicht	Gesicht	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	6	parataxis	_	_
 17	eines	ein	DET	ART	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	Mannes	Mann	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	_
 19	von	von	ADP	APPR	_	22	case	_	_
@@ -296,18 +298,19 @@
 34	Zügen	Zug	NOUN	NN	Case=Dat|Gender=Masc|Number=Plur	27	conj	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT] stellte (2)
+[MESSAGE] stellte (2)
 [x-sender] Es (1)
 [m-mode] nur (3)
-[target-content] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
+[topic] ein riesiges Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
 [m-noncomp] dar (13)
 
 [IDENTIFICATION] Es (1)
 
 [MODE] nur (3)
 
-[PART-WHOLE] Gesicht von mehr als einem Meter Breite : das Gesicht eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (6)
+[PART-WHOLE] Gesicht (6)
 [m-quantity] riesiges (5)
+[m-quality] von mehr als einem Meter Breite (12)
 
 [QUANTITY] riesiges (5)
 
@@ -321,17 +324,16 @@
 
 [QUALITY] Breite (12)
 [m-quantity] mehr als einem Meter (11)
-[has-quality] Gesicht (6)
 
 [PART-WHOLE] Gesicht (16)
 [whole] eines Mannes von etwa fünfundvierzig Jahren , mit dickem schwarzen Schnauzbart und ansprechenden , wenn auch derben Zügen (18)
 
 [CLASS] Mannes (18)
-[m-quality] von etwa fünfundvierzig Jahren (22)
+[m-state] von etwa fünfundvierzig Jahren (22)
 [m-part] , mit dickem schwarzen Schnauzbart (27)
 [m-part] und ansprechenden , wenn auch derben Zügen (34)
 
-[TIME] Jahren (22)
+[TIME >> STATE] Jahren (22)
 [m-quantity] etwa fünfundvierzig (21)
 
 [QUANTITY] fünfundvierzig (21)
@@ -355,9 +357,10 @@
 [x-sender >> has-quality] Zügen (34)
 
 [QUALITY] derben (33)
-[m-mode] auch (32)
+[m-scene] auch (32)
 
-[MODE] auch (32)
+[ACCOMPANIMENT >> CONCESSION] auch (32)
+[accompanier >> conceded] derben (33)
 
 # sent_id = 5
 # text = Winston ging die Treppe hinauf .
@@ -368,7 +371,7 @@
 5	hinauf	hinauf	ADP	PTKVZ	_	2	compound:prt	_	_
 6	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-CHANGE] ging (2)
+[LOCATION-INIT] ging (2)
 [has-location] Winston (1)
 [transitory-location] die Treppe (4)
 [target-location] hinauf (5)
@@ -438,9 +441,9 @@
 21	abgestellt	abstellen	VERB	VVPP	Verbform=Part	8	conj	_	_
 22	.	.	PUNCT	$.	_	8	punct	_	_
 
-[SITUATION] funktionierte (8)
+[STATE] funktionierte (8)
 [m-time] Sogar zu den günstigsten Stunden des Tages (5)
-[theme] er (9)
+[has-state] er (9)
 [m-quantity] nur selten (11)
 
 [TIME] Stunden (5)
@@ -461,19 +464,19 @@
 
 [MODE] nur (10)
 
-[SITUATION-DEINIT] abgestellt (21)
+[STATE-DEINIT] abgestellt (21)
 [m-time] zur Zeit (15)
 [m-time] tagsüber (17)
-[theme] der elektrische Strom (20)
+[has-state] der elektrische Strom (20)
 
 [TIME] Zeit (15)
 
 [TIME] tagsüber (17)
 
 [CLASS] Strom (20)
-[m-quality] elektrische (19)
+[m-quality >> m-noncomp] elektrische (19)
 
-[QUALITY] elektrische (19)
+[QUALITY >> NONCOMP] elektrische (19)
 
 # sent_id = 8
 # text = Das gehörte zu den wirtschaftlichen Maßnahmen der in Vorbereitung befindlichen Hass-Woche .
@@ -642,9 +645,9 @@
 [topic] mit dem riesigen Gesicht (14)
 
 [PART-WHOLE] Gesicht (14)
-[m-quality] riesigen (13)
+[m-quantity] riesigen (13)
 
-[QUALITY] riesigen (13)
+[QUANTITY] riesigen (13)
 
 # sent_id = 11
 # text = Es gehörte zu den Bildnissen , die so gemalt sind , dass einen die Augen überallhin verfolgen .
@@ -686,7 +689,7 @@
 
 [MODE] so (8)
 
-[LOCATION-INIT >> MESSAGE] verfolgen (17)
+[LOCATION-INIT >> MESSAGE-INIT] verfolgen (17)
 [has-location >> topic] einen (13)
 [x-accompanier >> x-experiencer] die Augen (15)
 [target-location >> x-location] überallhin (16)
@@ -717,7 +720,7 @@
 [MESSAGE] lautete (10)
 [content] » Der Große Bruder sieht dich an ! « (5)
 [x-sender] die Schlagzeile (12)
-[x-location] darunter (13)
+[m-location] darunter (13)
 
 [MESSAGE-INIT] sieht (5)
 [x-experiencer] Der Große Bruder (4)
@@ -752,10 +755,10 @@
 13	Roheisenproduktion	Roheisenproduktion	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	10	nmod	_	_
 14	.	.	PUNCT	$.	_	5	punct	_	_
 
-[MESSAGE] verlas (5)
+[MESSAGE-INIT] verlas (5)
 [m-location] Drinnen in der Wohnung (1)
 [x-sender] eine klangvolle Stimme (8)
-[content] eine Zahlenstatistik über die Roheisenproduktion (10)
+[target-content] eine Zahlenstatistik über die Roheisenproduktion (10)
 
 [LOCATION] Drinnen (1)
 [m-location] in der Wohnung (4)
@@ -797,9 +800,9 @@
 21	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
 22	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-DEINIT] kam (3)
-[has-location] Die Stimme (2)
-[initial-location] aus einer länglichen Metallplatte , die einem stumpfen Spiegel ähnelte und rechter Hand in die Wand eingelassen war (7)
+[LOCATION-DEINIT >> SENDING] kam (3)
+[has-location >> sent] Die Stimme (2)
+[initial-location >> sender] aus einer länglichen Metallplatte , die einem stumpfen Spiegel ähnelte und rechter Hand in die Wand eingelassen war (7)
 
 [MESSAGE] Stimme (2)
 
@@ -827,7 +830,7 @@
 [target-location] in die Wand (19)
 [has-location] Metallplatte (7)
 
-[CLASS] Hand (16)
+[PART-WHOLE] Hand (16)
 [m-location || m-quality] rechter (15)
 
 [LOCATION || QUALITY] rechter (15)
@@ -885,12 +888,13 @@
 [has-state] die Stimme (9)
 
 [SCENE-CONTINUATION] blieb (22)
-[m-mode] auch (16)
+[m-scene] auch (16)
 [participant] der Wortlaut (18)
 [m-mode] noch (19)
 [initial-scene] zu verstehen (21)
 
-[MODE] auch (16)
+[ACCOMPANIMENT >> CONCESSION] auch (16)
+[accompanier >> conceded] blieb (22)
 
 [MESSAGE] Wortlaut (18)
 
@@ -949,8 +953,8 @@
 
 [MODE] keine (17)
 
-[SITUATION-DEINIT] abzustellen (22)
-[theme] ihn (20)
+[STATE-DEINIT] abzustellen (22)
+[has-state] ihn (20)
 [m-quantity] völlig (21)
 
 [IDENTIFICATION] ihn (20)
@@ -992,11 +996,11 @@
 [CLASS] Fenster (4)
 
 [CLASS] Gestalt (10)
-[m-state] abgezehrte (7)
+[m-quality] abgezehrte (7)
 [m-quality] , gebrechliche (9)
 [m-scene] , deren Magerkeit durch den blauen Trainingsanzug der Parteiuniform noch betont wurde (21)
 
-[STATE] abgezehrte (7)
+[QUALITY] abgezehrte (7)
 
 [QUALITY] gebrechliche (9)
 
@@ -1006,9 +1010,9 @@
 [m-mode] noch (20)
 [topic] Gestalt (10)
 
-[STATE] Magerkeit (13)
-[has-state] deren (12)
-[has-state] Gestalt (10)
+[QUALITY] Magerkeit (13)
+[has-quality] deren (12)
+[has-quality] Gestalt (10)
 
 [IDENTIFICATION] deren (12)
 
@@ -1075,7 +1079,7 @@
 
 [IDENTIFICATION] sein (7)
 
-[QUALITY] unnatürlich (9)
+[QUALITY-NEG >> QUALITY] unnatürlich (9)
 
 [STATE] rauh (14)
 [has-state] seine Haut (13)
@@ -1126,7 +1130,7 @@
 
 [MESSAGE] sah (4)
 [topic] Die Welt draußen (2)
-[m-conceded] selbst (5)
+[m-mode] selbst (5)
 [x-sender] durch die geschlossenen Fenster (9)
 [content] kalt (10)
 [m-noncomp] aus (11)
@@ -1143,8 +1147,8 @@
 
 [STATE] geschlossenen (8)
 
-[STATE] kalt (10)
-[has-state] Die Welt draußen (2)
+[STATE || QUALITY] kalt (10)
+[has-state || has-quality] Die Welt draußen (2)
 
 # sent_id = 20
 # text = Unten auf der Straße wirbelten schwache Windstöße Staub und Papierfetzen in Spiralen hoch , und obwohl die Sonne strahlte und der Himmel leuchtend blau war , schien doch alles farblos , außer den überall angebrachten Plakaten .
@@ -1159,7 +1163,7 @@
 9	und	und	CCONJ	KON	_	10	cc	_	_
 10	Papierfetzen	Papierfetzen	NOUN	NN	Case=Acc|Gender=Masc|Number=Sing	8	conj	_	_
 11	in	in	ADP	APPR	_	12	case	_	_
-12	Spiralen	Spirale	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	5	nmod	_	_
+12	Spiralen	Spirale	NOUN	NN	Case=Dat|Gender=Fem|Number=Plur	5	obl	_	_
 13	hoch	hoch	ADP	PTKVZ	_	5	xcomp	_	_
 14	,	,	PUNCT	$,	_	27	punct	_	_
 15	und	und	CCONJ	KON	_	27	cc	_	_
@@ -1201,17 +1205,16 @@
 
 [CLASS || LOCATION] Straße (4)
 
-[SITUATION-CHANGE] Windstöße (7)
-[m-state] schwache (6)
-[m-part] Staub und Papierfetzen (8)
+[EVENT] Windstöße (7)
+[m-quality] schwache (6)
 
-[STATE] schwache (6)
+[QUALITY] schwache (6)
 
 [CLASS] Staub (8)
 
 [CLASS] Papierfetzen (10)
 
-[LOCATION-CHANGE] Spiralen (12)
+[CLASS >> UNANCHORED-MOTION] Spiralen (12)
 
 [LOCATION] hoch (13)
 
@@ -1242,10 +1245,11 @@
 [has-quality] alles (29)
 
 [MESSAGE] Plakaten (36)
-[m-location] überall angebrachten (35)
+[m-scene] überall angebrachten (35)
 
 [LOCATION-INIT] angebrachten (35)
 [target-location] überall (34)
+[has-location] Plakaten (36)
 
 [LOCATION] überall (34)
 
@@ -1267,8 +1271,8 @@
 
 [MESSAGE] blickte (7)
 [x-experiencer >> topic] Das Gesicht mit dem schwarzen Schnurrbart (2)
-[x-location] von jeder beherrschenden Ecke (11)
-[x-location] herunter (12)
+[x-initial-location >> x-location] von jeder beherrschenden Ecke (11)
+[m-target-location >> m-location] herunter (12)
 
 [PART-WHOLE] Gesicht (2)
 [m-part] mit dem schwarzen Schnurrbart (6)
@@ -1279,9 +1283,10 @@
 [QUALITY] schwarzen (5)
 
 [CLASS] Ecke (11)
-[m-quality] beherrschenden (10)
+[m-scene] beherrschenden (10)
 
-[QUALITY] beherrschenden (10)
+[POSSESSION] beherrschenden (10)
+[possessed] Ecke (11)
 
 # sent_id = 22
 # text = Ein Plakat klebte an der unmittelbar gegenüberliegenden Hausfront .
@@ -1364,7 +1369,7 @@
 
 [LOCATION-INIT >> MESSAGE] bohrten (20)
 [x-causer >> x-experiencer] die dunklen Augen (19)
-[has-location >> x-noncomp] sich (21)
+[has-location >> x-experiencer] sich (21)
 [m-quantity >> m-quality] tief (22)
 [target-location >> topic] in Winstons Blick (25)
 
@@ -1373,12 +1378,12 @@
 
 [QUALITY] dunklen (18)
 
-[NONCOMP] sich (21)
+[IDENTIFICATION] sich (21)
 
-[QUALITY] tief (22)
+[QUANTITY >> QUALITY] tief (22)
 
 [MESSAGE] Blick (25)
-[x-sender] Winstons (24)
+[x-experiencer] Winstons (24)
 
 [IDENTIFICATION] Winstons (24)
 
@@ -1428,8 +1433,8 @@
 [m-scene] anderes , (6)
 [m-scene] an einer Ecke eingerissenes (11)
 
-[COMPARISON] anderes (6)
-[compared] Plakat (12)
+[SEQUENCE || COMPARISON] anderes (6)
+[follows || compared] Plakat (12)
 
 [QUALITY] eingerissenes (11)
 [m-location] an einer Ecke (10)
@@ -1499,7 +1504,7 @@
 25	ab	ab	ADP	PTKVZ	_	19	compound:prt	_	_
 26	.	.	PUNCT	$.	_	4	punct	_	_
 
-[LOCATION-CHANGE] glitt (4)
+[LOCATION-INIT] glitt (4)
 [m-location] In der Ferne (3)
 [has-location] ein Helikopter (6)
 [transitory-location] zwischen den Dächern (9)
@@ -1522,16 +1527,16 @@
 [LOCATION-DEINIT] strich (19)
 [m-time] dann (20)
 [m-means] in einem Bogen (23)
-[m-time] wieder (24)
+[m-scene] wieder (24)
 [m-noncomp] ab (25)
 
 [TIME] dann (20)
 
-[UNANCHORED-MOTION] Bogen (23)
+[CLASS >> UNANCHORED-MOTION] Bogen (23)
+[in-motion] Helikopter (6)
 
-[TIME] wieder (24)
-
-[NONCOMP] ab (25)
+[SEQUENCE] wieder (24)
+[follows] strich (19)
 
 # sent_id = 26
 # text = Es war die Polizeistreife , die den Leuten in die Fenster schaute .
@@ -1637,10 +1642,10 @@
 27	Dreijahresplans	Dreijahresplan	NOUN	NN	Case=Gen|Gender=Masc|Number=Sing	24	nmod	_	_
 28	.	.	PUNCT	$.	_	4	punct	_	_
 
-[MESSAGE] schwatzte (4)
+[MESSAGE-INIT] schwatzte (4)
 [m-location] Hinter Winstons Rücken (3)
 [x-sender] die leise Stimme aus dem Televisor (7)
-[m-time] noch immer (12)
+[m-scene] noch immer (12)
 [topic] von Roheisen (14)
 [topic] und von der weit über das gesteckte Ziel hinausgehenden Erfüllung des neunten Dreijahresplans (24)
 
@@ -1657,8 +1662,9 @@
 
 [CLASS] Televisor (10)
 
-[TIME] immer (12)
+[SCENE-CONTINUATION] immer (12)
 [m-mode] noch (11)
+[initial-scene] schwatzte (4)
 
 [MODE] noch (11)
 
@@ -2099,14 +2105,14 @@
 
 [STATE] Dunkelheit (32)
 
-[UNANCHORED-MOTION] Bewegung (35)
+[ACTIVITY] Bewegung (35)
 
 # sent_id = 38
 # text = Winston richtete es so ein , dass er dem Televisor den Rücken zuwandte .
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	_
 2	richtete	richten	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	es	es	PRON	PPER	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
-4	so	so	ADV	ADV	_	13	advmod	_	_
+4	so	so	ADV	ADV	_	2	advmod	_	_
 5	ein	ein	ADP	PTKVZ	_	2	compound:prt	_	_
 6	,	,	PUNCT	$,	_	13	punct	_	_
 7	dass	dass	SCONJ	KOUS	_	13	mark	_	_
@@ -2121,17 +2127,17 @@
 [STATE-INIT] richtete (2)
 [x-causer] Winston (1)
 [has-state] es (3)
+[m-quality] so (4)
 [m-noncomp] ein (5)
-[target-state] so , dass er dem Televisor den Rücken zuwandte (13)
+[target-state] , dass er dem Televisor den Rücken zuwandte (13)
 
 [IDENTIFICATION] Winston (1)
 
 [IDENTIFICATION] es (3)
 
-[IDENTIFICATION] so (4)
+[QUALITY] so (4)
 
 [LOCATION] zuwandte (13)
-[m-causer] so (4)
 [has-location] er (8)
 [location] dem Televisor (10)
 [x-attribute] den Rücken (12)
@@ -2231,8 +2237,8 @@
 
 [SOCIAL-RELATION] Wahrheitsministerium , seine Arbeitsstätte (6)
 
-[LOCATION] Arbeitsstätte (9)
-[has-location] seine (8)
+[SOCIAL-RELATION] Arbeitsstätte (9)
+[has-social-relation] seine (8)
 
 [IDENTIFICATION] seine (8)
 
@@ -2242,8 +2248,8 @@
 [QUALITY] weiß (13)
 [has-quality] das Wahrheitsministerium , seine Arbeitsstätte (6)
 
-[LOCATION] Landschaft (17)
-[m-location] düsteren (16)
+[CLASS] Landschaft (17)
+[m-quality] düsteren (16)
 
 [QUALITY] düsteren (16)
 
@@ -2304,7 +2310,7 @@
 [social-relation || whole] des Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
 [has-social-relation || part] London (13)
 
-[LOCATION] Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
+[CLASS] Luftstützpunkts Nr. l , der am drittstärksten bevölkerten Provinz Ozeaniens (18)
 
 [RANK] Nr. l (19)
 
@@ -2364,8 +2370,8 @@
 
 [TIME] immer (10)
 
-[STATE] so (11)
-[has-state] London (9)
+[QUALITY] so (11)
+[has-quality] London (9)
 
 # sent_id = 43
 # text = Hatten da immer diese langen Reihen heruntergekommen aussehender Häuser aus dem neunzehnten Jahrhundert gestanden , deren Mauern mit Balken gestützt , deren Fenster mit Pappendeckel verschalt und deren Dächer mit Wellblech gedeckt waren , während ihre schiefen Gartenmauern kreuz und quer in den Boden sackten ?
@@ -2451,7 +2457,7 @@
 [STATE-INIT] gestützt (20)
 [has-state] deren Mauern (17)
 [x-means] mit Balken (19)
-[m-whole] Häuser (9)
+[m-whole || has-state] Häuser (9)
 
 [CLASS] Mauern (17)
 [m-whole] deren (16)
@@ -2550,7 +2556,7 @@
 42	aussahen	aussehen	VERB	VVFIN	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	33	acl	_	_
 43	?	?	PUNCT	$.	_	4	punct	_	_
 
-[DESTRUCTION] Ruinen (4)
+[CLASS] Ruinen (4)
 [m-quality] zerbombten (3)
 [m-location] , wo der Pflasterstaub in der Luft wirbelte (12)
 [m-location] und Unkrautgestrüpp auf den Trümmern wucherte (18)
@@ -2574,16 +2580,16 @@
 
 [CLASS] Unkrautgestrüpp (14)
 
-[DESTRUCTION] Trümmern (17)
+[CLASS] Trümmern (17)
 
 [CLASS] Stellen (22)
 [m-scene] , wo Bombeneinschläge eine größere Lücke gerissen hatten (29)
 [m-scene] und trostlose Siedlungen von Holzbaracken entstanden waren , die wie Hühnerställe aussahen (36)
 
-[TRANSFORMATION-CREATION] gerissen (29)
+[SCENE-CHANGE] gerissen (29) # nicht TRANSFORMATION-CREATION, weil scene-entity
 [m-location] wo (24)
 [x-causer] Bombeneinschläge (25)
-[created] eine größere Lücke (28)
+[target-scene] eine größere Lücke (28)
 [m-location] Stellen (22)
 
 [LOCATION] wo (24)
@@ -2595,9 +2601,9 @@
 
 [QUALITY] größere (27)
 
-[EXISTENCE-INIT] entstanden (36)
-[target-exists] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
-[material || initial-exists] Stellen (22)
+[SCENE-INIT] entstanden (36)
+[target-scene] trostlose Siedlungen von Holzbaracken , die wie Hühnerställe aussahen (33)
+[m-location] Stellen (22)
 
 [CLASS || PART-WHOLE] Siedlungen (33)
 [m-quality] trostlose (32)
@@ -2610,13 +2616,12 @@
 
 [MESSAGE] aussahen (42)
 [topic] die (39)
-[content] wie Hühnerställe (41)
+[x-reference] wie Hühnerställe (41)
 [topic] Siedlungen (33)
 
 [IDENTIFICATION] die (39)
 
 [CLASS] Hühnerställe (41)
-[has-class] die (39)
 
 # sent_id = 45
 # text = Aber es führte zu nichts , er konnte sich nicht erinnern ; von seiner Kindheit hatte er nichts nachbehalten als eine Reihe greller Bilder ohne Hintergrund , die ihm zumeist unverständlich waren .
@@ -2660,7 +2665,7 @@
 
 [IDENTIFICATION] es (2)
 
-[CLASS] nichts (5)
+[CLASS-NEG] nichts (5)
 
 [MESSAGE-INIT] erinnern (11)
 [x-experiencer] er (7)
@@ -2687,8 +2692,8 @@
 
 [IDENTIFICATION] er (17)
 
-[MODE] nichts (18)
-[has-mode] von seiner Kindheit (15)
+[CLASS-NEG] nichts (18)
+[m-whole] von seiner Kindheit (15)
 
 [PART-WHOLE] Reihe (22)
 [part] greller Bilder ohne Hintergrund (24)
@@ -2696,11 +2701,11 @@
 
 [MESSAGE] Bilder (24)
 [m-quality] greller (23)
-[m-quality] ohne Hintergrund (26)
+[m-part || m-location] ohne Hintergrund (26)
 
 [QUALITY] greller (23)
 
-[PART-WHOLE || LOCATION] Hintergrund (26)
+[LOCATION] Hintergrund (26)
 
 [MESSAGE] unverständlich (31)
 [topic] die (28)
@@ -2840,7 +2845,7 @@
 
 [LOCATION-INIT] reckte (20)
 [has-location] der (11)
-[m-noncomp] sich (12)
+[has-location] sich (12)
 [m-quality] terrassenförmig (13)
 [target-location] dreihundert Meter hoch (16)
 [target-location] in die Luft (19)
@@ -2848,7 +2853,7 @@
 
 [IDENTIFICATION] der (11)
 
-[NONCOMP] sich (12)
+[IDENTIFICATION] sich (12)
 
 [QUALITY] terrassenförmig (13)
 
