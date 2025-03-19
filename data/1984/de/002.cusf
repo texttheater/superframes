@@ -46,12 +46,12 @@
 
 [LOCATION-INIT] lehnte (2)
 [x-causer >> has-location] Er (1)
-[has-location >> x-noncomp] sich (3)
+[has-location] sich (3)
 [target-location] zurück (4)
 
 [IDENTIFICATION] Er (1)
 
-[IDENTIFICATION >> NONCOMP] sich (3)
+[IDENTIFICATION] sich (3)
 
 # sent_id = 104
 # text = Ein Gefühl völliger Hilflosigkeit hatte sich seiner bemächtigt .
@@ -65,7 +65,7 @@
 8	bemächtigt	bemächtigen	VERB	VVPP	Verbform=Part	0	root	_	_
 9	.	.	PUNCT	$.	_	8	punct	_	_
 
-[SCENE-INIT] bemächtigt (8)
+[SCENE-INIT] bemächtigt (8) # ⟨etw.bemächtigt sich jmds.⟩ etw. ergreift, überfällt jmdn.
 [target-scene] Ein Gefühl völliger Hilflosigkeit (2)
 [x-noncomp] sich (6)
 [participant] seiner (7)
@@ -98,54 +98,53 @@
 11	jetzt	jetzt	ADV	ADV	_	16	advmod	_	_
 12	wirklich	wirklich	ADJ	ADJD	_	14	advmod	_	_
 13	das	d	DET	ART	Case=Nom|Definite=Def|Gender=Neut|Number=Sing|PronType=Art	14	det	_	_
-14	Jahr	Jahr	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	16	nsubj	_	_
+14	Jahr	Jahr	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	8	ccomp	_	_
 15	1984	1984	NUM	CARD	NumType=Card	14	nmod	_	_
-16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+16	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	_	_
 17	.	.	PUNCT	$.	_	8	punct	_	_
 
 [MESSAGE] sicher (8)
-[m-time] Zunächst einmal (2)
+[m-rank] Zunächst einmal (2)
 [x-experiencer] er (4)
-[x-noncomp] sich (5)
+[x-experiencer] sich (5)
 [m-mode] durchaus (6)
 [m-mode] nicht (7)
+[topic] wirklich das Jahr 1984 (14)
 
-[TIME] einmal (2)
-[m-time] Zunächst (1)
+[RANK] einmal (2)
+[m-rank] Zunächst (1)
 
-[TIME] Zunächst (1)
+[RANK] Zunächst (1)
 
 [IDENTIFICATION] er (4)
 
-[NONCOMP] sich (5)
+[IDENTIFICATION] sich (5)
 
 [MODE] durchaus (6)
 
 [MODE] nicht (7)
 
-[TIME] jetzt (11)
-
 [TIME] Jahr (14)
 [m-mode] wirklich (12)
-[m-rank || m-time] 1984 (15)
+[m-rank >> m-time] 1984 (15)
 
 [MODE] wirklich (12)
 
-[RANK || TIME] 1984 (15)
+[RANK >> TIME] 1984 (15)
 
 # sent_id = 106
 # text = Es musste um diese Zeit herum sein , denn er wusste mit einiger Gewissheit , dass er selbst neununddreißig Jahre alt war , und er glaubte , 1944 oder 1945 geboren zu sein .
-1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
-2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
+1	Es	es	PRON	PPER	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	musste	müssen	AUX	VMFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
 3	um	um	ADP	APPR	_	5	case	_	_
 4	diese	dies	DET	PDAT	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	_
+5	Zeit	Zeit	NOUN	NN	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
 6	herum	herum	ADP	APZR	_	5	case	_	_
-7	sein	sein	AUX	VAINF	VerbForm=Inf	0	root	_	_
+7	sein	sein	AUX	VAINF	VerbForm=Inf	5	cop	_	_
 8	,	,	PUNCT	$,	_	11	punct	_	_
 9	denn	denn	CCONJ	KON	_	11	cc	_	_
 10	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
-11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
+11	wusste	wissen	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 12	mit	mit	ADP	APPR	_	14	case	_	_
 13	einiger	einige	DET	PIAT	Case=Dat|Definite=Ind|Gender=Fem|Number=Sing	14	det	_	_
 14	Gewissheit	Gewißheit	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	11	obl	_	_
@@ -170,13 +169,10 @@
 33	sein	sein	AUX	VAINF	VerbForm=Inf	31	aux	_	_
 34	.	.	PUNCT	$.	_	7	punct	_	_
 
-[SCENE] sein (7)
+[TIME] Zeit (5)
 [x-noncomp] Es (1)
-[scene] um diese Zeit herum (5)
 
 [NONCOMP] Es (1)
-
-[TIME] Zeit (5)
 
 [MESSAGE] wusste (11)
 [x-experiencer] er (10)
@@ -187,14 +183,14 @@
 
 [MESSAGE >> QUALITY] Gewissheit (14)
 
-[QUALITY] alt (21)
-[has-quality] er (17)
-[m-noncomp] selbst (18)
+[STATE] alt (21)
+[has-state] er (17)
+[m-mode] selbst (18)
 [m-quantity] neununddreißig Jahre (20)
 
 [IDENTIFICATION] er (17)
 
-[NONCOMP] selbst (18)
+[MODE] selbst (18)
 
 [QUANTITY] Jahre (20)
 [m-quantity] neununddreißig (19)
@@ -208,12 +204,12 @@
 [IDENTIFICATION] er (25)
 
 [EXISTENCE-INIT] geboren (31)
-[m-time] 1944 (28)
-[m-time] oder 1945 (30)
+[m-rank >> m-time] 1944 (28)
+[m-rank >> m-time] oder 1945 (30)
 
-[TIME] 1944 (28)
+[RANK >> TIME] 1944 (28)
 
-[TIME] 1945 (30)
+[RANK >> TIME] 1945 (30)
 
 # sent_id = 107
 # text = Doch heutzutage war es nie möglich , ein Datum auf ein oder zwei Jahre genau zu bestimmen .
@@ -346,10 +342,10 @@
 25	zusammen	zusammen	ADP	PTKVZ	_	15	compound:prt	_	_
 26	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-CONTINUATION >> MESSAGE] kreiste (3)
-[has-location >> x-noncomp] Sein Denken (2)
+[UNANCHORED-MOTION >> MESSAGE] kreiste (3)
+[in-motion >> x-noncomp] Sein Denken (2)
 [m-time] einen Augenblick (5)
-[iniatial-location >> topic] um das zweifelhafte Datum (9)
+[transitory-location >> topic] um das zweifelhafte Datum (9)
 [x-location] auf der ersten Seite (13)
 
 [MESSAGE] Denken (2)
@@ -437,14 +433,14 @@
 [MESSAGE-INIT] verständigen (8)
 [m-means] Wie (1)
 [x-sender] man (3)
-[x-noncomp] sich (4)
+[x-sender] sich (4)
 [x-experiencer] mit der Zukunft (7)
 
 [MEANS] Wie (1)
 
 [IDENTIFICATION] man (3)
 
-[NONCOMP] sich (4)
+[IDENTIFICATION] sich (4)
 
 [TIME] Zukunft (7)
 
@@ -464,8 +460,8 @@
 
 [IDENTIFICATION] Das (1)
 
-[MESSAGE] Natur (4)
-[x-experiencer] ihrer (3)
+[QUALITY] Natur (4)
+[has-quality] ihrer (3)
 
 [IDENTIFICATION] ihrer (3)
 
@@ -510,7 +506,7 @@
 
 [POSSESSION-CHANGE >> SCENE-INIT] schenken (14)
 [m-scene] dann (8)
-[initial-possessor >> x-causer] man (10)
+[initial-possessor >> participant] man (10)
 [target-possessor >> participant] ihm (11)
 [m-mode] nicht (12)
 [possessed >> target-scene] Gehör (13)
@@ -525,6 +521,8 @@
 [MODE] nicht (12)
 
 [MESSAGE] Gehör (13)
+[x-experiencer] man (10)
+[x-sender] ihm (11)
 
 [QUALITY-CHANGE] geartet (21)
 [has-quality] sie (18)
@@ -562,10 +560,10 @@
 11	Papier	Papier	NOUN	NN	Case=Acc|Gender=Neut|Number=Sing	7	obl	_	_
 12	.	.	PUNCT	$.	_	3	punct	_	_
 
-[LOCATION-CONTINUATION] saß (3)
+[LOCATION] saß (3)
 [m-time] Eine Zeitlang (2)
 [has-location] er (4)
-[initial-location] da (5)
+[location] da (5)
 
 [TIME] Zeitlang (2)
 
@@ -718,7 +716,7 @@
 [SCENE-INIT] vorbereitet (9)
 [m-time] Seit Wochen (2)
 [x-causer] er (4)
-[participant] sich (5)
+[x-causer] sich (5)
 [target-scene] auf diesen Augenblick (8)
 
 [TIME] Wochen (2)
@@ -728,7 +726,6 @@
 [IDENTIFICATION] sich (5)
 
 [TIME] Augenblick (8)
-[has-time] sich (5)
 
 [LOCATION-INIT >> MESSAGE-INIT] gekommen (19)
 [target-location >> x-experiencer] ihm (14)
@@ -826,7 +823,7 @@
 
 [MODE] doch (3)
 
-[CLASS] nichts (4)
+[CLASS-NEG] nichts (4)
 
 [ACTIVITY] tun (7)
 [activity] nichts (4)
@@ -862,7 +859,7 @@
 
 [TIME] Jahren (23)
 
-[CLASS >> NONCOMP] Kopf (26)
+[PART-WHOLE >> NONCOMP] Kopf (26)
 
 [NONCOMP] Papier (15)
 
@@ -920,8 +917,8 @@
 
 [CLASS] Ekzem (4)
 
-[CLASS] Krampfadern (7)
-[m-whole] seinen (6)
+[PART-WHOLE] Krampfadern (7)
+[whole] seinen (6)
 
 [IDENTIFICATION] seinen (6)
 
@@ -966,14 +963,14 @@
 [STATE-CHANGE] entzündete (11)
 [m-time] dann (10)
 [has-state] es (12)
-[x-noncomp] sich (13)
+[has-state] sich (13)
 [m-time] immer (14)
 
 [TIME] dann (10)
 
 [IDENTIFICATION] es (12)
 
-[NONCOMP] sich (13)
+[IDENTIFICATION] sich (13)
 
 [TIME] immer (14)
 
@@ -1027,11 +1024,11 @@
 34	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	aux	_	_
 35	.	.	PUNCT	$.	_	2	punct	_	_
 
-[LOCATION-INIT >> SCENE-INIT] drang (2)
-[has-location >> participant] Nichts (1)
-[target-location >> target-scene] in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (5)
+[LOCATION-INIT >> MESSAGE-INIT] drang (2)
+[has-location >> target-content] Nichts (1)
+[target-location >> x-noncomp] in sein Bewusstsein als die unbeschriebene Weiße des vor ihm liegenden Blattes , das Hautjucken über seinem Knöchel , die schmetternde Musik und eine leise Benebeltheit , die der Gin verursacht hatte (5)
 
-[CLASS] Nichts (1)
+[CLASS-NEG] Nichts (1)
 
 [MESSAGE] Bewusstsein (5)
 [x-experiencer] sein (4)
@@ -1051,8 +1048,8 @@
 [CLASS] Blattes (14)
 [m-scene] vor ihm liegenden (13)
 
-[LOCATION-CONTINUATION] liegenden (13)
-[initial-location] vor ihm (12)
+[LOCATION] liegenden (13)
+[location] vor ihm (12)
 [has-location] Blattes (14)
 
 [IDENTIFICATION] ihm (12)
@@ -1060,8 +1057,8 @@
 [MESSAGE] Hautjucken (17)
 [m-location] über seinem Knöchel (20)
 
-[CLASS] Knöchel (20)
-[m-whole] seinem (19)
+[PART-WHOLE] Knöchel (20)
+[whole] seinem (19)
 
 [IDENTIFICATION] seinem (19)
 
@@ -1193,7 +1190,7 @@
 
 [CLASS] Blattes (10)
 
-[SITUATION-PREVENTION] verzichtete (26)
+[SITUATION-INIT-NEG] verzichtete (26)
 [m-scene] wobei (12)
 [theme] er (13)
 [m-time] bald (14)
@@ -1378,7 +1375,7 @@
 68	eingedrungen	eindringen	VERB	VVPP	Verbform=Part	57	advcl	_	_
 69	.	.	PUNCT	$.	_	3	punct	_	_
 
-[MESSAGE-INIT] belustigt (3)
+[MESSAGE] belustigt (3)
 [x-experiencer] Zuschauer (1)
 [m-quantity] höchst (2)
 [x-sender] durch eine Aufnahme von einem großen dicken Mann , den ein Helikopter verfolgt , (6)
@@ -1432,7 +1429,7 @@
 
 [CLASS] Nilpferd (28)
 
-[MESSAGE-INIT] sah (31)
+[MESSAGE] sah (31)
 [m-time] dann (30)
 [x-experiencer] man (32)
 [topic] ihn (33)
@@ -1456,7 +1453,7 @@
 [MESSAGE-INIT] färbte (51)
 [topic] das Meer (47)
 [m-location] rund um ihn (50)
-[x-noncomp] sich (52)
+[topic] sich (52)
 [target-content] rosa (53)
 
 [CLASS] Meer (47)
@@ -1466,7 +1463,7 @@
 
 [LOCATION] rund (48)
 
-[NONCOMP] sich (52)
+[IDENTIFICATION] sich (52)
 
 [QUALITY] rosa (53)
 [has-quality] das Meer (47)
@@ -1558,10 +1555,10 @@
 31	bug	Bug	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	22	obl	_	_
 32	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT] sah (2)
+[MESSAGE] sah (2)
 [m-time] Dann (1)
 [x-experiencer] man (3)
-[target-content] ein Rettungsboot voll kinder mit einem hubschrauber darüber (5)
+[content] ein Rettungsboot voll kinder mit einem hubschrauber darüber (5)
 
 [TIME] Dann (1)
 
@@ -1578,20 +1575,20 @@
 
 [LOCATION] darüber (11)
 
-[LOCATION-CONTINUATION] saß (22)
+[LOCATION] saß (22)
 [has-location] eine frau mittleren Alters , vielleicht eine Jüdin , (14)
 [m-accompanier] mit einem etwa drei jähre alten knaben (29)
-[initial-location] im bug (31)
+[location] im bug (31)
 
 [CLASS] frau , vielleicht eine Jüdin , (14)
 [m-quality] mittleren Alters (16)
 
-[QUALITY || TIME] Alters (16)
+[STATE] Alters (16)
 [m-quantity] mittleren (15)
 
 [QUALITY] mittleren (15)
 
-[CLASS] Jüdin (20)
+[SOCIAL-RELATION] Jüdin (20)
 [m-mode] vielleicht (18)
 
 [MODE] vielleicht (18)
@@ -1599,10 +1596,10 @@
 [CLASS] knaben (29)
 [m-quality] etwa drei jähre alten (28)
 
-[QUALITY] alten (28)
+[STATE] alten (28)
 [m-quantity] etwa drei jähre (27)
 
-[TIME] jähre (27)
+[TIME >> STATE] jähre (27)
 [m-quantity] etwa drei (26)
 
 [QUANTITY] drei (26)
@@ -1808,12 +1805,12 @@
 [target-location] zwischen den brüsten (12)
 [m-reference] als wollte er ganz in sie hineinkriechen (19)
 
-[CLASS] köpf (9)
-[m-whole] seinen (8)
+[PART-WHOLE] köpf (9)
+[whole] seinen (8)
 
 [IDENTIFICATION] seinen (8)
 
-[CLASS] brüsten (12)
+[PART-WHOLE] brüsten (12)
 
 [LOCATION-INIT] hineinkriechen (19)
 [has-location] er (15)
@@ -1833,7 +1830,7 @@
 
 [CLASS] frau (22)
 
-[CLASS] arme (25)
+[PART-WHOLE] arme (25)
 
 [IDENTIFICATION] ihn (27)
 
@@ -1878,13 +1875,13 @@
 
 [IDENTIFICATION] sie (49)
 
-[SITUATION-PREVENTION] abhalten (57)
+[SITUATION-INIT-NEG] abhalten (57)
 [x-causer] ihre arme (51)
 [target-situator] die kugeln (54)
 [theme] von ihm (56)
 
-[CLASS] arme (51)
-[m-whole] ihre (50)
+[PART-WHOLE] arme (51)
+[whole] ihre (50)
 
 [IDENTIFICATION] ihre (50)
 
@@ -1937,7 +1934,7 @@
 
 [QUALITY] wundervolle (81)
 
-[CLASS] kinderarm (85)
+[PART-WHOLE] kinderarm (85)
 [m-scene] der hoch , hoch und immer höher hinauffliegt in die luft (93)
 
 [LOCATION-CHANGE] hinauffliegt (93)
@@ -1979,9 +1976,9 @@
 
 [IDENTIFICATION] ihm (107)
 
-[EXISTENCE] gab (112)
+[SCENE] gab (112)
 [x-noncomp] es (111)
-[exists] viel bei fall aus den parteilogen (114)
+[scene] viel bei fall aus den parteilogen (114)
 
 [NONCOMP] es (111)
 
@@ -2004,9 +2001,9 @@
 [CLASS] frau (121)
 [m-location] unten wo die proles sitzen (126)
 
-[LOCATION-CONTINUATION] sitzen (126)
-[initial-location] unten (122)
-[initial-location] wo (123)
+[LOCATION] sitzen (126)
+[location] unten (122)
+[location] wo (123)
 [has-location] die proles (125)
 
 [LOCATION] unten (122)
@@ -2083,11 +2080,11 @@
 
 [MESSAGE] kümmert (164)
 [x-experiencer] niemand (163)
-[x-noncomp] sich (165)
+[x-experiencer] sich (165)
 [content] darum (166)
 [content] was die proles sagen (170)
 
-[CLASS] niemand (163)
+[CLASS-NEG] niemand (163)
 
 [NONCOMP] sich (165)
 
@@ -2112,7 +2109,7 @@
 
 [IDENTIFICATION] sie (173)
 
-[TIME] nie (175)
+[TIME-NEG] nie (175)
 
 # sent_id = 136
 # text = Winston hörte zu schreiben auf , auch weil er einen Schreibkrampf bekam .
@@ -2142,11 +2139,12 @@
 [x-sender] Winston (1)
 
 [SCENE-INIT] bekam (12)
-[m-mode] auch (7)
+[m-scene] auch (7)
 [participant] er (9)
 [target-scene] einen Schreibkrampf (11)
 
-[MODE] auch (7)
+[ACCOMPANIMENT] auch (7)
+[accompanier] bekam (12)
 
 [IDENTIFICATION] er (9)
 
@@ -2193,7 +2191,7 @@
 
 [LOCATION-DEINIT >> SENDING] herauszuschleudern (16)
 [has-location >> sent] diese Flut von Gestammel (11)
-[initial-location >> x-noncomp] aus sich (15)
+[initial-location >> sender] aus sich (15)
 [x-causer >> sender] ihn (6)
 
 [LOCATION-CHANGE >> QUANTITY] Flut (11)
@@ -2264,11 +2262,12 @@
 [MODE] so (12)
 
 [MESSAGE] Bewusstsein (15)
+[x-experiencer] ihm (7)
 
-[MESSAGE-INIT] vorkam (24)
+[MESSAGE] vorkam (24)
 [topic] es (20)
 [x-experiencer] ihm (21)
-[target-content] fast so (23)
+[content] fast so (23)
 [x-reference] , als habe er sie niedergeschrieben (30)
 
 [IDENTIFICATION] es (20)
@@ -2318,10 +2317,10 @@
 25	beginnen	beginnen	VERB	VVINF	VerbForm=Inf	19	conj	_	_
 26	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT] erkannte (2)
+[MESSAGE] erkannte (2)
 [m-time] Nun (1)
 [x-experiencer] er (3)
-[target-content] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
+[content] , dass dieser andere Vorfall an seinem plötzlichen Entschluss schuld war , nach Hause zu gehen und heute sein Tagebuch zu beginnen (13)
 
 [TIME] Nun (1)
 
@@ -2392,7 +2391,7 @@
 25	hat	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 26	.	.	PUNCT	$.	_	9	punct	_	_
 
-[SCENE-INIT] zugetragen (9)
+[SCENE-INIT] zugetragen (9) # reflexiv: geschehen
 [target-scene] Dieser Vorfall (2)
 [x-noncomp] sich (4)
 [m-time] heute (5)
@@ -2644,7 +2643,7 @@
 
 [MODE] aber (25)
 
-[TIME] nie (27)
+[TIME-NEG] nie (27)
 [m-noncomp] noch (26)
 
 [NONCOMP] noch (26)
@@ -2804,9 +2803,9 @@
 
 [TIME] manchmal (7)
 
-[CLASS] Händen (10)
+[PART-WHOLE] Händen (10)
 [m-state] ölverschmierten (9)
-[m-whole] sie (6)
+[whole] sie (6)
 
 [STATE] ölverschmierten (9)
 
@@ -2858,7 +2857,7 @@
 [CLASS] Mädchen (6)
 [has-class] Sie (1)
 [m-scene] unternehmungslustig aussehendes (5)
-[m-quality] von etwa siebenundzwanzig Jahren (10)
+[m-state] von etwa siebenundzwanzig Jahren (10)
 [m-part] , mit üppigem schwarzen Haar (15)
 [m-part] , sommersprossigem Gesicht (18)
 [m-scene] und raschen , muskulösen Bewegungen (23)
@@ -2872,7 +2871,7 @@
 [QUALITY] unternehmungslustig (4)
 [has-quality] Mädchen (6)
 
-[TIME] Jahren (10)
+[TIME >> STATE] Jahren (10)
 [m-quantity] etwa siebenundzwanzig (9)
 
 [QUANTITY] siebenundzwanzig (9)
@@ -2880,7 +2879,7 @@
 
 [MODE] etwa (8)
 
-[CLASS] Haar (15)
+[PART-WHOLE] Haar (15)
 [m-quality] üppigem (13)
 [m-quality] schwarzen (14)
 
@@ -2888,15 +2887,15 @@
 
 [QUALITY] schwarzen (14)
 
-[CLASS] Gesicht (18)
+[PART-WHOLE] Gesicht (18)
 [m-quality] sommersprossigem (17)
 
 [QUALITY] sommersprossigem (17)
 
-[LOCATION-CHANGE >> QUALITY] Bewegungen (23)
+[ACTIVITY >> QUALITY] Bewegungen (23)
 [m-quality] raschen , (20)
 [m-quality] muskulösen (22)
-[has-location >> has-quality] Mädchen (6)
+[is-active >> has-quality] Mädchen (6)
 
 [QUALITY] raschen (20)
 
@@ -2940,7 +2939,7 @@
 
 [WRAPPING-WEARING] gewunden (21)
 [wrapper] Eine schmale , scharlachrote Schärpe , das Abzeichen der Jugendliga gegen Sexualität , (5)
-[m-quantity] mehrmals (15)
+[m-time] mehrmals (15)
 [wearer] um die Taille ihres Trainingsanzuges (18)
 [m-quality] , gerade eng genug , um die Rundung ihrer Hüften hervorzuheben (24)
 
@@ -2961,10 +2960,10 @@
 
 [MESSAGE] Sexualität (12)
 
-[QUANTITY] mehrmals (15)
+[TIME] mehrmals (15)
 
-[CLASS] Taille (18)
-[m-whole] ihres Trainingsanzuges (20)
+[PART-WHOLE] Taille (18)
+[whole] ihres Trainingsanzuges (20)
 
 [CLASS] Trainingsanzuges (20)
 [m-possessor] ihres (19)
@@ -2986,8 +2985,8 @@
 [QUALITY] Rundung (29)
 [has-quality] ihrer Hüften (31)
 
-[CLASS] Hüften (31)
-[m-whole] ihrer (30)
+[PART-WHOLE] Hüften (31)
+[whole] ihrer (30)
 
 [IDENTIFICATION] ihrer (30)
 
@@ -3034,12 +3033,13 @@
 
 [MESSAGE] wusste (2)
 [x-experiencer] Er (1)
-[m-mode] auch (3)
+[m-scene] auch (3)
 [topic] , weshalb (5)
 
 [IDENTIFICATION] Er (1)
 
-[MODE] auch (3)
+[ACCOMPANIMENT] auch (3)
+[accompanier] wusste (2)
 
 [EXPLANATION] weshalb (5)
 
