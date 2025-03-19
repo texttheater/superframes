@@ -50,7 +50,7 @@
 [SCENE-INIT] bringen (16)
 [m-mode] » Freilich , , (2) # natürlich
 [m-condition] wenn Tom daheim wäre (6)
-[participant] er (10)
+[x-causer] er (10)
 [participant] es (11)
 [m-time] im Nu (13)
 [target-scene] in Ordnung (15)
@@ -69,7 +69,6 @@
 [TIME] Nu (13)
 
 [STATE] Ordnung (15)
-[x-causer] er (10)
 [has-state] es (11)
 
 [IDENTIFICATION] sie (20)
@@ -730,7 +729,7 @@
 
 [IDENTIFICATION] Sie (3)
 
-[CLASS || MEANS] Schraubenschlüssel (5)
+[CLASS] Schraubenschlüssel (5)
 
 # sent_id = 362
 # text = fragte Winston und machte sich mit der Schraubenmutter am Verbindungsstück zu schaffen .
@@ -760,7 +759,7 @@
 
 [IDENTIFICATION] sich (5)
 
-[CLASS || MEANS] Schraubenmutter (8)
+[CLASS] Schraubenmutter (8)
 
 [EVENT] schaffen (12)
 [undergoer] am Verbindungsstück (10)
@@ -788,7 +787,7 @@
 [target-content] » Einen Schraubenschlüssel « , (3)
 [x-sender] Frau Parsons (7)
 
-[CLASS || MEANS] Schraubenschlüssel (3)
+[CLASS] Schraubenschlüssel (3)
 
 [IDENTIFICATION] Frau Parsons (7)
 
@@ -895,7 +894,7 @@
 
 [IDENTIFICATION] Frau Parsons (1)
 
-[CLASS || MEANS] Schraubenschlüssel (5)
+[CLASS] Schraubenschlüssel (5)
 
 # sent_id = 368
 # text = Winston ließ das Wasser ablaufen und entfernte angeekelt den Pfropfen menschlicher Haare , der die Röhre verstopft hatte .
@@ -1142,7 +1141,7 @@
 [STATE] jüngere (29)
 [m-quantity] um etwa zwei Jahre (28)
 
-[TIME] Jahre (28)
+[TIME >> STATE] Jahre (28)
 [m-quantity] etwa zwei (27)
 
 [QUANTITY] zwei (27)
@@ -1342,8 +1341,8 @@
 5	Gedankenverbrecher	Gedankenverbrecher	NOUN	NN	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 6	!	!	PUNCT	$.	_	5	punct	_	_
 
-[SOCIAL-RELATION] Gedankenverbrecher (5)
-[has-social-relation] » Sie (2)
+[EVENT] Gedankenverbrecher (5)
+[x-causer] » Sie (2)
 
 [IDENTIFICATION] Sie (2)
 
@@ -1505,7 +1504,7 @@
 18	werden	werden	AUX	VAFIN	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 19	.	.	PUNCT	$.	_	4	punct	_	_
 
-[MESSAGE-INIT] erschreckend (4)
+[MESSAGE] erschreckend (4)
 [topic] Es (1)
 [m-mode] irgendwie (3)
 [m-reference] , gleich den Freudensprüngen von Tigerjungen , die bald zu Menschenfressern herangewachsen sein werden (8)
@@ -2516,7 +2515,7 @@
 [has-location] sich (17)
 [m-scene] wieder (18)
 [target-location] an den Tisch (21)
-[has-location] er (10)
+[x-causer >> has-location] er (10)
 
 [IDENTIFICATION] sich (17)
 
