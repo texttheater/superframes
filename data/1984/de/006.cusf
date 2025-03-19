@@ -111,7 +111,7 @@
 17	.	.	PUNCT	$.	_	7	punct	_	_
 
 [SCENE-INIT] fand (7)
-[m-time] In der überragenden Mehrzahl der Fälle (4)
+[m-situator] In der überragenden Mehrzahl der Fälle (4)
 [target-scene] keine Gerichtsverhandlung (9)
 [m-noncomp] statt (10)
 
@@ -244,7 +244,7 @@
 
 [TIME] jemals (25)
 
-[MESSAGE-PREVENTION] geleugnet (31)
+[MESSAGE-INIT-NEG] geleugnet (31)
 [target-content] dass man jemals gelebt hatte , (26)
 [m-time] erst (30)
 
@@ -286,7 +286,7 @@
 [SCENE-INIT] geworden (7)
 [target-scene] zu nichts (6)
 
-[CLASS] nichts (6)
+[CLASS-NEG] nichts (6)
 
 [STATE-CHANGE >> DESTRUCTION] vaporisiert (11) # zu Dampf werden
 [has-state >> destroyed] man (9)
@@ -508,7 +508,7 @@
 21	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-INIT] lehnte (2)
-[has-location] Er (1)
+[x-causer >> has-location] Er (1)
 [has-location] sich (3)
 [target-location] in seinen Stuhl (6)
 [target-location] zurück (7) # vgl. Manual Particle Verbs: separated adpositional adverbs this way
@@ -738,7 +738,7 @@
 
 [MODE] vermutlich (13)
 
-[SCENE] Gewohnheit (16)
+[TIME] Gewohnheit (16) # vorher hatte ich als SCENE annotiert
 [m-time] langer (15)
 
 [TIME] langer (15)
@@ -820,12 +820,12 @@
 
 [IDENTIFICATION] Winston (11)
 
-[SCENE-CONTINUATION] lassen (23)
+[SCENE-INIT] lassen (23)
 [x-causer] er (14)
 [participant] das Tagebuch (16)
 [m-depictive] offen (17)
-[m-location] auf dem Tisch (20)
-[initial-scene] liegen (22)
+[participant] auf dem Tisch (20)
+[target-scene] liegen (22)
 
 [IDENTIFICATION] er (14)
 
@@ -838,6 +838,7 @@
 
 [LOCATION] liegen (22)
 [has-location] das Tagebuch (16)
+[location] auf dem Tisch (20)
 
 # sent_id = 319
 # text = Nieder mit dem Großen Bruder stand da über die halbe Seite hinweg in Buchstaben , die beinahe groß genug waren , um durch das ganze Zimmer leserlich zu sein .
@@ -1238,6 +1239,7 @@
 [m-mode] eben mal (8)
 [topic] unsern Ausguss (10)
 [m-location] in der Küche (13)
+[x-causer >> x-experiencer] Sie (2)
 
 [IDENTIFICATION] sich (6)
 
@@ -1423,11 +1425,11 @@
 
 [CLASS] Frau (4)
 [has-class] Sie (1)
-[m-quality] von etwa dreißig Jahren (8)
+[m-state] von etwa dreißig Jahren (8)
 
 [IDENTIFICATION] Sie (1)
 
-[TIME] Jahren (8)
+[TIME >> STATE] Jahren (8)
 [m-quantity] etwa dreißig (7)
 
 [QUANTITY] dreißig (7)
@@ -1444,9 +1446,9 @@
 [CONCESSION] aber (11)
 [asserted] sah (10)
 
-[QUALITY] älter (13)
+[STATE] älter (13)
 [m-quantity] viel (12)
-[has-quality] Sie (1)
+[has-state] Sie (1)
 
 [QUANTITY] viel (12)
 
@@ -1572,12 +1574,12 @@
 
 [CLASS] Wohnungskomplex (13)
 [has-class] Der Victory-Block (2)
-[m-quality] alter , (5)
+[m-state] alter , (5)
 [m-scene] etwa um das Jahr 1930 gebauter (12)
 
 [IDENTIFICATION] Victory-Block (2)
 
-[QUALITY] alter (5)
+[STATE] alter (5)
 
 [TRANSFORMATION-CREATION] gebauter (12)
 [m-time] etwa um das Jahr 1930 (10)
@@ -1691,14 +1693,13 @@
 
 [SCENE-INIT] war (30)
 [participant] die Zentralheizung (29)
-[m-scene] gewöhnlich (31)
+[m-time] gewöhnlich (31)
 [target-scene] nur unter halbem Druck (35)
 [m-condition] , wenn sie nicht aus Sparsamkeitsgründen ganz abgestellt war (43)
 
 [CLASS] Zentralheizung (29)
 
-[SCENE-CONTINUATION] gewöhnlich (31)
-[initial-scene] war (30)
+[TIME] gewöhnlich (31)
 
 [STATE] Druck (35)
 [m-mode] nur (32)
@@ -2205,11 +2206,10 @@
 [accompanied] hier (2)
 
 [MESSAGE] Kohlgeruch (6)
-[m-scene] übliche (5)
+[m-time] übliche (5)
 [m-scene] , der dem ganzen Haus anhaftete , (12)
 
-[SCENE-CONTINUATION] übliche (5)
-[initial-scene] Kohlgeruch (6)
+[TIME] übliche (5)
 
 [ACCOMPANIMENT] anhaftete (12)
 [accompanier] der (8)
@@ -2464,14 +2464,14 @@
 
 [IDENTIFICATION] Sie (1)
 
-[SCENE] Angewohnheit (4)
+[SCENE] Angewohnheit (4) # ??? TIME passt ja nicht, oder?
 [scene] , ihre Sätze mittendrin abzubrechen (9)
 [participant] Sie (1)
 
-[MESSAGE-INIT-NEG] abzubrechen (9)
-[topic] ihre Sätze (7)
+[SCENE-DEINIT] abzubrechen (9)
+[initial-scene] ihre Sätze (7)
 [m-time] mittendrin (8)
-[x-sender] Sie (1)
+[x-causer] Sie (1)
 
 [MESSAGE] Sätze (7)
 [x-sender] ihre (6)
