@@ -46,7 +46,7 @@
 
 [CLASS] Frauen (2)
 
-[QUALITY] jungen (8)
+[STATE] jungen (8)
 [m-mode] vor allem (6)
 
 [MODE] allem (6)
@@ -119,7 +119,7 @@
 
 [SCENE-INIT] machte (6)
 [participant] dieses Mädchen im besonderen (3)
-[x-experiencer] ihm (7)
+[participant] ihm (7)
 [target-scene] den Eindruck , gefährlicher als die meisten zu sein (9)
 
 [CLASS] Mädchen (3)
@@ -457,7 +457,7 @@
 
 [QUANTITY] so (18)
 
-[LOCATION-DEINIT >> MESSAGE-PREVENTION] entrückten (23)
+[LOCATION-DEINIT >> MESSAGE-INIT-NEG] entrückten (23)
 [initial-location >> x-experiencer] der Allgemeinheit (22)
 [has-location >> topic] Postens (24)
 
@@ -545,7 +545,7 @@
 [PART-WHOLE >> SOCIAL-RELATION] Mitglieds (18)
 [whole >> social-relation] der Inneren Partei (21)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (21)
+[CLASS >> IDENTIFICATION] Partei (21)
 [m-quality >> m-noncomp] Inneren (20)
 
 [QUALITY >> NONCOMP] Inneren (20)
@@ -695,8 +695,8 @@
 [target-location] auf der Nase (10)
 [x-causer] Er (1)
 
-[CLASS] Brille (7)
-[m-possessor] seine (6)
+[POSSESSION] Brille (7)
+[possessor] seine (6)
 
 [IDENTIFICATION] seine (6)
 
@@ -811,8 +811,8 @@
 
 [IDENTIFICATION] der (30)
 
-[CLASS] Gegenüber (32)
-[m-noncomp] seinem (31)
+[LOCATION >> SOCIAL-RELATION] Gegenüber (32)
+[location >> has-social-relation] seinem (31)
 
 [NONCOMP] seinem (31)
 
@@ -896,13 +896,13 @@
 
 [MESSAGE] fühlte (2)
 [x-experiencer] Er (1)
-[x-noncomp] sich (3)
+[x-experiencer] sich (3)
 [m-quality] aufrichtig (4)
 [content] zu ihm hingezogen (7)
 
 [IDENTIFICATION] Er (1)
 
-[NONCOMP] sich (3)
+[IDENTIFICATION] sich (3)
 
 [QUALITY] aufrichtig (4)
 
@@ -989,7 +989,7 @@
 [m-scene] heimlich (6)
 [has-state >> content] Glauben (8)
 
-[MESSAGE-PREVENTION] heimlich (6)
+[MESSAGE-INIT-NEG] heimlich (6)
 [topic] gehegten (7)
 
 [MESSAGE] Hoffnung (14)
@@ -1042,8 +1042,8 @@
 
 [IDENTIFICATION] seinem (3)
 
-[SCENE-PREVENTION-NEG] unwiderstehlich (6)
-[target-scene] flößte (5)
+[SCENE-NECESSITY] unwiderstehlich (6)
+[scene] flößte (5)
 
 [MESSAGE] Gedanken (8)
 
@@ -1169,8 +1169,8 @@
 [SCENE-DEINIT] fertig (18)
 [initial-scene] , dem Televisor ein Schnippchen zu schlagen (26)
 
-[HITTING >> SITUATION-PREVENTION] schlagen (26)
-[hit >> theme] dem Televisor (22)
+[EVENT] schlagen (26) # austricksen
+[undergoer] dem Televisor (22)
 [x-noncomp] ein Schnippchen (24)
 
 [CLASS] Televisor (22)
@@ -1193,7 +1193,7 @@
 [target-possessor] man (16)
 
 # sent_id = 168
-# text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es auch keine Möglichkeit dazu .
+# text = Winston hatte nie den geringsten Versuch gemacht , seine Vermutung auf ihre Richtigkeit hin zu prüfen : praktisch gab es keine Möglichkeit dazu .
 1	Winston	Winston	PROPN	NE	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
 2	hatte	haben	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
 3	nie	nie	ADV	ADV	_	7	advmod	_	_
@@ -1252,10 +1252,10 @@
 
 [IDENTIFICATION] ihre (12)
 
-[EXISTENCE] gab (19)
+[SCENE] gab (19)
 [m-mode] praktisch (18)
 [m-scene] auch (21)
-[exists] keine Möglichkeit (23)
+[scene] keine Möglichkeit (23)
 [m-purpose] dazu (24)
 
 [MODE] praktisch (18)
@@ -1328,8 +1328,8 @@
 
 [IDENTIFICATION] seine (9)
 
-[MESSAGE] sah (12)
-[content] , dass es fast elf Uhr war (18)
+[MESSAGE-INIT] sah (12)
+[target-content] , dass es fast elf Uhr war (18)
 [x-experiencer] O'Brien (1)
 
 [TIME] Uhr (18)
@@ -1387,7 +1387,7 @@
 18	.	.	PUNCT	$.	_	2	punct	_	_
 
 [LOCATION-INIT] setzte (2)
-[has-location] Er (1)
+[x-causer >> has-location] Er (1)
 [has-location] sich (3)
 [target-location] auf einen Stuhl in derselben Reihe wie Winston (6)
 [m-depictive] , zwei Plätze von ihm entfernt (17)
@@ -1618,11 +1618,11 @@
 [whole >> has-state >> x-experiencer] einen (8)
 
 [LOCATION-INIT] sträubten (16)
-[x-noncomp] sich (13)
+[has-location] sich (13)
 [has-location] die Nackenhaare (15)
 [x-causer] Lärm (4)
 
-[NONCOMP] sich (13)
+[IDENTIFICATION] sich (13)
 
 [PART-WHOLE] Nackenhaare (15)
 
@@ -1659,11 +1659,11 @@
 16	.	.	PUNCT	$.	_	15	punct	_	_
 
 [LOCATION-INIT >> MESSAGE-INIT] erschienen (15)
-[m-quality] Wie gewöhnlich (2)
-[has-location >> target-content] das Gesicht Immanuel Goldsteins , des Volksfeinds , (5)
+[m-reference] Wie gewöhnlich (2)
+[has-location >> topic] das Gesicht Immanuel Goldsteins , des Volksfeinds , (5)
 [target-location >> x-sender] auf dem Sehschirm (14)
 
-[QUALITY] gewöhnlich (2)
+[TIME] gewöhnlich (2)
 
 [PART-WHOLE] Gesicht (5)
 [whole] Immanuel Goldsteins , des Volksfeinds (6)
@@ -1820,7 +1820,7 @@
 
 [IDENTIFICATION] Goldstein (1)
 
-[SOCIAL-RELATION] Abtrünnige (8)
+[SOCIAL-RELATION-DEINIT] Abtrünnige (8)
 [m-quality] große (7)
 [m-scene] , der früher einmal , vor langer Zeit ( wie lange Zeit es eigentlich war , daran erinnerte sich niemand mehr genau ) , einer der führenden Männer der Partei gewesen war , um dann mit konterrevolutionären Machenschaffen zu beginnen , zum Tode verurteilt zu werden und auf geheimnisvolle Weise zu verschwinden (33)
 [m-scene] und fast auf einer Stufe mit dem Großen Bruder selbst gestanden hatte (51)
@@ -1872,19 +1872,20 @@
 
 [IDENTIFICATION] sich (27)
 
-[CLASS] niemand (28)
+[CLASS-NEG] niemand (28)
 
 [TIME] mehr (29)
 
 [QUALITY] genau (30)
 
 [CLASS] Männer (36)
-[m-quality] führenden (35)
-[m-whole] der Partei (38)
+[m-scene] führenden (35)
+[m-social-relation] der Partei (38)
 
-[QUALITY] führenden (35)
+[POSSESSION] führenden (35)
+[possessor] Männer (36)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (38)
+[CLASS >> IDENTIFICATION] Partei (38)
 
 [LOCATION >> SCENE] gestanden (51)
 [location >> scene] fast auf einer Stufe (45)
@@ -1976,15 +1977,15 @@
 [EXISTENCE] gab (14)
 [exists] keines , in dem nicht Goldstein die Hauptrolle gespielt hätte (15)
 
-[CLASS] keines (15)
+[CLASS-NEG] keines (15)
 [m-scene] , in dem nicht Goldstein die Hauptrolle gespielt hätte (23)
 
 [SCENE] gespielt (23)
-[m-location] in dem (18)
+[participant] in dem (18)
 [m-mode] nicht (19)
 [participant] Goldstein (20)
 [scene] die Hauptrolle (22)
-[m-location] keines (15)
+[participant] keines (15)
 
 [IDENTIFICATION] dem (18)
 
@@ -1992,8 +1993,10 @@
 
 [IDENTIFICATION] Goldstein (20)
 
-[EVENT] Hauptrolle (22)
-[undergoer] Goldstein (20)
+[PART-WHOLE] Hauptrolle (22)
+[part] Goldstein (20)
+[whole] in dem (18)
+[whole] keines (15)
 
 # sent_id = 181
 # text = Er war der erste Verräter , der früheste Beschmutzer der Reinheit der Partei .
@@ -2079,7 +2082,7 @@
 
 [TIME] später (2)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (5)
+[CLASS >> IDENTIFICATION] Partei (5)
 
 [MESSAGE] Verrätereien (10)
 
@@ -2139,13 +2142,14 @@
 [EVENT] lebte (2)
 [m-location] Irgendwo (1)
 [undergoer] er (3)
-[m-mode] noch (4)
+[m-scene] noch (4)
 
 [LOCATION] Irgendwo (1)
 
 [IDENTIFICATION] er (3)
 
-[MODE] noch (4)
+[SCENE-CONTINUATION] noch (4)
+[initial-scene] lebte (2)
 
 [MESSAGE-INIT] schmiedete (6)
 [x-noncomp] seine Ränke (8)
@@ -2166,7 +2170,7 @@
 
 [LOCATION] irgendwo (11)
 
-[SCENE-PREVENTION] Schutz (18)
+[SCENE-INIT-NEG] Schutz (18)
 [x-causer] seiner ausländischen Geldgeber (21)
 
 [POSSESSION-INIT] Geldgeber (21)
@@ -2506,7 +2510,7 @@
 62	könnten	können	AUX	VMFIN	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	61	aux	_	_
 63	.	.	PUNCT	$.	_	2	punct	_	_
 
-[MESSAGE-INIT] ließ (2)
+[MESSAGE-INIT] ließ (2) # etwas Ungehöriges, Empörendes sagen
 [x-sender] Goldstein (1)
 [target-content] seinen üblichen giftigen Angriff gegen die Lehren der Partei (6)
 [x-noncomp] vom Stapel (13)
@@ -2514,27 +2518,26 @@
 
 [IDENTIFICATION] Goldstein (1)
 
-[HITTING >> MESSAGE] Angriff (6)
-[hitting >> x-sender] seinen (3)
-[m-scene] üblichen (4)
+[EVENT >> MESSAGE-INIT] Angriff (6)
+[x-causer >> x-sender] seinen (3)
+[m-time] üblichen (4)
 [m-quality] giftigen (5)
-[hit >> x-experiencer] gegen die Lehren der Partei (9)
+[undergoer >> topic] gegen die Lehren der Partei (9)
 
 [IDENTIFICATION] seinen (3)
 
-[SCENE-CONTINUATION] üblichen (4)
-[initial-scene] Angriff (6)
+[TIME] üblichen (4)
 
 [QUALITY] giftigen (5)
 
 [MESSAGE] Lehren (9)
 [x-sender] der Partei (11)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (11)
+[CLASS >> IDENTIFICATION] Partei (11)
 
 [NONCOMP] Stapel (13)
 
-[HITTING >> MESSAGE] Angriff (20)
+[EVENT >> MESSAGE-INIT] Angriff (20)
 [m-quality] so übertriebenen (17)
 [m-quality] und verdrehten (19)
 [m-result] , dass ihn ein Kind hätte durchschauen können (27)
@@ -2720,7 +2723,7 @@
 [SITUATION] Diktatur (9)
 [x-causer] der Partei (11)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Partei (11)
+[CLASS >> IDENTIFICATION] Partei (11)
 
 [MESSAGE-INIT] forderte (14)
 [topic] sofortigen Friedensschluss mit Eurasien (16)
@@ -2784,11 +2787,10 @@
 [x-has-class] die (50)
 
 [MESSAGE] Stils (56)
-[m-scene] üblichen (55)
+[m-time] üblichen (55)
 [x-sender] der Parteiredner (58)
 
-[SCENE-CONTINUATION] üblichen (55)
-[initial-scene] Stils (56)
+[TIME] üblichen (55)
 
 [SENDING] Parteiredner (58)
 
@@ -2811,13 +2813,12 @@
 
 [MEANS] angewendet (79)
 [x-causer] irgendein Parteimitglied (74)
-[m-scene] normalerweise (75) # wie "üblich"?
+[m-time] normalerweise (75) # wie "üblich"?
 [m-situator] im wirklichen Leben (78)
 
 [SOCIAL-RELATION] Parteimitglied (74)
 
-[SCENE-CONTINUATION] normalerweise (75)
-[initial-scene] angewendet (79)
+[TIME] normalerweise (75)
 
 [EVENT] Leben (78)
 [m-quality] wirklichen (77)
@@ -2931,7 +2932,7 @@
 
 [SCENE-CONTINUATION] noch (13)
 
-[MESSAGE-PREVENTION] verbarg (28)
+[MESSAGE-INIT-NEG] verbarg (28)
 [topic] was (20)
 [topic] sich (21)
 [m-mode] in Wahrheit (23)
@@ -3017,8 +3018,8 @@
 [m-scene] wieder (64)
 [has-location] Männer (50)
 
-[SCENE-CONTINUATION] wieder (64)
-[initial-scene] zerflossen (65)
+[SEQUENCE] wieder (64)
+[follows] zerflossen (65)
 
 [SEQUENCE] abgelöst (74)
 [follows] von anderen (69)
@@ -3195,11 +3196,12 @@
 [has-quantity >> has-quality] und die erschreckende Wucht der dahinter vorbeiziehenden eurasischen Armee (10)
 [m-mode] einfach (17)
 
-[PART-WHOLE] Schafsgesicht (3)
-[m-quality] selbstzufriedene (2)
+[PART-WHOLE || COMPARISON || CLASS] Schafsgesicht (3)
+[m-scene] selbstzufriedene (2)
 [m-location] auf dem Sehschirm (6)
 
-[QUALITY] selbstzufriedene (2)
+[MESSAGE] selbstzufriedene (2)
+[x-experiencer] Schafsgesicht (3)
 
 [CLASS] Sehschirm (6)
 
@@ -3312,7 +3314,7 @@
 [m-condition] denn wenn Ozeanien mit einer dieser Mächte im Krieg lag , (20)
 [m-scene] so (22)
 [participant] es (24)
-[m-scene] gewöhnlich (26)
+[m-time] gewöhnlich (26)
 [participant] mit der anderen (29)
 [scene] im Friedenszustand (31)
 
@@ -3337,8 +3339,7 @@
 
 [IDENTIFICATION] es (24)
 
-[SCENE-CONTINUATION] gewöhnlich (26)
-[initial-scene] befand (23)
+[TIME] gewöhnlich (26)
 
 [COMPARISON] anderen (29)
 
@@ -3460,10 +3461,10 @@
 [m-scene] auch (21)
 [m-time] tagtäglich (22)
 [m-time] und tausendmal (24)
-[x-sender] auf Rednertribünen (28)
-[x-sender] , durch den Televisor (32)
-[x-sender] , in Zeitungen (35)
-[x-sender] , in Büchern (38)
+[m-location] auf Rednertribünen (28)
+[m-means] , durch den Televisor (32)
+[m-location >> m-means] , in Zeitungen (35)
+[m-location >> m-means] , in Büchern (38)
 [topic] seine Theorien (40)
 [m-time] am Tag (26)
 
@@ -3693,7 +3694,7 @@
 [LOCATION-CHANGE >> POSSESSION-DEINIT] Sturz (16)
 [has-location >> initial-possessor] der Regierung (18)
 
-[SOCIAL-RELATION] Regierung (18)
+[POSSESSION] Regierung (18)
 
 [MEANS] Ziel (20)
 [purpose] den Sturz der Regierung (16)
@@ -3800,7 +3801,7 @@
 
 [IDENTIFICATION] das (19)
 
-[MESSAGE-PREVENTION] heimlich (20)
+[MESSAGE-INIT-NEG] heimlich (20)
 [topic] zirkulierte (24)
 
 [LOCATION] da (21)
