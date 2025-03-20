@@ -37,7 +37,8 @@
 32	.	.	PUNCT	.	_	21	punct	_	_
 
 [MESSAGE-INIT] schrieb (21)
-[target-content] „ Ein Großteil des digitalen Übergangs ist für die Vereinigten Staaten neu , ein friedlicher Machtwechsel hingegen nicht “ , (12)
+[target-content] „ Ein Großteil des digitalen Übergangs ist für die Vereinigten Staaten neu “ , (12)
+[target-content] , ein friedlicher Machtwechsel hingegen nicht (16)
 [x-sender] Obamas Sonderberaterin Kori Schulman (23)
 [m-time] an dem Montag (28)
 [x-location || x-means] in einem Blogeintrag (31)
@@ -54,10 +55,10 @@
 
 [QUALITY >> NONCOMP] digitalen (5)
 
-[IDENTIFICATION] Staaten (11)
-[m-noncomp] Vereinigten (10)
+[CLASS >> IDENTIFICATION] Staaten (11)
+[m-social-relation >> m-noncomp] Vereinigten (10)
 
-[NONCOMP] Vereinigten (10)
+[SOCIAL-RELATION >> NONCOMP] Vereinigten (10)
 
 [SCENE-CHANGE] Machtwechsel (16)
 [m-quality] friedlicher (15)
@@ -70,13 +71,12 @@
 
 [MODE] nicht (18)
 
-[SOCIAL-RELATION] Sonderberaterin (23)
+[SOCIAL-RELATION] Sonderberaterin Kori Schulman (23)
 [social-relation] Obamas (22)
-[m-identifier] Kori Schulman (24)
 
 [IDENTIFICATION] Obamas (22)
 
-[IDENTIFICATION] Kori (24)
+[IDENTIFICATION] Kori Schulman (24)
 
 [TIME] Montag (28)
 
@@ -125,7 +125,7 @@
 [IDENTIFICATION] die (4)
 
 [SITUATION-CHANGE] Übergänge (9)
-[theme] Social - Media - (7)
+[m-situator] Social - Media - (7)
 [m-location] auf dem Capitol Hill (13)
 
 [CLASS] Media (7)
@@ -133,10 +133,10 @@
 
 [QUALITY >> NONCOMP] Social (5)
 
-[IDENTIFICATION] Hill (13)
-[m-noncomp] Capitol (12)
+[CLASS >> IDENTIFICATION] Hill (13)
+[m-has-location >> m-noncomp] Capitol (12)
 
-[NONCOMP] Capitol (12)
+[CLASS >> IDENTIFICATION >> NONCOMP] Capitol (12)
 
 [SITUATION-CHANGE] Übergang (18)
 
@@ -186,17 +186,17 @@
 [x-sender] der Nominierte der Republikanischen Partei (12)
 [target-content] , dass er als Präsident „ enorm viele “ legale Einwanderer basierend auf einem Punktesystem akzeptieren würde (31)
 
-[MESSAGE] Äußerungen (4)
+[MESSAGE-INIT] Äußerungen (4)
+[x-sender] seinen (2)
 [m-time] bisherigen (3)
 [topic] zu der Begrenzung der Einwanderung (7)
-[x-sender] seinen (2)
 
 [IDENTIFICATION] seinen (2)
 
 [TIME] bisherigen (3)
 
-[EVENT] Begrenzung (7)
-[undergoer] der Einwanderung (9)
+[SCENE-DEINIT] Begrenzung (7)
+[initial-scene] der Einwanderung (9)
 
 [LOCATION-CHANGE] Einwanderung (9)
 
@@ -204,18 +204,20 @@
 [x-causer] der Republikanischen Partei (15)
 
 [CLASS] Partei (15)
-[m-identified] Republikanischen (14)
+[m-quality >> m-noncomp] Republikanischen (14)
 
-[IDENTIFICATION] Republikanischen (14)
+[QUALITY >> NONCOMP] Republikanischen (14)
 
-[MESSAGE-INIT] akzeptieren (31)
-[x-sender] er als Präsident (18)
-[topic] „ enorm viele “ legale Einwanderer (26)
+[SOCIAL-RELATION-INIT] akzeptieren (31)
+[x-causer] er (18)
+[m-depictive] als Präsident (20)
+[has-social-relation] „ enorm viele “ legale Einwanderer (26)
 [m-followed] basierend auf einem Punktesystem (27)
 
 [IDENTIFICATION] er (18)
 
-[CLASS || SOCIAL-RELATION] Präsident (20)
+[SOCIAL-RELATION] Präsident (20)
+[has-social-relation] er (18)
 
 [LOCATION-CHANGE] Einwanderer (26)
 [m-quality] legale (25)
@@ -274,7 +276,8 @@
 40	.	.	PUNCT	.	_	21	punct	_	_
 
 [MESSAGE-INIT] sagte (21)
-[target-content] „ Ich möchte euch ungern unter Druck setzen , aber das Schicksal der Republik liegt in euren Händen “ , (8)
+[target-content] „ Ich möchte euch ungern unter Druck setzen “ , (8)
+[target-content] , aber das Schicksal der Republik liegt in euren Händen (15)
 [x-sender] er (22)
 [x-experiencer] zu der Menschenmenge , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (25)
 
@@ -299,8 +302,8 @@
 [follows] das Schicksal der Republik (12)
 [x-noncomp] in euren Händen (18)
 
-[EVENT] Schicksal (12)
-[undergoer] der Republik (14)
+[SCENE] Schicksal (12)
+[participant] der Republik (14)
 
 [CLASS] Republik (14)
 
@@ -311,29 +314,29 @@
 
 [IDENTIFICATION] er (22)
 
-[CLASS >> QUANTITY] Menschenmenge (25)
+[CLASS] Menschenmenge (25)
 [m-scene] , die sich auf einem Sportplatz an der University of North Carolina versammelt hatte (38)
 
-[LOCATION-CHANGE] versammelt (38)
-[has-location] die (27)
+[LOCATION-INIT] versammelt (38)
+[x-causer >> has-location] die (27)
 [m-noncomp] sich (28)
 [target-location] auf einem Sportplatz an der University of North Carolina (31)
-[has-location] Menschenmenge (25)
+[c-causer >> has-location] Menschenmenge (25)
 
 [IDENTIFICATION] die (27)
 
-[NONCOMP] sich (28)
+[IDENTIFICATION] sich (28)
 
 [CLASS] Sportplatz (31)
 [m-location] an der University of North Carolina (34)
 
 [IDENTIFICATION] University (34)
-[m-social-relation] of North Carolina (37)
+[m-social-relation >> m-noncomp] of North Carolina (37)
 
 [IDENTIFICATION] Carolina (37)
-[m-part >> m-noncomp] North (36)
+[m-noncomp] North (36)
 
-[PART-WHOLE >> IDENTIFICATION] North (36)
+[IDENTIFICATION] North (36)
 
 # sent_id = n01002042
 # text = Die neuen Ausgaben werden über Clintons wohlgefülltes Bankkonto finanziert.
@@ -350,7 +353,7 @@
 10	.	.	PUNCT	.	_	9	punct	_	_
 
 [MEANS] finanziert (9)
-[has-means] Die neuen Ausgaben (3)
+[purpose] Die neuen Ausgaben (3)
 [means] über Clintons wohlgefülltes Bankkonto (8)
 
 [POSSESSION-CHANGE] Ausgaben (3)
@@ -421,19 +424,19 @@
 8	Maximum	Maximum	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	2	appos	_	SpaceAfter=No
 9	.	.	PUNCT	.	_	2	punct	_	_
 
-[QUANTITY] $ (2)
+[QUANTITY] $ , das erlaubte Maximum (2)
 [m-quantity] 5.000 (1)
 [m-followed] pro Person (4)
-[m-identifier] , das erlaubte Maximum (8)
 
 [QUANTITY] 5.000 (1)
 
 [CLASS] Person (4)
 
 [QUANTITY] Maximum (8)
-[m-quality] erlaubte (7)
+[m-scene] erlaubte (7)
 
-[QUALITY] erlaubte (7)
+[SCENE-POSSIBILITY] erlaubte (7)
+[scene] Maximum (8)
 
 # sent_id = n01003010
 # text = Anfang Oktober nutzte das Übergangsteam denselben Veranstaltungsort für ein Treffen mit Technologielobbyisten, zu dem u.a. Vertreter von Uber, der Motion Picture Association of America und der Consumer Technology Association eingeladen waren.
@@ -477,7 +480,7 @@
 [m-time] Anfang Oktober (1)
 [x-causer] das Übergangsteam (5)
 [means] denselben Veranstaltungsort (7)
-[has-means] für ein Treffen mit Technologielobbyisten , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (10)
+[purpose] für ein Treffen mit Technologielobbyisten , zu dem u.a. Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association eingeladen waren (10)
 
 [PART-WHOLE >> TIME] Anfang (1)
 [whole >> time] Oktober (2)
@@ -495,36 +498,38 @@
 
 [CLASS] Technologielobbyisten (12)
 
-[SOCIAL-RELATION] eingeladen (32)
-[social-relation] zu dem (15)
+[SOCIAL-RELATION-INIT] eingeladen (32)
+[target-social-relation] zu dem (15)
 [has-social-relation] Vertreter von Uber , der Motion Picture Association of America und der Consumer Technology Association (17)
-[social-relation] Treffen (10)
+[target-social-relation] Treffen (10)
 
 [IDENTIFICATION] dem (15)
 
-[??? SOCIAL-RELATION] Vertreter (17)
-[??? x-causer || social-relation] von Uber , der Motion Picture Association of America und der Consumer Technology Association (19)
+[SOCIAL-RELATION] Vertreter (17)
+[social-relation] von Uber (19)
+[social-relation] , der Motion Picture Association of America (24)
+[social-relation] und der Consumer Technology Association (31)
 
 [IDENTIFICATION] Uber (19)
 
 [IDENTIFICATION] Association (24)
-[??? m-noncomp] Motion Picture (23)
-[??? m-noncomp] of America (26)
+[m-noncomp] Motion Picture (23)
+[m-noncomp] of America (26)
 
-[??? NONCOMP] Picture (23)
-[??? m-noncomp] Motion (22)
+[NONCOMP] Picture (23)
+[m-noncomp] Motion (22)
 
-[??? NON-COMP] Motion (22)
+[NONCOMP] Motion (22)
 
-[??? IDENTIFICATION] America (26)
+[NONCOMP] America (26)
 
-[???] Association (31)
-[???] Consumer Technology (30)
+[IDENTIFICATION] Association (31)
+[m-noncomp] Consumer Technology (30)
 
-[???] Technology (30)
-[???] Consumer (29)
+[NONCOMP] Technology (30)
+[m-noncomp] Consumer (29)
 
-[???] Consumer (29)
+[NONCOMP] Consumer (29)
 
 # sent_id = n01003012
 # text = Das Treffen sollte ursprünglich nur ein paar Blocks entfernt im exklusiven Metropolitan Club in Washington auf der H Street stattfinden.
@@ -555,7 +560,7 @@
 
 [SCENE-INIT] stattfinden (21)
 [target-scene] Das Treffen (2)
-[??? m-followed || m-time] ursprünglich (4)
+[m-time] ursprünglich (4)
 [m-location] nur ein paar Blocks entfernt (9)
 [m-location] in dem exklusiven Metropolitan Club (14)
 [m-location] in Washington (16)
@@ -563,7 +568,7 @@
 
 [SOCIAL-RELATION] Treffen (2)
 
-[??? SEQUENCE || TIME] ursprünglich (4)
+[TIME] ursprünglich (4)
 
 [LOCATION] entfernt (9)
 [m-quantity] nur ein paar Blocks (7)
@@ -578,18 +583,18 @@
 
 [CLASS] Club (14)
 [m-quality] exklusiven (12)
-[???  >> m-noncomp] Metropolitan (13)
+[m-noncomp] Metropolitan (13)
 
 [QUALITY] exklusiven (12)
 
-[??? IDENTIFICATION >> NONCOMP] Metropolitan (13)
+[NONCOMP] Metropolitan (13)
 
 [IDENTIFICATION] Washington (16)
 
-[??? LOCATION || CLASS] Street (20)
-[??? m-noncomp ] H (19)
+[CLASS] Street (20)
+[m-noncomp] H (19)
 
-[??? IDENTIFICATION >> NONCOMP] H (19)
+[NONCOMP] H (19)
 
 # sent_id = n01003013
 # text = Vielleicht war die Kleiderordnung zu bieder.
@@ -605,13 +610,13 @@
 [QUALITY] bieder (6)
 [m-mode] Vielleicht (1)
 [has-quality] die Kleiderordnung (4)
-[??? x-noncomp] zu (5)
+[m-quantity] zu (5)
 
 [MODE] Vielleicht (1)
 
-[CLASS] Kleiderordnung (4)
+[MESSAGE] Kleiderordnung (4)
 
-[??? NONCOMP] zu (5)
+[QUANTITY] zu (5)
 
 # newdoc id = n01004
 # sent_id = n01004009
@@ -641,37 +646,41 @@
 22	.	.	PUNCT	.	_	12	punct	_	_
 
 [MESSAGE-INIT] erarbeiten (12)
-[m-reference] Anstatt beispielsweise wissenschaftliche Methoden als eine eigene Unterrichtseinheit zu lernen , (10)
+[m-followed] Anstatt beispielsweise wissenschaftliche Methoden als eine eigene Unterrichtseinheit zu lernen , (10)
 [x-experiencer] die Schüler (14)
 [target-content] wissenschaftliche Inhalte (16)
 [m-means] , indem sie diese anwenden (21)
 
 [MESSAGE] lernen (10)
-[content] beispielsweise wissenschaftliche Methoden als eine eigene Unterrichtseinheit (4)
+[content] beispielsweise wissenschaftliche Methoden (4)
+[m-means] als eine eigene Unterrichtseinheit (8)
 
-[CLASS] Methoden (4)
-[??? ] beispielsweise (2)
-[m-quality] wissenschaftliche (3)
+[MESSAGE] Methoden (4)
+[m-scene] beispielsweise (2)
+[m-quality >> m-scene] wissenschaftliche (3)
 
-[??? EXPLANATION || SEQUENCE || COMPARISON] beispielsweise (2)
+[SUBCLASS] beispielsweise (2)
+[subclass] Methoden (4)
 
-[QUALITY] wissenschaftliche (3)
+[QUALITY >> MESSAGE] wissenschaftliche (3)
+[has-quality >> content] Methoden (4)
 
-[??? CLASS || SEQUENCE] Unterrichtseinheit (8)
+[MESSAGE] Unterrichtseinheit (8)
 [m-quality] eigene (7)
 
 [QUALITY] eigene (7)
 
 [CLASS] Schüler (14)
 
-[??? MESSAGE] Inhalte (16)
-[??? topic] wissenschaftliche (15)
+[MESSAGE] Inhalte (16)
+[m-quality >> m-scene] wissenschaftliche (15)
 
-[QUALITY] wissenschaftliche (15)
+[QUALITY >> MESSAGE] wissenschaftliche (15)
+[has-quality >> content] Inhalt (16)
 
-[??? EVENT] anwenden (21)
-[??? x-causer] sie (19)
-[??? undergoer] diese (20)
+[MEANS] anwenden (21)
+[x-causer] sie (19)
+[means] diese (20)
 
 [IDENTIFICATION] sie (19)
 
@@ -709,37 +718,40 @@
 26	.	.	PUNCT	.	_	6	punct	_	_
 
 [SCENE] liegen (6)
-[m-time] In der 4 . Klasse (5)
+[m-depictive] In der 4 . Klasse (5)
 [participant] sie (7)
 [scene] in dem nationalen Durchschnitt (11)
 
-[??? SEQUENCE] Klasse (5)
+[CLASS] Klasse (5)
 [m-rank] 4 . (3)
+[m-has-social-relation] sie (7)
 
 [RANK] 4 (3)
 
 [IDENTIFICATION] sie (7)
 
-[??? QUALITY || QUANTITY] Durchschnitt (11)
-[??? m-location || m-whole] nationalen (10)
+[QUANTITY] Durchschnitt (11)
+[has-quantity] nationalen (10)
+[x-has-quantity] sie (7)
 
-[??? LOCATION || PART-WHOLE || QUALITY] nationalen (10)
+[CLASS] nationalen (10)
 
 [QUALITY] besser (21)
-[m-time] in der 8 . Klasse (18)
+[m-depictive] in der 8 . Klasse (18)
 [has-quality] sie (20)
 
-[??? SEQUENCE] Klasse (18)
+[CLASS] Klasse (18)
 [m-rank] 8 . (16)
+[m-has-social-relation] sie (20)
 
 [RANK] 8 (16)
 
 [IDENTIFICATION] sie (20)
 
-[??? QUALITY || QUANTITY] Durchschnitt (25)
-[??? m-location || m-whole] nationale (24)
+[QUANTITY] Durchschnitt (25)
+[has-quantity] nationale (24)
 
-[??? LOCATION || PART-WHOLE || QUALITY] nationale (24)
+[CLASS] nationale (24)
 
 # newdoc id = n01005
 # sent_id = n01005023
@@ -772,10 +784,10 @@
 24	wurde	werden	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Tense=Past	23	aux:pass	_	SpaceAfter=No
 25	.	.	PUNCT	.	_	5	punct	_	_
 
-[??? SCENE ] kostete (5)
-[x-reference] In dem Vergleich dazu (3)
-[m-quantity] 103,7 Millionen Dollar (9)
-[??? scene] , die U - Bahn - Haltestelle NoMa zu bauen , die 2004 eröffnet wurde (19)
+[ASSET] kostete (5)
+[m-reference] In dem Vergleich dazu (3)
+[asset] 103,7 Millionen Dollar (9)
+[has-asset] , die U - Bahn - Haltestelle NoMa zu bauen , die 2004 eröffnet wurde (19)
 
 [COMPARISON] Vergleich (3)
 [reference] dazu (4)
@@ -793,9 +805,8 @@
 [TRANSFORMATION-CREATION] bauen (19)
 [created] die U - Bahn - Haltestelle NoMa , die 2004 eröffnet wurde (16)
 
-[CLASS] Haltestelle (16)
-[??? m-noncomp] U - Bahn - (14)
-[??? m-noncomp] NoMa (17)
+[CLASS] Haltestelle NoMa (16)
+[m-purpose] U - Bahn - (14)
 [m-scene] , die 2004 eröffnet wurde (23)
 
 [CLASS] Bahn (14)
@@ -803,12 +814,12 @@
 
 [QUALITY >> NONCOMP] U (12)
 
-[??? IDENTIFICATION] NoMa (17)
+[IDENTIFICATION] NoMa (17)
 
-[SITUATION-CHANGE] eröffnet (23)
-[theme] die (21)
+[SCENE-INIT] eröffnet (23)
+[participant] die (21)
 [m-time] 2004 (22)
-[theme] Haltestelle (16)
+[participant] Haltestelle (16)
 
 [IDENTIFICATION] die (21)
 
@@ -846,16 +857,18 @@
 26	.	.	PUNCT	.	_	18	punct	_	_
 
 [MESSAGE-INIT] sagte (18)
-[target-content] „ Wir stehen in dem Wettbewerb und wir denken , ein Transitsystem kann dabei helfen “ , (3)
+[target-content] „ Wir stehen in dem Wettbewerb “ , (3)
+[target-content] und wir denken , ein Transitsystem kann dabei helfen (9)
 [x-sender] Joe Sternlieb , Präsident des Georgetown BID (19)
 
-[SCENE-INIT] stehen (3)
+[SCENE] stehen (3)
 [participant] Wir (2)
-[target-scene] in dem Wettbewerb (6)
+[scene] in dem Wettbewerb (6)
 
 [IDENTIFICATION] Wir (2)
 
-[??? SOCIAL-RELATION] Wettbewerb (6)
+[SOCIAL-RELATION] Wettbewerb (6)
+[has-social-relation] Wir (2)
 
 [MESSAGE-INIT] denken (9)
 [x-experiencer] wir (8)
@@ -863,21 +876,20 @@
 
 [IDENTIFICATION] wir (8)
 
-[??? MEANS] helfen (15)
-[??? means] ein Transitsystem (12)
-[??? has-means] dabei (14)
+[SCENE-INIT] helfen (15)
+[x-causer] ein Transitsystem (12)
+[target-scene] dabei (14)
 
-[??? CLASS] Transitsystem (12)
+[CLASS] Transitsystem (12)
 
 [IDENTIFICATION] dabei (14)
 
-[IDENTIFICATION] Joe (19)
-[m-identifier] , Präsident des Georgetown BID (22)
+[IDENTIFICATION] Joe Sternlieb , Präsident des Georgetown BID (19)
 
 [SOCIAL-RELATION] Präsident (22)
-[??? x-causer] des Georgetown BID (24)
+[social-relation] des Georgetown BID (24)
 
-[IDENTIFICATION] Georgetown (24)
+[IDENTIFICATION] Georgetown BID (24)
 
 # sent_id = n01005031
 # text = Der Machbarkeitsstudie zufolge könnten die Passagiere den Potomac River mit der Gondel in ungefähr 4 Minuten überqueren.
@@ -904,7 +916,7 @@
 [LOCATION-CHANGE] überqueren (17)
 [x-sender] Der Machbarkeitsstudie zufolge (2)
 [has-location] die Passagiere (6)
-[??? transitory-location] den Potomac River (9)
+[transitory-location] den Potomac River (9)
 [m-means] mit der Gondel (12)
 [m-time] in ungefähr 4 Minuten (16)
 
@@ -957,11 +969,11 @@
 
 [CLASS] Zeuge (2)
 
-[CLASS] Polizei (5)
+[CLASS || SOCIAL-RELATION] Polizei (5)
 
-[HITTING] angegriffen (15)
+[EVENT] angegriffen (15)
 [x-causer] das Opfer (9)
-[hit] den Verdächtigen (11)
+[undergoer] den Verdächtigen (11)
 [m-time] in dem April (14)
 
 [CLASS] Opfer (9)
@@ -987,23 +999,24 @@
 11	ziehen	ziehen	VERB	VB	_	0	root	_	SpaceAfter=No
 12	.	.	PUNCT	.	_	11	punct	_	_
 
-[SCENE-INIT] ziehen (11)
-[??? m-location] Hier (1)
-[??? m-noncomp] man (3)
-[target-scene] Parallelen (4)
-[participant] zwischen Spielen und unserem täglichen Leben (6)
+[COMPARISON] ziehen (11)
+[m-situator] Hier (1)
+[x-causer] man (3)
+[x-noncomp] Parallelen (4)
+[reference] zwischen Spielen (6)
+[compared] und unserem täglichen Leben (10)
 
-[??? LOCATION || IDENTIFICATION] Hier (1)
+[SITUATION] Hier (1)
 
-[??? NONCOMP] man (3)
+[IDENTIFICATION] man (3)
 
-[COMPARISON] Parallelen (4)
+[NONCOMP] Parallelen (4)
 
 [ACTIVITY] Spielen (6)
 
 [EVENT] Leben (10)
-[m-time] täglichen (9)
 [undergoer] unserem (8)
+[m-time] täglichen (9)
 
 [IDENTIFICATION] unserem (8)
 
@@ -1049,16 +1062,16 @@
 34	ansteigen	ansteigen	VERB	VB	_	8	conj	_	SpaceAfter=No
 35	.	.	PUNCT	.	_	8	punct	_	_
 
-[??? QUANTITY-CHANGE] gestiegen (8)
+[QUANTITY-CHANGE] gestiegen (8)
 [has-quantity] Dieser Anteil (2)
 [m-time] über die Jahre (6)
-[??? m-quality] kontinuierlich (7)
+[m-quality] kontinuierlich (7)
 
 [PART-WHOLE] Anteil (2)
 
 [TIME] Jahre (6)
 
-[??? QUALITY] kontinuierlich (7)
+[QUALITY] kontinuierlich (7)
 
 [SCENE-INIT] abgegeben (25)
 [m-time] vor dem Wahltag 1996 (12)
@@ -1071,11 +1084,11 @@
 [TIME] 1996 (13)
 
 [CLASS] Statistikbehörde (19)
-[??? m-location >> m-noncomp] US - (17)
+[m-location >> m-noncomp] US - (17)
 
 [IDENTIFICATION] US (17)
 
-[??? PART-WHOLE] Prozent (22)
+[PART-WHOLE] Prozent (22)
 [part] nur 11 (21)
 [whole] der Gesamtstimmen (24)
 
@@ -1084,21 +1097,22 @@
 
 [MODE] nur (20)
 
-[??? CLASS] Gesamtstimmen (24)
+[CLASS] Gesamtstimmen (24)
 
-[??? QUANTITY-CHANGE] ansteigen (34)
+[QUANTITY-CHANGE] ansteigen (34)
 [m-time] auch dieses Jahr (31)
-[m-time] wieder (32)
-[??? m-quality || m-state] sprunghaft (33)
+[m-scene] wieder (32)
+[m-quality] sprunghaft (33)
 
 [TIME] Jahr (31)
-[??? m-mode] auch (29)
+[m-mode] auch (29)
 
-[??? MODE] auch (29)
+[MODE] auch (29)
 
-[TIME] wieder (32)
+[SEQUENCE] wieder (32)
+[follows] ansteigen (34)
 
-[??? QUALITY || STATE] sprunghaft (33)
+[QUALITY] sprunghaft (33)
 
 # newdoc id = n01009
 # sent_id = n01009027
@@ -1121,10 +1135,10 @@
 15	.	.	PUNCT	.	_	7	punct	_	_
 
 [CLASS] Schwein (7)
-[x-time] Heute (1)
-[m-identfier] Khanzir (3)
+[m-time] Heute (1)
+[has-class] Khanzir (3)
 [m-mode] vielleicht (4)
-[??? m-state] einsames (6)
+[m-state] einsames (6)
 
 [TIME] Heute (1)
 
@@ -1132,7 +1146,7 @@
 
 [MODE] vielleicht (4)
 
-[??? STATE || SOCIAL-RELATION] einsames (6)
+[STATE] einsames (6)
 
 [STATE] alleine (14)
 [has-state] er (10)
@@ -1183,7 +1197,7 @@
 [MESSAGE-INIT] gebeten (7)
 [x-sender] Wir (2)
 [x-experiencer] andere Länder (5)
-[??? target-content] darum (6)
+[target-content] darum (6)
 [target-content] , uns dabei zu helfen , den Zoo mit verschiedenen Tierarten zu füllen , unter anderem mit einem Schwein (12)
 
 [IDENTIFICATION] Wir (2)
@@ -1192,10 +1206,10 @@
 
 [IDENTIFICATION] darum (6)
 
-[??? SCENE-INIT || MEANS] helfen (12)
+[SCENE-INIT] helfen (12)
 [participant] uns (9)
 [??? target-scene] dabei (10)
-[??? target-scene] , den Zoo mit verschiedenen Tierarten zu füllen , unter anderem mit einem Schwein (20)
+[target-scene] , den Zoo mit verschiedenen Tierarten zu füllen , unter anderem mit einem Schwein (20)
 
 [IDENTIFICATION] uns (9)
 
@@ -1204,6 +1218,7 @@
 [LOCATION-CHANGE] füllen (20)
 [target-location] den Zoo (15)
 [has-location] mit verschiedenen Tierarten (18)
+[x-causer] uns (9)
 
 [CLASS] Zoo (15)
 
@@ -1218,9 +1233,10 @@
 [??? CLASS] anderem (23)
 
 [IDENTIFICATION] Saqib (30)
-[??? ] so (29)
+[m-scene] so (29)
 
-[??? MESSAGE] so (29)
+[SENDING] so (29)
+[sender] Saqib (30)
 
 # newdoc id = n01010
 # sent_id = n01010042
@@ -1257,22 +1273,24 @@
 [SCENE-INIT] gab (2)
 [target-scene] einen Punkt , , an dem er das Gefühl hatte , dass sie das Gebäude verlassen sollten (4)
 
-[??? TIME] Punkt (4)
+[TIME] Punkt (4)
 [m-scene] , an dem er das Gefühl hatte , dass sie das Gebäude verlassen sollten (15)
 
 [SCENE-INIT] hatte (15)
-[??? m-time] an dem (11)
+[m-time] an dem (11)
 [participant] er (12)
 [target-scene] das Gefühl , dass sie das Gebäude verlassen sollten (14)
+[m-time] Punkt (4)
 
-[??? TIME || IDENTIFICATION] dem (11)
+[IDENTIFICATION] dem (11)
 
 [IDENTIFICATION] er (12)
 
 [MESSAGE] Gefühl (14)
 [content] , dass sie das Gebäude verlassen sollten (21)
+[x-experiencer] er (12)
 
-[LOCATION-CHANGE] verlassen (21)
+[LOCATION-DEINIT] verlassen (21)
 [has-location] sie (18)
 [initial-location] das Gebäude (20)
 
@@ -1280,7 +1298,7 @@
 
 [CLASS] Gebäude (20)
 
-[IDENTIFICATION] Prasad (7)
+[IDENTIFICATION] Prasad Panvalker (7)
 
 # newdoc id = n01011
 # sent_id = n01011004
@@ -1314,8 +1332,8 @@
 [] versuchten (5)
 
 [] Tochter (9)
-[] zweijährigen (8)
 [] ihrer (7)
+[] zweijährigen (8)
 
 [] ihrer (7)
 
@@ -1366,8 +1384,7 @@
 
 [] Sie (1)
 
-[] Andre (3)
-[] III (5)
+[] Andre Price III (3)
 
 [] III (5)
 
@@ -1400,8 +1417,7 @@
 
 [] dasselbe (21)
 
-[] Tochter (24)
-[] Angel (25)
+[] Tochter Angel (24)
 [] ihrer (23)
 
 [] ihrer (23)
@@ -1441,7 +1457,8 @@
 
 [] kommen (9)
 [] Ich (1)
-[] so oder so (3)
+[] so (3)
+[] oder so (5)
 [] in das Gefängnis (8)
 
 [] Ich (1)
@@ -1553,8 +1570,6 @@
 
 [] amerikanischen (6)
 
-[] an (8)
-
 [] gefeuert (15)
 [] er (11)
 [] in dem Juli (14)
@@ -1598,12 +1613,13 @@
 [] Michael Fallon (1)
 [] , das Datum des ersten Stahlschnitts würde dazu beitragen , neue Investitionen zu sichern und hunderte qualifizierte Arbeitsplätze bis 2035 zu erhalten (12)
 
-[] Michael (1)
+[] Michael Fallon (1)
 
 [] beitragen (12)
 [] das Datum des ersten Stahlschnitts (6)
 [] dazu (11)
-[] , neue Investitionen zu sichern und hunderte qualifizierte Arbeitsplätze bis 2035 zu erhalten (17)
+[] , neue Investitionen zu sichern (17)
+[] und hunderte qualifizierte Arbeitsplätze bis 2035 zu erhalten (25)
 
 [] Datum (6)
 [] des ersten Stahlschnitts (9)
@@ -1783,7 +1799,8 @@
 
 [] war (18)
 [] 2007 , (2)
-[] auf der Höhe seiner Popularität ( und vielleicht auch der von Knightley ) , (6)
+[] auf der Höhe seiner Popularität , (6)
+[] ( und vielleicht auch der von Knightley ) (13)
 [] der Name (20)
 [] unter den Top 50 (23)
 
@@ -1874,16 +1891,14 @@
 
 [] Akkufehler (8)
 
-[] aus (9)
-
 [] tauschte (11)
 [] ihre eigene Komponente (14)
 [] gegen eine Batterie von einem anderen Hersteller (17)
 [] aus (22)
 
 [] Komponente (14)
-[] eigene (13)
 [] ihre (12)
+[] eigene (13)
 
 [] ihre (12)
 
@@ -1893,8 +1908,6 @@
 [] von einem anderen Hersteller (21)
 
 [] Hersteller (21)
-
-[] aus (22)
 
 # sent_id = n01016019
 # text = Verschiedene Experten haben darauf hingewiesen, dass Huawei am meisten von Samsungs Rückschlag profitieren könnte.
@@ -1971,7 +1984,8 @@
 
 [] fehlt (5)
 [] Den Mate 9 Smartphones (4)
-[] eine Schnittstelle für künstliche Intelligenz , wie der Google Assistant oder Siri ( Apple ) (7)
+[] eine Schnittstelle für künstliche Intelligenz (7)
+[] , wie der Google Assistant (15)
 
 [] Smartphones (4)
 [] Mate 9 (3)
@@ -1994,8 +2008,7 @@
 
 [] Google (14)
 
-[] Siri (17)
-[] ( Apple ) (19)
+[] Siri ( Apple ) (17)
 
 [] Apple (19)
 
@@ -2030,7 +2043,8 @@
 [] warnte (3)
 [] Ein Reiseexperte (2)
 [] jedoch (4)
-[] , dass WLAN in dem Flugzeug oft unzuverlässig sei und die Wahl der Fluggesellschaft wahrscheinlich nicht beeinflusse (12)
+[] , dass WLAN in dem Flugzeug oft unzuverlässig sei (12)
+[] und die Wahl der Fluggesellschaft wahrscheinlich nicht beeinflusse (21)
 
 [] Reiseexperte (2)
 
@@ -2085,10 +2099,12 @@
 19	.	.	PUNCT	.	_	4	punct	_	_
 
 [] sein (4)
-[] , dass BA und IAG es geschafft haben und etwas halbwegs Zuverlässiges anbieten können (11)
+[] , dass BA und IAG es geschafft haben (11)
+[] und etwas halbwegs Zuverlässiges anbieten können (17)
 
 [] geschafft (11)
-[] BA und IAG (7)
+[] BA (7)
+[] und IAG (9)
 [] es (10)
 
 [] BA (7)
@@ -2146,8 +2162,6 @@
 
 [] BBC (5)
 
-[] mit (6)
-
 [] liege (23)
 [] dass die Entscheidung , ob Passagiere eine Zugangsgebühr entrichten müssten , (10)
 [] bei der jeweiligen Fluggesellschaft (22)
@@ -2201,7 +2215,8 @@
 [] finden (10)
 [] Die meisten Leute (3)
 [] WLAN an dem Flughafen (5)
-[] nützlicher als die Möglichkeit , E - Mails von dem Flugzeug aus zu verschicken (9)
+[] nützlicher (9)
+[] als die Möglichkeit , E - Mails von dem Flugzeug aus zu verschicken (13)
 
 [] Leute (3)
 
@@ -2261,7 +2276,8 @@
 
 [] finanziert (8)
 [] Das Projekt (2)
-[] über Sponsoren und Werbung (5)
+[] über Sponsoren (5)
+[] und Werbung (7)
 
 [] Projekt (2)
 
@@ -2301,9 +2317,8 @@
 
 [] 10 (2)
 
-[] Geheimdienst (10)
+[] Geheimdienst GCHQ (10)
 [] britischen (9)
-[] GCHQ (11)
 
 [] britischen (9)
 
@@ -2328,7 +2343,8 @@
 
 [] hinterfragen (4)
 [] einige Sicherheitsexperten (3)
-[] die Notwendigkeit des Kurses und die Absicht dahinter (6)
+[] die Notwendigkeit des Kurses (6)
+[] und die Absicht dahinter (11)
 
 [] Sicherheitsexperten (3)
 
@@ -2394,7 +2410,8 @@
 [] China (3)
 [] diese Woche (5)
 [] noch mehr seiner Militärausrüstung (7)
-[] , von Kampfhubschraubern bis Wasserflugzeugen (13)
+[] , von Kampfhubschraubern (13)
+[] bis Wasserflugzeugen (15)
 
 [] Natürlich (1)
 
@@ -2490,7 +2507,8 @@
 
 [] zeigen (35)
 [] seine Ambitionen (25)
-[] sowohl hinsichtlich der Zivilluftfahrt als auch der Verteidigung (29)
+[] sowohl hinsichtlich der Zivilluftfahrt (29)
+[] als auch der Verteidigung (33)
 
 [] Ambitionen (25)
 [] seine (24)
@@ -2581,8 +2599,7 @@
 
 [] alle (14)
 
-[] Jesse (19)
-[] , Gründer von Hack Forums (22)
+[] Jesse LaBrocca , Gründer von Hack Forums (19)
 
 [] Gründer (22)
 [] von Hack Forums (25)
@@ -2667,7 +2684,8 @@
 [] lahmlegten (28)
 [] die (15)
 [] kurzzeitig (16)
-[] beliebte Webseiten wie Reddit , Twitter , Spotify und viele andere (18)
+[] beliebte Webseiten (18)
+[] wie Reddit (20)
 
 [] die (15)
 
@@ -2968,14 +2986,13 @@
 
 [] FKW (29)
 
-[] Direktor (34)
+[] Direktor , Erik Solheim (34)
 [] des UN - Umweltprogramms (38)
-[] , Erik Solheim (40)
 
 [] Umweltprogramms (38)
 [] UN - (36)
 
 [] UN (36)
 
-[] Erik (40)
+[] Erik Solheim (40)
 
