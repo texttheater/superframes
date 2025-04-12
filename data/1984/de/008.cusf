@@ -385,10 +385,10 @@
 36	Spiel	Spiel	NOUN	NN	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
 37	.	.	PUNCT	$.	_	36	punct	_	_
 
-[?EVENT] Spiel (36) # # unsicher, ob ACTIVITY besser wäre.
+[EVENT] Spiel (36) # # ?? unsicher, ob ACTIVITY besser wäre.
 [x-has-class] Die Marschlieder (2)
 [x-has-class] , die Umzüge (5)
-[x-has-class] , die Fahnen (8) # activity passt hier wiederum nicht
+[x-has-class] , die Fahnen (8) # ?? activity passt hier wiederum nicht
 [x-has-class] , die Wanderungen (11)
 [x-has-class] , das Exerzieren mit Holzgewehren (14)
 [x-has-class] , das Brüllen von Schlagworten (19)
@@ -1384,7 +1384,7 @@
 [target-scene] viel (6)
 [x-causer] das (2)
 
-[?CLASS || ?QUANTITY] viel (6)
+[QUANTITY] viel (6)
 
 # sent_id = 427
 # text = Zwischen ihnen herrschte ein Einverständnis , das wichtiger war als Zuneigung oder Parteizugehörigkeit .
@@ -1409,9 +1409,9 @@
 
 [IDENTIFICATION] ihnen (2)
 
-[SOCIAL-RELATION-INIT || MESSAGE] Einverständnis (5)
+[MESSAGE] Einverständnis (5)
 [m-scene] , das wichtiger war als Zuneigung oder Parteizugehörigkeit (8)
-[has-social-relation || x-experiencer] Zwischen ihnen (2)
+[x-experiencer] Zwischen ihnen (2)
 
 [QUALITY] wichtiger (8)
 [has-quality] das (7)
@@ -1735,7 +1735,7 @@
 
 [TIME] gleich (16)
 
-[PART-WHOLE] Kriegsende (21)
+[SCENE-DEINIT] Kriegsende (21)
 
 [SCENE-POSSIBILITY || TIME] Nähe (24)
 [m-scene] errechenbare (23)
@@ -2007,7 +2007,7 @@
 40	an	an	ADP	PTKVZ	_	3	compound:prt	_	_
 41	.	.	PUNCT	$.	_	3	punct	_	_
 
-[MESSAGE-INIT] stimmte (3) # # "zu singen, zu spielen beginnen"
+[MESSAGE-INIT] stimmte (3)
 [x-sender] Der Televisor (2)
 [m-purpose] - vielleicht um den Sieg zu feiern (10)
 [m-purpose] , oder aber um die Erinnerung an die Schokoladen-kürzung zu übertönen - (21)
@@ -2082,10 +2082,10 @@
 [MESSAGE-INIT] Zuhörer (2)
 
 [SCENE-INIT] annahm (11)
-[x-causer >> participant] er (7)
+[participant] er (7)
 [m-accompanied] dabei (8)
 [target-scene] stramme Haltung (10)
-[x-causer >> participant] Vom Zuhörer (2)
+[participant] Vom Zuhörer (2)
 
 [IDENTIFICATION] er (7)
 
@@ -2117,7 +2117,7 @@
 [m-mode] nicht (8)
 
 [LOCATION] Platz (5)
-[location] seinem (3)
+[location >> has-location] seinem (3)
 [m-time] derzeitigen (4)
 
 [IDENTIFICATION] seinem (3)
