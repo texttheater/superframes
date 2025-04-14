@@ -36,7 +36,7 @@
 
 [CLASS] Straße (4)
 
-[STATE] Wind (7)
+[CLASS] Wind (7)
 
 [MESSAGE] Plakat (10)
 [m-state] zerrissene (9)
@@ -81,7 +81,7 @@
 [m-purpose] politischen (3)
 [x-sender] von Engsoz (6)
 
-[MESSAGE] heiligen (2) # # "religiöser Ausdruck, der eine Person, einen Gegenstand oder einen Begriff einer Sphäre des Göttlichen, Vollkommenen oder Absoluten zuordnet"
+[MESSAGE] heiligen (2)
 [topic] Grundsätze : Neusprache , Zwiegedanke , die Verwandlung der Vergangenheit (4)
 
 [ACTIVITY] politischen (3)
@@ -173,8 +173,8 @@
 3	allein	allein	ADV	ADV	_	0	root	_	_
 4	.	.	PUNCT	$.	_	3	punct	_	_
 
-[SOCIAL-RELATION-NEG >> STATE] allein (3)
-[has-social-relation >> has-state] Er (1)
+[ACCOMPANIMENT-NEG] allein (3)
+[accompanied] Er (1)
 
 [IDENTIFICATION] Er (1)
 
@@ -244,11 +244,12 @@
 
 [CLASS] Mensch (12)
 [m-quantity] einziger (10)
-[m-state] lebender (11)
+[m-scene] lebender (11)
 
 [QUANTITY] einziger (10)
 
-[STATE] lebender (11)
+[EVENT >> STATE] lebender (11)
+[undergoer >> has-state] Mensch (12)
 
 [LOCATION >> SOCIAL-RELATION] Seite (15)
 [location >> social-relation] seiner (14)
@@ -270,15 +271,15 @@
 11	?	?	PUNCT	$.	_	10	punct	_	_
 
 [SCENE-CONTINUATION] dauern (10)
-[m-causer] warum (2)
+[m-causer || m-explanation] warum (2)
 [initial-scene] die Herrschaft der Partei (5)
 [m-mode] nicht (8)
 [m-time] ewig (9)
 
-[CAUSATION] warum (2)
+[CAUSATION || EXPLANATION] warum (2)
 
-[SOCIAL-RELATION] Herrschaft (5)
-[has-social-relation] der Partei (7)
+[SOCIAL-RELATION || POSSESSION] Herrschaft (5)
+[has-social-relation || possessor] der Partei (7)
 
 [SOCIAL-RELATION] Partei (7)
 
@@ -353,7 +354,7 @@
 2	IST	sein	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	SKLAVEREI	Sklaverei	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 
-[STATE] SKLAVEREI (3)
+[STATE || POSSESSION] SKLAVEREI (3)
 [x-has-class] FREIHEIT (1)
 
 [STATE] FREIHEIT (1)
@@ -367,7 +368,7 @@
 [QUALITY] STÄRKE (3)
 [x-has-class] UNWISSENHEIT (1)
 
-[STATE] UNWISSENHEIT (1)
+[STATE || MESSAGE-NEG] UNWISSENHEIT (1)
 
 # sent_id = 462
 # text = Er zog ein Fünfundzwanzig-Cent-Stück aus der Tasche .
@@ -482,7 +483,7 @@
 
 [CLASS] Münze (4)
 [m-mode] Sogar (1)
-[x-has-location] die Augen (8)
+[m-has-location] die Augen (8)
 
 [MODE] Sogar (1)
 
@@ -524,19 +525,19 @@
 [in-motion] einen (18)
 
 [CLASS] Geldmünzen (2)
-[x-has-location] sie (17)
+[m-has-location] sie (17)
 
 [CLASS] Briefmarken (4)
-[x-has-location] sie (17)
+[m-has-location] sie (17)
 
 [PART-WHOLE] Bucheinbänden (6)
-[x-has-location] sie (17)
+[m-has-location] sie (17)
 
 [MESSAGE] Fahnen (8)
-[x-has-location] sie (17)
+[m-has-location] sie (17)
 
 [MESSAGE] Plakaten (10)
-[x-has-location] sie (17)
+[m-has-location] sie (17)
 
 [WRAPPING-WEARING] Zigarettenschachteln (12)
 [m-has-location] sie (17)
@@ -633,7 +634,7 @@
 [SCENE] gab (27)
 [scene] kein Entrinnen (29)
 
-[SCENE-DEINIT-POSSIBILITY] Entrinnen (29) # # "einer Bedrohung entgehen; sich jemandem entziehen können"
+[SCENE-DEINIT-POSSIBILITY] Entrinnen (29)
 [m-mode] kein (28)
 
 [MODE] kein (28)
@@ -722,7 +723,7 @@
 [CLASS] Ministeriums (12) # # hier: Gebäude
 [m-purpose >> m-noncomp] Wahrheits- (11)
 
-[NONCOMP] Wahrheits- (11)
+[CLASS >> NONCOMP] Wahrheits- (11)
 
 [LOCATION-INIT] fielen (20)
 [target-location] auf die (15)
@@ -747,7 +748,7 @@
 [m-reference] wie die Schießscharten einer Festung (26)
 [has-quality] die unzähligen Fenster des Wahrheits- Ministeriums , auf die ihre Strahlen nicht mehr fielen , (9)
 
-[PART-WHOLE] Schießscharten (26) # # "Öffnung im Mauerwerk einer Burg, Festung o. Ä. zum Schießen auf den Feind"
+[PART-WHOLE] Schießscharten (26)
 [whole] einer Festung (28)
 
 [CLASS] Festung (28)
@@ -816,7 +817,7 @@
 
 [QUANTITY] zu (3)
 
-[LOCATION-INIT || POSSESSION-INIT] erstürmt (7) # # "durch einen Sturmangriff einnehmen, erobern"
+[LOCATION-INIT || POSSESSION-INIT] erstürmt (7)
 [target-location || possessed] Sie (1)
 
 [SCENE-POSSIBILITY] vermochten (13)
@@ -856,7 +857,7 @@
 [MESSAGE-INIT >> MESSAGE] fragte (2)
 [m-scene] Wieder (1)
 [x-sender >> x-experiencer] er (3)
-[x-experiencer] sich (4)
+[x-experiencer >> x-noncomp] sich (4)
 [target-content >> content] , für wen er sein Tagebuch schrieb (11)
 
 [SEQUENCE] Wieder (1)
@@ -864,19 +865,19 @@
 
 [IDENTIFICATION] er (3)
 
-[IDENTIFICATION] sich (4)
+[IDENTIFICATION >> NONCOMP] sich (4)
 
 [MESSAGE-INIT] schrieb (11)
 [x-purpose] für wen (7)
 [x-sender] er (8)
-[target-content] sein Tagebuch (10)
+[topic] sein Tagebuch (10)
 
 [CLASS] wen (7)
 
 [IDENTIFICATION] er (8)
 
 [MESSAGE] Tagebuch (10)
-[x-sender || m-possessor] sein (9)
+[x-sender] sein (9)
 
 [IDENTIFICATION] sein (9)
 
@@ -943,11 +944,12 @@
 [IDENTIFICATION] Ihn (1)
 
 [DESTRUCTION] Tod (6)
-[m-mode] nicht allein (4)
+[m-scene] nicht allein (4)
 [destroyed] Ihn (1)
 
-[MODE] allein (4)
+[ACCOMPANIMENT-NEG] allein (4)
 [m-mode] nicht (3)
+[accompanied] Tod (6)
 
 [MODE] nicht (3)
 
@@ -965,8 +967,8 @@
 4	zu	zu	ADP	APPR	_	5	case	_	_
 5	Asche	Asche	NOUN	NN	Case=Dat|Gender=Fem|Number=Sing	12	obl	_	_
 6	,	,	PUNCT	$,	_	12	punct	_	_
-7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj:pass	_	_
-8	selbst	selbst	ADV	ADV	_	12	advmod	_	_
+7	er	er	PRON	PPER	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	conj	_	_
+8	selbst	selbst	ADV	ADV	_	7	advmod	_	_
 9	zu	zu	ADP	APPR	_	11	case	_	_
 10	bloßem	bloß	ADJ	ADJA	Case=Dat|Gender=Masc|Number=Sing	11	amod	_	_
 11	Rauch	Rauch	NOUN	NN	Case=Dat|Gender=Masc|Number=Sing	5	conj	_	_
@@ -976,12 +978,16 @@
 
 [TRANSFORMATION-CREATION] verbrannt (12)
 [material] Das Tagebuch (2)
+[material] er selbst (7)
 [created] zu Asche (5)
 [created] zu bloßem Rauch (11)
-[material] er (7)
-[m-mode] selbst (8)
 
 [MESSAGE] Tagebuch (2)
+
+[IDENTIFICATION] er (7)
+[m-mode] selbst (8)
+
+[MODE] selbst (8)
 
 [CLASS] Asche (5)
 
@@ -989,10 +995,6 @@
 [m-mode] bloßem (10)
 
 [MODE] bloßem (10)
-
-[IDENTIFICATION] er (7)
-
-[MODE] selbst (8)
 
 # sent_id = 476
 # text = Nur die Gedankenpolizei würde das von ihm Geschriebene lesen , ehe sie es aus der Welt und aus der Erinnerung tilgte .
@@ -1062,7 +1064,7 @@
 10	keine	kein	DET	PIAT	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing	11	nmod	_	_
 11	Spur	Spur	NOUN	NN	Case=Nom|Gender=Fem|Number=Sing	28	nsubj:pass	_	_
 12	von	von	ADP	APPR	_	13	case	_	_
-13	einem	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	11	det	_	_
+13	einem	ein	PRON	PIS	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing	11	nmod	_	_
 14	,	,	PUNCT	$,	_	13	punct	_	_
 15	'	'	PUNCT	$(	_	13	punct	_	_
 16	nicht	nicht	PART	PTKNEG	Polarity=Neg	17	advmod	_	_
@@ -1100,8 +1102,11 @@
 
 [MESSAGE] Spur (11)
 [m-mode] keine (10)
+[x-sender] von einem , ' (13)
 
 [MODE] keine (10)
+
+[CLASS] einem (13)
 
 [CLASS] Papier (20)
 [m-quantity] nicht einmal ein Stückchen (19)
@@ -1118,11 +1123,11 @@
 [MESSAGE] Worten (27)
 [m-scene] darauf gekritzelten (25)
 [x-sender] anonymen (26)
-[m-location] Papier (20)
+[x-location] Papier (20)
 
-[STATE-INIT] gekritzelten (25)
-[m-location] darauf (24)
-[has-state] Worten (27)
+[MESSAGE-INIT >> QUALITY] gekritzelten (25)
+[x-location] darauf (24)
+[topic >> has-quality] Worten (27)
 
 [IDENTIFICATION] darauf (24)
 
@@ -1231,7 +1236,7 @@
 [MESSAGE] schien (2)
 [m-quality] Merkwürdigerweise (1)
 [topic] ihn (3)
-[x-causer] das Schlagen der vollen Stunde (5)
+[topic] das Schlagen der vollen Stunde (5)
 [content] mit neuem Mut erfüllt zu haben (12)
 
 [QUALITY] Merkwürdigerweise (1)
@@ -1249,6 +1254,7 @@
 [SCENE-INIT] erfüllt (12)
 [target-scene] mit neuem Mut (11)
 [participant] ihn (3)
+[x-causer] das Schlagen der vollen Stunde (5)
 
 [MESSAGE] Mut (11)
 [m-scene] neuem (10)
@@ -1394,19 +1400,20 @@
 [possessed] das Erbe der Menschheit (18)
 [target-possessor] weiter (21)
 
-[POSSESSION-INIT >> SENDING-POSSIBILITY] verschaffte (6) # # "dafür sorgen, dass jemandem etwas zuteilwird, jemand etwas bekommt" >> "für Beachtung sorgen; dafür sorgen, dass einem zugehört wird"
+[SCENE-INIT] verschaffte (6)
 [m-mode] Nicht (1)
-[x-causer >> sender] man (3)
-[target-possessor >> x-noncomp] sich (4)
-[possessed >> x-noncomp] Gehör (5)
+[x-causer] man (3)
+[participant] sich (4)
+[target-scene] Gehör (5)
 
 [MODE] Nicht (1)
 
 [CLASS] man (3)
 
-[IDENTIFICATION >> NONCOMP] sich (4)
+[IDENTIFICATION] sich (4)
 
-[MEANS >> NONCOMP] Gehör (5)
+[MESSAGE] Gehör (5)
+[x-sender] sich (4)
 
 [SCENE-CONTINUATION] bewahrte (13)
 [x-causer] man (10)
@@ -1422,7 +1429,7 @@
 
 [CLASS] man (16)
 
-[POSSESSION] Erbe (18) # # "bedeutet, dass manche Orte der gesamten Menschheit gehören und dass die Ressourcen dieser Orte allen Menschen zur Verfügung stehen sollten"
+[POSSESSION] Erbe (18)
 [possessor] der Menschheit (20)
 
 [CLASS] Menschheit (20)
@@ -1578,15 +1585,15 @@
 [EVENT] lebt (25)
 [m-mode] nicht (21)
 [undergoer] jeder (22)
-[m-purpose || m-depictive] für sich (24) # # "zu seinem eigenen Vorteil" vs "allein" (im Original auch "alone")
+[m-purpose || m-scene] für sich (24) # # "zu seinem eigenen Vorteil" vs "allein" (im Original auch "alone")
 [m-time] Vergangenheit (6)
 
 [MODE] nicht (21)
 
 [CLASS] jeder (22)
 
-[IDENTIFICATION || STATE] sich (24)
-[has-state] jeder (22)
+[IDENTIFICATION || ACCOMPANIMENT-NEG] sich (24)
+[accompanied] jeder (22)
 
 [TIME] Zeit (28)
 [m-scene] , in der es Wahrheit gibt , (34)
@@ -1602,7 +1609,7 @@
 
 [NONCOMP] es (32)
 
-[MODE >> CLASS] Wahrheit (33) # # abstraktes Konzept
+[MODE >> CLASS] Wahrheit (33)
 
 [SCENE-INIT >> SCENE-DEINIT] gemacht (40)
 [participant >> initial-scene] das Geschehene (37)
@@ -1625,12 +1632,12 @@
 [m-quality] der Gleichmachung (52)
 [m-quality] und der Vereinsamung (55)
 
-[EVENT] Gleichmachung (52) # # "jmdn., etw. gleich behandeln, alle Unterschiede, Ungleichheiten beseitigen (wollen) bzw. leugnen"
+[EVENT] Gleichmachung (52)
 
 [STATE-INIT] Vereinsamung (55)
 
 [TIME] Zeitalter (58)
-[m-possessor] des Großen Bruders (61)
+[has-time] des Großen Bruders (61)
 
 [SOCIAL-RELATION >> IDENTIFICATION] Bruders (61)
 [m-quality >> m-noncomp] Großen (60)
@@ -1941,7 +1948,7 @@
 9	verraten	verraten	VERB	VVINF	VerbForm=Inf	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[MESSAGE-INIT] verraten (9) # # Vgl. sent_id 253
+[MESSAGE-INIT] verraten (9)
 [m-means] Gerade durch eine solche Kleinigkeit (5)
 [x-sender] man (7)
 [topic] sich (8)
@@ -2078,13 +2085,13 @@
 [MESSAGE-INIT] geschrieben (38)
 [m-causer] warum (33)
 [x-sender] er (34)
-[m-time >> m-accompanier] während der Mittagspause (37)
+[m-time >> m-accompanied] während der Mittagspause (37)
 
 [CAUSATION] warum (33)
 
 [IDENTIFICATION] er (34)
 
-[PART-WHOLE >> EVENT] Mittagspause (37) # # Teil der Arbeitszeit?
+[PART-WHOLE >> EVENT] Mittagspause (37) # # ?? Teil der Arbeitszeit?
 
 [MEANS] benützt (45)
 [purpose] warum (40)
@@ -2096,9 +2103,9 @@
 [IDENTIFICATION] er (41)
 
 [CLASS] Stahlfeder (44)
-[m-initial-time >> m-quality] altmodische (43)
+[m-quality] altmodische (43)
 
-[TIME >> QUALITY] altmodische (43)
+[QUALITY] altmodische (43)
 
 [MESSAGE-INIT] geschrieben (49)
 [target-content] was (47)
@@ -2108,7 +2115,7 @@
 
 [IDENTIFICATION] er (48)
 
-[SCENE-INIT] geben (60) # # "etwas andeuten, durchblicken lassen"
+[SCENE-INIT] geben (60)
 [m-time] dann (53)
 [participant] an zuständiger Stelle (56)
 [target-scene] einen Wink (58)
@@ -2122,7 +2129,7 @@
 [POSSESSION] zuständiger (55)
 [possessor] Stelle (56)
 
-[MESSAGE] Wink (58) # # "Äußerung, mit der man jemanden meist unauffällig auf etwas aufmerksam machen will"
+[MESSAGE] Wink (58)
 [x-sender] Eiferer (4)
 [x-experiencer] an zuständiger Stelle (56)
 
@@ -2203,12 +2210,12 @@
 
 [CLASS] Schmirgelpapier (21)
 
-[SITUATION >> MEANS] geeignet (28)
-[m-explanation] deshalb (24)
-[x-purpose >> purpose] für seinen Zweck (27)
-[theme >> means] Seife (14)
+[MEANS-POSSIBILITY] geeignet (28)
+[m-causer] deshalb (24)
+[purpose] für seinen Zweck (27)
+[means] Seife (14)
 
-[IDENTIFICATION || EXPLANATION] deshalb (24)
+[IDENTIFICATION] deshalb (24)
 
 [SEQUENCE] Zweck (27) # # Vgl. sent_id 6
 [m-purpose] seinen (26)
@@ -2272,7 +2279,7 @@
 28	war	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
 29	.	.	PUNCT	$.	_	10	punct	_	_
 
-[MEANS-NEG >> QUALITY] sinnlos (10) # # "aussichtslos, nutzlos"
+[MEANS-NEG >> QUALITY] sinnlos (10)
 [means >> has-quality] Der Gedanke , es zu verstecken , (2)
 [m-quantity] völlig (9)
 
@@ -2303,7 +2310,7 @@
 [MESSAGE-INIT] vergewissern (22)
 [x-experiencer] sich (20)
 [topic] , ob es entdeckt worden war (26)
-[x-sender >> x-experiencer] er (13)
+[x-experiencer] er (13)
 
 [IDENTIFICATION] sich (20)
 
@@ -2325,7 +2332,7 @@
 9	augenfällig	augenfällig	ADJ	ADJD	_	0	root	_	_
 10	.	.	PUNCT	$.	_	9	punct	_	_
 
-[MESSAGE-INIT-NECESSITY] augenfällig (9) # # "auffällig, nicht zu übersehen"
+[MESSAGE-INIT-NECESSITY] augenfällig (9)
 [topic] Ein zwischen die Seiten gelegtes Haar (6)
 [m-quantity] zu (8)
 
@@ -2375,11 +2382,11 @@
 31	berührte	berühren	VERB	VVFIN	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	advcl	_	_
 32	.	.	PUNCT	$.	_	4	punct	_	_
 
-[POSSESSION-INIT] pickte (4)
+[LOCATION-INIT] pickte (4)
 [m-means] Mit der Fingerspitze (3)
-[target-possessor] er (5)
-[possessed] ein gerade noch erkennbares weißliches Staubkörnchen (11)
-[x-noncomp] auf (12)
+[x-causer] er (5)
+[has-location] ein gerade noch erkennbares weißliches Staubkörnchen (11)
+[target-location] auf (12)
 
 [PART-WHOLE] Fingerspitze (3)
 
