@@ -339,7 +339,6 @@
 
 [SEQUENCE] vredelo (4)
 [followed] Pokušati liftom (1)
-[??] nije (3) # Checker fügt diese Kante nicht hinzu
 
 [SCENE-INIT] Pokušati (1)
 [x-means] liftom (2)
@@ -807,7 +806,7 @@
 17	razabrati	razabrati	VERB	Vmn	VerbForm=Inf	14	xcomp	_	_
 18	.	.	PUNCT	Z	_	2	punct	_	_
 
-[UNANCHORED-MOVEMENT >> STATE-CHANGE] okrete (2)
+[UNANCHORED-MOTION >> STATE-CHANGE] okrete (2)
 [x-causer] Vinston (1)
 [in-motion >> has-state] prekidač (3)
 
@@ -1240,10 +1239,10 @@
 20	Vinstonove	Vinstonov	PROPN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	17	obl	_	_
 21	.	.	PUNCT	Z	_	5	punct	_	_
 
-[MESSAGE-INIT] pisalo (8)
+[MESSAGE] pisalo (8)
 [content] " Veliki brat te posmatra , . (5)
 [m-time >> m-accompanier] , dok su tamne oči gledale pravo u Vinstonove (17)
-[x-location] na plakatu (11)
+[x-sender] na plakatu (11)
 
 [MESSAGE-INIT] posmatra (5)
 [x-experiencer] Veliki brat (3)
@@ -1771,7 +1770,7 @@
 [m-time] Koliko često (3)
 [m-followed] , ili po kom sistemu , (8)
 [x-experiencer] Policija misli (10)
-[?topic] na pojedinačne kanale (15)
+[x-means] na pojedinačne kanale (15)
 
 [TIME] često (3)
 [m-quantity] Koliko (1)
@@ -1785,7 +1784,7 @@
 
 [MESSAGE] misli (11)
 
-[?SENDING] kanale (15)
+[SENDING] kanale (15)
 [m-quantity] pojedinačne (14)
 
 [QUANTITY] pojedinačne (14)
@@ -1854,17 +1853,15 @@
 [SCENE] slučaju (5)
 
 [MESSAGE-INIT] uključivati (9)
-[?topic] na svačiji kanal (12)
+[x-means] na svačiji kanal (12)
 [m-condition] kad god zaželi (15)
-[?x-experiencer] se (8) # manuell hinzugefügt
 
-[?SENDING] kanal (12)
+[SENDING] kanal (12)
 [m-possessor] svačiji (11)
 
 [CLASS] svačiji (11)
 
 [MESSAGE] zaželi (15)
-[?x-experiencer] se (8) # manuell hinzugefügt
 
 # sent_id = 37
 # text = Moralo se živeti --- i živelo se , po navici koja je prerasla u instinkt --- pretpostavljajući da se svaki zvuk čuo i , sem u mraku , svaki pokret video .
@@ -2005,7 +2002,7 @@
 [MESSAGE] znao (14)
 [m-quality] dobro (13)
 [content] mogu (16)
-[?x-experiencer] je (12)
+[?x-experiencer] je (12) # manuell hinzuzufügen
 
 [QUALITY] dobro (13)
 
@@ -2053,7 +2050,7 @@
 [QUANTITY] kilometar (2)
 
 [CLASS] Ministarstvo , ustanova u kojoj je radio , (4) # building
-[?m-identifier || m-purpose] istine (5) # Vgl. "island of Putanella" im Manual
+[m-purpose] istine (5)
 
 [CLASS] istine (5)
 
@@ -2072,7 +2069,7 @@
 [QUALITY] belo (17)
 [has-quality] Ministarstvo istine , ustanova u kojoj je radio , (4)
 
-[?] predelom (20) # Bereich oder Landschaft?
+[?LOCATION || CLASS] predelom (20) # Bereich oder Landschaft?
 [m-scene] prljavim (19)
 
 [STATE || ADORNMENT-TARNISHMENT] prljavim (19)
@@ -2127,18 +2124,18 @@
 [IDENTIFICATION] ovo (9)
 
 [CLASS] grad (14)
-[?m-quality] glavni (13)
-[?m-location] Piste jedan (15)
+[m-quality] glavni (13)
+[m-has-location] Piste jedan (15)
 
-[] glavni (13)
+[QUALITY] glavni (13)
 
-[] Piste (15)
-[m-rank] jedan (16)
+[CLASS >> IDENTIFICATION] Piste (15)
+[m-rank >> m-noncomp] jedan (16)
 
 [RANK] jedan (16)
 
 [RANK] treće (18)
-[] po stanovništvu provincije Okeanije (20)
+[x-followed] po stanovništvu provincije Okeanije (20)
 
 [SOCIAL-RELATION || LOCATION] stanovništvu (20)
 [social-relation || location] provincije Okeanije (21)
@@ -2536,8 +2533,8 @@
 [m-quantity] oštro (9)
 [reference] od svega ostalog na vidiku (14)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Ministarstvo --- u Novogovoru : Ministin --- (1)
-[?m-identifier || m-purpose >> m-noncomp] istine (2)
+[CLASS] Ministarstvo --- u Novogovoru : Ministin --- (1)
+[m-purpose] istine (2)
 
 [CLASS >> NONCOMP] istine (2)
 
@@ -2763,7 +2760,7 @@
 [part] i odgovarajući broj ogranaka pod zemljom (17)
 
 [CLASS] Ministarstvo (1)
-[?m-identifier || m-purpose] istine (2)
+[m-purpose] istine (2)
 
 [CLASS] istine (2)
 
