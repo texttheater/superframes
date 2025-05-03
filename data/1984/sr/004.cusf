@@ -14,12 +14,52 @@
 12	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	15	nsubj	_	_
 13	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
 14	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	15	expl	_	_
-15	zarekli	zareći	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	10	acl	_	_
+15	zarekli	zareći	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	11	acl	_	_
 16	da	da	SCONJ	Cs	_	17	mark	_	_
 17	obore	oboriti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_
 18	državni	državni	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
 19	poredak	poredak	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	17	obj	_	_
 20	.	.	PUNCT	Z	_	4	punct	_	_
+
+[POSSESSION] komandant (4)
+[possessor] On (1)
+[possessed] ogromne tajanstvene vojske , podzemne mreže zaverenika koji su se zarekli da obore državni poredak (7)
+
+[IDENTIFICATION] On (1)
+
+[SOCIAL-RELATION >> CLASS] vojske , podzemne mreže zaverenika koji su se zarekli da obore državni poredak (7)
+[m-quality] ogromne (5)
+[m-scene] tajanstvene (6)
+
+[QUALITY] ogromne (5)
+
+[MESSAGE-INIT-NEG] tajanstvene (6)
+[topic] vojske , podzemne mreže zaverenika koji su se zarekli da obore državni poredak (7)
+
+[PART-WHOLE] mreže (10)
+[m-location >> m-quality] podzemne (9)
+[part] zaverenika koji su se zarekli da obore državni poredak (11)
+
+[LOCATION >> QUALITY] podzemne (9)
+
+[MESSAGE] zaverenika (11)
+[m-scene] koji su se zarekli da obore državni poredak (15)
+
+[MESSAGE-INIT] zarekli (15)
+[x-sender] koji (12)
+[target-content] da obore državni poredak (17)
+[x-sender] zaverenika (11)
+
+[IDENTIFICATION] koji (12)
+
+[SCENE-DEINIT] obore (17)
+[initial-scene] državni poredak (19)
+[x-causer] koji (12)
+
+[?SEQUENCE] poredak (19)
+[followed || follows] državni (18)
+
+[?CLASS] državni (18)
 
 # sent_id = 202
 # text = Ona se navodno zvala Bratstvo .
@@ -29,6 +69,18 @@
 4	zvala	zvati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 5	Bratstvo	bratstvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	4	obj	_	_
 6	.	.	PUNCT	Z	_	4	punct	_	_
+
+[IDENTIFICATION] zvala (4)
+[identified] Ona (1)
+[m-scene] navodno (3)
+[identifier] Bratstvo (5)
+
+[IDENTIFICATION] Ona (1)
+
+[MESSAGE] navodno (3)
+[topic] zvala (4)
+
+[SOCIAL-RELATION] Bratstvo (5)
 
 # sent_id = 203
 # text = Takođe su se šapatom pronosile glasine o nekoj strašnoj knjizi , zborniku svih jeresi , čiji je autor bio Goldštajn i koja je ilegalno kružila .
@@ -59,12 +111,59 @@
 25	kružila	kružiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	20	conj	_	_
 26	.	.	PUNCT	Z	_	5	punct	_	_
 
+[?MESSAGE-INIT] pronosile (5)
+[m-scene] Takođe (1)
+[m-scene] šapatom (4)
+[target-content] glasine o nekoj strašnoj knjizi , zborniku svih jeresi , čiji je autor bio Goldštajn i koja je ilegalno kružila (6)
+
+[ACCOMPANIMENT] Takođe (1)
+[accompanier] pronosile (5)
+
+[?MESSAGE] šapatom (4)
+[topic] pronosile (5)
+
+[MESSAGE] glasine (6)
+[topic] o nekoj strašnoj knjizi , zborniku svih jeresi , čiji je autor bio Goldštajn i koja je ilegalno kružila (10)
+
+[MESSAGE] knjizi , zborniku svih jeresi , (10)
+[m-quality] strašnoj (9)
+[m-scene] čiji je autor bio Goldštajn (20)
+[m-scene] i koja je ilegalno kružila (25)
+
+[QUALITY] strašnoj (9)
+
+[?PART-WHOLE] zborniku (12)
+[part] svih jeresi (14)
+
+[MESSAGE] jeresi (14)
+
+[IDENTIFICATION] Goldštajn (20)
+[identified] čiji autor (18)
+
+[MESSAGE-INIT] autor (18)
+[target-content] knjizi , zborniku svih jeresi , (10)
+
+[UNANCHORED-MOTION] kružila (25)
+[in-motion] koja (22)
+[m-scene] ilegalno (24)
+[in-motion] knjizi , zborniku svih jeresi , (10)
+
+[IDENTIFICATION] koja (22)
+
+[MESSAGE] ilegalno (24)
+[topic] kružila (25)
+
 # sent_id = 204
 # text = Nije imala naslova .
 1	Nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	imala	imati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 3	naslova	naslov	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	2	obj	_	_
 4	.	.	PUNCT	Z	_	2	punct	_	_
+
+[SCENE] imala (2)
+[scene] naslova (3)
+
+[IDENTIFICATION] naslova (3)
 
 # sent_id = 205
 # text = Kad se pričalo --- ukoliko se uopšte i pričalo --- o njoj , govorilo se jednostavno ona knjiga .
@@ -79,14 +178,34 @@
 9	pričalo	pričati	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	advcl	_	_
 10	---	---	PUNCT	Z	_	9	punct	_	_
 11	o	o	ADP	Sl	Case=Loc	12	case	_	_
-12	njoj	on	PRON	Pp3fsl	Case=Loc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+12	njoj	on	PRON	Pp3fsl	Case=Loc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
 13	,	,	PUNCT	Z	_	3	punct	_	_
 14	govorilo	govoriti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 15	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	14	expl	_	_
-16	jednostavno	jednostavno	ADV	Rgp	Degree=Pos	17	advmod	_	_
+16	jednostavno	jednostavno	ADV	Rgp	Degree=Pos	14	advmod	_	_
 17	ona	onaj	DET	Pd-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	18	det	_	_
 18	knjiga	knjiga	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	14	nsubj	_	_
 19	.	.	PUNCT	Z	_	14	punct	_	_
+
+[MESSAGE-INIT] govorilo (14)
+[m-accompanied] Kad se pričalo --- ukoliko se uopšte i pričalo --- o njoj , (3)
+[m-mode] jednostavno (16)
+[target-content] ona knjiga (18)
+
+[MESSAGE-INIT] pričalo (3)
+[m-conceded] --- ukoliko se uopšte i pričalo --- (9)
+[topic] o njoj (12)
+
+[MESSAGE-INIT] pričalo (9)
+[m-mode] uopšte (7)
+
+[MODE] uopšte (7)
+
+[IDENTIFICATION] njoj (12)
+
+[MODE] jednostavno (16)
+
+[MESSAGE] knjiga (18)
 
 # sent_id = 206
 # text = No za tako šta se saznavalo samo preko neodređenih glasina .
@@ -101,6 +220,24 @@
 9	neodređenih	neodređen	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	10	amod	_	_
 10	glasina	glasina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	6	obl	_	_
 11	.	.	PUNCT	Z	_	6	punct	_	_
+
+[MESSAGE-INIT] saznavalo (6)
+[?] za tako (3)
+[?] šta (4)
+[x-sender] samo preko neodređenih glasina (10)
+
+[] tako (3)
+
+[] šta (4)
+
+[MESSAGE] glasina (10)
+[m-mode] samo (7)
+[m-scene] neodređenih (9)
+
+[MODE] samo (7)
+
+[IDENTIFICATION-NEG >> QUALITY] neodređenih (9)
+[identified >> has-quality] glasina (10)
 
 # sent_id = 207
 # text = Ni Bratstvo ni ona knjiga nisu bili tema o kojoj bi bilo koji član Partije rado razgovarao .
@@ -123,6 +260,31 @@
 17	razgovarao	razgovarati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	acl	_	_
 18	.	.	PUNCT	Z	_	8	punct	_	_
 
+[MESSAGE] tema (8)
+[content] Ni Bratstvo (2)
+[content] ni ona knjiga (5)
+[m-scene] o kojoj bi bilo koji član Partije rado razgovarao (17)
+
+[SOCIAL-RELATION] Bratstvo (2)
+
+[MESSAGE] knjiga (5)
+
+[MESSAGE-INIT] razgovarao (17)
+[topic] o kojoj (10)
+[x-sender] bilo koji član Partije (14)
+[m-scene] rado (16)
+[topic] tema (8)
+
+[IDENTIFICATION] kojoj (10)
+
+[SOCIAL-RELATION] član (14)
+[social-relation] Partije (15)
+
+[CLASS] Partije (15)
+
+[MESSAGE] rado (16)
+[topic] razgovarao (17)
+
 # sent_id = 208
 # text = U drugom minutu Mržnja naraste do pomame .
 1	U	u	ADP	Sl	Case=Loc	3	case	_	_
@@ -133,6 +295,22 @@
 6	do	do	ADP	Sg	Case=Gen	7	case	_	_
 7	pomame	pomama	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	obl	_	_
 8	.	.	PUNCT	Z	_	5	punct	_	_
+
+[SCENE-INIT] naraste (5)
+[m-time >> m-depictive] U drugom minutu (3)
+[participant] Mržnja (4)
+[target-scene] do pomame (7)
+
+[TIME] minutu (3)
+[m-rank] drugom (2)
+[m-whole] Mržnja (4)
+
+[RANK] drugom (2)
+
+[MESSAGE] Mržnja (4)
+
+[MESSAGE || STATE] pomame (7)
+[topic || has-state] Mržnja (4)
 
 # sent_id = 209
 # text = Svi su poskakivali na stolicama i vikali iz sveg glasa ne bi li kako nadjačali odvratni blejavi glas koji se čuo sa ekrana .
@@ -161,6 +339,48 @@
 23	ekrana	ekran	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	21	obl	_	_
 24	.	.	PUNCT	Z	_	3	punct	_	_
 
+[UNANCHORED-MOTION] poskakivali (3)
+[in-motion] Svi (1)
+[transitory-location] na stolicama (5)
+[?m-purpose] ne bi li kako nadjačali odvratni blejavi glas koji se čuo sa ekrana (15)
+
+[CLASS] Svi (1)
+
+[CLASS] stolicama (5)
+
+[MESSAGE-INIT] vikali (7)
+[m-means] iz sveg glasa (10)
+
+[MESSAGE] glasa (10)
+
+[MESSAGE-INIT] nadjačali (15)
+[?] ne (11)
+[?] kako (14)
+[x-reference] odvratni blejavi glas koji se čuo sa ekrana (18)
+
+[] ne (11)
+
+[] kako (14)
+
+[MESSAGE] glas (18)
+[m-quality] odvratni (16)
+[m-scene] blejavi (17)
+[m-scene] koji se čuo sa ekrana (21)
+
+[QUALITY] odvratni (16)
+
+[MESSAGE-INIT >> QUALITY] blejavi (17)
+[x-sender >> has-quality] glas (18)
+
+[MESSAGE] čuo (21)
+[topic] koji (19)
+[x-sender] sa ekrana (23)
+[topic] glas (18)
+
+[IDENTIFICATION] koji (19)
+
+[CLASS] ekrana (23)
+
 # sent_id = 210
 # text = Ona ženica pepeljaste kose bila je sva porumenela , a usta su joj se otvarala i zatvarala kao u ribe na suvu .
 1	Ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	det	_	_
@@ -182,10 +402,40 @@
 17	zatvarala	zatvarati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	15	conj	_	_
 18	kao	kao	SCONJ	Cs	_	20	case	_	_
 19	u	u	ADP	Sa	Case=Acc	20	case	_	_
-20	ribe	riba	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	17	obl	_	_
+20	ribe	riba	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	15	obl	_	_
 21	na	na	ADP	Sl	Case=Loc	22	case	_	_
 22	suvu	suv	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	20	nmod	_	_
 23	.	.	PUNCT	Z	_	8	punct	_	_
+
+[STATE-INIT] porumenela (8)
+[has-state] Ona ženica pepeljaste kose (2)
+
+[CLASS] ženica (2)
+[m-part] pepeljaste kose (4)
+
+[PART-WHOLE] kose (4)
+[m-scene] pepeljaste (3)
+
+[?CLASS >> QUALITY] pepeljaste (3)
+[m-compared >> has-quality] kose (4)
+
+[UNANCHORED-MOTION || STATE-INIT] otvarala (15)
+[in-motion || has-state] usta (11)
+[m-depictive] joj (13)
+[m-reference] kao u ribe na suvu (20)
+
+[PART-WHOLE] usta (11)
+
+[IDENTIFICATION] joj (13)
+[m-part] usta (11)
+
+[UNANCHORED-MOTION || STATE-INIT] zatvarala (17)
+[in-motion || has-state] usta (11)
+
+[CLASS] ribe (20)
+[m-location] na suvu (22)
+
+[STATE] suvu (22)
 
 # sent_id = 211
 # text = Čak je i O'Brajenovo grubo lice bilo podliveno krvlju .
@@ -199,6 +449,20 @@
 8	podliveno	podliviti	ADJ	Appnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 9	krvlju	krvlj	NOUN	Ncnsd	Case=Dat|Gender=Neut|Number=Sing	8	obl	_	_
 10	.	.	PUNCT	Z	_	8	punct	_	_
+
+[LOCATION-INIT] podliveno (8)
+[target-location] O'Brajenovo grubo lice (6)
+[has-location] krvlju (9)
+
+[PART-WHOLE] lice (6)
+[whole] O'Brajenovo (4)
+[m-quality] grubo (5)
+
+[IDENTIFICATION] O'Brajenovo (4)
+
+[QUALITY] grubo (5)
+
+[CLASS] krvlju (9)
 
 # sent_id = 212
 # text = On je sedeo veoma uspravno dok su mu se snažne grudi nadimale i podrhtavale , kao da se odupire napadu talasa .
@@ -224,6 +488,43 @@
 20	napadu	napad	NOUN	Ncmsd	Case=Dat|Gender=Masc|Number=Sing	19	obl	_	_
 21	talasa	talas	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	20	nmod	_	_
 22	.	.	PUNCT	Z	_	3	punct	_	_
+
+[STATE] sedeo (3)
+[has-state] On (1)
+[state] veoma uspravno (5)
+[m-accompanier] dok su mu se snažne grudi nadimale (12)
+[m-accompanier] i podrhtavale , kao da se odupire napadu talasa (14)
+
+[IDENTIFICATION] On (1)
+
+[STATE] uspravno (5)
+[m-quantity] veoma (4)
+
+[QUANTITY] veoma (4)
+
+[LOCATION-INIT] nadimale (12)
+[m-depictive] mu (8)
+[has-location] snažne grudi (11)
+
+[IDENTIFICATION] mu (8)
+[m-part] snažne grudi (11)
+
+[PART-WHOLE] grudi (11)
+[m-quality] snažne (10)
+
+[QUALITY] snažne (10)
+
+[UNANCHORED-MOTION] podrhtavale (14)
+[m-reference] , kao da se odupire napadu talasa (19)
+[in-motion] snažne grudi (11)
+
+[SCENE-INIT-NEG] odupire (19)
+[target-scene] napadu talasa (20)
+
+[EVENT] napadu (20)
+[x-causer] talasa (21)
+
+[CLASS] talasa (21)
 
 # sent_id = 213
 # text = Crnokosa devojka iza Vinstona beše počela da uzvikuje na sav glas : " Svinjo ! Svinjo ! Svinjo !; " ona najednom dohvati težak rečnik Novogovora i baci ga na ekran .
@@ -260,6 +561,60 @@
 31	ekran	ekran	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	28	obl	_	_
 32	.	.	PUNCT	Z	_	6	punct	_	_
 
+[] počela (6)
+[] Crnokosa devojka iza Vinstona beše (2)
+[] da uzvikuje na sav glas : " Svinjo ! Svinjo ! Svinjo !; (8)
+
+[] devojka (2)
+[] Crnokosa (1)
+[] iza Vinstona beše (4)
+
+[] Crnokosa (1)
+
+[] Vinstona (4)
+[] beše (5)
+
+[] beše (5)
+
+[] uzvikuje (8)
+[] na sav glas : " Svinjo ! Svinjo ! Svinjo !; (11)
+
+[] glas : " Svinjo ! Svinjo ! Svinjo !; (11)
+[] sav (10)
+
+[] sav (10)
+
+[] Svinjo (14)
+
+[] Svinjo (16)
+
+[] Svinjo (18)
+
+[] dohvati (23)
+[] ona (21)
+[] najednom (22)
+[] težak rečnik Novogovora (25)
+
+[] ona (21)
+
+[] najednom (22)
+
+[] rečnik (25)
+[] težak (24)
+[] Novogovora (26)
+
+[] težak (24)
+
+[] Novogovora (26)
+
+[] baci (28)
+[] ga (29)
+[] na ekran (31)
+
+[] ga (29)
+
+[] ekran (31)
+
 # sent_id = 214
 # text = Rečnik udari Goldštajna po nosu i odbaci se : glas je i dalje neumoljivo terao svoje .
 1	Rečnik	rečnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
@@ -280,6 +635,40 @@
 16	svoje	svoj	DET	Px-nsa	Case=Acc|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	15	obj	_	_
 17	.	.	PUNCT	Z	_	2	punct	_	_
 
+[HITTING] udari (2)
+[hitting] Rečnik (1)
+[hit] Goldštajna (3)
+[x-attribute] po nosu (5)
+
+[MESSAGE] Rečnik (1)
+
+[IDENTIFICATION] Goldštajna (3)
+
+[PART-WHOLE] nosu (5)
+[whole] Goldštajna (3)
+
+[LOCATION-DEINIT] odbaci (7)
+[has-location] Rečnik (1)
+
+[?] terao (15) # sich durchsetzen
+[] glas (10)
+[m-scene] i dalje (13)
+[] neumoljivo (14)
+[] svoje (16)
+
+[MESSAGE] glas (10)
+
+[SCENE-CONTINUTATION] dalje (13)
+[m-scene] i (12)
+[initial-scene] terao (15)
+
+[ACCOMPANIMENT >> CONCESSION] i (12)
+[accompanier >> conceded] dalje (13)
+
+[] neumoljivo (14)
+
+[] svoje (16)
+
 # sent_id = 215
 # text = U jednom lucidnom trenutku Vinston se zateče kako i sam viče zajedno s ostalima i žestoko udara petom u prečagu svoje stolice .
 1	U	u	ADP	Sl	Case=Loc	4	case	_	_
@@ -289,16 +678,16 @@
 5	Vinston	Vinston	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
 6	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
 7	zateče	zateći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	kako	kako	SCONJ	Cs	_	10	mark	_	_
-9	i	i	CCONJ	Cc	_	10	discourse	_	_
-10	sam	sam	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	7	nsubj	_	_
-11	viče	viče	ADV	Rgc	Degree=Cmp	10	nsubj	_	_
+8	kako	kako	SCONJ	Cs	_	11	mark	_	_
+9	i	i	CCONJ	Cc	_	11	discourse	_	_
+10	sam	sam	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
+11	viče	viče	ADV	Rgc	Degree=Cmp	7	nsubj	_	_
 12	zajedno	zajedno	ADV	Rgp	Degree=Pos	14	advmod	_	_
 13	s	sa	ADP	Si	Case=Ins	14	case	_	_
-14	ostalima	ostali	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	10	obl	_	_
+14	ostalima	ostali	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	11	obl	_	_
 15	i	i	CCONJ	Cc	_	17	cc	_	_
 16	žestoko	žestoko	ADV	Rgp	Degree=Pos	17	advmod	_	_
-17	udara	udarati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+17	udara	udarati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
 18	petom	peta	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	17	obl	_	_
 19	u	u	ADP	Sa	Case=Acc	20	case	_	_
 20	prečagu	prečaga	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	17	obl	_	_
@@ -306,16 +695,61 @@
 22	stolice	stolica	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	20	nmod	_	_
 23	.	.	PUNCT	Z	_	7	punct	_	_
 
+[?MESSAGE-INIT] zateče (7)
+[m-time] U jednom lucidnom trenutku (4)
+[x-experiencer] Vinston (5)
+[target-content] kako i sam viče zajedno s ostalima (11)
+[target-content] i žestoko udara petom u prečagu svoje stolice (17)
+
+[TIME] trenutku (4)
+[m-quantity] jednom (2)
+[m-state] lucidnom (3)
+
+[QUANTITY] jednom (2)
+
+[STATE] lucidnom (3)
+
+[IDENTIFICATION] Vinston (5)
+
+[MESSAGE-INIT] viče (11)
+[m-mode] sam (10)
+[?m-accompanied] zajedno s ostalima (14)
+[x-sender] Vinston (5)
+
+[MODE] sam (10)
+
+[COMPARISON >> CLASS] ostalima (14)
+[m-scene] zajedno (12)
+
+[ACCOMPANIMENT] zajedno (12)
+[?accompanier] ostalima (14)
+
+[HITTING] udara (17)
+[m-quality] žestoko (16)
+[x-attribute] petom (18)
+[hit] u prečagu svoje stolice (20)
+[hitting] Vinston (5)
+
+[QUALITY] žestoko (16)
+
+[PART-WHOLE] petom (18)
+[whole] Vinston (5)
+
+[?CLASS] prečagu (20)
+[m-whole] svoje stolice (22)
+
+[CLASS] stolice (22)
+
 # sent_id = 216
 # text = Kod Dva minuta mržnje stravično je bilo to što čovek nije bio primoravan da se pretvara ; naprotiv , bilo je nemoguće ne učestvovati .
 1	Kod	kod	ADP	Sg	Case=Gen	3	case	_	_
 2	Dva	dva	NUM	Mlc	NumType=Card	3	nummod:gov	_	_
-3	minuta	minuta	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	8	obl	_	_
+3	minuta	minuta	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	5	obl	_	_
 4	mržnje	mržnja	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
-5	stravično	stravično	ADV	Rgp	Degree=Pos	8	advmod	_	_
-6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-7	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	cop	_	_
-8	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	_
+5	stravično	stravično	ADV	Rgp	Degree=Pos	0	root	_	_
+6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+7	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+8	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	5	nsubj	_	_
 9	što	što	SCONJ	Cs	_	13	mark	_	_
 10	čovek	čovek	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	_
 11	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	13	aux	_	_
@@ -332,7 +766,40 @@
 22	nemoguće	nemoguće	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	8	conj	_	_
 23	ne	ne	PART	Qz	Polarity=Neg	24	advmod	_	_
 24	učestvovati	učestvovati	VERB	Vmn	VerbForm=Inf	22	csubj	_	_
-25	.	.	PUNCT	Z	_	8	punct	_	_
+25	.	.	PUNCT	Z	_	5	punct	_	_
+
+[QUALITY] stravično (5)
+[] Kod Dva minuta mržnje (3)
+[has-quality] to što čovek nije bio primoravan da se pretvara (8)
+[has-quality] ; naprotiv , bilo je nemoguće ne učestvovati (22)
+
+[?TIME >> EVENT] minuta (3)
+[m-quantity >> m-noncomp] Dva (2)
+[has-time >> m-noncomp] mržnje (4)
+
+[QUANTITY >> NONCOMP] Dva (2)
+
+[MESSAGE >> NONCOMP] mržnje (4)
+
+[IDENTIFICATION] to (8)
+[identified] što čovek nije bio primoravan da se pretvara (13)
+
+[SCENE-NECESSITY] primoravan (13)
+[participant] čovek (10)
+[scene] da se pretvara (16)
+
+[CLASS] čovek (10)
+
+[STATE-CHANGE] pretvara (16)
+[has-state] čovek (10)
+
+[SCENE-POSSIBILITY-NEG] nemoguće (22)
+[scene] ne učestvovati (24)
+
+[ACCOMPANIMENT] učestvovati (24)
+[m-mode] ne (23)
+
+[MODE] ne (23)
 
 # sent_id = 217
 # text = U roku od trideset sekundi više nije bilo potrebno pretvarati se .
@@ -348,6 +815,23 @@
 10	pretvarati	pretvarati	VERB	Vmn	VerbForm=Inf	9	csubj	_	_
 11	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	10	expl	_	_
 12	.	.	PUNCT	Z	_	9	punct	_	_
+
+[] potrebno (9)
+[] U roku od trideset sekundi (2)
+[] više (6)
+[] pretvarati se (10)
+
+[] roku (2)
+[] od trideset sekundi (5)
+
+[] sekundi (5)
+[] trideset (4)
+
+[] trideset (4)
+
+[] više (6)
+
+[] pretvarati (10)
 
 # sent_id = 218
 # text = Odvratna ekstaza straha i osvetoljublja , želja za ubijanjem , za mučenjem , za razbijanjem tuđih lica maljevima , počela bi da struji kroz celu grupu kao elektricitet , pretvarajući čoveka i protiv njegove volje u ludaka koji se kezi i vrišti .
@@ -395,6 +879,74 @@
 42	vrišti	vrištiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	conj	_	_
 43	.	.	PUNCT	Z	_	20	punct	_	_
 
+[] počela (20)
+[] Odvratna ekstaza straha i osvetoljublja (2)
+[] , želja za ubijanjem , za mučenjem , za razbijanjem tuđih lica maljevima , (7)
+[] da struji kroz celu grupu kao elektricitet (23)
+[] , pretvarajući čoveka i protiv njegove volje u ludaka koji se kezi i vrišti (30)
+
+[] ekstaza (2)
+[] Odvratna (1)
+[] straha (3)
+[] i osvetoljublja (5)
+
+[] Odvratna (1)
+
+[] straha (3)
+
+[] osvetoljublja (5)
+
+[] želja (7)
+[] za ubijanjem (9)
+[] , za mučenjem (12)
+[] , za razbijanjem tuđih lica maljevima (15)
+
+[] ubijanjem (9)
+
+[] mučenjem (12)
+
+[] razbijanjem (15)
+[] tuđih lica (17)
+[] maljevima (18)
+
+[] lica (17)
+[] tuđih (16)
+
+[] tuđih (16)
+
+[] maljevima (18)
+
+[] struji (23)
+[] kroz celu grupu (26)
+[] kao elektricitet (28)
+
+[] grupu (26)
+[] celu (25)
+
+[] celu (25)
+
+[] elektricitet (28)
+
+[] pretvarajući (30)
+[] čoveka (31)
+[] i protiv njegove volje (35)
+[] u ludaka koji se kezi i vrišti (37)
+
+[] čoveka (31)
+
+[] volje (35)
+
+[] ludaka (37)
+[] koji se kezi (40)
+[] i vrišti (42)
+
+[] kezi (40)
+[] koji (38)
+
+[] koji (38)
+
+[] vrišti (42)
+
 # sent_id = 219
 # text = Pa ipak je taj bes bio apstraktna , neusmerena emocija koja se mogla skrenuti s jednog predmeta na drugi kao plamen acetilenske lampe .
 1	Pa	pa	CCONJ	Cc	_	10	discourse	_	_
@@ -421,6 +973,44 @@
 22	acetilenske	acetilenski	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	23	amod	_	_
 23	lampe	lampa	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	21	nmod	_	_
 24	.	.	PUNCT	Z	_	10	punct	_	_
+
+[] emocija (10)
+[] taj bes (5)
+[] apstraktna (7)
+[] , neusmerena (9)
+[] koja se mogla skrenuti s jednog predmeta na drugi kao plamen acetilenske lampe (13)
+
+[] bes (5)
+
+[] apstraktna (7)
+
+[] neusmerena (9)
+
+[] mogla (13)
+[] koja (11)
+[] skrenuti s jednog predmeta na drugi kao plamen acetilenske lampe (14)
+
+[] koja (11)
+
+[] skrenuti (14)
+[] s jednog predmeta (17)
+[] na drugi (19)
+[] kao plamen acetilenske lampe (21)
+
+[] predmeta (17)
+[] jednog (16)
+
+[] jednog (16)
+
+[] drugi (19)
+
+[] plamen (21)
+[] acetilenske lampe (23)
+
+[] lampe (23)
+[] acetilenske (22)
+
+[] acetilenske (22)
 
 # sent_id = 220
 # text = Tako je u jednom trenutku Vinstonova mržnja bila upravljena ne na Goldštajna nego , naprotiv , na Velikog Brata , Partiju i Policiju misli ; u takvim trenucima on je bio svim srcem uz usamljenog , ismejavanog jeretika na ekranu , jedinog zatočnika istine i logike u svetu laži .
@@ -475,6 +1065,80 @@
 49	laži	laža	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	48	nmod	_	_
 50	.	.	PUNCT	Z	_	9	punct	_	_
 
+[] upravljena (9)
+[] Tako (1)
+[] u jednom trenutku (5)
+[] Vinstonova mržnja (7)
+[] ne na Goldštajna (12)
+[] nego , naprotiv , na Velikog Brata (19)
+[] ; u takvim trenucima on je bio svim srcem uz usamljenog , ismejavanog jeretika na ekranu , jedinog zatočnika istine i logike u svetu laži (33)
+
+[] Tako (1)
+
+[] trenutku (5)
+[] jednom (4)
+
+[] jednom (4)
+
+[] mržnja (7)
+[] Vinstonova (6)
+
+[] Vinstonova (6)
+
+[] Goldštajna (12)
+[] ne (10)
+
+[] ne (10)
+
+[] Brata (19)
+[] Velikog (18)
+
+[] Velikog (18)
+
+[] Partiju (21)
+
+[] Policiju (23)
+[] misli (24)
+
+[] misli (24)
+
+[] srcem (33)
+[] u takvim trenucima (28)
+[] on (29)
+[] uz usamljenog , ismejavanog jeretika na ekranu , jedinog zatočnika istine i logike u svetu laži (38)
+
+[] trenucima (28)
+
+[] on (29)
+
+[] jeretika , jedinog zatočnika istine i logike u svetu laži (38)
+[] usamljenog (35)
+[] , ismejavanog (37)
+[] na ekranu (40)
+
+[] usamljenog (35)
+
+[] ismejavanog (37)
+
+[] ekranu (40)
+
+[] zatočnika (43)
+[] jedinog (42)
+[] istine (44)
+[] i logike (46)
+[] u svetu laži (48)
+
+[] jedinog (42)
+
+[] istine (44)
+
+[] logike (46)
+
+[] svetu (48)
+[] laži (49)
+
+[] laži (49)
+
 # sent_id = 221
 # text = No ipak bi odmah sledećeg trenutka bio ujedinjen sa ljudima oko sebe i tada bi mu se činilo da je sve što se kaže za Goldštajna istina .
 1	No	no	CCONJ	Cc	_	8	discourse	_	_
@@ -497,14 +1161,61 @@
 18	činilo	činiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
 19	da	da	SCONJ	Cs	_	21	mark	_	_
 20	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
-21	sve	sve	DET	Pi-nsn	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	18	nsubj	_	_
+21	sve	sve	DET	Pi-nsn	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	27	nsubj	_	_
 22	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	24	nsubj	_	_
 23	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	24	expl	_	_
 24	kaže	kazati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl	_	_
-25	za	za	ADP	Sa	Case=Acc	27	case	_	_
-26	Goldštajna	goldštajan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	27	amod	_	_
-27	istina	istina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	24	obl	_	_
+25	za	za	ADP	Sa	Case=Acc	26	case	_	_
+26	Goldštajna	goldštajan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	24	nmod	_	_
+27	istina	istina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	18	acl	_	_
 28	.	.	PUNCT	Z	_	8	punct	_	_
+
+[ACCOMPANIMENT-INIT] ujedinjen (8)
+[m-scene] ipak (2)
+[m-time] odmah (4)
+[m-time] sledećeg trenutka (6)
+[accompanied] sa ljudima oko sebe (10)
+
+[CONCESSION] ipak (2)
+[asserted] ujedinjen (8)
+
+[TIME] odmah (4)
+
+[TIME] trenutka (6)
+[m-scene] sledećeg (5)
+
+[SEQUENCE] sledećeg (5)
+[follows] trenutka (6)
+
+[CLASS] ljudima (10)
+[m-location] oko sebe (12)
+
+[IDENTIFICATION] sebe (12)
+
+[MESSAGE] činilo (18)
+[m-time] tada (14)
+[x-experiencer] mu (16)
+[content] da je sve što se kaže za Goldštajna istina (27)
+
+[TIME] tada (14)
+
+[IDENTIFICATION] mu (16)
+
+[MESSAGE] istina (27)
+[topic] da je sve što se kaže za Goldštajna (21)
+
+[QUANTITY] sve (21)
+[?m-scene] što se kaže za Goldštajna (24)
+
+[MESSAGE-INIT] kaže (24)
+[target-content] što (22)
+[topic] za Goldštajna (26)
+[target-content] sve (21)
+
+[?SITUATION] što (22)
+[theme] za Goldštajna (26)
+
+[IDENTIFICATION] Goldštajna (26)
 
 # sent_id = 222
 # text = U tim trenucima se njegova potajna mržnja prema Velikom Bratu pretvarala u obožavanje , i Veliki Brat se uzdizao , nepobedivi , neustrašivi zaštitnik , koji se kao stena odupire azijskim hordama ; Goldštajn je tada , i pored svoje usamljenosti , svoje bespomoćnosti , i sumnje koja je natkriljavala i samo njegovo postojanje , postajao mračni bajač , sposoban da golom snagom svoga glasa razori svu konstrukciju civilizacije .
@@ -579,6 +1290,120 @@
 69	civilizacije	civilizacija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	68	nmod	_	_
 70	.	.	PUNCT	Z	_	11	punct	_	_
 
+[] pretvarala (11)
+[] U tim trenucima (3)
+[] njegova potajna mržnja prema Velikom Bratu (7)
+[] u obožavanje (13)
+
+[] trenucima (3)
+
+[] mržnja (7)
+[] potajna (6)
+[] prema Velikom Bratu (10)
+
+[] potajna (6)
+
+[] Bratu (10)
+[] Velikom (9)
+
+[] Velikom (9)
+
+[] obožavanje (13)
+
+[] uzdizao (19)
+[] Veliki Brat (17)
+[] , nepobedivi , neustrašivi zaštitnik , koji se kao stena odupire azijskim hordama (24)
+
+[] Brat (17)
+[] Veliki (16)
+
+[] Veliki (16)
+
+[] zaštitnik (24)
+[] nepobedivi (21)
+[] , neustrašivi (23)
+[] , koji se kao stena odupire azijskim hordama (30)
+
+[] nepobedivi (21)
+
+[] neustrašivi (23)
+
+[] odupire (30)
+[] koji (26)
+[] kao stena (29)
+[] azijskim hordama (32)
+
+[] koji (26)
+
+[] stena (29)
+
+[] hordama (32)
+[] azijskim (31)
+
+[] azijskim (31)
+
+[] postajao (56)
+[] Goldštajn (34)
+[] tada (36)
+[] , i pored svoje usamljenosti , (41)
+[] , svoje bespomoćnosti (44)
+[] , i sumnje koja je natkriljavala i samo njegovo postojanje da golom snagom svoga glasa razori svu konstrukciju civilizacije (47)
+[] mračni bajač , sposoban (58)
+
+[] Goldštajn (34)
+
+[] tada (36)
+
+[] usamljenosti (41)
+[] i (38)
+
+[] i (38)
+
+[] bespomoćnosti (44)
+
+[] sumnje (47)
+[] koja je natkriljavala i samo njegovo postojanje (50)
+[] da golom snagom svoga glasa razori svu konstrukciju civilizacije (66)
+
+[] natkriljavala (50)
+[] koja (48)
+[] i samo njegovo postojanje (54)
+
+[] koja (48)
+
+[] postojanje (54)
+[] i (51)
+[] samo (52)
+
+[] i (51)
+
+[] samo (52)
+
+[] razori (66)
+[] golom snagom svoga glasa (63)
+[] svu konstrukciju civilizacije (68)
+
+[] snagom (63)
+[] golom (62)
+[] svoga glasa (65)
+
+[] golom (62)
+
+[] glasa (65)
+
+[] konstrukciju (68)
+[] civilizacije (69)
+
+[] civilizacije (69)
+
+[] bajač (58)
+[] mračni (57)
+[] , sposoban (60)
+
+[] mračni (57)
+
+[] sposoban (60)
+
 # sent_id = 223
 # text = Bilo je čak moguće , u nekim trenucima , svesno usmeravati svoju mržnju .
 1	Bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	cop	_	_
@@ -595,6 +1420,23 @@
 12	svoju	svoj	DET	Px-fsa	Case=Acc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	13	det	_	_
 13	mržnju	mržnja	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	11	obj	_	_
 14	.	.	PUNCT	Z	_	4	punct	_	_
+
+[SCENE-POSSIBILITY] moguće (4)
+[m-mode] čak (3)
+[scene] , u nekim trenucima , svesno usmeravati svoju mržnju (11)
+
+[MODE] čak (3)
+
+[POSSESSION] usmeravati (11)
+[m-time] , u nekim trenucima , (8)
+[m-state] svesno (10)
+[possessed] svoju mržnju (13)
+
+[TIME] trenucima (8)
+
+[STATE] svesno (10)
+
+[MESSAGE] mržnju (13)
 
 # sent_id = 224
 # text = Odjednom , sa žestokim naporom s kojim spavač u košmaru otrže glavu od jastuka , Vinston uspe da svoju mržnju prenese sa lica na ekranu na crnokosu devojku koja je sedela iza njega .
@@ -633,6 +1475,65 @@
 33	njega	on	PRON	Pp3msg	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	obl	_	_
 34	.	.	PUNCT	Z	_	17	punct	_	_
 
+[] uspe (17)
+[] Odjednom (1)
+[] , sa žestokim naporom s kojim spavač u košmaru otrže glavu od jastuka , (5)
+[] Vinston (16)
+[] da svoju mržnju prenese sa lica na ekranu na crnokosu devojku koja je sedela iza njega (21)
+
+[] Odjednom (1)
+
+[] naporom (5)
+[] žestokim (4)
+[] s kojim spavač u košmaru otrže glavu od jastuka (11)
+
+[] žestokim (4)
+
+[] otrže (11)
+[] s kojim (7)
+[] spavač u košmaru (8)
+[] glavu (12)
+[] od jastuka (14)
+
+[] kojim (7)
+
+[] spavač (8)
+[] u košmaru (10)
+
+[] košmaru (10)
+
+[] glavu (12)
+
+[] jastuka (14)
+
+[] Vinston (16)
+
+[] prenese (21)
+[] svoju mržnju (20)
+[] sa lica na ekranu (23)
+[] na crnokosu devojku koja je sedela iza njega (28)
+
+[] mržnju (20)
+
+[] lica (23)
+[] na ekranu (25)
+
+[] ekranu (25)
+
+[] devojku (28)
+[] crnokosu (27)
+[] koja je sedela iza njega (31)
+
+[] crnokosu (27)
+
+[] sedela (31)
+[] koja (29)
+[] iza njega (33)
+
+[] koja (29)
+
+[] njega (33)
+
 # sent_id = 225
 # text = Žive , divne halucinacije prohujaše mu kroz glavu .
 1	Žive	živ	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	4	amod	_	_
@@ -645,6 +1546,23 @@
 8	glavu	glava	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	5	obl	_	_
 9	.	.	PUNCT	Z	_	5	punct	_	_
 
+[UNANCHORED-MOTION >> MESSAGE] prohujaše (5)
+[in-motion >> content] Žive , divne halucinacije (4)
+[transitory-location >> x-experiencer] mu (6)
+[?x-attribute >> ?x-noncomp] kroz glavu (8)
+
+[MESSAGE] halucinacije (4)
+[m-quality] Žive (1)
+[m-quality] , divne (3)
+
+[STATE >> QUALITY] Žive (1)
+
+[QUALITY] divne (3)
+
+[IDENTIFICATION] mu (6)
+
+[PART-WHOLE] glavu (8)
+
 # sent_id = 226
 # text = Prebiće je nasmrt gumenim pendrekom .
 1	Prebiće	prebiti	VERB	Vmf3s	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	nsubj	_	_
@@ -653,6 +1571,17 @@
 4	gumenim	gumen	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
 5	pendrekom	pendrek	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	3	obl	_	_
 6	.	.	PUNCT	Z	_	3	punct	_	_
+
+[] nasmrt (3)
+[] Prebiće (1)
+[] gumenim pendrekom (5)
+
+[] Prebiće (1)
+
+[] pendrekom (5)
+[] gumenim (4)
+
+[] gumenim (4)
 
 # sent_id = 227
 # text = Privezaće je golu za stub i načičkati je strelama kao svetog Sebastijana .
@@ -670,6 +1599,28 @@
 12	Sebastijana	Sebastijan	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	7	obl	_	_
 13	.	.	PUNCT	Z	_	1	punct	_	_
 
+[] Privezaće (1)
+[] golu (3)
+[] za stub (5)
+
+[] golu (3)
+
+[] stub (5)
+
+[] načičkati (7)
+[] je (8)
+[] strelama (9)
+[] kao svetog Sebastijana (12)
+
+[] je (8)
+
+[] strelama (9)
+
+[] Sebastijana (12)
+[] svetog (11)
+
+[] svetog (11)
+
 # sent_id = 228
 # text = Silovaće je i preseći joj grkljan u trenutku orgazma .
 1	Silovaće	silovati	VERB	Vmf3s	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -683,18 +1634,51 @@
 9	orgazma	orgazam	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
 10	.	.	PUNCT	Z	_	1	punct	_	_
 
+[] Silovaće (1)
+
+[] preseći (4)
+[] joj (5)
+[] grkljan (6)
+[] u trenutku orgazma (8)
+
+[] joj (5)
+
+[] grkljan (6)
+
+[] trenutku (8)
+[] orgazma (9)
+
+[] orgazma (9)
+
 # sent_id = 229
 # text = Sad je bolje nego ikad shvatao zašto je mrzi .
-1	Sad	sad	ADV	Ncmsn	Degree=Pos	3	nsubj	_	_
-2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	bolje	dobro	ADV	Rgc	Degree=Cmp	0	root	_	_
+1	Sad	sad	ADV	Ncmsn	Degree=Pos	6	advmod	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+3	bolje	dobro	ADV	Rgc	Degree=Cmp	6	advmod	_	_
 4	nego	nego	CCONJ	Cc	_	5	cc	_	_
-5	ikad	ikad	ADV	Rgp	Degree=Pos|PronType=Ind	6	advmod	_	_
-6	shvatao	shvatati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+5	ikad	ikad	ADV	Rgp	Degree=Pos|PronType=Ind	3	obl	_	_
+6	shvatao	shvatati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 7	zašto	zašto	ADV	Rgp	Degree=Pos|PronType=Int,Rel	9	advmod	_	_
 8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 9	mrzi	mrzi	NOUN	Vmr3s	Case=Nom|Gender=Masc|Number=Sing	6	ccomp	_	_
-10	.	.	PUNCT	Z	_	3	punct	_	_
+10	.	.	PUNCT	Z	_	6	punct	_	_
+
+[MESSAGE-INIT] shvatao (6)
+[m-time] Sad (1)
+[m-quality] bolje nego ikad (3)
+[target-content] zašto je mrzi (9)
+
+[TIME] Sad (1)
+
+[QUALITY] bolje (3)
+[x-reference] nego ikad (5)
+
+[TIME] ikad (5)
+
+[MESSAGE] mrzi (9)
+[m-causer] zašto (7)
+
+[CAUSATION] zašto (7)
 
 # sent_id = 230
 # text = Mrzeo ju je jer je bila mlada , lepa i bespolna , jer je želeo da spava s njom a neće moći nikad , jer joj je oko slađanog gipkog struka , koji kao da je zvao čoveka da ga obgrli , bila samo ona odvratna skerletna ešarpa , agresivni simbol kreposti .
@@ -752,6 +1736,85 @@
 52	kreposti	krepost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	51	nmod	_	_
 53	.	.	PUNCT	Z	_	1	punct	_	_
 
+[] Mrzeo (1)
+[] ju (2)
+[] jer je bila mlada (7)
+[] , lepa (9)
+[] i bespolna (11)
+[] , jer je želeo da spava s njom a neće moći nikad (15)
+[] , jer joj je oko slađanog gipkog struka , koji kao da je zvao čoveka da ga obgrli , bila samo ona odvratna skerletna ešarpa , agresivni simbol kreposti (48)
+
+[] ju (2)
+
+[] mlada (7)
+
+[] lepa (9)
+
+[] bespolna (11)
+
+[] želeo (15)
+[] da spava s njom (17)
+[] a neće moći nikad (22)
+
+[] spava (17)
+[] s njom (19)
+
+[] njom (19)
+
+[] moći (22)
+[] nikad (23)
+
+[] nikad (23)
+
+[] ešarpa , agresivni simbol kreposti (48)
+[] joj (26)
+[] , oko slađanog gipkog struka , koji kao da je zvao čoveka da ga obgrli , (31)
+[] samo (44)
+[] ona (45)
+[] odvratna (46)
+[] skerletna (47)
+
+[] joj (26)
+
+[] struka (31)
+[] slađanog (29)
+[] gipkog (30)
+[] , koji kao da je zvao čoveka da ga obgrli , (37)
+
+[] slađanog (29)
+
+[] gipkog (30)
+
+[] zvao (37)
+[] koji (33)
+[] čoveka (38)
+[] da ga obgrli (41)
+
+[] koji (33)
+
+[] čoveka (38)
+
+[] obgrli (41)
+[] ga (40)
+
+[] ga (40)
+
+[] samo (44)
+
+[] ona (45)
+
+[] odvratna (46)
+
+[] skerletna (47)
+
+[] simbol (51)
+[] agresivni (50)
+[] kreposti (52)
+
+[] agresivni (50)
+
+[] kreposti (52)
+
 # sent_id = 231
 # text = Mržnja poraste do vrhunca .
 1	Mržnja	mržnja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
@@ -759,6 +1822,14 @@
 3	do	do	ADP	Sg	Case=Gen	4	case	_	_
 4	vrhunca	vrhunac	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	obl	_	_
 5	.	.	PUNCT	Z	_	2	punct	_	_
+
+[QUALITY-CHANGE] poraste (2)
+[has-quality] Mržnja (1)
+[target-quality] do vrhunca (4)
+
+[MESSAGE] Mržnja (1)
+
+[QUALITY] vrhunca (4)
 
 # sent_id = 232
 # text = Goldštajnov glas se pretvorio u istinsko ovčje blejanje ; za trenutak mu se i lice pretvori u ovčju glavu .
@@ -782,6 +1853,40 @@
 18	ovčju	ovčj	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	19	amod	_	_
 19	glavu	glava	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	16	obl	_	_
 20	.	.	PUNCT	Z	_	4	punct	_	_
+
+[SCENE-CHANGE] pretvorio (4)
+[initial-scene] Goldštajnov glas (2)
+[target-scene] u istinsko ovčje blejanje (8)
+
+[MESSAGE] glas (2)
+[x-sender] Goldštajnov (1)
+
+[IDENTIFICATION] Goldštajnov (1)
+
+[MESSAGE-INIT] blejanje (8)
+[m-mode] istinsko (6)
+[x-sender] ovčje (7)
+
+[MODE] istinsko (6)
+
+[?CLASS || QUALITY || COMPARISON] ovčje (7)
+
+[SCENE-CHANGE] pretvori (16)
+[m-time] za trenutak (11)
+[?x-experiencer] mu (12)
+[?] lice (15)
+[target-scene] u ovčju glavu (19)
+
+[TIME] trenutak (11)
+
+[IDENTIFICATION] mu (12)
+
+[PART-WHOLE] lice (15)
+
+[PART-WHOLE] glavu (19)
+[whole] ovčju (18)
+
+[?CLASS || QUALITY || COMPARISON] ovčju (18)
 
 # sent_id = 233
 # text = Potom se ovčja glava pretopi u figuru evroazijskog vojnika koji se približavao , ogroman i grozan , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu , tako da se neki iz prvog reda odista trgoše i pribiše uz naslone svojih stolica .
@@ -840,6 +1945,89 @@
 53	stolica	stolica	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	51	nmod	_	_
 54	.	.	PUNCT	Z	_	5	punct	_	_
 
+[] pretopi (5)
+[] Potom (1)
+[] ovčja glava (4)
+[] u figuru evroazijskog vojnika koji se približavao , ogroman i grozan , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu , tako da se neki iz prvog reda odista trgoše i pribiše uz naslone svojih stolica (7)
+
+[] Potom (1)
+
+[] glava (4)
+[] ovčja (3)
+
+[] ovčja (3)
+
+[] figuru (7)
+[] evroazijskog vojnika koji se približavao , ogroman i grozan , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu , tako da se neki iz prvog reda odista trgoše i pribiše uz naslone svojih stolica (9)
+
+[] vojnika (9)
+[] evroazijskog (8)
+[] koji se približavao , ogroman i grozan , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu , tako da se neki iz prvog reda odista trgoše i pribiše uz naslone svojih stolica (12)
+
+[] evroazijskog (8)
+
+[] približavao (12)
+[] koji (10)
+[] , ogroman (14)
+[] i grozan (16)
+[] , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu (19)
+[] , tako da se neki iz prvog reda odista trgoše (47)
+[] i pribiše uz naslone svojih stolica (49)
+
+[] koji (10)
+
+[] ogroman (14)
+
+[] grozan (16)
+
+[] puškomitraljezom (19)
+[] koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu (23)
+
+[] štektao (23)
+[] koji (20)
+[] neprekidno (22)
+[] , sve dok se nije učinilo kao da silazi sa površine ekrana u salu (29)
+
+[] koji (20)
+
+[] neprekidno (22)
+
+[] učinilo (29)
+[] sve (25)
+[] kao da silazi sa površine ekrana u salu (32)
+
+[] sve (25)
+
+[] silazi (32)
+[] sa površine ekrana (34)
+[] u salu (37)
+
+[] površine (34)
+[] ekrana (35)
+
+[] ekrana (35)
+
+[] salu (37)
+
+[] trgoše (47)
+[] neki iz prvog reda (45)
+[] odista (46)
+
+[] reda (45)
+[] prvog (44)
+
+[] prvog (44)
+
+[] odista (46)
+
+[] pribiše (49)
+[] uz naslone svojih stolica (51)
+
+[] naslone (51)
+[] svojih stolica (53)
+
+[] stolica (53)
+
 # sent_id = 234
 # text = No upravo u tom trenutku , izmamivši dubok uzdah olakšanja od svih prisutnih , neprijateljska figura se pretopi u lice Velikog Brata , crne kose , crnih brkova , puno snage i tajanstvenog mira , i tako veliko da je skoro ispunjavalo ceo ekran .
 1	No	no	PART	Cc	_	18	discourse	_	_
@@ -888,6 +2076,84 @@
 44	ekran	ekran	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	42	obj	_	_
 45	.	.	PUNCT	Z	_	18	punct	_	_
 
+[] pretopi (18)
+[] upravo (2)
+[] u tom trenutku (5)
+[] , izmamivši dubok uzdah olakšanja od svih prisutnih , (7)
+[] neprijateljska figura (16)
+[] u lice Velikog Brata , crne kose , crnih brkova , puno snage i tajanstvenog mira (20)
+
+[] upravo (2)
+
+[] trenutku (5)
+
+[] izmamivši (7)
+[] dubok uzdah olakšanja od svih prisutnih (9)
+
+[] uzdah (9)
+[] dubok (8)
+[] olakšanja (10)
+[] od svih prisutnih (13)
+
+[] dubok (8)
+
+[] olakšanja (10)
+
+[] prisutnih (13)
+
+[] figura (16)
+[] neprijateljska (15)
+
+[] neprijateljska (15)
+
+[] lice (20)
+[] Velikog Brata (22)
+[] , crne kose (25)
+[] , crnih brkova (28)
+[] , puno snage (31)
+
+[] Brata (22)
+[] Velikog (21)
+
+[] Velikog (21)
+
+[] kose (25)
+[] crne (24)
+
+[] crne (24)
+
+[] brkova (28)
+[] crnih (27)
+
+[] crnih (27)
+
+[] snage (31)
+[] puno (30)
+
+[] puno (30)
+
+[] mira (34)
+[] tajanstvenog (33)
+
+[] tajanstvenog (33)
+
+[] veliko (38)
+[] tako (37)
+[] da je skoro ispunjavalo ceo ekran (42)
+
+[] tako (37)
+
+[] ispunjavalo (42)
+[] skoro (41)
+[] ceo ekran (44)
+
+[] skoro (41)
+
+[] ekran (44)
+[] ceo (43)
+
+[] ceo (43)
+
 # sent_id = 235
 # text = Niko ne ču šta Veliki Brat govori .
 1	Niko	niko	PRON	Pi3m-n	Case=Nom|Gender=Masc|PronType=Neg	3	nsubj	_	_
@@ -898,6 +2164,26 @@
 6	Brat	Brat	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
 7	govori	govoriti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 8	.	.	PUNCT	Z	_	3	punct	_	_
+
+[MESSAGE] ču (3)
+[x-experiencer] Niko (1)
+[m-mode] ne (2)
+[content] šta Veliki Brat govori (7)
+
+[CLASS-NEG] Niko (1)
+
+[MODE] ne (2)
+
+[MESSAGE-INIT] govori (7)
+[target-content] šta (4)
+[x-sender] Veliki Brat (6)
+
+[IDENTIFICATION] šta (4)
+
+[SOCIAL-RELATION >> IDENTIFICATION] Brat (6)
+[m-quality >> m-noncomp] Veliki (5)
+
+[QUALITY >> NONCOMP] Veliki (5)
 
 # sent_id = 236
 # text = Bilo je to samo nekoliko reči ohrabrenja , onakvih kakve se izgovaraju u buci bitke , koje se pojedinačno ne daju razabrati , ali koje vraćaju sigurnost samim tim što su izgovorene .
@@ -934,6 +2220,70 @@
 31	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux	_	_
 32	izgovorene	izgovoriti	ADJ	Appfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	29	acl	_	_
 33	.	.	PUNCT	Z	_	1	punct	_	_
+
+[] Bilo (1)
+[] to (3)
+[] samo nekoliko reči ohrabrenja , onakvih kakve se izgovaraju u buci bitke , koje se pojedinačno ne daju razabrati , ali koje vraćaju sigurnost samim tim što su izgovorene (6)
+
+[] to (3)
+
+[] reči (6)
+[] ohrabrenja (7)
+[] , onakvih kakve se izgovaraju u buci bitke , koje se pojedinačno ne daju razabrati , ali koje vraćaju sigurnost samim tim što su izgovorene (12)
+
+[] samo (4)
+
+[] ohrabrenja (7)
+
+[] izgovaraju (12)
+[] onakvih (9)
+[] kakve (10)
+[] u buci bitke , koje se pojedinačno ne daju razabrati , ali koje vraćaju sigurnost samim tim što su izgovorene (14)
+
+[] onakvih (9)
+
+[] kakve (10)
+
+[] buci (14)
+[] bitke , koje se pojedinačno ne daju razabrati , ali koje vraćaju sigurnost samim tim što su izgovorene (15)
+
+[] bitke (15)
+[] , koje se pojedinačno ne daju razabrati (21)
+[] , ali koje vraćaju sigurnost samim tim što su izgovorene (26)
+
+[] daju (21)
+[] koje (17)
+[] pojedinačno (19)
+[] ne (20)
+[] razabrati (22)
+
+[] koje (17)
+
+[] pojedinačno (19)
+
+[] ne (20)
+
+[] razabrati (22)
+
+[] vraćaju (26)
+[] koje (25)
+[] sigurnost (27)
+[] samim tim što su izgovorene (29)
+
+[] koje (25)
+
+[] sigurnost (27)
+
+[] tim (29)
+[] samim (28)
+[] što su izgovorene (32)
+
+[] samim (28)
+
+[] izgovorene (32)
+[] što (30)
+
+[] što (30)
 
 # sent_id = 237
 # text = Zatim lice Velikog Brata ponovo izblede , a na njegovo mesto dođoše tri parole Partije ispisane masnim velikim slovima : " Rat je mir " " Sloboda je ropstvo " " Neznanje je moć "
@@ -973,6 +2323,64 @@
 34	moć	moć	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	parataxis	_	_
 35	"	"	PUNCT	Z	_	6	punct	_	_
 
+[] izblede (6)
+[] Zatim (1)
+[] lice Velikog Brata (2)
+[] ponovo (5)
+
+[] Zatim (1)
+
+[] lice (2)
+[] Velikog Brata (4)
+
+[] Brata (4)
+[] Velikog (3)
+
+[] Velikog (3)
+
+[] ponovo (5)
+
+[] dođoše (12)
+[] na njegovo mesto (11)
+[] tri parole Partije ispisane masnim velikim slovima : " Rat je mir " " Sloboda je ropstvo " (14)
+
+[] mesto (11)
+
+[] parole : " Rat je mir " " Sloboda je ropstvo " (14)
+[] tri (13)
+[] Partije (15)
+[] ispisane masnim velikim slovima (16)
+
+[] tri (13)
+
+[] Partije (15)
+
+[] ispisane (16)
+[] masnim velikim slovima (19)
+
+[] slovima (19)
+[] masnim (17)
+[] velikim (18)
+
+[] masnim (17)
+
+[] velikim (18)
+
+[] mir (24)
+[] Rat (22)
+
+[] Rat (22)
+
+[] ropstvo (29)
+[] Sloboda (27)
+
+[] Sloboda (27)
+
+[] moć (34)
+[] Neznanje (32)
+
+[] Neznanje (32)
+
 # sent_id = 238
 # text = No lice Velikog Brata se još nekoliko sekundi zadrža na ekranu , kao da je dejstvo koje je proizveo na očne jabučice svih prisutnih bilo previše snažno da bi smesta prošlo .
 1	No	no	CCONJ	Cc	_	9	discourse	_	_
@@ -1008,20 +2416,92 @@
 31	prošlo	proći	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	27	advcl	_	_
 32	.	.	PUNCT	Z	_	9	punct	_	_
 
+[] zadrža (9)
+[] lice Velikog Brata (2)
+[] još nekoliko sekundi (8)
+[] na ekranu (11)
+[] , kao da je dejstvo koje je proizveo na očne jabučice svih prisutnih bilo previše snažno da bi smesta prošlo (27)
+
+[] lice (2)
+[] Velikog Brata (4)
+
+[] Brata (4)
+[] Velikog (3)
+
+[] Velikog (3)
+
+[] sekundi (8)
+
+[] još (6)
+
+[] ekranu (11)
+
+[] snažno (27)
+[] dejstvo koje je proizveo na očne jabučice svih prisutnih (16)
+[] previše (26)
+[] da bi smesta prošlo (31)
+
+[] dejstvo (16)
+[] koje je proizveo na očne jabučice svih prisutnih (19)
+
+[] proizveo (19)
+[] koje (17)
+[] na očne jabučice svih prisutnih (22)
+
+[] koje (17)
+
+[] jabučice (22)
+[] očne (21)
+[] svih prisutnih (24)
+
+[] očne (21)
+
+[] prisutnih (24)
+
+[] previše (26)
+
+[] prošlo (31)
+[] smesta (30)
+
+[] smesta (30)
+
 # sent_id = 239
 # text = Ženica pepeljaste kose beše se presamitila preko naslona stolice pred sobom .
 1	Ženica	ženica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
-2	pepeljaste	pepeljasta	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
-3	kose	kosa	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
-4	beše	beša	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	flat	_	_
+2	pepeljaste	pepeljasta	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
+3	kose	kosa	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	_
+4	beše	beša	ADV	Rgc	Degree=Cmp	6	advmod	_	_
 5	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	6	expl	_	_
 6	presamitila	presamititi	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 7	preko	preko	ADP	Sg	Case=Gen	8	case	_	_
 8	naslona	naslon	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	6	obl	_	_
 9	stolice	stolica	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
 10	pred	pred	ADP	Si	Case=Ins	11	case	_	_
-11	sobom	sebe	PRON	Px--si	Case=Ins|PronType=Prs|Reflex=Yes	6	obl	_	_
+11	sobom	sebe	PRON	Px--si	Case=Ins|PronType=Prs|Reflex=Yes	9	obl	_	_
 12	.	.	PUNCT	Z	_	6	punct	_	_
+
+[LOCATION-INIT || STATE-CHANGE] presamitila (6)
+[has-location || has-state] Ženica pepeljaste kose (1)
+[?] beše (4)
+[target-location || m-means] preko naslona stolice pred sobom (8)
+
+[CLASS] Ženica (1)
+[m-part] pepeljaste kose (3)
+
+[PART-WHOLE] kose (3)
+[m-quality] pepeljaste (2)
+
+[?CLASS || QUALITY] pepeljaste (2)
+
+[] beše (4)
+
+[CLASS] naslona (8)
+[m-whole] stolice pred sobom (9)
+
+[CLASS] stolice (9)
+[m-location] pred sobom (11)
+
+[IDENTIFICATION] sobom (11)
 
 # sent_id = 240
 # text = Sa drhtavim mrmorom koji je zvučao kao " Spasioče moj !, " ona pruži ruke ka ekranu .
@@ -1044,6 +2524,37 @@
 17	ekranu	ekran	NOUN	Ncmsd	Case=Dat|Gender=Masc|Number=Sing	14	obl	_	_
 18	.	.	PUNCT	Z	_	14	punct	_	_
 
+[LOCATION-INIT] pruži (14)
+[m-depictive] Sa drhtavim mrmorom koji je zvučao kao " Spasioče moj !, (3)
+[x-causer] ona (13)
+[has-location] ruke (15)
+[target-location] ka ekranu (17)
+
+[MESSAGE-INIT] mrmorom (3)
+[m-quality] drhtavim (2)
+[m-scene] koji je zvučao kao " Spasioče moj !, (6)
+[x-sender] ona (13)
+
+[UNANCHORED-MOTION >> QUALITY] drhtavim (2)
+
+[MESSAGE] zvučao (6)
+[x-sender] koji (4)
+[x-reference] kao " Spasioče moj !, (9)
+[x-sender] mrmorom (3)
+
+[IDENTIFICATION] koji (4)
+
+[SCENE-INIT-NEG] Spasioče (9)
+[participant] moj (10)
+
+[IDENTIFICATION] moj (10)
+
+[IDENTIFICATION] ona (13)
+
+[PART-WHOLE] ruke (15)
+
+[CLASS] ekranu (17)
+
 # sent_id = 241
 # text = Zatim zagnjuri lice u šake .
 1	Zatim	zatim	ADV	Rgp	Degree=Pos	2	advmod	_	_
@@ -1052,6 +2563,17 @@
 4	u	u	ADP	Sa	Case=Acc	5	case	_	_
 5	šake	šaka	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	2	obl	_	_
 6	.	.	PUNCT	Z	_	2	punct	_	_
+
+[LOCATION-INIT] zagnjuri (2)
+[m-time] Zatim (1)
+[has-location] lice (3)
+[target-location] u šake (5)
+
+[TIME] Zatim (1)
+
+[PART-WHOLE] lice (3)
+
+[PART-WHOLE] šake (5)
 
 # sent_id = 242
 # text = Bilo je očigledno da je izgovarala nekakvu molitvu .
@@ -1064,6 +2586,14 @@
 7	nekakvu	nekakav	DET	Pi-fsa	Case=Acc|Gender=Fem|Number=Sing|PronType=Ind	8	det	_	_
 8	molitvu	molitva	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	6	obj	_	_
 9	.	.	PUNCT	Z	_	3	punct	_	_
+
+[] očigledno (3)
+[] da je izgovarala nekakvu molitvu (6)
+
+[] izgovarala (6)
+[] nekakvu molitvu (8)
+
+[] molitvu (8)
 
 # sent_id = 243
 # text = Tog trenutka cela grupa ljudi poče skandirati , duboko , lagano i ritmički : " V - B ! ... V - B ! ... V - B , " bez prestanka , vrlo lagano , sa dugom pauzom između V i B --- težak , mrmorav zvuk , nekako čudno divljačan , za koji se činilo da mu pozadinu sačinjavaju toptanje bosih nogu i pulsiranje tam - tama .
@@ -1138,15 +2668,137 @@
 69	tama	tam	NOUN	Ncfpi	Case=Gen|Gender=Fem|Number=Plur	67	appos	_	_
 70	.	.	PUNCT	Z	_	6	punct	_	_
 
+[] poče (6)
+[] Tog trenutka (2)
+[] cela grupa ljudi (4)
+[] skandirati , bez prestanka (7)
+
+[] trenutka (2)
+
+[] grupa (4)
+[] cela (3)
+[] ljudi (5)
+
+[] cela (3)
+
+[] ljudi (5)
+
+[] skandirati (7)
+[] , bez prestanka (32)
+
+[] prestanka (32)
+
+[] V (16)
+[] , duboko (9)
+[] i ritmički (13)
+[] , lagano (11)
+[] , vrlo lagano (35)
+[] , sa dugom pauzom između V i B (39)
+
+[] duboko (9)
+
+[] ritmički (13)
+
+[] lagano (11)
+
+[] B (18)
+
+[] V (21)
+
+[] B (23)
+
+[] V (26)
+
+[] B (28)
+
+[] lagano (35)
+[] vrlo (34)
+
+[] vrlo (34)
+
+[] pauzom (39)
+[] dugom (38)
+[] između V (41)
+[] i B (43)
+
+[] dugom (38)
+
+[] V (41)
+
+[] B (43)
+
+[] zvuk (48)
+[] težak (45)
+[] , mrmorav (47)
+[] , nekako čudno divljačan (52)
+[] , za koji se činilo da mu pozadinu sačinjavaju toptanje bosih nogu i pulsiranje tam - tama (57)
+
+[] težak (45)
+
+[] mrmorav (47)
+
+[] divljačan (52)
+[] nekako (50)
+[] čudno (51)
+
+[] nekako (50)
+
+[] čudno (51)
+
+[] činilo (57)
+[] za koji (55)
+[] da mu pozadinu sačinjavaju toptanje bosih nogu i pulsiranje tam - tama (61)
+
+[] koji (55)
+
+[] sačinjavaju (61)
+[] mu pozadinu (60)
+[] toptanje bosih nogu (62)
+[] i pulsiranje tam - tama (66)
+
+[] pozadinu (60)
+
+[] toptanje (62)
+[] bosih nogu (64)
+
+[] nogu (64)
+[] bosih (63)
+
+[] bosih (63)
+
+[] pulsiranje (66)
+[] tam - tama (67)
+
+[] tam - tama (67)
+
+[] tama (69)
+
 # sent_id = 244
 # text = To potraja skoro celih trideset sekundi .
 1	To	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	potraja	potrajati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	skoro	skoro	ADV	Rgp	Degree=Pos	4	advmod	_	_
-4	celih	ceo	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	6	amod	_	_
+3	skoro	skoro	ADV	Rgp	Degree=Pos	5	advmod	_	_
+4	celih	ceo	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	5	amod	_	_
 5	trideset	trideset	NUM	Mlc	NumType=Card	6	nummod:gov	_	_
 6	sekundi	sekunda	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	2	obl	_	_
 7	.	.	PUNCT	Z	_	2	punct	_	_
+
+[TIME] potraja (2)
+[has-time] To (1)
+[time] skoro celih trideset sekundi (6)
+
+[IDENTIFICATION] To (1)
+
+[TIME] sekundi (6)
+[m-quantity] skoro celih trideset (5)
+
+[QUANTITY] trideset (5)
+[m-quantity] skoro (3)
+[m-part] celih (4)
+
+[QUANTITY] skoro (3)
+
+[PART-WHOLE] celih (4)
 
 # sent_id = 245
 # text = Taj refren se često mogao čuti u trenucima nesavladljive emocije .
@@ -1161,6 +2813,28 @@
 9	nesavladljive	nesavladljiv	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
 10	emocije	emocija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
 11	.	.	PUNCT	Z	_	5	punct	_	_
+
+[SCENE-POSSIBILITY] mogao (5)
+[participant] Taj refren (2)
+[m-time] često (4)
+[scene] čuti u trenucima nesavladljive emocije (6)
+
+[MESSAGE] refren (2)
+
+[TIME] često (4)
+
+[MESSAGE] čuti (6)
+[m-time >> m-accompanied] u trenucima nesavladljive emocije (8)
+[topic] Taj refren (2)
+
+[TIME] trenucima (8)
+[has-time] nesavladljive emocije (10)
+
+[MESSAGE] emocije (10)
+[m-scene] nesavladljive (9)
+
+[POSSESSION-NEG] nesavladljive (9)
+[possessed] emocije (10)
 
 # sent_id = 246
 # text = On je bio delom neka vrsta himne mudrosti i veličanstvu Velikog Brata , ali , pre svega , čin samohipnoze , namerno gušenje svesti putem ritmičkih zvukova .
@@ -1193,6 +2867,49 @@
 27	zvukova	zvuk	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	23	obl	_	_
 28	.	.	PUNCT	Z	_	4	punct	_	_
 
+[] delom (4)
+[] On (1)
+[] neka vrsta himne mudrosti i veličanstvu Velikog Brata (6)
+[] , ali , pre svega , čin samohipnoze (19)
+
+[] On (1)
+
+[] vrsta (6)
+[] himne mudrosti i veličanstvu Velikog Brata (7)
+
+[] himne (7)
+[] mudrosti (8)
+[] i veličanstvu Velikog Brata (10)
+
+[] mudrosti (8)
+
+[] veličanstvu (10)
+[] Velikog Brata (12)
+
+[] Brata (12)
+[] Velikog (11)
+
+[] Velikog (11)
+
+[] čin (19)
+[] samohipnoze (20)
+
+[] samohipnoze (20)
+
+[] gušenje (23)
+[] namerno (22)
+[] svesti (24)
+[] putem ritmičkih zvukova (27)
+
+[] namerno (22)
+
+[] svesti (24)
+
+[] zvukova (27)
+[] ritmičkih (26)
+
+[] ritmičkih (26)
+
 # sent_id = 247
 # text = Vinstonova utroba se sledi .
 1	Vinstonova	Vinstonov	ADJ	Aspfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	2	amod	_	_
@@ -1200,6 +2917,14 @@
 3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
 4	sledi	slediti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	.	.	PUNCT	Z	_	4	punct	_	_
+
+[STATE-INIT >> MESSAGE] sledi (4)
+[has-state >> x-sender] Vinstonova utroba (2)
+
+[PART-WHOLE] utroba (2)
+[whole] Vinstonova (1)
+
+[IDENTIFICATION] Vinstonova (1)
 
 # sent_id = 248
 # text = U seansama Dva minuta mržnje nije mogao a da ne učestvuje u opštem delirijumu , ali ovo životinjsko " V - B ! ... V - B ! " ga je uvek ispunjavalo užasom .
@@ -1239,6 +2964,53 @@
 34	užasom	užasa	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	33	obl	_	_
 35	.	.	PUNCT	Z	_	7	punct	_	_
 
+[] mogao (7)
+[] U seansama Dva minuta (2)
+[] mržnje (5)
+
+[] seansama (2)
+[] Dva minuta (4)
+
+[] minuta (4)
+[] Dva (3)
+
+[] Dva (3)
+
+[] mržnje (5)
+
+[] učestvuje (11)
+[] ne (10)
+[] u opštem delirijumu (14)
+
+[] ne (10)
+
+[] delirijumu (14)
+[] opštem (13)
+
+[] opštem (13)
+
+[] ispunjavalo (33)
+[] ga (30)
+[] uvek (32)
+[] užasom (34)
+
+[] V (20)
+[] životinjsko (18)
+
+[] životinjsko (18)
+
+[] B (22)
+
+[] V (25)
+
+[] B (27)
+
+[] ga (30)
+
+[] uvek (32)
+
+[] užasom (34)
+
 # sent_id = 249
 # text = Razume se , skandirao je zajedno s ostalima : drukčije se nije moglo .
 1	Razume	razumeti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -1256,6 +3028,22 @@
 13	moglo	moći	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	parataxis	_	_
 14	.	.	PUNCT	Z	_	4	punct	_	_
 
+[MESSAGE-INIT] Razume (1)
+
+[?] skandirao (4)
+[m-accompanied] zajedno s ostalima (8)
+
+[COMPARISON >> CLASS] ostalima (8)
+[m-scene] zajedno (6)
+
+[ACCOMPANIMENT] zajedno (6)
+[accompanier] ostalima (8)
+
+[SCENE-POSSIBILITY] moglo (13)
+[scene] drukčije (10)
+
+[COMPARISON] drukčije (10)
+
 # sent_id = 250
 # text = Kamuflirati osećanja , kontrolisati lice , činiti što i svi ostali , bila je instinktivna reakcija .
 1	Kamuflirati	kamuflirati	VERB	Vmn	VerbForm=Inf	16	nsubj	_	_
@@ -1267,7 +3055,7 @@
 7	činiti	činiti	VERB	Vmn	VerbForm=Inf	1	conj	_	_
 8	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	7	obj	_	_
 9	i	i	CCONJ	Cc	_	10	discourse	_	_
-10	svi	sav	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	7	obj	_	_
+10	svi	sav	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	8	obj	_	_
 11	ostali	ostali	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	10	amod	_	_
 12	,	,	PUNCT	Z	_	7	punct	_	_
 13	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	16	cop	_	_
@@ -1275,4 +3063,33 @@
 15	instinktivna	instinktivan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	16	amod	_	_
 16	reakcija	reakcija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
 17	.	.	PUNCT	Z	_	16	punct	_	_
+
+[REACTION] reakcija (16)
+[reaction] Kamuflirati osećanja (1)
+[reaction] , kontrolisati lice (4)
+[reaction] , činiti što i svi ostali , (7)
+[trigger] instinktivna (15)
+
+[MESSAGE-INTI-NEG] Kamuflirati (1)
+[target-content] osećanja (2)
+
+[MESSAGE] osećanja (2)
+
+[POSSESSION] kontrolisati (4)
+[possessed] lice (5)
+
+[PART-WHOLE] lice (5)
+
+[ACTIVITY] činiti (7)
+[activity] što i svi ostali (8)
+
+[ACTIVITY] što (8)
+[m-reference] i svi ostali (10)
+
+[QUANTITY] svi (10)
+[has-quantity] ostali (11)
+
+[COMPARISON >> CLASS] ostali (11)
+
+[MESSAGE] instinktivna (15)
 
