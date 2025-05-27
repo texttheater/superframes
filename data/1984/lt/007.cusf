@@ -9,6 +9,23 @@
 7	sujungimą	sujungimas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=32210:32219
 8	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=32219:32220
 
+[LOCATION-CHANGE] atsiklaupė (2)
+[has-location] Vinstonas (1)
+
+[IDENTIFICATION] Vinstonas (1)
+
+[MESSAGE-INIT] apžiūrėjo (4)
+[topic] alkūninį vamzdžio sujungimą (7)
+[x-experiencer] Vinstonas (1) # manuell hinzugefügt wg. Koordination
+
+[PART-WHOLE] sujungimą (7)
+[m-quality] alkūninį (5)
+[whole] vamzdžio (6)
+
+[QUALITY] alkūninį (5)
+
+[CLASS] vamzdžio (6)
+
 # sent_id = 352
 # text = Jis nemėgo tokių darbų, nemėgo klūpėti, nes dažniausiai imdavo kosėti.
 1	Jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=32221:32224
@@ -25,36 +42,85 @@
 12	kosėti	kosėti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	11	xcomp	_	SpaceAfter=No|TokenRange=32284:32290
 13	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=32290:32291
 
+[] nemėgo (2)
+[] Jis (1)
+[] tokių darbų (4)
+
+[] Jis (1)
+
+[] darbų (4)
+
+[] nemėgo (6)
+[??? Syntax] klūpėti , nes dažniausiai imdavo kosėti (7)
+
+[] klūpėti (7)
+[] , nes dažniausiai imdavo kosėti (11)
+
+[] imdavo (11)
+[] dažniausiai (10)
+[] kosėti (12)
+
+[] dažniausiai (10)
+
+[] kosėti (12)
+
 # sent_id = 353
 # text = Misis Parsons bejėgiškai stebėjo.
-1	Misis	misis	PRON	įv.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	2	nmod	_	TokenRange=32292:32297
-2	Parsons	Parsons	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	TokenRange=32298:32305
+1	Misis	misis	PRON	įv.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	TokenRange=32292:32297
+2	Parsons	Parsons	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	1	flat	_	TokenRange=32298:32305
 3	bejėgiškai	bejėgiškai	ADV	prv.nelygin.	Degree=Pos	4	advmod	_	TokenRange=32306:32316
 4	stebėjo	stebėti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=32317:32324
 5	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n\n\t|TokenRange=32324:32325
 
+[MESSAGE] stebėjo (4)
+[x-experiencer] Misis Parsons (1)
+[] bejėgiškai (3)
+
+[IDENTIFICATION] Misis Parsons (1)
+
+[] bejėgiškai (3)
+
 # newpar
 # sent_id = 354
-# text = — Žinoma, jei
+# text = — Žinoma, jei Tomas būtų namie, jis tuojau sutvarkytų, — pasakė ji.
 1	—	—	PUNCT	skyr.	_	2	punct	_	TokenRange=32328:32329
-2	Žinoma	žinoti	VERB	vksm.dlv.neveik.es.bev.	Definite=Ind|Gender=Neut|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No|TokenRange=32330:32336
+2	Žinoma	žinoti	VERB	vksm.dlv.neveik.es.bev.	Definite=Ind|Gender=Neut|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	11	parataxis	_	SpaceAfter=No|TokenRange=32330:32336
 3	,	,	PUNCT	skyr.	_	2	punct	_	TokenRange=32336:32337
-4	jei	jei	SCONJ	jng.	_	2	mark	_	TokenRange=32338:32341
+4	jei	jei	SCONJ	jng.	_	7	mark	_	TokenRange=32338:32341
+5	Tomas	tomas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	TokenRange=32342:32347
+6	būtų	būti	AUX	vksm.asm.tar.vns.3.	Mood=Cnd|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin	7	cop	_	TokenRange=32348:32352
+7	namie	namie	ADV	prv.nelygin.	Degree=Pos	11	advcl	_	SpaceAfter=No|TokenRange=32353:32358
+8	,	,	PUNCT	skyr.	_	7	punct	_	TokenRange=32358:32359
+9	jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	TokenRange=32360:32363
+10	tuojau	tuojau	ADV	prv.nelygin.	Degree=Pos	11	advmod	_	TokenRange=32364:32370
+11	sutvarkytų	sutvarkyti	VERB	vksm.asm.tar.vns.3.	Mood=Cnd|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin	14	ccomp	_	SpaceAfter=No|TokenRange=32371:32381
+12	,	,	PUNCT	skyr.	_	10	punct	_	TokenRange=32381:32382
+13	—	—	PUNCT	skyr.	_	10	punct	_	TokenRange=32383:32384
+14	pasakė	pasakyti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=32385:32391
+15	ji	jis	PRON	įv.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	SpaceAfter=No|TokenRange=32392:32394
+16	.	.	PUNCT	skyr.	_	14	punct	_	TokenRange=32394:32395
 
-# sent_id = 355
-# text = Tomas būtų namie, jis tuojau sutvarkytų, — pasakė ji.
-1	Tomas	tomas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=32342:32347
-2	būtų	būti	AUX	vksm.asm.tar.vns.3.	Mood=Cnd|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin	3	cop	_	TokenRange=32348:32352
-3	namie	namie	ADV	prv.nelygin.	Degree=Pos	0	root	_	SpaceAfter=No|TokenRange=32353:32358
-4	,	,	PUNCT	skyr.	_	7	punct	_	TokenRange=32358:32359
-5	jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	TokenRange=32360:32363
-6	tuojau	tuojau	ADV	prv.nelygin.	Degree=Pos	7	advmod	_	TokenRange=32364:32370
-7	sutvarkytų	sutvarkyti	VERB	vksm.asm.tar.vns.3.	Mood=Cnd|Number=Sing|Person=3|Polarity=Pos|VerbForm=Fin	3	conj	_	SpaceAfter=No|TokenRange=32371:32381
-8	,	,	PUNCT	skyr.	_	10	punct	_	TokenRange=32381:32382
-9	—	—	PUNCT	skyr.	_	10	punct	_	TokenRange=32383:32384
-10	pasakė	pasakyti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	3	conj	_	TokenRange=32385:32391
-11	ji	jis	PRON	įv.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	SpaceAfter=No|TokenRange=32392:32394
-12	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=32394:32395
+[MESSAGE-INIT] pasakė (14)
+[target-content] — Žinoma , jei Tomas būtų namie , jis tuojau sutvarkytų , — (11)
+[x-sender] ji (15)
+
+[STATE-CHANGE] sutvarkytų (11)
+[m-condition] jei Tomas būtų namie , (7)
+[x-causer] jis (9)
+[m-time] tuojau , — (10) # Überlegen: vgl. "tuojau" "staiga" etc
+
+[MODE] Žinoma (2)
+
+[LOCATION] namie (7)
+[has-location] Tomas (5)
+
+[IDENTIFICATION] Tomas (5)
+
+[IDENTIFICATION] jis (9)
+
+[TIME] tuojau (10)
+
+[IDENTIFICATION] ji (15)
 
 # sent_id = 356
 # text = — Jis mėgsta tokius darbus.
@@ -65,6 +131,14 @@
 5	darbus	darbas	NOUN	dkt.vyr.dgs.G.	Case=Acc|Gender=Masc|Number=Plur	3	obj	_	SpaceAfter=No|TokenRange=32416:32422
 6	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=32422:32423
 
+[MESSAGE] mėgsta (3)
+[x-experiencer] Jis (2)
+[topic] tokius darbus (5)
+
+[IDENTIFICATION] Jis (2)
+
+[ACTIVITY] darbus (5)
+
 # sent_id = 357
 # text = Tiesiog tam sutvertas žmogus...
 1	Tiesiog	tiesiog	ADV	prv.nelygin.	Degree=Pos	3	advmod	_	TokenRange=32424:32431
@@ -73,10 +147,23 @@
 4	žmogus	žmogus	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=32446:32452
 5	...	...	PUNCT	skyr.	_	3	punct	_	TokenRange=32452:32455
 
+[] žmogus (4)
+[] Tiesiog tam sutvertas ... (3)
+
+[] sutvertas (3)
+[] Tiesiog (1)
+[] tam (2)
+
+[] Tiesiog (1)
+
+[] tam (2)
+
 # sent_id = 358
 # text = Tomas...
 1	Tomas	tomas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=32456:32461
 2	...	...	PUNCT	skyr.	_	1	punct	_	SpacesAfter=\n\n\t|TokenRange=32461:32464
+
+[] Tomas (1)
 
 # newpar
 # sent_id = 359
@@ -89,6 +176,23 @@
 6	Teisybės	teisybė	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	TokenRange=32501:32509
 7	ministerijoje	ministerija	NOUN	dkt.mot.vns.Vt.	Case=Loc|Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No|TokenRange=32510:32523
 8	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=32523:32524
+
+[] dirbo (2)
+[] Parsonsas (1)
+[] kartu su Vinstonu Teisybės ministerijoje (3)
+
+[] Parsonsas (1)
+
+[] kartu (3)
+[] su Vinstonu (5)
+[] Teisybės ministerijoje (7)
+
+[] Vinstonu (5)
+
+[] ministerijoje (7)
+[] Teisybės (6)
+
+[] Teisybės (6)
 
 # sent_id = 360
 # text = Tai buvo storulis, bet energingas pritrenkiančio kvailumo vyriškis — buko entuziazmo kamuolys.
@@ -106,6 +210,28 @@
 12	entuziazmo	entuziazmas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	TokenRange=32599:32609
 13	kamuolys	kamuolys	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No|TokenRange=32610:32618
 14	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=32618:32619
+
+[] storulis (3)
+[] Tai (1)
+[] , bet energingas pritrenkiančio kvailumo vyriškis (9)
+
+[] Tai (1)
+
+[] vyriškis (9)
+[] energingas (6)
+[] pritrenkiančio kvailumo (8)
+
+[] energingas (6)
+
+[] kvailumo (8)
+[] pritrenkiančio (7)
+
+[] pritrenkiančio (7)
+
+[] kamuolys (13)
+[] entuziazmo (12)
+
+[] entuziazmo (12)
 
 # sent_id = 361
 # text = Vienas iš tų absoliučiai besąlygiškai atsidavusių arklių, nuo kurių priklauso partijos stabilumas, net labiau negu nuo minčių policijos.
@@ -130,6 +256,44 @@
 19	minčių	mintis	NOUN	dkt.mot.dgs.K.	Case=Gen|Gender=Fem|Number=Plur	20	nmod	_	TokenRange=32739:32745
 20	policijos	policija	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	16	obl:arg	_	SpaceAfter=No|TokenRange=32746:32755
 21	.	.	PUNCT	skyr.	_	1	punct	_	TokenRange=32755:32756
+
+[] Vienas (1)
+[] iš tų absoliučiai besąlygiškai atsidavusių arklių , nuo kurių priklauso partijos stabilumas , net labiau negu nuo minčių policijos (7)
+
+[] arklių (7)
+[] absoliučiai besąlygiškai atsidavusių (6)
+[] , nuo kurių priklauso partijos stabilumas (11)
+[] , net labiau negu nuo minčių policijos (16)
+
+[] atsidavusių (6)
+[] absoliučiai (4)
+[] besąlygiškai (5)
+
+[] absoliučiai (4)
+
+[] besąlygiškai (5)
+
+[] priklauso (11)
+[] nuo kurių (10)
+[] partijos stabilumas (13)
+
+[] kurių (10)
+
+[] stabilumas (13)
+[] partijos (12)
+
+[] partijos (12)
+
+[] labiau (16)
+[] net (15)
+[] negu nuo minčių policijos (20)
+
+[] net (15)
+
+[] policijos (20)
+[] minčių (19)
+
+[] minčių (19)
 
 # sent_id = 362
 # text = Būdamas trisdešimt penkerių metų, jis labai nenoriai pasitraukė iš Jaunimo lygos, o stojo į ją, metus virš amžiaus ribos išbuvęs Šnipų organizacijoje.
@@ -159,6 +323,58 @@
 24	Šnipų	šnipas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	25	nmod	_	TokenRange=32886:32891
 25	organizacijoje	organizacija	NOUN	dkt.mot.vns.Vt.	Case=Loc|Gender=Fem|Number=Sing	23	obl	_	SpaceAfter=No|TokenRange=32892:32906
 26	.	.	PUNCT	skyr.	_	9	punct	_	SpacesAfter=\n\n\t|TokenRange=32906:32907
+
+[] pasitraukė (9)
+[] Būdamas trisdešimt penkerių metų , (1)
+[] jis (6)
+[] labai nenoriai (8)
+[] iš Jaunimo lygos (12)
+
+[] Būdamas (1)
+[] trisdešimt penkerių metų (4)
+
+[] metų (4)
+[] trisdešimt (2)
+[] penkerių (3)
+
+[] trisdešimt (2)
+
+[] penkerių (3)
+
+[] jis (6)
+
+[] nenoriai (8)
+[] labai (7)
+
+[] labai (7)
+
+[] lygos (12)
+[] Jaunimo (11)
+
+[] Jaunimo (11)
+
+[] stojo (15)
+[] į ją (17)
+[] , metus virš amžiaus ribos išbuvęs Šnipų organizacijoje (23)
+
+[] ją (17)
+
+[] išbuvęs (23)
+[] metus (19)
+[] virš amžiaus ribos (22)
+[] Šnipų organizacijoje (25)
+
+[] metus (19)
+
+[] ribos (22)
+[] amžiaus (21)
+
+[] amžiaus (21)
+
+[] organizacijoje (25)
+[] Šnipų (24)
+
+[] Šnipų (24)
 
 # newpar
 # sent_id = 363
@@ -203,6 +419,86 @@
 38	veiklą	veikla	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	28	conj	_	SpaceAfter=No|TokenRange=33181:33187
 39	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=33187:33188
 
+[] ėjo (3)
+[] Ministerijoje (1)
+[] jis (2)
+[] kažkokias antraeiles pareigas , kurioms proto nereikėjo (6)
+
+[] Ministerijoje (1)
+
+[] jis (2)
+
+[] pareigas (6)
+[] kažkokias (4)
+[] antraeiles (5)
+[] , kurioms proto nereikėjo (10)
+
+[] kažkokias (4)
+
+[] antraeiles (5)
+
+[] nereikėjo (10)
+[] kurioms (8)
+[] proto (9)
+
+[] kurioms (8)
+
+[] proto (9)
+
+[] figūra (18)
+[] didelė (17)
+[] sporto komitete (20)
+[] ir visuose kituose komitetuose (24)
+
+[] antra (13)
+[] vertus (14)
+
+[] vertus (14)
+
+[] didelė (17)
+
+[] komitete (20)
+[] sporto (19)
+
+[] sporto (19)
+
+[] komitetuose (24)
+[] kituose (23)
+
+[] kituose (23)
+
+[] organizuoja (26)
+[] kurie (25)
+[] visuomenės iškylas (28)
+[] , spontaniškas demonstracijas (31)
+[] , taupymo kampanijas (34)
+[] ir visokią savanorišką veiklą (38)
+
+[] kurie (25)
+
+[] iškylas (28)
+[] visuomenės (27)
+
+[] visuomenės (27)
+
+[] demonstracijas (31)
+[] spontaniškas (30)
+
+[] spontaniškas (30)
+
+[] kampanijas (34)
+[] taupymo (33)
+
+[] taupymo (33)
+
+[] veiklą (38)
+[] visokią (36)
+[] savanorišką (37)
+
+[] visokią (36)
+
+[] savanorišką (37)
+
 # sent_id = 364
 # text = Papsėdamas pypkę, su romiu pasididžiavimu sakydavo, kad jau ketveri metai, kaip kiekvieną vakarą jis būna Visuomenės centre.
 1	Papsėdamas	papsėti	VERB	vksm.pusd.vyr.vns.	Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Conv	7	advcl	_	TokenRange=33189:33199
@@ -226,6 +522,44 @@
 19	Visuomenės	visuomenė	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	20	nmod	_	TokenRange=33295:33305
 20	centre	centras	NOUN	dkt.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	18	obl	_	SpaceAfter=No|TokenRange=33306:33312
 21	.	.	PUNCT	skyr.	_	7	punct	_	TokenRange=33312:33313
+
+[MESSAGE-INIT] sakydavo (7) # -dav-; Phäno: implizites Subjekt
+[??? m-situator] Papsėdamas pypkę , (1)
+[??? m-accompanier || m-quality] su romiu pasididžiavimu (6)
+[target-content] , kad jau ketveri metai , kaip kiekvieną vakarą jis būna Visuomenės centre (12)
+
+[STATE-CHANGE] Papsėdamas (1) # Überlegen: INGESTION + ingested
+[has-state] pypkę (2)
+
+[CLASS] pypkę (2)
+
+[MESSAGE] pasididžiavimu (6)
+[m-quality] romiu (5)
+
+[QUALITY] romiu (5)
+
+[TIME] metai (12)
+[m-quantity] jau ketveri (11)
+[??? m-follows] , kaip kiekvieną vakarą jis būna Visuomenės centre (18)
+
+[QUANTITY] ketveri (11)
+[??? m-mode] jau (10)
+
+[MODE] jau (10)
+
+[LOCATION] būna (18) # Überlegen: evtl. Syntaxänderung mit cop, vgl. Satz_354
+[m-time] kiekvieną vakarą (16)
+[has-location] jis (17)
+[location] Visuomenės centre (20)
+
+[??? TIME vs CLASS] vakarą (16)
+
+[IDENTIFICATION] jis (17)
+
+[??? CLASS >> IDENTIFICATION] centre (20)
+[??? m-has-location >> m-noncomp] Visuomenės (19)
+
+[??? CLASS] Visuomenės (19)
 
 # sent_id = 365
 # text = Kur tik eidamas, jis visur skleidė dar ilgai tvyrantį ir visa stelbiantį prakaito kvapą, sakytum rodantį jo gyvenimo įtampą.
@@ -252,6 +586,61 @@
 21	įtampą	įtampa	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=33431:33437
 22	.	.	PUNCT	skyr.	_	7	punct	_	SpacesAfter=\n\n\t|TokenRange=33437:33438
 
+[??? LOCATION-INIT >> SCENE-INIT] skleidė (7)
+[??? m-location || m-depictive?] Kur tik eidamas , (3)
+[x-causer >> participant] jis (5)
+[m-location] visur (6)
+[has-location >> target-scene] dar ilgai tvyrantį ir visa stelbiantį prakaito kvapą , sakytum rodantį jo gyvenimo įtampą (15)
+
+[LOCATION] eidamas (3)
+[m-location] Kur (1)
+[m-mode] tik (2)
+
+[LOCATION] Kur (1)
+
+[MODE] tik (2)
+
+[IDENTIFICATION] jis (5)
+
+[LOCATION] visur (6)
+
+[MESSAGE] kvapą (15)
+[m-scene] dar ilgai tvyrantį (10)
+[m-scene] ir visa stelbiantį (13)
+[topic] prakaito (14)
+[??? Syntax?] , sakytum rodantį jo gyvenimo įtampą (17)
+
+[] tvyrantį (10)
+[] dar ilgai (9)
+[] kvapą (15)
+
+[] ilgai (9)
+[] dar (8)
+
+[] dar (8)
+
+[] stelbiantį (13)
+[] visa (12)
+[] kvapą (15)
+
+[] visa (12)
+
+[] prakaito (14)
+
+[] sakytum (17)
+[] rodantį jo gyvenimo įtampą (21)
+
+[] įtampą (21)
+[] rodantį (18)
+[] jo gyvenimo (20)
+
+[] rodantį (18)
+
+[] gyvenimo (20)
+[] jo (19)
+
+[] jo (19)
+
 # newpar
 # sent_id = 366
 # text = — Ar turite raktą? — paklausė Vinstonas, krapštydamasis aplink sudūrimo movą.
@@ -270,6 +659,28 @@
 13	movą	movas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No|TokenRange=33513:33517
 14	.	.	PUNCT	skyr.	_	3	punct	_	SpacesAfter=\n\n\t|TokenRange=33517:33518
 
+[] turite (3)
+[] Ar (2)
+[] raktą (4)
+
+[] Ar (2)
+
+[] raktą (4)
+
+[] paklausė (7)
+[] Vinstonas (8)
+[] , krapštydamasis aplink sudūrimo movą (10)
+
+[] Vinstonas (8)
+
+[] krapštydamasis (10)
+[] aplink sudūrimo movą (13)
+
+[] movą (13)
+[] sudūrimo (12)
+
+[] sudūrimo (12)
+
 # newpar
 # sent_id = 367
 # text = — Raktą? — pakartojo misis Parsons, beregint suglebusi.
@@ -279,11 +690,25 @@
 4	—	—	PUNCT	skyr.	_	5	punct	_	TokenRange=33530:33531
 5	pakartojo	pakartoti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=33532:33541
 6	misis	misis	NOUN	vksm.asm.sngr.tiesiog.būs.vns.3.	Case=Nom|Gender=Masc|Number=Sing|Reflex=Yes	5	nsubj	_	TokenRange=33542:33547
-7	Parsons	Parsons	PROPN	užs.	_	5	obj	_	SpaceAfter=No|TokenRange=33548:33555
+7	Parsons	Parsons	PROPN	užs.	_	6	flat	_	SpaceAfter=No|TokenRange=33548:33555
 8	,	,	PUNCT	skyr.	_	9	punct	_	TokenRange=33555:33556
 9	beregint	bereginti	VERB	vksm.pad.es.	Polarity=Pos|Tense=Pres|VerbForm=Ger	5	advcl	_	TokenRange=33557:33565
 10	suglebusi	suglebti	VERB	vksm.dlv.veik.būt-k.mot.vns.V.	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	9	advcl	_	SpaceAfter=No|TokenRange=33566:33575
 11	.	.	PUNCT	skyr.	_	5	punct	_	TokenRange=33575:33576
+
+[MESSAGE-INIT] pakartojo (5)
+[target-content] — Raktą ? (2)
+[x-sender] misis Parsons (6)
+[m-depictive] , beregint suglebusi (9) # Überlegen: m- oder x-
+
+[CLASS] Raktą (2)
+
+[IDENTIFICATION] misis Parsons (6)
+
+[??? Syntax muss geändert, damit depictive passt?] beregint (9)
+[] suglebusi (10)
+
+[] suglebusi (10)
 
 # sent_id = 368
 # text = — Nežinau, negaliu pasakyti.
@@ -294,11 +719,23 @@
 5	pasakyti	pasakyti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	4	xcomp	_	SpaceAfter=No|TokenRange=33596:33604
 6	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=33604:33605
 
+[MESSAGE-NEG] Nežinau (2) # Phäno: implizites Subjekt
+
+[SCENE-POSSIBILITY-NEG] negaliu (4) # Phäno: implizites Subjekt; “können+Inf → root+xcomp” 
+[scene] pasakyti (5)
+
+[MESSAGE-INIT] pasakyti (5)
+
 # sent_id = 369
 # text = Gal vaikai...
 1	Gal	gal	PART	dll.	_	2	advmod:emph	_	TokenRange=33606:33609
 2	vaikai	vaikas	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No|TokenRange=33610:33616
 3	...	...	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=33616:33619
+
+[CLASS] vaikai (2)
+[m-mode] Gal (1)
+
+[MODE] Gal (1)
 
 # newpar
 # sent_id = 370
@@ -316,6 +753,28 @@
 11	svetainę	svetainė	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	9	obl:arg	_	SpaceAfter=No|TokenRange=33685:33693
 12	.	.	PUNCT	skyr.	_	1	punct	_	TokenRange=33693:33694
 
+[MESSAGE-INIT] Pasigirdo (1)
+[target-content] batų trepsėjimas (3)
+[target-content] ir šukų muzika (6)
+
+[MESSAGE] trepsėjimas (3)
+[x-sender || m-means] batų (2)
+
+[CLASS] batų (2)
+
+[MESSAGE] muzika (6)
+[??? x-sender || m-means] šukų (5)
+
+[CLASS] šukų (5)
+
+[LOCATION-INIT] nužygiavo (9)
+[has-location] vaikai (8)
+[target-location] į svetainę (11)
+
+[CLASS] vaikai (8)
+
+[CLASS] svetainę (11) # Überlegen: Akkusativ aber LOCATION
+
 # sent_id = 371
 # text = Parsons atnešė raktą.
 1	Parsons	Parsons	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=33695:33702
@@ -323,12 +782,20 @@
 3	raktą	raktas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=33710:33715
 4	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=33715:33716
 
+[LOCATION-INIT] atnešė (2)
+[x-causer] Parsons (1)
+[has-location] raktą (3)
+
+[IDENTIFICATION] Parsons (1)
+
+[CLASS] raktą (3)
+
 # sent_id = 372
 # text = Vinstonas išleido vandenį ir pasišlykštėdamas ištraukė plaukų kamuoliuką, kuris buvo užkimšęs vamzdį.
 1	Vinstonas	Vinstonas	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=33717:33726
 2	išleido	išleisti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=33727:33734
 3	vandenį	vanduo	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	TokenRange=33735:33742
-4	ir	ir	CCONJ	jng.	_	5	cc	_	TokenRange=33743:33745
+4	ir	ir	CCONJ	jng.	_	6	cc	_	TokenRange=33743:33745
 5	pasišlykštėdamas	pasišlykštėti	VERB	vksm.pusd.vyr.vns.	Gender=Masc|Number=Sing|Polarity=Pos|VerbForm=Conv	6	advcl	_	TokenRange=33746:33762
 6	ištraukė	ištraukti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	2	conj	_	TokenRange=33763:33771
 7	plaukų	plaukas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	8	nmod	_	TokenRange=33772:33778
@@ -339,6 +806,37 @@
 12	užkimšęs	užkimšti	VERB	vksm.dlv.veik.būt-k.vyr.vns.V.	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	8	acl:relcl	_	TokenRange=33802:33810
 13	vamzdį	vamzdis	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=33811:33817
 14	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=33817:33818
+
+[LOCATION-DEINIT] išleido (2)
+[x-causer] Vinstonas (1)
+[has-location] vandenį (3)
+
+[IDENTIFICATION] Vinstonas (1)
+
+[CLASS] vandenį (3)
+
+[LOCATION-INIT] ištraukė (6)
+[m-depictive] pasišlykštėdamas (5)
+[has-location] plaukų kamuoliuką , kuris buvo užkimšęs vamzdį (8)
+[x-causer] Vinstonas (1)
+
+[MESSAGE] pasišlykštėdamas (5)
+[x-experiencer] Vinstonas (1)
+
+[CLASS] kamuoliuką (8)
+[m-material] plaukų (7)
+[m-scene] , kuris buvo užkimšęs vamzdį (12)
+
+[PART-WHOLE] plaukų (7)
+
+[STATE] užkimšęs (12)
+[x-causer] kuris (10)
+[has-state] vamzdį (13)
+[x-causer] kamuoliuką (8)
+
+[IDENTIFICATION] kuris (10)
+
+[CLASS] vamzdį (13)
 
 # sent_id = 373
 # text = Kuo galėdamas švariau nusiplovė pirštus po šaltu vandeniu iš čiaupo ir nuėjo į kambarį.
@@ -351,25 +849,64 @@
 7	šaltu	šaltas	ADJ	bdv.nelygin.vyr.vns.Įn.	Case=Ins|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	TokenRange=33862:33867
 8	vandeniu	vandenis	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	4	obl:arg	_	TokenRange=33868:33876
 9	iš	iš	ADP	prl.K.	AdpType=Prep|Case=Gen	10	case	_	TokenRange=33877:33879
-10	čiaupo	čiaupas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	4	obl	_	TokenRange=33880:33886
+10	čiaupo	čiaupas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	TokenRange=33880:33886
 11	ir	ir	CCONJ	jng.	_	12	cc	_	TokenRange=33887:33889
 12	nuėjo	nueiti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	4	conj	_	TokenRange=33890:33895
 13	į	į	ADP	prl.G.	AdpType=Prep|Case=Acc	14	case	_	TokenRange=33896:33897
 14	kambarį	kambarys	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	12	obl:arg	_	SpaceAfter=No|TokenRange=33898:33905
 15	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n\n\t|TokenRange=33905:33906
 
+[STATE-CHANGE] nusiplovė (4)
+[??? Syntax?] Kuo galėdamas (2)
+[??? Syntax?] švariau (3)
+[has-state] pirštus (5)
+[m-means] po šaltu vandeniu iš čiaupo (8)
+
+[] galėdamas (2)
+
+[] švariau (3)
+
+[] pirštus (5)
+
+[] vandeniu (8)
+[] šaltu (7)
+[] iš čiaupo (10)
+
+[] šaltu (7)
+
+[] čiaupo (10)
+
+[] nuėjo (12)
+[] į kambarį (14)
+
+[] kambarį (14)
+
 # newpar
 # sent_id = 374
 # text = — Rankas aukštyn! — suriko įniršęs balsas.
 1	—	—	PUNCT	skyr.	_	3	punct	_	TokenRange=33909:33910
 2	Rankas	ranka	NOUN	dkt.mot.dgs.G.	Case=Acc|Gender=Fem|Number=Plur	3	obj	_	TokenRange=33911:33917
-3	aukštyn	aukštai	ADV	prv.nelygin.	Degree=Pos	6	advmod	_	SpaceAfter=No|TokenRange=33918:33925
+3	aukštyn	aukštai	ADV	prv.nelygin.	Degree=Pos	6	ccomp	_	SpaceAfter=No|TokenRange=33918:33925
 4	!	!	PUNCT	skyr.	_	3	punct	_	TokenRange=33925:33926
 5	—	—	PUNCT	skyr.	_	6	punct	_	TokenRange=33927:33928
 6	suriko	surikti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=33929:33935
 7	įniršęs	įniršti	VERB	vksm.dlv.veik.būt-k.vyr.vns.V.	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	8	acl	_	TokenRange=33936:33943
 8	balsas	balsas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	SpaceAfter=No|TokenRange=33944:33950
 9	.	.	PUNCT	skyr.	_	6	punct	_	SpacesAfter=\n\n\t|TokenRange=33950:33951
+
+[MESSAGE-INIT] suriko (6)
+[target-content] — Rankas aukštyn ! (3)
+[x-sender] įniršęs balsas (8)
+
+[LOCATION] aukštyn (3)
+[has-location] Rankas (2)
+
+[PART-WHOLE] Rankas (2)
+
+[SENDING] balsas (8) # Überlegen, ob Phän: kein typisches MESSAGE, da kein topic & kein content args. vgl. Schmerzen (MESSAGE&x-experiencer vs EVENT&undegoer)
+[??? m-quality] įniršęs (7)
+
+[??? QUALITY] įniršęs (7)
 
 # newpar
 # sent_id = 375
@@ -408,6 +945,66 @@
 32	pagaliuku	pagaliukus	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	29	obl:arg	_	SpaceAfter=No|TokenRange=34129:34138
 33	.	.	PUNCT	skyr.	_	4	punct	_	TokenRange=34138:34139
 
+[] iššoko (4)
+[] Iš už stalo (3)
+[] dailus (5)
+[] , drūtas devynerių metų berniukas (10)
+
+[] stalo (3)
+
+[] dailus (5)
+
+[] berniukas (10)
+[] drūtas (7)
+[] devynerių metų (9)
+
+[] drūtas (7)
+
+[] metų (9)
+[] devynerių (8)
+
+[] devynerių (8)
+
+[] atstatė (12)
+[] į jį (14)
+[] žaislinį automatinį pistoletą (17)
+
+[] jį (14)
+
+[] pistoletą (17)
+[] žaislinį (15)
+[] automatinį (16)
+
+[] žaislinį (15)
+
+[] automatinį (16)
+
+[] taikėsi (29)
+[] jo jaunesnioji sesuo , mažesnė kokiais dvejais metais , (22)
+[] į jį (31)
+[] pagaliuku (32)
+
+[] sesuo (22)
+[] jo (20)
+[] jaunesnioji (21)
+[] , mažesnė kokiais dvejais metais , (24)
+
+[] jo (20)
+
+[] jaunesnioji (21)
+
+[] mažesnė (24)
+[] kokiais dvejais metais (27)
+
+[] metais (27)
+[] dvejais (26)
+
+[] dvejais (26)
+
+[] jį (31)
+
+[] pagaliuku (32)
+
 # sent_id = 376
 # text = Abu vilkėjo mėlynais šortais, pilkais marškiniais ir raudonais kaklaraiščiais — tai buvo Šnipų organizacijos uniforma.
 1	Abu	abu	NUM	sktv.raid.kiek.vyr.V.	Case=Nom|Gender=Masc|NumForm=Word|NumType=Card	2	nsubj	_	TokenRange=34140:34143
@@ -427,6 +1024,40 @@
 15	organizacijos	organizacija	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	TokenRange=34235:34248
 16	uniforma	uniforma	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	2	conj	_	SpaceAfter=No|TokenRange=34249:34257
 17	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=34257:34258
+
+[WRAPPING-WEARING] vilkėjo (2)
+[wearer] Abu (1)
+[wrapper] mėlynais šortais (4)
+[wrapper] , pilkais marškiniais (7)
+[wrapper] ir raudonais kaklaraiščiais (10)
+
+[IDENTIFICATION] Abu (1) # Phäno?
+
+[CLASS] šortais (4)
+[m-quality] mėlynais (3)
+
+[QUALITY] mėlynais (3)
+
+[CLASS] marškiniais (7)
+[m-quality] pilkais (6)
+
+[QUALITY] pilkais (6)
+
+[CLASS] kaklaraiščiais (10)
+[m-quality] raudonais (9)
+
+[QUALITY] raudonais (9)
+
+[IDENTIFICATION] uniforma (16) # issue: 
+[? x-identified] tai (12)
+[identified] Šnipų organizacijos (15)
+
+[IDENTIFICATION] tai (12)
+
+[??? SOCIAL-RELATION] organizacijos (15)
+[??? m-purpose?] Šnipų (14)
+
+[???] Šnipų (14)
 
 # sent_id = 377
 # text = Vinstonas iškėlė virš galvos rankas, bet darė tą kažkaip nejaukiai — mat berniuko balsas buvo toks piktas, kad neatrodė panašu į žaidimą.
@@ -456,16 +1087,69 @@
 24	žaidimą	žaidimas	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	22	obl:arg	_	SpaceAfter=No|TokenRange=34388:34395
 25	.	.	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=34395:34396
 
+[] iškėlė (2)
+[] Vinstonas (1)
+[] virš galvos rankas (5)
+
+[] Vinstonas (1)
+
+[] rankas (5)
+[] galvos (4)
+
+[] galvos (4)
+
+[] darė (8)
+[] tą (9)
+[] kažkaip nejaukiai (11)
+
+[] tą (9)
+
+[] nejaukiai (11)
+[] kažkaip (10)
+
+[] kažkaip (10)
+
+[] piktas (18)
+[] mat (13)
+[] berniuko balsas (15)
+[] , kad neatrodė panašu į žaidimą (21)
+
+[] mat (13)
+
+[] balsas (15)
+[] berniuko (14)
+
+[] berniuko (14)
+
+[] neatrodė (21)
+[] panašu į žaidimą (22)
+
+[] panašu (22)
+[] į žaidimą (24)
+
+[] žaidimą (24)
+
 # newpar
 # sent_id = 378
 # text = — Tu išdavikas — šaukė berniukas.
 1	—	—	PUNCT	skyr.	_	3	punct	_	TokenRange=34399:34400
 2	Tu	tu	PRON	įv.vns.V.	Case=Nom|Definite=Ind|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	TokenRange=34401:34403
-3	išdavikas	išdavikas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	TokenRange=34404:34413
+3	išdavikas	išdavikas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	5	ccomp	_	TokenRange=34404:34413
 4	—	—	PUNCT	skyr.	_	5	punct	_	TokenRange=34414:34415
-5	šaukė	šaukti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	3	conj	_	TokenRange=34416:34421
+5	šaukė	šaukti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=34416:34421
 6	berniukas	berniukas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=34422:34431
 7	.	.	PUNCT	skyr.	_	5	punct	_	TokenRange=34431:34432
+
+[MESSAGE-INIT] šaukė (5)
+[target-content] — Tu išdavikas (3)
+[x-sender] berniukas (6)
+
+[SOCIAL-RELATION-DEINIT] išdavikas (3) # Überlegen: vgl. "išduoti"
+[has-social-relation] Tu (2)
+
+[IDENTIFICATION] Tu (2)
+
+[CLASS] berniukas (6)
 
 # sent_id = 379
 # text = — Tu minčių nusikaltėlis!
@@ -475,11 +1159,24 @@
 4	nusikaltėlis	nusikaltėlis	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34445:34457
 5	!	!	PUNCT	skyr.	_	4	punct	_	TokenRange=34457:34458
 
+[???] nusikaltėlis (4) # dt. Gedankenverbrecher
+[] Tu (2)
+[] minčių (3)
+
+[] Tu (2)
+
+[] minčių (3)
+
 # sent_id = 380
 # text = Eurazijos šnipas!
 1	Eurazijos	Eurazija	PROPN	dkt.tikr.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	TokenRange=34459:34468
 2	šnipas	šnipas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34469:34475
 3	!	!	PUNCT	skyr.	_	2	punct	_	TokenRange=34475:34476
+
+[SOCIAL-RELATION] šnipas (2)
+[??? social-relation] Eurazijos (1)
+
+[IDENTIFICATION] Eurazijos (1)
 
 # sent_id = 381
 # text = Aš nušausiu tave, sunaikinsiu, ištremsiu į druskos kasyklas!
@@ -495,6 +1192,28 @@
 10	kasyklas	kasykla	NOUN	dkt.mot.dgs.G.	Case=Acc|Gender=Fem|Number=Plur	7	obl:arg	_	SpaceAfter=No|TokenRange=34528:34536
 11	!	!	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=34536:34537
 
+[DESTRUCTION] nušausiu (2)
+[x-causer] Aš (1)
+[destroyed] tave (3)
+
+[IDENTIFICATION] Aš (1)
+
+[IDENTIFICATION] tave (3)
+
+[DESTRUCTION] sunaikinsiu (5)
+[x-causer] Aš (1) # manuell hinzugefügt wg. Koordination
+[destroyed] tave (3) # manuell hinzugefügt wg. Koordination
+
+[LOCATION-INIT] ištremsiu (7)
+[target-location] į druskos kasyklas (10)
+[x-causer] Aš (1) # manuell hinzugefügt wg. Koordination
+[has-location] tave (3) # manuell hinzugefügt wg. Koordination
+
+[CLASS] kasyklas (10) # Phäno: dt. Kompositum "Salzbergwerke"
+[m-purpose] druskos (9)
+
+[CLASS] druskos (9)
+
 # newpar
 # sent_id = 382
 # text = Vaikai ėmė šokinėti aplink jį, šaukdami:
@@ -507,6 +1226,20 @@
 7	šaukdami	šaukti	VERB	vksm.pusd.vyr.dgs.	Gender=Masc|Number=Plur|Polarity=Pos|VerbForm=Conv	3	advcl	_	SpaceAfter=No|TokenRange=34571:34579
 8	:	:	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=34579:34580
 
+[] ėmė (2)
+[] Vaikai (1)
+[] šokinėti aplink jį , šaukdami (3)
+
+[] Vaikai (1)
+
+[] šokinėti (3)
+[] aplink jį (5)
+[] , šaukdami (7)
+
+[] jį (5)
+
+[] šaukdami (7)
+
 # newpar
 # sent_id = 383
 # text = — Išdavikas!
@@ -514,11 +1247,18 @@
 2	Išdavikas	išdavikas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34585:34594
 3	!	!	PUNCT	skyr.	_	2	punct	_	TokenRange=34594:34595
 
+[] Išdavikas (2)
+
 # sent_id = 384
 # text = Minčių nusikaltėlis!
 1	Minčių	mintis	NOUN	dkt.mot.dgs.K.	Case=Gen|Gender=Fem|Number=Plur	2	nmod	_	TokenRange=34596:34602
 2	nusikaltėlis	nusikaltėlis	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34603:34615
 3	!	!	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=34615:34616
+
+[] nusikaltėlis (2)
+[] Minčių (1)
+
+[] Minčių (1)
 
 # newpar
 # sent_id = 385
@@ -529,6 +1269,17 @@
 4	berniuko	berniukas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	TokenRange=34648:34656
 5	judesį	judesys	NOUN	dkt.vyr.vns.G.	Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=34657:34663
 6	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=34663:34664
+
+[] mėgdžiojo (2)
+[] Mergaitė (1)
+[] kiekvieną berniuko judesį (5)
+
+[] Mergaitė (1)
+
+[] judesį (5)
+[] berniuko (4)
+
+[] berniuko (4)
 
 # sent_id = 386
 # text = Tai kažkaip gąsdino, lyg žaistų maži tigriukai, iš kurių netrukus užaugs žmogėdros.
@@ -547,6 +1298,38 @@
 13	užaugs	užaugti	VERB	vksm.asm.tiesiog.būs.dgs.3.	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	8	acl:relcl	_	TokenRange=34731:34737
 14	žmogėdros	žmogėdra	NOUN	dkt.mot.dgs.V.	Case=Nom|Gender=Fem|Number=Plur	13	nsubj	_	SpaceAfter=No|TokenRange=34738:34747
 15	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=34747:34748
+
+[MESSAGE] gąsdino (3)
+[topic] Tai (1) # Überlegen
+[m-mode] kažkaip (2) # Überlegen
+[m-reference] , lyg žaistų maži tigriukai , iš kurių netrukus užaugs žmogėdros (6)
+
+[IDENTIFICATION] Tai (1)
+
+[MODE] kažkaip (2)
+
+[ACTIVITY] žaistų (6)
+[is-active] maži tigriukai , iš kurių netrukus užaugs žmogėdros (8)
+
+[CLASS] tigriukai (8)
+[m-quality] maži (7)
+[m-scene] , iš kurių netrukus užaugs žmogėdros (13)
+
+[QUALITY] maži (7)
+
+[SCENE-INIT] užaugs (13)
+[participant] iš kurių (11)
+[m-time] netrukus (12)
+[target-scene] žmogėdros (14)
+[participant] tigriukai (8)
+
+[IDENTIFICATION] kurių (11)
+
+[TIME] netrukus (12)
+
+[INGESTION >> CLASS] žmogėdros (14)
+[ingester >> has-class] iš kurių (11)
+[ingester >> has-class] tigriukai (8)
 
 # sent_id = 387
 # text = Berniuko akyse spindėjo kažkoks grobuoniškas apskaičiavimas, aiškiai matomas noras trenkti arba spirti Vinstonui ir suvokimas, kad gana greitai jis bus didelis ir galės tą padaryti.
@@ -579,24 +1362,101 @@
 27	padaryti	padaryti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	25	xcomp	_	SpaceAfter=No|TokenRange=34921:34929
 28	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=34929:34930
 
-# sent_id = 388
-# text = Visa laimė, pagalvojo
-1	Visa	visas	DET	įv.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Tot	2	det	_	TokenRange=34931:34935
-2	laimė	laimė	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34936:34941
-3	,	,	PUNCT	skyr.	_	4	punct	_	TokenRange=34941:34942
-4	pagalvojo	pagalvoti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	2	conj	_	SpacesAfter=\n\n\t|TokenRange=34943:34952
+[] spindėjo (3)
+[] Berniuko akyse (2)
+[] kažkoks grobuoniškas apskaičiavimas (6)
+[] , aiškiai matomas noras trenkti arba spirti Vinstonui (10)
 
-# newpar
-# sent_id = 389
-# text = Vinstonas, kad jo rankose netikras pistoletas.
-1	Vinstonas	vinstonas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34955:34964
-2	,	,	PUNCT	skyr.	_	6	punct	_	TokenRange=34964:34965
-3	kad	kad	SCONJ	jng.	_	6	mark	_	TokenRange=34966:34969
-4	jo	jis	PRON	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nmod	_	TokenRange=34970:34972
-5	rankose	ranka	NOUN	dkt.mot.dgs.Vt.	Case=Loc|Gender=Fem|Number=Plur	6	obl	_	TokenRange=34973:34980
-6	netikras	netikras	ADJ	bdv.nelygin.vyr.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	1	amod	_	TokenRange=34981:34989
-7	pistoletas	pistoletas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	SpaceAfter=No|TokenRange=34990:35000
-8	.	.	PUNCT	skyr.	_	1	punct	_	SpacesAfter=\n\n\t|TokenRange=35000:35001
+[] akyse (2)
+[] Berniuko (1)
+
+[] Berniuko (1)
+
+[] apskaičiavimas (6)
+[] kažkoks (4)
+[] grobuoniškas (5)
+
+[] kažkoks (4)
+
+[] grobuoniškas (5)
+
+[] noras (10)
+[] aiškiai matomas (9)
+[] trenkti Vinstonui (11)
+[] arba spirti (13)
+
+[] matomas (9)
+[] aiškiai (8)
+
+[] aiškiai (8)
+
+[] trenkti (11)
+[] Vinstonui (14)
+
+[] spirti (13)
+
+[] Vinstonui (14)
+
+[] suvokimas (16)
+[] , kad gana greitai jis bus didelis (23)
+[] ir galės tą padaryti (25)
+
+[] didelis (23)
+[] gana greitai (20)
+[] jis (21)
+[] bus (22)
+
+[] greitai (20)
+[] gana (19)
+
+[] gana (19)
+
+[] jis (21)
+
+[] bus (22)
+
+[] galės (25)
+[] tą padaryti (27)
+
+[] padaryti (27)
+[] tą (26)
+
+[] tą (26)
+
+# sent_id = 388
+# text = Visa laimė, pagalvojo Vinstonas, kad jo rankose netikras pistoletas.
+1	Visa	visas	DET	įv.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|PronType=Tot	2	det	_	TokenRange=34931:34935
+2	laimė	laimė	NOUN	dkt.mot.vns.V.	Case=Nom|Gender=Fem|Number=Sing	4	ccomp	_	SpaceAfter=No|TokenRange=34936:34941
+3	,	,	PUNCT	skyr.	_	4	punct	_	TokenRange=34941:34942
+4	pagalvojo	pagalvoti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	SpacesAfter=\n\n\t|TokenRange=34943:34952
+5	Vinstonas	vinstonas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=34955:34964
+6	,	,	PUNCT	skyr.	_	4	punct	_	TokenRange=34964:34965
+7	kad	kad	SCONJ	jng.	_	11	mark	_	TokenRange=34966:34969
+8	jo	jis	PRON	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nmod	_	TokenRange=34970:34972
+9	rankose	ranka	NOUN	dkt.mot.dgs.Vt.	Case=Loc|Gender=Fem|Number=Plur	11	obl	_	TokenRange=34973:34980
+10	netikras	netikras	ADJ	bdv.nelygin.vyr.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	TokenRange=34981:34989
+11	pistoletas	pistoletas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	2	advcl	_	SpaceAfter=No|TokenRange=34990:35000
+12	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n\n\t|TokenRange=35000:35001
+
+[MESSAGE-INIT] pagalvojo (4)
+[target-content] Visa laimė kad jo rankose netikras pistoletas (2)
+[x-experiencer] Vinstonas (5)
+
+[EXPERIENCE] laimė (2) # Bedeutung: Glück; Überlegen
+[m-explanation] kad jo rankose netikras pistoletas (11)
+
+[CLASS] pistoletas (11)
+[m-location] jo rankose (9)
+[m-quality] netikras (10)
+
+[PART-WHOLE] rankose (9)
+[whole] jo (8)
+
+[IDENTIFICATION] jo (8)
+
+[QUALITY-NEG >> QUALITY] netikras (10) # Überlegen
+
+[IDENTIFICATION] Vinstonas (5)
 
 # newpar
 # sent_id = 390
@@ -610,6 +1470,23 @@
 7	prie	prie	ADP	prl.K.	AdpType=Prep|Case=Gen	8	case	_	TokenRange=35047:35051
 8	vaikų	vaikas	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	4	obl:arg	_	SpaceAfter=No|TokenRange=35052:35057
 9	.	.	PUNCT	skyr.	_	4	punct	_	TokenRange=35057:35058
+
+[LOCATION-CHANGE >> ???] lakstė (4)
+[has-location >> ???] Parsons akys (2)
+[???] nervingai (3)
+[intial-location >> ???] nuo Vinstono (6)
+[target-location >>] prie vaikų (8)
+
+[PART-WHOLE] akys (2)
+[whole] Parsons (1)
+
+[IDENTIFICATION] Parsons (1)
+
+[???] nervingai (3)
+
+[IDENTIFICATION] Vinstono (6)
+
+[CLASS] vaikų (8)
 
 # sent_id = 391
 # text = Ryškesnėje kambario šviesoje jis susidomėjęs pamatė, kad jos veido raukšlėse tikrai yra dulkių.
@@ -628,6 +1505,41 @@
 13	yra	būti	VERB	vksm.asm.tiesiog.es.dgs.3.	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	ccomp	_	TokenRange=35143:35146
 14	dulkių	dulkis	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	13	obl:arg	_	SpaceAfter=No|TokenRange=35147:35153
 15	.	.	PUNCT	skyr.	_	6	punct	_	SpacesAfter=\n\n\t|TokenRange=35153:35154
+
+[MESSAGE-INIT] pamatė (6)
+[x-experiencer] jis (4)
+[??? Syntax?] Ryškesnėje kambario šviesoje susidomėjęs (5)
+[target-content] , kad jos veido raukšlėse tikrai yra dulkių (13)
+
+[IDENTIFICATION] jis (4)
+
+[] susidomėjęs (5)
+[] Ryškesnėje kambario šviesoje (3)
+
+[] šviesoje (3)
+[] Ryškesnėje (1)
+[] kambario (2)
+
+[] Ryškesnėje (1)
+
+[] kambario (2)
+
+[] yra (13)
+[] jos veido raukšlėse (11)
+[] tikrai (12)
+[] dulkių (14)
+
+[] raukšlėse (11)
+[] jos veido (10)
+
+[] veido (10)
+[] jos (9)
+
+[] jos (9)
+
+[] tikrai (12)
+
+[] dulkių (14)
 
 # newpar
 # sent_id = 392
@@ -650,6 +1562,36 @@
 16	pakorimo	pakorimas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	15	obl:arg	_	SpaceAfter=No|TokenRange=35239:35247
 17	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=35247:35248
 
+[] įsitriukšmavo,— (3)
+[] Taip (2)
+
+[] Taip (2)
+
+[] pasakė (4)
+[] ji (5)
+
+[] ji (5)
+
+[] nusiminė (10)
+[] Mat (8)
+[] labai (9)
+[] , kad negali eiti pažiūrėti pakorimo (13)
+
+[] Mat (8)
+
+[] labai (9)
+
+[] negali (13)
+[] eiti (14)
+[] pažiūrėti pakorimo (15)
+
+[] eiti (14)
+
+[] pažiūrėti (15)
+[] pakorimo (16)
+
+[] pakorimo (16)
+
 # sent_id = 393
 # text = Aš labai užsiėmusi ir jų nuvesti negaliu, o Tomas pareis iš darbo vėliau.
 1	Aš	aš	PRON	įv.vns.V.	Case=Nom|Definite=Ind|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=35249:35251
@@ -667,6 +1609,35 @@
 13	darbo	darbas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	11	obl	_	TokenRange=35309:35314
 14	vėliau	vėlai	ADV	prv.aukšt.	Degree=Cmp	11	advmod	_	SpaceAfter=No|TokenRange=35315:35321
 15	.	.	PUNCT	skyr.	_	3	punct	_	SpacesAfter=\n\n\t|TokenRange=35321:35322
+
+[STATE] užsiėmusi (3) # Überlegen: ACTIVITY?
+[has-state] Aš (1)
+[m-quantity] labai (2)
+
+[IDENTIFICATION] Aš (1)
+
+[QUANTITY] labai (2)
+
+[SCENE-POSSIBILITY-NEG] negaliu (7) # Phäno: “können+Inf → root+xcomp” 
+[scene] jų nuvesti (6)
+[participant] Aš (1) # manuell hinzugefügt wg. Koordination
+
+[LOCATION-INIT] nuvesti (6)
+[has-location] jų (5)
+[x-causer] Aš (1)
+
+[IDENTIFICATION] jų (5)
+
+[LOCATION-DEINIT] pareis (11)
+[has-location] Tomas (10)
+[initial-location] iš darbo (13)
+[m-time] vėliau (14)
+
+[IDENTIFICATION] Tomas (10)
+
+[ACTIVITY] darbo (13)
+
+[TIME] vėliau (14)
 
 # newpar
 # sent_id = 394
@@ -686,6 +1657,34 @@
 13	balsu	balsas	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No|TokenRange=35397:35402
 14	.	.	PUNCT	skyr.	_	4	punct	_	SpacesAfter=\n\n\t|TokenRange=35402:35403
 
+[] negalim (4)
+[] Kodėl (2)
+[] mes (3)
+[] nueiti pažiūrėti pakorimo (5)
+
+[] Kodėl (2)
+
+[] mes (3)
+
+[] nueiti (5)
+[] pažiūrėti pakorimo (6)
+
+[] pažiūrėti (6)
+[] pakorimo (7)
+
+[] pakorimo (7)
+
+[] suriko (10)
+[] berniukas storu balsu (11)
+
+[] berniukas (11)
+[] storu balsu (13)
+
+[] balsu (13)
+[] storu (12)
+
+[] storu (12)
+
 # newpar
 # sent_id = 395
 # text = — Noriu pakorimo!
@@ -694,11 +1693,21 @@
 3	pakorimo	pakorimas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	2	obl:arg	_	SpaceAfter=No|TokenRange=35414:35422
 4	!	!	PUNCT	skyr.	_	2	punct	_	TokenRange=35422:35423
 
+[MESSAGE] Noriu (2) # Phäno: implizites Subjekt
+[content] pakorimo (3)
+
+[EVENT >> DESTRUCTION] pakorimo (3)
+
 # sent_id = 396
 # text = Noriu pakorimo!
 1	Noriu	norėti	VERB	vksm.asm.tiesiog.es.vns.1.	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=35424:35429
 2	pakorimo	pakorimas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	1	obl:arg	_	SpaceAfter=No|TokenRange=35430:35438
 3	!	!	PUNCT	skyr.	_	1	punct	_	TokenRange=35438:35439
+
+[] Noriu (1)
+[] pakorimo (2)
+
+[] pakorimo (2)
 
 # sent_id = 397
 # text = — ėmė kartoti mergytė, trypinėdama aplink.
@@ -710,6 +1719,17 @@
 6	trypinėdama	trypinėti	VERB	vksm.pusd.mot.vns.	Gender=Fem|Number=Sing|Polarity=Pos|VerbForm=Conv	3	advcl	_	TokenRange=35463:35474
 7	aplink	aplink	ADP	prl.K.	AdpType=Prep|Case=Gen	6	case	_	SpaceAfter=No|TokenRange=35475:35481
 8	.	.	PUNCT	skyr.	_	2	punct	_	SpacesAfter=\n\n\t|TokenRange=35481:35482
+
+[] ėmė (2)
+[] kartoti , trypinėdama aplink (3)
+[] mergytė (4)
+
+[] kartoti (3)
+[] , trypinėdama aplink (6)
+
+[] trypinėdama (6)
+
+[] mergytė (4)
 
 # newpar
 # sent_id = 398
@@ -729,8 +1749,39 @@
 13	belaisviai	belaisvis	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	10	nsubj	_	TokenRange=35561:35571
 14	—	—	PUNCT	skyr.	_	16	punct	_	TokenRange=35572:35573
 15	karo	karas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	TokenRange=35574:35578
-16	nusikaltėliai	nusikaltėlis	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	13	conj	_	SpaceAfter=No|TokenRange=35579:35592
+16	nusikaltėliai	nusikaltėlis	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	13	appos	_	SpaceAfter=No|TokenRange=35579:35592
 17	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=35592:35593
+
+[MESSAGE-INIT] prisiminė (2)
+[x-experiencer] Vinstonas (1)
+[target-content] , kad tą vakarą parke turėjo būti pakarti keli Eurazijos belaisviai — karo nusikaltėliai (8)
+
+[IDENTIFICATION] Vinstonas (1)
+
+[SCENE-NECESSITY] turėjo (8)
+[scene] tą vakarą parke būti pakarti keli Eurazijos belaisviai — karo nusikaltėliai (10)
+
+[EVENT >> DESTRUCTION] pakarti (10)
+[m-time] tą vakarą (6)
+[m-location] parke (7)
+[undegoer >> destroyed] keli Eurazijos belaisviai — karo nusikaltėliai (13)
+
+[TIME] vakarą (6) # issue: CLASS vs TIME
+
+[CLASS || LOCATION] parke (7) # Lokativ
+
+[???] belaisviai — karo nusikaltėliai (13)
+[m-quantity] keli (11)
+[m-quality] Eurazijos (12)
+
+[QUANTITY] keli (11)
+
+[IDENTIFICATION] Eurazijos (12)
+
+[???] nusikaltėliai (16)
+[???] karo (15)
+
+[STATE || SOCIAL-RELATION] karo (15)
 
 # sent_id = 399
 # text = Tai būdavo daroma maždaug kartą per mėnesį, populiarus reginys.
@@ -746,6 +1797,26 @@
 10	reginys	reginys	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No|TokenRange=35649:35656
 11	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=35656:35657
 
+[SCENE-INIT] daroma (3)
+[target-scene] Tai (1)
+[m-time] maždaug kartą per mėnesį (5)
+[target-scene] , populiarus reginys (10)
+
+[IDENTIFICATION] Tai (1)
+
+[TIME] kartą (5)
+[??? m-quantity] maždaug (4)
+[??? ] per mėnesį (7)
+
+[QUANTITY] maždaug (4)
+
+[??? TIME vs CLASS] mėnesį (7)
+
+[??? MESSAGE] reginys (10) # Überlegen
+[m-quality] populiarus (9)
+
+[QUALITY] populiarus (9)
+
 # sent_id = 400
 # text = Vaikai visada reikalaudavo nuvedami pažiūrėti.
 1	Vaikai	vaikas	NOUN	dkt.vyr.dgs.V.	Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	TokenRange=35658:35664
@@ -754,4 +1825,19 @@
 4	nuvedami	nuvėti	VERB	vksm.dlv.neveik.es.vyr.dgs.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Plur|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	3	advcl	_	TokenRange=35685:35693
 5	pažiūrėti	pažiūrėti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	3	xcomp	_	SpaceAfter=No|TokenRange=35694:35703
 6	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=35703:35704
+
+[MESSAGE-INIT] reikalaudavo (3)
+[x-sender] Vaikai (1)
+[m-time] visada (2)
+[m-depictive] nuvedami (4)
+[target-content] pažiūrėti (5)
+
+[CLASS] Vaikai (1)
+
+[TIME] visada (2)
+
+[LOCATION-INIT] nuvedami (4)
+[has-location] Vaikai (1)
+
+[MESSAGE] pažiūrėti (5)
 
