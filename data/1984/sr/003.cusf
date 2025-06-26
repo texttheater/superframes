@@ -114,7 +114,7 @@
 6	činila	činiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 7	opasnija	opasan	ADJ	Agcfsny	Case=Nom|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	6	xcomp	_	_
 8	od	od	ADP	Sg	Case=Gen	10	case	_	_
-9	većine	većina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	nmod	_	_
+9	većine	većina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	nummod:gov	_	_
 10	drugih	drugi	ADJ	Mlompg	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	7	obl	_	_
 11	.	.	PUNCT	Z	_	6	punct	_	_
 
@@ -132,9 +132,9 @@
 [has-quality] ova devojka (5)
 
 [COMPARISON >> CLASS] drugih (10)
-[compared >> m-quantity] većine (9)
+[m-part] većine (9)
 
-[QUANTITY] većine (9)
+[PART-WHOLE] većine (9)
 
 # sent_id = 154
 # text = Jednom mu je , kad su se mimoišli u hodniku , dobacila kos pogled koji kao da je prodro u njega i za trenutak ga ispunio crnim užasom .
@@ -459,7 +459,7 @@
 [PART-WHOLE || QUANTITY] Gomila (1)
 
 [MESSAGE] videvši (4)
-[topic] kako se približava crni kombinezon člana Uže partije (7)
+[content] kako se približava crni kombinezon člana Uže partije (7)
 [x-experiencer] Gomila (1)
 
 [LOCATION-INIT] približava (7)
@@ -642,7 +642,7 @@
 7	,	,	PUNCT	Z	_	12	punct	_	_
 8	da	da	SCONJ	Cs	_	12	mark	_	_
 9	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-10	ičije	ičiji	ADJ	Agcfpny	Case=Nom|Definite=Def|Degree=Cmp|Gender=Fem|Number=Plur	11	amod	_	_
+10	ičije	ičiji	ADJ	Agcfpny	Case=Nom|Definite=Def|Degree=Cmp|Gender=Fem|Number=Plur	11	det	_	_
 11	misli	misao	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	12	nsubj	_	_
 12	išle	ići	VERB	Vmp-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	16	advcl	_	_
 13	tim	taj	DET	Pd-msi	Case=Ins|Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_
@@ -680,10 +680,7 @@
 [target-location >> participant] tim pravcem (14)
 
 [MESSAGE] misli (11)
-[x-experiencer] ičije (10)
 [topic] tim pravcem (14)
-
-[CLASS] ičije (10)
 
 [LOCATION] pravcem (14)
 
@@ -797,7 +794,7 @@
 [ACTIVITY] manira (17)
 [m-quality] kulturnih (16)
 
-[QUALITY] kulturnih (16)
+[STATE >> QUALITY] kulturnih (16)
 
 [QUALITY] građe (20)
 [m-reference] bokserske (19)
@@ -841,12 +838,10 @@
 [MESSAGE] uverenje (8)
 [x-experiencer] Vinstonovo (6)
 [m-scene] potajno (7)
-[topic] da O'Brajenova politička ispravnost nije savršena (24)
-[m-scene] daleko više (4)
+[content] da O'Brajenova politička ispravnost nije savršena (24)
 
-[COMPARISON] više (4)
+[QUANTITY] više (4)
 [m-quantity] daleko (3)
-[compared] uverenje (8)
 
 [LOCATION >> QUANTITY] daleko (3)
 
@@ -1052,19 +1047,19 @@
 21	uradi	uraditi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl	_	_
 22	.	.	PUNCT	Z	_	4	punct	_	_
 
-[SCENE] učinio (4)
-[participant] Vinston (1)
+[SCENE-INIT] učinio (4)
+[x-causer >> participant] Vinston (1)
 [m-time] nikad (3)
-[scene] ni najmanji napor da proveri svoje nagađanje (7)
+[target-scene] ni najmanji napor da proveri svoje nagađanje (7)
 
 [IDENTIFICATION] Vinston (1)
 
 [TIME-NEG] nikad (3)
 
-[SCENE] napor (7)
+[SCENE || ACTIVITY] napor (7)
 [m-quantity] ni najmanji (6)
-[scene] da proveri svoje nagađanje (9)
-[participant] Vinston (1)
+[scene || activity] da proveri svoje nagađanje (9)
+[participant || is-active] Vinston (1)
 
 [QUALITY >> QUANTITY] najmanji (6)
 
@@ -1182,25 +1177,26 @@
 9	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
 10	sedeo	sedeti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	acl	_	_
 11	Vinston	Vinston	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
-12	,	,	PUNCT	Z	_	16	punct	_	_
+12	,	,	PUNCT	Z	_	17	punct	_	_
 13	dva	dva	NUM	Mlc	NumType=Card	16	nummod:gov	_	_
 14	-	-	PUNCT	Z	_	16	punct	_	_
 15	tri	tri	NUM	Mlc	NumType=Card	16	nummod	_	_
-16	mesta	mesto	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	11	conj	_	_
-17	udaljen	udaliti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	_	_
+16	mesta	mesto	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	17	nmod	_	_
+17	udaljen	udaliti	ADJ	Appmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	_	_
 18	od	od	ADP	Sg	Case=Gen	19	case	_	_
 19	njega	on	PRON	Pp3msg	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	obl	_	_
 20	.	.	PUNCT	Z	_	3	punct	_	_
 
 [LOCATION-INIT] smesti (3)
 [has-location] On (1)
-[target-location] u istom redu u kome je sedeo Vinston , dva - tri mesta udaljen od njega (6)
+[target-location] u istom redu u kome je sedeo Vinston (6)
+[target-location] , dva - tri mesta udaljen od njega (17)
 
 [IDENTIFICATION] On (1)
 
 [CLASS] redu (6)
 [m-scene] istom (5)
-[m-scene] u kome je sedeo Vinston , dva - tri mesta udaljen od njega (10)
+[m-scene] u kome je sedeo Vinston (10)
 
 [COMPARISON] istom (5)
 [compared] redu (6)
@@ -1208,24 +1204,23 @@
 [LOCATION] sedeo (10)
 [location] u kome (8)
 [has-location] Vinston (11)
-[location] , dva - tri mesta udaljen od njega (16)
 [location] redu (6)
 
 [IDENTIFICATION] kome (8)
 
 [IDENTIFICATION] Vinston (11)
 
+[LOCATION] udaljen (17)
+[m-quantity] dva - tri mesta (16)
+[location] od njega (19)
+
 [LOCATION || CLASS] mesta (16)
 [m-quantity] dva (13)
 [m-quantity] tri (15)
-[location || m-location] udaljen od njega (17)
 
 [QUANTITY] dva (13)
 
 [QUANTITY] tri (15)
-
-[LOCATION] udaljen (17)
-[location] od njega (19)
 
 [IDENTIFICATION] njega (19)
 
@@ -1296,13 +1291,13 @@
 [location] odmah iza nje (7)
 
 [CLASS] devojka (2)
-[m-quality >> m-part] Crnokosa (1)
+[m-part || m-quality] Crnokosa (1)
 
-[QUALITY] Crnokosa (1)
+[PART-WHOLE >> QUALITY] Crnokosa (1)
 
 [IDENTIFICATION] nje (7)
 
-[TIME >> QUALITY] odmah (5)
+[QUALITY] odmah (5)
 
 # sent_id = 176
 # text = Sledećeg trenutka sa velikog telekrana u dnu sale grunu odvratan , škripav zvuk , kao od kakve ogromne nepodmazane mašine .
@@ -1505,7 +1500,7 @@
 [m-compared >> has-quality] kose (3)
 
 [MESSAGE] cikom (6)
-[m-quality] straha pomešanog sa gađenjem (7)
+[m-quality || topic] straha pomešanog sa gađenjem (7)
 
 [MESSAGE] straha (7)
 [m-scene] pomešanog sa gađenjem (8)
@@ -1737,7 +1732,7 @@
 
 [RANK] prvi (7)
 [m-scene] koji je ukaljao čistotu Partije (10)
-[x-identified] On (1)
+[x-identified || has-rank] On (1)
 
 [EVENT || STATE-CHANGE] ukaljao (10)
 [x-causer] koji (8)
@@ -1802,7 +1797,7 @@
 
 [QUALITY] neposredno (18)
 
-[MESSAGE-INIT] učenja (21)
+[MESSAGE] učenja (21)
 
 # sent_id = 186
 # text = On je još bio živ , neznano gde , i još uvek kovao svoje planove : negde s one strane mora , pod zaštitom svojih stranih gospodara , a možda čak --- kako su se ponekad pronosile glasine --- skriven i u samoj Okeaniji .
@@ -1954,7 +1949,7 @@
 [SCENE-INIT || EVENT] skolila (7)
 [m-accompanied] Kad god bi video Goldštajnovo lice (4)
 [participant || undergoer] ga (9)
-[target-scene || event] mešavina bolnih osećanja (10)
+[target-scene || x-causer] mešavina bolnih osećanja (10)
 
 [MESSAGE] video (4)
 [topic] Goldštajnovo lice (6)
@@ -2130,8 +2125,8 @@
 
 [CLASS] ovčju (5)
 
-[QUALITY] ovčjeg (9)
-[has-quality] u glasu (15)
+[CLASS >> QUALITY] ovčjeg (9)
+[m-has-quality >> has-quality] u glasu (15)
 
 [SENDING] glasu (15)
 
@@ -2720,8 +2715,8 @@
 
 [QUALITY] Tupi (1)
 
-[CLASS >> WRAPPING-WEARING] cokula (4)
-[m-quality >> wearer] vojničkih (3)
+[CLASS] cokula (4)
+[m-quality || m-wearer || m-identified] vojničkih (3)
 
 [SOCIAL-RELATION >> QUALITY] vojničkih (3)
 
@@ -2748,9 +2743,9 @@
 6	Mržnje	mržnja	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	_
 7	,	,	PUNCT	Z	_	13	punct	_	_
 8	a	a	CCONJ	Cc	_	13	cc	_	_
-9	od	od	ADP	Sg	Case=Gen	10	case	_	_
-10	polovine	polovina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	13	obl	_	_
-11	gledalaca	gledalac	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	10	nmod	_	_
+9	od	od	ADP	Sg	Case=Gen	11	case	_	_
+10	polovine	polovina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	11	nummod:gov	_	_
+11	gledalaca	gledalac	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	13	obl	_	_
 12	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	13	expl	_	_
 13	počeše	početi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 14	otimati	otimati	VERB	Vmn	VerbForm=Inf	13	xcomp	_	_
@@ -2774,17 +2769,17 @@
 [MESSAGE] Mržnje (6)
 
 [SCENE-INIT] počeše (13)
-[participant] od polovine gledalaca (10)
+[participant] od polovine gledalaca (11)
 [target-scene] otimati nekontrolisani povici gneva (14)
 
-[PART-WHOLE] polovine (10)
-[whole] gledalaca (11)
-
 [MESSAGE-INIT] gledalaca (11)
+[m-part || m-quantity] polovine (10)
+
+[PART-WHOLE || QUANTITY] polovine (10)
 
 [LOCATION-DEINIT >> MESSAGE-INIT] otimati (14) # hier: "odvajati", "izlaziti"
 [has-location >> target-content] nekontrolisani povici gneva (16)
-[initial-location >> x-sender] od polovine gledalaca (10)
+[initial-location >> x-sender] od polovine gledalaca (11)
 
 [MESSAGE-INIT] povici (16)
 [m-scene] nekontrolisani (15)
@@ -3161,13 +3156,13 @@
 
 [ASSET >> CLASS] žrtava (6)
 [m-scene] novih (4)
-[m-part] šupljoglavih (5)
+[m-part >> m-quality] šupljoglavih (5)
 [m-scene] koje su samo čekale da ih on zavede na pogrešan put (10)
 
 [SEQUENCE] novih (4)
 [follows] žrtava (6)
 
-[PART-WHOLE] šupljoglavih (5)
+[PART-WHOLE >> QUALITY] šupljoglavih (5)
 
 [SCENE-INIT-POSSIBILITY] čekale (10)
 [participant] koje (7)
@@ -3242,16 +3237,16 @@
 [topic] i sabotera (16)
 
 [CLASS] Policija (8)
-[m-purpose] misli (9)
+[m-purpose || m-topic] misli (9)
 
 [MESSAGE] misli (9)
 
 [MODE] ne (10)
 
-[MESSAGE-INIT] špijuna (14)
+[MESSAGE-INIT >> CLASS] špijuna (14)
 [m-scene] koji su radili po njegovim uputstvima (19)
 
-[EVENT] sabotera (16)
+[EVENT >> CLASS] sabotera (16)
 
 [ACTIVITY] radili (19)
 [is-active] koji (17)
