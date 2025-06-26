@@ -73,8 +73,8 @@
 11	pero	pero	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	_
 12	.	.	PUNCT	Z	_	1	punct	_	_
 
-[?UNANCHORED-MOTION || STATE-CHANGE] Zavali (1)
-[x-location] u stolici (4)
+[UNANCHORED-MOTION || STATE-CHANGE] Zavali (1)
+[m-location] u stolici (4)
 [m-accompanier] , malo postiđen (7)
 
 [CLASS] stolici (4)
@@ -218,9 +218,9 @@
 
 [QUALITY] najgore (4)
 [has-quality] Odlagati (1)
-[m-reference] od svega (6)
+[x-reference] od svega (6)
 
-[?] Odlagati (1) # Verschieben? Argumente möglich?
+[SCENE-INIT-NEG] Odlagati (1)
 
 [CLASS] svega (6)
 
@@ -389,7 +389,7 @@
 [SOCIAL-RELATION >> IDENTIFICATION] brat (8)
 [m-quality >> m-noncomp] veliki (7)
 
-[QUALITY >> NONCOMP] veliki (7)
+[QUALITY] veliki (7)
 
 [QUALITY] slovima (11)
 [m-scene] koja su se skoro mogla pročitati sa drugog kraja sobe (16)
@@ -658,11 +658,11 @@
 7	nas	mi	PRON	Pp1-pg	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	obl	_	_
 8	da	da	SCONJ	Cs	_	9	mark	_	_
 9	vidite	viditi	VERB	Vmr2p	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
-10	šta	što	PRON	Pi3n-a	Case=Acc|Gender=Neut|PronType=Int,Rel	14	nsubj	_	_
-11	nam	mi	PRON	Pp1-pd	Case=Dat|Number=Plur|Person=1|PronType=Prs	14	obl	_	_
-12	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+10	šta	što	PRON	Pi3n-a	Case=Acc|Gender=Neut|PronType=Int,Rel	9	ccomp	_	_
+11	nam	mi	PRON	Pp1-pd	Case=Dat|Number=Plur|Person=1|PronType=Prs	10	obl	_	_
+12	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
 13	sa	sa	ADP	Si	Case=Ins	14	case	_	_
-14	sudoperom	sudoper	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	9	ccomp	_	_
+14	sudoperom	sudoper	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	10	nsubj	_	_
 15	u	u	ADP	Sl	Case=Loc	16	case	_	_
 16	kuhinji	kuhinja	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	14	nmod	_	_
 17	.	.	PUNCT	Z	_	5	punct	_	_
@@ -675,14 +675,14 @@
 [IDENTIFICATION] nas (7)
 
 [MESSAGE] vidite (9)
-[content] šta nam je sa sudoperom u kuhinji (14)
+[content] šta nam je sa sudoperom u kuhinji (10)
 
-[] sudoperom (14)
-[] šta (10)
-[] nam (11)
+[SITUATION] šta (10)
+[x-experiencer] nam (11)
+[theme] sa sudoperom u kuhinji (14)
+
+[CLASS] sudoperom (14)
 [m-location] u kuhinji (16)
-
-[CLASS] šta (10)
 
 [IDENTIFICATION] nam (11)
 
@@ -700,9 +700,9 @@
 8	"	"	PUNCT	Z	_	4	punct	_	_
 
 [EVENT || STATE] zapušio (4)
-[?m-quantity] Nešto (2)
+[m-quantity || m-mode] Nešto (2)
 
-[?CLASS >> QUANTITY] Nešto (2)
+[CLASS || MODE] Nešto (2)
 
 # sent_id = 321
 # text = To je bila gospođa Parsons , žena Vinstonovog suseda sa istog sprata . (
@@ -890,7 +890,7 @@
 
 [UNANCHORED-MOTION] pođe (2)
 [in-motion] Vinston (1)
-[?x-accompanied] za njom (4)
+[x-accompanied] za njom (4)
 [transitory-location] kroz hodnik (6)
 
 [IDENTIFICATION] Vinston (1)
@@ -918,7 +918,7 @@
 [STATE-CHANGE] opravke (3)
 [m-causer >> m-quality] amaterske (2)
 
-[?CLASS >> QUALITY] amaterske (2) # Ana: adjektivisch?
+[CLASS >> QUALITY] amaterske (2)
 
 [TIME] svakodnevna (7)
 [m-quantity] skoro (6)
@@ -935,8 +935,8 @@
 6	stara	star	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	_
 7	,	,	PUNCT	Z	_	8	punct	_	_
 8	sagrađena	sagraditi	ADJ	Appfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	conj	_	_
-9	negde	negde	ADV	Rgp	Degree=Pos|PronType=Ind	11	advmod	_	_
-10	oko	oko	ADV	Rgp	Degree=Pos	11	advmod	_	_
+9	negde	negde	ADV	Rgp	Degree=Pos|PronType=Ind	13	advmod	_	_
+10	oko	oko	ADV	Rgp	Degree=Pos	13	case	_	_
 11	1930	1930	NUM	Mdc	NumType=Ord	13	nmod	_	_
 12	.	.	PUNCT	Z	_	11	punct	_	_
 13	godine	godina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	obl	_	_
@@ -950,28 +950,26 @@
 [STATE] stara (6)
 [has-state] Stambena zgrada Pobeda (2)
 
-[CLASS] zgrada (2)
+[CLASS >> IDENTIFICATION] zgrada (2)
 [m-purpose] Stambena (1)
-[m-identifier] Pobeda (3)
+[m-situator >> m-noncomp] Pobeda (3)
 
 [LOCATION] Stambena (1)
 
-[SOCIAL-RELATION >> IDENTIFICATION] Pobeda (3)
+[COMPARISON-INIT] Pobeda (3)
 
 [TRANSFORMATION-CREATION] sagrađena (8)
 [m-time] negde oko 1930 . godine (13)
 [created] Stambena zgrada Pobeda (2)
 
 [TIME] godine (13)
-[m-quantity >> m-time] negde oko 1930 . (11)
+[m-scene] negde (9)
+[m-rank] 1930 . (11)
 
-[QUANTITY >> TIME] 1930 (11)
-[] negde (9)
-[] oko (10)
+[RANK] 1930 (11)
 
 [LOCATION >> TIME] negde (9)
-
-[] oko (10)
+[has-location >> has-time] godine (13)
 
 [STATE-CHANGE] raspadala (18)
 [m-quantity] sva (16)
@@ -1213,14 +1211,14 @@
 [m-quality] nevezano (14)
 [x-sender] gospođa Parsons (16)
 
-[] ja (4)
-[] samo (5)
-[] zato što Tom nije kod kuće (11)
+[IDENTIFICATION] ja (4)
+[m-mode] samo (5)
+[m-explanation] zato što Tom nije kod kuće (11)
 
 [MODE] samo (5)
 
-[?] kuće (11)
-[has-location] Tom (8)
+[CLASS] kuće (11)
+[x-has-location] Tom (8)
 
 [IDENTIFICATION] Tom (8)
 
@@ -1488,10 +1486,10 @@
 
 [CLASS] zidovima (2)
 
-[MESSAGE] zastavice (6)
+[IDENTIFICATION] zastavice (6)
 [m-quality] skerletne (5)
-[x-sender] Omladine (7)
-[x-sender] i Špijuna (9)
+[identified] Omladine (7)
+[identified] i Špijuna (9)
 
 [QUALITY] skerletne (5)
 
@@ -1505,13 +1503,13 @@
 
 [QUALITY] ogroman (12)
 
-[?MESSAGE] likom (15)
-[content] Velikog Brata (17)
+[MESSAGE || PART-WHOLE] likom (15)
+[content || whole] Velikog Brata (17)
 
 [SOCIAL-RELATION >> IDENTIFICATION] Brata (17)
 [m-quality >> m-noncomp] Velikog (16)
 
-[QUALITY >> NONCOMP] Velikog (16)
+[QUALITY] Velikog (16)
 
 # sent_id = 335
 # text = Osećao se uobičajeni miris kuvanog kupusa zajednički celoj zgradi , no kroz njega se probijao oštriji zadah znoja , i to --- osećalo se iz prve , mada bi teško bilo objasniti kako --- znoja nekog ko je trenutno odsutan .
@@ -1646,7 +1644,7 @@
 16	muziku	muzika	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	14	obj	_	_
 17	koja	koji	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	21	nsubj	_	_
 18	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
-19	i	i	CCONJ	Cc	_	20	advmod	_	_
+19	i	i	CCONJ	Cc	_	20	discourse	_	_
 20	dalje	daleko	ADV	Rgc	Degree=Cmp	21	advmod	_	_
 21	izvirala	izvirati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	16	acl	_	_
 22	iz	iz	ADP	Sg	Case=Gen	23	case	_	_
@@ -1689,15 +1687,12 @@
 [target-content] koja (17)
 [m-scene] i dalje (20)
 [x-sender] iz telekrana (23)
+[target-content] muziku (16)
 
 [IDENTIFICATION] koja (17)
 
 [SCENE-CONTINUATION] dalje (20)
-[m-scene] i (19)
 [initial-scene] izvirala (21)
-
-[ACCOMPANIMENT >> CONCESSION] i (19)
-[accompanier >> conceded] dalje (16)
 
 [CLASS] telekrana (23)
 
@@ -1732,7 +1727,7 @@
 [target-location >> topic] na vrata (13)
 [x-causer >> x-experiencer] gospođa Parsons (6)
 
-[MESSAGE >> NONCOMP] pogled (11)
+[MESSAGE] pogled (11)
 [m-quality] polubojažljiv (10)
 
 [QUALITY] polubojažljiv (10)
@@ -1741,29 +1736,27 @@
 
 # sent_id = 338
 # text = " Danas su ceo dan bila unutra . "
-1	"	"	PUNCT	Z	_	6	punct	_	_
-2	Danas	danas	ADV	Rgp	Degree=Pos	6	advmod	_	_
-3	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+1	"	"	PUNCT	Z	_	7	punct	_	_
+2	Danas	danas	ADV	Rgp	Degree=Pos	7	advmod	_	_
+3	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
 4	ceo	ceo	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
-5	dan	dan	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
-6	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-7	unutra	unutra	ADJ	Rgp	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	6	advmod	_	_
-8	.	.	PUNCT	Z	_	6	punct	_	_
-9	"	"	PUNCT	Z	_	6	punct	_	_
+5	dan	dan	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+6	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+7	unutra	unutra	ADJ	Rgp	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	_
+8	.	.	PUNCT	Z	_	7	punct	_	_
+9	"	"	PUNCT	Z	_	7	punct	_	_
 
-[LOCATION] bila (6)
+[LOCATION] unutra (7)
 [m-time] Danas (2)
 [m-time] ceo dan (5)
-[location] unutra (7)
 
 [TIME] Danas (2)
 
 [TIME] dan (5)
-[m-quantity] ceo (4)
+[m-quantity || m-scene] ceo (4)
 
-[QUANTITY] ceo (4)
-
-[LOCATION] unutra (7)
+[QUANTITY || PART-WHOLE] ceo (4)
+[whole] dan (5)
 
 # sent_id = 339
 # text = " I naravno ... "
@@ -1791,12 +1784,12 @@
 [SCENE] Imala (1)
 [scene] naviku da svoje rečenice prekida na polovini (3)
 
-[?TIME] naviku (3)
-[has-time] da svoje rečenice prekida na polovini (7)
+[SCENE] naviku (3)
+[scene] da svoje rečenice prekida na polovini (7)
 
-[?MESSAGE-DEINIT] prekida (7)
-[initial-content] svoje rečenice (6)
-[?m-quantity] na polovini (9)
+[SCENE-DEINIT] prekida (7)
+[initial-scene] svoje rečenice (6)
+[m-time] na polovini (9)
 
 [MESSAGE] rečenice (6)
 
@@ -1884,6 +1877,7 @@
 
 [MESSAGE-INIT] ispita (4)
 [topic] koleno odvodne cevi (5)
+[x-experiencer] Vinston (1)
 
 [PART-WHOLE] koleno (5)
 [whole] odvodne cevi (7)
@@ -1941,7 +1935,7 @@
 [TIME] uvek (17)
 
 [EVENT] napade (19)
-[?x-causer >> event] kašlja (20)
+[x-causer >> event] kašlja (20)
 
 [EXCRETION] kašlja (20)
 
@@ -1969,45 +1963,47 @@
 
 # sent_id = 345
 # text = " Naravno , da je Tom kod kuće , popravio bi ga začas , " reče ona .
-1	"	"	PUNCT	Z	_	2	punct	_	_
-2	Naravno	naravno	ADV	Rgp	Degree=Pos	0	root	_	_
+1	"	"	PUNCT	Z	_	10	punct	_	_
+2	Naravno	naravno	ADV	Rgp	Degree=Pos	10	advmod	_	_
 3	,	,	PUNCT	Z	_	8	punct	_	_
 4	da	da	SCONJ	Cs	_	8	mark	_	_
 5	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 6	Tom	taj	DET	Npmsn	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	_
 7	kod	kod	ADP	Sg	Case=Gen	8	case	_	_
-8	kuće	kuća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	2	advcl	_	_
+8	kuće	kuća	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	advcl	_	_
 9	,	,	PUNCT	Z	_	8	punct	_	_
-10	popravio	popraviti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+10	popravio	popraviti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	16	ccomp	_	_
 11	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 12	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	_	_
 13	začas	začas	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
 14	,	,	PUNCT	Z	_	10	punct	_	_
 15	"	"	PUNCT	Z	_	10	punct	_	_
-16	reče	reći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+16	reče	reći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 17	ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
-18	.	.	PUNCT	Z	_	2	punct	_	_
+18	.	.	PUNCT	Z	_	16	punct	_	_
 
-[] Naravno (2)
-[] , da je Tom kod kuće , (8)
+[MESSAGE-INIT] reče (16)
+[target-content] " Naravno , da je Tom kod kuće , popravio bi ga začas , " (10)
+[x-sender] ona (17)
 
-[] kuće (8)
-[] Tom (6)
+[STATE-CHANGE] popravio (10)
+[m-mode] Naravno (2)
+[m-condition] , da je Tom kod kuće , (8)
+[has-state] ga (12)
+[m-quality] začas (13)
 
-[] Tom (6)
+[MODE] Naravno (2)
 
-[] popravio (10)
-[] ga (12)
-[] začas (13)
+[CLASS] kuće (8)
+[x-has-location] Tom (6)
 
-[] ga (12)
+[IDENTIFICATION] Tom (6)
 
-[] začas (13)
+[IDENTIFICATION] ga (12)
 
-[] reče (16)
-[] ona (17)
+[QUALITY] začas (13)
 
-[] ona (17)
+[IDENTIFICATION] ona (17)
 
 # sent_id = 346
 # text = " On to voli . "

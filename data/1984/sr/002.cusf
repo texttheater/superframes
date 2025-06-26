@@ -213,7 +213,7 @@
 
 [IDENTIFICATION] on (11)
 
-[?] to (12)
+[IDENTIFICATION] to (12)
 
 [MESSAGE] dnevnik (15)
 
@@ -262,6 +262,7 @@
 [MESSAGE] Misao (1)
 [x-experiencer] mu (2)
 [topic] nad sumnjivim datumom na stranici (9)
+[topic] na novogovorsku reč dvomisao (18)
 
 [IDENTIFICATION] mu (2)
 
@@ -278,7 +279,8 @@
 
 [SCENE-INIT] nalete (15)
 [m-time] zatim (14)
-[target-scene] na novogovorsku reč dvomisao (18)
+[participant] na novogovorsku reč dvomisao (18)
+[target-scene] Misao (1)
 
 [TIME] zatim (14)
 
@@ -315,10 +317,10 @@
 [MESSAGE] svestan (4)
 [topic] veličine onog što je preduzeo (5)
 
-[QUALITY] veličine (5)
-[has-quality] onog što je preduzeo (6)
+[QUALITY || QUANTITY] veličine (5) # zwei Lesarten
+[has-quality || has-quantity] onog što je preduzeo (6)
 
-[SITUATION] onog (6)
+[IDENTIFICATION] onog (6)
 [m-scene] što je preduzeo (9)
 
 [SCENE] preduzeo (9)
@@ -668,7 +670,7 @@
 [MESSAGE-INIT] prenese (5)
 [m-mode] samo (3)
 [x-target-location] na papir (7)
-[topic] onaj neprekidni i nesmireni monolog koji mu se doslovno godinama odvijao u glavi (12)
+[target-content] onaj neprekidni i nesmireni monolog koji mu se doslovno godinama odvijao u glavi (12)
 
 [MODE] samo (3)
 
@@ -747,14 +749,14 @@
 [participant] ga (6)
 [target-scene] nepodnošljivo svrbeti (9)
 
-[SITUATION] toga (2)
+[IDENTIFICATION] toga (2)
 [m-accompanier] poče (7)
 
 [CLASS] vena (5)
 [m-scene] proširena (4)
 
-[QUALITY-INIT || STATE-INIT] proširena (4)
-[has-quality || has-state] vena (5)
+[STATE-INIT || QUALITY-INIT] proširena (4)
+[has-state || has-quality] vena (5)
 
 [IDENTIFICATION] ga (6)
 
@@ -763,8 +765,8 @@
 [x-sender] proširena vena (5)
 [x-experiencer] ga (6)
 
-[MESSAGE] nepodnošljivo (8)
-[topic] svrbeti (9)
+[MESSAGE || EXPERIENCE] nepodnošljivo (8)
+[topic || experienced] svrbeti (9)
 
 # sent_id = 120
 # text = Nije se usuđivao da se počeše , da se ne bi zapalila .
@@ -800,8 +802,8 @@
 3	prolazile	prolaziti	VERB	Vmp-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 4	.	.	PUNCT	Z	_	3	punct	_	_
 
-[UNANCHORED-MOTION >> SCENE] prolazile (3)
-[in-motion >> scene] Sekunde (1)
+[SCENE-DEINIT] prolazile (3)
+[initial-scene] Sekunde (1)
 
 [TIME] Sekunde (1)
 
@@ -892,7 +894,7 @@
 [QUALITY] Odjednom (1)
 
 [MESSAGE-INIT] pisati (3)
-[?m-depictive] u paničnom strahu (6)
+[m-accompanier] u paničnom strahu (6)
 
 [MESSAGE] strahu (6)
 [m-quality] paničnom (5)
@@ -947,7 +949,6 @@
 [SENDING] rukopis (5)
 [m-quality] Sitan (1)
 [m-quality] ali dečje nezgrapan (4)
-[sender] mu (6)
 
 [QUALITY] Sitan (1)
 
@@ -958,6 +959,7 @@
 [x-quality >> has-quality] nezgrapan (4)
 
 [IDENTIFICATION] mu (6)
+[m-sent] rukopis (5)
 
 [CLASS] stranici (10)
 
@@ -971,7 +973,7 @@
 [m-quality] velika (14)
 
 [SEQUENCE] prvo (13)
-[follows] slova (15)
+[followed] slova (15)
 
 [QUALITY] velika (14)
 
@@ -980,7 +982,7 @@
 [m-mode] čak (19)
 
 [SEQUENCE] najzad (18)
-[followed] tačke (21)
+[follows] tačke (21)
 
 [MODE] čak (19)
 
@@ -1005,7 +1007,7 @@
 2	bioskop	bioskop	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
 3	.	.	PUNCT	Z	_	2	punct	_	_
 
-[ACTIVITY] bioskop (2)
+[ACTIVITY || CLASS] bioskop (2)
 [m-time] Sinoć (1)
 
 [TIME] Sinoć (1)
@@ -1045,8 +1047,8 @@
 [has-quality] Jedan o brodu punom izbeglica bombardovanom negde u Sredozemnom moru (1)
 [m-quantity] vrlo (2)
 
-[MESSAGE] Jedan (1)
-[topic] o brodu punom izbeglica bombardovanom negde u Sredozemnom moru (5)
+[QUANTITY >> MESSAGE] Jedan (1)
+[m-topic >> topic] o brodu punom izbeglica bombardovanom negde u Sredozemnom moru (5)
 
 [CLASS] brodu (5)
 [m-scene] punom izbeglica (6)
@@ -1068,7 +1070,7 @@
 [CLASS >> IDENTIFICATION] moru (12)
 [m-location >> m-noncomp] Sredozemnom (11)
 
-[LOCATION >> NONCOMP] Sredozemnom (11)
+[LOCATION] Sredozemnom (11)
 
 [QUANTITY] vrlo (2)
 
@@ -1889,14 +1891,14 @@
 [SCENE-INIT] nagnalo (7)
 [x-causer] šta (3)
 [participant] ga (4)
-[?] to (6)
+[x-causer] to (6)
 [target-scene] da istrese ovaj niz besmislica (9)
 
 [IDENTIFICATION] šta (3)
 
 [IDENTIFICATION] ga (4)
 
-[] to (6)
+[IDENTIFICATION] to (6)
 
 [LOCATION-DEINIT >> MESSAGE-INIT] istrese (9)
 [has-location >> target-content] ovaj niz besmislica (11)
@@ -2382,7 +2384,7 @@
 [social-relation] u odeljenju proze (13)
 
 [PART-WHOLE >> CLASS] odeljenju (13)
-[m-purpose] proze (14)
+[m-purpose || m-topic] proze (14)
 
 [MESSAGE] proze (14)
 
@@ -2503,7 +2505,7 @@
 25	.	.	PUNCT	Z	_	4	punct	_	_
 
 [CLASS] devojka (4)
-[x-has-class] To (1)
+[has-class] To (1)
 [m-scene] ponositog izgleda (6)
 [m-part] , guste crne kose (16)
 [m-accompanier] i brzih , sportskih pokreta (24)
@@ -2730,10 +2732,10 @@
 
 [IDENTIFICATION] koju (16)
 
-[LOCATION-INIT >> ACCOMPANIMENT] širi (20)
+[LOCATION-INIT >> ACCOMPANIMENT-INIT] širi (20)
 [target-location >> accompanied] oko sebe (22)
-[has-location >> accompanier] koju (16)
-[has-location >> accompanier] atmosfere (5)
+[has-location >> target-accompanier] koju (16)
+[has-location >> target-accompanier] atmosfere (5)
 
 [IDENTIFICATION] sebe (22)
 

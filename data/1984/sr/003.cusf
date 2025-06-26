@@ -283,19 +283,19 @@
 1	No	no	PART	Qo	_	7	discourse	_	_
 2	on	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
 3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-4	i	i	CCONJ	Cc	_	5	advmod	_	_
+4	i	i	CCONJ	Cc	_	5	discourse	_	_
 5	dalje	daleko	ADV	Rgc	Degree=Cmp	7	advmod	_	_
 6	uvek	uvek	ADV	Rgp	Degree=Pos|PronType=Tot	7	advmod	_	_
 7	osećao	osećati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 8	čudnu	čudni	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	_
 9	nelagodnost	nelagodnost	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
-10	,	,	PUNCT	Z	_	14	punct	_	_
+10	,	,	PUNCT	Z	_	12	punct	_	_
 11	u	u	ADP	Sl	Case=Loc	12	case	_	_
-12	kojoj	koji	DET	Pi-fsl	Case=Loc|Gender=Fem|Number=Sing|PronType=Int,Rel	14	obl	_	_
-13	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-14	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+12	kojoj	koji	DET	Pi-fsl	Case=Loc|Gender=Fem|Number=Sing|PronType=Int,Rel	9	acl	_	_
+13	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+14	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	12	cop	_	_
 15	i	i	CCONJ	Cc	_	16	discourse	_	_
-16	straha	strah	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	14	nsubj	_	_
+16	straha	strah	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	12	nsubj	_	_
 17	i	i	CCONJ	Cc	_	18	cc	_	_
 18	neprijateljstva	neprijateljstvo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	16	conj	_	_
 19	,	,	PUNCT	Z	_	25	punct	_	_
@@ -320,27 +320,20 @@
 [IDENTIFICATION] on (2)
 
 [SCENE-CONTINUATION] dalje (5)
-[m-scene] i (4)
 [initial-scene] osećao (7)
-
-[ACCOMPANIMENT >> CONCESSION] i (4)
-[accompanier >> conceded] dalje (5)
 
 [TIME] uvek (6)
 
 [MESSAGE] nelagodnost (9)
 [m-quality] čudnu (8)
-[m-scene] , u kojoj je bilo i straha i neprijateljstva (14)
+[m-scene] , u kojoj je bilo i straha i neprijateljstva (12)
 
 [QUALITY] čudnu (8)
 
-[LOCATION >> ACCOMPANIMENT] bilo (14)
-[location >> accompanied] u kojoj (12)
-[has-location >> accompanier] i straha (16)
-[has-location >> accompanier] i neprijateljstva (18)
-[location >> accompanied] nelagodnost (9)
-
 [IDENTIFICATION] kojoj (12)
+[x-has-location >> x-accompanier] i straha (16)
+[x-has-location >> x-accompanier] i neprijateljstva (18)
+[identified] nelagodnost (9)
 
 [MESSAGE] straha (16)
 
@@ -461,7 +454,6 @@
 [STATE-INIT] utišala (15)
 [has-state] Gomila (1)
 [m-depictive] , videvši kako se približava crni kombinezon člana Uže partije , (4)
-[] beše (14)
 [m-time] za trenutak (17)
 
 [PART-WHOLE || QUANTITY] Gomila (1)
@@ -485,9 +477,7 @@
 [CLASS >> IDENTIFICATION] partije (12)
 [m-quality >> m-noncomp] Uže (11)
 
-[QUALITY >> NONCOMP] Uže (11)
-
-[] beše (14)
+[QUALITY] Uže (11)
 
 [TIME] trenutak (17)
 
@@ -816,14 +806,14 @@
 
 # sent_id = 167
 # text = Posredi je daleko više bilo Vinstonovo potajno uverenje --- ili čak ne ni uverenje no prosto nada --- da O'Brajenova politička ispravnost nije savršena .
-1	Posredi	posreda	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	_
-2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+1	Posredi	posreda	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	0	root	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	_
 3	daleko	daleko	ADV	Rgp	Degree=Pos	4	advmod	_	_
-4	više	mnogo	ADV	Rgc	Degree=Cmp	8	advmod	_	_
-5	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+4	više	mnogo	ADV	Rgc	Degree=Cmp	1	advmod	_	_
+5	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	1	cop	_	_
 6	Vinstonovo	Vinstonov	ADJ	Aspnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|Poss=Yes	8	amod	_	_
 7	potajno	potajan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	_
-8	uverenje	uverenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+8	uverenje	uverenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	1	nsubj	_	_
 9	---	---	PUNCT	Z	_	14	punct	_	_
 10	ili	ili	CCONJ	Cc	_	14	cc	_	_
 11	čak	čak	PART	Qo	_	14	advmod	_	_
@@ -832,24 +822,27 @@
 14	uverenje	uverenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	8	conj	_	_
 15	no	no	CCONJ	Cc	_	17	cc	_	_
 16	prosto	prosto	ADJ	Rgp	Degree=Pos	17	amod	_	_
-17	nada	nada	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	14	conj	_	_
-18	---	---	PUNCT	Z	_	24	punct	_	_
+17	nada	nada	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	_
+18	---	---	PUNCT	Z	_	14	punct	_	_
 19	da	da	SCONJ	Cs	_	24	mark	_	_
 20	O'Brajenova	o'brajenov	ADJ	Aspfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	22	amod	_	_
 21	politička	politički	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	22	amod	_	_
 22	ispravnost	ispravnost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	24	nsubj	_	_
 23	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	24	cop	_	_
 24	savršena	savršiti	ADJ	Appfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	acl	_	_
-25	.	.	PUNCT	Z	_	8	punct	_	_
+25	.	.	PUNCT	Z	_	1	punct	_	_
+
+[QUALITY] Posredi (1)
+[m-quantity] daleko više (4)
+[has-quality] Vinstonovo potajno uverenje da O'Brajenova politička ispravnost nije savršena (8)
+[has-quality] --- ili čak ne ni uverenje --- (14)
+[has-quality] no prosto nada (17)
 
 [MESSAGE] uverenje (8)
-[?] Posredi (1)
-[m-scene] daleko više (4)
 [x-experiencer] Vinstonovo (6)
 [m-scene] potajno (7)
-[topic] --- da O'Brajenova politička ispravnost nije savršena (24)
-
-[] Posredi (1)
+[topic] da O'Brajenova politička ispravnost nije savršena (24)
+[m-scene] daleko više (4)
 
 [COMPARISON] više (4)
 [m-quantity] daleko (3)
@@ -935,31 +928,29 @@
 16	inteligencija	inteligencija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	12	conj	_	_
 17	.	.	PUNCT	Z	_	11	punct	_	_
 
-[MESSAGE-INIT >> SCENE] ispisana (11)
+[MESSAGE-INIT >> MESSAGE] ispisana (11)
 [m-scene] S druge strane , (3)
-[x-target-location >> participant] mu (6)
-[?x-attribute] na licu (8)
-[target-content >> scene] neispravnost (12)
-[target-content >> scene] , nego prosto inteligencija (16)
+[x-has-attribute] mu (6)
+[x-target-location >> x-sender] na licu (8)
+[target-content >> content] neispravnost (12)
+[target-content >> content] , nego prosto inteligencija (16)
 
 [LOCATION >> CONCESSION] strane (3)
-[m-scene] druge (2)
+[m-scene >> m-noncomp] druge (2)
 [has-location >> asserted] ispisana (11)
 
-[COMPARISON >> NONCOMP] druge (2)
-[compared >> has-noncomp] strane (3)
+[COMPARISON >> CONCESSION] druge (2)
+[compared] strane (3)
 
 [IDENTIFICATION] mu (6)
+[m-part] na licu (8)
 
 [PART-WHOLE] licu (8)
-[whole] mu (6)
 
 [MESSAGE] neispravnost (12)
-[x-experiencer] mu (6)
 
 [QUALITY] inteligencija (16)
 [m-mode] prosto (15)
-[has-quality] mu (6)
 
 [MODE] prosto (15)
 
@@ -1274,7 +1265,7 @@
 [PART-WHOLE] kose (9)
 [m-scene] pepeljaste (8)
 
-[?CLASS >> QUALITY] pepeljaste (8)
+[CLASS >> QUALITY] pepeljaste (8) # "wie Asche" (Adjektiv)
 [m-compared >> has-quality] kose (9)
 
 [SOCIAL-RELATION] radila (12)
@@ -1402,9 +1393,9 @@
 
 [PART-WHOLE] zubi (6)
 
-[?MESSAGE] kostrešile (8)
-[m-noncomp] dlake (10)
-[m-noncomp] na potiljku (12)
+[STATE-INIT >> MESSAGE] kostrešile (8)
+[has-state >> m-noncomp] dlake (10)
+[m-location >> m-noncomp] na potiljku (12)
 [m-causer] Od tog zvuka (3)
 
 [PART-WHOLE] dlake (10)
@@ -1414,17 +1405,14 @@
 # sent_id = 178
 # text = Mržnja beše počela .
 1	Mržnja	mržnja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
-2	beše	beša	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	advmod	_	_
+2	beše	beša	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	aux	_	_
 3	počela	početi	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 4	.	.	PUNCT	Z	_	3	punct	_	_
 
 [SCENE-INIT] počela (3)
 [target-scene] Mržnja (1)
-[?] beše (2)
 
 [MESSAGE] Mržnja (1)
-
-[] beše (2)
 
 # sent_id = 179
 # text = Kao i obično , na ekranu se pojavilo lice Narodnog neprijatelja , Emanuela Goldštajna .
@@ -1513,7 +1501,7 @@
 [PART-WHOLE] kose (3)
 [m-scene] pepeljave (2)
 
-[?CLASS >> QUALITY] pepeljave (2)
+[CLASS >> QUALITY] pepeljave (2) # Tippfehler
 [m-compared >> has-quality] kose (3)
 
 [MESSAGE] cikom (6)
@@ -1708,7 +1696,7 @@
 [SCENE] bilo (15)
 [scene] jednoga u kome glavna ličnost nije bio Goldštajn (17)
 
-[?QUANTITY >> MESSAGE] jednoga (17)
+[QUANTITY] jednoga (17)
 [m-scene] u kome glavna ličnost nije bio Goldštajn (21)
 
 [PART-WHOLE] ličnost (21)
@@ -1745,15 +1733,16 @@
 
 [IDENTIFICATION] On (1)
 
-[RANK >> TIME] prvi (4)
+[RANK] prvi (4)
 
-[?RANK >> CLASS] prvi (7)
+[RANK] prvi (7)
 [m-scene] koji je ukaljao čistotu Partije (10)
+[x-identified] On (1)
 
-[?EVENT || STATE-CHANGE] ukaljao (10)
+[EVENT || STATE-CHANGE] ukaljao (10)
 [x-causer] koji (8)
 [undergoer || has-state] čistotu Partije (11)
-[?x-causer] prvi (7)
+[x-causer] prvi (7)
 
 [IDENTIFICATION] koji (8)
 
@@ -1807,9 +1796,9 @@
 
 [EVENT] sabotaže (10)
 
-[? MESSAGE] jeresi (12)
+[MESSAGE] jeresi (12)
 
-[?SCENE-INIT-NEG] skretanja (14)
+[LOCATION-DEINIT >> SCENE-DEINIT] skretanja (14) # "vom Weg abkommen" (Nomen)
 
 [QUALITY] neposredno (18)
 
@@ -1934,20 +1923,17 @@
 1	Vinstonova	Vinstonov	ADJ	Aspfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	2	amod	_	_
 2	dijafragma	dijafrag	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
 3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
-4	beše	mnogo	ADV	Rgc	Degree=Cmp	5	advmod	_	_
+4	beše	mnogo	ADV	Rgc	Degree=Cmp	5	aux	_	_
 5	zgrčila	zgrčiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 6	.	.	PUNCT	Z	_	5	punct	_	_
 
 [MESSAGE-INIT] zgrčila (5)
 [x-sender] Vinstonova dijafragma (2)
-[?] beše (4)
 
 [PART-WHOLE] dijafragma (2)
 [whole] Vinstonova (1)
 
 [IDENTIFICATION] Vinstonova (1)
-
-[] beše (4)
 
 # sent_id = 188
 # text = Kad god bi video Goldštajnovo lice skolila bi ga mešavina bolnih osećanja .
@@ -1965,10 +1951,10 @@
 12	osećanja	osećanje	NOUN	Ncnpg	Case=Gen|Gender=Neut|Number=Plur	10	nmod	_	_
 13	.	.	PUNCT	Z	_	7	punct	_	_
 
-[?MESSAGE] skolila (7)
+[SCENE-INIT || EVENT] skolila (7)
 [m-accompanied] Kad god bi video Goldštajnovo lice (4)
-[x-experiencer] ga (9)
-[topic] mešavina bolnih osećanja (10)
+[participant || undergoer] ga (9)
+[target-scene || event] mešavina bolnih osećanja (10)
 
 [MESSAGE] video (4)
 [topic] Goldštajnovo lice (6)
@@ -1982,6 +1968,7 @@
 
 [ACCOMPANIMENT] mešavina (10)
 [accompanied] bolnih osećanja (12)
+[x-experiencer] ga (9)
 
 [MESSAGE] osećanja (12)
 [m-scene] bolnih (11)
@@ -2146,7 +2133,7 @@
 [QUALITY] ovčjeg (9)
 [has-quality] u glasu (15)
 
-[MESSAGE] glasu (15)
+[SENDING] glasu (15)
 
 # sent_id = 191
 # text = Goldštajn je na ekranu upravo vršio svoj otrovni napad na doktrinu Partije --- napad toliko preteran i pokvaren da bi ga i dete moglo prozreti , a ipak taman toliko prihvatljiv da čoveka ispuni bojazni da bi se neko manje pametan mogao još i prevariti njime .
@@ -2742,8 +2729,8 @@
 [theme >> accompanied] za Goldštajnov blejavi glas (11)
 [situator >> accompanier] Tupi ritam vojničkih cokula (2)
 
-[MESSAGE] glas (11)
-[x-sender] Goldštajnov (9)
+[SENDING] glas (11)
+[sender] Goldštajnov (9)
 [m-scene] blejavi (10)
 
 [IDENTIFICATION] Goldštajnov (9)
@@ -2772,8 +2759,8 @@
 17	gneva	gnev	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	16	nmod	_	_
 18	.	.	PUNCT	Z	_	2	punct	_	_
 
-[?SCENE-DEINIT >> SCENE] prošlo (2)
-[initial-scene >> scene] ni trideset sekundi Mržnje (5)
+[SCENE-DEINIT] prošlo (2)
+[initial-scene] ni trideset sekundi Mržnje (5)
 
 [TIME] sekundi (5)
 [m-quantity] ni trideset (4)
@@ -2788,15 +2775,16 @@
 
 [SCENE-INIT] počeše (13)
 [participant] od polovine gledalaca (10)
-[?target-scene] otimati nekontrolisani povici gneva (14)
+[target-scene] otimati nekontrolisani povici gneva (14)
 
 [PART-WHOLE] polovine (10)
 [whole] gledalaca (11)
 
 [MESSAGE-INIT] gledalaca (11)
 
-[?] otimati (14)
-[] nekontrolisani povici gneva (16)
+[LOCATION-DEINIT >> MESSAGE-INIT] otimati (14) # hier: "odvajati", "izlaziti"
+[has-location >> target-content] nekontrolisani povici gneva (16)
+[initial-location >> x-sender] od polovine gledalaca (10)
 
 [MESSAGE-INIT] povici (16)
 [m-scene] nekontrolisani (15)
@@ -3236,8 +3224,8 @@
 22	uputstvima	uputstvo	NOUN	Ncnpl	Case=Loc|Gender=Neut|Number=Plur	19	obl	_	_
 23	.	.	PUNCT	Z	_	2	punct	_	_
 
-[?SCENE-DEINIT >> SCENE] prolazio (2)
-[initial-scene >> scene] ni jedan dan (5)
+[SCENE-DEINIT] prolazio (2)
+[initial-scene] ni jedan dan (5)
 
 [TIME] dan (5)
 [m-quantity] ni jedan (4)

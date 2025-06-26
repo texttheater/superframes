@@ -16,10 +16,10 @@
 14	;	;	PUNCT	Z	_	19	punct	_	_
 15	s	sa	ADP	Sg	Case=Gen	17	case	_	_
 16	druge	drugi	ADJ	Mlofsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
-17	strane	strana	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	19	obl	_	_
-18	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
-19	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	parataxis	_	_
-20	glava	glava	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	19	nsubj	_	_
+17	strane	strana	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	10	parataxis	_	_
+18	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+19	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	17	cop	_	_
+20	glava	glava	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	17	nsubj	_	_
 21	Velikog	velik	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	22	amod	_	_
 22	Brata	Brat	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	20	nmod	_	_
 23	.	.	PUNCT	Z	_	10	punct	_	_
@@ -46,12 +46,9 @@
 [COMPARISON] iste (12)
 [compared] parole (13)
 
-[LOCATION] bila (19)
-[location] s druge strane (17)
-[has-location] glava Velikog Brata (20)
-
 [PART-WHOLE] strane (17)
 [m-scene] druge (16)
+[x-has-location] glava Velikog Brata (20)
 
 [COMPARISON] druge (16)
 [compared] strane (17)
@@ -62,7 +59,7 @@
 [SOCIAL-RELATION >> IDENTIFICATION] Brata (22)
 [m-quality >> m-noncomp] Velikog (21)
 
-[QUALITY >> NONCOMP] Velikog (21)
+[QUALITY] Velikog (21)
 
 # sent_id = 452
 # text = Njegove oči su , čak i sa novčića , pratile čoveka .
@@ -125,7 +122,7 @@
 
 [MESSAGE] knjiga (9)
 
-[MESSAGE] zastavicama (12)
+[IDENTIFICATION] zastavicama (12)
 
 [MESSAGE] plakatima (15)
 
@@ -209,16 +206,22 @@
 [has-state] čovek (2)
 
 [ACTIVITY] radio (7)
+[is-active] čovek (2)
 
 [INGESTION] jeo (9)
+[ingester] čovek (2)
 
 [CLASS] kući (12)
+[x-has-location] čovek (2)
 
 [CLASS] kuče (15)
+[x-has-location] čovek (2)
 
 [CLASS] kupatilu (18)
+[x-has-location] čovek (2)
 
 [CLASS] krevetu (21)
+[x-has-location] čovek (2)
 
 [SCENE-POSSIBILITY] moglo (26)
 [scene] --- izbeći (23)
@@ -244,14 +247,14 @@
 [POSSESSION] imao (3)
 [possessor] Niko (1)
 [possessed] ništa svoje (4)
-[?possessed] do onih nekoliko kubnih santimetara u lobanji (10)
+[m-exception] do onih nekoliko kubnih santimetara u lobanji (10)
 
 [CLASS-NEG] Niko (1)
 
 [CLASS-NEG] ništa (4)
 [m-possessor] svoje (5)
 
-[?MODE] svoje (5)
+[IDENTIFICATION] svoje (5)
 
 [QUANTITY] kubnih santimetara (10)
 [m-location] u lobanji (12)
@@ -512,20 +515,20 @@
 6	prah	prah	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obl	_	_
 7	i	i	CCONJ	Cc	_	8	cc	_	_
 8	pepeo	pepeo	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	conj	_	_
-9	,	,	PUNCT	Z	_	14	punct	_	_
-10	a	a	CCONJ	Cc	_	14	cc	_	_
-11	on	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	conj	_	_
+9	,	,	PUNCT	Z	_	11	punct	_	_
+10	a	a	CCONJ	Cc	_	11	cc	_	_
+11	on	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	conj	_	_
 12	sam	sam	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	_
 13	u	u	ADP	Sl	Case=Loc	14	case	_	_
-14	paru	par	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	6	conj	_	_
+14	paru	par	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	11	orphan	_	_
 15	.	.	PUNCT	Z	_	4	punct	_	_
 
 [TRANSFORMATION-CREATION] pretvoren (4)
 [material] Dnevnik (1)
-[material] on sam (11)
 [created] u prah (6)
 [created] i pepeo (8)
-[created] , a u paru (14)
+[material] , a on sam u paru (11)
+[created] u paru (14)
 
 [MESSAGE] Dnevnik (1)
 
@@ -537,6 +540,7 @@
 
 [IDENTIFICATION] on (11)
 [m-mode] sam (12)
+[m-created] u paru (14)
 
 [MODE] sam (12)
 
@@ -866,7 +870,7 @@
 [POSSESSION] Nasleđe (1)
 [possessor] čovekovo (2)
 
-[?CLASS] čovekovo (2) # Ana: Adjektiv?
+[CLASS] čovekovo (2) # Nomen
 
 [MODE] ne (4)
 
@@ -1321,7 +1325,7 @@
 
 [PART-WHOLE] prsta (2)
 [m-quantity] Dva (1)
-[?m-whole] desne ruke (4)
+[whole] desne ruke (4)
 
 [QUANTITY] Dva (1)
 
@@ -1518,7 +1522,7 @@
 16	kao	kao	SCONJ	Cs	_	17	case	_	_
 17	šmirglpapir	šmirglpapir	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	14	obl	_	_
 18	te	te	CCONJ	Cc	_	21	cc	_	_
-19	tako	tako	ADV	Rgp	Degree=Pos|PronType=Dem	21	advmod	_	_
+19	tako	tako	ADV	Rgp	Degree=Pos|PronType=Dem	21	mark	_	_
 20	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	21	cop	_	_
 21	pogodan	pogodan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	14	conj	_	_
 22	za	za	ADP	Sa	Case=Acc	24	case	_	_
@@ -1549,7 +1553,7 @@
 [m-quality] oštrim (9)
 [m-quality] mrkim (10)
 [m-scene] koji je strugao kožu kao šmirglpapir (14)
-[?m-scene] te tako bio pogodan za tu svrhu (21)
+[m-scene] te tako bio pogodan za tu svrhu (21)
 
 [STATE >> QUALITY] oštrim (9)
 
@@ -1567,12 +1571,9 @@
 
 [CLASS] šmirglpapir (17)
 
-[?SCENE-POSSIBILITY] pogodan (21)
-[m-means] tako (19)
-[scene] za tu svrhu (24)
-[participant] sapunom (11)
-
-[MEANS] tako (19)
+[MEANS] pogodan (21)
+[purpose] za tu svrhu (24)
+[means] sapunom (11)
 
 [SEQUENCE] svrhu (24)
 
@@ -2027,7 +2028,7 @@
 [m-depictive] , sa njegovom mlađom sestrom u naručju (18)
 
 [TIME] trenutku (3)
-[?has-time] sna (4)
+[has-time] sna (4)
 
 [MESSAGE] sna (4)
 
@@ -2051,7 +2052,7 @@
 
 [QUALITY] mlađom (17)
 
-[?PART-WHOLE] naručju (20)
+[PART-WHOLE] naručju (20)
 [whole] majka (6)
 
 # sent_id = 497
@@ -2061,7 +2062,7 @@
 3	uopšte	uopšte	ADV	Rgp	Degree=Pos	5	advmod	_	_
 4	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	5	aux	_	_
 5	sećao	sećati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-6	sem	sembe	PRON	Var1s	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
+6	sem	sembe	PRON	Var1s	Case=Acc|PronType=Prs|Reflex=Yes	7	case	_	_
 7	kao	kao	SCONJ	Cs	_	14	case	_	_
 8	sitne	sitan	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
 9	,	,	PUNCT	Z	_	10	punct	_	_
@@ -2074,40 +2075,40 @@
 16	krupnih	krupni	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	19	amod	_	_
 17	,	,	PUNCT	Z	_	18	punct	_	_
 18	pažljivih	pažljiv	ADJ	Agpfpgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	16	conj	_	_
-19	očiju	oko	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	14	conj	_	_
+19	očiju	oko	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	14	nmod	_	_
 20	.	.	PUNCT	Z	_	5	punct	_	_
 
-[] sećao (5)
-[] Sestre (1)
-[] uopšte (3)
-[] kao sitne , slabašne , večito ćutljive bebe (14)
-[] , krupnih , pažljivih očiju (19)
+[MESSAGE] sećao (5)
+[topic] Sestre (1)
+[m-mode] uopšte (3)
+[m-exception] sem kao sitne , slabašne , večito ćutljive bebe , krupnih , pažljivih očiju (14)
 
-[] Sestre (1)
+[SOCIAL-RELATION] Sestre (1)
 
-[] uopšte (3)
+[MODE] uopšte (3)
 
-[] bebe (14)
-[] sitne (8)
-[] , slabašne (10)
-[] , večito ćutljive (13)
+[CLASS] bebe (14)
+[m-quality] sitne (8)
+[m-quality] , slabašne (10)
+[m-state] , večito ćutljive (13)
+[m-part] , krupnih , pažljivih očiju (19)
 
-[] sitne (8)
+[QUALITY] sitne (8)
 
-[] slabašne (10)
+[QUALITY] slabašne (10)
 
-[] ćutljive (13)
-[] večito (12)
+[STATE] ćutljive (13)
+[m-quantity] večito (12)
 
-[] večito (12)
+[QUANTITY] večito (12)
 
-[] očiju (19)
-[] krupnih (16)
-[] , pažljivih (18)
+[PART-WHOLE] očiju (19)
+[m-quality] krupnih (16)
+[m-state] , pažljivih (18)
 
-[] krupnih (16)
+[QUALITY] krupnih (16)
 
-[] pažljivih (18)
+[STATE] pažljivih (18)
 
 # sent_id = 498
 # text = Obe su ga posmatrale odozdo .
@@ -2219,10 +2220,10 @@
 
 # sent_id = 500
 # text = Bile su u salonu broda koji tone i posmatrale odozdo kroz sve tamniju vodu .
-1	Bile	biti	AUX	Vap-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	_
+1	Bile	biti	AUX	Vap-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 3	u	u	ADP	Sl	Case=Loc	4	case	_	_
-4	salonu	salon	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	1	obl	_	_
+4	salonu	salon	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	0	root	_	_
 5	broda	brod	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
 6	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	7	nsubj	_	_
 7	tone	toniti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
@@ -2234,9 +2235,6 @@
 13	tamniju	taman	ADJ	Agcfsay	Case=Acc|Definite=Def|Degree=Cmp|Gender=Fem|Number=Sing	14	amod	_	_
 14	vodu	voda	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	9	obl	_	_
 15	.	.	PUNCT	Z	_	1	punct	_	_
-
-[LOCATION] Bile (1)
-[location] u salonu broda koji tone (4)
 
 [CLASS] salonu (4)
 [m-whole] broda koji tone (5)

@@ -16,13 +16,13 @@
 14	.	.	PUNCT	Z	_	7	punct	_	_
 
 [CLASS] dan (7)
-[m-quality] vedar (3)
-[m-quality] i hladan (5)
+[m-quality || m-state] vedar (3)
+[m-quality || m-state] i hladan (5)
 [m-time] aprilski (6)
 
-[QUALITY] vedar (3)
+[QUALITY || STATE] vedar (3)
 
-[QUALITY] hladan (5)
+[QUALITY || STATE] hladan (5)
 
 [TIME] aprilski (6)
 
@@ -337,8 +337,8 @@
 4	vredelo	vredeti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 5	.	.	PUNCT	Z	_	4	punct	_	_
 
-[SEQUENCE] vredelo (4)
-[followed] Pokušati liftom (1)
+[SEQUENCE || MEANS] vredelo (4)
+[followed || means] Pokušati liftom (1)
 
 [SCENE-INIT] Pokušati (1)
 [x-means] liftom (2)
@@ -422,7 +422,7 @@
 [target-scene || follows] za Nedelju mržnje (10)
 
 [TIME >> EVENT] Nedelju (10)
-[has-time >> m-purpose] mržnje (11)
+[has-time >> m-topic] mržnje (11)
 
 [MESSAGE] mržnje (11)
 
@@ -616,7 +616,7 @@
 
 [IDENTIFICATION] njoj (14)
 
-[MESSAGE-INIT] posmatrača (16)
+[MESSAGE-INIT >> CLASS] posmatrača (16)
 
 [CLASS || LOCATION] ugla (19) # Winkel
 
@@ -650,7 +650,7 @@
 [SOCIAL-RELATION >> IDENTIFICATION] brat (8)
 [m-quality >> m-noncomp] Veliki (7)
 
-[QUALITY >> NONCOMP] Veliki (7)
+[QUALITY] Veliki (7)
 
 [IDENTIFICATION] te (9)
 
@@ -683,7 +683,7 @@
 
 [CLASS] stanu (2)
 
-[MESSAGE] glas (6)
+[SENDING] glas (6)
 [m-quality] milozvučan (5)
 
 [QUALITY] milozvučan (5)
@@ -741,7 +741,7 @@
 [has-location >> sent] Glas (1)
 [initial-location >> sender] iz pravougaone metalne ploče nalik na zamućeno ogledalo koja je sačinjavala deo površine zida na desnoj strani (7)
 
-[MESSAGE] Glas (1)
+[SENDING] Glas (1)
 
 [CLASS] ploče (7)
 [m-quality] pravougaone (5)
@@ -758,9 +758,9 @@
 [compared] ploče (7)
 
 [CLASS] ogledalo (11)
-[m-quality] zamućeno (10)
+[m-quality || m-state] zamućeno (10)
 
-[QUALITY] zamućeno (10)
+[QUALITY || STATE] zamućeno (10)
 
 [SCENE] sačinjavala (14)
 [participant] koja (12)
@@ -801,7 +801,7 @@
 12	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	14	expl	_	_
 13	reči	reč	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	14	nsubj	_	_
 14	mogle	moći	VERB	Vmp-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	8	advcl	_	_
-15	i	i	CCONJ	Cc	_	16	advmod	_	_
+15	i	i	CCONJ	Cc	_	16	discourse	_	_
 16	dalje	daleko	ADV	Rgc	Degree=Cmp	17	advmod	_	_
 17	razabrati	razabrati	VERB	Vmn	VerbForm=Inf	14	xcomp	_	_
 18	.	.	PUNCT	Z	_	2	punct	_	_
@@ -819,7 +819,7 @@
 [m-quantity] malo (7)
 [m-asserted] , mada su se reči mogle i dalje razabrati (14)
 
-[MESSAGE] glas (5)
+[SENDING] glas (5)
 
 [QUANTITY] malo (7)
 
@@ -834,11 +834,7 @@
 [topic] reči (13)
 
 [SCENE-CONTINUATION] dalje (16)
-[m-scene] i (15)
 [initial-scene] razabrati (17)
-
-[ACCOMPANIMENT >> CONCESSION] i (15)
-[accompanier >> conceded] dalje (16)
 
 # sent_id = 17
 # text = Instrument ( zvao se telekran ) se mogao utišati , ali nikada potpuno isključiti .
@@ -934,8 +930,8 @@
 
 [QUALITY] plavi (13)
 
-[CLASS] uniforma (17)
-[m-purpose || m-quality] partijska (16)
+[IDENTIFICATION] uniforma (17)
+[identified] partijska (16)
 
 [CLASS] partijska (16)
 
@@ -985,29 +981,28 @@
 
 [IDENTIFICATION] mu (2)
 [m-part] Kosa (1)
+[m-part] lice (8)
+[m-part] koža (14)
 
 [QUANTITY] veoma (5)
 
 [QUALITY] crveno (11)
 [has-quality] , lice (8)
-[m-scene] po prirodi (10)
-[?x-attribute] mu (2)
+[m-causer] po prirodi (10)
+[x-has-attribute] mu (2)
 
 [PART-WHOLE] lice (8)
-[whole] mu (2)
 
-[CAUSATION] prirodi (10)
-[result] crveno (11)
+[CLASS] prirodi (10)
 
 [STATE-INIT] ogrubela (15)
-[?x-attribute] koža (14)
+[has-state] koža (14)
 [x-causer] od oštrog sapuna (18)
 [x-causer] , tupih brijača (21)
 [x-causer] i hladnoće zime koja se upravo bila završila (23)
-[has-state] mu (2)
+[x-has-attribute] mu (2)
 
 [PART-WHOLE] koža (14)
-[whole] mu (2)
 
 [CLASS] sapuna (18)
 [m-quality] oštrog (17)
@@ -1015,12 +1010,12 @@
 [QUALITY] oštrog (17)
 
 [CLASS] brijača (21)
-[m-quality] tupih (20)
+[m-quality || m-state] tupih (20)
 
-[QUALITY] tupih (20)
+[QUALITY || STATE] tupih (20)
 
 [STATE || QUALITY] hladnoće (23)
-[x-causer || has-quality] zime koja se upravo bila završila (24)
+[m-causer || has-quality] zime koja se upravo bila završila (24)
 
 [CLASS || TIME] zime (24)
 [m-scene] koja se upravo bila završila (29)
@@ -1191,7 +1186,7 @@
 [PART-WHOLE] lice (8)
 [m-part] crnobrko (7)
 
-[PART-WHOLE] crnobrko (7)
+[PART-WHOLE >> QUALITY] crnobrko (7)
 
 # sent_id = 23
 # text = Jedno se nalazilo na fasadi pravo prekoputa .
@@ -1251,7 +1246,7 @@
 [SOCIAL-RELATION >> IDENTIFICATION] brat (3)
 [m-quality >> m-noncomp] Veliki (2)
 
-[QUALITY >> NONCOMP] Veliki (2)
+[QUALITY] Veliki (2)
 
 [IDENTIFICATION] te (4)
 
@@ -1400,10 +1395,10 @@
 
 [TIME] trenutak (12)
 
-[?CLASS] muva (14)
-[m-noncomp] zunzara (15)
+[CLASS] muva (14)
+[m-sent >> m-noncomp] zunzara (15)
 
-[NONCOMP] zunzara (15)
+[SENDING] zunzara (15)
 
 [LOCATION-DEINIT] odlete (19)
 [m-scene] ponovo (18)
@@ -1430,20 +1425,20 @@
 11	prozor	prozor	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obl	_	_
 12	.	.	PUNCT	Z	_	5	punct	_	_
 
-[PART-WHOLE || UNANCHORED-MOTION] patrola (5)
-[?x-has-class || x-identified] To (1)
-[whole || in-motion] policijska (4)
+[UNANCHORED-MOTION >> PART-WHOLE >> CLASS] patrola (5)
+[x-has-class || x-identified >> has-class] To (1)
+[in-motion >> whole >> m-quality] policijska (4)
 [m-scene] koja je špijunirala ljude kroz prozor (8)
 
 [IDENTIFICATION] To (1)
 
-[CLASS] policijska (4)
+[CLASS >> QUALITY] policijska (4)
 
 [MESSAGE-INIT] špijunirala (8)
-[x-experiencer || x-means] koja (6)
+[x-experiencer] koja (6)
 [topic] ljude (9)
 [m-situator >> m-means] kroz prozor (11)
-[x-experiencer || x-means] patrola (5)
+[x-experiencer] patrola (5)
 
 [IDENTIFICATION] koja (6)
 
@@ -1453,7 +1448,7 @@
 
 # sent_id = 28
 # text = No patrole nisu bile strašne .
-1	No	no	CCONJ	Cc	_	5	advmod	_	_
+1	No	no	CCONJ	Cc	_	5	discourse	_	_
 2	patrole	patrola	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	5	nsubj	_	_
 3	nisu	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	5	aux	_	_
 4	bile	biti	AUX	Vap-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	5	cop	_	_
@@ -1461,11 +1456,7 @@
 6	.	.	PUNCT	Z	_	5	punct	_	_
 
 [QUALITY] strašne (5)
-[m-scene] No (1)
 [has-quality] patrole (2)
-
-[CONCESSION] No (1)
-[asserted] strašne (5)
 
 [PART-WHOLE || UNANCHORED-MOTION] patrole (2)
 
@@ -1484,7 +1475,7 @@
 
 [CLASS] Policija (5)
 [m-mode] samo (4)
-[m-purpose] misli (6)
+[m-purpose || m-topic] misli (6)
 
 [MODE] samo (4)
 
@@ -1500,7 +1491,7 @@
 6	sa	sa	ADP	Sg	Case=Gen	7	case	_	_
 7	telekrana	telekran	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
 8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
-9	i	i	CCONJ	Cc	_	10	advmod	_	_
+9	i	i	CCONJ	Cc	_	10	discourse	_	_
 10	dalje	daleko	ADV	Rgc	Degree=Cmp	11	advmod	_	_
 11	blebetao	blebetati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 12	o	o	ADP	Sl	Case=Loc	14	case	_	_
@@ -1525,17 +1516,13 @@
 
 [IDENTIFICATION] Vinstonovih (2)
 
-[MESSAGE] glas (5)
-[m-sender] sa telekrana (7)
+[SENDING] glas (5)
+[sender] sa telekrana (7)
 
 [CLASS] telekrana (7)
 
 [SCENE-CONTINUATION] dalje (10)
-[m-scene] i (9)
 [initial-scene] blebetao (11)
-
-[ACCOMPANIMENT >> CONCESSION] i (9)
-[accompanier >> conceded] dalje (10)
 
 [CLASS] gvožđu (14)
 [m-state] sirovom (13)
@@ -1780,7 +1767,7 @@
 [MESSAGE] sistemu (8)
 
 [CLASS] Policija (10)
-[m-purpose] misli (11)
+[m-purpose || m-topic] misli (11)
 
 [MESSAGE] misli (11)
 
@@ -1854,7 +1841,7 @@
 
 [MESSAGE-INIT] uključivati (9)
 [x-means] na svačiji kanal (12)
-[m-condition] kad god zaželi (15)
+[m-condition || m-followed] kad god zaželi (15)
 
 [SENDING] kanal (12)
 [m-possessor] svačiji (11)
@@ -1947,15 +1934,15 @@
 6	leđima	leđa	NOUN	Ncnpi	Case=Ins|Gender=Neut|Number=Plur	4	nmod	_	_
 7	.	.	PUNCT	Z	_	3	punct	_	_
 
-[SCENE] stajao (3)
-[participant] Vinston (1)
-[scene] okrenut telekranu leđima (4)
+[SCENE || LOCATION] stajao (3)
+[participant || has-location] Vinston (1)
+[scene || location] okrenut telekranu leđima (4)
 
 [IDENTIFICATION] Vinston (1)
 
 [LOCATION] okrenut (4)
 [location] telekranu (5)
-[x-attribute] leđima (6)
+[x-attribute || has-location] leđima (6)
 [has-location] Vinston (1)
 
 [CLASS] telekranu (5)
@@ -1987,10 +1974,10 @@
 20	.	.	PUNCT	Z	_	4	punct	_	_
 
 [QUALITY] bezbednije (4)
-[has-quality] Tako (1)
+[m-quality || has-quality] Tako (1)
 [m-conceded] ; iako i leđa , kao što je dobro znao , mogu da otkriju dosta (16)
 
-[IDENTIFICATION] Tako (1)
+[IDENTIFICATION || QUALITY] Tako (1)
 
 [SCENE-POSSIBILITY] mogu (16)
 [participant] leđa (8)
@@ -2002,7 +1989,6 @@
 [MESSAGE] znao (14)
 [m-quality] dobro (13)
 [content] mogu (16)
-[?x-experiencer] je (12) # manuell hinzuzufügen
 
 [QUALITY] dobro (13)
 
@@ -2036,12 +2022,12 @@
 20	predelom	predel	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	13	obl	_	_
 21	.	.	PUNCT	Z	_	13	punct	_	_
 
-[LOCATION-DEINIT >> QUALITY] uzdizalo (13)
+[LOCATION-DEINIT >> LOCATION] uzdizalo (13)
 [m-scene] Na kilometar odatle (3)
-[has-location >> has-quality] Ministarstvo istine , ustanova u kojoj je radio , (4)
-[m-quantity >> quality] ogromno (15)
+[has-location] Ministarstvo istine , ustanova u kojoj je radio , (4)
+[m-depictive] ogromno (15)
 [m-depictive] i belo (17)
-[initial-location >> m-location] nad prljavim predelom (20)
+[initial-location >> location] nad prljavim predelom (20)
 
 [LOCATION] odatle (3)
 [m-quantity] Na kilometar (2)
@@ -2064,7 +2050,8 @@
 
 [IDENTIFICATION] kojoj (9)
 
-[QUANTITY >> QUALITY] ogromno (15)
+[QUALITY] ogromno (15)
+[has-quality] Ministarstvo istine , ustanova u kojoj je radio , (4)
 
 [QUALITY] belo (17)
 [has-quality] Ministarstvo istine , ustanova u kojoj je radio , (4)
@@ -2137,11 +2124,11 @@
 [RANK] treće (18)
 [x-followed] po stanovništvu provincije Okeanije (20)
 
-[SOCIAL-RELATION || LOCATION] stanovništvu (20)
-[social-relation || location] provincije Okeanije (21)
+[LOCATION >> CLASS] stanovništvu (20)
+[location >> m-location] provincije Okeanije (21)
 
-[CLASS] provincije (21)
-[m-whole] Okeanije (22)
+[PART-WHOLE >> CLASS] provincije (21)
+[part >> has-class] Okeanije (22)
 
 [IDENTIFICATION] Okeanije (22)
 
@@ -2175,7 +2162,7 @@
 [IDENTIFICATION] On (1)
 
 [LOCATION-DEINIT >> SCENE-INIT] iscedi (4)
-[has-location >> scene] kakvu uspomenu iz detinjstva koja bi mu rekla da li je London uvek bio takav (6)
+[has-location >> target-scene] kakvu uspomenu iz detinjstva koja bi mu rekla da li je London uvek bio takav (6)
 [x-causer >> participant] On (1)
 
 [MESSAGE] uspomenu (6)
@@ -2188,7 +2175,7 @@
 [MESSAGE-INIT] rekla (12)
 [x-sender] koja (9)
 [x-experiencer] mu (11)
-[topic] da li je London uvek bio takav (19)
+[target-content] da li je London uvek bio takav (19)
 [x-sender] uspomenu (6)
 
 [IDENTIFICATION] koja (9)
@@ -2534,9 +2521,9 @@
 [reference] od svega ostalog na vidiku (14)
 
 [CLASS] Ministarstvo --- u Novogovoru : Ministin --- (1)
-[m-purpose] istine (2)
+[m-purpose || m-topic] istine (2)
 
-[CLASS >> NONCOMP] istine (2)
+[CLASS] istine (2)
 
 [IDENTIFICATION] Ministin (7)
 [m-scene] u Novogovoru (5)
@@ -2583,7 +2570,7 @@
 24	.	.	PUNCT	Z	_	6	punct	_	_
 
 [CLASS] građevina (6)
-[x-identified] To (1)
+[x-identified || has-class] To (1)
 [m-quality] ogromna (4)
 [m-scene] piramidalna (5)
 [m-material] od svetlucavo belog betona (10)
@@ -2605,12 +2592,12 @@
 
 [QUALITY] svetlucavo (8)
 
-[LOCATION-INIT >> QUALITY] uzdizala (13)
-[has-location >> has-quality] koja (11)
+[LOCATION-INIT >> LOCATION] uzdizala (13)
+[has-location >> has-location] koja (11)
 [m-depictive] , terasa za terasom (15)
 [m-quantity] , tri stotine metara (21)
-[target-location >> m-quality] u nebo (23)
-[has-location >> has-quality] građevina (6)
+[target-location >> m-location] u nebo (23)
+[has-location >> has-location] građevina (6)
 
 [CLASS] koja (11)
 [m-part] , terasa za terasom (15)
@@ -2760,7 +2747,7 @@
 [part] i odgovarajući broj ogranaka pod zemljom (17)
 
 [CLASS] Ministarstvo (1)
-[m-purpose] istine (2)
+[m-purpose || m-topic] istine (2)
 
 [CLASS] istine (2)
 

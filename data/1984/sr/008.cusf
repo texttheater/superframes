@@ -40,7 +40,7 @@
 [SOCIAL-RELATION] neprijatelja (12)
 [has-social-relation] države (13)
 
-[?CLASS] države (13)
+[CLASS] države (13)
 
 [SOCIAL-RELATION >> CLASS] stranaca (16)
 
@@ -79,12 +79,12 @@
 [topic] svoje sopstvene dece (14)
 
 [CLASS] ljudi (7)
-[m-state] iznad tridesete godine (10)
+[m-time >> m-state] iznad tridesete godine (10)
 
 [TIME] godine (10)
-[?m-rank >> m-quantity] tridesete (9)
+[m-rank] tridesete (9)
 
-[?RANK >> QUANTITY] tridesete (9)
+[RANK] tridesete (9)
 
 [SOCIAL-RELATION] dece (14)
 [m-mode] sopstvene (13)
@@ -399,60 +399,64 @@
 14	prolazio	prolaziti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	advcl	_	_
 15	pored	pored	ADP	Sg	Case=Gen	16	case	_	_
 16	njega	on	PRON	Pp3msg	Case=Gen|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	obl	_	_
-17	:	:	PUNCT	Z	_	19	punct	_	_
+17	:	:	PUNCT	Z	_	10	punct	_	_
 18	"	"	PUNCT	Z	_	19	punct	_	_
 19	Srešćemo	sreštati	VERB	Vmf1p	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	10	ccomp	_	_
 20	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	19	expl	_	_
 21	tamo	tamo	ADV	Rgp	Degree=Pos|PronType=Dem	19	advmod	_	_
 22	gde	gde	ADV	Rgp	Degree=Pos|PronType=Int,Rel	23	advmod	_	_
-23	nema	nemati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	_	_
+23	nema	nemati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	_	_
 24	mraka	mrak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	23	nsubj	_	_
-25	.	.	PUNCT	Z	_	10	punct	_	_
-26	"	"	PUNCT	Z	_	10	punct	_	_
+25	.	.	PUNCT	Z	_	19	punct	_	_
+26	"	"	PUNCT	Z	_	19	punct	_	_
 
-[] rekao (10)
-[] Tada (1)
-[] mu (2)
-[] neko ko je sedeo po strani (4)
-[] dok je Vinston prolazio pored njega (14)
-[] : " Srešćemo se tamo gde nema mraka (19)
+[MESSAGE-INIT] rekao (10)
+[m-time] Tada (1)
+[x-experiencer] mu (2)
+[x-sender] neko ko je sedeo po strani (4)
+[m-accompanied] dok je Vinston prolazio pored njega (14)
+[target-content] " Srešćemo se tamo gde nema mraka . " (19)
 
-[] Tada (1)
+[TIME] Tada (1)
 
-[] mu (2)
+[IDENTIFICATION] mu (2)
 
-[] neko (4)
-[] ko je sedeo po strani (7)
+[CLASS] neko (4)
+[m-scene] ko je sedeo po strani (7)
 
-[] sedeo (7)
-[] ko (5)
-[] po strani (9)
+[LOCATION] sedeo (7)
+[has-location] ko (5)
+[location] po strani (9)
+[has-location] neko (4)
 
-[] ko (5)
+[IDENTIFICATION] ko (5)
 
-[] strani (9)
+[LOCATION] strani (9)
 
-[] prolazio (14)
-[] Vinston (13)
-[] pored njega (16)
+[UNANCHORED-MOTION] prolazio (14)
+[in-motion] Vinston (13)
+[transitory-location] pored njega (16)
 
-[] Vinston (13)
+[IDENTIFICATION] Vinston (13)
 
-[] njega (16)
+[IDENTIFICATION] njega (16)
 
-[] Srešćemo (19)
-[] tamo (21)
-[] gde nema mraka (23)
+[SOCIAL-RELATION-INIT] Srešćemo (19)
+[x-location] tamo gde nema mraka (21)
 
-[] tamo (21)
+[LOCATION] tamo (21)
+[m-scene] gde nema mraka (23)
 
-[] nema (23)
-[] gde (22)
-[] mraka (24)
+[SCENE-NEG || EXISTENCE-NEG] nema (23)
+[participant || m-location] gde (22)
+[scene || exists] mraka (24)
+[participant || m-location] tamo (21)
 
-[] gde (22)
+[LOCATION] gde (22)
 
-[] mraka (24)
+[STATE || CLASS] mraka (24)
+[has-state] gde (22)
+[has-state] tamo (21)
 
 # sent_id = 410
 # text = To je bilo rečeno vrlo tiho , skoro uzgred --- kao konstatacija , ne kao naređenje .
@@ -690,20 +694,20 @@
 
 # sent_id = 415
 # text = No bilo kako bilo , prepoznao ga jeste .
-1	No	no	CCONJ	Cc	_	4	discourse	_	_
-2	bilo	bilo	AUX	Vap-sn	_	4	discourse	_	_
-3	kako	kako	ADV	Rgp	Degree=Pos|PronType=Int,Rel	4	advmod	_	_
-4	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+1	No	no	CCONJ	Cc	_	2	discourse	_	_
+2	bilo	bilo	AUX	Vap-sn	_	0	root	_	_
+3	kako	kako	ADV	Rgp	Degree=Pos|PronType=Int,Rel	4	mark	_	_
+4	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
 5	,	,	PUNCT	Z	_	6	punct	_	_
-6	prepoznao	prepoznati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	parataxis	_	_
+6	prepoznao	prepoznati	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	2	parataxis	_	_
 7	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
 8	jeste	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-9	.	.	PUNCT	Z	_	4	punct	_	_
+9	.	.	PUNCT	Z	_	2	punct	_	_
 
-[?SITUATION] bilo (4)
-[m-quality] kako (3)
+[SITUATION] bilo (2)
+[m-reference] kako bilo (4)
 
-[QUALITY] kako (3)
+[SITUATION] bilo (4)
 
 [MESSAGE] prepoznao (6)
 [topic] ga (7)
@@ -725,8 +729,8 @@
 11	.	.	PUNCT	Z	_	4	punct	_	_
 
 [IDENTIFICATION] taj (4)
-[?identified] O'Brajen (1)
-[?identifier] koji mu se obratio iz mraka (8)
+[identified] O'Brajen (1)
+[m-scene] koji mu se obratio iz mraka (8)
 
 [IDENTIFICATION] O'Brajen (1)
 
@@ -734,6 +738,7 @@
 [x-experiencer] koji (5)
 [topic] mu (6)
 [m-location || m-situator] iz mraka (10)
+[x-experiencer] taj (4)
 
 [IDENTIFICATION] koji (5)
 
@@ -841,10 +846,10 @@
 
 [IDENTIFICATION] njih (2)
 
-[?SITUATION >> MESSAGE] veza (5)
-[situator >> content] razumevanja (6)
+[SOCIAL-RELATION] veza (5)
+[m-identifier] razumevanja (6)
 [m-quality] , važnija nego simpatija ili osećanje pripadnosti istoj stranci (8)
-[theme >> x-experiencer] Između njih (2)
+[has-social-relation] Između njih (2)
 
 [MESSAGE] razumevanja (6)
 
@@ -993,16 +998,16 @@
 10	vazduhom	vazduh	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	8	obl	_	_
 11	.	.	PUNCT	Z	_	8	punct	_	_
 
-[?UNANCHORED-MOTION >> MESSAGE] proplovi (8)
+[UNANCHORED-MOTION >> MESSAGE] proplovi (8)
 [in-motion >> topic] Trubni znak , lep i jasan , (2)
-[transitory-location >> x-location] ustajalim vazduhom (10) # Ana: Lokativ?
+[transitory-location >> x-location] ustajalim vazduhom (10)
 
 [MESSAGE] znak (2)
 [x-sender] Trubni (1)
 [m-quality] , lep , (4)
 [m-quality] i jasan (6)
 
-[CLASS] Trubni (1) # Ana: adjektivisch?
+[CLASS] Trubni (1) # wahrs. Nomen
 
 [QUALITY] lep (4)
 
@@ -1073,7 +1078,7 @@
 [LOCATION] fronta (9)
 [location] malabarskog (8)
 
-[?SOCIAL-RELATION >> LOCATION] malabarskog (8)
+[SOCIAL-RELATION] malabarskog (8)
 
 # sent_id = 426
 # text = Naše snage u Južnoj Indiji postigle su veličanstvenu pobedu .
@@ -1098,11 +1103,11 @@
 [IDENTIFICATION] Indiji (5)
 [m-location >> m-noncomp] Južnoj (4)
 
-[LOCATION >> NONCOMP] Južnoj (4)
+[LOCATION] Južnoj (4)
 
-[SOCIAL-RELATION] pobedu (9)
+[COMPARISON] pobedu (9)
 [m-quality] veličanstvenu (8)
-[has-social-relation] Naše snage u Južnoj Indiji (2)
+[compared] Naše snage u Južnoj Indiji (2)
 
 [QUALITY] veličanstvenu (8)
 
@@ -1140,7 +1145,7 @@
 [participant >> initial-scene] rat (17)
 [target-scene >> m-noncomp] kraju (18)
 
-[SOCIAL-RELATION] pobeda (8)
+[COMPARISON-INIT] pobeda (8)
 [m-scene] , o kojoj sledi izveštaj , (12)
 
 [MESSAGE] sledi (12)
@@ -1166,9 +1171,9 @@
 3	...	...	PUNCT	Z	_	2	punct	_	_
 
 [MESSAGE] izveštaja (2)
-[] Evo (1)
+[m-location >> m-mode] Evo (1)
 
-[] Evo (1)
+[LOCATION >> MODE] Evo (1)
 
 # sent_id = 429
 # text = Loše vesti , pomisli Vinston .
@@ -1485,7 +1490,7 @@
 # text = Dan je i dalje bio vedar i hladan .
 1	Dan	dan	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
 2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-3	i	i	CCONJ	Cc	_	4	advmod	_	_
+3	i	i	CCONJ	Cc	_	4	discourse	_	_
 4	dalje	daleko	ADV	Rgc	Degree=Cmp	6	advmod	_	_
 5	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	cop	_	_
 6	vedar	vedar	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
@@ -1500,10 +1505,7 @@
 [TIME] Dan (1)
 
 [SCENE-CONTINUATION] dalje (4)
-[m-noncomp] i (3)
 [initial-scene] vedar (6)
-
-[NONCOMP] i (3)
 
 [QUALITY] hladan (8)
 [has-quality] Dan (1)
@@ -1539,7 +1541,7 @@
 [CLASS] bomba (6)
 [m-quality] raketna (5)
 
-[?CLASS] raketna (5)
+[CLASS >> QUALITY] raketna (5)
 
 [MESSAGE] treskom (9)
 [m-quality] tupim (8)
@@ -1567,17 +1569,18 @@
 6	na	na	ADP	Sa	Case=Acc	7	case	_	_
 7	London	London	PROPN	Npmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obl	_	_
 8	padalo	padati	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
-9	dvadeset	dvadeset	NUM	Mlc	NumType=Card	12	nummod	_	_
+9	dvadeset	dvadeset	NUM	Mlc	NumType=Card	8	nsubj	_	_
 10	do	do	ADP	Sg	Case=Gen	9	flat	_	_
 11	trideset	trideset	NUM	Mlc	NumType=Card	9	flat	_	_
 12	nedeljno	nedeljno	ADV	Rgp	Degree=Pos	8	advmod	_	_
 13	.	.	PUNCT	Z	_	8	punct	_	_
 
-[LOCATION-CHANGE] padalo (8)
+[LOCATION-INIT] padalo (8)
 [m-time] U to vreme (3)
 [has-location] ih (4)
 [target-location] na London (7)
-[?] dvadeset do trideset nedeljno (12)
+[m-quantity] dvadeset do trideset (9)
+[m-time] nedeljno (12)
 
 [TIME] vreme (3)
 
@@ -1642,13 +1645,13 @@
 
 [SCENE-INIT] pojavljivala (21)
 [target-scene] reč Englsoc (17)
-[?m-condition] na mahove (20)
+[m-accompanied || m-condition] na mahove (20)
 
 [MESSAGE] reč Englsoc (17)
 
 [IDENTIFICATION] Englsoc (18)
 
-[] mahove (20)
+[CLASS || UNANCHORED-MOTION] mahove (20) # "Windböe"
 
 [SCENE-DEINIT] nestajala (23)
 [initial-scene] reč Englsoc (17)
@@ -1746,11 +1749,11 @@
 [m-quality || m-theme] čudovišnom (15)
 [m-scene] u kome je on sam bio čudovište (23)
 
-[?QUALITY || CLASS] čudovišnom (15)
+[CLASS >> QUALITY] čudovišnom (15)
 
 [CLASS] čudovište (23)
 [m-location || m-situator] u kome (18)
-[?has-class || identified] on (20)
+[has-class] on (20)
 [m-mode] sam (21)
 [m-location || m-situator] svetu (16)
 
