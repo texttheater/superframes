@@ -34,15 +34,15 @@
 [QUALITY] ogromne (5)
 
 [MESSAGE-INIT-NEG] tajanstvene (6)
-[topic] vojske , podzemne mreže zaverenika koji su se zarekli da obore državni poredak (7)
+[target-content] vojske , podzemne mreže zaverenika koji su se zarekli da obore državni poredak (7)
 
-[PART-WHOLE] mreže (10)
+[PART-WHOLE || SOCIAL-RELATION] mreže (10)
 [m-location >> m-quality] podzemne (9)
-[part] zaverenika koji su se zarekli da obore državni poredak (11)
+[part || has-social-relation] zaverenika koji su se zarekli da obore državni poredak (11)
 
 [LOCATION >> QUALITY] podzemne (9)
 
-[MESSAGE] zaverenika (11)
+[MESSAGE >> CLASS] zaverenika (11)
 [m-scene] koji su se zarekli da obore državni poredak (15)
 
 [MESSAGE-INIT] zarekli (15)
@@ -418,7 +418,7 @@
 
 [UNANCHORED-MOTION || STATE-INIT] otvarala (15)
 [in-motion || has-state] usta (11)
-[m-depictive] joj (13)
+[x-has-attribute] joj (13)
 [m-reference] kao u ribe na suvu (20)
 
 [PART-WHOLE] usta (11)
@@ -430,7 +430,7 @@
 [in-motion || has-state] usta (11)
 
 [CLASS] ribe (20)
-[m-location] na suvu (22)
+[m-location || m-situator] na suvu (22)
 
 [STATE] suvu (22)
 
@@ -500,7 +500,7 @@
 [QUANTITY] veoma (4)
 
 [LOCATION-INIT] nadimale (12)
-[m-depictive] mu (8)
+[x-has-attribute] mu (8)
 [has-location] snažne grudi (11)
 
 [IDENTIFICATION] mu (8)
@@ -711,7 +711,7 @@
 
 [MODE] sam (10)
 
-[CLASS] ostalima (14)
+[COMPARISON >> CLASS] ostalima (14)
 [m-scene] zajedno (12)
 
 [ACCOMPANIMENT] zajedno (12)
@@ -719,7 +719,7 @@
 
 [HITTING] udara (17)
 [m-quality] žestoko (16)
-[x-attribute] petom (18)
+[m-means >> x-attribute] petom (18)
 [hit] u prečagu svoje stolice (20)
 [hitting] Vinston (5)
 
@@ -1154,8 +1154,8 @@
 16	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	obl	_	_
 17	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	18	expl	_	_
 18	činilo	činiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
-19	da	da	SCONJ	Cs	_	21	mark	_	_
-20	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
+19	da	da	SCONJ	Cs	_	27	mark	_	_
+20	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
 21	sve	sve	DET	Pi-nsn	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	27	nsubj	_	_
 22	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	24	nsubj	_	_
 23	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	24	expl	_	_
@@ -1197,7 +1197,7 @@
 [IDENTIFICATION] mu (16)
 
 [MESSAGE] istina (27)
-[topic] da je sve što se kaže za Goldštajna (21)
+[topic] sve što se kaže za Goldštajna (21)
 
 [CLASS] sve (21)
 [m-scene] što se kaže za Goldštajna (24)
@@ -1424,12 +1424,12 @@
 
 [POSSESSION] usmeravati (11)
 [m-time] , u nekim trenucima , (8)
-[m-state] svesno (10)
+[m-quality] svesno (10)
 [possessed] svoju mržnju (13)
 
 [TIME] trenucima (8)
 
-[STATE] svesno (10)
+[STATE >> QUALITY] svesno (10)
 
 [MESSAGE] mržnju (13)
 
@@ -1550,7 +1550,7 @@
 [m-quality] Žive (1)
 [m-quality] , divne (3)
 
-[STATE >> QUALITY] Žive (1)
+[EVENT >> QUALITY] Žive (1)
 
 [QUALITY] divne (3)
 
@@ -1819,13 +1819,13 @@
 4	vrhunca	vrhunac	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	obl	_	_
 5	.	.	PUNCT	Z	_	2	punct	_	_
 
-[QUALITY-CHANGE] poraste (2)
+[QUALITY-INIT] poraste (2)
 [has-quality] Mržnja (1)
 [target-quality] do vrhunca (4)
 
 [MESSAGE] Mržnja (1)
 
-[QUALITY] vrhunca (4)
+[QUALITY || PART-WHOLE] vrhunca (4)
 
 # sent_id = 232
 # text = Goldštajnov glas se pretvorio u istinsko ovčje blejanje ; za trenutak mu se i lice pretvori u ovčju glavu .
@@ -1883,7 +1883,7 @@
 [PART-WHOLE] glavu (19)
 [whole] ovčju (18)
 
-[CLASS >> QUALITY] ovčju (18)
+[CLASS] ovčju (18)
 
 # sent_id = 233
 # text = Potom se ovčja glava pretopi u figuru evroazijskog vojnika koji se približavao , ogroman i grozan , s puškomitraljezom koji je neprekidno štektao , sve dok se nije učinilo kao da silazi sa površine ekrana u salu , tako da se neki iz prvog reda odista trgoše i pribiše uz naslone svojih stolica .
@@ -2531,10 +2531,10 @@
 
 [UNANCHORED-MOTION >> QUALITY] drhtavim (2)
 
-[MESSAGE] zvučao (6)
-[x-sender] koji (4)
-[x-reference] kao " Spasioče moj !, (9)
-[x-sender] mrmorom (3)
+[COMPARISON] zvučao (6)
+[compared] koji (4)
+[reference] kao " Spasioče moj !, (9)
+[compared] mrmorom (3)
 
 [IDENTIFICATION] koji (4)
 
@@ -2827,7 +2827,7 @@
 [MESSAGE] emocije (10)
 [m-scene] nesavladljive (9)
 
-[POSSESSION-NEG] nesavladljive (9)
+[POSSESSION-POSSIBILITY-NEG] nesavladljive (9)
 [possessed] emocije (10)
 
 # sent_id = 246
@@ -3031,7 +3031,7 @@
 [m-scene] zajedno (6)
 
 [ACCOMPANIMENT] zajedno (6)
-[accompanier] ostalima (8)
+[accompanied] ostalima (8)
 
 [SCENE-POSSIBILITY] moglo (13)
 [scene] drukčije (10)
@@ -3077,7 +3077,7 @@
 [ACTIVITY] činiti (7)
 [activity] što i svi ostali (8)
 
-[ACTIVITY] što (8)
+[IDENTIFICATION] što (8)
 [m-reference] i svi ostali (10)
 
 [QUANTITY] svi (10)
