@@ -245,7 +245,7 @@ class Frame:
                 ok = False
                 warnings += 1
             # Check for missing depictive backlinks
-            if arg.label == 'm-depictive':
+            if arg.label in ('m-depictive', 'x-depictive'):
                 arg_trees = [
                     tree_for_token(a.head, tree)
                     for a in self.args
