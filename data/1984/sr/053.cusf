@@ -1,0 +1,977 @@
+# generator = UDPipe 2, https://lindat.mff.cuni.cz/services/udpipe
+# udpipe_model = serbian-set-ud-2.15-241121
+# udpipe_model_licence = CC BY-NC-SA
+# sent_id = 2651
+# text = To je bilo beznadežno čak i kao san .
+1	To	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	beznadežno	beznadežan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	_
+5	čak	čak	PART	Qo	_	4	discourse	_	_
+6	i	i	CCONJ	Cc	_	8	discourse	_	_
+7	kao	kao	SCONJ	Cs	_	8	case	_	_
+8	san	san	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	obl	_	_
+9	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2652
+# text = " Kakva ti je bila žena ? "
+1	"	"	PUNCT	Z	_	6	punct	_	_
+2	Kakva	kakav	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	6	det	_	_
+3	ti	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	nsubj	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	žena	žena	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+7	?	?	PUNCT	Z	_	6	punct	_	_
+8	"	"	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2653
+# text = upita Džulija .
+1	upita	upiti	VERB	Agpfsny	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	Džulija	Džulija	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	_
+3	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 2654
+# text = " Bila je --- da li znaš onu reč iz Novogovora : dobromislen ? "
+1	"	"	PUNCT	Z	_	2	punct	_	_
+2	Bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+4	---	---	PUNCT	Z	_	7	punct	_	_
+5	da	da	SCONJ	Cs	_	7	mark	_	_
+6	li	li	PART	Qq	_	5	fixed	_	_
+7	znaš	znati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+8	onu	onaj	DET	Pd-fsa	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_
+9	reč	reč	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
+10	iz	iz	ADP	Sg	Case=Gen	11	case	_	_
+11	Novogovora	novogovor	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+12	:	:	PUNCT	Z	_	13	punct	_	_
+13	dobromislen	dobromislen	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	9	acl	_	_
+14	?	?	PUNCT	Z	_	7	punct	_	_
+15	"	"	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 2655
+# text = " Što znači : po prirodi ispravan , nesposoban da pomisli lošu misao ? "
+1	"	"	PUNCT	Z	_	3	punct	_	_
+2	Što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	3	nsubj	_	_
+3	znači	značiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	Z	_	3	punct	_	_
+5	po	po	ADP	Sl	Case=Loc	6	case	_	_
+6	prirodi	priroda	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	_
+7	ispravan	ispravan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	3	ccomp	_	_
+8	,	,	PUNCT	Z	_	9	punct	_	_
+9	nesposoban	nesposoban	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	7	conj	_	_
+10	da	da	SCONJ	Cs	_	11	mark	_	_
+11	pomisli	pomisliti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	xcomp	_	_
+12	lošu	loš	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	misao	misao	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	11	obj	_	_
+14	?	?	PUNCT	Z	_	3	punct	_	_
+15	"	"	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 2656
+# text = " Ne znam reč , ali takve ljude znam dobro . "
+1	"	"	PUNCT	Z	_	3	punct	_	_
+2	Ne	ne	PART	Qz	Polarity=Neg	3	advmod	_	_
+3	znam	znati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	reč	reč	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	3	obj	_	_
+5	,	,	PUNCT	Z	_	9	punct	_	_
+6	ali	ali	CCONJ	Cc	_	9	cc	_	_
+7	takve	takav	DET	Pd-mpa	Case=Acc|Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_
+8	ljude	čovek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	9	nsubj	_	_
+9	znam	znati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_
+10	dobro	dobro	ADV	Rgp	Degree=Pos	9	advmod	_	_
+11	.	.	PUNCT	Z	_	3	punct	_	_
+12	"	"	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2657
+# text = On joj poče pričati o svom braku , no ona je začudo znala kako su suštinske stvari u osnovi izgledale .
+1	On	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	joj	on	PRON	Pp3fsd	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+3	poče	poći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	pričati	pričati	VERB	Vmn	VerbForm=Inf	3	xcomp	_	_
+5	o	o	ADP	Sl	Case=Loc	7	case	_	_
+6	svom	svoj	DET	Px-msl	Case=Loc|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	7	det	_	_
+7	braku	brak	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	4	obl	_	_
+8	,	,	PUNCT	Z	_	13	punct	_	_
+9	no	no	CCONJ	Cc	_	13	cc	_	_
+10	ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+11	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+12	začudo	začudo	ADV	Rgp	Degree=Pos	13	advmod	_	_
+13	znala	znati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+14	kako	kako	SCONJ	Cs	_	20	mark	_	_
+15	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
+16	suštinske	suštinski	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	17	amod	_	_
+17	stvari	stvar	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	20	nsubj	_	_
+18	u	u	ADP	Sl	Case=Loc	19	case	_	_
+19	osnovi	osnova	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	17	nmod	_	_
+20	izgledale	izgledati	VERB	Vmp-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	13	ccomp	_	_
+21	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2658
+# text = Opisala mu je , mada nikad nije videla ni osetila , kako se Ketrinino telo koči i kruti čim bi je dotakao ; kako se činilo da ga gura od sebe čak i onda kad ga je čvrsto grlila .
+1	Opisala	opisati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+2	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	obl	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	_
+4	,	,	PUNCT	Z	_	8	punct	_	_
+5	mada	mada	SCONJ	Cs	_	8	mark	_	_
+6	nikad	nikad	ADV	Rgp	Degree=Pos|PronType=Neg	8	advmod	_	_
+7	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	videla	videti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	1	advcl	_	_
+9	ni	ni	PART	Qo	_	10	cc	_	_
+10	osetila	osetiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
+11	,	,	PUNCT	Z	_	8	punct	_	_
+12	kako	kako	SCONJ	Cs	_	16	mark	_	_
+13	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	16	expl	_	_
+14	Ketrinino	Ketrinin	ADJ	Aspnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|Poss=Yes	15	amod	_	_
+15	telo	telo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	16	nsubj	_	_
+16	koči	kočiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+17	i	i	CCONJ	Cc	_	18	cc	_	_
+18	kruti	krutiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_
+19	čim	čim	SCONJ	Cs	_	22	mark	_	_
+20	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	_
+21	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+22	dotakao	dotaći	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	16	advcl	_	_
+23	;	;	PUNCT	Z	_	26	punct	_	_
+24	kako	kako	SCONJ	Cs	_	26	mark	_	_
+25	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	26	expl	_	_
+26	činilo	činiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	16	conj	_	_
+27	da	da	SCONJ	Cs	_	29	mark	_	_
+28	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	obj	_	_
+29	gura	gurati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	csubj	_	_
+30	od	od	ADP	Sg	Case=Gen	31	case	_	_
+31	sebe	sebe	PRON	Px--sg	Case=Gen|PronType=Prs|Reflex=Yes	29	obl	_	_
+32	čak	čak	ADV	Rgp	Degree=Pos	39	advmod	_	_
+33	i	i	CCONJ	Cc	_	32	fixed	_	_
+34	onda	onda	ADV	Rgp	Degree=Pos|PronType=Dem	39	advmod	_	_
+35	kad	kad	ADV	Rgp	Degree=Pos|PronType=Int,Rel	39	mark	_	_
+36	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	obj	_	_
+37	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	aux	_	_
+38	čvrsto	čvrsto	ADV	Rgp	Degree=Pos	39	advmod	_	_
+39	grlila	grliti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	29	advcl	_	_
+40	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 2659
+# text = Sa Džulijom mu nije bilo teško razgovarati o tim stvarima ; Ketrin je , u svakom slučaju , odavno bila prestala da bude bolna , i postala samo neprijatna , uspomena .
+1	Sa	sa	ADP	Si	Case=Ins	2	case	_	_
+2	Džulijom	Džulija	PROPN	Npfsi	Case=Ins|Gender=Fem|Number=Sing	6	obl	_	_
+3	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+4	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	teško	teško	ADV	Rgp	Degree=Pos	0	root	_	_
+7	razgovarati	razgovarati	VERB	Vmn	VerbForm=Inf	6	nsubj	_	_
+8	o	o	ADP	Sl	Case=Loc	10	case	_	_
+9	tim	taj	DET	Pd-mpl	Case=Loc|Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_
+10	stvarima	stvar	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	7	obl	_	_
+11	;	;	PUNCT	Z	_	21	punct	_	_
+12	Ketrin	Ketrin	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	21	nsubj	_	_
+13	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
+14	,	,	PUNCT	Z	_	17	punct	_	_
+15	u	u	ADP	Sl	Case=Loc	17	case	_	_
+16	svakom	svaki	DET	Pi-msl	Case=Loc|Gender=Masc|Number=Sing|PronType=Ind	17	det	_	_
+17	slučaju	slučaj	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	21	obl	_	_
+18	,	,	PUNCT	Z	_	17	punct	_	_
+19	odavno	odavno	ADV	Rgp	Degree=Pos	21	advmod	_	_
+20	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	21	aux	_	_
+21	prestala	prestati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	conj	_	_
+22	da	da	SCONJ	Cs	_	24	mark	_	_
+23	bude	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_
+24	bolna	bolan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	21	xcomp	_	_
+25	,	,	PUNCT	Z	_	27	punct	_	_
+26	i	i	CCONJ	Cc	_	27	cc	_	_
+27	postala	postati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	24	conj	_	_
+28	samo	samo	ADV	Rgp	Degree=Pos	29	advmod	_	_
+29	neprijatna	neprijatan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	27	xcomp	_	_
+30	,	,	PUNCT	Z	_	31	punct	_	_
+31	uspomena	uspomena	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	27	xcomp	_	_
+32	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2660
+# text = " Mogao bih izdržati da nije bilo jedne stvari , " reče on , i ispriča joj o ledenoj predstavi na koju ga je Ketrin naterivala svake nedelje u isti dan .
+1	"	"	PUNCT	Z	_	2	punct	_	_
+2	Mogao	moći	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	bih	biti	AUX	Vaa1s	Mood=Cnd|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	aux	_	_
+4	izdržati	izdržati	VERB	Vmn	VerbForm=Inf	2	xcomp	_	_
+5	da	da	SCONJ	Cs	_	7	mark	_	_
+6	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	ccomp	_	_
+8	jedne	jedan	NUM	Mlcfsg	Case=Gen|Gender=Fem|Number=Sing|NumType=Card	9	nummod	_	_
+9	stvari	stvar	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	7	nsubj	_	_
+10	,	,	PUNCT	Z	_	2	punct	_	_
+11	"	"	PUNCT	Z	_	12	punct	_	_
+12	reče	reći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+13	on	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+14	,	,	PUNCT	Z	_	16	punct	_	_
+15	i	i	CCONJ	Cc	_	16	cc	_	_
+16	ispriča	ispričati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+17	joj	on	PRON	Pp3fsd	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	obl	_	_
+18	o	o	ADP	Sl	Case=Loc	20	case	_	_
+19	ledenoj	leden	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	20	amod	_	_
+20	predstavi	predstava	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	16	obl	_	_
+21	na	na	ADP	Sa	Case=Acc	22	case	_	_
+22	koju	koji	DET	Pi-fsa	Case=Acc|Gender=Fem|Number=Sing|PronType=Int,Rel	26	obl	_	_
+23	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obj	_	_
+24	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
+25	Ketrin	Ketrin	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	26	nsubj	_	_
+26	naterivala	naterivati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	20	acl	_	_
+27	svake	svaki	DET	Pi-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Tot	28	det	_	_
+28	nedelje	nedelja	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	26	obl	_	_
+29	u	u	ADP	Sa	Case=Acc	31	case	_	_
+30	isti	isti	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	31	amod	_	_
+31	dan	dan	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	26	obl	_	_
+32	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2661
+# text = " Bilo joj je odvratno , ali je ništa nije moglo sprečiti da to radi . "
+1	"	"	PUNCT	Z	_	5	punct	_	_
+2	Bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+3	joj	on	PRON	Pp3fsd	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
+4	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	odvratno	odvratan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	0	root	_	_
+6	,	,	PUNCT	Z	_	11	punct	_	_
+7	ali	ali	CCONJ	Cc	_	11	cc	_	_
+8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+9	ništa	ništa	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Neg	11	nsubj	_	_
+10	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	moglo	moći	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+12	sprečiti	sprečiti	VERB	Vmn	VerbForm=Inf	11	xcomp	_	_
+13	da	da	SCONJ	Cs	_	15	mark	_	_
+14	to	taj	DET	Pd-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	15	obj	_	_
+15	radi	raditi	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
+16	.	.	PUNCT	Z	_	5	punct	_	_
+17	"	"	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2662
+# text = " To je nazivala --- ne , nikad nećeš pogoditi kako . "
+1	"	"	PUNCT	Z	_	4	punct	_	_
+2	To	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	obj	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	nazivala	nazivati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	---	---	PUNCT	Z	_	10	punct	_	_
+6	ne	ne	PART	Qz	Polarity=Neg	10	advmod	_	_
+7	,	,	PUNCT	Z	_	10	punct	_	_
+8	nikad	nikad	ADV	Rgp	Degree=Pos|PronType=Neg	10	advmod	_	_
+9	nećeš	htećti	AUX	Var1s	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	pogoditi	pogoditi	VERB	Vmn	VerbForm=Inf	4	conj	_	_
+11	kako	kako	ADV	Rgp	Degree=Pos|PronType=Int,Rel	10	advmod	_	_
+12	.	.	PUNCT	Z	_	4	punct	_	_
+13	"	"	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2663
+# text = " Naša obaveza prema Partiji , " smesta reče Džulija .
+1	"	"	PUNCT	Z	_	3	punct	_	_
+2	Naša	naš	DET	Ps1fsn	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	3	det	_	_
+3	obaveza	obaveza	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+4	prema	prema	ADP	Sl	Case=Loc	5	case	_	_
+5	Partiji	partija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	3	nmod	_	_
+6	,	,	PUNCT	Z	_	9	punct	_	_
+7	"	"	PUNCT	Z	_	9	punct	_	_
+8	smesta	smest	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_
+9	reče	reći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+10	Džulija	Džulija	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_
+11	.	.	PUNCT	Z	_	9	punct	_	_
+
+# sent_id = 2664
+# text = " Otkud znaš ? "
+1	"	"	PUNCT	Z	_	3	punct	_	_
+2	Otkud	otkud	ADV	Rgp	Degree=Pos	3	advmod	_	_
+3	znaš	znati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	?	?	PUNCT	Z	_	3	punct	_	_
+5	"	"	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2665
+# text = " Dragi , pa i ja sam bila u školi . "
+1	"	"	PUNCT	Z	_	2	punct	_	_
+2	Dragi	dragi	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	0	root	_	_
+3	,	,	PUNCT	Z	_	10	punct	_	_
+4	pa	pa	CCONJ	Cc	_	10	cc	_	_
+5	i	i	CCONJ	Cc	_	4	fixed	_	_
+6	ja	ja	PRON	Pp1-sn	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+7	sam	biti	AUX	Var1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux	_	_
+8	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+9	u	u	ADP	Sl	Case=Loc	10	case	_	_
+10	školi	škola	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	2	conj	_	_
+11	.	.	PUNCT	Z	_	2	punct	_	_
+12	"	"	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2666
+# text = " Predavanja o seksualnom životu jedanput mesečno za omladinu iznad šesnaest godina . "
+1	"	"	PUNCT	Z	_	2	punct	_	_
+2	Predavanja	predavanje	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	0	root	_	_
+3	o	o	ADP	Sl	Case=Loc	5	case	_	_
+4	seksualnom	seksualan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	životu	život	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	2	obl	_	_
+6	jedanput	jedanput	ADV	Rgp	Degree=Pos	7	advmod	_	_
+7	mesečno	mesečno	ADV	Rgp	Degree=Pos	2	advmod	_	_
+8	za	za	ADP	Sa	Case=Acc	9	case	_	_
+9	omladinu	omladina	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	_
+10	iznad	iznad	ADP	Sg	Case=Gen	12	case	_	_
+11	šesnaest	šesnaest	NUM	Mlc	NumType=Card	12	nummod:gov	_	_
+12	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	9	nmod	_	_
+13	.	.	PUNCT	Z	_	2	punct	_	_
+14	"	"	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2667
+# text = " I u Savezu omladine . "
+1	"	"	PUNCT	Z	_	4	punct	_	_
+2	I	i	CCONJ	Cc	_	4	discourse	_	_
+3	u	u	ADP	Sl	Case=Loc	4	case	_	_
+4	Savezu	savez	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	0	root	_	_
+5	omladine	omladina	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	.	.	PUNCT	Z	_	4	punct	_	_
+7	"	"	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2668
+# text = " Godinama ti to tucaju u glavu . "
+1	"	"	PUNCT	Z	_	5	punct	_	_
+2	Godinama	godina	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	5	obl	_	_
+3	ti	taj	DET	Pd-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	5	nsubj	_	_
+4	to	taj	DET	Pd-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	5	obj	_	_
+5	tucaju	tucati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	u	u	ADP	Sa	Case=Acc	7	case	_	_
+7	glavu	glav	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	5	obl	_	_
+8	.	.	PUNCT	Z	_	5	punct	_	_
+9	"	"	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2669
+# text = " Verovatno im i pali , u većini slučajeva . "
+1	"	"	PUNCT	Z	_	5	punct	_	_
+2	Verovatno	verovatno	ADV	Rgp	Degree=Pos	5	advmod	_	_
+3	im	oni	PRON	Pp3-pd	Case=Dat|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+4	i	i	CCONJ	Cc	_	5	cc	_	_
+5	pali	paliti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	,	,	PUNCT	Z	_	8	punct	_	_
+7	u	u	ADP	Sl	Case=Loc	8	case	_	_
+8	većini	većina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	5	obl	_	_
+9	slučajeva	slučaj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	8	nmod	_	_
+10	.	.	PUNCT	Z	_	5	punct	_	_
+11	"	"	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2670
+# text = " Samo , razume se , nikad se ne zna ; ljudi su toliko dvolični . "
+1	"	"	PUNCT	Z	_	10	punct	_	_
+2	Samo	samo	ADV	Rgp	Degree=Pos	10	advmod	_	_
+3	,	,	PUNCT	Z	_	2	punct	_	_
+4	razume	razumeti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	_
+5	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
+6	,	,	PUNCT	Z	_	4	punct	_	_
+7	nikad	nikad	ADV	Rgp	Degree=Pos|PronType=Neg	10	advmod	_	_
+8	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	10	expl	_	_
+9	ne	ne	PART	Qz	Polarity=Neg	10	advmod	_	_
+10	zna	znati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	;	;	PUNCT	Z	_	15	punct	_	_
+12	ljudi	čovek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	15	nsubj	_	_
+13	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+14	toliko	toliko	ADV	Rgp	Degree=Pos|PronType=Dem	15	advmod	_	_
+15	dvolični	dvoličan	ADJ	Agpmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	10	conj	_	_
+16	.	.	PUNCT	Z	_	10	punct	_	_
+17	"	"	PUNCT	Z	_	10	punct	_	_
+
+# sent_id = 2671
+# text = Ona nastavi u istom smislu .
+1	Ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	nastavi	nastaviti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	u	u	ADP	Sl	Case=Loc	5	case	_	_
+4	istom	isti	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	smislu	smisao	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	2	obl	_	_
+6	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2672
+# text = Kod Džulije je svaka tema vodila njenoj seksualnosti .
+1	Kod	kod	ADP	Sg	Case=Gen	2	case	_	_
+2	Džulije	Džulija	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	6	obl	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	svaka	svaki	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Tot	5	det	_	_
+5	tema	tema	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+6	vodila	voditi	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	njenoj	njen	DET	Ps3fsl	Case=Dat|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	8	det	_	_
+8	seksualnosti	seksualnost	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	6	obl	_	_
+9	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2673
+# text = Čim bi se razgovor ma na koji način dotakao te oblasti , ona je pokazivala veliku inteligenciju .
+1	Čim	čim	PRON	Cs	_	9	mark	_	_
+2	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
+3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	9	expl	_	_
+4	razgovor	razgovor	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+5	ma	ma	PRON	Vmr3s	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+6	na	na	ADP	Sa	Case=Acc	8	case	_	_
+7	koji	koji	DET	Pi-msan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Int,Rel	8	det	_	_
+8	način	način	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	9	obl	_	_
+9	dotakao	dotaći	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	15	advcl	_	_
+10	te	taj	DET	Pd-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
+11	oblasti	oblast	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	obj	_	_
+12	,	,	PUNCT	Z	_	9	punct	_	_
+13	ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+14	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+15	pokazivala	pokazivati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+16	veliku	velik	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	17	amod	_	_
+17	inteligenciju	inteligencija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	15	obj	_	_
+18	.	.	PUNCT	Z	_	15	punct	_	_
+
+# sent_id = 2674
+# text = Za razliku od Vinstona , shvatala je suštinu puritanizma koji je Partija propovedala .
+1	Za	za	ADP	Sa	Case=Acc	2	case	_	_
+2	razliku	razlika	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	6	obl	_	_
+3	od	od	ADP	Sg	Case=Gen	4	case	_	_
+4	Vinstona	Vinston	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+5	,	,	PUNCT	Z	_	2	punct	_	_
+6	shvatala	shvatati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+8	suštinu	suština	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	6	obj	_	_
+9	puritanizma	puritanizam	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
+10	koji	koji	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	13	obj	_	_
+11	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+12	Partija	partija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	13	nsubj	_	_
+13	propovedala	propovedati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+14	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2675
+# text = Nije u pitanju bilo samo to što seksualni nagon stvara svoj sopstveni svet koji je Partiji van kontrole te ga zato treba uništiti , ako je moguće .
+1	Nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	u	u	ADP	Sl	Case=Loc	3	case	_	_
+3	pitanju	pitanje	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	0	root	_	_
+4	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	cop	_	_
+5	samo	samo	ADV	Rgp	Degree=Pos	6	advmod	_	_
+6	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	_
+7	što	što	SCONJ	Cs	_	10	mark	_	_
+8	seksualni	seksualan	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	9	amod	_	_
+9	nagon	nagon	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+10	stvara	stvarati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+11	svoj	svoj	DET	Px-msan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	13	det	_	_
+12	sopstveni	sopstven	ADJ	Agpmsayn	Animacy=Inan|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	svet	svet	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
+14	koji	koji	DET	Pi-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Int,Rel	16	nsubj	_	_
+15	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
+16	Partiji	partija	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	13	acl	_	_
+17	van	van	ADP	Sg	Case=Gen	18	case	_	_
+18	kontrole	kontrola	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	16	nmod	_	_
+19	te	te	CCONJ	Cc	_	22	cc	_	_
+20	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
+21	zato	zato	ADV	Rgp	Degree=Pos|PronType=Dem	22	advmod	_	_
+22	treba	trebati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+23	uništiti	uništiti	VERB	Vmn	VerbForm=Inf	22	xcomp	_	_
+24	,	,	PUNCT	Z	_	27	punct	_	_
+25	ako	ako	SCONJ	Cs	_	27	mark	_	_
+26	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
+27	moguće	moguć	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	22	advcl	_	_
+28	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2676
+# text = Važnije je bilo to što seksualno lišavanje stvara histeriju , koja je dobrodošla jer se može preobraziti u groznicu ratobornosti i obožavanje vođe .
+1	Važnije	važno	ADV	Rgc	Degree=Cmp	4	advmod	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	0	root	_	_
+5	što	što	SCONJ	Cs	_	8	mark	_	_
+6	seksualno	seksualan	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	7	amod	_	_
+7	lišavanje	lišavanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	_
+8	stvara	stvarati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl	_	_
+9	histeriju	histerija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	8	obj	_	_
+10	,	,	PUNCT	Z	_	13	punct	_	_
+11	koja	koji	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Int,Rel	13	nsubj	_	_
+12	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+13	dobrodošla	dobrodošao	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	9	acl	_	_
+14	jer	jer	SCONJ	Cs	_	16	mark	_	_
+15	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	16	expl	_	_
+16	može	moći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_
+17	preobraziti	preobraziti	VERB	Vmn	VerbForm=Inf	16	xcomp	_	_
+18	u	u	ADP	Sa	Case=Acc	19	case	_	_
+19	groznicu	groznica	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	17	obl	_	_
+20	ratobornosti	ratobornost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	19	nmod	_	_
+21	i	i	CCONJ	Cc	_	22	cc	_	_
+22	obožavanje	obožavanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	19	conj	_	_
+23	vođe	vođa	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	22	obl	_	_
+24	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2677
+# text = Ona je to iskazivala ovako :
+1	Ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	to	taj	DET	Pd-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	4	obj	_	_
+4	iskazivala	iskazivati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	ovako	ovako	ADV	Rgp	Degree=Pos|PronType=Dem	4	advmod	_	_
+6	:	:	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2678
+# text = " Kad spavaš sa ženom , trošiš energiju ; a posle si sav srećan i ne daješ pet para ni za šta . "
+1	"	"	PUNCT	Z	_	7	punct	_	_
+2	Kad	kad	ADV	Rgp	Degree=Pos|PronType=Int,Rel	3	mark	_	_
+3	spavaš	spavati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+4	sa	sa	ADP	Si	Case=Ins	5	case	_	_
+5	ženom	žena	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	3	obl	_	_
+6	,	,	PUNCT	Z	_	3	punct	_	_
+7	trošiš	trošiti	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	energiju	energija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	7	obj	_	_
+9	;	;	PUNCT	Z	_	14	punct	_	_
+10	a	a	CCONJ	Cc	_	14	cc	_	_
+11	posle	posle	ADV	Rgp	Degree=Pos	14	advmod	_	_
+12	si	siti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	_	_
+13	sav	sav	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	14	amod	_	_
+14	srećan	srećan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	7	conj	_	_
+15	i	i	CCONJ	Cc	_	17	cc	_	_
+16	ne	ne	PART	Qz	Polarity=Neg	17	advmod	_	_
+17	daješ	dajvati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	conj	_	_
+18	pet	pet	NUM	Mlc	NumType=Card	19	nummod:gov	_	_
+19	para	par	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	17	obj	_	_
+20	ni	ni	PART	Qo	_	22	discourse	_	_
+21	za	za	ADP	Sa	Case=Acc	22	case	_	_
+22	šta	što	PRON	Pi3n-a	Case=Acc|Gender=Neut|PronType=Int,Rel	17	obl	_	_
+23	.	.	PUNCT	Z	_	7	punct	_	_
+24	"	"	PUNCT	Z	_	7	punct	_	_
+
+# sent_id = 2679
+# text = " A oni ne podnose da ti bude tako : hoće da stalno pucaš od energije . "
+1	"	"	PUNCT	Z	_	5	punct	_	_
+2	A	a	CCONJ	Cc	_	5	discourse	_	_
+3	oni	oni	PRON	Pp3mpn	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	ne	ne	PART	Qz	Polarity=Neg	5	advmod	_	_
+5	podnose	podnositi	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	da	da	SCONJ	Cs	_	9	mark	_	_
+7	ti	taj	DET	Pd-nsn	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	9	nsubj	_	_
+8	bude	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	tako	tako	ADV	Rgp	Degree=Pos|PronType=Dem	5	ccomp	_	_
+10	:	:	PUNCT	Z	_	11	punct	_	_
+11	hoće	hteti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	_
+12	da	da	SCONJ	Cs	_	14	mark	_	_
+13	stalno	stalno	ADV	Rgp	Degree=Pos	14	advmod	_	_
+14	pucaš	pucati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	xcomp	_	_
+15	od	od	ADP	Sg	Case=Gen	16	case	_	_
+16	energije	energija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	14	obl	_	_
+17	.	.	PUNCT	Z	_	5	punct	_	_
+18	"	"	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2680
+# text = " Sve to marširanje gore - dole , klicanje , mahanje zastavama --- sve ti je to neiživljen seks . "
+1	"	"	PUNCT	Z	_	19	punct	_	_
+2	Sve	sve	DET	Pi-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Tot	4	det	_	_
+3	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	det	_	_
+4	marširanje	marširanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	19	nsubj	_	_
+5	gore	gora	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	obl	_	_
+6	-	-	PUNCT	Z	_	7	punct	_	_
+7	dole	dole	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	conj	_	_
+8	,	,	PUNCT	Z	_	9	punct	_	_
+9	klicanje	klicanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	5	conj	_	_
+10	,	,	PUNCT	Z	_	11	punct	_	_
+11	mahanje	mahanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	4	conj	_	_
+12	zastavama	zastava	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	11	obl	_	_
+13	---	---	PUNCT	Z	_	19	punct	_	_
+14	sve	sve	DET	Pi-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Tot	15	det	_	_
+15	ti	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	19	nsubj	_	_
+16	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
+17	to	taj	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	19	nsubj	_	_
+18	neiživljen	neiživljen	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	seks	seks	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+20	.	.	PUNCT	Z	_	19	punct	_	_
+21	"	"	PUNCT	Z	_	19	punct	_	_
+
+# sent_id = 2681
+# text = " Ako si srećan u sebi , šta te briga za Velikog Brata , i troletke , i Dva minuta mržnje , i sva ona njihova sranja ? "
+1	"	"	PUNCT	Z	_	10	punct	_	_
+2	Ako	ako	SCONJ	Cs	_	4	mark	_	_
+3	si	siti	AUX	Var1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	srećan	srećati	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	10	advcl	_	_
+5	u	u	ADP	Sl	Case=Loc	6	case	_	_
+6	sebi	sebe	PRON	Px--sl	Case=Loc|PronType=Prs|Reflex=Yes	4	obl	_	_
+7	,	,	PUNCT	Z	_	4	punct	_	_
+8	šta	šta	PRON	Pq3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	10	nsubj	_	_
+9	te	taj	DET	Var2p	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	10	det	_	_
+10	briga	briga	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+11	za	za	ADP	Sa	Case=Acc	13	case	_	_
+12	Velikog	velik	ADJ	Agpmsayy	Animacy=Anim|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	Brata	Brat	PROPN	Npmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	10	nmod	_	_
+14	,	,	PUNCT	Z	_	16	punct	_	_
+15	i	i	CCONJ	Cc	_	16	cc	_	_
+16	troletke	troletka	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	13	conj	_	_
+17	,	,	PUNCT	Z	_	20	punct	_	_
+18	i	i	CCONJ	Cc	_	20	cc	_	_
+19	Dva	dva	NUM	Mlc	NumType=Card	20	nummod	_	_
+20	minuta	minuta	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	10	conj	_	_
+21	mržnje	mržnja	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	20	nmod	_	_
+22	,	,	PUNCT	Z	_	27	punct	_	_
+23	i	i	CCONJ	Cc	_	27	cc	_	_
+24	sva	sav	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Tot	27	det	_	_
+25	ona	on	PRON	Pp3fsn	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	conj	_	_
+26	njihova	njihov	DET	Ps3fsn	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs	27	det	_	_
+27	sranja	sranje	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	10	conj	_	_
+28	?	?	PUNCT	Z	_	10	punct	_	_
+29	"	"	PUNCT	Z	_	10	punct	_	_
+
+# sent_id = 2682
+# text = Istina je , pomisli on .
+1	Istina	istina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	,	,	PUNCT	Z	_	4	punct	_	_
+4	pomisli	pomisliti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+5	on	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2683
+# text = Između askeze i političke ispravnosti postoji neposredna , bliska veza .
+1	Između	između	ADP	Sg	Case=Gen	2	case	_	_
+2	askeze	askeza	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	6	obl	_	_
+3	i	i	CCONJ	Cc	_	5	cc	_	_
+4	političke	politički	ADJ	Agpfsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	_
+5	ispravnosti	ispravnost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	2	conj	_	_
+6	postoji	postojati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	neposredna	neposredan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	10	amod	_	_
+8	,	,	PUNCT	Z	_	9	punct	_	_
+9	bliska	blizak	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	conj	_	_
+10	veza	veza	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+11	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2684
+# text = Jer kako bi se onaj strah , ona mržnja i ono ludačko verovanje koje Partija traži od svojih članova mogli održati na potrebnoj visini kao pokretačka snaga ?
+1	Jer	jer	SCONJ	Cs	_	20	discourse	_	_
+2	kako	kako	SCONJ	Cs	_	20	mark	_	_
+3	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
+4	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	20	expl	_	_
+5	onaj	onaj	DET	Pd-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
+6	strah	strah	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	20	nsubj	_	_
+7	,	,	PUNCT	Z	_	9	punct	_	_
+8	ona	on	DET	Pd-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_
+9	mržnja	mržnja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	conj	_	_
+10	i	i	CCONJ	Cc	_	13	cc	_	_
+11	ono	on	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	13	det	_	_
+12	ludačko	ludački	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	13	amod	_	_
+13	verovanje	verovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	6	conj	_	_
+14	koje	koji	DET	Pi-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Int,Rel	16	obj	_	_
+15	Partija	partija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	16	nsubj	_	_
+16	traži	tražiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl	_	_
+17	od	od	ADP	Sg	Case=Gen	19	case	_	_
+18	svojih	svoj	DET	Px-mpg	Case=Gen|Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	19	det	_	_
+19	članova	član	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	16	obl	_	_
+20	mogli	moći	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+21	održati	održati	VERB	Vmn	VerbForm=Inf	20	xcomp	_	_
+22	na	na	ADP	Sl	Case=Loc	24	case	_	_
+23	potrebnoj	potreban	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	24	amod	_	_
+24	visini	visina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	21	obl	_	_
+25	kao	kao	SCONJ	Cs	_	27	case	_	_
+26	pokretačka	pokretački	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	27	amod	_	_
+27	snaga	snaga	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	21	obl	_	_
+28	?	?	PUNCT	Z	_	20	punct	_	_
+
+# sent_id = 2685
+# text = Seksualni impuls je Partiji bio opasan , te ga je skrenula u stranu i iskoristila za svoje potrebe .
+1	Seksualni	seksualan	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	impuls	impuls	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	Partiji	partija	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	6	obl	_	_
+5	bio	biti	AUX	Vap-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	opasan	opasan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
+7	,	,	PUNCT	Z	_	11	punct	_	_
+8	te	te	CCONJ	Cc	_	11	cc	_	_
+9	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	skrenula	skrenuti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	conj	_	_
+12	u	u	ADP	Sa	Case=Acc	13	case	_	_
+13	stranu	strana	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	11	obl	_	_
+14	i	i	CCONJ	Cc	_	15	cc	_	_
+15	iskoristila	iskoristiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	11	conj	_	_
+16	za	za	ADP	Sa	Case=Acc	18	case	_	_
+17	svoje	svoj	DET	Px-fpa	Case=Acc|Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	18	det	_	_
+18	potrebe	potreba	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	15	obl	_	_
+19	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2686
+# text = Sličan trik su izveli i sa roditeljskim instinktom .
+1	Sličan	sličan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	_
+2	trik	trik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	4	obj	_	_
+3	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	izveli	izvesti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	i	i	CCONJ	Cc	_	8	advmod	_	_
+6	sa	sa	ADP	Si	Case=Ins	8	case	_	_
+7	roditeljskim	roditeljski	ADJ	Agpmsiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	instinktom	instinkt	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	4	obl	_	_
+9	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2687
+# text = Porodica se nije mogla ukinuti ; Partija je čak podsticala gotovo starinsku ljubav roditelja prema deci .
+1	Porodica	porodica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
+3	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	mogla	moći	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	ukinuti	ukinuti	VERB	Vmn	VerbForm=Inf	4	xcomp	_	_
+6	;	;	PUNCT	Z	_	10	punct	_	_
+7	Partija	partija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	10	nsubj	_	_
+8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+9	čak	čak	ADV	Rgp	Degree=Pos	10	advmod	_	_
+10	podsticala	podsticati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+11	gotovo	gotovo	ADV	Rgp	Degree=Pos	12	advmod	_	_
+12	starinsku	starinski	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	13	amod	_	_
+13	ljubav	ljubav	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	10	obj	_	_
+14	roditelja	roditelj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	13	nmod	_	_
+15	prema	prema	ADP	Sl	Case=Loc	16	case	_	_
+16	deci	deca	NOUN	Ncnpl	Case=Loc|Gender=Neut|Number=Plur	13	nmod	_	_
+17	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2688
+# text = S druge strane , decu je sistematski okretala protiv roditelja i učila da ih špijuniraju i prijavljuju njihove sumnjive reči i dela .
+1	S	sa	ADP	Sg	Case=Gen	3	case	_	_
+2	druge	drugi	ADJ	Mlofsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	_
+3	strane	strana	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	obl	_	_
+4	,	,	PUNCT	Z	_	3	punct	_	_
+5	decu	deca	NOUN	Ncnpa	Case=Acc|Gender=Neut|Number=Plur	8	obj	_	_
+6	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	sistematski	sistematski	ADV	Rgp	Degree=Pos	8	advmod	_	_
+8	okretala	okretati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	protiv	protiv	ADP	Sg	Case=Gen	10	case	_	_
+10	roditelja	roditelj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	8	obl	_	_
+11	i	i	CCONJ	Cc	_	12	cc	_	_
+12	učila	učiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	8	conj	_	_
+13	da	da	SCONJ	Cs	_	15	mark	_	_
+14	ih	oni	PRON	Pp3-pa	Case=Acc|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
+15	špijuniraju	špijunirati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
+16	i	i	CCONJ	Cc	_	17	cc	_	_
+17	prijavljuju	prijavljivati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
+18	njihove	njihov	DET	Ps3fpa	Case=Acc|Gender=Fem|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
+19	sumnjive	sumnjiv	ADJ	Agpfpay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	20	amod	_	_
+20	reči	reč	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	17	obj	_	_
+21	i	i	CCONJ	Cc	_	22	cc	_	_
+22	dela	delo	NOUN	Ncnpa	Case=Acc|Gender=Neut|Number=Plur	20	conj	_	_
+23	.	.	PUNCT	Z	_	8	punct	_	_
+
+# sent_id = 2689
+# text = Porodica je u stvari postala filijala Policije misli .
+1	Porodica	porodica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	u	u	ADP	Sl	Case=Loc	4	case	_	_
+4	stvari	stvar	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	5	obl	_	_
+5	postala	postati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	filijala	filijala	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	5	xcomp	_	_
+7	Policije	policija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	_
+8	misli	misao	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	7	nmod	_	_
+9	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2690
+# text = Na taj način se postizalo da svi građani i danju i noću budu okruženi uhodama koji ih intimno poznaju .
+1	Na	na	ADP	Sa	Case=Acc	3	case	_	_
+2	taj	taj	DET	Pd-msan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	način	način	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obl	_	_
+4	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	5	expl	_	_
+5	postizalo	postizati	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	da	da	SCONJ	Cs	_	14	mark	_	_
+7	svi	sav	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	8	det	_	_
+8	građani	građanin	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	14	nsubj	_	_
+9	i	i	CCONJ	Cc	_	10	cc	_	_
+10	danju	danju	ADV	Rgp	Degree=Pos	8	conj	_	_
+11	i	i	CCONJ	Cc	_	12	cc	_	_
+12	noću	noću	ADV	Rgp	Degree=Pos	10	conj	_	_
+13	budu	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+14	okruženi	okružiti	ADJ	Appmpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	csubj	_	_
+15	uhodama	uhoda	NOUN	Ncmpi	Case=Ins|Gender=Fem|Number=Plur	14	obl	_	_
+16	koji	koji	DET	Pi-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Int,Rel	19	nsubj	_	_
+17	ih	oni	PRON	Pp3-pa	Case=Acc|Number=Plur|Person=3|PronType=Prs	19	obj	_	_
+18	intimno	intimno	ADV	Rgp	Degree=Pos	19	advmod	_	_
+19	poznaju	poznati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
+20	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2691
+# text = U sećanje mu se najednom vrati Ketrin .
+1	U	u	ADP	Sa	Case=Acc	2	case	_	_
+2	sećanje	sećanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	6	obl	_	_
+3	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+4	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	6	expl	_	_
+5	najednom	najednom	ADV	Rgp	Degree=Pos	6	advmod	_	_
+6	vrati	vratiti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	Ketrin	Ketrin	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+8	.	.	PUNCT	Z	_	6	punct	_	_
+
+# sent_id = 2692
+# text = Ketrin bi ga nesumnjivo dostavila Policiji misli da nije bila preglupa da u njegovim rečima otkrije političku neispravnost .
+1	Ketrin	Ketrin	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+2	bi	biti	AUX	Vaa3s	Mood=Cnd|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
+3	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+4	nesumnjivo	nesumnjivo	ADV	Rgp	Degree=Pos	5	advmod	_	_
+5	dostavila	dostaviti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	Policiji	policija	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	5	obl	_	_
+7	misli	misliti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+8	da	da	SCONJ	Cs	_	11	mark	_	_
+9	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	11	aux	_	_
+10	bila	biti	AUX	Vap-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	11	cop	_	_
+11	preglupa	preglup	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	ccomp	_	_
+12	da	da	SCONJ	Cs	_	16	mark	_	_
+13	u	u	ADP	Sl	Case=Loc	15	case	_	_
+14	njegovim	njegov	DET	Ps3fpl	Case=Loc|Gender=Fem|Gender[psor]=Masc,Neut|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
+15	rečima	reč	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	16	obl	_	_
+16	otkrije	otkriti	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
+17	političku	politički	ADJ	Agpfsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_
+18	neispravnost	neispravnost	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	16	obj	_	_
+19	.	.	PUNCT	Z	_	5	punct	_	_
+
+# sent_id = 2693
+# text = No u stvari ju je tog trenutka vratila u Vinstonovo sećanje zagušljiva popodnevna jara , od koje su mu po čelu izbile graške znoja .
+1	No	no	CCONJ	Cc	_	8	discourse	_	_
+2	u	u	ADP	Sl	Case=Loc	3	case	_	_
+3	stvari	stvar	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	8	obl	_	_
+4	ju	on	PRON	Pp3fsa	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+5	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+6	tog	taj	DET	Pd-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
+7	trenutka	trenutak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	8	obl	_	_
+8	vratila	vratiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	u	u	ADP	Sa	Case=Acc	11	case	_	_
+10	Vinstonovo	Vinstonov	ADJ	Aspnsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|Poss=Yes	11	amod	_	_
+11	sećanje	sećanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	8	obl	_	_
+12	zagušljiva	zagušljiv	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+13	popodnevna	popodnevan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	14	amod	_	_
+14	jara	jara	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+15	,	,	PUNCT	Z	_	22	punct	_	_
+16	od	od	ADP	Sg	Case=Gen	17	case	_	_
+17	koje	koji	DET	Pi-fsg	Case=Gen|Gender=Fem|Number=Sing|PronType=Int,Rel	22	obl	_	_
+18	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+19	mu	on	PRON	Pp3msd	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obl	_	_
+20	po	po	ADP	Sl	Case=Loc	21	case	_	_
+21	čelu	čelo	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	22	obl	_	_
+22	izbile	izbiti	VERB	Vmp-pf	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	14	acl	_	_
+23	graške	graški	ADJ	Agpfpny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Plur	24	amod	_	_
+24	znoja	znoja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	22	nsubj	_	_
+25	.	.	PUNCT	Z	_	8	punct	_	_
+
+# sent_id = 2694
+# text = On poče pričati Džuliji o nečemu što se desilo , upravo što se nije desilo , jednog drugog vrelog letnjeg popodneva , pre jedanaest godina .
+1	On	on	PRON	Pp3msn	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	poče	poći	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	pričati	pričati	VERB	Vmn	VerbForm=Inf	2	xcomp	_	_
+4	Džuliji	Džulija	PROPN	Npfsd	Case=Dat|Gender=Fem|Number=Sing	3	obl	_	_
+5	o	o	ADP	Sl	Case=Loc	6	case	_	_
+6	nečemu	nešto	PRON	Pi3n-l	Case=Loc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+7	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	9	nsubj	_	_
+8	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	9	expl	_	_
+9	desilo	desiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	6	acl	_	_
+10	,	,	PUNCT	Z	_	15	punct	_	_
+11	upravo	upravo	ADV	Rgp	Degree=Pos	15	mark	_	_
+12	što	što	PRON	Pi3n-n	Case=Nom|Gender=Neut|PronType=Int,Rel	11	fixed	_	_
+13	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	15	expl	_	_
+14	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	15	aux	_	_
+15	desilo	desiti	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	advcl	_	_
+16	,	,	PUNCT	Z	_	21	punct	_	_
+17	jednog	jedan	NUM	Mlcmsg	Case=Gen|Gender=Masc|Number=Sing|NumType=Card	21	nummod	_	_
+18	drugog	drugi	ADJ	Mlomsg	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+19	vrelog	vreli	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+20	letnjeg	letnji	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+21	popodneva	popodnev	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	15	obl	_	_
+22	,	,	PUNCT	Z	_	25	punct	_	_
+23	pre	pre	ADP	Sg	Case=Gen	25	case	_	_
+24	jedanaest	jedanaest	NUM	Mlc	NumType=Card	25	nummod:gov	_	_
+25	godina	godina	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	21	nmod	_	_
+26	.	.	PUNCT	Z	_	2	punct	_	_
+
+# sent_id = 2695
+# text = Tada su imali za sobom tri ili četiri meseca braka .
+1	Tada	tada	ADV	Rgp	Degree=Pos|PronType=Dem	3	advmod	_	_
+2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	imali	imati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	za	za	ADP	Si	Case=Ins	5	case	_	_
+5	sobom	sebe	PRON	Px--si	Case=Ins|PronType=Prs|Reflex=Yes	3	obl	_	_
+6	tri	tri	NUM	Mlc	NumType=Card	9	nummod	_	_
+7	ili	ili	CCONJ	Cc	_	8	cc	_	_
+8	četiri	četiri	NUM	Mlc	NumType=Card	6	conj	_	_
+9	meseca	mesec	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	3	obj	_	_
+10	braka	brak	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	9	nmod	_	_
+11	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2696
+# text = Bili su se izgubili na jednom kolektivnom maršu , negde u Kentu .
+1	Bili	biti	AUX	Vap-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	expl	_	_
+4	izgubili	izgubiti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	na	na	ADP	Sl	Case=Loc	8	case	_	_
+6	jednom	jedan	NUM	Mlcmsl	Case=Loc|Gender=Masc|Number=Sing|NumType=Card	8	nummod	_	_
+7	kolektivnom	kolektivan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	8	amod	_	_
+8	maršu	marš	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	4	obl	_	_
+9	,	,	PUNCT	Z	_	12	punct	_	_
+10	negde	negde	ADV	Rgp	Degree=Pos|PronType=Ind	12	advmod	_	_
+11	u	u	ADP	Sl	Case=Loc	12	case	_	_
+12	Kentu	Kent	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	8	nmod	_	_
+13	.	.	PUNCT	Z	_	4	punct	_	_
+
+# sent_id = 2697
+# text = Zaostali su za drugima svega nekoliko koraka , ali potom su skrenuli u pogrešnom pravcu , i ubrzo su morali naglo da se zaustave na ivici nekog napuštenog kamenoloma odakle se nekad vadio krečnjak .
+1	Zaostali	zaostati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+2	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	aux	_	_
+3	za	za	ADP	Si	Case=Ins	4	case	_	_
+4	drugima	drugi	ADJ	Mlompi	Case=Ins|Degree=Pos|Gender=Masc|Number=Plur	1	obl	_	_
+5	svega	svega	ADV	Rgp	Degree=Pos	6	advmod	_	_
+6	nekoliko	nekoliko	DET	Rgp	Degree=Pos|PronType=Ind	7	det:numgov	_	_
+7	koraka	korak	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	1	obl	_	_
+8	,	,	PUNCT	Z	_	12	punct	_	_
+9	ali	ali	CCONJ	Cc	_	12	cc	_	_
+10	potom	potom	ADV	Rgp	Degree=Pos	12	advmod	_	_
+11	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	skrenuli	skrenuti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+13	u	u	ADP	Sl	Case=Loc	15	case	_	_
+14	pogrešnom	pogrešan	ADJ	Agpmsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	_
+15	pravcu	pravac	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	12	obl	_	_
+16	,	,	PUNCT	Z	_	20	punct	_	_
+17	i	i	CCONJ	Cc	_	20	cc	_	_
+18	ubrzo	ubrzo	ADV	Rgp	Degree=Pos	20	advmod	_	_
+19	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
+20	morali	morati	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+21	naglo	naglo	ADV	Rgp	Degree=Pos	20	advmod	_	_
+22	da	da	SCONJ	Cs	_	24	mark	_	_
+23	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	24	expl	_	_
+24	zaustave	zaustaviti	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	xcomp	_	_
+25	na	na	ADP	Sl	Case=Loc	26	case	_	_
+26	ivici	ivica	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	24	obl	_	_
+27	nekog	neki	DET	Pi-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Ind	29	det	_	_
+28	napuštenog	napušten	ADJ	Agpmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	29	amod	_	_
+29	kamenoloma	kamenolom	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	26	nmod	_	_
+30	odakle	odakle	ADV	Rgp	Degree=Pos|PronType=Int,Rel	33	advmod	_	_
+31	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	33	expl	_	_
+32	nekad	nekad	ADV	Rgp	Degree=Pos|PronType=Ind	33	advmod	_	_
+33	vadio	vaditi	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	29	acl	_	_
+34	krečnjak	krečnjak	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	33	nsubj	_	_
+35	.	.	PUNCT	Z	_	1	punct	_	_
+
+# sent_id = 2698
+# text = Ivica se obrušavala , u pravoj liniji , kojih deset - dvadeset metara ; na dnu je ležalo krupno kamenje .
+1	Ivica	Ivica	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	3	nsubj	_	_
+2	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	3	expl	_	_
+3	obrušavala	obrušavati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	,	,	PUNCT	Z	_	7	punct	_	_
+5	u	u	ADP	Sl	Case=Loc	7	case	_	_
+6	pravoj	prav	ADJ	Agpfsly	Case=Loc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	liniji	linija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	3	obl	_	_
+8	,	,	PUNCT	Z	_	13	punct	_	_
+9	kojih	koji	DET	Pi-mpg	Case=Gen|Gender=Masc|Number=Plur|PronType=Int,Rel	13	det	_	_
+10	deset	deset	NUM	Mlc	NumType=Card	13	nummod:gov	_	_
+11	-	-	PUNCT	Z	_	12	punct	_	_
+12	dvadeset	dvadeset	NUM	Mlc	NumType=Card	10	conj	_	_
+13	metara	metar	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	7	nmod	_	_
+14	;	;	PUNCT	Z	_	18	punct	_	_
+15	na	na	ADP	Sl	Case=Loc	16	case	_	_
+16	dnu	dno	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	18	obl	_	_
+17	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
+18	ležalo	ležati	VERB	Vmp-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+19	krupno	krupni	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	20	amod	_	_
+20	kamenje	kamenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	18	nsubj	_	_
+21	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2699
+# text = Naokolo nije bilo nikoga da ga pitaju za put .
+1	Naokolo	naokolo	ADV	Rgp	Degree=Pos	3	advmod	_	_
+2	nije	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	bilo	biti	AUX	Vap-sn	Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	nikoga	niko	PRON	Pi3m-a	Case=Acc|Gender=Masc|PronType=Neg	3	obj	_	_
+5	da	da	SCONJ	Cs	_	7	mark	_	_
+6	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+7	pitaju	pitati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+8	za	za	ADP	Sa	Case=Acc	9	case	_	_
+9	put	put	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obl	_	_
+10	.	.	PUNCT	Z	_	3	punct	_	_
+
+# sent_id = 2700
+# text = Čim je shvatila da su se izgubili , Ketrin je postala vrlo nervozna .
+1	Čim	čim	SCONJ	Cs	_	3	mark	_	_
+2	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	shvatila	shvatiti	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	11	advcl	_	_
+4	da	da	SCONJ	Cs	_	7	mark	_	_
+5	su	biti	AUX	Var3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+6	se	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	7	expl	_	_
+7	izgubili	izgubiti	VERB	Vmp-pm	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Act	3	ccomp	_	_
+8	,	,	PUNCT	Z	_	3	punct	_	_
+9	Ketrin	Ketrin	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	_
+10	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	postala	postati	VERB	Vmp-sf	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+12	vrlo	vrlo	ADV	Rgp	Degree=Pos	13	advmod	_	_
+13	nervozna	nervozan	ADJ	Agpfsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing	11	xcomp	_	_
+14	.	.	PUNCT	Z	_	11	punct	_	_
+
