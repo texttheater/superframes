@@ -72,7 +72,7 @@ FRAMES = {
     'DEPICTIVE': Rigid('has-depictive', 'depictive'),
     'ATTRIBUTE': Rigid('has-attribute', 'attribute'),
     'ASSET': Flexible('has-asset', 'asset'),
-    'COMPARISON': Rigid('compared', 'reference'),
+    'COMPARISON': Flexible('compared', 'reference'),
     'CONCESSION': Rigid('asserted', 'conceded'),
     'EXPLANATION': Rigid('explained', 'explanation'),
     'LOCATION': Flexible('has-location', 'location'),
