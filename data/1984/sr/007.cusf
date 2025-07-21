@@ -90,9 +90,9 @@
 7	svedočanstvo	svedočanstvo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	2	appos	_	_
 8	o	o	ADP	Sl	Case=Loc	9	case	_	_
 9	životu	život	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	7	nmod	_	_
-10	ispunjenom	ispunjen	ADJ	Appmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	acl	_	_
+10	ispunjenom	ispunjen	ADJ	Appmsgy	Case=Gen|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	_	_
 11	fizičkim	fizički	ADJ	Agpmpiy	Case=Ins|Definite=Def|Degree=Pos|Gender=Masc|Number=Plur	12	amod	_	_
-12	naporima	napor	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	9	nmod	_	_
+12	naporima	napor	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	10	nmod	_	_
 13	,	,	PUNCT	Z	_	7	punct	_	_
 14	pratio	pratiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
 15	ga	on	PRON	Pp3msa	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	obj	_	_
@@ -111,8 +111,8 @@
 28	.	.	PUNCT	Z	_	14	punct	_	_
 
 [UNANCHORED-MOTION] pratio (14)
-[x-accompanier] Zagušljiv zadah znoja , svojevrsno nehotično svedočanstvo o životu ispunjenom fizičkim naporima , (2)
-[in-motion] ga (15)
+[in-motion] Zagušljiv zadah znoja , svojevrsno nehotično svedočanstvo o životu ispunjenom fizičkim naporima , (2)
+[x-accompanied] ga (15)
 [transitory-location] svuda (17)
 
 [MESSAGE] zadah , svojevrsno nehotično svedočanstvo o životu ispunjenom fizičkim naporima , (2)
@@ -134,13 +134,14 @@
 [has-explanation || result] svedočanstvo (7)
 
 [EVENT] životu (9)
-[m-accompanier] ispunjenom fizičkim naporima (12)
+[m-scene] ispunjenom fizičkim naporima (10)
+
+[ACCOMPANIMENT] ispunjenom (10)
+[accompanier] fizičkim naporima (12)
+[accompanied] životu (9)
 
 [ACTIVITY] naporima (12)
-[m-quantity] ispunjenom (10)
 [m-quality] fizičkim (11)
-
-[STATE >> QUANTITY] ispunjenom (10)
 
 [QUALITY] fizičkim (11)
 
@@ -259,7 +260,7 @@
 
 [MESSAGE] znam (3)
 [m-mode] Ne (2)
-[m-mode] , pravo da vam kažem (8) # "ehrlich gesagt", "um dir die Wahrheit zu sagen"
+[m-mode] , pravo da vam kažem (8) # "ehrlich gesagt", "um euch die Wahrheit zu sagen"
 
 [MODE] Ne (2)
 
@@ -319,7 +320,7 @@
 
 [SENDING] pisak (9)
 [m-quantity] još jedan (8)
-[m-sender] na češlju (11)
+[sender] na češlju (11)
 
 [QUANTITY] jedan (8)
 [m-scene] još (7)
@@ -623,7 +624,7 @@
 
 [WRAPPING-WEARING] imali (3)
 [wearer] Oboje (1)
-[wearer] na sebi (5)
+[m-noncomp || wearer] na sebi (5)
 [wrapper] kratke plave pantalone : uniformu Špijuna (8)
 [wrapper] , sive košulje (11)
 [wrapper] i crvene marame (14)
@@ -1242,7 +1243,7 @@
 [IDENTIFICATION] Ja (2)
 
 [LOCATION-INIT] povedem (7)
-[m-accompanier] ih (6)
+[x-accompanier] ih (6)
 [has-location] Ja (2)
 
 [IDENTIFICATION] ih (6)
@@ -1316,7 +1317,7 @@
 7	"	"	PUNCT	Z	_	2	punct	_	_
 
 [MESSAGE] 'Oću (2)
-[topic] da vidim vešanje (4)
+[content] da vidim vešanje (4)
 
 [MESSAGE] vidim (4)
 [topic] vešanje (5)
@@ -1364,9 +1365,6 @@
 [] i dalje (15)
 
 [] dalje (15)
-[] i (14)
-
-[] i (14)
 
 # sent_id = 383
 # text = Vinston se seti da je te večeri u Hajd parku trebalo da bude vešanje nekih evroazijskih zarobljenika proglašenih krivim za ratne zločine .
@@ -1412,7 +1410,7 @@
 [EVENT] vešanje (14)
 [undergoer] nekih evroazijskih zarobljenika proglašenih krivim za ratne zločine (17)
 
-[POSSESSION] zarobljenika (17)
+[POSSESSION >> CLASS] zarobljenika (17)
 [m-social-relation] evroazijskih (16)
 [m-scene] proglašenih krivim za ratne zločine (18)
 
@@ -1490,7 +1488,7 @@
 [x-experiencer || topic] od roditelja (6)
 [target-content] da ih tamo vode (10)
 
-[CLASS] Deca (1)
+[CLASS || SOCIAL-RELATION] Deca (1)
 
 [TIME] uvek (3)
 
@@ -1616,7 +1614,7 @@
 [IDENTIFICATION] mu (2)
 
 [LOCATION-INIT] zario (8)
-[x-has-attribute] mu (5)
+[x-has-attribute || x-experiencer] mu (5)
 [x-causer] neko (7)
 [target-location] u meso (10)
 [has-location] crveno usijanu žicu (13)
@@ -1836,11 +1834,8 @@
 [] sto (15)
 
 [] trljajući (19)
-[] i (17)
 [] dalje (18)
 [] vrat (20)
-
-[] i (17)
 
 [] dalje (18)
 
@@ -1975,12 +1970,11 @@
 18	.	.	PUNCT	Z	_	11	punct	_	_
 
 [SCENE-NECESSITY] mora (11)
-[m-depictive] S ovakvom decom (3)
+[m-causer] S ovakvom decom (3)
 [participant] ta jadna žena (10)
 [scene] biti da živi u večitom strahu (12)
 
 [SOCIAL-RELATION] decom (3)
-[has-social-relation] ta jadna žena (10)
 
 [MESSAGE] pomisli (5)
 [x-experiencer] on (6)

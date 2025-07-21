@@ -90,7 +90,7 @@
 
 [QUALITY] upravo (2)
 
-[SITUATION] ono (7)
+[IDENTIFICATION] ono (7)
 [m-quality] značajno (8)
 
 [QUALITY] značajno (8)
@@ -315,7 +315,7 @@
 
 [QUANTITY >> IDENTIFICATION] jedne (15)
 
-[RANK || COMPARISON >> IDENTIFICATION] drugu (17)
+[COMPARISON >> IDENTIFICATION] drugu (17)
 
 [PART-WHOLE] oči (19)
 
@@ -354,14 +354,17 @@
 # text = " Znam tačno šta osećaš . "
 1	"	"	PUNCT	Z	_	2	punct	_	_
 2	Znam	znati	VERB	Vmr1s	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	tačno	tačno	ADV	Rgp	Degree=Pos	4	discourse	_	_
+3	tačno	tačno	ADV	Rgp	Degree=Pos	2	advmod	_	_
 4	šta	što	PRON	Pi3n-a	Case=Acc|Gender=Neut|PronType=Int,Rel	5	det	_	_
 5	osećaš	osećaš	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
 6	.	.	PUNCT	Z	_	2	punct	_	_
 7	"	"	PUNCT	Z	_	2	punct	_	_
 
 [MESSAGE] Znam (2)
-[content] tačno šta osećaš (5)
+[m-quality] tačno (3)
+[content] šta osećaš (5)
+
+[QUALITY] tačno (3)
 
 [MESSAGE] osećaš (5)
 
@@ -457,7 +460,7 @@
 
 [IDENTIFICATION] O'Brajenovo (7)
 
-[STATE >> MESSAGE] zatvoreno (10)
+[STATE >> MESSAGE-NEG] zatvoreno (10)
 [m-reference] kao i u svih ostalih (15)
 [has-state >> x-sender] O'Brajenovo lice (8)
 
@@ -564,10 +567,10 @@
 
 [MODE] jedino (4)
 
-[SCENE-INIT] podržavali (9)
+[SCENE-INIT || SCENE-CONTINUATION] podržavali (9)
 [participant] ga (8)
-[target-scene] u verovanju (11)
-[target-scene] , ili nadi , da ima i drugih koji su neprijatelji Partije (14)
+[target-scene || initial-scene] u verovanju (11)
+[target-scene || initial-scene] , ili nadi , da ima i drugih koji su neprijatelji Partije (14)
 
 [IDENTIFICATION] ga (8)
 
@@ -582,11 +585,12 @@
 [exists] i drugih koji su neprijatelji Partije (19)
 
 [COMPARISON >> CLASS] drugih (19)
-[compared >> m-scene] koji su neprijatelji Partije (22)
+[m-scene] koji su neprijatelji Partije (22)
 
 [SOCIAL-RELATION] neprijatelji (22)
 [has-social-relation] koji (20)
 [social-relation] Partije (23)
+[has-social-relation] drugih (19)
 
 [IDENTIFICATION] koji (20)
 
@@ -610,9 +614,9 @@
 14	postoji	postojati	VERB	Vmr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_
 15	!	!	PUNCT	Z	_	9	punct	_	_
 
-[MESSAGE] istinite (9)
+[MESSAGE || MODE] istinite (9)
 [m-mode] Možda (1)
-[topic] glasine o ogromnoj podzemnoj zaveri (3)
+[topic || has-mode] glasine o ogromnoj podzemnoj zaveri (3)
 [m-mode] ipak (8)
 
 [MODE] Možda (1)
@@ -676,7 +680,7 @@
 
 [QUALITY] pouzdano (4)
 
-[EVENT] hapšenjima (9)
+[POSSESSION-INIT] hapšenjima (9)
 [m-quantity] beskrajnim (8)
 
 [QUANTITY] beskrajnim (8)
@@ -896,7 +900,7 @@
 19	.	.	PUNCT	Z	_	5	punct	_	_
 
 [MESSAGE] nagađanja (5)
-[x-has-class] to (3)
+[content || x-has-class] to (3)
 
 [IDENTIFICATION] to (3)
 
@@ -973,10 +977,10 @@
 13	kontakt	kontakt	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
 14	.	.	PUNCT	Z	_	6	punct	_	_
 
-[MESSAGE] palo (6)
+[MESSAGE-INIT] palo (6)
 [x-experiencer] mu (3)
 [x-noncomp] na pamet (8)
-[topic] da nastavi njihov trenutni kontakt (10)
+[target-content] da nastavi njihov trenutni kontakt (10)
 
 [IDENTIFICATION] mu (3)
 
@@ -1052,7 +1056,7 @@
 [m-time] Za sekund , (2)
 [m-time] , dva sekunda (5)
 [x-experiencer] njih dvojica (8)
-[x-noncomp] dvosmislen pogled (12)
+[target-content >> x-noncomp] dvosmislen pogled (12)
 
 [TIME] sekund (2)
 
@@ -1070,13 +1074,12 @@
 [topic >> has-quality] pogled (12)
 
 [PART-WHOLE >> SCENE-DEINIT] kraj (19)
-[part >> participant] tu (15)
+[part >> x-identified] tu (15)
 [whole >> initial-scene] priči (17)
 
 [LOCATION >> IDENTIFICATION] tu (15)
 
 [MESSAGE] priči (17)
-[m-part] tu (15)
 
 # sent_id = 275
 # text = No čak je i to bio vredan događaj , u samoći i zatvorenosti u kojoj se moralo živeti .
@@ -1154,7 +1157,7 @@
 2	podrignu	podrigna	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
 3	.	.	PUNCT	Z	_	2	punct	_	_
 
-[MESSAGE-INIT] podrignu (2)
+[MESSAGE-INIT || EXCRETION] podrignu (2)
 [m-time] Zatim (1)
 
 [TIME] Zatim (1)
@@ -1196,14 +1199,15 @@
 8	.	.	PUNCT	Z	_	5	punct	_	_
 
 [MESSAGE-INIT] usredsrediše (5)
-[x-means] Oči (1)
-[x-experiencer] mu (2)
+[x-means || x-experiencer] Oči (1)
+[x-experiencer || x-has-attribute] mu (2)
 [m-scene] ponovo (4)
 [topic] na papir (7)
 
 [PART-WHOLE] Oči (1)
 
 [IDENTIFICATION] mu (2)
+[m-part] Oči (1)
 
 [SEQUENCE] ponovo (4)
 [follows] usredsrediše (5)
@@ -1281,7 +1285,7 @@
 [m-quality] krutim (7)
 [m-quality] i nespretnim (9)
 
-[MESSAGE-INIT] to (2) # # "das Schreiben"
+[IDENTIFICATION] to (2) # # "das Schreiben"
 [m-quality] rukopisom (10)
 
 [SCENE-CONTINUATION >> SCENE-DEINIT] više (4)
@@ -1595,7 +1599,7 @@
 [MEANS || SEQUENCE] vredelo (12)
 [means || followed] truda (13)
 
-[STATE] truda (13)
+[STATE || EVENT] truda (13)
 
 # sent_id = 286
 # text = Nikakve razlike nije bilo u tome je li napisao Dole veliki brat ili se uzdržao od toga .
@@ -1706,7 +1710,7 @@
 [possessed] ga (4)
 
 [CLASS] Policija (1)
-[m-purpose] misli (2)
+[m-purpose || m-topic] misli (2)
 
 [MESSAGE] misli (2)
 
@@ -1787,9 +1791,9 @@
 4	zlomisao	zlomisao	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	xcomp	_	_
 5	.	.	PUNCT	Z	_	3	punct	_	_
 
-[MESSAGE-INIT || IDENTIFICATION-INIT] zvalo (3)
-[topic || identified] To (1)
-[content || target-identifier] zlomisao (4)
+[IDENTIFICATION-INIT] zvalo (3)
+[identified] To (1)
+[target-identifier] zlomisao (4)
 
 [IDENTIFICATION] To (1)
 
@@ -2013,7 +2017,7 @@
 
 [SITUATION] slučajeva (4)
 
-[EVENT] suđenja (7)
+[EVENT || MESSAGE] suđenja (7)
 
 [SCENE] bilo (10)
 [scene] izveštaja o hapšenju (11)
@@ -2037,7 +2041,7 @@
 10	.	.	PUNCT	Z	_	4	punct	_	_
 
 [LOCATION-DEINIT || EXISTENCE-DEINIT] nestajali (4)
-[has-location || exists] Ljudi (1)
+[has-location || initial-exists] Ljudi (1)
 [m-mode] prosto (3)
 [m-time] , i to uvek noću (9)
 
@@ -2202,9 +2206,9 @@
 
 [SENDING] rukopisom (5)
 [m-state] žurnim (3)
-[m-quality] neurednim (4)
+[m-state || m-quality] neurednim (4)
 
 [STATE] žurnim (3)
 
-[STATE >> QUALITY] neurednim (4)
+[STATE || QUALITY] neurednim (4)
 

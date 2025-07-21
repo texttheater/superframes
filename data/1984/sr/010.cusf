@@ -149,7 +149,7 @@
 
 [IDENTIFICATION] On (1)
 
-[STATE] svetlosti (7)
+[STATE || CLASS] svetlosti (7)
 
 [CLASS] vazduhu (9)
 
@@ -1045,7 +1045,7 @@
 [SENDING || PART-WHOLE] zraci (15)
 [sender || whole] sunčevi (14)
 
-[CLASS >> QUALITY] sunčevi (14)
+[CLASS] sunčevi (14) # besitzanzeigendes (relatives) Adjektiv!
 
 [CLASS] zemlju (17)
 
@@ -1278,10 +1278,11 @@
 [QUALITY] nazubljenoj (2)
 
 [PART-WHOLE] strani (6)
-[m-location] suprotnoj (5)
+[m-scene] suprotnoj (5)
 [whole] poljane (7)
 
-[LOCATION] suprotnoj (5)
+[COMPARISON || LOCATION] suprotnoj (5)
+[compared || has-location] strani (6)
 
 [CLASS] poljane (7)
 
@@ -1305,7 +1306,7 @@
 [m-reference] kao ženska kosa (25)
 
 [PART-WHOLE] kosa (25)
-[m-quality] ženska (24)
+[m-class >> m-quality] ženska (24)
 
 [CLASS >> QUALITY] ženska (24)
 
@@ -1393,7 +1394,7 @@
 [LOCATION-INIT] išla (7)
 [m-transitory-location] Preko poljane (2)
 [target-location] mu (3)
-[m-noncomp] u susret (6) # entgegenkommend
+[m-noncomp] u susret (6) # "entgegen(kommend)"
 [has-location] ona crnokosa devojka (10)
 
 [CLASS] poljane (2)
@@ -1403,9 +1404,9 @@
 [LOCATION] susret (6)
 
 [CLASS] devojka (10)
-[m-part] crnokosa (9)
+[m-part || m-quality] crnokosa (9)
 
-[QUALITY] crnokosa (9)
+[PART-WHOLE >> QUALITY] crnokosa (9)
 
 # sent_id = 520
 # text = Pokretima slivenim u jedan , ona strže svoju odeću i prezrivo je odbaci u stranu .
@@ -1799,7 +1800,7 @@
 [participant] službenici (10)
 [scene] da ustaju (13)
 
-[SOCIAL-RELATION || CLASS] službenici (10)
+[SOCIAL-RELATION >> CLASS] službenici (10)
 
 [STATE-INIT || LOCATION-INIT] ustaju (13)
 [has-state || has-location] službenici (10)
@@ -1982,7 +1983,7 @@
 [target-possessor >> target-scene] koji (11)
 [possessed >> participant] ga (12)
 [m-time] skoro uvek (15)
-[m-followed] ubrzo posle buđenja (19)
+[m-followed || m-time] ubrzo posle buđenja (19)
 [target-possessor >> target-scene] kašlja (10)
 
 [IDENTIFICATION] koji (11)
@@ -2099,7 +2100,7 @@
 [IDENTIFICATION] mu (3)
 [m-part] vene (7)
 
-[PART-WHOLE] vene (7)
+[PART-WHOLE || CLASS] vene (7)
 
 [SCENE-INIT] poče (14)
 [participant] ona proširena na nozi (10)
@@ -2189,7 +2190,7 @@
 5	!	!	PUNCT	Z	_	4	punct	_	_
 6	"	"	PUNCT	Z	_	4	punct	_	_
 
-[LOCATION] mesta (4)
+[LOCATION || CLASS] mesta (4)
 
 # sent_id = 536
 # text = " Trideset do četrdeset ! "

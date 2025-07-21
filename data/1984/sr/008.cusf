@@ -44,7 +44,7 @@
 
 [SOCIAL-RELATION >> CLASS] stranaca (16)
 
-[SOCIAL-RELATION-DEINIT] izdajnika (18)
+[SOCIAL-RELATION] izdajnika (18)
 
 [EVENT] sabotera (20)
 
@@ -300,13 +300,14 @@
 [SCENE-POSSIBILITY] mogao (17)
 [participant] što (15)
 [scene] uneti u dnevnik (18)
-[scene] nešto (14)
+[participant] nešto (14)
 
 [IDENTIFICATION] što (15)
 
 [LOCATION-INIT >> MESSAGE-INIT] uneti (18)
 [target-location >> x-target-location] u dnevnik (20)
 [has-location >> target-content] što (15)
+[has-location >> target-content] nešto (14)
 
 [MESSAGE] dnevnik (20)
 
@@ -377,9 +378,9 @@
 [CLASS] sobu (9)
 
 [STATE] mraku (12)
-[m-quantity] potpunom (11)
+[m-quantity || m-quality] potpunom (11)
 
-[QUANTITY] potpunom (11)
+[QUANTITY || QUALITY] potpunom (11)
 
 # sent_id = 409
 # text = Tada mu je neko ko je sedeo po strani rekao dok je Vinston prolazio pored njega : " Srešćemo se tamo gde nema mraka . "
@@ -447,16 +448,16 @@
 [LOCATION] tamo (21)
 [m-scene] gde nema mraka (23)
 
-[SCENE-NEG || EXISTENCE-NEG] nema (23)
-[participant || m-location] gde (22)
-[scene || exists] mraka (24)
-[participant || m-location] tamo (21)
+[SCENE-NEG] nema (23)
+[participant] gde (22)
+[scene] mraka (24)
+[participant] tamo (21)
 
 [LOCATION] gde (22)
 
-[STATE || CLASS] mraka (24)
-[has-state] gde (22)
-[has-state] tamo (21)
+[STATE] mraka (24)
+[x-location >> has-state] gde (22)
+[x-location >> has-state] tamo (21)
 
 # sent_id = 410
 # text = To je bilo rečeno vrlo tiho , skoro uzgred --- kao konstatacija , ne kao naređenje .
@@ -482,8 +483,8 @@
 [target-content] To (1)
 [m-quality] vrlo tiho (6)
 [m-scene] , skoro uzgred (9)
-[m-quality] --- kao konstatacija (12)
-[m-quality] , ne kao naređenje (16)
+[m-quality || m-reference] --- kao konstatacija (12)
+[m-quality || m-reference] , ne kao naređenje (16)
 
 [IDENTIFICATION] To (1)
 
@@ -600,7 +601,7 @@
 [SCENE-INIT] dobijaju (4)
 [target-scene] značenje (5)
 [m-time] tek kasnije (7)
-[m-quality] , i postepeno (10)
+[m-quality || m-time] , i postepeno (10)
 
 [MESSAGE] značenje (5)
 
@@ -609,7 +610,7 @@
 
 [TIME] tek (6)
 
-[QUALITY] postepeno (10)
+[QUALITY || TIME] postepeno (10)
 
 # sent_id = 414
 # text = Sad se nije mogao setiti da li je pre ili posle tog sna prvi put video O'Brajena ; nije se mogao ni setiti kad je prvi put prepoznao glas kao O'Brajenov .
@@ -898,7 +899,7 @@
 [LOCATION] tamo (4)
 [m-scene] gde nema mraka (6)
 
-[SCENE] nema (6)
+[SCENE-NEG] nema (6)
 [participant] gde (5)
 [scene] mraka (7)
 [participant] tamo (4)
@@ -1007,7 +1008,7 @@
 [m-quality] , lep , (4)
 [m-quality] i jasan (6)
 
-[CLASS] Trubni (1) # wahrs. Nomen
+[CLASS] Trubni (1) # besitzanzeigendes (relatives) Adjektiv!
 
 [QUALITY] lep (4)
 
@@ -1105,7 +1106,7 @@
 
 [LOCATION] Južnoj (4)
 
-[COMPARISON] pobedu (9)
+[COMPARISON-INIT] pobedu (9)
 [m-quality] veličanstvenu (8)
 [compared] Naše snage u Južnoj Indiji (2)
 
@@ -1498,8 +1499,8 @@
 8	hladan	hladan	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	6	conj	_	_
 9	.	.	PUNCT	Z	_	6	punct	_	_
 
-[QUALITY] vedar (6)
-[has-quality] Dan (1)
+[QUALITY || STATE] vedar (6)
+[has-quality || has-state] Dan (1)
 [m-scene] i dalje (4)
 
 [TIME] Dan (1)
@@ -1507,8 +1508,8 @@
 [SCENE-CONTINUATION] dalje (4)
 [initial-scene] vedar (6)
 
-[QUALITY] hladan (8)
-[has-quality] Dan (1)
+[QUALITY || STATE] hladan (8)
+[has-quality || has-state] Dan (1)
 
 # sent_id = 439
 # text = Negde u daljini eksplodira raketna bomba s tupim treskom koji se odbijao od zidova .
@@ -1532,7 +1533,7 @@
 [m-location] Negde (1)
 [m-location] u daljini (3)
 [initial-whole] raketna bomba (6)
-[m-depictive] s tupim treskom koji se odbijao od zidova (9)
+[m-accompanier] s tupim treskom koji se odbijao od zidova (9)
 
 [LOCATION] Negde (1)
 
@@ -1546,14 +1547,13 @@
 [MESSAGE] treskom (9)
 [m-quality] tupim (8)
 [m-scene] koji se odbijao od zidova (12)
-[x-sender] raketna bomba (6)
 
 [QUALITY] tupim (8)
 
-[UNANCHORED-MOTION] odbijao (12)
-[in-motion] koji (10)
-[transitory-location] od zidova (14)
-[in-motion] treskom (9)
+[UNANCHORED-MOTION >> MESSAGE-CONTINUATION] odbijao (12)
+[in-motion >> initial-content] koji (10)
+[transitory-location >> x-sender] od zidova (14)
+[in-motion >> initial-content] treskom (9)
 
 [IDENTIFICATION] koji (10)
 
@@ -1588,10 +1588,9 @@
 
 [IDENTIFICATION] London (7)
 
-[TIME] nedeljno (12)
-[m-quantity] dvadeset do trideset (9)
-
 [QUANTITY] dvadeset do trideset (9)
+
+[TIME] nedeljno (12)
 
 # sent_id = 441
 # text = Dole , na ulici , vetar je mahao zacepljenim plakatom gore - dole , te se reč Englsoc na mahove pojavljivala i nestajala .
@@ -1651,7 +1650,7 @@
 
 [IDENTIFICATION] Englsoc (18)
 
-[CLASS || UNANCHORED-MOTION] mahove (20) # "Windböe"
+[UNANCHORED-MOTION >> CLASS] mahove (20) # "Windböe"
 
 [SCENE-DEINIT] nestajala (23)
 [initial-scene] reč Englsoc (17)
@@ -1740,7 +1739,7 @@
 [PART-WHOLE] dnu (11)
 [whole] morskom (10)
 
-[CLASS] morskom (10)
+[CLASS] morskom (10) # besitzanzeigendes (relatives) Adjektiv!
 
 [LOCATION] izgubljen (13)
 [location] u čudovišnom svetu u kome je on sam bio čudovište (16)
@@ -1803,7 +1802,7 @@
 6	reći	reći	VERB	Vmn	VerbForm=Inf	5	xcomp	_	_
 7	da	da	SCONJ	Cs	_	17	mark	_	_
 8	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
-9	i	i	CCONJ	Cc	_	10	advmod	_	_
+9	i	i	CCONJ	Cc	_	10	discourse	_	_
 10	jedno	jedan	NUM	Mlcnsn	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	14	nummod	_	_
 11	trenutno	trenutno	ADV	Rgp	Degree=Pos	12	advmod	_	_
 12	živo	živ	ADJ	Agpnsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	_
@@ -1832,9 +1831,6 @@
 [m-class] ljudsko (13)
 
 [QUANTITY] jedno (10)
-[m-mode] i (9)
-
-[MODE] i (9)
 
 [EVENT >> STATE] živo (12)
 [m-time] trenutno (11)

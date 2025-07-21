@@ -74,7 +74,7 @@
 12	.	.	PUNCT	Z	_	1	punct	_	_
 
 [UNANCHORED-MOTION || STATE-CHANGE] Zavali (1)
-[m-location] u stolici (4)
+[x-location] u stolici (4)
 [m-accompanier] , malo postiđen (7)
 
 [CLASS] stolici (4)
@@ -168,7 +168,7 @@
 
 [MESSAGE] nadi (9)
 [m-scene] uzaludnoj (8)
-[topic] da će taj neko koji je kucao otići posle prvog pokušaja (17)
+[content] da će taj neko koji je kucao otići posle prvog pokušaja (17)
 
 [EXPERIENCE || SEQUENCE-NEG] uzaludnoj (8)
 [experienced || followed] nadi (9)
@@ -261,7 +261,7 @@
 
 [MESSAGE-NEG] bezizrazno (19)
 [x-has-attribute] mu (9)
-[topic] lice (11)
+[x-sender] lice (11)
 [m-causer] , po dugoj navici , (15)
 [m-mode] verovatno (17)
 
@@ -270,7 +270,7 @@
 
 [PART-WHOLE] lice (11)
 
-[EVENT] navici (15)
+[EVENT || SCENE] navici (15)
 [m-time] dugoj (14)
 
 [TIME] dugoj (14)
@@ -294,12 +294,13 @@
 [IDENTIFICATION] On (1)
 
 [LOCATION-INIT] pođe (6)
-[m-quality] teškim korakom (5)
+[m-depictive] teškim korakom (5)
 [target-location] vratima (7)
 [has-location] On (1)
 
-[QUALITY] korakom (5)
+[ACTIVITY] korakom (5)
 [m-quality] teškim (4)
+[is-active] On (1)
 
 [QUALITY] teškim (4)
 
@@ -1678,10 +1679,10 @@
 [CLASS] toalet (11)
 
 [MESSAGE] muziku (16)
-[topic] vojnu (15)
+[topic || m-quality] vojnu (15)
 [m-scene] koja je i dalje izvirala iz telekrana (21)
 
-[SOCIAL-RELATION] vojnu (15)
+[SOCIAL-RELATION >> QUALITY] vojnu (15)
 
 [MESSAGE-INIT] izvirala (21)
 [target-content] koja (17)
@@ -1827,7 +1828,7 @@
 [CLASS] sudoper (2)
 [m-location] Kuhinjski (1)
 
-[CLASS] Kuhinjski (1)
+[CLASS >> QUALITY] Kuhinjski (1)
 
 [QUANTITY] skoro (5)
 
@@ -1836,12 +1837,12 @@
 
 [CLASS] vode (11)
 [m-state] prljave (9)
-[m-quality] zelenkaste (10)
+[m-quality || m-state] zelenkaste (10)
 [m-scene] koja je gore nego ikad smrdela na kupus (17)
 
 [STATE] prljave (9)
 
-[QUALITY] zelenkaste (10)
+[QUALITY || STATE] zelenkaste (10)
 
 [SENDING] smrdela (17)
 [sender] koja (12)
@@ -1937,7 +1938,7 @@
 [EVENT] napade (19)
 [x-causer >> event] kašlja (20)
 
-[EXCRETION] kašlja (20)
+[EXCRETION || EVENT] kašlja (20)
 
 # sent_id = 344
 # text = Gospođa Parsons je stajala i bespomoćno posmatrala .
@@ -1959,7 +1960,7 @@
 [m-quality] bespomoćno (6)
 [x-experiencer] Gospođa Parsons (1)
 
-[QUALITY] bespomoćno (6)
+[MEANS-NEG >> QUALITY] bespomoćno (6)
 
 # sent_id = 345
 # text = " Naravno , da je Tom kod kuće , popravio bi ga začas , " reče ona .
@@ -1990,7 +1991,7 @@
 [m-mode] Naravno (2)
 [m-condition] , da je Tom kod kuće , (8)
 [has-state] ga (12)
-[m-quality] začas (13)
+[m-quality || m-time] začas (13)
 
 [MODE] Naravno (2)
 
@@ -2001,7 +2002,7 @@
 
 [IDENTIFICATION] ga (12)
 
-[QUALITY] začas (13)
+[QUALITY || TIME] začas (13)
 
 [IDENTIFICATION] ona (17)
 

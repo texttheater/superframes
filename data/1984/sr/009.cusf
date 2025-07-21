@@ -37,6 +37,7 @@
 
 [QUALITY] slovima (7)
 [m-quality] sitnim (6)
+[has-quality] te iste parole (13)
 
 [QUALITY] sitnim (6)
 
@@ -492,18 +493,16 @@
 8	uništenje	uništenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	6	conj	_	_
 9	.	.	PUNCT	Z	_	5	punct	_	_
 
-[LOCATION >> SCENE-INIT-POSSIBILITY] stajala (5)
-[location >> participant] pred njim (3)
-[has-location >> target-scene] smrt (6)
-[has-location >> target-scene] nego uništenje (8)
+[LOCATION >> SITUATION-INIT] stajala (5)
+[location >> theme] pred njim (3)
+[has-location >> target-situator] smrt (6)
+[has-location >> target-situator] nego uništenje (8)
 
 [IDENTIFICATION] njim (3)
 
 [DESTRUCTION] smrt (6)
-[destroyed] pred njim (3)
 
 [DESTRUCTION] uništenje (8)
-[destroyed] pred njim (3)
 
 # sent_id = 464
 # text = Dnevnik će biti pretvoren u prah i pepeo , a on sam u paru .
@@ -558,7 +557,7 @@
 10	pre	pre	SCONJ	Cs	_	13	mark	_	_
 11	nego	nego	SCONJ	Cs	_	10	fixed	_	_
 12	što	što	SCONJ	Cs	_	10	fixed	_	_
-13	zbrišu	zbrisati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_
+13	zbrišu	zbrisati	VERB	Vmr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
 14	dnevnik	dnevnik	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	13	obj	_	_
 15	iz	iz	ADP	Sg	Case=Gen	16	case	_	_
 16	postojanja	postojanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	13	nmod	_	_
@@ -570,18 +569,18 @@
 [MESSAGE-INIT] pročitati (5)
 [m-mode] Jedino (1)
 [x-experiencer] Policija misli (3)
-[target-content] šta je napisao , pre nego što zbrišu dnevnik iz postojanja i iz sećanja (8)
+[target-content] šta je napisao (8)
+[m-follows] , pre nego što zbrišu dnevnik iz postojanja i iz sećanja (13)
 
 [MODE] Jedino (1)
 
 [CLASS] Policija (3)
-[m-purpose] misli (4)
+[m-purpose || m-topic] misli (4)
 
 [MESSAGE] misli (4)
 
 [MESSAGE-INIT] napisao (8)
 [target-content] šta (6)
-[m-follows] , pre nego što zbrišu dnevnik iz postojanja i iz sećanja (13)
 
 [IDENTIFICATION] šta (6)
 
@@ -694,7 +693,7 @@
 [SCENE-NECESSITY] Morao (1)
 [scene] da ode u roku od deset minuta (4)
 
-[LOCATION-DEINIT] ode (4)
+[LOCATION-CHANGE] ode (4)
 [m-time] u roku od deset minuta (6)
 
 [TIME] roku (6)
@@ -725,7 +724,7 @@
 [target-location >> target-scene] na posao (5)
 [m-time] u četrnaest i trideset (7)
 
-[EVENT] posao (5)
+[ACTIVITY] posao (5)
 
 [TIME] četrnaest i trideset (7)
 
@@ -870,7 +869,7 @@
 [POSSESSION] Nasleđe (1)
 [possessor] čovekovo (2)
 
-[CLASS] čovekovo (2) # Nomen
+[CLASS] čovekovo (2)
 
 [MODE] ne (4)
 
@@ -1253,7 +1252,7 @@
 # sent_id = 482
 # text = Sad kad je shvatio sebe kao mrtvaca , postalo je važno održati se što duže u životu .
 1	Sad	sad	ADV	Rgp	Degree=Pos	9	advmod	_	_
-2	kad	kad	ADV	Rgp	Degree=Pos|PronType=Int,Rel	4	advmod	_	_
+2	kad	kad	ADV	Rgp	Degree=Pos|PronType=Int,Rel	4	mark	_	_
 3	je	biti	AUX	Var3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 4	shvatio	shvatiti	VERB	Vmp-sm	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	advcl	_	_
 5	sebe	sebe	PRON	Px--sa	Case=Acc|PronType=Prs|Reflex=Yes	4	obj	_	_
@@ -1280,11 +1279,8 @@
 [TIME] Sad (1)
 
 [MESSAGE-INIT] shvatio (4)
-[m-time] kad (2)
 [topic] sebe (5)
 [target-content] kao mrtvaca (7)
-
-[TIME] kad (2)
 
 [IDENTIFICATION] sebe (5)
 
@@ -1539,13 +1535,12 @@
 [CLASS] kupatilo (4)
 
 [ADORNMENT-TARNISHMENT-DEINIT] opra (7)
-[m-depictive] pažljivo (6)
+[m-quality] pažljivo (6)
 [ornament] mastilo (8)
 [x-means] oštrim mrkim sapunom koji je strugao kožu kao šmirglpapir te tako bio pogodan za tu svrhu (11)
 [x-causer] On (1)
 
-[STATE] pažljivo (6)
-[has-state] On (1)
+[QUALITY] pažljivo (6)
 
 [CLASS] mastilo (8)
 
@@ -1629,7 +1624,7 @@
 [QUANTITY] sasvim (3)
 
 [MESSAGE] pomišljati (5)
-[topic] da ga sakrije (8)
+[content] da ga sakrije (8)
 
 [MESSAGE-INIT-NEG] sakrije (8)
 [target-content] ga (7)
