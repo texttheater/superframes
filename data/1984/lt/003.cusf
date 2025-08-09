@@ -83,12 +83,12 @@
 22	priešiškumu	priešiškumas	NOUN	dkt.vyr.vns.Įn.	Case=Ins|Gender=Masc|Number=Sing	19	obl:arg	_	SpaceAfter=No|TokenRange=14605:14616
 23	.	.	PUNCT	skyr.	_	12	punct	_	SpacesAfter=\n\n\t|TokenRange=14616:14617
 
-[MESSAGE-INIT] pasijusdavo (12) # Phäno? -dav-
+[MESSAGE-INIT] pasijusdavo (12) # Phäno: Verbsuffix -dav- für past frequentative
 [m-initial-time] nuo to laiko (4)
-[m-situator] , atsidūręs netoli jos , (6) # Überlegen: m-condition
+[m-situator] , atsidūręs netoli jos , (6)
 [x-experiencer] jis (10)
 [m-time] visada (11)
-[content] nemaloniai (13)
+[target-content] nemaloniai (13)
 
 [TIME] laiko (4)
 
@@ -102,10 +102,10 @@
 
 [TIME] visada (11)
 
-[??? QUALITY || MESSAGE] nemaloniai (13)
+[QUALITY-NEG >> QUALITY] nemaloniai (13)
 
 [MESSAGE] baimė (17)
-[x-identified] tai (15) # Überlegen
+[x-identified] tai (15) # Phäno? x-identified vs x-has-class
 [m-scene] , sumišusi su kažkokiu priešiškumu (19)
 
 [IDENTIFICATION] tai (15)
@@ -189,7 +189,7 @@
 12	.	.	PUNCT	skyr.	_	10	punct	_	TokenRange=14814:14815
 
 [SCENE-INIT] ėmė (10)
-[???m-situator || m-depictive] Pamatę žmogų su juodu vidinės partijos kombinezonu (1)
+[m-situator] Pamatę žmogų su juodu vidinės partijos kombinezonu (1)
 [participant] aplinkiniai (9)
 [target-scene] šnibždėtis (11)
 
@@ -202,19 +202,19 @@
 
 [CLASS] kombinezonu (7)
 [m-quality] juodu (4)
-[??? m-possessor || m-sender || m-causer || m-identifier] vidinės partijos (6)
+[m-possessor] vidinės partijos (6)
 
 [QUALITY] juodu (4)
 
 [CLASS >> IDENTIFICATION] partijos (6)
 [m-quality >> m-noncomp] vidinės (5)
 
-[QUALITY >> NONCOMP] vidinės (5)
+[QUALITY] vidinės (5)
 
-[??? LOCATION >> CLASS] aplinkiniai (9)
+[LOCATION >> CLASS] aplinkiniai (9) # Phäno: Derivation; Nominalisierung
 
 [MESSAGE-INIT] šnibždėtis (11) # Phäno: Reflexiv-Partikel am Verb
-[??? x-sender || x-experiencer] aplinkiniai (9) # message_issue: sowohl x-sender als auch x-experiencer == siehe Manual 3.10! nur x-sender nehmen
+[x-sender] aplinkiniai (9) # message_issue: wenn sowohl x-sender als auch x-experiencer == siehe Manual 3.10! nur x-sender nehmen
 
 # sent_id = 156
 # text = Brajenas buvo stambus, apkūnus vyriškis storu sprandu, šiurkštaus pašaipaus veido.
@@ -233,7 +233,7 @@
 13	.	.	PUNCT	skyr.	_	6	punct	_	TokenRange=14897:14898
 
 [CLASS] vyriškis (6)
-[??? x-identified || has-class] Brajenas (1)
+[has-class] Brajenas (1)
 [m-quality] stambus (3)
 [m-quality] apkūnus (5)
 [m-part] storu sprandu (8)
@@ -260,36 +260,38 @@
 
 # sent_id = 157
 # text = Nors jis atrodė grėsmingas, bet turėjo ir kažkokio patrauklumo.
-1	Nors	nors	SCONJ	jng.	_	4	mark	_	TokenRange=14899:14903
-2	jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=14904:14907
-3	atrodė	atrodyti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	4	csubj	_	TokenRange=14908:14914
-4	grėsmingas	grėsmingas	ADJ	bdv.nelygin.vyr.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=14915:14925
+1	Nors	nors	SCONJ	jng.	_	3	mark	_	TokenRange=14899:14903
+2	jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=14904:14907
+3	atrodė	atrodyti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=14908:14914
+4	grėsmingas	grėsmingas	ADJ	bdv.nelygin.vyr.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	3	xcomp	_	SpaceAfter=No|TokenRange=14915:14925
 5	,	,	PUNCT	skyr.	_	7	punct	_	TokenRange=14925:14926
 6	bet	bet	CCONJ	jng.	_	7	cc	_	TokenRange=14927:14930
-7	turėjo	turėti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	4	conj	_	TokenRange=14931:14937
+7	turėjo	turėti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	3	conj	_	TokenRange=14931:14937
 8	ir	ir	PART	dll.	_	9	advmod:emph	_	TokenRange=14938:14940
 9	kažkokio	kažkoks	PRON	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Ind	10	nmod	_	TokenRange=14941:14949
 10	patrauklumo	patrauklumas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	7	obl:arg	_	SpaceAfter=No|TokenRange=14950:14961
-11	.	.	PUNCT	skyr.	_	4	punct	_	TokenRange=14961:14962
+11	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=14961:14962
 
-[??? Syntax: 2 Nebensätze?] grėsmingas (4)
-[] jis (2)
-[] atrodė (3)
+[MESSAGE] atrodė (3)
+[topic] jis (2)
+[content] grėsmingas (4)
 
-[] jis (2)
+[IDENTIFICATION] jis (2)
 
-[] atrodė (3)
+[QUALITY] grėsmingas (4)
+[has-quality] jis (2)
 
-[] turėjo (7)
-[] ir kažkokio patrauklumo (10)
+[POSSESSION >> SCENE] turėjo (7)
+[possessed >> scene] ir kažkokio patrauklumo (10)
+[possessor >> participant] jis (2) # manuell hinzugefügt
 
-[] patrauklumo (10)
-[] ir kažkokio (9)
+[QUALITY] patrauklumo (10)
+[m-quality] ir kažkokio (9)
 
-[] kažkokio (9)
-[] ir (8)
+[QUALITY] kažkokio (9)
+[m-mode] ir (8)
 
-[] ir (8)
+[MODE] ir (8)
 
 # sent_id = 158
 # text = Nuolat taisėsi akinius ant nosies, ir tai kažkodėl žadino pasitikėjimą ir teikė jam savotiško inteligentiškumo.
@@ -323,10 +325,10 @@
 
 [PART-WHOLE] nosies (5)
 
-[??? STATE-INIT] žadino (10) # Überlegen: REACTION || CAUSATION
-[x-causer] tai (8)
+[STATE-INIT >> CAUSATION] žadino (10)
+[x-causer >> causer] tai (8)
 [m-explanation] kažkodėl (9)
-[target-state] pasitikėjimą (11)
+[target-state >> result] pasitikėjimą (11)
 
 [IDENTIFICATION] tai (8)
 
@@ -334,15 +336,16 @@
 
 [MESSAGE] pasitikėjimą (11)
 
-[POSSESSION-INIT >> ???] teikė (13)
-[target-possessor >> ???] jam (14)
-[possessed >> ???] savotiško inteligentiškumo (16)
-[x-causer >> ???] tai (8) # manuell hinzugefügt wg. Koordination
+[POSSESSION-INIT >> SCENE] teikė (13)
+[target-possessor >> participant] jam (14)
+[possessed >> scene] savotiško inteligentiškumo (16)
+[x-causer] tai (8) # manuell hinzugefügt wg. Koordination
 
 [IDENTIFICATION] jam (14)
 
-[??? QUALITY] inteligentiškumo (16)
+[QUALITY] inteligentiškumo (16)
 [m-quality] savotiško (15)
+[has-quality] jam (14)
 
 [QUALITY] savotiško (15)
 
@@ -388,8 +391,8 @@
 [MESSAGE >> QUALITY] uostomojo (6)
 [topic >> has-quality] tabako (7)
 
-[??? SCENE-POSSIBILITY] sugebėtum (12) # Phäno?
-[???m-mode] dar (11)
+[SCENE-POSSIBILITY] sugebėtum (12) # Phäno?
+[m-mode] dar (11)
 [scene] galvoti tokiomis kategorijomis (13)
 
 [MODE] dar (11)
@@ -410,7 +413,7 @@
 7	per	per	ADP	prl.G.	AdpType=Prep|Case=Acc	11	case	_	TokenRange=15241:15244
 8	maždaug	maždaug	ADV	prv.nelygin.	Degree=Pos	9	advmod	_	TokenRange=15245:15252
 9	tiek	tiek	ADV	sampl.prv.nelygin.	Degree=Pos|Hyph=Yes	11	advmod	_	TokenRange=15253:15257
-10	pat	pat	X	tęs.	Hyph=Yes	9	nmod	_	TokenRange=15258:15261
+10	pat	pat	X	tęs.	Hyph=Yes	9	fixed	_	TokenRange=15258:15261
 11	metų	metai	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No|TokenRange=15262:15266
 12	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=15266:15267
 
@@ -426,22 +429,20 @@
 [TIME] kartų (6)
 [m-mode] gal (4)
 [m-quantity] dešimt (5)
-[??? m-followed] per maždaug tiek pat metų (11) # vgl. Manual "it costs 1 euro per scoop"
+[m-followed] per maždaug tiek pat metų (11) # vgl. Manual "it costs 1 euro per scoop"
 
 [MODE] gal (4)
 
 [QUANTITY] dešimt (5)
 
 [TIME] metų (11)
-[m-quantity] maždaug tiek pat (9)
+[m-scene] maždaug tiek pat (9)
 
-[???] tiek (9)
-[] maždaug (8)
-[] pat (10)
+[COMPARISON >> QUANTITY] tiek pat (9)
+[m-mode] maždaug (8)
+[compared >> has-quantity] metų (11)
 
-[???] maždaug (8)
-
-[] pat (10)
+[MODE] maždaug (8)
 
 # sent_id = 161
 # text = Jautė jam didelį palankumą — ir ne vien dėl to, kad intrigavo tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos.
@@ -469,47 +470,47 @@
 22	išvaizdos	išvaizda	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	19	conj	_	SpaceAfter=No|TokenRange=15388:15397
 23	.	.	PUNCT	skyr.	_	1	punct	_	TokenRange=15397:15398
 
-[MESSAGE-INIT] Jautė (1)
+[MESSAGE-INIT] Jautė (1) # Phäno: implizites Subjekt
 [topic] jam (2)
-[content] didelį palankumą (4)
-[??? ] ir ne vien dėl to , kad intrigavo tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (10)
+[target-content] didelį palankumą (4)
+[m-explanation] ir ne vien dėl to , kad intrigavo tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (10)
 
 [IDENTIFICATION] jam (2)
 
 [MESSAGE] palankumą (4)
 [m-quality] didelį (3)
-[??? x-experiencer] jam (2)
+[x-experiencer] jam (2)
 
 [QUALITY] didelį (3)
 
-[] to (10)
-[] ne vien (8)
-[] , kad intrigavo tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (13)
+[IDENTIFICATION] to (10)
+[m-mode] ne vien (8)
+[m-explanation] , kad intrigavo tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (13)
 
-[] vien (8)
-[] ne (7)
+[MODE] vien (8)
+[m-mode] ne (7)
 
-[] ne (7)
+[MODE] ne (7)
 
 [MESSAGE] intrigavo (13)
-[??? x-causer >> topic] tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (15)
+[x-causer >> topic] tas kontrastas tarp O’Brajeno miestiškų manierų ir atleto išvaizdos (15) # message_issue
 
 [COMPARISON] kontrastas (15)
 [compared] tarp O’Brajeno miestiškų manierų (19)
 [reference] ir atleto išvaizdos (22)
 
-[??? QUALITY] manierų (19)
-[] O’Brajeno (17)
+[ACTIVITY] manierų (19) # vgl. Bspannotation
+[is-active] O’Brajeno (17)
 [m-quality] miestiškų (18)
 
 [IDENTIFICATION] O’Brajeno (17)
 
-[] miestiškų (18)
+[CLASS >> QUALITY] miestiškų (18) # Phäno: adjektivisch gebrauchtes Nomen
 
-[] išvaizdos (22)
-[] atleto (21)
+[MESSAGE >> QUALITY] išvaizdos (22)
+[m-reference] atleto (21)
 
-[] atleto (21)
+[CLASS] atleto (21)
 
 # sent_id = 162
 # text = Labiau dėl savotiško slapto įsitikinimo,— arba gal tik vilties,— kad O'Brajeno politinis nusistatymas apsimestinis.
@@ -530,37 +531,37 @@
 15	apsimestinis	apsimestinis	ADJ	bdv.nelygin.vyr.vns.V.	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=15501:15513
 16	.	.	PUNCT	skyr.	_	1	punct	_	TokenRange=15513:15514
 
-[] Labiau (1)
-[] dėl savotiško slapto įsitikinimo (5)
-[] ,— arba gal tik vilties,— kad O'Brajeno politinis nusistatymas apsimestinis (10)
+[QUANTITY] Labiau (1) # Phäno: Verbellipse
+[x-causer] dėl savotiško slapto įsitikinimo (5)
+[x-causer] ,— arba gal tik vilties,— kad O'Brajeno politinis nusistatymas apsimestinis (10)
 
-[] įsitikinimo (5)
-[] savotiško (3)
-[] slapto (4)
+[MESSAGE] įsitikinimo (5)
+[m-quality] savotiško (3)
+[m-quality] slapto (4)
 
-[] savotiško (3)
+[QUALITY] savotiško (3)
 
-[] slapto (4)
+[QUALITY] slapto (4)
 
-[] vilties,— (10)
-[] gal (8)
-[] tik (9)
-[] kad O'Brajeno politinis nusistatymas apsimestinis (15)
+[MESSAGE] vilties,— (10)
+[m-mode] gal (8)
+[m-mode] tik (9)
+[content] kad O'Brajeno politinis nusistatymas apsimestinis (15)
 
-[] gal (8)
+[MODE] gal (8)
 
-[] tik (9)
+[MODE] tik (9)
 
-[] apsimestinis (15)
-[] O'Brajeno politinis nusistatymas (14)
+[MESSAGE >> QUALITY] apsimestinis (15)
+[topic >> has-quality] O'Brajeno politinis nusistatymas (14)
 
-[] nusistatymas (14)
-[] O'Brajeno (12)
-[] politinis (13)
+[MESSAGE] nusistatymas (14)
+[x-experiencer] O'Brajeno (12)
+[topic] politinis (13)
 
-[] O'Brajeno (12)
+[IDENTIFICATION] O'Brajeno (12)
 
-[] politinis (13)
+[ACTIVITY] politinis (13) # Phäno? adjektivisch gebrauchtes Nomen?
 
 # sent_id = 163
 # text = Jo išraiška atkakliai piršo šią mintį.
@@ -572,12 +573,12 @@
 6	mintį	mintis	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=15547:15552
 7	.	.	PUNCT	skyr.	_	4	punct	_	TokenRange=15552:15553
 
-[??? POSSESSION-INIT-POSSIBILITY >>> SCENE-INIT] piršo (4)
+[POSSESSION-INIT-POSSIBILITY >> SCENE-INIT] piršo (4)
 [x-causer] Jo išraiška (2)
-[m-quality] atkakliai (3) # Überlegen
-[??? possessed >> target-scene] šią mintį (6)
+[m-quality] atkakliai (3)
+[possessed >> target-scene] šią mintį (6)
 
-[??? MESSAGE] išraiška (2)
+[MESSAGE] išraiška (2)
 [x-sender] Jo (1)
 
 [IDENTIFICATION] Jo (1)
@@ -588,9 +589,9 @@
 
 # sent_id = 164
 # text = Antra vertus, gal jo veide tiesiog atsispindėjo inteligentiškumas.
-1	Antra	antra	ADV	sampl.prv.nelygin.	Degree=Pos|Hyph=Yes	8	parataxis	_	TokenRange=15554:15559
-2	vertus	vertus	X	tęs.	Hyph=Yes	1	nmod	_	SpaceAfter=No|TokenRange=15560:15566
-3	,	,	PUNCT	skyr.	_	1	punct	_	TokenRange=15566:15567
+1	Antra	antra	ADV	sampl.prv.nelygin.	Degree=Pos|Hyph=Yes	2	advmod	_	TokenRange=15554:15559
+2	vertus	vertus	X	tęs.	Hyph=Yes	8	advmod	_	SpaceAfter=No|TokenRange=15560:15566
+3	,	,	PUNCT	skyr.	_	8	punct	_	TokenRange=15566:15567
 4	gal	gal	PART	dll.	_	8	advmod:emph	_	TokenRange=15568:15571
 5	jo	jis	PRON	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nmod	_	TokenRange=15572:15574
 6	veide	veidas	NOUN	dkt.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	TokenRange=15575:15580
@@ -599,20 +600,22 @@
 9	inteligentiškumas	inteligentiškumas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=15602:15619
 10	.	.	PUNCT	skyr.	_	8	punct	_	TokenRange=15619:15620
 
-[MESSAGE] atsispindėjo (8) # Überlegen: REPRODUCTION?
+[MESSAGE] atsispindėjo (8)
+[m-scene] Antra vertus (2) # "on the other hand"; "andererseits"/contrasting point of view
 [m-mode] gal (4)
-[??? x-sender || m-location] jo veide (6)
+[x-sender || m-location] jo veide (6)
 [m-mode] tiesiog (7)
 [content] inteligentiškumas (9)
 
-[??? COMPARISON] Antra (1) # Bedeutung: Priešprieša bei gretinimas
-[??? Syntax: head?; m-noncomp] vertus (2)
+[COMPARISON] vertus (2) # Bedeutung: Priešprieša bei gretinimas. vgl. sent_81
+[m-rank >> m-noncomp] Antra (1)
+[compared] atsispindėjo (8)
 
-[???] vertus (2)
+[RANK] Antra (1)
 
 [MODE] gal (4)
 
-[PART-WHOLE] veide (6)
+[PART-WHOLE] veide (6) # Phäno? Lokativ auf Körperteile
 [whole] jo (5)
 
 [IDENTIFICATION] jo (5)
@@ -709,7 +712,7 @@
 15	įmanoma	įmanyti	VERB	vksm.dlv.neveik.es.bev.	Definite=Ind|Gender=Neut|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass	5	conj	_	SpaceAfter=No|TokenRange=15820:15827
 16	.	.	PUNCT	skyr.	_	5	punct	_	TokenRange=15827:15828
 
-[??? SCENE-INIT-NEG] nemėgino (5)
+[SCENE-INIT-NEG] nemėgino (5)
 [participant] Vinstonas (2)
 [m-time] niekad (3)
 [m-mode] nė (4)
@@ -721,27 +724,27 @@
 
 [MODE] nė (4)
 
-[ACTIVITY] padaryti (7) # Überlegen: siehe Manual
-[activity] to (6)
-[is-active] Vinstonas (2)
+[CAUSATION] padaryti (7)
+[result] to (6)
+[causer] Vinstonas (2)
 
 [IDENTIFICATION] to (6)
 
-[??? SCENE-POSSIBILITY] įmanoma (15)
+[SCENE-POSSIBILITY] įmanoma (15)
 [scene] tai (12)
-[] ir (13)
-[??? Syntax? aux?] nebuvo (14)
+[m-mode] ir (13)
+[m-mode] nebuvo (14) # Syntax: alksnis recherchieren!!! del csubj -> csubj gelassen, damit man die Negation auffangen kann
 
 [MESSAGE-INIT] sakant (10)
 [target-content] tiesą (9)
 
-[??? MODE || MESSAGE] tiesą (9)
+[MODE] tiesą (9)
 
 [IDENTIFICATION] tai (12)
 
-[] ir (13)
+[MODE] ir (13)
 
-[] nebuvo (14)
+[MODE] nebuvo (14)
 
 # sent_id = 167
 # text = Dabar Brajenas dirstelėjo į laikrodį, pamatė, kad jau beveik lygiai vienuolikta, tikriausiai nusprendė likti dokumentų departamente, kol baigsis neapykantos dviminutė.
@@ -827,42 +830,44 @@
 1	Jis	jis	PRON	įv.vyr.vns.V.	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=15997:16000
 2	atsisėdo	atsisėdyti	VERB	vksm.asm.sngr.tiesiog.es.vns.3.	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=16001:16009
 3	toje	tas	DET	sampl.įv.mot.vns.Vt.	Case=Loc|Definite=Ind|Gender=Fem|Hyph=Yes|Number=Sing|PronType=Dem	5	det	_	TokenRange=16010:16014
-4	pačioje	pats	X	tęs.	Hyph=Yes	3	nmod	_	TokenRange=16015:16022
+4	pačioje	pats	X	tęs.	Hyph=Yes	5	amod	_	TokenRange=16015:16022
 5	eilėje	eilė	NOUN	dkt.mot.vns.Vt.	Case=Loc|Gender=Fem|Number=Sing	2	obl	_	TokenRange=16023:16029
 6	kaip	kaip	SCONJ	jng.	_	8	mark	_	TokenRange=16030:16034
 7	ir	ir	PART	dll.	_	8	advmod:emph	_	TokenRange=16035:16037
 8	Vinstonas	Vinstonas	PROPN	dkt.tikr.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No|TokenRange=16038:16047
-9	,	,	PUNCT	skyr.	_	11	punct	_	TokenRange=16047:16048
+9	,	,	PUNCT	skyr.	_	2	punct	_	TokenRange=16047:16048
 10	per	per	ADP	prl.G.	AdpType=Prep|Case=Acc	11	case	_	TokenRange=16049:16052
-11	porą	pora	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	5	obl	_	TokenRange=16053:16057
-12	kėdžių	kėdis	NOUN	dkt.mot.dgs.K.	Case=Gen|Gender=Fem|Number=Plur	11	nmod	_	TokenRange=16058:16064
+11	porą	pora	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	12	nummod	_	TokenRange=16053:16057
+12	kėdžių	kėdis	NOUN	dkt.mot.dgs.K.	Case=Gen|Gender=Fem|Number=Plur	13	nmod	_	TokenRange=16058:16064
 13	toliau	toli	ADV	prv.aukšt.	Degree=Cmp	2	advmod	_	SpaceAfter=No|TokenRange=16065:16071
 14	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=16071:16072
 
 [LOCATION-INIT] atsisėdo (2)
 [has-location] Jis (1)
-[] toje pačioje eilėje kaip ir Vinstonas , per porą kėdžių (5)
-[??? Syntax: muss mit per pora kedziu zusammenhängen] toliau (13)
+[target-location] toje pačioje eilėje kaip ir Vinstonas (5)
+[target-location] per porą kėdžių toliau (13)
 
-[] Jis (1)
+[IDENTIFICATION] Jis (1)
 
-[] eilėje (5)
-[] kaip ir Vinstonas (8)
-[] , per porą kėdžių (11)
+[CLASS || LOCATION] eilėje (5) # Phäno: Lokativ?
+[m-scene] pačioje (4)
+[m-reference] kaip ir Vinstonas (8)
 
-[] pačioje (4)
+[COMPARISON] pačioje (4)
+[compared] eilėje (5)
 
-[] Vinstonas (8)
-[] ir (7)
+[IDENTIFICATION] Vinstonas (8)
+[m-mode] ir (7)
 
-[] ir (7)
+[MODE] ir (7)
 
-[] porą (11)
-[] kėdžių (12)
+[LOCATION] toliau (13)
+[x-quantity] per porą kėdžių (12)
 
-[] kėdžių (12)
+[CLASS] kėdžių (12)
+[m-quantity] per porą (11)
 
-[] toliau (13)
+[QUANTITY] porą (11)
 
 # sent_id = 169
 # text = Tarp jų sėdėjo nedidukė šiaudų spalvos plaukais moteriškė, kuri dirbo gretimoje sekcijoje.
@@ -897,11 +902,10 @@
 [PART-WHOLE] plaukais (7)
 [m-quality] šiaudų spalvos (6)
 
-[QUALITY] spalvos (6)
-[??? m-scene] šiaudų (5)
+[QUALITY] spalvos (6) # Bedeutung: Farbe
+[quality] šiaudų (5) # Bedeutung: des Strohs
 
-[??? COMPARISON >> QUALITY] šiaudų (5) # Überlegen
-[??? compared >> has-quality] spalvos (6)
+[CLASS] šiaudų (5) # former_issue
 
 [SOCIAL-RELATION] dirbo (11)
 [has-social-relation] kuri (10)
@@ -910,7 +914,7 @@
 
 [IDENTIFICATION] kuri (10)
 
-[??? PART-WHOLE] sekcijoje (13)
+[PART-WHOLE || LOCATION] sekcijoje (13) # Phäno?
 [m-location] gretimoje (12) # Bedeutung: šalia esantis
 
 [LOCATION] gretimoje (12)
@@ -922,7 +926,7 @@
 3	tamsiais	tamsus	ADJ	bdv.nelygin.vyr.dgs.Įn.	Case=Ins|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur	4	amod	_	TokenRange=16175:16183
 4	plaukais	plaukas	NOUN	dkt.vyr.dgs.Įn.	Case=Ins|Gender=Masc|Number=Plur	1	nmod	_	TokenRange=16184:16192
 5	sėdėjo	sėdėti	VERB	vksm.asm.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=16193:16199
-6	tiesiai	tiesiai	ADV	prv.nelygin.	Degree=Pos	7	advmod	_	TokenRange=16200:16207
+6	tiesiai	tiesiai	ADV	prv.nelygin.	Degree=Pos	9	advmod	_	TokenRange=16200:16207
 7	jam	jis	PRON	įv.vyr.vns.N.	Case=Dat|Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obl:arg	_	TokenRange=16208:16211
 8	už	už	ADP	prl.K.	AdpType=Prep|Case=Gen	9	case	_	TokenRange=16212:16214
 9	nugaros	nugara	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No|TokenRange=16215:16222
@@ -941,12 +945,12 @@
 [QUALITY] tamsiais (3)
 
 [PART-WHOLE] nugaros (9)
-[??? Syntax: schon geändert, nicht ganz zufrieden; whole] tiesiai jam (7)
+[m-quality] tiesiai (6)
+[whole] jam (7)
+
+[QUALITY] tiesiai (6)
 
 [IDENTIFICATION] jam (7)
-[???] tiesiai (6)
-
-[???] tiesiai (6)
 
 # newpar
 # sent_id = 171
@@ -965,7 +969,7 @@
 12	buvusi	buūti	AUX	vksm.dlv.veik.būt-k.mot.vns.V.	Aspect=Perf|Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	13	cop	_	TokenRange=16301:16307
 13	paleista	paleisti	VERB	vksm.dlv.neveik.būt.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	6	advcl	_	TokenRange=16308:16316
 14	kokia	koks	DET	sampl.įv.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Hyph=Yes|Number=Sing|PronType=Int,Rel	16	det	_	TokenRange=16317:16322
-15	nors	nors	X	tęs.	Hyph=Yes	14	nmod	_	TokenRange=16323:16327
+15	nors	nors	X	tęs.	Hyph=Yes	14	flat	_	TokenRange=16323:16327
 16	baisi	baisas	NOUN	dkt.mot.vns.Įn.	Case=Ins|Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No|TokenRange=16328:16333
 17	,	,	PUNCT	skyr.	_	18	punct	_	TokenRange=16333:16334
 18	netepta	netepti	VERB	vksm.dlv.neig.neveik.būt.mot.vns.V.	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part|Voice=Pass	16	conj	_	TokenRange=16335:16342
@@ -973,7 +977,7 @@
 20	.	.	PUNCT	skyr.	_	6	punct	_	TokenRange=16349:16350
 
 [MESSAGE-INIT] sugriaudėjo (6)
-[m-time] Staiga (1) # Überlegen
+[m-time] Staiga (1)
 [m-location || x-sender] iš teleekrano salės gale (3)
 [x-sender || topic] gergždžiantis balsas (8)
 [m-reference] , lyg būtų buvusi paleista kokia nors baisi , netepta mašina (13)
@@ -983,12 +987,12 @@
 [CLASS] teleekrano (3)
 [m-location] salės gale (5)
 
-[PART-WHOLE] gale (5) # Überlegen: LOCATION?
-[whole] salės (4)
+[PART-WHOLE || LOCATION] gale (5) # Phäno?
+[whole || location] salės (4)
 
 [CLASS] salės (4)
 
-[MESSAGE] balsas (8)
+[SENDING] balsas (8)
 [m-quality] gergždžiantis (7)
 
 [QUALITY] gergždžiantis (7)
@@ -998,19 +1002,18 @@
 
 [CLASS] mašina (19)
 [m-quality] kokia nors baisi (16)
-[] , netepta (18)
+[m-scene] , netepta (18)
 
 [QUALITY] baisi (16)
 
-[??? Syntax: flat?] nors (15)
-
-[??? STATE-INIT-NEG] netepta (18)
+[STATE-INIT-NEG] netepta (18)
+[has-state] mašina (19)
 
 # sent_id = 172
 # text = Nuo to garso imdavo gelti dantis ir plaukai ant nugaros pasišiaušdavo.
 1	Nuo	nuo	ADP	prl.K.	AdpType=Prep|Case=Gen	3	case	_	TokenRange=16351:16354
 2	to	tas	DET	įv.vyr.vns.K.	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=16355:16357
-3	garso	garsas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	5	obl	_	TokenRange=16358:16363
+3	garso	garsas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	4	obl	_	TokenRange=16358:16363
 4	imdavo	imti	VERB	vksm.asm.tiesiog.būt-d.dgs.3.	Aspect=Hab|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=16364:16370
 5	gelti	gelti	VERB	vksm.bndr.	Polarity=Pos|VerbForm=Inf	4	xcomp	_	TokenRange=16371:16376
 6	dantis	dantis	VERB	vksm.bndr.sngr.	Polarity=Pos|Reflex=Yes|VerbForm=Inf	5	obj	_	TokenRange=16377:16383
@@ -1022,23 +1025,23 @@
 12	.	.	PUNCT	skyr.	_	4	punct	_	TokenRange=16420:16421
 
 [SCENE-INIT] imdavo (4) # Phäno: Wiederholung? The frequentative past tense in Lithuanian
-[??? evtl. Syntax: atskirti "nuo to garso"? target-scene] Nuo to garso gelti dantis (5)
+[x-causer] Nuo to garso (3)
+[target-scene] gelti dantis (5)
+
+[MESSAGE] garso (3)
 
 [MESSAGE] gelti (5)
-[??? x-causer] Nuo to garso (3)
 [x-sender] dantis (6)
 
-[] garso (3)
+[PART-WHOLE] dantis (6)
 
-[] dantis (6)
+[STATE-CHANGE] pasišiaušdavo (11)
+[has-state] plaukai (8)
+[m-location] ant nugaros (10)
 
-[] pasišiaušdavo (11)
-[] plaukai (8)
-[] ant nugaros (10)
+[PART-WHOLE] plaukai (8)
 
-[] plaukai (8)
-
-[] nugaros (10)
+[PART-WHOLE] nugaros (10)
 
 # sent_id = 173
 # text = Neapykanta prasidėjo.
@@ -1049,46 +1052,43 @@
 [SCENE-INIT] prasidėjo (2)
 [target-scene] Neapykanta (1)
 
-[??? MESSAGE >> IDENTIFICATION] Neapykanta (1)
+[MESSAGE >> IDENTIFICATION] Neapykanta (1) # former_issue
 
 # newpar
 # sent_id = 174
 # text = Kaip įprasta, ekrane pasirodė Emanuelio Goldšteino, žmonių priešo, veidas.
 1	Kaip	kaip	SCONJ	jng.	_	2	mark	_	TokenRange=16446:16450
-2	įprasta	įprastas	ADJ	bdv.nelygin.bev.	Definite=Ind|Degree=Pos|Gender=Neut	5	parataxis	_	SpaceAfter=No|TokenRange=16451:16458
+2	įprasta	įprastas	ADJ	bdv.nelygin.bev.	Definite=Ind|Degree=Pos|Gender=Neut	5	amod	_	SpaceAfter=No|TokenRange=16451:16458
 3	,	,	PUNCT	skyr.	_	2	punct	_	TokenRange=16458:16459
 4	ekrane	ekranas	NOUN	dkt.vyr.vns.Vt.	Case=Loc|Gender=Masc|Number=Sing	5	obl	_	TokenRange=16460:16466
 5	pasirodė	pasirodyti	VERB	vksm.asm.sngr.tiesiog.būt-k.vns.3.	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=16467:16475
-6	Emanuelio	Emanuelis	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	TokenRange=16476:16485
-7	Goldšteino	Goldšteinas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No|TokenRange=16486:16496
+6	Emanuelio	Emanuelis	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	TokenRange=16476:16485
+7	Goldšteino	Goldšteinas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	6	flat	_	SpaceAfter=No|TokenRange=16486:16496
 8	,	,	PUNCT	skyr.	_	10	punct	_	TokenRange=16496:16497
 9	žmonių	žmogus	NOUN	dkt.vyr.dgs.K.	Case=Gen|Gender=Masc|Number=Plur	10	nmod	_	TokenRange=16498:16504
-10	priešo	priešas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No|TokenRange=16505:16511
+10	priešo	priešas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	6	appos	_	SpaceAfter=No|TokenRange=16505:16511
 11	,	,	PUNCT	skyr.	_	10	punct	_	TokenRange=16511:16512
 12	veidas	veidas	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=16513:16519
 13	.	.	PUNCT	skyr.	_	5	punct	_	TokenRange=16519:16520
 
-[] pasirodė (5)
-[] ekrane (4)
-[] Emanuelio Goldšteino , žmonių priešo , veidas (12)
+[SCENE-INIT] pasirodė (5)
+[m-reference] Kaip įprasta , (2)
+[m-location] ekrane (4)
+[target-scene] Emanuelio Goldšteino , žmonių priešo , veidas (12)
 
-[] įprasta (2)
+[MODE] įprasta (2)
 
-[] ekrane (4)
+[CLASS || LOCATION] ekrane (4) # Phäno: Lokativ
 
-[] veidas (12)
-[] Emanuelio Goldšteino (7)
-[] , žmonių priešo , (10)
+[PART-WHOLE] veidas (12)
+[whole] Emanuelio Goldšteino , žmonių priešo , (6)
 
-[] Goldšteino (7)
-[] Emanuelio (6)
+[IDENTIFICATION] Emanuelio Goldšteino , žmonių priešo , (6)
 
-[] Emanuelio (6)
+[SOCIAL-RELATION] priešo (10) # Phäno: dt Kompositum "Volksfeind=zmoniu priesas"
+[has-social-relation] žmonių (9)
 
-[] priešo (10)
-[] žmonių (9)
-
-[] žmonių (9)
+[CLASS] žmonių (9)
 
 # sent_id = 175
 # text = Žiūrovai šen bei ten ėmė švilpti.
@@ -1106,7 +1106,7 @@
 [m-location] bei ten (4)
 [target-scene] švilpti (6)
 
-[??? MESSAGE-INIT >> CLASS] Žiūrovai (1) # issue: nur MESSAGE-INIT? oder MESSAGE-INIT >> CLASS? wann lässt man CLASS weg, wenn keine core roles vorhanden?
+[MESSAGE-INIT >> CLASS] Žiūrovai (1) # nur MESSAGE-INIT? oder MESSAGE-INIT >> CLASS? wann lässt man CLASS weg, wenn keine core roles vorhanden? vgl. issue mit "stebimasis". Phäno: Derivat; Nominalisierung
 
 [LOCATION] šen (2)
 
@@ -1144,9 +1144,9 @@
 [QUALITY-NEG >> QUALITY] Nedidukė (1)
 
 [CLASS] plaukais (4)
-[??? m-quality || m-scene] šiaudiniais (3)
+[m-quality] šiaudiniais (3)
 
-[??? QUALITY || COMPARISON >> QUALITY] šiaudiniais (3) # Überlgen: CLASS || QUALITY siaudiniai; m-compared || has-quality
+[CLASS >> QUALITY] šiaudiniais (3) # Phäno: adjektivisch gebrauchtes Nomen. vgl. sent_169
 
 [MESSAGE] baimės (9)
 
@@ -1283,55 +1283,51 @@
 4	kiekvieną	kiekvienas	DET	įv.mot.vns.G.	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing|PronType=Tot	5	det	_	TokenRange=16935:16944
 5	dieną	diena	NOUN	dkt.mot.vns.G.	Case=Acc|Gender=Fem|Number=Sing	8	obl	_	TokenRange=16945:16950
 6	šiek	šiek	ADV	sampl.prv.nelygin.	Degree=Pos|Hyph=Yes	8	advmod	_	TokenRange=16951:16955
-7	tiek	tiek	X	tęs.	Hyph=Yes	6	nmod	_	TokenRange=16956:16960
+7	tiek	tiek	X	tęs.	Hyph=Yes	6	flat	_	TokenRange=16956:16960
 8	skirdavosi	skirtis	VERB	vksm.asm.sngr.tiesiog.būt-d.vns.3.	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=Yes|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16961:16971
 9	,	,	PUNCT	skyr.	_	13	punct	_	TokenRange=16971:16972
 10	bet	bet	CCONJ	jng.	_	13	cc	_	TokenRange=16973:16976
-11	nė	nė	PART	dll.	_	13	advmod:emph	_	TokenRange=16977:16979
-12	viena	vienas	PRON	tęs.	Hyph=Yes	11	nmod	_	TokenRange=16980:16985
+11	nė	nė	PART	dll.	_	12	advmod:emph	_	TokenRange=16977:16979
+12	viena	vienas	PRON	tęs.	Hyph=Yes	13	nsubj	_	TokenRange=16980:16985
 13	neapsieidavo	neapsieiti	VERB	vksm.asm.neig.sngr.tiesiog.būt-k.dgs.3.	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Reflex=Yes|Tense=Past|VerbForm=Fin	8	conj	_	TokenRange=16986:16998
 14	be	be	ADP	prl.K.	AdpType=Prep|Case=Gen	16	case	_	TokenRange=16999:17001
 15	pagrindinio	pagrindinis	ADJ	bdv.nelygin.vyr.vns.K.	Case=Gen|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	16	amod	_	TokenRange=17002:17013
 16	personažo	personažas	NOUN	dkt.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	13	obl:arg	_	TokenRange=17014:17023
-17	Goldšteino	Goldšteinas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	13	obl:arg	_	SpaceAfter=No|TokenRange=17024:17034
+17	Goldšteino	Goldšteinas	PROPN	dkt.tikr.vyr.vns.K.	Case=Gen|Gender=Masc|Number=Sing	16	appos	_	SpaceAfter=No|TokenRange=17024:17034
 18	.	.	PUNCT	skyr.	_	8	punct	_	TokenRange=17034:17035
 
-[] skirdavosi (8)
-[] Neapykantos dviminučių programa (3)
-[] kiekvieną dieną (5)
-[] šiek tiek (6)
+[COMPARISON] skirdavosi (8) # Phäno: reflexiv Marker an dem Verb
+[compared] Neapykantos dviminučių programa (3)
+[m-time] kiekvieną dieną (5)
+[m-quantity] šiek tiek (6)
 
-[] programa (3)
-[] Neapykantos dviminučių (2)
+[MESSAGE] programa (3)
+[topic] Neapykantos dviminučių (2)
 
-[] dviminučių (2)
-[] Neapykantos (1)
+[TIME] dviminučių (2)
+[has-time] Neapykantos (1)
 
-[] Neapykantos (1)
+[MESSAGE] Neapykantos (1)
 
-[] dieną (5)
+[TIME] dieną (5)
 
-[] šiek (6)
-[] tiek (7)
+[QUANTITY] šiek tiek (6)
 
-[] tiek (7)
+[SITUATION-NECESSITY] neapsieidavo (13) # Übelegen: SCENE nur? Phäno? -dav-
+[theme] nė viena (12)
+[situator] be pagrindinio personažo Goldšteino (16)
 
-[] neapsieidavo (13)
-[] nė viena (11)
-[] be pagrindinio personažo (16)
-[] Goldšteino (17)
+[QUANTITY] viena (12) # Phäno: Numeralpronomen
+[m-mode] nė (11)
 
-[] nė (11)
-[] viena (12)
+[MODE] nė (11)
 
-[] viena (12)
+[CLASS] personažo Goldšteino (16)
+[m-quality] pagrindinio (15)
 
-[] personažo (16)
-[] pagrindinio (15)
+[QUALITY] pagrindinio (15)
 
-[] pagrindinio (15)
-
-[] Goldšteino (17)
+[IDENTIFICATION] Goldšteino (17)
 
 # sent_id = 179
 # text = Jis buvo pirmutinis išdavikas, sutepęs Partijos grynumą.
@@ -1354,14 +1350,14 @@
 
 [RANK] pirmutinis (3)
 
-[??? STATE-CHANGE] sutepęs (6)
-[??? initial-state] Partijos grynumą (8)
+[STATE-CHANGE] sutepęs (6)
+[initial-state] Partijos grynumą (8)
 [x-causer] išdavikas (4)
 
-[??? STATE || QUALITY] grynumą (8)
-[has-state || has-quality] Partijos (7)
+[STATE] grynumą (8)
+[has-state] Partijos (7)
 
-[??? SOCIAL-RELATION || CLASS] Partijos (7)
+[CLASS] Partijos (7)
 
 # sent_id = 180
 # text = Visi vėlesnieji nusikaltimai partijai, visos išdavystės, sabotažo akcijos, erezijos, nukrypimai kilo iš jo mokymo-
@@ -1532,12 +1528,13 @@
 4	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=17434:17435
 
 [STATE-CHANGE] sutraukė (2)
-[??? x-experiencer? ] Vinstonui (1)
-[has-state] diafragmą (3)
+[x-has-attribute] Vinstonui (1) # former_issue. Phäno: x-has-attribute
+[has-state] diafragmą (3) # Bedeutung: Zwerchfell. Obj is less oblique argument than obl therefor here the role "has-state" and not "x-attribute"
 
 [IDENTIFICATION] Vinstonui (1)
+[m-part] diafragmą (3) # manuell hinzugefügt wg. x-has-attribute
 
-[PART-WHOLE] diafragmą (3)
+[PART-WHOLE] diafragmą (3) # vgl. Manual: extra Kante nicht hier, sondern oben bei "Vinstonui (1)"
 
 # sent_id = 183
 # text = Matant Goldšteino veidą, jį visad apimdavo skausmingas jausmų mišinys.
@@ -1553,11 +1550,11 @@
 10	mišinys	mišinys	NOUN	dkt.vyr.vns.V.	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	SpaceAfter=No|TokenRange=17498:17505
 11	.	.	PUNCT	skyr.	_	7	punct	_	TokenRange=17505:17506
 
-[SEQEUNCE || SCENE-INIT] apimdavo (7) # issue + Phäno: the frequentative past tense
-[followed || m-trigger] Matant Goldšteino veidą , (1)
-[??? x-experiencer || participant] jį (5)
+[SCENE-INIT] apimdavo (7) # former_issue. Phäno: the frequentative past tense --> normal annotieren
+[m-trigger] Matant Goldšteino veidą , (1)
+[participant] jį (5)
 [m-time] visad (6)
-[follows || target-scene] skausmingas jausmų mišinys (10)
+[target-scene] skausmingas jausmų mišinys (10)
 
 [MESSAGE] Matant (1)
 [topic] Goldšteino veidą (3)
@@ -1571,10 +1568,10 @@
 
 [TIME] visad (6)
 
-[??? PART-WHOLE >> MESSAGE] mišinys (10) # Überlegen
+[ACCOMPANIMENT-INIT >> MESSAGE] mišinys (10) # vgl. Bsp.Annotation "gemischt"
 [m-quality] skausmingas (8)
-[??? part >> x-noncomp] jausmų (9)
-[??? >> x-experiencer] jį (5)
+[target-accompanier >> x-noncomp] jausmų (9)
+[accompanied >> x-experiencer] jį (5)
 
 [QUALITY] skausmingas (8)
 
@@ -1712,7 +1709,7 @@
 
 [COMPARISON] priminė (10)
 [compared] balsas (8)
-[m-mode] irgi (9) # Überlegen
+[m-mode] irgi (9)
 [reference] avies mekenimą (12)
 
 [MESSAGE] balsas (8)
@@ -2250,14 +2247,14 @@
 10	balsui	balsas	NOUN	dkt.vyr.vns.N.	Case=Dat|Gender=Masc|Number=Sing	7	obl:arg	_	SpaceAfter=No|TokenRange=18859:18865
 11	.	.	PUNCT	skyr.	_	7	punct	_	TokenRange=18865:18866
 
-[??? ACCOMPANIMENT] fonas (7)
+[ACCOMPANIMENT] fonas (7)
 [accompanier] Duslus kareiviškų batų dundesys (4)
-[??? m-scene -> COMPARISON veliau?] tarsi (6)
+[m-scene] tarsi (6)
 [accompanied] mekenančiam Goldšteino balsui (10)
 
-[MESSAGE-INIT] dundesys (4)
+[MESSAGE-INIT || SENDING] dundesys (4)
 [m-quality] Duslus (1)
-[x-sender] kareiviškų batų (3)
+[x-sender || sender] kareiviškų batų (3)
 
 [QUALITY] Duslus (1)
 
@@ -2266,11 +2263,12 @@
 
 [QUALITY] kareiviškų (2)
 
-[] tarsi (6)
+[COMPARISON] tarsi (6)
+[compared] fonas (7)
 
-[MESSAGE] balsui (10)
+[SENDING] balsui (10)
 [m-scene] mekenančiam (8)
-[x-sender] Goldšteino (9)
+[sender] Goldšteino (9)
 
 [MESSAGE-INIT >> QUALITY] mekenančiam (8)
 [x-sender >> has-quality] balsui (10)
@@ -2297,11 +2295,11 @@
 [m-time] Praėjus pusei minutės , (1)
 [x-sender] dalis žiūrovų (5)
 [m-location] iš visų pašalių (9)
-[??? m-time] jau (10)
+[m-time] jau (10)
 [m-depictive] įniršę (11)
 
-[???] Praėjus (1)
-[??? ] pusei minutės (3)
+[UNANCHORED-MOTION >> TIME-DEINIT] Praėjus (1) # vgl. sent_122
+[in-motion >> initial-time] pusei minutės (3)
 
 [TIME] minutės (3)
 [m-quantity] pusei (2)
@@ -2311,11 +2309,11 @@
 [PART-WHOLE] dalis (5)
 [whole] žiūrovų (6)
 
-[??? MESSAGE-INIT >> CLASS] žiūrovų (6)
+[MESSAGE-INIT >> CLASS] žiūrovų (6) # Phäno: Derivat; Nominalisierung
 
 [CLASS] pašalių (9)
 
-[] jau (10)
+[TIME] jau (10)
 
 [MESSAGE] įniršę (11)
 [x-experiencer] dalis žiūrovų (5)
@@ -2674,29 +2672,29 @@
 11	suvedžios	suvedžioti	VERB	vksm.asm.tiesiog.būs.vns.3.	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=19664:19673
 12	.	.	PUNCT	skyr.	_	2	punct	_	TokenRange=19673:19674
 
-[??? QUALITY || QUANTITY?] užteko (2)
+[QUANTITY >> EXISTENCE] užteko (2) # former_issue. Bedeutung: genug sein; es hat gereicht
 [m-time] Visuomet (1)
-[] naujų apkvailintųjų , laukiančių , kol jis juos suvedžios (4)
+[has-quantity >> exists] naujų apkvailintųjų , laukiančių , kol jis juos suvedžios (4)
 
 [TIME] Visuomet (1)
 
-[??? MESSAGE-INIT >> CLASS] apkvailintųjų (4)
-[??? m-state || m-time] naujų (3) # Überlegen naujas != jaunas
+[MESSAGE-INIT >> CLASS] apkvailintųjų (4) # Phäno: Derivat; Nominalisierung
+[m-time] naujų (3) # naujas != jaunas
 [m-scene] , laukiančių , kol jis juos suvedžios (6)
 
-[] naujų (3)
+[STATE || TIME] naujų (3)
 
-[??? SCENE-INIT-POSSIBILITY] laukiančių (6)
+[SCENE-INIT-POSSIBILITY] laukiančių (6)
 [target-scene] , kol jis juos suvedžios (11)
 [participant] apkvailintųjų (4)
 
-[??? MESSAGE-INIT || SOCIAL-RELATION-INIT] suvedžios (11)
-[???] kol (8)
-[x-sender] jis (9)
-[x-experiencer] juos (10)
-[x-experiencer] apkvailintųjų (4)
+[SOCIAL-RELATION-INIT] suvedžios (11)
+[m-time] kol (8)
+[x-causer] jis (9)
+[has-social-relation] juos (10)
+[has-social-relation] apkvailintųjų (4)
 
-[???] kol (8)
+[TIME] kol (8)
 
 [IDENTIFICATION] jis (9)
 
@@ -2704,9 +2702,9 @@
 
 # sent_id = 198
 # text = Nebuvo tos dienos, kad minčių policija nedemaskuotų šnipų ir sabotažininkų, veikiančių jo nurodymais.
-1	Nebuvo	nebūti	VERB	vksm.asm.neig.tiesiog.būt-k.dgs.3.	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	3	csubj	_	TokenRange=19675:19681
+1	Nebuvo	nebūti	VERB	vksm.asm.neig.tiesiog.būt-k.dgs.3.	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=19675:19681
 2	tos	tas	DET	įv.mot.vns.K.	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing|PronType=Dem	3	det	_	TokenRange=19682:19685
-3	dienos	diena	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=19686:19692
+3	dienos	diena	NOUN	dkt.mot.vns.K.	Case=Gen|Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No|TokenRange=19686:19692
 4	,	,	PUNCT	skyr.	_	8	punct	_	TokenRange=19692:19693
 5	kad	kad	SCONJ	jng.	_	8	mark	_	TokenRange=19694:19697
 6	minčių	mintis	NOUN	dkt.mot.dgs.K.	Case=Gen|Gender=Fem|Number=Plur	7	nmod	_	TokenRange=19698:19704
@@ -2721,34 +2719,36 @@
 15	nurodymais	nurodymas	NOUN	dkt.vyr.dgs.Įn.	Case=Ins|Gender=Masc|Number=Plur	13	obl:arg	_	SpaceAfter=No|TokenRange=19765:19775
 16	.	.	PUNCT	skyr.	_	3	punct	_	TokenRange=19775:19776
 
-[] dienos (3)
-[??? Syntax?] Nebuvo (1)
-[] , kad minčių policija nedemaskuotų šnipų ir sabotažininkų , veikiančių jo nurodymais (8)
+[SCENE-NEG] Nebuvo (1) # Syntaxänderung: kein csubj, sondern als Vollverb, da es hier um "es gab nicht" geht 
+[scene] tos dienos , kad minčių policija nedemaskuotų šnipų ir sabotažininkų , veikiančių jo nurodymais . (3)
 
-[] Nebuvo (1)
+[TIME] dienos (3)
+[m-scene] , kad minčių policija nedemaskuotų šnipų ir sabotažininkų , veikiančių jo nurodymais (8)
 
-[] nedemaskuotų (8)
-[] minčių policija (7)
-[] šnipų (9)
-[] ir sabotažininkų , veikiančių jo nurodymais (11)
+[EVENT] nedemaskuotų (8)
+[x-causer] minčių policija (7)
+[undergoer] šnipų (9)
+[undergoer] ir sabotažininkų , veikiančių jo nurodymais (11)
+[m-time] dienos (3)
 
-[] policija (7)
-[] minčių (6)
+[CLASS] policija (7)
+[m-topic] minčių (6)
 
-[] minčių (6)
+[MESSAGE] minčių (6)
 
-[] šnipų (9)
+[MESSAGE-INIT >> CLASS] šnipų (9) # Phäno: Derivation
 
-[] sabotažininkų (11)
-[] , veikiančių jo nurodymais (13)
+[EVENT >> CLASS] sabotažininkų (11) # Phäno: Derivation
+[m-scene] , veikiančių jo nurodymais (13)
 
-[] veikiančių (13)
-[] jo nurodymais (15)
+[ACTIVITY] veikiančių (13)
+[m-followed] jo nurodymais (15)
+[is-active] sabotažininkų (11)
 
-[] nurodymais (15)
-[] jo (14)
+[MESSAGE] nurodymais (15)
+[x-sender] jo (14)
 
-[] jo (14)
+[IDENTIFICATION] jo (14)
 
 # sent_id = 199
 # text = Jis vadovavo didžiulei nematomai armijai, pagrindiniam kenkėjų tinklui, siekiančiam nuversti vyriausybę.
@@ -2773,30 +2773,31 @@
 
 [IDENTIFICATION] Jis (1)
 
-[] armijai , pagrindiniam kenkėjų tinklui , siekiančiam nuversti vyriausybę (5)
-[] didžiulei (3)
-[] nematomai (4)
+[CLASS] armijai , pagrindiniam kenkėjų tinklui , siekiančiam nuversti vyriausybę (5)
+[m-quality] didžiulei (3)
+[m-quality] nematomai (4)
 
-[] didžiulei (3)
+[QUALITY] didžiulei (3)
 
-[] nematomai (4)
+[QUALITY-NEG >> QUALITY] nematomai (4)
 
-[] tinklui (9)
-[] pagrindiniam (7)
-[] kenkėjų (8)
-[] , siekiančiam nuversti vyriausybę (11)
+[PART-WHOLE] tinklui (9) # Bedeutung: Verschwörer- -netz
+[m-quality] pagrindiniam (7)
+[part] kenkėjų (8)
+[m-scene] , siekiančiam nuversti vyriausybę (11)
 
-[] pagrindiniam (7)
+[QUALITY] pagrindiniam (7)
 
-[] kenkėjų (8)
+[MESSAGE-INIT >> CLASS] kenkėjų (8) # Phäno?
 
-[] siekiančiam (11)
-[] nuversti vyriausybę (12)
+[MEANS] siekiančiam (11)
+[purpose] nuversti vyriausybę (12)
+[means] tinklui (9)
 
-[] nuversti (12)
-[] vyriausybę (13)
+[LOCATION-DEINIT >> POSSESSION-DEINIT] nuversti (12)
+[has-location >> initial-possessor] vyriausybę (13)
 
-[] vyriausybę (13)
+[POSSESSION] vyriausybę (13)
 
 # sent_id = 200
 # text = Buvo sakoma, kad jie vadina save Brolija.
@@ -2813,10 +2814,10 @@
 [MESSAGE-INIT] sakoma (2)
 [target-content] , kad jie vadina save Brolija (6)
 
-[IDENTIFICATION-INIT] vadina (6) # Überlegen wg MESSAGE?
+[IDENTIFICATION-INIT] vadina (6)
 [x-causer] jie (5)
 [identified] save (7)
-[identifier] Brolija (8)
+[target-identifier] Brolija (8)
 
 [IDENTIFICATION] jie (5)
 
