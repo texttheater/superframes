@@ -1,0 +1,958 @@
+
+# de_ann2, sent_id = 2
+(0 / root
+      :predicate(3 / frame
+            :frame "MESSAGE"
+            :m-location(2 / frame
+                  :frame "CLASS")
+            :topic 2
+            :topic(4 / frame
+                  :frame "IDENTIFICATION"
+                  :frame "NONCOMP")
+            :m-scene 4
+            :x-reference(7 / frame
+                  :frame "CLASS"
+                  :m-scene(6 / frame
+                        :frame "STATE-CHANGE"
+                        :has-state 7))
+            :x-reference(10 / frame
+                  :frame "CLASS"
+                  :m-scene(9 / frame
+                        :frame "STATE"
+                        :has-state 10))))
+
+# de_ann2, sent_id = 3
+(0 / root
+      :predicate(23 / frame
+            :frame "ADORNMENT-TARNISHMENT"
+            :m-location(3 / frame
+                  :frame "CLASS")
+            :ornament(7 / frame
+                  :frame "MESSAGE"
+                  :m-scene(6 / frame
+                        :frame "QUALITY"
+                        :has-quality 7)
+                  :m-scene(15 / frame
+                        :frame "QUALITY"
+                        :has-quality(9 / frame
+                              :frame "IDENTIFICATION")
+                        :m-reference(12 / frame
+                              :frame "CLASS")
+                        :m-scene(13 / frame
+                              :frame "MODE"
+                              :has-mode 15)
+                        :m-scene(14 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 15)
+                        :has-quality 7))
+            :m-means(19 / frame
+                  :frame "CLASS")
+            :surface(22 / frame
+                  :frame "CLASS")))
+
+# de_ann2, sent_id = 5
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location(4 / frame
+                  :frame "CLASS")
+            :target-location 5))
+
+# de_ann2, sent_id = 6
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE"
+            :participant(1 / frame
+                  :frame "IDENTIFICATION")
+            :scene(4 / frame
+                  :frame "SEQUENCE"
+                  :m-scene(3 / frame
+                        :frame "MODE"
+                        :has-mode 4)
+                  :followed(11 / frame
+                        :frame "SCENE-INIT"
+                        :target-scene(6 / frame
+                              :frame "IDENTIFICATION")
+                        :x-means(9 / frame
+                              :frame "CLASS"))
+                  :followed 1)))
+
+# de_ann2, sent_id = 7
+(0 / root
+      :predicate(8 / frame
+            :frame "STATE"
+            :m-scene(5 / frame
+                  :frame "TIME"
+                  :has-time 8
+                  :m-scene(1 / frame
+                        :frame "MODE"
+                        :has-mode 5)
+                  :m-scene(4 / frame
+                        :frame "QUALITY"
+                        :has-quality 5)
+                  :m-whole(7 / frame
+                        :frame "CLASS"))
+            :has-state(9 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(11 / frame
+                  :frame "QUANTITY"
+                  :has-quantity 8
+                  :m-scene(10 / frame
+                        :frame "MODE"
+                        :has-mode 11)))
+      :predicate(21 / frame
+            :frame "STATE-DEINIT"
+            :m-scene(15 / frame
+                  :frame "TIME"
+                  :has-time 21)
+            :m-scene(17 / frame
+                  :frame "TIME"
+                  :has-time 21)
+            :has-state(20 / frame
+                  :frame "CLASS"
+                  :m-scene(19 / frame
+                        :frame "QUALITY"
+                        :frame "NONCOMP"
+                        :has-quality 20)
+                  :m-scene 19)))
+
+# de_ann2, sent_id = 8
+(0 / root
+      :predicate(2 / frame
+            :frame "PART-WHOLE"
+            :part(1 / frame
+                  :frame "IDENTIFICATION")
+            :whole(6 / frame
+                  :frame "MESSAGE"
+                  :m-scene(5 / frame
+                        :frame "QUALITY"
+                        :has-quality 6)
+                  :m-scene(11 / frame
+                        :frame "TIME"
+                        :frame "EVENT"
+                        :has-time 6
+                        :m-scene(10 / frame
+                              :frame "SCENE"
+                              :scene(9 / frame
+                                    :frame "SCENE-INIT"
+                                    :frame "SEQUENCE"
+                                    :target-scene 11
+                                    :follows 11)
+                              :participant 11)))))
+
+# de_ann2, sent_id = 10
+(0 / root
+      :predicate(4 / frame
+            :frame "MESSAGE-INIT"
+            :m-location(3 / frame
+                  :frame "CLASS")
+            :topic(5 / frame
+                  :frame "IDENTIFICATION")
+            :m-location(8 / frame
+                  :frame "CLASS")
+            :x-experiencer(10 / frame
+                  :frame "MESSAGE"
+                  :topic(14 / frame
+                        :frame "PART-WHOLE"
+                        :m-scene(13 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 14)))
+            :m-noncomp 15))
+
+# de_ann2, sent_id = 11
+(0 / root
+      :predicate(2 / frame
+            :frame "PART-WHOLE"
+            :part(1 / frame
+                  :frame "IDENTIFICATION")
+            :whole(5 / frame
+                  :frame "MESSAGE"
+                  :m-scene(9 / frame
+                        :frame "TRANSFORMATION-CREATION"
+                        :frame "MESSAGE"
+                        :created(7 / frame
+                              :frame "IDENTIFICATION")
+                        :topic 7
+                        :m-scene(8 / frame
+                              :frame "MODE"
+                              :has-mode 9)
+                        :m-result(17 / frame
+                              :frame "LOCATION-INIT"
+                              :frame "MESSAGE-INIT"
+                              :has-location(13 / frame
+                                    :frame "CLASS")
+                              :topic 13
+                              :x-accompanier(15 / frame
+                                    :frame "PART-WHOLE")
+                              :x-experiencer 15
+                              :target-location(16 / frame
+                                    :frame "LOCATION")
+                              :m-scene 16)
+                        :created 5
+                        :topic 5))))
+
+# de_ann2, sent_id = 12
+(0 / root
+      :predicate(10 / frame
+            :frame "MESSAGE"
+            :content(5 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(4 / frame
+                        :frame "SOCIAL-RELATION"
+                        :frame "IDENTIFICATION"
+                        :m-scene(3 / frame
+                              :frame "QUALITY"
+                              :has-quality 4)
+                        :m-noncomp 3)
+                  :topic(6 / frame
+                        :frame "IDENTIFICATION")
+                  :m-noncomp 7)
+            :x-sender(12 / frame
+                  :frame "MESSAGE")
+            :m-scene(13 / frame
+                  :frame "LOCATION"
+                  :has-location 10)))
+
+# de_ann2, sent_id = 13
+(0 / root
+      :predicate(5 / frame
+            :frame "MESSAGE-INIT"
+            :m-scene(1 / frame
+                  :frame "LOCATION"
+                  :has-location 5
+                  :m-location(4 / frame
+                        :frame "CLASS"))
+            :x-sender(8 / frame
+                  :frame "MESSAGE"
+                  :m-scene(7 / frame
+                        :frame "QUALITY"
+                        :has-quality 8))
+            :target-content(10 / frame
+                  :frame "MESSAGE"
+                  :topic(13 / frame
+                        :frame "TRANSFORMATION-CREATION"))))
+
+# de_ann2, sent_id = 14
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-DEINIT"
+            :frame "SENDING"
+            :has-location(2 / frame
+                  :frame "MESSAGE")
+            :sent 2
+            :initial-location(7 / frame
+                  :frame "CLASS"
+                  :m-scene(6 / frame
+                        :frame "QUALITY"
+                        :has-quality 7)
+                  :m-scene(13 / frame
+                        :frame "COMPARISON"
+                        :compared(9 / frame
+                              :frame "IDENTIFICATION")
+                        :reference(12 / frame
+                              :frame "CLASS"
+                              :m-scene(11 / frame
+                                    :frame "QUALITY"
+                                    :has-quality 12))
+                        :compared 7)
+                  :m-scene(20 / frame
+                        :frame "LOCATION-INIT"
+                        :m-location(16 / frame
+                              :frame "PART-WHOLE"
+                              :m-scene(15 / frame
+                                    :frame "LOCATION"
+                                    :frame "QUALITY"
+                                    :has-location 16)
+                              :m-scene 15)
+                        :target-location(19 / frame
+                              :frame "CLASS")
+                        :has-location 7))
+            :sender 7))
+
+# de_ann2, sent_id = 15
+(0 / root
+      :predicate(2 / frame
+            :frame "EVENT"
+            :x-causer(1 / frame
+                  :frame "IDENTIFICATION")
+            :undergoer(5 / frame
+                  :frame "CLASS")
+            :m-result(22 / frame
+                  :frame "SCENE-CONTINUATION"
+                  :m-scene(16 / frame
+                        :frame "ACCOMPANIMENT"
+                        :frame "CONCESSION"
+                        :accompanier 22
+                        :conceded 22)
+                  :participant(18 / frame
+                        :frame "MESSAGE")
+                  :m-scene(19 / frame
+                        :frame "MODE"
+                        :has-mode 22)
+                  :initial-scene(21 / frame
+                        :frame "MESSAGE"
+                        :topic 18)))
+      :predicate(10 / frame
+            :frame "SCENE-INIT"
+            :participant(9 / frame
+                  :frame "MESSAGE")
+            :m-causer(11 / frame
+                  :frame "CAUSATION"
+                  :frame "SEQUENCE")
+            :m-followed 11
+            :m-scene(12 / frame
+                  :frame "MODE"
+                  :has-mode 10)
+            :target-scene(13 / frame
+                  :frame "STATE"
+                  :has-state 9)))
+
+# de_ann2, sent_id = 16
+(0 / root
+      :predicate(11 / frame
+            :frame "STATE-CHANGE"
+            :has-state(2 / frame
+                  :frame "CLASS"))
+      :predicate(6 / frame
+            :frame "CLASS"
+            :m-scene(5 / frame
+                  :frame "IDENTIFICATION-INIT"
+                  :identified 6
+                  :identified(8 / frame
+                        :frame "CLASS"
+                        :m-scene 5)))
+      :predicate(15 / frame
+            :frame "SCENE"
+            :scene(18 / frame
+                  :frame "SCENE-POSSIBILITY"
+                  :m-scene(17 / frame
+                        :frame "MODE"
+                        :has-mode 18)
+                  :scene(22 / frame
+                        :frame "STATE-DEINIT"
+                        :has-state(20 / frame
+                              :frame "IDENTIFICATION")
+                        :m-scene(21 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 22)))))
+
+# de_ann2, sent_id = 17
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :target-location(4 / frame
+                  :frame "CLASS"))
+      :predicate(10 / frame
+            :frame "CLASS"
+            :m-scene(7 / frame
+                  :frame "QUALITY"
+                  :has-quality 10)
+            :m-scene(9 / frame
+                  :frame "QUALITY"
+                  :has-quality 10)
+            :m-scene(21 / frame
+                  :frame "MESSAGE"
+                  :topic(13 / frame
+                        :frame "QUALITY"
+                        :has-quality(12 / frame
+                              :frame "IDENTIFICATION")
+                        :has-quality 10)
+                  :x-sender(17 / frame
+                        :frame "CLASS"
+                        :m-scene(16 / frame
+                              :frame "QUALITY"
+                              :has-quality 17)
+                        :m-whole(19 / frame
+                              :frame "CLASS"))
+                  :m-scene(20 / frame
+                        :frame "MODE"
+                        :has-mode 21)
+                  :topic 10)))
+
+# de_ann2, sent_id = 18
+(0 / root
+      :predicate(5 / frame
+            :frame "QUALITY"
+            :has-quality(2 / frame
+                  :frame "PART-WHOLE"
+                  :whole(1 / frame
+                        :frame "IDENTIFICATION"))
+            :m-scene(4 / frame
+                  :frame "QUANTITY"
+                  :has-quantity 5))
+      :predicate(10 / frame
+            :frame "STATE"
+            :has-state(8 / frame
+                  :frame "PART-WHOLE"
+                  :whole(7 / frame
+                        :frame "IDENTIFICATION"))
+            :m-scene(9 / frame
+                  :frame "QUALITY-NEG"
+                  :frame "QUALITY"
+                  :has-quality 10))
+      :predicate(14 / frame
+            :frame "STATE"
+            :has-state(13 / frame
+                  :frame "PART-WHOLE"
+                  :whole(12 / frame
+                        :frame "IDENTIFICATION"))
+            :x-causer(18 / frame
+                  :frame "CLASS"
+                  :m-scene(17 / frame
+                        :frame "QUALITY"
+                        :has-quality 18))
+            :x-causer(22 / frame
+                  :frame "CLASS"
+                  :m-scene(21 / frame
+                        :frame "QUALITY"
+                        :has-quality 22))
+            :x-causer(25 / frame
+                  :frame "STATE"
+                  :frame "QUALITY"
+                  :x-causer(29 / frame
+                        :frame "CLASS"
+                        :frame "TIME"
+                        :m-scene(28 / frame
+                              :frame "TIME"
+                              :has-time 29
+                              :m-scene(27 / frame
+                                    :frame "TIME"
+                                    :has-time 28)))
+                  :has-quality 29)))
+
+# de_ann2, sent_id = 19
+(0 / root
+      :predicate(4 / frame
+            :frame "MESSAGE"
+            :topic(2 / frame
+                  :frame "CLASS"
+                  :m-scene(3 / frame
+                        :frame "LOCATION"
+                        :has-location 2))
+            :m-scene(5 / frame
+                  :frame "MODE"
+                  :has-mode 4)
+            :x-sender(9 / frame
+                  :frame "CLASS"
+                  :m-scene(8 / frame
+                        :frame "STATE"
+                        :has-state 9))
+            :content(10 / frame
+                  :frame "STATE"
+                  :frame "QUALITY"
+                  :has-state 2
+                  :has-quality 2)
+            :m-noncomp 11))
+
+# de_ann2, sent_id = 21
+(0 / root
+      :predicate(7 / frame
+            :frame "MESSAGE"
+            :x-experiencer(2 / frame
+                  :frame "PART-WHOLE"
+                  :m-part(6 / frame
+                        :frame "PART-WHOLE"
+                        :m-scene(5 / frame
+                              :frame "QUALITY"
+                              :has-quality 6)))
+            :topic 2
+            :x-initial-location(11 / frame
+                  :frame "CLASS"
+                  :m-scene(10 / frame
+                        :frame "POSSESSION"
+                        :possessed 11))
+            :x-location 11
+            :m-target-location 12
+            :m-location 12))
+
+# de_ann2, sent_id = 22
+(0 / root
+      :predicate(3 / frame
+            :frame "ADORNMENT-TARNISHMENT"
+            :ornament(2 / frame
+                  :frame "MESSAGE")
+            :surface(8 / frame
+                  :frame "CLASS"
+                  :m-scene(7 / frame
+                        :frame "LOCATION"
+                        :has-location 8
+                        :m-scene(6 / frame
+                              :frame "QUALITY"
+                              :has-quality 7)))))
+
+# de_ann2, sent_id = 23
+(0 / root
+      :predicate(10 / frame
+            :frame "MESSAGE"
+            :content(5 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(4 / frame
+                        :frame "SOCIAL-RELATION"
+                        :frame "IDENTIFICATION"
+                        :m-scene(3 / frame
+                              :frame "QUALITY"
+                              :has-quality 4)
+                        :m-noncomp 3)
+                  :topic(6 / frame
+                        :frame "IDENTIFICATION")
+                  :m-noncomp 7)
+            :m-scene(11 / frame
+                  :frame "MODE"
+                  :has-mode 10)
+            :m-scene(12 / frame
+                  :frame "LOCATION"
+                  :has-location 10)
+            :x-sender(14 / frame
+                  :frame "MESSAGE"))
+      :predicate(20 / frame
+            :frame "LOCATION-INIT"
+            :frame "MESSAGE"
+            :x-causer(19 / frame
+                  :frame "PART-WHOLE"
+                  :m-scene(18 / frame
+                        :frame "QUALITY"
+                        :has-quality 19))
+            :x-experiencer 19
+            :has-location(21 / frame
+                  :frame "IDENTIFICATION")
+            :x-experiencer 21
+            :m-scene(22 / frame
+                  :frame "QUANTITY"
+                  :frame "QUALITY"
+                  :has-quantity 20)
+            :m-scene 22
+            :target-location(25 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer(24 / frame
+                        :frame "IDENTIFICATION"))
+            :topic 25))
+
+# de_ann2, sent_id = 25
+(0 / root
+      :predicate(4 / frame
+            :frame "LOCATION-INIT"
+            :m-scene(3 / frame
+                  :frame "LOCATION"
+                  :has-location 4)
+            :has-location(6 / frame
+                  :frame "CLASS")
+            :transitory-location(9 / frame
+                  :frame "CLASS")
+            :target-location 10)
+      :predicate(12 / frame
+            :frame "MESSAGE"
+            :m-scene(14 / frame
+                  :frame "TIME"
+                  :has-time 12)
+            :m-reference(17 / frame
+                  :frame "CLASS"))
+      :predicate(19 / frame
+            :frame "LOCATION-DEINIT"
+            :m-scene(20 / frame
+                  :frame "TIME"
+                  :has-time 19)
+            :m-means(23 / frame
+                  :frame "CLASS"
+                  :frame "UNANCHORED-MOTION"
+                  :in-motion 6)
+            :m-scene(24 / frame
+                  :frame "SEQUENCE"
+                  :follows 19)
+            :m-noncomp 25))
+
+# de_ann2, sent_id = 26
+(0 / root
+      :predicate(4 / frame
+            :frame "SOCIAL-RELATION"
+            :x-identified(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(12 / frame
+                  :frame "MESSAGE"
+                  :x-sender(6 / frame
+                        :frame "IDENTIFICATION")
+                  :x-experiencer(8 / frame
+                        :frame "CLASS")
+                  :topic(11 / frame
+                        :frame "CLASS")
+                  :x-sender 4)))
+
+# de_ann2, sent_id = 27
+(0 / root
+      :predicate(6 / frame
+            :frame "QUALITY"
+            :has-quality(2 / frame
+                  :frame "SOCIAL-RELATION")
+            :m-scene(4 / frame
+                  :frame "MODE"
+                  :has-mode 6)
+            :m-scene(5 / frame
+                  :frame "MODE"
+                  :has-mode 6)))
+
+# de_ann2, sent_id = 28
+(0 / root
+      :predicate(2 / frame
+            :frame "MESSAGE"
+            :topic(6 / frame
+                  :frame "SOCIAL-RELATION"
+                  :m-scene(4 / frame
+                        :frame "MODE"
+                        :has-mode 6))))
+
+# de_ann2, sent_id = 29
+(0 / root
+      :predicate(4 / frame
+            :frame "MESSAGE-INIT"
+            :m-location(3 / frame
+                  :frame "PART-WHOLE"
+                  :whole(2 / frame
+                        :frame "IDENTIFICATION"))
+            :x-sender(7 / frame
+                  :frame "MESSAGE"
+                  :m-scene(6 / frame
+                        :frame "QUALITY"
+                        :has-quality 7)
+                  :x-sender(10 / frame
+                        :frame "CLASS"))
+            :m-scene(12 / frame
+                  :frame "SCENE-CONTINUATION"
+                  :m-scene(11 / frame
+                        :frame "MODE"
+                        :has-mode 12)
+                  :initial-scene 4)
+            :topic(14 / frame
+                  :frame "CLASS")
+            :topic(24 / frame
+                  :frame "SEQUENCE"
+                  :m-scene(23 / frame
+                        :frame "COMPARISON"
+                        :m-scene(18 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 23)
+                        :reference(22 / frame
+                              :frame "MEANS"
+                              :m-scene(21 / frame
+                                    :frame "QUALITY"
+                                    :has-quality 22))
+                        :compared 24)
+                  :followed(27 / frame
+                        :frame "MESSAGE"
+                        :m-scene(26 / frame
+                              :frame "RANK"
+                              :has-rank 27)))))
+
+# de_ann2, sent_id = 30
+(0 / root
+      :predicate(5 / frame
+            :frame "CLASS"
+            :has-class(2 / frame
+                  :frame "CLASS")
+            :m-time(4 / frame
+                  :frame "ACCOMPANIMENT"
+                  :accompanied 5
+                  :accompanier(7 / frame
+                        :frame "CLASS"
+                        :has-class 2))
+            :m-scene 4))
+
+# de_ann2, sent_id = 33
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE"
+            :m-scene(3 / frame
+                  :frame "MODE"
+                  :has-mode 2)
+            :scene(5 / frame
+                  :frame "SCENE-POSSIBILITY"
+                  :m-scene(4 / frame
+                        :frame "MODE"
+                        :has-mode 5)
+                  :scene(6 / frame
+                        :frame "MESSAGE-INIT"
+                        :target-content(15 / frame
+                              :frame "MESSAGE"
+                              :x-experiencer(9 / frame
+                                    :frame "IDENTIFICATION")
+                              :m-scene(13 / frame
+                                    :frame "TIME"
+                                    :has-time 15
+                                    :m-scene(12 / frame
+                                          :frame "TIME"
+                                          :has-time 13))
+                              :m-scene(14 / frame
+                                    :frame "TIME"
+                                    :has-time 15))))))
+
+# de_ann2, sent_id = 34
+(0 / root
+      :predicate(15 / frame
+            :frame "SCENE-CONTINUATION"
+            :initial-scene(18 / frame
+                  :frame "SCENE-INIT"
+                  :participant(13 / frame
+                        :frame "MESSAGE-INIT"
+                        :m-scene(2 / frame
+                              :frame "TIME"
+                              :has-time 13
+                              :m-scene(1 / frame
+                                    :frame "QUANTITY"
+                                    :has-quantity 2))
+                        :m-followed(6 / frame
+                              :frame "MESSAGE")
+                        :x-experiencer(8 / frame
+                              :frame "SOCIAL-RELATION")
+                        :x-experiencer(9 / frame
+                              :frame "IDENTIFICATION")
+                        :topic(12 / frame
+                              :frame "CLASS"))
+                  :target-scene(17 / frame
+                        :frame "MESSAGE"
+                        :content 13))))
+
+# de_ann2, sent_id = 35
+(0 / root
+      :predicate(4 / frame
+            :frame "SCENE-POSSIBILITY"
+            :m-scene(3 / frame
+                  :frame "MODE"
+                  :has-mode 4)
+            :scene(10 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer(8 / frame
+                        :frame "IDENTIFICATION")
+                  :m-scene(9 / frame
+                        :frame "TIME"
+                        :has-time 10))))
+
+# de_ann2, sent_id = 38
+(0 / root
+      :predicate(2 / frame
+            :frame "STATE-INIT"
+            :x-causer(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-state(3 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(4 / frame
+                  :frame "QUALITY"
+                  :has-quality 2)
+            :m-noncomp 5
+            :target-state(13 / frame
+                  :frame "LOCATION"
+                  :has-location(8 / frame
+                        :frame "IDENTIFICATION")
+                  :location(10 / frame
+                        :frame "CLASS")
+                  :x-attribute(12 / frame
+                        :frame "PART-WHOLE"
+                        :whole 8))))
+
+# de_ann2, sent_id = 39
+(0 / root
+      :predicate(3 / frame
+            :frame "QUALITY"
+            :has-quality(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-conceded(16 / frame
+                  :frame "QUALITY"
+                  :m-scene(6 / frame
+                        :frame "MODE"
+                        :has-mode 16)
+                  :m-scene(11 / frame
+                        :frame "MESSAGE"
+                        :x-experiencer(9 / frame
+                              :frame "IDENTIFICATION")
+                        :m-scene(10 / frame
+                              :frame "MODE"
+                              :has-mode 11)
+                        :content 16)
+                  :m-scene(13 / frame
+                        :frame "MODE"
+                        :has-mode 16)
+                  :has-quality(15 / frame
+                        :frame "PART-WHOLE"))))
+
+# de_ann2, sent_id = 40
+(0 / root
+      :predicate(4 / frame
+            :frame "LOCATION-INIT"
+            :m-scene(3 / frame
+                  :frame "LOCATION"
+                  :has-location 4
+                  :m-scene(2 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 3
+                        :m-scene(1 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 2)))
+            :has-location(6 / frame
+                  :frame "SOCIAL-RELATION")
+            :m-scene(11 / frame
+                  :frame "QUALITY"
+                  :has-quality 4
+                  :m-location(17 / frame
+                        :frame "CLASS"
+                        :m-scene(16 / frame
+                              :frame "QUALITY"
+                              :has-quality 17)))
+            :m-depictive(13 / frame
+                  :frame "QUALITY"
+                  :has-quality 6)
+            :target-location 18)
+      :predicate(9 / frame
+            :frame "SOCIAL-RELATION"
+            :has-social-relation(8 / frame
+                  :frame "IDENTIFICATION")))
+
+# de_ann2, sent_id = 41
+(0 / root
+      :predicate(4 / frame
+            :frame "MESSAGE"
+            :topic(1 / frame
+                  :frame "IDENTIFICATION"
+                  :m-scene(2 / frame
+                        :frame "MODE"
+                        :has-mode 1))
+            :x-experiencer(5 / frame
+                  :frame "IDENTIFICATION")
+            :m-quality(10 / frame
+                  :frame "MESSAGE"
+                  :m-scene(9 / frame
+                        :frame "QUALITY-NEG"
+                        :frame "QUALITY"
+                        :has-quality 10
+                        :m-scene(8 / frame
+                              :frame "MODE"
+                              :has-mode 9))))
+      :predicate(13 / frame
+            :frame "IDENTIFICATION")
+      :predicate(16 / frame
+            :frame "SOCIAL-RELATION"
+            :frame "PART-WHOLE"
+            :social-relation(18 / frame
+                  :frame "CLASS")
+            :whole 18
+            :has-social-relation 13
+            :part 13)
+      :predicate(19 / frame
+            :frame "RANK")
+      :predicate(20 / frame
+            :frame "QUANTITY"
+            :frame "RANK")
+      :predicate(26 / frame
+            :frame "CLASS"
+            :m-scene(24 / frame
+                  :frame "QUANTITY"
+                  :has-quantity 26)
+            :m-scene(25 / frame
+                  :frame "LOCATION"
+                  :location 26)
+            :m-whole(27 / frame
+                  :frame "IDENTIFICATION")))
+
+# de_ann2, sent_id = 42
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE-INIT"
+            :participant(1 / frame
+                  :frame "IDENTIFICATION")
+            :target-scene(6 / frame
+                  :frame "MESSAGE-INIT"
+                  :m-location(5 / frame
+                        :frame "MESSAGE"
+                        :x-experiencer(4 / frame
+                              :frame "IDENTIFICATION"))
+                  :x-sender 5
+                  :target-content(12 / frame
+                        :frame "MESSAGE"
+                        :topic(9 / frame
+                              :frame "IDENTIFICATION")
+                        :m-scene(10 / frame
+                              :frame "TIME"
+                              :has-time 12)
+                        :content(11 / frame
+                              :frame "QUALITY"
+                              :has-quality 9))
+                  :x-sender 1)))
+
+# de_ann2, sent_id = 46
+(0 / root
+      :predicate(19 / frame
+            :frame "MESSAGE-INIT"
+            :topic(2 / frame
+                  :frame "SOCIAL-RELATION")
+            :target-content(21 / frame
+                  :frame "COMPARISON"
+                  :m-scene(20 / frame
+                        :frame "QUALITY"
+                        :has-quality 21)
+                  :reference(24 / frame
+                        :frame "COMPARISON"
+                        :m-scene(30 / frame
+                              :frame "MESSAGE"
+                              :topic(27 / frame
+                                    :frame "IDENTIFICATION")
+                              :x-experiencer(29 / frame
+                                    :frame "MESSAGE")
+                              :m-reference 24))
+                  :compared 2)
+            :m-noncomp 25)
+      :predicate(4 / frame
+            :frame "IDENTIFICATION"
+            :m-scene(17 / frame
+                  :frame "IDENTIFICATION"
+                  :identified(7 / frame
+                        :frame "IDENTIFICATION")
+                  :m-sender(10 / frame
+                        :frame "MESSAGE")
+                  :identifier 4))
+      :predicate(14 / frame
+            :frame "MESSAGE"
+            :topic(13 / frame
+                  :frame "QUALITY")
+            :m-location(15 / frame
+                  :frame "IDENTIFICATION")))
+
+# de_ann2, sent_id = 47
+(0 / root
+      :predicate(9 / frame
+            :frame "CLASS"
+            :has-class(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(4 / frame
+                  :frame "QUALITY"
+                  :has-quality 9)
+            :m-scene(5 / frame
+                  :frame "COMPARISON"
+                  :frame "QUALITY"
+                  :compared 9
+                  :has-quality 9)
+            :m-scene(8 / frame
+                  :frame "QUALITY"
+                  :m-scene(7 / frame
+                        :frame "QUALITY"
+                        :has-quality 8)
+                  :has-quality 9)
+            :m-scene(20 / frame
+                  :frame "LOCATION-INIT"
+                  :has-location(11 / frame
+                        :frame "IDENTIFICATION")
+                  :has-location(12 / frame
+                        :frame "IDENTIFICATION")
+                  :m-scene(13 / frame
+                        :frame "QUALITY"
+                        :has-quality 20)
+                  :target-location(16 / frame
+                        :frame "QUALITY"
+                        :m-scene(15 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 16
+                              :m-scene(14 / frame
+                                    :frame "QUANTITY"
+                                    :has-quantity 15)))
+                  :target-location(19 / frame
+                        :frame "CLASS")
+                  :has-location 9)))

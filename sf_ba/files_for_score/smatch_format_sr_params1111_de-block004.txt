@@ -1,0 +1,572 @@
+
+# sr, sent_id = 204
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE"
+            :scene(3 / frame
+                  :frame "IDENTIFICATION")))
+
+# sr, sent_id = 205
+(0 / root
+      :predicate(14 / frame
+            :frame "MESSAGE"
+            :n-accompanied(3 / frame
+                  :frame "MESSAGE"
+                  :n-conceded(9 / frame
+                        :frame "MESSAGE"
+                        :n-scene(7 / frame
+                              :frame "MODE"
+                              :has-mode 9))
+                  :topic(12 / frame
+                        :frame "IDENTIFICATION"))
+            :n-scene(16 / frame
+                  :frame "MODE"
+                  :has-mode 14)
+            :content(18 / frame
+                  :frame "MESSAGE")))
+
+# sr, sent_id = 206
+(0 / root
+      :predicate(6 / frame
+            :frame "MESSAGE"
+            :content(4 / frame
+                  :frame "CLASS"
+                  :n-scene(3 / frame
+                        :frame "QUALITY"
+                        :has-quality 4))
+            :n-sender(10 / frame
+                  :frame "MESSAGE"
+                  :n-scene(7 / frame
+                        :frame "MODE"
+                        :has-mode 10)
+                  :n-scene(9 / frame
+                        :frame "IDENTIFICATION"
+                        :frame "QUALITY"
+                        :identified 10
+                        :has-quality 10))))
+
+# sr, sent_id = 207
+(0 / root
+      :predicate(8 / frame
+            :frame "MESSAGE"
+            :content(2 / frame
+                  :frame "SOCIAL-RELATION")
+            :content(5 / frame
+                  :frame "MESSAGE")
+            :n-scene(17 / frame
+                  :frame "MESSAGE"
+                  :topic(10 / frame
+                        :frame "IDENTIFICATION")
+                  :n-sender(14 / frame
+                        :frame "SOCIAL-RELATION"
+                        :social-relation(15 / frame
+                              :frame "CLASS"))
+                  :n-scene(16 / frame
+                        :frame "MESSAGE"
+                        :topic 17)
+                  :topic 8)))
+
+# sr, sent_id = 208
+(0 / root
+      :predicate(5 / frame
+            :frame "SCENE"
+            :n-scene(3 / frame
+                  :frame "TIME"
+                  :has-time 5
+                  :n-scene(2 / frame
+                        :frame "RANK"
+                        :frame "COMPARISON"
+                        :has-rank 3
+                        :compared 3)
+                  :n-whole(4 / frame
+                        :frame "MESSAGE"))
+            :n-depictive 3
+            :participant 4
+            :scene(7 / frame
+                  :frame "MESSAGE"
+                  :frame "STATE"
+                  :topic 4
+                  :has-state 4)))
+
+# sr, sent_id = 209
+(0 / root
+      :predicate(3 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "CLASS")
+            :location(5 / frame
+                  :frame "CLASS")
+            :n-purpose(15 / frame
+                  :frame "MESSAGE"
+                  :n-scene(14 / frame
+                        :frame "MEANS"
+                        :purpose 15)
+                  :n-reference(18 / frame
+                        :frame "SENDING"
+                        :n-scene(16 / frame
+                              :frame "QUALITY"
+                              :has-quality 18)
+                        :n-scene(17 / frame
+                              :frame "MESSAGE"
+                              :frame "QUALITY"
+                              :n-sender 18
+                              :has-quality 18)
+                        :n-scene(21 / frame
+                              :frame "MESSAGE"
+                              :topic(19 / frame
+                                    :frame "IDENTIFICATION")
+                              :n-sender(23 / frame
+                                    :frame "CLASS")
+                              :topic 18))))
+      :predicate(7 / frame
+            :frame "MESSAGE"
+            :n-means(10 / frame
+                  :frame "SENDING")))
+
+# sr, sent_id = 210
+(0 / root
+      :predicate(8 / frame
+            :frame "STATE"
+            :has-state(2 / frame
+                  :frame "CLASS"
+                  :n-part(4 / frame
+                        :frame "PART-WHOLE"
+                        :n-scene(3 / frame
+                              :frame "CLASS"
+                              :frame "QUALITY"
+                              :n-compared 4
+                              :has-quality 4))))
+      :predicate(15 / frame
+            :frame "UNANCHORED-MOTION"
+            :frame "STATE"
+            :in-motion(11 / frame
+                  :frame "PART-WHOLE")
+            :has-state 11
+            :n-has-attribute(13 / frame
+                  :frame "IDENTIFICATION"
+                  :n-part 11)
+            :n-reference(20 / frame
+                  :frame "CLASS"
+                  :n-location(22 / frame
+                        :frame "STATE")
+                  :n-situator 22))
+      :predicate(17 / frame
+            :frame "UNANCHORED-MOTION"
+            :frame "STATE"
+            :in-motion 11
+            :has-state 11))
+
+# sr, sent_id = 211
+(0 / root
+      :predicate(8 / frame
+            :frame "LOCATION"
+            :location(6 / frame
+                  :frame "PART-WHOLE"
+                  :whole(4 / frame
+                        :frame "IDENTIFICATION")
+                  :n-scene(5 / frame
+                        :frame "QUALITY"
+                        :has-quality 6))
+            :has-location(9 / frame
+                  :frame "CLASS")))
+
+# sr, sent_id = 212
+(0 / root
+      :predicate(3 / frame
+            :frame "STATE"
+            :has-state(1 / frame
+                  :frame "IDENTIFICATION")
+            :state(5 / frame
+                  :frame "STATE"
+                  :n-scene(4 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 5))
+            :n-accompanier(12 / frame
+                  :frame "LOCATION"
+                  :n-has-attribute(8 / frame
+                        :frame "IDENTIFICATION"
+                        :n-part(11 / frame
+                              :frame "PART-WHOLE"
+                              :n-scene(10 / frame
+                                    :frame "QUALITY"
+                                    :has-quality 11)))
+                  :has-location 11)
+            :n-accompanier(14 / frame
+                  :frame "UNANCHORED-MOTION"
+                  :n-reference(19 / frame
+                        :frame "SCENE"
+                        :scene(20 / frame
+                              :frame "EVENT"
+                              :n-causer(21 / frame
+                                    :frame "CLASS")))
+                  :in-motion 11)))
+
+# sr, sent_id = 214
+(0 / root
+      :predicate(2 / frame
+            :frame "HITTING"
+            :hitting(1 / frame
+                  :frame "MESSAGE")
+            :hit(3 / frame
+                  :frame "IDENTIFICATION")
+            :n-attribute(5 / frame
+                  :frame "PART-WHOLE"
+                  :whole 3))
+      :predicate(7 / frame
+            :frame "LOCATION"
+            :has-location 1)
+      :predicate(15 / frame
+            :frame "SCENE"
+            :frame "COMPARISON"
+            :n-causer(10 / frame
+                  :frame "SENDING")
+            :compared 10
+            :n-scene(13 / frame
+                  :frame "SCENE"
+                  :scene 15)
+            :n-scene(14 / frame
+                  :frame "QUALITY"
+                  :has-quality 15)
+            :scene(16 / frame
+                  :frame "IDENTIFICATION")
+            :n-noncomp 16))
+
+# sr, sent_id = 215
+(0 / root
+      :predicate(7 / frame
+            :frame "MESSAGE"
+            :n-scene(4 / frame
+                  :frame "TIME"
+                  :has-time 7
+                  :n-scene(2 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 4)
+                  :n-scene(3 / frame
+                        :frame "STATE"
+                        :has-state 4))
+            :n-experiencer(5 / frame
+                  :frame "IDENTIFICATION")
+            :content(11 / frame
+                  :frame "MESSAGE"
+                  :n-scene(10 / frame
+                        :frame "MODE"
+                        :has-mode 11)
+                  :n-accompanied(14 / frame
+                        :frame "COMPARISON"
+                        :frame "CLASS"
+                        :n-scene(12 / frame
+                              :frame "ACCOMPANIMENT"
+                              :accompanied 14))
+                  :n-sender 5)
+            :content(17 / frame
+                  :frame "HITTING"
+                  :n-scene(16 / frame
+                        :frame "QUALITY"
+                        :has-quality 17)
+                  :n-means(18 / frame
+                        :frame "PART-WHOLE"
+                        :whole 5)
+                  :n-attribute 18
+                  :hit(20 / frame
+                        :frame "CLASS"
+                        :n-whole(22 / frame
+                              :frame "CLASS"))
+                  :hitting 5)))
+
+# sr, sent_id = 216
+(0 / root
+      :predicate(5 / frame
+            :frame "QUALITY"
+            :n-has-attribute(3 / frame
+                  :frame "TIME"
+                  :frame "EVENT"
+                  :n-scene(2 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 3)
+                  :n-noncomp 2
+                  :has-time(4 / frame
+                        :frame "MESSAGE"
+                        :n-result(8 / frame
+                              :frame "IDENTIFICATION"
+                              :identified(13 / frame
+                                    :frame "SCENE"
+                                    :participant(10 / frame
+                                          :frame "CLASS")
+                                    :scene(16 / frame
+                                          :frame "STATE"
+                                          :has-state 10)))
+                        :n-accompanier 8
+                        :n-part 8
+                        :n-result(22 / frame
+                              :frame "SCENE"
+                              :scene(24 / frame
+                                    :frame "ACCOMPANIMENT"
+                                    :n-scene(23 / frame
+                                          :frame "MODE"
+                                          :has-mode 24)))
+                        :n-accompanier 22
+                        :n-part 22)
+                  :n-noncomp 4)
+            :has-quality 8
+            :has-quality 22))
+
+# sr, sent_id = 221
+(0 / root
+      :predicate(8 / frame
+            :frame "ACCOMPANIMENT"
+            :n-scene(2 / frame
+                  :frame "CONCESSION"
+                  :asserted 8)
+            :n-scene(4 / frame
+                  :frame "TIME"
+                  :has-time 8)
+            :n-scene(6 / frame
+                  :frame "TIME"
+                  :has-time 8
+                  :n-scene(5 / frame
+                        :frame "SEQUENCE"
+                        :follows 6))
+            :accompanied(10 / frame
+                  :frame "CLASS"
+                  :n-location(12 / frame
+                        :frame "IDENTIFICATION")))
+      :predicate(18 / frame
+            :frame "MESSAGE"
+            :n-scene(14 / frame
+                  :frame "TIME"
+                  :has-time 18)
+            :n-experiencer(16 / frame
+                  :frame "IDENTIFICATION")
+            :content(27 / frame
+                  :frame "MESSAGE"
+                  :topic(21 / frame
+                        :frame "CLASS"
+                        :n-scene(24 / frame
+                              :frame "MESSAGE"
+                              :content(22 / frame
+                                    :frame "CLASS"
+                                    :frame "SITUATION"
+                                    :n-situator(26 / frame
+                                          :frame "IDENTIFICATION")
+                                    :theme 26)
+                              :topic 26
+                              :content 21)))))
+
+# sr, sent_id = 223
+(0 / root
+      :predicate(4 / frame
+            :frame "SCENE"
+            :n-scene(3 / frame
+                  :frame "MODE"
+                  :has-mode 4)
+            :scene(11 / frame
+                  :frame "POSSESSION"
+                  :n-scene(8 / frame
+                        :frame "TIME"
+                        :has-time 11)
+                  :n-scene(10 / frame
+                        :frame "STATE"
+                        :frame "QUALITY"
+                        :has-quality 11)
+                  :possessed(13 / frame
+                        :frame "MESSAGE"))))
+
+# sr, sent_id = 225
+(0 / root
+      :predicate(5 / frame
+            :frame "UNANCHORED-MOTION"
+            :frame "MESSAGE"
+            :in-motion(4 / frame
+                  :frame "MESSAGE"
+                  :n-scene(1 / frame
+                        :frame "EVENT"
+                        :frame "QUALITY"
+                        :has-quality 4)
+                  :n-scene(3 / frame
+                        :frame "QUALITY"
+                        :has-quality 4))
+            :content 4
+            :n-has-attribute(6 / frame
+                  :frame "IDENTIFICATION"
+                  :n-part(8 / frame
+                        :frame "PART-WHOLE"))
+            :n-experiencer 6
+            :location 8
+            :n-noncomp 8))
+
+# sr, sent_id = 229
+(0 / root
+      :predicate(6 / frame
+            :frame "MESSAGE"
+            :n-scene(1 / frame
+                  :frame "TIME"
+                  :has-time 6)
+            :n-scene(3 / frame
+                  :frame "QUALITY"
+                  :has-quality 6
+                  :n-reference(5 / frame
+                        :frame "TIME"))
+            :content(9 / frame
+                  :frame "MESSAGE"
+                  :n-causer(7 / frame
+                        :frame "CAUSATION"))))
+
+# sr, sent_id = 231
+(0 / root
+      :predicate(2 / frame
+            :frame "QUALITY"
+            :has-quality(1 / frame
+                  :frame "MESSAGE")
+            :quality(4 / frame
+                  :frame "QUALITY"
+                  :frame "PART-WHOLE")))
+
+# sr, sent_id = 232
+(0 / root
+      :predicate(4 / frame
+            :frame "SCENE"
+            :scene(2 / frame
+                  :frame "SENDING"
+                  :sender(1 / frame
+                        :frame "IDENTIFICATION"))
+            :scene(8 / frame
+                  :frame "MESSAGE"
+                  :n-scene(6 / frame
+                        :frame "MODE"
+                        :has-mode 8)
+                  :n-sender(7 / frame
+                        :frame "CLASS")))
+      :predicate(16 / frame
+            :frame "TRANSFORMATION-CREATION"
+            :n-scene(11 / frame
+                  :frame "TIME"
+                  :has-time 16)
+            :n-has-attribute(12 / frame
+                  :frame "IDENTIFICATION"
+                  :n-part(15 / frame
+                        :frame "PART-WHOLE"))
+            :material 15
+            :created(19 / frame
+                  :frame "PART-WHOLE"
+                  :whole(18 / frame
+                        :frame "CLASS"))))
+
+# sr, sent_id = 235
+(0 / root
+      :predicate(3 / frame
+            :frame "MESSAGE"
+            :n-experiencer(1 / frame
+                  :frame "CLASS")
+            :n-scene(2 / frame
+                  :frame "MODE"
+                  :has-mode 3)
+            :content(7 / frame
+                  :frame "MESSAGE"
+                  :content(4 / frame
+                        :frame "IDENTIFICATION")
+                  :n-sender(6 / frame
+                        :frame "SOCIAL-RELATION"
+                        :frame "IDENTIFICATION"
+                        :n-scene(5 / frame
+                              :frame "QUALITY"
+                              :has-quality 6)
+                        :n-noncomp 5))))
+
+# sr, sent_id = 239
+(0 / root
+      :predicate(6 / frame
+            :frame "LOCATION"
+            :frame "STATE"
+            :has-location(1 / frame
+                  :frame "CLASS"
+                  :n-part(3 / frame
+                        :frame "PART-WHOLE"
+                        :n-scene(2 / frame
+                              :frame "CLASS"
+                              :frame "QUALITY"
+                              :has-quality 3)))
+            :has-state 1
+            :location(8 / frame
+                  :frame "CLASS"
+                  :n-whole(9 / frame
+                        :frame "CLASS"
+                        :n-location(11 / frame
+                              :frame "IDENTIFICATION")))
+            :n-means 8))
+
+# sr, sent_id = 240
+(0 / root
+      :predicate(14 / frame
+            :frame "LOCATION"
+            :n-depictive(3 / frame
+                  :frame "MESSAGE"
+                  :n-scene(2 / frame
+                        :frame "UNANCHORED-MOTION"
+                        :frame "QUALITY"
+                        :has-quality 3)
+                  :n-scene(6 / frame
+                        :frame "COMPARISON"
+                        :compared(4 / frame
+                              :frame "IDENTIFICATION")
+                        :reference(9 / frame
+                              :frame "SCENE"
+                              :participant(10 / frame
+                                    :frame "IDENTIFICATION"))
+                        :compared 3)
+                  :n-sender(13 / frame
+                        :frame "IDENTIFICATION"))
+            :n-causer 13
+            :has-location(15 / frame
+                  :frame "PART-WHOLE")
+            :location(17 / frame
+                  :frame "CLASS")))
+
+# sr, sent_id = 244
+(0 / root
+      :predicate(2 / frame
+            :frame "TIME"
+            :has-time(1 / frame
+                  :frame "IDENTIFICATION")
+            :time(6 / frame
+                  :frame "TIME"
+                  :n-scene(5 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 6
+                        :n-scene(3 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 5)
+                        :n-part(4 / frame
+                              :frame "PART-WHOLE")))))
+
+# sr, sent_id = 245
+(0 / root
+      :predicate(5 / frame
+            :frame "SCENE"
+            :participant(2 / frame
+                  :frame "MESSAGE")
+            :n-scene(4 / frame
+                  :frame "TIME"
+                  :has-time 5)
+            :scene(6 / frame
+                  :frame "MESSAGE"
+                  :n-scene(8 / frame
+                        :frame "TIME"
+                        :has-time 6
+                        :has-time(10 / frame
+                              :frame "MESSAGE"
+                              :n-scene(9 / frame
+                                    :frame "POSSESSION"
+                                    :possessed 10)))
+                  :n-accompanied 8
+                  :topic 2)))
+
+# sr, sent_id = 247
+(0 / root
+      :predicate(4 / frame
+            :frame "STATE"
+            :frame "MESSAGE"
+            :has-state(2 / frame
+                  :frame "PART-WHOLE"
+                  :whole(1 / frame
+                        :frame "IDENTIFICATION"))
+            :n-sender 2))

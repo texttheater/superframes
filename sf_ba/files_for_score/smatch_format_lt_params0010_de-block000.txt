@@ -1,0 +1,867 @@
+
+# lt, sent_id = 2
+(0 / root
+      :predicate(2 / frame
+            :frame "MESSAGE"
+            :m-scene(1 / frame
+                  :frame "CLASS"
+                  :frame "LOCATION"
+                  :has-location 2)
+            :topic 1
+            :x-reference(4 / frame
+                  :frame "CLASS"
+                  :m-scene(3 / frame
+                        :frame "STATE-CHANGE"
+                        :has-state 4))
+            :x-reference(7 / frame
+                  :frame "CLASS"
+                  :m-scene(6 / frame
+                        :frame "STATE"
+                        :has-state 7))))
+
+# lt, sent_id = 3
+(0 / root
+      :predicate(4 / frame
+            :frame "ADORNMENT-TARNISHMENT"
+            :m-scene(1 / frame
+                  :frame "PART-WHOLE"
+                  :frame "LOCATION"
+                  :has-location 4)
+            :surface(3 / frame
+                  :frame "CLASS")
+            :ornament(10 / frame
+                  :frame "MESSAGE"
+                  :m-scene(5 / frame
+                        :frame "QUALITY"
+                        :has-quality 10)
+                  :m-scene(9 / frame
+                        :frame "QUALITY"
+                        :m-reference(7 / frame
+                              :frame "CLASS")
+                        :m-scene(8 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 9)
+                        :has-quality 10))))
+
+# lt, sent_id = 5
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :target-location(4 / frame
+                  :frame "CLASS")))
+
+# lt, sent_id = 6
+(0 / root
+      :predicate(4 / frame
+            :frame "SCENE-NEG"
+            :scene(3 / frame
+                  :frame "SEQUENCE"
+                  :followed(2 / frame
+                        :frame "SCENE-INIT"
+                        :target-scene(1 / frame
+                              :frame "CLASS")))))
+
+# lt, sent_id = 7
+(0 / root
+      :predicate(7 / frame
+            :frame "STATE"
+            :m-scene(3 / frame
+                  :frame "TIME"
+                  :has-time 7
+                  :m-scene(2 / frame
+                        :frame "QUALITY"
+                        :has-quality 3
+                        :m-scene(1 / frame
+                              :frame "MODE"
+                              :has-mode 2)))
+            :has-state(4 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(5 / frame
+                  :frame "TIME"
+                  :has-time 7)
+            :m-scene(6 / frame
+                  :frame "TIME"
+                  :has-time 7))
+      :predicate(15 / frame
+            :frame "STATE-DEINIT"
+            :m-scene(10 / frame
+                  :frame "TIME"
+                  :has-time 15)
+            :m-scene(11 / frame
+                  :frame "TIME"
+                  :has-time 15)
+            :has-state(12 / frame
+                  :frame "CLASS")
+            :m-scene(13 / frame
+                  :frame "TIME"
+                  :has-time 15)))
+
+# lt, sent_id = 8
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE"
+            :scene(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-explanation(5 / frame
+                  :frame "SCENE"
+                  :scene(4 / frame
+                        :frame "POSSESSION-CONTINUATION")
+                  :m-scene(7 / frame
+                        :frame "MEANS"
+                        :purpose(9 / frame
+                              :frame "TIME"
+                              :frame "EVENT"
+                              :has-time(8 / frame
+                                    :frame "MESSAGE")
+                              :m-purpose 8)
+                        :means 5))))
+
+# lt, sent_id = 10
+(0 / root
+      :predicate(10 / frame
+            :frame "MESSAGE-INIT"
+            :m-scene(2 / frame
+                  :frame "CLASS"
+                  :frame "LOCATION"
+                  :has-location 10)
+            :m-location(5 / frame
+                  :frame "CLASS"
+                  :m-whole(4 / frame
+                        :frame "CLASS"))
+            :m-location(7 / frame
+                  :frame "CLASS")
+            :topic(9 / frame
+                  :frame "IDENTIFICATION")
+            :x-experiencer(14 / frame
+                  :frame "PART-WHOLE"
+                  :m-scene(11 / frame
+                        :frame "COMPARISON"
+                        :compared 14)
+                  :m-scene(13 / frame
+                        :frame "QUALITY"
+                        :has-quality 14))))
+
+# lt, sent_id = 11
+(0 / root
+      :predicate(3 / frame
+            :frame "PART-WHOLE"
+            :part(1 / frame
+                  :frame "IDENTIFICATION")
+            :whole(6 / frame
+                  :frame "MESSAGE"
+                  :m-scene(11 / frame
+                        :frame "LOCATION-INIT"
+                        :frame "MESSAGE-INIT"
+                        :x-accompanier(9 / frame
+                              :frame "PART-WHOLE"
+                              :whole(8 / frame
+                                    :frame "IDENTIFICATION"))
+                        :x-experiencer 9
+                        :m-scene(10 / frame
+                              :frame "COMPARISON"
+                              :compared 11)
+                        :has-location(12 / frame
+                              :frame "IDENTIFICATION")
+                        :topic 12
+                        :target-location(17 / frame
+                              :frame "LOCATION"
+                              :m-scene(15 / frame
+                                    :frame "MODE"
+                                    :has-mode 17)
+                              :location(16 / frame
+                                    :frame "LOCATION"))
+                        :m-scene 17
+                        :x-accompanier 6
+                        :x-experiencer 6))))
+
+# lt, sent_id = 12
+(0 / root
+      :predicate(7 / frame
+            :frame "MESSAGE"
+            :content(3 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(2 / frame
+                        :frame "SOCIAL-RELATION"
+                        :frame "IDENTIFICATION"
+                        :m-scene(1 / frame
+                              :frame "QUALITY"
+                              :has-quality 2)
+                        :m-noncomp 1)
+                  :topic(4 / frame
+                        :frame "IDENTIFICATION"))
+            :m-scene(8 / frame
+                  :frame "PART-WHOLE"
+                  :frame "LOCATION"
+                  :has-location 7)))
+
+# lt, sent_id = 13
+(0 / root
+      :predicate(4 / frame
+            :frame "MESSAGE-INIT"
+            :m-scene(1 / frame
+                  :frame "CLASS"
+                  :frame "LOCATION"
+                  :has-location 4)
+            :x-sender(3 / frame
+                  :frame "MESSAGE"
+                  :m-scene(2 / frame
+                        :frame "QUALITY"
+                        :has-quality 3))
+            :target-content(5 / frame
+                  :frame "MESSAGE"
+                  :content(6 / frame
+                        :frame "MESSAGE"
+                        :m-scene(8 / frame
+                              :frame "MESSAGE"
+                              :topic(11 / frame
+                                    :frame "TRANSFORMATION-CREATION"
+                                    :created(10 / frame
+                                          :frame "CLASS"))
+                              :x-sender 6)))))
+
+# lt, sent_id = 14
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-DEINIT"
+            :frame "SENDING"
+            :has-location(1 / frame
+                  :frame "SENDING")
+            :sent 1
+            :initial-location(6 / frame
+                  :frame "CLASS"
+                  :m-scene(4 / frame
+                        :frame "QUALITY"
+                        :has-quality 6)
+                  :m-material(5 / frame
+                        :frame "CLASS"
+                        :frame "QUALITY")
+                  :m-scene(8 / frame
+                        :frame "COMPARISON"
+                        :reference(11 / frame
+                              :frame "CLASS"
+                              :m-scene(10 / frame
+                                    :frame "QUALITY"
+                                    :has-quality 11))
+                        :compared 6)
+                  :m-scene(15 / frame
+                        :frame "LOCATION-INIT"
+                        :has-location(13 / frame
+                              :frame "IDENTIFICATION")
+                        :target-location(17 / frame
+                              :frame "CLASS"
+                              :frame "LOCATION"
+                              :m-scene(16 / frame
+                                    :frame "LOCATION"
+                                    :frame "QUALITY"
+                                    :has-location 17)
+                              :m-scene 16)
+                        :has-location 6))
+            :sender 6))
+
+# lt, sent_id = 15
+(0 / root
+      :predicate(2 / frame
+            :frame "STATE-CHANGE"
+            :x-causer(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-state(3 / frame
+                  :frame "CLASS"))
+      :predicate(7 / frame
+            :frame "STATE-CHANGE"
+            :has-state(5 / frame
+                  :frame "MESSAGE")
+            :m-quality(6 / frame
+                  :frame "QUANTITY"))
+      :predicate(11 / frame
+            :frame "SCENE"
+            :scene(12 / frame
+                  :frame "MESSAGE"
+                  :content(10 / frame
+                        :frame "MESSAGE"))))
+
+# lt, sent_id = 16
+(0 / root
+      :predicate(7 / frame
+            :frame "SCENE"
+            :scene(8 / frame
+                  :frame "STATE-CHANGE"
+                  :has-state(2 / frame
+                        :frame "CLASS"
+                        :m-scene(4 / frame
+                              :frame "IDENTIFICATION-INIT"
+                              :target-identifier(5 / frame
+                                    :frame "CLASS")
+                              :identified 2))))
+      :predicate(14 / frame
+            :frame "SCENE"
+            :scene(12 / frame
+                  :frame "STATE-DEINIT"
+                  :m-scene(11 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 12))
+            :m-scene(13 / frame
+                  :frame "MODE"
+                  :has-mode 14)))
+
+# lt, sent_id = 17
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :target-location(4 / frame
+                  :frame "CLASS"))
+      :predicate(9 / frame
+            :frame "CLASS"
+            :m-scene(6 / frame
+                  :frame "QUALITY"
+                  :has-quality 9)
+            :m-scene(8 / frame
+                  :frame "QUALITY"
+                  :has-quality 9))
+      :predicate(14 / frame
+            :frame "QUALITY-INIT"
+            :m-scene(11 / frame
+                  :frame "MODE"
+                  :has-mode 14)
+            :has-quality(12 / frame
+                  :frame "PART-WHOLE")
+            :m-scene(13 / frame
+                  :frame "ACCOMPANIMENT"
+                  :accompanied 14)
+            :x-causer(17 / frame
+                  :frame "CLASS"
+                  :m-scene(16 / frame
+                        :frame "QUALITY"
+                        :has-quality 17)))
+      :predicate(20 / frame
+            :frame "IDENTIFICATION"
+            :identified(19 / frame
+                  :frame "CLASS")))
+
+# lt, sent_id = 18
+(0 / root
+      :predicate(4 / frame
+            :frame "QUALITY"
+            :has-quality(2 / frame
+                  :frame "PART-WHOLE"
+                  :whole(1 / frame
+                        :frame "IDENTIFICATION")))
+      :predicate(8 / frame
+            :frame "QUALITY"
+            :has-quality(6 / frame
+                  :frame "PART-WHOLE")
+            :m-scene(7 / frame
+                  :frame "QUALITY"
+                  :has-quality 8))
+      :predicate(10 / frame
+            :frame "PART-WHOLE"
+            :m-scene(11 / frame
+                  :frame "QUALITY"
+                  :has-quality 10
+                  :x-causer(14 / frame
+                        :frame "CLASS"
+                        :m-scene(13 / frame
+                              :frame "QUALITY"
+                              :has-quality 14))
+                  :x-causer(18 / frame
+                        :frame "CLASS"
+                        :m-scene(16 / frame
+                              :frame "STATE"
+                              :has-state 18)
+                        :m-purpose(17 / frame
+                              :frame "CLASS"))))
+      :predicate(22 / frame
+            :frame "STATE"
+            :x-causer(21 / frame
+                  :frame "TIME"
+                  :m-scene(20 / frame
+                        :frame "SCENE-DEINIT"
+                        :initial-scene 21))))
+
+# lt, sent_id = 19
+(0 / root
+      :predicate(10 / frame
+            :frame "MESSAGE"
+            :topic(1 / frame
+                  :frame "CLASS")
+            :m-scene(2 / frame
+                  :frame "LOCATION"
+                  :has-location 10)
+            :m-situator(5 / frame
+                  :frame "MESSAGE-INIT"
+                  :m-scene(4 / frame
+                        :frame "MODE"
+                        :has-mode 5)
+                  :m-situator(8 / frame
+                        :frame "CLASS"
+                        :m-scene(7 / frame
+                              :frame "STATE"
+                              :has-state 8)))
+            :content(11 / frame
+                  :frame "QUALITY"
+                  :has-quality 1)))
+
+# lt, sent_id = 22
+(0 / root
+      :predicate(3 / frame
+            :frame "MESSAGE"
+            :x-experiencer(2 / frame
+                  :frame "PART-WHOLE"
+                  :whole(1 / frame
+                        :frame "PART-WHOLE"
+                        :frame "QUALITY"
+                        :frame "CLASS"))
+            :x-location(8 / frame
+                  :frame "CLASS"))
+      :predicate(4 / frame
+            :frame "QUANTITY"))
+
+# lt, sent_id = 23
+(0 / root
+      :predicate(2 / frame
+            :frame "ADORNMENT-TARNISHMENT"
+            :ornament(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(4 / frame
+                  :frame "LOCATION"
+                  :has-location 2
+                  :location(5 / frame
+                        :frame "CLASS"))))
+
+# lt, sent_id = 24
+(0 / root
+      :predicate(6 / frame
+            :frame "MESSAGE-INIT"
+            :target-content(3 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(2 / frame
+                        :frame "SOCIAL-RELATION"
+                        :frame "IDENTIFICATION"
+                        :m-scene(1 / frame
+                              :frame "QUALITY"
+                              :has-quality 2)
+                        :m-noncomp 1)
+                  :topic(4 / frame
+                        :frame "IDENTIFICATION"))
+            :x-sender(7 / frame
+                  :frame "MESSAGE"))
+      :predicate(13 / frame
+            :frame "MESSAGE"
+            :x-experiencer(11 / frame
+                  :frame "PART-WHOLE"
+                  :m-scene(10 / frame
+                        :frame "QUALITY"
+                        :has-quality 11))
+            :m-scene(12 / frame
+                  :frame "QUALITY"
+                  :has-quality 13)
+            :topic(15 / frame
+                  :frame "IDENTIFICATION")))
+
+# lt, sent_id = 26
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :m-scene(1 / frame
+                  :frame "LOCATION"
+                  :has-location 4)
+            :transitory-location(3 / frame
+                  :frame "CLASS")
+            :in-motion(5 / frame
+                  :frame "CLASS"))
+      :predicate(9 / frame
+            :frame "LOCATION-CONTINUATION"
+            :m-scene(8 / frame
+                  :frame "TIME"
+                  :has-time 9)
+            :initial-location(10 / frame
+                  :frame "LOCATION"
+                  :frame "STATE")
+            :m-reference(13 / frame
+                  :frame "CLASS"
+                  :m-location(12 / frame
+                        :frame "CLASS"
+                        :frame "QUALITY")
+                  :m-noncomp 12)
+            :has-location 5)
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :m-scene(15 / frame
+                  :frame "TIME"
+                  :has-time 17)
+            :m-depictive(16 / frame
+                  :frame "LOCATION-INIT"
+                  :has-location 5)
+            :target-location(19 / frame
+                  :frame "PART-WHOLE"
+                  :frame "LOCATION")
+            :has-location 5))
+
+# lt, sent_id = 27
+(0 / root
+      :predicate(4 / frame
+            :frame "CLASS"
+            :has-class(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-social-relation(3 / frame
+                  :frame "CLASS")
+            :m-scene(7 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(6 / frame
+                        :frame "IDENTIFICATION")
+                  :topic(8 / frame
+                        :frame "CLASS")
+                  :m-location(10 / frame
+                        :frame "CLASS")
+                  :x-experiencer 4)))
+
+# lt, sent_id = 28
+(0 / root
+      :predicate(1 / frame
+            :frame "SITUATION")
+      :predicate(7 / frame
+            :frame "QUALITY"
+            :has-quality(4 / frame
+                  :frame "CLASS")
+            :m-scene(6 / frame
+                  :frame "QUANTITY"
+                  :has-quantity 7
+                  :m-scene(5 / frame
+                        :frame "MODE"
+                        :has-mode 6))))
+
+# lt, sent_id = 29
+(0 / root
+      :predicate(5 / frame
+            :frame "COMPARISON"
+            :frame "QUALITY"
+            :compared(2 / frame
+                  :frame "CLASS"
+                  :m-topic(1 / frame
+                        :frame "MESSAGE"))
+            :has-quality 2))
+
+# lt, sent_id = 30
+(0 / root
+      :predicate(8 / frame
+            :frame "MESSAGE-INIT"
+            :m-location(3 / frame
+                  :frame "PART-WHOLE"
+                  :whole(2 / frame
+                        :frame "IDENTIFICATION"))
+            :x-sender(4 / frame
+                  :frame "MESSAGE"
+                  :x-sender(6 / frame
+                        :frame "CLASS"))
+            :m-scene(7 / frame
+                  :frame "SCENE-CONTINUATION"
+                  :initial-scene 8)
+            :topic(10 / frame
+                  :frame "CLASS")
+            :topic(15 / frame
+                  :frame "SCENE-INIT"
+                  :target-scene(14 / frame
+                        :frame "MESSAGE"
+                        :m-scene(12 / frame
+                              :frame "RANK"
+                              :has-rank 14)
+                        :m-scene(13 / frame
+                              :frame "TIME"
+                              :has-time 14)))))
+
+# lt, sent_id = 31
+(0 / root
+      :predicate(4 / frame
+            :frame "SCENE"
+            :participant(1 / frame
+                  :frame "CLASS")
+            :m-scene(3 / frame
+                  :frame "TIME"
+                  :frame "ACCOMPANIMENT"
+                  :m-scene(2 / frame
+                        :frame "QUANTITY"
+                        :has-quantity 3)
+                  :m-noncomp 2
+                  :has-time 4
+                  :accompanied 4)
+            :scene(6 / frame
+                  :frame "MESSAGE-INIT"
+                  :m-scene(5 / frame
+                        :frame "ACCOMPANIMENT"
+                        :accompanied 6)
+                  :x-sender 1)
+            :scene(9 / frame
+                  :frame "MESSAGE-INIT"
+                  :m-scene(8 / frame
+                        :frame "ACCOMPANIMENT"
+                        :accompanier 9)
+                  :x-experiencer 1)))
+
+# lt, sent_id = 33
+(0 / root
+      :predicate(5 / frame
+            :frame "MESSAGE-NEG"
+            :m-scene(1 / frame
+                  :frame "MODE"
+                  :has-mode 5)
+            :x-experiencer(4 / frame
+                  :frame "MESSAGE-INIT"
+                  :frame "CLASS")
+            :content(11 / frame
+                  :frame "MESSAGE-INIT"
+                  :m-scene(9 / frame
+                        :frame "TIME"
+                        :has-time 11
+                        :m-scene(8 / frame
+                              :frame "TIME"
+                              :frame "QUALITY"
+                              :has-time 9)
+                        :m-scene 8))
+            :content(14 / frame
+                  :frame "MODE")))
+
+# lt, sent_id = 34
+(0 / root
+      :predicate(13 / frame
+            :frame "SCENE"
+            :scene(15 / frame
+                  :frame "MESSAGE"
+                  :content(8 / frame
+                        :frame "MESSAGE-INIT"
+                        :m-scene(1 / frame
+                              :frame "TIME"
+                              :has-time 8)
+                        :m-scene(5 / frame
+                              :frame "TIME"
+                              :has-time 8
+                              :m-scene(4 / frame
+                                    :frame "QUANTITY"
+                                    :has-quantity 5))
+                        :x-experiencer(7 / frame
+                              :frame "CLASS"
+                              :m-topic(6 / frame
+                                    :frame "MESSAGE"))
+                        :topic(11 / frame
+                              :frame "CLASS"
+                              :m-possessor(10 / frame
+                                    :frame "IDENTIFICATION")))
+                  :m-scene(14 / frame
+                        :frame "MODE"
+                        :has-mode 15))))
+
+# lt, sent_id = 35
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE"
+            :m-scene(1 / frame
+                  :frame "MODE"
+                  :has-mode 2)
+            :scene(6 / frame
+                  :frame "MESSAGE-INIT"
+                  :x-experiencer(5 / frame
+                        :frame "IDENTIFICATION")
+                  :topic(7 / frame
+                        :frame "CLASS")
+                  :m-scene(10 / frame
+                        :frame "TIME"
+                        :has-time 6))))
+
+# lt, sent_id = 37
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-depictive(3 / frame
+                  :frame "LOCATION-DEINIT"
+                  :initial-location(5 / frame
+                        :frame "CLASS")
+                  :has-location 1)))
+
+# lt, sent_id = 38
+(0 / root
+      :predicate(2 / frame
+            :frame "QUALITY"
+            :has-quality(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-conceded(7 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer(5 / frame
+                        :frame "IDENTIFICATION")
+                  :m-scene(6 / frame
+                        :frame "QUALITY"
+                        :has-quality 7)
+                  :content(12 / frame
+                        :frame "SCENE"
+                        :participant(11 / frame
+                              :frame "PART-WHOLE"
+                              :m-scene(10 / frame
+                                    :frame "MODE"
+                                    :has-mode 11))
+                        :scene(13 / frame
+                              :frame "MESSAGE-INIT"
+                              :x-sender 11)))))
+
+# lt, sent_id = 39
+(0 / root
+      :predicate(6 / frame
+            :frame "LOCATION"
+            :m-location(2 / frame
+                  :frame "QUANTITY")
+            :m-scene(5 / frame
+                  :frame "LOCATION"
+                  :has-location 6
+                  :m-scene(4 / frame
+                        :frame "QUALITY"
+                        :has-quality 5))
+            :has-location(11 / frame
+                  :frame "SOCIAL-RELATION"
+                  :m-scene(7 / frame
+                        :frame "QUALITY"
+                        :has-quality 11)
+                  :m-scene(9 / frame
+                        :frame "QUALITY"
+                        :has-quality 11)
+                  :social-relation(10 / frame
+                        :frame "MODE"))
+            :has-location(14 / frame
+                  :frame "LOCATION"
+                  :x-has-social-relation(13 / frame
+                        :frame "IDENTIFICATION"))))
+
+# lt, sent_id = 40
+(0 / root
+      :predicate(3 / frame
+            :frame "MESSAGE-INIT"
+            :x-experiencer(4 / frame
+                  :frame "IDENTIFICATION")
+            :m-accompanier(7 / frame
+                  :frame "MESSAGE"
+                  :m-scene(6 / frame
+                        :frame "QUALITY-NEG"
+                        :frame "QUALITY"
+                        :has-quality 7))
+            :target-content(11 / frame
+                  :frame "IDENTIFICATION"
+                  :identified(9 / frame
+                        :frame "IDENTIFICATION")))
+      :predicate(1 / frame
+            :frame "SITUATION")
+      :predicate(17 / frame
+            :frame "CLASS"
+            :m-scene(13 / frame
+                  :frame "QUALITY"
+                  :has-quality 17)
+            :m-purpose(16 / frame
+                  :frame "CLASS"
+                  :m-purpose(15 / frame
+                        :frame "LOCATION-INIT"
+                        :m-scene(14 / frame
+                              :frame "RANK"
+                              :has-rank 15))))
+      :predicate(19 / frame
+            :frame "RANK"
+            :x-causer(22 / frame
+                  :frame "QUANTITY"
+                  :has-quantity(21 / frame
+                        :frame "EVENT"
+                        :frame "CLASS")
+                  :m-location(23 / frame
+                        :frame "IDENTIFICATION"))))
+
+# lt, sent_id = 41
+(0 / root
+      :predicate(2 / frame
+            :frame "SCENE-INIT"
+            :participant(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-depictive(3 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1)
+            :target-scene(4 / frame
+                  :frame "MESSAGE-INIT"
+                  :target-content(5 / frame
+                        :frame "STATE")
+                  :x-experiencer 1))
+      :predicate(11 / frame
+            :frame "QUALITY"
+            :m-scene(8 / frame
+                  :frame "TIME"
+                  :has-time 11)
+            :has-quality(9 / frame
+                  :frame "IDENTIFICATION")
+            :m-reference(13 / frame
+                  :frame "TIME")))
+
+# lt, sent_id = 45
+(0 / root
+      :predicate(8 / frame
+            :frame "COMPARISON"
+            :compared(2 / frame
+                  :frame "SOCIAL-RELATION"
+                  :social-relation(1 / frame
+                        :frame "MODE"))
+            :m-scene(7 / frame
+                  :frame "MESSAGE"
+                  :frame "MODE"
+                  :topic 8
+                  :has-mode 8)
+            :reference(13 / frame
+                  :frame "CLASS"
+                  :m-scene(11 / frame
+                        :frame "COMPARISON"
+                        :compared 13)
+                  :m-scene(12 / frame
+                        :frame "LOCATION"
+                        :has-location 13)))
+      :predicate(5 / frame
+            :frame "IDENTIFICATION"
+            :m-sender(4 / frame
+                  :frame "MESSAGE")))
+
+# lt, sent_id = 46
+(0 / root
+      :predicate(6 / frame
+            :frame "CLASS"
+            :has-class(1 / frame
+                  :frame "IDENTIFICATION")
+            :m-scene(3 / frame
+                  :frame "QUALITY"
+                  :has-quality 6)
+            :m-scene(5 / frame
+                  :frame "QUALITY"
+                  :m-reference(4 / frame
+                        :frame "CLASS")
+                  :has-quality 6)
+            :m-scene(8 / frame
+                  :frame "QUALITY"
+                  :m-depictive(10 / frame
+                        :frame "CLASS"
+                        :m-scene(9 / frame
+                              :frame "QUALITY"
+                              :has-quality 10)
+                        :m-whole 6)
+                  :has-quality 6)
+            :m-scene(15 / frame
+                  :frame "LOCATION-INIT"
+                  :frame "QUALITY"
+                  :transitory-location(12 / frame
+                        :frame "CLASS")
+                  :m-quantity 12
+                  :transitory-location(14 / frame
+                        :frame "CLASS")
+                  :m-quantity 14
+                  :target-location(19 / frame
+                        :frame "QUALITY"
+                        :m-scene(18 / frame
+                              :frame "QUANTITY"
+                              :has-quantity 19
+                              :m-scene(17 / frame
+                                    :frame "QUANTITY"
+                                    :has-quantity 18)))
+                  :m-quantity 19
+                  :has-location 6
+                  :has-quality 6)))
