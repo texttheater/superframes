@@ -1,0 +1,248 @@
+########################################
+# German example file for score        #
+# calculation concerning null subjects #
+########################################
+
+# unmodified sentences (apart from shortenings):
+
+# de_ann2, sent_id = 309
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :target-location 6
+            :m-depictive(11 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1))
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :has-location 19
+            :target-location 20
+            :x-causer 1))
+
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+                  
+##################################################
+# possible annotation according to approach 1
+# only annotate indexing morphemes in null-subject clauses
+
+# de_ann2, sent_id = 309
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :target-location 6
+            :m-depictive(11 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1))
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :has-location 19
+            :target-location 20
+            :x-causer 1))
+
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+
+##################################################
+# possible annotation according to approach 1
+# annotate indexing morpheme in all clauses
+
+# de_ann2, sent_id = 309
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :target-location 6
+            :m-depictive(11 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1)
+            :has-location 2-2)
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :has-location 19
+            :target-location 20)
+            :x-causer 1
+            :x-causer 17-2)
+                  
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :x-causer 2-2
+            :has-location 2-2))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5
+            :has-location 2-2))
+
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :x-causer(2-2 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 2-2))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5
+            :has-location(2-2 / frame
+                  :frame "IDENTIFICATION")))            
+            
+##################################################
+# possible annotation according to approach 2
+
+# de_ann2, sent_id = 309
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :target-location 6
+            :m-depictive(11 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1))
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :has-location 19
+            :target-location 20
+            :x-causer 1))
+
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+
+##################################################
+# possible annotation according to approach 3
+# with context
+
+# de_ann2, sent_id = 309
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3
+            :target-location 6
+            :m-depictive(11 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1))
+      :predicate(17 / frame
+            :frame "LOCATION-INIT"
+            :has-location 19
+            :target-location 20
+            :x-causer 1))
+
+# de_ann2, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3))
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+                  
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+
+##################################################
+# possible annotation according to approach 3
+# without context
+            
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))
+                  
+# de_ann2, sent_id = 64
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-INIT"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :transitory-location 5))

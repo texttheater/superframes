@@ -1,0 +1,211 @@
+########################################
+# Serbian example file for score       #
+# calculation concerning null subjects #
+########################################
+
+# unmodified sentences (apart from shortenings):
+
+# sr, sent_id = 302
+(0 / root
+      :predicate(1 / frame
+            :frame "UNANCHORED-MOTION"
+            :x-location 4
+            :m-accompanier(7 / frame
+                  :frame "MESSAGE"))
+      :predicate(10 / frame
+            :frame "LOCATION-INIT"
+            :has-location 11))
+                  
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4))
+
+##################################################
+# possible annotation according to approach 1
+# only annotate indexing morphemes in null-subject clauses
+
+# sr, sent_id = 302
+(0 / root
+      :predicate(1 / frame
+            :frame "UNANCHORED-MOTION"
+            :x-location 4
+            :m-depictive(7 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1-2)
+            :in-motion 1-2)
+      :predicate(10 / frame
+            :frame "LOCATION-INIT"
+            :has-location 11
+            :x-causer 10-2))
+                  
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion 2-2))
+
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion(2-2 / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 1
+# annotate indexing morpheme in all clauses
+
+# sr, sent_id = 302
+(0 / root
+      :predicate(1 / frame
+            :frame "UNANCHORED-MOTION"
+            :x-location 4
+            :m-depictive(7 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 1-2)
+            :in-motion 1-2)
+      :predicate(10 / frame
+            :frame "LOCATION-INIT"
+            :has-location 11
+            :x-causer 10-2))
+                  
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")
+            :in-motion 4-2))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion 2-2))
+
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")
+            :in-motion(4-2 / frame
+                  :frame "IDENTIFICATION")))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion(2-2 / frame
+                  :frame "IDENTIFICATION")))
+            
+##################################################
+# possible annotation according to approach 2
+
+# sr, sent_id = 302
+(0 / root
+      :predicate(1 / frame
+            :frame "UNANCHORED-MOTION"
+            :x-location 4
+            :m-depictive(7 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer a)
+            :in-motion a)
+      :predicate(10 / frame
+            :frame "LOCATION-INIT"
+            :has-location 11
+            :x-causer a))
+                  
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion(a / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 3
+# with context
+
+# sr, sent_id = 302
+(0 / root
+      :predicate(1 / frame
+            :frame "UNANCHORED-MOTION"
+            :x-location 4
+            :m-depictive(7 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 299-3)
+            :in-motion 299-3)
+      :predicate(10 / frame
+            :frame "LOCATION-INIT"
+            :has-location 11
+            :x-causer 299-3))
+                  
+# sr, sent_id = 60
+(0 / root
+      :predicate(4 / frame
+            :frame "UNANCHORED-MOTION"
+            :in-motion(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion 60-1))
+
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion(60-1 / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 3
+# without context
+                  
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion ?))
+            
+# sr, sent_id = 62
+(0 / root
+      :predicate(2 / frame
+            :frame "UNANCHORED-MOTION"
+            :transitory-location 4
+            :in-motion(? / frame
+                  :frame "IDENTIFICATION")))

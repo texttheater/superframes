@@ -1,0 +1,218 @@
+########################################
+# Lithuanian example file for score    #
+# calculationcconcerning null subjects #
+########################################
+
+# unmodified sentences (apart from shortenings):
+
+# lt, sent_id = 313
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :m-location 3)
+      :predicate(7 / frame
+            :frame "LOCATION-CHANGE"
+            :m-accompanier(6 / frame
+                  :frame "MESSAGE"
+            :has-location 8)))
+
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2))
+
+##################################################
+# possible annotation according to approach 1
+# only annotate indexing morphemes in null-subject clauses
+
+# lt, sent_id = 313
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :m-location 3
+            :has-location 2-2)
+      :predicate(7 / frame
+            :frame "LOCATION-CHANGE"
+            :m-depictive(6 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 7-2
+            :has-location 8
+            :x-causer 7-2)))
+
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")))
+
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2)
+            :has-location 3-2)                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2)
+            :has-location(3-2 / frame
+                  :frame "IDENTIFICATION"))
+                
+
+##################################################
+# possible annotation according to approach 1
+# annotate indexing morpheme in all clauses
+
+# lt, sent_id = 313
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :m-location 3
+            :has-location 2-2)
+      :predicate(7 / frame
+            :frame "LOCATION-CHANGE"
+            :m-depictive(6 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 7-2
+            :has-location 8
+            :x-causer 7-2)))
+
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location 3-2))
+                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location 3-2))
+            
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :has-location(3-2 / frame
+                  :frame "IDENTIFICATION")))
+                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location(3-2 / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 2
+
+# lt, sent_id = 313
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :m-location 3
+            :has-location a)
+      :predicate(7 / frame
+            :frame "LOCATION-CHANGE"
+            :m-depictive(6 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer a)
+            :has-location 8
+            :x-causer a))
+
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")
+            :x-causer a))
+                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location(a / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 3
+# with context
+
+# lt, sent_id = 313
+(0 / root
+      :predicate(2 / frame
+            :frame "LOCATION-CHANGE"
+            :m-location 3
+            :has-location 311-1)
+      :predicate(7 / frame
+            :frame "LOCATION-CHANGE"
+            :m-depictive(6 / frame
+                  :frame "MESSAGE"
+                  :x-experiencer 311-1)
+            :has-location 8
+            :x-causer 311-1))
+
+# lt, sent_id = 62
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-CHANGE"
+            :has-location(1 / frame
+                  :frame "IDENTIFICATION")))
+                  
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location 62-1))
+            
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location(62-1 / frame
+                  :frame "IDENTIFICATION")))
+
+##################################################
+# possible annotation according to approach 3
+# without context               
+                  
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location ?))
+            
+# lt, sent_id = 64
+(0 / root
+      :predicate(3 / frame
+            :frame "LOCATION-INIT"
+            :transitory-location 2
+            :has-location (? / frame
+                  :frame "IDENTIFICATION")))
