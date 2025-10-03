@@ -13,7 +13,8 @@ SITUATION: related relate
     CLASS: has-class
     EVALUATIVE: evaluated
     IDENTIFIER: identified identifier
-    STATE: has-state
+    STATE: has-state state
+      PHYSICAL-CONFIGURATION: has-physical-configuration physical-configuration
     QUANTITY: has-quantity
     RANK: has-rank rank
     TIME: has-time time
@@ -33,12 +34,14 @@ SITUATION: related relate
         CREATOR: creator creation
           SENDING: sender sent
         REACTION: trigger reaction
-      CIRCUMSTANCE: has-circumstance circumstance
+      CONTEXT: has-context context
         CONDITION: has-condition condition
           EXCEPTION: has-exception excpetion
       DERIVATION: derived derived-from
         MATERIAL: made-of material
         REPRODUCTION: reproduction original
+      IMPLICATION: implied restriction
+        EXCLUSIVE: exclusive
       EXPERIENCE: experiencer experienced
       EXPLANATION: explained explanation
       MEANS: purpose means
