@@ -1,24 +1,23 @@
 Frame
 =====
 
-SITUATION: related relate
-  META: participant scene
-    EXISTENCE: exists
-    MESSAGE: topic message
-      EVALUATION: evaluated evaluation
-      KNOWLEDGE: knowledge-topic knowledge
-      NORM: norm-topic norm
-      PERFORMANCE: work performance
-  PROPERTY: has-property
-    CLASS: has-class
-    EVALUATIVE: evaluated
+SITUATION: situated situator
+  *
+  PROPERTY: has-property property
+    CLASS: has-class class
+    EXISTENCE: exists existence
     IDENTIFIER: identified identifier
-    STATE: has-state state
+    INTERNAL-STATE: has-internal-state internal-state
       PHYSICAL-CONFIGURATION: has-physical-configuration physical-configuration
-    QUANTITY: has-quantity
+    MODE: has-mode mode
+    PHASE: has-phase phase
+    QUANTITY: has-quantity quantity
     RANK: has-rank rank
+    SORT: has-sort sort
     TIME: has-time time
-  RELATION
+      FREQUENCY: has-frequency frequency
+    VALUE: has-value value
+  RELATION: related relate
     ACCOMPANIMENT: accompanied accompanier
     COMPARISON: compared reference
       CONCESSION: asserted conceded
@@ -28,6 +27,11 @@ SITUATION: related relate
       CONTACT: on-surface surface
       ORIENTATION: oriented landmark
       WRAPPING-WEARING: wrapper wearer
+    MESSAGE: topic message
+      EVALUATION: evaluated evaluation
+      KNOWLEDGE: knowledge-topic knowledge
+      NORM: norm-topic norm
+      PERFORMANCE: work performance
     PART-WHOLE: part whole
     SEQUENCE: follows followed
       CAUSATION: causer result
@@ -46,6 +50,7 @@ SITUATION: related relate
       EXPLANATION: explained explanation
       MEANS: purpose means
       REPLACEMENT: replacement replaced
+      TIME-SEQUENCE: follows-in-time followed-in-time
     SOCIAL-ROLE: has-social-role social-relate
       GROUP-MEMBERSHIP: member group
         GEO-AFFILIATION: geo-affiliated geo-affiliation
