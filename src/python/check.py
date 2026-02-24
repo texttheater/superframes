@@ -24,6 +24,8 @@ if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(description=__doc__)
     arg_parser.add_argument('--warn-incomplete',
             action=argparse.BooleanOptionalAction, default=True)
+    arg_parser.add_argument('--warn-empty-label',
+            action=argparse.BooleanOptionalAction, default=True)
     arg_parser.add_argument('--debug',
             action=argparse.BooleanOptionalAction, default=False)
     arg_parser.add_argument('file')
@@ -51,7 +53,7 @@ if __name__ == '__main__':
     predicate_count = 0
     annotated_count = 0
     for sentence in sentences:
-        p, a, w = sentence.check()
+        p, a, w = sentence.check(False, args.warn_empty_label)
         if args.warn_incomplete and a > 0 and a < p and w == 0:
             logging.warning('sent %s line %s annotation of sentence not complete',
                     sentence.syntax[0].id, sentence.lineno)

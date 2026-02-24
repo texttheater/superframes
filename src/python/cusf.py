@@ -172,7 +172,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int, warn_empty_label: bool) -> Tuple[bool, int]:
         # Convert sentence to tree
         tree = sentence.syntax[0].to_tree()
         # Find subtree corresponding to predicate
@@ -196,8 +196,9 @@ class Frame:
             return False, 0
         # Check for wrong frame label
         if not labels.check_frame_label(self.label):
-            logging.warning('sent %s line %s unknown frame label: %s',
-                    sentence.syntax[0].id, lineno, self.label)
+            if self.label or warn_empty_label:
+                logging.warning('sent %s line %s unknown frame label: %s',
+                        sentence.syntax[0].id, lineno, self.label)
             return False, 1
         # Check arguments
         ok = True
@@ -240,8 +241,14 @@ class Frame:
                         'annotated', sentence.syntax[0].id, i)
             # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
-                logging.warning('sent %s line %s unknown dep label for %s: %s',
-                        sentence.syntax[0].id, i, self.label, arg.label)
+                if arg.label or warn_empty_label:
+                    logging.warning(
+                        'sent %s line %s unknown dep label for %s: %s',
+                        sentence.syntax[0].id,
+                        i,
+                        self.label,
+                        arg.label,
+                    )
                 ok = False
                 warnings += 1
             # Check for missing depictive backlinks
@@ -452,7 +459,8 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self, warn_non_semantic_dependent: bool=False) -> Tuple[int, int, int]:
+    def check(self, warn_non_semantic_dependent: bool, warn_empty_label: bool
+              ) -> Tuple[int, int, int]:
         head_frame_map = {}
         head_lineno_map = {}
         for frame_lineno, frame in zip(self.frame_linenos, self.frames):
@@ -471,7 +479,8 @@ class Sentence:
         annotated_count = 0
         warnings = 0
         for frame in head_frame_map.values():
-            ok, w = frame.check(self, head_lineno_map[frame.head])
+            ok, w = frame.check(self, head_lineno_map[frame.head],
+                                warn_empty_label)
             if ok:
                 annotated_count += 1
             warnings += w
