@@ -172,7 +172,7 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int, warn_empty_label: bool) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int, warn_empty_label: bool, warn_wrong_text: bool) -> Tuple[bool, int]:
         # Convert sentence to tree
         tree = sentence.syntax[0].to_tree()
         # Find subtree corresponding to predicate
@@ -184,13 +184,14 @@ class Frame:
             )
             return False, 1
         # Check for wrong text
-        expected_text = form_for_predicate(pred_tree)
-        if self.text != expected_text:
-            logging.warning(
-                'sent %s line %s wrong text for frame: '
-                'is "%s" but should be "%s"',
-                sentence.syntax[0].id, lineno, self.text, expected_text,
-            )
+        if warn_wrong_text:
+            expected_text = form_for_predicate(pred_tree)
+            if self.text != expected_text:
+                logging.warning(
+                    'sent %s line %s wrong text for frame: '
+                    'is "%s" but should be "%s"',
+                    sentence.syntax[0].id, lineno, self.text, expected_text,
+                )
         # Check for missing frame label
         if not self.label:
             return False, 0
@@ -221,15 +222,16 @@ class Frame:
                 )
                 return False, 1
             # Check for wrong text
-            if arg_token.head == self.head:
-                expected_text = form_for_argument(arg_tree)
-                if arg.text != expected_text:
-                    logging.warning(
-                        'sent %s line %s wrong text for subtree with root %s: '
-                        'is "%s" but should be "%s"',
-                        sentence.syntax[0].id, i,
-                        arg.head, arg.text, expected_text,
-                    )
+            if warn_wrong_text:
+                if arg_token.head == self.head:
+                    expected_text = form_for_argument(arg_tree)
+                    if arg.text != expected_text:
+                        logging.warning(
+                            'sent %s line %s wrong text for subtree with root %s: '
+                            'is "%s" but should be "%s"',
+                            sentence.syntax[0].id, i,
+                            arg.head, arg.text, expected_text,
+                        )
             else:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
@@ -459,8 +461,8 @@ class Sentence:
                         self.frames.insert(cursor, frame)
                         cursor += 1
 
-    def check(self, warn_non_semantic_dependent: bool, warn_empty_label: bool
-              ) -> Tuple[int, int, int]:
+    def check(self, warn_non_semantic_dependent: bool, warn_empty_label: bool,
+              warn_wrong_text: bool) -> Tuple[int, int, int]:
         head_frame_map = {}
         head_lineno_map = {}
         for frame_lineno, frame in zip(self.frame_linenos, self.frames):
@@ -480,7 +482,7 @@ class Sentence:
         warnings = 0
         for frame in head_frame_map.values():
             ok, w = frame.check(self, head_lineno_map[frame.head],
-                                warn_empty_label)
+                                warn_empty_label, warn_wrong_text)
             if ok:
                 annotated_count += 1
             warnings += w
