@@ -172,7 +172,9 @@ class Frame:
     def is_completely_annotated(self) -> bool:
         return self.label and all(a.label for a in self.args)
 
-    def check(self, sentence: 'Sentence', lineno: int, warn_empty_label: bool, warn_wrong_text: bool) -> Tuple[bool, int]:
+    def check(self, sentence: 'Sentence', lineno: int, warn_empty_label: bool,
+              warn_wrong_text: bool,
+              warn_appos_edge: bool) -> Tuple[bool, int]:
         # Convert sentence to tree
         tree = sentence.syntax[0].to_tree()
         # Find subtree corresponding to predicate
@@ -236,11 +238,12 @@ class Frame:
                 expected_text = arg_token.form
                 # We don't check in this case, for now.
             # Check for annotated appos edges:
-            arg_token = sentence.syntax[0][arg.head]
-            if arg_token.head == self.head and \
-                    arg_token.deprel.startswith('appos'):
-                logging.warning('sent %s line %s appos edges should not be '
-                        'annotated', sentence.syntax[0].id, i)
+            if warn_appos_edge:
+                arg_token = sentence.syntax[0][arg.head]
+                if arg_token.head == self.head and \
+                        arg_token.deprel.startswith('appos'):
+                    logging.warning('sent %s line %s appos edges should not be '
+                            'annotated', sentence.syntax[0].id, i)
             # Check for wrong dep label
             if not labels.check_dep_label(arg.label, self.label):
                 if arg.label or warn_empty_label:
@@ -462,7 +465,8 @@ class Sentence:
                         cursor += 1
 
     def check(self, warn_non_semantic_dependent: bool, warn_empty_label: bool,
-              warn_wrong_text: bool) -> Tuple[int, int, int]:
+              warn_wrong_text: bool,
+              warn_appos_edge: bool) -> Tuple[int, int, int]:
         head_frame_map = {}
         head_lineno_map = {}
         for frame_lineno, frame in zip(self.frame_linenos, self.frames):
@@ -482,7 +486,8 @@ class Sentence:
         warnings = 0
         for frame in head_frame_map.values():
             ok, w = frame.check(self, head_lineno_map[frame.head],
-                                warn_empty_label, warn_wrong_text)
+                                warn_empty_label, warn_wrong_text,
+                                warn_appos_edge)
             if ok:
                 annotated_count += 1
             warnings += w
