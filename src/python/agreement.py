@@ -24,7 +24,6 @@ def create_pred_edges_map(sentences: Iterable[cusf.Sentence]) -> \
         Dict[Tuple[str, str], Dict[str, str]]:
     result = {}
     for sentence in sentences:
-        seen = set()
         for frame in sentence.frames:
             if not isinstance(frame, cusf.Frame):
                 continue
