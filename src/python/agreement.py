@@ -42,6 +42,17 @@ def create_pred_edges_map(sentences: Iterable[cusf.Sentence]) -> \
     return result
 
 
+def match(label1, label2, simplify=False):
+    parts1 = set(labels.split_label(label1))
+    parts2 = set(labels.split_label(label2))
+    if simplify:
+        parts1 = set(labels.simplify(p) for p in parts1)
+        parts2 = set(labels.simplify(p) for p in parts2)
+    if parts1 & parts2:
+        return True
+    return False
+
+
 def count_matches(head_label_map_1, head_label_map_2, simplify=False):
     edge_count = 0
     match_count = 0
