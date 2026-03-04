@@ -18,6 +18,10 @@ import pathlib
 import cusf
 
 
+def zerobase(head):
+    return str(int(head) - 1)
+
+
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(description=__doc__)
     arg_parser.add_argument('cusf', nargs='*', type=argparse.FileType())
@@ -43,7 +47,7 @@ if __name__ == '__main__':
                 if not isinstance(frame, cusf.Frame):
                     continue
                 head_id = frame.head
-                if head_id in sa_data['roles']:
+                if zerobase(head_id) in sa_data['roles']:
                     logging.warn(
                         'duplicate frame %s in sentence %s for annotator %s',
                         sentence_id,
@@ -57,8 +61,8 @@ if __name__ == '__main__':
                 if not ok:
                     continue
                 args = {}
-                sa_data['roles'][head_id] = {'args': args, 'frame': frame.label}
+                sa_data['roles'][zerobase(head_id)] = {'args': args, 'frame': frame.label}
                 for arg in frame.args:
-                    args[arg.head] = arg.label
+                    args[zerobase(arg.head)] = arg.label
     for sentence_id, sentence_data in data.items():
         print(sentence_id, json.dumps(sentence_data), sep='\t')
