@@ -147,6 +147,18 @@ def check_dep_label_part(dep, frame):
 
 
 def simplify(part):
+    while True:
+        suffix_found = False
+        for suffix in ASPECTS + MODES + POLARITIES:
+            if part.endswith('-' + suffix):
+                suffix_found = True
+                part = part[:-len(suffix)-1]
+                break
+        if not suffix_found:
+            break
     if part.startswith('m-') or part.startswith('x-'):
-        return part[2:]
+        part = part[2:]
+    for prefix in ('initial-', 'transitory-', 'target-'):
+        if part.startswith(prefix):
+            part = part[len(prefix):]
     return part
